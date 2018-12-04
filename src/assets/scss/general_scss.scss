@@ -1,0 +1,171 @@
+@charset "utf-8";
+// 컬러군 
+// ( colorCode1 : Blue, colorCode2 : Indigo, colorCode3 : Green, colorCode4 : Red, colorCode5 : Yellow )
+$brand_colors: (
+  colorCode1:(
+    clr1 : #4B7AF4,
+    clr2 : #2F3E9F,
+    clr3 : #0A4CEC
+  ),
+  colorCode2:(
+    clr1 : #21277C,
+    clr2 : #00ADFB,
+    clr3 : #4E51D4
+  ),
+  colorCode3:(
+    clr1 : #0C7979,
+    clr2 : #02AD93,
+    clr3 : #00A9AA
+  ),
+  colorCode4:(
+    clr1 : #2E3E50,
+    clr2 : #F2444A,
+    clr3 : #FF4B6B
+  ),
+  colorCode5:(
+    clr1 : #C07902,
+    clr2 : #FFA000,
+    clr3 : #BF360C
+  )
+);
+
+// Helper theme mixin
+// @param $name: name of the theme (HTML class)
+// @param $color: color of the theme
+@mixin theme($name, $color) {
+  .#{$name} {
+    .clr1{
+      background: map-get($color,clr1) !important;
+    }    
+    .clr2{
+      background: map-get($color,clr2) !important;
+    }    
+    .clr3{
+      background: map-get($color,clr3) !important;
+    }
+    .clr4{
+      background: map-get($color,clr4) !important;
+    }
+    .color_clr1{
+      color: map-get($color,clr1) !important;
+    }    
+    .color_clr2{
+      color: map-get($color,clr2) !important;
+    }    
+    .color_clr3{
+      color: map-get($color,clr3) !important;
+    }
+    .color_clr4{
+      color: map-get($color,clr4) !important;
+    }
+    input.underline:focus{
+      border:0 !important;
+      border-bottom:1px solid map-get($color,clr2) !important;
+    }    
+    input:focus{
+      border:1px solid map-get($color,clr2) !important;
+    }
+    // 텝 하단 바
+    .tabWrap.type2 .tabMenu li.on a{
+      border-bottom:2px solid map-get($color,clr2);
+    }
+    // 체크박스 유형1
+    .labelChk2 input.chk:checked + .label{
+      color:#fff; 
+      background: map-get($color,clr2);
+    }
+    // 라디오 버튼
+    .labelRdo .rdo:checked + .ico + .label{
+      border : 1px solid  map-get($color,clr2) !important
+    }
+    //스위치
+    .labelBtn .chk_box .m1{
+      background:map-get($color,clr2);
+    }
+    /* form error */
+    input.succ{border-color:map-get($color , clr2);}
+    .succ-msg{color:map-get($color , clr2);}
+  }
+}
+// Including themes 
+// By looping through the $themes map
+@each $key, $value in $brand_colors {
+  @include theme($key, $value);
+}
+
+// 컬러군 선택 
+// $select_color : 'brand_indigo';
+// $brand_color: map-get($brand_colors,$select_color);
+// $primary1: map-get($brand_color,primary1_color);
+// $primary2: map-get($brand_color,primary2_color);
+// $secondary1: map-get($brand_color,secondary1_color);
+// $secondary2: map-get($brand_color,secondary2_color);
+
+// 고정컬러 
+// ( 기능단위로 표현하며 고정컬러로 제공하는 것들 )
+$static_colors: (
+  danger:   #ff4141,  // 알림,에러,미진행 아이콘등 상태를 표현하는 컬러
+  primary:  #007fff,  // 학습창의 정답, 찬성등 콘텐츠를 표현하는 컬러
+  star:     #ff9c14,  // 별점 아이콘
+  alert:    #e5f3ff   // 알림 : 새알림 영역 BG 상태를 표현하는 컬러
+);
+
+// Contents Color
+$contents_colors: (
+  type_1: #ff726D,
+  type_2: #00b6e8,
+  type_3: #32667d,
+  type_4: #ffba00,
+  type_5: #00b3c4
+);
+
+
+// 모노 컬러 
+// ( 텍스트와 배경, 라인 등 컨텐츠 및 UI 전반에 활용되는 고정 컬러(모바일 기준)
+$mono_colors: (
+  mono_100: #000000,
+  mono_80: rgba(#000000, 0.8),
+  mono_65: rgba(#000000, 0.65),
+  mono_50: rgba(#000000, 0.5),
+  mono_25: rgba(#000000, 0.25),
+  mono_0: #ffffff
+);
+
+// 라인컬러 
+// ( 단독리스트일땐 B89 사용, 계층관계가있는 리스트일땐 B92/B85 세트로사용 , 콘텐츠 내 Index 아래 라인은 B60사용 )
+// Section을 구분할 때 8dp, B95사용
+$line_colors: (
+  B92: #EAEAEA,
+  B89: #E3E3E3,
+  B85: #D9D9D9,
+  B60: #999999,
+  B10: #1A1A1A,
+  B95: #F2F2F2
+);
+
+// BG 컬러
+$bg_colors: (
+  BG_1: #F2F2F2,  // F2F2F2
+  BG_2: #EEEEF5,  // 선택영역 BG ( Contents Box, LNB 펼침영역 BG )
+  BG_3: rgba(0,0,0, 0.6),  // Dimmed Bg
+  BG_4: rgba(0,0,0, 0.8),  // Toast Popup
+  BG_5: #F5F5F5           // Input / Chips color
+);
+
+// Font Size  rem 사용.  html 태그에 지정안할 시 default = 16px
+$font_size: (
+  font_11 : 0.6875rem,
+  font_12 : 0.75rem,
+  font_13 : 0.8125rem,
+  font_14 : 0.875rem,
+  font_15 : 0.9375rem,
+  font_16 : 1rem,       // html 기본 font-size : 16
+  font_17 : 1.063rem,
+  font_18 : 1.125rem,
+  font_19 : 1.188rem,
+  font_20 : 1.25rem,
+  font_26 : 1.625rem,
+  font_30 : 1.875rem,
+  font_31 : 1.938rem,
+  font_32 : 2rem
+);

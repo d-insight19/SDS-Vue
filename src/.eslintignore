@@ -1,0 +1,11 @@
+/build/
+/config/
+/dist/
+/*.js
+#/src/*
+#/src/assets/
+#/src/components/*
+#/src/components/_common/*
+#/src/components/workplace/*
+#/src/app/
+#/src/lib/tb

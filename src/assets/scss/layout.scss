@@ -1,0 +1,157 @@
+#container.mediaquery{
+    padding:0;
+    height:100%;
+    // 컨텐츠 내부
+    .inner{
+      margin:0 auto;
+    }
+    //header
+    & #header{
+      position: relative;
+      display: block;
+      width:100%;
+      height:56px;
+      line-height: 56px;
+      padding:0 36px 0 72px;
+      background:#fff;
+      box-sizing:border-box;        
+      border-bottom:1px solid transparent;
+      &.fixed{
+        position: fixed;
+        top:0px;
+        z-index:10;
+        border-color:#d9d9d9;
+
+        & ~ #content{
+          margin-top: 56px;
+        }
+      }
+
+      .btn.prev , .btn.close{
+        width:auto;
+        position: absolute;
+        // left:21px;
+        left:14px;
+        top:50%;
+        margin-top:-14px;
+      }
+      & p{
+        text-align: left;
+        padding-left: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 600;
+      }
+    }
+    
+    //content
+    & #content{
+      position: relative;
+      // height:100%;
+      // background:tomato;
+      .cell{
+        // display: block;
+        position: relative;
+        width:100%;
+        .inner{
+          // background:lightblue;
+        }
+      }
+    }
+  }
+  
+  
+  @media only screen and (max-width:767px){
+    $l_padding: 18px;
+    $c_padding: 24px;
+    #container.mediaquery{
+      & #content{
+        //리스트형
+        &.list{
+          .inner{width:calc(100% - #{$l_padding}*2);}
+        }
+        //일반형
+        &.normal{
+          .cell{
+            .inner{width:calc(100% - #{$c_padding}*2);}
+          }
+        }
+        //예외형
+        &.etc{
+          .inner{width:calc(100% - #{$l_padding}*2);}
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width:768px) and (max-width:1279px){
+    $l_padding: 18px;
+    $c_padding: 74px;
+    #container.mediaquery{
+      & #content{
+        //리스트형
+        &.list{
+          .inner{width:calc(100% - #{$l_padding}*2);}
+        }
+        //일반형
+        &.normal{
+          .cell{
+            .inner{width:calc(100% - #{$c_padding}*2);}
+          }
+        }
+        //예외형
+        &.etc{
+          .inner{width:520px;}
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width:1280px){
+    $l_padding: 18px;
+    $c_padding: 90px;
+    #container.mediaquery{
+      & #content{
+        //리스트형
+        &.list{
+          .inner{width:calc(100% - #{$l_padding}*2);}
+        }
+        //일반형
+        &.normal{
+          .cell{
+            .inner{width:calc(100% - #{$c_padding}*2);}
+          }
+        }
+        //예외형
+        &.etc{
+          .inner{width:520px;}
+        }
+      }
+    }
+  }
+
+/*
+#container #content{padding:24px 0px 70px 0px}
+
+// 연수원 찾기 패딩
+#container.findcenter #content{ padding-top:24px; padding-bottom: 124px;}
+// 로그인 패딩
+#container.login #content{ padding: 0px 0px 18px}
+// 관심사 패딩
+#container.interest #content .inner{ padding-bottom: 124px}
+
+*/
+
+#container #content{padding:0px 0px 0px 0px}
+#container #content .inner{padding-top:24px;padding-bottom:70px;}
+// 연수원
+#container.findcenter #content .inner{padding-top:24px;padding-bottom:124px;}
+// 로그인
+#container.login #content .inner{padding-top:0px;padding-bottom:18px;}
+// 관심사 패딩
+#container.interest #content .inner{ padding-top:44px;padding-bottom: 124px}
+
+// 용어사전
+#container.study_dictionary #content .inner{ padding-top:26px;padding-bottom: 70px}
+

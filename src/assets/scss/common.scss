@@ -1,0 +1,486 @@
+@charset "utf-8";
+
+@import 'general_scss.scss';
+@import 'general_components.scss';
+@import 'layout.scss';
+@import 'contents.scss';
+
+body{
+  // background : map-get($static_colors,alert);
+  //background: map-get($mono_colors,mono_65);
+  // color : $secondary2  
+}
+
+
+button.btn{
+  width:100%;
+  
+  &.clr1 , &.clr2 ,&.clr3 ,&.clr4{
+    color: #ffffff;
+    border: 0;
+  }
+
+  & .ico{
+    margin-right:4px;
+  }
+
+}
+
+// 글자 폰트에 따른 클래스명 관리
+.font_11{font-size:map-get($font_size, font_11)}
+.font_12{font-size:map-get($font_size, font_12)}
+.font_13{font-size:map-get($font_size, font_13)}
+.font_14{font-size:map-get($font_size, font_14)}
+.font_15{font-size:map-get($font_size, font_15)}
+.font_16{font-size:map-get($font_size, font_16)}
+.font_17{font-size:map-get($font_size, font_17)}
+.font_18{font-size:map-get($font_size, font_18)}
+.font_19{font-size:map-get($font_size, font_19)}
+.font_20{font-size:map-get($font_size, font_20)}
+.font_26{font-size:map-get($font_size, font_26)}
+.font_30{font-size:map-get($font_size, font_30)}
+
+
+// 헤더 
+#header .btn.prev .ico{width:28px; height:28px; background-position:-13px -61px;}
+#header .btn.close .ico{width:28px; height:28px; background-position:-298px -60px;} 
+
+
+/* title */
+.h-tit{ font-size: map-get($font_size, font_30); line-height: 45px; font-weight:500; letter-spacing: -0.9px; margin: 12px 0 17px; }
+.h-tit1{font-size: map-get($font_size, font_26); line-height: 38px; font-weight:500; letter-spacing: -0.78px; margin-bottom: 28px;}
+.h-tit2{font-size: map-get($font_size, font_20); line-height: 29px; font-weight:500; letter-spacing: -0.6px; margin-bottom: 28px;}
+.h-tit3{font-size: map-get($font_size, font_18); line-height: 27px; font-weight:500; letter-spacing: -0.54px;}
+.h-tit4{font-size: map-get($font_size, font_16); line-height: 24px; font-weight:500; letter-spacing: -0.48px;}
+.h-tit5{font-size: map-get($font_size, font_15); line-height: 22px; font-weight:400; letter-spacing: -0.45px;}
+
+
+/* ***** btn ***** */
+.btn{display:inline-block; color:#333; vertical-align: middle;}
+.btn.type2{padding:0 20px !important; border-radius: 50px;}
+
+/* btn size */
+.btn.xs{font-size:map-get($font_size, font_14); line-height: 36px; height: 38px; padding:0 10px; letter-spacing: -0.063px;}
+.btn.sm{font-size:map-get($font_size, font_14); line-height: 42px; height: 44px; padding:0 10px; letter-spacing: -0.063px;}
+.btn.md{font-size:map-get($font_size, font_16); line-height: 50px; height: 50px; padding:0 10px; letter-spacing: -0.48px;}
+.btn.ld{font-size:map-get($font_size, font_16); line-height: 54px; height: 54px; padding:0 10px; letter-spacing: -0.48px;}
+.btn.sm, .btn.md , .btn.ld{border: 1px solid #ccc; background-color: #fff;}
+
+
+// 말줄임 
+.singleline{
+  overflow: hidden;width:inherit;text-overflow: ellipsis;white-space: nowrap;
+}
+.multiline{
+  text-overflow: ellipsis; width: inherit; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden;
+}
+.multiline.line2{  
+  -webkit-line-clamp: 2;
+}
+.multiline.line3{
+  -webkit-line-clamp: 3;
+}
+
+
+/* floating */
+.btn-quickWrite {position: fixed; cursor: pointer; right: 10px; bottom: 10px; color: #fff; width: 74px; height: 74px; z-index: 800; background: url("../img/btn_floating.png") no-repeat; background-size: 74px;}
+
+
+
+/* 하단 고정 버튼 fixed button */
+.fixBtmBtn{position: fixed; left:0; bottom:0; z-index: 100; width:100%;}
+.fixBtmBtn ul{display: table; table-layout: fixed; width: 100%;}
+.fixBtmBtn li{display: table-cell;}
+.fixBtmBtn li .btn{width:100%; height:54px; border:0; border-top:1px solid #bfbfbf;}
+.fixBtmBtn li .btn[disabled]{color:#c1c1c1 !important; border-top:1px solid #bfbfbf !important; background: #ededed !important;}
+.fixBtmBtn li + li .btn[disabled]{border-left:1px solid #e0e0e0 !important;}
+
+
+// 로그인시 password , 검색 input 에만 적용되는 x 아이콘 
+.search-wrapper {position: relative;}
+.search-wrapper .close-icon {border:1px solid transparent;background-color: transparent;display: inline-block;vertical-align: middle;outline: 0;cursor: pointer;position:absolute;top:50%;right:0px;margin-top: -12px;width: 24px;height: 24px;}
+.search-wrapper .close-icon:after {content: "";display: block;width: 24px;height: 24px;position: absolute;z-index:1;right: 2px;top: 0;bottom: 0;margin: auto;padding: 2px;text-align: center;color: #000;font-weight: normal;font-size: 12px;cursor: pointer;-webkit-appearance: none;border-radius:10px;background:url("../img/ic_delete_input.png") no-repeat;}
+input[type="text"]:not(:invalid) ~ .close-icon,
+input[type="password"]:not(:invalid) ~ .close-icon,
+input[type="search"]:not(:invalid) ~ .close-icon {
+  display: none;
+}
+
+.intSchBox .close-icon{right : 32px}
+
+input[type="text"].underline, input[type="password"].underline, input[type="search"].underline{
+  border:0;
+  border-bottom: 1px solid #d9d9d9;
+  background: #ffffff;
+  padding:0;
+  height:42px;
+}
+
+/* ***** form ***** */
+input[type="text"],input[type="password"],input[type="search"]{
+  width:100%; 
+  height:44px; 
+  padding:0 16px; 
+  border:1px solid #f5f5f5; 
+  background: #f5f5f5;
+}
+input.err{
+  border-color:map-get($static_colors , danger);
+}
+input::placeholder,textarea::placeholder {
+  color:#ccc; 
+  -webkit-text-fill-color:#ccc; 
+  font-weight: normal;
+}
+
+/* Input (검색형) */
+.intSchBox{position: relative;}
+.intSchBox .input{padding-right:40px;}
+.intSchBox .btn{position:absolute; top:12px; right:12px; z-index: 1; border:0;}
+.intSchBox .btn .ico{ width:22px; height:22px; vertical-align: top; background-position: -147px -64px;}
+.intSchBox input[type="search"]::-webkit-search-cancel-button{right:-8px}
+
+
+/* form error */
+input.error{border-color:map-get($static_colors , danger) !important}
+.error-msg{font-size:map-get($font_size, font_12); color:map-get($static_colors , danger); line-height: 18px; letter-spacing: -0.36px;margin-top:4px}
+.succ-msg{font-size:map-get($font_size, font_12); line-height: 18px; letter-spacing: -0.36px;margin-top:4px}
+.InfoChK-resultTxt{font-size:map-get($font_size, font_12); color:#999; line-height: 18px; margin-top:4px;letter-spacing: -0.36px;}
+.InfoChK-resultTxt.err{color:map-get($static_colors , danger);}
+
+
+input[type="search"]::-webkit-search-cancel-button{
+  position:relative;
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius:10px;background:url("../img/ic_delete_input.png") no-repeat;
+}
+
+
+/* input text */
+input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolute; left:-10000px; -webkit-appearance: none;}
+
+/* radio */
+.labelRdo{display:inline-block;}
+.labelRdo input.rdo + .ico {display:inline-block; width:22px; height:22px; margin:0px 6px 0 0; vertical-align:top; border:1px solid #b1b1b1; border-radius: 50px; background:none; cursor:pointer;}
+.labelRdo input.rdo:checked + .ico {border:0; background:url("../img/ico_com.png") no-repeat; background-position:0 -30px; background-size:400px auto; }
+.labelRdo input.rdo:disabled + .ico {border:0; background:url("../img/ico_com.png") no-repeat; background-position:-24px -30px; background-size:400px auto; }
+.labelRdo input.rdo:disabled + .ico + .label{color:#c9c9c9;}
+.labelRdo .label{display: inline-block; line-height: 22px;}
+
+
+/* check box */
+.labelChk{display:inline-block;}
+.labelChk input.chk + .ico {display:inline-block; width:20px; height:20px; margin:0px 5px 0 0; vertical-align:top; border:1px solid #d3d3d3; background:none; cursor:pointer;}
+.labelChk input.chk:checked + .ico {border:0; background: url("../img/ico_com.png") no-repeat -24px 0; background-size:auto 400px;}
+.labelChk input.chk:disabled + .ico {border:0; background: url("../img/ico_com.png") no-repeat -50px 0; background-size:auto 400px;}
+.labelChk input.chk:disabled + .ico + .label{color:#c9c9c9;}
+.labelChk .label{display: inline-block; font-size:map-get($font_size, font_14); line-height: 20px; vertical-align: top;}
+
+// 관심사 선택 ( select ) 
+.labelChk2{display:inline-block; margin-right:5px;}
+.labelChk2 input.chk + .label {display:inline-block; font-size:map-get($font_size, font_12); line-height: 34px; padding:0 16px; border-radius: 80px; background: #f5f5f5; cursor:pointer;}
+// .labelChk2 .label{display: inline-block; font-size:map-get($font_size, font_14); line-height: 20px; vertical-align: top;}
+
+/* 스위치 버튼 */
+.labelBtn{position:relative; display:inline-block; width:44px; height:24px; margin:0; padding:0; cursor:pointer; background:#ccc; border-top-right-radius:18px; border-bottom-right-radius:18px; border-top-left-radius:18px; border-bottom-left-radius:18px; overflow:hidden;}
+.labelBtn .chk{position:absolute; top:0; left:0; opacity:0; width:1px; height:1px;}
+.labelBtn .chk_box{display:block; position:relative; width:44px; height:24px; overflow:hidden;}
+.labelBtn .chk:checked + .chk_box .txt{left:0px; /*-webkit-transition: all .2s linear; -ms-transition: all .2s linear; transition: all .2s linear;*/}
+.labelBtn .chk:checked + .chk_box .ball{left:23px; /*-webkit-transition: all .2s linear; -ms-transition: all .2s linear; transition: all .2s linear;*/}
+.labelBtn .chk_box .ball{display:inline-block; position:absolute; left:3px; top:3px; z-index:2; width:18px; height:18px; border-radius:50px; background:#fff; /*-webkit-transition: all .2s linear; -ms-transition: all .2s linear; transition: all .2s linear;*/}
+.labelBtn .chk_box .txt{position:absolute; top:0; left:-44px; font-size:0; margin:0; width:88px; padding:0; /*-webkit-transition: all .2s linear; -ms-transition: all .2s linear; transition: all .2s linear;*/}
+.labelBtn .chk_box li{display:inline-block; width:44px; height:24px; padding:2px;}
+.labelBtn .chk_box li span{display:block; line-height:20px; text-align:center;}
+.labelBtn .chk_box .m1{padding-right:18px;}
+.labelBtn .chk_box .m2{padding-left:18px; background:#ccc;}
+
+/* 라디오 */
+.rdoSelBox{font-size: 0;}
+.rdoSelBox .labelRdo{position: relative; width: 50%; height: 44px;}
+.rdoSelBox .labelRdo .rdo + .ico {display:inline-block; position: absolute; right:18px; top:50%; width:18px; height:18px; margin:-9px 0 0 0; vertical-align:top; border:0; background:none; cursor:pointer;}
+.rdoSelBox .labelRdo .rdo + .ico + .label{line-height: 42px; width:100%; height: 44px; padding:0 19px ; margin-left:-1px; border: 1px solid #e3e3e3;}
+.rdoSelBox .labelRdo .rdo:checked + .ico {border:0; background:url("../img/ico_com.png") no-repeat; background-position:-188px -67px; background-size:400px auto; }
+.rdoSelBox .labelRdo .rdo:checked + .ico + .label{position: absolute; z-index: 1; line-height: 42px; height:44px;}
+.rdoSelBox .labelRdo + .labelRdo{margin-left:-1px;}
+.rdoSelBox .labelRdo + .labelRdo .rdo + .ico + .label{border-left:0;}
+.rdoSelBox .labelRdo + .labelRdo .rdo:checked + .ico + .label{padding-left:18px;}
+.rdoSelBox + .addrInt,
+.InfoChK-resultTxt + .addrInt{margin-top:8px;}
+.rdoSelBox.err .rdo + .ico + .label{border-color: map-get($static_colors, danger);}
+
+/* select */
+.select{font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); height:44px; padding:0 15px; background: #f5f5f5 url("../img/ico_sel.png") no-repeat; background-size:28px 16px; background-position: right 14px;  -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.select.err{border: 1px solid map-get($static_colors, danger);}
+
+
+
+/* Single Line List :  List + button */
+.singleList.type_1 li{border-bottom:1px solid #e3e3e3;font-size:map-get($font_size, font_16);height:54px}
+.singleList.type_1 li a{display: block; position: relative; z-index: 1; line-height:27px; letter-spacing: -0.045em; padding: 15px 30px 15px 0;}
+.singleList.type_1 li a .ico{position: absolute; top:50%; right:12px; width:8px; height:12px; margin-top:-6px; background-position: 0 -67px;}
+
+
+/* Single Line List :  List + Switch button */
+.singleList.type_2 li{border-bottom:1px solid #e3e3e3;font-size:map-get($font_size, font_16);height:54px;position: relative;}
+.singleList.type_2 li a{display: block; position: relative; z-index: 1; line-height:27px; letter-spacing: -0.045em; padding: 15px 30px 15px 0;}
+.singleList.type_2 .labelBtn{position: absolute;right: 0px;top: 20px;z-index:2;}
+
+/* Single Line List :  List + text */
+.singleList.type_3 li{border-bottom:1px solid #e3e3e3;font-size:map-get($font_size, font_16);height:54px}
+.singleList.type_3 li a{display: block; position: relative; z-index: 1; line-height:27px; letter-spacing: -0.045em; padding: 15px 0px 15px 0;}
+.singleList.type_3 li .subTxt{font-size:map-get($font_size, font_14);color:map-get($mono_colors, mono_65); float:right; display: inline-block}
+.singleList.type_3 li span.subTxt2{font-size:map-get($font_size, font_15);color:map-get($mono_colors, mono_65);}
+
+
+/* Single Line List : Checkbox + List  */
+.singleList.type_4 li{ padding:15px 0 15px; border-bottom:1px solid #e3e3e3; font-size:map-get($font_size, font_16);height:54px}
+.singleList.type_4 li > .labelChk{vertical-align: top;}
+.singleList.type_4 li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
+.singleList.type_4 .labelChk .label{font-size:map-get($font_size, font_16);}
+.singleList.type_4 input.chk + .ico{vertical-align: middle}
+
+/* Multiline List : + meta text */
+.multiList > li{display:table;width:100%;position: relative;}
+.multiList > li .metatxt{position: absolute; top: calc(50% - 20px);right:3px;line-height:20px;font-size:map-get($font_size, font_17);}
+.multiList > li .in{display: table-cell; position: relative; height:100%;vertical-align: middle; width: calc(100vw - 92px); padding:10px 0px 13px 0px;;}
+.multiList .multiline{font-size: map-get($font_size, font_16);line-height: 22px;max-height:68px;}
+
+
+.multiList .info{margin-top:5px;color: rgba(0,0,0,0.8);}
+.multiList .info li.fwb{letter-spacing: -0.39px;}
+.multiList .info li{display: inline-block; font-size: map-get($font_size, font_13); letter-spacing: -0.13px; vertical-align: top;}
+.multiList .info li+li{margin-left: 6px;}
+.multiList .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 6px; background: #d9d9d9;}
+
+// 멀티라인리스트 + 메타텍스트
+.multiList.type1 > li{min-height:94px;}
+.multiList.type1 > li{  border-bottom:1px solid #e3e3e3;}
+
+// icon + 멀티라인 리스트
+.multiList.type2 > li .icon_wrap{display:table-cell;width:30px;height:100%;position: relative;}
+.multiList.type2 > li .icon_wrap .ico2{position: absolute;top:0px;left:0px;}
+.multiList.type2 > li .txt_wrap{display:table-cell;border-bottom:1px solid #e3e3e3;width: calc(100% - 30px);padding-bottom: 15px;}
+.multiList.type2 .icon_txt{font-size:map-get($font_size, font_14);font-weight: 600;line-height: 20px}
+.multiList.type2 .title{margin-top:5px;font-size:map-get($font_size, font_16);line-height: 22px;white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;  width: calc( 100vw - 66px);}
+.multiList.type2 .contents{margin-top:5px;font-size:map-get($font_size, font_14);line-height: 21px;color:rgba(0,0,0,0.65)}
+
+//지식 클리핑
+.multiList.type3 > li{  border-bottom:1px solid #e3e3e3;}
+.multiList.type3 > li .in{width: calc(100vw - 34px);padding:0;padding-bottom: 20px;}
+.multiList.type3 .ico.arrow{position:absolute;right:0px;top:calc(50% - 18px);}
+
+
+//나의공간
+.multiList.type4 > li{  border-bottom:1px solid #e3e3e3;}
+.multiList.type4 > li .in{width: calc(100vw - 34px);padding:0;padding-bottom: 20px;}
+.multiList.type4 .title{font-size:map-get($font_size, font_16);line-height: 22px;letter-spacing: 0.48px;font-weight: 500;}
+.multiList.type4 .sub_title{font-size:map-get($font_size, font_13);line-height: 20px;letter-spacing: 0.39px;}
+.multiList.type4 .sub_title strong{display:inline-block;font-weight: 500;margin-right:6px;}
+.multiList.type4 .info{margin-top:8px;}
+
+
+.thumList > li{display: table; width:100%; padding-bottom: 10px; border-bottom: 1px solid #e3e3e3;}
+.thumList > li + li{ margin-top: 10px; }
+.thumList .in{display: table-cell; position: relative; height:100px; padding-left:116px; vertical-align: middle;}
+.thumList .thum{display: block; position: absolute; left:0; top:0; width:100px; height:100px;}
+.thumList .thum .label{display:inline-block; position: absolute; left:0; top:0; z-index: 3; font-size: map-get($font_size, font_12); color:#fff; line-height: 20px; letter-spacing: -0.06em; padding:0 7px; background: rgba(0,0,0,0.4);}
+.thumList .thum .label2{display:inline-block; position: absolute; left:0; top:0; z-index: 3; font-size: map-get($font_size, font_12); color:#fff; line-height: 20px; letter-spacing: -0.06em; padding:0 7px; background: rgba(#ff726d,0.9);}
+.thumList .thum .label3{display:inline-block; position: absolute; right:0; bottom:0; z-index: 3; font-size: map-get($font_size, font_12); color:#fff; line-height: 20px; letter-spacing: -0.06em; padding:0 7px; background: rgba(0,0,0,0.4);}
+// .thumList .thumImg{width:100px; height:100px;}
+.thumList .thumbnail{overflow: hidden; margin: auto;height: 100%;position: relative;}
+.thumList .thumbnail .thumImg{position: relative; left: 50%; transform: translateX(-50%); height: 100%;}
+.thumList .tit{display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 23px; letter-spacing: -0.048em; max-height: 46px; margin-bottom: 5px; overflow: hidden;}
+// 멀티라인 2줄
+.thumList .tit{text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;  word-wrap: break-word;}
+.thumList .info{font-size: 0; margin-bottom: 9px;}
+.thumList .info .ico.star{margin-top:2px;}
+.thumList .info li{display: inline-block; font-size: map-get($font_size, font_13); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
+.thumList .info li+li{margin-left: 5px;}
+.thumList .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #e3e3e3;}
+
+
+
+/* Thumbnail list _ horizontal view : main */
+.thumList.type2{display: table; table-layout: fixed;}
+.thumList.type2 > li{display: table-cell; word-break: break-all; width:158px; vertical-align: top; border:0;}
+.thumList.type2 > li + li{padding-left: 10px; margin-top:0;}
+.thumList.type2 .in{padding:0;}
+.thumList.type2 .thum{position: relative; width:158px; height:124px; margin-bottom: 8px;}
+// .thumList.type2 .thumImg{width:158px; height:124px;}
+.thumList.type2 .tit{font-size: map-get($font_size, font_16); white-space: normal;}
+
+
+/* Thumbnail list _ horizontal view : main BigSize */
+.thumList.type3{display: table; table-layout: fixed;}
+.thumList.type3 > li{display: table-cell; position: relative; word-break: break-all; width:324px; padding-left: 10px; padding-bottom: 0; vertical-align: top; border:0;}
+.thumList.type3 > li:first-child,
+.thumList.type3 > li:first-child .in{padding-left:0;}
+.thumList.type3 > li:first-child .in > a{padding-left: 24px;}
+.thumList.type3 > li + li{margin-top:0;}
+.thumList.type3 .in{position: absolute; bottom:0; left:0; z-index: 2; width:100%; height: 100%; padding-left:0px;}
+.thumList.type3 .in > a{position: absolute; bottom:0; left:0; z-index: 2; width:100%; padding:18px 24px 18px 34px;}
+.thumList.type3 .thum{position: relative; z-index: 0; width:324px; height:243px;}
+.thumList.type3 .thum .label{font-size: map-get($font_size, font_14); line-height: 26px; padding:0 10px; }
+.thumList.type3 .thum .cDim{position: absolute; bottom:0; left:0; z-index: 1; width:100%; height: 100%; background: linear-gradient(-180deg, rgba(0,0,0,0), rgba(0,0,0,0.5));}
+// .thumList.type3 .thumImg{width:324px; height:243px;}
+.thumList.type3 .tit{font-size: map-get($font_size, font_20); color:#fff; white-space: normal; margin-bottom: 10px;}
+.thumList.type3 .info{color:#fff;}
+.thumList.type3 .info li+li::before{background: #fff;}
+.thumList.type3 .tagWrap span{color:#fff; border-color:#fff;}
+
+/* Thumbnail list _ horizontal view : main grapic class */
+.thumList.type4{display: table; table-layout: fixed;}
+.thumList.type4 > li{display: table-cell; position: relative; word-break: break-all; width:324px; padding-left: 10px; padding-bottom: 0; vertical-align: top; border:0;}
+.thumList.type4 > li:first-child,
+.thumList.type4 > li:first-child .in{padding-left:0;}
+.thumList.type4 > li:first-child .in > a{padding-left: 24px;}
+.thumList.type4 > li + li{margin-top:0;}
+.thumList.type4 .in{position: absolute; bottom:0; left:0; z-index: 2; width:100%; height: 100%; padding-left:0px;}
+.thumList.type4 .in > a{position: absolute; bottom:0; left:0; z-index: 2; width:100%; padding:18px 24px 18px 34px;}
+.thumList.type4 .thum{position: relative; z-index: 0; width:324px; height:152px;}
+.thumList.type4 .thum .label{top:24px; left:24px; font-size: map-get($font_size, font_20); line-height: 26px; font-weight: 300; padding:0px; background:none; font-family: "Roboto";}
+.thumList.type4 .thum .cDim{position: absolute; bottom:0; left:0; z-index: 1; width:100%; height: 100%; background: linear-gradient(-180deg, rgba(0,0,0,0), rgba(0,0,0,0.2));}
+.thumList.type4 .thum .progWrap{height:6px;}
+// .thumList.type4 .thumImg{width:324px; height:152px;}
+.thumList.type4 .text{height:106px; padding:18px 24px;  border:1px solid #e3e3e3; border-top:0;}
+.thumList.type4 .tit{font-size: map-get($font_size, font_16); color:#000; line-height: 22px; font-weight:400; height: 47px; max-height: inherit; margin-bottom: 6px; white-space: normal; overflow: hidden;}
+.thumList.type4 .info{color:#000; font-weight: 400;font-size: map-get($font_size, font_13);}
+.thumList.type4 .info li+li::before{background: #eaeaea;}
+.thumList.type4 .info strong{display: inline-block; font-weight: 400; margin-right: 5px;}
+.thumList.type4 .info .point{color:#000 !important;}
+
+.thumList.type4 .moreBtnWrap{display: table-cell;vertical-align: middle; text-align: center; width: 137px; padding:0px 28px;color:#00adfb;font-size:12px;line-height: 22px;}
+.thumList.type4 .moreBtn .moreIcon{display:inline-block;background-image:url("../img/icon_more.png");width:44px;height:44px;background-size:44px;}
+
+
+/* Thumbnail list _ vertical view : 구복 */
+.thumList.type5 .tit{display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
+.thumList.type5 .writer{font-size:map-get($font_size, font_13); line-height: 19px; letter-spacing: -0.0036em; color:rgba(0,0,0,0.8);margin-top:5px;}
+.thumList.type5 .writer + .info{margin-top: 5px;line-height: 20px;}
+.thumList.type5 .info{margin-top: 7px;line-height: 20px;}
+.thumList.type5 .info li{vertical-align: middle}
+
+
+.thumList.type6 .thum{display: block; position: absolute; left:0; top:0; width:60px; height:90px;}
+// .thumList.type6 .thumImg{width:60px; height:90px;}
+.thumList.type6 .in{padding-left:75px;}
+/* tag */
+.tagWrap{font-size: 0;}
+.tagWrap span{display: inline-block; font-size: map-get($font_size, font_11); line-height: 20px; height: 21px; padding:0 7px; border:1px solid #d9d9d9; border-radius: 50px; vertical-align: top;color:rgba(0,0,0,0.8)}
+.tagWrap span + span{margin-left:4px;}
+
+
+
+
+
+/*  tab  */
+.tabMenu{display: table; width:100%; table-layout: fixed; background: #fff;}
+.tabMenu li{display:table-cell; color:#b9b9b9; width:50%; text-align:center; vertical-align:middle; border-bottom:1px solid #999;}
+.tabMenu li.on{color:#000; border:1px solid #999; border-bottom:1px solid #fff;}
+.tabMenu li a{display:block; font-size:map-get($font_size, font_15); line-height: 32px; font-weight: 500; letter-spacing: -0.045em; width:100%; height:100%;}
+
+.tabWrap.type2 .tabMenu{display: block; border-bottom:1px solid #d9d9d9;}
+.tabWrap.type2 .tabMenu li{display: inline-block; width:auto; border:0;}
+.tabWrap.type2 .tabMenu li + li{margin-left: 18px;}
+.tabWrap.type2 .tabMenu li a{font-size:map-get($font_size, font_15); ; color:#a2a2a2; line-height: 22px; letter-spacing: -0.045em; font-weight: 500; padding-bottom:5px;}
+.tabWrap.type2 .tabMenu li.on{border:0;}
+.tabWrap.type2 .tabMenu li.on a{color:#000; margin-bottom: -1px; }
+.tabWrap.type2 .tabCnt{padding-top:10px;}
+
+#headerTab .tabMenu{padding:0px 18px;display:table;table-layout: initial}
+#headerTab .tabMenu li{vertical-align: bottom;}
+
+.tabCnt{display:none; padding-top:23px; background: #fff;}
+
+
+/* 프로프래스바 */
+.progBox{position: relative; width:100%; height:2px; margin-top:19px; background: rgba(0,0,0,0.1);}
+.progBox .bar{position: absolute; left:0; top:0; z-index: 1; height:2px; background: #d9d9d9;}
+
+
+/* progress bar */
+.progWrap{display: block; position: absolute; left:0; bottom:0; z-index: 2; width:100%; height:4px; background: rgba(0,0,0,0.4)}
+.progWrap .bar{position: absolute; left:0; top:0; z-index: 1; height:100%;}
+
+
+/* Stepper */
+.stepper{margin-bottom: 36px;}
+.stepper .tit{float: left; font-size: map-get($font_size, font_16); line-height: 21px; letter-spacing: -0.072em; font-weight: 500;}
+.stepper .num{float: right; display: inline-block; font-size: map-get($font_size, font_16); line-height: 21px; letter-spacing: -0.032em;}
+.stepper .num strong{display: inline-block;  font-weight: 500; vertical-align: top;}
+.stepper .num span{font-weight: 500;}
+.stepper .progBox{position: relative; z-index: 1; height:4px; margin-top: 8px; border-radius: 10px; background: #f0f0f0; overflow: hidden;}
+.stepper .progBox .bar{position: absolute; left:0; top:0; z-index: 2; height: 100%; }
+.stepper .txt-desc{line-height: 18px; height:39px;}
+
+
+
+/* ***** layer ****** */
+.layerWrap{position:fixed; z-index:900; width:100%; padding:37px; margin:0 auto; text-align:center; overflow:hidden; }
+.layerWrap .ly-in{padding:26px; text-align: left; background:#fff;}
+.layerWrap .ly-hd{font-size:map-get($font_size, font_19); color:#000; line-height: 28px; font-weight: 500; letter-spacing: -0.057em; margin-bottom:12px;}
+.layerWrap .ly-body{font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.045em;color:rgba(0,0,0,0.65);font-weight: 400;    word-break: keep-all;max-height:239px;overflow: scroll}
+.layerWrap .ly-body .ly-info{color:rgba(0,0,0,0.80);margin-top:12px;font-weight: 500;}
+.layerWrap .ly-btn{text-align: right;margin-top:15px;}
+.layerWrap .ly-btn .btn{font-size:map-get($font_size, font_16); color:#666; line-height: 20px; font-weight: 500; letter-spacing: -0.048em; min-width: 60px; width:initial}
+.layerWrap .ly-btn .btn + .btn{margin-left:10px;}
+
+#dim{position:fixed; z-index:850; top:0; bottom:0; left:0; right:0; background:rgba(0,0,0,0.6)}
+
+
+/* CardList */
+.cardList > li{display: table; width:100%; position: relative;}
+.cardList > li + li{ margin-top: 10px; }
+.cardList .in{display: table-cell; position: relative; height:120px; padding-left:138px; vertical-align: middle;padding-right: 46px; width: calc( 100vw - 184px)}
+.cardList .thumImg{    width: 100%;  height: 100%;;}
+.cardList .tit{display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 23px; letter-spacing: -0.048em; max-height: 46px; margin-bottom: 5px; overflow: hidden;}
+.cardList .info{font-size: 0; color:rgba(0,0,0,0.8)}
+.cardList .text{background:#fff; padding:15px 20px 20px 20px; }
+.cardList .info .ico.star{margin-top:2px;}
+.cardList .info{font-size: 0; }
+.cardList .info .ico.star{vertical-align: middle; margin-top: -3px;}
+.cardList .info li{display: inline-block; font-size: map-get($font_size, font_13); letter-spacing: -0.036em; vertical-align: top;}
+.cardList .info li+li{margin-left: 6px;}
+.cardList .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 6px; background: #d9d9d9;}
+.cardList .info li.danger{color:map-get($static_colors, danger)}
+.cardList .card_buttons{color:rgba(0,0,0,0.65);font-size: map-get($font_size, font_13);margin-top:11px; }
+.cardList .card_buttons li{display:inline-block;padding:4px 7px;outline:1px solid #d9d9d9;outline-offset:-1px;}
+.cardList .card_buttons li+li{margin-left:6px;}
+
+
+.cardList .thum{position: relative; z-index: 0; width:100%; height: auto;}
+.cardList .thum .cDim{position: absolute; top:0; left:0; z-index: 1; width:100%; height: 50%; background: linear-gradient(-180deg, rgba(0,0,0,0.5), rgba(0,0,0,0));}
+
+.cardList.type1{display: table; table-layout: fixed;}
+.cardList.type1 > li{display: table-cell; position: relative; word-break: break-all; width:100%; padding-bottom: 0; vertical-align: top; border:0;}
+.cardList.type1 .info{font-weight: 400;font-size: map-get($font_size, font_13);}
+.cardList.type1 .info li+li::before{background: #eaeaea;}
+.cardList.type1 .moredot{width:20px;height:20px;position:absolute;top:26px;right:16px;background: url("../img/ic_moredots_wh_20.png") no-repeat;}
+.cardList.type1 .tit{font-size: map-get($font_size, font_16); color:#000; line-height: 22px; font-weight:400; height: 46px; max-height: inherit; margin-bottom: 5px; white-space: normal; overflow: hidden;}
+
+.cardList.type2{background:#fff;}
+.cardList.type2 .moredot{width:20px;height:20px;position:absolute;top:50px;right:9px;background: url("../img/ic_moredots_20.png") no-repeat;}
+.cardList.type2 .thum{display: block; position: absolute; left:0; top:0; width:120px; height:120px;}
+.cardList.type2 .tit{width: calc( 100vw - 184px );display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
+.cardList.type2 .writer{font-size:map-get($font_size, font_13); line-height: 19px; letter-spacing: -0.0036em; color:rgba(0,0,0,0.8);margin-top:5px;}
+.cardList.type2 .writer + .info{margin-top: 5px;line-height: 20px;}
+.cardList.type2 .info{margin-top: 7px;line-height: 20px;}
+.cardList.type2 .info li{vertical-align: middle}
+.cardList.type2 .info.type2{margin-top: 5px}
+
+.cardList.type2{background:#fff;}
+.cardList.type2 .series{margin-top:5px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: calc( 100vw - 184px ); }
+.cardList.type2 .series li{display:inline-block;}
+.cardList.type2 .series + .info{margin-top:5px;}
+.cardList.type2 .thum .label{font-size:map-get($font_size, font_12); font-weight : 500px ;color:#fff;padding:1px 7px;position: absolute;top:0px;left:0px;}
+
+
+.sidebar-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+
+

@@ -1,0 +1,191 @@
+
+// 로그인 - 연수원 찾기
+.trainIntro{    
+    position: relative;
+    z-index: 0; 
+    height:100%; 
+    text-align:center; 
+    background: url("../img/login_splash_bg.png") no-repeat center bottom; 
+    background-size: cover;
+}
+
+.trainIntro::after{ 
+    display: block; 
+    content:''; 
+    width:100%;
+    height:100%; 
+    background:rgba(0,0,0,0.1);
+}
+
+.trainIntro .txtWrap{    
+    position: absolute; 
+    top:125px; 
+    left:0; 
+    z-index: 1; 
+    font-size:map-get($font-size, font_32); 
+    font-weight:300;
+    color:#fff; 
+    line-height: 45px;
+    letter-spacing: -1.44px; 
+    width: 100%; 
+    padding:0 30px; 
+    text-align: left;
+}
+
+.trainIntro .btmBtn{
+    position: absolute; 
+    bottom:32px;
+    left:0; 
+    z-index: 1; 
+    width: 100%;         
+    padding:0 30px;
+}
+
+.trainIntro .btmBtn li+li{ margin-top:9px;}
+
+.trainIntro .btmBtn .btn{
+    position: relative; 
+    z-index: 1; 
+    font-size:map-get($font-size, font_16); 
+    color:rgba(0,0,0,0.8); 
+    line-height: 54px; 
+    letter-spacing: -0.48px; 
+    font-weight:500;
+    width:100%; 
+    padding:0 30px 0 18px; 
+    text-align: left; 
+    background:rgba(255,255,255,0.85);
+}
+
+.trainIntro .btmBtn li+li .btn .ico{
+    position: absolute; 
+    top:50%; 
+    right:10px;
+    width:16px; 
+    height:16px; 
+    margin-top:-8px; 
+}
+
+
+
+// 로그인 & 회원가입  인풋 or 버튼들 리스트형식 
+.ulList li .label-tit{font-weight: 500; }
+.ulList li .ul-block li+li{margin-top:10px;}
+.ulList li .input{color: rgba(0,0,0,0.65);}
+.ulList li .txt-desc{color:rgba(0,0,0,0.40);}
+.h-tit + .ulList{margin-top: 36px;}
+.txt-desc2 + .ulList{margin-top: 32px;}
+
+// 로그인 - 관심사 선택
+.ulList.type1 li+li{margin-top:28px;}
+.ulList.type1 .label-tit{display: block; font-size:map-get($font-size, font_15); line-height: 21px; letter-spacing: -0.45px; margin-bottom: 12px;}
+.ulList.type1 .label-tit:after{display: block; content: ''; clear: both;}
+.ulList.type1 .label-tit strong{display: inline-block; vertical-align: middle;}
+.ulList.type1 .in-chk{margin-top: -8px;}
+.ulList.type1 .in-chk .labelChk2{margin-top: 8px;}
+
+// 연수원 찾기 - 이메일 , url
+.ulList.type2 li{color:#595959;}
+.ulList.type2 li+li{margin-top:20px;}
+.ulList.type2 .label-tit{display: block; font-size:map-get($font-size, font_14); line-height: 20px; color:#000; letter-spacing: -0.42px; margin-bottom: 8px;}
+.ulList.type2 .in-chk{margin-top: -8px;}
+.ulList.type2 .in-chk .labelChk2{margin-top: 8px;}
+
+// 로그인 - 연수원 선택하기  type3
+.ulList.type3 li{border-bottom:1px solid #ebebeb;}
+.ulList.type3 li a{display: block; position: relative; z-index: 1; font-size:map-get($font-size, font_18); line-height:27px; letter-spacing: -0.54px; padding: 18px 30px 18px 2px;}
+.ulList.type3 li a .ico{position: absolute; top:50%; right:6px;}
+
+.ulList.type4{border-top:1px solid #bfbfbf;}
+.ulList.type4 li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:2px solid #eaeaea;}
+.ulList.type4 li > .labelChk{vertical-align: top;}
+.ulList.type4 li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
+
+// 개인정보 마케팅 활용 동의
+.cTitWrap + .ulList.type4{margin-top:17px;} 
+
+
+.ulList2 li a{display: table; table-layout: fixed; font-size: map-get($font-size, font_14); line-height: 42px; width:100%; height: 42px; border-bottom:1px solid #e3e3e3; }
+.ulList2 li .cate{display: table-cell; font-weight: 500; width:50px;}
+.ulList2 li .txt{display: table-cell; color:#000000; font-weight: 400; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.ulList2 li.no-date{display: table; width: 100%; border-bottom:1px solid #eaeaea;}
+.ulList2 li.no-date p{display: table-cell; font-size: map-get($font-size, font_15); color:#666; line-height: 18px; height:110px; text-align: center; vertical-align: middle;}
+.ulList2 li.no-date p .ico{width:19px; height: 18px;margin-right: 4px; vertical-align: top; background-position: 0 -190px;}
+
+
+
+
+
+
+/* 로그인 */
+#container.login .h-tit1{display: table; z-index: 2; width: 100%;line-height: 0;margin-bottom:0px;}
+#container.login .h-tit1.type_image{padding-bottom: 67px;padding-top: 65px;}
+#container.login .h-tit1.type_txt{padding-bottom:48px;padding-top:71px;}
+#container.login .h-tit1.type_multitxt{padding-bottom:31px;padding-top:52px;}
+#container.login .h-tit1.noguide.type_image{padding-top: 105px;}
+#container.login .h-tit1.noguide.type_txt{padding-top:111px;}
+#container.login .h-tit1.noguide.type_multitxt{padding-top:92px;}
+#container.login .h-tit1 img{height:25px; margin-left: 2px; vertical-align: top;}
+#container.login .h-tit1 p{display: table-cell;font-size: map-get($font-size, font_26);  line-height: 38px; letter-spacing: -0.78px; font-weight: 500;  height: auto; vertical-align: middle; overflow: hidden;}
+#container.login .loginBox .loginList li{position: relative;}
+#container.login .loginBox .loginList li + li{margin-top: 19px;}
+#container.login .loginBox .loginList .error-msg{position: absolute; left:0; top:45px; z-index: 1;}
+#container.login .loginBox .loginChk{margin-top:35px;}
+#container.login .loginBox input.chk + .ico {width:20px; height:20px;}
+#container.login .loginBox input.chk:checked + .ico {background-position: 0 0;}
+#container.login .loginBox .labelChk .label{color:#333; font-weight: 500; line-height: 20px; }
+#container.login .loginBox .labelChk + .labelChk{margin-left:30px;}
+#container.login .loginBox .loginBtn{margin-top:37px;}
+#container.login .loginBox .loginBtn .btn{width:100%;}
+#container.login .loginEtcBtn{margin-top:17px;color:rgba(0,0,0,0.8)}
+#container.login .loginEtcBtn:after{display: block; content:''; clear: both;}
+#container.login .loginEtcBtn li{float:left; line-height: 19px; vertical-align: middle;}
+#container.login .loginEtcBtn li + li{margin-left:11px;}
+#container.login .loginEtcBtn li + li::before{display: inline-block; content: ''; width:1px; height:9px; margin-right: 9px; vertical-align: middle; background:#b9b9b9;}
+#container.login .loginEtcBtn li a{display: inline-block; vertical-align: middle;}
+#container.login .loginGuide{margin-top:62px;}
+#container.login .loginGuide dt{font-weight: 500;line-height: 18px;margin-bottom: 3px;font-size: map-get($font-size, font_14);letter-spacing: -0.42px;color:rgba(0,0,0,0.8)}
+#container.login .loginGuide dd{font-size: map-get($font-size, font_13); color:rgba(0,0,0,0.4); letter-spacing: -0.39px; line-height: 19px;}
+
+// 로그인 - 관심사 선택
+.titTxtWrap{padding-top:0px;}
+.titTxtWrap .txt-tit{font-size:30px; line-height: 38px; font-weight:500; letter-spacing: -0.9px;}
+.titTxtWrap .txt-desc{font-size:13px; color:#1a1a1a; line-height: 20px; letter-spacing: -0.39px;}
+.titTxtWrap .txt-tit + .txt-desc{margin-top:8px;}
+
+
+// 용어사전
+#container.study_dictionary .h-tit5{letter-spacing: -0.12px;}
+#container.study_dictionary .h-tit5 .total_txt{letter-spacing: -0.38px;}
+#container.study_dictionary .h-tit5 .count{margin-left:5px;}
+
+#container.study_dictionary .multiList.type3 > li{  border-bottom:1px solid #e3e3e3;}
+#container.study_dictionary .multiList.type3 > li .in{width: calc(100vw - 66px);padding:16px 0 15px;}
+#container.study_dictionary .multiList.type3 .ico.arrow{position:absolute;right:0px;top:calc(50% - 8px);}
+
+#container.study_dictionary .multiList.type3 .in .title{font-size: map-get($font-size, font_16); line-height:22px; letter-spacing: -0.48px;font-weight: 500;margin-bottom:4px;}
+#container.study_dictionary .multiList.type3 .in .contents{font-size: map-get($font-size, font_14); line-height:20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65) }
+
+
+// 용어사전 - 상세
+
+#container.study_dictionary .titTxtWrap .txt-tit{font-size:26px; line-height: 22px; font-weight:500; letter-spacing: -0.78px;}
+#container.study_dictionary .titTxtWrap .txt-desc{font-size:15px; color:#1a1a1a; line-height: 25px; letter-spacing: -0.45px;}
+#container.study_dictionary .txt-tit + .txt-desc{margin-top:8px;}
+
+
+// 모범답안
+
+#container.study_dictionary .ba_img { width: 100%; height: auto; margin: 12px 0 20px;}
+#container.study_dictionary .titTxtWrap .txt-desc.ba{font-size:16px; color:#1a1a1a; line-height: 25px; letter-spacing: -0.48px;}
+
+// 토론방 - 수정/등록 
+
+#container .singleList.dis{margin-top: 8px; margin-bottom:20px;}
+#container .singleList.dis li{position: relative;}
+#container .singleList.dis .dis_num{outline: none; width: 156px; height: 44px;}
+#container .singleList.dis .dis_num:nth-child(1){margin-right: 12px; }
+#container .singleList.dis li .pos_a{position: absolute; top: 12px; right:16px; }
+#container .singleList.dis li input[type="number"]{ width: 100%;height: 44px; padding: 0 16px;}
+#container .singleList.dis li input[type=number]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0;} 
+#header p.end{width: auto;position: absolute;right: 14px;top: 0;}
