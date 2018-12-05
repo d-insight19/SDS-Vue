@@ -32,6 +32,8 @@ import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import StudySOassinmentbestanswer from '~workplace/study/Study_SO_assinment_bestanswer'
 import Study02discussedit from '~workplace/study/Study_02_discuss_edit'
+import StudySOsimulation from '~workplace/study/Study_SO_simulation'
+import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 
 // 1번 영역
 var rootRoutes = [
@@ -189,6 +191,16 @@ var rootRoutes = [
     path: '/Study_02_discuss_edit',
     name: 'Study_02_discuss_edit',
     component: Study02discussedit
+  },
+  {
+    path: '/Study_SO_simulation',
+    name: 'Study_SO_simulation',
+    component: StudySOsimulation
+  },
+  {
+    path: '/Study_03_LO_viewer_fs',
+    name: 'Study_03_LO_viewer_fs',
+    component: Study03LOviewerfs
   }
 ]
 

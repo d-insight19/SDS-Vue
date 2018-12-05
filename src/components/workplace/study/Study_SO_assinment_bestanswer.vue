@@ -18,7 +18,7 @@
                       <strong class="txt-tit">
                         1. OO은 OO해야합니다. 의견을 입력하세요.
                       </strong>
-                      <p class="ba_img">
+                      <p class="empty_img">
                         <img src="" alt="">
                       </p>
                       <p class="txt-desc ba">

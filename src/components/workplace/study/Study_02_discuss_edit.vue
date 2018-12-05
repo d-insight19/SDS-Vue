@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_dictionary">
+      <div id="container" class="mediaquery study_discuss">
             <!-- header -->
             <div id="header" class="fixed">
             <button type="button" class="btn only close"><span class="ico">닫기</span></button>
@@ -16,7 +16,13 @@
                 <div class="cell">
                   <div class="inner">
                     <div class="titTxtWrap">
-                      <slp-text-field type="text" placeholder="제목을 입력해 주세요" label="제목"></slp-text-field>
+                      <p class="">제목</p>
+                      <ul class="singleList dis">
+                        <li>
+                            <slp-text-field  type="text" placeholder="제목을 입력해 주세요" ></slp-text-field>
+                        </li>
+                      </ul>
+                      
                       <p class="">주제분류</p>
                       <ul class="singleList dis">
                         <li>
