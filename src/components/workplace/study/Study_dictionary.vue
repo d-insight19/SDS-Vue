@@ -24,7 +24,7 @@
                             <li>
                                 <div class="in">
                                     <div class="singleline title">교차 케이블</div>
-                                    <div class="multiline line2 contents">
+                                    <div class="singleline contents">
                                         두 컴퓨터의 케이블 핀의 접점을 각각 반대로 교차하여 두 컴퓨터를 연결하는데 사용하는 케이블. 데이터베이스에서 관계의 속성이나 레코드 항목의 값 이 실제로 존재할 수 없거나, 존재하는지
                                     </div>
                                 </div>
@@ -33,7 +33,7 @@
                             <li>
                                 <div class="in">
                                     <div class="singleline title">교차 케이블</div>
-                                    <div class="multiline line2 contents">
+                                    <div class="singleline contents">
                                         두 컴퓨터의 케이블 핀의 접점을 각각 반대로 교차하여 두 컴퓨터를 연결하는데 사용하는 케이블. 데이터베이스에서 관계의 속성이나 레코드 항목의 값 이 실제로 존재할 수 없거나, 존재하는지
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@
                             <li>
                                 <div class="in">
                                     <div class="singleline title">교차 케이블</div>
-                                    <div class="multiline line2 contents">
+                                    <div class="singleline contents">
                                         두 컴퓨터의 케이블 핀의 접점을 각각 반대로 교차하여 두 컴퓨터를 연결하는데 사용하는 케이블. 데이터베이스에서 관계의 속성이나 레코드 항목의 값 이 실제로 존재할 수 없거나, 존재하는지
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@
                             <li>
                                 <div class="in">
                                     <div class="singleline title">교차 케이블</div>
-                                    <div class="multiline line2 contents">
+                                    <div class="singleline contents">
                                         두 컴퓨터의 케이블 핀의 접점을 각각 반대로 교차하여 두 컴퓨터를 연결하는데 사용하는 케이블. 데이터베이스에서 관계의 속성이나 레코드 항목의 값 이 실제로 존재할 수 없거나, 존재하는지
                                     </div>
                                 </div>
@@ -60,7 +60,7 @@
                             <li>
                                 <div class="in">
                                     <div class="singleline title">교차 케이블</div>
-                                    <div class="multiline line2 contents">
+                                    <div class="singleline contents">
                                         두 컴퓨터의 케이블 핀의 접점을 각각 반대로 교차하여 두 컴퓨터를 연결하는데 사용하는 케이블. 데이터베이스에서 관계의 속성이나 레코드 항목의 값 이 실제로 존재할 수 없거나, 존재하는지
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@
                             <li>
                                 <div class="in">
                                     <div class="singleline title">교차 케이블</div>
-                                    <div class="multiline line2 contents">
+                                    <div class="singleline contents">
                                         두 컴퓨터의 케이블 핀의 접점을 각각 반대로 교차하여 두 컴퓨터를 연결하는데 사용하는 케이블. 데이터베이스에서 관계의 속성이나 레코드 항목의 값 이 실제로 존재할 수 없거나, 존재하는지
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@
                             <li>
                                 <div class="in">
                                     <div class="singleline title">교차 케이블</div>
-                                    <div class="multiline line2 contents">
+                                    <div class="singleline contents">
                                         두 컴퓨터의 케이블 핀의 접점을 각각 반대로 교차하여 두 컴퓨터를 연결하는데 사용하는 케이블. 데이터베이스에서 관계의 속성이나 레코드 항목의 값 이 실제로 존재할 수 없거나, 존재하는지
                                     </div>
                                 </div>

@@ -12,8 +12,11 @@
 .ico.like{width:16px;height:16px;background: url("../img/ic_thumb_line_16.png") no-repeat; }
 .ico.time{width:16px;height:16px;background: url("../img/ic_time_line_16.png") no-repeat; }
 .ico.view{width:16px;height:16px;background: url("../img/ic_view_line_16.png") no-repeat; }
-.ico.arrow{width:16px;height:16px;background: url("../img/ic_next_16.png") no-repeat; }
+.ico.arrow{width:16px;height:16px;background: url("../img/ic_next_line_black.png") no-repeat; background-size: contain; }
 .ico.gray_next{width:16px;height:16px;background: url("../img/ic_next.png") no-repeat; }
+
+/* 추가이미지 */
+.ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }
 
 
 
@@ -32,6 +35,12 @@
 
 .btn.sm.add{text-align: center;}
 .btn.sm.add .ico{width:8px; height:8px; margin:0 4px 3px 0; background-position: -120px -67px;}
+
+/* font-weight -> 500  */
+.fwl{font-weight: 300 !important;}
+.fwr{font-weight: 400 !important;}
+.fwb{font-weight: 500 !important;}
+.fwb600{font-weight: 600 !important;}
 
 
 
@@ -71,13 +80,17 @@
 .w100p{width:100%;}
 
 
-/* padding */
-
-
 /* margin */
 .mt0{margin-top: 0px !important;}
 .mt10{margin-top: 10px !important;}
+.mt24{margin-top: 24px !important;}
+.mt34{margin-top: 34px !important;}
+.mt36{margin-top: 36px !important;}
+.mt38{margin-top: 38px !important;}
 .mt40{margin-top: 40px !important;}
+.mt42{margin-top: 42px !important;}
+.mt48{margin-top: 48px !important;}
+
 
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
@@ -93,6 +106,7 @@
 .hr{height:8px; margin: 25px -24px; background:#f6f6f6;}
 
 
+
 .mainType .h-tit{font-weight:600; margin:8px 0px 13px 0px}
 .mainType .h-tit2{font-weight:600; margin:0 0 13px;}
 
@@ -106,17 +120,20 @@
 #container.type3 .h-tit5 , #container.type4 .h-tit5 , #container.type5 .h-tit5{margin-bottom:12px}
 
 /* text */
-.txt-desc{font-size: 12px; color:#595959; letter-spacing: -0.06em; line-height: 15px; margin-top: 8px; }
+/* .txt-desc{font-size: 12px; color:#595959; letter-spacing: -0.06em; line-height: 15px; margin-top: 8px; } */
 .txt-desc2{font-size: 13px; color:#1a1a1a; letter-spacing: -0.06em; line-height: 20px; font-weight: 300; margin-top: 8px; }
 .txt-desc2 .point2{font-weight: 400; }
 .txt-desc2 + .certList{margin-top:13px;}
 .txt-desc3{font-size: 14px; color:#1a1a1a; letter-spacing: -0.042em; line-height: 18px; font-weight: 400; margin-top: 8px; }
 
-.fwb{font-weight: 500;}
-
 
 /* cBox */
 .cBox + .cBox{margin-top:40px;}
+
+/* link */
+.link{display: inline-block; color:#00adfb;}
+.link .ico.arr{width:4px; height: 10px; margin-left: 4px; background-position: -279px -67px;}
+
 
 
 
@@ -135,29 +152,4 @@
 .btmBtn li + li .btn{border-left:0;} 
 */
 
-/* link */
-.link{display: inline-block; color:#00adfb !important;}
-.link .ico.arr{width:4px; height: 10px; margin-left: 4px; background-position: -279px -67px;}
 
-
-
-
-
-
-
-/* ***** guide ****** */
-.guideList li{position: relative; font-size:12px; color:#595959; line-height: 18px; padding-left:10px; letter-spacing: -0.06em;}
-.guideList li + li{margin-top: 5px;}
-.guideList li::before{display: inline-block; position: absolute; top:8px; left:0; z-index: 2; content: ''; width:2px; height: 2px; background: rgba(0,0,0,0.5);}
-
-
-
-
-
-
-
-
-
-/* toast popup */
-.toast{position:fixed; bottom:0; z-index:100; width:100%; padding:16px;}
-.toast .in{font-size:13px; color:#fff; line-height: 20px; letter-spacing: -0.039em; font-weight: 300; padding:17px 20px; border-radius: 4px; background: rgba(34,34,34,0.96);}

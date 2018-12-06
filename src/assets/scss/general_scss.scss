@@ -43,9 +43,6 @@ $brand_colors: (
     .clr3{
       background: map-get($color,clr3) !important;
     }
-    .clr4{
-      background: map-get($color,clr4) !important;
-    }
     .color_clr1{
       color: map-get($color,clr1) !important;
     }    
@@ -54,9 +51,6 @@ $brand_colors: (
     }    
     .color_clr3{
       color: map-get($color,clr3) !important;
-    }
-    .color_clr4{
-      color: map-get($color,clr4) !important;
     }
     input.underline:focus{
       border:0 !important;
@@ -71,11 +65,25 @@ $brand_colors: (
     }
     // 체크박스 유형1
     .labelChk2 input.chk:checked + .label{
-      color:#fff; 
+      color:#fff !important; 
       background: map-get($color,clr2);
     }
+    // 체크박스 유형2
+    input.chk:checked + .ico{
+      background: map-get($color,clr2) url("../img/ic_checked_wh_20.png") no-repeat;
+      background-size: cover;
+    }
+    // 라디오 버튼(박스) 체크아이콘
+    .rdoSelBox .labelRdo .rdo:checked + .ico{
+      background: map-get($color,clr2) url("../img/ic_checked_wh_20.png") no-repeat;
+      background-size: cover;
+    }
     // 라디오 버튼
-    .labelRdo .rdo:checked + .ico + .label{
+    .labelRdo input.rdo:checked + .ico{
+      background: map-get($color,clr2);
+    }
+    // 라디오 버튼( 체크아이콘 박스)
+    .rdoSelBox .labelRdo .rdo:checked + .ico + .label{
       border : 1px solid  map-get($color,clr2) !important
     }
     //스위치
@@ -84,10 +92,17 @@ $brand_colors: (
     }
     /* form error */
     input.succ{border-color:map-get($color , clr2);}
-    .succ-msg{color:map-get($color , clr2);}
+    .succ-msg, .succ{color:map-get($color , clr2);}
+    
+    // 메인화면 헤더
+    #header.mainType, #header.mainType2{background: map-get($color,clr1) !important;}
+
+    // 메인화면 아이콘
+    #header.mainType .btn.allMenu .ico.new,
+    #header.mainType2 .btn.allMenu .ico.new{border:2px solid map-get($color,clr1)}
   }
 }
-// Including themes 
+// Including themes. 
 // By looping through the $themes map
 @each $key, $value in $brand_colors {
   @include theme($key, $value);
@@ -154,6 +169,7 @@ $bg_colors: (
 
 // Font Size  rem 사용.  html 태그에 지정안할 시 default = 16px
 $font_size: (
+  font_10 : 0.625rem,
   font_11 : 0.6875rem,
   font_12 : 0.75rem,
   font_13 : 0.8125rem,

@@ -15,7 +15,7 @@
                 <!-- 가이드 O : 텍스트일 경우 -->
                 <h1 class="h-tit1 type_txt" style="display:none;"><p>한국도로공사 연수원</p></h1>
                 <!-- 가이드 O : 텍스트 2줄일 경우 -->
-                <h1 class="h-tit1 type_multitxt" style="display:none;"><p>한국가스안전공사<br>사이버 연수원</p></h1>
+                <h1 class="h-tit1 type_multitxt" style="display:none;"><p>한국가스안전공사 사이버 연수원</p></h1>
 
                 <!-- 가이드 X : 로고 이미지일 경우 -->
                 <h1 class="h-tit1 type_image noguide" style="display:none;">
@@ -24,7 +24,7 @@
                 <!-- 가이드 X : 텍스트일 경우 -->
                 <h1 class="h-tit1 type_txt noguide" style="display:none;"><p>한국도로공사 연수원</p></h1>
                 <!-- 가이드 X : 텍스트 2줄일 경우 -->
-                <h1 class="h-tit1 type_multitxt noguide" style="display:none;"><p>한국가스안전공사<br>사이버 연수원</p></h1>
+                <h1 class="h-tit1 type_multitxt noguide" style="display:none;"><p>한국가스안전공사 사이버 연수원</p></h1>
 
                 <fieldset class="loginBox">
                     <legend>아이디 비밀번호 입력</legend>

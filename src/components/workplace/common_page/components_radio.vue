@@ -9,22 +9,38 @@
                 <li>
                     <label class="labelRdo">
                         <input type="radio" class="rdo" name="test-rdo">
-                        <span class="ico"></span>
+                        <span class="ico">
+                            <span class="innerCircle"></span>
+                        </span>
                         <span class="label">선택가능</span>                    
                     </label>
                 </li>
                 <li>
                     <label class="labelRdo">
                         <input type="radio" class="rdo" name="test-rdo" checked>
-                        <span class="ico"></span>
+                        <span class="ico">
+                            <span class="innerCircle"></span>
+                        </span>
                         <span class="label">선택함</span>                    
                     </label>
                 </li>
                 <li>
                     <label class="labelRdo">
                         <input type="radio" class="rdo" name="test-rdo" disabled>
-                        <span class="ico"></span>
+                        <span class="ico">
+                            <span class="innerCircle"></span>
+                        </span>
                         <span class="label">선택불가능</span>                    
+                    </label>
+                </li>
+
+                <li>
+                    <label class="labelRdo">
+                        <input type="radio" class="rdo" name="test-rdo" checked>
+                        <span class="ico">
+                            <span class="innerCircle"></span>
+                        </span>
+                        <span class="label">선택함</span>                    
                     </label>
                 </li>
             </ul>

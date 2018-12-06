@@ -32,28 +32,36 @@
                         <li>
                             <label class="labelRdo">
                                 <input type="radio" class="rdo" name="test-rdo">
-                                <span class="ico"></span>
+                                <span class="ico">
+                                    <span class="innerCircle"></span>
+                                </span>
                                 <span class="label">스타벅스</span>                    
                             </label>
                         </li>
                         <li>
                             <label class="labelRdo">
                                 <input type="radio" class="rdo" name="test-rdo" checked>
-                                <span class="ico"></span>
+                                <span class="ico">
+                                    <span class="innerCircle"></span>
+                                </span>
                                 <span class="label">탐앤탐스</span>                    
                             </label>
                         </li>
                         <li>
                             <label class="labelRdo">
                                 <input type="radio" class="rdo" name="test-rdo">
-                                <span class="ico"></span>
+                                <span class="ico">
+                                    <span class="innerCircle"></span>
+                                </span>
                                 <span class="label">이디야</span>                    
                             </label>
                         </li>
                         <li>
                             <label class="labelRdo">
                                 <input type="radio" class="rdo" name="test-rdo">
-                                <span class="ico"></span>
+                                <span class="ico">
+                                    <span class="innerCircle"></span>
+                                </span>
                                 <span class="label">할리스</span>                    
                             </label>
                         </li>

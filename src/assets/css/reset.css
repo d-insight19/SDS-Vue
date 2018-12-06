@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /* fonts */
+
 @font-face {
     font-family: 'Noto Sans KR';
     font-style: normal;
@@ -26,7 +27,41 @@
     src: url(fonts/NotoSansKR-Medium.woff2) format('woff2'),
        url(fonts/NotoSansKR-Medium.woff) format('woff'),
        url(fonts/NotoSansKR-Medium.otf) format('opentype');
-}
+} 
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 600;
+    src: url(fonts/NotoSansKR-Medium.woff2) format('woff2'),
+       url(fonts/NotoSansKR-Medium.woff) format('woff'),
+       url(fonts/NotoSansKR-Medium.otf) format('opentype');
+} 
+
+@font-face {
+    font-family: 'test';
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/NotoSansCJKkr-Light.woff) format('woff');
+} 
+@font-face {
+    font-family: 'test';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/NotoSansCJKkr-Regular.woff) format('woff');
+} 
+@font-face {
+    font-family: 'test';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/NotoSansCJKkr-Medium.woff) format('woff');
+} 
+@font-face {
+    font-family: 'test';
+    font-style: normal;
+    font-weight: 600;
+    src: url(fonts/NotoSansCJKkr-Bold.woff) format('woff');
+} 
 
 
 @font-face {
@@ -63,7 +98,7 @@ iframe {overflow-x:hidden; overflow-y:hidden; margin:0; padding:0; border:none;}
 dl, ul, ol, menu, li {list-style:none;}
 blockquote, q {quotes:none}
 blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
-input, textarea, label, button {font-size:14px; color:#000; vertical-align:middle; border-radius: 0; font-family: 'Noto Sans KR', "Apple SD Gothic Neo", sans-serif, Arial; outline: none; -webkit-appearance: none; -moz-appearance: none;}
+input, textarea, label, button {font-size:14px; color:rgba(0,0,0,0.8); vertical-align:middle; border-radius: 0; font-family: 'Noto Sans KR', "Apple SD Gothic Neo", sans-serif, Arial; outline: none; -webkit-appearance: none; -moz-appearance: none;}
 option{ font-family: 'Noto Sans KR', "Apple SD Gothic Neo", sans-serif, Arial}
 button,label {cursor:pointer; background:none; border:none;}
 button {border:none; background-color:transparent; }

@@ -12,7 +12,7 @@
 
 
 /* 통합 회원가입 */
-.joinTypeBox dt{font-size:18px; line-height: 27px; letter-spacing: -0.072px; padding-bottom: 6px; border-bottom:1px solid #d9d9d9;}
+.joinTypeBox dt{font-size:18px; line-height: 27px; letter-spacing: -0.072px; padding-bottom: 6px}
 .joinTypeBox dd{color:#333; margin-top:16px;}
 .joinTypeBox dd .point{font-size:10px; margin-top:4px;}
 .joinTypeBox dl + dl{margin-top:52px;}
@@ -29,12 +29,13 @@
 .joinProgBox .progBox .bar{position: absolute; left:0; top:0; z-index: 2; height: 100%; background: #5282ff;}
 .joinProgBox .txt-desc{line-height: 18px; height:39px;}
 /* 스텝퍼라 지워줘야함.*/
-
+/* 통합회원가입 가입인증 리스트 지워워야함*/
 .certList li{position: relative; z-index: 1;}
 .certList li .btn{display: block; line-height: 52px; padding:0 40px 0 19px; border:1px solid #d4d4d4;}
 .certList li .btn .ico{position: absolute; top:50%; right:19px; width:8px; height:12px; margin-top:-6px; background-position: 0 -67px;}
 .certList li + li{margin-top: 12px;}
 .certList + .guideList{margin-top: 16px;}
+/* 통합회원가입 가입인증 리스트 지워워야함*/
 
 .agreeAll .label{font-size:16px; letter-spacing: -0.072em; font-weight: 500;}
 .agreeAll + .agreeList{margin-top: 18px;}
@@ -43,10 +44,7 @@
 .agreeList li > .labelChk{vertical-align: top;}
 .agreeList li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
 
-.agreeCnt{line-height: 20px; letter-spacing: -0.063em;}
-.agreeCnt .agree-tit{font-size:14px; font-weight: 500; margin-bottom: 8px;}
-.agreeCnt .agree-txt{font-size:12px; color:#595959;}
-.agreeCnt .agree-txt + .agree-tit{margin-top:20px;}
+
 
 .infoChk{position: relative; font-size: 0; padding-right: 98px;}
 .infoChk .btn{position: absolute; right:0; top:0; z-index: 1; width:90px;}
@@ -54,8 +52,7 @@
 .infoChk2 .input{padding:0; border:0; border-bottom:1px solid #d9d9d9; background:#fff;}
 .infoChk2 .btn{position: absolute; right:0; top:0; z-index: 1; width:90px;}
 
-.rdoInfoChK{position: relative; padding-left:30px;}
-.rdoInfoChK .labelRdo{position: absolute; left:0; top:11px; z-index: 1;}
+
 
 .addrInt li + li{margin-top: 5px !important;}
 
@@ -74,14 +71,6 @@
 .birthInt .select{width:32%;}
 .birthInt .select + .select{margin-left:2%;}
 
-.join-id{display: table; width:100%; padding-bottom: 15px; border-bottom:1px solid #bfbfbf;}
-.join-id .label-tit{display: table-cell !important; font-size:15px !important; font-weight: 400 !important; line-height: 20px !important; letter-spacing: -0.068em; width:50px; margin-bottom: 0px !important;}
-.join-id .label-txt{display: table-cell !important; font-size:16px; font-weight: 500; line-height: 20px; word-break: break-all;}
-
-.join-id.type2{padding-bottom:0; border-bottom:0;}
-.join-id.type2 + .txt-desc{margin-top: 4px;}
-
-.join-idWrap{margin-bottom: 16px;}
 
 /* 회원가입 완료 */
 .joinComp-tit{margin-top: 45px;}

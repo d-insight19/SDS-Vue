@@ -49,6 +49,7 @@ button.btn{
 /* title */
 .h-tit{ font-size: map-get($font_size, font_30); line-height: 45px; font-weight:500; letter-spacing: -0.9px; margin: 12px 0 17px; }
 .h-tit1{font-size: map-get($font_size, font_26); line-height: 38px; font-weight:500; letter-spacing: -0.78px; margin-bottom: 28px;}
+.h-tit1.type2{margin-bottom:36px;}
 .h-tit2{font-size: map-get($font_size, font_20); line-height: 29px; font-weight:500; letter-spacing: -0.6px; margin-bottom: 28px;}
 .h-tit3{font-size: map-get($font_size, font_18); line-height: 27px; font-weight:500; letter-spacing: -0.54px;}
 .h-tit4{font-size: map-get($font_size, font_16); line-height: 24px; font-weight:500; letter-spacing: -0.48px;}
@@ -91,7 +92,7 @@ button.btn{
 .fixBtmBtn{position: fixed; left:0; bottom:0; z-index: 100; width:100%;}
 .fixBtmBtn ul{display: table; table-layout: fixed; width: 100%;}
 .fixBtmBtn li{display: table-cell;}
-.fixBtmBtn li .btn{width:100%; height:54px; border:0; border-top:1px solid #bfbfbf;}
+.fixBtmBtn li .btn{width:100%; height:54px; border:0; border-top:1px solid #bfbfbf;font-weight: 500;}
 .fixBtmBtn li .btn[disabled]{color:#c1c1c1 !important; border-top:1px solid #bfbfbf !important; background: #ededed !important;}
 .fixBtmBtn li + li .btn[disabled]{border-left:1px solid #e0e0e0 !important;}
 
@@ -99,7 +100,7 @@ button.btn{
 // 로그인시 password , 검색 input 에만 적용되는 x 아이콘 
 .search-wrapper {position: relative;}
 .search-wrapper .close-icon {border:1px solid transparent;background-color: transparent;display: inline-block;vertical-align: middle;outline: 0;cursor: pointer;position:absolute;top:50%;right:0px;margin-top: -12px;width: 24px;height: 24px;}
-.search-wrapper .close-icon:after {content: "";display: block;width: 24px;height: 24px;position: absolute;z-index:1;right: 2px;top: 0;bottom: 0;margin: auto;padding: 2px;text-align: center;color: #000;font-weight: normal;font-size: 12px;cursor: pointer;-webkit-appearance: none;border-radius:10px;background:url("../img/ic_delete_input.png") no-repeat;}
+.search-wrapper .close-icon:after {content: "";display: block;width: 24px;height: 24px;position: absolute;z-index:1;right: 13px;top: 0;bottom: 0;margin: auto;padding: 2px;text-align: center;color: #000;font-weight: normal;font-size: 12px;cursor: pointer;-webkit-appearance: none;border-radius:10px;background:url("../img/ic_delete_input.png") no-repeat;}
 input[type="text"]:not(:invalid) ~ .close-icon,
 input[type="password"]:not(:invalid) ~ .close-icon,
 input[type="search"]:not(:invalid) ~ .close-icon {
@@ -108,7 +109,7 @@ input[type="search"]:not(:invalid) ~ .close-icon {
 
 .intSchBox .close-icon{right : 32px}
 
-input[type="text"].underline, input[type="password"].underline, input[type="search"].underline{
+input[type="text"].underline, input[type="password"].underline, input[type="search"].underline, input[type="number"].underline{
   border:0;
   border-bottom: 1px solid #d9d9d9;
   background: #ffffff;
@@ -117,7 +118,7 @@ input[type="text"].underline, input[type="password"].underline, input[type="sear
 }
 
 /* ***** form ***** */
-input[type="text"],input[type="password"],input[type="search"]{
+input[type="text"],input[type="password"],input[type="search"],input[type="number"]{
   width:100%; 
   height:44px; 
   padding:0 16px; 
@@ -164,22 +165,26 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 /* radio */
 .labelRdo{display:inline-block;}
 .labelRdo input.rdo + .ico {display:inline-block; width:22px; height:22px; margin:0px 6px 0 0; vertical-align:top; border:1px solid #b1b1b1; border-radius: 50px; background:none; cursor:pointer;}
-.labelRdo input.rdo:checked + .ico {border:0; background:url("../img/ico_com.png") no-repeat; background-position:0 -30px; background-size:400px auto; }
-.labelRdo input.rdo:disabled + .ico {border:0; background:url("../img/ico_com.png") no-repeat; background-position:-24px -30px; background-size:400px auto; }
-.labelRdo input.rdo:disabled + .ico + .label{color:#c9c9c9;}
+.labelRdo input.rdo + .ico .innerCircle{
+  width: 14px;height: 14px;border: 1px solid #fff;border-radius: 50%;display: none;margin: 4px;
+}
+.labelRdo input.rdo:checked + .ico .innerCircle{display:inline-block;}
+.labelRdo input.rdo:checked + .ico {border:0;  }
+.labelRdo input.rdo:disabled + .ico {    border: 1px solid rgba(0,0,0,0.10);  background: rgba(0,0,0,0.05);  }
+.labelRdo input.rdo:disabled + .ico + .label{color:rgba(0,0,0,0.25);}
 .labelRdo .label{display: inline-block; line-height: 22px;}
 
 
 /* check box */
 .labelChk{display:inline-block;}
 .labelChk input.chk + .ico {display:inline-block; width:20px; height:20px; margin:0px 5px 0 0; vertical-align:top; border:1px solid #d3d3d3; background:none; cursor:pointer;}
-.labelChk input.chk:checked + .ico {border:0; background: url("../img/ico_com.png") no-repeat -24px 0; background-size:auto 400px;}
-.labelChk input.chk:disabled + .ico {border:0; background: url("../img/ico_com.png") no-repeat -50px 0; background-size:auto 400px;}
-.labelChk input.chk:disabled + .ico + .label{color:#c9c9c9;}
+.labelChk input.chk:checked + .ico {border:0;  }
+.labelChk input.chk:disabled + .ico {border: 1px solid rgba(0,0,0,0.10);  background: rgba(0,0,0,0.05);  }
+.labelChk input.chk:disabled + .ico + .label{color:rgba(0,0,0,0.25);}
 .labelChk .label{display: inline-block; font-size:map-get($font_size, font_14); line-height: 20px; vertical-align: top;}
 
-// 관심사 선택 ( select ) 
-.labelChk2{display:inline-block; margin-right:5px;}
+// 체크박스2 관심사 선택 ( select ) 
+.labelChk2{display:inline-block; margin-right:8px;}
 .labelChk2 input.chk + .label {display:inline-block; font-size:map-get($font_size, font_12); line-height: 34px; padding:0 16px; border-radius: 80px; background: #f5f5f5; cursor:pointer;}
 // .labelChk2 .label{display: inline-block; font-size:map-get($font_size, font_14); line-height: 20px; vertical-align: top;}
 
@@ -199,16 +204,16 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 /* 라디오 */
 .rdoSelBox{font-size: 0;}
 .rdoSelBox .labelRdo{position: relative; width: 50%; height: 44px;}
-.rdoSelBox .labelRdo .rdo + .ico {display:inline-block; position: absolute; right:18px; top:50%; width:18px; height:18px; margin:-9px 0 0 0; vertical-align:top; border:0; background:none; cursor:pointer;}
+.rdoSelBox .labelRdo .rdo + .ico {display:inline-block; position: absolute; right:20px; top:50%; width:18px; height:18px; margin:-9px 0 0 0; vertical-align:top; border:0; background:none; cursor:pointer;}
 .rdoSelBox .labelRdo .rdo + .ico + .label{line-height: 42px; width:100%; height: 44px; padding:0 19px ; margin-left:-1px; border: 1px solid #e3e3e3;}
-.rdoSelBox .labelRdo .rdo:checked + .ico {border:0; background:url("../img/ico_com.png") no-repeat; background-position:-188px -67px; background-size:400px auto; }
+.rdoSelBox .labelRdo .rdo:checked + .ico {border:0; }
 .rdoSelBox .labelRdo .rdo:checked + .ico + .label{position: absolute; z-index: 1; line-height: 42px; height:44px;}
 .rdoSelBox .labelRdo + .labelRdo{margin-left:-1px;}
 .rdoSelBox .labelRdo + .labelRdo .rdo + .ico + .label{border-left:0;}
 .rdoSelBox .labelRdo + .labelRdo .rdo:checked + .ico + .label{padding-left:18px;}
 .rdoSelBox + .addrInt,
 .InfoChK-resultTxt + .addrInt{margin-top:8px;}
-.rdoSelBox.err .rdo + .ico + .label{border-color: map-get($static_colors, danger);}
+.rdoSelBox.err .rdo + .ico + .label{border-color: map-get($static_colors, danger);border-right: 1px solid #cccccc;}
 
 /* select */
 .select{font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); height:44px; padding:0 15px; background: #f5f5f5 url("../img/ico_sel.png") no-repeat; background-size:28px 16px; background-position: right 14px;  -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-appearance:none;-moz-appearance:none;appearance:none;}
@@ -244,7 +249,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 /* Multiline List : + meta text */
 .multiList > li{display:table;width:100%;position: relative;}
 .multiList > li .metatxt{position: absolute; top: calc(50% - 20px);right:3px;line-height:20px;font-size:map-get($font_size, font_17);}
-.multiList > li .in{display: table-cell; position: relative; height:100%;vertical-align: middle; width: calc(100vw - 92px); padding:10px 0px 13px 0px;;}
+.multiList > li .in{display: table-cell; position: relative; height:100%;vertical-align: middle; width: calc(100% - 92px); padding:10px 0px 13px 0px;;}
 .multiList .multiline{font-size: map-get($font_size, font_16);line-height: 22px;max-height:68px;}
 
 
@@ -263,18 +268,18 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .multiList.type2 > li .icon_wrap .ico2{position: absolute;top:0px;left:0px;}
 .multiList.type2 > li .txt_wrap{display:table-cell;border-bottom:1px solid #e3e3e3;width: calc(100% - 30px);padding-bottom: 15px;}
 .multiList.type2 .icon_txt{font-size:map-get($font_size, font_14);font-weight: 600;line-height: 20px}
-.multiList.type2 .title{margin-top:5px;font-size:map-get($font_size, font_16);line-height: 22px;white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;  width: calc( 100vw - 66px);}
+.multiList.type2 .title{margin-top:5px;font-size:map-get($font_size, font_16);line-height: 22px;white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;  width: calc( 100% - 66px);}
 .multiList.type2 .contents{margin-top:5px;font-size:map-get($font_size, font_14);line-height: 21px;color:rgba(0,0,0,0.65)}
 
 //지식 클리핑
 .multiList.type3 > li{  border-bottom:1px solid #e3e3e3;}
-.multiList.type3 > li .in{width: calc(100vw - 34px);padding:0;padding-bottom: 20px;}
+.multiList.type3 > li .in{width: calc(100% - 34px);padding:0;padding-bottom: 20px;}
 .multiList.type3 .ico.arrow{position:absolute;right:0px;top:calc(50% - 18px);}
 
 
 //나의공간
 .multiList.type4 > li{  border-bottom:1px solid #e3e3e3;}
-.multiList.type4 > li .in{width: calc(100vw - 34px);padding:0;padding-bottom: 20px;}
+.multiList.type4 > li .in{width: calc(100% - 34px);padding:0;padding-bottom: 20px;}
 .multiList.type4 .title{font-size:map-get($font_size, font_16);line-height: 22px;letter-spacing: 0.48px;font-weight: 500;}
 .multiList.type4 .sub_title{font-size:map-get($font_size, font_13);line-height: 20px;letter-spacing: 0.39px;}
 .multiList.type4 .sub_title strong{display:inline-block;font-weight: 500;margin-right:6px;}
@@ -413,7 +418,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .stepper .num span{font-weight: 500;}
 .stepper .progBox{position: relative; z-index: 1; height:4px; margin-top: 8px; border-radius: 10px; background: #f0f0f0; overflow: hidden;}
 .stepper .progBox .bar{position: absolute; left:0; top:0; z-index: 2; height: 100%; }
-.stepper .txt-desc{line-height: 18px; height:39px;}
+.stepper .txt-desc{line-height: 18px; height:39px;font-size: map-get($font_size , font_12); color:rgba(0,0,0,0.65); letter-spacing: -0.36px ; margin-top:8px;    font-weight: 300; }
 
 
 
@@ -433,7 +438,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 /* CardList */
 .cardList > li{display: table; width:100%; position: relative;}
 .cardList > li + li{ margin-top: 10px; }
-.cardList .in{display: table-cell; position: relative; height:120px; padding-left:138px; vertical-align: middle;padding-right: 46px; width: calc( 100vw - 184px)}
+.cardList .in{display: table-cell; position: relative; height:120px; padding-left:138px; vertical-align: middle;padding-right: 46px; width: calc( 100% - 184px)}
 .cardList .thumImg{    width: 100%;  height: 100%;;}
 .cardList .tit{display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 23px; letter-spacing: -0.048em; max-height: 46px; margin-bottom: 5px; overflow: hidden;}
 .cardList .info{font-size: 0; color:rgba(0,0,0,0.8)}
@@ -463,7 +468,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .cardList.type2{background:#fff;}
 .cardList.type2 .moredot{width:20px;height:20px;position:absolute;top:50px;right:9px;background: url("../img/ic_moredots_20.png") no-repeat;}
 .cardList.type2 .thum{display: block; position: absolute; left:0; top:0; width:120px; height:120px;}
-.cardList.type2 .tit{width: calc( 100vw - 184px );display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
+.cardList.type2 .tit{width: calc( 100% - 184px );display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
 .cardList.type2 .writer{font-size:map-get($font_size, font_13); line-height: 19px; letter-spacing: -0.0036em; color:rgba(0,0,0,0.8);margin-top:5px;}
 .cardList.type2 .writer + .info{margin-top: 5px;line-height: 20px;}
 .cardList.type2 .info{margin-top: 7px;line-height: 20px;}
@@ -471,7 +476,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .cardList.type2 .info.type2{margin-top: 5px}
 
 .cardList.type2{background:#fff;}
-.cardList.type2 .series{margin-top:5px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: calc( 100vw - 184px ); }
+.cardList.type2 .series{margin-top:5px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: calc( 100% - 184px ); }
 .cardList.type2 .series li{display:inline-block;}
 .cardList.type2 .series + .info{margin-top:5px;}
 .cardList.type2 .thum .label{font-size:map-get($font_size, font_12); font-weight : 500px ;color:#fff;padding:1px 7px;position: absolute;top:0px;left:0px;}
@@ -482,5 +487,25 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
   height: 100%;
   overflow: auto;
 }
+
+// 통합 ID
+.join-id{display: table; width:100%; padding-bottom: 15px; border-bottom:1px solid #1a1a1a;}
+.join-id .label-tit{display: table-cell !important; font-size:map-get($font_size, font_15); font-weight: 300 !important; line-height: 21px !important; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+.join-id .label-txt{display: table-cell !important; font-size:map-get($font_size, font_16); font-weight: 400; line-height: 21px; word-break: break-all;letter-spacing: -0.48px; }
+.join-id.type2{padding-bottom:0; border-bottom:0;}
+.join-id.type2 + .txt-desc{margin-top: 4px;}
+.join-idWrap{margin-bottom: 16px;}
+
+
+/* ***** guide ****** */
+.guideList li{position: relative; font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65); line-height: 18px; padding-left:10px; letter-spacing: -0.36px;}
+.guideList li + li{margin-top: 5px;}
+.guideList li::before{display: inline-block; position: absolute; top:8px; left:0; z-index: 2; content: ''; width:2px; height: 2px; background: rgba(0,0,0,0.5);}
+
+
+/* toast popup */
+.toast{position:fixed; bottom:0; z-index:100; width:100%; padding:17px 20px;}
+.toast .in{font-size:map-get($font_size, font_13); color:#fff; line-height: 20px; letter-spacing: -0.39px; font-weight: 300; padding:17px 20px; border-radius: 4px; background: rgba(0,0,0,0.8);}
+
 
 

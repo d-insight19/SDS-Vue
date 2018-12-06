@@ -10,8 +10,7 @@
             <p class="font_18">토론 발의</p>
             <p class="end">완료</p>
             </div>
-            <!-- //header -->
-            
+            <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
                   <div class="inner">
@@ -21,8 +20,7 @@
                         <li>
                             <slp-text-field  type="text" placeholder="제목을 입력해 주세요" ></slp-text-field>
                         </li>
-                      </ul>
-                      
+                      </ul>                      
                       <p class="">주제분류</p>
                       <ul class="singleList dis">
                         <li>
@@ -50,8 +48,7 @@
                         <li>
                             <select class="select dis_num" placeholder="시작일">
                               <option value="">시작일</option>
-                            </select>
-                            <select class="select dis_num" placeholder="종료일">
+                            </select><select class="select dis_num" placeholder="종료일">
                               <option value="">종료일</option>
                             </select>
                         </li>
@@ -72,8 +69,7 @@
                     </div>
                   </div>
                 </div>
-            </div>
-                
+            </div>                
         </div>
         <!-- //container --> 
     </div>

@@ -15,7 +15,7 @@
                 <!-- 가이드 O : 텍스트일 경우 -->
                 <h1 class="h-tit1 type_txt" style="display:none;"><p>한국도로공사 연수원</p></h1>
                 <!-- 가이드 O : 텍스트 2줄일 경우 -->
-                <h1 class="h-tit1 type_multitxt" style="display:none;"><p>한국가스안전공사<br>사이버 연수원</p></h1>
+                <h1 class="h-tit1 type_multitxt" style="display:none;"><p>한국가스안전공사 사이버 연수원</p></h1>
 
                 <!-- 가이드 X : 로고 이미지일 경우 -->
                 <h1 class="h-tit1 type_image noguide" style="display:none;">
@@ -24,7 +24,7 @@
                 <!-- 가이드 X : 텍스트일 경우 -->
                 <h1 class="h-tit1 type_txt noguide" style="display:none;"><p>한국도로공사 연수원</p></h1>
                 <!-- 가이드 X : 텍스트 2줄일 경우 -->
-                <h1 class="h-tit1 type_multitxt noguide" style="display:none;"><p>한국가스안전공사<br>사이버 연수원</p></h1>
+                <h1 class="h-tit1 type_multitxt noguide" style="display:none;"><p>한국가스안전공사 사이버 연수원</p></h1>
 
                 <fieldset class="loginBox">
                     <legend>아이디 비밀번호 입력</legend>
@@ -58,8 +58,8 @@
 
                 <dl class="loginGuide">
                     <dt>초기 로그인 안내</dt>
-                    <dd class="color_clr2">아이디 ex사번</dd>
-                    <dd class="color_clr2">비밀번호  아이디와 동일</dd>
+                    <dd class="color_clr2">아이디 <span class="fwb">ex사번</span></dd>
+                    <dd class="color_clr2">비밀번호  <span class="fwb">아이디와 동일</span></dd>
                     <dd>최초 접속 시 아이디와 비밀번호가 동일합니다.</dd>
                 </dl>
 

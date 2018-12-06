@@ -16,6 +16,9 @@ import ComponentsProgressbar from '~workplace/common_page/components_progressbar
 import ComponentsStepper from '~workplace/common_page/components_stepper'
 import ComponentsCard from '~workplace/common_page/components_card'
 import ComponentsPopup from '~workplace/common_page/components_popup'
+import ComponentsHeader from '~workplace/common_page/components_header'
+import ComponentsMainheader from '~workplace/common_page/components_mainheader'
+import ComponentsTabheader from '~workplace/common_page/components_tabheader'
 import ComponentsLayoutType1 from '~workplace/common_page/components_layout_type1'
 import ComponentsLayoutType2 from '~workplace/common_page/components_layout_type2'
 import ComponentsLayoutType3 from '~workplace/common_page/components_layout_type3'
@@ -27,6 +30,14 @@ import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
 import LoginLogin from '~workplace/login/Login_login'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
 import LoginInterest from '~workplace/login/Login_interest'
+import LoginJoinType from '~workplace/login/Login_jointype'
+import LoginJoinCertify from '~workplace/login/Login_joincertify'
+import LoginJoinTerms from '~workplace/login/Login_jointerms'
+import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
+import LoginJoinId from '~workplace/login/Login_joinid'
+import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
+import LoginSearchPost from '~workplace/login/Login_searchpost'
+import LoginJoinInterest from '~workplace/login/Login_joininterest'
 
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
@@ -34,6 +45,8 @@ import StudySOassinmentbestanswer from '~workplace/study/Study_SO_assinment_best
 import Study02discussedit from '~workplace/study/Study_02_discuss_edit'
 import StudySOsimulation from '~workplace/study/Study_SO_simulation'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
+import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
+import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
 
 // 1번 영역
 var rootRoutes = [
@@ -123,6 +136,21 @@ var rootRoutes = [
     component: ComponentsPopup
   },
   {
+    path: '/components_header',
+    name: 'components_header',
+    component: ComponentsHeader
+  },
+  {
+    path: '/components_mainheader',
+    name: 'components_mainheader',
+    component: ComponentsMainheader
+  },
+  {
+    path: '/components_tabheader',
+    name: 'components_tabheader',
+    component: ComponentsTabheader
+  },
+  {
     path: '/components_layout_type1',
     name: 'components_layout_type1',
     component: ComponentsLayoutType1
@@ -173,6 +201,46 @@ var rootRoutes = [
     component: LoginInterest
   },
   {
+    path: '/Login_jointype',
+    name: 'Login_jointype',
+    component: LoginJoinType
+  },
+  {
+    path: '/Login_joincertify',
+    name: 'Login_joincertify',
+    component: LoginJoinCertify
+  },
+  {
+    path: '/Login_jointerms',
+    name: 'Login_jointerms',
+    component: LoginJoinTerms
+  },
+  {
+    path: '/Login_jointermsdetail',
+    name: 'Login_jointermsdetail',
+    component: LoginJoinTermsdetail
+  },
+  {
+    path: '/Login_joinid',
+    name: 'Login_joinid',
+    component: LoginJoinId
+  },
+  {
+    path: '/Login_joinbasicinfo',
+    name: 'Login_joinbasicinfo',
+    component: LoginJoinBasicInfo
+  },
+  {
+    path: '/Login_searchpost',
+    name: 'Login_searchpost',
+    component: LoginSearchPost
+  },
+  {
+    path: '/Login_joininterest',
+    name: 'Login_joininterest',
+    component: LoginJoinInterest
+  },
+  {
     path: '/Study_dictionary',
     name: 'Study_dictionary',
     component: StudyDictionary
@@ -201,6 +269,16 @@ var rootRoutes = [
     path: '/Study_03_LO_viewer_fs',
     name: 'Study_03_LO_viewer_fs',
     component: Study03LOviewerfs
+  },
+  {
+    path: '/Study_04_SO_survey_submission',
+    name: 'Study_04_SO_survey_submission',
+    component: Study04SOsurveysubmission
+  },
+  {
+    path: '/Study_04_SO_opinion_submission',
+    name: 'Study_04_SO_opinion_submission',
+    component: Study04SOopinionsubmission
   }
 ]
 
