@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_dictionary">
+      <div id="container" class="mediaquery study_dictionary_de">
             <!-- header -->
             <div id="header">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -14,7 +14,7 @@
                 <div class="cell">
                   <div class="inner">
                     <div class="titTxtWrap">
-                      <strong class="txt-tit">
+                      <strong class="h-tit1">
                         교차 케이블
                       </strong>
                       <p class="txt-desc">

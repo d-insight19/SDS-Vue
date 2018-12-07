@@ -3,10 +3,15 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_opinion bg-gr">
+        <div id="container" class="mediaquery study_opinion_sub bg-gr">
             <!-- header -->
             <div id="header">
-            <button type="button" class="btn only prev"><span class="ico">이전</span></button>
+                <button type="button" class="btn only prev"><span class="ico">이전</span></button>
+                <div class="page-btn">
+                    <span class="ico back"></span>
+                    <div class="num"><span>03</span>/<span>36</span></div>
+                    <span class="ico next"></span>
+                </div>
             </div>
             <!-- //header -->
             <div class="bg-gr-fix"></div>
@@ -29,35 +34,59 @@
                         </div>
                         <div class="txt-wrap clearfix">
                             <p class="prog-txt">대통령의 가족을 지켜는 법은 필수이기 때문에 현재 정책을 유지해야 한다.</p>
-                            <p class="fr part-num-2"><span>17</span>%</p>
-                            <p class="fr v-line01">|</p>
-                            <p class="fr part-num"><span>5</span>명</p>                                
+                            <div class="fr">
+                                <span class="part-num"><span>5</span>명</span>
+                                <span class="v-line01">|</span>
+                                <span class="part-num-2"><span>17</span>%</span>
+                            </div>                                   
                         </div>
                         <div class="progBox">
                             <div class="bar clr2" style="width: 58%; height:8px; border-radius: 100px;"></div>                            
                         </div>
                         <div class="txt-wrap clearfix">
-                            <p class="prog-txt"> <span class="chip">나의 선택</span>  대통령의 가족도 우리와 같은 시민일 뿐, 경호 예우는 필요없다.</p>
-                            <p class="fr part-num-2"><span>58</span>%</p>
-                            <p class="fr v-line01">|</p>
-                            <p class="fr part-num"><span>16</span>명</p>                                
+                            <p class="prog-txt"> <span class="chip color_clr2">나의 선택</span>  대통령의 가족도 우리와 같은 시민일 뿐, 경호 예우는 필요없다.</p>
+                            <div class="fr">
+                                <span class="part-num"><span>16</span>명</span>
+                                <span class="v-line01">|</span>
+                                <span class="part-num-2"><span>58</span>%</span>
+                            </div>                                  
                         </div>
                         <div class="progBox">
                             <div class="bar clr1" style="width: 21.5%; height:8px; border-radius: 100px;"></div>                            
                         </div>
                         <div class="txt-wrap clearfix">
                             <p class="prog-txt">잘 모르겠다.</p>
-                            <p class="fr part-num-2"><span>21.5</span>%</p>
-                            <p class="fr v-line01">|</p>
-                            <p class="fr part-num"><span>7</span>명</p>                                
+                            <div class="fr">
+                                <span class="part-num"><span>7</span>명</span>
+                                <span class="v-line01">|</span>
+                                <span class="part-num-2"><span>21.5</span>%</span>
+                            </div>                                
                         </div>
                         <div class="txt-line">
-                            <span class="ops">나의 의견</span> 
-                            <span class="fr ico gray_next"></span>
-                            <span class="fr">26</span>
-                            <span class="val">전체의견보기</span> 
+                            <span class="my-op">나의 의견</span>
+                            <p class="total-op"> 
+                                <span class="total-val">전체의견보기</span>                                
+                                <span class="total-num">26</span>        
+                                <span class="ico gray_next"></span>                        
+                            </p> 
                         </div>
                         <p class="line01"></p>
+                        <p class="reply-name">
+                            <span>정*민 [작성자]</span>
+                            <span class="fr ico more"></span>
+                        </p>
+                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
+                        <p><span class="reply-date">2018.09.14  21:34</span></p>
+                        <div class="reply-wrap">
+                            <span class="ico down-arr"></span>
+                            <span>답글 4</span>
+                            <p class="fr reply-num">
+                            <span class=" ico reply-like"></span>
+                            <span class="">12</span>
+                            <span class=" ico reply-unlike"></span>
+                            <span class="">3</span>
+                            </p>
+                        </div>
                         <div class="absBtmBtn">  
                             <button type="button" class="btn md clr1">완료</button>
                         </div>

@@ -15,8 +15,14 @@
 .ico.arrow{width:16px;height:16px;background: url("../img/ic_next_line_black.png") no-repeat; background-size: contain; }
 .ico.gray_next{width:16px;height:16px;background: url("../img/ic_next.png") no-repeat; }
 
-/* 추가이미지 */
+/* 추가이미지 2018-12-07 */
 .ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }
+.ico.more{width:20px;height:20px;background: url("../img/ic_moredots_20.png") no-repeat; }
+.ico.down-arr{width:16px;height:16px;background: url("../img/ic_accordion_arr_16_down.png") no-repeat; }
+.ico.reply-like{width:32px;height:32px;background: url("../img/ic_thumb_line_cblue_32.png") no-repeat; }
+.ico.reply-unlike{width:32px;height:32px;background: url("../img/ic_unlike_line_32.png") no-repeat; }
+.ico.back{width:32px;height:32px;background: url("../img/ic_back_solid_black_32.png") no-repeat; }
+.ico.next{width:32px;height:32px;background: url("../img/ic_next_solid_black_32.png") no-repeat; }
 
 
 

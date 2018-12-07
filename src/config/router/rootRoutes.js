@@ -47,6 +47,8 @@ import StudySOsimulation from '~workplace/study/Study_SO_simulation'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
 import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
+import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
+import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
 
 // 1번 영역
 var rootRoutes = [
@@ -279,6 +281,16 @@ var rootRoutes = [
     path: '/Study_04_SO_opinion_submission',
     name: 'Study_04_SO_opinion_submission',
     component: Study04SOopinionsubmission
+  },
+  {
+    path: '/Study_04_SO_pledge',
+    name: 'Study_04_SO_pledge',
+    component: Study04SOpledge
+  },
+  {
+    path: '/Study_04_SO_pledge_submission',
+    name: 'Study_04_SO_pledge_submission',
+    component: Study04SOpledgesubmission
   }
 ]
 

@@ -6752,8 +6752,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.40.SO_pledge</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_pledge' }">
+            Study_04_SO_pledge
           </router-link>
         </td>
         <td></td>
@@ -6769,8 +6769,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.41.SO_pledge_submission</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_pledge_submission' }">
+            Study_04_SO_pledge_submission
           </router-link>
         </td>
         <td></td>
@@ -10128,6 +10128,16 @@ export default {
           'd6': '',
           'd7': '',
           'routeName': 'Study_04_SO_opinion_submission',
+          'file': '',
+          'comment': ''},
+        { 'd1': '학습창 영역',
+          'd2': '서약서',
+          'd3': '',
+          'd4': '',
+          'd5': '',
+          'd6': '',
+          'd7': '',
+          'routeName': 'Study_04_SO_pledge',
           'file': '',
           'comment': ''}
       ]
