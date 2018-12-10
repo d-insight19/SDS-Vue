@@ -110,7 +110,7 @@
             components_textfield
           </router-link>
         </td>
-        <td>20181129 수정됨(타입에따라 x아이콘 적용여부)</td>
+        <td>20181206 err 클래스명 수정</td>
       </tr>
       <tr>
       <td align="center">0</td>
@@ -773,8 +773,8 @@
         <td>각 항목별 선택설정</td>
         <td class="textL">01.login_02.02_join_extrainfo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_joinextrainfo' }">
+            Login_joinextrainfo
           </router-link>
         </td>
         <td></td>
@@ -790,8 +790,8 @@
         <td>　</td>
         <td class="textL">01.login_02.02_join_complete</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_joincomplete' }">
+            Login_joincomplete
           </router-link>
         </td>
         <td></td>
@@ -807,8 +807,8 @@
         <td>　</td>
         <td class="textL">01.login_03.01_login_integration</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_loginintegration' }">
+            Login_loginintegration
           </router-link>
         </td>
         <td></td>
@@ -824,8 +824,8 @@
         <td>　</td>
         <td class="textL">01.login_03.01_login_integration_id</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_loginintegrationid' }">
+            Login_loginintegrationid
           </router-link>
         </td>
         <td></td>
@@ -841,8 +841,8 @@
         <td>　</td>
         <td class="textL">01.login_03.02_login_reintegration</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_loginreintegration' }">
+            Login_loginreintegration
           </router-link>
         </td>
         <td></td>
@@ -858,8 +858,8 @@
         <td>　</td>
         <td class="textL">01.login_04.01_login_changeid</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_loginchangeid' }">
+            Login_loginchangeid
           </router-link>
         </td>
         <td></td>
@@ -875,8 +875,8 @@
         <td>　</td>
         <td class="textL">01.login_04.02_login_changeid_main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_loginchangeidmain' }">
+            Login_loginchangeidmain
           </router-link>
         </td>
         <td></td>
@@ -892,8 +892,8 @@
         <td>　</td>
         <td class="textL">01.login_05.01_login_changepw</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_changepw' }">
+            Login_changepw
           </router-link>
         </td>
         <td></td>
@@ -909,8 +909,8 @@
         <td>　</td>
         <td class="textL">01.login_06.01_login_unlockid</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_lockid' }">
+            Login_lockid
           </router-link>
         </td>
         <td></td>
@@ -926,8 +926,8 @@
         <td>　</td>
         <td class="textL">01.login_07.01_login_dormant</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_dormant' }">
+            Login_dormant
           </router-link>
         </td>
         <td></td>
@@ -943,8 +943,8 @@
         <td>　</td>
         <td class="textL">01.login_08.01_findid</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_findid' }">
+            Login_findid
           </router-link>
         </td>
         <td></td>
@@ -960,8 +960,8 @@
         <td>　</td>
         <td class="textL">01.login_08.01_findid_birth</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_findidbirth' }">
+            Login_findidbirth
           </router-link>
         </td>
         <td></td>
@@ -977,8 +977,8 @@
         <td>　</td>
         <td class="textL">01.login_08.01_findid_phone</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_findidphone' }">
+            Login_findidphone
           </router-link>
         </td>
         <td></td>
@@ -994,8 +994,8 @@
         <td>　</td>
         <td class="textL">01.login_08.01_findid_email</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_findidemail' }">
+            Login_findidemail
           </router-link>
         </td>
         <td></td>
@@ -1011,8 +1011,8 @@
         <td>　</td>
         <td class="textL">01.login_08.01_findid_ipin</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_certifyipin' }">
+            Login_certifyipin
           </router-link>
         </td>
         <td></td>
@@ -1028,8 +1028,8 @@
         <td>　</td>
         <td class="textL">01.login_08.01_findid_result</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_findidresult' }">
+            Login_findidresult
           </router-link>
         </td>
         <td></td>
@@ -1045,8 +1045,8 @@
         <td>　</td>
         <td class="textL">01.login_08.02_findpw</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_findpw' }">
+            Login_findpw
           </router-link>
         </td>
         <td></td>
@@ -1062,8 +1062,8 @@
         <td>　</td>
         <td class="textL">01.login_08.02_findpw_phone</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_findpwphone' }">
+            Login_findpwphone
           </router-link>
         </td>
         <td></td>
@@ -1079,8 +1079,8 @@
         <td>　</td>
         <td class="textL">01.login_08.02_findpw_email</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_findpwemail' }">
+            Login_findpwemail
           </router-link>
         </td>
         <td></td>
@@ -1096,8 +1096,8 @@
         <td>　</td>
         <td class="textL">01.login_09.01_certify_phone</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_certifyphone' }">
+            Login_certifyphone
           </router-link>
         </td>
         <td></td>
@@ -1113,8 +1113,8 @@
         <td>　</td>
         <td class="textL">01.login_09.02_certify_ipin</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_certifyipin' }">
+            Login_certifyipin
           </router-link>
         </td>
         <td></td>
@@ -1130,8 +1130,8 @@
         <td>　</td>
         <td class="textL">01.login_09.03_certify_email</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_certifyemail' }">
+            Login_certifyemail
           </router-link>
         </td>
         <td></td>
@@ -6285,7 +6285,7 @@
         <td class="textL">05.Study_04.14.SO_survey_submission</td>
         <td>
           <router-link :to="{ name: 'Study_04_SO_survey_submission' }">
-              Study_04_SO_survey_submission
+            Study_04_SO_survey_submission
           </router-link>
         </td>
         <td></td>
@@ -10108,36 +10108,6 @@ export default {
           'd6': '',
           'd7': '',
           'routeName': 'Study_dictionary',
-          'file': '',
-          'comment': ''},
-        { 'd1': '학습창 영역',
-          'd2': '',
-          'd3': '',
-          'd4': '설문_제출 완료',
-          'd5': '',
-          'd6': '',
-          'd7': '',
-          'routeName': 'Study_04_SO_survey_submission',
-          'file': '',
-          'comment': ''},
-        { 'd1': '학습창 영역',
-          'd2': '',
-          'd3': '',
-          'd4': '의견공유_제출완료',
-          'd5': '',
-          'd6': '',
-          'd7': '',
-          'routeName': 'Study_04_SO_opinion_submission',
-          'file': '',
-          'comment': ''},
-        { 'd1': '학습창 영역',
-          'd2': '서약서',
-          'd3': '',
-          'd4': '',
-          'd5': '',
-          'd6': '',
-          'd7': '',
-          'routeName': 'Study_04_SO_pledge',
           'file': '',
           'comment': ''}
       ]

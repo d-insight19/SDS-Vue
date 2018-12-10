@@ -38,6 +38,28 @@ import LoginJoinId from '~workplace/login/Login_joinid'
 import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
 import LoginSearchPost from '~workplace/login/Login_searchpost'
 import LoginJoinInterest from '~workplace/login/Login_joininterest'
+import LoginJoinInExtrainfo from '~workplace/login/Login_joinextrainfo'
+import LoginJoinComplete from '~workplace/login/Login_joincomplete'
+import LoginLoginIntegration from '~workplace/login/Login_loginintegration'
+import LoginLoginIntegrationId from '~workplace/login/Login_loginintegrationid'
+import LoginLoginReIntegration from '~workplace/login/Login_loginreintegration'
+import LoginLoginChangeId from '~workplace/login/Login_loginchangeid'
+import LoginLoginChangeIdMain from '~workplace/login/Login_loginchangeidmain'
+
+import LoginChangepw from '~workplace/login/Login_changepw'
+import LoginLockid from '~workplace/login/Login_lockid'
+import LoginDormant from '~workplace/login/Login_dormant'
+import LoginFindid from '~workplace/login/Login_findid'
+import LoginFindidBirth from '~workplace/login/Login_findidbirth'
+import LoginFindidPhone from '~workplace/login/Login_findidphone'
+import LoginFindidEmail from '~workplace/login/Login_findidemail'
+import LoginFindidResult from '~workplace/login/Login_findidresult'
+import LoginFindpw from '~workplace/login/Login_findpw'
+import LoginFindpwPhone from '~workplace/login/Login_findpwphone'
+import LoginFindpwEmail from '~workplace/login/Login_findpwemail'
+import LoginCertifyPhone from '~workplace/login/Login_certifyphone'
+import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
+import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
 
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
@@ -203,6 +225,41 @@ var rootRoutes = [
     component: LoginInterest
   },
   {
+    path: '/Login_joinextrainfo',
+    name: 'Login_joinextrainfo',
+    component: LoginJoinInExtrainfo
+  },
+  {
+    path: '/Login_joincomplete',
+    name: 'Login_joincomplete',
+    component: LoginJoinComplete
+  },
+  {
+    path: '/Login_loginintegration',
+    name: 'Login_loginintegration',
+    component: LoginLoginIntegration
+  },
+  {
+    path: '/Login_loginintegrationid',
+    name: 'Login_loginintegrationid',
+    component: LoginLoginIntegrationId
+  },
+  {
+    path: '/Login_loginreintegration',
+    name: 'Login_loginreintegration',
+    component: LoginLoginReIntegration
+  },
+  {
+    path: '/Login_loginchangeid',
+    name: 'Login_loginchangeid',
+    component: LoginLoginChangeId
+  },
+  {
+    path: '/Login_loginchangeidmain',
+    name: 'Login_loginchangeidmain',
+    component: LoginLoginChangeIdMain
+  },
+  {
     path: '/Login_jointype',
     name: 'Login_jointype',
     component: LoginJoinType
@@ -241,6 +298,76 @@ var rootRoutes = [
     path: '/Login_joininterest',
     name: 'Login_joininterest',
     component: LoginJoinInterest
+  },
+  {
+    path: '/Login_changepw',
+    name: 'Login_changepw',
+    component: LoginChangepw
+  },
+  {
+    path: '/Login_lockid',
+    name: 'Login_lockid',
+    component: LoginLockid
+  },
+  {
+    path: '/Login_dormant',
+    name: 'Login_dormant',
+    component: LoginDormant
+  },
+  {
+    path: '/Login_findid',
+    name: 'Login_findid',
+    component: LoginFindid
+  },
+  {
+    path: '/Login_findidbirth',
+    name: 'Login_findidbirth',
+    component: LoginFindidBirth
+  },
+  {
+    path: '/Login_findidphone',
+    name: 'Login_findidphone',
+    component: LoginFindidPhone
+  },
+  {
+    path: '/Login_findidemail',
+    name: 'Login_findidemail',
+    component: LoginFindidEmail
+  },
+  {
+    path: '/Login_findidresult',
+    name: 'Login_findidresult',
+    component: LoginFindidResult
+  },
+  {
+    path: '/Login_findpw',
+    name: 'Login_findpw',
+    component: LoginFindpw
+  },
+  {
+    path: '/Login_findpwphone',
+    name: 'Login_findpwphone',
+    component: LoginFindpwPhone
+  },
+  {
+    path: '/Login_findpwemail',
+    name: 'Login_findpwemail',
+    component: LoginFindpwEmail
+  },
+  {
+    path: '/Login_certifyphone',
+    name: 'Login_certifyphone',
+    component: LoginCertifyPhone
+  },
+  {
+    path: '/Login_certifyipin',
+    name: 'Login_certifyipin',
+    component: LoginCertifyIpin
+  },
+  {
+    path: '/Login_certifyemail',
+    name: 'Login_certifyemail',
+    component: LoginCertifyEmail
   },
   {
     path: '/Study_dictionary',

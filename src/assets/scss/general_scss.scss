@@ -100,6 +100,12 @@ $brand_colors: (
     // 메인화면 아이콘
     #header.mainType .btn.allMenu .ico.new,
     #header.mainType2 .btn.allMenu .ico.new{border:2px solid map-get($color,clr1)}
+
+    // 헤더 텝 활성화
+    .fixTab li.on{border-bottom:2px solid map-get($color , clr2) !important;}
+
+    // 헤더 스크롤 텝
+    .scroll-x .scrollTab li.on a{border-bottom:2px solid map-get($color , clr2) !important;}
   }
 }
 // Including themes. 

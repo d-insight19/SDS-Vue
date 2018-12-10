@@ -72,8 +72,8 @@
                         <button type="button" class="btn sm">중복확인</button>
                       </div>
                       <!-- 아이디 체크시 결과 텍스트 -->
-                      <p class="succ-msg">사용 가능한 아이디입니다.</p>
-                      <p class="error-msg" style="display:2e;">이미 사용중인 아이디입니다.</p>
+                      <p class="InfoChK-resultTxt succ">사용 가능한 아이디입니다.</p>
+                      <p class="InfoChK-resultTxt err" style="display:2e;">이미 사용중인 아이디입니다.</p>
                       <!-- //아이디 체크시 결과 텍스트 -->
                     </div>
                   </li>

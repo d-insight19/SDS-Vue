@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery join">
+      <div id="container" class="mediaquery join basicinfo">
 
         <div id="content" class="etc">
           <div class="cell">

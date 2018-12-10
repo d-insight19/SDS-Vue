@@ -1,3 +1,10 @@
+/* 스플레시 */
+.splashWrap{position: relative; z-index: 0; height:100%; text-align:center; background: url("../img/login_splash_bg.png") no-repeat center bottom; background-size: cover;}
+.splashWrap::after{display: block; content:''; width:100%; height:100%; background:rgba(0,0,0,0.3);}
+.splashWrap .splashBox{position: absolute; top:182px; left:0; z-index: 1; width: 100%; text-align: center;}
+.splashWrap .splashBox .in{display: inline-block; }
+.splashWrap .splashBox h1 img{height:80px;}
+
 
 // 로그인 - 연수원 찾기
 .trainIntro{    
@@ -103,6 +110,8 @@
 
 // 개인정보 마케팅 활용 동의
 .cTitWrap + .ulList.type4{margin-top:17px;} 
+.cTitWrap .c-tit{display: inline-block; font-size:14px; line-height: 24px;}
+.cTitWrap:after {display:block; visibility:hidden; content:""; clear:both; height:0; }
 
 
 .ulList2 li a{display: table; table-layout: fixed; font-size: map-get($font-size, font_14); line-height: 42px; width:100%; height: 42px; border-bottom:1px solid #e3e3e3; }
@@ -175,13 +184,14 @@
 #container.join_type .joinTypeBox dl + dl{margin-top: 59px;}
 #container.join_type .joinTypeBox dl + dl dt{margin-bottom:14px;}
 
+
 /* 통합회원가입 */
 #container.join .h-tit{margin:0px 0px 12px}
 #container.join .stepper{margin-bottom:0px;}
 #container.join .join .guideList li{font-weight:300}
 
 #container.join .certList li{position: relative; z-index: 1;font-size: map-get($font-size, font_14);letter-spacing: -0.42px}
-#container.join .certList li .btn{display: block; line-height: 52px; padding:0 40px 0 19px;color:#000; border:1px solid #d9d9d9;}
+#container.join .certList li .btn{display: block; line-height: 52px; padding:0 40px 0 20px;color:#000; border:1px solid #d9d9d9;}
 #container.join .certList li .btn .ico{position: absolute; top:50%; right:19px; width:8px; height:12px; margin-top:-6px; background-position: 0 -67px;}
 #container.join .certList li + li{margin-top: 12px;}
 #container.join .certList + .guideList{margin-top: 16px;}
@@ -213,14 +223,87 @@
 #container.join .rdoInfoChK{position: relative; padding-left:40px;}
 #container.join .rdoInfoChK .labelRdo{position: absolute;left: 5px; top: 11px; z-index: 1;}
 
+#container.join .ulList.type1.mt42 .label-tit{font-size: map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.42px; margin-bottom: 6px;}
+#container.join .ulList.type1.mt42 input{font-size: map-get($font-size, font_14);line-height: 29px;vertical-align: middle;letter-spacing: -0.42px;}
+#container.join .ulList.type1.mt42 .intSchBox .btn{top: 13px;}
+#container.join .ulList.type1.mt42 li + li{margin-top:20px;}
+#container.join .hr{margin: 26px -24px 22px -24px;}
+#container.join .ulList.type1 .label-tit strong{font-size: map-get($font-size, font_14);font-weight: 500;}
+#container.join .ulList.type1 .label-tit .fr strong{font-size: map-get($font-size, font_14);font-weight: 500;}
+#container.join .li-addList{border-top: 1px solid rgba(0,0,0,0.5);}
+#container.join .li-addList .tar{margin-bottom:8px;}
+#container.join .li-addList .del .ico{width:20px; height: 20px; background: url("../img/ic_deletemode_20.png");background-size: cover;}
+#container.join .li-addList li:first-child{margin-top: 20px;}
+#container.join .li-addList select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
+#container.join .li-addList .up select{width: 33%;}
+#container.join .li-addList .up select + select{width: 65%;}
+#container.join .li-addList li + li{margin-top: 16px !important;}
+#container.join .ulList.type1 li + li{margin-top: 32px;}
+#container.join .ulList.type1 .btn{color: #000;font-weight: 500;letter-spacing: -0.42px;vertical-align: middle;}
+#container.join .add .ico{width:16px; height: 16px; background: url("../img/ic_plus_16.png"); background-size: cover;margin: 0 0px 3px 0;vertical-align: middle;}
+
+#container.join .cTitWrap .c-tit{font-size: map-get($font-size, font_16);letter-spacing: -0.48px;line-height: 24px;font-weight: 500;}
+#container.join .ulList.type4{border-top: 1px solid rgba(0,0,0,0.5);}
+#container.join .cTitWrap + .ulList.type4{margin-top: 16px;}
+#container.join .ulList.type4 li{border-bottom: 1px solid #ebebeb;}
+#container.join .labelChk .label{line-height: 21px;letter-spacing: -0.42px;font-weight: 400;}
+#container.join .ulList.type4 li{padding: 16px 0 16px;}
+#container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
+#container.join .hr + .ulList.type1 .label-tit{margin-bottom:8px;}
+#container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
+#container.join .hr + .ulList.type1 li + li{margin-top: 19px;}
+
+//계정잠금해제
+#container.join .lock_id{margin-top: 8px;font-size:map-get($font-size, font_14); line-height: 21px; letter-spacing: -0.42px; color:#000}
+#container.join .lock_id span{font-size:map-get($font-size, font_16); letter-spacing: -0.48px; font-weight: 600;margin-left:7px;}
+#container.join .lock_id + .txt-desc{margin-top:6px;margin-bottom:16px;font-weight: 300;}
+
+#container.join .cTitWrap .c-tit{font-size: map-get($font-size, font_16);letter-spacing: -0.48px;line-height: 24px;font-weight: 500;}
+#container.join .ulList.type4{border-top: 1px solid rgba(0,0,0,0.5);}
+#container.join .cTitWrap + .ulList.type4{margin-top: 16px;}
+#container.join .ulList.type4 li{border-bottom: 1px solid #ebebeb;}
+#container.join .labelChk .label{line-height: 21px;letter-spacing: -0.42px;font-weight: 400;}
+#container.join .ulList.type4 li{padding: 16px 0 16px;}
+#container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
+#container.join .hr + .ulList.type1 .label-tit{margin-bottom:8px;}
+#container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
+#container.join .hr + .ulList.type1 li + li{margin-top: 19px;}
 
 
+#container.join.complete .h-tit{font-size: map-get($font-size, font_30);line-height: 38px;letter-spacing: -0.9px;font-weight: 500;margin-bottom:8px;}
+#container.join.complete .txt-desc{font-size: map-get($font-size, font_13);line-height: 20px;letter-spacing: -0.39px;font-weight: 300;margin-bottom:8px;color: rgba(0,0,0,0.65);margin-bottom:0px;}
+#container.join.complete .hr{height:0px; border-bottom: 1px solid #1a1a1a;margin: 7.5px 0px 17px;}
+#container.join.complete .tit.fl{font-size: map-get($font-size, font_18);font-weight: 600;letter-spacing: -0.54px;line-height: 27px;}
+#container.join.complete .btn.fr{font-size: map-get($font-size, font_13);font-weight: 500;letter-spacing: -0.39px;line-height: 27px;color: rgba(0,0,0,0.65)}
+#container.join.complete .btn.fr .ico{width:16px; height: 16px; background: url("../img/ic_next_line_bold_gray_16.png"); background-size: cover;margin: 0px 0px;vertical-align: middle;}
+#container.join.complete .joinComp-tbl tr{height:38px;}
+#container.join.complete .joinComp-tbl th{font-size: map-get($font-size, font_13);width:47px;line-height: 22px;color: rgba(0,0,0,0.65);font-weight: 300;padding: 0px 0px;letter-spacing: -0.39px;vertical-align: top;}
+#container.join.complete .joinComp-tbl td{font-size: map-get($font-size, font_14);line-height: 22px;color: #000;font-weight: 400;padding: 0px 0px 0px 24px;letter-spacing: -0.42px;vertical-align:top;    word-break: keep-all;}
+#container.join.complete .joinComp-tbl{margin-top: 0px;border-top: 0px;}
+
+#container.join.basicinfo .ulList.type1 li + li{margin-top: 20px;}
+
+
+
+// 아이디변경
+#container.change_id .h-tit{font-size: map-get($font-size, font_30);line-height: 45px;letter-spacing: -0.9px;font-weight: 500;margin:0;margin-bottom:16px;}
+#container.change_id dl.txt dt{font-size: map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.48px;font-weight: 500;margin-bottom: 12px;}
+#container.change_id dl.txt dd{font-size: map-get($font-size, font_13);line-height: 20px;letter-spacing: -0.39px;font-weight: 300;color: rgba(0, 0, 0, 0.65);}
+#container.change_id.main .h-tit{margin-bottom: 36px;}
+#container.change_id.main .input.succ{font-size: map-get($font-size, font_14);letter-spacing: -0.42px;line-height: 29px;vertical-align: middle;color: rgba(0, 0, 0, 0.65);font-weight: 400;}
+#container.change_id.main .btn.sm{font-size: map-get($font-size, font_14);letter-spacing: -0.42px;line-height: 21px;vertical-align: middle;font-weight: 400;}
+
+
+
+// 비밀번호 변경
+#container.changepw .titleWrap{margin-bottom:32px;}
+#container.changepw .titleWrap .h-tit1{margin-bottom:16px;}
+#container.changepw .titleWrap .txt-desc2{letter-spacing: -0.65px;margin-top:0px;}
 
 
 // 개인정보 처리 방침
 #container.terms .h-tit1{margin-bottom:20px;}
-.agreeCnt{}
-.agreeCnt .agree-tit{font-size:map-get($font-size, font_14);; margin-bottom: 8px; color:#000;line-height: 21px;}
+.agreeCnt .agree-tit{font-size:map-get($font-size, font_14);; margin-bottom: 8px; color:#000;line-height: 21px;font-weight: 400;}
 .agreeCnt .agree-txt{font-size:map-get($font-size, font_12);; color:rgba(0,0,0,0.65); letter-spacing: -0.36px;line-height: 20px; font-weight: 300;}
 .agreeCnt .agree-txt + .agree-tit{margin-top:20px;}
 
@@ -233,6 +316,104 @@
 #container.searchpost .search_result .address_left.hilight{font-size:map-get($font-size, font_14);font-weight:500;}
 #container.searchpost .search_result .address_left{width: 49px;text-align: left;vertical-align: top;font-weight:400;color: #000;letter-spacing: -0.65px}
 #container.searchpost .search_result .zip_code{color:rgba(0,0,0,0.3); letter-spacing: -0.7px;}
+
+
+
+//아이디 비밀번호찾기
+#container.findid .txt-desc2{margin-top:0px;}
+#container.findid .certList li .btn{padding:0 40px 0 20px;}
+#container.findid .ulList.type1 .label-tit{font-size:map-get($font-size, font_14); line-height: 20px;margin-bottom:8px;letter-spacing: -0.42px;}
+#container.findid .ulList.type1 li + li{margin-top:20px;}
+#container.findid .txt-desc{font-weight: 300;margin-top:12px;}
+#container.findid .link{font-size:map-get($font-size, font_11);margin-left:8px;letter-spacing: -0.55px; }
+#container.findid .link .ico.arr{margin-left:6px;}
+#container.findid .txt-desc3{font-size: map-get($font_size, font_13); color:#000000; letter-spacing: -0.42px; line-height: 18px; font-weight: 400; margin-top: 8px; }
+#container.findid .txt-desc3 strong{font-weight: 500;}
+#container.findid .resultBox{padding:24px; background:#f5f5f5;}
+#container.findid .resultBox li{font-size:map-get($font_size, font_15); line-height: 18px; letter-spacing: -0.45px; font-weight: 500;}
+#container.findid .resultBox li + li{margin-top: 10px;}
+#container.findid .titleWrap{margin-bottom:20px;}
+#container.findid .titleWrap .h-tit1 + .txt-desc{margin-top:6px;color:#000;font-size:map-get($font-size , font_13 ); line-height: 20px; letter-spacing: -0.39px;font-weight: 300;}
+
+// 이메일 인증
+#container.findid.certify .ulList.type1 li + li{margin-top:16px;}
+#container.findid.certify .emailChk {position: relative;}
+#container.findid.certify .emailChk .time{position: absolute; right:16px; top:0px; display: block; font-size: map-get($font_size, font_11); color:map-get($static_colors , danger); font-weight: 500; line-height: 44px;}
+#container.findid.certify .emailChk .input{padding-right: 60px;}
+#container.findid.certify .emailChk .btn{font-size: map-get($font_size, font_14); color: #1a1a1a; line-height: 42px; letter-spacing: -0.036em; font-weight: 500; height: 44px; margin-top: 8px;}
+#container.findid.certify .ulList.type1 li:nth-last-child(1){margin-top:24px;}
+
+
+#container.integration .h-tit{font-size: map-get($font-size, font_30);line-height: 45px;letter-spacing: -0.9px;font-weight: 500;margin:0;margin-bottom:16px;}
+// start
+#container.integration.start .h-tit{line-height: 40px;margin-bottom:43px;}
+#container.integration.start strong{font-size: map-get($font-size, font_19);height:28px;line-height: 28px;letter-spacing: -0.57px;font-weight: 400;margin-bottom:12px;}
+#container.integration.start .ico{width:64px;}
+#container.integration.start .ico.ico1{background: url("../img/ic_knowledge.png");background-size: cover;}
+#container.integration.start .ico.ico2{background: url("../img/ic_oncelogin.png");background-size: cover;}
+#container.integration.start .login_integr_sel p{margin-top:1px;font-size: map-get($font-size, font_13);line-height: 20px;letter-spacing: -0.39px;font-weight: 300;}
+#container.integration.start .login_integr_sel li + li{padding-top: 28px;margin-top: 28px;border-top: 1px solid #ebebeb;}
+#container.integration.start .login_integr_sel li + li p{margin-top:3px;}
+
+
+#container.integration .txt-desc{font-size: map-get($font-size, font_13);line-height: 20px;letter-spacing: -0.39px;font-weight: 300;}
+#container.integration .ulList.type2.mt36 .label-tit{margin-bottom:21px;font-size: map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.48px;font-weight: 500;}
+#container.integration .ulList.type2.mt36 .labelRdo .ico{margin: 0px 11px 0 0;}
+#container.integration .ulList.type2.mt36 .labelRdo .label{line-height: 20px; vertical-align: middle; font-size: map-get($font-size, font_14);letter-spacing: -0.42px;font-weight: 400;}
+#container.integration .ulList.type2.mt36 > li + li{margin-top: 37px;}
+#container.integration .ulList.type2.mt36 > li + li:last-child .label-tit{margin-bottom: 17px;}
+#container.integration .ulList.type2.mt36 input.text{font-size: map-get($font-size, font_14);line-height: 15px;letter-spacing: -0.42px;font-weight: 500;color: rgba(0,0,0,0.65);}
+#container.integration .ulList.type2.mt36 input{color: rgba(0, 0, 0, 0.8);font-size: map-get($font-size, font_14);line-height: 15px;letter-spacing: -0.42px;}
+#container.integration .ulList.type2.mt36 button{letter-spacing: -0.39px;}
+#container.integration .ulList.type2.mt36 li .ul-block li{padding-left: 5px;}
+#container.integration .rdoInfoChK{position: relative; padding-left:40px;}
+#container.integration .rdoInfoChK .labelRdo{position: absolute;left: 5px; top: 11px; z-index: 1;}
+
+#container.integration .ulList.type2.mt25 .join-id{padding-bottom: 10px; border-bottom: 1px solid #d9d9d9;}
+#container.integration .ulList.type2.mt25 .label-tit{font-size: map-get($font-size, font_15);line-height: 21px;letter-spacing: -0.45px;font-weight: 300;vertical-align: middle;}
+#container.integration .ulList.type2.mt25 .label-txt.point2{font-size: map-get($font-size, font_16);height:24px;line-height: 21px;letter-spacing: -0.48px;font-weight: 400;vertical-align: middle; color: #08affb;}
+#container.integration .ulList.type2.mt25 > li:nth-child(2){margin-top: 26px;}
+#container.integration .ulList.type2.mt25 .label-tit{font-size: map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.42px;font-weight: 500;margin-bottom: 12px;}
+#container.integration .ulList.type2.mt25 .ul-block li{font-size: map-get($font-size, font_14);line-height: 21px;letter-spacing: -0.42px;font-weight: 400;color: rgba(0,0,0,0.65);}
+#container.integration .ulList.type2.mt25 .ul-block li + li{margin: 8px 0px 0px;}
+#container.integration .ulList.type2.mt25 > li:nth-child(3){margin-top: 24px;}
+#container.integration .ulList.type2.mt25 > li:nth-child(4){margin-top: 20px;}
+
+#container.integration .login_integr_sel{margin-top:43px;}
+#container.integration .login_integr_sel li + li{padding-top:28px; margin-top:28px; border-top:2px solid #ebebeb;}
+#container.integration .login_integr_sel li strong{display:block; font-size:19px; line-height: 28px; font-weight:400; letter-spacing: -0.057em;}
+#container.integration .login_integr_sel li > div{position:relative; font-size:13px; font-weight: 300; line-height: 20px; letter-spacing: -0.039em; padding-left:75px; margin-top:12px;}
+#container.integration .login_integr_sel li .ico{position:absolute; left:0; top:0; z-index:1; width:64px; height:64px}
+#container.integration .login_integr_sel li .ico1{background-position: 0 -104px;}
+#container.integration .login_integr_sel li .ico2{background-position: -73px -104px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -290,7 +471,7 @@
 // 링크/독서통신/집합 - Full screen
 
 #container.study_link .txt-tit{font-size:map-get($font-size, font_20); line-height: 21px; font-weight:500; letter-spacing: -0.6px;margin-bottom: 14px; display: inline-block;}
-#container.study_link .txt-line{padding-top:10px; padding-bottom:10px;}
+#container.study_link .txt-line{padding-top:6px; padding-bottom:6px;}
 #container.study_link .txt-line .ops{font-size:map-get($font-size, font_15);line-height: 21px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8)}
 #container.study_link .txt-line .val{font-size:map-get($font-size, font_15);line-height: 21px; letter-spacing: -0.45px; float: right;}
 #container.study_link .sub-tit{margin-top:32px; margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px;}

@@ -40,7 +40,7 @@
                 <li>
                     <!-- X 아이콘이 필요없는 input -->
                     <input type="text" class="input underline error" placeholder="아이디" />
-                    <p class="error-msg">이름을 입력해주세요.</p>
+                    <p class="InfoChK-resultTxt err">이름을 입력해주세요.</p>
                 </li>
 				<li>
                      <!-- X 아이콘이 필요한 input -->
@@ -48,7 +48,7 @@
                         <input type="password"  pattern="^\s+" class="input underline error" placeholder="비밀번호" />
                         <button class="close-icon" type="button"></button>
                     </div>
-                    <p class="error-msg">이름을 입력해주세요.</p>
+                    <p class="InfoChK-resultTxt err">이름을 입력해주세요.</p>
                 </li>
 			</ul>
 
@@ -70,7 +70,7 @@
 				<li>
                      <!-- X 아이콘이 필요없는 input -->
                     <input type="text"  class="input error" placeholder="아이디" />
-                    <p class="error-msg">이름을 입력해주세요.</p>
+                    <p class="InfoChK-resultTxt err">이름을 입력해주세요.</p>
                 </li>
 				<li>
                      <!-- X 아이콘이 필요한 input -->
@@ -78,7 +78,7 @@
                         <input type="password"  pattern="^\s+" class="input error" placeholder="비밀번호" />
                         <button class="close-icon" type="button"></button>
                     </div>
-                    <p class="error-msg">비밀번호를 입력해주세요.</p>
+                    <p class="InfoChK-resultTxt err">비밀번호를 입력해주세요.</p>
                 </li>
 			</ul>
             
@@ -86,7 +86,7 @@
 				<li>
                      <!-- X 아이콘이 필요없는 input -->
                     <input type="text" class="input succ" placeholder="아이디" />
-                    <p class="succ-msg">사용가능한 아이디 입니다</p>
+                    <p class="InfoChK-resultTxt succ">사용가능한 아이디 입니다</p>
                 </li>
 			</ul>
 

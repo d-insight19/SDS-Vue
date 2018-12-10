@@ -14,7 +14,7 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">
-                        
+
                         <h1 class="h-tit1">이메일로 찾기</h1>
                         <!-- list -->
                         <ul class="ulList type2">

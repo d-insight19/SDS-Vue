@@ -15,7 +15,7 @@
           <div class="cell">
             <div class="inner">
                 <!-- 연수원 URL 찾기의 타이틀 margin-bottom 은 36px이라  type2 클래스 추가 -->
-                <h1 class="h-tit1 type2">연수원 URL 찾기</h1>
+                <h1 class="h-tit1 type2">연수원 URL로 찾기</h1>
 
                 <!-- list -->
                 <ul class="ulList type2">

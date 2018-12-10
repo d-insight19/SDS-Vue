@@ -31,14 +31,14 @@
                     <ul class="loginList">
                         <li>
                             <input type="text" class="input underline error" placeholder="아이디">
-                            <p class="error-msg">아이디를 입력해주세요.</p>
+                            <p class="InfoChK-resultTxt err">아이디를 입력해주세요.</p>
                         </li>
                         <li>
                             <div class="search-wrapper">
                                 <input type="password"  pattern="^\s+" class="input underline error" placeholder="비밀번호" />
                                 <button class="close-icon" type="button" id="dd"></button>
                             </div>
-                            <p class="error-msg">비밀번호를 입력해주세요.</p>
+                            <p class="InfoChK-resultTxt err">비밀번호를 입력해주세요.</p>
                         </li>
                     </ul>
 

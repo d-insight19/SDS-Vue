@@ -5,13 +5,8 @@
       <!-- container -->
       <div id="container" class="mediaquery study_link">
             <!-- header -->
-            <div id="header" class="fixed">
-                <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <div class="page-btn">
-                    <span class="ico back"></span>
-                    <div class="num"><span>03</span>/<span>36</span></div>
-                    <span class="ico next"></span>
-                </div>
+            <div id="header">
+            <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             </div>
             <!-- //header -->
             
