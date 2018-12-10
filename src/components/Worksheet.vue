@@ -6288,7 +6288,7 @@
             Study_04_SO_survey_submission
           </router-link>
         </td>
-        <td></td>
+        <td>버튼 수정중</td>
       </tr>
       <tr>
       <td align="center">347</td>
@@ -6416,7 +6416,7 @@
             Study_04_SO_opinion_submission
           </router-link>
         </td>
-        <td></td>
+        <td>버튼 수정중</td>
       </tr>
       <tr>
       <td align="center">355</td>
@@ -6773,7 +6773,7 @@
             Study_04_SO_pledge_submission
           </router-link>
         </td>
-        <td></td>
+        <td>버튼 수정중</td>
       </tr>
       <tr>
       <td align="center">376</td>
