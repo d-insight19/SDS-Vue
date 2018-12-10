@@ -15,6 +15,25 @@
 .ico.arrow{width:16px;height:16px;background: url("../img/ic_next_line_black.png") no-repeat; background-size: contain; }
 .ico.gray_next{width:16px;height:16px;background: url("../img/ic_next.png") no-repeat; }
 
+/* 추가이미지 2018-12-07 */
+.ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }
+.ico.more{width:20px;height:20px;background: url("../img/ic_moredots_20.png") no-repeat; }
+.ico.down-arr{width:16px;height:16px;background: url("../img/ic_accordion_arr_16_down.png") no-repeat; }
+.ico.reply-like{width:32px;height:32px;background: url("../img/ic_thumb_line_cblue_32.png") no-repeat; }
+.ico.reply-unlike{width:32px;height:32px;background: url("../img/ic_unlike_line_32.png") no-repeat; }
+.ico.back{width:32px;height:32px;background: url("../img/ic_back_solid_black_32.png") no-repeat; }
+.ico.next{width:32px;height:32px;background: url("../img/ic_next_solid_black_32.png") no-repeat; }
+
+/* 추가이미지 2018-12-10*/
+
+.ico.del-blue{width:16px;height:16px;background: url("../img/ic_blue_16.png") no-repeat; }
+.ico.img-a{width:20px;height:20px;background: url("../img/ic_image_line_20.png") no-repeat; }
+.ico.ppt-a{width:20px;height:20px;background: url("../img/ic_ppt_line_20.png") no-repeat; }
+.ico.del-blk{width:20px;height:20px;background: url("../img/ic_close_bold_20.png") no-repeat; }
+.ico.plus{width:16px;height:16px;background: url("../img/ic_plus_16.png") no-repeat;  }
+.ico.clip{width:16px;height:16px;background: url("../img/ic_addfile_16.png") no-repeat; }
+.ico.down-load{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
+
 #header.mainType2 .line2 .ico{vertical-align: top}
 
 .ico2.like{width:20px;height:20px;background: url("../img/ic_thumb_line_20.png") no-repeat; }
@@ -80,6 +99,7 @@
 /* margin */
 .mt0{margin-top: 0px !important;}
 .mt10{margin-top: 10px !important;}
+.mt20{margin-top: 20px !important;}
 .mt24{margin-top: 24px !important;}
 .mt25{margin-top: 25px !important;}
 .mt26{margin-top: 26px !important;}
@@ -90,9 +110,11 @@
 .mt42{margin-top: 42px !important;}
 .mt48{margin-top: 48px !important;}
 
+
 .mb24{margin-bottom: 24px !important;}
 .mb26{margin-bottom: 26px !important;}
 .mb32{margin-bottom: 32px !important;}
+.mb58{margin-bottom: 58px !important;}
 
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}

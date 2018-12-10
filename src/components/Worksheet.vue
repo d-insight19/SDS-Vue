@@ -5122,8 +5122,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.23.studyquestion_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_studyquestion_edit' }">
+            Study_02_studyquestion_edit
           </router-link>
         </td>
         <td></td>
@@ -5173,8 +5173,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.26.notice_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_notice_detail' }">
+            Study_02_notice_detail
           </router-link>
         </td>
         <td></td>
@@ -6667,8 +6667,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.35.SO_actionplan_input</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_actionplan_input' }">
+            Study_04_SO_actionplan_input
           </router-link>
         </td>
         <td></td>
@@ -10108,6 +10108,16 @@ export default {
           'd6': '',
           'd7': '',
           'routeName': 'Study_dictionary',
+          'file': '',
+          'comment': ''},
+        { 'd1': '학습홈 영역',
+          'd2': '',
+          'd3': '',
+          'd4': '질문방 수정',
+          'd5': '',
+          'd6': '',
+          'd7': '',
+          'routeName': 'Study_02_studyquestion_edit',
           'file': '',
           'comment': ''}
       ]

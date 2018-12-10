@@ -65,10 +65,13 @@ import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import StudySOassinmentbestanswer from '~workplace/study/Study_SO_assinment_bestanswer'
 import Study02discussedit from '~workplace/study/Study_02_discuss_edit'
-import StudySOsimulation from '~workplace/study/Study_SO_simulation'
+import Study02noticedetail from '~workplace/study/Study_02_notice_detail'
+import Study02studyquestionedit from '~workplace/study/Study_02_study_questionedit'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
 import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
+import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
+import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
 import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
 import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
 
@@ -390,14 +393,29 @@ var rootRoutes = [
     component: Study02discussedit
   },
   {
-    path: '/Study_SO_simulation',
-    name: 'Study_SO_simulation',
-    component: StudySOsimulation
+    path: '/Study_02_studyquestion_edit',
+    name: 'Study_02_studyquestion_edit',
+    component: Study02studyquestionedit
+  },
+  {
+    path: '/Study_02_notice_detail',
+    name: 'Study_02_notice_detail',
+    component: Study02noticedetail
   },
   {
     path: '/Study_03_LO_viewer_fs',
     name: 'Study_03_LO_viewer_fs',
     component: Study03LOviewerfs
+  },
+  {
+    path: '/Study_04_SO_simulation',
+    name: 'Study_04_SO_simulation',
+    component: Study04SOsimulation
+  },
+  {
+    path: '/Study_04_SO_actionplan_input',
+    name: 'Study_04_SO_actionplan_input',
+    component: Study04SOactionplaninput
   },
   {
     path: '/Study_04_SO_survey_submission',

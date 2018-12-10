@@ -18,7 +18,7 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">
-                        <div >                            
+                        <div class="mb58">                            
                             <p class="h-tit5"> 
                                 <span class="ico chk"></span>
                                 <span >제출 완료</span>
