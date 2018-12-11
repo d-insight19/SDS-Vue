@@ -3046,8 +3046,8 @@
           3. 포틀릿 사용여부 및 순서 설정</td>
         <td class="textL">02.Main_02.01.02. CurateUI01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_control' }">
+            Main_control
           </router-link>
         </td>
         <td></td>
@@ -5122,8 +5122,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.23.studyquestion_edit</td>
         <td>
-          <router-link :to="{ name: 'Study_02_studyquestion_edit' }">
-            Study_02_studyquestion_edit
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -5173,8 +5173,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.26.notice_detail</td>
         <td>
-          <router-link :to="{ name: 'Study_02_notice_detail' }">
-            Study_02_notice_detail
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -6288,7 +6288,7 @@
             Study_04_SO_survey_submission
           </router-link>
         </td>
-        <td>버튼 수정중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">347</td>
@@ -6416,7 +6416,7 @@
             Study_04_SO_opinion_submission
           </router-link>
         </td>
-        <td>버튼 수정중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">355</td>
@@ -6667,8 +6667,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.35.SO_actionplan_input</td>
         <td>
-          <router-link :to="{ name: 'Study_04_SO_actionplan_input' }">
-            Study_04_SO_actionplan_input
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -6773,7 +6773,7 @@
             Study_04_SO_pledge_submission
           </router-link>
         </td>
-        <td>버튼 수정중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">376</td>
@@ -8112,8 +8112,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_03.01_myinfo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_myinfo' }">
+            Drawer_myinfo
           </router-link>
         </td>
         <td></td>
@@ -10108,16 +10108,6 @@ export default {
           'd6': '',
           'd7': '',
           'routeName': 'Study_dictionary',
-          'file': '',
-          'comment': ''},
-        { 'd1': '학습홈 영역',
-          'd2': '',
-          'd3': '',
-          'd4': '질문방 수정',
-          'd5': '',
-          'd6': '',
-          'd7': '',
-          'routeName': 'Study_02_studyquestion_edit',
           'file': '',
           'comment': ''}
       ]

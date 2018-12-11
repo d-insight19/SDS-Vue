@@ -66,7 +66,9 @@ import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import StudySOassinmentbestanswer from '~workplace/study/Study_SO_assinment_bestanswer'
 import Study02discussedit from '~workplace/study/Study_02_discuss_edit'
 import Study02noticedetail from '~workplace/study/Study_02_notice_detail'
-import Study02studyquestionedit from '~workplace/study/Study_02_study_questionedit'
+import Study02studyquestiondetail from '~workplace/study/Study_02_studyquestion_detail'
+import Study02studyquestionedit from '~workplace/study/Study_02_studyquestion_edit'
+import Study02reflectionnoteedit from '~workplace/study/Study_02_reflectionnote_edit'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
 import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
@@ -74,6 +76,10 @@ import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
 import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
 import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
+
+import MainControl from '~workplace/main/Main_control'
+
+import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 
 // 1번 영역
 var rootRoutes = [
@@ -393,9 +399,19 @@ var rootRoutes = [
     component: Study02discussedit
   },
   {
+    path: '/Study_02_studyquestion_detail',
+    name: 'Study_02_studyquestion_detail',
+    component: Study02studyquestiondetail
+  },
+  {
     path: '/Study_02_studyquestion_edit',
     name: 'Study_02_studyquestion_edit',
     component: Study02studyquestionedit
+  },
+  {
+    path: '/Study_02_reflectionnote_edit',
+    name: 'Study_02_reflectionnote_edit',
+    component: Study02reflectionnoteedit
   },
   {
     path: '/Study_02_notice_detail',
@@ -436,6 +452,16 @@ var rootRoutes = [
     path: '/Study_04_SO_pledge_submission',
     name: 'Study_04_SO_pledge_submission',
     component: Study04SOpledgesubmission
+  },
+  {
+    path: '/Main_control',
+    name: 'Main_control',
+    component: MainControl
+  },
+  {
+    path: '/Drawer_myinfo',
+    name: 'Drawer_myinfo',
+    component: DrawerMyinfo
   }
 ]
 

@@ -11,10 +11,8 @@
       .btn.prev , .btn.close{
         width:auto;
         position: absolute;
-        // left:21px;
         left:14px;
-        top: 50%;
-        transform: translate(0%, -50%);
+        top: 14px;
       }
       & p{
         text-align: left;
@@ -134,7 +132,7 @@
   height:56px;
   line-height: 56px;
   padding:0 36px 0 72px;
-  background:#fff;
+  background:transparent;
   box-sizing:border-box;        
   border-bottom:1px solid transparent;
 }
@@ -220,12 +218,27 @@
 
 
 // 텝형 헤더
-#header.tab{position: fixed; top: 0; z-index: 30; width: 100%;  height:100px; padding:0;}
-#header.tab .header_inner{display:block;width:100%;}
-#header.tab .header_inner.line1{height:58px;padding: 0 36px 0 72px;}
-#header.tab .header_inner.line1 .btn{top:14px !important;transform: translate(0,0) !important;}
-#header.tab .header_inner.line2{height:42px;line-height: 42px;display: table;}
+#header.tab.fixed{position:fixed;}
+#header.fixed .hide_header{display:none;}
 
+#header.expand.fixed ~ #content{margin-top:0px;}
+#header.expand.tab ~ #content{margin-top:0px;}
+
+
+// 확장형 헤더 ( 텝 X )
+#header.expand{position:relative; top: 0; z-index: 30; width: 100%;  height:auto; padding:0;    min-height: 56px;}
+#header.expand .header_inner{display:block;width:100%;}
+#header.expand .header_inner.line1{height:56px;padding: 0 36px 0 72px;    position: absolute; top: 0px; left: 0px;z-index:10;}
+#header.expand .header_inner.line1 .btn{top:14px !important;transform: translate(0,0) !important;}
+
+
+// 확장형 헤더 ( 텝 O )
+#header.tab{/*position: fixed;*/ position:relative; top: 0; z-index: 30; width: 100%;  height:auto; padding:0;    min-height: 100px;}
+#header.tab .header_inner{display:block;width:100%;}
+#header.tab .header_inner.line1{height:56px;padding: 0 36px 0 72px;    position: absolute; top: 0px; left: 0px;z-index:10;}
+#header.tab .header_inner.line1 .btn{top:14px !important;transform: translate(0,0) !important;}
+
+#header.tab .header_inner.line2{height:42px;line-height: 42px;display: table;position: absolute; bottom: 0px; left: 0px;}
 #header.tab .header_inner.line2 .fixTab{display: table; table-layout: fixed; width: 100%;}
 #header.tab .header_inner.line2 .fixTab li{border:0; border-bottom:1px solid #ccc}
 #header.tab .header_inner.line2 .fixTab li.on{border:0;}
@@ -233,7 +246,7 @@
 #header.tab .header_inner.line2.scroll-x{display:block;border-bottom:1px solid #ccc}
 #header.tab .header_inner.line2.scroll-x .scrollTab{display:block;}
 #header.tab .header_inner.line2.scroll-x .scrollTab li{display:inline-block;border-bottom:0;padding-bottom:0px;border:0; width: initial;padding: 0px 18px;}
-
+#header.tab .header_inner.line2.scroll-x li a{line-height:34px;}
 
 
 .subType2 #header{position: relative;}
@@ -309,3 +322,9 @@
 #container.findid #content .inner{ padding: 24px 6px 0px}
 //비밀번호 변경
 #container.changepw  #content .inner{ padding: 24px 6px 0px}
+
+
+// 1단형 메인타입 ( fixed )
+#header.mainType + #content{padding-top:58px;}
+// 2단형 메인타입 ( ATOM )
+#header.mainType2 + #content{padding-top:100px;}

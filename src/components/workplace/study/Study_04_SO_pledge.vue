@@ -44,30 +44,22 @@
                       </div>
                       <a href="#" class="btn"><span class="ico"></span></a>
                     </div>   
-                    <p class="sub-tit">부서명</p>
-                    <ul class="singleList">
-                      <li>
-                          <input type="text"  class="input" placeholder="부서를 입력해주세요." />
-                      </li>
-                    </ul>
-                    <p class="sub-tit">직급</p>
-                    <ul class="singleList">
-                      <li>
-                          <input type="text"  class="input" placeholder="직급을 입력해주세요." />
-                      </li>
-                    </ul>
-                    <p class="sub-tit">사번</p>
-                    <ul class="singleList">
-                      <li>
-                          <input type="text"  class="input" placeholder="사번을 입력해주세요." />
-                      </li>
-                    </ul>
-                    <p class="sub-tit">성명</p>
-                    <ul class="singleList">
-                      <li>
-                          <input type="text"  class="input" placeholder="성명을 입력해주세요." />
-                      </li>
-                    </ul>
+                    <p class="sub-tit"><strong>부서명</strong></p>
+                    <div class="singleList">
+                          <input type="text"  class="input" placeholder="부서를 입력해주세요." />                      
+                    </div>
+                    <p class="sub-tit"><strong>직급</strong></p>
+                    <div class="singleList">                      
+                          <input type="text"  class="input" placeholder="직급을 입력해주세요." />                      
+                    </div>
+                    <p class="sub-tit"><strong>사번</strong></p>
+                    <div class="singleList">                      
+                          <input type="text"  class="input" placeholder="사번을 입력해주세요." />                      
+                    </div>
+                    <p class="sub-tit"><strong>성명</strong></p>
+                    <div class="singleList">                      
+                          <input type="text"  class="input" placeholder="성명을 입력해주세요." />                      
+                    </div>
                     <div class="absBtmBtn">  
                         <button type="button" disabled="disabled" class="btn md clr1">제출</button>
                     </div>
