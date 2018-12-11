@@ -438,8 +438,9 @@
 
 // 모범답안
 
-#container.study_dictionary .empty_img { width: 100%; height: auto; margin: 12px 0 20px;}
-#container.study_dictionary .txt-desc{font-size:map-get($font-size, font_16); color:#1a1a1a; line-height: 25px; letter-spacing: -0.48px;}
+.titTxtWrap .empty_img { width: 100%; height: auto; margin: 12px 0 20px;}
+.titTxtWrap .txt-tit {font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
+.titTxtWrap .txt-desc{font-size:map-get($font-size, font_16); color:rgba(0,0,0,0.8); line-height: 25px; letter-spacing: -0.48px;}
 
 // 토론방 - 수정/등록 
 
@@ -571,4 +572,32 @@
 #container.study_notice_de .h-tit1{ font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;margin-bottom: 20px; }
 #container.study_notice_de .notice-txt{ font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; }
 
+
 // 리플렉션노트 수정
+
+#container.study_reflection_edit .ico.plus{vertical-align: -1px;}
+#container.study_reflection_edit .sub-tit{margin-top:20px; margin-bottom: 8px; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;}
+#container.study_reflection_edit input{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8);}
+#container.study_reflection_edit input::placeholder{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8);}
+#container.study_reflection_edit textarea{ color:rgba(0,0,0,0.8); width:100%; padding:12px 16px; background: #f5f5f5; font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
+
+
+// 학습현황창
+
+#container.study_status .titTxtWrap .line01{ padding-bottom: 9px; font-size:map-get($font-size, font_15);line-height: 26px; letter-spacing: -0.38px; color:rgba(0,0,0,0.8);}
+#container.study_status .titTxtWrap .line01 strong{ font-size:map-get($font-size, font_15);line-height: 26px; letter-spacing: -0.12px;}
+#container.study_status .card .card-head{margin-bottom: 15px;font-size:map-get($font-size, font_20);line-height: 29px; letter-spacing: -0.6px; }
+#container.study_status .card .card-head .labelChk2 input.chk + .label{line-height: 30px; }
+#container.study_status .card .card-body{background-color:#f2f3f7; }
+
+
+// 과제제출
+
+#container.study_stauts_apply .end.sub{right:57px;}
+#container.study_stauts_apply .h-tit5{ font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; margin-bottom: 18px;}
+#container.study_stauts_apply .l-inb{ display: inline-block;width: 26%;float: left; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
+#container.study_stauts_apply .r-inb{ display: inline-block; width:74%;  font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8);}
+#container.study_stauts_apply ul li{ margin-bottom: 14px;}
+#container.study_stauts_apply ul li.bottom-bd{border-bottom: 2px solid #eaeaea;}
+#container.study_stauts_apply ul li.bottom-pd{padding-bottom: 12px;}
+#container.study_stauts_apply .sub-tit{margin-top:18px; margin-bottom: 8px; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}

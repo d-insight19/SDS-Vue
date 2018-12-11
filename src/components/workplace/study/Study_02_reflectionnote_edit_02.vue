@@ -7,7 +7,7 @@
             <!-- header -->
             <div id="header" class="fixed">
             <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-            <p class="font_18">리플렉션노트 작성</p>
+            <p class="font_18">리플렉션노트 수정</p>
             <p class="end color_clr2">완료</p>
             </div>
             <!-- //header -->            
@@ -20,7 +20,8 @@
                         </div>                      
                         <p class="sub-tit"><strong>내용</strong></p>
                         <div class="singleList "> 
-                            <input  type="text" placeholder="내용을 입력해 주세요" />                  
+                            <textarea class="" rows="5">본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다.     
+                            </textarea>                 
                         </div>
                         <p class="label-tit-02 mt36"><strong>첨부파일 추가</strong></p>
                         <ul class="ulList type4">

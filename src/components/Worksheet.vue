@@ -4735,8 +4735,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.02.studystatus_assignment</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_studystatus_assignment' }">
+            Study_02_studystatus_assignment
           </router-link>
         </td>
         <td></td>
@@ -4752,8 +4752,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.03.studystatus_assignment_apply</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_studystatus_assignment_apply' }">
+            Study_02_studystatus_assignment_apply
           </router-link>
         </td>
         <td></td>
@@ -5386,8 +5386,12 @@
         <td>　</td>
         <td class="textL">05.Study_02.37.reflectionnote_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_reflectionnote_edit' }">
+            Study_02_reflectionnote_edit
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_02_reflectionnote_edit_02' }">
+            // edit_02
           </router-link>
         </td>
         <td></td>
@@ -6029,8 +6033,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.16.LO_docs_fs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_03_LO_docs_fs' }">
+            Study_03_LO_docs_fs
           </router-link>
         </td>
         <td></td>
@@ -6199,8 +6203,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.09.SO_quiz_submission</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_submission' }">
+            Study_04_SO_quiz_submission
           </router-link>
         </td>
         <td></td>
@@ -6318,8 +6322,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.16.SO_opinion_writtingguide</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_writtingguide' }">
+            Study_04_SO_opinion_writtingguide
           </router-link>
         </td>
         <td></td>
@@ -6548,8 +6552,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.28.SO_assinment_bestanswer</td>
         <td>
-          <router-link :to="{ name: 'Study_SO_assinment_bestanswer' }">
-            Study_SO_assinment_bestanswer
+          <router-link :to="{ name: 'Study_04_SO_assinment_bestanswer' }">
+            Study_04_SO_assinment_bestanswer
           </router-link>
         </td>
         <td></td>
@@ -6684,8 +6688,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.36.SO_simulation</td>
         <td>
-          <router-link :to="{ name: 'Study_SO_simulation' }">
-            Study_SO_simulation
+          <router-link :to="{ name: 'Study_04_SO_simulation' }">
+            Study_04_SO_simulation
           </router-link>
         </td>
         <td></td>
