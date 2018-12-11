@@ -28,6 +28,7 @@
           <div class="cell">
             <div class="inner">
                 <component :is="component"/>
+                test
             </div>
           </div>
         </div>
