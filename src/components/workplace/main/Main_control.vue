@@ -28,7 +28,7 @@
           <div class="cell">
             <div class="inner">
                 <component :is="component"/>
-                test
+                git test
             </div>
           </div>
         </div>
