@@ -1,9 +1,9 @@
 <template>
   <label
     ref="label"
-    :class="[classObject, { '-slp-switch--disabled': disabled }]"
     :disabled="disabled"
     :tabindex="disabled ? false : 0"
+    :class="classObject"
     class="labelBtn"
     @keydown.prevent.enter.space="$refs.label.click()"
     @mousedown="isMouseDown = true"
@@ -11,7 +11,7 @@
     @mouseout="isMouseDown = false"
     @blur="isMouseDown = false">
     <input
-      v-model="newValue"
+      v-model="computedValue"
       :disabled="disabled"
       :name="name"
       :value="nativeValue"
@@ -34,12 +34,30 @@
 export default {
   name: 'SlpSwitch',
   props: {
-    value: [String, Number, Boolean, Function, Object, Array, Symbol],
-    nativeValue: [String, Number, Boolean, Function, Object, Array, Symbol],
-    disabled: Boolean,
-    type: String,
-    name: String,
-    size: String,
+    value: {
+      type: [String, Number, Boolean, Function, Object, Array, Symbol],
+      default: null
+    },
+    nativeValue: {
+      type: [String, Number, Boolean, Function, Object, Array, Symbol],
+      default: null
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    type: {
+      type: String,
+      default: null
+    },
+    name: {
+      type: String,
+      default: null
+    },
+    size: {
+      type: String,
+      default: null
+    },
     trueValue: {
       type: [String, Number, Boolean, Function, Object, Array, Symbol],
       default: true
@@ -63,18 +81,20 @@ export default {
       isMouseDown: false
     }
   },
+  computed: {
+    computedValue: {
+      get () {
+        return this.newValue
+      },
+      set (value) {
+        this.newValue = value
+        this.$emit('input', value)
+      }
+    }
+  },
   watch: {
-    /**
-     * When v-model change, set internal value.
-     */
     value (value) {
       this.newValue = value
-    },
-    /**
-     * Emit input event to update the user v-model.
-     */
-    newValue (value) {
-      this.$emit('input', value)
     }
   }
 }

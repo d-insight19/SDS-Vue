@@ -4,8 +4,51 @@
     <div id="wrap" class="colorCode2">        
       <!-- container -->
       <div id="container" class="mediaquery">
-        <!-- header  + tab 고정 헤더 -->
-        <div id="header" class="tab" style="display:none1;">          
+        
+        <!-- 
+          1. 확장형 헤더 의 유무는  <div class="hide_header"></div> 통해 확장 시킴
+          2. 텝의 유무는  <div class="header_inner line2 tabMenu"> <ul class="fixTab"></ul> </div>
+          3. 스크롤 텝의 경우  <div class="header_inner line2 tabMenu scroll-x"> <ul class="scrollTab"></ul> </div>
+          
+          ** 확장형 헤더의 경우 fixed 되었을 경우 58px로 고정되지만,  Tab이 같이 있는 경우는 100px 로 고정 **      
+          ** 확장형이 아닌 처음부터 고정일 경우엔 <div id="header"> 에  fixed 클래스를 추가해놓으면 됨 **     
+        -->
+
+        <!-- 
+          window.onscroll = function() {myFunction()}
+          var header = document.getElementById('header')
+          var sticky = header.offsetTop;
+          function myFunction() {
+            if (window.pageYOffset > 0) {
+              header.classList.add('fixed')
+            } else {
+              header.classList.remove('fixed')
+            }
+          }
+
+        -->
+
+         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div v-if="headerType == '1'" id="header" class="expand">          
+          <div class="header_inner line1">
+            <button type="button" class="btn only prev"><span class="ico">이전</span></button>
+            <p class="font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+          </div>  
+          <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+          </div>
+        </div>
+        <!-- //header -->
+
+
+        <!-- header + 확장형 + tab  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div v-if="headerType == '2'" id="header" class="tab">          
           <div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             <p class="font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
@@ -30,33 +73,9 @@
         </div>
         <!-- //header -->
 
-         <!-- header  + tab 고정 헤더 -->
-        <div id="header" class="fixed2 expand" style="display:none;">          
-          <div class="header_inner line1">
-            <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-            <p class="font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
-          </div>  
-          <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-          </div>
-        </div>
-        <!-- //header -->
-
-
-
-
-
-
-
-
+        
         <!-- header scroll 헤더  작업중-->
-        <div id="header" class="tab" style="display:none;">
+        <div v-if="headerType == '3'" id="header" class="tab">
           
           <div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -70,7 +89,16 @@
                 <li><a href="#tab3">인문학이야기</a></li>
                 <li><a href="#tab3">인문학이야기</a></li>
               </ul>
-          </div>          
+          </div>     
+          <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+          </div>     
         </div>
         <!-- //header -->
 
@@ -226,22 +254,7 @@
             <!-- //list -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
+             </div>
           </div>
         </div>
 
@@ -253,6 +266,10 @@
 </template>
 
 <script>
+/*
+  headerType
+  1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
+*/
 export default {
   name: 'components_tabheader',
   /* vue lifecycle */
@@ -263,6 +280,7 @@ export default {
   /* vue data */
   data () {
     return {
+      headerType: 2
     }
   },
   /* vue function */

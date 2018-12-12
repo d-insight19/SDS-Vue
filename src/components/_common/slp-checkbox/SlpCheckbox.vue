@@ -1,17 +1,17 @@
 <template>
   <label
-    :for="id"
-    :class="{ '-slp-checkbox--disabled' : disabled}"
+    ref="label"
     :disabled="disabled"
-    class="labelChk">
+    :class="labelClass"
+    @keydown.prevent.enter.space="$refs.label.click()">
     <input
-      :id="id"
-      :name="id"
+      v-model="computedValue"
       :disabled="disabled"
       type="checkbox"
-      class="chk"
-      @click="onClick()">
-    <span class="ico"/>
+      class="chk">
+    <span
+      v-if="type === 'check'"
+      class="ico"/>
     <span
       v-if="!!Object.keys($slots).length"
       class="label"><slot/></span>
@@ -19,68 +19,48 @@
 </template>
 
 <script>
-/* eslint-disable */
 export default {
   name: 'SlpCheckbox',
-  model: {
-    prop: 'checked'
-  },
   props: {
-    id: [String],
-    checked: [Number, Boolean, String, Array],
     value: {
-      type: [Number, String, Boolean, Array, Object],
+      type: [String, Number, Boolean, Function, Object, Array, Symbol],
       default: false
     },
     disabled: {
       type: Boolean,
       default: false
+    },
+    type: {
+      type: String,
+      default: 'check'
     }
   },
   data () {
     return {
-      strTypeClicked: false
+      newValue: this.value
     }
   },
   computed: {
-    clicked () {
-      if (typeof (this.value) === 'boolean') {
-        if (typeof (this.checked) === 'boolean') {
-          return this.checked
-        } else {
-          return this.checked === 'Y'
-        }
-      } else if (typeof (this.value) === 'number' && typeof (this.checked) !== 'object') {
-        return this.checked
+    labelClass () {
+      if (this.type === 'button') {
+        return 'labelChk2'
       } else {
-        if (typeof (this.checked) === 'object') {
-          return (this.checked.indexOf(this.value) >= 0)
-        } else {
-          return this.strTypeClicked
-        }
+        return 'labelChk'
+      }
+    },
+    computedValue: {
+      get () {
+        return this.newValue
+      },
+      set (value) {
+        this.newValue = value
+        this.$emit('input', value)
       }
     }
   },
-  methods: {
-    onClick () {
-      if (typeof (this.value) === 'boolean') {
-        if (typeof (this.checked) === 'boolean') {
-          this.$emit('input', !this.checked)
-        } else {
-          this.$emit('input', this.checked === 'Y' ? 'N' : 'Y')
-        }
-      } else {
-        if (typeof (this.checked) === 'object') {
-          if (this.checked.indexOf(this.value) >= 0) {
-            this.$emit('input', this.checked.filter(item => item !== this.value))
-          } else {
-            this.$emit('input', this.checked.concat(this.value))
-          }
-        } else {
-          this.$emit('input', this.strTypeClicked ? '' : this.value)
-          this.strTypeClicked = !this.strTypeClicked
-        }
-      }
+  watch: {
+    value (value) {
+      this.newValue = value
     }
   }
 }

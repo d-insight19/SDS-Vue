@@ -37,6 +37,8 @@ import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
 import LoginJoinId from '~workplace/login/Login_joinid'
 import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
 import LoginSearchPost from '~workplace/login/Login_searchpost'
+import LoginSearchCompany from '~workplace/login/Login_searchcompany'
+import LoginSearchCompanyResult from '~workplace/login/Login_searchcompanyresult'
 import LoginJoinInterest from '~workplace/login/Login_joininterest'
 import LoginJoinInExtrainfo from '~workplace/login/Login_joinextrainfo'
 import LoginJoinComplete from '~workplace/login/Login_joincomplete'
@@ -45,7 +47,6 @@ import LoginLoginIntegrationId from '~workplace/login/Login_loginintegrationid'
 import LoginLoginReIntegration from '~workplace/login/Login_loginreintegration'
 import LoginLoginChangeId from '~workplace/login/Login_loginchangeid'
 import LoginLoginChangeIdMain from '~workplace/login/Login_loginchangeidmain'
-
 import LoginChangepw from '~workplace/login/Login_changepw'
 import LoginLockid from '~workplace/login/Login_lockid'
 import LoginDormant from '~workplace/login/Login_dormant'
@@ -327,6 +328,16 @@ var rootRoutes = [
     path: '/Login_searchpost',
     name: 'Login_searchpost',
     component: LoginSearchPost
+  },
+  {
+    path: '/Login_searchcompany',
+    name: 'Login_searchcompany',
+    component: LoginSearchCompany
+  },
+  {
+    path: '/Login_searchcompanyresult',
+    name: 'Login_searchcompanyresult',
+    component: LoginSearchCompanyResult
   },
   {
     path: '/Login_joininterest',

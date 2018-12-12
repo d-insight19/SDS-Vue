@@ -1,6 +1,7 @@
 <template>
   <label
     ref="label"
+    :class="{ '-slp-radio--disabled' : disabled}"
     :disabled="disabled"
     :tabindex="disabled ? false : 0"
     class="labelRdo"

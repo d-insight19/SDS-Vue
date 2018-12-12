@@ -53,7 +53,7 @@ export default {
     left: calc(50% - 40%);
     width: 80vw;
     bottom: 0vh;
-    z-index: 10;
+    z-index: 999;
 }
 
 .-slp-toast-item{

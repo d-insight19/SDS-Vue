@@ -1,22 +1,21 @@
 <template>
   <div>
-          <h1>Invalid Page</h1>
+    <h1>Invalid Page</h1>
   </div>
 </template>
 
 <script>
-/* eslint-disable */
 export default {
-  name: 'slp-invalid-page',
+  name: 'SlpInvalidPage',
   props: {
-  },
-  mounted: function () {
-  },
-  methods: {
   },
   data () {
     return {
     }
+  },
+  mounted: function () {
+  },
+  methods: {
   }
 }
 </script>

@@ -387,7 +387,22 @@
 #container.integration .login_integr_sel li .ico1{background-position: 0 -104px;}
 #container.integration .login_integr_sel li .ico2{background-position: -73px -104px;}
 
-
+// 회사 찾기
+#container.searchcompany .tabWrap{border-top: solid 1px #eaeaea;margin: 0px -24px 18px -24px;}
+#container.searchcompany .h-tit1{font-size:map-get($font-size, font_26); line-height: 38px;letter-spacing: -1.3px;font-weight: 500;}
+#container.searchcompany .tabWrap .tabMenu li{border-bottom: 1px solid #cccccc;}
+#container.searchcompany .tabWrap .tabMenu a{font-size:map-get($font-size, font_15); line-height: 44px;letter-spacing: -0.75px;font-weight: 500;vertical-align: middle;}
+#container.searchcompany .hr.tap.comname{height: 2px;margin: 0;width: 50%;margin-top:-2px;}
+#container.searchcompany .hr.tap.comnum{height: 2px;margin: 0;width: 50%;margin-top:-2px;margin-left:50%;}
+#container.searchcompany .label-tit{font-size:map-get($font-size, font_14); line-height: 20px;letter-spacing: -0.42px;font-weight: 500;}
+#container.searchcompany .intSchBox{margin-top:8px;}
+#container.searchcompany table{margin: 15px 0px 15px;}
+#container.searchcompany table tr + tr > *{padding-top: 1px;}
+#container.searchcompany table tr + tr td + td::before{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;background: #d9d9d9;margin-right: 6.5px;margin-top: -1px;}
+#container.searchcompany .search_result .com_name{font-size:map-get($font-size, font_15); line-height: 22px;letter-spacing: -0.45px;font-weight: 400;}
+#container.searchcompany .search_result .com_number{font-size:map-get($font-size, font_13); line-height: 19px;letter-spacing: -0.39px;font-weight: 400;color: rgba(0, 0, 0, 0.65);}
+#container.searchcompany .search_result .com_number.text{width:65.5px;height: 11px;}
+#container.searchcompany .hr.table{height: 1px; background: #e3e3e3;margin: 0;}
 
 
 

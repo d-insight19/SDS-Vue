@@ -120,18 +120,14 @@
 .mt70{margin-top: 70px !important;}/*12월12일 추가*/
 
 
-
+.mb20{margin-bottom: 20px !important;}
 .mb24{margin-bottom: 24px !important;}
 .mb26{margin-bottom: 26px !important;}
 .mb32{margin-bottom: 32px !important;}
 .mb58{margin-bottom: 58px !important;}/*12월12일 추가*/
 
-
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
-
-
-
 
 /* hr */
 .hr{height:8px; margin: 25px -24px; background:#f6f6f6;}
@@ -140,7 +136,3 @@
 /* link */
 .link{display: inline-block;}
 .link .ico.arr{width:10px; height: 10px; margin-left: 4px; background-position: -279px -67px;}
-
-
-
-

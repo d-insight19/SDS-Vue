@@ -7,7 +7,16 @@ export default {
   name: 'SlpLineChart',
   extends: Line,
   mixins: [ reactiveProp ],
-  props: ['options', 'dataChange'],
+  props: {
+    options: {
+      type: Object,
+      default: null
+    },
+    dataChange: {
+      type: Object,
+      default: null
+    }
+  },
   data () {
     return {
     }

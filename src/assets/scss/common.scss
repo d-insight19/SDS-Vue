@@ -37,7 +37,6 @@ button.btn{
 .font_18{font-size:map-get($font_size, font_18)}
 .font_19{font-size:map-get($font_size, font_19)}
 .font_20{font-size:map-get($font_size, font_20)}
-.font_22{font-size:map-get($font_size, font_22)} // 22추가
 .font_26{font-size:map-get($font_size, font_26)}
 .font_30{font-size:map-get($font_size, font_30)}
 
@@ -560,3 +559,34 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 
 .addrInt li + li{margin-top: 5px !important;}
 
+
+
+// Drawer SideNav
+#drawer{position:fixed;top:0px;left:-335px;width:335px;height:100vh;z-index:998;transition: 0.5s;}
+#drawer.show{left:0px;}
+#drawer .drawer_inner{width:300px;height:100%;background:#fff;padding: 0px 24px;overflow-y: scroll;}
+#drawer .drawer_header{display:block;width:100%;height:58px;position: relative;}
+#drawer .drawer_header .logo{position: absolute;width: 90px;height: 23px; top: 24px;}
+#drawer .drawer_header .logo img{width:100%;height:100%}
+#drawer .drawer_header .arm{width:32px;height:32px;position:absolute;top:15px;right:48px;}
+#drawer .drawer_header .arm .new{width:6px;height:6px;background:map-get($static_colors , danger);border-radius: 6px;display: inline-block;position: absolute;top: 3px;right: 1px;}
+#drawer .drawer_header .arm .icon{width:32px;height:32px;background: url("../img/ic_alarm_line_32.png") no-repeat; background-size: contain;display: inline-block;}
+#drawer .drawer_header .setting{width:32px;height:32px;position:absolute;top:15px;right:0px;}
+#drawer .drawer_header .setting .icon{width:32px;height:32px;background: url("../img/ic_setting_line_32.png") no-repeat; background-size: contain;display: inline-block;}
+#drawer .drawer_profile{  display:block;  width:100%;  height:90px;  font-size:map-get($font-size, font_20 );position: relative;padding:0px 30px 0px 60px;line-height: 90px;font-weight:500;}
+#drawer .drawer_profile .profile_img{width:48px;height:48px;position: absolute;top:0px;left:0px;}
+#drawer .drawer_profile .profile_img img{    position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
+#drawer .drawer_profile .ico.next{width:24px;height:24px;background: url("../img/ic_next_24.png") no-repeat; background-size: contain;display:inline-block;position:absolute;top:33px;right:0px;}
+#drawer .drawer_list > li{color:rgba(0,0,0,0.8);font-size:map-get($font-size, font_15 );font-weight: 500;letter-spacing: -0.45px;min-height:48px;line-height: 48px;border-bottom:1px solid #eaeaea;}
+#drawer .drawer_list > li .ico{  float: right;  margin-top: 16px;}
+#drawer .drawer_list > li+li{margin-top:1px;}
+#drawer .drawer_list > li:nth-last-child(1){border-bottom:none;}
+#drawer .drawer_list .drawer_list_inner{display:none;margin-left:-24px;margin-right:-24px;    padding: 0px 24px;  }
+#drawer .drawer_list .drawer_list_inner li{font-size:map-get($font-size, font_14);height:46px;line-height: 46px;letter-spacing: -0.42px;font-weight:400;}
+#drawer .drawer_list > li.open .drawer_list_inner{display:block}
+#drawer .drawer_list > li.open .ico{background: url("../img/ic_accordion_arr_16_up.png") no-repeat; background-size: contain;}
+#drawer .drawer_atorm_txt{font-family: 'Roboto' ;font-weight:600;font-size:map-get($font-size, font_25 );line-height:29px; letter-spacing: 1.75px;position:absolute;bottom:42px;left:117px}
+#drawer .drawer_atorm_txt2{font-size:map-get($font-size, font_24 );line-height:36px; letter-spacing: 1.75px;position:absolute;bottom:40px;left:215px;letter-spacing: -0.72px;font-weight:500}
+#drawer .exchange_wrap{position:absolute;bottom:27px;left:277px;width:58px;height:58px;}
+#drawer .exchange_wrap .icon{width:58px;height:58px;background: url("../img/ic_atorm_exchange_bold_wh_28.png") no-repeat; background-size: contain;display:inline-block}
+#drawer-overlay{position: fixed;top: 0;left: 0;right: 0;height: 100vh;background-color: rgba(0,0,0,0.5);z-index: 997;}

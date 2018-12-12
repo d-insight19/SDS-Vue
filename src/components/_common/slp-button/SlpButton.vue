@@ -1,16 +1,15 @@
 <template>
-    <button
-      class="btn"
-      :class="btnClassObject"
-      type="button"
-      :disabled="disabled"
-      @click="onClick">{{ title }}
-      <slot></slot>
-    </button>
+  <button
+    :class="classObject"
+    :disabled="disabled"
+    class="btn"
+    type="button"
+    @click="onClick">{{ title }}
+    <slot/>
+  </button>
 </template>
 
 <script>
-/* eslint-disable */
 export default {
   name: 'SlpButton',
   props: {
@@ -22,7 +21,7 @@ export default {
       type: Boolean,
       default: false
     },
-    btnClassObject: {
+    classObject: {
       type: Object,
       default: null
     }

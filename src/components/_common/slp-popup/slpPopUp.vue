@@ -1,61 +1,59 @@
 <template>
-  <slp-modal
-    v-model="isModalShow"
-    :prevent-outside-close="preventOutsideClose"
-    modal-type="popup">
-    <div class="-slp-popup__wrapper">
-      <div class="-slp-popup__title-area">
-        <h1 class="-slp-popup__title">{{ title }}</h1>
-        <slot/>
-      </div>
-      <div
-        class="-slp-popup__close">
-        <button
-          v-if="!!closeInput"
-          class="-slp-popup__close-button"
-          @click="onClose">{{ closeInput }}</button>
+  <div >
+    <div class="layerWrap">
+      <div class="ly-in">
+        <div class="ly-hd">
+          {{ title }}
+        </div>
+        <div class="ly-body">
+          <slot/>
+        </div>
+        <div
+          class="ly-btn">
+          <button
+            v-if="!!cancelInput"
+            type="button"
+            class="btn"
+            @click="cancelClick">{{ cancelInput }}</button>
+          <button
+            v-if="!!confirmInput"
+            type="button"
+            class="btn color_clr2"
+            @click="confirmClick">{{ confirmInput }}</button>
+        </div>
       </div>
     </div>
-  </slp-modal>
+    <div id="dim"/>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'SlpPopup',
   props: {
-    value: {
-      type: Boolean,
-      default: false
-    },
     title: {
       type: String,
       default: null
     },
-    preventOutsideClose: {
-      type: Boolean,
-      default: false
+    cancelInput: {
+      type: String,
+      default: null
     },
-    closeInput: {
+    confirmInput: {
       type: String,
       default: null
     }
   },
   data () {
     return {
-      isModalShow: this.value
-    }
-  },
-  watch: {
-    isModalShow (newValue) {
-      this.$emit('input', newValue)
-    },
-    value () {
-      this.isModalShow = this.value
     }
   },
   methods: {
-    onClose () {
-      this.$emit('input', false)
+    cancelClick () {
+      this.$emit('cancelClick')
+    },
+    confirmClick () {
+      this.$emit('confirmClick')
     }
   }
 }

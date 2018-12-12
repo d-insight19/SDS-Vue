@@ -79,399 +79,6 @@
       </tr>		  
       -->
       <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>버튼</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_buttons' }">
-            components_buttons
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>텍스트필드</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_textfield' }">
-            components_textfield
-          </router-link>
-        </td>
-        <td>20181206 err 클래스명 수정</td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>체크박스</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_checkbox' }">
-            components_checkbox
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>라디오</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_radio' }">
-            components_radio
-          </router-link>
-        </td>
-        <td>20181204 수정</td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>라디오버튼</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_radiobutton' }">
-            components_radiobutton
-          </router-link>
-        </td>
-        <td>20181204 수정</td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>스위치</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_switch' }">
-            components_switch
-          </router-link>
-        </td>
-        <td>20181204 수정</td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>셀렉트</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_select' }">
-            components_select
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>싱글라인리스트</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_list_singleline' }">
-            components_list_singleline
-          </router-link>
-        </td>
-        <td>20181129 수정</td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>멀티라인리스트</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_list_multiline' }">
-            components_list_multiline
-          </router-link>
-        </td>
-        <td>20181129 수정</td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>썸네일리스트</td>
-        <td>vertical</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_thumblist_vertical' }">
-            components_thumblist_vertical
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>썸네일리스트</td>
-        <td>horizontal　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_thumblist_horizontal' }">
-            components_thumblist_horizontal
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>Tab</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_tab' }">
-            components_tab
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>Progress Bar</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_progressbar' }">
-            components_progressbar
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>Stepper</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_stepper' }">
-            components_stepper
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>카드</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_card' }">
-            components_card
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>팝업</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_popup' }">
-            components_popup
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>앱바</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_header' }">
-            components_header
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>앱바 메인</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_mainheader' }">
-            components_mainheader
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td>앱바 템</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_tabheader' }">
-            components_tabheader
-          </router-link>
-        </td>
-        <td>구현중</td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통컴포넌트</td>
-        <td></td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_thumblist_horizontal' }">
-            components_thumblist_horizontal
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통</td>
-        <td>레이아웃</td>
-        <td>리스트형</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_layout_type1' }">
-            components_layout_type1
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통</td>
-        <td>레이아웃</td>
-        <td>일바녕</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_layout_type2' }">
-            components_layout_type2
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">0</td>
-        <td>공통</td>
-        <td>레이아웃</td>
-        <td>예외형</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL"></td>
-        <td>
-          <router-link :to="{ name: 'components_layout_type3' }">
-            components_layout_type3
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-
-      <tr>
       <td align="center">1</td>
         <td>로그인 / 회원가입</td>
         <td>연수원 찾기</td>
@@ -722,8 +329,8 @@
         <td>　</td>
         <td class="textL">01.login_02.04_search_company</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_searchcompany' }">
+            Login_searchcompany
           </router-link>
         </td>
         <td></td>
@@ -739,8 +346,8 @@
         <td>　</td>
         <td class="textL">01.login_02.04_search_company_Result</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_searchcompanyresult' }">
+            Login_searchcompanyresult
           </router-link>
         </td>
         <td></td>
@@ -9829,6 +9436,399 @@
         </td>
         <td></td>
       </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>버튼</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_buttons' }">
+            components_buttons
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>텍스트필드</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_textfield' }">
+            components_textfield
+          </router-link>
+        </td>
+        <td>20181206 err 클래스명 수정</td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>체크박스</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_checkbox' }">
+            components_checkbox
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>라디오</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_radio' }">
+            components_radio
+          </router-link>
+        </td>
+        <td>20181204 수정</td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>라디오버튼</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_radiobutton' }">
+            components_radiobutton
+          </router-link>
+        </td>
+        <td>20181204 수정</td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>스위치</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_switch' }">
+            components_switch
+          </router-link>
+        </td>
+        <td>20181204 수정</td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>셀렉트</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_select' }">
+            components_select
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>싱글라인리스트</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_list_singleline' }">
+            components_list_singleline
+          </router-link>
+        </td>
+        <td>20181129 수정</td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>멀티라인리스트</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_list_multiline' }">
+            components_list_multiline
+          </router-link>
+        </td>
+        <td>20181129 수정</td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>썸네일리스트</td>
+        <td>vertical</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_thumblist_vertical' }">
+            components_thumblist_vertical
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>썸네일리스트</td>
+        <td>horizontal　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_thumblist_horizontal' }">
+            components_thumblist_horizontal
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>Tab</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_tab' }">
+            components_tab
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>Progress Bar</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_progressbar' }">
+            components_progressbar
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>Stepper</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_stepper' }">
+            components_stepper
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>카드</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_card' }">
+            components_card
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>팝업</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_popup' }">
+            components_popup
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>앱바</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_header' }">
+            components_header
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>앱바 메인</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_mainheader' }">
+            components_mainheader
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>앱바 템</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_tabheader' }">
+            components_tabheader
+          </router-link>
+        </td>
+        <td>구현중</td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_thumblist_horizontal' }">
+            components_thumblist_horizontal
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>레이아웃</td>
+        <td>리스트형</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_layout_type1' }">
+            components_layout_type1
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>레이아웃</td>
+        <td>일바녕</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_layout_type2' }">
+            components_layout_type2
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>레이아웃</td>
+        <td>예외형</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_layout_type3' }">
+            components_layout_type3
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+
       </tbody>
     </table>
   </div>
