@@ -1,7 +1,7 @@
 <template>
    <!-- eslint-disable -->
   <div class="Wrap">
-	  	<div class="tit">퍼블리싱 현황판</div>
+	  	<div class="tit">퍼블리싱 현황판11</div>
 		<div class="tbl-top">
 		<div class="fr">
 			T : 탭,  L : 레이어 팝업, W : 윈도우 팝업
