@@ -86,6 +86,10 @@ import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
 import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
 
 import MainControl from '~workplace/main/Main_control'
+import MainCurateUI01 from '~workplace/main/Main_curateUI01'
+import MainCurateUI02 from '~workplace/main/Main_curateUI02'
+import MainCurateUI03 from '~workplace/main/Main_curateUI03'
+import MainCurateUI04 from '~workplace/main/Main_curateUI04'
 
 // import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 // import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
@@ -517,6 +521,26 @@ var rootRoutes = [
     path: '/Main_control',
     name: 'Main_control',
     component: MainControl
+  },
+  {
+    path: '/Main_curateUI01',
+    name: 'Main_curateUI01',
+    component: MainCurateUI01
+  },
+  {
+    path: '/Main_curateUI02',
+    name: 'Main_curateUI02',
+    component: MainCurateUI02
+  },
+  {
+    path: '/Main_curateUI03',
+    name: 'Main_curateUI03',
+    component: MainCurateUI03
+  },
+  {
+    path: '/Main_curateUI04',
+    name: 'Main_curateUI04',
+    component: MainCurateUI04
   }
   // {
   //   path: '/Drawer_myinfo',

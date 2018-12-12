@@ -647,3 +647,14 @@
 #container.study_simulation_sub .sim-txt{ color:rgba(0,0,0,0.8); font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; }
 
 
+// 김현미 작업
+// 메인
+// common.css 에 추가
+.mb10{margin-bottom: 10px !important;}
+.mb13{margin-bottom: 13px !important;}
+.mb14{margin-bottom: 14px !important;}
+.mb20{margin-bottom: 20px !important;}
+// 리사이즈 위한  img151x113
+.thumList.type2.img151x113 > li{width:151px;}
+.thumList.type2.img151x113 .thum{width:151px; height:113px;}
+.thumList.type2.img151x113 .thumbnail .thumImg {width:151px; height:113px;}

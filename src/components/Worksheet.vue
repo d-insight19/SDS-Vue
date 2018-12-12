@@ -3049,6 +3049,10 @@
           <router-link :to="{ name: 'Main_control' }">
             Main_control
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Main_curateUI01' }">
+            Main_curateUI01
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -3063,8 +3067,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.01.02.    CurateUI02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_curateUI02' }">
+            Main_curateUI02
           </router-link>
         </td>
         <td></td>
@@ -3080,8 +3084,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.01.02.    CurateUI03</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_curateUI03' }">
+            Main_curateUI03
           </router-link>
         </td>
         <td></td>
@@ -3097,8 +3101,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.01.02.    CurateUI04</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_curateUI04' }">
+            Main_curateUI04
           </router-link>
         </td>
         <td></td>
