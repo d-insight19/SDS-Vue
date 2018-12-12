@@ -1,7 +1,7 @@
 <template>
    <!-- eslint-disable -->
   <div class="Wrap">
-	  	<div class="tit">퍼블리싱 현황판 choks </div>
+	  	<div class="tit">퍼블리싱 현황판</div>
 		<div class="tbl-top">
 		<div class="fr">
 			T : 탭,  L : 레이어 팝업, W : 윈도우 팝업
@@ -1181,8 +1181,8 @@
         <td>프로필 편집 가능여부 설정</td>
         <td class="textL">03.Drawer_03.01_myinfo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_03.01_myinfo' }">
+            Drawer_03.01_myinfo
           </router-link>
         </td>
         <td></td>
@@ -8123,8 +8123,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_03.01_myinfo</td>
         <td>
-          <router-link :to="{ name: 'Drawer_myinfo' }">
-            Drawer_myinfo
+          <router-link :to="{ name: 'B2C_Drawer_myinfo' }">
+            B2C_Drawer_myinfo
           </router-link>
         </td>
         <td></td>

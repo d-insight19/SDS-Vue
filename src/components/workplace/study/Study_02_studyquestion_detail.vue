@@ -11,7 +11,7 @@
                     <div class="mb26">
                         <span class="chip">질문방</span>     
                         <p class="h-tit1">
-                            <span class="q-tit">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</span> 
+                            <strong class="q-tit">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</strong> 
                             <span class="fr ico more28"></span>                            
                         </p>
                         <p class="info-group">

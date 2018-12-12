@@ -574,14 +574,24 @@
 
 // 질문방 상세
 
-#container.study_question_de .info-group{ font-weight:none; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.8); }
-#container.study_question_de .info-group .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background: rgba(0,0,0,0.5);} 
-#container.study_question_de .info-group .ico.play{vertical-align: -2px;}
-#container.study_question_de #header p.h-tit1{text-overflow: unset; white-space:unset;}
-#container.study_question_de #header p.h-tit1 {margin-bottom: 4px;}
-#container.study_question_de #header p.h-tit1 .q-tit{display:inline-block; width: 90%;}
-#container.study_question_de #header p.h-tit1 .ico.more28{display:inline-block; margin-top:3px;}
-#container.study_question_de .ico-group{ padding:22px 0 0 0; font-weight:none; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65); }
+.info-group{ font-weight:none; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.8); }
+.info-group .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background: rgba(0,0,0,0.5);} 
+.info-group .ico.play{vertical-align: -2px;}
+#header p.h-tit1{text-overflow: unset !important; white-space:unset !important;}
+#header p.h-tit1 {margin-bottom: 4px;}
+#header p.h-tit1 .q-tit{display:inline-block; width: 90%;}
+#header p.h-tit1 .ico.more28{display:inline-block; margin-top:3px;}
+// #header p{ font-weight: 300 !important;}
+#header .ico-group{ padding:22px 0 0 0; font-weight:600; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65); }
+
+// 질문방 상세 2
+
+#container.study_question_de_02 .hr{margin: 26px -24px 22px -24px;}
+#container.study_question_de_02 .reply-tit{font-size:map-get($font-size, font_16);line-height: 38px; letter-spacing: -0.48px;}
+#container.study_question_de_02 .reply-tit-2{margin-top:16px; margin-bottom: 8px;}
+#container.study_question_de_02 .reply-txt{font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; color:#1a1a1a;}
+#container.study_question_de_02 .reply-txt-2{font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:rgba(0,0,0,0.65);}
+#container.study_question_de_02 .reply-txt-2 .reply-time{margin-left: 6px; }
 
 // 공지사항 상세
 #container.study_notice_de .ico-group{  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.8); }
@@ -645,6 +655,81 @@
 
 #container.study_simulation_sub .sim-tit{ margin-bottom: 16px; color:rgba(0,0,0,1); font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; }
 #container.study_simulation_sub .sim-txt{ color:rgba(0,0,0,0.8); font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 정은희 작업
+// drawer 시작
+// 회원정보
+#container.drawer .myinfo_img {position: relative; background: url("../img/img_man_80.png"); width: 80px; height:80px; margin: 4px auto 8px;}
+#container.drawer .edit_ico {position: absolute; background: url("../img/btn_edit_28.png"); left:58px; top:58px; width: 28px; height:28px; }
+#container.drawer p.name {font-size: map-get($font-size, font_22); letter-spacing: -0.22px; margin-bottom: 2px; text-align: center; line-height: 31px; }
+#container.drawer p.email {font-size: map-get($font-size, font_12); color:rgba(0, 0, 0, 0.65); letter-spacing: -0.22px; text-align: center; line-height: 18px;}
+#container.drawer .black_next{width:16px;height:16px;background: url("../img/ic_next_16.png") no-repeat; position: absolute; right: 0; bottom: 19px;}
+
+// 기본정보 관리
+#container.drawer button.btn14 {font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px; position: absolute; right: 18px; bottom: 18px; font-weight: 500}
+#container.drawer .multiList.type1 > li { border-bottom: 1px solid #e3e3e3; padding:15px 0; min-height: 0 }
+#container.drawer .multiList.type2 > li { padding:0; min-height: 0 }
+#container.drawer .id_info .btn { position: absolute; right: 0; bottom: 20px; z-index: 1; width:93px; border:#ccc 1px solid; padding:7px 10px;}
+#container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:rgba(0,0,0,0.8); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
+#container.drawer .multiList.type2 .id_info button {position: absolute; right: 0; bottom:19px}
+#container.drawer .multiList.type2 input {margin-top:8px}
+#container.drawer .label-tit{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .contents{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:rgba(0,0,0,0.65); line-height: 29px;}
+#container.drawer .btn.sm {margin:8px 0}
+#container.drawer .rdoSelBox input:checked span.label {font-weight:bold !important}
+
+// 배송지 관리
+#container.drawer .multiList.type1 > li span.default {border-radius:20px; font-size:map-get($font_size, font_11); color:#fff; padding:2px 9px; margin-left:7px}
+#container.drawer .multiList.type1 > li button.btn14 {position: absolute; top:0; right: 0; height:20px}
+#container.drawer .multiList.type1 > li .address {font-size:map-get($font_size, font_16); padding-right: 67px; }
+#container.drawer .multiList.type1 > li.id_info {padding-top:0}
+// drawer 끝
+
+
+
+
+
+
+
+
+
+
 
 
 // 김현미 작업

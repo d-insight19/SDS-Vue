@@ -76,6 +76,7 @@ import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studys
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentbestanswer from '~workplace/study/Study_04_SO_assinment_bestanswer'
+import Study04SOquizsubmission from '~workplace/study/Study_04_SO_quiz_submission'
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
 import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
 import Study04SOopinionwrittingguide from '~workplace/study/Study_04_SO_opinion_writtingguide'
@@ -91,19 +92,19 @@ import MainCurateUI02 from '~workplace/main/Main_curateUI02'
 import MainCurateUI03 from '~workplace/main/Main_curateUI03'
 import MainCurateUI04 from '~workplace/main/Main_curateUI04'
 
-// import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
-// import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
-// import Drawermyinfochoosepic from '~workplace/drawer/Drawer_myinfo_choosepic'
-// import Drawermyinfobasicinfo from '~workplace/drawer/Drawer_myinfo_basicinfo'
-// import Drawermyinfobasicinfoedit from '~workplace/drawer/Drawer_myinfo_basicinfo_edit'
-// import B2CDrawermyinfoaccount from '~workplace/drawer/B2C_Drawer_myinfo_account'
-// import B2CDrawermyinfotracking from '~workplace/drawer/B2C_Drawer_myinfo_tracking'
-// import B2CDrawermyinfotrackingdelete from '~workplace/drawer/B2C_Drawer_myinfo_tracking_delete'
-// import B2CDrawermyinfotrackingedit from '~workplace/drawer/B2C_Drawer_myinfo_tracking_edit'
-// import Drawer06myinfoaccountpassword from '~workplace/drawer/Drawer_06_myinfo_account_password'
-// import B2CDrawermyinfoaccountpassword from '~workplace/drawer/B2C_Drawer_myinfo_account_password'
-// import Drawer08myinfoaccountpassword from '~workplace/drawer/Drawer_08_myinfo_account_password'
-// import Drawersettings from '~workplace/drawer/Drawer_settings'
+import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
+import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
+import Drawermyinfochoosepic from '~workplace/drawer/Drawer_myinfo_choosepic'
+import Drawermyinfobasicinfo from '~workplace/drawer/Drawer_myinfo_basicinfo'
+import Drawermyinfobasicinfoedit from '~workplace/drawer/Drawer_myinfo_basicinfo_edit'
+import B2CDrawermyinfoaccount from '~workplace/drawer/B2C_Drawer_myinfo_account'
+import B2CDrawermyinfotracking from '~workplace/drawer/B2C_Drawer_myinfo_tracking'
+import B2CDrawermyinfotrackingdelete from '~workplace/drawer/B2C_Drawer_myinfo_tracking_delete'
+import B2CDrawermyinfotrackingedit from '~workplace/drawer/B2C_Drawer_myinfo_tracking_edit'
+import Drawer06myinfoaccountpassword from '~workplace/drawer/Drawer_06_myinfo_account_password'
+import B2CDrawermyinfoaccountpassword from '~workplace/drawer/B2C_Drawer_myinfo_account_password'
+import Drawer08myinfoaccountpassword from '~workplace/drawer/Drawer_08_myinfo_account_password'
+import Drawersettings from '~workplace/drawer/Drawer_settings'
 
 // 1번 영역
 var rootRoutes = [
@@ -493,6 +494,11 @@ var rootRoutes = [
     component: Study04SOactionplaninput
   },
   {
+    path: '/Study_04_SO_quiz_submission',
+    name: 'Study_04_SO_quiz_submission',
+    component: Study04SOquizsubmission
+  },
+  {
     path: '/Study_04_SO_survey_submission',
     name: 'Study_04_SO_survey_submission',
     component: Study04SOsurveysubmission
@@ -541,77 +547,77 @@ var rootRoutes = [
     path: '/Main_curateUI04',
     name: 'Main_curateUI04',
     component: MainCurateUI04
-  }
-  // {
-  //   path: '/Drawer_myinfo',
-  //   name: 'Drawer_myinfo',
-  //   component: DrawerMyinfo
-  // },
-  // {
-  // path: '/Drawer_myinfo_logout',
-  // name: 'Drawer_myinfo_logout',
-  // component: Drawermyinfologout
-  // },
-  // {
-  //   path: '/Drawer_myinfo_choosepic',
-  //   name: 'Drawer_myinfo_choosepic',
-  //   component: Drawermyinfochoosepic
-  // },
-  // {
-  //   path: '/Drawer_myinfo_basicinfo',
-  //   name: 'Drawer_myinfo_basicinfo',
-  //   component: Drawermyinfobasicinfo
-  // },
-  // {
-  //   path: '/Drawer_myinfo_basicinfo_edit',
-  //   name: 'Drawer_myinfo_basicinfo_edit',
-  //   component: Drawermyinfobasicinfoedit
-  // },
-  // {
-  //   path: '/B2C_Drawer_myinfo_account',
-  //   name: 'B2C_Drawer_myinfo_account',
-  //   component: B2CDrawermyinfoaccount
-  // },
-  // {
-  //   path: '/B2C_Drawer_myinfo_tracking',
-  //   name: 'B2C_Drawer_myinfo_tracking',
-  //   component: B2CDrawermyinfotracking
-  // },
-  // {
-  //   path: '/B2C_Drawer_myinfo_tracking_delete',
-  //   name: 'B2C_Drawer_myinfo_tracking_delete',
-  //   component: B2CDrawermyinfotrackingdelete
-  // },
-  // {
-  //   path: '/B2C_Drawer_myinfo_tracking_edit',
-  //   name: 'B2C_Drawer_myinfo_tracking_edit',
-  //   component: B2CDrawermyinfotrackingedit
-  // },
-  // {
-  //   path: '/Drawer_06_myinfo_account_password',
-  //   name: 'Drawer_06_myinfo_account_password',
-  //   component: Drawer06myinfoaccountpassword
-  // },
+  },
+  {
+    path: '/Drawer_myinfo',
+    name: 'Drawer_myinfo',
+    component: DrawerMyinfo
+  },
+  {
+    path: '/Drawer_myinfo_logout',
+    name: 'Drawer_myinfo_logout',
+    component: Drawermyinfologout
+  },
+  {
+    path: '/Drawer_myinfo_choosepic',
+    name: 'Drawer_myinfo_choosepic',
+    component: Drawermyinfochoosepic
+  },
+  {
+    path: '/Drawer_myinfo_basicinfo',
+    name: 'Drawer_myinfo_basicinfo',
+    component: Drawermyinfobasicinfo
+  },
+  {
+    path: '/Drawer_myinfo_basicinfo_edit',
+    name: 'Drawer_myinfo_basicinfo_edit',
+    component: Drawermyinfobasicinfoedit
+  },
+  {
+    path: '/B2C_Drawer_myinfo_account',
+    name: 'B2C_Drawer_myinfo_account',
+    component: B2CDrawermyinfoaccount
+  },
+  {
+    path: '/B2C_Drawer_myinfo_tracking',
+    name: 'B2C_Drawer_myinfo_tracking',
+    component: B2CDrawermyinfotracking
+  },
+  {
+    path: '/B2C_Drawer_myinfo_tracking_delete',
+    name: 'B2C_Drawer_myinfo_tracking_delete',
+    component: B2CDrawermyinfotrackingdelete
+  },
+  {
+    path: '/B2C_Drawer_myinfo_tracking_edit',
+    name: 'B2C_Drawer_myinfo_tracking_edit',
+    component: B2CDrawermyinfotrackingedit
+  },
+  {
+    path: '/Drawer_06_myinfo_account_password',
+    name: 'Drawer_06_myinfo_account_password',
+    component: Drawer06myinfoaccountpassword
+  },
   // {
   //   path: '/Drawer_myinfo_account_password',
   //   name: 'Drawer_myinfo_account_password',
   //   component: Drawermyinfoaccountpassword
   // },
-  // {
-  //   path: '/B2C_Drawer_myinfo_account_password',
-  //   name: 'B2C_Drawer_myinfo_account_password',
-  //   component: B2CDrawermyinfoaccountpassword
-  // },
-  // {
-  //   path: '/Drawer_08_myinfo_account_password',
-  //   name: 'Drawer_08_myinfo_account_password',
-  //   component: Drawer08myinfoaccountpassword
-  // },
-  // {
-  //   path: '/Drawer_settings',
-  //   name: 'Drawer_settings',
-  //   component: Drawersettings
-  // }
+  {
+    path: '/B2C_Drawer_myinfo_account_password',
+    name: 'B2C_Drawer_myinfo_account_password',
+    component: B2CDrawermyinfoaccountpassword
+  },
+  {
+    path: '/Drawer_08_myinfo_account_password',
+    name: 'Drawer_08_myinfo_account_password',
+    component: Drawer08myinfoaccountpassword
+  },
+  {
+    path: '/Drawer_settings',
+    name: 'Drawer_settings',
+    component: Drawersettings
+  }
 ]
 
 export default rootRoutes
