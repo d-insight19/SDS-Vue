@@ -88,6 +88,7 @@
                   </div>
                 </div>
             </div>
+            <!-- //contents -->
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  

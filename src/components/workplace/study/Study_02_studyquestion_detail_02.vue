@@ -1,30 +1,46 @@
 <template>
- <!-- eslint-disable -->
+<!-- eslint-disable -->
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
-      <!-- container -->
-        <div id="container" class="mediaquery study_notice_de bg-gr">
+        <!-- container -->
+        <div id="container" class="mediaquery study_question_de ">
             <!-- header -->
             <div id="header" class="bg-gr">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <div class="head-inner"> 
-                    <div class="mb58">
-                        <span class="chip">공지사항</span>     
-                        <p class="h-tit1">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
-                        <p class="ico-group">
-                            <span class="ico clip"></span>
-                            <span>2,190</span>
-                            <span class="pipe"></span>
-                            <span class="ico view"></span>
-                            <span>첨부파일</span>
+                    <div class="mb26">
+                        <span class="chip">질문방</span>     
+                        <p class="h-tit1">
+                            <span class="q-tit">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</span> 
+                            <span class="fr ico more28"></span>                            
                         </p>
+                        <p class="info-group">
+                            <span>비공개</span>
+                            <span class="pipe"></span>
+                            <span>1차시</span>
+                            <span class="pipe"></span>
+                            <span>2018.10.10</span>
+                            <span class="pipe"></span>
+                            <span>정해민</span>
+                            <span class="pipe"></span>
+                            <span class="ico play"></span>
+                            <span>10:36</span>
+                        </p>
+                        <div class="ico-group">
+                            <span class="color_clr3">답변완료</span>
+                            <p class="fr">
+                                <span class="ico clip "></span>
+                                <span>첨부파일</span>
+                            </p>
+                        </div>                        
                     </div>
                 </div>
             </div>
             <!-- //header -->
+
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">                        
+                    <div class="inner">                       
                         <div>
                             <p class="notice-txt">본질적인 조건을 생각해보다가 떠오른게 있는데 관련보고 형식과 리더십의 조건에 대한 강의를 참고하는게좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. </p>
                         </div>

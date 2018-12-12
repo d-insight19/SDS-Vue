@@ -1198,8 +1198,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_03.02_myinfo_logout</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_myinfo_logout' }">
+            Drawer_myinfo_logout
           </router-link>
         </td>
         <td></td>
@@ -1215,8 +1215,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_03.03_myinfo_choosepic</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_myinfo_choosepic' }">
+            Drawer_myinfo_choosepic
           </router-link>
         </td>
         <td></td>
@@ -1249,8 +1249,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_04.01_myinfo_basicinfo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_myinfo_basicinfo' }">
+            Drawer_myinfo_basicinfo
           </router-link>
         </td>
         <td></td>
@@ -1266,8 +1266,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_04.02_myinfo_basicinfo_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_myinfo_basicinfo_edit' }">
+            Drawer_myinfo_basicinfo_edit
           </router-link>
         </td>
         <td></td>
@@ -1317,8 +1317,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_06.01_myinfo_account</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account' }">
+            B2C_Drawer_myinfo_account
           </router-link>
         </td>
         <td></td>
@@ -1334,8 +1334,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_06.02_myinfo_account_password</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_06_myinfo_account_password' }">
+            Drawer_06_myinfo_account_password
           </router-link>
         </td>
         <td></td>
@@ -4820,8 +4820,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.07.studystatus_assessment_notice_01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_studystatus_assessment_notice' }">
+            Study_02_studystatus_assessment_notice
           </router-link>
         </td>
         <td></td>
@@ -5088,8 +5088,11 @@
         <td>　</td>
         <td class="textL">05.Study_02.22.studyquestion_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_studyquestion_detail' }">
+            Study_02_studyquestion_detail
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_02_studyquestion_detail_02' }">
+            // detail_02
           </router-link>
         </td>
         <td></td>
@@ -5122,8 +5125,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.23.studyquestion_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_studyquestion_edit' }">
+            Study_02_studyquestion_edit
           </router-link>
         </td>
         <td></td>
@@ -5173,8 +5176,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.26.notice_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_notice_detail' }">
+            Study_02_notice_detail
           </router-link>
         </td>
         <td></td>
@@ -6705,8 +6708,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.37.SO_simulation_submission</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_simulation_submission' }">
+            Study_04_SO_simulation_submission
           </router-link>
         </td>
         <td></td>
@@ -8252,8 +8255,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.01_myinfo_account</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account' }">
+            B2C_Drawer_myinfo_account
           </router-link>
         </td>
         <td></td>
@@ -8269,8 +8272,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_tracking</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_tracking' }">
+            B2C_Drawer_myinfo_tracking
           </router-link>
         </td>
         <td></td>
@@ -8286,8 +8289,25 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_tracking_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_tracking_edit' }">
+            B2C_Drawer_myinfo_tracking_edit
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">464-add</td>
+        <td>B2C - Drawer</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>배송지 추가</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL">B2C_Drawer_06.02_myinfo_tracking_delete</td>
+        <td>
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_tracking_delete' }">
+            B2C_Drawer_myinfo_tracking_delete
           </router-link>
         </td>
         <td></td>
@@ -8303,8 +8323,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_account_password</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account_password' }">
+            B2C_Drawer_myinfo_account_password
           </router-link>
         </td>
         <td></td>
@@ -9323,8 +9343,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_07.01_settings</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_settings' }">
+            Drawer_settings
           </router-link>
         </td>
         <td></td>
@@ -9784,6 +9804,23 @@
         <td>
           <router-link :to="{ name: '' }">
             
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">553-add</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL">03.drawer_08.02_myinfo_account_password</td>
+        <td>
+          <router-link :to="{ name: 'Drawer_08_myinfo_account_password' }">
+            Drawer_08_myinfo_account_password
           </router-link>
         </td>
         <td></td>
