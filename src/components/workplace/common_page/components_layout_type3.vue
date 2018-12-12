@@ -7,7 +7,7 @@
         <!-- header -->
         <div id="header">
           <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-          <p class="font_19">레이아웃 - 예외</p>
+          <p class="header_text font_19">레이아웃 - 예외</p>
         </div>
         <!-- //header -->
         <div id="content" class="etc">

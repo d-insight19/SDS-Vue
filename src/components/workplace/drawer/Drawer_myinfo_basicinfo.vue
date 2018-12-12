@@ -8,7 +8,7 @@
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="font_18">기본정보관리</p><button type="button" class="btn14 color_clr2">수정</button>
+                <p class="header_text font_18">기본정보관리</p><button type="button" class="btn14 color_clr2">수정</button>
             </div>
             <!-- //header -->
 

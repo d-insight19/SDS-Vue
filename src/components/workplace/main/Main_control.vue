@@ -157,7 +157,6 @@ export default {
       this.drawerFlag = !this.drawerFlag
     },
     toggleMenu (event) {
-      console.error(event)
       if (event.target.classList.contains('open')) {
         event.target.classList.remove('open')
       } else {

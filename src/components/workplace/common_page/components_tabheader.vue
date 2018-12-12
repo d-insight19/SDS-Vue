@@ -32,7 +32,7 @@
         <div v-if="headerType == '1'" id="header" class="expand">          
           <div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-            <p class="font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+            <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
           </div>  
           <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
             <p>asdfasdf</p>
@@ -51,7 +51,7 @@
         <div v-if="headerType == '2'" id="header" class="tab">          
           <div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-            <p class="font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+            <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
           </div>  
           <div class="header_inner line2 tabMenu">
               <ul class="fixTab">
@@ -79,7 +79,7 @@
           
           <div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-            <p class="font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+            <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
           </div>            
           <div class="header_inner line2 tabMenu scroll-x">
               <ul class="scrollTab">
@@ -268,7 +268,7 @@
 <script>
 /*
   headerType
-  1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
+  1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝  or  헤더 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
 */
 export default {
   name: 'components_tabheader',

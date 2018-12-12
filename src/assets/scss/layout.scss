@@ -127,6 +127,8 @@
 /* common */
 #wrap{height: 100%;}
 
+#header .header_text{display:none;}
+#header.fixed .header_text {display:block;}
 #header{  
   position: relative;
   display: block;
@@ -143,6 +145,9 @@
   top:0px;
   z-index:10;
   border-color:#d9d9d9;
+}
+#header.tab.fixed{
+  border:none;
 }
 #header.fixed ~ #content{
   margin-top: 0px;
@@ -329,8 +334,11 @@
 //비밀번호 변경
 #container.changepw  #content .inner{ padding: 24px 6px 0px}
 
+// 회사검색
+#container.searchcompany #content .inner{padding-top:18px}
 
 // 1단형 메인타입 ( fixed )
 #header.mainType + #content{padding-top:58px;}
 // 2단형 메인타입 ( ATOM )
 #header.mainType2 + #content{padding-top:100px;}
+

@@ -5,30 +5,26 @@
       <!-- container -->
       <div id="container" class="mediaquery searchcompany">
         <!-- header -->
-        <div id="header">
-          <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-          <p class="font_19"></p>
+        <div id="header" class="tab">          
+          <div class="header_inner line1">
+            <button type="button" class="btn only close"><span class="ico">닫기</span></button>
+            <p class="header_text font_19">회사검색</p>
+          </div>  
+          <div class="header_inner line2 tabMenu">
+              <ul class="fixTab">
+                <li class="on"><a href="#tab1">회사명</a></li><!-- selected class "on" -->
+                <li><a href="#tab2">사업자 등록번호</a></li>
+              </ul>
+          </div>
+          <div class="hide_header">
+            <div class="hide_inner"><h1 class="h-tit1">회사 검색</h1></div>            
+          </div> 
         </div>
         <!-- //header -->
         
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 mb20">회사 검색</h1>
-
-                <!-- tab wrap -->
-                <div class="tabWrap">
-                    <!-- tab menu -->
-                    <ul class="tabMenu">
-                        <li><a href="#tab_comname">회사명</a></li>
-                        <li><a href="#tab_comnum">사업자 등록번호</a></li>
-                    </ul>
-                    <!-- //tab menu -->
-
-                    <div class="hr tap clr2 comname" style="display: none1"></div>
-                    <div class="hr tap clr2 comnum" style="display: none"></div>
-                </div>
-                <!-- //tab wrap -->
 
                 <!-- 회사명 -->
                 <div style="display:none;">

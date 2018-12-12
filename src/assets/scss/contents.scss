@@ -389,7 +389,7 @@
 
 // 회사 찾기
 #container.searchcompany .tabWrap{border-top: solid 1px #eaeaea;margin: 0px -24px 18px -24px;}
-#container.searchcompany .h-tit1{font-size:map-get($font-size, font_26); line-height: 38px;letter-spacing: -1.3px;font-weight: 500;}
+#container.searchcompany .h-tit1{font-size:map-get($font-size, font_26); line-height: 38px;letter-spacing: -1.3px;font-weight: 500;margin-bottom:20px;}
 #container.searchcompany .tabWrap .tabMenu li{border-bottom: 1px solid #cccccc;}
 #container.searchcompany .tabWrap .tabMenu a{font-size:map-get($font-size, font_15); line-height: 44px;letter-spacing: -0.75px;font-weight: 500;vertical-align: middle;}
 #container.searchcompany .hr.tap.comname{height: 2px;margin: 0;width: 50%;margin-top:-2px;}
@@ -403,7 +403,9 @@
 #container.searchcompany .search_result .com_number{font-size:map-get($font-size, font_13); line-height: 19px;letter-spacing: -0.39px;font-weight: 400;color: rgba(0, 0, 0, 0.65);}
 #container.searchcompany .search_result .com_number.text{width:65.5px;height: 11px;}
 #container.searchcompany .hr.table{height: 1px; background: #e3e3e3;margin: 0;}
-
+#container.searchcompany #header .fixTab{border-top:1px solid #eaeaea;}
+#container.searchcompany #header.fixed .fixTab{border-top:0px;}
+#container.searchcompany #header .hide_inner{padding: 80px 0px 42px 18px;}
 
 
 

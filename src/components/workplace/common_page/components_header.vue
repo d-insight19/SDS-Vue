@@ -7,7 +7,7 @@
         <!-- header -->
         <div id="header">
           <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-          <p class="font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+          <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
         </div>
         <!-- //header -->
 
