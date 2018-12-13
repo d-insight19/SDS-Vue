@@ -21,16 +21,16 @@
       <col width="250px" />
       <col width="*" /> 
       -->
-      <col width="80px" />
+      <col width="60px" />
       <col width="140px" />
       <col width="140px" />
       <col width="150px" />
       <col width="140px" />
       <col width="140px" />
+      <col width="140px" />
       <col width="150px" />
-      <col width="220px" />
-      <col width="310px" />
-      <col width="110px" />
+      <col width="260px" />
+      <col width="160px" />
       <col width="*" />
 		</colgroup>
 	  <thead>
@@ -839,6 +839,7 @@
         <td>　</td>
         <td class="textL">03.Drawer_03.04_myinfo_choosepic_done</td>
         <td>
+          네이티브 영역. 개발필요
           <router-link :to="{ name: '' }">
             
           </router-link>
