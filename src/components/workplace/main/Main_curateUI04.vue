@@ -172,6 +172,7 @@ export default {
   /* vue data */
   data () {
     return {
+      tabIdx: 1
     }
   },
   /* vue function */
