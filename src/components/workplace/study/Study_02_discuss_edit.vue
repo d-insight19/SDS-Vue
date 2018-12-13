@@ -65,7 +65,7 @@
 
 <script>
 export default {
-  name: 'Study_02_discuss_edit',
+  name: 'Study_dictionary',
   /* vue lifecycle */
   created () {
   },
