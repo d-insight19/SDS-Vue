@@ -598,9 +598,8 @@
 #header p.h-tit1 {margin-bottom: 4px;}
 #header p.h-tit1 .q-tit{display:inline-block; width: 90%;}
 #header p.h-tit1 .ico.more28{display:inline-block; margin-top:3px;}
-#header .ico-group{ padding-top:22px; font-weight:600; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65); }
-#header .head-inner{line-height: 28px !important;}
-
+// #header p{ font-weight: 300 !important;}
+#header .ico-group{ padding:22px 0 0 0; font-weight:600; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65); }
 
 // 질문방 상세 2
 
@@ -674,12 +673,6 @@
 #container.study_simulation_sub .sim-tit{ margin-bottom: 16px; color:rgba(0,0,0,1); font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; }
 #container.study_simulation_sub .sim-txt{ color:rgba(0,0,0,0.8); font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; }
 
-// faq - 상세
-
-#container.study_faq_de #header .h-tit1{ font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px}
-#container.study_faq_de #header .ico-group{padding-top:18px; font-weight:600; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65); }
-
-#container.study_faq_de .faq-txt{ font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; }
 
 
 
@@ -734,22 +727,16 @@
 #container.drawer .multiList.type2 .id_info button {position: absolute; right: 0; bottom:19px}
 #container.drawer .multiList.type2 input {margin-top:8px}
 #container.drawer .label-tit{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
-#container.drawer .contents{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:rgba(0,0,0,0.65); }
+#container.drawer .contents{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:rgba(0,0,0,0.65); line-height: 29px;}
 #container.drawer .btn.sm {margin:8px 0}
 #container.drawer .rdoSelBox input:checked span.label {font-weight:bold !important}
 
 // 배송지 관리
 #container.drawer .multiList.type1 > li span.default {border-radius:20px; font-size:map-get($font_size, font_11); color:#fff; padding:2px 9px; margin-left:7px}
-#container.drawer .multiList.type1 > li button.btn14 {position: absolute; top:15px; right: 0; height:20px}
-#container.drawer .multiList.type1 > li button.btn14.first {top:0;}
-#container.drawer .multiList.type1 > li .address {font-size:map-get($font_size, font_16); padding-right: 67px; margin:5px 0 }
-#container.drawer .multiList.type1 > li .name_line {color:rgba(0,0,0,0.8);}
-#container.drawer .multiList.type1 > li .name_line .bar {border-left:#d9d9d9 1px solid; height:10px; margin:0 8px; display: inline-block}
+#container.drawer .multiList.type1 > li button.btn14 {position: absolute; top:0; right: 0; height:20px}
+#container.drawer .multiList.type1 > li .address {font-size:map-get($font_size, font_16); padding-right: 67px; }
 #container.drawer .multiList.type1 > li.id_info {padding-top:0}
-// #container #content.drawer .inner {}
-#container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px;color:rgba(0,0,0,0.65); margin:20px 0}
 // drawer 끝
-
 
 
 

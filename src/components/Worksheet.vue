@@ -21,16 +21,16 @@
       <col width="250px" />
       <col width="*" /> 
       -->
-      <col width="80px" />
+      <col width="60px" />
       <col width="140px" />
       <col width="140px" />
       <col width="150px" />
       <col width="140px" />
       <col width="140px" />
+      <col width="140px" />
       <col width="150px" />
-      <col width="220px" />
-      <col width="310px" />
-      <col width="110px" />
+      <col width="260px" />
+      <col width="160px" />
       <col width="*" />
 		</colgroup>
 	  <thead>
@@ -839,6 +839,7 @@
         <td>　</td>
         <td class="textL">03.Drawer_03.04_myinfo_choosepic_done</td>
         <td>
+          네이티브 영역. 개발필요
           <router-link :to="{ name: '' }">
             
           </router-link>
@@ -941,9 +942,9 @@
         <td>　</td>
         <td class="textL">03.Drawer_06.02_myinfo_account_password</td>
         <td>
-          <!-- <router-link :to="{ name: 'Drawer_06_myinfo_account_password' }">
+          <router-link :to="{ name: 'Drawer_06_myinfo_account_password' }">
             Drawer_06_myinfo_account_password
-          </router-link> -->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -5315,8 +5316,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.54.faq_detail</td>
         <td>
-          <router-link :to="{ name: 'Study_02_faq_detail' }">
-            Study_02_faq_detail
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -7730,8 +7731,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_03.01_myinfo</td>
         <td>
-          <router-link :to="{ name: 'B2C_Drawer_myinfo' }">
-            B2C_Drawer_myinfo
+          <router-link :to="{ name: '' }">
+          
           </router-link>
         </td>
         <td></td>
@@ -7900,9 +7901,9 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_tracking_edit</td>
         <td>
-          <!-- <router-link :to="{ name: 'B2C_Drawer_myinfo_tracking_edit' }">
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_tracking_edit' }">
             B2C_Drawer_myinfo_tracking_edit
-          </router-link> -->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -7917,9 +7918,9 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_tracking_delete</td>
         <td>
-          <!-- <router-link :to="{ name: 'B2C_Drawer_myinfo_tracking_delete' }">
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_tracking_delete' }">
             B2C_Drawer_myinfo_tracking_delete
-          </router-link> -->
+          </router-link>
         </td>
         <td></td>
       </tr>
