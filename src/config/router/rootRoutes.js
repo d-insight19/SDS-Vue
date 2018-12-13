@@ -102,8 +102,8 @@ import B2CDrawermyinfoaccount from '~workplace/drawer/B2C_Drawer_myinfo_account'
 import B2CDrawermyinfotracking from '~workplace/drawer/B2C_Drawer_myinfo_tracking'
 import B2CDrawermyinfotrackingdelete from '~workplace/drawer/B2C_Drawer_myinfo_tracking_delete'
 import B2CDrawermyinfotrackingedit from '~workplace/drawer/B2C_Drawer_myinfo_tracking_edit'
-import Drawer06myinfoaccountpassword from '~workplace/drawer/Drawer_06_myinfo_account_password'
 import B2CDrawermyinfoaccountpassword from '~workplace/drawer/B2C_Drawer_myinfo_account_password'
+import Drawer06myinfoaccountpassword from '~workplace/drawer/Drawer_06_myinfo_account_password'
 import Drawer08myinfoaccountpassword from '~workplace/drawer/Drawer_08_myinfo_account_password'
 import Drawersettings from '~workplace/drawer/Drawer_settings'
 
@@ -609,11 +609,6 @@ var rootRoutes = [
     name: 'Drawer_06_myinfo_account_password',
     component: Drawer06myinfoaccountpassword
   },
-  // {
-  //   path: '/Drawer_myinfo_account_password',
-  //   name: 'Drawer_myinfo_account_password',
-  //   component: Drawermyinfoaccountpassword
-  // },
   {
     path: '/B2C_Drawer_myinfo_account_password',
     name: 'B2C_Drawer_myinfo_account_password',
