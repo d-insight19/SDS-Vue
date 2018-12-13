@@ -161,7 +161,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI02',
+  name: 'Main_banner',
   /* vue lifecycle */
   created () {
   },

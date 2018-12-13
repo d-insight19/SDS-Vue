@@ -52,6 +52,15 @@ $brand_colors: (
     .color_clr3{
       color: map-get($color,clr3) !important;
     }
+    .border_clr1{
+      border-color: map-get($color,clr1) !important;
+    }    
+    .border_clr2{
+      border-color: map-get($color,clr2) !important;
+    }    
+    .border_clr3{
+      border-color: map-get($color,clr3) !important;
+    }
     input.underline:focus{
       border:0 !important;
       border-bottom:1px solid map-get($color,clr2) !important;

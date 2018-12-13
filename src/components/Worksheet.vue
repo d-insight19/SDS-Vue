@@ -2657,7 +2657,7 @@
           <router-link :to="{ name: 'Main_control' }">
             Main_control
           </router-link>
-          <br/>
+          ,
           <router-link :to="{ name: 'Main_curateUI01' }">
             Main_curateUI01
           </router-link>
@@ -2744,8 +2744,12 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.Board</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_board' }">
+            Main_board
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_board_empty' }">
+            Main_board_empty
           </router-link>
         </td>
         <td></td>
@@ -2778,8 +2782,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.Historylist</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_historylist' }">
+            Main_historylist
           </router-link>
         </td>
         <td></td>
@@ -2812,8 +2816,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.EnrollNotice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_enrollNotice' }">
+            Main_enrollNotice
           </router-link>
         </td>
         <td></td>
@@ -2829,8 +2833,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.Scrap</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_scrap' }">
+            Main_scrap
           </router-link>
         </td>
         <td></td>

@@ -25,9 +25,9 @@
         <!-- //header -->
 
         <div id="content" class="list">
-          <div class="cell">
 
-            <!-- component -->
+          <!-- component -->
+          <div class="cell">
             <div class="inner">
                 <h2 class="h-tit2 mb20">추천</h2>
                 <h3 class="h-tit3 mb10">정해민님을 위한 맞춤 추천과정</h3>
@@ -90,8 +90,10 @@
                     <!-- //list -->
                 </div>
             </div>
+          </div>
 
                 
+          <div class="cell">
             <div class="inner">
                 <h3 class="h-tit3 mb10">'마케팅직무'를 위한 추천과정</h3>
                 <!-- list -->
@@ -150,9 +152,9 @@
                 </ul>
                 <!-- //list -->
             </div>
-            <!-- //component -->
-
           </div>
+          <!-- //component -->
+
         </div>
         <div class="btn-quickWrite"></div>
       </div>
