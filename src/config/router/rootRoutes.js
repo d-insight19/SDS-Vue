@@ -115,6 +115,7 @@ import B2CDrawermyinfotracking from '~workplace/drawer/B2C_Drawer_myinfo_trackin
 import B2CDrawermyinfotrackingdelete from '~workplace/drawer/B2C_Drawer_myinfo_tracking_delete'
 import B2CDrawermyinfotrackingedit from '~workplace/drawer/B2C_Drawer_myinfo_tracking_edit'
 import B2CDrawermyinfoaccountpassword from '~workplace/drawer/B2C_Drawer_myinfo_account_password'
+import B2CDrawerSettings01 from '~workplace/drawer/B2C_drawer_settings01'
 
 // 1번 영역
 var rootRoutes = [
@@ -667,6 +668,11 @@ var rootRoutes = [
     path: '/B2C_Drawer_myinfo_account_password',
     name: 'B2C_Drawer_myinfo_account_password',
     component: B2CDrawermyinfoaccountpassword
+  },
+  {
+    path: '/B2C_drawer_settings01',
+    name: 'B2C_drawer_settings01',
+    component: B2CDrawerSettings01
   },
   {
     path: '/Drawer_08_myinfo_account_password',

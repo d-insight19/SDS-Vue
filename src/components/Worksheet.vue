@@ -7973,8 +7973,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_07.01_settings</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_drawer_settings01' }">
+            B2C_drawer_settings01
           </router-link>
         </td>
         <td></td>
