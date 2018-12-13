@@ -25,6 +25,26 @@
         </div>
         <!-- //container -->   
 
+     <!-- layer wrap -->
+    <div class="layerWrap">
+        <div class="ly-in">            
+            <div class="ly-body">                
+                <div class="ly-info">
+                    <p>배송지를 삭제하시겠습니까?</p>
+                </div>
+            </div>
+        
+            <div class="ly-btn">                
+                <button type="button" class="btn">취소</button>
+                <button type="button" class="btn color_clr2">확인</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- //layer wrap -->
+
+    <div id="dim"></div>
+
     </div>
     <!-- //wrap -->
 
