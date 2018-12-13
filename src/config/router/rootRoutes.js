@@ -74,6 +74,7 @@ import Study02reflectionnoteedit02 from '~workplace/study/Study_02_reflectionnot
 import Study02studystatusassignment from '~workplace/study/Study_02_studystatus_assignment'
 import Study02studystatusassignmentapply from '~workplace/study/Study_02_studystatus_assignment_apply'
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
+import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentbestanswer from '~workplace/study/Study_04_SO_assinment_bestanswer'
@@ -98,14 +99,15 @@ import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
 import Drawermyinfochoosepic from '~workplace/drawer/Drawer_myinfo_choosepic'
 import Drawermyinfobasicinfo from '~workplace/drawer/Drawer_myinfo_basicinfo'
 import Drawermyinfobasicinfoedit from '~workplace/drawer/Drawer_myinfo_basicinfo_edit'
+import Drawer06myinfoaccountpassword from '~workplace/drawer/Drawer_06_myinfo_account_password'
+import Drawer08myinfoaccountpassword from '~workplace/drawer/Drawer_08_myinfo_account_password'
+import Drawersettings from '~workplace/drawer/Drawer_settings'
+import B2CDrawermyinfo from '~workplace/drawer/B2C_Drawer_myinfo'
 import B2CDrawermyinfoaccount from '~workplace/drawer/B2C_Drawer_myinfo_account'
 import B2CDrawermyinfotracking from '~workplace/drawer/B2C_Drawer_myinfo_tracking'
 import B2CDrawermyinfotrackingdelete from '~workplace/drawer/B2C_Drawer_myinfo_tracking_delete'
 import B2CDrawermyinfotrackingedit from '~workplace/drawer/B2C_Drawer_myinfo_tracking_edit'
 import B2CDrawermyinfoaccountpassword from '~workplace/drawer/B2C_Drawer_myinfo_account_password'
-import Drawer06myinfoaccountpassword from '~workplace/drawer/Drawer_06_myinfo_account_password'
-import Drawer08myinfoaccountpassword from '~workplace/drawer/Drawer_08_myinfo_account_password'
-import Drawersettings from '~workplace/drawer/Drawer_settings'
 
 // 1번 영역
 var rootRoutes = [
@@ -475,6 +477,11 @@ var rootRoutes = [
     component: Study02studystatusassessmentnotice
   },
   {
+    path: '/Study_02_faq_detail',
+    name: 'Study_02_faq_detail',
+    component: Study02faqdetail
+  },
+  {
     path: '/Study_03_LO_viewer_fs',
     name: 'Study_03_LO_viewer_fs',
     component: Study03LOviewerfs
@@ -563,6 +570,11 @@ var rootRoutes = [
     path: '/Drawer_myinfo',
     name: 'Drawer_myinfo',
     component: DrawerMyinfo
+  },
+  {
+    path: '/B2C_Drawer_myinfo',
+    name: 'B2C_Drawer_myinfo',
+    component: B2CDrawermyinfo
   },
   {
     path: '/Drawer_myinfo_logout',
