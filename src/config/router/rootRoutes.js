@@ -92,6 +92,13 @@ import MainCurateUI01 from '~workplace/main/Main_curateUI01'
 import MainCurateUI02 from '~workplace/main/Main_curateUI02'
 import MainCurateUI03 from '~workplace/main/Main_curateUI03'
 import MainCurateUI04 from '~workplace/main/Main_curateUI04'
+import MainBanner from '~workplace/main/Main_banner'
+import MainBoard from '~workplace/main/Main_board'
+import MainBoardEmpty from '~workplace/main/Main_board_empty'
+import MainHistorylist from '~workplace/main/Main_historylist'
+import MainEnrollNotice from '~workplace/main/Main_enrollNotice'
+import MainScrap from '~workplace/main/Main_scrap'
+import MainScrapEmpty from '~workplace/main/Main_scrap_empty'
 
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
@@ -558,6 +565,41 @@ var rootRoutes = [
     path: '/Main_curateUI04',
     name: 'Main_curateUI04',
     component: MainCurateUI04
+  },
+  {
+    path: '/Main_banner',
+    name: 'Main_banner',
+    component: MainBanner
+  },
+  {
+    path: '/Main_board',
+    name: 'Main_board',
+    component: MainBoard
+  },
+  {
+    path: '/Main_board_empty',
+    name: 'Main_board_empty',
+    component: MainBoardEmpty
+  },
+  {
+    path: '/Main_historylist',
+    name: 'Main_historylist',
+    component: MainHistorylist
+  },
+  {
+    path: '/Main_enrollNotice',
+    name: 'Main_enrollNotice',
+    component: MainEnrollNotice
+  },
+  {
+    path: '/Main_scrap',
+    name: 'Main_scrap',
+    component: MainScrap
+  },
+  {
+    path: '/Main_scrap_empty',
+    name: 'Main_scrap_empty',
+    component: MainScrapEmpty
   },
   {
     path: '/Drawer_myinfo',
