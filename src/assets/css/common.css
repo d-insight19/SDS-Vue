@@ -38,7 +38,10 @@
 /* 추가 이미지 2018-12-12*/
 .ico.play{width:16px;height:16px;background: url("../img/ic_play_line_16.png") no-repeat;  }
 .ico.more28{width:28px;height:28px;background: url("../img/ic_moredots_28.png") no-repeat; }
-
+.ico.o-blk{width:16px;height:16px;background: url("../img/ic_o_black.png") no-repeat; }
+.ico.o-blue{width:16px;height:16px;background: url("../img/ic_o_blue.png") no-repeat; }
+.ico.x-blk{width:16px;height:16px;background: url("../img/ic_x_black.png") no-repeat; }
+.ico.x-blue{width:16px;height:16px;background: url("../img/ic_x_blue.png") no-repeat; }
 
 #header.mainType2 .line2 .ico{vertical-align: top}
 
