@@ -4351,9 +4351,9 @@
         <td>　</td>
         <td class="textL">05.Study_02.02.studystatus_assignment</td>
         <td>
-          <router-link :to="{ name: 'Study_02_studystatus_assignment' }">
+          <!-- <router-link :to="{ name: 'Study_02_studystatus_assignment' }">
             Study_02_studystatus_assignment
-          </router-link>
+          </router-link> -->
         </td>
         <td></td>
       </tr>
