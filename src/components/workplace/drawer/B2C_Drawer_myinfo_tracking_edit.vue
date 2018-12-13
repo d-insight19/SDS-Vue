@@ -7,15 +7,48 @@
             
             <!-- header -->
             <div id="header" class="fixed">
-                <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">기본정보관리 수정</p><button type="button" class="btn14 color_clr2 fr">수정</button>
+                <button type="button" class="btn only close"><span class="ico">닫기</span></button>
+                <p class="header_text font_18">배송지 추가</p>
             </div>
             <!-- //header -->
 
             <div id="content" class="drawer etc">
                 <div class="cell">
                     <div class="inner">
-                       
+                    <!-- list -->
+                    <ul class="multiList type2">                   
+                        <li>
+                            <strong class="label-tit">주소 별칭</strong>
+                            <input type="text" class="input mb20" placeholder="집,회사" >
+                        </li>
+                        <li>
+                            <strong class="label-tit">받으시는 분 성함</strong>
+                            <input type="text" class="input mb20" placeholder="이름 입력">
+                        </li> 
+                        <li>
+                            <strong class="label-tit">휴대전화</strong>
+                            <input type="text" class="input mb20" placeholder="‘-’없이 숫자만 입력">
+                        </li>                                       
+                        <li>
+                            <strong class="label-tit">주소</strong>                        
+                            <div>                                
+                                <ul>
+                                    <li>
+                                        <div class="postCode infoChk">
+                                            <input type="text" class="input" placeholder="우편번호">
+                                            <button type="button" class="btn sm">우편번호</button>
+                                        </div>
+                                    </li>
+                                    <li><input type="text" class="input" placeholder="주소 입력"></li>
+                                    <li><input type="text" class="input" placeholder="나머지 주소 입력"></li>
+                                </ul>                            
+                            </div>
+                        </li>
+                    </ul>                    
+                    <!-- //list -->
+                    <div class="logoutBtn mt70">
+                        <button type="button" class="btn md">배송지 등록</button>
+                    </div>
 
                        
                     </div>
