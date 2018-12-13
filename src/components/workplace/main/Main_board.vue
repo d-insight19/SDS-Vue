@@ -25,8 +25,39 @@
         <!-- //header -->
 
         <div id="content" class="list">
-        
+            
           <!-- //component -->
+          <div class="cell">
+            <div class="inner">
+                <h3 class="h-tit3 mb10">공통 게시판</h3>
+                <!-- cBox -->
+                <div class="cBox">
+                    <!-- tab -->
+                    <div class="tabWrap type2">
+                        <div  class="tabMenu">
+                        <ul>
+                            <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
+                            <li><a href="#tab2">이미지투데이</a></li>
+                            <li><a href="#tab3">인문학이야기</a></li>
+                        </ul>
+                        </div>
+
+                        <div class="tabCnt dpb" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
+                        <!-- list -->
+                        <ul class="ulList2">
+                            <li v-if="!boardList.length" class="no-date"><p><span class="ico"></span>작성된 게시글이 없습니다</p></li>
+                            <li v-for="item in boardList" :key="item.id"><a href="#"><span class="cate color_clr1">{{item.cate}}</span><p class="txt">{{item.title}}</p></a></li>
+                        </ul>
+                        <!-- //list -->
+                        </div>
+                    </div>
+                    <!-- //tab -->
+                </div>
+                <!-- //cBox -->
+            </div>
+          </div>
+
+
           <div class="cell">
             <div class="inner">
                 <h3 class="h-tit3 mb10">'마케팅직무'를 위한 추천과정</h3>
@@ -87,68 +118,6 @@
                 <!-- //list -->
             </div>
           </div>
-
-                
-          <div class="cell">
-            <div class="inner">
-                <h3 class="h-tit3 mb10">임직원 필수 교육 추천과정</h3>
-                <div class="scroll-x type2">
-                    <!-- list -->
-                    <ul class="thumList type2">
-                        <li>
-                            <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-
-                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- //list -->
-                </div>
-            </div>
-          </div>
           <!-- //component -->
 
         </div>
@@ -161,7 +130,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI02',
+  name: 'Main_board',
   /* vue lifecycle */
   created () {
   },
@@ -170,7 +139,12 @@ export default {
   /* vue data */
   data () {
     return {
-      tabIdx: 1
+      tabIdx: 1,
+      boardList: [
+        {cate: '이벤트', title: '고현숙의 코칭 리더십-팀 성과 향상을 위한 코칭'},
+        {cate: '안내', title: 'LEAP(Leadership Acceleration Program)'},
+        {cate: '이벤트', title: '마켓 트레블러 황성욱의 트렌드 센싱'}
+      ]
     }
   },
   /* vue function */

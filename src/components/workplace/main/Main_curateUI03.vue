@@ -25,14 +25,14 @@
         <!-- //header -->
 
         <div id="content" class="list">
-          <div class="cell">
             
-            <!-- component -->
+          <!-- component -->
+          <div class="cell">
             <div class="inner">
                 <h3 class="h-tit3 mb10">임직원 필수 교육 추천과정</h3>
                 <div class="scroll-x type2">
                     <!-- list -->
-                    <ul class="thumList type2 img151x113">
+                    <ul class="thumList type2">
                         <li>
                             <div class="in">
                             <a href="#" class="thum">
@@ -86,8 +86,10 @@
                     <!-- //list -->
                 </div>
             </div>
+          </div>
 
                 
+          <div class="cell">
             <div class="inner">
                 <h3 class="h-tit3 mb10">'마케팅직무'를 위한 추천과정</h3>
                 <!-- list -->
@@ -146,9 +148,9 @@
                 </ul>
                 <!-- //list -->
             </div>
-            <!-- //component -->
-
           </div>
+          <!-- //component -->
+
         </div>
         <div class="btn-quickWrite"></div>
       </div>
