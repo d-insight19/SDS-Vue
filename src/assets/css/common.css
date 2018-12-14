@@ -43,6 +43,10 @@
 .ico.x-blk{width:16px;height:16px;background: url("../img/ic_x_black.png") no-repeat; }
 .ico.x-blue{width:16px;height:16px;background: url("../img/ic_x_blue.png") no-repeat; }
 
+
+/* 추가 이미지 2018-12-14*/
+.ico.prev{width:16px;height:16px;background: url("../img/ic_play_line_16.png") no-repeat;  }
+
 #header.mainType2 .line2 .ico{vertical-align: top}
 
 .ico2.like{width:20px;height:20px;background: url("../img/ic_thumb_line_20.png") no-repeat; }

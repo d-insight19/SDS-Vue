@@ -25,16 +25,16 @@
                     <p class="empty_img">
                       <img src="" alt="">
                     </p>
-                    <p class="txt-desc">
+                    <p class="inner-txt">
                     본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다  
                     </p>
                     <p class="empty_img">
                       <img src="" alt="">
                     </p>
-                    <p class="txt-desc">
+                    <p class="inner-txt">
                     본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다  
                     </p>
-                    <p class="line02"></p> 
+                    <p class="hr"></p> 
                     <p class="sub-tit">회사명</p>
                     <div class="intSchBox singleList">
                       <!-- X 아이콘이 필요한 input -->

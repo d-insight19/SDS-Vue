@@ -73,7 +73,7 @@
 
 <script>
 export default {
-  name: 'Study_dictionary',
+  name: 'Study_02_reflectionnote_edit_02',
   /* vue lifecycle */
   created () {
   },

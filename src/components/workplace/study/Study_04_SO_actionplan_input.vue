@@ -94,7 +94,7 @@
 
 <script>
 export default {
-  name: 'Study_04_SO_simulation',
+  name: 'Study_04_SO_actionplan_input',
   /* vue lifecycle */
   created () {
   },

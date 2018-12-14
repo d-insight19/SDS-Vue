@@ -16,7 +16,7 @@
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
-                    <div class="head-inner">                             
+                    <div class="hide-inner">                             
                         <p class="h-tit5"> 
                             <span class="ico chk"></span>
                             <span >제출 완료</span>
@@ -45,7 +45,7 @@
                     </ul>
                 </div>  
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
-                    <div class="head-inner">
+                    <div class="hide-inner">
                         <span class="chip">FAQ</span>                         
                         <p class="h-tit1">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</p>
                         <p class="ico-group">
@@ -74,7 +74,7 @@
                     </ul>
                 </div>     
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
-                    <div class="head-inner">
+                    <div class="hide-inner">
                         <span class="chip">FAQ</span>                         
                         <p class="h-tit1">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</p>
                         <p class="ico-group">
