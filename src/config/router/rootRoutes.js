@@ -110,6 +110,7 @@ import MainGraphClassListMore from '~workplace/main/Main_graphClassList_more'
 import MainGradeStatus from '~workplace/main/Main_gradeStatus'
 import MainGradeStatusDetail from '~workplace/main/Main_gradeStatusDetail'
 
+import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
 import Drawermyinfochoosepic from '~workplace/drawer/Drawer_myinfo_choosepic'
@@ -667,6 +668,11 @@ var rootRoutes = [
     path: '/Main_gradeStatusDetail',
     name: 'Main_gradeStatusDetail',
     component: MainGradeStatusDetail
+  },
+  {
+    path: '/Drawer_alerm',
+    name: 'Drawer_alerm',
+    component: DrawerAlerm
   },
   {
     path: '/Drawer_myinfo',
