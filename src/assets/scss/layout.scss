@@ -64,6 +64,10 @@
           width:calc(100% - #{$l_padding}*2);
           .inner{}
         }
+        // 동영상
+        &.media{
+          width:calc(100% - #{$c_padding}*2);
+        }
       }
     }
   }
@@ -91,6 +95,10 @@
           width:520px;
           .inner{}
         }
+        // 동영상
+        &.media{
+          width:620px;
+        }
       }
     }
   }
@@ -117,6 +125,10 @@
         &.etc{
           width:520px;
           .inner{}
+        }
+        // 동영상
+        &.media{
+          width:844px;
         }
       }
     }
