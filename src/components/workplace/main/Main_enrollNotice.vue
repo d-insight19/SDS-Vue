@@ -41,10 +41,10 @@
           <div class="cell">
             <!-- component -->
             <div class="inner">
-                <h3 class="h-tit3 mb10">임직원 필수 교육 추천과정</h3>
+                <h2 class="h-tit2 mb10">임직원 필수 교육 추천과정</h2>
                 <div class="scroll-x type2">
                     <!-- list -->
-                    <ul class="thumList type2 img151x113">
+                    <ul class="thumList type2">
                         <li>
                             <div class="in">
                             <a href="#" class="thum">
@@ -101,7 +101,7 @@
 
                 
             <div class="inner">
-                <h3 class="h-tit3 mb10">'마케팅직무'를 위한 추천과정</h3>
+                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>

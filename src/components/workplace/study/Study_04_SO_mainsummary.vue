@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_pledge_sub">
+        <div id="container" class="mediaquery study_summary">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
             <div v-if="headerType == '1'" id="header" class="expand">          
@@ -12,17 +12,14 @@
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                     <div class="page-btn">
                         <span class="ico back"></span>
-                        <div class="num"><span>03</span> / <span>36</span></div>
+                        <div class="num"><span>3</span> / <span>36</span></div>
                         <span class="ico next"></span>
                     </div>
                 </div>  
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
-                    <div class="hide-inner"> 
-                        <p class="h-tit5"> 
-                            <span class="ico chk"></span>
-                            <span >제출 완료</span>
-                        </p>
-                        <p class="h-tit1">서약서 타이틀 영역입니다 서약서 타이틀 영역입니다</p>
+                    <div class="hide-inner">
+                        <span class="chip">핵심요약</span>                         
+                        <p class="h-tit1">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</p>
                     </div>
                 </div>
             </div>
@@ -57,8 +54,9 @@
                     </div>
                 </div>
             </div>
-            <!-- //header -->         
-           
+            <!-- //header -->
+
+            
             <!-- header scroll 헤더  작업중-->
             <div v-if="headerType == '3'" id="header" class="tab">
                 
@@ -89,28 +87,61 @@
                     </div>
                 </div>
             </div>
-            <!-- //header -->   
-
+            <!-- //header -->        
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner"> 
-                        <p class="pledge-tit">
-                            <span class="pledge-date">2018.03.24 15:41</span><br/>                                 
-                            <span class="color_clr2">서약서</span>를 제출하였습니다.
+                        <p class="inner-txt">설명 입니다. 설명 입니다. 설명 입니다. Admin에서등록된 내용 출력 (선택사항)</p>
+                        <p class="empty_img">
+                            <img src="" alt="">
                         </p>
-                        <p class="pledge-txt">
-                            <span>접근 IP</span>
-                            <span class="pledge-ip">201.114.17.289</span>
+                        <p class="inner-txt">본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 </p>
+                        <p class="empty_img">
+                            <img src="" alt="">
                         </p>
-                        
+                        <p class="inner-txt">본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 </p>
+                        <p class="label-tit-02 mt36"><strong>첨부파일</strong></p>
+                        <ul class="ulList type4">
+                            <li>
+                            <div>
+                                <span class="ico img-a"></span>
+                                <span class="at-tit">Solution listup.jpg</span>
+                                <div class="fr">
+                                <span class="at-num">500KB</span>
+                                <span class="ico down-load"></span>
+                                </div>
+                            </div>                         
+                            </li>                
+                            <li>
+                            <div>
+                                <span class="ico ppt-a"></span>
+                                <span class="at-tit">20180101_AD_Draft.ppt</span>
+                                <div class="fr">
+                                <span class="at-num">4.5M</span>
+                                <span class="ico down-load"></span>
+                                </div>
+                            </div>                         
+                            </li>                
+                            <li>
+                            <div>
+                                <span class="ico ppt-a"></span>
+                                <span class="at-tit">20180101_AD_Draft.ppt</span>
+                                <div class="fr">
+                                <span class="at-num">4.5M</span>
+                                <span class="ico down-load"></span>
+                                </div>
+                            </div>                         
+                            </li>                
+                        </ul>
+
                     </div>
-                </div>
+                    <!-- //inner -->
+                </div>  
             </div>
-            <!-- //content -->
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md clr1">제출</button>
+                <button type="button" class="btn md clr1">확인</button>
             </div>
             <!-- //floatingbtn -->
 
@@ -121,8 +152,12 @@
 </template>
 
 <script>
+/*
+  headerType
+  1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝  or  헤더 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
+*/
 export default {
-  name: 'Study_04_SO_pledge_submission',
+  name: 'Study_04_SO_mainsummary',
   /* vue lifecycle */
   created () {
   },

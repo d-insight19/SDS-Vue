@@ -29,51 +29,23 @@
           <!-- component -->
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 mb20">추천</h1>
-                <h2 class="h-tit2 mb10">정해민님을 위한 맞춤 추천과정</h2>
-                <div class="scroll-x type2">
-                    <!-- list -->
-                    <ul class="thumList type3">
-                        <li>
-                            <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
-                            <div class="thum">
-                                <span class="label">정규</span>
-                                <div class="cDim"></div>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
-                            <div class="thum">
-                                <span class="label">정규</span>
-                                <div class="cDim"></div>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- //list -->
+                <h2 class="h-tit2 mb10">학점 이수 현황
+                    <div class="fr font_14 fw300"><span class="ico point"></span></div>
+                </h2>
+                <div class="status">
+                    <div class="white">
+                        <div class="info">
+                            <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                        </div>
+                        <dl>
+                            <dt>취득학점</dt>
+                            <dd><strong class="font_22">59</strong> 학점</dd>
+                        </dl>
+                        <dl>
+                            <dt>목표학점</dt>
+                            <dd><strong class="font_22">80</strong> 학점</dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
           </div>
@@ -151,7 +123,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI01',
+  name: 'Main_gradeStatus',
   /* vue lifecycle */
   created () {
   },

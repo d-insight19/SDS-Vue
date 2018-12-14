@@ -49,17 +49,18 @@
                             <p class="li-txt">공개/평가 완료 후 즉시</p>
                             <p class="li-txt">단답형이 포함된 경우, 강사 채점으로 시간 소요</p>
                           </li>
-                          <li>
+                          <li class="bottom-bd-x">
                             <p class="li-txt li-txt-3">기타 평가 추가 안내 문구 기타 평가 추가 안내 문구 기타 평가 추가 안내 문구 기타 평가 추가 안내 문구</p>
+                            <div class="loginChk">
+                              <label for="agree" class="labelChk">
+                                <input id="agree" type="checkbox" class="chk" name="agree">
+                                <span class="ico"></span>
+                                <span class="label">주의사항에 동의합니다.</span>
+                              </label>
+                            </div>
                           </li>
                       </ul>
-                      <div class="loginChk">
-                        <label for="agree" class="labelChk">
-                          <input id="agree" type="checkbox" class="chk" name="agree">
-                          <span class="ico"></span>
-                          <span class="label">주의사항에 동의합니다.</span>
-                        </label>
-                    </div>
+                      
                   </div>
                 </div>
             </div>
@@ -87,7 +88,7 @@
 
 <script>
 export default {
-  name: 'Study_dictionary',
+  name: 'Study_02_studystatus_assessment_notice',
   /* vue lifecycle */
   created () {
   },

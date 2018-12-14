@@ -280,7 +280,7 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 2
+      headerType: 3
     }
   },
   /* vue function */

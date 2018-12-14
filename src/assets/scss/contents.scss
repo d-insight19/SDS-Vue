@@ -454,10 +454,9 @@
 
 
 // 모범답안
-
-.titTxtWrap .empty_img { width: 100%; height: auto; margin: 12px 0 20px;}
-.titTxtWrap .txt-tit {font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
-.titTxtWrap .txt-desc{font-size:map-get($font-size, font_16); color:rgba(0,0,0,0.8); line-height: 25px; letter-spacing: -0.48px;}
+#container.study_assinment_be .empty_img { width: 100%; height: auto; margin: 12px 0 20px;}
+#container.study_assinment_be .txt-tit {font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
+#container.study_assinment_be .inner-txt {font-weight:500; font-size:map-get($font-size, font_15);  line-height: 25px; letter-spacing: -0.48px;}
 
 // 토론방 - 수정/등록 
 
@@ -490,9 +489,9 @@
 .absBtmBtn ul{display: table; table-layout: fixed; width: 100%;}
 .absBtmBtn li{display: table-cell;}
 .absBtmBtn li .btn{width:100%; height:54px; border:0; border-top:1px solid #bfbfbf; border-left:1px solid #bfbfbf; border-bottom:1px solid #bfbfbf; font-weight: 500;}
-// .absBtmBtn li .btn[disabled]{color:#c1c1c1 !important; border-top:1px solid #bfbfbf !important; background: #ededed !important;}
+
 .absBtmBtn li + li .btn[disabled]{border-left:1px solid #e0e0e0 !important;}
-.chip {display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.36px}
+.chip { font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.36px}
 
 
 // 링크/독서통신/집합 - Full screen
@@ -516,15 +515,21 @@
 #header.bg-gr .h-tit5 span:nth-child(2){vertical-align: text-bottom;}
 #header.bg-gr .h-tit1{font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
 #header.bg-gr {background:#efeff6; height:auto; padding:56px 0 0 0;}
-#header .num{ display: inline-block;font-size:map-get($font-size, font_17);line-height: 28px; letter-spacing: -0.85px; vertical-align: middle; }
+#header .num{ font-weight: 400; display: inline-block;font-size:map-get($font-size, font_17);line-height: 28px; letter-spacing: -0.85px; vertical-align: middle; }
+#header.wh{color: white;}
 #header .page-btn{ position: absolute; right: 14px;top: 0;}
-.head-inner { width: calc(100% - 18px*2); margin: 0 auto;  }
 
+
+#container.study_survey_sub .h-tit5{font-weight:500; font-size:map-get($font-size, font_18);line-height: 25px; letter-spacing: -0.54px;margin-bottom:10px;}
+#container.study_survey_sub .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 #container.study_survey_sub .survey-tit{font-size:map-get($font-size , font_18);line-height:38px; letter-spacing:-0.54px;margin-bottom: 16px;  }
 #container.study_survey_sub .survey-txt{font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px;color:rgba(0,0,0,0.8) }
 
 //  의견공유/제출완료
 
+#container.study_opinion_sub .h-tit5{font-weight:500; font-size:map-get($font-size , font_18);line-height:25px; letter-spacing:-0.54px;margin-bottom: 10px; }
+#container.study_opinion_sub .h-tit1{font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
+#container.study_opinion_sub .ico.chk{vertical-align: -3px;}
 #container.study_opinion_sub .opinion-tit{font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px;margin-bottom: 6px; }
 #container.study_opinion_sub .person{font-size:map-get($font-size , font_14);line-height:20px; letter-spacing:-0.42px;margin-bottom: 26px; color:rgba(0,0,0,0.5); }
 #container.study_opinion_sub .progBox{height: 8px;    border-radius: 100px;}
@@ -549,20 +554,25 @@
 #container.study_opinion_sub .reply-wrap .reply-num {font-size:map-get($font-size, font_14);line-height: 19px; }
 #container.study_opinion_sub .reply-wrap .reply-unlike {cursor: pointer; margin-left:8px;}
 
+// 작성가이드
+
+#container.study_opinion_guide .txt-tit {font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
+
 // 서약서 
 
 #container.study_pledge .h-tit1{margin-bottom: 12px;font-size:map-get($font-size, font_24); line-height: 32px; letter-spacing: -0.72px;}
 #container.study_pledge .pledge-tit{margin-bottom: 28px;font-size:map-get($font-size, font_15); line-height: 22px; letter-spacing: -0.45px;}
 #container.study_pledge .line01{margin-bottom: 26px;}
 #container.study_pledge .empty_img { width: 100%; height: auto; margin-bottom:12px;}
-#container.study_pledge .txt-desc{font-size:map-get($font-size, font_16); color:#1a1a1a; line-height: 25px; letter-spacing: -0.48px;margin-bottom:36px;}
+#container.study_pledge .inner-txt{font-size:map-get($font-size, font_16); color:rgba(0,0,0,0.65); line-height: 25px; letter-spacing: -0.48px;margin-bottom:36px;}
 #container.study_pledge .sub-tit{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;margin-bottom:8px;}
 #container.study_pledge .singleList{ margin-bottom: 20px;}
-.line02{ margin-bottom: 26px; width: 100%; height: 8px; background-color:#f2f2f2;}
 
 
 // 서약서 제출완료
 
+#container.study_pledge_sub .h-tit5{font-weight:500; font-size:map-get($font-size, font_18);line-height: 25px; letter-spacing: -0.54px;margin-bottom:10px;}
+#container.study_pledge_sub .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 #container.study_pledge_sub .pledge-tit{font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px;margin-bottom:16px;}
 #container.study_pledge_sub .pledge-txt{font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
 #container.study_pledge_sub .pledge-txt .pledge-ip{font-size:map-get($font-size, font_15);line-height: 29px; letter-spacing: -0.45px; color:rgba(0,0,0,0.65);margin-left: 8px;}
@@ -579,27 +589,31 @@
 #container.study_question_edit .e-tit{ display:inline-block; margin-bottom:8px; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;}
 #container.study_question_edit .gr_box{padding: 12px 16px; background-color: #f5f5f5; font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; overflow:auto;}
 #container.study_question_edit .ico.plus{vertical-align: -1px;}
+#container.study_question_edit .ulList.type1 input::placeholder{ font-weight: 400; color:rgba(0,0,0,0.8); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 
 .label-tit-02 {margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 26px; letter-spacing: -0.48px;}
-.ulList li:last-child{border-bottom:none;}
+.ulList li.bottom-bd-x{border-bottom:none;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
 
 
 // 질문방 상세
 
-.info-group{ font-weight:none; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.8); }
+.info-group{ font-weight: 400 ; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.8); }
 .info-group .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background: rgba(0,0,0,0.5);} 
 .info-group .ico.play{vertical-align: -2px;}
 #header p.h-tit1{text-overflow: unset !important; white-space:unset !important;}
 #header p.h-tit1 {margin-bottom: 4px;}
-#header p.h-tit1 .q-tit{display:inline-block; width: 90%;}
-#header p.h-tit1 .ico.more28{display:inline-block; margin-top:3px;}
-#header .ico-group{ padding:22px 0 0 0; font-weight:600; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65); }
+#header p.h-tit1 .q-tit{display:inline-block; width: 90%; font-weight:600; font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;}
+#header p.h-tit1 .ico.more28{display:inline-block; margin-top:6px;}
+#header .ico-group{ font-weight:500 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65); }
+#header .ico-group .ico-txt{ font-weight:400 ;}
+.inner-txt{ font-weight:400; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8) }
+
 
 // 질문방 상세 2
 
-#container.study_question_de_02 .hr{margin: 26px -24px 22px -24px;}
+#container.study_question_de_02 .hr{margin: 26px -24px 22px -24px;} // ??
 #container.study_question_de_02 .reply-tit{font-size:map-get($font-size, font_16);line-height: 38px; letter-spacing: -0.48px;}
 #container.study_question_de_02 .reply-tit-2{margin-top:16px; margin-bottom: 8px;}
 #container.study_question_de_02 .reply-txt{font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; color:#1a1a1a;}
@@ -607,10 +621,10 @@
 #container.study_question_de_02 .reply-txt-2 .reply-time{margin-left: 6px; }
 
 // 공지사항 상세
-#container.study_notice_de .ico-group{  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.8); }
+#container.study_notice_de .ico-group{padding:18px 0 0 0; font-weight:400; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.8); }
 #container.study_notice_de .ico-group .ico.view{vertical-align: -3px;}
 #container.study_notice_de .ico-group .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background: rgba(0,0,0,0.5);} 
-#container.study_notice_de .h-tit1{ font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;margin-bottom: 20px; }
+#container.study_notice_de .h-tit1{ font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;}
 
 
 #container.study_notice_de .notice-txt{ font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; }
@@ -638,7 +652,7 @@
 
 #container.study_stauts_apply .end.sub{right:57px;}
 #container.study_stauts_apply .h-tit5{ font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; margin-bottom: 18px;}
-#container.study_stauts_apply .l-inb{ display: inline-block;width: 26%;float: left; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
+#container.study_stauts_apply .l-inb{ display: inline-block;width: 26%; float:left; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
 #container.study_stauts_apply .r-inb{ display: inline-block; width:74%;  font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8);}
 #container.study_stauts_apply .ulList.type4 li{ height:auto;}
 #container.study_stauts_apply ul li{ margin-bottom: 14px;}
@@ -662,14 +676,15 @@
 #container.study_assessment_no .ulList.type4 .li-txt-2{ color:rgba(0,0,0,0.5); }
 #container.study_assessment_no .ulList.type4 .li-txt-2.ml12{ display: inline-block; margin-left: 12px;}
 #container.study_assessment_no .ulList.type4 .li-txt-3{ color:rgba(0,0,0,0.8); }
+#container.study_assessment_no .ulList.type4 .loginChk{ margin-top: 16px; padding-left: 6px; }
 
 
 // 시뮬레이션 제출완료
 
+#container.study_simulation_sub .h-tit5{font-weight:500; font-size:map-get($font-size, font_18);line-height: 25px; letter-spacing: -0.54px;margin-bottom:10px;}
+#container.study_simulation_sub .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 #container.study_simulation_sub .sim-tit{ margin-bottom: 16px; color:rgba(0,0,0,1); font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; }
 #container.study_simulation_sub .sim-txt{ color:rgba(0,0,0,0.8); font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; }
-
-
 
 
 // faq 상세
@@ -684,7 +699,6 @@
 // quiz 제출완료
 
 #container.study_quiz_sub #header p.h-tit5{ font-weight:500; font-size:map-get($font-size, font_18);line-height: 25px; letter-spacing: -0.54px; } 
-#container.study_quiz_sub #header p.h-tit5 .ico.chk{ vertical-align: -3px; } 
 #container.study_quiz_sub #header p.q-tit{ margin-bottom: 24px; font-weight:400; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px; color:rgba(0,0,0,0.65) } 
 #container.study_quiz_sub #header p.h-tit1{ margin-bottom: 5px; font-weight:500; font-size:map-get($font-size, font_28);line-height: 38px; letter-spacing: -0.84px; } 
 #container.study_quiz_sub #header p.q-txt{ font-weight:400; font-size:map-get($font-size, font_16);line-height: 34px; letter-spacing: -0.48px;} 
@@ -696,18 +710,50 @@
 #container.study_quiz_sub .ulList.type4 li p .ico{ vertical-align: -2px; } 
 
 
+#header .hide-inner { width: calc(100% - 18px*2); margin: 0 auto; line-height: 27px; }
+#header .ico.chk{ vertical-align: -3px; } 
+
+// 핵심요약
+
+#container.study_summary #header .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 
 
+// 퀴즈 인트로
+#container.study_quiz_int {background:coral; }
+#container.study_quiz_int .absBtmBtn .btn {position: relative; z-index: 1; font-size: 1rem; color: rgba(0, 0, 0, 0.8);line-height: 54px;letter-spacing: -0.48px;font-weight: 500;width: 100%; padding: 0 30px 0 18px;text-align: left; background: rgba(255, 255, 255, 0.85);}
+#container.study_quiz_int .absBtmBtn .btn .ico{ position: absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-8px;}
 
 
+// ox퀴즈
+
+#container.study_quiz_ox #header .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
+#container.study_quiz_ox .hide-inner .ico-group {padding:10px 0 0 0 ; font-size:map-get($font-size, font_16);line-height: 18px; letter-spacing: -0.48px;color:rgba(255,255,255,0.8); }
+#container.study_quiz_ox .txt-tit {margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
+.chip.wh{ border:1px solid rgba(255,255,255,0.4);}
+.inb-box{display: inline-block; width:49%;}
+.inb-box span{cursor: pointer;}
+.inb-box span:nth-child(1){margin-right:16px;} 
+.op65{ color:rgba(0,0,0,0.65);}
+.line02{width: 100%;  border-bottom: 1px solid #ccc; margin-top: 26px; margin-bottom: 26px;}
 
 
+// ox퀴즈 채점결과
+
+#container.study_quiz_ox_res .inner-txt{ font-weight:400; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; color:rgba(0,0,0,0.8);}
+#container.study_quiz_ox_res #header div.hide-inner p.h-tit1 {font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
+#container.study_quiz_ox_res #header div.hide-inner p.ico-group {font-weight:400;  padding:10px 0 0 0 ; font-size:map-get($font-size, font_16);line-height: 18px; letter-spacing: -0.48px;color:rgba(255,255,255,0.8); }
+#container.study_quiz_ox_res .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
+#container.study_quiz_ox_res .inb-box span{cursor: pointer; margin-left: 48px;}
+#container.study_quiz_ox_res .bg-sky{background: #e5f3ff; padding: 16px;}
+#container.study_quiz_ox_res .bg-sky span.ico{vertical-align:-2px;margin-left: 6px; }
+#container.study_quiz_ox_res .bg-sky .txt-tit-2{margin-bottom: 8px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 24px; letter-spacing: -0.48px; color:rgba(0,0,0,0.8);}
+#container.study_quiz_ox_res .bg-sky  .inner-txt-2{ font-weight:400; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8); }
+#container.study_quiz_ox_res .txt-tit .ico{ position: absolute;top: -16px;left: -16px;}
 
 
-
-
-
-
+// 퀴즈답변
+#container.study_quiz_ans .inp-num{ font-size:map-get($font-size, font_14);line-height: 29px; letter-spacing: -0.42px; color:rgba(0,0,0,0.5);}
+#container.study_quiz_ans .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 
 
 
@@ -819,7 +865,12 @@
 .mb13{margin-bottom: 13px !important;}
 .mb14{margin-bottom: 14px !important;}
 .mb20{margin-bottom: 20px !important;}
-.fwn{font-weight: normal;}
+.fw300{font-weight: 300;}
+.h-tit1 {font-weight:700 !important;}
+.h-tit2 {font-weight:600 !important;}
+//.ico.info28{width:28px;height:28px;background: url("../img/ic_info_line_28.png") no-repeat; }
+// layout.css 에 추가
+#container #content .inner {padding-bottom: 12px;}
 // curateUI02 이미지 리사이즈
 .MainType  .thumList.type2 > li{width:151px;}
 .MainType  .thumList.type2 .thum{width:151px; height:113px;}
@@ -829,8 +880,25 @@
 .MainType .singleList.type_1 li {height: 48px;}
 .MainType .singleList.type_1 li a {line-height: 20px; padding:14px 30px 14px 18px !important;}
 .MainType .singleList.type_1 li a .tagWrap {display: inline-block; margin-right:2px; vertical-align: top;}
-.MainType .singleList.type_1 li a .cate {font-size:map-get($font_size, font_14); vertical-align: top; display: inline-block; margin-right:8px;}
-.MainType .singleList.type_1 li a .txt {font-size:map-get($font_size, font_14); vertical-align: top; display: inline-block;}
+.MainType .singleList.type_1 li a .cate {font-size: map-get($font_size, font_13); vertical-align: top; display: inline-block; margin-right:8px;}
+.MainType .singleList.type_1 li a .txt {font-size: map-get($font_size, font_13); vertical-align: top; display: inline-block;}
 .MainType .singleList.type_1 li a .ico.arrow {background-position: inherit !important; margin-top: -8px; width: 16px !important; height: 16px !important;}
-
-
+// Scrap_Empty 스타일 추가
+.MainType div.no-date {border-top:1px solid map-get($line_colors, B85); border-bottom:1px solid map-get($line_colors, B85); padding:20px 0 ; text-align:center;}
+.MainType div.no-date p {font-size: map-get($font_size, font_16); font-weight:500; color: map-get($mono_colors, mono_80); padding-bottom:5px;}
+.MainType div.no-date p+p {font-size: map-get($font_size, font_14); font-weight:400; color: map-get($mono_colors, mono_50); padding-bottom:15px;}
+.MainType div.no-date a {display:inline-block; font-size:map-get($font_size, font_14); color: map-get($mono_colors, mono_0); line-height: 38px; padding:0 28px; border-radius: 80px; cursor:pointer;}
+// Status 
+.status {border-top: 1px solid map-get($line_colors, B60); border-bottom: 1px solid map-get($line_colors, B60);}
+.status div.white{padding:25px 24px 25px 167px; position:relative;}
+.status div.white dl {line-height: 280%;}
+.status div.white dl + dl {border-top: 1px solid map-get($line_colors, B89);}
+.status div.white .info {position:absolute; top: 20px; left: 30px;}
+.status div.white .info img{width: 98px; height: 98px;}
+.status div.white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
+.status div.white .info strong {font-size: map-get($font_size, font_22); color: map-get($mono_colors, mono_100);}
+.status div.gray{padding:15px 24px; background-color: map-get($bg_colors, BG_1);}
+.status div dl{width: 100%; display: table; line-height: 200%;}
+.status div dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 50%; display: table-cell; }
+.status div dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 50%; display: table-cell; text-align: right;}
+.status div dd strong{font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_100);}

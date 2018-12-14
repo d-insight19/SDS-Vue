@@ -30,48 +30,53 @@
           <div class="cell">
             <div class="inner">
                 <h1 class="h-tit1 mb20">추천</h1>
-                <h2 class="h-tit2 mb10">정해민님을 위한 맞춤 추천과정</h2>
+                <h2 class="h-tit2 mb10">학습목록</h2>
+
                 <div class="scroll-x type2">
                     <!-- list -->
-                    <ul class="thumList type3">
+                    <ul class="thumList type4">
                         <li>
-                            <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
                             <div class="thum">
-                                <span class="label">정규</span>
+                                <span class="label">D-29</span>
+                                <span class="progWrap"><em class="bar clr2" style="width:40%;"></em></span>
                                 <div class="cDim"></div>
                                 <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
+                                    <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
                                 </div>
+                            </div>
+                            <div class="text">
+                                <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</a>
+                                <ul class="info">
+                                    <li class="fwb color_clr3">이러닝</li>
+                                    <li><strong>취득점수</strong><span><em class="">85</em>/100</span></li>
+                                    <li><strong>진도율</strong><span><em class="">24</em>%</span></li>
+                                </ul>
                             </div>
                         </li>
                         <li>
-                            <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
                             <div class="thum">
-                                <span class="label">정규</span>
+                                <span class="label">D-29</span>
+                                <span class="progWrap"><em class="bar clr2" style="width:40%;"></em></span>
                                 <div class="cDim"></div>
                                 <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
+                                    <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
                                 </div>
                             </div>
+                            <div class="text">
+                                <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</a>
+                                <ul class="info">
+                                    <li class="fwb color_clr3">이러닝</li>
+                                    <li><strong>취득점수</strong><span><em class="">85</em>/100</span></li>
+                                    <li><strong>진도율</strong><span><em class="">24</em>%</span></li>
+                                </ul>
+                            </div>
                         </li>
+                        <div class="moreBtnWrap">
+                            <div class="moreBtn">
+                            <div class="moreIcon"></div>
+                            <p>전체목록 이동</p>
+                            </div>
+                        </div>
                     </ul>
                     <!-- //list -->
                 </div>
@@ -151,7 +156,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI01',
+  name: 'Main_graphClassList',
   /* vue lifecycle */
   created () {
   },
