@@ -2765,11 +2765,15 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.GraphClassList</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_graphClassList' }">
+            Main_graphClassList
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_graphClassList_more' }">
+            Main_graphClassList_more
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">160</td>
@@ -2854,11 +2858,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.GradeStatus</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_gradeStatus' }">
+            Main_gradeStatus
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">165</td>
@@ -2871,11 +2875,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.GradeStatusDetail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_gradeStatusDetail' }">
+            Main_gradeStatusDetail
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">166</td>

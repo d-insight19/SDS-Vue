@@ -780,8 +780,9 @@
 .mb14{margin-bottom: 14px !important;}
 .mb20{margin-bottom: 20px !important;}
 .fw300{font-weight: 300;}
-.h-tit1 {font-weight:700;}
-.h-tit2 {font-weight:600;}
+.h-tit1 {font-weight:700 !important;}
+.h-tit2 {font-weight:600 !important;}
+//.ico.info28{width:28px;height:28px;background: url("../img/ic_info_line_28.png") no-repeat; }
 // layout.css 에 추가
 #container #content .inner {padding-bottom: 12px;}
 // curateUI02 이미지 리사이즈
@@ -801,3 +802,17 @@
 .MainType div.no-date p {font-size: map-get($font_size, font_16); font-weight:500; color: map-get($mono_colors, mono_80); padding-bottom:5px;}
 .MainType div.no-date p+p {font-size: map-get($font_size, font_14); font-weight:400; color: map-get($mono_colors, mono_50); padding-bottom:15px;}
 .MainType div.no-date a {display:inline-block; font-size:map-get($font_size, font_14); color: map-get($mono_colors, mono_0); line-height: 38px; padding:0 28px; border-radius: 80px; cursor:pointer;}
+// Status 
+.status {border-top: 1px solid map-get($line_colors, B60); border-bottom: 1px solid map-get($line_colors, B60);}
+.status div.white{padding:25px 24px 25px 167px; position:relative;}
+.status div.white dl {line-height: 280%;}
+.status div.white dl + dl {border-top: 1px solid map-get($line_colors, B89);}
+.status div.white .info {position:absolute; top: 20px; left: 30px;}
+.status div.white .info img{width: 98px; height: 98px;}
+.status div.white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
+.status div.white .info strong {font-size: map-get($font_size, font_22); color: map-get($mono_colors, mono_100);}
+.status div.gray{padding:15px 24px; background-color: map-get($bg_colors, BG_1);}
+.status div dl{width: 100%; display: table; line-height: 200%;}
+.status div dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 50%; display: table-cell; }
+.status div dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 50%; display: table-cell; text-align: right;}
+.status div dd strong{font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_100);}

@@ -100,6 +100,10 @@ import MainHistorylist from '~workplace/main/Main_historylist'
 import MainEnrollNotice from '~workplace/main/Main_enrollNotice'
 import MainScrap from '~workplace/main/Main_scrap'
 import MainScrapEmpty from '~workplace/main/Main_scrap_empty'
+import MainGraphClassList from '~workplace/main/Main_graphClassList'
+import MainGraphClassListMore from '~workplace/main/Main_graphClassList_more'
+import MainGradeStatus from '~workplace/main/Main_gradeStatus'
+import MainGradeStatusDetail from '~workplace/main/Main_gradeStatusDetail'
 
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
@@ -608,6 +612,25 @@ var rootRoutes = [
     path: '/Main_scrap_empty',
     name: 'Main_scrap_empty',
     component: MainScrapEmpty
+  },
+  {
+    path: '/Main_graphClassList',
+    name: 'Main_graphClassList',
+    component: MainGraphClassList
+  },
+  {
+    path: '/Main_graphClassList_more',
+    name: 'Main_graphClassList_more',
+    component: MainGraphClassListMore
+  }, {
+    path: '/Main_gradeStatus',
+    name: 'Main_gradeStatus',
+    component: MainGradeStatus
+  },
+  {
+    path: '/Main_gradeStatusDetail',
+    name: 'Main_gradeStatusDetail',
+    component: MainGradeStatusDetail
   },
   {
     path: '/Drawer_myinfo',
