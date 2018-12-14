@@ -18,7 +18,7 @@
                      <!-- list -->
                         <ul class="singleList type_1">
                             <li>
-                                <a href="# first_line">비밀번호 변경<span class="black_next"></span></a>
+                                <a href="# pt0">비밀번호 변경<span class="black_next"></span></a>
                             </li>
                             <li>
                                 <a href="#">회원 탈퇴<span class="black_next"></span></a>

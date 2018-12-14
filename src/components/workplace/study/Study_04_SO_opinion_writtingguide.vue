@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_dictionary">
+      <div id="container" class="mediaquery study_opinion_guide">
             <!-- header -->
             <div id="header" class="fixed">
             <button type="button" class="btn only close"><span class="ico">닫기</span></button>
@@ -14,17 +14,15 @@
             <div id="content" class="etc">
                 <div class="cell">
                   <div class="inner">
-                    <div class="titTxtWrap">
                       <strong class="txt-tit">
                         1. OO은 OO해야합니다. 의견을 입력하세요.
                       </strong>
                       <p class="empty_img">
                         <img src="" alt="">
                       </p>
-                      <p class="txt-desc">
+                      <p class="inner-txt">
                         답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다
                       </p>
-                    </div>
                   </div>
                 </div>
             </div>
@@ -38,7 +36,7 @@
 
 <script>
 export default {
-  name: 'Study_dictionary',
+  name: 'Study_04_SO_opinion_writtingguide',
   /* vue lifecycle */
   created () {
   },

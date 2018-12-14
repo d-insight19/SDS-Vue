@@ -891,8 +891,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_05.01_myinfo_extrainfo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_myinfo_extrainfo' }">
+            Drawer_myinfo_extrainfo
           </router-link>
         </td>
         <td></td>
@@ -908,8 +908,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_05.02_myinfo_extrainfo_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_myinfo_extrainfo_edit' }">
+            Drawer_myinfo_extrainfo_edit
           </router-link>
         </td>
         <td></td>
@@ -976,8 +976,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_07.01_settings_Push</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_settings_push' }">
+            Drawer_settings_push
           </router-link>
         </td>
         <td></td>
@@ -993,8 +993,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_07.01_settings_opensource</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_settings_opensource' }">
+            Drawer_settings_opensource
           </router-link>
         </td>
         <td></td>
@@ -2765,11 +2765,15 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.GraphClassList</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_graphClassList' }">
+            Main_graphClassList
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_graphClassList_more' }">
+            Main_graphClassList_more
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">160</td>
@@ -2854,11 +2858,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.GradeStatus</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_gradeStatus' }">
+            Main_gradeStatus
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">165</td>
@@ -2871,11 +2875,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.GradeStatusDetail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_gradeStatusDetail' }">
+            Main_gradeStatusDetail
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">166</td>
@@ -5690,8 +5694,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.01.SO_mainsummary</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_mainsummary' }">
+            Study_04_SO_mainsummary
           </router-link>
         </td>
         <td></td>
@@ -5707,8 +5711,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.02.SO_quiz_intro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_intro' }">
+            Study_04_SO_quiz_intro
           </router-link>
         </td>
         <td></td>
@@ -5758,8 +5762,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.05.SO_quiz_OX</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_OX' }">
+            Study_04_SO_quiz_OX
           </router-link>
         </td>
         <td></td>
@@ -5775,8 +5779,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.06.SO_quiz_OX_result</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_OX_result' }">
+            Study_04_SO_quiz_OX_result
           </router-link>
         </td>
         <td></td>
@@ -5792,8 +5796,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.07.SO_quiz_shortanswer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_shortanswer' }">
+            Study_04_SO_quiz_shortanswer
           </router-link>
         </td>
         <td></td>
@@ -7859,7 +7863,7 @@
         <td class="textL">B2C_Drawer_05.02_myinfo_extrainfo_edit</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+          
           </router-link>
         </td>
         <td></td>
@@ -7960,8 +7964,12 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_account_withdrawal</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account_withdrawal02' }">
+            B2C_Drawer_myinfo_account_withdrawal02
+          </router-link>
+          ,
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account_withdrawal03' }">
+            B2C_Drawer_myinfo_account_withdrawal03
           </router-link>
         </td>
         <td></td>

@@ -41,7 +41,7 @@
                             </label> 
                         </li>
                         <li>
-                            <strong class="label-tit14">버전 정보</strong><button type="button" class="btn14 color_clr2">최신버전으로 업데이트</button>
+                            <strong class="label-tit14">버전 정보</strong><div class="fr version">최신버전<span class="num">1.0.1</span></div>
                         </li>  
                         <li>                           
                             <a href="#"><strong class="label-tit14">오픈 라이선스</strong><span class="black_next"></span></a>
@@ -65,7 +65,7 @@
 
 <script>
 export default {
-  name: 'B2C_Drawer_settings01',
+  name: 'Drawer_myinfo',
   /* vue lifecycle */
   created () {
   },

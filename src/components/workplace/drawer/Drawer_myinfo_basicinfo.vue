@@ -18,33 +18,33 @@
                         <!-- list -->
                         <ul class="multiList type1">
                             <li class="id_info">
-                                <strong class="label-tit">아이디</strong>
-                                <p class="contents">haemin.jung</p>                                
+                                <strong class="label-tit14">아이디</strong>
+                                <p class="contents14">haemin.jung</p>                                
                                 <button type="button" class="btn guide">통합ID 가입안내</button>
                             </li>
                             <li>
-                                <strong class="label-tit">이름</strong>
-                                <p class="contents">정해민</p>
+                                <strong class="label-tit14">이름</strong>
+                                <p class="contents14">정해민</p>
                             </li>
                             <li>
-                                <strong class="label-tit">성별</strong>
-                                <p class="contents">남</p>
+                                <strong class="label-tit14">성별</strong>
+                                <p class="contents14">남</p>
                             </li>
                             <li>
-                                <strong class="label-tit">생년월일</strong>
-                                <p class="contents">1990.01.01</p>
+                                <strong class="label-tit14">생년월일</strong>
+                                <p class="contents14">1990.01.01</p>
                             </li>
                             <li>
-                                <strong class="label-tit">이메일</strong>
-                                <p class="contents">hamin.jung@multicampus.com</p>
+                                <strong class="label-tit14">이메일</strong>
+                                <p class="contents14">hamin.jung@multicampus.com</p>
                             </li>
                             <li>
-                                <strong class="label-tit">휴대전화</strong>
-                                <p class="contents">010-1234-1234</p>
+                                <strong class="label-tit14">휴대전화</strong>
+                                <p class="contents14">010-1234-1234</p>
                             </li>
                             <li>
-                                <strong class="label-tit">주소</strong>
-                                <p class="contents">직장<br>(06220) 서울특별시 강남구 테헤란로 212 (역삼동 1202호) 멀티캠퍼스 1202호</p>
+                                <strong class="label-tit14">주소</strong>
+                                <p class="contents14">직장<br>(06220) 서울특별시 강남구 테헤란로 212 (역삼동 1202호) 멀티캠퍼스 1202호</p>
                             </li>                    
                         </ul>
                         <!-- // list -->
