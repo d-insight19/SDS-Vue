@@ -64,6 +64,10 @@
           width:calc(100% - #{$l_padding}*2);
           .inner{}
         }
+        // 동영상
+        &.media{
+          width:calc(100% - #{$c_padding}*2);
+        }
       }
     }
   }
@@ -91,6 +95,10 @@
           width:520px;
           .inner{}
         }
+        // 동영상
+        &.media{
+          width:620px;
+        }
       }
     }
   }
@@ -117,6 +125,10 @@
         &.etc{
           width:520px;
           .inner{}
+        }
+        // 동영상
+        &.media{
+          width:844px;
         }
       }
     }
@@ -282,7 +294,8 @@
 
 
 
-#container #content{padding:0px 0px 74px 0px}
+#container #content{padding:0px 0px 40px 0px}
+#container.pd70 #content{padding:0px 0px 70px 0px}
 /*
 #container #content .inner{padding-top:24px;}
 // 연수원

@@ -88,7 +88,7 @@
                                 </div>
                             </div>                         
                             </li>                
-                            <li>
+                            <li class="bottom-bd-x">
                             <div>
                                 <span class="ico ppt-a"></span>
                                 <span class="at-tit">20180101_AD_Draft.ppt</span>
@@ -116,7 +116,7 @@
 
 <script>
 export default {
-  name: 'Study_dictionary',
+  name: 'Study_02_studystatus_assignment_apply',
   /* vue lifecycle */
   created () {
   },

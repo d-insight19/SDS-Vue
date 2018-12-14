@@ -3,26 +3,26 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_pledge_sub">
+        <div id="container" class="mediaquery study_quiz_ans pd70">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand">          
+            <div v-if="headerType == '1'" id="header" class="expand wh">          
                 <div class="header_inner line1">
-                    <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                    <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                    <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                     <div class="page-btn">
-                        <span class="ico back"></span>
-                        <div class="num"><span>03</span> / <span>36</span></div>
-                        <span class="ico next"></span>
+                        <span class="ico back-wh"></span>
+                        <div class="num "><span>03</span> / <span>36</span></div>
+                        <span class="ico next-wh"></span>
                     </div>
+                    <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
-                    <div class="hide-inner"> 
-                        <p class="h-tit5"> 
-                            <span class="ico chk"></span>
-                            <span >제출 완료</span>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:66px; padding-bottom:26px">                
+                    <div class="hide-inner">
+                        <span class="chip wh">퀴즈</span>                         
+                        <p class="h-tit1">중간퀴즈 : 자바의 특성과 개념에 대해 알아보기</p>
+                        <p class="ico-group">
+                            <span>총 6문항</span>
                         </p>
-                        <p class="h-tit1">서약서 타이틀 영역입니다 서약서 타이틀 영역입니다</p>
                     </div>
                 </div>
             </div>
@@ -57,8 +57,9 @@
                     </div>
                 </div>
             </div>
-            <!-- //header -->         
-           
+            <!-- //header -->
+
+            
             <!-- header scroll 헤더  작업중-->
             <div v-if="headerType == '3'" id="header" class="tab">
                 
@@ -89,31 +90,26 @@
                     </div>
                 </div>
             </div>
-            <!-- //header -->   
-
+            <!-- //header -->        
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner"> 
-                        <p class="pledge-tit">
-                            <span class="pledge-date">2018.03.24 15:41</span><br/>                                 
-                            <span class="color_clr2">서약서</span>를 제출하였습니다.
-                        </p>
-                        <p class="pledge-txt">
-                            <span>접근 IP</span>
-                            <span class="pledge-ip">201.114.17.289</span>
-                        </p>
-                        
+                        <p class="inner-txt">학습을 통해 얼마나 배웠는지 QUIZ를 통해 알아볼까요? 퀴즈를 통해서 본인의 학습성과를 테스트하고 그 결과를 확인해 볼 수 있습니다. 퀴즈의 점수는 중간성적에 반영됩니다.</p>
+                        <p class="line02"></p>
+                        <p class="txt-tit">01. 다음이 설명하는 단어를 입력하세요.</p>
+                        <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
+                        <input type="text" class="input" placeholder="스프링">
+                        <p class="inp-num"><span>3</span>/<span>300</span></p> 
                     </div>
-                </div>
+                    <!-- //inner -->
+                </div>  
             </div>
-            <!-- //content -->
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md clr1">제출</button>
+                <button type="button" class="btn md clr1">정답확인</button>
             </div>
             <!-- //floatingbtn -->
-
         </div>
         <!-- //container --> 
     </div>
@@ -121,8 +117,12 @@
 </template>
 
 <script>
+/*
+  headerType
+  1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝  or  헤더 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
+*/
 export default {
-  name: 'Study_04_SO_pledge_submission',
+  name: 'Study_04_SO_quiz_shortanswer',
   /* vue lifecycle */
   created () {
   },

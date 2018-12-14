@@ -53,7 +53,7 @@
 
 <script>
 export default {
-  name: 'Study_dictionary',
+  name: 'Study_02_studystatus_assignment',
   /* vue lifecycle */
   created () {
   },

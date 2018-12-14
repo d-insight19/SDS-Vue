@@ -87,6 +87,11 @@ import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulati
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
 import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
 import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
+import Study04SOmainsummary from '~workplace/study/Study_04_SO_mainsummary'
+import Study04SOquizintro from '~workplace/study/Study_04_SO_quiz_intro'
+import Study04SOquizOX from '~workplace/study/Study_04_SO_quiz_OX'
+import Study04SOquizOXresult from '~workplace/study/Study_04_SO_quiz_OX_result'
+import Study04SOquizshortanswer from '~workplace/study/Study_04_SO_quiz_shortanswer'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -552,6 +557,31 @@ var rootRoutes = [
     path: '/Study_04_SO_pledge_submission',
     name: 'Study_04_SO_pledge_submission',
     component: Study04SOpledgesubmission
+  },
+  {
+    path: '/Study_04_SO_mainsummary',
+    name: 'Study_04_SO_mainsummary',
+    component: Study04SOmainsummary
+  },
+  {
+    path: '/Study_04_SO_quiz_intro',
+    name: 'Study_04_SO_quiz_intro',
+    component: Study04SOquizintro
+  },
+  {
+    path: '/Study_04_SO_quiz_OX',
+    name: 'Study_04_SO_quiz_OX',
+    component: Study04SOquizOX
+  },
+  {
+    path: '/Study_04_SO_quiz_OX_result',
+    name: 'Study_04_SO_quiz_OX_result',
+    component: Study04SOquizOXresult
+  },
+  {
+    path: '/Study_04_SO_quiz_shortanswer',
+    name: 'Study_04_SO_quiz_shortanswer',
+    component: Study04SOquizshortanswer
   },
   {
     path: '/Main_control',

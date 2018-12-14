@@ -16,7 +16,7 @@
                       <ul class="ulList type1">
                         <li>
                           <strong class="label-tit">제목</strong>
-                          <input type="text" class="input" placeholder="질문이 있습니다.">
+                          <input type="text" placeholder="질문이 있습니다.">
                         </li>
                         <li>
                           <strong class="label-tit">분류</strong>
@@ -32,7 +32,7 @@
                         <div class="cTitWrap txt-line top-bd mt20">
                           <strong class="c-tit">북마크</strong>
                             <div class="fr">
-                              <strong class="color_clr2"><span class="chip">1 : 36 <span class="ico del-blue"></span></span></strong>
+                              <p class="color_clr2"><span class="chip border_clr2">1 : 36 <span class="ico del-blue"></span></span></p>
                             </div>
                         </div>
 
@@ -74,7 +74,7 @@
                               </div>
                             </div>                         
                           </li>                
-                          <li>
+                          <li class="bottom-bd-x">
                             <div>
                               <span class="ico ppt-a"></span>
                               <span class="at-tit">20180101_AD_Draft.ppt</span>
