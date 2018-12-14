@@ -21,7 +21,7 @@
 .ico.down-arr{width:16px;height:16px;background: url("../img/ic_accordion_arr_16_down.png") no-repeat; }
 .ico.reply-like{width:32px;height:32px;background: url("../img/ic_thumb_line_cblue_32.png") no-repeat; }
 .ico.reply-unlike{width:32px;height:32px;background: url("../img/ic_unlike_line_32.png") no-repeat; }
-.ico.back{width:32px;height:32px;background: url("../img/ic_back_solid_black_32.png") no-repeat; }
+.ico.back{width:32px;height:32px;background: url("../img/ic_former_solid_32.png") no-repeat; }
 .ico.next{width:32px;height:32px;background: url("../img/ic_next_solid_black_32.png") no-repeat; }
 
 /* 추가이미지 2018-12-10*/
@@ -45,7 +45,17 @@
 
 
 /* 추가 이미지 2018-12-14*/
-.ico.prev{width:16px;height:16px;background: url("../img/ic_play_line_16.png") no-repeat;  }
+.ico2.prev-wh{width:28px;height:28px;background: url("../img/ic_pre_wh_28.png") no-repeat;  position: absolute;}
+.ico.back-wh{width:32px;height:32px;background: url("../img/ic_former_solid_wh_32.png") no-repeat;  }
+.ico.next-wh{width:32px;height:32px;background: url("../img/ic_next_solid_wh_32.png") no-repeat;  }
+.ico.o-blk-48{width:48px;height:48px;background: url("../img/ic_o_48_n.png") no-repeat; }
+.ico.o-blue-48{width:48px;height:48px;background: url("../img/ic_o_48_s.png") no-repeat; }
+.ico.x-blk-48{width:48px;height:48px;background: url("../img/ic_x_48_n.png") no-repeat; }
+.ico.x-blue-48{width:48px;height:48px;background: url("../img/ic_x_48_s.png") no-repeat; }
+.ico.chk-blue{width:32px;height:32px;background: url("../img/ic_quizcheck_32_on.png") no-repeat; }
+.ico.off-blk{width:32px;height:32px;background: url("../img/ic_radiobtn_32_off.png") no-repeat; }
+.ico.mark-o{width:58px;height:58px;background: url("../img/ic_mark_o_large.png") no-repeat; }
+.ico.mark-x{width:58px;height:58px;background: url("../img/ic_mark_x.png") no-repeat; }
 
 #header.mainType2 .line2 .ico{vertical-align: top}
 
@@ -130,6 +140,7 @@
 .mb20{margin-bottom: 20px !important;}
 .mb24{margin-bottom: 24px !important;}
 .mb26{margin-bottom: 26px !important;}
+.mb28{margin-bottom: 28px !important;}/*12월14일 추가*/
 .mb32{margin-bottom: 32px !important;}
 .mb58{margin-bottom: 58px !important;}/*12월12일 추가*/
 
