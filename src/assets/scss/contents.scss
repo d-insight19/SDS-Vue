@@ -741,13 +741,24 @@
 #container.drawer button.btn14 {font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px; position: absolute; right: 18px; bottom: 18px; font-weight: 500}
 #container.drawer .multiList.type1 > li { border-bottom: 1px solid #e3e3e3; padding:15px 0; min-height: 0 }
 #container.drawer .multiList.type2 > li { padding:0; min-height: 0 }
+
 #container.drawer .id_info .btn { position: absolute; right: 0; bottom: 20px; z-index: 1; width:93px; border:#ccc 1px solid; padding:7px 10px;}
 #container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:rgba(0,0,0,0.8); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
 #container.drawer .multiList.type2 .id_info button {position: absolute; right: 0; bottom:19px}
 #container.drawer .multiList.type2 input {margin-top:8px}
-#container.drawer .label-tit{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
-#container.drawer .contents{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:rgba(0,0,0,0.65); }
+#container.drawer .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px !important;}
+#container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 9px !important;}
+#container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px !important; }
+
+#container.drawer .contents14{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:rgba(0,0,0,0.65); }
+#container.drawer .contents13{margin-top:2px;font-size:map-get($font_size, font_13);line-height: 29px;color:rgba(0,0,0,0.65); letter-spacing: -0.39px;}
+#container.drawer .contents14_2{font-size:map-get($font_size, font_14);line-height: 22px;color:rgba(0,0,0,0.65); letter-spacing: -0.39px;}
 #container.drawer .btn.sm {margin:8px 0}
+#container.drawer .btn.sm.mb0 {margin-bottom:0}
 #container.drawer .rdoSelBox input:checked span.label {font-weight:bold !important}
 
 // 배송지 관리
@@ -756,11 +767,40 @@
 #container.drawer .multiList.type1 > li button.btn14.first {top:0;}
 #container.drawer .multiList.type1 > li .address {font-size:map-get($font_size, font_16); padding-right: 67px; margin:5px 0 }
 #container.drawer .multiList.type1 > li .name_line {color:rgba(0,0,0,0.8);}
-#container.drawer .multiList.type1 > li .name_line .bar {border-left:#d9d9d9 1px solid; height:10px; margin:0 8px; display: inline-block}
+#container.drawer .multiList.type1 > li .bar {border-left:#d9d9d9 1px solid; height:10px; margin:0 8px; display: inline-block}
 #container.drawer .multiList.type1 > li.id_info {padding-top:0}
-// #container #content.drawer .inner {}
-#container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px;color:rgba(0,0,0,0.65); margin:20px 0}
+#container.drawer .multiList.type1 > li.noline {border-bottom:0}
+#container.drawer .multiList.type1 > li.pt0 {padding-top:0}
+#container.drawer .multiList.type1 > .mt0 {margin-top:0}
+#container.drawer .multiList.type1 > li.title_line {border-bottom:#999 1px solid; padding-bottom:8px}
+#container.drawer .multiList.type1 > li.title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
+#container.drawer .multiList.type1 > li slp-checkbox.mr10 {margin-right:10px}
+#container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px; color:rgba(0,0,0,0.65); margin:20px 0}
+#container.drawer .version {font-size:map-get($font_size, font_14);line-height: 20px; color:rgba(0,0,0,0.65); }
+#container.drawer .version .num {font-family: 'Roboto' ; margin-left:6px}
+#container.drawer .intSchBox .btn{top:20px}
+#container.drawer .subject {width:33%; margin-right:6px}
+#container.drawer .subdivide {width:65%}
+
+#container.drawer .withdrawal>li {width:50%; border-bottom:#eaeaea 1px solid; padding:20px 6px;}
+#container.drawer .withdrawal>li.bl {border-left:#eaeaea 1px solid; padding-left:16px}
+#container.drawer .withdrawal>li p.subject {font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65); line-height: 18px}
+#container.drawer .withdrawal>li p.desc {font-size:map-get($font_size, font_20);  margin:0; color:#000; line-height: 29px}
+#container.drawer .withdrawal>li p.desc .num {font-family: 'Roboto'; font-weight: 500; }
+#container.drawer span.agree {color:rgba(0,0,0,0.8); margin-left:5px}
+#container.drawer .withdrawal_btn {overflow: hidden;}
+#container.drawer .withdrawal_btn li {width:50%; float: left;};
+
+// 회원탈퇴
+
+
+
 // drawer 끝
+
+
+
+
+
 
 
 

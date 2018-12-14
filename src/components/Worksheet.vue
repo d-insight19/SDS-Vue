@@ -891,8 +891,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_05.01_myinfo_extrainfo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_myinfo_extrainfo' }">
+            Drawer_myinfo_extrainfo
           </router-link>
         </td>
         <td></td>
@@ -908,8 +908,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_05.02_myinfo_extrainfo_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_myinfo_extrainfo_edit' }">
+            Drawer_myinfo_extrainfo_edit
           </router-link>
         </td>
         <td></td>
@@ -976,8 +976,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_07.01_settings_Push</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_settings_push' }">
+            Drawer_settings_push
           </router-link>
         </td>
         <td></td>
@@ -993,8 +993,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_07.01_settings_opensource</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_settings_opensource' }">
+            Drawer_settings_opensource
           </router-link>
         </td>
         <td></td>
@@ -7855,7 +7855,7 @@
         <td class="textL">B2C_Drawer_05.02_myinfo_extrainfo_edit</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+          
           </router-link>
         </td>
         <td></td>
@@ -7956,8 +7956,12 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_account_withdrawal</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account_withdrawal02' }">
+            B2C_Drawer_myinfo_account_withdrawal02
+          </router-link>
+          ,
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account_withdrawal03' }">
+            B2C_Drawer_myinfo_account_withdrawal03
           </router-link>
         </td>
         <td></td>

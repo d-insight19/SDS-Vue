@@ -18,15 +18,15 @@
                     <!-- list -->
                     <ul class="multiList type2">                   
                         <li>
-                            <strong class="label-tit">이메일</strong>
+                            <strong class="label-tit14">이메일</strong>
                             <input type="text" class="input mb20" value="CRD_abc1234@multicapus.co.kr" >
                         </li>
                         <li>
-                            <strong class="label-tit">휴대전화</strong>
+                            <strong class="label-tit14">휴대전화</strong>
                             <input type="text" class="input mb20" value="01012341234">
                         </li>                                        
                         <li>
-                            <strong class="label-tit">주소</strong>
+                            <strong class="label-tit14">주소</strong>
                         <div class="rdoSelBox mt8">
                             <label class="labelRdo"><input type="radio" class="rdo" name="gender-rdo" checked="checked"><span class="ico"></span><span class="label">자택</span></label>
                             <label class="labelRdo"><input type="radio" class="rdo" name="gender-rdo"><span class="ico"></span><span class="label">직장</span></label>

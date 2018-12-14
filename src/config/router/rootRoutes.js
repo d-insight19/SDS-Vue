@@ -116,6 +116,12 @@ import B2CDrawermyinfotrackingdelete from '~workplace/drawer/B2C_Drawer_myinfo_t
 import B2CDrawermyinfotrackingedit from '~workplace/drawer/B2C_Drawer_myinfo_tracking_edit'
 import B2CDrawermyinfoaccountpassword from '~workplace/drawer/B2C_Drawer_myinfo_account_password'
 import B2CDrawerSettings01 from '~workplace/drawer/B2C_drawer_settings01'
+import Drawersettingspush from '~workplace/drawer/Drawer_settings_push'
+import Drawersettingsopensource from '~workplace/drawer/Drawer_settings_opensource'
+import Drawermyinfoextrainfo from '~workplace/drawer/Drawer_myinfo_extrainfo'
+import Drawermyinfoextrainfoedit from '~workplace/drawer/Drawer_myinfo_extrainfo_edit'
+import B2CDrawermyinfoaccountwithdrawal02 from '~workplace/drawer/B2C_Drawer_myinfo_account_withdrawal02'
+import B2CDrawermyinfoaccountwithdrawal03 from '~workplace/drawer/B2C_Drawer_myinfo_account_withdrawal03'
 
 // 1번 영역
 var rootRoutes = [
@@ -683,6 +689,36 @@ var rootRoutes = [
     path: '/Drawer_settings',
     name: 'Drawer_settings',
     component: Drawersettings
+  },
+  {
+    path: '/Drawer_settings_push',
+    name: 'Drawer_settings_push',
+    component: Drawersettingspush
+  },
+  {
+    path: '/Drawer_settings_opensource',
+    name: 'Drawer_settings_opensource',
+    component: Drawersettingsopensource
+  },
+  {
+    path: '/Drawer_myinfo_extrainfo',
+    name: 'Drawer_myinfo_extrainfo',
+    component: Drawermyinfoextrainfo
+  },
+  {
+    path: '/Drawer_myinfo_extrainfo_edit',
+    name: 'Drawer_myinfo_extrainfo_edit',
+    component: Drawermyinfoextrainfoedit
+  },
+  {
+    path: '/B2C_Drawer_myinfo_account_withdrawal02',
+    name: 'B2C_Drawer_myinfo_account_withdrawal02',
+    component: B2CDrawermyinfoaccountwithdrawal02
+  },
+  {
+    path: '/B2C_Drawer_myinfo_account_withdrawal03',
+    name: 'B2C_Drawer_myinfo_account_withdrawal03',
+    component: B2CDrawermyinfoaccountwithdrawal03
   }
 ]
 

@@ -18,17 +18,17 @@
                         <!-- list -->
                         <ul class="multiList type1">
                             <li class="id_info">
-                                <strong class="label-tit">자택</strong><span class="default clr2">기본</span><button type="button" class="btn14 first color_clr2">수정</button>
+                                <strong class="label-tit14">자택</strong><span class="default clr2">기본</span><button type="button" class="btn14 first color_clr2">수정</button>
                                 <p class="address">(06152) 서울특별시 강남구 언주로 508<br> 10~17층(역삼동, 서울상록빌딩)</p>
                                 <p class="name_line">정해민 <span class="bar"></span>010-1234-1234</p> 
                             </li>
                             <li>
-                                <strong class="label-tit">직장</strong><button type="button" class="btn14 color_clr2">수정</button>
+                                <strong class="label-tit14">직장</strong><button type="button" class="btn14 color_clr2">수정</button>
                                 <p class="address">(06152) 서울특별시 강남구 언주로 508<br> 10~17층(역삼동, 서울상록빌딩)</p>
                                 <p class="name_line">정해민 <span class="bar"></span>010-1234-1234</p> 
                             </li>
                             <li>
-                                <strong class="label-tit">직장2</strong><button type="button" class="btn14 color_clr2">수정</button>
+                                <strong class="label-tit14">직장2</strong><button type="button" class="btn14 color_clr2">수정</button>
                                 <p class="address">(06152) 서울특별시 강남구 언주로 508<br> 10~17층(역삼동, 서울상록빌딩)</p>
                                 <p class="name_line">정해민 <span class="bar"></span>010-1234-1234</p> 
                             </li>                
