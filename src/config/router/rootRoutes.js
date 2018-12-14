@@ -74,6 +74,7 @@ import Study02reflectionnoteedit02 from '~workplace/study/Study_02_reflectionnot
 import Study02studystatusassignment from '~workplace/study/Study_02_studystatus_assignment'
 import Study02studystatusassignmentapply from '~workplace/study/Study_02_studystatus_assignment_apply'
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
+import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentbestanswer from '~workplace/study/Study_04_SO_assinment_bestanswer'
@@ -92,20 +93,29 @@ import MainCurateUI01 from '~workplace/main/Main_curateUI01'
 import MainCurateUI02 from '~workplace/main/Main_curateUI02'
 import MainCurateUI03 from '~workplace/main/Main_curateUI03'
 import MainCurateUI04 from '~workplace/main/Main_curateUI04'
+import MainBanner from '~workplace/main/Main_banner'
+import MainBoard from '~workplace/main/Main_board'
+import MainBoardEmpty from '~workplace/main/Main_board_empty'
+import MainHistorylist from '~workplace/main/Main_historylist'
+import MainEnrollNotice from '~workplace/main/Main_enrollNotice'
+import MainScrap from '~workplace/main/Main_scrap'
+import MainScrapEmpty from '~workplace/main/Main_scrap_empty'
 
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
 import Drawermyinfochoosepic from '~workplace/drawer/Drawer_myinfo_choosepic'
 import Drawermyinfobasicinfo from '~workplace/drawer/Drawer_myinfo_basicinfo'
 import Drawermyinfobasicinfoedit from '~workplace/drawer/Drawer_myinfo_basicinfo_edit'
+import Drawer06myinfoaccountpassword from '~workplace/drawer/Drawer_06_myinfo_account_password'
+import Drawer08myinfoaccountpassword from '~workplace/drawer/Drawer_08_myinfo_account_password'
+import Drawersettings from '~workplace/drawer/Drawer_settings'
+import B2CDrawermyinfo from '~workplace/drawer/B2C_Drawer_myinfo'
 import B2CDrawermyinfoaccount from '~workplace/drawer/B2C_Drawer_myinfo_account'
 import B2CDrawermyinfotracking from '~workplace/drawer/B2C_Drawer_myinfo_tracking'
 import B2CDrawermyinfotrackingdelete from '~workplace/drawer/B2C_Drawer_myinfo_tracking_delete'
 import B2CDrawermyinfotrackingedit from '~workplace/drawer/B2C_Drawer_myinfo_tracking_edit'
-import Drawer06myinfoaccountpassword from '~workplace/drawer/Drawer_06_myinfo_account_password'
 import B2CDrawermyinfoaccountpassword from '~workplace/drawer/B2C_Drawer_myinfo_account_password'
-import Drawer08myinfoaccountpassword from '~workplace/drawer/Drawer_08_myinfo_account_password'
-import Drawersettings from '~workplace/drawer/Drawer_settings'
+import B2CDrawerSettings01 from '~workplace/drawer/B2C_drawer_settings01'
 
 // 1번 영역
 var rootRoutes = [
@@ -475,6 +485,11 @@ var rootRoutes = [
     component: Study02studystatusassessmentnotice
   },
   {
+    path: '/Study_02_faq_detail',
+    name: 'Study_02_faq_detail',
+    component: Study02faqdetail
+  },
+  {
     path: '/Study_03_LO_viewer_fs',
     name: 'Study_03_LO_viewer_fs',
     component: Study03LOviewerfs
@@ -560,9 +575,49 @@ var rootRoutes = [
     component: MainCurateUI04
   },
   {
+    path: '/Main_banner',
+    name: 'Main_banner',
+    component: MainBanner
+  },
+  {
+    path: '/Main_board',
+    name: 'Main_board',
+    component: MainBoard
+  },
+  {
+    path: '/Main_board_empty',
+    name: 'Main_board_empty',
+    component: MainBoardEmpty
+  },
+  {
+    path: '/Main_historylist',
+    name: 'Main_historylist',
+    component: MainHistorylist
+  },
+  {
+    path: '/Main_enrollNotice',
+    name: 'Main_enrollNotice',
+    component: MainEnrollNotice
+  },
+  {
+    path: '/Main_scrap',
+    name: 'Main_scrap',
+    component: MainScrap
+  },
+  {
+    path: '/Main_scrap_empty',
+    name: 'Main_scrap_empty',
+    component: MainScrapEmpty
+  },
+  {
     path: '/Drawer_myinfo',
     name: 'Drawer_myinfo',
     component: DrawerMyinfo
+  },
+  {
+    path: '/B2C_Drawer_myinfo',
+    name: 'B2C_Drawer_myinfo',
+    component: B2CDrawermyinfo
   },
   {
     path: '/Drawer_myinfo_logout',
@@ -609,15 +664,15 @@ var rootRoutes = [
     name: 'Drawer_06_myinfo_account_password',
     component: Drawer06myinfoaccountpassword
   },
-  // {
-  //   path: '/Drawer_myinfo_account_password',
-  //   name: 'Drawer_myinfo_account_password',
-  //   component: Drawermyinfoaccountpassword
-  // },
   {
     path: '/B2C_Drawer_myinfo_account_password',
     name: 'B2C_Drawer_myinfo_account_password',
     component: B2CDrawermyinfoaccountpassword
+  },
+  {
+    path: '/B2C_drawer_settings01',
+    name: 'B2C_drawer_settings01',
+    component: B2CDrawerSettings01
   },
   {
     path: '/Drawer_08_myinfo_account_password',

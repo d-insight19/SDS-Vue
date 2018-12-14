@@ -18,42 +18,35 @@
                         <!-- list -->
                         <ul class="multiList type1">
                             <li class="id_info">
-                                <strong class="label-tit">자택</strong><span class="default clr2">기본</span><button type="button" class="btn14 color_clr2">완료</button>
+                                <strong class="label-tit">자택</strong><span class="default clr2">기본</span><button type="button" class="btn14 first color_clr2">수정</button>
                                 <p class="address">(06152) 서울특별시 강남구 언주로 508<br> 10~17층(역삼동, 서울상록빌딩)</p>
-                                <p class="name_line">정해민 <span class="bar">010-1234-1234</span></p>                                
-                                
+                                <p class="name_line">정해민 <span class="bar"></span>010-1234-1234</p> 
                             </li>
                             <li>
-                                <strong class="label-tit">이름</strong>
-                                <p class="contents">정해민</p>
+                                <strong class="label-tit">직장</strong><button type="button" class="btn14 color_clr2">수정</button>
+                                <p class="address">(06152) 서울특별시 강남구 언주로 508<br> 10~17층(역삼동, 서울상록빌딩)</p>
+                                <p class="name_line">정해민 <span class="bar"></span>010-1234-1234</p> 
                             </li>
                             <li>
-                                <strong class="label-tit">성별</strong>
-                                <p class="contents">남</p>
-                            </li>
-                            <li>
-                                <strong class="label-tit">생년월일</strong>
-                                <p class="contents">1990.01.01</p>
-                            </li>
-                            <li>
-                                <strong class="label-tit">이메일</strong>
-                                <p class="contents">hamin.jung@multicampus.com</p>
-                            </li>
-                            <li>
-                                <strong class="label-tit">휴대전화</strong>
-                                <p class="contents">010-1234-1234</p>
-                            </li>
-                            <li>
-                                <strong class="label-tit">주소</strong>
-                                <p class="contents">직장<br>(06220) 서울특별시 강남구 테헤란로 212 (역삼동 1202호) 멀티캠퍼스 1202호</p>
-                            </li>                    
+                                <strong class="label-tit">직장2</strong><button type="button" class="btn14 color_clr2">수정</button>
+                                <p class="address">(06152) 서울특별시 강남구 언주로 508<br> 10~17층(역삼동, 서울상록빌딩)</p>
+                                <p class="name_line">정해민 <span class="bar"></span>010-1234-1234</p> 
+                            </li>                
                         </ul>
                         <!-- // list -->
 
                        
                     </div>
                 </div>
-            </div>           
+            </div>  
+
+        <!-- floating button -->
+        <div class="fixBtmBtn">
+            <ul>
+                <li><button type="button" class="btn md clr1">새로운 배송지 추가</button></li>
+            </ul>
+        </div>
+        <!-- //floating button -->         
             
         </div>
         <!-- //container -->   

@@ -25,61 +25,40 @@
         <!-- //header -->
 
         <div id="content" class="list">
-                
-          <!-- component -->
+            
+          <!-- //component -->
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 mb20">추천</h1>
-                <h2 class="h-tit2 mb10">정해민님을 위한 맞춤 추천과정</h2>
-                <div class="scroll-x type2">
-                    <!-- list -->
-                    <ul class="thumList type3">
-                        <li>
-                            <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
-                            <div class="thum">
-                                <span class="label">정규</span>
-                                <div class="cDim"></div>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
-                            <div class="thum">
-                                <span class="label">정규</span>
-                                <div class="cDim"></div>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- //list -->
+                <h2 class="h-tit2 mb10">공통 게시판</h2>
+                <!-- cBox -->
+                <div class="cBox">
+                    <!-- tab -->
+                    <div class="tabWrap type2">
+                        <div  class="tabMenu">
+                        <ul>
+                            <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
+                            <li><a href="#tab2">이미지투데이</a></li>
+                            <li><a href="#tab3">인문학이야기</a></li>
+                        </ul>
+                        </div>
+
+                        <div class="tabCnt dpb" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
+                        <!-- list -->
+                        <ul class="ulList2">
+                            <li v-if="!boardList.length" class="no-date"><p><span class="ico"></span>작성된 게시글이 없습니다</p></li>
+                            <li v-for="item in boardList" :key="item.id"><a href="#"><span class="cate color_clr1">{{item.cate}}</span><p class="txt">{{item.title}}</p></a></li>
+                        </ul>
+                        <!-- //list -->
+                        </div>
+                    </div>
+                    <!-- //tab -->
                 </div>
+                <!-- //cBox -->
             </div>
           </div>
 
-              
-          <div class="cell">  
+
+          <div class="cell">
             <div class="inner">
                 <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
@@ -151,7 +130,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI01',
+  name: 'Main_board',
   /* vue lifecycle */
   created () {
   },
@@ -160,7 +139,12 @@ export default {
   /* vue data */
   data () {
     return {
-      tabIdx: 1
+      tabIdx: 1,
+      boardList: [
+        {cate: '이벤트', title: '고현숙의 코칭 리더십-팀 성과 향상을 위한 코칭'},
+        {cate: '안내', title: 'LEAP(Leadership Acceleration Program)'},
+        {cate: '이벤트', title: '마켓 트레블러 황성욱의 트렌드 센싱'}
+      ]
     }
   },
   /* vue function */

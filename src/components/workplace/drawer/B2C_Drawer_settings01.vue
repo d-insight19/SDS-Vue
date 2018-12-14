@@ -65,7 +65,7 @@
 
 <script>
 export default {
-  name: 'Drawer_myinfo',
+  name: 'B2C_Drawer_settings01',
   /* vue lifecycle */
   created () {
   },

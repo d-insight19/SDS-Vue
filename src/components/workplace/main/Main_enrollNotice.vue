@@ -25,61 +25,81 @@
         <!-- //header -->
 
         <div id="content" class="list">
-                
-          <!-- component -->
+            <div class="cell">
+                <ul class="singleList type_1">
+                    <li>
+                        <a href="#">
+                            <div class="tagWrap"><span class="color_clr1 border_clr1">D-20</span></div>
+                            <span class="cate color_clr1">수강신청중</span>
+                            <p class="txt">2018.01.03(월)-2018.01.07(금)</p>
+                            <span class="ico arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
           <div class="cell">
+            <!-- component -->
             <div class="inner">
-                <h1 class="h-tit1 mb20">추천</h1>
-                <h2 class="h-tit2 mb10">정해민님을 위한 맞춤 추천과정</h2>
+                <h2 class="h-tit2 mb10">임직원 필수 교육 추천과정</h2>
                 <div class="scroll-x type2">
                     <!-- list -->
-                    <ul class="thumList type3">
+                    <ul class="thumList type2">
                         <li>
                             <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
-                            <div class="thum">
+                            <a href="#" class="thum">
                                 <span class="label">정규</span>
-                                <div class="cDim"></div>
                                 <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
                                 </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                            <ul class="info">
+                                <li class="color_clr3">이러닝</li>
+                                <li><span class="star ico"></span>4.5</li>
+                            </ul>
+                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                             </div>
                         </li>
                         <li>
                             <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
-                            <div class="thum">
+                            <a href="#" class="thum">
                                 <span class="label">정규</span>
-                                <div class="cDim"></div>
                                 <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
                                 </div>
+                            </a>
+
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                            <ul class="info">
+                                <li class="color_clr3">이러닝</li>
+                                <li><span class="star ico"></span>4.5</li>
+                            </ul>
+                            <div class="tagWrap"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in">
+                            <a href="#" class="thum">
+                                <span class="label">정규</span>
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                            <ul class="info">
+                                <li class="color_clr3">이러닝</li>
+                                <li><span class="star ico"></span>4.5</li>
+                            </ul>
+                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                             </div>
                         </li>
                     </ul>
                     <!-- //list -->
                 </div>
             </div>
-          </div>
 
-              
-          <div class="cell">  
+                
             <div class="inner">
                 <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
@@ -138,9 +158,9 @@
                 </ul>
                 <!-- //list -->
             </div>
-          </div>
-          <!-- //component -->
+            <!-- //component -->
 
+          </div>
         </div>
         <div class="btn-quickWrite"></div>
       </div>
@@ -151,7 +171,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI01',
+  name: 'Main_enrollNotice',
   /* vue lifecycle */
   created () {
   },

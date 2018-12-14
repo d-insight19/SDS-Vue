@@ -25,61 +25,27 @@
         <!-- //header -->
 
         <div id="content" class="list">
+        
+          <!-- //component -->
+
+
                 
-          <!-- component -->
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 mb20">추천</h1>
-                <h2 class="h-tit2 mb10">정해민님을 위한 맞춤 추천과정</h2>
-                <div class="scroll-x type2">
-                    <!-- list -->
-                    <ul class="thumList type3">
-                        <li>
-                            <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
-                            <div class="thum">
-                                <span class="label">정규</span>
-                                <div class="cDim"></div>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#">
-                                <strong class="tit">꼭 알아야할 실전 비즈니스매너 </strong>
-                                <ul class="info">
-                                <li>이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                                </ul>
-                                <div class="tagWrap"><span>교재</span><span>환급</span><span>이벤트</span><span>모바일 병행</span></div>
-                            </a>
-                            </div>
-                            <div class="thum">
-                                <span class="label">정규</span>
-                                <div class="cDim"></div>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_L.jpg" class="thumImg" alt="">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- //list -->
+                <h2 class="h-tit2 mb10">찜한 학습
+                    <div class="fr color_clr2 font_14 fw300">전체보기</div>
+                </h2>
+
+                <div class="no-date">
+                    <p>찜한 과정이 없습니다</p>
+                    <p>관심있는 과정을 찜 할 수 있습니다</p>
+                    <a href="#" class="clr2">수강중 과정</a>
                 </div>
             </div>
           </div>
 
-              
-          <div class="cell">  
+
+          <div class="cell">
             <div class="inner">
                 <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
@@ -151,7 +117,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI01',
+  name: 'Main_scrap_empty',
   /* vue lifecycle */
   created () {
   },

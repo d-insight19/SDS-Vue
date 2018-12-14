@@ -8,13 +8,23 @@
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">기본정보관리 수정</p><button type="button" class="btn14 color_clr2 fr">수정</button>
+                <p class="header_text font_18">계정 관리</p>
             </div>
             <!-- //header -->
 
             <div id="content" class="drawer etc">
                 <div class="cell">
-                    <div class="inner">
+                    <div class="inner nopad">
+                     <!-- list -->
+                        <ul class="singleList type_1">
+                            <li>
+                                <a href="# first_line">비밀번호 변경<span class="black_next"></span></a>
+                            </li>
+                            <li>
+                                <a href="#">회원 탈퇴<span class="black_next"></span></a>
+                            </li>
+                        </ul>
+                <!-- //list -->
                        
 
                        
