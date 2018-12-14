@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery interest">
+      <div id="container" class="mediaquery interest pd70">
           
             <div id="content" class="etc">
                 <div class="cell">

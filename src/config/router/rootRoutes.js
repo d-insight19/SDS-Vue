@@ -101,6 +101,7 @@ import MainEnrollNotice from '~workplace/main/Main_enrollNotice'
 import MainScrap from '~workplace/main/Main_scrap'
 import MainScrapEmpty from '~workplace/main/Main_scrap_empty'
 
+import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
 import Drawermyinfochoosepic from '~workplace/drawer/Drawer_myinfo_choosepic'
@@ -608,6 +609,11 @@ var rootRoutes = [
     path: '/Main_scrap_empty',
     name: 'Main_scrap_empty',
     component: MainScrapEmpty
+  },
+  {
+    path: '/Drawer_alerm',
+    name: 'Drawer_alerm',
+    component: DrawerAlerm
   },
   {
     path: '/Drawer_myinfo',

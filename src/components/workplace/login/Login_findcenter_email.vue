@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery findcenter">
+      <div id="container" class="mediaquery findcenter pd70">
             <!-- header -->
             <div id="header">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>

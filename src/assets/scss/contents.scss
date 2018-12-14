@@ -442,12 +442,6 @@
 
 
 
-
-
-
-
-
-
 // 용어사전 -상세
 #container.study_dictionary_de .h-tit1{ display: inline-block; font-size:map-get($font-size, font_26); line-height: 22px; letter-spacing: -0.78px; margin-bottom: 16px;}
 #container.study_dictionary_de .txt-desc{font-size:map-get($font-size, font_15); line-height: 25px; letter-spacing: -0.45px; color: rgba(0,0,0,0.8);}
@@ -730,6 +724,17 @@
 
 // 정은희 작업
 // drawer 시작
+// Drawer 알림
+#container.drawer .alerm_wrap + .alerm_wrap{margin-top:20px;}
+#container.drawer .alerm_wrap .alerm_tit{font-size:map-get($font-size, font_22);line-height:33px;letter-spacing:-1.1px;margin-bottom:29px;font-weight:29px;}
+#container.drawer .alerm_wrap ul{margin-left:5px;border-left:2px solid #d9d9d9;}
+#container.drawer .alerm_wrap ul li{position:relative;padding:17px 0px 27px 19px;}
+#container.drawer .alerm_wrap ul li .alerm_cate{font-size:map-get($font-size, font_11);border:1px solid rgba(0,0,0,0.8);padding:0px 9px; line-height: 17px;border-radius: 20px;display: inline-block;position: absolute;   top: -5px;font-weight:500;}
+#container.drawer .alerm_wrap ul li .alerm_content{font-size:map-get($font-size, font_14);line-height:21px;letter-spacing:-0.42px;margin-bottom:4px;}
+#container.drawer .alerm_wrap ul li .alerm_time{font-size:map-get($font-size, font_12);line-height:18px;letter-spacing:-0.12px;color:rgba(0,0,0,0.4)}
+#container.drawer .alerm_wrap ul li .dot{position: absolute;top:0px;left:-6px;width:10px;height:10px;border:2px solid rgba(0,0,0,0.65);background:#fff;border-radius: 8px}
+#container.drawer .alerm_wrap ul li .dot.active{border:2px solid map-get($static_colors , danger);background:map-get($static_colors , danger)}
+
 // 회원정보
 #container.drawer .myinfo_img {position: relative; background: url("../img/img_man_80.png"); width: 80px; height:80px; margin: 4px auto 8px;}
 #container.drawer .edit_ico {position: absolute; background: url("../img/btn_edit_28.png"); left:58px; top:58px; width: 28px; height:28px; }

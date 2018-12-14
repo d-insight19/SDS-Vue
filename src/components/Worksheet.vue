@@ -771,8 +771,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_02.01_Alerm</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_alerm' }">
+            Drawer_alerm
           </router-link>
         </td>
         <td></td>

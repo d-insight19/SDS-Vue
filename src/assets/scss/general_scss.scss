@@ -5,27 +5,32 @@ $brand_colors: (
   colorCode1:(
     clr1 : #4B7AF4,
     clr2 : #2F3E9F,
-    clr3 : #0A4CEC
+    clr3 : #0A4CEC,
+    clr4 : #DDE5ED
   ),
   colorCode2:(
     clr1 : #21277C,
     clr2 : #00ADFB,
-    clr3 : #4E51D4
+    clr3 : #4E51D4,
+    clr4 : #E6EAF5
   ),
   colorCode3:(
     clr1 : #0C7979,
     clr2 : #02AD93,
-    clr3 : #00A9AA
+    clr3 : #007E7B,
+    clr4 : #DAE6E4
   ),
   colorCode4:(
     clr1 : #2E3E50,
     clr2 : #F2444A,
-    clr3 : #FF4B6B
+    clr3 : #FF4B6B,
+    clr4 : #F0E9E6
   ),
   colorCode5:(
     clr1 : #C07902,
     clr2 : #FFA000,
-    clr3 : #BF360C
+    clr3 : #BF360C,
+    clr4 : #E6E4DC
   )
 );
 
@@ -43,6 +48,9 @@ $brand_colors: (
     .clr3{
       background: map-get($color,clr3) !important;
     }
+    .clr4{
+      background: map-get($color,clr4) !important;
+    }
     .color_clr1{
       color: map-get($color,clr1) !important;
     }    
@@ -52,6 +60,9 @@ $brand_colors: (
     .color_clr3{
       color: map-get($color,clr3) !important;
     }
+    .color_clr4{
+      color: map-get($color,clr4) !important;
+    }
     .border_clr1{
       border-color: map-get($color,clr1) !important;
     }    
@@ -60,6 +71,9 @@ $brand_colors: (
     }    
     .border_clr3{
       border-color: map-get($color,clr3) !important;
+    }
+    .border_clr4{
+      border-color: map-get($color,clr4) !important;
     }
     input.underline:focus{
       border:0 !important;
