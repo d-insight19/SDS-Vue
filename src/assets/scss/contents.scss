@@ -779,7 +779,11 @@
 .mb13{margin-bottom: 13px !important;}
 .mb14{margin-bottom: 14px !important;}
 .mb20{margin-bottom: 20px !important;}
-.fwn{font-weight: normal;}
+.fw300{font-weight: 300;}
+.h-tit1 {font-weight:700;}
+.h-tit2 {font-weight:600;}
+// layout.css 에 추가
+#container #content .inner {padding-bottom: 12px;}
 // curateUI02 이미지 리사이즈
 .MainType  .thumList.type2 > li{width:151px;}
 .MainType  .thumList.type2 .thum{width:151px; height:113px;}
@@ -789,8 +793,11 @@
 .MainType .singleList.type_1 li {height: 48px;}
 .MainType .singleList.type_1 li a {line-height: 20px; padding:14px 30px 14px 18px !important;}
 .MainType .singleList.type_1 li a .tagWrap {display: inline-block; margin-right:2px; vertical-align: top;}
-.MainType .singleList.type_1 li a .cate {font-size:map-get($font_size, font_14); vertical-align: top; display: inline-block; margin-right:8px;}
-.MainType .singleList.type_1 li a .txt {font-size:map-get($font_size, font_14); vertical-align: top; display: inline-block;}
+.MainType .singleList.type_1 li a .cate {font-size: map-get($font_size, font_13); vertical-align: top; display: inline-block; margin-right:8px;}
+.MainType .singleList.type_1 li a .txt {font-size: map-get($font_size, font_13); vertical-align: top; display: inline-block;}
 .MainType .singleList.type_1 li a .ico.arrow {background-position: inherit !important; margin-top: -8px; width: 16px !important; height: 16px !important;}
-
-
+// Scrap_Empty 스타일 추가
+.MainType div.no-date {border-top:1px solid map-get($line_colors, B85); border-bottom:1px solid map-get($line_colors, B85); padding:20px 0 ; text-align:center;}
+.MainType div.no-date p {font-size: map-get($font_size, font_16); font-weight:500; color: map-get($mono_colors, mono_80); padding-bottom:5px;}
+.MainType div.no-date p+p {font-size: map-get($font_size, font_14); font-weight:400; color: map-get($mono_colors, mono_50); padding-bottom:15px;}
+.MainType div.no-date a {display:inline-block; font-size:map-get($font_size, font_14); color: map-get($mono_colors, mono_0); line-height: 38px; padding:0 28px; border-radius: 80px; cursor:pointer;}

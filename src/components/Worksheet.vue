@@ -2836,6 +2836,10 @@
           <router-link :to="{ name: 'Main_scrap' }">
             Main_scrap
           </router-link>
+          ,
+          <router-link :to="{ name: 'Main_scrap_empty' }">
+            Main_scrap_empty
+          </router-link>
         </td>
         <td></td>
       </tr>

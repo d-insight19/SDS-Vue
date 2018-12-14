@@ -32,9 +32,9 @@
                 
           <div class="cell">
             <div class="inner">
-                <h3 class="h-tit3 mb10">찜한 학습
-                    <div class="fr color_clr2 font_14 fwn">전체보기</div>
-                </h3>
+                <h2 class="h-tit2 mb10">찜한 학습
+                    <div class="fr color_clr2 font_14 fw300">전체보기</div>
+                </h2>
                 <div class="scroll-x type2">
                     <!-- list -->
                     <ul class="thumList type2">
@@ -96,7 +96,7 @@
 
           <div class="cell">
             <div class="inner">
-                <h3 class="h-tit3 mb10">'마케팅직무'를 위한 추천과정</h3>
+                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>
