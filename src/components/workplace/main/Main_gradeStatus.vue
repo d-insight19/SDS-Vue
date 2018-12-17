@@ -32,18 +32,19 @@
                 <h2 class="h-tit2 mb10">학점 이수 현황
                     <div class="fr font_14 fw300"><span class="ico point"></span></div>
                 </h2>
+                
                 <div class="status">
-                    <div class="white">
+                    <div class="white big">
                         <div class="info">
                             <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                         </div>
                         <dl>
                             <dt>취득학점</dt>
-                            <dd><strong class="font_22">59</strong> 학점</dd>
+                            <dd><strong>59</strong> 학점</dd>
                         </dl>
-                        <dl>
+                        <dl class="line">
                             <dt>목표학점</dt>
-                            <dd><strong class="font_22">80</strong> 학점</dd>
+                            <dd><strong>80</strong> 학점</dd>
                         </dl>
                     </div>
                 </div>

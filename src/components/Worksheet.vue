@@ -2773,7 +2773,7 @@
             Main_graphClassList_more
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">160</td>
@@ -2862,7 +2862,7 @@
             Main_gradeStatus
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">165</td>
@@ -2879,7 +2879,7 @@
             Main_gradeStatusDetail
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">166</td>

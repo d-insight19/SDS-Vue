@@ -897,15 +897,22 @@
 .MainType div.no-date a {display:inline-block; font-size:map-get($font_size, font_14); color: map-get($mono_colors, mono_0); line-height: 38px; padding:0 28px; border-radius: 80px; cursor:pointer;}
 // Status 
 .status {border-top: 1px solid map-get($line_colors, B60); border-bottom: 1px solid map-get($line_colors, B60);}
-.status div.white{padding:25px 24px 25px 167px; position:relative;}
-.status div.white dl {line-height: 280%;}
-.status div.white dl + dl {border-top: 1px solid map-get($line_colors, B89);}
-.status div.white .info {position:absolute; top: 20px; left: 30px;}
-.status div.white .info img{width: 98px; height: 98px;}
-.status div.white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
-.status div.white .info strong {font-size: map-get($font_size, font_22); color: map-get($mono_colors, mono_100);}
-.status div.gray{padding:15px 24px; background-color: map-get($bg_colors, BG_1);}
-.status div dl{width: 100%; display: table; line-height: 200%;}
-.status div dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 50%; display: table-cell; }
-.status div dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 50%; display: table-cell; text-align: right;}
-.status div dd strong{font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_100);}
+.status strong {color: map-get($mono_colors, mono_100); font-weight:500;}
+.status .white{padding:15px 24px 15px 145px; position:relative;}
+.status .gray{padding:15px 24px; background-color: map-get($bg_colors, BG_1);}
+.status .white .info {position:absolute; margin-top:-25px; top:50%; left: 24px;}
+.status .white .info strong {font-size: map-get($font_size, font_20);}
+.status .white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
+.status .white .info p + p {font-size: map-get($font_size, font_18);}
+.status dl{width: 100%; display: table; line-height: 200%; left: 24px;}
+.status dl.line {border-top: 1px solid map-get($line_colors, B89);}
+.status dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 40%; display: table-cell; }
+.status dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 60%; display: table-cell; text-align: right;}
+.status dd strong{font-size: map-get($font_size, font_16);}
+.status .big {padding-top:25px; padding-bottom:25px;}
+.status .big dl {line-height: 280%;}
+.status .big dl strong {font-size: map-get($font_size, font_22);}
+.status .big .info {position:absolute; margin-top:-50px; top:50%;}
+.status .big .info img{width: 98px; height: 98px;}
+.status .thumList {border-top: 1px solid map-get($line_colors, B85);}
+.status .thumList > li{padding-top:10px;}
