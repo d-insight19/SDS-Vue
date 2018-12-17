@@ -26,7 +26,7 @@
 
         <div id="content" class="list">
             <div class="cell">
-                <ul class="singleList type_1 ml-18 mr-18">
+                <ul class="singleList type_1">
                     <li>
                         <a href="#">
                             <div class="tagWrap"><span class="color_clr1 border_clr1">D-20</span></div>

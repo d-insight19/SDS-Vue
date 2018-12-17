@@ -30,7 +30,7 @@
           <div class="cell">
             <div class="inner">
                 <h2 class="h-tit2 mb10">학점 이수 현황
-                    <div class="fr font_14"><span class="ico info"></span></div>
+                    <div class="fr font_14 fw300"><span class="ico point"></span></div>
                 </h2>
                 <div class="status">
                     <div class="white big">
@@ -46,7 +46,7 @@
                             <dd><strong>80</strong> 학점</dd>
                         </dl>
                     </div>
-                    <div class="gray big">
+                    <div class="gray">
                         <dl>
                             <dt>경영전략·기획</dt>
                             <dd><strong>10/80</strong> 학점</dd>

@@ -14,17 +14,15 @@
             <div id="content" class="etc">
                 <div class="cell">
                   <div class="inner">
-                    <div class="titTxtWrap">
-                      <strong class="txt-tit">
+                      <p class="txt-tit">
                         1. OO은 OO해야합니다. 의견을 입력하세요.
-                      </strong>
+                      </p>
                       <p class="empty_img">
                         <img src="" alt="">
                       </p>
-                      <p class="txt-desc">
+                      <p class="inner-txt">
                         답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다 답변내용 입니다
                       </p>
-                    </div>
                   </div>
                 </div>
             </div>
