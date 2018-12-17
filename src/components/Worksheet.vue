@@ -754,8 +754,8 @@
         <td>고객사별 드로어 내 메뉴 선택설정</td>
         <td class="textL">03.Drawer_01.01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_control' }">
+            Main_control
           </router-link>
         </td>
         <td></td>
