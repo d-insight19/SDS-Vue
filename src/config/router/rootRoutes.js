@@ -113,6 +113,9 @@ import MainStatistics1 from '~workplace/main/Main_statistics_1'
 import MainStatistics2 from '~workplace/main/Main_statistics_2'
 import MainStatistics3 from '~workplace/main/Main_statistics_3'
 import MainStatistics4 from '~workplace/main/Main_statistics_4'
+import MainBrowseMain from '~workplace/main/Main_browse_main'
+import MainBrowseListDetail01 from '~workplace/main/Main_browse_listDetail01'
+import MainBrowseListDetail02 from '~workplace/main/Main_browse_listDetail02'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -692,6 +695,21 @@ var rootRoutes = [
     path: '/Main_statistics_4',
     name: 'Main_statistics_4',
     component: MainStatistics4
+  },
+  {
+    path: '/Main_browse_main',
+    name: 'Main_browse_main',
+    component: MainBrowseMain
+  },
+  {
+    path: '/Main_browse_listDetail01',
+    name: 'Main_browse_listDetail01',
+    component: MainBrowseListDetail01
+  },
+  {
+    path: '/Main_browse_listDetail02',
+    name: 'Main_browse_listDetail02',
+    component: MainBrowseListDetail02
   },
   {
     path: '/Drawer_alerm',

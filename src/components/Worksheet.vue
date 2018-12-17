@@ -2803,8 +2803,20 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.Statistics</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_statistics_1' }">
+            Main_statistics_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_statistics_2' }">
+            Main_statistics_2
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_statistics_3' }">
+            Main_statistics_3
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_statistics_4' }">
+            Main_statistics_4
           </router-link>
         </td>
         <td></td>
@@ -2892,8 +2904,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.04.Browse    main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_browse_main' }">
+            Main_browse_main
           </router-link>
         </td>
         <td></td>
@@ -2909,11 +2921,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.04.Browse    ListDetail01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_browse_listDetail01' }">
+            Main_browse_listDetail01
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">168</td>
@@ -2926,11 +2938,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.04.Browse    ListDetail02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_browse_listDetail02' }">
+            Main_browse_listDetail02
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">169</td>
@@ -3827,20 +3839,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.07.studystatistics</td>
         <td>
-          <router-link :to="{ name: 'Main_statistics_1' }">
-            Main_statistics_1
-          </router-link>
-          ,
-          <router-link :to="{ name: 'Main_statistics_2' }">
-            Main_statistics_2
-          </router-link>
-          ,
-          <router-link :to="{ name: 'Main_statistics_3' }">
-            Main_statistics_3
-          </router-link>
-          ,
-          <router-link :to="{ name: 'Main_statistics_4' }">
-            Main_statistics_4
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>

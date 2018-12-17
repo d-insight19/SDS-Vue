@@ -57,8 +57,10 @@
 .ico.mark-o{width:58px;height:58px;background: url("../img/ic_mark_o_large.png") no-repeat; }
 .ico.mark-x{width:58px;height:58px;background: url("../img/ic_mark_x.png") no-repeat; }
 
+/* main 추가 이미지 2018-12-17 */
 .ico.info {width:28px; height:28px; background: url("../img/ic_info.png") no-repeat; background-size: 28px;}
 .ico.grade_gold {width:25px;height:25px;background: url("../img/ic_grade_gold.png") no-repeat; background-size: 36px; background-position:center center;}
+.ico.next_16_80 {width:16px; height:16px; background: url("../img/ic_next_16_80.png") no-repeat; background-size: 16px;}
 
 #header.mainType2 .line2 .ico{vertical-align: top}
 
