@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery changepw">
+      <div id="container" class="mediaquery changepw pd70">
         <!-- header -->
         <div id="header">
           <button type="button" class="btn only close"><span class="ico">이전</span></button>

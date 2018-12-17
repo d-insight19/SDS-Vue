@@ -27,18 +27,20 @@ button.btn{
 }
 
 // 글자 폰트에 따른 클래스명 관리
-.font_11{font-size:map-get($font_size, font_11)}
-.font_12{font-size:map-get($font_size, font_12)}
-.font_13{font-size:map-get($font_size, font_13)}
-.font_14{font-size:map-get($font_size, font_14)}
-.font_15{font-size:map-get($font_size, font_15)}
-.font_16{font-size:map-get($font_size, font_16)}
-.font_17{font-size:map-get($font_size, font_17)}
-.font_18{font-size:map-get($font_size, font_18)}
-.font_19{font-size:map-get($font_size, font_19)}
-.font_20{font-size:map-get($font_size, font_20)}
-.font_26{font-size:map-get($font_size, font_26)}
-.font_30{font-size:map-get($font_size, font_30)}
+.font_11{font-size:map-get($font_size, font_11) !important;}
+.font_12{font-size:map-get($font_size, font_12) !important;}
+.font_13{font-size:map-get($font_size, font_13) !important;}
+.font_14{font-size:map-get($font_size, font_14) !important;}
+.font_15{font-size:map-get($font_size, font_15) !important;}
+.font_16{font-size:map-get($font_size, font_16) !important;}
+.font_17{font-size:map-get($font_size, font_17) !important;}
+.font_18{font-size:map-get($font_size, font_18) !important;}
+.font_19{font-size:map-get($font_size, font_19) !important;}
+.font_20{font-size:map-get($font_size, font_20) !important;}
+.font_22{font-size:map-get($font_size, font_22) !important;}
+.font_26{font-size:map-get($font_size, font_26) !important;}
+.font_28{font-size:map-get($font_size, font_28) !important;}
+.font_30{font-size:map-get($font_size, font_30) !important;}
 
 
 // 헤더 

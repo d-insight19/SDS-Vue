@@ -18,19 +18,19 @@
                         <!-- list -->
                         <ul class="multiList type2">                   
                         <li>
-                            <strong class="label-tit">주소 별칭</strong>
+                            <strong class="label-tit14">주소 별칭</strong>
                             <input type="text" class="input mb20" value="회사" >
                         </li>
                         <li>
-                            <strong class="label-tit">받으시는 분 성함</strong>
+                            <strong class="label-tit14">받으시는 분 성함</strong>
                             <input type="text" class="input mb20" value="정해민">
                         </li> 
                         <li>
-                            <strong class="label-tit">휴대전화</strong>
+                            <strong class="label-tit14">휴대전화</strong>
                             <input type="text" class="input mb20" value="01012341234">
                         </li>                                       
                         <li>
-                            <strong class="label-tit">주소</strong>                        
+                            <strong class="label-tit14">주소</strong>                        
                             <div>                                
                                 <ul>
                                     <li>

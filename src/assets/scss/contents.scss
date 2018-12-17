@@ -442,12 +442,6 @@
 
 
 
-
-
-
-
-
-
 // 용어사전 -상세
 #container.study_dictionary_de .h-tit1{ display: inline-block; font-size:map-get($font-size, font_26); line-height: 22px; letter-spacing: -0.78px; margin-bottom: 16px;}
 #container.study_dictionary_de .txt-desc{font-size:map-get($font-size, font_15); line-height: 25px; letter-spacing: -0.45px; color: rgba(0,0,0,0.8);}
@@ -776,6 +770,17 @@
 
 // 정은희 작업
 // drawer 시작
+// Drawer 알림
+#container.drawer .alerm_wrap + .alerm_wrap{margin-top:20px;}
+#container.drawer .alerm_wrap .alerm_tit{font-size:map-get($font-size, font_22);line-height:33px;letter-spacing:-1.1px;margin-bottom:29px;font-weight:29px;}
+#container.drawer .alerm_wrap ul{margin-left:5px;border-left:2px solid #d9d9d9;}
+#container.drawer .alerm_wrap ul li{position:relative;padding:17px 0px 27px 19px;}
+#container.drawer .alerm_wrap ul li .alerm_cate{font-size:map-get($font-size, font_11);border:1px solid rgba(0,0,0,0.8);padding:0px 9px; line-height: 17px;border-radius: 20px;display: inline-block;position: absolute;   top: -5px;font-weight:500;}
+#container.drawer .alerm_wrap ul li .alerm_content{font-size:map-get($font-size, font_14);line-height:21px;letter-spacing:-0.42px;margin-bottom:4px;}
+#container.drawer .alerm_wrap ul li .alerm_time{font-size:map-get($font-size, font_12);line-height:18px;letter-spacing:-0.12px;color:rgba(0,0,0,0.4)}
+#container.drawer .alerm_wrap ul li .dot{position: absolute;top:0px;left:-6px;width:10px;height:10px;border:2px solid rgba(0,0,0,0.65);background:#fff;border-radius: 8px}
+#container.drawer .alerm_wrap ul li .dot.active{border:2px solid map-get($static_colors , danger);background:map-get($static_colors , danger)}
+
 // 회원정보
 #container.drawer .myinfo_img {position: relative; background: url("../img/img_man_80.png"); width: 80px; height:80px; margin: 4px auto 8px;}
 #container.drawer .edit_ico {position: absolute; background: url("../img/btn_edit_28.png"); left:58px; top:58px; width: 28px; height:28px; }
@@ -787,13 +792,24 @@
 #container.drawer button.btn14 {font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px; position: absolute; right: 18px; bottom: 18px; font-weight: 500}
 #container.drawer .multiList.type1 > li { border-bottom: 1px solid #e3e3e3; padding:15px 0; min-height: 0 }
 #container.drawer .multiList.type2 > li { padding:0; min-height: 0 }
+
 #container.drawer .id_info .btn { position: absolute; right: 0; bottom: 20px; z-index: 1; width:93px; border:#ccc 1px solid; padding:7px 10px;}
 #container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:rgba(0,0,0,0.8); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
 #container.drawer .multiList.type2 .id_info button {position: absolute; right: 0; bottom:19px}
 #container.drawer .multiList.type2 input {margin-top:8px}
-#container.drawer .label-tit{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
-#container.drawer .contents{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:rgba(0,0,0,0.65); }
+#container.drawer .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px !important;}
+#container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 9px !important;}
+#container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px !important; }
+
+#container.drawer .contents14{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:rgba(0,0,0,0.65); }
+#container.drawer .contents13{margin-top:2px;font-size:map-get($font_size, font_13);line-height: 29px;color:rgba(0,0,0,0.65); letter-spacing: -0.39px;}
+#container.drawer .contents14_2{font-size:map-get($font_size, font_14);line-height: 22px;color:rgba(0,0,0,0.65); letter-spacing: -0.39px;}
 #container.drawer .btn.sm {margin:8px 0}
+#container.drawer .btn.sm.mb0 {margin-bottom:0}
 #container.drawer .rdoSelBox input:checked span.label {font-weight:bold !important}
 
 // 배송지 관리
@@ -802,11 +818,42 @@
 #container.drawer .multiList.type1 > li button.btn14.first {top:0;}
 #container.drawer .multiList.type1 > li .address {font-size:map-get($font_size, font_16); padding-right: 67px; margin:5px 0 }
 #container.drawer .multiList.type1 > li .name_line {color:rgba(0,0,0,0.8);}
-#container.drawer .multiList.type1 > li .name_line .bar {border-left:#d9d9d9 1px solid; height:10px; margin:0 8px; display: inline-block}
+#container.drawer .multiList.type1 > li .bar {border-left:#d9d9d9 1px solid; height:10px; margin:0 8px; display: inline-block}
 #container.drawer .multiList.type1 > li.id_info {padding-top:0}
-// #container #content.drawer .inner {}
-#container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px;color:rgba(0,0,0,0.65); margin:20px 0}
+#container.drawer .multiList.type1 > li.noline {border-bottom:0}
+#container.drawer .multiList.type1 > li.pt0 {padding-top:0}
+#container.drawer .multiList.type1 > .mt0 {margin-top:0}
+#container.drawer .multiList.type1 > li.title_line {border-bottom:#999 1px solid; padding-bottom:8px}
+#container.drawer .multiList.type1 > li.title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
+#container.drawer .multiList.type1 > li slp-checkbox.mr10 {margin-right:10px}
+#container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px; color:rgba(0,0,0,0.65); margin:20px 0}
+#container.drawer .version {font-size:map-get($font_size, font_14);line-height: 20px; color:rgba(0,0,0,0.65); }
+#container.drawer .version .num {font-family: 'Roboto' ; margin-left:6px}
+#container.drawer .intSchBox .btn{top:20px}
+#container.drawer .subject {width:33%; margin-right:6px}
+#container.drawer .subdivide {width:65%}
+
+#container.drawer .withdrawal>li {width:50%; border-bottom:#eaeaea 1px solid; padding:20px 6px;}
+#container.drawer .withdrawal>li.bl {border-left:#eaeaea 1px solid; padding-left:16px}
+#container.drawer .withdrawal>li p.subject {font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65); line-height: 18px}
+#container.drawer .withdrawal>li p.desc {font-size:map-get($font_size, font_20);  margin:0; color:#000; line-height: 29px}
+#container.drawer .withdrawal>li p.desc .num {font-family: 'Roboto'; font-weight: 500; }
+#container.drawer span.agree {color:rgba(0,0,0,0.8); margin-left:5px}
+#container.drawer .withdrawal_btn {overflow: hidden;}
+#container.drawer .withdrawal_btn li {width:50%; float: left;}
+
+#container.drawer .line02 {width: 100%; border-bottom: 8px solid #f6f6f6;  margin-top: 26px; margin-bottom: 22px;}
+
+// 회원탈퇴
+
+
+
 // drawer 끝
+
+
+
+
+
 
 
 
@@ -826,8 +873,9 @@
 .mb14{margin-bottom: 14px !important;}
 .mb20{margin-bottom: 20px !important;}
 .fw300{font-weight: 300;}
-.h-tit1 {font-weight:700;}
-.h-tit2 {font-weight:600;}
+.h-tit1 {font-weight:700 !important;}
+.h-tit2 {font-weight:600 !important;}
+//.ico.info28{width:28px;height:28px;background: url("../img/ic_info_line_28.png") no-repeat; }
 // layout.css 에 추가
 #container #content .inner {padding-bottom: 12px;}
 // curateUI02 이미지 리사이즈
@@ -847,3 +895,17 @@
 .MainType div.no-date p {font-size: map-get($font_size, font_16); font-weight:500; color: map-get($mono_colors, mono_80); padding-bottom:5px;}
 .MainType div.no-date p+p {font-size: map-get($font_size, font_14); font-weight:400; color: map-get($mono_colors, mono_50); padding-bottom:15px;}
 .MainType div.no-date a {display:inline-block; font-size:map-get($font_size, font_14); color: map-get($mono_colors, mono_0); line-height: 38px; padding:0 28px; border-radius: 80px; cursor:pointer;}
+// Status 
+.status {border-top: 1px solid map-get($line_colors, B60); border-bottom: 1px solid map-get($line_colors, B60);}
+.status div.white{padding:25px 24px 25px 167px; position:relative;}
+.status div.white dl {line-height: 280%;}
+.status div.white dl + dl {border-top: 1px solid map-get($line_colors, B89);}
+.status div.white .info {position:absolute; top: 20px; left: 30px;}
+.status div.white .info img{width: 98px; height: 98px;}
+.status div.white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
+.status div.white .info strong {font-size: map-get($font_size, font_22); color: map-get($mono_colors, mono_100);}
+.status div.gray{padding:15px 24px; background-color: map-get($bg_colors, BG_1);}
+.status div dl{width: 100%; display: table; line-height: 200%;}
+.status div dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 50%; display: table-cell; }
+.status div dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 50%; display: table-cell; text-align: right;}
+.status div dd strong{font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_100);}

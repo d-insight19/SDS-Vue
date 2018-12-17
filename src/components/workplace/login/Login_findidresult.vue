@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery findid">
+      <div id="container" class="mediaquery findid pd70">
         <!-- header -->
         <div id="header">
           <button type="button" class="btn only close"><span class="ico">닫기</span></button>
