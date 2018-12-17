@@ -754,8 +754,8 @@
         <td>고객사별 드로어 내 메뉴 선택설정</td>
         <td class="textL">03.Drawer_01.01</td>
         <td>
-          <router-link :to="{ name: 'Main_control' }">
-            Main_control
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -771,8 +771,8 @@
         <td>　</td>
         <td class="textL">03.Drawer_02.01_Alerm</td>
         <td>
-          <router-link :to="{ name: 'Drawer_alerm' }">
-            Drawer_alerm
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -2765,12 +2765,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.GraphClassList</td>
         <td>
-          <router-link :to="{ name: 'Main_graphClassList' }">
-            Main_graphClassList
-          </router-link>
-          ,
-          <router-link :to="{ name: 'Main_graphClassList_more' }">
-            Main_graphClassList_more
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -2852,10 +2848,6 @@
           <router-link :to="{ name: 'Main_scrap' }">
             Main_scrap
           </router-link>
-          ,
-          <router-link :to="{ name: 'Main_scrap_empty' }">
-            Main_scrap_empty
-          </router-link>
         </td>
         <td></td>
       </tr>
@@ -2870,8 +2862,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.GradeStatus</td>
         <td>
-          <router-link :to="{ name: 'Main_gradeStatus' }">
-            Main_gradeStatus
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -2887,8 +2879,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.GradeStatusDetail</td>
         <td>
-          <router-link :to="{ name: 'Main_gradeStatusDetail' }">
-            Main_gradeStatusDetail
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -5706,8 +5698,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.01.SO_mainsummary</td>
         <td>
-          <router-link :to="{ name: 'Study_04_SO_mainsummary' }">
-            Study_04_SO_mainsummary
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -5723,9 +5715,9 @@
         <td>　</td>
         <td class="textL">05.Study_04.02.SO_quiz_intro</td>
         <td>
-          <!-- <router-link :to="{ name: 'Study_04_SO_quiz_intro' }">
-            Study_04_SO_quiz_intro
-          </router-link> -->
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -5774,8 +5766,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.05.SO_quiz_OX</td>
         <td>
-          <router-link :to="{ name: 'Study_04_SO_quiz_OX' }">
-            Study_04_SO_quiz_OX
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -5791,8 +5783,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.06.SO_quiz_OX_result</td>
         <td>
-          <router-link :to="{ name: 'Study_04_SO_quiz_OX_result' }">
-            Study_04_SO_quiz_OX_result
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -5808,9 +5800,9 @@
         <td>　</td>
         <td class="textL">05.Study_04.07.SO_quiz_shortanswer</td>
         <td>
-          <!-- <router-link :to="{ name: 'Study_04_SO_quiz_shortanswer' }">
-            Study_04_SO_quiz_shortanswer
-          </router-link> -->
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -6293,9 +6285,9 @@
         <td>　</td>
         <td class="textL">05.Study_04.34.SO_actionplan_intro</td>
         <td>
-          <!-- <router-link :to="{ name: '' }">
+          <router-link :to="{ name: '' }">
             
-          </router-link> -->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -7976,6 +7968,10 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_account_withdrawal</td>
         <td>
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account_withdrawal01' }">
+            B2C_Drawer_myinfo_account_withdrawal01
+          </router-link>
+          ,
           <router-link :to="{ name: 'B2C_Drawer_myinfo_account_withdrawal02' }">
             B2C_Drawer_myinfo_account_withdrawal02
           </router-link>
@@ -8269,8 +8265,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_08.01_Event</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_Event' }">
+          B2C_Drawer_Event
           </router-link>
         </td>
         <td></td>
@@ -8286,8 +8282,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_08.02_Event_Winner</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_Event_Winner' }">
+            B2C_Drawer_Event_Winner
           </router-link>
         </td>
         <td></td>
@@ -9374,8 +9370,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_08.01_Event_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_Event_detail' }">
+            B2C_Drawer_Event_detail
           </router-link>
         </td>
         <td></td>
@@ -9391,8 +9387,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_08.02_Event_Winner_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_Event_Winner_detail' }">
+            B2C_Drawer_Event_Winner_detail
           </router-link>
         </td>
         <td></td>
@@ -9449,383 +9445,7 @@
         <td></td>
       </tr>
       <tr>
-      <tr>
-      <td align="center">553</td>
-        <td>회사운영자 - Main(TABS)</td>
-        <td>운영보고서 탭</td>
-        <td>자율</td>
-        <td>자율 상세</td>
-        <td>그래프 보기</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL">11.Eduperson_06.01_Operation_autonomy_report_graph</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">554</td>
-        <td>회사운영자 - Main(TABS)</td>
-        <td>운영보고서 탭</td>
-        <td>자율</td>
-        <td>자율 상세</td>
-        <td>표 보기</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL">11.Eduperson_06.02_Operation_autonomy_report_table</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">555</td>
-        <td>Floating BTN</td>
-        <td>나의 공간</td>
-        <td>나의 지식 cliping</td>
-        <td>관심 CLIPing</td>
-        <td></td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL">04.MySpace_04.05.cliping_fav</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">556</td>
-        <td>Floating BTN</td>
-        <td>나의 공간</td>
-        <td>정규학습(학습목록)</td>
-        <td>학습중</td>
-        <td></td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL">04.MySpace_04.01.formal_certificate_name</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">557</td>
-        <td>Drawer - ATORM</td>
-        <td>Main - User</td>
-        <td>과정제작</td>
-        <td>집합/플립</td>
-        <td>과정구성</td>
-        <td>레포트</td>
-        <td>　</td>
-        <td class="textL">07.ATORM_07.02.02._group/flip_material_report</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">558</td>
-        <td>Drawer - 지식 cliping</td>
-        <td>지식 cliping</td>
-        <td>지식영상</td>
-        <td>시리즈 모아보기</td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">15.CLIPing_15.03.02.VideoSeries</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">559</td>
-        <td>Drawer - 지식 cliping</td>
-        <td>지식 cliping</td>
-        <td>PaperPro</td>
-        <td>상세</td>
-        <td>댓글작성</td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">15.CLIPing_15.03.06.PaperProDetail</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">560</td>
-        <td>학습홈 영역</td>
-        <td>기본 학습홈</td>
-        <td>학습홈 (집합)</td>
-        <td>학습 캘린더</td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">05.Study_01.05.home_set_calendar2</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">561</td>
-        <td>BPO 강사</td>
-        <td>나의 담당 과정</td>
-        <td>상세</td>
-        <td>출석현황</td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">562</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>학습자별 상세</td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_student</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">563</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>휴강 등록</td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_cancel</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">564</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>휴강일 설정</td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_cancel_setdate</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">565</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>보강 등록</td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_supplementary</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">566</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>보강일 설정</td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_supplementary_setdate</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">567</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>단축 등록</td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_shorten_setdate</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">568</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>단축일 설정</td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_shorten_setdate_set</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">569</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>연장 등록</td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_extend</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">570</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>연장일 설정</td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_extend_set</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">571</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>SMS 보내기</td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_SMS</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">572</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>발송대상 선택</td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_SMS_reciever</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">573</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td>평가</td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_test</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">574</td>
-        <td>BPO 강사</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>평가 등록/수정</td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_test_completion</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-
-      <tr>
-      <td align="center">추가페이지-add</td>
+      <td align="center">553-add</td>
         <td></td>
         <td></td>
         <td></td>
@@ -9841,7 +9461,6 @@
         </td>
         <td></td>
       </tr>
-      
       <tr>
       <td align="center">0</td>
         <td>공통컴포넌트</td>

@@ -117,7 +117,6 @@ import MainBrowseMain from '~workplace/main/Main_browse_main'
 import MainBrowseListDetail01 from '~workplace/main/Main_browse_listDetail01'
 import MainBrowseListDetail02 from '~workplace/main/Main_browse_listDetail02'
 
-import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
 import Drawermyinfochoosepic from '~workplace/drawer/Drawer_myinfo_choosepic'
@@ -137,8 +136,13 @@ import Drawersettingspush from '~workplace/drawer/Drawer_settings_push'
 import Drawersettingsopensource from '~workplace/drawer/Drawer_settings_opensource'
 import Drawermyinfoextrainfo from '~workplace/drawer/Drawer_myinfo_extrainfo'
 import Drawermyinfoextrainfoedit from '~workplace/drawer/Drawer_myinfo_extrainfo_edit'
+import B2CDrawermyinfoaccountwithdrawal01 from '~workplace/drawer/B2C_Drawer_myinfo_account_withdrawal01'
 import B2CDrawermyinfoaccountwithdrawal02 from '~workplace/drawer/B2C_Drawer_myinfo_account_withdrawal02'
 import B2CDrawermyinfoaccountwithdrawal03 from '~workplace/drawer/B2C_Drawer_myinfo_account_withdrawal03'
+import B2CDrawerEvent from '~workplace/drawer/B2C_Drawer_Event'
+import B2CDrawerEventWinner from '~workplace/drawer/B2C_Drawer_Event_Winner'
+import B2CDrawerEventdetail from '~workplace/drawer/B2C_Drawer_Event_detail'
+import B2CDrawerEventWinnerdetail from '~workplace/drawer/B2C_Drawer_Event_Winner_detail'
 
 // 1번 영역
 var rootRoutes = [
@@ -573,31 +577,6 @@ var rootRoutes = [
     component: Study04SOpledgesubmission
   },
   {
-    path: '/Study_04_SO_mainsummary',
-    name: 'Study_04_SO_mainsummary',
-    component: Study04SOmainsummary
-  },
-  {
-    path: '/Study_04_SO_quiz_intro',
-    name: 'Study_04_SO_quiz_intro',
-    component: Study04SOquizintro
-  },
-  {
-    path: '/Study_04_SO_quiz_OX',
-    name: 'Study_04_SO_quiz_OX',
-    component: Study04SOquizOX
-  },
-  {
-    path: '/Study_04_SO_quiz_OX_result',
-    name: 'Study_04_SO_quiz_OX_result',
-    component: Study04SOquizOXresult
-  },
-  {
-    path: '/Study_04_SO_quiz_shortanswer',
-    name: 'Study_04_SO_quiz_shortanswer',
-    component: Study04SOquizshortanswer
-  },
-  {
     path: '/Main_control',
     name: 'Main_control',
     component: MainControl
@@ -812,6 +791,11 @@ var rootRoutes = [
     component: Drawermyinfoextrainfoedit
   },
   {
+    path: '/B2C_Drawer_myinfo_account_withdrawal01',
+    name: 'B2C_Drawer_myinfo_account_withdrawal01',
+    component: B2CDrawermyinfoaccountwithdrawal01
+  },
+  {
     path: '/B2C_Drawer_myinfo_account_withdrawal02',
     name: 'B2C_Drawer_myinfo_account_withdrawal02',
     component: B2CDrawermyinfoaccountwithdrawal02
@@ -820,6 +804,26 @@ var rootRoutes = [
     path: '/B2C_Drawer_myinfo_account_withdrawal03',
     name: 'B2C_Drawer_myinfo_account_withdrawal03',
     component: B2CDrawermyinfoaccountwithdrawal03
+  },
+  {
+    path: '/B2C_Drawer_Event',
+    name: 'B2C_Drawer_Event',
+    component: B2CDrawerEvent
+  },
+  {
+    path: '/B2C_Drawer_Event_Winner',
+    name: 'B2C_Drawer_Event_Winner',
+    component: B2CDrawerEventWinner
+  },
+  {
+    path: '/B2C_Drawer_Event_detail',
+    name: 'B2C_Drawer_Event_detail',
+    component: B2CDrawerEventdetail
+  },
+  {
+    path: '/B2C_Drawer_Event_Winner_detail',
+    name: 'B2C_Drawer_Event_Winner_detail',
+    component: B2CDrawerEventWinnerdetail
   }
 ]
 
