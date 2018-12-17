@@ -20,7 +20,7 @@
                     <div class="hide-inner">
                         <span class="chip wh">퀴즈</span>                         
                         <p class="h-tit1">중간퀴즈 : 자바의 특성과 개념에 대해 알아보기</p>
-                        <p class="ico-group">
+                        <p class="h-tit5">
                             <span>총 6문항</span>
                         </p>
                     </div>
@@ -97,7 +97,7 @@
                         <p class="inner-txt">학습을 통해 얼마나 배웠는지 QUIZ를 통해 알아볼까요? 퀴즈를 통해서 본인의 학습성과를 테스트하고 그 결과를 확인해 볼 수 있습니다. 퀴즈의 점수는 중간성적에 반영됩니다.</p>
                         <p class="line02"></p>
                         <p class="txt-tit">01. 다음이 설명하는 단어를 입력하세요.</p>
-                        <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
+                        <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨(Rod Johnson)이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
                         <input type="text" class="input" placeholder="스프링">
                         <p class="inp-num"><span>3</span>/<span>300</span></p> 
                     </div>
@@ -107,7 +107,7 @@
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md clr1">정답확인</button>
+                <button type="button" class="btn md clr1">결과보기</button>
             </div>
             <!-- //floatingbtn -->
         </div>

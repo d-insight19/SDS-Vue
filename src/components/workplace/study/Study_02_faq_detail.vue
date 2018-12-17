@@ -15,7 +15,7 @@
                     <div class="hide-inner">
                         <span class="chip">FAQ</span>                         
                         <p class="h-tit1">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</p>
-                        <p class="ico-group">
+                        <p class="h-tit5">
                             <span>동영상</span>
                         </p>
                     </div>

@@ -13,14 +13,12 @@
             <div id="content" class="etc">
                 <div class="cell">
                   <div class="inner">
-                    <div class="titTxtWrap">
-                      <strong class="h-tit1">
+                      <p class="h-tit1">
                         교차 케이블
-                      </strong>
+                      </p>
                       <p class="txt-desc">
                         두 컴퓨터의 케이블 핀의 접점을 각각 반대로 교차하여 두 컴퓨터를 연결하는데 사용하는 케이블. ‘널 모뎀(null modem)’이라고도 하며, 보통 RS 232C나 RJ 커넥터를 사용한다. 두 컴퓨터를 직접 연결하는 예는 컴퓨터 게임, 컴퓨터 시험, 동일 건물 내에서 두 장비를 상호 연결하는 경우가 있다.
                       </p>
-                    </div>
                   </div>
                 </div>
             </div>

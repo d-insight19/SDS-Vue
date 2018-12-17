@@ -30,7 +30,7 @@
 .ico.img-a{width:20px;height:20px;background: url("../img/ic_image_line_20.png") no-repeat; }
 .ico.ppt-a{width:20px;height:20px;background: url("../img/ic_ppt_line_20.png") no-repeat; }
 .ico.del-blk{width:20px;height:20px;background: url("../img/ic_close_bold_20.png") no-repeat; }
-.ico.plus{width:16px;height:16px;background: url("../img/ic_plus_16.png") no-repeat;  }
+.ico.plus{width:16px;height:16px;background: url("../img/ic_plus_16.png") no-repeat; vertical-align: -2px; }
 .ico.clip{width:16px;height:16px;background: url("../img/ic_addfile_16.png") no-repeat; }
 .ico.down-load{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
 
@@ -56,6 +56,11 @@
 .ico.off-blk{width:32px;height:32px;background: url("../img/ic_radiobtn_32_off.png") no-repeat; }
 .ico.mark-o{width:58px;height:58px;background: url("../img/ic_mark_o_large.png") no-repeat; }
 .ico.mark-x{width:58px;height:58px;background: url("../img/ic_mark_x.png") no-repeat; }
+
+/* main 추가 이미지 2018-12-17 */
+.ico.info {width:28px; height:28px; background: url("../img/ic_info.png") no-repeat; background-size: 28px;}
+.ico.grade_gold {width:25px;height:25px;background: url("../img/ic_grade_gold.png") no-repeat; background-size: 36px; background-position:center center;}
+.ico.next_16_80 {width:16px; height:16px; background: url("../img/ic_next_16_80.png") no-repeat; background-size: 16px;}
 
 #header.mainType2 .line2 .ico{vertical-align: top}
 

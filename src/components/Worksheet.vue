@@ -78,7 +78,24 @@
         <td>{{item.comment }}</td>
       </tr>		  
       -->
-      <tr>
+      <!-- <tr>
+      <td align="center">0</td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL">test</td>
+        <td>
+          <router-link :to="{ name: 'test' }">
+            test
+          </router-link>
+        </td>
+        <td></td>
+      </tr>-->
+      <tr> 
       <td align="center">1</td>
         <td>로그인 / 회원가입</td>
         <td>연수원 찾기</td>
@@ -2803,8 +2820,20 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.Statistics</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_statistics_1' }">
+            Main_statistics_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_statistics_2' }">
+            Main_statistics_2
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_statistics_3' }">
+            Main_statistics_3
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_statistics_4' }">
+            Main_statistics_4
           </router-link>
         </td>
         <td></td>
@@ -4964,6 +4993,9 @@
         <td>
           <router-link :to="{ name: 'Study_02_discuss_edit' }">
             Study_02_discuss_edit
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_02_discuss_edit_02' }">
+            // edit_02
           </router-link>
         </td>
         <td></td>
@@ -5796,9 +5828,9 @@
         <td>　</td>
         <td class="textL">05.Study_04.07.SO_quiz_shortanswer</td>
         <td>
-          <!-- <router-link :to="{ name: 'Study_04_SO_quiz_shortanswer' }">
+          <router-link :to="{ name: 'Study_04_SO_quiz_shortanswer' }">
             Study_04_SO_quiz_shortanswer
-          </router-link> -->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -5813,8 +5845,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.08.SO_quiz_shortanswer_result</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_shortanswer_result' }">
+            Study_04_SO_quiz_shortanswer_result
           </router-link>
         </td>
         <td></td>
@@ -7964,6 +7996,10 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_account_withdrawal</td>
         <td>
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account_withdrawal01' }">
+            B2C_Drawer_myinfo_account_withdrawal01
+          </router-link>
+          ,
           <router-link :to="{ name: 'B2C_Drawer_myinfo_account_withdrawal02' }">
             B2C_Drawer_myinfo_account_withdrawal02
           </router-link>
@@ -8257,8 +8293,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_08.01_Event</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_Event' }">
+          B2C_Drawer_Event
           </router-link>
         </td>
         <td></td>
@@ -8274,8 +8310,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_08.02_Event_Winner</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_Event_Winner' }">
+            B2C_Drawer_Event_Winner
           </router-link>
         </td>
         <td></td>
@@ -9362,8 +9398,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_08.01_Event_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_Event_detail' }">
+            B2C_Drawer_Event_detail
           </router-link>
         </td>
         <td></td>
@@ -9379,8 +9415,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_08.02_Event_Winner_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_Event_Winner_detail' }">
+            B2C_Drawer_Event_Winner_detail
           </router-link>
         </td>
         <td></td>

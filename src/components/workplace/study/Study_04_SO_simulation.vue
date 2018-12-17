@@ -31,41 +31,41 @@
                                 <img src="" alt="">
                             </p>
                             <p class="h-tit5">1. 다음중 OO에 해당하는것을 고르세요.</p>
-                            <p class="bon">본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다                        
+                            <p class="inner-txt" >본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다                        
                             </p>
                             <ul class="ul-block">
                                 <li>
                                     <label class="labelRdo">
                                         <input type="radio" class="rdo" name="test-rdo">
                                         <span class="ico">
-                                            <span class="innerCircle"></span>
+                                            <span class="ico chk-blue"></span>
                                         </span>
-                                        <span class="label">스타벅스</span>                    
+                                        <span class="label" >스타벅스</span>                    
                                     </label>
                                 </li>
                                 <li>
                                     <label class="labelRdo">
                                         <input type="radio" class="rdo" name="test-rdo" checked>
                                         <span class="ico">
-                                            <span class="innerCircle"></span>
+                                            <span class="ico chk-blue"></span>
                                         </span>
-                                        <span class="label">탐앤탐스</span>                    
+                                        <span class="label"  >탐앤탐스</span>                    
                                     </label>
                                 </li>
                                 <li>
                                     <label class="labelRdo">
                                         <input type="radio" class="rdo" name="test-rdo">
                                         <span class="ico">
-                                            <span class="innerCircle"></span>
+                                            <span class="ico chk-blue"></span>
                                         </span>
-                                        <span class="label">이디야</span>                    
+                                        <span class="label" >이디야</span>                    
                                     </label>
                                 </li>
                                 <li>
-                                    <label class="labelRdo">
+                                    <label  class="labelRdo">
                                         <input type="radio" class="rdo" name="test-rdo">
                                         <span class="ico">
-                                            <span class="innerCircle"></span>
+                                            <span class="ico chk-blue"></span>
                                         </span>
                                         <span class="label">할리스</span>                    
                                     </label>

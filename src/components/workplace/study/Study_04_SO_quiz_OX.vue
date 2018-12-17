@@ -98,29 +98,49 @@
                         <p class="line02"></p>
                         <p class="txt-tit">01. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <div>
-                            <p class="inb-box">
-                                <span class="ico chk-blue"></span>
-                                <span class="ico o-blue-48"></span>
-                            </p>
-                            <p class="inb-box">
-                                <span class="ico off-blk"></span>
-                                <span class="ico x-blk-48"></span>
-                            </p>
-                        </div>
+                        <ul>
+                            <li class="inb-box">
+                                <label class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo">                                    
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"><span  class="ico chk-o"></span></span>                    
+                                </label>
+                            </li>
+                            <li class="inb-box">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" name="test-rdo" checked>
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"><span class="ico chk-x"></span></span>                    
+                                </label>
+                            </li>
+                        </ul>
                         <p class="hr"></p>
                         <p class="txt-tit">02. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <div>
-                            <p class="inb-box">
-                                <span class="ico off-blk"></span>
-                                <span class="ico o-blk-48"></span>
-                            </p>
-                            <p class="inb-box">
-                                <span class="ico chk-blue"></span>
-                                <span class="ico x-blue-48"></span>
-                            </p>
-                        </div>
+                        <ul>
+                            <li class="inb-box">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"><span class="ico chk-o"></span></span>                    
+                                </label>
+                            </li>
+                            <li class="inb-box">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" name="test-rdo-2" checked>
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"><span class="ico chk-x"></span></span>                    
+                                </label>
+                            </li>
+                        </ul>
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -144,6 +164,8 @@
 */
 export default {
   name: 'Study_04_SO_quiz_OX',
+  props: {
+  },
   /* vue lifecycle */
   created () {
   },
