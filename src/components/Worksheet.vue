@@ -9879,7 +9879,7 @@
             components_checkbox
           </router-link>
         </td>
-        <td></td>
+        <td>20181217 추가 수정</td>
       </tr>
       <tr>
       <td align="center">0</td>
@@ -9896,7 +9896,7 @@
             components_radio
           </router-link>
         </td>
-        <td>20181204 수정</td>
+        <td>20181217 추가 수정</td>
       </tr>
       <tr>
       <td align="center">0</td>

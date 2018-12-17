@@ -5,9 +5,19 @@
       <!-- container -->
       <div id="container" class="mediaquery">
         <!-- header -->
-        <div id="header">
+        <div id="header" class="fixed2" style="display:none1;">
           <button type="button" class="btn only prev"><span class="ico">이전</span></button>
           <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+        </div>
+        <!-- //header -->
+
+
+        <!-- header 버튼있는경우 ::  header_text에 type2 클래스 추가-->
+        <div id="header" class="fixed" style="display:none;">
+          <button type="button" class="btn only prev"><span class="ico">이전</span></button>
+          <p class="header_text font_19 type2"> 스크롤시  header 에 fixed 클래스 추가</p>
+          <p class="end sub color_clr2">임시저장</p>
+          <p class="end color_clr2">제출</p>
         </div>
         <!-- //header -->
 

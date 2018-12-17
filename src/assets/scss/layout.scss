@@ -22,6 +22,9 @@
         white-space: nowrap;
         font-weight: 600;
       }
+      & .end{
+        font-weight:400
+      }
     }
     
     //content
@@ -170,6 +173,9 @@
   padding-top: 100px;
 }
       
+#header p.header_text.type2{width: calc(100% - 76px)}
+#header .end.sub{right:57px}
+
 
 /* layout */
 #header.fixed{position: fixed;width:100%;background:#fff;z-index: 10;}

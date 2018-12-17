@@ -42,6 +42,10 @@ button.btn{
 .font_28{font-size:map-get($font_size, font_28) !important;}
 .font_30{font-size:map-get($font_size, font_30) !important;}
 
+.color_black{color:rgba(0,0,0,1) !important;}
+.color_black80{color:rgba(0,0,0,0.80) !important;}
+.color_black65{color:rgba(0,0,0,0.65) !important;}
+
 
 // 헤더 
 #header .btn.prev .ico{width:28px; height:28px; background-position:-13px -61px;}
@@ -165,25 +169,55 @@ input[type="search"]::-webkit-search-cancel-button{
 input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolute; left:-10000px; -webkit-appearance: none;}
 
 /* radio */
-.labelRdo{display:inline-block;}
-.labelRdo input.rdo + .ico {display:inline-block; width:22px; height:22px; margin:0px 6px 0 0; vertical-align:top; border:1px solid #b1b1b1; border-radius: 50px; background:none; cursor:pointer;}
-.labelRdo input.rdo + .ico .innerCircle{
-  width: 14px;height: 14px;border: 1px solid #fff;border-radius: 50%;display: none;margin: 4px;
-}
+.labelRdo{display:inline-block; position: relative;padding-left:38px;}
+.labelRdo input.rdo + .ico {position:absolute;top:50%;left:5px;transform:translate(0 , -50%);display:inline-block; width:22px; height:22px;  vertical-align:top; border:1px solid #b1b1b1; border-radius: 50px; background:none; cursor:pointer;}
+.labelRdo input.rdo + .ico .innerCircle{width: 14px;height: 14px;border: 1px solid #fff;border-radius: 50%;display: none;margin: 4px;}
 .labelRdo input.rdo:checked + .ico .innerCircle{display:inline-block;}
 .labelRdo input.rdo:checked + .ico {border:0;  }
 .labelRdo input.rdo:disabled + .ico {    border: 1px solid rgba(0,0,0,0.10);  background: rgba(0,0,0,0.05);  }
 .labelRdo input.rdo:disabled + .ico + .label{color:rgba(0,0,0,0.25);}
 .labelRdo .label{display: inline-block; line-height: 22px;}
+.labelRdo.err input.rdo + .ico {border:1px solid map-get($static_colors, danger) }
+.labelRdo.err + .InfoChK-resultTxt{padding-left:39px;}
+// radio 멀티 
+.labelRdo.multi{.labelChk.thum{padding-left:44px;}}
+.labelRdo.multi .label{color:#000;}
+.labelRdo .sub_label{color:rgba(0,0,0,0.65);font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px;margin-top:3px;}
 
 
 /* check box */
-.labelChk{display:inline-block;}
-.labelChk input.chk + .ico {display:inline-block; width:20px; height:20px; margin:0px 5px 0 0; vertical-align:top; border:1px solid #d3d3d3; background:none; cursor:pointer;}
+.labelChk{display:inline-block;position: relative;padding-left:38px;width:100%}
+.labelChk input.chk + .ico {position:absolute;top:50%;left:6px;transform:translate(0 , -50%);display:inline-block; width:20px; height:20px; vertical-align:top; border:1px solid #d3d3d3; background:none; cursor:pointer;}
 .labelChk input.chk:checked + .ico {border:0;  }
 .labelChk input.chk:disabled + .ico {border: 1px solid rgba(0,0,0,0.10);  background: rgba(0,0,0,0.05);  }
 .labelChk input.chk:disabled + .ico + .label{color:rgba(0,0,0,0.25);}
-.labelChk .label{display: inline-block; font-size:map-get($font_size, font_14); line-height: 20px; vertical-align: top;}
+.labelChk .label{display: inline-block; font-size:map-get($font_size, font_14); line-height: 21px; vertical-align: top;letter-spacing: -0.42px;}
+// 체크박스 예외
+.labelChk.type2{padding-left:40px;}
+.labelChk.type2 input.chk + .ico {border-radius: 22px;}
+.labelChk.type2 input.chk + .ico{width:22px;height:22px;left:5px;}
+.labelChk.type2 input.chk:checked + .ico{background: map-get($static_colors, primary) url("../img/ic_checked_wh_20.png") no-repeat; background-size: cover;}
+.labelChk.type2 .label{font-size:map-get($font_size, font_15); line-height: 22px;color:#000;}
+.labelChk.type2 .thum{display:block;width:284px;height:213px;}
+.labelChk.type2 .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;position: relative;}
+.labelChk.type2 .thum .thumbnail .thumImg{position: relative;  left: 50%;  transform: translateX(-50%);  height: 100%;}
+
+
+
+// 체크박스 + 멀티
+.labelChk.multi{.labelChk.thum{padding-left:44px;}}
+.labelChk.multi .label{color:#000;}
+.labelChk .sub_label{color:rgba(0,0,0,0.65);font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px;margin-top:3px;}
+// 체크박스 + 썸네일
+.labelChk.thum{padding-left:40px;}
+.labelChk .thum{display:block;width:100px;height:100px;}
+.labelChk .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;position: relative;}
+.labelChk .thum .thumbnail .thumImg{position: relative;  left: 50%;  transform: translateX(-50%);  height: 100%;}
+
+// 체크박스 + input
+.labelChk.input{padding-left:40px;}
+.labelChk.input + .InfoChK-resultTxt{padding-left:40px;}
+
 
 // 체크박스2 관심사 선택 ( select ) 
 .labelChk2{display:inline-block; margin-right:8px;}
@@ -216,6 +250,8 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .rdoSelBox + .addrInt,
 .InfoChK-resultTxt + .addrInt{margin-top:8px;}
 .rdoSelBox.err .rdo + .ico + .label{border-color: map-get($static_colors, danger);border-right: 1px solid #cccccc;}
+
+
 
 /* select */
 .select{font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); height:44px; padding:0 15px; background: #f5f5f5 url("../img/ico_sel.png") no-repeat; background-size:28px 16px; background-position: right 14px;  -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-appearance:none;-moz-appearance:none;appearance:none;}
