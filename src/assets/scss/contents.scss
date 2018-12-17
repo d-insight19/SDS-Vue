@@ -868,14 +868,18 @@
 // 김현미 작업
 // 메인
 // common.css 에 추가
+.mb0{margin-bottom: 0px !important;}
 .mb10{margin-bottom: 10px !important;}
 .mb13{margin-bottom: 13px !important;}
 .mb14{margin-bottom: 14px !important;}
 .mb20{margin-bottom: 20px !important;}
+.pa0{padding:0px !important;}
+.pa15{padding:15px !important;}
+.pa25{padding:25px !important;}
+.pt10{padding-top:10px !important;}
 .fw300{font-weight: 300;}
-.h-tit1 {font-weight:700 !important;}
-.h-tit2 {font-weight:600 !important;}
-//.ico.info28{width:28px;height:28px;background: url("../img/ic_info_line_28.png") no-repeat; }
+.MainType .h-tit1 {font-weight:700 !important;}
+.MainType .h-tit2 {font-weight:600 !important;}
 // layout.css 에 추가
 #container #content .inner {padding-bottom: 12px;}
 // curateUI02 이미지 리사이즈
@@ -904,15 +908,26 @@
 .status .white .info strong {font-size: map-get($font_size, font_20);}
 .status .white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
 .status .white .info p + p {font-size: map-get($font_size, font_18);}
-.status dl{width: 100%; display: table; line-height: 200%; left: 24px;}
+.status dl{width: 100%; display: table; line-height: 180%; left: 24px;}
 .status dl.line {border-top: 1px solid map-get($line_colors, B89);}
 .status dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 40%; display: table-cell; }
 .status dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 60%; display: table-cell; text-align: right;}
 .status dd strong{font-size: map-get($font_size, font_16);}
-.status .big {padding-top:25px; padding-bottom:25px;}
-.status .big dl {line-height: 280%;}
-.status .big dl strong {font-size: map-get($font_size, font_22);}
-.status .big .info {position:absolute; margin-top:-50px; top:50%;}
-.status .big .info img{width: 98px; height: 98px;}
-.status .thumList {border-top: 1px solid map-get($line_colors, B85);}
-.status .thumList > li{padding-top:10px;}
+.status .white.big {padding-top:25px; padding-bottom:25px;}
+.status .white.big dl {line-height: 280%;}
+.status .white.big dl strong {font-size: map-get($font_size, font_22);}
+.status .white.big .info {position:absolute; margin-top:-50px; top:50%;}
+.status .white.big .info img{width: 98px; height: 98px;}
+.status .gray.big dl {line-height: 200%;}
+.status .line {border-top: 1px solid map-get($line_colors, B85);}
+.status .stepper {padding:24px; margin-bottom:0;}
+.status .stepper .ico{vertical-align: middle;}
+.status .stepper strong{font-size: map-get($font_size, font_22); font-weight:600; vertical-align: middle;}
+.status .stepper .progBox {height:6px;}
+.status .learn {padding: 15px 0;}
+.status .learn ul {display:table;     width: 100%;}
+.status .learn ul li { display: table-cell;}
+.status .learn ul li + li {border-left: 1px solid map-get($line_colors, B85);}
+.status .learn ul li p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_65); text-align: center;}
+.status .learn ul li p + p {font-size: map-get($font_size, font_13);}
+.status .learn ul li strong {font-size: map-get($font_size, font_18);}

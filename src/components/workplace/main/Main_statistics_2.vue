@@ -29,41 +29,52 @@
           <!-- component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">학점 이수 현황
-                    <div class="fr font_14"><span class="ico info"></span></div>
-                </h2>
+                <h2 class="h-tit2 mb10">나의 학습현황</h2>
                 <div class="status">
-                    <div class="white big">
-                        <div class="info">
-                            <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                    <div class="gray">
+                        <dl>
+                            <dt>그룹</dt>
+                            <dd><strong class="font_14">시스템개발그룹</strong></dd>
+                        </dl>
+                        <dl>
+                            <dt>나의 짐구</dt>
+                            <dd><strong class="font_14">Software Engineer</strong></dd>
+                        </dl>
+                        <dl>
+                            <dt>나의 역량 수준</dt>
+                            <dd><strong>3/5</strong> 점</dd>
+                        </dl>
+                    </div>
+                    <div class="stepper">
+                        <div class="clearfix">
+                            <div class="fl">
+                                <span class="ico grade_gold"></span> <strong>GOLD</strong>
+                            </div>
+                            <div class="fr">
+                                <strong>1,364</strong> <strong>P</strong>
+                            </div>
                         </div>
-                        <dl>
-                            <dt>취득학점</dt>
-                            <dd><strong>59</strong> 학점</dd>
-                        </dl>
-                        <dl class="line">
-                            <dt>목표학점</dt>
-                            <dd><strong>80</strong> 학점</dd>
-                        </dl>
+                            <div class="progBox">
+                            <div class="bar clr2" style="width:30%"></div>
+                        </div>
                     </div>
-                    <div class="gray big">
-                        <dl>
-                            <dt>경영전략·기획</dt>
-                            <dd><strong>10/80</strong> 학점</dd>
-                        </dl>
-                        <dl>
-                            <dt>인사 총무 HRD</dt>
-                            <dd><strong>9/80</strong> 학점</dd>
-                        </dl>
-                        <dl>
-                            <dt>외국어</dt>
-                            <dd><strong>7/80</strong> 학점</dd>
-                        </dl>
-                        <dl>
-                            <dt>재무 회계</dt>
-                            <dd><strong>6</strong> 건</dd>
-                        </dl>
+                    <div class="learn line">
+                        <ul>
+                            <li>
+                                <p><strong>14</strong> 개</p>
+                                <p>학습완료</p>
+                            </li>
+                            <li>
+                                <p><strong>12</strong> 개</p>
+                                <p>학습중</p>
+                            </li>
+                            <li>
+                                <p><strong>10</strong> 개</p>
+                                <p>학습예정</p>
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
           </div>
@@ -141,7 +152,7 @@
 
 <script>
 export default {
-  name: 'Main_gradeStatusDetail',
+  name: 'Main_statistics_2',
   /* vue lifecycle */
   created () {
   },

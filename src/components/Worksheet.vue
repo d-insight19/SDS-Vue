@@ -3827,8 +3827,20 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.07.studystatistics</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_statistics_1' }">
+            Main_statistics_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_statistics_2' }">
+            Main_statistics_2
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_statistics_3' }">
+            Main_statistics_3
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_statistics_4' }">
+            Main_statistics_4
           </router-link>
         </td>
         <td></td>

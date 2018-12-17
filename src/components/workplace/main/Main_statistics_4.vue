@@ -29,41 +29,60 @@
           <!-- component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">학점 이수 현황
-                    <div class="fr font_14"><span class="ico info"></span></div>
-                </h2>
+                <h2 class="h-tit2 mb10">나의 학습현황</h2>
                 <div class="status">
-                    <div class="white big">
+                    <div class="gray">
+                        <dl>
+                            <dt>그룹</dt>
+                            <dd><strong class="font_14">시스템개발그룹</strong></dd>
+                        </dl>
+                        <dl>
+                            <dt>나의 짐구</dt>
+                            <dd><strong class="font_14">Software Engineer</strong></dd>
+                        </dl>
+                        <dl>
+                            <dt>나의 역량 수준</dt>
+                            <dd><strong>3/5</strong> 점</dd>
+                        </dl>
+                    </div>
+                    <div class="white">
                         <div class="info">
-                            <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                            <p>종합순위</p>
+                            <p><strong class="font_22">1,245</strong> <strong class="font_22">P</strong></p>
                         </div>
                         <dl>
-                            <dt>취득학점</dt>
-                            <dd><strong>59</strong> 학점</dd>
+                            <dt>학습</dt>
+                            <dd><strong>132</strong> 위</dd>
                         </dl>
                         <dl class="line">
-                            <dt>목표학점</dt>
-                            <dd><strong>80</strong> 학점</dd>
+                            <dt>커뮤니티</dt>
+                            <dd><strong>584</strong> 위</dd>
+                        </dl>
+                        <dl class="line">
+                            <dt>과정제작</dt>
+                            <dd><strong>963</strong> 위</dd>
                         </dl>
                     </div>
-                    <div class="gray big">
-                        <dl>
-                            <dt>경영전략·기획</dt>
-                            <dd><strong>10/80</strong> 학점</dd>
-                        </dl>
-                        <dl>
-                            <dt>인사 총무 HRD</dt>
-                            <dd><strong>9/80</strong> 학점</dd>
-                        </dl>
-                        <dl>
-                            <dt>외국어</dt>
-                            <dd><strong>7/80</strong> 학점</dd>
-                        </dl>
-                        <dl>
-                            <dt>재무 회계</dt>
-                            <dd><strong>6</strong> 건</dd>
-                        </dl>
-                    </div>
+                    <!-- list -->
+                    <ul class="thumList line">
+                        <li class="pt10">
+                            <div class="in">
+                                <a href="#" class="thum">
+                                    <span class="label">정규</span>
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                    </div>
+                                    <span class="progWrap"><em class="bar clr2" style="width: 40%;"></em></span>
+                                </a>
+                                <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
+                                <ul class="info">
+                                    <li class="fwb">희망기간 2018.01</li>
+                                    <li><span class="star ico"></span>4.5</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- //list -->
                 </div>
             </div>
           </div>
@@ -141,7 +160,7 @@
 
 <script>
 export default {
-  name: 'Main_gradeStatusDetail',
+  name: 'Main_statistics_4',
   /* vue lifecycle */
   created () {
   },
