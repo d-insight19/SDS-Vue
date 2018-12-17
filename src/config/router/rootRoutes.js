@@ -690,11 +690,11 @@ var rootRoutes = [
     name: 'Main_browse_listDetail02',
     component: MainBrowseListDetail02
   },
-  {
-    path: '/Drawer_alerm',
-    name: 'Drawer_alerm',
-    component: DrawerAlerm
-  },
+  // {
+  //   path: '/Drawer_alerm',
+  //   name: 'Drawer_alerm',
+  //   component: DrawerAlerm
+  // },
   {
     path: '/Drawer_myinfo',
     name: 'Drawer_myinfo',
