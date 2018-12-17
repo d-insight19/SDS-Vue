@@ -133,8 +133,13 @@ import Drawersettingspush from '~workplace/drawer/Drawer_settings_push'
 import Drawersettingsopensource from '~workplace/drawer/Drawer_settings_opensource'
 import Drawermyinfoextrainfo from '~workplace/drawer/Drawer_myinfo_extrainfo'
 import Drawermyinfoextrainfoedit from '~workplace/drawer/Drawer_myinfo_extrainfo_edit'
+import B2CDrawermyinfoaccountwithdrawal01 from '~workplace/drawer/B2C_Drawer_myinfo_account_withdrawal01'
 import B2CDrawermyinfoaccountwithdrawal02 from '~workplace/drawer/B2C_Drawer_myinfo_account_withdrawal02'
 import B2CDrawermyinfoaccountwithdrawal03 from '~workplace/drawer/B2C_Drawer_myinfo_account_withdrawal03'
+import B2CDrawerEvent from '~workplace/drawer/B2C_Drawer_Event'
+import B2CDrawerEventWinner from '~workplace/drawer/B2C_Drawer_Event_Winner'
+import B2CDrawerEventdetail from '~workplace/drawer/B2C_Drawer_Event_detail'
+import B2CDrawerEventWinnerdetail from '~workplace/drawer/B2C_Drawer_Event_Winner_detail'
 
 // 1번 영역
 var rootRoutes = [
@@ -788,6 +793,11 @@ var rootRoutes = [
     component: Drawermyinfoextrainfoedit
   },
   {
+    path: '/B2C_Drawer_myinfo_account_withdrawal01',
+    name: 'B2C_Drawer_myinfo_account_withdrawal01',
+    component: B2CDrawermyinfoaccountwithdrawal01
+  },
+  {
     path: '/B2C_Drawer_myinfo_account_withdrawal02',
     name: 'B2C_Drawer_myinfo_account_withdrawal02',
     component: B2CDrawermyinfoaccountwithdrawal02
@@ -796,6 +806,26 @@ var rootRoutes = [
     path: '/B2C_Drawer_myinfo_account_withdrawal03',
     name: 'B2C_Drawer_myinfo_account_withdrawal03',
     component: B2CDrawermyinfoaccountwithdrawal03
+  },
+  {
+    path: '/B2C_Drawer_Event',
+    name: 'B2C_Drawer_Event',
+    component: B2CDrawerEvent
+  },
+  {
+    path: '/B2C_Drawer_Event_Winner',
+    name: 'B2C_Drawer_Event_Winner',
+    component: B2CDrawerEventWinner
+  },
+  {
+    path: '/B2C_Drawer_Event_detail',
+    name: 'B2C_Drawer_Event_detail',
+    component: B2CDrawerEventdetail
+  },
+  {
+    path: '/B2C_Drawer_Event_Winner_detail',
+    name: 'B2C_Drawer_Event_Winner_detail',
+    component: B2CDrawerEventWinnerdetail
   }
 ]
 

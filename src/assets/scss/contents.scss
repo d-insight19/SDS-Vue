@@ -447,9 +447,6 @@
 
 
 
-
-
-
 // 용어사전 -상세
 #container.study_dictionary_de .h-tit1{ font-weight:500; font-size:map-get($font-size, font_26); line-height: 22px; letter-spacing: -0.78px; margin-bottom: 16px;}
 #container.study_dictionary_de .txt-desc{font-weight:400; font-size:map-get($font-size, font_15); line-height: 25px; letter-spacing: -0.45px; color: rgba(0,0,0,0.8);}
@@ -805,8 +802,6 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 
 
 
-
-
 // 정은희 작업
 // drawer 시작
 // 회원정보
@@ -864,7 +859,7 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.drawer .withdrawal>li {width:50%; border-bottom:#eaeaea 1px solid; padding:20px 6px;}
 #container.drawer .withdrawal>li.bl {border-left:#eaeaea 1px solid; padding-left:16px}
 #container.drawer .withdrawal>li p.subject {font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65); line-height: 18px}
-#container.drawer .withdrawal>li p.desc {font-size:map-get($font_size, font_20);  margin:0; color:#000; line-height: 29px}
+#container.drawer .withdrawal>li p.desc {font-size:map-get($font_size, font_20); margin:0; color:#000; line-height: 29px}
 #container.drawer .withdrawal>li p.desc .num {font-family: 'Roboto'; font-weight: 500; }
 #container.drawer span.agree {color:rgba(0,0,0,0.8); margin-left:5px}
 #container.drawer .withdrawal_btn {overflow: hidden;}
@@ -891,7 +886,7 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.event.drawer #content .inner {padding-top: 22px}
 #container.mediaquery.event.drawer #header p.state {font-size:map-get($font_size, font_16); line-height: 20px; color:#4e51d4}
 #container.mediaquery.event.drawer #header p.h-tit {font-size:map-get($font_size, font_22); line-height: 31px; color:#000}
-#container.mediaquery.event.drawer #header p.date {font-size:map-get($font_size, font_14); line-height: 20px;  color:rgba(0,0,0,0.8); font-weight: 300}
+#container.mediaquery.event.drawer #header p.date {font-size:map-get($font_size, font_14); line-height: 20px; color:rgba(0,0,0,0.8); font-weight: 300}
 #container.event.drawer #content .inner { padding-top: 26px;}
 // drawer 끝
 
