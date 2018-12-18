@@ -123,6 +123,13 @@ input[type="text"].underline, input[type="password"].underline, input[type="sear
   height:42px;
 }
 
+input[type="text"].noline, input[type="password"].noline, input[type="search"].noline, input[type="number"].noline{
+  border:0;
+  background: #ffffff;
+  padding:0;
+  height:42px;
+}
+
 /* ***** form ***** */
 input[type="text"],input[type="password"],input[type="search"],input[type="number"]{
   width:100%; 
@@ -142,11 +149,12 @@ textarea::placeholder {
 
 /* Input (검색형) */
 .intSchBox{position: relative;}
-.intSchBox .input{padding-right:40px;}
+.intSchBox .input{padding-right:70px;}
 .intSchBox .btn{position:absolute; top:12px; right:12px; z-index: 1; border:0;}
 .intSchBox .btn .ico{ width:22px; height:22px; vertical-align: top; background-position: -147px -64px;}
 .intSchBox input[type="search"]::-webkit-search-cancel-button{right:-8px}
-
+// 검색형 Input padding 추가 ( x 아이콘보다 오버되지않기 )
+.search-wrapper input{padding-right:40px !important}
 
 /* form error */
 input.error{border-color:map-get($static_colors , danger) !important}
@@ -197,8 +205,10 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .labelChk.type2 input.chk + .ico {border-radius: 22px;}
 .labelChk.type2 input.chk + .ico{width:22px;height:22px;left:5px;}
 .labelChk.type2 input.chk:checked + .ico{background: map-get($static_colors, primary) url("../img/ic_checked_wh_20.png") no-repeat; background-size: cover;}
+.labelChk.type2 input.chk:checked ~ .label{color:map-get($static_colors, primary)}
 .labelChk.type2 .label{font-size:map-get($font_size, font_15); line-height: 22px;color:#000;}
-.labelChk.type2 .thum{display:block;width:284px;height:213px;}
+.labelChk.type2 input.chk:checked ~ .thum{border-color:map-get($static_colors, primary)}
+.labelChk.type2 .thum{display:block;width:284px;height:213px;border:3px solid transparent}
 .labelChk.type2 .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;position: relative;}
 .labelChk.type2 .thum .thumbnail .thumImg{position: relative;  left: 50%;  transform: translateX(-50%);  height: 100%;}
 
@@ -435,6 +445,12 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 #headerTab .tabMenu{padding:0px 18px;display:table;table-layout: initial}
 #headerTab .tabMenu li{vertical-align: bottom;}
 
+// 헤더에 검색 추가
+#header .search-wrapper{margin-left:-18px;width:calc(100% + 54px)}
+#header .search-wrapper input{font-size:map-get($font_size, font_18);letter-spacing: -0.54px;font-weight:600;height: 50px;margin-top: -5px;vertical-align: middle;}
+#header .search-wrapper input::placeholder{color:rgba(0,0,0,0.25);  font-weight: 600;}
+
+
 .tabCnt{display:none; padding-top:23px; background: #fff;}
 
 
@@ -543,7 +559,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 
 /* toast popup */
 .toast{position:fixed; bottom:0; z-index:100; width:100%; padding:17px 20px;}
-.toast .in{font-size:map-get($font_size, font_13); color:#fff; line-height: 20px; letter-spacing: -0.39px; font-weight: 300; padding:17px 20px; border-radius: 4px; background: rgba(0,0,0,0.8);}
+.toast .in{font-size:map-get($font_size, font_13); color:rgba(255,255,255,0.8); line-height: 20px; letter-spacing: -0.39px; font-weight: 300; padding:17px 20px; border-radius: 4px; background: rgba(0,0,0,0.8);}
 
 
 

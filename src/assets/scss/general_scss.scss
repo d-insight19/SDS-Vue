@@ -82,6 +82,9 @@ $brand_colors: (
     input:focus{
       border:1px solid map-get($color,clr2) !important;
     }
+    input.noline:focus{
+      border:0 !important;
+    }
     // 텝 하단 바
     .tabWrap.type2 .tabMenu li.on a{
       border-bottom:2px solid map-get($color,clr2);
