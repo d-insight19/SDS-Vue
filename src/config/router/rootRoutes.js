@@ -134,7 +134,7 @@ import B2CDrawermyinfotracking from '~workplace/drawer/B2C_Drawer_myinfo_trackin
 import B2CDrawermyinfotrackingdelete from '~workplace/drawer/B2C_Drawer_myinfo_tracking_delete'
 import B2CDrawermyinfotrackingedit from '~workplace/drawer/B2C_Drawer_myinfo_tracking_edit'
 import B2CDrawermyinfoaccountpassword from '~workplace/drawer/B2C_Drawer_myinfo_account_password'
-import B2CDrawerSettings01 from '~workplace/drawer/B2C_drawer_settings01'
+import B2CDrawerSettings from '~workplace/drawer/B2C_drawer_settings'
 import Drawersettingspush from '~workplace/drawer/Drawer_settings_push'
 import Drawersettingsopensource from '~workplace/drawer/Drawer_settings_opensource'
 import Drawermyinfoextrainfo from '~workplace/drawer/Drawer_myinfo_extrainfo'
@@ -155,6 +155,9 @@ import B2CDrawermyinfochoosepic from '~workplace/drawer/B2C_Drawer_myinfo_choose
 import B2CDrawermyinfoextrainfo from '~workplace/drawer/B2C_Drawer_myinfo_extrainfo'
 import B2CDrawermyinfoextrainfoedit from '~workplace/drawer/B2C_Drawer_myinfo_extrainfo_edit'
 import B2CDrawersettingsopensource from '~workplace/drawer/B2C_Drawer_settings_opensource'
+import Drawersettings01 from '~workplace/drawer/Drawer_settings01'
+import Drawersettings02 from '~workplace/drawer/Drawer_settings02'
+import B2CDrawersettingspush from '~workplace/drawer/B2C_Drawer_settings_push'
 
 // 1번 영역
 var rootRoutes = [
@@ -803,9 +806,9 @@ var rootRoutes = [
     component: B2CDrawermyinfoaccountpassword
   },
   {
-    path: '/B2C_drawer_settings01',
-    name: 'B2C_drawer_settings01',
-    component: B2CDrawerSettings01
+    path: '/B2C_drawer_settings',
+    name: 'B2C_drawer_settings',
+    component: B2CDrawerSettings
   },
   {
     path: '/Drawer_08_myinfo_account_password',
@@ -916,6 +919,21 @@ var rootRoutes = [
     path: '/B2C_Drawer_settings_opensource',
     name: 'B2C_Drawer_settings_opensource',
     component: B2CDrawersettingsopensource
+  },
+  {
+    path: '/Drawer_settings01',
+    name: 'Drawer_settings01',
+    component: Drawersettings01
+  },
+  {
+    path: '/Drawer_settings02',
+    name: 'Drawer_settings02',
+    component: Drawersettings02
+  },
+  {
+    path: '/B2C_Drawer_settings_push',
+    name: 'B2C_Drawer_settings_push',
+    component: B2CDrawersettingspush
   }
 ]
 

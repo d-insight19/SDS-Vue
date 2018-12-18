@@ -18,6 +18,23 @@
                     <!-- list -->
                     <ul class="multiList type1">                   
                         <li class="noline" style="padding-top:0">
+                            <p class="label-tit14" style="padding-bottom:10px">권한 변경</p>
+                            <label class="labelRdo">
+                                <input type="radio" class="rdo" name="test-rdo" checked>
+                                <span class="ico">
+                                    <span class="innerCircle"></span>
+                                </span>
+                                <span class="label">User</span>                    
+                            </label>
+                            <label class="labelRdo">
+                                <input type="radio" class="rdo" name="test-rdo">
+                                <span class="ico">
+                                    <span class="innerCircle"></span>
+                                </span>
+                                <span class="label">Designer</span>                    
+                            </label>                            
+                        </li>
+                        <li class="pb20">
                             <strong class="label-tit14">다국어 설정</strong>
                             <select class="select w100p mt8">
                             <option>선택</option>
@@ -41,8 +58,7 @@
                             </label> 
                         </li>
                         <li>
-                            <strong class="label-tit14">버전 정보</strong>
-                            <button type="button" class="btn14 color_clr2">최신버전으로 업데이트</button> <!-- <div class="fr version">최신버전<span class="num">1.0.1</span></div> -->
+                            <strong class="label-tit14">버전 정보</strong><div class="fr version">최신버전<span class="num">1.0.1</span></div>
                         </li>  
                         <li>                           
                             <a href="#"><strong class="label-tit14">오픈 라이선스</strong><span class="black_next"></span></a>

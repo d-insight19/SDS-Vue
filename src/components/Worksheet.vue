@@ -1316,8 +1316,11 @@
         <td>　</td>
         <td class="textL">02.drawer_09.01_settings</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_settings01' }">
+            Drawer_settings01
+          </router-link>,
+          <router-link :to="{ name: 'Drawer_settings02' }">
+            Drawer_settings02
           </router-link>
         </td>
         <td></td>
@@ -8022,8 +8025,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_07.01_settings</td>
         <td>
-          <router-link :to="{ name: 'B2C_drawer_settings01' }">
-            B2C_drawer_settings01
+          <router-link :to="{ name: 'B2C_drawer_settings' }">
+            B2C_drawer_settings
           </router-link>
         </td>
         <td></td>
@@ -8039,8 +8042,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_07.01_settings</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_settings_push' }">
+            B2C_Drawer_settings_push
           </router-link>
         </td>
         <td></td>
