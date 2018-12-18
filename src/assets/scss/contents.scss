@@ -822,7 +822,7 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.drawer .multiList.type2 input {margin-top:8px}
 #container.drawer .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
 #container.drawer .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
-#container.drawer .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px !important;}
 #container.drawer .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
 #container.drawer .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px !important;}
 #container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 9px !important;}
@@ -888,6 +888,16 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.mediaquery.event.drawer #header p.h-tit {font-size:map-get($font_size, font_22); line-height: 31px; color:#000}
 #container.mediaquery.event.drawer #header p.date {font-size:map-get($font_size, font_14); line-height: 20px; color:rgba(0,0,0,0.8); font-weight: 300}
 #container.event.drawer #content .inner { padding-top: 26px;}
+
+// 멀티스퀘어 소개
+#container.drawer #content.multiintroduce .inner {padding-top: 20px}
+#container.drawer .multiintroduce h1.title {font-size:map-get($font_size, font_26); color:#000; font-weight: 500; line-height: 22px; letter-spacing: -0.78px; margin-bottom:16px}
+#container.drawer .multiintroduce p.desc {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8); line-height: 25px; letter-spacing: -0.45px; margin:1px 0 12px}
+#container.drawer .multiintroduce h2.title {font-size:map-get($font_size, font_20); color:#000; line-height: 28px; letter-spacing: -0.6px; margin-bottom: 14px}
+#container.drawer .multiintroduce p.contact {font-family: 'Roboto' ; font-size:map-get($font_size, font_20); font-weight:bold; opacity: 0.8; line-height: 20px; margin:2px 0 12px}
+#container.drawer .multiintroduce .map {width:324px;height:182px;background: url("../img/multiintroduce_map.png") no-repeat; }
+#container.drawer .multiintroduce p.name {font-size:map-get($font_size, font_14); color:#000; line-height: 24px; letter-spacing: -0.42px; text-align: left; margin: 6px 0 24px} 
+
 // drawer 끝
 
 
@@ -967,6 +977,17 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 .status .learn ul li p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_65); text-align: center;}
 .status .learn ul li p + p {font-size: map-get($font_size, font_13);}
 .status .learn ul li strong {font-size: map-get($font_size, font_18);}
+// thumList 에 카테고리 추가
+.scroll-x.type2 .inner2 {display: inline-block; margin-right: 8px;}
+.scroll-x.type2 .inner2 .category {font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_80); font-weight:700; height:23px; margin-bottom:8px; display:block; vertical-align: top;}
+.scroll-x.type2 .inner2 .category .ico {vertical-align: inherit; margin-top: 5px;}
+.scroll-x.type1 {border-bottom: 8px solid map-get($line_colors, B95);}
+.scroll-x.type1 .inner2 {width:310px; display:inline-block; margin-right:8px;}
+.scroll-x.type1 .inner2 .thumList .tit {white-space: normal; width: 165px;}
+.scroll-x.type1 .inner2 .thumList > li {width:310px; border-bottom:0;}
+.scroll-x.type1 .inner2 .thumList > li + li {border-top: 1px solid map-get($line_colors, B89); margin-top:0; padding-top:10px;}
 
-.thumList .in .category {font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_80); font-weight:700; height:23px; margin-bottom:8px; display:block; vertical-align: top;}
-.thumList .in .category .ico {vertical-align: inherit; margin-top: 5px;}
+
+.MainType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
+.MainType .total strong {color: map-get($mono_colors, mono_100);}
+.MainType .total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px}

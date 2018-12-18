@@ -112,6 +112,9 @@ import MainGraphClassList from '~workplace/main/Main_graphClassList'
 import MainGraphClassListMore from '~workplace/main/Main_graphClassList_more'
 import MainGradeStatus from '~workplace/main/Main_gradeStatus'
 import MainGradeStatusDetail from '~workplace/main/Main_gradeStatusDetail'
+import MainBrowseMain from '~workplace/main/Main_browse_main'
+import MainBrowseListDetail01 from '~workplace/main/Main_browse_listDetail01'
+import MainBrowseListDetail02 from '~workplace/main/Main_browse_listDetail02'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -140,6 +143,7 @@ import B2CDrawerEvent from '~workplace/drawer/B2C_Drawer_Event'
 import B2CDrawerEventWinner from '~workplace/drawer/B2C_Drawer_Event_Winner'
 import B2CDrawerEventdetail from '~workplace/drawer/B2C_Drawer_Event_detail'
 import B2CDrawerEventWinnerdetail from '~workplace/drawer/B2C_Drawer_Event_Winner_detail'
+import B2CDrawerMultiintroduce from '~workplace/drawer/B2C_Drawer_Multiintroduce'
 
 // 1번 영역
 var rootRoutes = [
@@ -693,6 +697,21 @@ var rootRoutes = [
     component: MainGradeStatusDetail
   },
   {
+    path: '/Main_browse_main',
+    name: 'Main_browse_main',
+    component: MainBrowseMain
+  },
+  {
+    path: '/Main_browse_listDetail01',
+    name: 'Main_browse_listDetail01',
+    component: MainBrowseListDetail01
+  },
+  {
+    path: '/Main_browse_listDetail02',
+    name: 'Main_browse_listDetail02',
+    component: MainBrowseListDetail02
+  },
+  {
     path: '/Drawer_alerm',
     name: 'Drawer_alerm',
     component: DrawerAlerm
@@ -826,6 +845,11 @@ var rootRoutes = [
     path: '/B2C_Drawer_Event_Winner_detail',
     name: 'B2C_Drawer_Event_Winner_detail',
     component: B2CDrawerEventWinnerdetail
+  },
+  {
+    path: '/B2C_Drawer_Multiintroduce',
+    name: 'B2C_Drawer_Multiintroduce',
+    component: B2CDrawerMultiintroduce
   }
 ]
 
