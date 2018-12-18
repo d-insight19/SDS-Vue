@@ -827,6 +827,7 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.drawer .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px !important;}
 #container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 9px !important;}
 #container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px !important; }
+#container.drawer .labelChk {width:auto}
 
 #container.drawer .contents14{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:rgba(0,0,0,0.65); }
 #container.drawer .contents13{margin-top:2px;font-size:map-get($font_size, font_13);line-height: 29px;color:rgba(0,0,0,0.65); letter-spacing: -0.39px;}
@@ -855,6 +856,7 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.drawer .subject {width:33%; margin-right:6px}
 #container.drawer .subdivide {width:65%}
 #container.drawer .pt0 {padding-top:0}
+#container.drawer .divide_line { width: 100%; height: 8px; background-color:#f6f6f6; border-bottom:0; }
 
 #container.drawer .withdrawal>li {width:50%; border-bottom:#eaeaea 1px solid; padding:20px 6px;}
 #container.drawer .withdrawal>li.bl {border-left:#eaeaea 1px solid; padding-left:16px}

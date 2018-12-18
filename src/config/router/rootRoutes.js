@@ -144,6 +144,14 @@ import B2CDrawerEventWinner from '~workplace/drawer/B2C_Drawer_Event_Winner'
 import B2CDrawerEventdetail from '~workplace/drawer/B2C_Drawer_Event_detail'
 import B2CDrawerEventWinnerdetail from '~workplace/drawer/B2C_Drawer_Event_Winner_detail'
 import B2CDrawerMultiintroduce from '~workplace/drawer/B2C_Drawer_Multiintroduce'
+import Drawermyinfoaccount from '~workplace/drawer/Drawer_myinfo_account'
+import B2CDrawermyinfologout from '~workplace/drawer/B2C_Drawer_myinfo_logout'
+import B2CDrawermyinfobasicinfo from '~workplace/drawer/B2C_Drawer_myinfo_basicinfo'
+import B2CDrawermyinfobasicinfoedit from '~workplace/drawer/B2C_Drawer_myinfo_basicinfo_edit'
+import B2CDrawermyinfochoosepic from '~workplace/drawer/B2C_Drawer_myinfo_choosepic'
+import B2CDrawermyinfoextrainfo from '~workplace/drawer/B2C_Drawer_myinfo_extrainfo'
+import B2CDrawermyinfoextrainfoedit from '~workplace/drawer/B2C_Drawer_myinfo_extrainfo_edit'
+import B2CDrawersettingsopensource from '~workplace/drawer/B2C_Drawer_settings_opensource'
 
 // 1번 영역
 var rootRoutes = [
@@ -850,6 +858,46 @@ var rootRoutes = [
     path: '/B2C_Drawer_Multiintroduce',
     name: 'B2C_Drawer_Multiintroduce',
     component: B2CDrawerMultiintroduce
+  },
+  {
+    path: '/Drawer_myinfo_account',
+    name: 'Drawer_myinfo_account',
+    component: Drawermyinfoaccount
+  },
+  {
+    path: '/B2C_Drawer_myinfo_logout',
+    name: 'B2C_Drawer_myinfo_logout',
+    component: B2CDrawermyinfologout
+  },
+  {
+    path: '/B2C_Drawer_myinfo_basicinfo',
+    name: 'B2C_Drawer_myinfo_basicinfo',
+    component: B2CDrawermyinfobasicinfo
+  },
+  {
+    path: '/B2C_Drawer_myinfo_basicinfo_edit',
+    name: 'B2C_Drawer_myinfo_basicinfo_edit',
+    component: B2CDrawermyinfobasicinfoedit
+  },
+  {
+    path: '/B2C_Drawer_myinfo_choosepic',
+    name: 'B2C_Drawer_myinfo_choosepic',
+    component: B2CDrawermyinfochoosepic
+  },
+  {
+    path: '/B2C_Drawer_myinfo_extrainfo',
+    name: 'B2C_Drawer_myinfo_extrainfo',
+    component: B2CDrawermyinfoextrainfo
+  },
+  {
+    path: '/B2C_Drawer_myinfo_extrainfo_edit',
+    name: 'B2C_Drawer_myinfo_extrainfo_edit',
+    component: B2CDrawermyinfoextrainfoedit
+  },
+  {
+    path: '/B2C_Drawer_settings_opensource',
+    name: 'B2C_Drawer_settings_opensource',
+    component: B2CDrawersettingsopensource
   }
 ]
 

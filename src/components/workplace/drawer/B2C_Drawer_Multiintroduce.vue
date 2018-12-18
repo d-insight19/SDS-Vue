@@ -21,7 +21,7 @@
                         <p class="desc">지상 20층, 지하 8층, 하루 수용 약 1,800명</P>
                         <p class="label-tit15">시설</p>
                         <p class="desc">강의장 57개, 대회의실, VIP회의실, 카페테리아등</P>
-                        <p class="line02 mt26"></p>
+                        <p class="divide_line mt26"></p>
 
                         <h2 class="title">찾아오시는 길</h2>
                         <p class="label-tit15">주소</p>
