@@ -21,7 +21,7 @@
                         <span class="chip wh">설문</span>                         
                         <p class="h-tit1">삶의 만족도 지수 조사</p>
                         <p class="h-tit5">
-                            <span>총 2문항</span>
+                            <span>총 4문항</span>
                         </p>
                     </div>
                 </div>
@@ -97,59 +97,19 @@
                         <p class="inner-txt">설문을 통해 자신의 삶의 만족도가 어느 정도인지 진단해 보세요. 10분정도 걸리는 간단한 설문입니다.</p>
                         <p class="line02"></p>
                         <p class="survey-tit">행복에 관한 조사입니다.</p>
-                        <p class="txt-tit">01. 다음 지문을 읽고 <span class="underline">틀린 것</span>을 고르시오. (5점)</p>
-                        <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
+                        <p class="txt-tit">01. 다음 지문에서 느껴지는 행복 요소는 무엇이라 생각하는지 적으시오.</p>
+                        <p class="inner-txt op65 mb20">낙관주의는 아직 현실화하지 않은 일을 좋은 방향으로 생각하는 능력이다. 만사가 잘 될 수 있다는 약속을 믿는 것이다. 중요한 건 ‘만사가 잘 될 거’라는 막연한 느낌이 아니라 약속이다. 진정한 낙관주의자는 그 약속을 현실화시키기 위해 자기가 해야 할 일을 찾는다.” 옌스 바이드너의 이야기입니다. </p>
                         <input type="text" class="input" placeholder="의견을 입력해 주세요">
                         <p class="inp-num"><span>0</span>/<span>300</span></p>      
                         <p class="hr"></p>
                         <p class="txt-tit">02. 나는 OO하는 것을 좋아한다.</p>                        
-                        <ul class="ul-block com-rdo">
-                            <li>
-                                <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo-2">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label">전혀 아니다</span>                    
-                                </label>
-                            </li>
-                            <li>
-                                <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo-2" checked>
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label">아니다</span>                    
-                                </label>
-                            </li>
-                            <li>
-                                <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo-2">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label">보통이다</span>                    
-                                </label>
-                            </li>
-                            <li>
-                                <label  class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo-2" >
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"> 그렇다</span>                    
-                                </label>
-                            </li>
-                            <li>
-                                <label  class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo-2">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"> 매우 그렇다</span>                    
-                                </label>
-                            </li>
-                        </ul>   
+                        <input type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대">
+                        <p class="inp-num"><span>4</span>/<span>300</span></p>
+                        <p class="hr"></p>
+                        <p class="txt-tit">03. 다음 지문에서 느껴지는 사람들이 불행한 이유는 무엇이라고 생각하는지 적으시오.</p>
+                        <p class="inner-txt op65 mb20">낙관주의는 아직 현실화하지 않은 일을 좋은 방향으로 생각하는 능력이다. 만사가 잘 될 수 있다는 약속을 믿는 것이다. 중요한 건 ‘만사가 잘 될 거’라는 막연한 느낌이 아니라 약속이다. 진정한 낙관주의자는 그 약속을 현실화시키기 위해 자기가 해야 할 일을 찾는다.” 옌스 바이드너의 이야기입니다. </p>
+                        <input type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대한 두려움">
+                        <p class="inp-num"><span>15</span>/<span>300</span></p>         
                     </div>
                     <!-- //inner -->
                 </div>  
