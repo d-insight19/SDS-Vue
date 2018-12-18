@@ -25,61 +25,40 @@
         <!-- //header -->
 
         <div id="content" class="list">
-                
-          <!-- component -->
+            
+          <!-- //component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">학점 이수 현황
-                    <div class="fr font_14 fw300"><span class="ico point"></span></div>
-                </h2>
-                <div class="status">
-                    <div class="gray">
-                        <dl>
-                            <dt>그룹</dt>
-                            <dd><strong class="font_14">시스템개발그룹</strong></dd>
-                        </dl>
-                        <dl>
-                            <dt>나의 짐구</dt>
-                            <dd><strong class="font_14">Software Engineer</strong></dd>
-                        </dl>
-                        <dl>
-                            <dt>나의 역량 수준</dt>
-                            <dd><strong>3/5</strong> 점</dd>
-                        </dl>
-                    </div>
-                    <div class="white big">
-                        <div class="info">
-                            <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                <h2 class="h-tit2 mb10">공통 게시판</h2>
+                <!-- cBox -->
+                <div class="cBox">
+                    <!-- tab -->
+                    <div class="tabWrap type2">
+                        <div  class="tabMenu">
+                        <ul>
+                            <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
+                            <li><a href="#tab2">이미지투데이</a></li>
+                            <li><a href="#tab3">인문학이야기</a></li>
+                        </ul>
                         </div>
-                        <dl>
-                            <dt>취득학점</dt>
-                            <dd><strong>59</strong> 학점</dd>
-                        </dl>
-                        <dl class="line">
-                            <dt>목표학점</dt>
-                            <dd><strong>80</strong> 학점</dd>
-                        </dl>
-                    </div>
-                    <div class="white line">
-                        <div class="info">
-                            <p>학습시간</p>
-                            <p><strong>99</strong> 시간 <strong>30</strong> 분</p>
+
+                        <div class="tabCnt dpb" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
+                        <!-- list -->
+                        <ul class="ulList2">
+                            <li v-if="!boardList.length" class="no-date"><p><span class="ico"></span>작성된 게시글이 없습니다</p></li>
+                            <li v-for="item in boardList" :key="item.id"><a href="#"><span class="cate color_clr1">{{item.cate}}</span><p class="txt">{{item.title}}</p></a></li>
+                        </ul>
+                        <!-- //list -->
                         </div>
-                        <dl>
-                            <dt>정규</dt>
-                            <dd><strong>40</strong> 시간 <strong>12</strong> 분</dd>
-                        </dl>
-                        <dl class="line">
-                            <dt>상시</dt>
-                            <dd><strong>59</strong> 시간 <strong>18</strong> 분</dd>
-                        </dl>
                     </div>
+                    <!-- //tab -->
                 </div>
+                <!-- //cBox -->
             </div>
           </div>
 
-              
-          <div class="cell">  
+
+          <div class="cell">
             <div class="inner">
                 <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
@@ -151,7 +130,7 @@
 
 <script>
 export default {
-  name: 'Main_statistics_1',
+  name: 'Main_board',
   /* vue lifecycle */
   created () {
   },
@@ -160,7 +139,12 @@ export default {
   /* vue data */
   data () {
     return {
-      tabIdx: 1
+      tabIdx: 1,
+      boardList: [
+        {cate: '이벤트', title: '고현숙의 코칭 리더십-팀 성과 향상을 위한 코칭'},
+        {cate: '안내', title: 'LEAP(Leadership Acceleration Program)'},
+        {cate: '이벤트', title: '마켓 트레블러 황성욱의 트렌드 센싱'}
+      ]
     }
   },
   /* vue function */

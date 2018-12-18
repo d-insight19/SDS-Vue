@@ -979,5 +979,7 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 
 
 .MainType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
+.MainType .total span {font-size: map-get($font_size, font_15);}
+.MainType .total span + span {font-size: map-get($font_size, font_13);}
 .MainType .total strong {color: map-get($mono_colors, mono_100);}
 .MainType .total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px}

@@ -25,61 +25,27 @@
         <!-- //header -->
 
         <div id="content" class="list">
+        
+          <!-- //component -->
+
+
                 
-          <!-- component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">학점 이수 현황
-                    <div class="fr font_14 fw300"><span class="ico point"></span></div>
+                <h2 class="h-tit2 mb10">찜한 학습
+                    <div class="fr color_clr2 font_14 fw300">전체보기</div>
                 </h2>
-                <div class="status">
-                    <div class="gray">
-                        <dl>
-                            <dt>그룹</dt>
-                            <dd><strong class="font_14">시스템개발그룹</strong></dd>
-                        </dl>
-                        <dl>
-                            <dt>나의 짐구</dt>
-                            <dd><strong class="font_14">Software Engineer</strong></dd>
-                        </dl>
-                        <dl>
-                            <dt>나의 역량 수준</dt>
-                            <dd><strong>3/5</strong> 점</dd>
-                        </dl>
-                    </div>
-                    <div class="white big">
-                        <div class="info">
-                            <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                        </div>
-                        <dl>
-                            <dt>취득학점</dt>
-                            <dd><strong>59</strong> 학점</dd>
-                        </dl>
-                        <dl class="line">
-                            <dt>목표학점</dt>
-                            <dd><strong>80</strong> 학점</dd>
-                        </dl>
-                    </div>
-                    <div class="white line">
-                        <div class="info">
-                            <p>학습시간</p>
-                            <p><strong>99</strong> 시간 <strong>30</strong> 분</p>
-                        </div>
-                        <dl>
-                            <dt>정규</dt>
-                            <dd><strong>40</strong> 시간 <strong>12</strong> 분</dd>
-                        </dl>
-                        <dl class="line">
-                            <dt>상시</dt>
-                            <dd><strong>59</strong> 시간 <strong>18</strong> 분</dd>
-                        </dl>
-                    </div>
+
+                <div class="no-date">
+                    <p>찜한 과정이 없습니다</p>
+                    <p>관심있는 과정을 찜 할 수 있습니다</p>
+                    <a href="#" class="clr2">수강중 과정</a>
                 </div>
             </div>
           </div>
 
-              
-          <div class="cell">  
+
+          <div class="cell">
             <div class="inner">
                 <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
@@ -151,7 +117,7 @@
 
 <script>
 export default {
-  name: 'Main_statistics_1',
+  name: 'Main_scrap_empty',
   /* vue lifecycle */
   created () {
   },

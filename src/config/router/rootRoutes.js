@@ -112,6 +112,10 @@ import MainGraphClassList from '~workplace/main/Main_graphClassList'
 import MainGraphClassListMore from '~workplace/main/Main_graphClassList_more'
 import MainGradeStatus from '~workplace/main/Main_gradeStatus'
 import MainGradeStatusDetail from '~workplace/main/Main_gradeStatusDetail'
+import MainStatistics1 from '~workplace/main/Main_statistics_1'
+import MainStatistics2 from '~workplace/main/Main_statistics_2'
+import MainStatistics3 from '~workplace/main/Main_statistics_3'
+import MainStatistics4 from '~workplace/main/Main_statistics_4'
 import MainBrowseMain from '~workplace/main/Main_browse_main'
 import MainBrowseListDetail01 from '~workplace/main/Main_browse_listDetail01'
 import MainBrowseListDetail02 from '~workplace/main/Main_browse_listDetail02'
@@ -694,6 +698,26 @@ var rootRoutes = [
     path: '/Main_gradeStatusDetail',
     name: 'Main_gradeStatusDetail',
     component: MainGradeStatusDetail
+  },
+  {
+    path: '/Main_statistics_1',
+    name: 'Main_statistics_1',
+    component: MainStatistics1
+  },
+  {
+    path: '/Main_statistics_2',
+    name: 'Main_statistics_2',
+    component: MainStatistics2
+  },
+  {
+    path: '/Main_statistics_3',
+    name: 'Main_statistics_3',
+    component: MainStatistics3
+  },
+  {
+    path: '/Main_statistics_4',
+    name: 'Main_statistics_4',
+    component: MainStatistics4
   },
   {
     path: '/Main_browse_main',

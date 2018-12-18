@@ -17,8 +17,8 @@
           <div class="cell">
             <div class="inner">
                 <div class="total">
-                    <span class="font_15">총 <strong>120</strong>건</span>
-                    <span class="fr font_13">최신강의순 <span class="ico down"></span></span>
+                    <span>총 <strong>120</strong>건</span>
+                    <span class="fr">최신강의순 <span class="ico down"></span></span>
                 </div>
                 <!-- list -->
                 <ul class="thumList">
