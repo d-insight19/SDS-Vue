@@ -19,12 +19,12 @@
             <div class="inner">
 
 
+                <input type="text" class="input underline" placeholder="focus 시 toggle 됨" @focus="focusToggle"/>
 
-
-                <div id="inner_dim"></div>
+                <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
                
                 <!--  type 모두 통합 각 타입에 맞춰서 hidden 처리하면됨 -->
-                <div class="keyboard_input" style="display:none1">                
+                <div class="keyboard_input" v-show="focusFlag">                
                     
                     <div class="bookmark_wrap">
                         <span class="bookmarktxt">북마크</span>
@@ -167,11 +167,15 @@ export default {
   /* vue data */
   data () {
     return {
-      keylength: 0
+      keylength: 0,
+      focusFlag: false
     }
   },
   /* vue function */
   methods: {
+    focusToggle () {
+      this.focusFlag = !this.focusFlag
+    },
     onKeydown (event) {
       this.keylength = event.target.value.length
       event.target.style.height = '1px'
