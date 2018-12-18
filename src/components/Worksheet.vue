@@ -2975,8 +2975,12 @@
         <td>1. 해당 탭 사용여부 설정</td>
         <td class="textL">02.Main_02.02.05.Main_subscribed</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_subscribed' }">
+            Main_subscribed
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_subscribed_empty' }">
+            Main_subscribed_empty
           </router-link>
         </td>
         <td></td>

@@ -32,14 +32,15 @@
                 
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">찜한 학습
+                <h1 class="h-tit1 mb20">구독</h1>
+                <h2 class="h-tit2 mb10">Channel
                     <div class="fr color_clr2 font_14 fw300">전체보기</div>
                 </h2>
 
                 <div class="no-date">
-                    <p>찜한 과정이 없습니다</p>
-                    <p>관심있는 과정을 찜 할 수 있습니다</p>
-                    <a href="#" class="clr2">수강중 과정</a>
+                    <p>현재 구독 중인 채널이 없습니다</p>
+                    <p>지금 다양한 분야와 전문가들의 살아있는<br/>지식을 만나보세요.</p>
+                    <a href="#" class="clr2">채널 둘러보기</a>
                 </div>
             </div>
           </div>
@@ -47,62 +48,145 @@
 
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 mb0">Channel Keywords</h2>
+                <p class="sub-tit mb10">키워드로 살펴보는 다양한 전문가 채널의 글들</p>
                 <!-- list -->
-                <ul class="thumList">
+                <ul class="ulList type1">
                     <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
-                            <ul class="info">
-                                <li class="color_clr3 fwb">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                                <div class="tagWrap"></div>
-                            </a>
-
-                            <a href="#" class="tit">기초부터 예제까지 iOS 개발자를 위한 업무에 바로 쓰는 스플...</a>
-                            <ul class="info">
-                                <li class="color_clr3 fwb">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-
-                            <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
-                            <ul class="info">
-                                <li class="color_clr3 fwb">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
+                        <div class="in-chk">
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#문화유산 답사 <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#남북정상회담 <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#Peace <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#2018 Design Trend <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#Interaction <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#Big Data <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#Technology <span class="ico arrow"></span></span></label>
                         </div>
                     </li>
                 </ul>
                 <!-- //list -->
+            </div>
+          </div>
+
+
+          <div class="cell">
+            <div class="inner">
+                <h2 class="h-tit2 mb0">Recommended Articles</h2>
+                <p class="sub-tit mb10">꼭 한번 읽어보면 좋을 멋진 글</p>
+                
+                <div class="scroll-x type2">
+                    <!-- list -->
+                    <ul class="thumList type2">
+                    <li>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영전략</a>
+                            <a href="#" class="writer">홍길동</a>
+                            <ul class="info">
+                                <li class="icon">
+                                    <span class="view ico"></span><span class="info_value">2,190</span>
+                                </li>
+                                <li class="icon">
+                                    <span class="like ico"></span><span class="info_value">36</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영전략</a>
+                            <a href="#" class="writer">홍길동</a>
+                            <ul class="info">
+                                <li class="icon">
+                                    <span class="view ico"></span><span class="info_value">2,190</span>
+                                </li>
+                                <li class="icon">
+                                    <span class="like ico"></span><span class="info_value">36</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영전략</a>
+                            <a href="#" class="writer">홍길동</a>
+                            <ul class="info">
+                                <li class="icon">
+                                    <span class="view ico"></span><span class="info_value">2,190</span>
+                                </li>
+                                <li class="icon">
+                                    <span class="like ico"></span><span class="info_value">36</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
+                    <!-- //list -->
+                </div>
+            </div>
+          </div>
+
+          
+          <div class="cell">
+            <div class="inner">
+                <h2 class="h-tit2 mb0">Hey, Day Writer</h2>
+                <p class="sub-tit mb10">Hey, Day 지식 창고 작가들</p>
+                
+                <div class="scroll-x type2">
+                    <!-- list -->
+                    <ul class="thumList type8">
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
           </div>
           <!-- //component -->
@@ -117,7 +201,7 @@
 
 <script>
 export default {
-  name: 'Main_scrap_empty',
+  name: 'Main_subscribed_empty',
   /* vue lifecycle */
   created () {
   },
@@ -126,7 +210,7 @@ export default {
   /* vue data */
   data () {
     return {
-      tabIdx: 1
+      tabIdx: 3
     }
   },
   /* vue function */

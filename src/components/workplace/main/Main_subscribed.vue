@@ -29,26 +29,84 @@
           <!-- //component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">공통 게시판</h2>
+                <h1 class="h-tit1 mb20">구독</h1>
+                <h2 class="h-tit2 mb10">Channel
+                    <div class="fr color_clr2 font_14 fw300">전체보기</div>
+                </h2>
                 <!-- cBox -->
                 <div class="cBox">
                     <!-- tab -->
                     <div class="tabWrap type2">
                         <div  class="tabMenu">
                         <ul>
-                            <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
-                            <li><a href="#tab2">이미지투데이</a></li>
-                            <li><a href="#tab3">인문학이야기</a></li>
+                            <li class="on"><a href="#tab1">Subscribed</a></li><!-- selected class "on" -->
+                            <li><a href="#tab2">New</a></li>
+                            <li><a href="#tab3">Popular</a></li>
+                            <li><a href="#tab4">Expired</a></li>
                         </ul>
                         </div>
 
                         <div class="tabCnt dpb" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
-                        <!-- list -->
-                        <ul class="ulList2">
-                            <li v-if="!boardList.length" class="no-date"><p><span class="ico"></span>작성된 게시글이 없습니다</p></li>
-                            <li v-for="item in boardList" :key="item.id"><a href="#"><span class="cate color_clr1">{{item.cate}}</span><p class="txt">{{item.title}}</p></a></li>
-                        </ul>
-                        <!-- //list -->
+                        <div class="scroll-x mr-18">
+                            <!-- list -->
+                            <ul class="thumList type7">
+                                <li>
+                                    <div class="in">
+                                        <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
+                                        <a href="#" class="writer">홍길동</a>
+                                        <ul class="info">
+                                            <li>게시물 10</li>
+                                            <li>구독 550</li>
+                                            <li><span class="line">P</span> 5</li>
+                                        </ul>
+                                    </div>
+                                    <div class="thum">
+                                        <div class="cDim04"></div>
+                                        <div class="cDim03"></div>
+                                        <div class="thumbnail">
+                                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="in">
+                                        <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
+                                        <a href="#" class="writer">홍길동</a>
+                                        <ul class="info">
+                                            <li>게시물 10</li>
+                                            <li>구독 550</li>
+                                            <li><span class="line">P</span> 5</li>
+                                        </ul>
+                                    </div>
+                                    <div class="thum">
+                                        <div class="cDim04"></div>
+                                        <div class="cDim03"></div>
+                                        <div class="thumbnail">
+                                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="in">
+                                        <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
+                                        <a href="#" class="writer">홍길동</a>
+                                        <ul class="info">
+                                            <li>게시물 10</li>
+                                            <li>구독 550</li>
+                                            <li><span class="line">P</span> 5</li>
+                                        </ul>
+                                    </div>
+                                    <div class="thum">
+                                        <div class="cDim04"></div>
+                                        <div class="cDim03"></div>
+                                        <div class="thumbnail">
+                                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- //list -->
+                        </div>
                         </div>
                     </div>
                     <!-- //tab -->
@@ -60,62 +118,145 @@
 
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 mb0">Channel Keywords</h2>
+                <p class="sub-tit mb10">키워드로 살펴보는 다양한 전문가 채널의 글들</p>
                 <!-- list -->
-                <ul class="thumList">
+                <ul class="ulList type1">
                     <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
-                            <ul class="info">
-                                <li class="color_clr3 fwb">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                                <div class="tagWrap"></div>
-                            </a>
-
-                            <a href="#" class="tit">기초부터 예제까지 iOS 개발자를 위한 업무에 바로 쓰는 스플...</a>
-                            <ul class="info">
-                                <li class="color_clr3 fwb">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-
-                            <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
-                            <ul class="info">
-                                <li class="color_clr3 fwb">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
+                        <div class="in-chk">
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#문화유산 답사 <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#남북정상회담 <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#Peace <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#2018 Design Trend <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#Interaction <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#Big Data <span class="ico arrow"></span></span></label>
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">#Technology <span class="ico arrow"></span></span></label>
                         </div>
                     </li>
                 </ul>
                 <!-- //list -->
+            </div>
+          </div>
+
+
+          <div class="cell">
+            <div class="inner">
+                <h2 class="h-tit2 mb0">Recommended Articles</h2>
+                <p class="sub-tit mb10">꼭 한번 읽어보면 좋을 멋진 글</p>
+                
+                <div class="scroll-x type2">
+                    <!-- list -->
+                    <ul class="thumList type2">
+                    <li>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영전략</a>
+                            <a href="#" class="writer">홍길동</a>
+                            <ul class="info">
+                                <li class="icon">
+                                    <span class="view ico"></span><span class="info_value">2,190</span>
+                                </li>
+                                <li class="icon">
+                                    <span class="like ico"></span><span class="info_value">36</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영전략</a>
+                            <a href="#" class="writer">홍길동</a>
+                            <ul class="info">
+                                <li class="icon">
+                                    <span class="view ico"></span><span class="info_value">2,190</span>
+                                </li>
+                                <li class="icon">
+                                    <span class="like ico"></span><span class="info_value">36</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영전략</a>
+                            <a href="#" class="writer">홍길동</a>
+                            <ul class="info">
+                                <li class="icon">
+                                    <span class="view ico"></span><span class="info_value">2,190</span>
+                                </li>
+                                <li class="icon">
+                                    <span class="like ico"></span><span class="info_value">36</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
+                    <!-- //list -->
+                </div>
+            </div>
+          </div>
+
+          
+          <div class="cell">
+            <div class="inner">
+                <h2 class="h-tit2 mb0">Hey, Day Writer</h2>
+                <p class="sub-tit mb10">Hey, Day 지식 창고 작가들</p>
+                
+                <div class="scroll-x type2">
+                    <!-- list -->
+                    <ul class="thumList type8">
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
           </div>
           <!-- //component -->
@@ -130,7 +271,7 @@
 
 <script>
 export default {
-  name: 'Main_board',
+  name: 'Main_subscribed',
   /* vue lifecycle */
   created () {
   },
@@ -139,12 +280,7 @@ export default {
   /* vue data */
   data () {
     return {
-      tabIdx: 1,
-      boardList: [
-        {cate: '이벤트', title: '고현숙의 코칭 리더십-팀 성과 향상을 위한 코칭'},
-        {cate: '안내', title: 'LEAP(Leadership Acceleration Program)'},
-        {cate: '이벤트', title: '마켓 트레블러 황성욱의 트렌드 센싱'}
-      ]
+      tabIdx: 3
     }
   },
   /* vue function */
