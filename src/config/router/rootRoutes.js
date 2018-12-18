@@ -23,6 +23,7 @@ import ComponentsTabheader from '~workplace/common_page/components_tabheader'
 import ComponentsLayoutType1 from '~workplace/common_page/components_layout_type1'
 import ComponentsLayoutType2 from '~workplace/common_page/components_layout_type2'
 import ComponentsLayoutType3 from '~workplace/common_page/components_layout_type3'
+import ComponentsKeyboard from '~workplace/common_page/components_keyboard'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -266,6 +267,11 @@ var rootRoutes = [
     path: '/components_layout_type3',
     name: 'components_layout_type3',
     component: ComponentsLayoutType3
+  },
+  {
+    path: '/components_keyboard',
+    name: 'components_keyboard',
+    component: ComponentsKeyboard
   },
   {
     path: '/Login_findcenter',

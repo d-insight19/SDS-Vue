@@ -139,6 +139,9 @@ $brand_colors: (
 
     // 드로어 아코디언 색상 primary 1 0.04
     #drawer .drawer_list_inner{ background: transparentize( map-get($color,clr1) , 0.96 )  !important;}
+
+    // 키보드 버튼
+    .keyboard_input .inputbox .regiBtn.active{background:map-get($color,clr1) !important}
   }
 }
 // Including themes. 

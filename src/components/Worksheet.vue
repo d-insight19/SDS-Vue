@@ -10258,6 +10258,23 @@
         </td>
         <td></td>
       </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>키보드</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_keyboard' }">
+            components_keyboard
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
 
       </tbody>
     </table>
