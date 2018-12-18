@@ -5896,8 +5896,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.11.SO_survey_scale</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_survey_scale' }">
+            Study_04_SO_survey_scale
           </router-link>
         </td>
         <td></td>
@@ -5930,8 +5930,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.13.SO_survey_answer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_survey_answer' }">
+            Study_04_SO_survey_answer
           </router-link>
         </td>
         <td></td>

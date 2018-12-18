@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_quiz_ox pd70">
+        <div id="container" class="mediaquery study_survey_scale pd70">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
             <div v-if="headerType == '1'" id="header" class="expand wh">          
@@ -16,12 +16,12 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:66px; padding-bottom:26px">                
+                <div class="hide_header" style="background:#e6eaf5; padding-top:66px; padding-bottom:60px">                
                     <div class="hide-inner">
-                        <span class="chip wh">퀴즈</span>                         
-                        <p class="h-tit1">중간퀴즈 : 자바의 특성과 개념에 대해 알아보기</p>
+                        <span class="chip wh">설문</span>                         
+                        <p class="h-tit1">삶의 만족도 지수 조사</p>
                         <p class="h-tit5">
-                            <span>총 6문항</span>
+                            <span>총 2문항</span>
                         </p>
                     </div>
                 </div>
@@ -94,53 +94,107 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner"> 
-                        <p class="inner-txt">학습을 통해 얼마나 배웠는지 QUIZ를 통해 알아볼까요? 퀴즈를 통해서 본인의 학습성과를 테스트하고 그 결과를 확인해 볼 수 있습니다. 퀴즈의 점수는 중간성적에 반영됩니다.</p>
+                        <p class="inner-txt">설문을 통해 자신의 삶의 만족도가 어느 정도인지 진단해 보세요. 10분정도 걸리는 간단한 설문입니다.</p>
                         <p class="line02"></p>
-                        <p class="txt-tit">01. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
+                        <p class="survey-tit">행복에 관한 조사입니다.</p>
+                        <p class="txt-tit">01. 다음 지문을 읽고 <span class="underline">틀린 것</span>을 고르시오. (5점)</p>
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <ul class="com-rdo">
-                            <li class="inb-box">
+                        <ul class="ul-block com-rdo">
+                            <li>
                                 <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo">                                    
+                                    <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"><span  class="ico chk-o"></span></span>                    
+                                    <span class="label">전혀 아니다</span>                    
                                 </label>
                             </li>
-                            <li class="inb-box">
-                                <label class="labelRdo" >
+                            <li>
+                                <label class="labelRdo">
                                     <input type="radio" class="rdo" name="test-rdo" checked>
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"><span class="ico chk-x"></span></span>                    
+                                    <span class="label">아니다</span>                    
                                 </label>
                             </li>
-                        </ul>
+                            <li>
+                                <label class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label">보통이다</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label  class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"> 그렇다</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label  class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"> 매우 그렇다</span>                    
+                                </label>
+                            </li>
+                        </ul>     
                         <p class="hr"></p>
-                        <p class="txt-tit">02. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
-                        <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <ul class="com-rdo">
-                            <li class="inb-box">
-                                <label class="labelRdo" >
+                        <p class="txt-tit">02. 나는 OO하는 것을 좋아한다.</p>                        
+                        <ul class="ul-block com-rdo">
+                            <li>
+                                <label class="labelRdo">
                                     <input type="radio" class="rdo" name="test-rdo-2">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"><span class="ico chk-o"></span></span>                    
+                                    <span class="label">전혀 아니다</span>                    
                                 </label>
                             </li>
-                            <li class="inb-box">
-                                <label class="labelRdo" >
+                            <li>
+                                <label class="labelRdo">
                                     <input type="radio" class="rdo" name="test-rdo-2" checked>
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"><span class="ico chk-x"></span></span>                    
+                                    <span class="label">아니다</span>                    
                                 </label>
                             </li>
-                        </ul>
+                            <li>
+                                <label class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label">보통이다</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label  class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo-2" >
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"> 그렇다</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label  class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"> 매우 그렇다</span>                    
+                                </label>
+                            </li>
+                        </ul>   
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -148,7 +202,7 @@
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md clr1">정답확인</button>
+                <button type="button" class="btn md clr1">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -179,6 +233,7 @@ export default {
   },
   /* vue function */
   methods: {
+
   }
 }
 </script>
