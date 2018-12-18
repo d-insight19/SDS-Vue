@@ -143,6 +143,7 @@ import B2CDrawerEvent from '~workplace/drawer/B2C_Drawer_Event'
 import B2CDrawerEventWinner from '~workplace/drawer/B2C_Drawer_Event_Winner'
 import B2CDrawerEventdetail from '~workplace/drawer/B2C_Drawer_Event_detail'
 import B2CDrawerEventWinnerdetail from '~workplace/drawer/B2C_Drawer_Event_Winner_detail'
+import B2CDrawerMultiintroduce from '~workplace/drawer/B2C_Drawer_Multiintroduce'
 
 // 1번 영역
 var rootRoutes = [
@@ -844,6 +845,11 @@ var rootRoutes = [
     path: '/B2C_Drawer_Event_Winner_detail',
     name: 'B2C_Drawer_Event_Winner_detail',
     component: B2CDrawerEventWinnerdetail
+  },
+  {
+    path: '/B2C_Drawer_Multiintroduce',
+    name: 'B2C_Drawer_Multiintroduce',
+    component: B2CDrawerMultiintroduce
   }
 ]
 

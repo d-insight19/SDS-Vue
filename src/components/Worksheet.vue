@@ -8123,8 +8123,8 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_09.01_Multiintroduce</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'B2C_Drawer_Multiintroduce' }">
+            B2C_Drawer_Multiintroduce
           </router-link>
         </td>
         <td></td>
