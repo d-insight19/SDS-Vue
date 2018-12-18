@@ -44,7 +44,7 @@
                         <p class="divide_line"></p>
                         <ul class="multiList type1">
                             <li class="pt0 title_line">
-                                <strong class="label-tit14">어학등급</strong><button type="button" class="btn14 color_clr2 first">편집</button>
+                                <strong class="label-tit14">어학등급</strong><button type="button" class="btn14 color_clr2">편집</button>
                             </li> 
                             <div class="extrainfo mt8">
                             <select class="select subject">
@@ -60,7 +60,7 @@
                             <a href="#" class="btn sm add w100p" @click="addList1()" ><span class="ico"></span>어학등급 추가</a>
 
                             <li class="pt0 title_line mt20">
-                                <strong class="label-tit14">자격증</strong><button type="button" class="btn14 color_clr2 first">편집</button>
+                                <strong class="label-tit14">자격증</strong><button type="button" class="btn14 color_clr2">편집</button>
                             </li> 
                             <div class="extrainfo mt8">
                             <select class="select subject">

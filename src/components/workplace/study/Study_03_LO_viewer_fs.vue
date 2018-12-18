@@ -9,7 +9,7 @@
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <div class="page-btn">
                     <span class="ico back"></span>
-                    <div class="num"><span>03</span> / <span>36</span></div>
+                    <div class="num"><span class="color_clr2">1</span> / <span>20</span></div>
                     <span class="ico next"></span>
                 </div>
             </div>
@@ -19,9 +19,9 @@
                 <div class="cell">
                     <div class="inner">
                         <div class="titTxtWrap">
-                        <strong class="txt-tit">
+                        <p class="txt-tit">
                             인공지능과 딥러닝
-                        </strong>
+                        </p>
                         <p class="line01"></p>
                         <div class="txt-line">
                             <span class="ops">일차</span>
