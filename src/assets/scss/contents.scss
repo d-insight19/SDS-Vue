@@ -888,6 +888,16 @@ label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.mediaquery.event.drawer #header p.h-tit {font-size:map-get($font_size, font_22); line-height: 31px; color:#000}
 #container.mediaquery.event.drawer #header p.date {font-size:map-get($font_size, font_14); line-height: 20px; color:rgba(0,0,0,0.8); font-weight: 300}
 #container.event.drawer #content .inner { padding-top: 26px;}
+
+// 멀티스퀘어 소개
+#container.drawer #content.multiintroduce .inner {padding-top: 20px}
+#container.drawer .multiintroduce h1.title {font-size:map-get($font_size, font_26); color:#000; font-weight: 500; line-height: 22px; letter-spacing: -0.78px; margin-bottom:16px}
+#container.drawer .multiintroduce p.desc {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8); line-height: 25px; letter-spacing: -0.45px; margin:1px 0 12px}
+#container.drawer .multiintroduce h2.title {font-size:map-get($font_size, font_20); color:#000; line-height: 28px; letter-spacing: -0.6px; margin-bottom: 14px}
+#container.drawer .multiintroduce p.contact {font-family: 'Roboto' ; font-size:map-get($font_size, font_20); font-weight:bold; opacity: 0.8; line-height: 20px; margin:2px 0 12px}
+#container.drawer .multiintroduce .map {width:324px;height:182px;background: url("../img/multiintroduce_map.png") no-repeat; }
+#container.drawer .multiintroduce p.name {font-size:map-get($font_size, font_14); color:#000; line-height: 24px; letter-spacing: -0.42px; text-align: left; margin: 6px 0 24px} 
+
 // drawer 끝
 
 
