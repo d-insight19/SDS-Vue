@@ -96,6 +96,7 @@ $brand_colors: (
       background: map-get($color,clr2) url("../img/ic_checked_wh_20.png") no-repeat;
       background-size: cover;
     }
+    
     // 라디오 버튼(박스) 체크아이콘
     .rdoSelBox .labelRdo .rdo:checked + .ico{
       background: map-get($color,clr2) url("../img/ic_checked_wh_20.png") no-repeat;
