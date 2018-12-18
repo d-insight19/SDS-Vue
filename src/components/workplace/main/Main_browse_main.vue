@@ -32,78 +32,85 @@
                 <h1 class="h-tit1 mb20">탐색</h1>
                 <h2 class="h-tit2 mb10">경영·리더십</h2>
                 <div class="scroll-x type2">
-                    <!-- list -->
-                    <ul class="thumList type2">
-                        <li>
-                            <div class="in">
-                            <a href="#" class="category">MBA <span class="ico next_16_80"></span></a>
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                
+                    <div class="inner2">
+                        <a href="#" class="category">MBA <span class="ico next_16_80"></span></a>
+                        <!-- list -->
+                        <ul class="thumList type2">
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <span class="label">정규</span>
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                    <li><span class="star ico"></span>4.5</li>
+                                </ul>
+                                <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                                 </div>
-                            </a>
-                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="category"></a>
-                            <a href="#" class="thum">
-                                <span class="label">자율</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
+                            </li>
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <span class="label">자율</span>
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
 
-                            <a href="#" class="tit">업무에 바로 쓰는 경영 경제 입문 과정</a>
-                            <ul class="info">
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="category">비즈니스 리더십 > </a>
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                <a href="#" class="tit">업무에 바로 쓰는 경영 경제 입문 과정</a>
+                                <ul class="info">
+                                    <li><span class="star ico"></span>4.5</li>
+                                </ul>
+                                <div class="tagWrap"></div>
                                 </div>
-                            </a>
-                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="category"></a>
-                            <a href="#" class="thum">
-                                <span class="label">자율</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                            </li>
+                        </ul>
+                        <!-- //list -->
+                    </div>
+                    <div class="inner2">
+                        <a href="#" class="category">비즈니스 리더십 <span class="ico next_16_80"></span></a>
+                        <!-- list -->
+                        <ul class="thumList type2">
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <span class="label">정규</span>
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                    <li><span class="star ico"></span>4.5</li>
+                                </ul>
+                                <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                                 </div>
-                            </a>
+                            </li>
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <span class="label">자율</span>
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
 
-                            <a href="#" class="tit">업무에 바로 쓰는 경영 경제 입문 과정</a>
-                            <ul class="info">
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- //list -->
+                                <a href="#" class="tit">업무에 바로 쓰는 경영 경제 입문 과정</a>
+                                <ul class="info">
+                                    <li><span class="star ico"></span>4.5</li>
+                                </ul>
+                                <div class="tagWrap"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //list -->
+                    </div>
                 </div>
             </div>
           </div>
@@ -113,86 +120,90 @@
             <div class="inner">
                 <h2 class="h-tit2 mb10">외국어</h2>
                 <div class="scroll-x type2">
-                    <!-- list -->
-                    <ul class="thumList type2">
-                        <li>
-                            <div class="in">
-                            <a href="#" class="category">영어 <span class="ico next_16_80"></span></a>
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                    <div class="inner2">
+                        <a href="#" class="category">영어 <span class="ico next_16_80"></span></a>
+                        <!-- list -->
+                        <ul class="thumList type2">
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <span class="label">정규</span>
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">예제로 배우는 실전 토익 문제풀이</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                    <li><span class="star ico"></span>4.5</li>
+                                </ul>
+                                <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                                 </div>
-                            </a>
-                            <a href="#" class="tit">예제로 배우는 실전 토익 문제풀이</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="category"></a>
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                            </li>
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <span class="label">정규</span>
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">예제로 배우는 실전 토익 문제풀이</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                    <li><span class="star ico"></span>4.5</li>
+                                </ul>
+                                <div class="tagWrap"></div>
                                 </div>
-                            </a>
-
-                            <a href="#" class="tit">예제로 배우는 실전 토익 문제풀이</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="category">중국어 <span class="ico next_16_80"></span></a>
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                            </li>
+                        </ul>
+                        <!-- //list -->
+                    </div>
+                    <div class="inner2">
+                        <a href="#" class="category">중국어 <span class="ico next_16_80"></span></a>
+                        <!-- list -->
+                        <ul class="thumList type2">
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <span class="label">정규</span>
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">예제로 배우는 실전 토익 문제풀이</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                    <li><span class="star ico"></span>4.5</li>
+                                </ul>
+                                <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                                 </div>
-                            </a>
-                            <a href="#" class="tit">예제로 배우는 실전 토익 문제풀이</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="category"></a>
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                            </li>
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <span class="label">정규</span>
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">예제로 배우는 실전 토익 문제풀이</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                    <li><span class="star ico"></span>4.5</li>
+                                </ul>
+                                <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                                 </div>
-                            </a>
-                            <a href="#" class="tit">예제로 배우는 실전 토익 문제풀이</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- //list -->
+                            </li>
+                        </ul>
+                        <!-- //list -->
+                    </div>
                 </div>
             </div>
           </div>
           <!-- //component -->
 
         </div>
-        <div class="btn-quickWrite"></div>
       </div>
       <!-- //container -->     
     </div>
@@ -201,7 +212,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI02',
+  name: 'Main_browse_main',
   /* vue lifecycle */
   created () {
   },
