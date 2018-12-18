@@ -12,12 +12,12 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="drawer etc">
+            <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner nopad">                     
                     <!-- list -->
                     <ul class="multiList type1">                   
-                        <li class="noline pt0">
+                        <li class="noline" style="padding-top:0">
                             <strong class="label-tit14">다국어 설정</strong>
                             <select class="select w100p mt8">
                             <option>선택</option>
@@ -41,7 +41,8 @@
                             </label> 
                         </li>
                         <li>
-                            <strong class="label-tit14">버전 정보</strong><button type="button" class="btn14 color_clr2">최신버전으로 업데이트</button>
+                            <strong class="label-tit14">버전 정보</strong>
+                            <button type="button" class="btn14 color_clr2">최신버전으로 업데이트</button> <!-- <div class="fr version">최신버전<span class="num">1.0.1</span></div> -->
                         </li>  
                         <li>                           
                             <a href="#"><strong class="label-tit14">오픈 라이선스</strong><span class="black_next"></span></a>
@@ -65,7 +66,7 @@
 
 <script>
 export default {
-  name: 'B2C_Drawer_settings01',
+  name: 'Drawer_myinfo',
   /* vue lifecycle */
   created () {
   },

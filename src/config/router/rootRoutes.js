@@ -82,6 +82,9 @@ import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentbestanswer from '~workplace/study/Study_04_SO_assinment_bestanswer'
 import Study04SOquizsubmission from '~workplace/study/Study_04_SO_quiz_submission'
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
+import Study04SOsurveyscale from '~workplace/study/Study_04_SO_survey_scale'
+import Study04SOsurveyanswer from '~workplace/study/Study_04_SO_survey_answer'
+import Study04SOopinionintro from '~workplace/study/Study_04_SO_opinion_intro'
 import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
 import Study04SOopinionwrittingguide from '~workplace/study/Study_04_SO_opinion_writtingguide'
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
@@ -135,7 +138,7 @@ import B2CDrawermyinfotracking from '~workplace/drawer/B2C_Drawer_myinfo_trackin
 import B2CDrawermyinfotrackingdelete from '~workplace/drawer/B2C_Drawer_myinfo_tracking_delete'
 import B2CDrawermyinfotrackingedit from '~workplace/drawer/B2C_Drawer_myinfo_tracking_edit'
 import B2CDrawermyinfoaccountpassword from '~workplace/drawer/B2C_Drawer_myinfo_account_password'
-import B2CDrawerSettings01 from '~workplace/drawer/B2C_drawer_settings01'
+import B2CDrawerSettings from '~workplace/drawer/B2C_drawer_settings'
 import Drawersettingspush from '~workplace/drawer/Drawer_settings_push'
 import Drawersettingsopensource from '~workplace/drawer/Drawer_settings_opensource'
 import Drawermyinfoextrainfo from '~workplace/drawer/Drawer_myinfo_extrainfo'
@@ -147,6 +150,18 @@ import B2CDrawerEvent from '~workplace/drawer/B2C_Drawer_Event'
 import B2CDrawerEventWinner from '~workplace/drawer/B2C_Drawer_Event_Winner'
 import B2CDrawerEventdetail from '~workplace/drawer/B2C_Drawer_Event_detail'
 import B2CDrawerEventWinnerdetail from '~workplace/drawer/B2C_Drawer_Event_Winner_detail'
+import B2CDrawerMultiintroduce from '~workplace/drawer/B2C_Drawer_Multiintroduce'
+import Drawermyinfoaccount from '~workplace/drawer/Drawer_myinfo_account'
+import B2CDrawermyinfologout from '~workplace/drawer/B2C_Drawer_myinfo_logout'
+import B2CDrawermyinfobasicinfo from '~workplace/drawer/B2C_Drawer_myinfo_basicinfo'
+import B2CDrawermyinfobasicinfoedit from '~workplace/drawer/B2C_Drawer_myinfo_basicinfo_edit'
+import B2CDrawermyinfochoosepic from '~workplace/drawer/B2C_Drawer_myinfo_choosepic'
+import B2CDrawermyinfoextrainfo from '~workplace/drawer/B2C_Drawer_myinfo_extrainfo'
+import B2CDrawermyinfoextrainfoedit from '~workplace/drawer/B2C_Drawer_myinfo_extrainfo_edit'
+import B2CDrawersettingsopensource from '~workplace/drawer/B2C_Drawer_settings_opensource'
+import Drawersettings01 from '~workplace/drawer/Drawer_settings01'
+import Drawersettings02 from '~workplace/drawer/Drawer_settings02'
+import B2CDrawersettingspush from '~workplace/drawer/B2C_Drawer_settings_push'
 
 // 1번 영역
 var rootRoutes = [
@@ -571,6 +586,21 @@ var rootRoutes = [
     component: Study04SOsurveysubmission
   },
   {
+    path: '/Study_04_SO_survey_scale',
+    name: 'Study_04_SO_survey_scale',
+    component: Study04SOsurveyscale
+  },
+  {
+    path: '/Study_04_SO_survey_answer',
+    name: 'Study_04_SO_survey_answer',
+    component: Study04SOsurveyanswer
+  },
+  {
+    path: '/Study_04_SO_opinion_intro',
+    name: 'Study_04_SO_opinion_intro',
+    component: Study04SOopinionintro
+  },
+  {
     path: '/Study_04_SO_opinion_submission',
     name: 'Study_04_SO_opinion_submission',
     component: Study04SOopinionsubmission
@@ -800,9 +830,9 @@ var rootRoutes = [
     component: B2CDrawermyinfoaccountpassword
   },
   {
-    path: '/B2C_drawer_settings01',
-    name: 'B2C_drawer_settings01',
-    component: B2CDrawerSettings01
+    path: '/B2C_drawer_settings',
+    name: 'B2C_drawer_settings',
+    component: B2CDrawerSettings
   },
   {
     path: '/Drawer_08_myinfo_account_password',
@@ -868,6 +898,66 @@ var rootRoutes = [
     path: '/B2C_Drawer_Event_Winner_detail',
     name: 'B2C_Drawer_Event_Winner_detail',
     component: B2CDrawerEventWinnerdetail
+  },
+  {
+    path: '/B2C_Drawer_Multiintroduce',
+    name: 'B2C_Drawer_Multiintroduce',
+    component: B2CDrawerMultiintroduce
+  },
+  {
+    path: '/Drawer_myinfo_account',
+    name: 'Drawer_myinfo_account',
+    component: Drawermyinfoaccount
+  },
+  {
+    path: '/B2C_Drawer_myinfo_logout',
+    name: 'B2C_Drawer_myinfo_logout',
+    component: B2CDrawermyinfologout
+  },
+  {
+    path: '/B2C_Drawer_myinfo_basicinfo',
+    name: 'B2C_Drawer_myinfo_basicinfo',
+    component: B2CDrawermyinfobasicinfo
+  },
+  {
+    path: '/B2C_Drawer_myinfo_basicinfo_edit',
+    name: 'B2C_Drawer_myinfo_basicinfo_edit',
+    component: B2CDrawermyinfobasicinfoedit
+  },
+  {
+    path: '/B2C_Drawer_myinfo_choosepic',
+    name: 'B2C_Drawer_myinfo_choosepic',
+    component: B2CDrawermyinfochoosepic
+  },
+  {
+    path: '/B2C_Drawer_myinfo_extrainfo',
+    name: 'B2C_Drawer_myinfo_extrainfo',
+    component: B2CDrawermyinfoextrainfo
+  },
+  {
+    path: '/B2C_Drawer_myinfo_extrainfo_edit',
+    name: 'B2C_Drawer_myinfo_extrainfo_edit',
+    component: B2CDrawermyinfoextrainfoedit
+  },
+  {
+    path: '/B2C_Drawer_settings_opensource',
+    name: 'B2C_Drawer_settings_opensource',
+    component: B2CDrawersettingsopensource
+  },
+  {
+    path: '/Drawer_settings01',
+    name: 'Drawer_settings01',
+    component: Drawersettings01
+  },
+  {
+    path: '/Drawer_settings02',
+    name: 'Drawer_settings02',
+    component: Drawersettings02
+  },
+  {
+    path: '/B2C_Drawer_settings_push',
+    name: 'B2C_Drawer_settings_push',
+    component: B2CDrawersettingspush
   }
 ]
 

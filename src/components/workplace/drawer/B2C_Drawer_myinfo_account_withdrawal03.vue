@@ -12,7 +12,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="drawer etc">
+            <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">
                         <!-- list -->
@@ -40,7 +40,7 @@
                                 </li>
                             </ul>                                                         
                         </ul>
-                        <p class="line02"></p>
+                        <p class="divide_line"></p>
                         <ul class="multiList type2">
                             <li>
                                 <strong class="label-tit20">회원 정보 확인</strong>
