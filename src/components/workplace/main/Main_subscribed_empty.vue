@@ -34,7 +34,7 @@
             <div class="inner">
                 <h1 class="h-tit1 mb20">구독</h1>
                 <h2 class="h-tit2 mb10">Channel
-                    <div class="fr color_clr2 font_14 fw300">전체보기</div>
+                    <div class="fr color_clr2 font_14 fwl">전체보기</div>
                 </h2>
 
                 <div class="no-date">

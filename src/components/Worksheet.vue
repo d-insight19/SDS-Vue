@@ -3025,7 +3025,7 @@
             Main_channel_detail_after
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">172</td>

@@ -33,7 +33,7 @@
           <div class="cell">
             <div class="inner">
                 <h2 class="h-tit2 mb10">찜한 학습
-                    <div class="fr color_clr2 font_14 fw300">전체보기</div>
+                    <div class="fr color_clr2 font_14 fwl">전체보기</div>
                 </h2>
                 <div class="scroll-x type2">
                     <!-- list -->
