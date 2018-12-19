@@ -4,7 +4,7 @@
     <div id="wrap" class="colorCode2">
 
         <!-- container -->
-        <div id="container" class="sample_page">
+        <div id="container" class="sample_page" style="padding:18px;">
             <div class="rdoSelBox err">
                 <label class="labelRdo">
                     <input type="radio" class="rdo" name="place-rdo">
