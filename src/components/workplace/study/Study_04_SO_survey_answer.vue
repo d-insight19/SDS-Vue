@@ -99,17 +99,23 @@
                         <p class="survey-tit">행복에 관한 조사입니다.</p>
                         <p class="txt-tit">01. 다음 지문에서 느껴지는 행복 요소는 무엇이라 생각하는지 적으시오.</p>
                         <p class="inner-txt op65 mb20">낙관주의는 아직 현실화하지 않은 일을 좋은 방향으로 생각하는 능력이다. 만사가 잘 될 수 있다는 약속을 믿는 것이다. 중요한 건 ‘만사가 잘 될 거’라는 막연한 느낌이 아니라 약속이다. 진정한 낙관주의자는 그 약속을 현실화시키기 위해 자기가 해야 할 일을 찾는다.” 옌스 바이드너의 이야기입니다. </p>
-                        <input type="text" class="input" placeholder="의견을 입력해 주세요">
-                        <p class="inp-num"><span>0</span>/<span>300</span></p>      
+                        <input @input="onInput" type="text" class="input" placeholder="의견을 입력해 주세요">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength}}/300</span>
+                        </div>   
                         <p class="hr"></p>
                         <p class="txt-tit">02. 자신을 가장 불행하게 만드는 요소는 무엇이라고 생각하나요?</p>                        
-                        <input type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대">
-                        <p class="inp-num"><span>4</span>/<span>300</span></p>
+                        <input @input="onInput" type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength-2}}/300</span>
+                        </div>   
                         <p class="hr"></p>
                         <p class="txt-tit">03. 다음 지문에서 느껴지는 사람들이 불행한 이유는 무엇이라고 생각하는지 적으시오.</p>
                         <p class="inner-txt op65 mb20">낙관주의는 아직 현실화하지 않은 일을 좋은 방향으로 생각하는 능력이다. 만사가 잘 될 수 있다는 약속을 믿는 것이다. 중요한 건 ‘만사가 잘 될 거’라는 막연한 느낌이 아니라 약속이다. 진정한 낙관주의자는 그 약속을 현실화시키기 위해 자기가 해야 할 일을 찾는다.” 옌스 바이드너의 이야기입니다. </p>
-                        <input type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대한 두려움">
-                        <p class="inp-num"><span>15</span>/<span>300</span></p>         
+                        <input @input="onInput" type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대한 두려움">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength-3}}/300</span>
+                        </div>           
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -143,12 +149,15 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1
+      headerType: 1,
+      keylength: 0
     }
   },
   /* vue function */
   methods: {
-
+    onInput (event) {
+      this.keylength = event.target.value.length
+    }
   }
 }
 </script>

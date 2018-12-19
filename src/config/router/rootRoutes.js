@@ -83,6 +83,7 @@ import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentbestanswer from '~workplace/study/Study_04_SO_assinment_bestanswer'
 import Study04SOquizsubmission from '~workplace/study/Study_04_SO_quiz_submission'
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
+import Study04SOsurveyintro from '~workplace/study/Study_04_SO_survey_intro'
 import Study04SOsurveyscale from '~workplace/study/Study_04_SO_survey_scale'
 import Study04SOsurveyanswer from '~workplace/study/Study_04_SO_survey_answer'
 import Study04SOopinionintro from '~workplace/study/Study_04_SO_opinion_intro'
@@ -600,6 +601,11 @@ var rootRoutes = [
     path: '/Study_04_SO_survey_submission',
     name: 'Study_04_SO_survey_submission',
     component: Study04SOsurveysubmission
+  },
+  {
+    path: '/Study_04_SO_survey_intro',
+    name: 'Study_04_SO_survey_intro',
+    component: Study04SOsurveyintro
   },
   {
     path: '/Study_04_SO_survey_scale',
