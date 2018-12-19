@@ -297,7 +297,115 @@
                 <!-- //list -->
             </div>
 
-            
+
+            <br/>
+            <p>구독</p>
+            <div class="scroll-x">
+            <!-- list -->
+            <ul class="thumList type7">
+                <li>
+                    <div class="in">
+                        <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
+                        <a href="#" class="writer">홍길동</a>
+                        <ul class="info">
+                            <li>게시물 10</li>
+                            <li>구독 550</li>
+                            <li><span class="line">P</span> 5</li>
+                        </ul>
+                    </div>
+                    <div class="thum">
+                        <div class="cDim04"></div>
+                        <div class="cDim03"></div>
+                        <div class="thumbnail">
+                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
+                        <a href="#" class="writer">홍길동</a>
+                        <ul class="info">
+                            <li>게시물 10</li>
+                            <li>구독 550</li>
+                            <li><span class="line">P</span> 5</li>
+                        </ul>
+                    </div>
+                    <div class="thum">
+                        <div class="cDim04"></div>
+                        <div class="cDim03"></div>
+                        <div class="thumbnail">
+                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="in">
+                        <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
+                        <a href="#" class="writer">홍길동</a>
+                        <ul class="info">
+                            <li>게시물 10</li>
+                            <li>구독 550</li>
+                            <li><span class="line">P</span> 5</li>
+                        </ul>
+                    </div>
+                    <div class="thum">
+                        <div class="cDim04"></div>
+                        <div class="cDim03"></div>
+                        <div class="thumbnail">
+                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- //list -->
+
+
+            <br/>
+            <p>구독 동그라미 이미지</p>
+            <div class="scroll-x type2">
+                <!-- list -->
+                <ul class="thumList type8">
+                    <li>
+                        <div class="thum">
+                            <div class="thumbnail">
+                                <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                            </div>
+                        </div>
+                        <a href="#" class="tit">홍길동</a>
+                        <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                    </li>
+                    <li>
+                        <div class="thum">
+                            <div class="thumbnail">
+                                <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                            </div>
+                        </div>
+                        <a href="#" class="tit">홍길동</a>
+                        <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                    </li>
+                    <li>
+                        <div class="thum">
+                            <div class="thumbnail">
+                                <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                            </div>
+                        </div>
+                        <a href="#" class="tit">홍길동</a>
+                        <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                    </li>
+                    <li>
+                        <div class="thum">
+                            <div class="thumbnail">
+                                <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                            </div>
+                        </div>
+                        <a href="#" class="tit">홍길동</a>
+                        <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
 
 
         </div>
