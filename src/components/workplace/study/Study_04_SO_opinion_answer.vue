@@ -98,8 +98,10 @@
                         <p class="line02"></p>
                         <p class="txt-tit">OO은 OO해야 합니다. 의견공유 텍스트 질문 영역입니다.  당신의 의견은 어떻습니까?</p>
                         <button class="guide-btn">작성가이드</button>
-                        <input type="text" class="input" placeholder="의견을 입력해 주세요">
-                        <p class="inp-num"><span>0</span>/<span>300</span></p>
+                        <input @input="onInput" type="text" class="input" placeholder="의견을 입력해 주세요">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength}}/300</span>
+                        </div> 
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -134,12 +136,20 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1
+      headerType: 1,
+      keylength: 0
     }
   },
   /* vue function */
   methods: {
-
+    // onInput (event) {
+    //   this.keylength = event.target.value.length
+    //   event.target.style.height = '1px'
+    // //   event.target.style.height = (event.target.scrollHeight) + 'px'
+    //   if( this.keylength > 1){
+    //       document.querySelector("button[disabled=disabled]").style.height = keylength + 'px'
+    //   }
+    // }
   }
 }
 </script>

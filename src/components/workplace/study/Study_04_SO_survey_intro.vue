@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
         <!-- container -->
-        <div id="container" class="mediaquery study_quiz_ox bg">
+        <div id="container" class="mediaquery study_survey bg">
             <!-- op-bg -->
             <div class="op-bg" style="background-color:rgba(0,0,0,0.45); height:100%">
             <!-- header -->
@@ -20,9 +20,9 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner wh" style="padding-top:50px;">
-                        <span class="chip wh">퀴즈</span>
-                        <p class="h-tit1">자바의 특성과 개념 중간 퀴즈</p> 
-                        <p class="txt-tit-2">얼마나 배웠는지 Quiz를 통해 알아볼까요?</p>
+                        <span class="chip wh">설문</span>
+                        <p class="h-tit1">삶의 만족도 진단 다면평가</p> 
+                        <p class="txt-tit-2">자신의 삶의 만족도가 어느 정도인지 진단해 볼까요?</p>
                         <p class="h-tit5">총 문항 <span class="fwb600">10개</span></p> 
                     </div>
                 </div>
@@ -43,7 +43,7 @@
 
 <script>
 export default {
-  name: 'Study_04_SO_quiz_intro',
+  name: 'Study_04_SO_survey_intro',
   /* vue lifecycle */
   created () {
   },

@@ -98,8 +98,10 @@
                         <p class="line02"></p>
                         <p class="txt-tit">01. 다음이 설명하는 단어를 입력하세요.</p>
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨(Rod Johnson)이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <input type="text" class="input" placeholder="스프링">
-                        <p class="inp-num"><span>3</span>/<span>300</span></p> 
+                        <input @input="onInput" type="text" class="input" placeholder="스프링">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength}}/300</span>
+                        </div> 
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -107,7 +109,7 @@
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md clr1">결과보기</button>
+                <button type="button" class="btn md clr1">정답확인</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -131,11 +133,15 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1
+      headerType: 1,
+      keylength: 0
     }
   },
   /* vue function */
   methods: {
+    onInput (event) {
+      this.keylength = event.target.value.length
+    }
   }
 }
 </script>

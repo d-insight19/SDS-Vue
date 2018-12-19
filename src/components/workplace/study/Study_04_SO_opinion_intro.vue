@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_opinion_int">
+      <div id="container" class="mediaquery study_opinion bg">
           <!-- op-bg -->
           <div class="op-bg" style="background-color:rgba(0,0,0,0.45); height:100%">
             <!-- header -->
@@ -22,8 +22,8 @@
                     <div class="inner wh" style="padding-top:50px;">
                         <span class="chip wh">의견공유</span>
                         <p class="h-tit1">독일, 임금공개법에 대하여 의견공유</p> 
-                        <p class="txt-tit">해당 질문에 대하여 자신의 의견을 작성해보고 다른 사람의 의견을 확인해보세요.</p>
-                        <p class="h-tit5">총 문항 2개</p> 
+                        <p class="txt-tit-2">해당 질문에 대하여 자신의 의견을 작성해보고 다른 사람의 의견을 확인해보세요.</p>
+                        <p class="h-tit5">총 문항 <span class="fwb600">2개</span></p> 
                     </div>
                 </div>
             </div>
