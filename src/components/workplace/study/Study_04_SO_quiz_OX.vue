@@ -6,7 +6,7 @@
         <div id="container" class="mediaquery study_quiz_ox pd70">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand wh">          
+            <div v-if="headerType == '1'" id="header" class="expand wh quiz-head-bg">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                     <div class="page-btn">
@@ -16,7 +16,7 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:66px; padding-bottom:26px">                
+                <div class="hide_header" style="background:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:26px">                
                     <div class="hide-inner">
                         <span class="chip wh">퀴즈</span>                         
                         <p class="h-tit1">중간퀴즈 : 자바의 특성과 개념에 대해 알아보기</p>

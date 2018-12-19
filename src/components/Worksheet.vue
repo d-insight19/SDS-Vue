@@ -6043,8 +6043,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.18.SO_opinion_choose</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_choose' }">
+            Study_04_SO_opinion_choose
           </router-link>
         </td>
         <td></td>
@@ -6073,8 +6073,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.19.SO_opinion_multiopinon</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_multiopinon' }">
+            Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
         <td></td>

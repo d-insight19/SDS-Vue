@@ -3,10 +3,10 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_opinion_ans_nom pd70">
+        <div id="container" class="mediaquery study_opinion pd70">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand wh">          
+            <div v-if="headerType == '1'" id="header" class="expand wh opinion-head-bg">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                     <div class="page-btn">
@@ -108,7 +108,7 @@
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md clr1">제출</button>
+                <button type="button" disabled="disabled" class="btn md clr1">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
