@@ -63,6 +63,7 @@
                             <span class="ops">13:00~18:00</span>
                             <span class="val">Java 기본 이해하기 2</span>
                         </div>
+                        <p class="line01"></p>  
                         <p class="sub-tit">교재정보</p>
                         <div>
                             <p class="sub-txt-a">스피치 업무 보고</p>
