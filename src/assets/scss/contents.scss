@@ -942,6 +942,15 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.mediaquery.drawer.inquiry .multiline {width:100%}
 #container.drawer.inquiry button.btn14 {top:22px; bottom:inherit; line-height: 32px; font-weight: 400; right: 0}
 #container.drawer.inquiry .inquiry_btn .pencil_16_blue.ico {margin-top:2px}
+#container.drawer.inquiry .multiList .info li.reply::before {display: none}
+#container.drawer.inquiry .multiList .info li.reply .check_16_blue {margin-right:2px}
+
+
+
+
+
+
+
 
 // 김현미 작업
 // 메인
