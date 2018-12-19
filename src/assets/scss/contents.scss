@@ -54,7 +54,7 @@
     position: relative; 
     z-index: 1; 
     font-size:map-get($font-size, font_16); 
-    color:rgba(0,0,0,0.8); 
+    color:map-get($mono_colors, mono_80); 
     line-height: 54px; 
     letter-spacing: -0.48px; 
     font-weight:500;
@@ -104,7 +104,7 @@
 .ulList.type3 li a .ico{position: absolute; top:50%; right:6px;}
 
 .ulList.type4{border-top:1px solid #bfbfbf;}
-.ulList.type4 li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:2px solid #eaeaea;}
+.ulList.type4 li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:1px solid #eaeaea;}
 .ulList.type4 li > .labelChk{vertical-align: top;}
 .ulList.type4 li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
 
@@ -172,12 +172,12 @@
 #container.study_dictionary .multiList.type3 .ico.arrow{position:absolute;right:0px;top:calc(50% - 8px);}
 
 #container.study_dictionary .multiList.type3 .in .title{font-size: map-get($font-size, font_16); line-height:22px; letter-spacing: -0.48px;font-weight: 500;margin-bottom:4px;width:100%}
-#container.study_dictionary .multiList.type3 .in .contents{font-size: map-get($font-size, font_14); line-height:20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65);width:100%; }
+#container.study_dictionary .multiList.type3 .in .contents{font-size: map-get($font-size, font_14); line-height:20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_65);width:100%; }
 
 // 회원가입 선택
 #container.join_type .h-tit1{margin-bottom:47px;font-weight:500;}
 #container.join_type .joinTypeBox dt{font-size: map-get($font-size, font_20);line-height: 29px;margin-bottom: 18px;letter-spacing: -0.6px;}
-#container.join_type .joinTypeBox dd{font-size: map-get($font-size, font_14);line-height: 20px;color:rgba(0,0,0,0.65);letter-spacing: -0.42px;}
+#container.join_type .joinTypeBox dd{font-size: map-get($font-size, font_14);line-height: 20px;color:map-get($mono_colors, mono_65);letter-spacing: -0.42px;}
 #container.join_type .joinTypeBox p{font-size: map-get($font-size, font_10);line-height: 15px;margin-top: 4px;font-weight:500;letter-spacing: -0.3px;}
 #container.join_type .joinTypeBox .btmBtn{margin-top: 12px;}
 #container.join_type .joinTypeBox .btmBtn .btn{font-size: map-get($font-size, font_14);margin-top: 0px;vertical-align: middle;letter-spacing: -0.42px;font-weight:500;}
@@ -213,11 +213,11 @@
 #container.join .ulList.type2 .infoChk{padding-right: 95px;}
 #container.join .ulList.type2 button{letter-spacing: -0.42px;}
 #container.join .ulList.type2 .infoChk input{letter-spacing: -0.42px;}
-#container.join .ulList.type2 input{color:rgba(0,0,0,0.8);font-size: map-get($font-size, font_14);line-height: 15px;letter-spacing: -0.42px; }
+#container.join .ulList.type2 input{color:map-get($mono_colors, mono_80);font-size: map-get($font-size, font_14);line-height: 15px;letter-spacing: -0.42px; }
 #container.join .ulList.type2 li .ul-block li{padding-left:5px;}
 #container.join .ulList.type2 li .ul-block li + li{margin-top:16px;}
 #container.join .ulList.type2 li + li{margin-top:36px}
-#container.join .ulList.type2 .labelRdo .label{color:rgba(0,0,0,0.65);font-size: map-get($font-size, font_14);line-height: 22px;}
+#container.join .ulList.type2 .labelRdo .label{color:map-get($mono_colors, mono_65);font-size: map-get($font-size, font_14);line-height: 22px;}
 #container.join .ulList.type2 .labelRdo input.rdo + .ico{margin:0px 11px 0 0 }
 #container.join .ulList.type2 .labelRdo input.rdo:disabled + .ico + .label{color:rgba(0,0,0,0.25)}
 #container.join .rdoInfoChK{position: relative; padding-left:40px;}
@@ -248,7 +248,7 @@
 #container.join .ulList.type4 li{border-bottom: 1px solid #ebebeb;}
 #container.join .labelChk .label{line-height: 21px;letter-spacing: -0.42px;font-weight: 400;}
 #container.join .ulList.type4 li{padding: 16px 0 16px;}
-#container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
+#container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:map-get($mono_colors, mono_65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
 #container.join .hr + .ulList.type1 .label-tit{margin-bottom:8px;}
 #container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
 #container.join .hr + .ulList.type1 li + li{margin-top: 19px;}
@@ -264,7 +264,7 @@
 #container.join .ulList.type4 li{border-bottom: 1px solid #ebebeb;}
 #container.join .labelChk .label{line-height: 21px;letter-spacing: -0.42px;font-weight: 400;}
 #container.join .ulList.type4 li{padding: 16px 0 16px;}
-#container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
+#container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:map-get($mono_colors, mono_65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
 #container.join .hr + .ulList.type1 .label-tit{margin-bottom:8px;}
 #container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
 #container.join .hr + .ulList.type1 li + li{margin-top: 19px;}
@@ -304,14 +304,14 @@
 // 개인정보 처리 방침
 #container.terms .h-tit1{margin-bottom:20px;}
 .agreeCnt .agree-tit{font-size:map-get($font-size, font_14);; margin-bottom: 8px; color:#000;line-height: 21px;font-weight: 400;}
-.agreeCnt .agree-txt{font-size:map-get($font-size, font_12);; color:rgba(0,0,0,0.65); letter-spacing: -0.36px;line-height: 20px; font-weight: 300;}
+.agreeCnt .agree-txt{font-size:map-get($font-size, font_12);; color:map-get($mono_colors, mono_65); letter-spacing: -0.36px;line-height: 20px; font-weight: 300;}
 .agreeCnt .agree-txt + .agree-tit{margin-top:20px;}
 
 // 우편번호 찾기
 #container.searchpost .h-tit1{letter-spacing: -1.3px}
 #container.searchpost .search-tit{font-size:map-get($font-size, font_14); line-height: 20px;letter-spacing: -0.42px;margin-bottom:8px;font-weight: 500;}
 #container.searchpost .search_result_wrap{margin-top:4px;}
-#container.searchpost .search_result{min-height:94px;border-bottom:1px solid #ebebeb;padding: 15px 0px;line-height:21px;color:rgba(0,0,0,0.8);font-weight:300;font-size:map-get($font-size, font_13);letter-spacing: -0.65px;}
+#container.searchpost .search_result{min-height:94px;border-bottom:1px solid #ebebeb;padding: 15px 0px;line-height:21px;color:map-get($mono_colors, mono_80);font-weight:300;font-size:map-get($font-size, font_13);letter-spacing: -0.65px;}
 #container.searchpost .search_result tr+tr{margin-top:4px;}
 #container.searchpost .search_result .address_left.hilight{font-size:map-get($font-size, font_14);font-weight:500;}
 #container.searchpost .search_result .address_left{width: 49px;text-align: left;vertical-align: top;font-weight:400;color: #000;letter-spacing: -0.65px}
@@ -447,25 +447,23 @@
 
 
 
-// 용어사전 -상세
+// 용어사전 - 상세 //
 #container.study_dictionary_de .h-tit1{ font-weight:500; font-size:map-get($font-size, font_26); line-height: 22px; letter-spacing: -0.78px; margin-bottom: 16px;}
 #container.study_dictionary_de .txt-desc{font-weight:400; font-size:map-get($font-size, font_15); line-height: 25px; letter-spacing: -0.45px; color: rgba(0,0,0,0.8);}
 
 
-// 모범답안
+// 모범답안 //
 #container.study_assinment_be .empty_img { width: 100%; height: auto; margin: 12px 0 20px;}
 #container.study_assinment_be .txt-tit {font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px; }
 #container.study_assinment_be .inner-txt {font-weight:400; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px; color: rgba(0,0,0,0.8);}
 
-// 토론방 - 수정/등록 
-
+// 토론방 - 수정,등록 //
 #container.study_discuss .singleList{margin-top: 8px; margin-bottom:20px;}
 #container.study_discuss .singleList{position: relative;}
 #container.study_discuss .sub-tit{font-weight:400; font-size:map-get($font-size, font_14);  line-height: 20px; letter-spacing: -0.42px; }
 #container.study_discuss .sub-tit{font-weight:400; font-size:map-get($font-size, font_14);  line-height: 20px; letter-spacing: -0.42px; }
 #container.study_discuss .singleList.type_2.line{border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; padding:17px 0;}
 #container.study_discuss .singleList.type_2 .labelBtn{top:15px;}
-
 #container.study_discuss .singleList .dis_num{outline: none; width: 48%; height: 44px;}
 #container.study_discuss .singleList .dis_num:nth-child(1){margin-right: 4%; }
 #container.study_discuss .singleList .pos_a{position: absolute; top: 12px; right:16px; }
@@ -476,17 +474,17 @@
 #container.study_discuss .singleList input[type=number]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0;} 
 #header p.end{cursor: pointer; width: auto;position: absolute;right: 14px;top: 0;  font-weight:400 !important; font-size:map-get($font-size, font_16); letter-spacing: -0.48px;} 
 
-// 시뮬레이션
+// 시뮬레이션 //
 #container.study_simulation .line01{margin-top:28px;margin-bottom: 26px; width: 100%;  border-bottom: 1px solid #ccc;}
-#container.study_simulation .txt-tit{font-size:map-get($font-size, font_24); line-height: 32px; font-weight:500; letter-spacing: -0.72px;}
+#container.study_simulation .txt-tit{font-size:map-get($font-size, font_24); line-height: 32px; font-weight:500; letter-spacing: -0.72px; margin-bottom: 12px;}
 #container.study_simulation .txt-desc{font-size:map-get($font-size, font_15); color:#1a1a1a; line-height: 25px; letter-spacing: -0.45px;}
 #container.study_simulation .empty_img { width: 100%; height: auto; margin: 12px 0 20px;}
-#container.study_simulation .h-tit5{font-size:map-get($font-size , font_16);line-height:15px; letter-spacing:-0.48px; margin-bottom: 12px;}
-#container.study_simulation .inner-txt{font-weight:400; color:rgba(0,0,0,0.65);font-size:map-get($font-size , font_16);line-height:25px; letter-spacing: -0.48px; margin-bottom:20px;}
+#container.study_simulation .h-tit5{font-weight:500; font-size:map-get($font-size , font_16);line-height:15px; letter-spacing:-0.48px; margin-bottom: 12px;}
+#container.study_simulation .inner-txt{font-weight:400; color:map-get($mono_colors, mono_65);font-size:map-get($font-size , font_16);line-height:25px; letter-spacing: -0.48px; margin-bottom:20px;}
 #container.study_simulation .ul-block li,.ul-block li + li{margin-bottom: 10px;}
 #container.study_simulation .inner{position: relative;}
 
-// 공통전용
+// 공통전용 //
 .absBtmBtn{position:fixed;left: 0;bottom: 0;z-index: 100;width: 100%; padding:18px;}
 .absBtmBtn .btn[disabled] {color: #c1c1c1 !important; background: #ededed !important;}
 .absBtmBtn ul{display: table; table-layout: fixed; width: 100%;}
@@ -495,24 +493,24 @@
 .absBtmBtn .btn{font-size:map-get($font-size, font_14); line-height: 20px; font-weight:500; letter-spacing: -0.42px;}
 .absBtmBtn .btn.clr1{font-size:map-get($font-size, font_16); line-height: 17px; font-weight:500; letter-spacing: -0.48px;}
 .absBtmBtn li + li .btn[disabled]{border-left:1px solid #e0e0e0 !important;}
-.chip { font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.36px}
+.chip { font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 16px; letter-spacing: -0.36px}
 
 
-// 링크/독서통신/집합 - Full screen
+// 링크/독서통신/집합 - Full screen //
 
-#container.study_link .txt-tit{font-size:map-get($font-size, font_20); line-height: 21px; font-weight:500; letter-spacing: -0.6px;margin-bottom: 14px; display: inline-block;}
+#container.study_link .txt-tit{font-weight:600; font-size:map-get($font-size, font_20); line-height: 21px; letter-spacing: -0.6px;margin-bottom: 14px;}
 #container.study_link .txt-line{padding-top:10px; padding-bottom:10px;}
 #container.study_link .txt-line .ops{font-size:map-get($font-size, font_15);line-height: 21px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8)}
-#container.study_link .txt-line .val{font-size:map-get($font-size, font_15);line-height: 21px; letter-spacing: -0.45px; float: right;}
-#container.study_link .sub-tit{margin-top:32px; margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px;}
+#container.study_link .txt-line .val{font-size:map-get($font-size, font_15);line-height: 21px; letter-spacing: -0.45px; float: right; font-weight:500;}
+#container.study_link .sub-tit{font-weight:500; margin-top:32px; margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px;}
 #container.study_link .gr_box{padding: 14px 16px; background-color: #f5f5f5;}
-#container.study_link .gr_box .gb_txt{font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;}
+#container.study_link .gr_box .gb_txt{font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;color:map-get($mono_colors, mono_80);}
 #container.study_link .sub-txt-a{font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;}
 #container.study_link .sub-txt-b{font-size:map-get($font-size, font_12);line-height: 21px; letter-spacing: -0.36px; color: rgba(0,0,0,0.5);}
-.line01{width: 100%;  border-bottom: 1px solid #ccc;}
+.line01{width: 100%;  border-bottom: 1px solid map-get($line_colors, B85);}
 
 
-// 설문/제출완료 
+// 설문-제출완료 
 
 #header.bg-gr .h-tit5{vertical-align: text-bottom; font-size:map-get($font-size , font_18);line-height:25px; letter-spacing:-0.54px; margin-bottom: 10px;}
 #header.bg-gr .h-tit5 span:nth-child(1){margin-right:3px;}
@@ -529,61 +527,58 @@
 #container.study_survey_sub .survey-tit{font-size:map-get($font-size , font_18);line-height:38px; letter-spacing:-0.54px;margin-bottom: 16px;  }
 #container.study_survey_sub .survey-txt{font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px;color:rgba(0,0,0,0.8) }
 
-//  의견공유/제출완료
-
+//  의견공유-제출완료 //
 #container.study_opinion_sub .h-tit5{font-weight:500; font-size:map-get($font-size , font_18);line-height:25px; letter-spacing:-0.54px;margin-bottom: 10px; }
-#container.study_opinion_sub .h-tit1{font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
+#container.study_opinion_sub .h-tit1{max-width:80%; font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
 #container.study_opinion_sub .ico.chk{vertical-align: -3px;}
 #container.study_opinion_sub .opinion-tit{font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px;margin-bottom: 6px; }
 #container.study_opinion_sub .person{font-size:map-get($font-size , font_14);line-height:20px; letter-spacing:-0.42px;margin-bottom: 26px; color:rgba(0,0,0,0.5); }
 #container.study_opinion_sub .progBox{height: 8px;    border-radius: 100px;}
-#container.study_opinion_sub .txt-wrap{margin-top:16px;}
+#container.study_opinion_sub .txt-wrap{margin-top:8px;}
 #container.study_opinion_sub .prog-txt{ display: inline-block; float: left; width: 69%;font-size:map-get($font-size , font_15);line-height:22px; letter-spacing:-0.45px; }
-#container.study_opinion_sub .part-num{font-size:map-get($font-size , font_15);line-height:20px; letter-spacing:-0.45px; color:rgba(0,0,0,0.65);}
-#container.study_opinion_sub .v-line01{ margin-left: 6px; color: #d9d9d9;}
-#container.study_opinion_sub .part-num-2{ font-size:map-get($font-size , font_15);line-height:20px; letter-spacing:-0.45px; margin-left: 6px; color:rgba(0,0,0,0.80);}
-#container.study_opinion_sub .txt-line{ margin-top: 42px; padding-top:0px; padding-bottom:12px;}
-#container.study_opinion_sub .txt-line .my-op{font-size:map-get($font-size, font_18);line-height: 38px; letter-spacing: -0.54px; color:rgba(0,0,0,0.8)}
+#container.study_opinion_sub .part-num{font-size:map-get($font-size , font_15);line-height:20px; letter-spacing:-0.45px; color:map-get($mono_colors, mono_65);}
+#container.study_opinion_sub .part-num-2{ font-size:map-get($font-size , font_15);line-height:20px; letter-spacing:-0.45px; color:map-get($mono_colors, mono_80);}
+#container.study_opinion_sub .txt-line{ margin-top: 40px; padding-top:0px; padding-bottom:6px;}
+#container.study_opinion_sub .txt-line .my-op{font-weight:500;font-size:map-get($font-size, font_20);line-height: 38px; letter-spacing: -0.6px; color:rgba(0,0,0,0.8)}
 #container.study_opinion_sub .txt-line .total-op{float: right; font-size:map-get($font-size, font_14); line-height: 38px;} // line-height op와 동일 
 #container.study_opinion_sub .txt-line .total-val{font-size:map-get($font-size, font_15);line-height: 38px; letter-spacing: -0.45px; margin-right:4px;}
-#container.study_opinion_sub .txt-line .total-num{font-size:map-get($font-size, font_14);line-height: 38px; letter-spacing: -0.42px; color:rgba(0,0,0,0.5)}
+#container.study_opinion_sub .txt-line .total-num{font-size:map-get($font-size, font_14);line-height: 38px; letter-spacing: -0.42px;}
 #container.study_opinion_sub .txt-line .ico.gray_next {cursor: pointer; margin-left:4px;}
-#container.study_opinion_sub .reply-name {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:16px;}
-#container.study_opinion_sub .reply-txt {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:16px; color:#1a1a1a;}
-#container.study_opinion_sub .reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:rgba(0,0,0,0.65);}
-#container.study_opinion_sub .reply-wrap {margin-top:18px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:rgba(0,0,0,0.80);}
-#container.study_opinion_sub .reply-name .ico.more {cursor: pointer;}
-#container.study_opinion_sub .reply-wrap .down-arr {cursor: pointer; margin-right:1px;}
-#container.study_opinion_sub .reply-wrap .reply-like {cursor: pointer;}
-#container.study_opinion_sub .reply-wrap .reply-num {font-size:map-get($font-size, font_14);line-height: 19px; }
-#container.study_opinion_sub .reply-wrap .reply-unlike {cursor: pointer; margin-left:8px;}
+.pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background-color:map-get($line_colors, B85);}
+.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:16px;}
+.reply-txt {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:8px; color:#1a1a1a;}
+.reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
+.reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);}
+.reply-name .ico.more {cursor: pointer;}
+.reply-wrap .down-arr {cursor: pointer; margin-right:1px;}
+.reply-wrap .reply-like {cursor: pointer;}
+.reply-wrap .reply-num {font-size:map-get($font-size, font_14);line-height: 19px; }
+.reply-wrap .reply-unlike {cursor: pointer; margin-left:8px;}
+
 
 // 작성가이드
-
 #container.study_opinion_guide .txt-tit {font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 
-// 서약서 
 
+// 서약서 
 #container.study_pledge .h-tit1{margin-bottom: 12px;font-size:map-get($font-size, font_24); line-height: 32px; letter-spacing: -0.72px;}
 #container.study_pledge .pledge-tit{margin-bottom: 28px;font-size:map-get($font-size, font_15); line-height: 22px; letter-spacing: -0.45px;}
 #container.study_pledge .line01{margin-bottom: 26px;}
 #container.study_pledge .empty_img { width: 100%; height: auto; margin-bottom:12px;}
-#container.study_pledge .inner-txt{font-size:map-get($font-size, font_16); color:rgba(0,0,0,0.65); line-height: 25px; letter-spacing: -0.48px;margin-bottom:36px;}
+#container.study_pledge .inner-txt{font-size:map-get($font-size, font_16); color:map-get($mono_colors, mono_65); line-height: 25px; letter-spacing: -0.48px;margin-bottom:36px;}
 #container.study_pledge .sub-tit{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;margin-bottom:8px;}
 #container.study_pledge .singleList{ margin-bottom: 20px;}
 
 
 // 서약서 제출완료
-
 #container.study_pledge_sub .h-tit5{font-weight:500; font-size:map-get($font-size, font_18);line-height: 25px; letter-spacing: -0.54px;margin-bottom:10px;}
 #container.study_pledge_sub .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 #container.study_pledge_sub .pledge-tit{font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px;margin-bottom:16px;}
 #container.study_pledge_sub .pledge-txt{font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
-#container.study_pledge_sub .pledge-txt .pledge-ip{font-size:map-get($font-size, font_15);line-height: 29px; letter-spacing: -0.45px; color:rgba(0,0,0,0.65);margin-left: 8px;}
+#container.study_pledge_sub .pledge-txt .pledge-ip{font-size:map-get($font-size, font_15);line-height: 29px; letter-spacing: -0.45px; color:map-get($mono_colors, mono_65);margin-left: 8px;}
 
 
 // 질문방 수정
-
 #container.study_question_edit .txt-line{padding-top:17px; padding-bottom:17px; border-bottom: 1px solid #e3e3e3; } 
 #container.study_question_edit .txt-line.top-bd{ border-top: 1px solid #e3e3e3; }
 #container.study_question_edit .txt-line strong{font-size:map-get($font-size, font_14);line-height: 22px; letter-spacing: -0.7px;} 
@@ -593,8 +588,7 @@
 #container.study_question_edit .e-tit{ display:inline-block; margin-bottom:8px; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;}
 #container.study_question_edit .gr_box{padding: 12px 16px; background-color: #f5f5f5; font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; overflow:auto;}
 #container.study_question_edit .ico.plus{vertical-align: -1px;}
-#container.study_question_edit .ulList.type1 input::placeholder{ font-weight: 400; color:rgba(0,0,0,0.8); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
-
+#container.study_question_edit .ulList.type1 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 .label-tit-02 {margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 26px; letter-spacing: -0.48px;}
 .ulList li.bottom-bd-x{border-bottom:none;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
@@ -602,15 +596,14 @@
 
 
 // 질문방 상세
-
-.info-group{ font-weight: 400 ; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.8); }
+.info-group{ font-weight: 400 ; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_80); }
 .info-group .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background: rgba(0,0,0,0.5);} 
 .info-group .ico.play{vertical-align: -2px;}
 #header p.h-tit1{text-overflow: unset !important; white-space:unset !important;}
 #header p.h-tit1 {margin-bottom: 4px;}
 #header p.h-tit1 .q-tit{display:inline-block; width: 90%; font-weight:600; font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;}
 #header p.h-tit1 .ico.more28{display:inline-block; margin-top:6px;}
-#header .ico-group{ font-weight:500 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65); }
+#header .ico-group{ font-weight:500 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_65); }
 #header .ico-group .ico-txt{ font-weight:400 ;}
 .inner-txt{ font-weight:400; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8) }
 
@@ -621,11 +614,11 @@
 #container.study_question_de_02 .reply-tit{font-size:map-get($font-size, font_16);line-height: 38px; letter-spacing: -0.48px;}
 #container.study_question_de_02 .reply-tit-2{margin-top:16px; margin-bottom: 8px;}
 #container.study_question_de_02 .reply-txt{font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; color:#1a1a1a;}
-#container.study_question_de_02 .reply-txt-2{font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:rgba(0,0,0,0.65);}
+#container.study_question_de_02 .reply-txt-2{font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
 #container.study_question_de_02 .reply-txt-2 .reply-time{margin-left: 6px; }
 
 // 공지사항 상세
-#container.study_notice_de .ico-group{padding:18px 0 0 0; font-weight:400; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.8); }
+#container.study_notice_de .ico-group{padding:18px 0 0 0; font-weight:400; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_80); }
 #container.study_notice_de .ico-group .ico.view{vertical-align: -3px;}
 #container.study_notice_de .ico-group .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background: rgba(0,0,0,0.5);} 
 #container.study_notice_de .h-tit1{ font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;}
@@ -638,29 +631,29 @@
 
 #container.study_reflection_edit .ico.plus{vertical-align: -1px;}
 #container.study_reflection_edit .sub-tit{margin-top:20px; margin-bottom: 8px; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;}
-#container.study_reflection_edit input{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8);}
-#container.study_reflection_edit input::placeholder{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8);}
-#container.study_reflection_edit textarea{ color:rgba(0,0,0,0.8); width:100%; padding:12px 16px; background: #f5f5f5; font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
+#container.study_reflection_edit input{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80);}
+#container.study_reflection_edit input::placeholder{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80);}
+#container.study_reflection_edit textarea{ color:map-get($mono_colors, mono_80); width:100%; padding:12px 16px; background: #f5f5f5; font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 
 
 // 학습현황창
 
-#container.study_status .titTxtWrap .line01{ padding-bottom: 9px; font-size:map-get($font-size, font_15);line-height: 26px; letter-spacing: -0.38px; color:rgba(0,0,0,0.8);}
-#container.study_status .titTxtWrap .line01 strong{ font-size:map-get($font-size, font_15);line-height: 26px; letter-spacing: -0.12px;}
-#container.study_status .card .card-head{margin-bottom: 15px;font-size:map-get($font-size, font_20);line-height: 29px; letter-spacing: -0.6px; }
-#container.study_status .card .card-head .labelChk2 input.chk + .label{line-height: 30px; }
-#container.study_status .card .card-body{background-color:#f2f3f7; }
+#container.study.MainType.status .titTxtWrap .line01{ padding-bottom: 9px; font-size:map-get($font-size, font_15);line-height: 26px; letter-spacing: -0.38px; color:map-get($mono_colors, mono_80);}
+#container.study.MainType.status .titTxtWrap .line01 strong{ font-size:map-get($font-size, font_15);line-height: 26px; letter-spacing: -0.12px;}
+#container.study.MainType.status .card .card-head{margin-bottom: 15px;font-size:map-get($font-size, font_20);line-height: 29px; letter-spacing: -0.6px; }
+#container.study.MainType.status .card .card-head .labelChk2 input.chk + .label{line-height: 30px; }
+#container.study.MainType.status .card .card-body{background-color:#f2f3f7; }
 
 
-// 과제제출
+// 과제작성
 
 #container.study_stauts_apply .end.sub{right:57px;}
 #container.study_stauts_apply .h-tit5{ font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; margin-bottom: 18px;}
 #container.study_stauts_apply .l-inb{ display: inline-block;width: 26%; float:left; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
-#container.study_stauts_apply .r-inb{ display: inline-block; width:74%;  font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8);}
+#container.study_stauts_apply .r-inb{ display: inline-block; width:74%;  font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px; color:map-get($mono_colors, mono_80);}
 #container.study_stauts_apply .ulList.type4 li{ height:auto;}
 #container.study_stauts_apply ul li{ margin-bottom: 14px;}
-#container.study_stauts_apply ul li.bottom-bd{border-bottom: 2px solid #eaeaea;}
+#container.study_stauts_apply ul li.bottom-bd{border-bottom: 1px solid map-get($line_colors, B89);}
 #container.study_stauts_apply ul li.bottom-pd{padding-bottom: 12px;}
 #container.study_stauts_apply .sub-tit{margin-top:18px; margin-bottom: 8px; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
 
@@ -669,17 +662,17 @@
 
 #container.study_assessment_no .sub-tit{ margin-bottom: 10px; font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px;}
 #container.study_assessment_no .tb_wrap{ margin-bottom:16px; background:#f2f3f7; padding-top: 21px; padding-bottom: 22px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
-#container.study_assessment_no table td.right-bd{ border-right:1px solid #d9d9d9; }
+#container.study_assessment_no table td.right-bd{ border-right:1px solid map-get($line_colors, B85); }
 #container.study_assessment_no table td{padding-left:24px; }
-#container.study_assessment_no table tr:nth-child(1) td{ padding-bottom:3px;color:rgba(0,0,0,0.8); font-size:map-get($font-size, font_13);line-height: 19px; letter-spacing: -0.39px;}
+#container.study_assessment_no table tr:nth-child(1) td{ padding-bottom:3px;color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_13);line-height: 19px; letter-spacing: -0.39px;}
 #container.study_assessment_no table tr:nth-child(2) td{font-size:map-get($font-size, font_18);line-height: 21px; }
 #container.study_assessment_no .ulList.type4 li{ height:auto;}
 #container.study_assessment_no .ulList.type4 .li-tit{ color:rgba(0,0,0,1); font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
-#container.study_assessment_no .ulList.type4 .li-txt{ color:rgba(0,0,0,0.65); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
+#container.study_assessment_no .ulList.type4 .li-txt{ color:map-get($mono_colors, mono_65); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 #container.study_assessment_no .ulList.type4 .li-txt .pipe{ display: inline-block; margin:0 6px; width: 1px; height: 11px; background: rgba(0,0,0,0.5);}
 #container.study_assessment_no .ulList.type4 .li-txt-2{ color:rgba(0,0,0,0.5); }
 #container.study_assessment_no .ulList.type4 .li-txt-2.ml12{ display: inline-block; margin-left: 12px;}
-#container.study_assessment_no .ulList.type4 .li-txt-3{ color:rgba(0,0,0,0.8); }
+#container.study_assessment_no .ulList.type4 .li-txt-3{ color:map-get($mono_colors, mono_80); }
 #container.study_assessment_no .ulList.type4 .loginChk{ margin-top: 16px; padding-left: 6px; }
 
 
@@ -688,20 +681,19 @@
 #container.study_simulation_sub .h-tit5{font-weight:500; font-size:map-get($font-size, font_18);line-height: 25px; letter-spacing: -0.54px;margin-bottom:10px;}
 #container.study_simulation_sub .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 #container.study_simulation_sub .sim-tit{ margin-bottom: 16px; color:rgba(0,0,0,1); font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; }
-#container.study_simulation_sub .sim-txt{ color:rgba(0,0,0,0.8); font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; }
+#container.study_simulation_sub .sim-txt{ color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; }
 
 
 // faq 상세
 
 #container.study_faq_de #header .h-tit1{ font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px}
-#container.study_faq_de #header .h-tit5{padding-top:18px; font-weight:600; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:rgba(0,0,0,0.65); }
+#container.study_faq_de #header .h-tit5{padding-top:18px; font-weight:600; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_65); }
 #container.study_faq_de .faq-txt{ font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; }
 
 
 
 
-// quiz 제출완료
-
+// 퀴즈-제출완료
 #container.study_quiz_sub #header p.q-tit{ margin-bottom: 24px; font-weight:400; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px; color:rgba(0,0,0,0.65) } 
 #container.study_quiz_sub #header p.q-txt{ font-weight:400; font-size:map-get($font-size, font_16);line-height: 34px; letter-spacing: -0.48px;} 
 #container.study_quiz_sub #header p.h-tit1{ margin-bottom: 5px; font-weight:500; font-size:map-get($font-size, font_28);line-height: 38px; letter-spacing: -0.84px; } 
@@ -710,7 +702,7 @@
 #container.study_quiz_sub .ulList.type4 li .tit-num{ font-weight:600; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;} 
 #container.study_quiz_sub .ulList.type4 li .q-box{padding: 10px 12px;} 
 #container.study_quiz_sub .ulList.type4 li .q-box p{ margin-bottom: 8px; font-weight:500; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;} 
-#container.study_quiz_sub .ulList.type4 li p .q-list-a{ color:rgba(0,0,0,0.8); display: inline-block; margin-right:6px; font-weight:500; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;} 
+#container.study_quiz_sub .ulList.type4 li p .q-list-a{ color:map-get($mono_colors, mono_80); display: inline-block; margin-right:6px; font-weight:500; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;} 
 #container.study_quiz_sub .ulList.type4 li p .ico{ vertical-align: -2px; } 
 
 
@@ -724,21 +716,22 @@
 
 // 퀴즈 인트로
 #container.study_quiz_int {background:coral; }
-#container.study_quiz_int .absBtmBtn .btn {position: relative; z-index: 1; font-size: 1rem; color: rgba(0, 0, 0, 0.8);line-height: 54px;letter-spacing: -0.48px;font-weight: 500;width: 100%; padding: 0 30px 0 18px;text-align: left; background: rgba(255, 255, 255, 0.85);}
-#container.study_quiz_int .absBtmBtn .btn .ico{ position: absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-8px;}
+.btmBtn{position: absolute; bottom:32px;left:0; z-index: 1; width: 100%; padding:0 30px;}
+.btmBtn .btn {position: relative; z-index: 1; font-size: 1rem; color: rgba(0, 0, 0, 0.8);line-height: 54px;letter-spacing: -0.48px;font-weight: 500;width: 100%; padding: 0 30px 0 18px;text-align: left; background: rgba(255, 255, 255, 0.85);}
+.btmBtn .btn .ico{ position: absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-8px;}
 
 
 // ox퀴즈
-
 #container.study_quiz_ox #header.wh .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 #container.study_quiz_ox #header.wh .h-tit5{padding:10px 0 0 0 ; font-size:map-get($font-size, font_16);line-height: 18px; letter-spacing: -0.48px;color:rgba(255,255,255,0.8); }
 #container.study_quiz_ox .txt-tit {margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
-
+#header.quiz-head-bg{background: url("../img/img_quiz_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 .chip.wh{ border:1px solid rgba(255,255,255,0.4);}
 .inb-box{display: inline-block; width:49%;}
 .inb-box label.labelRdo input.rdo + .ico{vertical-align: middle; margin:0 16px 0 0 ;}
 ul.com-rdo label.labelRdo input.rdo:checked + .ico .chk-blue { display: inline-block; background-position: -5px -5px; width: 22px; height: 22px; }
 ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
+/* 이미지를 교체합니다 common.css 쪽 아이콘이 아닙니다*/
 .inb-box label.labelRdo input.rdo ~ .label .chk-o{ width:48px;height:48px;background: url("../img/ic_o_48_n.png") no-repeat; }
 .inb-box label.labelRdo input.rdo:checked ~ .label .chk-o{ width:48px;height:48px;background: url("../img/ic_o_48_s.png") no-repeat; }
 .inb-box label.labelRdo input.rdo ~ .label .chk-x{ width:48px;height:48px;background: url("../img/ic_x_48_n.png") no-repeat; }
@@ -749,52 +742,52 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 
 
 // ox퀴즈 채점결과
-
-#container.study_quiz_ox_res #header div.hide-inner p.h-tit1 {font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
-#container.study_quiz_ox_res #header div.hide-inner p.h-tit5 {font-weight:400;  padding:10px 0 0 0 ; font-size:map-get($font-size, font_16);line-height: 18px; letter-spacing: -0.48px;color:rgba(255,255,255,0.8); }
-#container.study_quiz_ox_res .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
-#container.study_quiz_ox_res .hr{margin: 32px -24px 26px -24px;} 
-#container.study_quiz_ox_res .inb-box span.ico{ margin-left: 48px;}
-.inner input.input::placeholder{color: rgba(0,0,0,0.8);}
-.inner-txt{ font-weight:400; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; color:rgba(0,0,0,0.8);}
+#container.study_quiz_ox #header div.hide-inner p.h-tit1 {font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
+#container.study_quiz_ox #header div.hide-inner p.h-tit5 {font-weight:400;  padding:10px 0 0 0 ; font-size:map-get($font-size, font_16);line-height: 18px; letter-spacing: -0.48px;color:rgba(255,255,255,0.8); }
+#container.study_quiz_ox .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
+#container.study_quiz_ox .hr{margin: 32px -24px 26px -24px;} 
+#container.study_quiz_ox .inb-box .ico-ml{ margin-left: 48px;}
+.inner input.input{color: rgba(0,0,0,0.8);}
+.inner-txt{ font-weight:400; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; color:map-get($mono_colors, mono_80);}
 .bg-sky{background: #e5f3ff; padding: 16px;}
 .bg-sky span{  color:#000; font-weight:500; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;  }
 .bg-sky span.ico{vertical-align:-2px;margin-left: 6px; }
-.bg-sky .txt-tit-2{margin-bottom: 8px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 24px; letter-spacing: -0.48px; color:rgba(0,0,0,0.8);}
-.bg-sky .inner-txt-2{ font-weight:400; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8); }
+.bg-sky .txt-tit-2{margin-bottom: 8px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 24px; letter-spacing: -0.48px; color:map-get($mono_colors, mono_80);}
+.bg-sky .inner-txt-2{ font-weight:400; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; color:map-get($mono_colors, mono_80); }
 .txt-tit .ico{ position: absolute;top: -16px;left: -16px;}
 
 
 // 퀴즈답변
-#container.study_quiz_ans .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
-#container.study_quiz_ans #header div.hide-inner p.h-tit1 {font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
-#container.study_quiz_ans #header div.hide-inner p.h-tit5 {font-weight:400;  padding:10px 0 0 0 ; font-size:map-get($font-size, font_16);line-height: 18px; letter-spacing: -0.48px;color:rgba(255,255,255,0.8); }
+#container.study_quiz_ox .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 .inp-num{ font-size:map-get($font-size, font_14);line-height: 29px; letter-spacing: -0.42px; color:rgba(0,0,0,0.5);}
 
 
-// 퀴즈답변 결과
-#container.study_quiz_ans_res .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
-#container.study_quiz_ans_res #header div.hide-inner p.h-tit1 {font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
-#container.study_quiz_ans_res #header div.hide-inner p.h-tit5 {font-weight:400;  padding:10px 0 0 0 ; font-size:map-get($font-size, font_16);line-height: 18px; letter-spacing: -0.48px;color:rgba(255,255,255,0.8); }
-
-
-
-// 설문조사
-
-#container.study_survey_scale #header div.hide-inner p.h-tit1 {font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
-#container.study_survey_scale #header div.hide-inner p.h-tit5 {font-weight:400;  padding:12px 0 0 0 ; font-size:map-get($font-size, font_14);line-height: 25px; letter-spacing: -0.35px; }
-#container.study_survey_scale .survey-tit {margin-bottom: 26px; font-weight:600; font-size:map-get($font-size, font_18);line-height: 24px; letter-spacing: -0.54px;}
-#container.study_survey_scale .txt-tit { margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
-#container.study_survey_scale .ul-block li { margin-bottom: 10px; height:32px; line-height:2;}
-#container.study_survey_scale .ul-block li label{ vertical-align: middle; }
-#container.study_survey_scale .ul-block li label span{font-size:map-get($font-size, font_15);line-height: 19px; letter-spacing: -0.45px;}
+// 설문조사 - 척도형
+#container.study_survey #header div.hide-inner p.h-tit1 {font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
+#container.study_survey #header div.hide-inner p.h-tit5 {font-weight:400;  padding:12px 0 0 0 ; font-size:map-get($font-size, font_14);line-height: 25px; letter-spacing: -0.35px; }
+#container.study_survey .survey-tit {margin-bottom: 26px; font-weight:600; font-size:map-get($font-size, font_18);line-height: 24px; letter-spacing: -0.54px;}
+#container.study_survey .txt-tit { margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
+#header.survey-head-bg{background: url("../img/img_survey_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+.com-rdo li { margin-bottom: 10px; line-height:2;}
+.com-rdo li label{ vertical-align: middle; }
+.com-rdo li label span{font-size:map-get($font-size, font_15);line-height: 19px; letter-spacing: -0.45px; vertical-align: 6%;}
 .underline{border-bottom: 1px solid #000;}
 
 
-// 설문조사 - 다중선택
+// 의견공유 인트로
+#container.study_opinion .inner.wh{color:#fff;}
+.inner.wh .chip{font-weight:400; font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.36px; margin-bottom:8px;}
+.inner.wh .h-tit1{max-width:72%; font-weight:300; font-size:map-get($font-size, font_30);line-height: 42px; letter-spacing: -0.9px; margin-bottom:6px;}
+.inner.wh .txt-tit{max-width:66%; color: rgba(255,255,255,0.75); font-weight:300; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; margin-bottom:52px;}
+.inner.wh .h-tit5{font-weight:300; font-size:map-get($font-size, font_14);line-height: 38px; letter-spacing: -0.42px;}
 
 
-
+// 의견공유 서술형
+#container.study_opinion #header div.hide-inner p.h-tit1 {max-width:80%; font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
+#container.study_opinion #header div.hide-inner p.h-tit5 {font-weight:400;  padding:12px 0 0 0 ; font-size:map-get($font-size, font_14);line-height: 25px; letter-spacing: -0.35px; }
+#container.study_opinion .txt-tit {margin-bottom: 6px;font-weight: 500; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px;}
+#header.opinion-head-bg{background: url("../img/img_opinion_header_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+.guide-btn {border:1px solid map-get($line_colors, B85);color:map-get($mono_colors, mono_65); margin-bottom: 20px; padding:4px 6px; font-weight: 500; font-size:map-get($font-size, font_12); letter-spacing: -0.36px;}
 
 
 
@@ -841,7 +834,7 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.drawer .multiList.type2 > li { padding:0; min-height: 0 }
 
 #container.drawer .id_info .btn { position: absolute; right: 0; bottom: 20px; z-index: 1; width:93px; border:#ccc 1px solid; padding:7px 10px;}
-#container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:rgba(0,0,0,0.8); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
+#container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:map-get($mono_colors, mono_80); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
 #container.drawer .multiList.type2 .id_info button {position: absolute; right: 0; bottom:19px}
 #container.drawer .multiList.type2 input {margin-top:8px}
 #container.drawer .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
@@ -853,9 +846,9 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px !important; }
 #container.drawer .labelChk {width:auto}
 
-#container.drawer .contents14{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:rgba(0,0,0,0.65); }
-#container.drawer .contents13{margin-top:2px;font-size:map-get($font_size, font_13);line-height: 29px;color:rgba(0,0,0,0.65); letter-spacing: -0.39px;}
-#container.drawer .contents14_2{font-size:map-get($font_size, font_14);line-height: 22px;color:rgba(0,0,0,0.65); letter-spacing: -0.39px;}
+#container.drawer .contents14{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:map-get($mono_colors, mono_65); }
+#container.drawer .contents13{margin-top:2px;font-size:map-get($font_size, font_13);line-height: 29px;color:map-get($mono_colors, mono_65); letter-spacing: -0.39px;}
+#container.drawer .contents14_2{font-size:map-get($font_size, font_14);line-height: 22px;color:map-get($mono_colors, mono_65); letter-spacing: -0.39px;}
 #container.drawer .btn.sm {margin:8px 0}
 #container.drawer .btn.sm.mb0 {margin-bottom:0}
 #container.drawer .rdoSelBox input:checked span.label {font-weight:bold !important}
@@ -866,16 +859,16 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.drawer .multiList.type1 > li button.btn14 {position: absolute; top:15px; right: 0; height:20px}
 #container.drawer .multiList.type1 > li button.btn14.first {top:0;}
 #container.drawer .multiList.type1 > li .address {font-size:map-get($font_size, font_16); padding-right: 67px; margin:5px 0 }
-#container.drawer .multiList.type1 > li .name_line {color:rgba(0,0,0,0.8);}
-#container.drawer .multiList.type1 > li .bar {border-left:#d9d9d9 1px solid; height:10px; margin:0 8px; display: inline-block}
+#container.drawer .multiList.type1 > li .name_line {color:map-get($mono_colors, mono_80);}
+#container.drawer .multiList.type1 > li .bar {border-left:map-get($line_colors, B85) 1px solid; height:10px; margin:0 8px; display: inline-block}
 #container.drawer .multiList.type1 > li.id_info {padding-top:0}
 #container.drawer .multiList.type1 > li.noline {border-bottom:0}
 #container.drawer .multiList.type1 > .mt0 {margin-top:0}
 #container.drawer .multiList.type1 > li slp-checkbox.mr10 {margin-right:10px}
 #container.drawer .title_line {border-bottom:#999 1px solid; padding-bottom:8px}
 #container.drawer .title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
-#container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px; color:rgba(0,0,0,0.65); margin:20px 0}
-#container.drawer .version {font-size:map-get($font_size, font_14);line-height: 20px; color:rgba(0,0,0,0.65); }
+#container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); margin:20px 0}
+#container.drawer .version {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); }
 #container.drawer .version .num {font-family: 'Roboto' ; margin-left:6px}
 #container.drawer .intSchBox .btn{top:20px}
 #container.drawer .subject {width:33%; margin-right:6px}
@@ -885,16 +878,16 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 
 #container.drawer .withdrawal>li {width:50%; border-bottom:#eaeaea 1px solid; padding:20px 6px;}
 #container.drawer .withdrawal>li.bl {border-left:#eaeaea 1px solid; padding-left:16px}
-#container.drawer .withdrawal>li p.subject {font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65); line-height: 18px}
+#container.drawer .withdrawal>li p.subject {font-size:map-get($font_size, font_12); color:map-get($mono_colors, mono_65); line-height: 18px}
 #container.drawer .withdrawal>li p.desc {font-size:map-get($font_size, font_20); margin:0; color:#000; line-height: 29px}
 #container.drawer .withdrawal>li p.desc .num {font-family: 'Roboto'; font-weight: 500; }
-#container.drawer span.agree {color:rgba(0,0,0,0.8); margin-left:5px}
+#container.drawer span.agree {color:map-get($mono_colors, mono_80); margin-left:5px}
 #container.drawer .withdrawal_btn {overflow: hidden;}
 #container.drawer .withdrawal_btn li {width:50%; float: left;};
 
 //팝업창
 .layerWrap .ly-body .ly-info .label-tit19 { font-size:map-get($font_size, font_19); line-height: 28px; letter-spacing: -0.59px; margin-bottom: 12px !important;}
-.layerWrap .ly-body .ly-info .contents15 { margin-top:2px;font-size:map-get($font_size, font_15);line-height: 27px;color:rgba(0,0,0,0.65); font-weight: 400}
+.layerWrap .ly-body .ly-info .contents15 { margin-top:2px;font-size:map-get($font_size, font_15);line-height: 27px;color:map-get($mono_colors, mono_65); font-weight: 400}
 .layerWrap .ly-body .ly-info ol.num { list-style-type : decimal; margin-top: 10px; padding-left: 17px}
 .layerWrap .ly-body .ly-info ol.num li { list-style-type : decimal; }
 
@@ -906,20 +899,20 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.drawer .multiList.type3 > li .in {padding:15px 0}
 #container.drawer .multiList.type3 > li .contents {font-size:map-get($font_size, font_16); color:#000}
 #container.drawer .multiList.type3 .ico.arrow {top: calc(50% - 6px)}
-#container.drawer .multiList.type3 .date {font-size:map-get($font_size, font_13);line-height: 19px; color:rgba(0,0,0,0.65); margin-top: 6px}
+#container.drawer .multiList.type3 .date {font-size:map-get($font_size, font_13);line-height: 19px; color:map-get($mono_colors, mono_65); margin-top: 6px}
 #container.event span.chip {display:inline-block; height:22px; border:1px solid #4e51d4; color:#4e51d4; padding: 1px 7px; line-height: 18px}
 #container.event span.chip.end {border:1px solid #ccc; color:rgba(0,0,0,0.5);}
 #container.drawer .down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-left:4px; margin-top:2px}
 #container.event.drawer #content .inner {padding-top: 22px}
 #container.mediaquery.event.drawer #header p.state {font-size:map-get($font_size, font_16); line-height: 20px; color:#4e51d4}
 #container.mediaquery.event.drawer #header p.h-tit {font-size:map-get($font_size, font_22); line-height: 31px; color:#000}
-#container.mediaquery.event.drawer #header p.date {font-size:map-get($font_size, font_14); line-height: 20px; color:rgba(0,0,0,0.8); font-weight: 300}
+#container.mediaquery.event.drawer #header p.date {font-size:map-get($font_size, font_14); line-height: 20px; color:map-get($mono_colors, mono_80); font-weight: 300}
 #container.event.drawer #content .inner { padding-top: 26px;}
 
 // 멀티스퀘어 소개
 #container.drawer #content.multiintroduce .inner {padding-top: 20px}
 #container.drawer .multiintroduce h1.title {font-size:map-get($font_size, font_26); color:#000; font-weight: 500; line-height: 22px; letter-spacing: -0.78px; margin-bottom:16px}
-#container.drawer .multiintroduce p.desc {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8); line-height: 25px; letter-spacing: -0.45px; margin:1px 0 12px}
+#container.drawer .multiintroduce p.desc {font-size:map-get($font_size, font_15); color:map-get($mono_colors, mono_80); line-height: 25px; letter-spacing: -0.45px; margin:1px 0 12px}
 #container.drawer .multiintroduce h2.title {font-size:map-get($font_size, font_20); color:#000; line-height: 28px; letter-spacing: -0.6px; margin-bottom: 14px}
 #container.drawer .multiintroduce p.contact {font-family: 'Roboto' ; font-size:map-get($font_size, font_20); font-weight:bold; opacity: 0.8; line-height: 20px; margin:2px 0 12px}
 #container.drawer .multiintroduce .map {width:324px;height:182px;background: url("../img/multiintroduce_map.png") no-repeat; }
@@ -954,19 +947,21 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 // 메인
 // common.css 에 추가
 .mb0{margin-bottom: 0px !important;}
+.mb5{margin-bottom: 5px !important;}
 .mb10{margin-bottom: 10px !important;}
 .mb13{margin-bottom: 13px !important;}
 .mb14{margin-bottom: 14px !important;}
 .mb20{margin-bottom: 20px !important;}
+.mb25{margin-bottom: 25px !important;}
 .ml-18 {margin-left:-18px !important;}
 .mr-18 {margin-right:-18px !important;}
 .pa0{padding:0px !important;}
 .pa15{padding:15px !important;}
 .pa25{padding:25px !important;}
 .pt10{padding-top:10px !important;}
-.fw300{font-weight: 300;}
 .MainType .h-tit1 {font-weight:700 !important;}
 .MainType .h-tit2 {font-weight:600 !important;}
+.MainType .sub-tit {font-size:map-get($font_size, font_13); color: map-get($mono_colors, mono_65);}
 // layout.css 에 추가
 #container #content .inner {padding-bottom: 12px;}
 // curateUI02 이미지 리사이즈
@@ -986,48 +981,64 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 .MainType div.no-date p+p {font-size: map-get($font_size, font_14); font-weight:400; color: map-get($mono_colors, mono_50); padding-bottom:15px;}
 .MainType div.no-date a {display:inline-block; font-size:map-get($font_size, font_14); color: map-get($mono_colors, mono_0); line-height: 38px; padding:0 28px; border-radius: 80px; cursor:pointer;}
 // Status 
-.status {border-top: 1px solid map-get($line_colors, B60); border-bottom: 1px solid map-get($line_colors, B60);}
-.status strong {color: map-get($mono_colors, mono_100); font-weight:500;}
-.status .white{padding:15px 24px 15px 145px; position:relative;}
-.status .gray{padding:15px 24px; background-color: map-get($bg_colors, BG_1);}
-.status .white .info {position:absolute; margin-top:-25px; top:50%; left: 24px;}
-.status .white .info strong {font-size: map-get($font_size, font_20);}
-.status .white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
-.status .white .info p + p {font-size: map-get($font_size, font_18);}
-.status dl{width: 100%; display: table; line-height: 180%; left: 24px;}
-.status dl.line {border-top: 1px solid map-get($line_colors, B89);}
-.status dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 40%; display: table-cell; }
-.status dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 60%; display: table-cell; text-align: right;}
-.status dd strong{font-size: map-get($font_size, font_16);}
-.status .white.big {padding-top:25px; padding-bottom:25px;}
-.status .white.big dl {line-height: 280%;}
-.status .white.big dl strong {font-size: map-get($font_size, font_22);}
-.status .white.big .info {position:absolute; margin-top:-50px; top:50%;}
-.status .white.big .info img{width: 98px; height: 98px;}
-.status .gray.big dl {line-height: 200%;}
-.status .line {border-top: 1px solid map-get($line_colors, B85);}
-.status .stepper {padding:24px; margin-bottom:0;}
-.status .stepper .ico{vertical-align: middle;}
-.status .stepper strong{font-size: map-get($font_size, font_22); font-weight:600; vertical-align: middle;}
-.status .stepper .progBox {height:6px;}
-.status .learn {padding: 15px 0;}
-.status .learn ul {display:table;     width: 100%;}
-.status .learn ul li { display: table-cell;}
-.status .learn ul li + li {border-left: 1px solid map-get($line_colors, B85);}
-.status .learn ul li p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_65); text-align: center;}
-.status .learn ul li p + p {font-size: map-get($font_size, font_13);}
-.status .learn ul li strong {font-size: map-get($font_size, font_18);}
+.MainType.status {border-top: 1px solid map-get($line_colors, B60); border-bottom: 1px solid map-get($line_colors, B60);}
+.MainType.status strong {color: map-get($mono_colors, mono_100); font-weight:500;}
+.MainType.status .white{padding:15px 24px 15px 145px; position:relative;}
+.MainType.status .gray{padding:15px 24px; background-color: map-get($bg_colors, BG_1);}
+.MainType.status .white .info {position:absolute; margin-top:-25px; top:50%; left: 24px;}
+.MainType.status .white .info strong {font-size: map-get($font_size, font_20);}
+.MainType.status .white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
+.MainType.status .white .info p + p {font-size: map-get($font_size, font_18);}
+.MainType.status dl{width: 100%; display: table; line-height: 180%; left: 24px;}
+.MainType.status dl.line {border-top: 1px solid map-get($line_colors, B89);}
+.MainType.status dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 40%; display: table-cell; }
+.MainType.status dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 60%; display: table-cell; text-align: right;}
+.MainType.status dd strong{font-size: map-get($font_size, font_16);}
+.MainType.status .white.big {padding-top:25px; padding-bottom:25px;}
+.MainType.status .white.big dl {line-height: 280%;}
+.MainType.status .white.big dl strong {font-size: map-get($font_size, font_22);}
+.MainType.status .white.big .info {position:absolute; margin-top:-50px; top:50%;}
+.MainType.status .white.big .info img{width: 98px; height: 98px;}
+.MainType.status .gray.big dl {line-height: 200%;}
+.MainType.status .line {border-top: 1px solid map-get($line_colors, B85);}
+.MainType.status .stepper {padding:24px; margin-bottom:0;}
+.MainType.status .stepper .ico{vertical-align: middle;}
+.MainType.status .stepper strong{font-size: map-get($font_size, font_22); font-weight:600; vertical-align: middle;}
+.MainType.status .stepper .progBox {height:6px;}
+.MainType.status .learn {padding: 15px 0;}
+.MainType.status .learn ul {display:table;     width: 100%;}
+.MainType.status .learn ul li { display: table-cell;}
+.MainType.status .learn ul li + li {border-left: 1px solid map-get($line_colors, B85);}
+.MainType.status .learn ul li p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_65); text-align: center;}
+.MainType.status .learn ul li p + p {font-size: map-get($font_size, font_13);}
+.MainType.status .learn ul li strong {font-size: map-get($font_size, font_18);}
 // thumList 에 카테고리 추가
-.scroll-x.type2 .inner2 {display: inline-block; margin-right: 8px;}
-.scroll-x.type2 .inner2 .category {font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_80); font-weight:700; height:23px; margin-bottom:8px; display:block; vertical-align: top;}
-.scroll-x.type2 .inner2 .category .ico {vertical-align: inherit; margin-top: 5px;}
-.scroll-x.type1 {border-bottom: 8px solid map-get($line_colors, B95);}
-.scroll-x.type1 .inner2 {width:310px; display:inline-block; margin-right:8px;}
-.scroll-x.type1 .inner2 .thumList .tit {white-space: normal; width: 165px;}
-.scroll-x.type1 .inner2 .thumList > li {width:310px; border-bottom:0;}
-.scroll-x.type1 .inner2 .thumList > li + li {border-top: 1px solid map-get($line_colors, B89); margin-top:0; padding-top:10px;}
-
-
+.MainType .scroll-x.type2 .inner2 {display: inline-block; margin-right: 8px;}
+.MainType .scroll-x.type2 .inner2 .category {font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_80); font-weight:700; height:23px; margin-bottom:8px; display:block; vertical-align: top;}
+.MainType .scroll-x.type2 .inner2 .category .ico {vertical-align: inherit; margin-top: 5px;}
+.MainType .scroll-x.type1 {border-bottom: 8px solid map-get($line_colors, B95);}
+.MainType .scroll-x.type1 .inner2 {width:310px; display:inline-block; margin-right:8px;}
+.MainType .scroll-x.type1 .inner2 .thumList .tit {white-space: normal; width: 165px;}
+.MainType .scroll-x.type1 .inner2 .thumList > li {width:310px; border-bottom:0;}
+.MainType .scroll-x.type1 .inner2 .thumList > li + li {border-top: 1px solid map-get($line_colors, B89); margin-top:0; padding-top:10px;}
+// 총합계
 .MainType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
+.MainType .total span {font-size: map-get($font_size, font_15);}
+.MainType .total span + span {font-size: map-get($font_size, font_13);}
 .MainType .total strong {color: map-get($mono_colors, mono_100);}
 .MainType .total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px}
+.MainType .total.noline {border:0 none; margin-bottom:0;}
+// 채널
+.MainType .labelChk2 .label .ico.arrow {margin-bottom:2px; width:12px; height:12px;}
+.MainType .labelChk2 input.chk:checked + .label .ico.arrow{background-image: url("../img/ic_next_line_white.png");}
+.MainType .thumList .writer {color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_13); margin-bottom:5px; display: block;}
+// info
+.MainType #header {background: url("../img/thum_no_L.jpg") no-repeat center center;}
+.MainType #header .hide_header {position: relative; padding-top:80px; color: map-get($mono_colors, mono_0); z-index: 2; line-height: normal; font-weight: 300; padding-left: 18px; width: 100%; height:100%;}
+.MainType #header .hide_header .h-tit1 {font-weight: 500 !important;}
+.MainType #header .hide_header p {font-weight: 300 !important;}
+.MainType #header .tagWrap span {border-color:map-get($mono_colors, mono_0); color: map-get($mono_colors, mono_0); font-size: map-get($font_size, font_12); height: 23px; opacity: 0.8;}
+.MainType #header .info li{display: inline-block; font-size: map-get($font_size, font_13); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
+.MainType #header .info li+li{margin-left: 5px;}
+.MainType #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #e3e3e3;}
+.MainType #header .cDim05{position: absolute; bottom:0; left:0; z-index: 1; width:100%; height: 100%; background: rgba(0, 0, 0, 0.5);}

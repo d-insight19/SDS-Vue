@@ -23,6 +23,7 @@ import ComponentsTabheader from '~workplace/common_page/components_tabheader'
 import ComponentsLayoutType1 from '~workplace/common_page/components_layout_type1'
 import ComponentsLayoutType2 from '~workplace/common_page/components_layout_type2'
 import ComponentsLayoutType3 from '~workplace/common_page/components_layout_type3'
+import ComponentsKeyboard from '~workplace/common_page/components_keyboard'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -84,8 +85,12 @@ import Study04SOquizsubmission from '~workplace/study/Study_04_SO_quiz_submissio
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
 import Study04SOsurveyscale from '~workplace/study/Study_04_SO_survey_scale'
 import Study04SOsurveyanswer from '~workplace/study/Study_04_SO_survey_answer'
+import Study04SOopinionintro from '~workplace/study/Study_04_SO_opinion_intro'
 import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
 import Study04SOopinionwrittingguide from '~workplace/study/Study_04_SO_opinion_writtingguide'
+import Study04SOopinionanswer from '~workplace/study/Study_04_SO_opinion_answer'
+import Study04SOopinionchoose from '~workplace/study/Study_04_SO_opinion_choose'
+import Study04SOopinionmultiopinon from '~workplace/study/Study_04_SO_opinion_multiopinon'
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulation_submission'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
@@ -114,9 +119,20 @@ import MainGraphClassList from '~workplace/main/Main_graphClassList'
 import MainGraphClassListMore from '~workplace/main/Main_graphClassList_more'
 import MainGradeStatus from '~workplace/main/Main_gradeStatus'
 import MainGradeStatusDetail from '~workplace/main/Main_gradeStatusDetail'
+import MainStatistics1 from '~workplace/main/Main_statistics_1'
+import MainStatistics2 from '~workplace/main/Main_statistics_2'
+import MainStatistics3 from '~workplace/main/Main_statistics_3'
+import MainStatistics4 from '~workplace/main/Main_statistics_4'
 import MainBrowseMain from '~workplace/main/Main_browse_main'
 import MainBrowseListDetail01 from '~workplace/main/Main_browse_listDetail01'
 import MainBrowseListDetail02 from '~workplace/main/Main_browse_listDetail02'
+import MainSubscribed from '~workplace/main/Main_subscribed'
+import MainSubscribedEmpty from '~workplace/main/Main_subscribed_empty'
+import MainChannelListNull from '~workplace/main/Main_channel_list_null'
+import MainChannelList from '~workplace/main/Main_channel_list'
+import MainChannelDetailBefore from '~workplace/main/Main_channel_detail_before'
+import MainChannelDetailAfter from '~workplace/main/Main_channel_detail_after'
+import MainKeywordList from '~workplace/main/Main_keyword_list'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -291,6 +307,11 @@ var rootRoutes = [
     path: '/components_layout_type3',
     name: 'components_layout_type3',
     component: ComponentsLayoutType3
+  },
+  {
+    path: '/components_keyboard',
+    name: 'components_keyboard',
+    component: ComponentsKeyboard
   },
   {
     path: '/Login_findcenter',
@@ -603,6 +624,11 @@ var rootRoutes = [
     component: Study04SOsurveyanswer
   },
   {
+    path: '/Study_04_SO_opinion_intro',
+    name: 'Study_04_SO_opinion_intro',
+    component: Study04SOopinionintro
+  },
+  {
     path: '/Study_04_SO_opinion_submission',
     name: 'Study_04_SO_opinion_submission',
     component: Study04SOopinionsubmission
@@ -611,6 +637,21 @@ var rootRoutes = [
     path: '/Study_04_SO_opinion_writtingguide',
     name: 'Study_04_SO_opinion_writtingguide',
     component: Study04SOopinionwrittingguide
+  },
+  {
+    path: '/Study_04_SO_opinion_answer',
+    name: 'Study_04_SO_opinion_answer',
+    component: Study04SOopinionanswer
+  },
+  {
+    path: '/Study_04_SO_opinion_choose',
+    name: 'Study_04_SO_opinion_choose',
+    component: Study04SOopinionchoose
+  },
+  {
+    path: '/Study_04_SO_opinion_multiopinon',
+    name: 'Study_04_SO_opinion_multiopinon',
+    component: Study04SOopinionmultiopinon
   },
   {
     path: '/Study_04_SO_pledge',
@@ -732,6 +773,26 @@ var rootRoutes = [
     component: MainGradeStatusDetail
   },
   {
+    path: '/Main_statistics_1',
+    name: 'Main_statistics_1',
+    component: MainStatistics1
+  },
+  {
+    path: '/Main_statistics_2',
+    name: 'Main_statistics_2',
+    component: MainStatistics2
+  },
+  {
+    path: '/Main_statistics_3',
+    name: 'Main_statistics_3',
+    component: MainStatistics3
+  },
+  {
+    path: '/Main_statistics_4',
+    name: 'Main_statistics_4',
+    component: MainStatistics4
+  },
+  {
     path: '/Main_browse_main',
     name: 'Main_browse_main',
     component: MainBrowseMain
@@ -745,6 +806,41 @@ var rootRoutes = [
     path: '/Main_browse_listDetail02',
     name: 'Main_browse_listDetail02',
     component: MainBrowseListDetail02
+  },
+  {
+    path: '/Main_subscribed',
+    name: 'Main_subscribed',
+    component: MainSubscribed
+  },
+  {
+    path: '/Main_subscribed_empty',
+    name: 'Main_subscribed_empty',
+    component: MainSubscribedEmpty
+  },
+  {
+    path: '/Main_channel_list_null',
+    name: 'Main_channel_list_null',
+    component: MainChannelListNull
+  },
+  {
+    path: '/Main_channel_list',
+    name: 'Main_channel_list',
+    component: MainChannelList
+  },
+  {
+    path: '/Main_channel_detail_before',
+    name: 'Main_channel_detail_before',
+    component: MainChannelDetailBefore
+  },
+  {
+    path: '/Main_channel_detail_after',
+    name: 'Main_channel_detail_after',
+    component: MainChannelDetailAfter
+  },
+  {
+    path: '/Main_keyword_list',
+    name: 'Main_keyword_list',
+    component: MainKeywordList
   },
   {
     path: '/Drawer_alerm',

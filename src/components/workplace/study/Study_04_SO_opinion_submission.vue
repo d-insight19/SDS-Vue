@@ -15,7 +15,7 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
+                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:32px">                
                     <div class="hide-inner">                           
                         <p class="h-tit5"> 
                             <span class="ico chk"></span>
@@ -96,7 +96,7 @@
                             <p class="prog-txt">대통령의 가족을 지켜는 법은 필수이기 때문에 현재 정책을 유지해야 한다.</p>
                             <div class="fr">
                                 <span class="part-num"><span>5</span>명</span>
-                                <span class="v-line01">|</span>
+                                <span class="pipe"></span>
                                 <span class="part-num-2"><span>17</span>%</span>
                             </div>                                   
                         </div>
@@ -107,7 +107,7 @@
                             <p class="prog-txt"> <span class="chip border_clr2 color_clr2">나의 선택</span>  대통령의 가족도 우리와 같은 시민일 뿐, 경호 예우는 필요없다.</p>
                             <div class="fr">
                                 <span class="part-num"><span>16</span>명</span>
-                                <span class="v-line01">|</span>
+                                <span class="pipe"></span>
                                 <span class="part-num-2"><span>58</span>%</span>
                             </div>                                  
                         </div>
@@ -118,16 +118,15 @@
                             <p class="prog-txt">잘 모르겠다.</p>
                             <div class="fr">
                                 <span class="part-num"><span>7</span>명</span>
-                                <span class="v-line01">|</span>
+                                <span class="pipe"></span>
                                 <span class="part-num-2"><span>21.5</span>%</span>
                             </div>                                
                         </div>
                         <div class="txt-line">
                             <span class="my-op">나의 의견</span>
                             <p class="total-op"> 
-                                <span class="total-val">전체의견보기</span>                                
-                                <span class="total-num">26</span>        
-                                <span class="ico gray_next"></span>                        
+                                <span class="total-val color_clr2">전체보기</span>                                
+                                <span class="total-num color_clr2">26</span>                      
                             </p> 
                         </div>
                         <p class="line01"></p>
@@ -148,7 +147,7 @@
                             </p>
                         </div>
                         <div class="absBtmBtn">  
-                            <button type="button" class="btn md clr1">완료</button>
+                            <button type="button" class="btn md clr1">제출</button>
                         </div>
                     </div>
                 </div>

@@ -2981,8 +2981,12 @@
         <td>1. 해당 탭 사용여부 설정</td>
         <td class="textL">02.Main_02.02.05.Main_subscribed</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_subscribed' }">
+            Main_subscribed
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_subscribed_empty' }">
+            Main_subscribed_empty
           </router-link>
         </td>
         <td></td>
@@ -2998,8 +3002,12 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Channel    List_null</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_channel_list_null' }">
+            Main_channel_list_null
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_channel_list' }">
+            Main_channel_list
           </router-link>
         </td>
         <td></td>
@@ -3015,8 +3023,12 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Channel_Detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_channel_detail_before' }">
+            Main_channel_detail_before
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_channel_detail_after' }">
+            Main_channel_detail_after
           </router-link>
         </td>
         <td></td>
@@ -3049,8 +3061,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Keyword    List</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_keyword_list' }">
+            Main_keyword_list
           </router-link>
         </td>
         <td></td>
@@ -5973,8 +5985,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.15.SO_opinion_intro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_intro' }">
+            Study_04_SO_opinion_intro
           </router-link>
         </td>
         <td></td>
@@ -6007,8 +6019,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.17.SO_opinion_answer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_answer' }">
+            Study_04_SO_opinion_answer
           </router-link>
         </td>
         <td></td>
@@ -6037,8 +6049,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.18.SO_opinion_choose</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_choose' }">
+            Study_04_SO_opinion_choose
           </router-link>
         </td>
         <td></td>
@@ -6067,8 +6079,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.19.SO_opinion_multiopinon</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_multiopinon' }">
+            Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
         <td></td>
@@ -10264,6 +10276,23 @@
         <td>
           <router-link :to="{ name: 'components_layout_type3' }">
             components_layout_type3
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>키보드</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_keyboard' }">
+            components_keyboard
           </router-link>
         </td>
         <td></td>

@@ -3,10 +3,10 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_survey_scale pd70">
+        <div id="container" class="mediaquery study_survey pd70">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand wh">          
+            <div v-if="headerType == '1'" id="header" class="expand wh survey-head-bg">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                     <div class="page-btn">
@@ -16,7 +16,7 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:66px; padding-bottom:60px">                
+                <div class="hide_header" style="background:rgba(0,0,0,0.45);  padding-top:66px; padding-bottom:60px">                
                     <div class="hide-inner">
                         <span class="chip wh">설문</span>                         
                         <p class="h-tit1">삶의 만족도 지수 조사</p>
