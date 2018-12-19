@@ -125,6 +125,11 @@ import MainBrowseListDetail01 from '~workplace/main/Main_browse_listDetail01'
 import MainBrowseListDetail02 from '~workplace/main/Main_browse_listDetail02'
 import MainSubscribed from '~workplace/main/Main_subscribed'
 import MainSubscribedEmpty from '~workplace/main/Main_subscribed_empty'
+import MainChannelListNull from '~workplace/main/Main_channel_list_null'
+import MainChannelList from '~workplace/main/Main_channel_list'
+import MainChannelDetailBefore from '~workplace/main/Main_channel_detail_before'
+import MainChannelDetailAfter from '~workplace/main/Main_channel_detail_after'
+import MainKeywordList from '~workplace/main/Main_keyword_list'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -781,6 +786,31 @@ var rootRoutes = [
     path: '/Main_subscribed_empty',
     name: 'Main_subscribed_empty',
     component: MainSubscribedEmpty
+  },
+  {
+    path: '/Main_channel_list_null',
+    name: 'Main_channel_list_null',
+    component: MainChannelListNull
+  },
+  {
+    path: '/Main_channel_list',
+    name: 'Main_channel_list',
+    component: MainChannelList
+  },
+  {
+    path: '/Main_channel_detail_before',
+    name: 'Main_channel_detail_before',
+    component: MainChannelDetailBefore
+  },
+  {
+    path: '/Main_channel_detail_after',
+    name: 'Main_channel_detail_after',
+    component: MainChannelDetailAfter
+  },
+  {
+    path: '/Main_keyword_list',
+    name: 'Main_keyword_list',
+    component: MainKeywordList
   },
   {
     path: '/Drawer_alerm',

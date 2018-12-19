@@ -2996,8 +2996,12 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Channel    List_null</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_channel_list_null' }">
+            Main_channel_list_null
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_channel_list' }">
+            Main_channel_list
           </router-link>
         </td>
         <td></td>
@@ -3013,11 +3017,15 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Channel_Detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_channel_detail_before' }">
+            Main_channel_detail_before
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_channel_detail_after' }">
+            Main_channel_detail_after
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">172</td>
@@ -3047,8 +3055,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Keyword    List</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_keyword_list' }">
+            Main_keyword_list
           </router-link>
         </td>
         <td></td>
