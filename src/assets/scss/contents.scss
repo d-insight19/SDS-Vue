@@ -1013,18 +1013,24 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 .MainType .total span + span {font-size: map-get($font_size, font_13);}
 .MainType .total strong {color: map-get($mono_colors, mono_100);}
 .MainType .total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px}
+.MainType .total.noline {border:0 none; margin-bottom:0;}
 // 
 .thumList.type7 {display: table; table-layout: fixed;}
-.thumList.type7 > li {display: table-cell; position: relative; padding-right: 8px; padding-bottom:0;}
+.thumList.type7 > li {position: relative; padding-bottom:0;}
 .thumList.type7 .in {position: absolute; bottom:0; left:0; z-index: 2; width:100%; height: 100%; padding:15px 24px;}
 .thumList.type7 .in .tit {color: map-get($mono_colors, mono_0); font-size: map-get($font_size, font_20); line-height: 26px; font-weight: 300; max-height: 52px; margin-bottom: 5px; white-space: normal;}
 .thumList.type7 .in .writer {color: map-get($mono_colors, mono_0); font-size: map-get($font_size, font_13); line-height: 28px; font-weight: 300;}
 .thumList.type7 .in .info {color: map-get($mono_colors, mono_0); font-size: map-get($font_size, font_13); font-weight: 300; position: absolute; right: 24px; bottom: 10px; margin-bottom: 0; opacity:0.8;}
 .thumList.type7 .in .info .line {border:1px solid map-get($mono_colors, mono_0); padding: 0px 2px; line-height: 11px; display: inline-block; font-size: 9px; border-radius: 10px;}
-.thumList.type7 .thum {position: relative; z-index: 0; width:310px; height:152px;}
-.thumList.type7 .thum .thumImg {width:310px; height:152px;}
+.thumList.type7 .thum {position: relative; z-index: 0; width:100%; height:152px;}
+.thumList.type7 .thum .thumImg {width:100%; height:152px;}
 .thumList.type7 .thum .cDim04{position: absolute; bottom:0; left:0; z-index: 1; width:100%; height: 100%; background: rgba(0, 0, 0, 0.4);}
 .thumList.type7 .thum .cDim03{position: absolute; bottom:0; left:0; z-index: 1; width:100%; height: 40px; background: rgba(0, 0, 0, 0.3);}
+// horizontal
+.scroll-x .thumList.type7  > li {display: table-cell; width: 310px; padding-right: 8px;}
+.scroll-x .thumList.type7 .thum {width:310px;}
+.scroll-x .thumList.type7 .thum .thumImg {width:310px;}
+
 //
 .labelChk2 .label .ico.arrow {margin-bottom:2px; width:12px; height:12px;}
 .labelChk2 input.chk:checked + .label .ico.arrow{background-image: url("../img/ic_next_line_white.png");}
