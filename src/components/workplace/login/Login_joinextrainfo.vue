@@ -119,7 +119,7 @@
                         </div>
 
                         <!-- list -->
-                        <ul class="ulList type4" v-if="marketingFlag">
+                        <ul class="ulList type4" v-show="marketingFlag">
                           <li><label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">이메일 수신</span></label></li>
                           <li><label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">SMS 수신</span></label></li>
                           <li><label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">전화 수신</span></label></li>
