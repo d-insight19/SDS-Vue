@@ -209,7 +209,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .labelChk.type2 input.chk + .ico{width:22px;height:22px;left:5px;}
 .labelChk.type2 input.chk:checked + .ico{background: map-get($static_colors, primary) url("../img/ic_checked_wh_20.png") no-repeat; background-size: cover;}
 .labelChk.type2 input.chk:checked ~ .label{color:map-get($static_colors, primary)}
-.labelChk.type2 .label{font-size:map-get($font_size, font_15); line-height: 22px;color:#000;}
+.labelChk.type2 .label{font-size:map-get($font_size, font_15); line-height: 22px;color:#000;letter-spacing: 0;}
 .labelChk.type2 input.chk:checked ~ .thum{border-color:map-get($static_colors, primary)}
 .labelChk.type2 .thum{display:block;width:284px;height:213px;border:3px solid transparent}
 .labelChk.type2 .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;position: relative;}
