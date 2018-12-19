@@ -15,7 +15,7 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
+                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:32px">                
                     <div class="hide-inner">                           
                         <p class="h-tit5"> 
                             <span class="ico chk"></span>
@@ -125,9 +125,8 @@
                         <div class="txt-line">
                             <span class="my-op">나의 의견</span>
                             <p class="total-op"> 
-                                <span class="total-val">전체의견보기</span>                                
-                                <span class="total-num">26</span>        
-                                <span class="ico gray_next"></span>                        
+                                <span class="total-val color_clr2">전체보기</span>                                
+                                <span class="total-num color_clr2">26</span>                      
                             </p> 
                         </div>
                         <p class="line01"></p>
@@ -148,7 +147,7 @@
                             </p>
                         </div>
                         <div class="absBtmBtn">  
-                            <button type="button" class="btn md clr1">완료</button>
+                            <button type="button" class="btn md clr1">제출</button>
                         </div>
                     </div>
                 </div>

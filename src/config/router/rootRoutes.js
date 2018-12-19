@@ -88,6 +88,7 @@ import Study04SOsurveyanswer from '~workplace/study/Study_04_SO_survey_answer'
 import Study04SOopinionintro from '~workplace/study/Study_04_SO_opinion_intro'
 import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
 import Study04SOopinionwrittingguide from '~workplace/study/Study_04_SO_opinion_writtingguide'
+import Study04SOopinionanswer from '~workplace/study/Study_04_SO_opinion_answer'
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulation_submission'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
@@ -617,6 +618,11 @@ var rootRoutes = [
     path: '/Study_04_SO_opinion_writtingguide',
     name: 'Study_04_SO_opinion_writtingguide',
     component: Study04SOopinionwrittingguide
+  },
+  {
+    path: '/Study_04_SO_opinion_answer',
+    name: 'Study_04_SO_opinion_answer',
+    component: Study04SOopinionanswer
   },
   {
     path: '/Study_04_SO_pledge',
