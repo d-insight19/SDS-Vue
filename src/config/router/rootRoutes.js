@@ -83,12 +83,15 @@ import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentbestanswer from '~workplace/study/Study_04_SO_assinment_bestanswer'
 import Study04SOquizsubmission from '~workplace/study/Study_04_SO_quiz_submission'
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
+import Study04SOsurveyintro from '~workplace/study/Study_04_SO_survey_intro'
 import Study04SOsurveyscale from '~workplace/study/Study_04_SO_survey_scale'
 import Study04SOsurveyanswer from '~workplace/study/Study_04_SO_survey_answer'
 import Study04SOopinionintro from '~workplace/study/Study_04_SO_opinion_intro'
 import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
 import Study04SOopinionwrittingguide from '~workplace/study/Study_04_SO_opinion_writtingguide'
 import Study04SOopinionanswer from '~workplace/study/Study_04_SO_opinion_answer'
+import Study04SOopinionchoose from '~workplace/study/Study_04_SO_opinion_choose'
+import Study04SOopinionmultiopinon from '~workplace/study/Study_04_SO_opinion_multiopinon'
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulation_submission'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
@@ -126,6 +129,11 @@ import MainBrowseListDetail01 from '~workplace/main/Main_browse_listDetail01'
 import MainBrowseListDetail02 from '~workplace/main/Main_browse_listDetail02'
 import MainSubscribed from '~workplace/main/Main_subscribed'
 import MainSubscribedEmpty from '~workplace/main/Main_subscribed_empty'
+import MainChannelListNull from '~workplace/main/Main_channel_list_null'
+import MainChannelList from '~workplace/main/Main_channel_list'
+import MainChannelDetailBefore from '~workplace/main/Main_channel_detail_before'
+import MainChannelDetailAfter from '~workplace/main/Main_channel_detail_after'
+import MainKeywordList from '~workplace/main/Main_keyword_list'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -166,6 +174,18 @@ import B2CDrawersettingsopensource from '~workplace/drawer/B2C_Drawer_settings_o
 import Drawersettings01 from '~workplace/drawer/Drawer_settings01'
 import Drawersettings02 from '~workplace/drawer/Drawer_settings02'
 import B2CDrawersettingspush from '~workplace/drawer/B2C_Drawer_settings_push'
+
+import CustomerCenterNotice from '~workplace/customercenter/CustomerCenter_Notice'
+import CustomerCenterNoticedetail from '~workplace/customercenter/CustomerCenter_Notice_detail'
+import CustomerCenterlibrary from '~workplace/customercenter/CustomerCenter_library'
+import CustomerCenterlibrarydetail from '~workplace/customercenter/CustomerCenter_library_detail'
+import CustomerCenterlibrarydetaillike from '~workplace/customercenter/CustomerCenter_library_detail_like'
+import CustomerCenterFAQtotal from '~workplace/customercenter/CustomerCenter_FAQ_total'
+import CustomerCenterFAQ from '~workplace/customercenter/CustomerCenter_FAQ'
+import CustomerCenterStudyguide from '~workplace/customercenter/CustomerCenter_Studyguide'
+import CustomerCenterStudyguidedetail from '~workplace/customercenter/CustomerCenter_Studyguide_detail'
+import CustomerCenterFAQdetail from '~workplace/customercenter/CustomerCenter_FAQ_detail'
+import CustomerCenterInquiry from '~workplace/customercenter/CustomerCenter_Inquiry'
 
 // 1번 영역
 var rootRoutes = [
@@ -595,6 +615,11 @@ var rootRoutes = [
     component: Study04SOsurveysubmission
   },
   {
+    path: '/Study_04_SO_survey_intro',
+    name: 'Study_04_SO_survey_intro',
+    component: Study04SOsurveyintro
+  },
+  {
     path: '/Study_04_SO_survey_scale',
     name: 'Study_04_SO_survey_scale',
     component: Study04SOsurveyscale
@@ -623,6 +648,16 @@ var rootRoutes = [
     path: '/Study_04_SO_opinion_answer',
     name: 'Study_04_SO_opinion_answer',
     component: Study04SOopinionanswer
+  },
+  {
+    path: '/Study_04_SO_opinion_choose',
+    name: 'Study_04_SO_opinion_choose',
+    component: Study04SOopinionchoose
+  },
+  {
+    path: '/Study_04_SO_opinion_multiopinon',
+    name: 'Study_04_SO_opinion_multiopinon',
+    component: Study04SOopinionmultiopinon
   },
   {
     path: '/Study_04_SO_pledge',
@@ -787,6 +822,31 @@ var rootRoutes = [
     path: '/Main_subscribed_empty',
     name: 'Main_subscribed_empty',
     component: MainSubscribedEmpty
+  },
+  {
+    path: '/Main_channel_list_null',
+    name: 'Main_channel_list_null',
+    component: MainChannelListNull
+  },
+  {
+    path: '/Main_channel_list',
+    name: 'Main_channel_list',
+    component: MainChannelList
+  },
+  {
+    path: '/Main_channel_detail_before',
+    name: 'Main_channel_detail_before',
+    component: MainChannelDetailBefore
+  },
+  {
+    path: '/Main_channel_detail_after',
+    name: 'Main_channel_detail_after',
+    component: MainChannelDetailAfter
+  },
+  {
+    path: '/Main_keyword_list',
+    name: 'Main_keyword_list',
+    component: MainKeywordList
   },
   {
     path: '/Drawer_alerm',
@@ -982,6 +1042,61 @@ var rootRoutes = [
     path: '/B2C_Drawer_settings_push',
     name: 'B2C_Drawer_settings_push',
     component: B2CDrawersettingspush
+  },
+  {
+    path: '/CustomerCenter_Notice',
+    name: 'CustomerCenter_Notice',
+    component: CustomerCenterNotice
+  },
+  {
+    path: '/CustomerCenter_Notice_detail',
+    name: 'CustomerCenter_Notice_detail',
+    component: CustomerCenterNoticedetail
+  },
+  {
+    path: '/CustomerCenter_library',
+    name: 'CustomerCenter_library',
+    component: CustomerCenterlibrary
+  },
+  {
+    path: '/CustomerCenter_library_detail',
+    name: 'CustomerCenter_library_detail',
+    component: CustomerCenterlibrarydetail
+  },
+  {
+    path: '/CustomerCenter_library_detail_like',
+    name: 'CustomerCenter_library_detail_like',
+    component: CustomerCenterlibrarydetaillike
+  },
+  {
+    path: '/CustomerCenter_FAQ_total',
+    name: 'CustomerCenter_FAQ_total',
+    component: CustomerCenterFAQtotal
+  },
+  {
+    path: '/CustomerCenter_FAQ',
+    name: 'CustomerCenter_FAQ',
+    component: CustomerCenterFAQ
+  },
+  {
+    path: '/CustomerCenter_Studyguide',
+    name: 'CustomerCenter_Studyguide',
+    component: CustomerCenterStudyguide
+  },
+  {
+    path: '/CustomerCenter_Studyguide',
+    name: 'CustomerCenter_Studyguide_detail',
+    component: CustomerCenterStudyguidedetail
+  },
+  {
+    path: '/CustomerCenter_FAQ_detail',
+    name: 'CustomerCenter_FAQ_detail',
+    component: CustomerCenterFAQdetail
+  },
+  {
+    path: '/CustomerCenter_Inquiry',
+    name: 'CustomerCenter_Inquiry',
+    component: CustomerCenterInquiry
   }
 ]
 

@@ -1027,8 +1027,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_01.01_Notice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Notice' }">
+            CustomerCenter_Notice
           </router-link>
         </td>
         <td></td>
@@ -1044,8 +1044,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_01.02_Notice_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Notice_detail' }">
+            CustomerCenter_Notice_detail
           </router-link>
         </td>
         <td></td>
@@ -1061,8 +1061,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_02.01_library</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_library' }">
+            CustomerCenter_library
           </router-link>
         </td>
         <td></td>
@@ -1078,8 +1078,11 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_02.02_library_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_library_detail' }">
+            CustomerCenter_library_detail
+          </router-link>,
+            <router-link :to="{ name: 'CustomerCenter_library_detail_like' }">
+            CustomerCenter_library_detail_like
           </router-link>
         </td>
         <td></td>
@@ -1095,8 +1098,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_03.01_Studyguide</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Studyguide' }">
+            CustomerCenter_Studyguide
           </router-link>
         </td>
         <td></td>
@@ -1112,8 +1115,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_03.02_Studyguide_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Studyguide_detail' }">
+            CustomerCenter_Studyguide_detail
           </router-link>
         </td>
         <td></td>
@@ -1129,8 +1132,11 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_04.01_FAQ</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_FAQ_total' }">
+            CustomerCenter_FAQ_total
+          </router-link>,
+          <router-link :to="{ name: 'CustomerCenter_FAQ' }">
+            CustomerCenter_FAQ
           </router-link>
         </td>
         <td></td>
@@ -1163,8 +1169,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_05.01_Inquiry</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Inquiry' }">
+            CustomerCenter_Inquiry
           </router-link>
         </td>
         <td></td>
@@ -2996,8 +3002,12 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Channel    List_null</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_channel_list_null' }">
+            Main_channel_list_null
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_channel_list' }">
+            Main_channel_list
           </router-link>
         </td>
         <td></td>
@@ -3013,8 +3023,12 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Channel_Detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_channel_detail_before' }">
+            Main_channel_detail_before
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_channel_detail_after' }">
+            Main_channel_detail_after
           </router-link>
         </td>
         <td></td>
@@ -3047,8 +3061,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Keyword    List</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_keyword_list' }">
+            Main_keyword_list
           </router-link>
         </td>
         <td></td>
@@ -5750,9 +5764,9 @@
         <td>　</td>
         <td class="textL">05.Study_04.02.SO_quiz_intro</td>
         <td>
-          <!-- <router-link :to="{ name: 'Study_04_SO_quiz_intro' }">
+          <router-link :to="{ name: 'Study_04_SO_quiz_intro' }">
             Study_04_SO_quiz_intro
-          </router-link> -->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -5886,8 +5900,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.10.SO_survey_intro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_survey_intro' }">
+            Study_04_SO_survey_intro
           </router-link>
         </td>
         <td></td>
@@ -6035,8 +6049,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.18.SO_opinion_choose</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_choose' }">
+            Study_04_SO_opinion_choose
           </router-link>
         </td>
         <td></td>
@@ -6065,8 +6079,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.19.SO_opinion_multiopinon</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_multiopinon' }">
+            Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
         <td></td>
@@ -8199,8 +8213,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_04.02_FAQ_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_FAQ_detail' }">
+            CustomerCenter_FAQ_detail
           </router-link>
         </td>
         <td></td>

@@ -3,10 +3,10 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_survey_scale pd70">
+        <div id="container" class="mediaquery study_survey pd70">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand wh">          
+            <div v-if="headerType == '1'" id="header" class="expand wh survey-head-bg">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                     <div class="page-btn">
@@ -16,7 +16,7 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:66px; padding-bottom:60px">                
+                <div class="hide_header" style="background:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:60px">                
                     <div class="hide-inner">
                         <span class="chip wh">설문</span>                         
                         <p class="h-tit1">삶의 만족도 지수 조사</p>
@@ -99,17 +99,23 @@
                         <p class="survey-tit">행복에 관한 조사입니다.</p>
                         <p class="txt-tit">01. 다음 지문에서 느껴지는 행복 요소는 무엇이라 생각하는지 적으시오.</p>
                         <p class="inner-txt op65 mb20">낙관주의는 아직 현실화하지 않은 일을 좋은 방향으로 생각하는 능력이다. 만사가 잘 될 수 있다는 약속을 믿는 것이다. 중요한 건 ‘만사가 잘 될 거’라는 막연한 느낌이 아니라 약속이다. 진정한 낙관주의자는 그 약속을 현실화시키기 위해 자기가 해야 할 일을 찾는다.” 옌스 바이드너의 이야기입니다. </p>
-                        <input type="text" class="input" placeholder="의견을 입력해 주세요">
-                        <p class="inp-num"><span>0</span>/<span>300</span></p>      
+                        <input @input="onInput" type="text" class="input" placeholder="의견을 입력해 주세요">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength}}/300</span>
+                        </div>   
                         <p class="hr"></p>
-                        <p class="txt-tit">02. 나는 OO하는 것을 좋아한다.</p>                        
-                        <input type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대">
-                        <p class="inp-num"><span>4</span>/<span>300</span></p>
+                        <p class="txt-tit">02. 자신을 가장 불행하게 만드는 요소는 무엇이라고 생각하나요?</p>                        
+                        <input @input="onInput" type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength-2}}/300</span>
+                        </div>   
                         <p class="hr"></p>
                         <p class="txt-tit">03. 다음 지문에서 느껴지는 사람들이 불행한 이유는 무엇이라고 생각하는지 적으시오.</p>
                         <p class="inner-txt op65 mb20">낙관주의는 아직 현실화하지 않은 일을 좋은 방향으로 생각하는 능력이다. 만사가 잘 될 수 있다는 약속을 믿는 것이다. 중요한 건 ‘만사가 잘 될 거’라는 막연한 느낌이 아니라 약속이다. 진정한 낙관주의자는 그 약속을 현실화시키기 위해 자기가 해야 할 일을 찾는다.” 옌스 바이드너의 이야기입니다. </p>
-                        <input type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대한 두려움">
-                        <p class="inp-num"><span>15</span>/<span>300</span></p>         
+                        <input @input="onInput" type="text" class="input" placeholder="의견을 입력해 주세요" value="실패에 대한 두려움">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength-3}}/300</span>
+                        </div>           
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -143,12 +149,15 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1
+      headerType: 1,
+      keylength: 0
     }
   },
   /* vue function */
   methods: {
-
+    onInput (event) {
+      this.keylength = event.target.value.length
+    }
   }
 }
 </script>

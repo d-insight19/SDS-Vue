@@ -96,7 +96,7 @@
                             <p class="prog-txt">대통령의 가족을 지켜는 법은 필수이기 때문에 현재 정책을 유지해야 한다.</p>
                             <div class="fr">
                                 <span class="part-num"><span>5</span>명</span>
-                                <span class="v-line01">|</span>
+                                <span class="pipe"></span>
                                 <span class="part-num-2"><span>17</span>%</span>
                             </div>                                   
                         </div>
@@ -107,7 +107,7 @@
                             <p class="prog-txt"> <span class="chip border_clr2 color_clr2">나의 선택</span>  대통령의 가족도 우리와 같은 시민일 뿐, 경호 예우는 필요없다.</p>
                             <div class="fr">
                                 <span class="part-num"><span>16</span>명</span>
-                                <span class="v-line01">|</span>
+                                <span class="pipe"></span>
                                 <span class="part-num-2"><span>58</span>%</span>
                             </div>                                  
                         </div>
@@ -118,7 +118,7 @@
                             <p class="prog-txt">잘 모르겠다.</p>
                             <div class="fr">
                                 <span class="part-num"><span>7</span>명</span>
-                                <span class="v-line01">|</span>
+                                <span class="pipe"></span>
                                 <span class="part-num-2"><span>21.5</span>%</span>
                             </div>                                
                         </div>

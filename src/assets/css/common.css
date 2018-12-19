@@ -14,6 +14,7 @@
 .ico.view{width:16px;height:16px;background: url("../img/ic_view_line_16.png") no-repeat; }
 .ico.arrow{width:16px;height:16px;background: url("../img/ic_next_line_black.png") no-repeat; background-size: contain; }
 .ico.gray_next{width:16px;height:16px;background: url("../img/ic_next.png") no-repeat; }
+.ico.comment{width:20px;height:20px;background: url("../img/ic_bubble_line_20.png") no-repeat; }
 
 /* 추가이미지 2018-12-07 */
 .ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }
@@ -62,6 +63,7 @@
 .ico.grade_gold {width:25px;height:25px;background: url("../img/ic_grade_gold.png") no-repeat; background-size: 36px; background-position:center center;}
 .ico.next_16_80 {width:16px; height:16px; background: url("../img/ic_next_16_80.png") no-repeat; background-size: 16px;}
 
+
 #header.mainType2 .line2 .ico{vertical-align: top}
 
 .ico2.like{width:20px;height:20px;background: url("../img/ic_thumb_line_20.png") no-repeat; }
@@ -69,6 +71,12 @@
 .ico2.share{width:20px;height:20px;background: url("../img/ic_share_line_20.png") no-repeat; }
 .ico2.reply{width:20px;height:20px;background: url("../img/ic_indent_20.png") no-repeat; }
 .ico2.heart{width:20px;height:20px;background: url("../img/ic_heart_line_20.png") no-repeat; }
+
+/* 추가 이미지 2018-12-19 */
+.ico.like_32{width:32px; height:32px; background: url("../img/ic_thumb_line_32.png") no-repeat; margin-top:-6px }
+.ico.like_32.red {background: url("../img/ic_thumb_line_red_32.png")}
+.ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}
+.ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
 
 /* ico btn */
 .btn.only .ico{display: block;}
@@ -79,6 +87,9 @@
 
 .btn.sm.add{text-align: center;}
 .btn.sm.add .ico{width:8px; height:8px; margin:0 4px 3px 0; background-position: -120px -67px;}
+.btn.staus_crl1 {color:#FF4141}
+
+
 
 /* font-weight -> 500  */
 .fwl{font-weight: 300 !important;}
@@ -130,6 +141,7 @@
 .mt10{margin-top: 10px !important;}
 .mt12{margin-top: 12px !important;}/*12월12일 추가*/ 
 .mt20{margin-top: 20px !important;}/*12월12일 추가*/ 
+.mt22{margin-top: 22px !important;}/*12월19일 추가*/
 .mt24{margin-top: 24px !important;}
 .mt25{margin-top: 25px !important;}
 .mt26{margin-top: 26px !important;}
@@ -143,16 +155,19 @@
 
 
 .mb20{margin-bottom: 20px !important;}
+.mb22{margin-bottom: 22px !important;}/*12월19일 추가*/
 .mb24{margin-bottom: 24px !important;}
 .mb26{margin-bottom: 26px !important;}
 .mb28{margin-bottom: 28px !important;}/*12월14일 추가*/
 .mb32{margin-bottom: 32px !important;}
 .mb58{margin-bottom: 58px !important;}/*12월12일 추가*/
+.mb70{margin-bottom: 70px !important;}/*12월19일 추가*/
 
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
 
 .pdt22{padding-top:22px !important;}
+.pdb98{padding-bottom:98px !important;}
 
 /* hr */
 .hr{height:8px; margin: 25px -24px; background:#f6f6f6;}

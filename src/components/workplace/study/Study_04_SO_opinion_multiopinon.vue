@@ -96,12 +96,44 @@
                     <div class="inner"> 
                         <p class="inner-txt">의견공유를 통해 자신의 의견을 사람들과 공유하고 다양한 의견을 들어보세요. 5분정도 걸리는 간단한 주제입니다.</p>
                         <p class="line02"></p>
-                        <p class="txt-tit">OO은 OO해야 합니다. 의견공유 텍스트 질문 영역입니다.  당신의 의견은 어떻습니까?</p>
+                        <p class="txt-tit">01. 당신의 의견은 어떻습니까?</p>
                         <button class="guide-btn">작성가이드</button>
-                        <input @input="onInput" type="text" class="input" placeholder="의견을 입력해 주세요">
-                        <div class="inputbottom inp-num">
-                            <span class="strlenth" >{{keylength}}/300</span>
-                        </div> 
+                        <input type="text" class="input" placeholder="의견을 입력해 주세요">
+                        <p class="inp-num"><span>0</span>/<span>300</span></p>
+                        <p class="hr"></p>
+                        <p class="txt-tit">02. 당신의 의견은 어떻습니까?</p>
+                        <button class="guide-btn">작성가이드</button>
+                        <ul class="ul-block com-rdo">
+                            <li>
+                                <label class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label" >대통령의 가족을 지켜는 법은 필수이기 때문에 현재 정책을 유지해야 한다.</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo" checked>
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"  >대통령의 가족도 우리와 같은 시민일 뿐, 경호할 필요는 없다고 생각한다.</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label class="labelRdo">
+                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label" >잘 모르겠다.</span>                    
+                                </label>
+                            </li>
+                        </ul>
+                        <input type="text" class="input" placeholder="의견을 입력해 주세요">
+                        <p class="inp-num"><span>0</span>/<span>300</span></p>
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -125,7 +157,7 @@
   1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝  or  헤더 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
 */
 export default {
-  name: 'Study_04_SO_opinion_answer',
+  name: 'Study_04_SO_opinion_multiopinon',
   props: {
   },
   /* vue lifecycle */
@@ -136,20 +168,12 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1,
-      keylength: 0
+      headerType: 1
     }
   },
   /* vue function */
   methods: {
-    // onInput (event) {
-    //   this.keylength = event.target.value.length
-    //   event.target.style.height = '1px'
-    // //   event.target.style.height = (event.target.scrollHeight) + 'px'
-    //   if( this.keylength > 1){
-    //       document.querySelector("button[disabled=disabled]").style.height = keylength + 'px'
-    //   }
-    // }
+
   }
 }
 </script>
