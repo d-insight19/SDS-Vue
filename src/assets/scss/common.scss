@@ -306,6 +306,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .multiList .info li{display: inline-block; font-size: map-get($font_size, font_13); letter-spacing: -0.13px; vertical-align: top;}
 .multiList .info li+li{margin-left: 6px;}
 .multiList .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 6px; background: #d9d9d9;}
+.board .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 6px; background: #d9d9d9;}
 
 // 멀티라인리스트 + 메타텍스트
 .multiList.type1 > li{min-height:94px;}

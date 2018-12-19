@@ -158,6 +158,18 @@ import Drawersettings01 from '~workplace/drawer/Drawer_settings01'
 import Drawersettings02 from '~workplace/drawer/Drawer_settings02'
 import B2CDrawersettingspush from '~workplace/drawer/B2C_Drawer_settings_push'
 
+import CustomerCenterNotice from '~workplace/customercenter/CustomerCenter_Notice'
+import CustomerCenterNoticedetail from '~workplace/customercenter/CustomerCenter_Notice_detail'
+import CustomerCenterlibrary from '~workplace/customercenter/CustomerCenter_library'
+import CustomerCenterlibrarydetail from '~workplace/customercenter/CustomerCenter_library_detail'
+import CustomerCenterlibrarydetaillike from '~workplace/customercenter/CustomerCenter_library_detail_like'
+import CustomerCenterFAQtotal from '~workplace/customercenter/CustomerCenter_FAQ_total'
+import CustomerCenterFAQ from '~workplace/customercenter/CustomerCenter_FAQ'
+import CustomerCenterStudyguide from '~workplace/customercenter/CustomerCenter_Studyguide'
+import CustomerCenterStudyguidedetail from '~workplace/customercenter/CustomerCenter_Studyguide_detail'
+import CustomerCenterFAQdetail from '~workplace/customercenter/CustomerCenter_FAQ_detail'
+import CustomerCenterInquiry from '~workplace/customercenter/CustomerCenter_Inquiry'
+
 // 1번 영역
 var rootRoutes = [
   {
@@ -928,6 +940,61 @@ var rootRoutes = [
     path: '/B2C_Drawer_settings_push',
     name: 'B2C_Drawer_settings_push',
     component: B2CDrawersettingspush
+  },
+  {
+    path: '/CustomerCenter_Notice',
+    name: 'CustomerCenter_Notice',
+    component: CustomerCenterNotice
+  },
+  {
+    path: '/CustomerCenter_Notice_detail',
+    name: 'CustomerCenter_Notice_detail',
+    component: CustomerCenterNoticedetail
+  },
+  {
+    path: '/CustomerCenter_library',
+    name: 'CustomerCenter_library',
+    component: CustomerCenterlibrary
+  },
+  {
+    path: '/CustomerCenter_library_detail',
+    name: 'CustomerCenter_library_detail',
+    component: CustomerCenterlibrarydetail
+  },
+  {
+    path: '/CustomerCenter_library_detail_like',
+    name: 'CustomerCenter_library_detail_like',
+    component: CustomerCenterlibrarydetaillike
+  },
+  {
+    path: '/CustomerCenter_FAQ_total',
+    name: 'CustomerCenter_FAQ_total',
+    component: CustomerCenterFAQtotal
+  },
+  {
+    path: '/CustomerCenter_FAQ',
+    name: 'CustomerCenter_FAQ',
+    component: CustomerCenterFAQ
+  },
+  {
+    path: '/CustomerCenter_Studyguide',
+    name: 'CustomerCenter_Studyguide',
+    component: CustomerCenterStudyguide
+  },
+  {
+    path: '/CustomerCenter_Studyguide',
+    name: 'CustomerCenter_Studyguide_detail',
+    component: CustomerCenterStudyguidedetail
+  },
+  {
+    path: '/CustomerCenter_FAQ_detail',
+    name: 'CustomerCenter_FAQ_detail',
+    component: CustomerCenterFAQdetail
+  },
+  {
+    path: '/CustomerCenter_Inquiry',
+    name: 'CustomerCenter_Inquiry',
+    component: CustomerCenterInquiry
   }
 ]
 
