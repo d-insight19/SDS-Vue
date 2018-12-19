@@ -6013,8 +6013,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.17.SO_opinion_answer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_answer' }">
+            Study_04_SO_opinion_answer
           </router-link>
         </td>
         <td></td>
