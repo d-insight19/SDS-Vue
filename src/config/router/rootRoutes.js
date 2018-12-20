@@ -24,6 +24,7 @@ import ComponentsLayoutType1 from '~workplace/common_page/components_layout_type
 import ComponentsLayoutType2 from '~workplace/common_page/components_layout_type2'
 import ComponentsLayoutType3 from '~workplace/common_page/components_layout_type3'
 import ComponentsKeyboard from '~workplace/common_page/components_keyboard'
+import ComponentsReply from '~workplace/common_page/components_reply'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -134,6 +135,12 @@ import MainChannelList from '~workplace/main/Main_channel_list'
 import MainChannelDetailBefore from '~workplace/main/Main_channel_detail_before'
 import MainChannelDetailAfter from '~workplace/main/Main_channel_detail_after'
 import MainKeywordList from '~workplace/main/Main_keyword_list'
+import MainArticleDetail from '~workplace/main/Main_article_detail'
+import MainArticleDetailLike from '~workplace/main/Main_article_detail_like'
+import MainWriterChannel from '~workplace/main/Main_writer_channel'
+import MainWriterArticle from '~workplace/main/Main_writer_article'
+import MainWriterHistory from '~workplace/main/Main_writer_history'
+import MainWriterScroll from '~workplace/main/Main_writer_scroll'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -313,6 +320,11 @@ var rootRoutes = [
     path: '/components_keyboard',
     name: 'components_keyboard',
     component: ComponentsKeyboard
+  },
+  {
+    path: '/components_reply',
+    name: 'components_reply',
+    component: ComponentsReply
   },
   {
     path: '/Login_findcenter',
@@ -847,6 +859,36 @@ var rootRoutes = [
     path: '/Main_keyword_list',
     name: 'Main_keyword_list',
     component: MainKeywordList
+  },
+  {
+    path: '/Main_article_detail',
+    name: 'Main_article_detail',
+    component: MainArticleDetail
+  },
+  {
+    path: '/Main_article_detail_like',
+    name: 'Main_article_detail_like',
+    component: MainArticleDetailLike
+  },
+  {
+    path: '/Main_writer_channel',
+    name: 'Main_writer_channel',
+    component: MainWriterChannel
+  },
+  {
+    path: '/Main_writer_article',
+    name: 'Main_writer_article',
+    component: MainWriterArticle
+  },
+  {
+    path: '/Main_writer_history',
+    name: 'Main_writer_history',
+    component: MainWriterHistory
+  },
+  {
+    path: '/Main_writer_scroll',
+    name: 'Main_writer_scroll',
+    component: MainWriterScroll
   },
   {
     path: '/Drawer_alerm',

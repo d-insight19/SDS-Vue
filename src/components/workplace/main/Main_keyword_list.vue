@@ -12,7 +12,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="list">
+        <div id="content" class="etc">
         
           <div class="cell">
             <div class="inner">

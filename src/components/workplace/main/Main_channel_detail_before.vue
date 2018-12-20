@@ -6,7 +6,7 @@
       <div id="container" class="mediaquery MainType">
 
         <!-- header -->
-        <div id="header" class="expand">
+        <div id="header" class="expand bg_no_img">
             <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico white">이전</span></button>
             </div>  
@@ -24,7 +24,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="list">
+        <div id="content" class="etc">
         
           <div class="cell">
             <div class="inner">
