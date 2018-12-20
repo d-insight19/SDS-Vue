@@ -75,7 +75,7 @@
 
         
         <!-- header scroll 헤더  작업중-->
-        <div v-if="headerType == '3'" id="header" class="tab">
+        <div v-if="headerType == '3'" id="header" class="tab fixed">
           
           <div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -90,6 +90,11 @@
                 <li><a href="#tab3">인문학이야기</a></li>
               </ul>
           </div>     
+          <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기.  -->
+          <div class="blur_wrap">
+            <div class="left blur"></div>
+            <div class="right blur"></div>
+          </div>
           <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
             <p>asdfasdf</p>
             <p>asdfasdf</p>

@@ -10210,7 +10210,7 @@
             components_tabheader
           </router-link>
         </td>
-        <td>구현중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">0</td>

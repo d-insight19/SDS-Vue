@@ -36,7 +36,67 @@
                                                     <ul class="info">
                                                     <li class="fwb color_clr3">과정문의</li>
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
-                                                    <li class="icon"><span class="date">답변완료</span></li>
+                                                    <li class="icon reply fr"><span class="check_16_blue ico"></span><span>답변완료</span></li>
+                                                    </ul>
+                                                </div>                                                
+                                            </li>
+                                             <li>
+                                                <div class="in">                                                                                        
+                                                    <div class="multiline contents">
+                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    </div>                                                     
+                                                    <ul class="info">
+                                                    <li class="fwb color_clr3">과정문의</li>
+                                                    <li class="icon"><span class="date">2018.10.10</span></li>
+                                                    <li class="icon reply fr"><span class="check_16_blue ico"></span><span>답변완료</span></li>
+                                                    </ul>
+                                                </div>                                                
+                                            </li>
+                                             <li>
+                                                <div class="in">                                                                                        
+                                                    <div class="multiline contents">
+                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    </div>                                                     
+                                                    <ul class="info">
+                                                    <li class="fwb color_clr3">과정문의</li>
+                                                    <li class="icon"><span class="date">2018.10.10</span></li>
+                                                    <li class="icon reply fr"><span class="check_16_blue ico"></span><span>답변완료</span></li>
+                                                    </ul>
+                                                </div>                                                
+                                            </li>
+                                             <li>
+                                                <div class="in">                                                                                        
+                                                    <div class="multiline contents">
+                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    </div>                                                     
+                                                    <ul class="info">
+                                                    <li class="fwb color_clr3">과정문의</li>
+                                                    <li class="icon"><span class="date">2018.10.10</span></li>
+                                                    <li class="icon reply fr"><span class="check_16_blue ico"></span><span>답변완료</span></li>
+                                                    </ul>
+                                                </div>                                                
+                                            </li>
+                                             <li>
+                                                <div class="in">                                                                                        
+                                                    <div class="multiline contents">
+                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    </div>                                                     
+                                                    <ul class="info">
+                                                    <li class="fwb color_clr3">과정문의</li>
+                                                    <li class="icon"><span class="date">2018.10.10</span></li>
+                                                    <li class="icon reply fr"><span class="check_16_blue ico"></span><span>답변완료</span></li>
+                                                    </ul>
+                                                </div>                                                
+                                            </li>
+                                             <li>
+                                                <div class="in">                                                                                        
+                                                    <div class="multiline contents">
+                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    </div>                                                     
+                                                    <ul class="info">
+                                                    <li class="fwb color_clr3">과정문의</li>
+                                                    <li class="icon"><span class="date">2018.10.10</span></li>
+                                                    <li class="icon reply fr"><span class="check_16_blue ico"></span><span>답변완료</span></li>
                                                     </ul>
                                                 </div>                                                
                                             </li>
