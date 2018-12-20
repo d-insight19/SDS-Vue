@@ -6113,8 +6113,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.21.SO_opinion_submission_all</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_submission_all' }">
+            Study_04_SO_opinion_submission_all
           </router-link>
         </td>
         <td></td>

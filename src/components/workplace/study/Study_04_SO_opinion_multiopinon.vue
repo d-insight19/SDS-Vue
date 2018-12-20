@@ -98,13 +98,13 @@
                         <p class="line02"></p>
                         <p class="txt-tit">01. 당신의 의견은 어떻습니까?</p>
                         <button class="guide-btn">작성가이드</button>
-                        <input @input="onInput" ref="label" type="text" class="input" placeholder="의견을 입력해 주세요">
+                        <input @input="onInput" ref="input01" type="text" class="input01" placeholder="의견을 입력해 주세요">
                         <div class="inputbottom inp-num">
                             <span class="strlenth" >{{keylength}}/300</span>
                         </div> 
                         <p class="hr"></p>
                         <p class="txt-tit">02. 당신의 의견은 어떻습니까?</p>
-                        <button class="guide-btn">작성가이드</button>
+                        <button class="guide-btn" >작성가이드</button>
                         <ul class="ul-block com-rdo">
                             <li>
                                 <label class="labelRdo" @click="activate(1)" >
@@ -134,7 +134,7 @@
                                 </label>
                             </li>
                         </ul>
-                        <input @input="onInput" type="text" class="input" placeholder="의견을 입력해 주세요">
+                        <input @input="onInput"  type="text" class="input02"  ref="input02"  placeholder="의견을 입력해 주세요">
                         <div class="inputbottom inp-num">
                             <span class="strlenth" >{{keylength}}/300</span>
                         </div> 
@@ -185,6 +185,9 @@ export default {
     onInput (event) {
       this.keylength = event.target.value.length
     }
+    // readRefs: function () {
+    //   console.log(this.$refs.input01.value.length)
+    // }
   }
 }
 </script>
