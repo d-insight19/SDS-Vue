@@ -4771,10 +4771,10 @@
         <td class="textL">05.Study_02.22.studyquestion_detail</td>
         <td>
           <router-link :to="{ name: 'Study_02_studyquestion_detail' }">
-            Study_02_studyquestion_detail
+            Study_studyquestion_detail
           </router-link><br/>
           <router-link :to="{ name: 'Study_02_studyquestion_detail_02' }">
-            // detail_02
+            Study_studyquestion_detail_02
           </router-link>
         </td>
         <td></td>
@@ -5021,10 +5021,10 @@
         <td class="textL">05.Study_02.34.discuss_edit</td>
         <td>
           <router-link :to="{ name: 'Study_02_discuss_edit' }">
-            Study_02_discuss_edit
+            Study_discuss_edit
           </router-link><br/>
           <router-link :to="{ name: 'Study_02_discuss_edit_02' }">
-            // edit_02
+            Study_discuss_edit_02
           </router-link>
         </td>
         <td></td>
@@ -5057,8 +5057,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.36.reflectionnote_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_reflectionnote_detail' }">
+            Study_reflectionnote_detail
           </router-link>
         </td>
         <td></td>
@@ -5075,11 +5075,11 @@
         <td class="textL">05.Study_02.37.reflectionnote_edit</td>
         <td>
           <router-link :to="{ name: 'Study_02_reflectionnote_edit' }">
-            Study_02_reflectionnote_edit
+            Study_reflectionnote_edit
           </router-link>
           <br/>
           <router-link :to="{ name: 'Study_02_reflectionnote_edit_02' }">
-            // edit_02
+            Study_reflectionnote_edit_02
           </router-link>
         </td>
         <td></td>
@@ -6091,7 +6091,7 @@
             Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
-        <td></td>
+        <td>12-20-작업중</td>
       </tr>
       <tr>
       <td align="center">354</td>
@@ -6106,6 +6106,9 @@
         <td>
           <router-link :to="{ name: 'Study_04_SO_opinion_submission' }">
             Study_04_SO_opinion_submission
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_opinion_submission_02' }">
+            study_submission_02
           </router-link>
         </td>
         <td></td>
@@ -6121,8 +6124,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.21.SO_opinion_submission_all</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_submission_all' }">
+            Study_04_SO_opinion_submission_all
           </router-link>
         </td>
         <td></td>
@@ -6291,8 +6294,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.31.SO_studygoal</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_studygoal' }">
+            Study_04_SO_studygoal
           </router-link>
         </td>
         <td></td>
@@ -6325,8 +6328,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.33.SO_middle</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_middle' }">
+            Study_04_SO_middle
           </router-link>
         </td>
         <td></td>
@@ -6495,11 +6498,11 @@
         <td>　</td>
         <td class="textL">05.Study_04.43.SO_poll_input</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_poll_input' }">
+            Study_04_SO_poll_input
           </router-link>
         </td>
-        <td></td>
+        <td>해더배경이미지필요</td>
       </tr>
       <tr>
       <td align="center">378</td>
@@ -6529,8 +6532,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.45.SO_poll_submission_rod</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_poll_submission_rod' }">
+            Study_04_SO_poll_submission_rod
           </router-link>
         </td>
         <td></td>

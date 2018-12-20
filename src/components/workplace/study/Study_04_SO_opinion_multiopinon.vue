@@ -98,42 +98,46 @@
                         <p class="line02"></p>
                         <p class="txt-tit">01. 당신의 의견은 어떻습니까?</p>
                         <button class="guide-btn">작성가이드</button>
-                        <input type="text" class="input" placeholder="의견을 입력해 주세요">
-                        <p class="inp-num"><span>0</span>/<span>300</span></p>
+                        <input @input="onInput" ref="input01" type="text" class="input01" placeholder="의견을 입력해 주세요">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength}}/300</span>
+                        </div> 
                         <p class="hr"></p>
                         <p class="txt-tit">02. 당신의 의견은 어떻습니까?</p>
-                        <button class="guide-btn">작성가이드</button>
+                        <button class="guide-btn" >작성가이드</button>
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" @click="activate(1)" >
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >대통령의 가족을 지켜는 법은 필수이기 때문에 현재 정책을 유지해야 한다.</span>                    
+                                    <span class="label" :class="{ color_clr2 : active_el == 1 }" >대통령의 가족을 지켜는 법은 필수이기 때문에 현재 정책을 유지해야 한다.</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" @click="activate(2)">
                                     <input type="radio" class="rdo" name="test-rdo" checked>
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"  >대통령의 가족도 우리와 같은 시민일 뿐, 경호할 필요는 없다고 생각한다.</span>                    
+                                    <span class="label" :class="{ color_clr2 : active_el == 2 }"  >대통령의 가족도 우리와 같은 시민일 뿐, 경호할 필요는 없다고 생각한다.</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" @click="activate(3)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >잘 모르겠다.</span>                    
+                                    <span class="label" :class="{ color_clr2 : active_el == 3 }" >잘 모르겠다.</span>                    
                                 </label>
                             </li>
                         </ul>
-                        <input type="text" class="input" placeholder="의견을 입력해 주세요">
-                        <p class="inp-num"><span>0</span>/<span>300</span></p>
+                        <input @input="onInput"  type="text" class="input02"  ref="input02"  placeholder="의견을 입력해 주세요">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{keylength}}/300</span>
+                        </div> 
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -168,12 +172,25 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1
+      headerType: 1,
+      active_el: 2,
+      keylength: 0
     }
   },
   /* vue function */
   methods: {
-
+    activate: function (el) {
+      this.active_el = el
+    },
+    onInput (event) {
+      this.keylength = event.target.value.length
+      if (event) {
+        console.log(this.$refs)
+      } // input01,input02각각의 인풋에따라 {{keylength}}가 변화되야하는데 한가지 인풋에 입력하면 나머지 keylength 값이 전부 동일하게 변경됩니다 이 문제를 어떻게 해결해야될까요
+    }
+    // readRefs: function () {
+    //   console.log(this.$refs.input01.value.length)
+    // }
   }
 }
 </script>
