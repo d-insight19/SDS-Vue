@@ -142,14 +142,9 @@ export default {
   },
   /* vue function */
   methods: {
-    // onInput (event) {
-    //   this.keylength = event.target.value.length
-    //   event.target.style.height = '1px'
-    // //   event.target.style.height = (event.target.scrollHeight) + 'px'
-    //   if( this.keylength > 1){
-    //       document.querySelector("button[disabled=disabled]").style.height = keylength + 'px'
-    //   }
-    // }
+    onInput (event) {
+      this.keylength = event.target.value.length
+    }
   }
 }
 </script>

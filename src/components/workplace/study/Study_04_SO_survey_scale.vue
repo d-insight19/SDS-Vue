@@ -228,20 +228,20 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1,
-      active_el: 0,
+      headerType: 1
+    //   active_el: 0,
     }
   },
   /* vue function */
   methods: {
-    activate: function (el) {
-      if(this.active_el > 5){
-          this.active_el = el
-          return false
-      }else if(this.active_el <= 5){
-          this.active_el = el
-      }
-    }
+    // activate: function (el) {
+    //   if(this.active_el > 5){
+    //       this.active_el = el
+    //       return false
+    //   }else if(this.active_el <= 5){
+    //       this.active_el = el
+    //   }
+    // }
   }
 }
 </script>

@@ -6083,7 +6083,7 @@
             Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
-        <td></td>
+        <td>12-20-작업중</td>
       </tr>
       <tr>
       <td align="center">354</td>

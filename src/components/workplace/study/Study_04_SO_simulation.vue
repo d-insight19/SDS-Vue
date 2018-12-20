@@ -35,11 +35,11 @@
                         <ul class="ul-block com-rdo">
                             <li >
                                 <label class="labelRdo" @click="activate(1)">
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <input type="radio" class="rdo" name="test-rdo" checked>
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"  :class="{ color_clr2 : active_el == 1 }" checked>스타벅스</span>                    
+                                    <span class="label"  :class="{ color_clr2 : active_el == 1 }" >스타벅스</span>                    
                                 </label>
                             </li>
                             <li  >
@@ -98,7 +98,7 @@ export default {
   /* vue data */
   data () {
     return {
-      active_el: 0
+      active_el: 1
     }
   },
   methods: {
