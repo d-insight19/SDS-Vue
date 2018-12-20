@@ -507,11 +507,8 @@
 #container.study_link .gr_box .gb_txt{font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;color:map-get($mono_colors, mono_80);}
 #container.study_link .sub-txt-a{font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;}
 #container.study_link .sub-txt-b{font-size:map-get($font-size, font_12);line-height: 21px; letter-spacing: -0.36px; color: rgba(0,0,0,0.5);}
-.line01{width: 100%;  border-bottom: 1px solid map-get($line_colors, B85);}
-
 
 // 설문-제출완료 
-
 #header.bg-gr .h-tit5{vertical-align: text-bottom; font-size:map-get($font-size , font_18);line-height:25px; letter-spacing:-0.54px; margin-bottom: 10px;}
 #header.bg-gr .h-tit5 span:nth-child(1){margin-right:3px;}
 #header.bg-gr .h-tit5 span:nth-child(2){vertical-align: text-bottom;}
@@ -538,23 +535,7 @@
 #container.study_opinion_sub .prog-txt{ display: inline-block; float: left; width: 69%;font-size:map-get($font-size , font_15);line-height:22px; letter-spacing:-0.45px; }
 #container.study_opinion_sub .part-num{font-size:map-get($font-size , font_15);line-height:20px; letter-spacing:-0.45px; color:map-get($mono_colors, mono_65);}
 #container.study_opinion_sub .part-num-2{ font-size:map-get($font-size , font_15);line-height:20px; letter-spacing:-0.45px; color:map-get($mono_colors, mono_80);}
-#container.study_opinion_sub .txt-line{ margin-top: 40px; padding-top:0px; padding-bottom:6px;}
-#container.study_opinion_sub .txt-line .my-op{font-weight:500;font-size:map-get($font-size, font_20);line-height: 38px; letter-spacing: -0.6px; color:rgba(0,0,0,0.8)}
-#container.study_opinion_sub .txt-line .total-op{float: right; font-size:map-get($font-size, font_14); line-height: 38px;} // line-height op와 동일 
-#container.study_opinion_sub .txt-line .total-val{font-size:map-get($font-size, font_15);line-height: 38px; letter-spacing: -0.45px; margin-right:4px;}
-#container.study_opinion_sub .txt-line .total-num{font-size:map-get($font-size, font_14);line-height: 38px; letter-spacing: -0.42px;}
-#container.study_opinion_sub .txt-line .ico.gray_next {cursor: pointer; margin-left:4px;}
 .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background-color:map-get($line_colors, B85);}
-.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:16px;}
-.reply-txt {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:8px; color:#1a1a1a;}
-.reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
-.reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);}
-.reply-name .ico.more {cursor: pointer;}
-.reply-wrap .down-arr {cursor: pointer; margin-right:1px;}
-.reply-wrap .reply-like {cursor: pointer;}
-.reply-wrap .reply-num {font-size:map-get($font-size, font_14);line-height: 19px; }
-.reply-wrap .reply-unlike {cursor: pointer; margin-left:8px;}
-
 
 // 작성가이드
 #container.study_opinion_guide .txt-tit {font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
@@ -927,11 +908,6 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.mediaquery.board .multiList.type3 .ico.arrow {top: calc(50% - 18px)}
 #container.mediaquery.board .info_icon li.icon {display:inline-block; vertical-align: top}
 #container.mediaquery.board .info li + li {margin-left:6px}
-#container.mediaquery.board .bd_bt {border-bottom:#e3e3e3 1px solid; padding-bottom:22px}
-.reply_input input.reply {background-color: #fff; border:#ccc 1px solid; width:calc(100% - 57px)}
-.reply_input input.reply::placeholder {color:rgba(0,0,0,0.25); }
-.reply_input button {width:57px; height:44px; background-color:#21277c; color:#fff; }
-#container.mediaquery.board .reply-list {border-bottom:#e3e3e3 1px solid; padding:16px 0 10px}
 #container.drawer.board .down {margin-top:-5px}
 
 #container.mediaquery.board .contents15 {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.65); font-weight: 400; letter-spacing: -0.45px; line-height: 25px}
@@ -969,8 +945,12 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 .pa15{padding:15px !important;}
 .pa25{padding:25px !important;}
 .pt10{padding-top:10px !important;}
-.MainType .h-tit1 {font-weight:700 !important;}
-.MainType .h-tit2 {font-weight:600 !important;}
+.mono_100 {color: map-get($mono_colors, mono_100);}
+.mono_80 {color: map-get($mono_colors, mono_80);}
+.mono_65 {color: map-get($mono_colors, mono_65);}
+.mono_50 {color: map-get($mono_colors, mono_50);}
+.mono_25 {color: map-get($mono_colors, mono_25);}
+.mono_0  {color: map-get($mono_colors, mono_0);}
 .MainType .sub-tit {font-size:map-get($font_size, font_13); color: map-get($mono_colors, mono_65);}
 // layout.css 에 추가
 #container #content .inner {padding-bottom: 12px;}
@@ -991,37 +971,37 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 .MainType div.no-date p+p {font-size: map-get($font_size, font_14); font-weight:400; color: map-get($mono_colors, mono_50); padding-bottom:15px;}
 .MainType div.no-date a {display:inline-block; font-size:map-get($font_size, font_14); color: map-get($mono_colors, mono_0); line-height: 38px; padding:0 28px; border-radius: 80px; cursor:pointer;}
 // Status 
-.MainType.status {border-top: 1px solid map-get($line_colors, B60); border-bottom: 1px solid map-get($line_colors, B60);}
-.MainType.status strong {color: map-get($mono_colors, mono_100); font-weight:500;}
-.MainType.status .white{padding:15px 24px 15px 145px; position:relative;}
-.MainType.status .gray{padding:15px 24px; background-color: map-get($bg_colors, BG_1);}
-.MainType.status .white .info {position:absolute; margin-top:-25px; top:50%; left: 24px;}
-.MainType.status .white .info strong {font-size: map-get($font_size, font_20);}
-.MainType.status .white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
-.MainType.status .white .info p + p {font-size: map-get($font_size, font_18);}
-.MainType.status dl{width: 100%; display: table; line-height: 180%; left: 24px;}
-.MainType.status dl.line {border-top: 1px solid map-get($line_colors, B89);}
-.MainType.status dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 40%; display: table-cell; }
-.MainType.status dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 60%; display: table-cell; text-align: right;}
-.MainType.status dd strong{font-size: map-get($font_size, font_16);}
-.MainType.status .white.big {padding-top:25px; padding-bottom:25px;}
-.MainType.status .white.big dl {line-height: 280%;}
-.MainType.status .white.big dl strong {font-size: map-get($font_size, font_22);}
-.MainType.status .white.big .info {position:absolute; margin-top:-50px; top:50%;}
-.MainType.status .white.big .info img{width: 98px; height: 98px;}
-.MainType.status .gray.big dl {line-height: 200%;}
-.MainType.status .line {border-top: 1px solid map-get($line_colors, B85);}
-.MainType.status .stepper {padding:24px; margin-bottom:0;}
-.MainType.status .stepper .ico{vertical-align: middle;}
-.MainType.status .stepper strong{font-size: map-get($font_size, font_22); font-weight:600; vertical-align: middle;}
-.MainType.status .stepper .progBox {height:6px;}
-.MainType.status .learn {padding: 15px 0;}
-.MainType.status .learn ul {display:table;     width: 100%;}
-.MainType.status .learn ul li { display: table-cell;}
-.MainType.status .learn ul li + li {border-left: 1px solid map-get($line_colors, B85);}
-.MainType.status .learn ul li p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_65); text-align: center;}
-.MainType.status .learn ul li p + p {font-size: map-get($font_size, font_13);}
-.MainType.status .learn ul li strong {font-size: map-get($font_size, font_18);}
+.MainType .status {border-top: 1px solid map-get($line_colors, B60); border-bottom: 1px solid map-get($line_colors, B60);}
+.MainType .status strong {color: map-get($mono_colors, mono_100); font-weight:500;}
+.MainType .status .white{padding:15px 24px 15px 145px; position:relative;}
+.MainType .status .gray{padding:15px 24px; background-color: map-get($bg_colors, BG_1);}
+.MainType .status .white .info {position:absolute; margin-top:-25px; top:50%; left: 24px;}
+.MainType .status .white .info strong {font-size: map-get($font_size, font_20);}
+.MainType .status .white .info p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80);}
+.MainType .status .white .info p + p {font-size: map-get($font_size, font_18);}
+.MainType .status dl{width: 100%; display: table; line-height: 180%; left: 24px;}
+.MainType .status dl.line {border-top: 1px solid map-get($line_colors, B89);}
+.MainType .status dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 40%; display: table-cell; }
+.MainType .status dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 60%; display: table-cell; text-align: right;}
+.MainType .status dd strong{font-size: map-get($font_size, font_16);}
+.MainType .status .white.big {padding-top:25px; padding-bottom:25px;}
+.MainType .status .white.big dl {line-height: 280%;}
+.MainType .status .white.big dl strong {font-size: map-get($font_size, font_22);}
+.MainType .status .white.big .info {position:absolute; margin-top:-50px; top:50%;}
+.MainType .status .white.big .info img{width: 98px; height: 98px;}
+.MainType .status .gray.big dl {line-height: 200%;}
+.MainType .status .line {border-top: 1px solid map-get($line_colors, B85);}
+.MainType .status .stepper {padding:24px; margin-bottom:0;}
+.MainType .status .stepper .ico{vertical-align: middle;}
+.MainType .status .stepper strong{font-size: map-get($font_size, font_22); font-weight:600; vertical-align: middle;}
+.MainType .status .stepper .progBox {height:6px;}
+.MainType .status .learn {padding: 15px 0;}
+.MainType .status .learn ul {display:table;     width: 100%;}
+.MainType .status .learn ul li { display: table-cell;}
+.MainType .status .learn ul li + li {border-left: 1px solid map-get($line_colors, B85);}
+.MainType .status .learn ul li p {font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_65); text-align: center;}
+.MainType .status .learn ul li p + p {font-size: map-get($font_size, font_13);}
+.MainType .status .learn ul li strong {font-size: map-get($font_size, font_18);}
 // thumList 에 카테고리 추가
 .MainType .scroll-x.type2 .inner2 {display: inline-block; margin-right: 8px;}
 .MainType .scroll-x.type2 .inner2 .category {font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_80); font-weight:700; height:23px; margin-bottom:8px; display:block; vertical-align: top;}
@@ -1044,11 +1024,14 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 .MainType .thumList .writer {color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_13); margin-bottom:5px; display: block;}
 // info
 .MainType #header.bg_no_img {background: url("../img/thum_no_L.jpg") no-repeat center center;}
-.MainType #header .hide_header {position: relative; padding-top:80px; color: map-get($mono_colors, mono_0); z-index: 2; line-height: normal; font-weight: 300; padding-left: 18px; width: 100%; height:100%;}
-.MainType #header .hide_header .h-tit1 {font-weight: 500 !important;}
-.MainType #header .hide_header p {font-weight: 300 !important;}
+.MainType #header.bg_wh_287 {background: url("../img/bg_wh_287.png") repeat-x bottom;}
+.MainType #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
+.MainType #header .hide_header p {white-space: normal !important;}
 .MainType #header .tagWrap span {border-color:map-get($mono_colors, mono_0); color: map-get($mono_colors, mono_0); font-size: map-get($font_size, font_12); height: 23px; opacity: 0.8;}
 .MainType #header .info li{display: inline-block; font-size: map-get($font_size, font_13); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
 .MainType #header .info li+li{margin-left: 5px;}
-.MainType #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #e3e3e3;}
+.MainType #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
 .MainType #header .cDim05{position: absolute; bottom:0; left:0; z-index: 1; width:100%; height: 100%; background: rgba(0, 0, 0, 0.5);}
+.MainType #header .line-top {border-top:1px solid map-get($line_colors, B89);}
+.MainType #header .radius {position: absolute; top: 42px; right: 18px;}
+.MainType #header .radius img {width: 100px; height: 100px;  border-radius: 50px;}

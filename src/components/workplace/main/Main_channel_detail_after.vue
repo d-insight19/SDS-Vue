@@ -9,18 +9,18 @@
         <div id="header" class="expand bg_no_img">
             <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico white">이전</span></button>
-            </div>  
-            <div class="hide_header">
-                <h1 class="h-tit1 mb0">디지털 마케팅</h1>
-                <p class="mb5">디지털 마케팅에 대한 채널 소개글 영역입니다.</p>
-                <div class="tagWrap mb25"><span>#광고</span><span>#Advertising</span></div>
-                <ul class="info mb25">
-                    <li>연재중</li>
-                    <li>게시물 <span>15</span></li>
-                    <li>구독 <span>634</span></li>
-                </ul>
             </div>
             <div class="cDim05"></div>
+            <div class="hide_header" style="position: relative; padding-top:80px; color: #ffffff;">
+                <h1 class="h-tit1 mb0">디지털 마케팅</h1>
+                <p class="mb5 fwl">디지털 마케팅에 대한 채널 소개글 영역입니다.</p>
+                <div class="tagWrap mb25"><span class="fwl">#광고</span><span class="fwl">#Advertising</span></div>
+                <ul class="info mb25">
+                    <li class="fwl">연재중</li>
+                    <li class="fwl">게시물 <span>15</span></li>
+                    <li class="fwl">구독 <span>634</span></li>
+                </ul>
+            </div>
         </div>
         <!-- //header -->
 

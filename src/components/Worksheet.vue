@@ -3044,11 +3044,15 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Article_Detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_article_detail' }">
+            Main_article_detail
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_article_detail_like' }">
+            Main_article_detail_like
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">173</td>
@@ -3078,8 +3082,12 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Writer    Channel</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_writer_channel' }">
+            Main_writer_channel
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_writer_scroll' }">
+            Main_writer_scroll
           </router-link>
         </td>
         <td></td>
@@ -3095,8 +3103,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Writer    Article</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_writer_article' }">
+            Main_writer_article
           </router-link>
         </td>
         <td></td>
@@ -3112,8 +3120,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Writer    History</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_writer_history' }">
+            Main_writer_history
           </router-link>
         </td>
         <td></td>
@@ -7490,11 +7498,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.Banner</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_banner' }">
+            Main_banner
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">437</td>
@@ -10293,6 +10301,22 @@
         <td>
           <router-link :to="{ name: 'components_keyboard' }">
             components_keyboard
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>댓글</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_reply' }">
+            components_reply
           </router-link>
         </td>
         <td></td>

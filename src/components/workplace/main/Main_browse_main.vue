@@ -29,7 +29,7 @@
           <!-- //component -->
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 mb20">탐색</h1>
+                <h1 class="h-tit1 fwb mb20">탐색</h1>
                 <h2 class="h-tit2 mb10">경영·리더십</h2>
                 <div class="scroll-x type2">
                 

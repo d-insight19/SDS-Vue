@@ -18,6 +18,9 @@
                     <li><a href="#tab3">Expired Channel</a></li>
                 </ul>
             </div>
+            <div class="blur_wrap">
+                <div class="right blur"></div>
+            </div>
         </div>
         <!-- //header -->
 
