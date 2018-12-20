@@ -3,10 +3,10 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_opinion pd70">
+        <div id="container" class="mediaquery study_poll pd70">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand wh opinion-head-bg">          
+            <div v-if="headerType == '1'" id="header" class="expand wh quiz-head-bg">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                     <div class="page-btn">
@@ -16,13 +16,10 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background-color:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:28px">                
+                <div class="hide_header" style="background:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:60px">                
                     <div class="hide-inner">
-                        <span class="chip wh">의견공유</span>                         
-                        <p class="h-tit1">독일, 임금공개법에 대한 의견공유</p>
-                        <p class="h-tit5">
-                            <span>총 1문항</span>
-                        </p>
+                        <span class="chip wh">POLL</span>                         
+                        <p class="h-tit1">선호 커피 브랜드 시장 조사 선호 커피 브랜드 시장 조사</p>
                     </div>
                 </div>
             </div>
@@ -94,59 +91,53 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner"> 
-                        <p class="inner-txt">의견공유를 통해 자신의 의견을 사람들과 공유하고 다양한 의견을 들어보세요. 5분정도 걸리는 간단한 주제입니다.</p>
-                        <p class="line02"></p>
-                        <p class="txt-tit">01. 당신의 의견은 어떻습니까?</p>
-                        <button class="guide-btn">작성가이드</button>
-                        <input @input="onInput" ref="input01" type="text" class="input01" placeholder="의견을 입력해 주세요">
-                        <div class="inputbottom inp-num">
-                            <span class="strlenth" >{{keylength}}/300</span>
-                        </div> 
-                        <p class="hr"></p>
-                        <p class="txt-tit">02. 당신의 의견은 어떻습니까?</p>
-                        <button class="guide-btn" >작성가이드</button>
+                        <p class="h-tit5">1. 좋아하는 커피브랜드 1개이상 선택해주세요.</p>
                         <ul class="ul-block com-rdo">
-                            <li>
-                                <label class="labelRdo" @click="activate(1)" >
-                                    <input type="radio" class="rdo" name="test-rdo">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label" :class="{ color_clr2 : active_el == 1 }" >대통령의 가족을 지켜는 법은 필수이기 때문에 현재 정책을 유지해야 한다.</span>                    
-                                </label>
-                            </li>
-                            <li>
-                                <label class="labelRdo" @click="activate(2)">
+                            <li >
+                                <label class="labelRdo" @click="activate(1)">
                                     <input type="radio" class="rdo" name="test-rdo" checked>
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" :class="{ color_clr2 : active_el == 2 }"  >대통령의 가족도 우리와 같은 시민일 뿐, 경호할 필요는 없다고 생각한다.</span>                    
+                                    <span class="label"  :class="{ color_clr2 : active_el == 1 }" >스타벅스</span>                    
                                 </label>
                             </li>
-                            <li>
+                            <li  >
+                                <label class="labelRdo" @click="activate(2)">
+                                    <input type="radio" class="rdo" name="test-rdo" >
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label" :class="{ color_clr2 : active_el == 2 }" >탐앤탐스</span>                    
+                                </label>
+                            </li>
+                            <li  >
                                 <label class="labelRdo" @click="activate(3)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" :class="{ color_clr2 : active_el == 3 }" >잘 모르겠다.</span>                    
+                                    <span class="label" :class="{ color_clr2 : active_el == 3 }" >이디야</span>                    
+                                </label>
+                            </li>
+                            <li >
+                                <label  class="labelRdo" @click="activate(4)">
+                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"  :class="{ color_clr2 : active_el == 4 }">할리스</span>                    
                                 </label>
                             </li>
                         </ul>
-                        <input @input="onInput"  type="text" class="input02"  ref="input02"  placeholder="의견을 입력해 주세요">
-                        <div class="inputbottom inp-num">
-                            <span class="strlenth" >{{keylength}}/300</span>
-                        </div> 
                     </div>
                     <!-- //inner -->
                 </div>  
             </div>
 
-
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" disabled="disabled" class="btn md clr1">제출</button>
+                <button type="button" class="btn md clr1">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -161,7 +152,7 @@
   1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝  or  헤더 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
 */
 export default {
-  name: 'Study_04_SO_opinion_multiopinon',
+  name: 'Study_SO_poll_input',
   props: {
   },
   /* vue lifecycle */
@@ -173,24 +164,14 @@ export default {
   data () {
     return {
       headerType: 1,
-      active_el: 2,
-      keylength: 0
+      active_el: 1
     }
   },
   /* vue function */
   methods: {
     activate: function (el) {
       this.active_el = el
-    },
-    onInput (event) {
-      this.keylength = event.target.value.length
-      if (event) {
-        console.log(this.$refs)
-      } // input01,input02각각의 인풋에따라 {{keylength}}가 변화되야하는데 한가지 인풋에 입력하면 나머지 keylength 값이 전부 동일하게 변경됩니다 이 문제를 어떻게 해결해야될까요
     }
-    // readRefs: function () {
-    //   console.log(this.$refs.input01.value.length)
-    // }
   }
 }
 </script>

@@ -3,7 +3,8 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_opinion_sub ">
+        <div id="container" class="mediaquery study_poll ">
+            
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
             <div v-if="headerType == '1'" id="header" class="expand">          
                 <div class="header_inner line1">
@@ -15,13 +16,13 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:32px">                
+                <div class="hide_header" style="background:#efeff6; padding-top:76px; padding-bottom:32px">                
                     <div class="hide-inner">                           
                         <p class="h-tit5"> 
                             <span class="ico chk"></span>
-                            <span >제출 완료</span>
+                            <span >제출 완료!</span>
                         </p>
-                        <p class="h-tit1">독일, 임금공개법에 대한 의견공유</p>
+                        <p class="h-tit1">선호 커피 브랜드 시장 조사 선호 커피 브랜드 시장 조사</p>
                     </div>
                 </div>
             </div>
@@ -82,76 +83,77 @@
                 </div>
             </div>
             <!-- //header -->
+            
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">                        
+                    <div class="inner">              
                         <div>
-                            <p class="inner-tit">OO은 OO해야 합니다. 의견공유 텍스트 질문 영역입니다. 당신의 의견은 어떻습니까?</p>
-                            <p class="person">참여인원 <span>50</span>명</p>
+                            <p class="inner-tit">1. 좋아하는 커피브랜드 1개이상 선택해주세요.</p>
+                            <p class="person">참여인원 <span>100</span>명</p>
                         </div>
                         <div class="progBox mt22">
-                            <div class="bar clr1" style="width: 17%; height:8px; border-radius: 100px;"></div>                            
+                            <div class="bar clr1" style="width: 38%; height:8px; border-radius: 100px;"></div>                            
                         </div>
                         <div class="txt-wrap clearfix">
-                            <p class="prog-txt">대통령의 가족을 지켜는 법은 필수이기 때문에 현재 정책을 유지해야 한다.</p>
+                            <p class="prog-txt">스타벅스</p>
                             <div class="fr">
-                                <span class="part-num"><span>5</span>명</span>
+                                <span class="part-num"><span>38</span>명</span>
                                 <span class="pipe"></span>
-                                <span class="part-num-2"><span>17</span>%</span>
+                                <span class="part-num-2"><span>38</span>%</span>
                             </div>                                   
                         </div>
                         <div class="progBox mt22">
-                            <div class="bar clr2" style="width: 58%; height:8px; border-radius: 100px;"></div>                            
+                            <div class="bar clr2" style="width: 29%; height:8px; border-radius: 100px;"></div>                            
                         </div>
                         <div class="txt-wrap clearfix">
-                            <p class="prog-txt"> <span class="chip border_clr2 color_clr2">나의 선택</span>  대통령의 가족도 우리와 같은 시민일 뿐, 경호 예우는 필요없다.</p>
+                            <p class="prog-txt">탐앤탐스 <span class="chip border_clr2 color_clr2" style="mrgin-left:6px; mrgin-bottom:0;">나의 선택</span></p>
                             <div class="fr">
-                                <span class="part-num"><span>16</span>명</span>
+                                <span class="part-num"><span>29</span>명</span>
                                 <span class="pipe"></span>
-                                <span class="part-num-2"><span>58</span>%</span>
+                                <span class="part-num-2"><span>29</span>%</span>
                             </div>                                  
-                        </div>
+                        </div>                        
                         <div class="progBox mt22">
-                            <div class="bar clr1" style="width: 21.5%; height:8px; border-radius: 100px;"></div>                            
+                            <div class="bar clr1" style="width: 22%; height:8px; border-radius: 100px;"></div>                            
                         </div>
                         <div class="txt-wrap clearfix">
-                            <p class="prog-txt">잘 모르겠다.</p>
+                            <p class="prog-txt">이디야</p>
                             <div class="fr">
-                                <span class="part-num"><span>7</span>명</span>
+                                <span class="part-num"><span>22</span>명</span>
                                 <span class="pipe"></span>
-                                <span class="part-num-2"><span>21.5</span>%</span>
+                                <span class="part-num-2"><span>22</span>%</span>
                             </div>                                
                         </div>
-                        <div class="txt-line">
-                            <span class="my-op">나의 의견</span>
-                            <p class="total-op"> 
-                                <span class="total-val color_clr2">전체보기</span>                                
-                                <span class="total-num color_clr2">26</span>                      
-                            </p> 
+                        <div class="progBox mt22">
+                            <div class="bar clr1" style="width: 11%; height:8px; border-radius: 100px;"></div>                            
                         </div>
-                        <p class="line01"></p>
-                        <p class="reply-name">
-                            <span>정*민 [작성자]</span>
-                            <span class="fr ico more"></span>
-                        </p>
-                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
-                        <p><span class="reply-date">2018.09.14  21:34</span></p>
-                        <div class="reply-wrap">
-                            <span class="ico down-arr"></span>
-                            <span>답글 4</span>
-                            <p class="fr reply-num">
-                            <span class=" ico like_32 blue"></span>
-                            <span class="">12</span>
-                            <span class=" ico unlike_32"></span>
-                            <span class="">3</span>
-                            </p>
+                        <div class="txt-wrap clearfix">
+                            <p class="prog-txt">할리스</p>
+                            <div class="fr">
+                                <span class="part-num"><span>11</span>명</span>
+                                <span class="pipe"></span>
+                                <span class="part-num-2"><span>11</span>%</span>
+                            </div>                                
                         </div>
-                        <div class="absBtmBtn">  
-                            <button type="button" class="btn md clr1">제출</button>
-                        </div>
+                        <!-- //txt-wrap -->
                     </div>
                 </div>
             </div>
+            <!-- //contents -->
+
+            <!-- floatingbtn -->
+            <div class="absBtmBtn">  
+                <ul>
+                <li>
+                    <button type="button" class="btn md">재투표</button>
+                </li> 
+                <li>
+                    <button type="button" class="btn md clr1">완료</button>
+                </li>
+                </ul>
+            </div>
+            <!-- //floatingbtn -->   
+
         </div>
         <!-- //container --> 
     </div>
@@ -160,7 +162,7 @@
 
 <script>
 export default {
-  name: 'Study_04_SO_opinion_submission',
+  name: 'Study_SO_poll_submission_rod',
   /* vue lifecycle */
   created () {
   },
