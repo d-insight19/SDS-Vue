@@ -21,22 +21,29 @@
 
                 <input type="text" class="input underline" placeholder="focus 시 toggle 됨" @focus="focusToggle"/>
 
-                <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
+                
                
-                <!--  type 모두 통합 각 타입에 맞춰서 hidden 처리하면됨 -->
+                <!-- 
+                    keyboard_type 변수로 v-if 를 통해  타입 결정
+                    keyboard_type : 1  = 기본형 ( TextArea )
+                    keyboard_type : 2  = 평점 ( 평점 + TextArea )
+                    keyboard_type : 3  = 공개여부 ( 공개여부 + TextArea )
+                    keyboard_type : 4  = 북마크 + 공개여부 ( 북마크 + 공개여부 + TextArea )
+                 -->
+                <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
                 <div class="keyboard_input" v-show="focusFlag">                
                     
-                    <div class="bookmark_wrap">
+                    <div class="bookmark_wrap" v-if="keyboard_type=='4'">
                         <span class="bookmarktxt">북마크</span>
                         <span class="fr time">01:36</span>
                     </div>
-                    <div class="open_wrap">
+                    <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
                         <span class="opentxt">공개여부</span>
                         <slp-switch :classObject="{'fr': true}"/>
                         <span class="opentxt2">비공개</span>
                     </div>
 
-                    <div class="rating_wrap">
+                    <div class="rating_wrap" v-if="keyboard_type=='2'">
                         <span class="ratingtxt">평점</span>                        
                         <fieldset class="fr rating">
                             <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
@@ -57,6 +64,21 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 <!--
@@ -168,7 +190,8 @@ export default {
   data () {
     return {
       keylength: 0,
-      focusFlag: false
+      focusFlag: false,
+      keyboard_type: 2
     }
   },
   /* vue function */

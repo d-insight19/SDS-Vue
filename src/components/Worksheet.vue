@@ -10308,6 +10308,7 @@
         </td>
         <td></td>
       </tr>
+      <tr>
       <td align="center">0</td>
         <td>공통</td>
         <td>댓글</td>
