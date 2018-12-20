@@ -5921,7 +5921,7 @@
             Study_04_SO_survey_scale
           </router-link>
         </td>
-        <td></td>
+        <td>12-20-작업중</td>
       </tr>
       <tr>
       <td align="center">344</td>
@@ -5955,7 +5955,7 @@
             Study_04_SO_survey_answer
           </router-link>
         </td>
-        <td></td>
+        <td>12-20-작업중</td>
       </tr>
       <tr>
       <td align="center">346</td>
