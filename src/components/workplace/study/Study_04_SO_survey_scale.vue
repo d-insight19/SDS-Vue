@@ -101,48 +101,48 @@
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" @click="activate(1)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">전혀 아니다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 1 }" >전혀 아니다</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo" checked>
+                                <label class="labelRdo" @click="activate(2)">
+                                    <input type="radio" class="rdo" name="test-rdo" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">아니다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 2 }" >아니다</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" @click="activate(3)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">보통이다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 3 }">보통이다</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo">
+                                <label  class="labelRdo" @click="activate(4)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 그렇다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 4 }"> 그렇다</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo">
+                                <label  class="labelRdo" @click="activate(5)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 매우 그렇다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 5 }"> 매우 그렇다</span>                    
                                 </label>
                             </li>
                         </ul>     
@@ -150,48 +150,48 @@
                         <p class="txt-tit">02. 나는 OO하는 것을 좋아한다.</p>                        
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" @click="activate(6)">
                                     <input type="radio" class="rdo" name="test-rdo-2">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">전혀 아니다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 6 }">전혀 아니다</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo-2" checked>
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label">아니다</span>                    
-                                </label>
-                            </li>
-                            <li>
-                                <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo-2">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label">보통이다</span>                    
-                                </label>
-                            </li>
-                            <li>
-                                <label  class="labelRdo">
+                                <label class="labelRdo" @click="activate(7)">
                                     <input type="radio" class="rdo" name="test-rdo-2" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 그렇다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 7 }">아니다</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo">
+                                <label class="labelRdo" @click="activate(8)">
                                     <input type="radio" class="rdo" name="test-rdo-2">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 매우 그렇다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 8 }">보통이다</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label  class="labelRdo" @click="activate(9)">
+                                    <input type="radio" class="rdo" name="test-rdo-2" >
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"   :class="{ color_clr2 : active_el == 9 }"> 그렇다</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label  class="labelRdo" @click="activate(10)">
+                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"   :class="{ color_clr2 : active_el == 10 }"> 매우 그렇다</span>                    
                                 </label>
                             </li>
                         </ul>   
@@ -228,12 +228,20 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1
+      headerType: 1,
+      active_el: 0,
     }
   },
   /* vue function */
   methods: {
-
+    activate: function (el) {
+      if(this.active_el > 5){
+          this.active_el = el
+          return false
+      }else if(this.active_el <= 5){
+          this.active_el = el
+      }
+    }
   }
 }
 </script>
