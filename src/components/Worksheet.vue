@@ -2753,8 +2753,8 @@
           2. 포틀릿 사용여부 및 순서 설정</td>
         <td class="textL">02.Main_02.02.01.Banner</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_banner' }">
+            Main_banner
           </router-link>
         </td>
         <td></td>
@@ -3135,10 +3135,10 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">02.Main_02.02.04.Study main</td>
+        <td class="textL">02.Main_02.02.06. Learning Main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_learning_main' }">
+            Main_learning_main
           </router-link>
         </td>
         <td></td>
@@ -7501,11 +7501,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.Banner</td>
         <td>
-          <router-link :to="{ name: 'Main_banner' }">
-            Main_banner
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">437</td>
@@ -10306,7 +10306,7 @@
             components_keyboard
           </router-link>
         </td>
-        <td></td>
+        <td>20181221 업데이트</td>
       </tr>
       <tr>
       <td align="center">0</td>
@@ -10321,6 +10321,23 @@
         <td>
           <router-link :to="{ name: 'components_reply' }">
             components_reply
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>Bottom Sheet</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_bottomsheet' }">
+            components_bottomsheet
           </router-link>
         </td>
         <td></td>

@@ -26,7 +26,7 @@
 
         <div id="content" class="list">
             <div class="cell">
-                <ul class="singleList type_1">
+                <ul class="singleList type_1 ml-18 mr-18">
                     <li>
                         <a href="#">
                             <div class="tagWrap"><span class="color_clr1 border_clr1">D-20</span></div>
@@ -41,7 +41,7 @@
           <div class="cell">
             <!-- component -->
             <div class="inner">
-                <h2 class="h-tit2 mb10">임직원 필수 교육 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mb10">임직원 필수 교육 추천과정</h2>
                 <div class="scroll-x type2">
                     <!-- list -->
                     <ul class="thumList type2">
@@ -101,7 +101,7 @@
 
                 
             <div class="inner">
-                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>

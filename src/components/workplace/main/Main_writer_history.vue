@@ -26,7 +26,7 @@
                     <li class="fwr">구독 <span>1,524</span></li>
                 </ul>
                 <p class="fwr mono_65">홍길동입니다. 저는 이런 분야 전문가입니다. 국내 누구보다 전문적 지식을 갖추고 있다고 자부합니다. 홍길동입니다. 저는 이런 분야 전문가입니다. 국내 누구보다 전문적 지식을 갖추고 있다고 자부합니다. </p>
-                <div class="radius">
+                <div class="circle">
                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                 </div>
             </div>

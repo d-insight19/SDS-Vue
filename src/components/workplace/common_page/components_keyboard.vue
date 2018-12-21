@@ -10,14 +10,9 @@
           <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
         </div>
         <!-- //header -->
-
-
-
-
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-
 
                 <input type="text" class="input underline" placeholder="focus 시 toggle 됨" @focus="focusToggle"/>
 
@@ -30,40 +25,43 @@
                     keyboard_type : 3  = 공개여부 ( 공개여부 + TextArea )
                     keyboard_type : 4  = 북마크 + 공개여부 ( 북마크 + 공개여부 + TextArea )
                  -->
-                <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
-                <div class="keyboard_input" v-show="focusFlag">                
-                    
-                    <div class="bookmark_wrap" v-if="keyboard_type=='4'">
-                        <span class="bookmarktxt">북마크</span>
-                        <span class="fr time">01:36</span>
-                    </div>
-                    <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
-                        <span class="opentxt">공개여부</span>
-                        <slp-switch :classObject="{'fr': true}"/>
-                        <span class="opentxt2">비공개</span>
-                    </div>
-
-                    <div class="rating_wrap" v-if="keyboard_type=='2'">
-                        <span class="ratingtxt">평점</span>                        
-                        <fieldset class="fr rating">
-                            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                        </fieldset>
-                    </div>
-
-                    <div class="inputbox" >                        
-                        <div class="textarea_wrap">
-                            <textarea @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
+                <div id="keyboard_wrap">
+                    <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
+                    <div class="keyboard_input" v-show="focusFlag">                
+                        
+                        <div class="bookmark_wrap" v-if="keyboard_type=='4'">
+                            <span class="bookmarktxt">북마크</span>
+                            <span class="fr time">01:36</span>
                         </div>
-                        <div class="inputbottom">
-                            <span class="strlenth" >{{keylength}}/300</span>
-                            <span class="regiBtn" :class="{active: keylength}">등록</span>
+                        <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
+                            <span class="opentxt">공개여부</span>
+                            <slp-switch :classObject="{'fr': true}"/>
+                            <span class="opentxt2">비공개</span>
+                        </div>
+
+                        <div class="rating_wrap" v-if="keyboard_type=='2'">
+                            <span class="ratingtxt">평점</span>                        
+                            <fieldset class="fr rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            </fieldset>
+                        </div>
+
+                        <div class="inputbox" >                        
+                            <div class="textarea_wrap">
+                                <textarea @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
+                            </div>
+                            <div class="inputbottom">
+                                <span class="strlenth" >{{keylength}}/300</span>
+                                <span class="regiBtn" :class="{active: keylength}">등록</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
 
 
 

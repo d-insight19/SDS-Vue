@@ -27,9 +27,48 @@
         <div id="content" class="list">
         
           <!-- //component -->
+
+            <div class="cell">
+                <ul class="banner_list mr-18 ml-18">
+                    <li>
+                        <div class="banner_area">
+                            <div class="banner_image">
+                                <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                            </div>
+                            <div class="banner_pager">
+                                <p>01/18</p>
+                            </div>
+                            <div class="banner_content">
+                                <p>
+                                    <strong class="font_20">블록체인과 비즈니스 혁신</strong><br/>
+                                    비즈니스, 기술, 자기 계발 분야에서 능력을 키우세요
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner_area">
+                            <div class="banner_image">
+                                <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                            </div>
+                            <div class="banner_pager">
+                                <p>01/18</p>
+                            </div>
+                            <div class="banner_content">
+                                <p>
+                                    <strong class="font_20">블록체인과 비즈니스 혁신</strong><br/>
+                                    비즈니스, 기술, 자기 계발 분야에서 능력을 키우세요
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>
@@ -51,7 +90,7 @@
                     <li>
                         <div class="in">
                             <a href="#" class="thum">
-                                <span class="label">정규</span>
+                                <span class="label">자율</span>
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
@@ -91,7 +130,7 @@
                 
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">임직원 필수 교육 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mb10">임직원 필수 교육 추천과정</h2>
                 <div class="scroll-x type2">
                     <!-- list -->
                     <ul class="thumList type2">
