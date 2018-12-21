@@ -77,7 +77,8 @@
 .ico.like_32.red {background: url("../img/ic_thumb_line_red_32.png")}
 .ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
-
+.ico.check_24_blue {width:24px; height:24px; background: url("../img/ic_check_line_blue_24.png") ;background-size: cover;}
+.ico.close_24_black{width:24px; height:24px; background: url("../img/ic_close_line_24.png") ;background-size: cover;}
 
 
 
