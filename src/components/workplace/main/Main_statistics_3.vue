@@ -29,7 +29,7 @@
           <!-- component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">나의 학습현황</h2>
+                <h2 class="h-tit2 fwb600 mb10">나의 학습현황</h2>
                 <div class="status">
                     <div class="gray">
                         <dl>
@@ -89,7 +89,7 @@
               
           <div class="cell">  
             <div class="inner">
-                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>

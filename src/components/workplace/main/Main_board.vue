@@ -29,7 +29,7 @@
           <!-- //component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">공통 게시판</h2>
+                <h2 class="h-tit2 fwb600 mb10">공통 게시판</h2>
                 <!-- cBox -->
                 <div class="cBox">
                     <!-- tab -->
@@ -60,7 +60,7 @@
 
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>

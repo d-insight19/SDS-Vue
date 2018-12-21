@@ -148,6 +148,7 @@ import MainWriterChannel from '~workplace/main/Main_writer_channel'
 import MainWriterArticle from '~workplace/main/Main_writer_article'
 import MainWriterHistory from '~workplace/main/Main_writer_history'
 import MainWriterScroll from '~workplace/main/Main_writer_scroll'
+import MainLearningMain from '~workplace/main/Main_learning_main'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -931,6 +932,11 @@ var rootRoutes = [
     path: '/Main_writer_scroll',
     name: 'Main_writer_scroll',
     component: MainWriterScroll
+  },
+  {
+    path: '/Main_learning_main',
+    name: 'Main_learning_main',
+    component: MainLearningMain
   },
   {
     path: '/Drawer_alerm',

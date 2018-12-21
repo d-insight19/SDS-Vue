@@ -221,9 +221,12 @@
 #header.mainType .gnbMenu .menu_home .ico{background-position:-32px -285px;}
 #header.mainType .gnbMenu .menu_exploration .ico{background-position:-64px -285px;}
 #header.mainType .gnbMenu .menu_subscription .ico{background-position:-96px -285px;}
+#header.mainType .gnbMenu .menu_learn .ico{background-position:-128px -285px;}
 #header.mainType .gnbMenu .menu_home.on .ico{background-position:-32px -325px;}
 #header.mainType .gnbMenu .menu_exploration.on .ico{background-position:-64px -325px;}
 #header.mainType .gnbMenu .menu_subscription.on .ico{background-position:-96px -325px;}
+#header.mainType .gnbMenu .menu_learn.on .ico{background-position:-128px -325px;}
+
 
 // 메인 타입 2단형
 #header.mainType2{position: fixed; top: 0; z-index: 30; width: 100%;  height:100px; padding:0;}

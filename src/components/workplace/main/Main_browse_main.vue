@@ -29,8 +29,8 @@
           <!-- //component -->
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 fwb mb20">탐색</h1>
-                <h2 class="h-tit2 mb10">경영·리더십</h2>
+                <h1 class="h-tit1 fwb700 mb20">탐색</h1>
+                <h2 class="h-tit2 fwb600 mb10">경영·리더십</h2>
                 <div class="scroll-x type2">
                 
                     <div class="inner2">
@@ -118,7 +118,7 @@
                 
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">외국어</h2>
+                <h2 class="h-tit2 fwb600 mb10">외국어</h2>
                 <div class="scroll-x type2">
                     <div class="inner2">
                         <a href="#" class="category">영어 <span class="ico next_16_80"></span></a>

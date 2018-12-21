@@ -29,7 +29,7 @@
           <!-- component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb10">학점 이수 현황
+                <h2 class="h-tit2 fwb600 mb10">학점 이수 현황
                     <div class="fr font_14 fwl"><span class="ico point"></span></div>
                 </h2>
                 <div class="status">
@@ -71,7 +71,7 @@
               
           <div class="cell">  
             <div class="inner">
-                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>

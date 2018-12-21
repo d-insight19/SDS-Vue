@@ -32,8 +32,8 @@
                 
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 fwb mb20">구독</h1>
-                <h2 class="h-tit2 mb10">Channel
+                <h1 class="h-tit1 fwb700 mb20">구독</h1>
+                <h2 class="h-tit2 fwb600 mb10">Channel
                     <div class="fr color_clr2 font_14 fwl">전체보기</div>
                 </h2>
 

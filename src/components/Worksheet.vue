@@ -2753,8 +2753,8 @@
           2. 포틀릿 사용여부 및 순서 설정</td>
         <td class="textL">02.Main_02.02.01.Banner</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_banner' }">
+            Main_banner
           </router-link>
         </td>
         <td></td>
@@ -3135,10 +3135,10 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">02.Main_02.02.04.Study main</td>
+        <td class="textL">02.Main_02.02.06. Learning Main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_learning_main' }">
+            Main_learning_main
           </router-link>
         </td>
         <td></td>
@@ -7501,11 +7501,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.Banner</td>
         <td>
-          <router-link :to="{ name: 'Main_banner' }">
-            Main_banner
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">437</td>
