@@ -17,7 +17,7 @@
             <div class="inner">
                 <div class="scroll-x type1">
                     <div class="inner2">
-                        <h2 class="h-tit2 mb10">경영일반 추천과정</h2>
+                        <h2 class="h-tit2 fwb600 mb10">경영일반 추천과정</h2>
                         <!-- list -->
                         <ul class="thumList">
                             <li>
@@ -58,7 +58,7 @@
                         <!-- //list -->
                     </div>
                     <div class="inner2">
-                        <h2 class="h-tit2 mb10">경영전략 추천과정</h2>
+                        <h2 class="h-tit2 fwb600 mb10">경영전략 추천과정</h2>
                         <!-- list -->
                         <ul class="thumList">
                             <li>

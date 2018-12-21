@@ -1,6 +1,7 @@
 #container.mediaquery{
     padding:0;
-    height:100%;
+    min-height:100%;
+    position: relative;
     // 컨텐츠 내부
     .inner{
       // margin:0 auto;
@@ -31,6 +32,7 @@
     & #content{
       position: relative;
       margin: 0 auto;
+      min-height: 100vh;
       // height:100%;
       // background:tomato;
       .cell{
@@ -219,9 +221,12 @@
 #header.mainType .gnbMenu .menu_home .ico{background-position:-32px -285px;}
 #header.mainType .gnbMenu .menu_exploration .ico{background-position:-64px -285px;}
 #header.mainType .gnbMenu .menu_subscription .ico{background-position:-96px -285px;}
+#header.mainType .gnbMenu .menu_learn .ico{background-position:-128px -285px;}
 #header.mainType .gnbMenu .menu_home.on .ico{background-position:-32px -325px;}
 #header.mainType .gnbMenu .menu_exploration.on .ico{background-position:-64px -325px;}
 #header.mainType .gnbMenu .menu_subscription.on .ico{background-position:-96px -325px;}
+#header.mainType .gnbMenu .menu_learn.on .ico{background-position:-128px -325px;}
+
 
 // 메인 타입 2단형
 #header.mainType2{position: fixed; top: 0; z-index: 30; width: 100%;  height:100px; padding:0;}
@@ -301,7 +306,7 @@
 
 
 #container #content{padding:0px 0px 40px 0px}
-#container.pd70 #content{padding:0px 0px 70px 0px}
+#container.pd70 #content{padding:0px 0px 124px 0px}
 /*
 #container #content .inner{padding-top:24px;}
 // 연수원

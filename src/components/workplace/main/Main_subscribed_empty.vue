@@ -32,8 +32,8 @@
                 
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 mb20">구독</h1>
-                <h2 class="h-tit2 mb10">Channel
+                <h1 class="h-tit1 fwb700 mb20">구독</h1>
+                <h2 class="h-tit2 fwb600 mb10">Channel
                     <div class="fr color_clr2 font_14 fwl">전체보기</div>
                 </h2>
 
@@ -134,6 +134,44 @@
                             </ul>
                         </div>
                     </li>
+                    <li>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영전략</a>
+                            <a href="#" class="writer">홍길동</a>
+                            <ul class="info">
+                                <li class="icon">
+                                    <span class="view ico"></span><span class="info_value">2,190</span>
+                                </li>
+                                <li class="icon">
+                                    <span class="like ico"></span><span class="info_value">36</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영전략</a>
+                            <a href="#" class="writer">홍길동</a>
+                            <ul class="info">
+                                <li class="icon">
+                                    <span class="view ico"></span><span class="info_value">2,190</span>
+                                </li>
+                                <li class="icon">
+                                    <span class="like ico"></span><span class="info_value">36</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                     </ul>
                     <!-- //list -->
                 </div>
@@ -146,9 +184,28 @@
                 <h2 class="h-tit2 mb0">Hey, Day Writer</h2>
                 <p class="sub-tit mb10">Hey, Day 지식 창고 작가들</p>
                 
+                
                 <div class="scroll-x type2">
                     <!-- list -->
                     <ul class="thumList type8">
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </div>
+                            <a href="#" class="tit">홍길동</a>
+                            <a href="#" class="sub-tit">멀티캠퍼스 멀티미디어팀</a>
+                        </li>
                         <li>
                             <div class="thum">
                                 <div class="thumbnail">

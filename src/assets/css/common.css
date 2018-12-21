@@ -20,8 +20,8 @@
 .ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }
 .ico.more{width:20px;height:20px;background: url("../img/ic_moredots_20.png") no-repeat; }
 .ico.down-arr{width:16px;height:16px;background: url("../img/ic_accordion_arr_16_down.png") no-repeat; }
-.ico.reply-like{width:32px;height:32px;background: url("../img/ic_thumb_line_cblue_32.png") no-repeat; }
-.ico.reply-unlike{width:32px;height:32px;background: url("../img/ic_unlike_line_32.png") no-repeat; }
+.ico.like_32.blue{width:32px;height:32px;background: url("../img/ic_thumb_line_cblue_32.png") no-repeat; }
+.ico.unlike_32{width:32px;height:32px;background: url("../img/ic_unlike_line_32.png") no-repeat; }
 .ico.back{width:32px;height:32px;background: url("../img/ic_former_solid_32.png") no-repeat; }
 .ico.next{width:32px;height:32px;background: url("../img/ic_next_solid_black_32.png") no-repeat; }
 
@@ -82,6 +82,15 @@
 
 
 
+/* 추가 이미지 2018-12-21*/
+.ico.mark-o.sm{width: 38px;height: 38px;position: absolute;background: url("../img/ic_mark_o_small.png") no-repeat;}
+.ico.num-cir{width: 16px;height: 16px;position: absolute;background: url("../img/img_number_bg.png") no-repeat;}
+.ico.agree{width: 16px;height: 16px;background: url("../img/ic_mychoice_agree.png") no-repeat;}
+.ico.check_24_blue {width:24px; height:24px; background: url("../img/ic_check_line_blue_24.png") ;background-size: cover;}
+.ico.close_24_black{width:24px; height:24px; background: url("../img/ic_close_line_24.png") ;background-size: cover;}
+
+
+
 /* ico btn */
 .btn.only .ico{display: block;}
 .btn.only.trash .ico{width:20px; height:20px; background-position: -82px -64px;}
@@ -100,6 +109,7 @@
 .fwr{font-weight: 400 !important;}
 .fwb{font-weight: 500 !important;}
 .fwb600{font-weight: 600 !important;}
+.fwb700{font-weight: 700 !important;}
 
 
 

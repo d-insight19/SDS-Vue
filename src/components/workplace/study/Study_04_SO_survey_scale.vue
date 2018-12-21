@@ -101,25 +101,25 @@
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" >
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">전혀 아니다</span>                    
+                                    <span class="label" >전혀 아니다</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo" checked>
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" name="test-rdo" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">아니다</span>                    
+                                    <span class="label" >아니다</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" >
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
@@ -128,7 +128,7 @@
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo">
+                                <label  class="labelRdo" >
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
@@ -137,7 +137,7 @@
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo">
+                                <label  class="labelRdo" >
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
@@ -147,10 +147,10 @@
                             </li>
                         </ul>     
                         <p class="hr"></p>
-                        <p class="txt-tit">02. 나는 OO하는 것을 좋아한다.</p>                        
+                        <p class="txt-tit mb20">02. 나는 OO하는 것을 좋아한다.</p>                        
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" >
                                     <input type="radio" class="rdo" name="test-rdo-2">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
@@ -159,8 +159,8 @@
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo-2" checked>
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" name="test-rdo-2" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -168,7 +168,7 @@
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo">
+                                <label class="labelRdo" >
                                     <input type="radio" class="rdo" name="test-rdo-2">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
@@ -177,7 +177,7 @@
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo">
+                                <label  class="labelRdo" >
                                     <input type="radio" class="rdo" name="test-rdo-2" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
@@ -186,7 +186,7 @@
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo">
+                                <label  class="labelRdo" >
                                     <input type="radio" class="rdo" name="test-rdo-2">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
@@ -233,7 +233,6 @@ export default {
   },
   /* vue function */
   methods: {
-
   }
 }
 </script>

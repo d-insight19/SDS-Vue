@@ -29,7 +29,7 @@
             
             <!-- component -->
             <div class="inner">
-                <h2 class="h-tit2 mb10">학습 히스토리</h2>
+                <h2 class="h-tit2 fwb600 mb10">학습 히스토리</h2>
                 <div class="scroll-x type2">
                     <!-- list -->
                     <ul class="thumList type2">
@@ -92,7 +92,7 @@
 
                 
             <div class="inner">
-                <h2 class="h-tit2 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mb10">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>

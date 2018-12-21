@@ -33,40 +33,40 @@
                         <p class="inner-txt" >본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다                        
                         </p>
                         <ul class="ul-block com-rdo">
-                            <li>
-                                <label class="labelRdo">
-                                    <input type="radio" class="rdo" name="test-rdo">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label" >스타벅스</span>                    
-                                </label>
-                            </li>
-                            <li>
-                                <label class="labelRdo">
+                            <li >
+                                <label class="labelRdo" @click="activate(1)">
                                     <input type="radio" class="rdo" name="test-rdo" checked>
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"  >탐앤탐스</span>                    
+                                    <span class="label"  :class="{ color_clr2 : active_el == 1 }" >스타벅스</span>                    
                                 </label>
                             </li>
-                            <li>
-                                <label class="labelRdo">
+                            <li  >
+                                <label class="labelRdo" @click="activate(2)">
+                                    <input type="radio" class="rdo" name="test-rdo" >
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label" :class="{ color_clr2 : active_el == 2 }" >탐앤탐스</span>                    
+                                </label>
+                            </li>
+                            <li  >
+                                <label class="labelRdo" @click="activate(3)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >이디야</span>                    
+                                    <span class="label" :class="{ color_clr2 : active_el == 3 }" >이디야</span>                    
                                 </label>
                             </li>
-                            <li>
-                                <label  class="labelRdo">
+                            <li >
+                                <label  class="labelRdo" @click="activate(4)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">할리스</span>                    
+                                    <span class="label"  :class="{ color_clr2 : active_el == 4 }">할리스</span>                    
                                 </label>
                             </li>
                         </ul>      
@@ -98,10 +98,13 @@ export default {
   /* vue data */
   data () {
     return {
+      active_el: 1
     }
   },
-  /* vue function */
   methods: {
+    activate: function (el) {
+      this.active_el = el
+    }
   }
 }
 </script>

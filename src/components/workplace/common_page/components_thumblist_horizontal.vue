@@ -235,7 +235,8 @@
                 <ul class="thumList type4">
                     <li>
                         <div class="thum">
-                            <span class="label">D-29</span>
+                            <span class="label">정규</span>
+                            <span class="label4">D-29</span>
                             <span class="progWrap"><em class="bar clr2" style="width:20%;"></em></span>
                             <div class="cDim"></div>
                             <div class="thumbnail">
@@ -253,7 +254,7 @@
                     </li>
                     <li>
                         <div class="thum">
-                            <span class="label">D-29</span>
+                            <span class="label4">D-29</span>
                             <span class="progWrap"><em class="bar clr2" style="width:20%;"></em></span>
                             <div class="cDim"></div>
                             <div class="thumbnail">
@@ -271,7 +272,7 @@
                     </li>
                     <li>
                         <div class="thum">
-                            <span class="label">D-29</span>
+                            <span class="label4">D-29</span>
                             <span class="progWrap"><em class="bar clr2" style="width:20%;"></em></span>
                             <div class="cDim"></div>
                             <div class="thumbnail">

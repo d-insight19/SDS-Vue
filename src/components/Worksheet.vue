@@ -2771,8 +2771,8 @@
           2. 포틀릿 사용여부 및 순서 설정</td>
         <td class="textL">02.Main_02.02.01.Banner</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_banner' }">
+            Main_banner
           </router-link>
         </td>
         <td></td>
@@ -3062,11 +3062,15 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Article_Detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_article_detail' }">
+            Main_article_detail
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_article_detail_like' }">
+            Main_article_detail_like
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">173</td>
@@ -3096,8 +3100,12 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Writer    Channel</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_writer_channel' }">
+            Main_writer_channel
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Main_writer_scroll' }">
+            Main_writer_scroll
           </router-link>
         </td>
         <td></td>
@@ -3113,8 +3121,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Writer    Article</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_writer_article' }">
+            Main_writer_article
           </router-link>
         </td>
         <td></td>
@@ -3130,8 +3138,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.05.Writer    History</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_writer_history' }">
+            Main_writer_history
           </router-link>
         </td>
         <td></td>
@@ -3145,10 +3153,10 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">02.Main_02.02.04.Study main</td>
+        <td class="textL">02.Main_02.02.06. Learning Main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_learning_main' }">
+            Main_learning_main
           </router-link>
         </td>
         <td></td>
@@ -4781,10 +4789,10 @@
         <td class="textL">05.Study_02.22.studyquestion_detail</td>
         <td>
           <router-link :to="{ name: 'Study_02_studyquestion_detail' }">
-            Study_02_studyquestion_detail
+            Study_studyquestion_detail
           </router-link><br/>
           <router-link :to="{ name: 'Study_02_studyquestion_detail_02' }">
-            // detail_02
+            Study_studyquestion_detail_02
           </router-link>
         </td>
         <td></td>
@@ -5031,10 +5039,10 @@
         <td class="textL">05.Study_02.34.discuss_edit</td>
         <td>
           <router-link :to="{ name: 'Study_02_discuss_edit' }">
-            Study_02_discuss_edit
+            Study_discuss_edit
           </router-link><br/>
           <router-link :to="{ name: 'Study_02_discuss_edit_02' }">
-            // edit_02
+            Study_discuss_edit_02
           </router-link>
         </td>
         <td></td>
@@ -5067,8 +5075,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.36.reflectionnote_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_reflectionnote_detail' }">
+            Study_reflectionnote_detail
           </router-link>
         </td>
         <td></td>
@@ -5085,11 +5093,11 @@
         <td class="textL">05.Study_02.37.reflectionnote_edit</td>
         <td>
           <router-link :to="{ name: 'Study_02_reflectionnote_edit' }">
-            Study_02_reflectionnote_edit
+            Study_reflectionnote_edit
           </router-link>
           <br/>
           <router-link :to="{ name: 'Study_02_reflectionnote_edit_02' }">
-            // edit_02
+            Study_reflectionnote_edit_02
           </router-link>
         </td>
         <td></td>
@@ -5799,11 +5807,11 @@
         <td>　</td>
         <td class="textL">05.Study_04.03.SO_quiz_multichoice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_multichoice' }">
+            Study_04_SO_quiz_multichoice
           </router-link>
         </td>
-        <td></td>
+        <td>12-21작업중</td>
       </tr>
       <tr>
       <td align="center">336</td>
@@ -5816,8 +5824,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.04.SO_quiz_multichoice_result</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_multichoice_result' }">
+            Study_04_SO_quiz_multichoice_result
           </router-link>
         </td>
         <td></td>
@@ -5939,7 +5947,7 @@
             Study_04_SO_survey_scale
           </router-link>
         </td>
-        <td></td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">344</td>
@@ -5952,11 +5960,11 @@
         <td>　</td>
         <td class="textL">05.Study_04.12.SO_survey_multichoice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_survey_multichoice' }">
+            Study_04_SO_survey_multichoice
           </router-link>
         </td>
-        <td></td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">345</td>
@@ -5973,7 +5981,7 @@
             Study_04_SO_survey_answer
           </router-link>
         </td>
-        <td></td>
+        <td>12-20 작업중</td>
       </tr>
       <tr>
       <td align="center">346</td>
@@ -6101,7 +6109,7 @@
             Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
-        <td></td>
+        <td>12-20-작업중</td>
       </tr>
       <tr>
       <td align="center">354</td>
@@ -6116,6 +6124,9 @@
         <td>
           <router-link :to="{ name: 'Study_04_SO_opinion_submission' }">
             Study_04_SO_opinion_submission
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_opinion_submission_02' }">
+            study_submission_02
           </router-link>
         </td>
         <td></td>
@@ -6131,8 +6142,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.21.SO_opinion_submission_all</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_opinion_submission_all' }">
+            Study_04_SO_opinion_submission_all
           </router-link>
         </td>
         <td></td>
@@ -6182,8 +6193,8 @@
         <td></td>
         <td class="textL">05.Study_04.24.SO_debate_submission</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_debate_submission' }">
+            Study_04_SO_debate_submission
           </router-link>
         </td>
         <td></td>
@@ -6301,8 +6312,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.31.SO_studygoal</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_studygoal' }">
+            Study_04_SO_studygoal
           </router-link>
         </td>
         <td></td>
@@ -6335,8 +6346,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.33.SO_middle</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_middle' }">
+            Study_04_SO_middle
           </router-link>
         </td>
         <td></td>
@@ -6505,11 +6516,11 @@
         <td>　</td>
         <td class="textL">05.Study_04.43.SO_poll_input</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_poll_input' }">
+            Study_04_SO_poll_input
           </router-link>
         </td>
-        <td></td>
+        <td>해더배경이미지필요</td>
       </tr>
       <tr>
       <td align="center">378</td>
@@ -6539,8 +6550,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.45.SO_poll_submission_rod</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_poll_submission_rod' }">
+            Study_04_SO_poll_submission_rod
           </router-link>
         </td>
         <td></td>
@@ -10228,7 +10239,7 @@
             components_tabheader
           </router-link>
         </td>
-        <td>구현중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">0</td>
@@ -10311,6 +10322,40 @@
         <td>
           <router-link :to="{ name: 'components_keyboard' }">
             components_keyboard
+          </router-link>
+        </td>
+        <td>20181221 업데이트</td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>댓글</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_reply' }">
+            components_reply
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>Bottom Sheet</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_bottomsheet' }">
+            components_bottomsheet
           </router-link>
         </td>
         <td></td>

@@ -18,10 +18,13 @@
                     <li><a href="#tab3">Popular Channel</a></li>
                 </ul>
             </div>
+            <div class="blur_wrap">
+                <div class="right blur"></div>
+            </div>
         </div>
         <!-- //header -->
 
-        <div id="content" class="list">
+        <div id="content" class="etc">
         
           <div class="cell">
             <div class="inner">
