@@ -752,3 +752,17 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .keyboard_input .rating_wrap + .inputbox,
 .keyboard_input .open_wrap + .inputbox,
 .keyboard_input .bookmark_wrap + .inputbox{margin-top:0px;}
+
+// BottomSheet 
+// #bottomsheet_wrap{position:fixed;top:0px;left:0px;width:100%;height:100%;}
+#sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
+#bottomsheet{z-index:851;position:fixed;bottom:0px;left:0px;width:100%;background:#fff;}
+#bottomsheet .bottomsheetBtn{width:100%;height:64px;line-height:61px;border-top:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_16);letter-spacing: -0.48px;padding-left:58px;color:rgba(0,0,0,0.8)}
+#bottomsheet .bottomsheetBtn .ico{position:absolute;top:20px;left:18px;width:24px;height:24px;}
+#bottomsheet ul{width:100%;padding:8px 0px;}
+#bottomsheet ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
+#bottomsheet ul li .ico{position:absolute;top:12px;right:18px;display:none;}
+#bottomsheet ul li.active .ico{display:block}
+// 답변에 따라서 General_scss에 컬러값 추가하고, 수정해야함.
+#bottomsheet ul li .checkIcon{border-color:#00adfb;position: absolute;top: 13px;right: 25px;width: 9.8px;height: 16.5px;border-bottom: 3px solid;border-right: 3px solid;transform: rotate(45deg);display:none;}
+#bottomsheet ul li.active .checkIcon{display:block}

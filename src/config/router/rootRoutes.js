@@ -25,6 +25,7 @@ import ComponentsLayoutType2 from '~workplace/common_page/components_layout_type
 import ComponentsLayoutType3 from '~workplace/common_page/components_layout_type3'
 import ComponentsKeyboard from '~workplace/common_page/components_keyboard'
 import ComponentsReply from '~workplace/common_page/components_reply'
+import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -332,6 +333,11 @@ var rootRoutes = [
     path: '/components_reply',
     name: 'components_reply',
     component: ComponentsReply
+  },
+  {
+    path: '/components_bottomsheet',
+    name: 'components_bottomsheet',
+    component: ComponentsBottomsheet
   },
   {
     path: '/Login_findcenter',
