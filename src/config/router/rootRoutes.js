@@ -186,6 +186,14 @@ import CustomerCenterStudyguide from '~workplace/customercenter/CustomerCenter_S
 import CustomerCenterStudyguidedetail from '~workplace/customercenter/CustomerCenter_Studyguide_detail'
 import CustomerCenterFAQdetail from '~workplace/customercenter/CustomerCenter_FAQ_detail'
 import CustomerCenterInquiry from '~workplace/customercenter/CustomerCenter_Inquiry'
+import CustomerCenterInquirynone from '~workplace/customercenter/CustomerCenter_Inquiry_none'
+import CustomerCenterInquirywrite01 from '~workplace/customercenter/CustomerCenter_Inquiry_write01'
+import CustomerCenterInquirywrite01inputon from '~workplace/customercenter/CustomerCenter_Inquiry_write01_inputon'
+import CustomerCenterInquirywrite01error from '~workplace/customercenter/CustomerCenter_Inquiry_write01_error'
+import CustomerCenterRequest from '~workplace/customercenter/CustomerCenter_Request'
+import CustomerCenterRequestpopup1 from '~workplace/customercenter/CustomerCenter_Request_popup1'
+import CustomerCenterRequestpopup2 from '~workplace/customercenter/CustomerCenter_Request_popup2'
+import CustomerCenterRequesttoast01 from '~workplace/customercenter/CustomerCenter_Request_toast01'
 
 // 1번 영역
 var rootRoutes = [
@@ -1097,6 +1105,46 @@ var rootRoutes = [
     path: '/CustomerCenter_Inquiry',
     name: 'CustomerCenter_Inquiry',
     component: CustomerCenterInquiry
+  },
+  {
+    path: '/CustomerCenter_Inquiry_none',
+    name: 'CustomerCenter_Inquiry_none',
+    component: CustomerCenterInquirynone
+  },
+  {
+    path: '/CustomerCenter_Inquiry_write01',
+    name: 'CustomerCenter_Inquiry_write01',
+    component: CustomerCenterInquirywrite01
+  },
+  {
+    path: '/CustomerCenter_Inquiry_write01_inputon',
+    name: 'CustomerCenter_Inquiry_write01_inputon',
+    component: CustomerCenterInquirywrite01inputon
+  },
+  {
+    path: '/CustomerCenter_Inquiry_write01_error',
+    name: 'CustomerCenter_Inquiry_write01_error',
+    component: CustomerCenterInquirywrite01error
+  },
+  {
+    path: '/CustomerCenter_Request',
+    name: 'CustomerCenter_Request',
+    component: CustomerCenterRequest
+  },
+  {
+    path: '/CustomerCenter_Request_popup1',
+    name: 'CustomerCenter_Request_popup1',
+    component: CustomerCenterRequestpopup1
+  },
+  {
+    path: '/CustomerCenter_Request_popup2',
+    name: 'CustomerCenter_Request_popup2',
+    component: CustomerCenterRequestpopup2
+  },
+  {
+    path: '/CustomerCenter_Request_toast01',
+    name: 'CustomerCenter_Request_toast01',
+    component: CustomerCenterRequesttoast01
   }
 ]
 

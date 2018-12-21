@@ -78,27 +78,27 @@
         <!-- //container -->   
 
         <!-- layer wrap -->
-    <div class="layerWrap">
-        <div class="ly-in">            
-            <div class="ly-body">                
-                <div class="ly-info">
-                    <p>회원탈퇴가 완료되었습니다. <br>
-                    그동안 멀티캠퍼스를 이용해 주셔서 
-                    감사합니다. 앱을 종료합니다.</p>
+        <div class="layerWrap">
+            <div class="ly-in">            
+                <div class="ly-body">                
+                    <div class="ly-info">
+                        <p>회원탈퇴가 완료되었습니다. <br>
+                        그동안 멀티캠퍼스를 이용해 주셔서 
+                        감사합니다. 앱을 종료합니다.</p>
+                    </div>
                 </div>
+            
+                <div class="ly-btn">                
+                    <button type="button" class="btn color_clr2">확인</button>
+                </div>
+
             </div>
-        
-            <div class="ly-btn">                
-                <button type="button" class="btn color_clr2">확인</button>
-            </div>
+        </div>
+        <!-- //layer wrap -->
+
+        <div id="dim"></div>
 
         </div>
-    </div>
-    <!-- //layer wrap -->
-
-    <div id="dim"></div>
-
-    </div>
 
     </div>
     <!-- //wrap -->

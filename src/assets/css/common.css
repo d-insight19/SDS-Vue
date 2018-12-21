@@ -77,6 +77,10 @@
 .ico.like_32.red {background: url("../img/ic_thumb_line_red_32.png")}
 .ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
+.ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}
+.ico.deletemode_20_black {width:20px; height:20px; background: url("../img/ic_deletemode_20_black.png")}
+
+
 
 /* ico btn */
 .btn.only .ico{display: block;}

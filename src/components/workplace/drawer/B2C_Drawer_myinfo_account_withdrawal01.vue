@@ -75,7 +75,42 @@
             </div>           
             
         </div>
-        <!-- //container -->   
+        <!-- //container -->  
+
+        <!-- layer wrap -->
+        <div class="layerWrap">
+            <div class="ly-in">    
+                <div class="ly-hd">회원탈퇴 신청안내</div>        
+                <div class="ly-body">                
+                    <div class="ly-info">
+                        <p class="contents15">회원 탈퇴 신청후에는 모든 정보가 삭제
+                        되며, 복구가 불가능 합니다.
+                        신중하게 결정하시기 바랍니다.
+                        회원 탈퇴 신청후에는 멀티캠퍼스에서
+                        이용했던 다음과 같은 정보를 확인하실 
+                        수 없습니다.</p>
+
+                        <ol class="num">
+                        <li>학습정보</li>
+                        <li>수료 이력 화인</li>
+                        <li>결제 및 포인트</li>
+                        <li>시험 및 테스트 정보</li>
+                        <li>개인정보</li>
+                    </ol>
+                    </div>                    
+                </div>
+            
+                <div class="ly-btn">                
+                    <button type="button" class="btn color_clr2">확인</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- //layer wrap -->
+
+        <div id="dim"></div>
+
+        </div> 
   
 
     </div>

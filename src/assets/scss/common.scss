@@ -26,6 +26,8 @@ button.btn{
 
 }
 
+button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
+
 // 글자 폰트에 따른 클래스명 관리
 .font_11{font-size:map-get($font_size, font_11) !important;}
 .font_12{font-size:map-get($font_size, font_12) !important;}

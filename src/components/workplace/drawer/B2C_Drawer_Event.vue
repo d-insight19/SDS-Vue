@@ -29,7 +29,7 @@
                                         <h1 class="h-tit5 title_line">
                                             <span class="total_txt">총</span>
                                             <strong class="fwb600 count">112</strong><span>건</span>
-                                            <a href="#"><span class="ico down fr"></span><span class="fr">전체</span></a>
+                                            <a href="#"><span class="ico down fr"></span><span class="total fr">전체</span></a>
                                         </h1>
                 
                                         <ul class="multiList type3">
