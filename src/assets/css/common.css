@@ -78,7 +78,10 @@
 .ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
 
-
+/* 추가 이미지 2018-12-21*/
+.ico.mark-o.sm{width: 38px;height: 38px;position: absolute;background: url("../img/ic_mark_o_small.png") no-repeat;}
+.ico.num-cir{width: 16px;height: 16px;position: absolute;background: url("../img/img_number_bg.png") no-repeat;}
+.ico.agree{width: 16px;height: 16px;background: url("../img/ic_mychoice_agree.png") no-repeat;}
 
 
 /* ico btn */

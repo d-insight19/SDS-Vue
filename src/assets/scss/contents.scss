@@ -711,6 +711,7 @@
 .inb-box{display: inline-block; width:49%;}
 .inb-box label.labelRdo input.rdo + .ico{vertical-align: middle; margin:0 16px 0 0 ;}
 ul.com-rdo label.labelRdo input.rdo:checked + .ico .chk-blue { display: inline-block; background-position: -5px -5px; width: 22px; height: 22px; }
+ul.com-rdo label.labelRdo input.rdo:checked ~ .label { color:#00ADFB;}
 ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 /* 이미지를 색상 바꾸기 - 배경이미지 경로교체*/
 .inb-box label.labelRdo input.rdo ~ .label .chk-o{ width:48px;height:48px;background: url("../img/ic_o_48_n.png") no-repeat; }
@@ -798,6 +799,30 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.study_middle  #header div.hide-inner  p.h-tit5{font-weight:400; font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px;margin-top: 12px; }
 #container.study_middle  .guide-btn{margin-bottom:0px; margin-top:8px; }
 
+// 퀴즈 선다형
+.com-rdo li label span.ico.num-cir{border-radius: 50%; line-height: 16px !important;left: 44px; text-align: center; vertical-align: top; cursor: pointer; position: absolute; top: 5px; background: white; font-size:map-get($font-size, font_11);letter-spacing: -0.33px; color:rgba(0,0,0,0.8) }
+.img-rdo li  .labelRdo .label{border: 3px solid transparent}
+.img-rdo li  .labelRdo .label img.multi-img{ height:243px; width: 100%;}
+.single-img{height:auto;width: 100%; margin:0 auto 12px;}
+
+
+.com-rdo.result label{padding-left: 0;} 
+.com-rdo li label span.ico.num-cir.pull{ left: 8px;}
+label.rdo .label{position: relative;}
+.ico.mark-o.sm{top: -6px;left: -13px;}
+
+// 찬반 토론
+.txt-wrap .good-ex {color:map-get($contents_colors, type_2 ); font-size:map-get($font-size , font_16); line-height:20px; letter-spacing:-0.48px; font-weight:600; }
+.txt-wrap .bad-ex {color:map-get($contents_colors, type_1 );  font-size:map-get($font-size , font_16); line-height:20px; letter-spacing:-0.48px; font-weight:600;}
+.progBox .bar.r-bar{border-radius: 0 50px 50px 0; right:0; left:unset; background-color:map-get($contents_colors, type_1 );}
+.progBox .bar.l-bar{border-radius: 50px 0 0 50px; background-color:map-get($contents_colors, type_2 );}
+.fl .part-num-2{color:map-get($contents_colors, type_2 )}
+.fr .part-num-2{color:map-get($contents_colors, type_1 )}
+.progBox.bg-x{background:none; margin-top:6px;}
+.chip.agree{color:map-get($contents_colors, type_2 );border-color:map-get($contents_colors, type_2 );}
+.chip.agree-x{color:map-get($contents_colors, type_1 );border-color:map-get($contents_colors, type_1 );}
+#container.study_debate #header div.hide-inner  p.h-tit1{font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px; margin-top: 12px;}
+#container.study_debate #header div.hide-inner  p.h-tit5{font-weight:500; font-size:map-get($font-size , font_18);line-height:25px; letter-spacing:-0.54px;  }
 
 
 

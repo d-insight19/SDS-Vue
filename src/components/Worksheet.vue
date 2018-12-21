@@ -5789,11 +5789,11 @@
         <td>　</td>
         <td class="textL">05.Study_04.03.SO_quiz_multichoice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_multichoice' }">
+            Study_04_SO_quiz_multichoice
           </router-link>
         </td>
-        <td></td>
+        <td>12-21작업중</td>
       </tr>
       <tr>
       <td align="center">336</td>
@@ -5806,8 +5806,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.04.SO_quiz_multichoice_result</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_quiz_multichoice_result' }">
+            Study_04_SO_quiz_multichoice_result
           </router-link>
         </td>
         <td></td>
@@ -5929,7 +5929,7 @@
             Study_04_SO_survey_scale
           </router-link>
         </td>
-        <td>12-20-작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">344</td>
@@ -5942,11 +5942,11 @@
         <td>　</td>
         <td class="textL">05.Study_04.12.SO_survey_multichoice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_survey_multichoice' }">
+            Study_04_SO_survey_multichoice
           </router-link>
         </td>
-        <td></td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">345</td>
@@ -5963,7 +5963,7 @@
             Study_04_SO_survey_answer
           </router-link>
         </td>
-        <td>12-20-작업중</td>
+        <td>12-20 작업중</td>
       </tr>
       <tr>
       <td align="center">346</td>
@@ -6175,8 +6175,8 @@
         <td></td>
         <td class="textL">05.Study_04.24.SO_debate_submission</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_debate_submission' }">
+            Study_04_SO_debate_submission
           </router-link>
         </td>
         <td></td>

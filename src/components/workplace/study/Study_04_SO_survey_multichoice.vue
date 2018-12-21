@@ -21,7 +21,7 @@
                         <span class="chip wh">설문</span>                         
                         <p class="h-tit1">삶의 만족도 지수 조사</p>
                         <p class="h-tit5">
-                            <span>총 2문항</span>
+                            <span>총 3문항</span>
                         </p>
                     </div>
                 </div>
@@ -97,104 +97,126 @@
                         <p class="inner-txt">설문을 통해 자신의 삶의 만족도가 어느 정도인지 진단해 보세요. 10분정도 걸리는 간단한 설문입니다.</p>
                         <p class="line02"></p>
                         <p class="survey-tit">행복에 관한 조사입니다.</p>
-                        <p class="txt-tit">01. 다음 지문을 읽고 <span class="underline">틀린 것</span>을 고르시오. (5점)</p>
-                        <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
+                        <p class="txt-tit mb20">01. 나는 OO을 할 때 가장 행복하다.</p>
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo" >
+                                <label class="labelRdo" @click="activate(1)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >전혀 아니다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 1 }" >가족과의 여행</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" >
+                                <label class="labelRdo" @click="activate(2)">
                                     <input type="radio" class="rdo" name="test-rdo" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >아니다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 2 }" >친구와의 저녁 식사</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" >
+                                <label class="labelRdo" @click="activate(3)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">보통이다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 3 }">여러 사람과의 운동</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo" >
+                                <label  class="labelRdo" @click="activate(4)">
                                     <input type="radio" class="rdo" name="test-rdo">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 그렇다</span>                    
-                                </label>
-                            </li>
-                            <li>
-                                <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"> 매우 그렇다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 4 }"> 혼자하는 독서</span>                    
                                 </label>
                             </li>
                         </ul>     
                         <p class="hr"></p>
-                        <p class="txt-tit mb20">02. 나는 OO하는 것을 좋아한다.</p>                        
+                        <p class="txt-tit mb20">02. 가장 불행하다고 생각하는 2가지를 고르시오.</p>                        
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo" >
+                                <label class="labelRdo" @click="activate(6)">
                                     <input type="radio" class="rdo" name="test-rdo-2">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">전혀 아니다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 6 }">남들이 나의 컴플렉스에 대해 좋지 않은 이야기 하는 것을 들었을 때</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" >
+                                <label class="labelRdo" @click="activate(7)">
                                     <input type="radio" class="rdo" name="test-rdo-2" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">아니다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 7 }">금전적인 어려움을 겪을 때</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" >
+                                <label class="labelRdo" @click="activate(8)">
                                     <input type="radio" class="rdo" name="test-rdo-2">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">보통이다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 8 }">주변에 아무도 없다고 느낄 때</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo" >
+                                <label  class="labelRdo" @click="activate(9)">
                                     <input type="radio" class="rdo" name="test-rdo-2" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 그렇다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 9 }"> 몸이 아프다고 느낄 때</span>                    
                                 </label>
                             </li>
+                        </ul>
+                        <p class="hr"></p>
+                        <p class="txt-tit">03. 나는 OO을 할 때 가장 불행하다.</p>
+                        <p class="inner-txt op65 mb20">낙관주의는 아직 현실화하지 않은 일을 좋은 방향으로 생각하는 능력이다. 만사가 잘 될 수 있다는 약속을 믿는 것이다. 중요한 건 ‘만사가 잘 될 거’라는 막연한 느낌이 아니라 약속이다. 진정한 낙관주의자는 그 약속을 현실화시키기 위해 자기가 해야 할 일을 찾는다.” 옌스 바이드너의 이야기입니다.</p>
+                        <ul class="ul-block com-rdo">
                             <li>
-                                <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                <label class="labelRdo" @click="activate(1)">
+                                    <input type="radio" class="rdo" name="test-rdo-3">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 매우 그렇다</span>                    
+                                    <span class="label"   :class="{ color_clr2 : active_el == 1 }" >나에 관한 욕을 들을 때</span>                    
                                 </label>
                             </li>
-                        </ul>   
+                            <li>
+                                <label class="labelRdo" @click="activate(2)">
+                                    <input type="radio" class="rdo" name="test-rdo-3" >
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"   :class="{ color_clr2 : active_el == 2 }" >금전적인 어려움을 겪을 때</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label class="labelRdo" @click="activate(3)">
+                                    <input type="radio" class="rdo" name="test-rdo-3">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"   :class="{ color_clr2 : active_el == 3 }">주변에 아무도 없다고 느낄 때</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label  class="labelRdo" @click="activate(4)">
+                                    <input type="radio" class="rdo" name="test-rdo-3">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label"   :class="{ color_clr2 : active_el == 4 }"> 몸이 아프다고 느낄 때</span>                    
+                                </label>
+                            </li>
+                        </ul>     
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -229,10 +251,19 @@ export default {
   data () {
     return {
       headerType: 1
+    //   active_el: 0,
     }
   },
   /* vue function */
   methods: {
+    // activate: function (el) {
+    //   if(this.active_el > 5){
+    //       this.active_el = el
+    //       return false
+    //   }else if(this.active_el <= 5){
+    //       this.active_el = el
+    //   }
+    // }
   }
 }
 </script>

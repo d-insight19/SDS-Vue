@@ -87,6 +87,7 @@ import Study04SOquizsubmission from '~workplace/study/Study_04_SO_quiz_submissio
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
 import Study04SOsurveyintro from '~workplace/study/Study_04_SO_survey_intro'
 import Study04SOsurveyscale from '~workplace/study/Study_04_SO_survey_scale'
+import Study04SOsurveymultichoice from '~workplace/study/Study_04_SO_survey_multichoice'
 import Study04SOsurveyanswer from '~workplace/study/Study_04_SO_survey_answer'
 import Study04SOopinionintro from '~workplace/study/Study_04_SO_opinion_intro'
 import Study04SOopinionsubmission from '~workplace/study/Study_04_SO_opinion_submission'
@@ -105,12 +106,15 @@ import Study04SOquizOX from '~workplace/study/Study_04_SO_quiz_OX'
 import Study04SOquizOXresult from '~workplace/study/Study_04_SO_quiz_OX_result'
 import Study04SOquizshortanswer from '~workplace/study/Study_04_SO_quiz_shortanswer'
 import Study04SOquizshortanswerresult from '~workplace/study/Study_04_SO_quiz_shortanswer_result'
+import Study04SOquizmultichoice from '~workplace/study/Study_04_SO_quiz_multichoice'
+import Study04SOquizmultichoiceresult from '~workplace/study/Study_04_SO_quiz_multichoice_result'
 import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
 import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
 import Study04SOpollinput from '~workplace/study/Study_04_SO_poll_input'
 import Study04SOpollsubmissionrod from '~workplace/study/Study_04_SO_poll_submission_rod'
 import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
+import Study04SOdebatesubmission from '~workplace/study/Study_04_SO_debate_submission'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -649,6 +653,11 @@ var rootRoutes = [
     component: Study04SOsurveyscale
   },
   {
+    path: '/Study_04_SO_survey_multichoice',
+    name: 'Study_04_SO_survey_multichoice',
+    component: Study04SOsurveymultichoice
+  },
+  {
     path: '/Study_04_SO_survey_answer',
     name: 'Study_04_SO_survey_answer',
     component: Study04SOsurveyanswer
@@ -719,6 +728,16 @@ var rootRoutes = [
     component: Study04SOquizshortanswer
   },
   {
+    path: '/Study_04_SO_quiz_multichoice',
+    name: 'Study_04_SO_quiz_multichoice',
+    component: Study04SOquizmultichoice
+  },
+  {
+    path: '/Study_04_SO_quiz_multichoice_result',
+    name: 'Study_04_SO_quiz_multichoice_result',
+    component: Study04SOquizmultichoiceresult
+  },
+  {
     path: '/Study_04_SO_pledge',
     name: 'Study_04_SO_pledge',
     component: Study04SOpledge
@@ -752,6 +771,11 @@ var rootRoutes = [
     path: '/Study_04_SO_studygoal',
     name: 'Study_04_SO_studygoal',
     component: Study04SOstudygoal
+  },
+  {
+    path: '/Study_04_SO_debate_submission',
+    name: 'Study_04_SO_debate_submission',
+    component: Study04SOdebatesubmission
   },
   {
     path: '/Main_control',

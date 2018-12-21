@@ -15,9 +15,9 @@
                 <div class="cell">
                     <div class="inner">
 
-                        <h1 class="h-tit5">
+                        <p class="h-tit5">
                             OO은 OO해야 합니다. 의견공유 텍스트 질문 영역입니다.  당신의 의견은 어떻습니까?
-                        </h1>
+                        </p>
 
                         <ul class="multiList type3">
                             <li>
