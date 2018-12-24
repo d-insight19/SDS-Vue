@@ -1189,8 +1189,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_05.02_Inquiry_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_detail' }">
+            CustomerCenter_Inquiry_detail
           </router-link>
         </td>
         <td></td>
@@ -1229,9 +1229,9 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_06.01_Studysupport</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          <!--<router-link :to="{ name: 'CustomerCenter_Studysupport' }">
+            CustomerCenter_Studysupport
+          </router-link> -->
         </td>
         <td></td>
       </tr>
@@ -1291,6 +1291,9 @@
           </router-link>,
           <router-link :to="{ name: 'CustomerCenter_Request_toast01' }">
             CustomerCenter_Request_toast01
+          </router-link>,
+          <router-link :to="{ name: 'CustomerCenter_Request_resultlist' }">
+            CustomerCenter_Request_resultlist
           </router-link>
         </td>
         <td></td>
@@ -1323,8 +1326,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_08.01_PrivacyPolicy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_PrivacyPolicy' }">
+            CustomerCenter_PrivacyPolicy
           </router-link>
         </td>
         <td></td>
@@ -6210,11 +6213,11 @@
         <td>　</td>
         <td class="textL">05.Study_04.25.SO_debate_submission_all</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_debate_submission_all' }">
+            Study_04_SO_debate_submission_all
           </router-link>
         </td>
-        <td></td>
+        <td>푸른아이콘 이미지필요</td>
       </tr>
       <tr>
       <td align="center">360</td>

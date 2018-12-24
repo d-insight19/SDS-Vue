@@ -550,7 +550,7 @@
 .reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
 .reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);     margin-bottom: 10px;}
 .reply-name .ico.more {cursor: pointer;}
-.reply-wrap .down-arr {cursor: pointer; margin-right:1px;}
+.reply-wrap .arr.down {cursor: pointer; margin-right:1px;}
 .reply-wrap .like_32 {cursor: pointer;}
 .reply-wrap .reply-num {font-size:map-get($font-size, font_14);line-height: 19px; }
 .reply-wrap .unlike_32 {cursor: pointer; margin-left:8px;}
@@ -811,7 +811,7 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 label.rdo .label{position: relative;}
 .ico.mark-o.sm{top: -6px;left: -13px;}
 
-// 찬반 토론
+// 찬반 토론 - 제출
 .txt-wrap .good-ex {color:map-get($contents_colors, type_2 ); font-size:map-get($font-size , font_16); line-height:20px; letter-spacing:-0.48px; font-weight:600; }
 .txt-wrap .bad-ex {color:map-get($contents_colors, type_1 );  font-size:map-get($font-size , font_16); line-height:20px; letter-spacing:-0.48px; font-weight:600;}
 .progBox .bar.r-bar{border-radius: 0 50px 50px 0; right:0; left:unset; background-color:map-get($contents_colors, type_1 );}
@@ -824,8 +824,22 @@ label.rdo .label{position: relative;}
 #container.study_debate #header div.hide-inner  p.h-tit1{font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px; margin-top: 12px;}
 #container.study_debate #header div.hide-inner  p.h-tit5{font-weight:500; font-size:map-get($font-size , font_18);line-height:25px; letter-spacing:-0.54px;  }
 
+// 찬반 토론 - 댓글펼치기
 
 
+#container.study_debate .txt-line{ margin-top: 13px; padding-top: 0px; padding-bottom: 14px;}
+#container.study_debate .txt-line p.tar{ text-align: right; font-weight:500; font-size:map-get($font-size , font_15);line-height:28px;}
+.multiList .left_pd { padding-left: 18px;}
+.multiList .left_pd .n-ml18{margin-left: -18px;} 
+.multiList .left_pd .reply-wrap.mt0{margin-top:0;} 
+.multiList .left_pd .reply-num.mb{margin-bottom: 8px;} 
+.multiList .left_pd .reply-num.mt{margin-top: 4px;}
+.multiList .top_bottom_pd{padding-top: 14px; padding-bottom: 14px;}
+.multiList .infoChk {padding-right: 0;}
+.multiList .infoChk .input{width:calc(100% - 57px); background: #fff; border: 1px solid #ebebeb;}
+.multiList .infoChk .btn{width:57px}
+.chip.type2 {font-weight: 500;  font-size:map-get($font-size , font_11);display: inline-block;margin-bottom: 0px;height: 22px;border-radius: 16px;
+    padding: 3px 10px;line-height: 15px;}
 
 
 
@@ -949,6 +963,7 @@ label.rdo .label{position: relative;}
 #container.drawer .multiintroduce p.name {font-size:map-get($font_size, font_14); color:#000; line-height: 24px; letter-spacing: -0.42px; text-align: left; margin: 6px 0 24px} 
 // drawer 끝
 
+
 //customercenter
 #container.mediaquery.board #header .info .article {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.65); font-weight:400; line-height:22px; margin-bottom:1px}
 #container.mediaquery.board #header .info .article span.val {color:#000; padding-left: 12px}
@@ -985,6 +1000,25 @@ label.rdo .label{position: relative;}
 #container.drawer.inquiry #header.tab .header_text {display: block; padding-left: 70px}
 #container.drawer button.btn13 {font-size:map-get($font_size, font_13); }
 #container.drawer span.total {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.8);}
+
+//개인정보 처리방침
+#container.drawer.privacypolicy .select_wrap {position: fixed; left:0; bottom:0; z-index: 100; width:100%; padding: 18px}
+#container.drawer.privacypolicy select{ width:100%; }
+
+//문의내용 답변
+.qa_content p {font-size:map-get($font_size, font_15);}
+.qa_content p.title {font-size:map-get($font_size, font_14); font-weight: bold; margin-bottom:5px}
+.qa_content .title span.q {display:inline-block; border-radius:100%; width:22px; height:22px; border:#eee 1px solid; text-align: center; font-size:map-get($font_size, font_12); line-height:19px; margin-right:10px}
+.qa_content .title span.a {display:inline-block; border-radius:100%; width:22px; height:22px; text-align: center; font-size:map-get($font_size, font_12); color:#fff; font-weight:300; line-height:21px; margin-right:10px}
+.qa_content .answer {margin-top:17px; padding-left:18px; background: url("../img/ic_indent_line_gray_16.png") no-repeat left top;}
+.qa_content .answer p.content {font-weight: 500}
+.qa_content .info {margin:3px 0 14px}
+.qa_content .info li {display: inline-block; font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65);}
+
+//학습지원
+#container.drawer.studysupport .singleList.type_1 li a {padding-right: 0}
+#container.drawer.studysupport .singleList .border_top {border-top:#e3e3e3 1px solid}
+#container.drawer.studysupport .singleList.type_1 li a {line-height:23px}
 
 
 

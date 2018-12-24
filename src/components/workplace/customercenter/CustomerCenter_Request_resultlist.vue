@@ -21,7 +21,7 @@
                     <h1 class="h-tit5 title_line">
                         <span class="total_txt">총</span>
                         <strong class="fwb600 count">2</strong><span>건</span>
-                        <a href="#"><span class="ico down fr"></span><span class="total fr">진행중</span></a>
+                        <a href="#"><span class="ico down fr"></span><span class="total fr">마감</span></a>
                     </h1>
                 
                     <ul class="multiList type3">
@@ -31,9 +31,9 @@
                                 LMS 설문 테스트입니다.LMS 설문 테스트입니다.<br>LMS 설문 테스트입니다.
                             </div>                                                     
                             <ul class="info">
-                            <li class="fwb color_clr3">진행중</li>
+                            <li class="fwb">마감</li>
                             <li class="icon"><span class="date">2018.10.10 ~ 2018.10.20</span></li>
-                            <button type="button" class="btn13 color_clr2 fr"> 설문하기</button> 
+                            <button type="button" class="btn13 color_clr2 fr"> 결과보기</button> 
                             </ul>
                         </div>                                                
                         </li>
@@ -43,9 +43,9 @@
                                 LMS 설문 테스트입니다.LMS 설문 테스트입니다.<br>LMS 설문 테스트입니다.
                             </div>                                                     
                             <ul class="info">
-                            <li class="fwb color_clr3">진행중</li>
+                            <li class="fwb">마감</li>
                             <li class="icon"><span class="date">2018.10.10 ~ 2018.10.20</span></li>
-                            <button type="button" class="btn13 color_clr2 fr"> 설문하기</button> 
+                            <button type="button" class="btn13 color_clr2 fr"> 결과보기</button> 
                             </ul>
                         </div>                                                
                         </li>
