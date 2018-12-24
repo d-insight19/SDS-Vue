@@ -56,6 +56,8 @@
         &.list{
           width:calc(100% - #{$l_padding}*2);
           .inner{}
+
+          &~.fixBtmBtn.abs{padding: 0px #{$l_padding};  }
         }
         //일반형
         &.normal{
@@ -63,15 +65,18 @@
           .cell{
             .inner{}
           }
+          &~.fixBtmBtn.abs{padding: 0px #{$c_padding};  }
         }
         //예외형
         &.etc{
           width:calc(100% - #{$l_padding}*2);
           .inner{}
+          &~.fixBtmBtn.abs{padding: 0px #{$l_padding};  }
         }
         // 동영상
         &.media{
           width:calc(100% - #{$c_padding}*2);
+          &~.fixBtmBtn.abs{padding: 0px #{$c_padding};  }
         }
       }
     }
@@ -86,23 +91,26 @@
         &.list{
           width:calc(100% - #{$l_padding}*2);
           .inner{}
+          &~.fixBtmBtn.abs{padding: 0px #{$l_padding};  }
         }
         //일반형
         &.normal{
-          // width:calc(100% - #{$c_padding}*2);
           width:620px;
           .cell{            
             .inner{}
           }
+          &~.fixBtmBtn.abs{width:620px;left:50%;transform:translateX(-50%)}
         }
         //예외형
         &.etc{
           width:520px;
           .inner{}
+          &~.fixBtmBtn.abs{width:520px;left:50%;transform:translateX(-50%)}          
         }
         // 동영상
         &.media{
           width:620px;
+          &~.fixBtmBtn.abs{width:620px;left:50%;transform:translateX(-50%)}
         }
       }
     }
@@ -117,23 +125,26 @@
         &.list{
           width:calc(100% - #{$l_padding}*2);
           .inner{}
+          &~.fixBtmBtn.abs{padding: 0px #{$l_padding};  }
         }
         //일반형
         &.normal{
-          // width:calc(100% - #{$c_padding}*2);
           width:840px;
           .cell{
             .inner{}
           }
+          &~.fixBtmBtn.abs{width:840px;left:50%;transform:translateX(-50%)}
         }
         //예외형
         &.etc{
           width:520px;
           .inner{}
+          &~.fixBtmBtn.abs{width:520px;left:50%;transform:translateX(-50%)}
         }
         // 동영상
         &.media{
           width:844px;
+          &~.fixBtmBtn.abs{width:844px;left:50%;transform:translateX(-50%)}
         }
       }
     }
