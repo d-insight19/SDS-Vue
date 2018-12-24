@@ -214,6 +214,10 @@ import CustomerCenterRequest from '~workplace/customercenter/CustomerCenter_Requ
 import CustomerCenterRequestpopup1 from '~workplace/customercenter/CustomerCenter_Request_popup1'
 import CustomerCenterRequestpopup2 from '~workplace/customercenter/CustomerCenter_Request_popup2'
 import CustomerCenterRequesttoast01 from '~workplace/customercenter/CustomerCenter_Request_toast01'
+import CustomerCenterRequestresultlist from '~workplace/customercenter/CustomerCenter_Request_resultlist'
+import CustomerCenterPrivacyPolicy from '~workplace/customercenter/CustomerCenter_PrivacyPolicy'
+import CustomerCenterInquirydetail from '~workplace/customercenter/CustomerCenter_Inquiry_detail'
+import CustomerCenterStudysupport from '~workplace/customercenter/CustomerCenter_Studysupport'
 
 // 1번 영역
 var rootRoutes = [
@@ -1265,6 +1269,26 @@ var rootRoutes = [
     path: '/CustomerCenter_Request_toast01',
     name: 'CustomerCenter_Request_toast01',
     component: CustomerCenterRequesttoast01
+  },
+  {
+    path: '/CustomerCenter_Request_resultlist',
+    name: 'CustomerCenter_Request_resultlist',
+    component: CustomerCenterRequestresultlist
+  },
+  {
+    path: '/CustomerCenter_PrivacyPolicy',
+    name: 'CustomerCenter_PrivacyPolicy',
+    component: CustomerCenterPrivacyPolicy
+  },
+  {
+    path: '/CustomerCenter_Inquiry_detail',
+    name: 'CustomerCenter_Inquiry_detail',
+    component: CustomerCenterInquirydetail
+  },
+  {
+    path: '/CustomerCenter_Studysupport',
+    name: 'CustomerCenter_Studysupport',
+    component: CustomerCenterStudysupport
   }
 ]
 
