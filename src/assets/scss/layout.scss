@@ -1,6 +1,6 @@
 #container.mediaquery{
     padding:0;
-    min-height:100%;
+    min-height:calc(100vh - 14px);
     position: relative;
     // 컨텐츠 내부
     .inner{
@@ -32,7 +32,6 @@
     & #content{
       position: relative;
       margin: 0 auto;
-      min-height: 100vh;
       // height:100%;
       // background:tomato;
       .cell{
@@ -125,7 +124,7 @@
         &.list{
           width:calc(100% - #{$l_padding}*2);
           .inner{}
-          &~.fixBtmBtn.abs{padding: 0px #{$l_padding};  }
+          &~.fixBtmBtn.abs{padding: 0px #{$l_padding};}
         }
         //일반형
         &.normal{

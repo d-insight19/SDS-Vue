@@ -10363,6 +10363,23 @@
         </td>
         <td></td>
       </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>Spinner</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_spinner' }">
+            components_spinner
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
 
       </tbody>
     </table>
