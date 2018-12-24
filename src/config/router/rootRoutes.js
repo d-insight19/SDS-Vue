@@ -116,6 +116,7 @@ import Study04SOpollsubmissionrod from '~workplace/study/Study_04_SO_poll_submis
 import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
 import Study04SOdebatesubmission from '~workplace/study/Study_04_SO_debate_submission'
+import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_submission_all'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -795,6 +796,11 @@ var rootRoutes = [
     path: '/Study_04_SO_debate_submission',
     name: 'Study_04_SO_debate_submission',
     component: Study04SOdebatesubmission
+  },
+  {
+    path: '/Study_04_SO_debate_submission_all',
+    name: 'Study_04_SO_debate_submission_all',
+    component: Study04SOdebatesubmissionall
   },
   {
     path: '/Main_control',
