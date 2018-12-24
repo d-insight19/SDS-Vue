@@ -692,7 +692,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
 .reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);}
 .reply-name .ico.more {cursor: pointer;}
-.reply-wrap .down-arr {cursor: pointer; margin-right:1px;}
+.reply-wrap .arr.down {cursor: pointer; margin-right:1px;}
 .reply-wrap .reply-like {cursor: pointer;}
 .reply-wrap .reply-num {font-size:map-get($font-size, font_14);line-height: 19px; }
 .reply-wrap .reply-unlike {cursor: pointer; margin-left:8px;}

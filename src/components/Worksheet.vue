@@ -6210,11 +6210,11 @@
         <td>　</td>
         <td class="textL">05.Study_04.25.SO_debate_submission_all</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_debate_submission_all' }">
+            Study_04_SO_debate_submission_all
           </router-link>
         </td>
-        <td></td>
+        <td>푸른아이콘 이미지필요</td>
       </tr>
       <tr>
       <td align="center">360</td>
