@@ -34,39 +34,39 @@
                         </p>
                         <ul class="ul-block com-rdo">
                             <li >
-                                <label class="labelRdo" @click="activate(1)">
-                                    <input type="radio" class="rdo" name="test-rdo" checked>
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[0]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"  :class="{ color_clr2 : active_el == 1 }" >스타벅스</span>                    
+                                    <span class="label"   >스타벅스</span>                    
                                 </label>
                             </li>
                             <li  >
-                                <label class="labelRdo" @click="activate(2)">
-                                    <input type="radio" class="rdo" name="test-rdo" >
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[1]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" :class="{ color_clr2 : active_el == 2 }" >탐앤탐스</span>                    
+                                    <span class="label"  >탐앤탐스</span>                    
                                 </label>
                             </li>
                             <li  >
-                                <label class="labelRdo" @click="activate(3)">
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[2]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" :class="{ color_clr2 : active_el == 3 }" >이디야</span>                    
+                                    <span class="label"  >이디야</span>                    
                                 </label>
                             </li>
                             <li >
-                                <label  class="labelRdo" @click="activate(4)">
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                <label  class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[3]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"  :class="{ color_clr2 : active_el == 4 }">할리스</span>                    
+                                    <span class="label"  >할리스</span>                    
                                 </label>
                             </li>
                         </ul>      
@@ -76,7 +76,7 @@
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md clr1">제출</button>
+                <button type="button" class="btn md" :class="{clr1: rdo}">제출</button>
             </div>
             <!-- //floatingbtn -->
 
@@ -98,13 +98,12 @@ export default {
   /* vue data */
   data () {
     return {
-      active_el: 1
+      active_el: 1,
+      rdo: undefined,
+      rdos: [1, 2, 3, 4]
     }
   },
   methods: {
-    activate: function (el) {
-      this.active_el = el
-    }
   }
 }
 </script>

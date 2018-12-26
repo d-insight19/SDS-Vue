@@ -453,9 +453,9 @@
 
 
 // 모범답안 //
-#container.study_assinment_be .empty_img { width: 100%; height: auto; margin: 12px 0 20px;}
-#container.study_assinment_be .txt-tit {font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px; }
-#container.study_assinment_be .inner-txt {font-weight:400; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px; color: rgba(0,0,0,0.8);}
+#container.study_assinment .empty_img { width: 100%; height: auto; margin: 12px 0 20px;}
+#container.study_assinment .txt-tit {font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px; }
+#container.study_assinment .inner-txt {font-weight:400; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px; color: rgba(0,0,0,0.8);}
 
 // 토론방 - 수정,등록 //
 #container.study_discuss .singleList{margin-top: 8px; margin-bottom:20px;}
@@ -485,7 +485,7 @@
 #container.study_simulation .inner{position: relative;}
 
 // 공통전용 //
-.absBtmBtn{position:fixed;left: 0;bottom: 0;z-index: 100;width: 100%; padding:18px;}
+.absBtmBtn{position:absolute;left: 0;bottom: 0;z-index: 100;width: 100%; padding:18px;}
 .absBtmBtn .btn[disabled] {color: #c1c1c1 !important; background: #ededed !important;}
 .absBtmBtn ul{display: table; table-layout: fixed; width: 100%;}
 .absBtmBtn li{display: table-cell;}
@@ -697,6 +697,9 @@
 #container.study_quiz_sub .ulList.type4 li p .q-list-a{ color:map-get($mono_colors, mono_80); display: inline-block; margin-right:6px; font-weight:500; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;} 
 #container.study_quiz_sub .ulList.type4 li p .ico{ vertical-align: -2px; } 
 #header .hide-inner { width: calc(100% - 18px*2); margin: 0 auto; line-height: 27px; }
+#header .hide-inner { width: calc(100% - 18px*2); margin: 0 auto; line-height: 27px; }
+#header .hide-inner p.h-tit1 {font-weight:500 !important; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
+#header .hide-inner p.h-tit5 {font-weight:400 !important; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;  padding:12px 0 0 0 ;}
 #header .ico.chk{ vertical-align: -3px; } 
 
 // 핵심요약
@@ -772,6 +775,13 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.study_opinion.bg {background: url("../img/img_opinion_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 #container.study_opinion .inner.wh .h-tit5{ color: rgba(255,255,255,0.8); font-weight:300; font-size:map-get($font-size, font_14);line-height: 38px; letter-spacing: -0.42px;}
 
+// 액션플랜 인트로
+#container.study_action.bg {background: url("../img/img_actionplan_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+
+
+// 액션플랜 인트로
+#container.study_assinment.bg {background: url("../img/img_assinment_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+
 
 // 의견공유 서술형
 #container.study_opinion #header div.hide-inner p.h-tit1 {max-width:80%; font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
@@ -825,8 +835,6 @@ label.rdo .label{position: relative;}
 #container.study_debate #header div.hide-inner  p.h-tit5{font-weight:500; font-size:map-get($font-size , font_18);line-height:25px; letter-spacing:-0.54px;  }
 
 // 찬반 토론 - 댓글펼치기
-
-
 #container.study_debate .txt-line{ margin-top: 13px; padding-top: 0px; padding-bottom: 14px;}
 #container.study_debate .txt-line p.tar{ text-align: right; font-weight:500; font-size:map-get($font-size , font_15);line-height:28px;}
 .multiList .left_pd { padding-left: 18px;}
@@ -842,9 +850,14 @@ label.rdo .label{position: relative;}
     padding: 3px 10px;line-height: 15px;}
 
 
+// 액션플랜 
+#header.action-head-bg{background: url("../img/img_actionplan_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+#container.study_action .hr { margin:20px -24px }
 
 
-
+// 과제내용 입력
+#header.assinment-head-bg{background: url("../img/img_assinment_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+#container.study_assinment .guide-btn.mr8{margin-right:8px;}
 
 
 

@@ -3,23 +3,24 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_poll pd70">
+        <div id="container" class="mediaquery study_ot">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand wh quiz-head-bg">          
+            <div v-if="headerType == '1'" id="header" class="expand">          
                 <div class="header_inner line1">
-                    <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
-                    <div class="page-btn">
-                        <span class="ico back-wh"></span>
-                        <div class="num "><span>03</span> / <span>36</span></div>
-                        <span class="ico next-wh"></span>
-                    </div>
+                    <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                    <div class="page-btn">
+                        <span class="ico back"></span>
+                        <div class="num"><span>3</span> / <span>36</span></div>
+                        <span class="ico next"></span>
+                    </div>
                 </div>  
-                <div class="hide_header" style="background:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:60px">                
+                <div class="hide_header" style="padding-top: 62px; padding-bottom:28px ; border-bottom:1px solid #ccc;">                
                     <div class="hide-inner">
-                        <span class="chip wh">POLL</span>                         
-                        <p class="h-tit1">선호 커피 브랜드 시장 조사 선호 커피 브랜드 시장 조사</p>
+                        <span class="chip">과정 OT</span>                         
+                        <p class="h-tit1">과정OT 타이틀 영역입니다 과정OT 타이틀 영역입니다</p>
+                        <p class="h-tit5">설명 입니다. 설명 입니다. 설명 입니다. Admin에서 등록된 내용 출력 (선택사항)</p>
                     </div>
                 </div>
             </div>
@@ -91,45 +92,48 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner"> 
-                        <p class="h-tit5">1. 좋아하는 커피브랜드 1개이상 선택해주세요.</p>
-                        <ul class="ul-block com-rdo">
-                            <li >
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[0]" checked>
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"   >스타벅스</span>                    
-                                </label>
-                            </li>
-                            <li  >
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[1]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"  >탐앤탐스</span>                    
-                                </label>
-                            </li>
-                            <li  >
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[2]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"  >이디야</span>                    
-                                </label>
-                            </li>
-                            <li >
-                                <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[3]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"  >할리스</span>                    
-                                </label>
-                            </li>
+                        <p class="empty_img">
+                            <img src="" alt="">
+                        </p>
+                        <p class="inner-txt op65">본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 </p>
+                        <p class="empty_img">
+                            <img src="" alt="">
+                        </p>
+                        <p class="inner-txt op65">본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 </p>
+                        <p class="label-tit-02 mt36"><strong>첨부파일</strong></p>
+                        <ul class="ulList type4">
+                            <li>
+                            <div>
+                                <span class="ico img-a"></span>
+                                <span class="at-tit">Solution listup.jpg</span>
+                                <div class="fr">
+                                <span class="at-num">500KB</span>
+                                <span class="ico down-load"></span>
+                                </div>
+                            </div>                         
+                            </li>                
+                            <li>
+                            <div>
+                                <span class="ico ppt-a"></span>
+                                <span class="at-tit">20180101_AD_Draft.ppt</span>
+                                <div class="fr">
+                                <span class="at-num">4.5M</span>
+                                <span class="ico down-load"></span>
+                                </div>
+                            </div>                         
+                            </li>                
+                            <li>
+                            <div>
+                                <span class="ico ppt-a"></span>
+                                <span class="at-tit">20180101_AD_Draft.ppt</span>
+                                <div class="fr">
+                                <span class="at-num">4.5M</span>
+                                <span class="ico down-load"></span>
+                                </div>
+                            </div>                         
+                            </li>                
                         </ul>
+
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -137,9 +141,10 @@
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md" :class="{clr1: rdo}">제출</button>
+                <button type="button" class="btn md clr1">확인</button>
             </div>
             <!-- //floatingbtn -->
+
         </div>
         <!-- //container --> 
     </div>
@@ -152,9 +157,7 @@
   1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝  or  헤더 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
 */
 export default {
-  name: 'Study_SO_poll_input',
-  props: {
-  },
+  name: 'Study_04_SO_mainsummary',
   /* vue lifecycle */
   created () {
   },
@@ -163,9 +166,7 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1,
-      rdo: undefined,
-      rdos: [1, 2, 3, 4]
+      headerType: 1
     }
   },
   /* vue function */

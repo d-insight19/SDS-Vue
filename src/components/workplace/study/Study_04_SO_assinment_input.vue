@@ -3,10 +3,10 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_poll pd70">
+        <div id="container" class="mediaquery study_assinment pd70">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand wh quiz-head-bg">          
+            <div v-if="headerType == '1'" id="header" class="expand wh assinment-head-bg">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                     <div class="page-btn">
@@ -16,10 +16,10 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:60px">                
+                <div class="hide_header" style="background-color:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:60px">                
                     <div class="hide-inner">
-                        <span class="chip wh">POLL</span>                         
-                        <p class="h-tit1">선호 커피 브랜드 시장 조사 선호 커피 브랜드 시장 조사</p>
+                        <span class="chip wh">액션플랜</span>                         
+                        <p class="h-tit1">인정받는 팀 리더의 액션 플랜 인정받는 팀 리더의 액션 플랜</p>
                     </div>
                 </div>
             </div>
@@ -91,53 +91,37 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner"> 
-                        <p class="h-tit5">1. 좋아하는 커피브랜드 1개이상 선택해주세요.</p>
-                        <ul class="ul-block com-rdo">
-                            <li >
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[0]" checked>
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"   >스타벅스</span>                    
-                                </label>
-                            </li>
-                            <li  >
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[1]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"  >탐앤탐스</span>                    
-                                </label>
-                            </li>
-                            <li  >
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[2]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"  >이디야</span>                    
-                                </label>
-                            </li>
-                            <li >
-                                <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[3]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"  >할리스</span>                    
-                                </label>
-                            </li>
-                        </ul>
+                        <p class="inner-txt">설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 </p>
+                        <p class="line02"></p>
+                        <p class="txt-tit">1. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
+                        <button class="guide-btn">작성가이드</button>
+                        <button class="guide-btn">모범답안</button>
+                        <p class="empty_img">
+                            <img src="" alt="">
+                        </p>
+                        <input @input.prevent="onInput(value, $event)" v-model="input01"  type="text" class="input01" placeholder="의견을 입력해 주세요">
+                        <label class="inputbottom inp-num">
+                            <span class="strlenth" >{{input01}}/300</span>
+                        </label>
+                        <p class="hr"></p>
+                        <p class="txt-tit">2. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
+                        <button class="guide-btn" >작성가이드</button>
+                        <p class="empty_img">
+                            <img src="" alt="">
+                        </p>                        
+                        <input @input.prevent="onInput(value, $event)"  v-model="input02"   type="text" class="input02" placeholder="의견을 입력해 주세요">
+                        <div class="inputbottom inp-num">
+                            <span class="strlenth" >{{input02}}/300</span>
+                        </div> 
                     </div>
                     <!-- //inner -->
                 </div>  
             </div>
 
+
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md" :class="{clr1: rdo}">제출</button>
+                <button type="button" disabled="disabled" class="btn md clr1">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -152,7 +136,7 @@
   1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝  or  헤더 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
 */
 export default {
-  name: 'Study_SO_poll_input',
+  name: 'Study_04_SO_opinion_multiopinon',
   props: {
   },
   /* vue lifecycle */
@@ -164,12 +148,21 @@ export default {
   data () {
     return {
       headerType: 1,
-      rdo: undefined,
-      rdos: [1, 2, 3, 4]
+      active_el: 2,
+      input01: undefined,
+      input02: undefined
     }
   },
   /* vue function */
   methods: {
+    activate: function (el) {
+      this.active_el = el
+    },
+    onInput: function (value, event) {
+      console.log(event.target)
+      console.log(this.input01.length)
+      return value// 데이터를 어떻게 배열로.. data array set
+    }
   }
 }
 </script>

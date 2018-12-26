@@ -81,9 +81,13 @@ import Study02studystatusassignment from '~workplace/study/Study_02_studystatus_
 import Study02studystatusassignmentapply from '~workplace/study/Study_02_studystatus_assignment_apply'
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
+import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
+import Study04SOassinmentintro from '~workplace/study/Study_04_SO_assinment_intro'
+import Study04SOassinmentinput from '~workplace/study/Study_04_SO_assinment_input'
 import Study04SOassinmentbestanswer from '~workplace/study/Study_04_SO_assinment_bestanswer'
+import Study04SOOT from '~workplace/study/Study_04_SO_OT'
 import Study04SOquizsubmission from '~workplace/study/Study_04_SO_quiz_submission'
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
 import Study04SOsurveyintro from '~workplace/study/Study_04_SO_survey_intro'
@@ -101,6 +105,7 @@ import Study04SOopinionmultiopinon from '~workplace/study/Study_04_SO_opinion_mu
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulation_submission'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
+import Study04SOactionplanintro from '~workplace/study/Study_04_SO_actionplan_intro'
 import Study04SOmainsummary from '~workplace/study/Study_04_SO_mainsummary'
 import Study04SOquizintro from '~workplace/study/Study_04_SO_quiz_intro'
 import Study04SOquizOX from '~workplace/study/Study_04_SO_quiz_OX'
@@ -619,6 +624,11 @@ var rootRoutes = [
     component: Study02faqdetail
   },
   {
+    path: '/Study_02_inquiry_detail',
+    name: 'Study_02_inquiry_detail',
+    component: Study02inquirydetail
+  },
+  {
     path: '/Study_03_LO_viewer_fs',
     name: 'Study_03_LO_viewer_fs',
     component: Study03LOviewerfs
@@ -627,6 +637,26 @@ var rootRoutes = [
     path: '/Study_03_LO_docs_fs',
     name: 'Study_03_LO_docs_fs',
     component: Study03LOdocsfs
+  },
+  {
+    path: '/Study_04_SO_assinment_intro',
+    name: 'Study_04_SO_assinment_intro',
+    component: Study04SOassinmentintro
+  },
+  {
+    path: '/Study_04_SO_assinment_input',
+    name: 'Study_04_SO_assinment_input',
+    component: Study04SOassinmentinput
+  },
+  {
+    path: '/Study_04_SO_assinment_bestanswer',
+    name: 'Study_04_SO_assinment_bestanswer',
+    component: Study04SOassinmentbestanswer
+  },
+  {
+    path: '/Study_04_SO_OT',
+    name: 'Study_04_SO_OT',
+    component: Study04SOOT
   },
   {
     path: '/Study_04_SO_simulation',
@@ -639,14 +669,14 @@ var rootRoutes = [
     component: Study04SOsimulationsubmission
   },
   {
-    path: '/Study_04_SO_assinment_bestanswer',
-    name: 'Study_04_SO_assinment_bestanswer',
-    component: Study04SOassinmentbestanswer
-  },
-  {
     path: '/Study_04_SO_actionplan_input',
     name: 'Study_04_SO_actionplan_input',
     component: Study04SOactionplaninput
+  },
+  {
+    path: '/Study_04_SO_actionplan_intro',
+    name: 'Study_04_SO_actionplan_intro',
+    component: Study04SOactionplanintro
   },
   {
     path: '/Study_04_SO_quiz_submission',
