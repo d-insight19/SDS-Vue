@@ -48,7 +48,7 @@
 
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb0">Channel Keywords</h2>
+                <h2 class="h-tit2 fwb600 mb0">Channel Keywords</h2>
                 <p class="sub-tit mb10">키워드로 살펴보는 다양한 전문가 채널의 글들</p>
                 <!-- list -->
                 <ul class="ulList type1">
@@ -71,7 +71,7 @@
 
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb0">Recommended Articles</h2>
+                <h2 class="h-tit2 fwb600 mb0">Recommended Articles</h2>
                 <p class="sub-tit mb10">꼭 한번 읽어보면 좋을 멋진 글</p>
                 
                 <div class="scroll-x type2">
@@ -181,7 +181,7 @@
           
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 mb0">Hey, Day Writer</h2>
+                <h2 class="h-tit2 fwb600 mb0">Hey, Day Writer</h2>
                 <p class="sub-tit mb10">Hey, Day 지식 창고 작가들</p>
                 
                 

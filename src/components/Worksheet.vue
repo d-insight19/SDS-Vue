@@ -2287,8 +2287,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.01.Main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_main' }">
+            CLIPing_main
           </router-link>
         </td>
         <td></td>
@@ -2304,8 +2304,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.Guide</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_guide' }">
+            CLIPing_guide
           </router-link>
         </td>
         <td></td>
@@ -2610,8 +2610,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.VideoAll</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_video_all' }">
+            CLIPing_video_all
           </router-link>
         </td>
         <td></td>
@@ -2627,8 +2627,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.VideoSeriesDetail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_video_series' }">
+            CLIPing_video_series
           </router-link>
         </td>
         <td></td>
