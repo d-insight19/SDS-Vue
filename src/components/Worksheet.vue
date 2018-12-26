@@ -1189,8 +1189,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_05.02_Inquiry_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_detail' }">
+            CustomerCenter_Inquiry_detail
           </router-link>
         </td>
         <td></td>
@@ -1229,9 +1229,9 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_06.01_Studysupport</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          <!--<router-link :to="{ name: 'CustomerCenter_Studysupport' }">
+            CustomerCenter_Studysupport
+          </router-link> -->
         </td>
         <td></td>
       </tr>
@@ -1291,6 +1291,9 @@
           </router-link>,
           <router-link :to="{ name: 'CustomerCenter_Request_toast01' }">
             CustomerCenter_Request_toast01
+          </router-link>,
+          <router-link :to="{ name: 'CustomerCenter_Request_resultlist' }">
+            CustomerCenter_Request_resultlist
           </router-link>
         </td>
         <td></td>
@@ -1323,8 +1326,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_08.01_PrivacyPolicy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_PrivacyPolicy' }">
+            CustomerCenter_PrivacyPolicy
           </router-link>
         </td>
         <td></td>
@@ -10356,6 +10359,23 @@
         <td>
           <router-link :to="{ name: 'components_bottomsheet' }">
             components_bottomsheet
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>Spinner</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_spinner' }">
+            components_spinner
           </router-link>
         </td>
         <td></td>

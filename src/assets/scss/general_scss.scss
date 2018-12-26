@@ -6,31 +6,41 @@ $brand_colors: (
     clr1 : #4B7AF4,
     clr2 : #2F3E9F,
     clr3 : #0A4CEC,
-    clr4 : #DDE5ED
+    clr4 : #DDE5ED,
+    clr5 : #0A4CEC,
+    clr6 : #A8C2FF
   ),
   colorCode2:(
     clr1 : #21277C,
     clr2 : #00ADFB,
     clr3 : #4E51D4,
-    clr4 : #E6EAF5
+    clr4 : #E6EAF5,
+    clr5 : #4E51D4,
+    clr6 : #A3A9FF
   ),
   colorCode3:(
     clr1 : #0C7979,
     clr2 : #02AD93,
     clr3 : #007E7B,
-    clr4 : #DAE6E4
+    clr4 : #DAE6E4,
+    clr5 : #007E7B,
+    clr6 : #05B4B0
   ),
   colorCode4:(
     clr1 : #2E3E50,
     clr2 : #F2444A,
     clr3 : #FF4B6B,
-    clr4 : #F0E9E6
+    clr4 : #F0E9E6,
+    clr5 : #FF4B6B,
+    clr6 : #FF647F
   ),
   colorCode5:(
     clr1 : #C07902,
     clr2 : #FFA000,
     clr3 : #BF360C,
-    clr4 : #E6E4DC
+    clr4 : #E6E4DC,
+    clr5 : #BF360C,
+    clr6 : #FFCB84
   )
 );
 
@@ -50,6 +60,12 @@ $brand_colors: (
     }
     .clr4{
       background-color: map-get($color,clr4) !important;
+    }
+    .clr5{
+      background-color: rgba(map-get($color,clr5),0.1) !important;
+    }
+    .clr6{
+      background-color: map-get($color,clr6) !important;
     }
     .color_clr1{
       color: map-get($color,clr1) !important;
@@ -142,6 +158,9 @@ $brand_colors: (
 
     // 키보드 버튼
     .keyboard_input .inputbox .regiBtn.active{background:map-get($color,clr1) !important}
+
+    // 스피너
+    #spinner{border: 3px solid map-get($color , clr2); border-right-color: transparent;}
   }
 }
 // Including themes. 
