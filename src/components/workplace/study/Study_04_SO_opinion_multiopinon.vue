@@ -183,14 +183,8 @@ export default {
       this.active_el = el
     },
     onInput (event) {
-      this.keylength = event.target.value.length
-      if (event) {
-        console.log(this.$refs)
-      } // input01,input02각각의 인풋에따라 {{keylength}}가 변화되야하는데 한가지 인풋에 입력하면 나머지 keylength 값이 전부 동일하게 변경됩니다 이 문제를 어떻게 해결해야될까요
+      this.keylength = event.target.value.length // 데이터를 어떻게 배열로.. data array set
     }
-    // readRefs: function () {
-    //   console.log(this.$refs.input01.value.length)
-    // }
   }
 }
 </script>

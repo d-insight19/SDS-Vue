@@ -20,7 +20,8 @@
 /* 추가이미지 2018-12-07 */
 .ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }
 .ico.more{width:20px;height:20px;background: url("../img/ic_moredots_20.png") no-repeat; }
-.ico.down-arr{width:16px;height:16px;background: url("../img/ic_accordion_arr_16_down.png") no-repeat; }
+.ico.arr.down{width:16px;height:16px;background: url("../img/ic_accordion_arr_16_down.png") no-repeat; }
+.ico.arr.up{width:16px;height:16px;background: url("../img/ic_accordion_arr_line_16_up.png") no-repeat; }
 .ico.like_32.blue{width:32px;height:32px;background: url("../img/ic_thumb_line_cblue_32.png") no-repeat; }
 .ico.unlike_32{width:32px;height:32px;background: url("../img/ic_unlike_line_32.png") no-repeat; }
 .ico.back{width:32px;height:32px;background: url("../img/ic_former_solid_32.png") no-repeat; }
@@ -78,6 +79,10 @@
 .ico.like_32.red {background: url("../img/ic_thumb_line_red_32.png")}
 .ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
+.ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}
+.ico.deletemode_20_black {width:20px; height:20px; background: url("../img/ic_deletemode_20_black.png")}
+
+
 
 /* 추가 이미지 2018-12-21*/
 .ico.mark-o.sm{width: 38px;height: 38px;position: absolute;background: url("../img/ic_mark_o_small.png") no-repeat;}
@@ -86,7 +91,8 @@
 .ico.check_24_blue {width:24px; height:24px; background: url("../img/ic_check_line_blue_24.png") ;background-size: cover;}
 .ico.close_24_black{width:24px; height:24px; background: url("../img/ic_close_line_24.png") ;background-size: cover;}
 
-
+/* 추가 이미지 2018-12-24 merry christmas */
+.ico.indent{width: 16px;height: 16px;background: url("../img/ic_indent_line_gray_16.png") no-repeat;}
 
 /* ico btn */
 .btn.only .ico{display: block;}
