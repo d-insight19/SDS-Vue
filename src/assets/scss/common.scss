@@ -383,7 +383,6 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 // .thumList.type2 .thumImg{width:158px; height:124px;}
 .thumList.type2 .tit{font-size: map-get($font_size, font_16); white-space: normal;}
 
-
 /* Thumbnail list _ horizontal view : main BigSize */
 .thumList.type3{display: table; table-layout: fixed;}
 .thumList.type3 > li{display: table-cell; position: relative; word-break: break-all; width:324px; padding-left: 10px; padding-bottom: 0; vertical-align: top; border:0;}

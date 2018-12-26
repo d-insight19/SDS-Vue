@@ -158,6 +158,11 @@ import MainWriterHistory from '~workplace/main/Main_writer_history'
 import MainWriterScroll from '~workplace/main/Main_writer_scroll'
 import MainLearningMain from '~workplace/main/Main_learning_main'
 
+import CLIPingMain from '~workplace/cliping/CLIPing_main'
+import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
+import CLIPingVideoAll from '~workplace/cliping/CLIPing_video_all'
+import CLIPingVideoSeries from '~workplace/cliping/CLIPing_video_series'
+
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
@@ -997,6 +1002,26 @@ var rootRoutes = [
     path: '/Main_learning_main',
     name: 'Main_learning_main',
     component: MainLearningMain
+  },
+  {
+    path: '/CLIPing_main',
+    name: 'CLIPing_main',
+    component: CLIPingMain
+  },
+  {
+    path: '/CLIPing_guide',
+    name: 'CLIPing_guide',
+    component: CLIPingGuide
+  },
+  {
+    path: '/CLIPing_video_all',
+    name: 'CLIPing_video_all',
+    component: CLIPingVideoAll
+  },
+  {
+    path: '/CLIPing_video_series',
+    name: 'CLIPing_video_series',
+    component: CLIPingVideoSeries
   },
   {
     path: '/Drawer_alerm',
