@@ -28,7 +28,7 @@ import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
-import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
+ import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -169,7 +169,11 @@ import CLIPingMain from '~workplace/cliping/CLIPing_main'
 import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
 import CLIPingVideoAll from '~workplace/cliping/CLIPing_video_all'
 import CLIPingVideoSeries from '~workplace/cliping/CLIPing_video_series'
-
+import CLIPingVideoSeriesDetail from '~workplace/cliping/CLIPing_videoSeries_detail'
+import CLIPingBookSummary from '~workplace/cliping/CLIPing_bookSummary'
+import CLIPingBookSummaryDetail from '~workplace/cliping/CLIPing_bookSummary_detail'
+import CLIPingColumn from '~workplace/cliping/CLIPing_column'
+import CLIPingColumnDetail from '~workplace/cliping/CLIPing_column_detail'
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
@@ -381,11 +385,11 @@ var rootRoutes = [
     name: 'components_spinner',
     component: ComponentsSpinner
   },
-  {
-    path: '/components_flowplayer',
-    name: 'components_flowplayer',
-    component: ComponentsFlowplayer
-  },
+   {
+     path: '/components_flowplayer',
+     name: 'components_flowplayer',
+     component: ComponentsFlowplayer
+   },
   {
     path: '/Login_findcenter',
     name: 'Login_findcenter',
@@ -1064,6 +1068,31 @@ var rootRoutes = [
     path: '/CLIPing_video_series',
     name: 'CLIPing_video_series',
     component: CLIPingVideoSeries
+  },
+  {
+    path: '/CLIPing_videoSeries_detail',
+    name: 'CLIPing_videoSeries_detail',
+    component: CLIPingVideoSeriesDetail
+  },
+  {
+    path: '/CLIPing_bookSummary',
+    name: 'CLIPing_bookSummary',
+    component: CLIPingBookSummary
+  },
+  {
+    path: '/CLIPing_bookSummary_detail',
+    name: 'CLIPing_bookSummary_detail',
+    component: CLIPingBookSummaryDetail
+  },
+  {
+    path: '/CLIPing_column',
+    name: 'CLIPing_column',
+    component: CLIPingColumn
+  },
+  {
+    path: '/CLIPing_column_detail',
+    name: 'CLIPing_column_detail',
+    component: CLIPingColumnDetail
   },
   {
     path: '/Drawer_alerm',
