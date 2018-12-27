@@ -28,47 +28,64 @@
                         <!-- list -->
                         <ul class="multiList type2">
                             <li class="pt0">
-                                <strong class="label-tit14">과정선택</strong>
-                                <div class="intSchBox">
-                                <input type="text" class="input mb20" placeholder="과정을 선택해 주세요.">
-                                <a href="#" class="btn"><span class="ico"></span></a>
-                            </div>
+                                <strong class="label-tit14">과정선택</strong>                                
+                                <slp-select required placeholder="과정을 선택해 주세요." width="100%">
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                </slp-select>
                             </li>
                             <li>
                                 <strong class="label-tit14">상담분류</strong>
-                                <input type="text" class="input mb20" placeholder="상담분류를 선택해 주세요." >
+                                <slp-select required placeholder="상담분류를 선택해 주세요." width="100%">
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                </slp-select>
                             </li>
                             <li>
                                 <strong class="label-tit14">제목</strong>
-                                <input type="text" class="input mb20" placeholder="제목을 입력해 주세요." >
+                                <slp-text-field placeholder="제목을 입력해 주세요."></slp-text-field>
                             </li>
                             <li>
                                 <strong class="label-tit14">내용</strong>
-                                <input type="text" class="input mb20" placeholder="내용을 입력해 주세요.">
+                                <div class="textarea_wrap">
+                                  <textarea class="content"  @keydown="onKeydown" placeholder="내용을 입력하세요."></textarea>
+                                </div>
                             </li>
                             <li>
                                 <strong class="label-tit14"> 첨부파일 추가</strong>
-                                 <!-- 추가 리스트 -->
-                            <a href="#" class="btn sm add w100p" @click="addList1()" ><span class="ico"></span>파일 추가</a> 
+                                <ul v-show="list1.length" class="ulList type4">
+                                    <li v-for="(item, index) in list1" :key="index">
+                                    <div>
+                                        <span class="ico img-a"></span>
+                                        <span class="at-tit">Solution listup.jpg</span>
+                                        <div class="fr">
+                                        <span class="at-num">500KB</span>
+                                        <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
+                                        </div>
+                                    </div>                                                             
+                                    </li>  
+                                </ul>
+                                 <!-- 추가 리스트 --> 
+                                <a href="#" class="btn sm add w100p" @click="addList1()" ><span class="ico"></span>파일 추가</a> 
                             </li>   
-                            <li class="mt20">
-                            <strong class="label-tit14" style="margin-top:12px">이름</strong>
-                            <input type="text" class="input mb20" value="정해민" >
+                            <li>
+                                <strong class="label-tit14">이름</strong>
+                                <slp-text-field placeholder="정해민"></slp-text-field>
                             </li>
                             <li>
                                 <strong class="label-tit14">휴대전화</strong>
-                                <input type="text" class="input mb20" value="01012341234">
+                                <slp-text-field placeholder="01012341234"></slp-text-field>
                             </li>  
                             <li>
-                            <strong class="label-tit14">이메일</strong>
-                            <input type="text" class="input" value="CRD_abc1234@multicapus.co.kr" >
+                              <strong class="label-tit14">이메일</strong>
+                              <slp-text-field placeholder="CRD_abc1234@multicapus.co.kr"></slp-text-field>
                             </li>                                                                                       
                         </ul>
-                        <label for="login_auto" class="labelChk mt12">
-                        <input id="login_auto" type="checkbox" class="chk" name="login_auto" checked>
-                        <span class="ico"></span>
-                        <span class="label">답변을 e-mail로도 같이 받아 보겠습니다.</span>
-                        </label>
+                        <slp-checkbox class="mt9" value="true">답변을 e-mail로도 같이 받아 보겠습니다</slp-checkbox>
                         <!-- //list -->
                 </div>   
 
@@ -94,11 +111,24 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 2
+      headerType: 2,
+      list1: []
     }
   },
   /* vue function */
   methods: {
+    addList1 () {
+      this.list1.push('tmp 어학등급 아이템')
+    },
+    deleteFileList (index) {
+      console.log(index, '제거')
+      this.list1.splice(index, 1)
+    },
+    onKeydown (event) {
+      this.keylength = event.target.value.length
+      event.target.style.height = '1px'
+      event.target.style.height = (event.target.scrollHeight) + 'px'
+    }
   }
 }
 </script>

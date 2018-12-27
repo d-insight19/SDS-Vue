@@ -59,7 +59,7 @@
                                         <span class="at-tit">Solution listup.jpg</span>
                                         <div class="fr">
                                         <span class="at-num">500KB</span>
-                                        <span class="ico deletemode_20_black"></span>
+                                        <a href="#"><span class="ico deletemode_20_black"></span></a>
                                         </div>
                                     </div>                                                             
                                     </li> 
@@ -69,7 +69,7 @@
                                         <span class="at-tit">Solution listup.jpg</span>
                                         <div class="fr">
                                         <span class="at-num">500KB</span>
-                                        <span class="ico deletemode_20_black"></span>
+                                        <a href="#"><span class="ico deletemode_20_black"></span></a>
                                         </div>
                                     </div>                                                             
                                     </li>     
