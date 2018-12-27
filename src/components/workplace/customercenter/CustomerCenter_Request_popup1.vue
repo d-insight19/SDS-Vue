@@ -108,30 +108,16 @@
           </div>
         </div>
 
-      </div>
-      <!-- //container --> 
+        </div>
+        <!-- //container --> 
 
         <!-- layer wrap -->
-        <div class="layerWrap">
-            <div class="ly-in">    
-                <div class="ly-hd">설문참여 완료</div>        
-                <div class="ly-body">                
-                    <div class="ly-info">
-                        <p>이미 설문에 참여하셨습니다.</p>
-                    </div>
-                </div>
-            
-                <div class="ly-btn">                
-                    <button type="button" class="btn color_clr2">닫기</button>
-                </div>
-
+        <slp-popup title="설문참여 완료" confirmInput="닫기">
+            <div class="ly-info">
+                <p>이미 설문에 참여하셨습니다.</p>
             </div>
-        </div>
+        </slp-popup>
         <!-- //layer wrap -->
-
-        <div id="dim"></div>
-
-        </div>
 
     </div>
     <!-- //wrap -->

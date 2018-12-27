@@ -1161,8 +1161,7 @@ label.rdo .label{position: relative;}
 .MainType .sub-tit {font-size:map-get($font_size, font_13); color: map-get($mono_colors, mono_65);}
 // layout.css 에 추가  
 // ** 특별히 다른 케이스의 경우 #comtainer 뒤에 클래스명을 붙여주세요 ( 현재는 모든 컨텐츠 전체 적용됩니다 )
-// #container #content .inner {padding-bottom: 12px;}
-
+.MainType #container #content .inner {padding-bottom: 12px;}
 // 이미지 리사이즈
 .MainType  .thumList.type2 > li{width:151px;}
 .MainType  .thumList.type2 .thum{width:151px; height:113px;}
@@ -1254,6 +1253,7 @@ label.rdo .label{position: relative;}
 .MainType .thumList .thum .label.big {font-size: map-get($font_size, font_14); padding: 3px 12px; background-color: black;}
 
 //지식 클리핑
+.CLIPingType #container #content .inner {padding-bottom: 12px;}
 // 총합계
 .CLIPingType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
 .CLIPingType .total span {font-size: map-get($font_size, font_15);}
