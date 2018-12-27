@@ -91,12 +91,15 @@
                             <p class="survey-tit">당신의 행복지수는 <span class="color_clr2">80</span>점입니다.</p>
                             <p class="survey-txt">전체 평균 점수보다 2점 높아요.전체 참여자 중 9.1% 가  나랑 점수가 비슷해요. 평균 수준의 행복지수입니다. 혹시 요즘 인생이 무료하게 느껴지나요? 반복되는 일상에 지쳤다면 여행을 떠나보는 것이 어떨까요?</p>
                         </div>
-                        <div class="absBtmBtn">  
-                            <button type="button" class="btn md clr1">완료</button>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+            <!-- floatingbtn -->
+            <div class="absBtmBtn">  
+                <button type="button" class="btn md clr1">완료</button>
+            </div>
+            <!-- //floatingbtn -->
         </div>
         <!-- //container --> 
     </div>

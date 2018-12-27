@@ -13,77 +13,58 @@
             <div id="content" class="etc">
                 <div class="cell">
                   <div class="inner">
-                      <ul class="ulList type1">
+                      <ul class="multiList type2">
                         <li>
-                          <strong class="label-tit">제목</strong>
-                          <input type="text" placeholder="질문이 있습니다.">
+                          <strong class="label-tit14">제목</strong>
+                          <slp-text-field placeholder="질문 있습니다."></slp-text-field>
                         </li>
                         <li>
-                          <strong class="label-tit">분류</strong>
-                          <select class="select w100p">
+                          <strong class="label-tit14">분류</strong>                                
+                          <slp-select placeholder="1차시" width="100%">
                             <option>1차시</option>
                             <option>수료평과</option>
                             <option>기타</option>
-                          </select>
+                          </slp-select>
                         </li>
-                      </ul>
-                      <!-- //list -->
-                      
-                        <div class="cTitWrap txt-line top-bd mt20">
-                          <strong class="c-tit">북마크</strong>
+                        <li class="custom">
+                            <strong class="label-tit14 mb0">북마크</strong>
                             <div class="fr">
-                              <p class="color_clr2"><span class="chip border_clr2">1 : 36 <span class="ico del-blue"></span></span></p>
+                              <p class="color_clr2"><span class="chip del border_clr2">1 : 36 <span class="ico del-blue"></span></span></p>
                             </div>
-                        </div>
-
-                        <div class="cTitWrap txt-line">
-                          <strong class="c-tit">공개여부</strong>
+                        </li>
+                        <li class="custom-2">
+                          <strong class="label-tit14 mb0">공개여부</strong>
                           <label class="labelBtn fr">
-                            <input type="checkbox" name="" class="chk">
-                            <div class="chk_box" @click="toggleMarketing()" ><span class="ball"></span><ul class="txt"><li class="m1"></li><li class="m2"></li></ul></div>
+                            <input type="checkbox" name="" class="chk" checked>
+                            <div class="chk_box" @click="toggleMarketing()"  ><span class="ball"></span><ul class="txt"><li class="m1"></li><li class="m2"></li></ul></div>
                           </label>
-                        </div>
-
-                      <!-- list -->
-                      <div class="txt-edit" v-if="marketingFlag">
-                        <strong class="e-tit">내용</strong>
-                        <textarea class="w100p gr_box" rows="5" >본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 
-                        </textarea>
-                      </div>
-                      <!-- //list -->
-                      
-                      <p class="label-tit-02 mt36"><strong>첨부파일 추가</strong></p>
-                      <ul class="ulList type4">
-                          <li>
-                            <div>
-                              <span class="ico img-a"></span>
-                              <span class="at-tit">Solution listup.jpg</span>
-                              <div class="fr">
-                                <span class="at-num">500KB</span>
-                                <span class="ico del-blk"></span>
-                              </div>
-                            </div>                         
-                          </li>                
-                          <li>
-                            <div>
-                              <span class="ico ppt-a"></span>
-                              <span class="at-tit">20180101_AD_Draft.ppt</span>
-                              <div class="fr">
-                                <span class="at-num">4.5M</span>
-                                <span class="ico del-blk"></span>
-                              </div>
-                            </div>                         
-                          </li>                
-                          <li class="bottom-bd-x">
-                            <div>
-                              <span class="ico ppt-a"></span>
-                              <span class="at-tit">20180101_AD_Draft.ppt</span>
-                              <div class="fr">
-                                <span class="at-num">4.5M</span>
-                                <span class="ico del-blk"></span>
-                              </div>
-                            </div>                         
-                          </li>                
+                            <!-- <slp-switch :classObject="{'fr': true}" @click="toggleMarketing()" /> -->                            
+                        </li>
+                        <li>
+                          <!-- list -->
+                            <div class="txt-edit" v-if="marketingFlag">
+                              <strong class="label-tit14">내용</strong>
+                              <textarea class="w100p gr_box" rows="5" >본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 
+                              </textarea>
+                            </div>
+                            <!-- //list -->
+                        </li>
+                        <li>
+                            <strong class="label-tit16"> 첨부파일 추가</strong>
+                            <ul v-show="list1.length" class="ulList type4">
+                                <li v-for="(item, index) in list1" :key="index">
+                                <div>
+                                    <span class="ico img-a"></span>
+                                    <span class="at-tit">Solution listup.jpg</span>
+                                    <div class="fr">
+                                    <span class="at-num">500KB</span>
+                                    <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
+                                    </div>
+                                </div>                                                             
+                                </li>  
+                            </ul>
+                            <!-- 추가 리스트 --> 
+                        </li>
                       </ul>
                   </div>
                 </div>
@@ -92,7 +73,7 @@
 
             <!-- floatingbtn -->
             <div class="absBtmBtn">  
-                <button type="button" class="btn md "><span class="ico plus"></span>파일 추가</button>
+                <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a> 
             </div>
             <!-- //floatingbtn -->
 
@@ -114,11 +95,19 @@ export default {
   /* vue data */
   data () {
     return {
-      marketingFlag: false
+      marketingFlag: true,
+      list1: []
     }
   },
   /* vue function */
   methods: {
+    addList1 () {
+      this.list1.push('tmp 어학등급 아이템')
+    },
+    deleteFileList (index) {
+      console.log(index, '제거')
+      this.list1.splice(index, 1)
+    },
     toggleMarketing () {
       this.marketingFlag = !this.marketingFlag
     }

@@ -4832,7 +4832,7 @@
             Study_02_studyquestion_edit
           </router-link>
         </td>
-        <td></td>
+        <td>컴포넌트화</td>
       </tr>
       <tr>
       <td align="center">277</td>
@@ -5103,7 +5103,7 @@
             Study_reflectionnote_edit_02
           </router-link>
         </td>
-        <td></td>
+        <td>컴포넌트화</td>
       </tr>
       <tr>
       <td align="center">293</td>
@@ -5465,7 +5465,7 @@
             Study_02_inquiry_edit
           </router-link>
         </td>
-        <td></td>
+        <td>컴포넌트화 </td>
       </tr>
       <tr>
       <td align="center">315</td>
@@ -6472,7 +6472,7 @@
             Study_04_SO_pledge
           </router-link>
         </td>
-        <td></td>
+        <td>이미지 필요</td>
       </tr>
       <tr>
       <td align="center">375</td>

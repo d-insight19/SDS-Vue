@@ -146,12 +146,15 @@
                             <span class="">3</span>
                             </p>
                         </div>
-                        <div class="absBtmBtn">  
-                            <button type="button" class="btn md clr1">제출</button>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+
+            <div class="absBtmBtn">  
+                <button type="button" class="btn md clr1">제출</button>
+            </div>
+
         </div>
         <!-- //container --> 
     </div>
