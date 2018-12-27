@@ -27,54 +27,54 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <p class="date">2018.10.10</p>
                                                 </div>                                                
                                             </li>
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <p class="date">2018.10.10</p>
-                                                </div>                                                
+                                                </div>                                                 
                                             </li> 
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <p class="date">2018.10.10</p>
-                                                </div>                                                
+                                                </div>                                                 
                                             </li>
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <p class="date">2018.10.10</p>
-                                                </div>                                                
+                                                </div>                                                 
                                             </li>
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <p class="date">2018.10.10</p>
-                                                </div>                                                
+                                                </div>                                               
                                             </li>
                                             <li>
-                                                <div class="in">                                                                                        
+                                               <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <p class="date">2018.10.10</p>
                                                 </div>                                                
                                             </li>                                 

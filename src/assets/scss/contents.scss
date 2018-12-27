@@ -1018,6 +1018,7 @@ label.rdo .label{position: relative;}
 #container.board .studyguide {width:324px;height:243px;background: url("../img/studyguide.png") no-repeat; margin:14px auto }
 #container.board .studyguide_detail {width:324px;height:243px;background: url("../img/studyguide_detail.png") no-repeat; margin:14px auto }
 #container #header p.type {font-size:map-get($font_size, font_16); font-weight: 500}
+
 //문의하기
 #container.drawer.inquiry .multiline {width:100%}
 #container.drawer.inquiry button.btn14 {top:22px; bottom:inherit; line-height: 32px; font-weight: 400; right: 0}
@@ -1114,10 +1115,8 @@ label.rdo .label{position: relative;}
 #container.board.request .singleList.type_1 li { border-top:#ebebeb 1px solid; border-bottom:0;}
 #container.board.request .singleList.type_1 li a {line-height: 20px; font-size:map-get($font_size, font_14); color:#1a1a1a; padding:15px 0} 
 #container.board.request a.respondent_num {display: block; padding-bottom:22px}
-
-
-
-
+#container.board.request #header p.desc {font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65); font-weight: 300; overflow:auto; white-space: inherit; line-height: 18px; margin-top:8px}
+#container.board.request #header p.h-tit1 .q-tit {width:100%}
 
 
 
