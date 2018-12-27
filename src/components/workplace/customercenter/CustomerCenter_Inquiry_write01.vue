@@ -29,7 +29,7 @@
                         <ul class="multiList type2">
                             <li class="pt0">
                                 <strong class="label-tit14">과정선택</strong>                                
-                                <slp-select required placeholder="과정을 선택해 주세요." width="100%">
+                                <slp-select required placeholder="과정을 선택해 주세요." width="100%" class="mt8">
                                     <option>2017</option>
                                     <option>2018</option>
                                     <option>2019</option>
@@ -38,7 +38,7 @@
                             </li>
                             <li>
                                 <strong class="label-tit14">상담분류</strong>
-                                <slp-select required placeholder="상담분류를 선택해 주세요." width="100%">
+                                <slp-select required placeholder="상담분류를 선택해 주세요." width="100%" class="mt8">
                                     <option>2017</option>
                                     <option>2018</option>
                                     <option>2019</option>
@@ -74,15 +74,15 @@
                             </li>   
                             <li>
                                 <strong class="label-tit14">이름</strong>
-                                <slp-text-field placeholder="정해민"></slp-text-field>
+                                <slp-text-field value="정해민"></slp-text-field>
                             </li>
                             <li>
                                 <strong class="label-tit14">휴대전화</strong>
-                                <slp-text-field placeholder="01012341234"></slp-text-field>
+                                <slp-text-field value="01012341234"></slp-text-field>
                             </li>  
                             <li>
                               <strong class="label-tit14">이메일</strong>
-                              <slp-text-field placeholder="CRD_abc1234@multicapus.co.kr"></slp-text-field>
+                              <slp-text-field value="CRD_abc1234@multicapus.co.kr"></slp-text-field>
                             </li>                                                                                       
                         </ul>
                         <slp-checkbox class="mt9" value="true">답변을 e-mail로도 같이 받아 보겠습니다</slp-checkbox>

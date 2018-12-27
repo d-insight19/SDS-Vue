@@ -27,9 +27,10 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <a href="#">자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
                                                     </div> 
-                                                    <span class="ico arrow"></span>
+                                                    
                                                     <ul class="info">
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
                                                     <li class="icon"><span class="comment ico"></span><span class="info_value">2,190</span></li>
@@ -40,9 +41,10 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <a href="#">자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
                                                     </div> 
-                                                    <span class="ico arrow"></span>
+                                                    
                                                     <ul class="info">
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
                                                     <li class="icon"><span class="comment ico"></span><span class="info_value">2,190</span></li>
@@ -53,9 +55,10 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <a href="#">자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
                                                     </div> 
-                                                    <span class="ico arrow"></span>
+                                                    
                                                     <ul class="info">
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
                                                     <li class="icon"><span class="comment ico"></span><span class="info_value">2,190</span></li>
@@ -66,9 +69,10 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <a href="#">자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
                                                     </div> 
-                                                    <span class="ico arrow"></span>
+                                                    
                                                     <ul class="info">
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
                                                     <li class="icon"><span class="comment ico"></span><span class="info_value">2,190</span></li>
@@ -79,9 +83,10 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <a href="#">자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
                                                     </div> 
-                                                    <span class="ico arrow"></span>
+                                                    
                                                     <ul class="info">
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
                                                     <li class="icon"><span class="comment ico"></span><span class="info_value">2,190</span></li>
@@ -92,9 +97,10 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <a href="#">자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.자료실 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
                                                     </div> 
-                                                    <span class="ico arrow"></span>
+                                                    
                                                     <ul class="info">
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
                                                     <li class="icon"><span class="comment ico"></span><span class="info_value">2,190</span></li>

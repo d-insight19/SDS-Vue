@@ -82,8 +82,6 @@
 .ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}
 .ico.deletemode_20_black {width:20px; height:20px; background: url("../img/ic_deletemode_20_black.png")}
 
-
-
 /* 추가 이미지 2018-12-21*/
 .ico.mark-o.sm{width: 38px;height: 38px;position: absolute;background: url("../img/ic_mark_o_small.png") no-repeat;}
 .ico.num-cir{width: 16px;height: 16px;position: absolute;background: url("../img/img_number_bg.png") no-repeat;}
@@ -93,6 +91,11 @@
 
 /* 추가 이미지 2018-12-24 merry christmas */
 .ico.indent{width: 16px;height: 16px;background: url("../img/ic_indent_line_gray_16.png") no-repeat;}
+
+/* 추가 이미지 2018-12-26*/
+.ico.accordion_down{width:20px;height:20px;background: url("../img/ic_accordion_arr_line_20_down.png") no-repeat; }
+.ico.accordion_up{width:20px;height:20px;background: url("../img/ic_accordion_arr_line_skyblue_20_up.png") no-repeat; }
+
 
 /* ico btn */
 .btn.only .ico{display: block;}
