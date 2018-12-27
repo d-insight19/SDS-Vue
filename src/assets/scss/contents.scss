@@ -1147,15 +1147,15 @@ label.rdo .label{position: relative;}
 .width_inherit {width: inherit !important;}
 .width100 {width:100% !important;}
 // 총합계
-.total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
-.total span {font-size: map-get($font_size, font_15);}
-.total .fr{font-size: map-get($font_size, font_13);}
-.total strong {color: map-get($mono_colors, mono_100);}
-.total ul li {display:inline-block;}
-.total ul li + li::before {display: inline-block; content: ''; width: 1px; height: 12px; vertical-align: middle; margin: 0px 10px 0px 8px; background: map-get($line_colors, B85);}
-.total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px; background-size: 16px;}
-.total .ico.seris{width:16px;height:16px;background: map-get($mono_colors, mono_40) url("../img/ic_seris_line_bg_16.png") no-repeat center center; margin-bottom:2px; background-size: 16px;}
-.total.noline {border:0 none; margin-bottom:0;}
+.MainType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
+.MainType .total span {font-size: map-get($font_size, font_15);}
+.MainType .total .fr{font-size: map-get($font_size, font_13);}
+.MainType .total strong {color: map-get($mono_colors, mono_100);}
+.MainType .total ul li {display:inline-block;}
+.MainType .total ul li + li::before {display: inline-block; content: ''; width: 1px; height: 12px; vertical-align: middle; margin: 0px 10px 0px 8px; background: map-get($line_colors, B85);}
+.MainType .total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px; background-size: 16px;}
+.MainType .total .ico.seris{width:16px;height:16px;background: map-get($mono_colors, mono_40) url("../img/ic_seris_line_bg_16.png") no-repeat center center; margin-bottom:2px; background-size: 16px;}
+.MainType .total.noline {border:0 none; margin-bottom:0;}
 
 .MainType .sub-tit {font-size:map-get($font_size, font_13); color: map-get($mono_colors, mono_65);}
 // layout.css 에 추가  
@@ -1214,7 +1214,7 @@ label.rdo .label{position: relative;}
 .MainType .scroll-x.type2 .inner2 {display: inline-block; margin-right: 8px;}
 .MainType .scroll-x.type2 .inner2 .category {font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_80); font-weight:700; height:23px; margin-bottom:8px; display:block; vertical-align: top;}
 .MainType .scroll-x.type2 .inner2 .category .ico {vertical-align: inherit; margin-top: 5px;}
-.MainType .scroll-x.type1 {border-bottom: 8px solid map-get($line_colors, B95);}
+.MainType .line8 {height: 8px; background-color: map-get($line_colors, B95); margin-left:-18px; margin-right:-18px;}
 .MainType .scroll-x.type1 .inner2 {width:310px; display:inline-block; margin-right:8px;}
 .MainType .scroll-x.type1 .inner2 .thumList .tit {white-space: normal; width: 165px;}
 .MainType .scroll-x.type1 .inner2 .thumList > li {width:310px; border-bottom:0;}
@@ -1253,6 +1253,17 @@ label.rdo .label{position: relative;}
 .MainType .thumList .thum .label.big {font-size: map-get($font_size, font_14); padding: 3px 12px; background-color: black;}
 
 //지식 클리핑
+// 총합계
+.CLIPingType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
+.CLIPingType .total span {font-size: map-get($font_size, font_15);}
+.CLIPingType .total .fr{font-size: map-get($font_size, font_13);}
+.CLIPingType .total strong {color: map-get($mono_colors, mono_100);}
+.CLIPingType .total ul li {display:inline-block;}
+.CLIPingType .total ul li + li::before {display: inline-block; content: ''; width: 1px; height: 12px; vertical-align: middle; margin: 0px 10px 0px 8px; background: map-get($line_colors, B85);}
+.CLIPingType .total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px; background-size: 16px;}
+.CLIPingType .total .ico.seris{width:16px;height:16px;background: map-get($mono_colors, mono_40) url("../img/ic_seris_line_bg_16.png") no-repeat center center; margin-bottom:2px; background-size: 16px;}
+.CLIPingType .total.noline {border:0 none; margin-bottom:0;}
+
 .CLIPingType .line8 {height: 8px; background-color: map-get($line_colors, B95); margin-left:-18px; margin-right:-18px;}
 
 .CLIPingType .myLearn {height: 64px; width:100%;}
