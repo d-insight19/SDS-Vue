@@ -1209,9 +1209,6 @@
           <router-link :to="{ name: 'CustomerCenter_Inquiry_write01' }">
             CustomerCenter_Inquiry_write01
           </router-link>,
-           <router-link :to="{ name: 'CustomerCenter_Inquiry_write01_inputon' }">
-            CustomerCenter_Inquiry_write01_inputon
-          </router-link>,
            <router-link :to="{ name: 'CustomerCenter_Inquiry_write01_error' }">
             CustomerCenter_Inquiry_write01_error
           </router-link>

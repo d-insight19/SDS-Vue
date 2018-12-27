@@ -231,7 +231,6 @@ import CustomerCenterFAQdetail from '~workplace/customercenter/CustomerCenter_FA
 import CustomerCenterInquiry from '~workplace/customercenter/CustomerCenter_Inquiry'
 import CustomerCenterInquirynone from '~workplace/customercenter/CustomerCenter_Inquiry_none'
 import CustomerCenterInquirywrite01 from '~workplace/customercenter/CustomerCenter_Inquiry_write01'
-import CustomerCenterInquirywrite01inputon from '~workplace/customercenter/CustomerCenter_Inquiry_write01_inputon'
 import CustomerCenterInquirywrite01error from '~workplace/customercenter/CustomerCenter_Inquiry_write01_error'
 import CustomerCenterRequest from '~workplace/customercenter/CustomerCenter_Request'
 import CustomerCenterRequestpopup1 from '~workplace/customercenter/CustomerCenter_Request_popup1'
@@ -1374,11 +1373,6 @@ var rootRoutes = [
     path: '/CustomerCenter_Inquiry_write01',
     name: 'CustomerCenter_Inquiry_write01',
     component: CustomerCenterInquirywrite01
-  },
-  {
-    path: '/CustomerCenter_Inquiry_write01_inputon',
-    name: 'CustomerCenter_Inquiry_write01_inputon',
-    component: CustomerCenterInquirywrite01inputon
   },
   {
     path: '/CustomerCenter_Inquiry_write01_error',

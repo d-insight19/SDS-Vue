@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
         <!-- container -->
-        <div id="container" class="mediaquery drawer board">
+        <div id="container" class="mediaquery drawer">
             
             <!-- header -->
             <div v-if="headerType == '2'" id="header" class="tab noline">          
@@ -37,9 +37,9 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <ul class="info">
                                                     <li class="fwb color_clr3">동영상</li>
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
@@ -49,9 +49,9 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <ul class="info">
                                                     <li class="fwb color_clr3">동영상</li>
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
@@ -61,9 +61,9 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <ul class="info">
                                                     <li class="fwb color_clr3">동영상</li>
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
@@ -73,9 +73,9 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <ul class="info">
                                                     <li class="fwb color_clr3">동영상</li>
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
@@ -85,9 +85,9 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <ul class="info">
                                                     <li class="fwb color_clr3">동영상</li>
                                                     <li class="icon"><span class="date">2018.10.10</span></li>
@@ -97,9 +97,9 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents">
-                                                    공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    </div> 
-                                                    <span class="ico arrow"></span>
+                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                                    <span class="ico arrow"></span></a>
+                                                    </div>                                                     
                                                     <ul class="info">
                                                     <li class="fwb color_clr3">동영상</li>
                                                     <li class="icon"><span class="date">2018.10.10</span></li>

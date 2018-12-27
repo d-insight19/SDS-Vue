@@ -109,9 +109,9 @@
                                 <li><a> A. 매우 만족스러운 경험이었습니다. </a></li> 
                             </ul>                                          
                        
-                        <!-- 더보기 -->
-                        <a href="#" class="btn sm add w100p mt8" @click="addList1()" ><span class="ico"></span>더보기 (45)</a>
-
+                        <!-- 더보기 -->                        
+                        <slp-button class="btn sm add w100p mt8" @click="addList1()"><span class="ico"></span>더보기 (45)
+                        </slp-button>
 
                     </div>
                 </div>

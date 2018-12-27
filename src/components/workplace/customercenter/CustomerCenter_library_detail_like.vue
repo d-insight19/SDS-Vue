@@ -32,7 +32,7 @@
 
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">                       
+                    <div class="inner mb70">                       
                         <div>
                             <p class="inner-txt">해당 과정의 도서에대한 질문을 드립니다. 구매 방법에 대해 설명이 되어 있지 않던데 어떤 경로로 구매가 가능한지에 대해 답변해 주실 수 있을까요? </p>
                         </div>

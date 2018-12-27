@@ -175,6 +175,7 @@ textarea::placeholder {
 
 /* form error */
 input.error{border-color:map-get($static_colors , danger) !important}
+textarea.error{border-color:map-get($static_colors , danger) !important} // 12월27일 추가
 .InfoChK-resultTxt,.msg{font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.5); line-height: 18px; margin-top:4px;letter-spacing: -0.36px;}
 .InfoChK-resultTxt.err,.error-msg{font-size:map-get($font_size, font_12); color:map-get($static_colors , danger); line-height: 18px; letter-spacing: -0.36px;margin-top:4px}
 .InfoChK-resultTxt.succ,.succ-msg{font-size:map-get($font_size, font_12); line-height: 18px; letter-spacing: -0.36px;margin-top:4px}
