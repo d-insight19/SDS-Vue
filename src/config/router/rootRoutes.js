@@ -26,6 +26,9 @@ import ComponentsLayoutType3 from '~workplace/common_page/components_layout_type
 import ComponentsKeyboard from '~workplace/common_page/components_keyboard'
 import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
+import ComponentsSpinner from '~workplace/common_page/components_spinner'
+import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
+import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -81,9 +84,14 @@ import Study02studystatusassignment from '~workplace/study/Study_02_studystatus_
 import Study02studystatusassignmentapply from '~workplace/study/Study_02_studystatus_assignment_apply'
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
+import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
+import Study02inquiryedit from '~workplace/study/Study_02_inquiry_edit'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
+import Study04SOassinmentintro from '~workplace/study/Study_04_SO_assinment_intro'
+import Study04SOassinmentinput from '~workplace/study/Study_04_SO_assinment_input'
 import Study04SOassinmentbestanswer from '~workplace/study/Study_04_SO_assinment_bestanswer'
+import Study04SOOT from '~workplace/study/Study_04_SO_OT'
 import Study04SOquizsubmission from '~workplace/study/Study_04_SO_quiz_submission'
 import Study04SOsurveysubmission from '~workplace/study/Study_04_SO_survey_submission'
 import Study04SOsurveyintro from '~workplace/study/Study_04_SO_survey_intro'
@@ -101,6 +109,7 @@ import Study04SOopinionmultiopinon from '~workplace/study/Study_04_SO_opinion_mu
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulation_submission'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
+import Study04SOactionplanintro from '~workplace/study/Study_04_SO_actionplan_intro'
 import Study04SOmainsummary from '~workplace/study/Study_04_SO_mainsummary'
 import Study04SOquizintro from '~workplace/study/Study_04_SO_quiz_intro'
 import Study04SOquizOX from '~workplace/study/Study_04_SO_quiz_OX'
@@ -155,6 +164,11 @@ import MainWriterArticle from '~workplace/main/Main_writer_article'
 import MainWriterHistory from '~workplace/main/Main_writer_history'
 import MainWriterScroll from '~workplace/main/Main_writer_scroll'
 import MainLearningMain from '~workplace/main/Main_learning_main'
+
+import CLIPingMain from '~workplace/cliping/CLIPing_main'
+import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
+import CLIPingVideoAll from '~workplace/cliping/CLIPing_video_all'
+import CLIPingVideoSeries from '~workplace/cliping/CLIPing_video_series'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -233,6 +247,11 @@ var rootRoutes = [
     path: '/test',
     name: 'test',
     component: test
+  },
+  {
+    path: '/components_textfield_slp',
+    name: 'components_textfield_slp',
+    component: ComponentsTextfieldSlp
   },
   {
     path: '/components_buttons',
@@ -358,6 +377,16 @@ var rootRoutes = [
     path: '/components_bottomsheet',
     name: 'components_bottomsheet',
     component: ComponentsBottomsheet
+  },
+  {
+    path: '/components_spinner',
+    name: 'components_spinner',
+    component: ComponentsSpinner
+  },
+  {
+    path: '/components_flowplayer',
+    name: 'components_flowplayer',
+    component: ComponentsFlowplayer
   },
   {
     path: '/Login_findcenter',
@@ -625,6 +654,16 @@ var rootRoutes = [
     component: Study02faqdetail
   },
   {
+    path: '/Study_02_inquiry_detail',
+    name: 'Study_02_inquiry_detail',
+    component: Study02inquirydetail
+  },
+  {
+    path: '/Study_02_inquiry_edit',
+    name: 'Study_02_inquiry_edit',
+    component: Study02inquiryedit
+  },
+  {
     path: '/Study_03_LO_viewer_fs',
     name: 'Study_03_LO_viewer_fs',
     component: Study03LOviewerfs
@@ -633,6 +672,26 @@ var rootRoutes = [
     path: '/Study_03_LO_docs_fs',
     name: 'Study_03_LO_docs_fs',
     component: Study03LOdocsfs
+  },
+  {
+    path: '/Study_04_SO_assinment_intro',
+    name: 'Study_04_SO_assinment_intro',
+    component: Study04SOassinmentintro
+  },
+  {
+    path: '/Study_04_SO_assinment_input',
+    name: 'Study_04_SO_assinment_input',
+    component: Study04SOassinmentinput
+  },
+  {
+    path: '/Study_04_SO_assinment_bestanswer',
+    name: 'Study_04_SO_assinment_bestanswer',
+    component: Study04SOassinmentbestanswer
+  },
+  {
+    path: '/Study_04_SO_OT',
+    name: 'Study_04_SO_OT',
+    component: Study04SOOT
   },
   {
     path: '/Study_04_SO_simulation',
@@ -645,14 +704,14 @@ var rootRoutes = [
     component: Study04SOsimulationsubmission
   },
   {
-    path: '/Study_04_SO_assinment_bestanswer',
-    name: 'Study_04_SO_assinment_bestanswer',
-    component: Study04SOassinmentbestanswer
-  },
-  {
     path: '/Study_04_SO_actionplan_input',
     name: 'Study_04_SO_actionplan_input',
     component: Study04SOactionplaninput
+  },
+  {
+    path: '/Study_04_SO_actionplan_intro',
+    name: 'Study_04_SO_actionplan_intro',
+    component: Study04SOactionplanintro
   },
   {
     path: '/Study_04_SO_quiz_submission',
@@ -987,6 +1046,26 @@ var rootRoutes = [
     path: '/Main_learning_main',
     name: 'Main_learning_main',
     component: MainLearningMain
+  },
+  {
+    path: '/CLIPing_main',
+    name: 'CLIPing_main',
+    component: CLIPingMain
+  },
+  {
+    path: '/CLIPing_guide',
+    name: 'CLIPing_guide',
+    component: CLIPingGuide
+  },
+  {
+    path: '/CLIPing_video_all',
+    name: 'CLIPing_video_all',
+    component: CLIPingVideoAll
+  },
+  {
+    path: '/CLIPing_video_series',
+    name: 'CLIPing_video_series',
+    component: CLIPingVideoSeries
   },
   {
     path: '/Drawer_alerm',

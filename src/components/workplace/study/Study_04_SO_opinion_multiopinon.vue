@@ -98,10 +98,10 @@
                         <p class="line02"></p>
                         <p class="txt-tit">01. 당신의 의견은 어떻습니까?</p>
                         <button class="guide-btn">작성가이드</button>
-                        <input @input="onInput" ref="input01" type="text" class="input01" placeholder="의견을 입력해 주세요">
-                        <div class="inputbottom inp-num">
-                            <span class="strlenth" >{{keylength}}/300</span>
-                        </div> 
+                        <input @input.prevent="onInput($event, index)" v-model="input01" type="text" class="input01" placeholder="의견을 입력해 주세요">
+                        <label class="inputbottom inp-num">
+                            <span class="strlenth" >{{input01}}/300</span>
+                        </label>
                         <p class="hr"></p>
                         <p class="txt-tit">02. 당신의 의견은 어떻습니까?</p>
                         <button class="guide-btn" >작성가이드</button>
@@ -134,9 +134,9 @@
                                 </label>
                             </li>
                         </ul>
-                        <input @input="onInput"  type="text" class="input02"  ref="input02"  placeholder="의견을 입력해 주세요">
+                        <input @input.prevent="onInput($event, index)"  v-model="input02" type="text" class="input02" placeholder="의견을 입력해 주세요">
                         <div class="inputbottom inp-num">
-                            <span class="strlenth" >{{keylength}}/300</span>
+                            <span class="strlenth" >{{input02}}/300</span>
                         </div> 
                     </div>
                     <!-- //inner -->
@@ -174,7 +174,8 @@ export default {
     return {
       headerType: 1,
       active_el: 2,
-      keylength: 0
+      input01: 0,
+      input02: 0
     }
   },
   /* vue function */
@@ -182,8 +183,10 @@ export default {
     activate: function (el) {
       this.active_el = el
     },
-    onInput (event) {
-      this.keylength = event.target.value.length // 데이터를 어떻게 배열로.. data array set
+    onInput: function ($event) {
+      console.log(event.target.value.length)
+      console.log($event)
+      return $event.target.value.length // 무엇을 모르는지도 모르는중..
     }
   }
 }

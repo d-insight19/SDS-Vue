@@ -12,7 +12,7 @@
                 <p class="header_text font_18">Why Artificial Intelligence is the Big Risk for Digital </p>
             </div>
             <div class="hide_header" style="padding-top: 185px; height:340px;">
-                <h2 class="h-tit2 mb0">Why Artificial Intelligence is the Big Risk for Digital </h2>
+                <h2 class="h-tit2 fwb600 mb0">Why Artificial Intelligence is the Big Risk for Digital </h2>
                 <p class="fwl font_15 mb10"><span class="mono_50">2018.10.31</span> 홍길동, 한태주</p>
                 <ul class="info mb20">
                     <li class="fwr">디지털 마케팅</li>

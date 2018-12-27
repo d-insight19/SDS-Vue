@@ -100,48 +100,48 @@
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo" @click="activate(1)">
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[0]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 1 }" >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
+                                    <span class="label"  >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" @click="activate(2)">
-                                    <input type="radio" class="rdo" name="test-rdo" >
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[1]" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 2 }" >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
+                                    <span class="label" >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" @click="activate(3)">
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[2]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 3 }">③ 2003년 Apache 2.0 License로 최초 공개</span>                    
+                                    <span class="label" >③ 2003년 Apache 2.0 License로 최초 공개</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo" @click="activate(4)">
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                <label  class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[3]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 4 }">④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
+                                    <span class="label" >④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo" @click="activate(5)">
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                <label  class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[4]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 5 }">⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
+                                    <span class="label" >⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
                                 </label>
                             </li>
                         </ul>     
@@ -149,39 +149,39 @@
                         <p class="txt-tit">02. 마이동풍은 이백의 시에서 유래한 말이다. 여기에서 동풍은 어떤 계절의 바람일까?</p>                        
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo" @click="activate(6)">
-                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo2" :value="rdos2[0]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 6 }">① 봄</span>                    
+                                    <span class="label" >① 봄</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" @click="activate(7)">
-                                    <input type="radio" class="rdo" name="test-rdo-2" >
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo2" :value="rdos2[1]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 7 }">② 여름</span>                    
+                                    <span class="label"  >② 여름</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" @click="activate(8)">
-                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo2" :value="rdos2[2]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 8 }">③ 가을</span>                    
+                                    <span class="label" >③ 가을</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo" @click="activate(9)">
-                                    <input type="radio" class="rdo" name="test-rdo-2" >
+                                <label  class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo2" :value="rdos2[3]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 9 }">④ 겨울</span>                    
+                                    <span class="label" >④ 겨울</span>                    
                                 </label>
                             </li>
                         </ul> 
@@ -190,39 +190,39 @@
                         <p class="inner-txt op65 mb20">태양계에는 항성인 태양과 그 가까이로부터 수성, 금성, 지구, 화성, 즉 지구형 행성이 순서대로 나열되어 있으며 그 다음에 유성대(asteroid belt)가 존재한다. </p>
                         <ul class="ul-block com-rdo img-rdo">
                             <li>
-                                <label class="labelRdo" @click="activate(10)">
-                                    <input type="radio" class="rdo" name="test-rdo-3">
+                                <label class="labelRdo" @click="activate(1)">
+                                    <input type="radio" class="rdo" v-model="rdo3" :value="rdos3[0]">
                                     <span class="ico " style="top:15px;">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <div class="label"   :class="{ border_clr2 : active_el == 10 }" ><span class="ico num-cir">1</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
+                                    <div class="label"   :class="{ border_clr2 : active_el == 1 }" ><span class="ico num-cir">1</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" @click="activate(11)">
-                                    <input type="radio" class="rdo" name="test-rdo-3">
+                                <label class="labelRdo" @click="activate(2)">
+                                    <input type="radio" class="rdo" v-model="rdo3" :value="rdos3[1]">
                                     <span class="ico" style="top:15px;">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <div class="label"   :class="{ border_clr2 : active_el == 11 }" ><span class="ico num-cir">2</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
+                                    <div class="label"   :class="{ border_clr2 : active_el == 2 }" ><span class="ico num-cir">2</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" @click="activate(12)">
-                                    <input type="radio" class="rdo" name="test-rdo-3">
+                                <label class="labelRdo" @click="activate(3)">
+                                    <input type="radio" class="rdo" v-model="rdo3" :value="rdos3[2]">
                                     <span class="ico" style="top:15px;">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <div class="label"   :class="{ border_clr2 : active_el == 12 }" ><span class="ico num-cir">3</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
+                                    <div class="label"   :class="{ border_clr2 : active_el == 3 }" ><span class="ico num-cir">3</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" @click="activate(13)">
-                                    <input type="radio" class="rdo" name="test-rdo-3">
+                                <label class="labelRdo" @click="activate(4)">
+                                    <input type="radio" class="rdo" v-model="rdo3" :value="rdos3[3]">
                                     <span class="ico" style="top:15px;">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <div class="label"   :class="{ border_clr2 : active_el == 13 }" ><span class="ico num-cir">4</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
+                                    <div class="label"   :class="{ border_clr2 : active_el == 4 }" ><span class="ico num-cir">4</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
                                 </label>
                             </li>
                         </ul>     
@@ -233,48 +233,48 @@
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo" @click="activate(14)">
-                                    <input type="radio" class="rdo" name="test-rdo-4">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[0]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 14 }" >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
+                                    <span class="label" >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" @click="activate(15)">
-                                    <input type="radio" class="rdo" name="test-rdo-4" >
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[1]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 15 }" >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
+                                    <span class="label" >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label class="labelRdo" @click="activate(16)">
-                                    <input type="radio" class="rdo" name="test-rdo-4">
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[2]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 16 }">③ 2003년 Apache 2.0 License로 최초 공개</span>                    
+                                    <span class="label">③ 2003년 Apache 2.0 License로 최초 공개</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo" @click="activate(17)">
-                                    <input type="radio" class="rdo" name="test-rdo-4">
+                                <label  class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[3]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 17 }">④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
+                                    <span class="label">④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
                                 </label>
                             </li>
                             <li>
-                                <label  class="labelRdo" @click="activate(18)">
-                                    <input type="radio" class="rdo" name="test-rdo-4">
+                                <label  class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[4]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"   :class="{ color_clr2 : active_el == 18 }">⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
+                                    <span class="label">⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
                                 </label>
                             </li>
                         </ul>
@@ -312,7 +312,14 @@ export default {
   data () {
     return {
       headerType: 1,
-      active_el: 0
+      rdo: undefined,
+      rdos: ['one', 'two', 'three', 'four', 'five'],
+      rdo2: undefined,
+      rdos2: ['one', 'two', 'three', 'four'],
+      rdo3: undefined,
+      rdos3: ['one', 'two', 'three', 'four'],
+      rdo4: undefined,
+      rdos4: ['one', 'two', 'three', 'four', 'five']
     }
   },
   /* vue function */

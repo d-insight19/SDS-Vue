@@ -101,32 +101,27 @@
                         <ul class="ul-block com-rdo result">
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo">
-                                    <span class="label"   :class="{ color_clr2 : active_el == 1 }" >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
+                                    <span class="label" >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo" >
-                                    <span class="label color_clr2"   :class="{ color_clr2 : active_el == 2 }" ><span class="ico mark-o sm"></span> ② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
+                                    <span class="label color_clr2" ><span class="ico mark-o sm"></span> ② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo">
-                                    <span class="label"   :class="{ color_clr2 : active_el == 3 }">③ 2003년 Apache 2.0 License로 최초 공개</span>                    
+                                    <span class="label" >③ 2003년 Apache 2.0 License로 최초 공개</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo">
-                                    <span class="label"   :class="{ color_clr2 : active_el == 4 }">④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
+                                    <span class="label"  >④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo">
-                                    <span class="label"   :class="{ color_clr2 : active_el == 5 }">⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
+                                    <span class="label">⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
                                 </label>
                             </li>
                         </ul>
@@ -142,26 +137,22 @@
                         <ul class="ul-block com-rdo result">
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2">
-                                    <span class="label"   :class="{ color_clr2 : active_el == 6 }"><span class="ico mark-o sm"></span>① 봄</span>                    
+                                    <span class="label" ><span class="ico mark-o sm"></span>① 봄</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2" >
-                                    <span class="label"   :class="{ color_clr2 : active_el == 7 }">② 여름</span>                    
+                                    <span class="label" >② 여름</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2">
-                                    <span class="label color_clr2"   :class="{ color_clr2 : active_el == 8 }">③ 가을</span>                    
+                                    <span class="label color_clr2" >③ 가을</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2" >
-                                    <span class="label"   :class="{ color_clr2 : active_el == 9 }">④ 겨울</span>                    
+                                    <span class="label" >④ 겨울</span>                    
                                 </label>
                             </li>
                         </ul>
@@ -178,26 +169,22 @@
                         <ul class="ul-block com-rdo img-rdo result">
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-3">
-                                    <div class="label"   :class="{ border_clr2 : active_el == 10 }" ><span class="ico num-cir pull">1</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
+                                    <div class="label" ><span class="ico num-cir pull">1</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
                                 </label>
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-3">
-                                    <div class="label border_clr2"   :class="{ border_clr2 : active_el == 11 }" ><span class="ico num-cir pull"><span class="ico mark-o sm"></span>2</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
+                                    <div class="label border_clr2" ><span class="ico num-cir pull"><span class="ico mark-o sm"></span>2</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
                                 </label>
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-3">
-                                    <div class="label"   :class="{ border_clr2 : active_el == 12 }" ><span class="ico num-cir pull">3</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
+                                    <div class="label" ><span class="ico num-cir pull">3</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
                                 </label>
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-3">
-                                    <div class="label"   :class="{ border_clr2 : active_el == 13 }" ><span class="ico num-cir pull">4</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
+                                    <div class="label" ><span class="ico num-cir pull">4</span> <img src="@/assets/img/study_quiz_choice.png" class="multi-img" alt=""/> </div>                    
                                 </label>
                             </li>
                         </ul>
@@ -215,32 +202,27 @@
                         <ul class="ul-block com-rdo result">
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-4">
-                                    <span class="label"   :class="{ color_clr2 : active_el == 14 }" >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
+                                    <span class="label" >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-4" >
-                                    <span class="label color_clr2"   :class="{ color_clr2 : active_el == 15 }" ><span class="ico mark-o sm"></span>② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
+                                    <span class="label color_clr2"  ><span class="ico mark-o sm"></span>② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-4">
-                                    <span class="label"   :class="{ color_clr2 : active_el == 16 }">③ 2003년 Apache 2.0 License로 최초 공개</span>                    
+                                    <span class="label"  >③ 2003년 Apache 2.0 License로 최초 공개</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label  class="labelRdo" >
-                                    <input type="radio" class="rdo " name="test-rdo-4">
-                                    <span class="label color_clr2"   :class="{ color_clr2 : active_el == 17 }">④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
+                                    <span class="label color_clr2" >④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
                                 </label>
                             </li>
                             <li>
                                 <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-4">
-                                    <span class="label"   :class="{ color_clr2 : active_el == 18 }"><span class="ico mark-o sm"></span>⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
+                                    <span class="label" ><span class="ico mark-o sm"></span>⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
                                 </label>
                             </li>
                         </ul>
