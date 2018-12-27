@@ -859,6 +859,29 @@ label.rdo .label{position: relative;}
 #header.assinment-head-bg{background: url("../img/img_assinment_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 #container.study_assinment .guide-btn.mr8{margin-right:8px;}
 
+// 1:1문의
+#container.study_inquery #header div.txt-group{font-weight:400; font-size:map-get($font-size , font_14);line-height:20px; letter-spacing:-0.42px;color:rgba(0,0,0,0.8)}
+#container.study_inquery #header .h-tit5{padding: 22px 0 0 0; color:rgba(0,0,0,0.65); font-weight:400; font-size:map-get($font-size , font_14);line-height:20px; letter-spacing:-0.42px;}
+#container.study_inquery .inner .sub-tit{font-weight:500; font-size:map-get($font-size , font_14);line-height:20px; letter-spacing:-0.42px;}
+#container.study_inquery .inner .sub-txt{ font-size:map-get($font-size , font_14);line-height:29px; letter-spacing:-0.42px; color:rgba(0,0,0,0.8)}
+#container.study_inquery .inner .line01{margin:8px 0 18px;}
+#container.study_inquery .inner .inner-txt{ font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:rgba(0,0,0,1)}
+
+
+// 1:1문의 수정
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -976,6 +999,7 @@ label.rdo .label{position: relative;}
 #container.drawer .multiintroduce p.name {font-size:map-get($font_size, font_14); color:#000; line-height: 24px; letter-spacing: -0.42px; text-align: left; margin: 6px 0 24px} 
 // drawer 끝
 
+
 //customercenter
 #container.mediaquery.board #header .info .article {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.65); font-weight:400; line-height:22px; margin-bottom:1px}
 #container.mediaquery.board #header .info .article span.val {color:#000; padding-left: 12px}
@@ -1013,6 +1037,25 @@ label.rdo .label{position: relative;}
 #container.drawer button.btn13 {font-size:map-get($font_size, font_13); }
 #container.drawer span.total {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.8);}
 
+//개인정보 처리방침
+#container.drawer.privacypolicy .select_wrap {position: fixed; left:0; bottom:0; z-index: 100; width:100%; padding: 18px}
+#container.drawer.privacypolicy select{ width:100%; }
+
+//문의내용 답변
+.qa_content p {font-size:map-get($font_size, font_15);}
+.qa_content p.title {font-size:map-get($font_size, font_14); font-weight: bold; margin-bottom:5px}
+.qa_content .title span.q {display:inline-block; border-radius:100%; width:22px; height:22px; border:#eee 1px solid; text-align: center; font-size:map-get($font_size, font_12); line-height:19px; margin-right:10px}
+.qa_content .title span.a {display:inline-block; border-radius:100%; width:22px; height:22px; text-align: center; font-size:map-get($font_size, font_12); color:#fff; font-weight:300; line-height:21px; margin-right:10px}
+.qa_content .answer {margin-top:17px; padding-left:18px; background: url("../img/ic_indent_line_gray_16.png") no-repeat left top;}
+.qa_content .answer p.content {font-weight: 500}
+.qa_content .info {margin:3px 0 14px}
+.qa_content .info li {display: inline-block; font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65);}
+
+//학습지원
+#container.drawer.studysupport .singleList.type_1 li a {padding-right: 0}
+#container.drawer.studysupport .singleList .border_top {border-top:#e3e3e3 1px solid}
+#container.drawer.studysupport .singleList.type_1 li a {line-height:23px}
+
 
 
 
@@ -1037,14 +1080,26 @@ label.rdo .label{position: relative;}
 .mono_80 {color: map-get($mono_colors, mono_80) !important;}
 .mono_65 {color: map-get($mono_colors, mono_65) !important;}
 .mono_50 {color: map-get($mono_colors, mono_50) !important;}
+.mono_40 {color: map-get($mono_colors, mono_40) !important;}
 .mono_25 {color: map-get($mono_colors, mono_25) !important;}
 .mono_0  {color: map-get($mono_colors, mono_0)  !important;}
 .width_inherit {width: inherit !important;}
 .width100 {width:100% !important;}
+// 총합계
+.total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
+.total span {font-size: map-get($font_size, font_15);}
+.total .fr{font-size: map-get($font_size, font_13);}
+.total strong {color: map-get($mono_colors, mono_100);}
+.total ul li {display:inline-block;}
+.total ul li + li::before {display: inline-block; content: ''; width: 1px; height: 12px; vertical-align: middle; margin: 0px 10px 0px 8px; background: map-get($line_colors, B85);}
+.total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px; background-size: 16px;}
+.total .ico.seris{width:16px;height:16px;background: map-get($mono_colors, mono_40) url("../img/ic_seris_line_bg_16.png") no-repeat center center; margin-bottom:2px; background-size: 16px;}
+.total.noline {border:0 none; margin-bottom:0;}
+
 .MainType .sub-tit {font-size:map-get($font_size, font_13); color: map-get($mono_colors, mono_65);}
 // layout.css 에 추가
 #container #content .inner {padding-bottom: 12px;}
-// curateUI02 이미지 리사이즈
+// 이미지 리사이즈
 .MainType  .thumList.type2 > li{width:151px;}
 .MainType  .thumList.type2 .thum{width:151px; height:113px;}
 .MainType  .thumList.type2 .thumbnail .thumImg {width:151px; height:113px;}
@@ -1101,13 +1156,6 @@ label.rdo .label{position: relative;}
 .MainType .scroll-x.type1 .inner2 .thumList .tit {white-space: normal; width: 165px;}
 .MainType .scroll-x.type1 .inner2 .thumList > li {width:310px; border-bottom:0;}
 .MainType .scroll-x.type1 .inner2 .thumList > li + li {border-top: 1px solid map-get($line_colors, B89); margin-top:0; padding-top:10px;}
-// 총합계
-.MainType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
-.MainType .total span {font-size: map-get($font_size, font_15);}
-.MainType .total span + span {font-size: map-get($font_size, font_13);}
-.MainType .total strong {color: map-get($mono_colors, mono_100);}
-.MainType .total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px}
-.MainType .total.noline {border:0 none; margin-bottom:0;}
 // 채널
 .MainType .labelChk2 .label .ico.arrow {margin-bottom:2px; width:12px; height:12px;}
 .MainType .labelChk2 input.chk:checked + .label .ico.arrow{background-image: url("../img/ic_next_line_white.png");}
@@ -1141,4 +1189,26 @@ label.rdo .label{position: relative;}
 //큰 라벨
 .MainType .thumList .thum .label.big {font-size: map-get($font_size, font_14); padding: 3px 12px; background-color: black;}
 
+//지식 클리핑
+.CLIPingType .line8 {height: 8px; background-color: map-get($line_colors, B95); margin-left:-18px; margin-right:-18px;}
 
+.CLIPingType .myLearn {height: 64px; width:100%;}
+.CLIPingType .myLearn > div {padding:9px 0px 12px 64px; position:relative; width:50%;}
+.CLIPingType .myLearn > div .info {position:absolute; top:0px; left: 0px;}
+.CLIPingType .myLearn > div .info img {width:64px; height:64px;}
+.CLIPingType .myLearn > div p {font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_80);}
+.CLIPingType .myLearn > div p + p {font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_100);}
+.CLIPingType .myLearn > div strong {font-size: map-get($font_size, font_19);}
+// 이미지 리사이즈
+.CLIPingType  .thumList.type2 > li{width:151px;}
+.CLIPingType  .thumList.type2 .thum{width:151px; height:113px;}
+.CLIPingType  .thumList.type2 .thumbnail .thumImg {width:151px; height:113px;}
+.CLIPingType .thumList.type2.long .thum{width:132px; height:194px;}
+.CLIPingType .thumList.type2.long .thumbnail .thumImg {width:132px; height:194px;}
+.CLIPingType .thumList.type2.square .thum{width:132px; height:132px;}
+.CLIPingType .thumList.type2.square .thumbnail .thumImg {width:132px; height:132px;}
+// 배너
+.CLIPingType .banner li {height: 80px;}
+.CLIPingType .banner li .in {padding: 16px 12px;}
+.CLIPingType .banner .bg_CLIPingMain{background: url("../img/imgBan_no.jpg") repeat-x center center;}
+.CLIPingType .banner .ico.arrow{position: absolute; background-image: url("../img/ic_next_line_white.png"); top: calc(50% - 10px) !important; right: 6px !important; width:20px; height:20px; }

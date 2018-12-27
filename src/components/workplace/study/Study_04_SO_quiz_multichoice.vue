@@ -233,49 +233,19 @@
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
                         <ul class="ul-block com-rdo">
                             <li>
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[0]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label" >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
-                                </label>
+                                <slp-radio v-model="radioValue" value="rdos4[0]" :native-value="checked">선택가능</slp-radio>
                             </li>
                             <li>
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[1]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label" >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
-                                </label>
+                                <slp-radio v-model="radioValue" value="rdos4[1]" :native-value="checked">선택가능</slp-radio>
                             </li>
                             <li>
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[2]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label">③ 2003년 Apache 2.0 License로 최초 공개</span>                    
-                                </label>
+                                <slp-radio v-model="radioValue" value="rdos4[2]" :native-value="checked">선택가능</slp-radio>
                             </li>
                             <li>
-                                <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[3]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label">④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
-                                </label>
+                                <slp-radio v-model="radioValue" value="rdos4[3]" :native-value="checked">선택가능</slp-radio>
                             </li>
                             <li>
-                                <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo4" :value="rdos4[4]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label">⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
-                                </label>
+                                <slp-radio v-model="radioValue" value="rdos4[4]" :native-value="checked">선택가능</slp-radio>
                             </li>
                         </ul>
                     </div>
@@ -318,7 +288,7 @@ export default {
       rdos2: ['one', 'two', 'three', 'four'],
       rdo3: undefined,
       rdos3: ['one', 'two', 'three', 'four'],
-      rdo4: undefined,
+      radioValue: undefined,
       rdos4: ['one', 'two', 'three', 'four', 'five']
     }
   },

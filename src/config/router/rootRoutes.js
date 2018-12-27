@@ -26,6 +26,9 @@ import ComponentsLayoutType3 from '~workplace/common_page/components_layout_type
 import ComponentsKeyboard from '~workplace/common_page/components_keyboard'
 import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
+import ComponentsSpinner from '~workplace/common_page/components_spinner'
+import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
+// import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -82,6 +85,7 @@ import Study02studystatusassignmentapply from '~workplace/study/Study_02_studyst
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
+import Study02inquiryedit from '~workplace/study/Study_02_inquiry_edit'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentintro from '~workplace/study/Study_04_SO_assinment_intro'
@@ -161,6 +165,11 @@ import MainWriterHistory from '~workplace/main/Main_writer_history'
 import MainWriterScroll from '~workplace/main/Main_writer_scroll'
 import MainLearningMain from '~workplace/main/Main_learning_main'
 
+import CLIPingMain from '~workplace/cliping/CLIPing_main'
+import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
+import CLIPingVideoAll from '~workplace/cliping/CLIPing_video_all'
+import CLIPingVideoSeries from '~workplace/cliping/CLIPing_video_series'
+
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
@@ -220,6 +229,10 @@ import CustomerCenterRequest from '~workplace/customercenter/CustomerCenter_Requ
 import CustomerCenterRequestpopup1 from '~workplace/customercenter/CustomerCenter_Request_popup1'
 import CustomerCenterRequestpopup2 from '~workplace/customercenter/CustomerCenter_Request_popup2'
 import CustomerCenterRequesttoast01 from '~workplace/customercenter/CustomerCenter_Request_toast01'
+import CustomerCenterRequestresultlist from '~workplace/customercenter/CustomerCenter_Request_resultlist'
+import CustomerCenterPrivacyPolicy from '~workplace/customercenter/CustomerCenter_PrivacyPolicy'
+import CustomerCenterInquirydetail from '~workplace/customercenter/CustomerCenter_Inquiry_detail'
+import CustomerCenterStudysupport from '~workplace/customercenter/CustomerCenter_Studysupport'
 
 // 1번 영역
 var rootRoutes = [
@@ -232,6 +245,11 @@ var rootRoutes = [
     path: '/test',
     name: 'test',
     component: test
+  },
+  {
+    path: '/components_textfield_slp',
+    name: 'components_textfield_slp',
+    component: ComponentsTextfieldSlp
   },
   {
     path: '/components_buttons',
@@ -358,6 +376,16 @@ var rootRoutes = [
     name: 'components_bottomsheet',
     component: ComponentsBottomsheet
   },
+  {
+    path: '/components_spinner',
+    name: 'components_spinner',
+    component: ComponentsSpinner
+  },
+  // {
+  //   path: '/components_flowplayer',
+  //   name: 'components_flowplayer',
+  //   component: ComponentsFlowplayer
+  // },
   {
     path: '/Login_findcenter',
     name: 'Login_findcenter',
@@ -627,6 +655,11 @@ var rootRoutes = [
     path: '/Study_02_inquiry_detail',
     name: 'Study_02_inquiry_detail',
     component: Study02inquirydetail
+  },
+  {
+    path: '/Study_02_inquiry_edit',
+    name: 'Study_02_inquiry_edit',
+    component: Study02inquiryedit
   },
   {
     path: '/Study_03_LO_viewer_fs',
@@ -1013,6 +1046,26 @@ var rootRoutes = [
     component: MainLearningMain
   },
   {
+    path: '/CLIPing_main',
+    name: 'CLIPing_main',
+    component: CLIPingMain
+  },
+  {
+    path: '/CLIPing_guide',
+    name: 'CLIPing_guide',
+    component: CLIPingGuide
+  },
+  {
+    path: '/CLIPing_video_all',
+    name: 'CLIPing_video_all',
+    component: CLIPingVideoAll
+  },
+  {
+    path: '/CLIPing_video_series',
+    name: 'CLIPing_video_series',
+    component: CLIPingVideoSeries
+  },
+  {
     path: '/Drawer_alerm',
     name: 'Drawer_alerm',
     component: DrawerAlerm
@@ -1301,6 +1354,26 @@ var rootRoutes = [
     path: '/CustomerCenter_Request_toast01',
     name: 'CustomerCenter_Request_toast01',
     component: CustomerCenterRequesttoast01
+  },
+  {
+    path: '/CustomerCenter_Request_resultlist',
+    name: 'CustomerCenter_Request_resultlist',
+    component: CustomerCenterRequestresultlist
+  },
+  {
+    path: '/CustomerCenter_PrivacyPolicy',
+    name: 'CustomerCenter_PrivacyPolicy',
+    component: CustomerCenterPrivacyPolicy
+  },
+  {
+    path: '/CustomerCenter_Inquiry_detail',
+    name: 'CustomerCenter_Inquiry_detail',
+    component: CustomerCenterInquirydetail
+  },
+  {
+    path: '/CustomerCenter_Studysupport',
+    name: 'CustomerCenter_Studysupport',
+    component: CustomerCenterStudysupport
   }
 ]
 
