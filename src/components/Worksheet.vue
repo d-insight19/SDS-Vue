@@ -1229,9 +1229,9 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_06.01_Studysupport</td>
         <td>
-          <!--<router-link :to="{ name: 'CustomerCenter_Studysupport' }">
+          <router-link :to="{ name: 'CustomerCenter_Studysupport' }">
             CustomerCenter_Studysupport
-          </router-link> -->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -1246,8 +1246,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_06.02_Studysupport_detail1</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Studysupport_detail' }">
+            CustomerCenter_Studysupport_detail
           </router-link>
         </td>
         <td></td>
@@ -1263,6 +1263,7 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_06.03_Studysupport_detail2</td>
         <td>
+        CustomerCenter_Studysupport_detail과 같음
           <router-link :to="{ name: '' }">
             
           </router-link>
@@ -1309,8 +1310,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_07.02_Request_result</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Request_result' }">
+            CustomerCenter_Request_result
           </router-link>
         </td>
         <td></td>

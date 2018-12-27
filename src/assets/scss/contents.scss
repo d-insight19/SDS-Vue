@@ -884,9 +884,9 @@ label.rdo .label{position: relative;}
 #container.drawer .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
 #container.drawer .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px !important;}
 #container.drawer .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px !important;}
-#container.drawer .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
+#container.drawer .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px !important;}
 #container.drawer .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px !important;}
-#container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 9px !important;}
+#container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 13px !important;}
 #container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px !important; }
 #container.drawer .labelChk {width:auto}
 
@@ -918,7 +918,7 @@ label.rdo .label{position: relative;}
 #container.drawer .subject {width:33%; margin-right:6px}
 #container.drawer .subdivide {width:65%}
 #container.drawer .pt0 {padding-top:0}
-#container.drawer .divide_line { width: 100%; height: 8px; background-color:#f6f6f6; margin:26px 0 22px; }
+.divide_line { width: 100%; height: 8px; background-color:#f6f6f6; margin:26px 0 22px; }
 
 #container.drawer .withdrawal>li {width:50%; border-bottom:#eaeaea 1px solid; padding:20px 6px;}
 #container.drawer .withdrawal>li.bl {border-left:#eaeaea 1px solid; padding-left:16px}
@@ -967,6 +967,7 @@ label.rdo .label{position: relative;}
 //customercenter
 #container.mediaquery.board #header .info .article {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.65); font-weight:400; line-height:22px; margin-bottom:1px}
 #container.mediaquery.board #header .info .article span.val {color:#000; padding-left: 12px}
+#container.mediaquery.board #header .info .desc {font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65); font-weight: 300; line-height:18px; margin-top:9px; }
 #container.mediaquery.board .notice_imgs {width:324px;height:243px;background: url("../img/notice_imgs.png") no-repeat; margin:0 auto; margin-top:24px}
 #container.mediaquery.board .multiList.type3 .ico.arrow {top: calc(50% - 18px)}
 #container.mediaquery.board .info_icon li.icon {display:inline-block; vertical-align: top}
@@ -1019,6 +1020,63 @@ label.rdo .label{position: relative;}
 #container.drawer.studysupport .singleList.type_1 li a {padding-right: 0}
 #container.drawer.studysupport .singleList .border_top {border-top:#e3e3e3 1px solid}
 #container.drawer.studysupport .singleList.type_1 li a {line-height:23px}
+#container.drawer.studysupport table.support_mobile {margin-top:13px}
+#container.drawer.studysupport table.support_mobile th {background-color: #f5f5f5; border-top:#ccc 1px solid; height:37px; font-weight: 500}
+#container.drawer.studysupport table.support_mobile td {height: 35px; border-bottom: #eaeaea 1px solid; text-align: center}
+#container.drawer.studysupport dl dt {font-size:map-get($font_size, font_16); height: 24px; margin-bottom: 6px}
+#container.drawer.studysupport dl dd {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.65); margin-bottom: 10px}
+#container.drawer.studysupport .singleList.type_2 li {border-top: 1px solid rgba(0,0,0,0.25); border-bottom: 1px solid rgba(0,0,0,0.25);}
+#container.drawer.studysupport .singleList.type_2 li.noline {border-bottom: 0}
+#container.drawer.studysupport .singleList.type_2 li a {line-height: 23px; font-weight: 500}
+#container.drawer.studysupport .ico.accordion_down {position: absolute; right: 0; bottom:17px}
+#container.drawer.studysupport .ico.accordion_up {position: absolute; right: 0; bottom:17px}
+#container.drawer.studysupport .divide_line {margin:22px 0}
+.remote_assistance_step li {overflow:hidden; padding:20px 0; border-bottom:#ebebeb 1px solid}
+.remote_assistance_step li .step {float:left; width:64px; height:64px;}
+.remote_assistance_step li .step.step1 { background: url("../img/studysupport_detail_step1.png"); }
+.remote_assistance_step li .step.step2 { background: url("../img/studysupport_detail_step2.png"); }
+.remote_assistance_step li .step.step3 { background: url("../img/studysupport_detail_step3.png"); }
+.remote_assistance_step li .step.step4 { background: url("../img/studysupport_detail_step4.png"); }
+#container.drawer.studysupport .remote_assistance_step dl { float:right; width:calc(100% - 84px); font-size:map-get($font_size, font_14); display: inline-block}
+#container.drawer.studysupport .remote_assistance_step dl dt {font-family: 'Roboto'; font-weight: 500; margin-bottom: 0}
+#container.drawer.studysupport .remote_assistance_step dl dd {color:#000; margin-bottom:0}
+#container.drawer.studysupport .guideList li {font-size:map-get($font_size, font_14); font-weight: 400}
+#container.drawer.studysupport .remote_assistance_manage {margin:13px 0 22px}
+#container.drawer.studysupport .remote_assistance_manage .label-tit16 {width:100%;}
+.mobile_remote_method .mobile {width:274px; height: 240px; margin:30px auto 18px}
+.mobile_remote_method .mobile.mobile1 { background: url("../img/studysupport_mobile1.png");}
+.mobile_remote_method .mobile.mobile2 { background: url("../img/studysupport_mobile2.png");}
+.mobile_remote_method .mobile.mobile3 { background: url("../img/studysupport_mobile3.png");}
+.mobile_remote_method ol.num {font-weight: bold; list-style-type : decimal; padding-left:20px;}
+.mobile_remote_method ol.num li {list-style-type : decimal; margin-bottom:6px}
+.mobile_remote_method ol.num p {color:#000; font-weight: 300}
+.mobile_remote_method ol.num span.point {font-weight: 400}
+
+// 설문조사 결과
+.progBox_wrap {font-size:map-get($font_size, font_14); }
+.progBox_wrap li {margin-bottom:14px}
+.progBox_wrap .progBox {margin-top:11px; }
+.progBox_wrap .progBox .bar1 {background-color:map-get($contents_colors, type_1 );}
+.progBox_wrap .progBox .bar5 {background-color:map-get($contents_colors, type_5 );}
+#container.board.request h2.label-tit16 {width:100%; font-size:map-get($font_size, font_16); font-weight: 500; margin:26px 0 20px;}
+.progBox_wrap .desc {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); margin-top:7px}
+#container.board .divide_line { margin:26px 0 }
+.diagram_wrap .diagram {margin:0 auto; width:180px; height:180px; background-color: #eee; border-radius: 100%}
+.diagram_wrap {padding:0 32px}
+.diagram_wrap li { position:relative; border-bottom:#e3e3e3 1px solid; padding:10px 0 10px 20px}
+.diagram_wrap li::before{display: inline-block; position: absolute; top:16px; left:0; z-index: 2; content: ''; width:8px; height: 8px; background-color:map-get($contents_colors, type_1 ); border-radius: 100%}
+.diagram_wrap li.type4::before{ background-color:map-get($contents_colors, type_4 );}
+.diagram_wrap li.type5::before{ background-color:map-get($contents_colors, type_5 );}
+.diagram_wrap li.type2::before{ background-color:map-get($contents_colors, type_2 );}
+.diagram_wrap li.type3::before{ background-color:map-get($contents_colors, type_3 );}
+.diagram_wrap .percent {font-family: 'Roboto'; font-size:map-get($font_size, font_15); line-height: 22px}
+.diagram_wrap .percent .num {font-size:map-get($font_size, font_22); line-height: 22px}
+#container.board.request .singleList.type_1 li { border-top:#ebebeb 1px solid; border-bottom:0;}
+#container.board.request .singleList.type_1 li a {line-height: 20px; font-size:map-get($font_size, font_14); color:#1a1a1a; padding:15px 0} 
+#container.board.request a.respondent_num {display: block; padding-bottom:22px}
+
+
+
 
 
 
