@@ -237,6 +237,8 @@ import CustomerCenterRequestresultlist from '~workplace/customercenter/CustomerC
 import CustomerCenterPrivacyPolicy from '~workplace/customercenter/CustomerCenter_PrivacyPolicy'
 import CustomerCenterInquirydetail from '~workplace/customercenter/CustomerCenter_Inquiry_detail'
 import CustomerCenterStudysupport from '~workplace/customercenter/CustomerCenter_Studysupport'
+import CustomerCenterStudysupportdetail from '~workplace/customercenter/CustomerCenter_Studysupport_detail'
+import CustomerCenterRequestresult from '~workplace/customercenter/CustomerCenter_Request_result'
 
 // 1번 영역
 var rootRoutes = [
@@ -1403,6 +1405,16 @@ var rootRoutes = [
     path: '/CustomerCenter_Studysupport',
     name: 'CustomerCenter_Studysupport',
     component: CustomerCenterStudysupport
+  },
+  {
+    path: '/CustomerCenter_Studysupport_detail',
+    name: 'CustomerCenter_Studysupport_detail',
+    component: CustomerCenterStudysupportdetail
+  },
+  {
+    path: '/CustomerCenter_Request_result',
+    name: 'CustomerCenter_Request_result',
+    component: CustomerCenterRequestresult
   }
 ]
 
