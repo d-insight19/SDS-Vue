@@ -2956,8 +2956,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.04.Browse    main</td>
         <td>
-          <router-link :to="{ name: 'Main_browse_main' }">
-            Main_browse_main
+          <router-link :to="{ name: 'Main_04_browse_main' }">
+            Main_04_browse_main
           </router-link>
         </td>
         <td></td>
@@ -2973,8 +2973,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.04.Browse    ListDetail01</td>
         <td>
-          <router-link :to="{ name: 'Main_browse_listDetail01' }">
-            Main_browse_listDetail01
+          <router-link :to="{ name: 'Main_04_browse_listDetail01' }">
+            Main_04_browse_listDetail01
           </router-link>
         </td>
         <td></td>
@@ -2990,8 +2990,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.04.Browse    ListDetail02</td>
         <td>
-          <router-link :to="{ name: 'Main_browse_listDetail02' }">
-            Main_browse_listDetail02
+          <router-link :to="{ name: 'Main_04_browse_listDetail02' }">
+            Main_04_browse_listDetail02
           </router-link>
         </td>
         <td></td>
@@ -7527,9 +7527,10 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.Banner</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_banner' }">
+            Main_banner
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -7544,9 +7545,10 @@
         <td>　</td>
         <td class="textL">02.Main_02.01.02. CurateUI03</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_curateUI03' }">
+            Main_curateUI03
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -7578,9 +7580,10 @@
         <td>　</td>
         <td class="textL">02.Main_02.01.02. CurateUI01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_curateUI01' }">
+            Main_curateUI01
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -7629,9 +7632,10 @@
         <td>　</td>
         <td class="textL">02.Main_02.01.02.    CurateUI02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_curateUI02' }">
+            Main_curateUI02
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -7646,9 +7650,10 @@
         <td>　</td>
         <td class="textL">02.Main_02.01.02.    CurateUI04</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_curateUI04' }">
+            Main_curateUI04
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -7680,8 +7685,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.03.03.Browse</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_03_browse_main' }">
+            Main_03_browse_main
           </router-link>
         </td>
         <td></td>
@@ -7697,8 +7702,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.03.03    Browse ListDetail01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_03_browse_listDetail01' }">
+            Main_03_browse_listDetail01
           </router-link>
         </td>
         <td></td>
@@ -7714,8 +7719,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.03.03    Browse ListDetail02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_03_browse_listDetail02' }">
+            Main_03_browse_listDetail02
           </router-link>
         </td>
         <td></td>
@@ -7816,9 +7821,10 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_02.01_Alerm</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_alerm' }">
+            Drawer_alerm
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>

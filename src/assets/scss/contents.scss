@@ -1155,7 +1155,7 @@ label.rdo .label{position: relative;}
 .MainType .total ul li {display:inline-block;}
 .MainType .total ul li + li::before {display: inline-block; content: ''; width: 1px; height: 12px; vertical-align: middle; margin: 0px 10px 0px 8px; background: map-get($line_colors, B85);}
 .MainType .total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px; background-size: 16px;}
-.MainType.total .ico.seris{width:16px;height:16px;background: map-get($mono_colors, mono_40) url("../img/ic_seris_line_bg_16.png") no-repeat center center; margin-bottom:2px; background-size: 16px;}
+.MainType .total .ico.seris{width:16px;height:16px;background: map-get($mono_colors, mono_40) url("../img/ic_seris_line_bg_16.png") no-repeat center center; margin-bottom:2px; background-size: 16px;}
 .MainType .total.noline {border:0 none; margin-bottom:0;}
 
 .MainType .sub-tit {font-size:map-get($font_size, font_13); color: map-get($mono_colors, mono_65);}
@@ -1215,7 +1215,7 @@ label.rdo .label{position: relative;}
 .MainType .scroll-x.type2 .inner2 {display: inline-block; margin-right: 8px;}
 .MainType .scroll-x.type2 .inner2 .category {font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_80); font-weight:700; height:23px; margin-bottom:8px; display:block; vertical-align: top;}
 .MainType .scroll-x.type2 .inner2 .category .ico {vertical-align: inherit; margin-top: 5px;}
-.MainType .scroll-x.type1 {border-bottom: 8px solid map-get($line_colors, B95);}
+.MainType .line8 {height: 8px; background-color: map-get($line_colors, B95); margin-left:-18px; margin-right:-18px;}
 .MainType .scroll-x.type1 .inner2 {width:310px; display:inline-block; margin-right:8px;}
 .MainType .scroll-x.type1 .inner2 .thumList .tit {white-space: normal; width: 165px;}
 .MainType .scroll-x.type1 .inner2 .thumList > li {width:310px; border-bottom:0;}

@@ -147,9 +147,12 @@ import MainStatistics1 from '~workplace/main/Main_statistics_1'
 import MainStatistics2 from '~workplace/main/Main_statistics_2'
 import MainStatistics3 from '~workplace/main/Main_statistics_3'
 import MainStatistics4 from '~workplace/main/Main_statistics_4'
-import MainBrowseMain from '~workplace/main/Main_browse_main'
-import MainBrowseListDetail01 from '~workplace/main/Main_browse_listDetail01'
-import MainBrowseListDetail02 from '~workplace/main/Main_browse_listDetail02'
+import Main03BrowseMain from '~workplace/main/Main_03_browse_main'
+import Main03BrowseListDetail01 from '~workplace/main/Main_03_browse_listDetail01'
+import Main03BrowseListDetail02 from '~workplace/main/Main_03_browse_listDetail02'
+import Main04BrowseMain from '~workplace/main/Main_04_browse_main'
+import Main04BrowseListDetail01 from '~workplace/main/Main_04_browse_listDetail01'
+import Main04BrowseListDetail02 from '~workplace/main/Main_04_browse_listDetail02'
 import MainSubscribed from '~workplace/main/Main_subscribed'
 import MainSubscribedEmpty from '~workplace/main/Main_subscribed_empty'
 import MainChannelListNull from '~workplace/main/Main_channel_list_null'
@@ -174,6 +177,7 @@ import CLIPingBookSummary from '~workplace/cliping/CLIPing_bookSummary'
 import CLIPingBookSummaryDetail from '~workplace/cliping/CLIPing_bookSummary_detail'
 import CLIPingColumn from '~workplace/cliping/CLIPing_column'
 import CLIPingColumnDetail from '~workplace/cliping/CLIPing_column_detail'
+
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
@@ -967,19 +971,34 @@ var rootRoutes = [
     component: MainStatistics4
   },
   {
-    path: '/Main_browse_main',
-    name: 'Main_browse_main',
-    component: MainBrowseMain
+    path: '/Main_03_browse_main',
+    name: 'Main_03_browse_main',
+    component: Main03BrowseMain
   },
   {
-    path: '/Main_browse_listDetail01',
-    name: 'Main_browse_listDetail01',
-    component: MainBrowseListDetail01
+    path: '/Main_03_browse_listDetail01',
+    name: 'Main_03_browse_listDetail01',
+    component: Main03BrowseListDetail01
   },
   {
-    path: '/Main_browse_listDetail02',
-    name: 'Main_browse_listDetail02',
-    component: MainBrowseListDetail02
+    path: '/Main_03_browse_listDetail02',
+    name: 'Main_03_browse_listDetail02',
+    component: Main03BrowseListDetail02
+  },
+  {
+    path: '/Main_04_browse_main',
+    name: 'Main_04_browse_main',
+    component: Main04BrowseMain
+  },
+  {
+    path: '/Main_04_browse_listDetail01',
+    name: 'Main_04_browse_listDetail01',
+    component: Main04BrowseListDetail01
+  },
+  {
+    path: '/Main_04_browse_listDetail02',
+    name: 'Main_04_browse_listDetail02',
+    component: Main04BrowseListDetail02
   },
   {
     path: '/Main_subscribed',
