@@ -28,6 +28,7 @@ import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
+import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -163,6 +164,11 @@ import MainWriterArticle from '~workplace/main/Main_writer_article'
 import MainWriterHistory from '~workplace/main/Main_writer_history'
 import MainWriterScroll from '~workplace/main/Main_writer_scroll'
 import MainLearningMain from '~workplace/main/Main_learning_main'
+
+import CLIPingMain from '~workplace/cliping/CLIPing_main'
+import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
+import CLIPingVideoAll from '~workplace/cliping/CLIPing_video_all'
+import CLIPingVideoSeries from '~workplace/cliping/CLIPing_video_series'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -374,6 +380,11 @@ var rootRoutes = [
     path: '/components_spinner',
     name: 'components_spinner',
     component: ComponentsSpinner
+  },
+  {
+    path: '/components_flowplayer',
+    name: 'components_flowplayer',
+    component: ComponentsFlowplayer
   },
   {
     path: '/Login_findcenter',
@@ -1033,6 +1044,26 @@ var rootRoutes = [
     path: '/Main_learning_main',
     name: 'Main_learning_main',
     component: MainLearningMain
+  },
+  {
+    path: '/CLIPing_main',
+    name: 'CLIPing_main',
+    component: CLIPingMain
+  },
+  {
+    path: '/CLIPing_guide',
+    name: 'CLIPing_guide',
+    component: CLIPingGuide
+  },
+  {
+    path: '/CLIPing_video_all',
+    name: 'CLIPing_video_all',
+    component: CLIPingVideoAll
+  },
+  {
+    path: '/CLIPing_video_series',
+    name: 'CLIPing_video_series',
+    component: CLIPingVideoSeries
   },
   {
     path: '/Drawer_alerm',
