@@ -28,7 +28,7 @@ import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
-import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
+// import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -381,11 +381,11 @@ var rootRoutes = [
     name: 'components_spinner',
     component: ComponentsSpinner
   },
-  {
-    path: '/components_flowplayer',
-    name: 'components_flowplayer',
-    component: ComponentsFlowplayer
-  },
+  // {
+  //   path: '/components_flowplayer',
+  //   name: 'components_flowplayer',
+  //   component: ComponentsFlowplayer
+  // },
   {
     path: '/Login_findcenter',
     name: 'Login_findcenter',
