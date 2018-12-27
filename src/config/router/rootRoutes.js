@@ -27,6 +27,7 @@ import ComponentsKeyboard from '~workplace/common_page/components_keyboard'
 import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
+import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -83,6 +84,7 @@ import Study02studystatusassignmentapply from '~workplace/study/Study_02_studyst
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
+import Study02inquiryedit from '~workplace/study/Study_02_inquiry_edit'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentintro from '~workplace/study/Study_04_SO_assinment_intro'
@@ -237,6 +239,11 @@ var rootRoutes = [
     path: '/test',
     name: 'test',
     component: test
+  },
+  {
+    path: '/components_textfield_slp',
+    name: 'components_textfield_slp',
+    component: ComponentsTextfieldSlp
   },
   {
     path: '/components_buttons',
@@ -637,6 +644,11 @@ var rootRoutes = [
     path: '/Study_02_inquiry_detail',
     name: 'Study_02_inquiry_detail',
     component: Study02inquirydetail
+  },
+  {
+    path: '/Study_02_inquiry_edit',
+    name: 'Study_02_inquiry_edit',
+    component: Study02inquiryedit
   },
   {
     path: '/Study_03_LO_viewer_fs',

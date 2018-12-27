@@ -78,8 +78,8 @@
         <td>{{item.comment }}</td>
       </tr>		  
       -->
-      <!-- <tr>
-      <td align="center">0</td>
+      <tr>
+      <td align="center">com-1</td>
         <td></td>
         <td></td>
         <td>　</td>
@@ -87,14 +87,14 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">test</td>
+        <td class="textL">input</td>
         <td>
-          <router-link :to="{ name: 'test' }">
-            test
+          <router-link :to="{ name: 'components_textfield_slp' }">
+            components_textfield_slp
           </router-link>
         </td>
         <td></td>
-      </tr>-->
+      </tr>
       <tr> 
       <td align="center">1</td>
         <td>로그인 / 회원가입</td>
@@ -5461,8 +5461,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.57.inquiry_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_inquiry_edit' }">
+            Study_02_inquiry_edit
           </router-link>
         </td>
         <td></td>

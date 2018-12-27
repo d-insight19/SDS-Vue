@@ -13,19 +13,19 @@
                 </div>  
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
                     <div class="hide-inner"> 
-                        <span class="chip">리플렉션노트</span>     
+                        <span class="chip">1:1문의</span>     
                         <p class="h-tit1">
                             <strong class="q-tit">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</strong> 
                             <span class="fr ico more28"></span>                            
                         </p>
-                        <p class="ico-group">
+                        <div class="txt-group">
                             <span>동영상</span>
                             <span class="pipe"></span>
                             <span>2018.10.10</span>
                             <span class="pipe"></span>
-                            <span>회신방법 : 이메일</span>
-                        </p>
-                        <p class="h-tit5">미답변</p>
+                            <span>회신방법 : 이메일</span>                            
+                        </div>
+                        <p class="h-tit5">미답변</p>                        
                     </div>
                 </div>
             </div>
@@ -97,10 +97,12 @@
 
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">                       
-                        <div>
-                            <p class="inner-txt">본질적인 조건을 생각해보다가 떠오른게 있는데 관련보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다.  </p>
-                        </div>
+                    <div class="inner">
+                        <p class="sub-tit">과정명</p> 
+                        <p class="sub-txt">이석규 교수의 마케팅 핵심원리와 실전전략</p>
+                        <p class="line01"></p>
+                        <p class="inner-txt">본질적인 조건을 생각해보다가 떠오른게 있는데 관련보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다.  </p>
+                        
                         <p class="label-tit-02 mt36"><strong>첨부파일</strong></p>
                         <ul class="ulList type4">
                             <li>
