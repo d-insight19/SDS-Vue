@@ -16,7 +16,7 @@
           </p> 
         </div>
         <p class="line01"></p>
-        <p class="label-tit-02 mt26"><strong>댓글</strong></p>
+        <p class="label-tit-2 mt26"><strong>댓글</strong></p>
         <ul class="reply_input bd_bt">
             <li class="bd">                   
                 <input type="text" class="input reply" placeholder="댓글을 입력하세요." /><button>등록</button>

@@ -52,7 +52,7 @@
                       </div>
                       <!-- //list -->
                       
-                      <p class="label-tit-02 mt36"><strong>첨부파일 추가</strong></p>
+                      <p class="label-tit-2 mt36"><strong>첨부파일 추가</strong></p>
                       <ul class="ulList type4">
                           <li>
                             <div>
