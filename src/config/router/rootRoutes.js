@@ -126,6 +126,10 @@ import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
 import Study04SOdebatesubmission from '~workplace/study/Study_04_SO_debate_submission'
 import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_submission_all'
+import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
+import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
+import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
+import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -869,6 +873,26 @@ var rootRoutes = [
     path: '/Study_04_SO_debate_submission_all',
     name: 'Study_04_SO_debate_submission_all',
     component: Study04SOdebatesubmissionall
+  },
+  {
+    path: '/Study_05_etc_pledge_law',
+    name: 'Study_05_etc_pledge_law',
+    component: Study05etcpledgelaw
+  },
+  {
+    path: '/Study_05_etc_pledge_ethics',
+    name: 'Study_05_etc_pledge_ethics',
+    component: Study05etcpledgeethics
+  },
+  {
+    path: '/Study_05_etc_agreement_first',
+    name: 'Study_05_etc_agreement_first',
+    component: Study05etcagreementfirst
+  },
+  {
+    path: '/Study_05_etc_agreement_salary',
+    name: 'Study_05_etc_agreement_salary',
+    component: Study05etcagreementsalary
   },
   {
     path: '/Main_control',

@@ -20,7 +20,19 @@
                             <ul class="multiList type2">
                                 <li>
                                     <strong class="label-tit14">제목</strong>
-                                    <slp-text-field placeholder="내용 문의합니다"></slp-text-field>
+                                    <slp-text-field ref="refInput"
+        :class="[computedClass, classObject]"
+        :type="inputType"
+        :value="realText"
+        :disabled="disabled"
+        :readonly="readonly"
+        :maxlength="maxlength"
+        :pattern="pattern"
+        class="input"
+        @input="inputText($event.target.value)"
+        @focus="slpTextFieldFocused"
+        @blur="slpTextFieldBlur"
+        @keyup ="slpTextFieldKeyup" placeholder="내용 문의합니다"></slp-text-field>
                                 </li>
                                 <li class="custom">
                                     <strong class="label-tit14">과정명</strong>
@@ -92,6 +104,56 @@
 <script>
 export default {
   name: 'Study_02_inquiry_edit',
+  props: {
+    value: {
+      type: String,
+      default: null
+    },
+    type: {
+      type: String,
+      default: 'text'
+    },
+    placeholder: {
+      type: String,
+      default: null
+    },
+    icon: {
+      type: String,
+      default: null
+    },
+    clearable: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    readonly: {
+      type: Boolean,
+      default: false
+    },
+    success: {
+      type: Boolean,
+      default: false
+    },
+    error: {
+      type: Boolean,
+      default: false
+    },
+    message: {
+      type: String,
+      default: null
+    },
+    maxlength: {
+      type: [Number, String],
+      default: 100
+    },
+    classObject: {
+      type: [String, Object],
+      default: null
+    }
+  },
   /* vue lifecycle */
   created () {
   },
@@ -101,7 +163,44 @@ export default {
   data () {
     return {
       headerType: 2,
-      list1: []
+      list1: [],
+      realText: this.value,
+      visible: true,
+      isFocus: true,
+      inputType: this.type,
+      intSchBox: true
+    }
+  },
+  computed: {
+    rootClass () {
+      return {
+        'intSchBox': this.icon === 'search'
+      }
+    },
+    wrapperClass () {
+      return {
+        'search-wrapper': this.clearable
+      }
+    },
+    computedClass () {
+      return {
+        'succ': this.success,
+        'error': this.error
+      }
+    },
+    pattern () {
+      if (this.clearable) {
+        return ''
+      } else {
+        return null
+      }
+    }
+  },
+  watch: {
+    value (v) {
+      if (this.realText !== v) {
+        this.inputText(v)
+      }
     }
   },
   /* vue function */
@@ -117,6 +216,33 @@ export default {
       this.keylength = event.target.value.length
       event.target.style.height = '1px'
       event.target.style.height = (event.target.scrollHeight) + 'px'
+    },
+    inputText (inputValue) {
+      this.realText = inputValue
+      this.$emit('input', this.realText)
+    },
+    setFocus () {
+      this.$refs.refInput.focus()
+    },
+    toggleIcon: function (event, iconName) {
+      if (this.icon && iconName) {
+        this.$emit('click', this.realText)
+      } else if (this.clearable) {
+        this.realText = ''
+        this.$emit('input', '')
+      }
+    },
+    slpTextFieldKeyup (event) {
+      this.$emit('keyup', event)
+    },
+    slpTextFieldFocused (event) {
+      if (this.isFocus) return
+      this.isFocus = true
+      this.$emit('focus', event)
+    },
+    slpTextFieldBlur (event) {
+      this.isFocus = false
+      this.$emit('blur', event)
     }
   }
 }

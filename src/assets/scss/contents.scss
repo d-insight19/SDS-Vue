@@ -589,11 +589,11 @@
 .ico.plus{vertical-align: -1px;}
 .multiList.type2.op25 input::placeholder{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_25);}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
-.label-tit-02 {margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 26px; letter-spacing: -0.48px;}
+.label-tit-2 {margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 26px; letter-spacing: -0.48px;}
 .ulList li.bottom-bd-x{border-bottom:none;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
-
+.ulList.type4 li:nth-last-child(1){border-bottom:none;}
 
 // 질문방 상세
 .info-group{ font-weight: 400 ; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_80); }
@@ -666,7 +666,7 @@
 #container.study_assessment_no .ulList.type4 .li-txt-2{ color:rgba(0,0,0,0.5); }
 #container.study_assessment_no .ulList.type4 .li-txt-2.ml12{ display: inline-block; margin-left: 12px;}
 #container.study_assessment_no .ulList.type4 .li-txt-3{ color:map-get($mono_colors, mono_80); }
-#container.study_assessment_no .ulList.type4 .loginChk{ margin-top: 16px; padding-left: 6px; }
+#container.study_assessment_no .ulList.type4 .mb16{ margin-bottom: 16px;  }
 
 
 // 시뮬레이션 제출완료
@@ -879,14 +879,37 @@ label.rdo .label{position: relative;}
 .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; line-height: 21px; letter-spacing: -0.42px;}
 
 
+// 서약서 법률사항
+#container.study_pledge .sub-txt { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:rgba(0,0,0,0.8)}
+#container.study_pledge .sub-txt-2 { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:#000; font-weight: 500;}
+#container.study_pledge ul.ulList li{margin-bottom: 18px;}
+#container.study_pledge ul.ulList li.mb26{margin-bottom: 26px;}
+#container.study_pledge ul.ulList li.mb36{margin-bottom: 36px;}
+#container.study_pledge .li-txt { font-size:map-get($font-size , font_15);line-height:24px; letter-spacing:-0.45px; color:rgba(0,0,0,0.8)}
+#container.study_pledge .li-txt.li-txt-2 { color:rgba(0,0,0,0.8)}
+#container.study_pledge .li-txt.li-txt-3 { font-weight:500; margin-bottom: 8px;}
+#container.study_pledge .li-txt.li-txt-4 { font-size:map-get($font-size , font_14);line-height:24px; letter-spacing:-0.42px; color:rgba(0,0,0,0.65); font-weight:500;}
+#container.study_pledge .line01.mtb{margin:15px 0 22px;}
+#container.study_pledge .line01.mtb-2{margin:12px 0 15px;}
+#container.study_pledge .tb_wrap{ margin-bottom:16px; background:#f2f3f7; padding:20px; border-top: 1px solid #999999; border-bottom: 1px solid #999999;}
+#container.study_pledge table td.sub-txt{ color:#000;}
+#container.study_pledge table td.pb10{padding-bottom: 10px;}
+#container.study_pledge .label{font-size:map-get($font-size , font_16);line-height:21px; letter-spacing:-0.48px; color:rgba(0,0,0,0.8)}
+
+// 학습 동의
+#container.study_agree .label-tit-2{margin-bottom: 14px; font-weight:500; font-size:map-get($font-size , font_18);line-height:21px; letter-spacing:-0.54px;}
+#container.study_agree .label{font-size:map-get($font-size , font_16);line-height:21px; letter-spacing:-0.48px;}
 
 
-
-
-
-
-
-
+// 급여 공제 동의
+#container.study_agree .txt-tit { margin-bottom: 4px; font-size:map-get($font-size , font_18);line-height:21px; letter-spacing:-0.54px;font-weight:600;}
+#container.study_agree .txt-tit-2 { margin-bottom: 18px; font-size:map-get($font-size , font_15);line-height:24px; letter-spacing:-0.45px; color:rgba(0,0,0,0.65)}
+#container.study_agree .txt-tit-3 { margin-bottom: 9px;font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:rgba(0,0,0,0.80)}
+#container.study_agree .txt-tit-4 {font-size:map-get($font-size , font_14);line-height:25px; letter-spacing:-0.42px; color:rgba(0,0,0,0.80)}
+#container.study_agree .li-txt { margin-bottom: 9px;font-size:map-get($font-size , font_15);line-height:24px; letter-spacing:-0.45px; color:rgba(0,0,0,0.80)}
+#container.study_agree ul.ulList li.mb30 { margin-bottom: 30px;}
+#container.study_agree .line01 { margin: 6px 0 10px;}
+.in12_16{padding-left: 12px;text-indent: -16px;}
 
 
 

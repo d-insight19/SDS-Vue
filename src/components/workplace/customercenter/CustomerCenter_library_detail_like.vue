@@ -37,7 +37,7 @@
                             <p class="inner-txt">해당 과정의 도서에대한 질문을 드립니다. 구매 방법에 대해 설명이 되어 있지 않던데 어떤 경로로 구매가 가능한지에 대해 답변해 주실 수 있을까요? </p>
                         </div>
                         <div class="notice_imgs"></div>
-                        <p class="label-tit-02 mt36"><strong>첨부파일</strong></p>
+                        <p class="label-tit-2 mt36"><strong>첨부파일</strong></p>
                         <ul class="ulList type4">
                             <li>
                             <div>
@@ -51,7 +51,7 @@
                             </li>     
                         </ul>
 
-                        <p class="label-tit-02 mt26"><strong>댓글</strong></p>
+                        <p class="label-tit-2 mt26"><strong>댓글</strong></p>
                         <ul class="reply_input bd_bt">
                             <li class="bd">                   
                                 <input type="text" class="input reply" placeholder="댓글을 입력하세요." /><button>등록</button>
