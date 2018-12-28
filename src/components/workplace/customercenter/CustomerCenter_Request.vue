@@ -22,7 +22,7 @@
                                             <span class="total_txt">총</span>
                                             <strong class="fwb600 count">12</strong><span>건</span>
                                             <!-- <a href="#"><span class="ico down fr"></span><span class="total fr">전체</span></a> -->
-                                            <select class="select category fr">
+                                            <select class="select status fr">
                                             <option>전체</option>
                                             <option>진행중</option>
                                             <option>마감</option>

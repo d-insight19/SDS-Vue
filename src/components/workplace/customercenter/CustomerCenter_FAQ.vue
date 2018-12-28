@@ -35,8 +35,7 @@
                                         </h1> -->
                         <div class="title_line">
                             <select class="select category">
-                            <option>카테고리명 12건</option>
-                            <option>동영상</option>
+                            <option>동영상 12건</option>
                             <option>이벤트</option>
                             <option>리포트</option>
                             <option>평가</option>

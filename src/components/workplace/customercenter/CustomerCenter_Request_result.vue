@@ -110,7 +110,7 @@
                             </ul>                                          
                        
                         <!-- 더보기 -->                        
-                        <slp-button class="btn sm add w100p mt8" @click="addList1()"><span class="ico"></span>더보기 (45)
+                        <slp-button class="sm add mt8" @click="addList1()"><span class="ico"></span>더보기 (45)
                         </slp-button>
 
                     </div>

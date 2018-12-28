@@ -1209,8 +1209,14 @@
           <router-link :to="{ name: 'CustomerCenter_Inquiry_write01' }">
             CustomerCenter_Inquiry_write01
           </router-link>,
-           <router-link :to="{ name: 'CustomerCenter_Inquiry_write01_error' }">
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_write01_error' }">
             CustomerCenter_Inquiry_write01_error
+          </router-link>,
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_write02' }">
+            CustomerCenter_Inquiry_write02
+          </router-link>,
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_write02_error' }">
+            CustomerCenter_Inquiry_write02_error
           </router-link>
         </td>
         <td></td>
