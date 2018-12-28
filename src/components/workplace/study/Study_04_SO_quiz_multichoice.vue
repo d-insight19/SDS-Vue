@@ -16,7 +16,7 @@
                     </div>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background:rgba(0,0,0,0.45);  padding-top:66px; padding-bottom:60px">                
+                <div class="hide_header" style="background:rgba(0,0,0,0.45);  padding-top:66px; padding-bottom:26px">                
                     <div class="hide-inner">
                         <span class="chip wh">퀴즈</span>                         
                         <p class="h-tit1">중간퀴즈 : 자바의 특성과 개념에 대해 알아보기</p>
@@ -247,7 +247,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
+                                    <span class="label"  >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
                                 </label>
                             </li>
                             <li>
@@ -256,7 +256,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">③ 2003년 Apache 2.0 License로 최초 공개</span>                    
+                                    <span class="label" >③ 2003년 Apache 2.0 License로 최초 공개되었다.</span>                    
                                 </label>
                             </li>
                             <li>
@@ -265,7 +265,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
+                                    <span class="label" >④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
                                 </label>
                             </li>
                             <li>
@@ -274,7 +274,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
+                                    <span class="label" >⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
                                 </label>
                             </li>
                         </ul>

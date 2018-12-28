@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_pledge">
+      <div id="container" class="mediaquery study_pledge pd70">
             <!-- header -->
             <div id="header">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -35,9 +35,8 @@
                     본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다  
                     </p>
                     <p class="hr"></p> 
-                    <p class="sub-tit">회사명</p>
+                    <!-- <p class="sub-tit">회사명</p>
                     <div class="intSchBox singleList">
-                      <!-- X 아이콘이 필요한 input -->
                       <div class="search-wrapper">
                           <input type="text"  pattern="^\s+" class="input" placeholder="회사명 검색" />
                           <button class="close-icon" type="button"></button>
@@ -59,13 +58,39 @@
                     <p class="sub-tit"><strong>성명</strong></p>
                     <div class="singleList">                      
                           <input type="text"  class="input" placeholder="성명을 입력해주세요." />                      
-                    </div>
-                    <div class="absBtmBtn">  
-                        <button type="button" disabled="disabled" class="btn md clr1">제출</button>
-                    </div>
+                    </div> -->
+                    
+                      <ul class="multiList type2 op25">
+                        <li>
+                            <strong class="label-tit14">회사명</strong>
+                            <slp-text-field  pattern="^\s+" placeholder="회사명을 입력해주세요"></slp-text-field>
+                        </li>
+                        <li>
+                            <strong class="label-tit14">부서명</strong>
+                            <slp-text-field placeholder="부서명을 입력해주세요."></slp-text-field>
+                        </li>
+                        <li>
+                            <strong class="label-tit14">직급</strong>
+                            <slp-text-field placeholder="직급을 입력해주세요."></slp-text-field>
+                        </li>
+                        <li>
+                            <strong class="label-tit14">사번</strong>
+                            <slp-text-field placeholder="사번을 입력해주세요."></slp-text-field>
+                        </li>
+                        <li>
+                            <strong class="label-tit14">성명</strong>
+                            <slp-text-field placeholder="성명을 입력해주세요."></slp-text-field>
+                        </li>
+                      </ul>
                   </div>
                 </div>
-            </div>                
+            </div>
+            
+            <!-- floatingbtn -->
+            <div class="absBtmBtn">  
+                <button type="button" disabled="disabled" class="btn md clr1">제출</button>
+            </div>
+            <!-- //floatingbtn -->
         </div>
         <!-- //container --> 
     </div>

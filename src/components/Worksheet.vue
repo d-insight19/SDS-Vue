@@ -2374,11 +2374,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.04.Column</td>
         <td>
-          <router-link :to="{ name: 'CLIPing_column' }">
+          <!--<router-link :to="{ name: 'CLIPing_column' }">
             CLIPing_column
-          </router-link>
+          </router-link>-->
         </td>
-        <td>작업중</td>
+        <td><!--작업중--></td>
       </tr>
       <tr>
       <td align="center">135</td>
@@ -2391,11 +2391,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.04.ColumnDetail</td>
         <td>
-          <router-link :to="{ name: 'CLIPing_column_detail' }">
+          <!--<router-link :to="{ name: 'CLIPing_column_detail' }">
             CLIPing_column_detail
-          </router-link>
+          </router-link>-->
         </td>
-        <td>작업중</td>
+        <td><!--작업중--></td>
       </tr>
       <tr>
       <td align="center">136</td>
@@ -2408,11 +2408,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.03.BookSummary</td>
         <td>
-          <router-link :to="{ name: 'CLIPing_bookSummary' }">
+          <!--<router-link :to="{ name: 'CLIPing_bookSummary' }">
             CLIPing_bookSummary
-          </router-link>
+          </router-link>-->
         </td>
-        <td>작업중</td>
+        <td><!--작업중--></td>
       </tr>
       <tr>
       <td align="center">137</td>
@@ -2425,11 +2425,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.03.BookSummaryDetail</td>
         <td>
-          <router-link :to="{ name: 'CLIPing_bookSummary_detail' }">
+          <!--<router-link :to="{ name: 'CLIPing_bookSummary_detail' }">
             CLIPing_bookSummary_detail
-          </router-link>
+          </router-link>-->
         </td>
-        <td>작업중</td>
+        <td><!--작업중--></td>
       </tr>
       <tr>
       <td align="center">138</td>
@@ -2650,11 +2650,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.VideoSeriesDetail</td>
         <td>
-          <router-link :to="{ name: 'CLIPing_videoSeries_detail' }">
+          <!--<router-link :to="{ name: 'CLIPing_videoSeries_detail' }">
             CLIPing_videoSeries_detail
-          </router-link>
+          </router-link>-->
         </td>
-        <td>작업중</td>
+        <td><!--작업중--></td>
       </tr>
       <tr>
       <td align="center">151</td>
@@ -4834,7 +4834,7 @@
             Study_02_studyquestion_edit
           </router-link>
         </td>
-        <td></td>
+        <td>컴포넌트화</td>
       </tr>
       <tr>
       <td align="center">277</td>
@@ -5105,7 +5105,7 @@
             Study_reflectionnote_edit_02
           </router-link>
         </td>
-        <td></td>
+        <td>컴포넌트화</td>
       </tr>
       <tr>
       <td align="center">293</td>
@@ -5467,7 +5467,7 @@
             Study_02_inquiry_edit
           </router-link>
         </td>
-        <td></td>
+        <td>컴포넌트화 </td>
       </tr>
       <tr>
       <td align="center">315</td>
@@ -6474,7 +6474,7 @@
             Study_04_SO_pledge
           </router-link>
         </td>
-        <td></td>
+        <td>이미지 필요</td>
       </tr>
       <tr>
       <td align="center">375</td>
@@ -7748,7 +7748,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">02.Main_02.03.03.Freecourse_img</td>
+        <td class="textL">02.Main_02.03.03.Freecourse_list</td>
         <td>
           <router-link :to="{ name: '' }">
             

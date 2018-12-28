@@ -579,16 +579,16 @@
 
 
 // 질문방 수정
-#container.study_question_edit .txt-line{padding-top:17px; padding-bottom:17px; border-bottom: 1px solid #e3e3e3; } 
-#container.study_question_edit .txt-line.top-bd{ border-top: 1px solid #e3e3e3; }
-#container.study_question_edit .txt-line strong{font-size:map-get($font-size, font_14);line-height: 22px; letter-spacing: -0.7px;} 
-#container.study_question_edit .chip{line-height: 16px; margin-bottom: 0;} 
-#container.study_question_edit .chip span{vertical-align: text-bottom;} 
-#container.study_question_edit .txt-edit{margin-top:20px;}
-#container.study_question_edit .e-tit{ display:inline-block; margin-bottom:8px; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;}
-#container.study_question_edit .gr_box{padding: 12px 16px; background-color: #f5f5f5; font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; overflow:auto;}
-#container.study_question_edit .ico.plus{vertical-align: -1px;}
-#container.study_question_edit .ulList.type1 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
+// #container.study_question_edit .txt-line{padding-top:17px; padding-bottom:17px; border-bottom: 1px solid #e3e3e3; } 
+// #container.study_question_edit .txt-line strong{font-size:map-get($font-size, font_14);line-height: 22px; letter-spacing: -0.7px;} 
+// #container.study_question_edit .txt-edit{margin-top:20px;}
+// #container.study_question_edit .e-tit{ display:inline-block; margin-bottom:8px; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;}
+.chip.del{ line-height: 22px; margin-bottom: 0; padding: 0px 2px 0 10px;} 
+.custom-2{ margin-top:0 !important; padding:17px 0; border-bottom: 1px solid #e3e3e3; }
+.gr_box{padding: 12px 16px; background-color: #f5f5f5; font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; overflow:auto;}
+.ico.plus{vertical-align: -1px;}
+.multiList.type2.op25 input::placeholder{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_25);}
+.multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 .label-tit-02 {margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 26px; letter-spacing: -0.48px;}
 .ulList li.bottom-bd-x{border-bottom:none;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
@@ -629,7 +629,6 @@
 #container.study_reflection .ico.plus{vertical-align: -1px;}
 #container.study_reflection .sub-tit{margin-top:20px; margin-bottom: 8px; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;}
 #container.study_reflection input{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80);}
-#container.study_reflection input::placeholder{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80);}
 #container.study_reflection textarea{ color:map-get($mono_colors, mono_80); width:100%; padding:12px 16px; background: #f5f5f5; font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 
 
@@ -869,6 +868,21 @@ label.rdo .label{position: relative;}
 
 
 // 1:1문의 수정
+.multiList.type2 > li + li{margin-top:20px}
+.multiList.type2 .btn.sm{margin:7px 0px 0px 0px}
+.multiList.type2 .pt0{padding-top: 0;}
+.multiList.type2 li.custom{padding: 15px 0; border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
+.multiList.type2 .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; margin-bottom: 8px; display: inline-block;}
+.multiList.type2 .label-tit14.mb0{ margin-bottom: 0px !important;}
+.multiList.type2 .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 600; line-height: 26px; letter-spacing: -0.48px; margin-bottom: 10px; display: inline-block;}
+.multiList.type2 input::placeholder {color:rgba(0,0,0,0.65);}
+.multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; line-height: 21px; letter-spacing: -0.42px;}
+
+
+
+
+
+
 
 
 
@@ -1161,8 +1175,7 @@ label.rdo .label{position: relative;}
 .MainType .sub-tit {font-size:map-get($font_size, font_13); color: map-get($mono_colors, mono_65);}
 // layout.css 에 추가  
 // ** 특별히 다른 케이스의 경우 #comtainer 뒤에 클래스명을 붙여주세요 ( 현재는 모든 컨텐츠 전체 적용됩니다 )
-// #container #content .inner {padding-bottom: 12px;}
-
+.MainType #container #content .inner {padding-bottom: 12px;}
 // 이미지 리사이즈
 .MainType  .thumList.type2 > li{width:151px;}
 .MainType  .thumList.type2 .thum{width:151px; height:113px;}
@@ -1254,6 +1267,7 @@ label.rdo .label{position: relative;}
 .MainType .thumList .thum .label.big {font-size: map-get($font_size, font_14); padding: 3px 12px; background-color: black;}
 
 //지식 클리핑
+.CLIPingType #container #content .inner {padding-bottom: 12px;}
 // 총합계
 .CLIPingType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
 .CLIPingType .total span {font-size: map-get($font_size, font_15);}

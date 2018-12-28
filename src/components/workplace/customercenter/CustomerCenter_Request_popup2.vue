@@ -112,26 +112,12 @@
       <!-- //container --> 
 
         <!-- layer wrap -->
-        <div class="layerWrap">
-            <div class="ly-in">    
-                <div class="ly-hd">설문기간 종료</div>        
-                <div class="ly-body">                
-                    <div class="ly-info">
-                        <p>설문기간이 지났습니다.</p>
-                    </div>
-                </div>
-            
-                <div class="ly-btn">                
-                    <button type="button" class="btn color_clr2">닫기</button>
-                </div>
-
+        <slp-popup title="설문기간 종료" confirmInput="닫기">
+            <div class="ly-info">
+                <p>설문기간이 지났습니다.</p>
             </div>
-        </div>
+        </slp-popup>
         <!-- //layer wrap -->
-
-        <div id="dim"></div>
-
-        </div>
 
     </div>
     <!-- //wrap -->
