@@ -147,9 +147,6 @@ import MainStatistics1 from '~workplace/main/Main_statistics_1'
 import MainStatistics2 from '~workplace/main/Main_statistics_2'
 import MainStatistics3 from '~workplace/main/Main_statistics_3'
 import MainStatistics4 from '~workplace/main/Main_statistics_4'
-import Main03BrowseMain from '~workplace/main/Main_03_browse_main'
-import Main03BrowseListDetail01 from '~workplace/main/Main_03_browse_listDetail01'
-import Main03BrowseListDetail02 from '~workplace/main/Main_03_browse_listDetail02'
 import Main04BrowseMain from '~workplace/main/Main_04_browse_main'
 import Main04BrowseListDetail01 from '~workplace/main/Main_04_browse_listDetail01'
 import Main04BrowseListDetail02 from '~workplace/main/Main_04_browse_listDetail02'
@@ -167,11 +164,14 @@ import MainWriterArticle from '~workplace/main/Main_writer_article'
 import MainWriterHistory from '~workplace/main/Main_writer_history'
 import MainWriterScroll from '~workplace/main/Main_writer_scroll'
 import MainLearningMain from '~workplace/main/Main_learning_main'
+import Main03BrowseMain from '~workplace/main/Main_03_browse_main'
+import Main03BrowseListDetail01 from '~workplace/main/Main_03_browse_listDetail01'
+import Main03BrowseListDetail02 from '~workplace/main/Main_03_browse_listDetail02'
 
 import CLIPingMain from '~workplace/cliping/CLIPing_main'
 import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
 import CLIPingVideoAll from '~workplace/cliping/CLIPing_video_all'
-import CLIPingVideoSeries from '~workplace/cliping/CLIPing_video_series'
+import CLIPingVideoSeries from '~workplace/cliping/CLIPing_videoSeries'
 import CLIPingVideoSeriesDetail from '~workplace/cliping/CLIPing_videoSeries_detail'
 import CLIPingBookSummary from '~workplace/cliping/CLIPing_bookSummary'
 import CLIPingBookSummaryDetail from '~workplace/cliping/CLIPing_bookSummary_detail'
@@ -1085,8 +1085,8 @@ var rootRoutes = [
     component: CLIPingVideoAll
   },
   {
-    path: '/CLIPing_video_series',
-    name: 'CLIPing_video_series',
+    path: '/CLIPing_videoSeries',
+    name: 'CLIPing_videoSeries',
     component: CLIPingVideoSeries
   },
   {
