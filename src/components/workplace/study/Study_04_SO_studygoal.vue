@@ -101,7 +101,7 @@
                             <img src="" alt="">
                         </p>
                         <p class="inner-txt op65">본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 </p>
-                        <p class="label-tit-02 mt36"><strong>첨부파일</strong></p>
+                        <p class="label-tit-2 mt36"><strong>첨부파일</strong></p>
                         <ul class="ulList type4">
                             <li>
                             <div>

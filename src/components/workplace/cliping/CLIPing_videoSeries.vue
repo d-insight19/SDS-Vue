@@ -366,7 +366,7 @@
 
 <script>
 export default {
-  name: 'CLIPing_video_series',
+  name: 'CLIPing_videoSeries',
   /* vue lifecycle */
   created () {
   },

@@ -579,11 +579,11 @@
 .ico.plus{vertical-align: -1px;}
 .multiList.type2.op25 input::placeholder{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_25);}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
-.label-tit-02 {margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 26px; letter-spacing: -0.48px;}
+.label-tit-2 {margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 26px; letter-spacing: -0.48px;}
 .ulList li.bottom-bd-x{border-bottom:none;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
-
+.ulList.type4 li:nth-last-child(1){border-bottom:none;}
 
 // 질문방 상세
 .info-group{ font-weight: 400 ; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_80); }
@@ -656,7 +656,7 @@
 #container.study_assessment_no .ulList.type4 .li-txt-2{ color:rgba(0,0,0,0.5); }
 #container.study_assessment_no .ulList.type4 .li-txt-2.ml12{ display: inline-block; margin-left: 12px;}
 #container.study_assessment_no .ulList.type4 .li-txt-3{ color:map-get($mono_colors, mono_80); }
-#container.study_assessment_no .ulList.type4 .loginChk{ margin-top: 16px; padding-left: 6px; }
+#container.study_assessment_no .ulList.type4 .mb16{ margin-bottom: 16px;  }
 
 
 // 시뮬레이션 제출완료
@@ -869,14 +869,37 @@ label.rdo .label{position: relative;}
 .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; line-height: 21px; letter-spacing: -0.42px;}
 
 
+// 서약서 법률사항
+#container.study_pledge .sub-txt { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:rgba(0,0,0,0.8)}
+#container.study_pledge .sub-txt-2 { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:#000; font-weight: 500;}
+#container.study_pledge ul.ulList li{margin-bottom: 18px;}
+#container.study_pledge ul.ulList li.mb26{margin-bottom: 26px;}
+#container.study_pledge ul.ulList li.mb36{margin-bottom: 36px;}
+#container.study_pledge .li-txt { font-size:map-get($font-size , font_15);line-height:24px; letter-spacing:-0.45px; color:rgba(0,0,0,0.8)}
+#container.study_pledge .li-txt.li-txt-2 { color:rgba(0,0,0,0.8)}
+#container.study_pledge .li-txt.li-txt-3 { font-weight:500; margin-bottom: 8px;}
+#container.study_pledge .li-txt.li-txt-4 { font-size:map-get($font-size , font_14);line-height:24px; letter-spacing:-0.42px; color:rgba(0,0,0,0.65); font-weight:500;}
+#container.study_pledge .line01.mtb{margin:15px 0 22px;}
+#container.study_pledge .line01.mtb-2{margin:12px 0 15px;}
+#container.study_pledge .tb_wrap{ margin-bottom:16px; background:#f2f3f7; padding:20px; border-top: 1px solid #999999; border-bottom: 1px solid #999999;}
+#container.study_pledge table td.sub-txt{ color:#000;}
+#container.study_pledge table td.pb10{padding-bottom: 10px;}
+#container.study_pledge .label{font-size:map-get($font-size , font_16);line-height:21px; letter-spacing:-0.48px; color:rgba(0,0,0,0.8)}
+
+// 학습 동의
+#container.study_agree .label-tit-2{margin-bottom: 14px; font-weight:500; font-size:map-get($font-size , font_18);line-height:21px; letter-spacing:-0.54px;}
+#container.study_agree .label{font-size:map-get($font-size , font_16);line-height:21px; letter-spacing:-0.48px;}
 
 
-
-
-
-
-
-
+// 급여 공제 동의
+#container.study_agree .txt-tit { margin-bottom: 4px; font-size:map-get($font-size , font_18);line-height:21px; letter-spacing:-0.54px;font-weight:600;}
+#container.study_agree .txt-tit-2 { margin-bottom: 18px; font-size:map-get($font-size , font_15);line-height:24px; letter-spacing:-0.45px; color:rgba(0,0,0,0.65)}
+#container.study_agree .txt-tit-3 { margin-bottom: 9px;font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:rgba(0,0,0,0.80)}
+#container.study_agree .txt-tit-4 {font-size:map-get($font-size , font_14);line-height:25px; letter-spacing:-0.42px; color:rgba(0,0,0,0.80)}
+#container.study_agree .li-txt { margin-bottom: 9px;font-size:map-get($font-size , font_15);line-height:24px; letter-spacing:-0.45px; color:rgba(0,0,0,0.80)}
+#container.study_agree ul.ulList li.mb30 { margin-bottom: 30px;}
+#container.study_agree .line01 { margin: 6px 0 10px;}
+.in12_16{padding-left: 12px;text-indent: -16px;}
 
 
 
@@ -1133,9 +1156,11 @@ label.rdo .label{position: relative;}
 .mb10{margin-bottom: 10px !important;}
 .mb13{margin-bottom: 13px !important;}
 .mb14{margin-bottom: 14px !important;}
+.mb15{margin-bottom: 15px !important;}
 .mb18{margin-bottom: 18px !important;}
 .mb20{margin-bottom: 20px !important;}
 .mb25{margin-bottom: 25px !important;}
+.mb30{margin-bottom: 25px !important;}
 .ml-18 {margin-left:-18px !important;}
 .mr-18 {margin-right:-18px !important;}
 .pa0{padding:0px !important;}
@@ -1170,6 +1195,8 @@ label.rdo .label{position: relative;}
 .MainType  .thumList.type2 > li{width:151px;}
 .MainType  .thumList.type2 .thum{width:151px; height:113px;}
 .MainType  .thumList.type2 .thumbnail .thumImg {width:151px; height:113px;}
+// li 글자색 변경
+.MainType .thumList .info li {color: map-get($mono_colors, mono_80);}
 // enrollNotice 스타일 추가
 .MainType .singleList.type_1 li {height: 48px;}
 .MainType .singleList.type_1 li a {line-height: 20px; padding:14px 30px 14px 18px !important;}
@@ -1255,7 +1282,17 @@ label.rdo .label{position: relative;}
 .MainType ul.banner_list li .banner_area .banner_content p {display: table-cell; vertical-align: middle; font-size: map-get($font_size, font_12); color: map-get($mono_colors, mono_0); line-height:200%;}
 //큰 라벨
 .MainType .thumList .thum .label.big {font-size: map-get($font_size, font_14); padding: 3px 12px; background-color: black;}
-
+// 배너
+.MainType .banner li {height: 75px;}
+.MainType .banner li + li {margin-top:8px;}
+.MainType .banner li .in {padding: 16px 12px;}
+.MainType .banner .bg_CLIPingMain{background: url("../img/imgBan_no.jpg") repeat-x center center;}
+.MainType .banner .ico.arrow{position: absolute; background-image: url("../img/ic_next_line_bold_wh.png"); top: calc(50% - 10px) !important; right: 6px !important; width:20px; height:20px; }
+// appstore
+.MainType .bg_appstore {height:220px; text-align:center; background: url("../img/thum_no_L.jpg") no-repeat center center;}
+.MainType .bg_appstore .dim45 {background-color:rgba(#000000, 0.45); padding-top: 24px; height:220px;}
+.MainType .bg_appstore .banner_appstore img {width: 150px; height: 48px; display:inline-block;}
+.MainType .bg_appstore .banner_appstore img + img {margin-left:10px;}
 //지식 클리핑
 .CLIPingType #container #content .inner {padding-bottom: 12px;}
 // 총합계
@@ -1291,3 +1328,20 @@ label.rdo .label{position: relative;}
 .CLIPingType .banner li .in {padding: 16px 12px;}
 .CLIPingType .banner .bg_CLIPingMain{background: url("../img/imgBan_no.jpg") repeat-x center center;}
 .CLIPingType .banner .ico.arrow{position: absolute; background-image: url("../img/ic_next_line_white.png"); top: calc(50% - 10px) !important; right: 6px !important; width:20px; height:20px; }
+// header info
+.CLIPingType #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
+.CLIPingType #header .hide_header p {white-space: normal !important;}
+.CLIPingType #header .tagWrap span {border-color:map-get($mono_colors, mono_25); color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_12); height: 26px; line-height: 24px; padding: 0 10px;}
+.CLIPingType #header .info li{display: inline-block; font-size: map-get($font_size, font_14); line-height: 14px; letter-spacing: -0.036em; vertical-align: top;}
+.CLIPingType #header .info li+li{margin-left: 5px;}
+.CLIPingType #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
+.CLIPingType #header .info .ico.star {margin-top: 2px;}
+.CLIPingType #header dl{display: table; line-height: 140%;}
+.CLIPingType #header dt{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_65); width: 50px; display: table-cell; }
+.CLIPingType #header dd{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_100); display: table-cell;}
+.CLIPingType #header .book {position: absolute; top: 74px; left: 22px;}
+.CLIPingType #header .book img {width: 132px; height: 194px;}
+// type6 높이 수정
+.CLIPingType .thumList.type6 .in {height:90px;}
+// li 글자색 변경
+.CLIPingType .thumList .info li {color: map-get($mono_colors, mono_80);}

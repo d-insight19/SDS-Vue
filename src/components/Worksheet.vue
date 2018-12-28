@@ -78,7 +78,7 @@
         <td>{{item.comment }}</td>
       </tr>		  
       -->
-      <tr>
+      <!-- <tr>
       <td align="center">com-1</td>
         <td></td>
         <td></td>
@@ -94,7 +94,7 @@
           </router-link>
         </td>
         <td></td>
-      </tr>
+      </tr> -->
       <tr> 
       <td align="center">1</td>
         <td>로그인 / 회원가입</td>
@@ -2380,11 +2380,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.04.Column</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_column' }">
+          <router-link :to="{ name: 'CLIPing_column' }">
             CLIPing_column
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">135</td>
@@ -2397,11 +2397,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.04.ColumnDetail</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_column_detail' }">
+          <router-link :to="{ name: 'CLIPing_column_detail' }">
             CLIPing_column_detail
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">136</td>
@@ -2414,11 +2414,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.03.BookSummary</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_bookSummary' }">
+          <router-link :to="{ name: 'CLIPing_bookSummary' }">
             CLIPing_bookSummary
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">137</td>
@@ -2431,11 +2431,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.03.BookSummaryDetail</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_bookSummary_detail' }">
+          <router-link :to="{ name: 'CLIPing_bookSummary_detail' }">
             CLIPing_bookSummary_detail
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">138</td>
@@ -2639,8 +2639,8 @@
             CLIPing_video_all
           </router-link>
           ,
-          <router-link :to="{ name: 'CLIPing_video_series' }">
-            CLIPing_video_series
+          <router-link :to="{ name: 'CLIPing_videoSeries' }">
+            CLIPing_videoSeries
           </router-link>
         </td>
         <td></td>
@@ -2656,11 +2656,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.VideoSeriesDetail</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_videoSeries_detail' }">
+          <router-link :to="{ name: 'CLIPing_videoSeries_detail' }">
             CLIPing_videoSeries_detail
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">151</td>
@@ -4467,7 +4467,7 @@
             Study_02_studystatus_assignment_apply
           </router-link>
         </td>
-        <td></td>
+        <td>컴포넌트화</td>
       </tr>
       <tr>
       <td align="center">255</td>
@@ -4535,7 +4535,7 @@
             Study_02_studystatus_assessment_notice
           </router-link>
         </td>
-        <td></td>
+        <td>체크버튼 컴포넌트화</td>
       </tr>
       <tr>
       <td align="center">259</td>
@@ -5822,7 +5822,7 @@
             Study_04_SO_quiz_multichoice
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">336</td>
@@ -5958,7 +5958,7 @@
             Study_04_SO_survey_scale
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">344</td>
@@ -5975,7 +5975,7 @@
             Study_04_SO_survey_multichoice
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">345</td>
@@ -6293,7 +6293,7 @@
             Study_04_SO_OT
           </router-link>
         </td>
-        <td>동영상 영역</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">364</td>
@@ -6361,7 +6361,7 @@
             Study_04_SO_middle
           </router-link>
         </td>
-        <td>동영상 영역</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">368</td>
@@ -6480,7 +6480,7 @@
             Study_04_SO_pledge
           </router-link>
         </td>
-        <td>이미지 필요</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">375</td>
@@ -6531,7 +6531,7 @@
             Study_04_SO_poll_input
           </router-link>
         </td>
-        <td>해더배경이미지필요</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">378</td>
@@ -6629,8 +6629,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.04.etc_pledge_law</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_pledge_law' }">
+            Study_05_etc_pledge_law
           </router-link>
         </td>
         <td></td>
@@ -6646,8 +6646,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.05.etc_pledge_ethics</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_pledge_ethics' }">
+            Study_05_etc_pledge_ethics
           </router-link>
         </td>
         <td></td>
@@ -6663,8 +6663,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.06.etc_agreement_first</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_agreement_first' }">
+            Study_05_etc_agreement_first
           </router-link>
         </td>
         <td></td>
@@ -6697,8 +6697,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.08.etc_agreement_salary</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_agreement_salary' }">
+            Study_05_etc_agreement_salary
           </router-link>
         </td>
         <td></td>
@@ -7566,8 +7566,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.B2C FreeCourse</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_B2C_freeCourse' }">
+            Main_B2C_freeCourse
           </router-link>
         </td>
         <td></td>
@@ -7601,8 +7601,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.02.B2C FreeCourse(2)</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_B2C_freeCourse2' }">
+            Main_B2C_freeCourse2
           </router-link>
         </td>
         <td></td>
@@ -7618,8 +7618,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.03.B2C Appstore</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_B2C_appstore' }">
+            Main_B2C_appstore
           </router-link>
         </td>
         <td></td>
@@ -7671,11 +7671,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.02.B2C    Directions</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          <!--<router-link :to="{ name: 'Main_B2C_directions' }">
+            Main_B2C_directions
+          </router-link>-->
         </td>
-        <td></td>
+        <td><!--작업중--></td>
       </tr>
       <tr>
       <td align="center">445</td>

@@ -8,7 +8,7 @@
 .ico.star{width:10px; height: 10px; margin-right: 2px; vertical-align: inherit; background-position: -375px -67px;}
 .ico.point{width:16px;height:16px;background: url("../img/ic_point_line_16.png") no-repeat; }
 .ico.heart{width:16px;height:16px;background: url("../img/ic_heart_line_16.png") no-repeat; }
-.ico.heart2{width:16px;height:16px;background: url("../img/ic_heart2_line_16.png") no-repeat; background-size:16px;}
+.ico.heart2{width:16px;height:16px;background: url("../img/ic_heart2_line.png") no-repeat; background-size:16px;}
 .ico.search{width:16px;height:16px;background: url("../img/ic_search_solid_black.png") no-repeat; }
 .ico.like{width:16px;height:16px;background: url("../img/ic_thumb_line_16.png") no-repeat; }
 .ico.time{width:16px;height:16px;background: url("../img/ic_time_line_16.png") no-repeat; }
@@ -77,6 +77,9 @@
 /* 추가 이미지 2018-12-19 */
 .ico.like_32{width:32px; height:32px; background: url("../img/ic_thumb_line_32.png") no-repeat; margin-top:-6px }
 .ico.like_32.red {background: url("../img/ic_thumb_line_red_32.png")}
+.ico.like_solid_32{width:32px;height:32px;background: url("../img/ic_thumb_solid.png") no-repeat; background-size:32px;}
+.ico.heart_solid_32{width:32px; height:32px; background: url("../img/ic_heart_solid.png") no-repeat; margin-top:-6px; background-size: 32px;}
+.ico.download_32{width:32px;height:32px;background: url("../img/ic_download.png") no-repeat; background-size:32px;}
 .ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
 .ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}

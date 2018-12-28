@@ -126,6 +126,10 @@ import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
 import Study04SOdebatesubmission from '~workplace/study/Study_04_SO_debate_submission'
 import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_submission_all'
+import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
+import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
+import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
+import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -147,9 +151,6 @@ import MainStatistics1 from '~workplace/main/Main_statistics_1'
 import MainStatistics2 from '~workplace/main/Main_statistics_2'
 import MainStatistics3 from '~workplace/main/Main_statistics_3'
 import MainStatistics4 from '~workplace/main/Main_statistics_4'
-import Main03BrowseMain from '~workplace/main/Main_03_browse_main'
-import Main03BrowseListDetail01 from '~workplace/main/Main_03_browse_listDetail01'
-import Main03BrowseListDetail02 from '~workplace/main/Main_03_browse_listDetail02'
 import Main04BrowseMain from '~workplace/main/Main_04_browse_main'
 import Main04BrowseListDetail01 from '~workplace/main/Main_04_browse_listDetail01'
 import Main04BrowseListDetail02 from '~workplace/main/Main_04_browse_listDetail02'
@@ -167,11 +168,18 @@ import MainWriterArticle from '~workplace/main/Main_writer_article'
 import MainWriterHistory from '~workplace/main/Main_writer_history'
 import MainWriterScroll from '~workplace/main/Main_writer_scroll'
 import MainLearningMain from '~workplace/main/Main_learning_main'
+import Main03BrowseMain from '~workplace/main/Main_03_browse_main'
+import Main03BrowseListDetail01 from '~workplace/main/Main_03_browse_listDetail01'
+import Main03BrowseListDetail02 from '~workplace/main/Main_03_browse_listDetail02'
+import MainB2CFreeCourse from '~workplace/main/Main_B2C_freeCourse'
+import MainB2CFreeCourse2 from '~workplace/main/Main_B2C_freeCourse2'
+import MainB2CAppstore from '~workplace/main/Main_B2C_appstore'
+import MainB2CDirections from '~workplace/main/Main_B2C_directions'
 
 import CLIPingMain from '~workplace/cliping/CLIPing_main'
 import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
 import CLIPingVideoAll from '~workplace/cliping/CLIPing_video_all'
-import CLIPingVideoSeries from '~workplace/cliping/CLIPing_video_series'
+import CLIPingVideoSeries from '~workplace/cliping/CLIPing_videoSeries'
 import CLIPingVideoSeriesDetail from '~workplace/cliping/CLIPing_videoSeries_detail'
 import CLIPingBookSummary from '~workplace/cliping/CLIPing_bookSummary'
 import CLIPingBookSummaryDetail from '~workplace/cliping/CLIPing_bookSummary_detail'
@@ -873,6 +881,26 @@ var rootRoutes = [
     component: Study04SOdebatesubmissionall
   },
   {
+    path: '/Study_05_etc_pledge_law',
+    name: 'Study_05_etc_pledge_law',
+    component: Study05etcpledgelaw
+  },
+  {
+    path: '/Study_05_etc_pledge_ethics',
+    name: 'Study_05_etc_pledge_ethics',
+    component: Study05etcpledgeethics
+  },
+  {
+    path: '/Study_05_etc_agreement_first',
+    name: 'Study_05_etc_agreement_first',
+    component: Study05etcagreementfirst
+  },
+  {
+    path: '/Study_05_etc_agreement_salary',
+    name: 'Study_05_etc_agreement_salary',
+    component: Study05etcagreementsalary
+  },
+  {
     path: '/Main_control',
     name: 'Main_control',
     component: MainControl
@@ -972,21 +1000,6 @@ var rootRoutes = [
     component: MainStatistics4
   },
   {
-    path: '/Main_03_browse_main',
-    name: 'Main_03_browse_main',
-    component: Main03BrowseMain
-  },
-  {
-    path: '/Main_03_browse_listDetail01',
-    name: 'Main_03_browse_listDetail01',
-    component: Main03BrowseListDetail01
-  },
-  {
-    path: '/Main_03_browse_listDetail02',
-    name: 'Main_03_browse_listDetail02',
-    component: Main03BrowseListDetail02
-  },
-  {
     path: '/Main_04_browse_main',
     name: 'Main_04_browse_main',
     component: Main04BrowseMain
@@ -1072,6 +1085,41 @@ var rootRoutes = [
     component: MainLearningMain
   },
   {
+    path: '/Main_03_browse_main',
+    name: 'Main_03_browse_main',
+    component: Main03BrowseMain
+  },
+  {
+    path: '/Main_03_browse_listDetail01',
+    name: 'Main_03_browse_listDetail01',
+    component: Main03BrowseListDetail01
+  },
+  {
+    path: '/Main_03_browse_listDetail02',
+    name: 'Main_03_browse_listDetail02',
+    component: Main03BrowseListDetail02
+  },
+  {
+    path: '/Main_B2C_freeCourse',
+    name: 'Main_B2C_freeCourse',
+    component: MainB2CFreeCourse
+  },
+  {
+    path: '/Main_B2C_freeCourse2',
+    name: 'Main_B2C_freeCourse2',
+    component: MainB2CFreeCourse2
+  },
+  {
+    path: '/Main_B2C_appstore',
+    name: 'Main_B2C_appstore',
+    component: MainB2CAppstore
+  },
+  {
+    path: '/Main_B2C_directions',
+    name: 'Main_B2C_directions',
+    component: MainB2CDirections
+  },
+  {
     path: '/CLIPing_main',
     name: 'CLIPing_main',
     component: CLIPingMain
@@ -1087,8 +1135,8 @@ var rootRoutes = [
     component: CLIPingVideoAll
   },
   {
-    path: '/CLIPing_video_series',
-    name: 'CLIPing_video_series',
+    path: '/CLIPing_videoSeries',
+    name: 'CLIPing_videoSeries',
     component: CLIPingVideoSeries
   },
   {

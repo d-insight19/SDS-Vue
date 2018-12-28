@@ -54,6 +54,8 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 #header .btn.prev .ico{width:28px; height:28px; background-position:-13px -61px;}
 #header .btn.close .ico{width:28px; height:28px; background-position:-298px -60px;} 
 #header .btn.prev .ico.white{width:28px; height:28px; background-position:-48px -27px;}
+#header .btn.share {position:absolute; right:14px; top: 14px; width: auto;}
+#header .btn.share .ico{width:28px; height:28px; background:url("../img/ic_share.png") no-repeat; background-size:28px;} 
 
 
 /* title */
