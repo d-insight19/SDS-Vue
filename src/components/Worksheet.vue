@@ -7566,8 +7566,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.01.B2C FreeCourse</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_B2C_freeCourse' }">
+            Main_B2C_freeCourse
           </router-link>
         </td>
         <td></td>
@@ -7601,8 +7601,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.02.B2C FreeCourse(2)</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_B2C_freeCourse2' }">
+            Main_B2C_freeCourse2
           </router-link>
         </td>
         <td></td>
@@ -7618,8 +7618,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.03.B2C Appstore</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_B2C_appstore' }">
+            Main_B2C_appstore
           </router-link>
         </td>
         <td></td>
@@ -7671,11 +7671,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.02.B2C    Directions</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          <!--<router-link :to="{ name: 'Main_B2C_directions' }">
+            Main_B2C_directions
+          </router-link>-->
         </td>
-        <td></td>
+        <td><!--작업중--></td>
       </tr>
       <tr>
       <td align="center">445</td>

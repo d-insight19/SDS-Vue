@@ -167,6 +167,10 @@ import MainLearningMain from '~workplace/main/Main_learning_main'
 import Main03BrowseMain from '~workplace/main/Main_03_browse_main'
 import Main03BrowseListDetail01 from '~workplace/main/Main_03_browse_listDetail01'
 import Main03BrowseListDetail02 from '~workplace/main/Main_03_browse_listDetail02'
+import MainB2CFreeCourse from '~workplace/main/Main_B2C_freeCourse'
+import MainB2CFreeCourse2 from '~workplace/main/Main_B2C_freeCourse2'
+import MainB2CAppstore from '~workplace/main/Main_B2C_appstore'
+import MainB2CDirections from '~workplace/main/Main_B2C_directions'
 
 import CLIPingMain from '~workplace/cliping/CLIPing_main'
 import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
@@ -972,21 +976,6 @@ var rootRoutes = [
     component: MainStatistics4
   },
   {
-    path: '/Main_03_browse_main',
-    name: 'Main_03_browse_main',
-    component: Main03BrowseMain
-  },
-  {
-    path: '/Main_03_browse_listDetail01',
-    name: 'Main_03_browse_listDetail01',
-    component: Main03BrowseListDetail01
-  },
-  {
-    path: '/Main_03_browse_listDetail02',
-    name: 'Main_03_browse_listDetail02',
-    component: Main03BrowseListDetail02
-  },
-  {
     path: '/Main_04_browse_main',
     name: 'Main_04_browse_main',
     component: Main04BrowseMain
@@ -1070,6 +1059,41 @@ var rootRoutes = [
     path: '/Main_learning_main',
     name: 'Main_learning_main',
     component: MainLearningMain
+  },
+  {
+    path: '/Main_03_browse_main',
+    name: 'Main_03_browse_main',
+    component: Main03BrowseMain
+  },
+  {
+    path: '/Main_03_browse_listDetail01',
+    name: 'Main_03_browse_listDetail01',
+    component: Main03BrowseListDetail01
+  },
+  {
+    path: '/Main_03_browse_listDetail02',
+    name: 'Main_03_browse_listDetail02',
+    component: Main03BrowseListDetail02
+  },
+  {
+    path: '/Main_B2C_freeCourse',
+    name: 'Main_B2C_freeCourse',
+    component: MainB2CFreeCourse
+  },
+  {
+    path: '/Main_B2C_freeCourse2',
+    name: 'Main_B2C_freeCourse2',
+    component: MainB2CFreeCourse2
+  },
+  {
+    path: '/Main_B2C_appstore',
+    name: 'Main_B2C_appstore',
+    component: MainB2CAppstore
+  },
+  {
+    path: '/Main_B2C_directions',
+    name: 'Main_B2C_directions',
+    component: MainB2CDirections
   },
   {
     path: '/CLIPing_main',

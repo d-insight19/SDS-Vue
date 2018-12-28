@@ -29,20 +29,59 @@
           <!-- //component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 fwb600 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mb10">정부 무료과정</h2>
+
+                <ul class="multiList banner mb15">
+                    <li class="bg_CLIPingMain">
+                        <div class="in">
+                            <p class="font_18 mono_0">혁신성장 청년인재</p>
+                        </div>
+                        <span class="ico arrow"></span>
+                    </li>
+                    <li class="bg_CLIPingMain">
+                        <div class="in">
+                            <p class="font_18 mono_0">4차산업혁명 선도인력양성</p>
+                        </div>
+                        <span class="ico arrow"></span>
+                    </li>
+                    <li class="bg_CLIPingMain">
+                        <div class="in">
+                            <p class="font_18 mono_0">경기 빅데이터 교육</p>
+                        </div>
+                        <span class="ico arrow"></span>
+                    </li>
+                    <li class="bg_CLIPingMain">
+                        <div class="in">
+                            <p class="font_18 mono_0">청년취업 아카데미</p>
+                        </div>
+                        <span class="ico arrow"></span>
+                    </li>
+                    <li class="bg_CLIPingMain">
+                        <div class="in">
+                            <p class="font_18 mono_0">정부 무료과정 타이틀</p>
+                        </div>
+                        <span class="ico arrow"></span>
+                    </li>
+                </ul>
+            </div>
+          </div>
+
+
+          <div class="cell">
+            <div class="inner">
+                <h2 class="h-tit2 fwb600 mb10">운영자 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>
                         <div class="in">
                             <a href="#" class="thum">
-                                <span class="label">정규</span>
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
                             </a>
-                            <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
+
+                            <a href="#" class="tit">경기빅데이터 전문가 과정(기술과 분석편)</a>
                             <ul class="info">
-                                <li class="color_clr3 fwb">이러닝</li>
                                 <li><span class="star ico"></span>4.5</li>
                             </ul>
                             <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
@@ -51,33 +90,28 @@
                     <li>
                         <div class="in">
                             <a href="#" class="thum">
-                                <span class="label">정규</span>
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
-                                <div class="tagWrap"></div>
                             </a>
 
-                            <a href="#" class="tit">기초부터 예제까지 iOS 개발자를 위한 업무에 바로 쓰는 스플...</a>
+                            <a href="#" class="tit">경기빅데이터 전문가 과정(기술과 분석편)</a>
                             <ul class="info">
-                                <li class="color_clr3 fwb">이러닝</li>
                                 <li><span class="star ico"></span>4.5</li>
                             </ul>
-                            <div class="tagWrap"></div>
+                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                         </div>
                     </li>
                     <li>
                         <div class="in">
                             <a href="#" class="thum">
-                                <span class="label">정규</span>
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
                             </a>
 
-                            <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
+                            <a href="#" class="tit">경기빅데이터 전문가 과정(기술과 분석편)</a>
                             <ul class="info">
-                                <li class="color_clr3 fwb">이러닝</li>
                                 <li><span class="star ico"></span>4.5</li>
                             </ul>
                             <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
@@ -85,68 +119,6 @@
                     </li>
                 </ul>
                 <!-- //list -->
-            </div>
-          </div>
-
-                
-          <div class="cell">
-            <div class="inner">
-                <h2 class="h-tit2 fwb600 mb10">임직원 필수 교육 추천과정</h2>
-                <div class="scroll-x type2">
-                    <!-- list -->
-                    <ul class="thumList type2">
-                        <li>
-                            <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-
-                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                            <a href="#" class="thum">
-                                <span class="label">정규</span>
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                            <ul class="info">
-                                <li class="color_clr3">이러닝</li>
-                                <li><span class="star ico"></span>4.5</li>
-                            </ul>
-                            <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- //list -->
-                </div>
             </div>
           </div>
           <!-- //component -->
@@ -161,7 +133,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI02',
+  name: 'Main_B2C_freeCourse2',
   /* vue lifecycle */
   created () {
   },

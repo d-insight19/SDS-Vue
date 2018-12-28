@@ -1147,6 +1147,7 @@ label.rdo .label{position: relative;}
 .mb18{margin-bottom: 18px !important;}
 .mb20{margin-bottom: 20px !important;}
 .mb25{margin-bottom: 25px !important;}
+.mb30{margin-bottom: 25px !important;}
 .ml-18 {margin-left:-18px !important;}
 .mr-18 {margin-right:-18px !important;}
 .pa0{padding:0px !important;}
@@ -1268,7 +1269,17 @@ label.rdo .label{position: relative;}
 .MainType ul.banner_list li .banner_area .banner_content p {display: table-cell; vertical-align: middle; font-size: map-get($font_size, font_12); color: map-get($mono_colors, mono_0); line-height:200%;}
 //큰 라벨
 .MainType .thumList .thum .label.big {font-size: map-get($font_size, font_14); padding: 3px 12px; background-color: black;}
-
+// 배너
+.MainType .banner li {height: 75px;}
+.MainType .banner li + li {margin-top:8px;}
+.MainType .banner li .in {padding: 16px 12px;}
+.MainType .banner .bg_CLIPingMain{background: url("../img/imgBan_no.jpg") repeat-x center center;}
+.MainType .banner .ico.arrow{position: absolute; background-image: url("../img/ic_next_line_bold_wh.png"); top: calc(50% - 10px) !important; right: 6px !important; width:20px; height:20px; }
+// appstore
+.MainType .bg_appstore {height:220px; text-align:center; background: url("../img/thum_no_L.jpg") no-repeat center center;}
+.MainType .bg_appstore .dim45 {background-color:rgba(#000000, 0.45); padding-top: 24px; height:220px;}
+.MainType .bg_appstore .banner_appstore img {width: 150px; height: 48px; display:inline-block;}
+.MainType .bg_appstore .banner_appstore img + img {margin-left:10px;}
 //지식 클리핑
 .CLIPingType #container #content .inner {padding-bottom: 12px;}
 // 총합계
