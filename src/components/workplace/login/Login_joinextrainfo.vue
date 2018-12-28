@@ -66,12 +66,18 @@
                               <li v-for="(item, index) in list1" :key="index">
                                 <div v-if="languageEditFlag" @click="deleteLanguage(index)" class="tar"><a href="#" class="btn only del"><span class="ico"></span></a></div>
                                 <div class="up">
-                                  <select class="select">
-                                    <option>언어</option>
-                                  </select>
-                                  <select class="select">
-                                    <option>공인시험 선택</option>
-                                  </select>
+                                  <slp-select required placeholder="언어">
+                                      <option>2017</option>
+                                      <option>2018</option>
+                                      <option>2019</option>
+                                      <option>2020</option>
+                                  </slp-select>
+                                  <slp-select required placeholder="공인시험 선택">
+                                      <option>2017</option>
+                                      <option>2018</option>
+                                      <option>2019</option>
+                                      <option>2020</option>
+                                  </slp-select>
                                 </div>
                                 <input type="text" class="input w100p" placeholder="점수 혹은 레벨 입력">
                               </li>
@@ -92,12 +98,18 @@
                               <li v-for="(item, index) in list2" :key="index">
                                 <div v-if="licenceEditFlag" @click="deleteLicence(index)" class="tar"><a href="#" class="btn only del"><span class="ico"></span></a></div>
                                 <div class="up">
-                                  <select class="select">
-                                    <option>선택{{index}}</option>
-                                  </select>
-                                  <select class="select">
-                                    <option>선택</option>
-                                  </select>
+                                  <slp-select required placeholder="선택">
+                                      <option>2017</option>
+                                      <option>2018</option>
+                                      <option>2019</option>
+                                      <option>2020</option>
+                                  </slp-select>
+                                  <slp-select required placeholder="선택">
+                                      <option>2017</option>
+                                      <option>2018</option>
+                                      <option>2019</option>
+                                      <option>2020</option>
+                                  </slp-select>
                                 </div>
                                 <input type="text" class="input w100p" placeholder="점수, 등급">
                               </li>
@@ -134,15 +146,21 @@
                         <ul class="ulList type1">
                           <li>
                             <strong class="label-tit">다국어 설정</strong>
-                            <select class="select w100p">
-                              <option>선택</option>
-                            </select>
+                            <slp-select required placeholder="선택" width="100%">
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                            </slp-select>
                           </li>
                           <li>
                             <strong class="label-tit">타임존</strong>
-                            <select class="select w100p">
-                              <option>선택</option>
-                            </select>
+                            <slp-select required placeholder="선택" width="100%">
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                            </slp-select>
                           </li>
                         </ul>
                         <!-- //list -->

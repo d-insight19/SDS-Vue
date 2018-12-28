@@ -136,6 +136,7 @@
 #container.login .loginBox .loginList li + li{margin-top: 19px;}
 #container.login .loginBox .loginList .error-msg{position: absolute; left:0; top:45px; z-index: 1;}
 #container.login .loginBox .loginChk{margin-top:35px;}
+#container.login .loginBox .loginChk .labelChk{width:auto;}
 #container.login .loginBox input.chk + .ico {width:20px; height:20px;}
 #container.login .loginBox input.chk:checked + .ico {background-position: 0 0;}
 #container.login .loginBox .labelChk .label{color:#333; font-weight: 500; line-height: 20px; }
@@ -234,7 +235,7 @@
 #container.join .li-addList .tar{margin-bottom:8px;}
 #container.join .li-addList .del .ico{width:20px; height: 20px; background: url("../img/ic_deletemode_20.png");background-size: cover;}
 #container.join .li-addList li:first-child{margin-top: 20px;}
-#container.join .li-addList select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
+#container.join .li-addList select{font-size: map-get($font-size, font_14);vertical-align: middle;font-weight: 400;letter-spacing: -0.42px;}
 #container.join .li-addList .up select{width: 33%;}
 #container.join .li-addList .up select + select{width: 65%;}
 #container.join .li-addList li + li{margin-top: 16px !important;}
@@ -250,24 +251,13 @@
 #container.join .ulList.type4 li{padding: 16px 0 16px;}
 #container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:map-get($mono_colors, mono_65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
 #container.join .hr + .ulList.type1 .label-tit{margin-bottom:8px;}
-#container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
+#container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;font-weight: 400;letter-spacing: -0.42px;}
 #container.join .hr + .ulList.type1 li + li{margin-top: 19px;}
 
 //계정잠금해제
 #container.join .lock_id{margin-top: 8px;font-size:map-get($font-size, font_14); line-height: 21px; letter-spacing: -0.42px; color:#000}
 #container.join .lock_id span{font-size:map-get($font-size, font_16); letter-spacing: -0.48px; font-weight: 600;margin-left:7px;}
 #container.join .lock_id + .txt-desc{margin-top:6px;margin-bottom:16px;font-weight: 300;}
-
-#container.join .cTitWrap .c-tit{font-size: map-get($font-size, font_16);letter-spacing: -0.48px;line-height: 24px;font-weight: 500;}
-#container.join .ulList.type4{border-top: 1px solid rgba(0,0,0,0.5);}
-#container.join .cTitWrap + .ulList.type4{margin-top: 16px;}
-#container.join .ulList.type4 li{border-bottom: 1px solid #ebebeb;}
-#container.join .labelChk .label{line-height: 21px;letter-spacing: -0.42px;font-weight: 400;}
-#container.join .ulList.type4 li{padding: 16px 0 16px;}
-#container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:map-get($mono_colors, mono_65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
-#container.join .hr + .ulList.type1 .label-tit{margin-bottom:8px;}
-#container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
-#container.join .hr + .ulList.type1 li + li{margin-top: 19px;}
 
 
 #container.join.complete .h-tit{font-size: map-get($font-size, font_30);line-height: 38px;letter-spacing: -0.9px;font-weight: 500;margin-bottom:8px;}
