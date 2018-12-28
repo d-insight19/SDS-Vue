@@ -70,7 +70,7 @@
                                     </li>  
                                 </ul>
                                  <!-- 추가 리스트 --> 
-                                <a href="#" class="btn sm add w100p" @click="addList1()" ><span class="ico"></span>파일 추가</a> 
+                                <slp-button class="sm add w100p" @click="addList1()" ><span class="ico"></span>파일 추가</slp-button> 
                             </li>   
                             <li>
                                 <strong class="label-tit14">이름</strong>

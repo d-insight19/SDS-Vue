@@ -1209,8 +1209,14 @@
           <router-link :to="{ name: 'CustomerCenter_Inquiry_write01' }">
             CustomerCenter_Inquiry_write01
           </router-link>,
-           <router-link :to="{ name: 'CustomerCenter_Inquiry_write01_error' }">
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_write01_error' }">
             CustomerCenter_Inquiry_write01_error
+          </router-link>,
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_write02' }">
+            CustomerCenter_Inquiry_write02
+          </router-link>,
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_write02_error' }">
+            CustomerCenter_Inquiry_write02_error
           </router-link>
         </td>
         <td></td>
@@ -2374,11 +2380,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.04.Column</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_column' }">
+          <router-link :to="{ name: 'CLIPing_column' }">
             CLIPing_column
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">135</td>
@@ -2391,11 +2397,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.04.ColumnDetail</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_column_detail' }">
+          <router-link :to="{ name: 'CLIPing_column_detail' }">
             CLIPing_column_detail
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">136</td>
@@ -2408,11 +2414,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.03.BookSummary</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_bookSummary' }">
+          <router-link :to="{ name: 'CLIPing_bookSummary' }">
             CLIPing_bookSummary
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">137</td>
@@ -2425,11 +2431,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.03.BookSummaryDetail</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_bookSummary_detail' }">
+          <router-link :to="{ name: 'CLIPing_bookSummary_detail' }">
             CLIPing_bookSummary_detail
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">138</td>
@@ -2633,8 +2639,8 @@
             CLIPing_video_all
           </router-link>
           ,
-          <router-link :to="{ name: 'CLIPing_video_series' }">
-            CLIPing_video_series
+          <router-link :to="{ name: 'CLIPing_videoSeries' }">
+            CLIPing_videoSeries
           </router-link>
         </td>
         <td></td>
@@ -2650,11 +2656,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.VideoSeriesDetail</td>
         <td>
-          <!--<router-link :to="{ name: 'CLIPing_videoSeries_detail' }">
+          <router-link :to="{ name: 'CLIPing_videoSeries_detail' }">
             CLIPing_videoSeries_detail
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">151</td>

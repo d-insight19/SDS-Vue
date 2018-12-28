@@ -26,12 +26,24 @@
             <div class="inner">
 
                 <div class="tabCnt dpb pt0" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
-                                <!-- list -->                                 
+                                <!-- list -->    
+                                        <!--                 
                                         <h1 class="h-tit5 title_line">
                                             <span class="total_txt">카테고리명 </span>
                                             <strong class="fwb600 count">12</strong><span>건</span>
                                             <a href="#"><span class="ico down"></span></a>
-                                        </h1>
+                                        </h1> -->
+                        <div class="title_line">
+                            <select class="select category">
+                            <option>동영상 12건</option>
+                            <option>이벤트</option>
+                            <option>리포트</option>
+                            <option>평가</option>
+                            <option>로그인</option>
+                            <option>도서</option>
+                            <option>기타</option>
+                            </select>
+                        </div>
                 
                                         <ul class="multiList type3">
                                             <li>

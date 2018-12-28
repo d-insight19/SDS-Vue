@@ -120,11 +120,7 @@
             </div>
 
             <!-- floating button -->
-            <div class="fixBtmBtn">
-                <ul>
-                    <li><button type="button" class="btn md"><span class="ico like_32"></span>좋아요</button></li>
-                </ul>
-            </div>
+            <slp-button class="md"><span class="ico like_32"></span>좋아요</slp-button>
             <!-- //floating button -->      
         </div>       
         <!-- //container --> 
