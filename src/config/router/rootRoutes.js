@@ -29,6 +29,7 @@ import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
 // import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
+import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -253,6 +254,12 @@ import CustomerCenterRequestresult from '~workplace/customercenter/CustomerCente
 import CustomerCenterInquirywrite02 from '~workplace/customercenter/CustomerCenter_Inquiry_write02'
 import CustomerCenterInquirywrite02error from '~workplace/customercenter/CustomerCenter_Inquiry_write02_error'
 
+import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
+import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
+import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
+import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
+import EdupersonControl from '~workplace/eduperson/Eduperson_control'
+
 // 1번 영역
 var rootRoutes = [
   {
@@ -405,6 +412,11 @@ var rootRoutes = [
   //   name: 'components_flowplayer',
   //   component: ComponentsFlowplayer
   // },
+  {
+    path: '/components_dropdown',
+    name: 'components_dropdown',
+    component: ComponentsDropdown
+  },
   {
     path: '/Login_findcenter',
     name: 'Login_findcenter',
@@ -1488,6 +1500,31 @@ var rootRoutes = [
     path: '/CustomerCenter_Inquiry_write02_error',
     name: 'CustomerCenter_Inquiry_write02_error',
     component: CustomerCenterInquirywrite02error
+  },
+  {
+    path: '/Eduperson_login',
+    name: 'Eduperson_login',
+    component: EdupersonLogin
+  },
+  {
+    path: '/Eduperson_drawer',
+    name: 'Eduperson_drawer',
+    component: EdupersonDrawer
+  },
+  {
+    path: '/Eduperson_drawer_setting',
+    name: 'Eduperson_drawer_setting',
+    component: EdupersonDrawerSetting
+  },
+  {
+    path: '/Eduperson_drawer_profile',
+    name: 'Eduperson_drawer_profile',
+    component: EdupersonDrawerProfile
+  },
+  {
+    path: '/Eduperson_contorl',
+    name: 'Eduperson_contorl',
+    component: EdupersonControl
   }
 ]
 

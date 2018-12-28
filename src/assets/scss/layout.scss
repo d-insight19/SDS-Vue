@@ -258,8 +258,9 @@
 #header.mainType2 .gnbMenu .menu_home.on .ico{background-position:-32px 0px;}
 #header.mainType2 .gnbMenu .menu_exploration.on .ico{background-position:-32px 0px;}
 #header.mainType2 .gnbMenu .menu_subscription.on .ico{background-position:-32px 0px;}
-
-
+// 메인 타입 2단형 텍스트 
+#header.mainType2 .gnbMenu.text li{color:rgba(255,255,255,0.4)}
+#header.mainType2 .gnbMenu.text li.on{color:#fff}
 // 텝형 헤더
 #header.tab.fixed{position:fixed;}
 #header.fixed .hide_header{display:none;}
@@ -380,3 +381,5 @@
 // 2단형 메인타입 ( ATOM )
 #header.mainType2 + #content{padding-top:100px;}
 
+// 회사운영자 로그인
+#container.eduperson_login #content .inner{padding:23px 18px 0px;}

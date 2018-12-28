@@ -8395,11 +8395,15 @@
         <td>　</td>
         <td class="textL">11.Eduperson_01.01_Drawer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_login' }">
+            Eduperson_login
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Eduperson_drawer' }">
+            Eduperson_drawer
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">486</td>
@@ -8429,11 +8433,11 @@
         <td>　</td>
         <td class="textL">11.Eduperson_03.01_Studycurrent</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_contorl' }">
+            Eduperson_contorl
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">488</td>
@@ -10407,6 +10411,23 @@
         <td>
           <router-link :to="{ name: 'components_flowplayer' }">
             components_flowplayer
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>Spinner</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_dropdown' }">
+            components_dropdown
           </router-link>
         </td>
         <td></td>

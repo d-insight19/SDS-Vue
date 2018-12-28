@@ -397,9 +397,30 @@
 #container.searchcompany #header.fixed .fixTab{border-top:0px;}
 #container.searchcompany #header .hide_inner{padding: 80px 0px 42px 18px;}
 
-
-
-
+// 회사운영자
+// 회사운영자 - 로그인 
+#container.eduperson_login .edu_lang{float:right;margin-bottom:45px;font-size: map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.38px; font-weight: 500;color:rgba(0,0,0,0.8)}
+#container.eduperson_login .edu_lang .ico{margin-left:6px;width:24px;height:24px;background: url("../img/ic_down_blue_24.png") no-repeat; background-size:cover;}
+#container.eduperson_login p.edu_logintitle1{clear: both;font-size: map-get($font-size, font_20);  letter-spacing: -0.8px; font-weight: 600;}
+#container.eduperson_login p.edu_logintitle2{font-size: map-get($font-size, font_34);  line-height: 53px; letter-spacing: -1.36px; font-weight: 400;margin-bottom:29px;}
+#container.eduperson_login .loginBox .loginList li{position: relative;}
+#container.eduperson_login .loginBox .loginList li + li{margin-top: 19px;}
+#container.eduperson_login .loginBox .loginList .error-msg{position: absolute; left:0; top:45px; z-index: 1;}
+#container.eduperson_login .loginBox .loginChk{margin-top:35px;}
+#container.eduperson_login .loginBox .loginChk .labelChk{width:auto;padding-left:34px}
+#container.eduperson_login .loginBox input.chk + .ico {width:20px; height:20px;}
+#container.eduperson_login .loginBox input.chk:checked + .ico {background-position: 0 0;}
+#container.eduperson_login .loginBox .labelChk .label{color:#333; font-weight: 500; line-height: 20px; }
+#container.eduperson_login .loginBox .labelChk + .labelChk{margin-left:30px;}
+#container.eduperson_login .loginBox .loginBtn{margin-top:36px;}
+#container.eduperson_login .loginBox .loginBtn .btn{width:100%;}
+#container.eduperson_login .loginEtcBtn{margin-top:17px;color:rgba(0,0,0,0.8)}
+#container.eduperson_login .loginEtcBtn:after{display: block; content:''; clear: both;}
+#container.eduperson_login .loginEtcBtn li{float:left; line-height: 19px; vertical-align: middle;}
+#container.eduperson_login .loginEtcBtn li + li{margin-left:11px;}
+#container.eduperson_login .loginEtcBtn li + li::before{display: inline-block; content: ''; width:1px; height:9px; margin-right: 9px; vertical-align: middle; background:#b9b9b9;}
+#container.eduperson_login .loginEtcBtn li a{display: inline-block; vertical-align: middle;}
+#container.eduperson_login #dropdown{top:50px;right:30px;}
 
 
 
