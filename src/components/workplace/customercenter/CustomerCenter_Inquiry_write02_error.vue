@@ -12,8 +12,8 @@
           </div>  
           <div class="header_inner line2 tabMenu">
               <ul class="fixTab">
-                <li class="on"><a href="#tab1">과정문의</a></li><!-- selected class "on" -->
-                <li><a href="#tab2">기타문의</a></li>
+                <li><a href="#tab1">과정문의</a></li><!-- selected class "on" -->
+                <li class="on"><a href="#tab2">기타문의</a></li>
               </ul>
           </div>  
           

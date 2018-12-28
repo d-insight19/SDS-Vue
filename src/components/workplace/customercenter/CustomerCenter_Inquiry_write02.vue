@@ -12,8 +12,8 @@
           </div>  
           <div class="header_inner line2 tabMenu">
               <ul class="fixTab">
-                <li class="on"><a href="#tab1">과정문의</a></li><!-- selected class "on" -->
-                <li><a href="#tab2">기타문의</a></li>
+                <li><a href="#tab1">과정문의</a></li><!-- selected class "on" -->
+                <li class="on"><a href="#tab2">기타문의</a></li>
               </ul>
           </div>  
           
@@ -29,7 +29,7 @@
                         <ul class="multiList type2">
                             <li class="pt0">
                                 <strong class="label-tit14">과정선택</strong>                                
-                                <slp-select required placeholder="과정을 선택해 주세요." error width="100%" style="margin-top:8px">
+                                <slp-select required placeholder="과정을 선택해 주세요." width="100%" class="mt8">
                                     <option>2017</option>
                                     <option>2018</option>
                                     <option>2019</option>
@@ -38,7 +38,7 @@
                             </li>
                             <li>
                                 <strong class="label-tit14">상담분류</strong>
-                                <slp-select required placeholder="상담분류를 선택해 주세요." error width="100%" style="margin-top:8px">
+                                <slp-select required placeholder="상담분류를 선택해 주세요." width="100%" class="mt8">
                                     <option>2017</option>
                                     <option>2018</option>
                                     <option>2019</option>
@@ -47,12 +47,12 @@
                             </li>
                             <li>
                                 <strong class="label-tit14">제목</strong>
-                                <slp-text-field placeholder="제목을 입력해 주세요." error></slp-text-field>
+                                <slp-text-field placeholder="제목을 입력해 주세요."></slp-text-field>
                             </li>
                             <li>
                                 <strong class="label-tit14">내용</strong>
                                 <div class="textarea_wrap">
-                                  <textarea class="content error"  @keydown="onKeydown" placeholder="내용을 입력하세요." error></textarea>
+                                  <textarea class="content"  @keydown="onKeydown" placeholder="내용을 입력하세요."></textarea>
                                 </div>
                             </li>
                             <li>

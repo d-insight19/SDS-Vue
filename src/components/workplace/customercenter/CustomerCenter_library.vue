@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
         <!-- container -->
-        <div id="container" class="mediaquery drawer board">
+        <div id="container" class="mediaquery drawer">
             
             <!-- header -->
             <div id="header" class="fixed">
