@@ -22,8 +22,7 @@
                         <span class="total_txt">총</span>
                         <strong class="fwb600 count">2</strong><span>건</span>
                         <a href="#"><span class="ico down fr"></span><span class="total fr">마감</span></a>
-                    </h1>
-                
+                    </h1>                
                     <ul class="multiList type3">
                         <li>
                         <div class="in">                                                                                        

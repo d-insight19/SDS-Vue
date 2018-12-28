@@ -84,7 +84,8 @@
             <!-- floating button -->
             <div class="fixBtmBtn">
                 <ul>
-                    <li><button type="button" class="btn md staus_crl1"><span class="ico like_32 red"></span>좋아요</button></li>
+                    <li><slp-button class="btn md staus_crl1"><span class="ico like_32 red"></span>좋아요</slp-button>
+                    </li>
                 </ul>
             </div>
             <!-- //floating button -->      

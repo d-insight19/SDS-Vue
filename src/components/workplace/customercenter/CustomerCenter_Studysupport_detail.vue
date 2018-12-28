@@ -22,7 +22,7 @@
                                 <a>버전정보<span class="version fr">최신 버전 v.0.1</span></a>
                             </li>                           
                         </ul>
-                        <p class="divide_line"></p>
+                        <p class="hr"></p> 
                         <p class="label-tit20"><strong>지원 모바일 환경</strong></p>
                             <table class="support_mobile">
                                 <tr>
@@ -35,7 +35,7 @@
                                 </tr>
                             </table>
                        
-                        <p class="divide_line"></p>
+                        <p class="hr"></p> 
                         <p class="label-tit20"><strong>원격지원 서비스</strong></p>
                             <dl class="remote_assistance">
                                 <dt>모바일원격지원 서비스란?</dt>

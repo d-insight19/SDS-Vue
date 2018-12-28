@@ -59,7 +59,7 @@
                                 <p class="desc">기타의견 : 프랑스어(10), 러시아어(4), 스페인어(8)</p>
                             </li>
                         </ul>    
-                        <p class="divide_line"></p>
+                        <p class="hr"></p>
 
                         <ul class="progBox_wrap">
                             <h2 class="label-tit16">Q. 질문 1 입니다.</h2>
@@ -70,7 +70,7 @@
                                 </div>
                             </li>                           
                         </ul>    
-                        <p class="divide_line"></p> 
+                        <p class="hr"></p> 
 
                         <h2 class="label-tit16">Q. 질문 1 입니다.</h2>
                         <ul class="diagram_wrap">                            
@@ -91,7 +91,7 @@
                                 <p>교육과정<span class="percent fr"><span class="num">5</span>%(6명)</span></p>  
                             </li>                           
                         </ul>    
-                        <p class="divide_line"></p> 
+                        <p class="hr"></p> 
 
                         <h2 class="label-tit16">Q. 해당과정에 만족하십니까?</h2>  
                             <a class="respondent_num" href="#"><span class="ico arr up"></span> 응답자수 55</a>

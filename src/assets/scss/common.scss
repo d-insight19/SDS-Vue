@@ -287,6 +287,9 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 select:required:invalid {
   color: rgba(0,0,0,0.25);
 }
+.select.category {background: #fff url("../img/ic_dropdown_16.png") no-repeat right center; background-size:16px 16px; padding:0 25px 0 7px; font-size:map-get($font_size, font_15); font-weight: 500; margin-left:-7px; height:26px}
+.select.category .count {font-weight: bold}
+
 
 /* Single Line List :  List + button */
 .singleList.type_1 li{border-bottom:1px solid #e3e3e3;font-size:map-get($font_size, font_16);height:54px}
