@@ -136,6 +136,7 @@
 #container.login .loginBox .loginList li + li{margin-top: 19px;}
 #container.login .loginBox .loginList .error-msg{position: absolute; left:0; top:45px; z-index: 1;}
 #container.login .loginBox .loginChk{margin-top:35px;}
+#container.login .loginBox .loginChk .labelChk{width:auto;}
 #container.login .loginBox input.chk + .ico {width:20px; height:20px;}
 #container.login .loginBox input.chk:checked + .ico {background-position: 0 0;}
 #container.login .loginBox .labelChk .label{color:#333; font-weight: 500; line-height: 20px; }
@@ -234,7 +235,7 @@
 #container.join .li-addList .tar{margin-bottom:8px;}
 #container.join .li-addList .del .ico{width:20px; height: 20px; background: url("../img/ic_deletemode_20.png");background-size: cover;}
 #container.join .li-addList li:first-child{margin-top: 20px;}
-#container.join .li-addList select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
+#container.join .li-addList select{font-size: map-get($font-size, font_14);vertical-align: middle;font-weight: 400;letter-spacing: -0.42px;}
 #container.join .li-addList .up select{width: 33%;}
 #container.join .li-addList .up select + select{width: 65%;}
 #container.join .li-addList li + li{margin-top: 16px !important;}
@@ -250,24 +251,13 @@
 #container.join .ulList.type4 li{padding: 16px 0 16px;}
 #container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:map-get($mono_colors, mono_65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
 #container.join .hr + .ulList.type1 .label-tit{margin-bottom:8px;}
-#container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
+#container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;font-weight: 400;letter-spacing: -0.42px;}
 #container.join .hr + .ulList.type1 li + li{margin-top: 19px;}
 
 //계정잠금해제
 #container.join .lock_id{margin-top: 8px;font-size:map-get($font-size, font_14); line-height: 21px; letter-spacing: -0.42px; color:#000}
 #container.join .lock_id span{font-size:map-get($font-size, font_16); letter-spacing: -0.48px; font-weight: 600;margin-left:7px;}
 #container.join .lock_id + .txt-desc{margin-top:6px;margin-bottom:16px;font-weight: 300;}
-
-#container.join .cTitWrap .c-tit{font-size: map-get($font-size, font_16);letter-spacing: -0.48px;line-height: 24px;font-weight: 500;}
-#container.join .ulList.type4{border-top: 1px solid rgba(0,0,0,0.5);}
-#container.join .cTitWrap + .ulList.type4{margin-top: 16px;}
-#container.join .ulList.type4 li{border-bottom: 1px solid #ebebeb;}
-#container.join .labelChk .label{line-height: 21px;letter-spacing: -0.42px;font-weight: 400;}
-#container.join .ulList.type4 li{padding: 16px 0 16px;}
-#container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:map-get($mono_colors, mono_65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
-#container.join .hr + .ulList.type1 .label-tit{margin-bottom:8px;}
-#container.join .ulList.type1 select{font-size: map-get($font-size, font_14);vertical-align: middle;color: rgba(0,0,0,0.25);font-weight: 400;letter-spacing: -0.42px;}
-#container.join .hr + .ulList.type1 li + li{margin-top: 19px;}
 
 
 #container.join.complete .h-tit{font-size: map-get($font-size, font_30);line-height: 38px;letter-spacing: -0.9px;font-weight: 500;margin-bottom:8px;}
@@ -407,9 +397,30 @@
 #container.searchcompany #header.fixed .fixTab{border-top:0px;}
 #container.searchcompany #header .hide_inner{padding: 80px 0px 42px 18px;}
 
-
-
-
+// 회사운영자
+// 회사운영자 - 로그인 
+#container.eduperson_login .edu_lang{float:right;margin-bottom:45px;font-size: map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.38px; font-weight: 500;color:rgba(0,0,0,0.8)}
+#container.eduperson_login .edu_lang .ico{margin-left:6px;width:24px;height:24px;background: url("../img/ic_down_blue_24.png") no-repeat; background-size:cover;}
+#container.eduperson_login p.edu_logintitle1{clear: both;font-size: map-get($font-size, font_20);  letter-spacing: -0.8px; font-weight: 600;}
+#container.eduperson_login p.edu_logintitle2{font-size: map-get($font-size, font_34);  line-height: 53px; letter-spacing: -1.36px; font-weight: 400;margin-bottom:29px;}
+#container.eduperson_login .loginBox .loginList li{position: relative;}
+#container.eduperson_login .loginBox .loginList li + li{margin-top: 19px;}
+#container.eduperson_login .loginBox .loginList .error-msg{position: absolute; left:0; top:45px; z-index: 1;}
+#container.eduperson_login .loginBox .loginChk{margin-top:35px;}
+#container.eduperson_login .loginBox .loginChk .labelChk{width:auto;padding-left:34px}
+#container.eduperson_login .loginBox input.chk + .ico {width:20px; height:20px;}
+#container.eduperson_login .loginBox input.chk:checked + .ico {background-position: 0 0;}
+#container.eduperson_login .loginBox .labelChk .label{color:#333; font-weight: 500; line-height: 20px; }
+#container.eduperson_login .loginBox .labelChk + .labelChk{margin-left:30px;}
+#container.eduperson_login .loginBox .loginBtn{margin-top:36px;}
+#container.eduperson_login .loginBox .loginBtn .btn{width:100%;}
+#container.eduperson_login .loginEtcBtn{margin-top:17px;color:rgba(0,0,0,0.8)}
+#container.eduperson_login .loginEtcBtn:after{display: block; content:''; clear: both;}
+#container.eduperson_login .loginEtcBtn li{float:left; line-height: 19px; vertical-align: middle;}
+#container.eduperson_login .loginEtcBtn li + li{margin-left:11px;}
+#container.eduperson_login .loginEtcBtn li + li::before{display: inline-block; content: ''; width:1px; height:9px; margin-right: 9px; vertical-align: middle; background:#b9b9b9;}
+#container.eduperson_login .loginEtcBtn li a{display: inline-block; vertical-align: middle;}
+#container.eduperson_login #dropdown{top:50px;right:30px;}
 
 
 
@@ -948,6 +959,17 @@ table td.pb10{padding-bottom: 10px;}
 
 // 정은희 작업
 // drawer 시작
+// Drawer 알림
+#container.drawer .alerm_wrap + .alerm_wrap{margin-top:20px;}
+#container.drawer .alerm_wrap .alerm_tit{font-size:map-get($font-size, font_22);line-height:33px;letter-spacing:-1.1px;margin-bottom:29px;font-weight:29px;}
+#container.drawer .alerm_wrap ul{margin-left:5px;border-left:2px solid #d9d9d9;}
+#container.drawer .alerm_wrap ul li{position:relative;padding:17px 0px 27px 19px;}
+#container.drawer .alerm_wrap ul li .alerm_cate{font-size:map-get($font-size, font_11);border:1px solid rgba(0,0,0,0.8);padding:0px 9px; line-height: 17px;border-radius: 20px;display: inline-block;position: absolute;   top: -5px;font-weight:500;}
+#container.drawer .alerm_wrap ul li .alerm_content{font-size:map-get($font-size, font_14);line-height:21px;letter-spacing:-0.42px;margin-bottom:4px;}
+#container.drawer .alerm_wrap ul li .alerm_time{font-size:map-get($font-size, font_12);line-height:18px;letter-spacing:-0.12px;color:rgba(0,0,0,0.4)}
+#container.drawer .alerm_wrap ul li .dot{position: absolute;top:0px;left:-6px;width:10px;height:10px;border:2px solid rgba(0,0,0,0.65);background:#fff;border-radius: 8px}
+#container.drawer .alerm_wrap ul li .dot.active{border:2px solid map-get($static_colors , danger);background:map-get($static_colors , danger)}
+
 // 회원정보
 #container.drawer .myinfo_img {position: relative; background: url("../img/img_man_80.png"); width: 80px; height:80px; margin: 4px auto 8px;}
 #container.drawer .edit_ico {position: absolute; background: url("../img/btn_edit_28.png"); left:58px; top:58px; width: 28px; height:28px; }
@@ -1180,6 +1202,7 @@ table td.pb10{padding-bottom: 10px;}
 .mb18{margin-bottom: 18px !important;}
 .mb20{margin-bottom: 20px !important;}
 .mb25{margin-bottom: 25px !important;}
+.mb30{margin-bottom: 25px !important;}
 .ml-18 {margin-left:-18px !important;}
 .mr-18 {margin-right:-18px !important;}
 .pa0{padding:0px !important;}
@@ -1301,7 +1324,17 @@ table td.pb10{padding-bottom: 10px;}
 .MainType ul.banner_list li .banner_area .banner_content p {display: table-cell; vertical-align: middle; font-size: map-get($font_size, font_12); color: map-get($mono_colors, mono_0); line-height:200%;}
 //큰 라벨
 .MainType .thumList .thum .label.big {font-size: map-get($font_size, font_14); padding: 3px 12px; background-color: black;}
-
+// 배너
+.MainType .banner li {height: 75px;}
+.MainType .banner li + li {margin-top:8px;}
+.MainType .banner li .in {padding: 16px 12px;}
+.MainType .banner .bg_CLIPingMain{background: url("../img/imgBan_no.jpg") repeat-x center center;}
+.MainType .banner .ico.arrow{position: absolute; background-image: url("../img/ic_next_line_bold_wh.png"); top: calc(50% - 10px) !important; right: 6px !important; width:20px; height:20px; }
+// appstore
+.MainType .bg_appstore {height:220px; text-align:center; background: url("../img/thum_no_L.jpg") no-repeat center center;}
+.MainType .bg_appstore .dim45 {background-color:rgba(#000000, 0.45); padding-top: 24px; height:220px;}
+.MainType .bg_appstore .banner_appstore img {width: 150px; height: 48px; display:inline-block;}
+.MainType .bg_appstore .banner_appstore img + img {margin-left:10px;}
 //지식 클리핑
 .CLIPingType #container #content .inner {padding-bottom: 12px;}
 // 총합계
