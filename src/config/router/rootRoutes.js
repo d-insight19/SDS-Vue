@@ -130,6 +130,7 @@ import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
 import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
 import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
+import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -895,6 +896,11 @@ var rootRoutes = [
     path: '/Study_05_etc_agreement_salary',
     name: 'Study_05_etc_agreement_salary',
     component: Study05etcagreementsalary
+  },
+  {
+    path: '/Study_05_etc_authorization_employment',
+    name: 'Study_05_etc_authorization_employment',
+    component: Study05etcauthorizationemployment
   },
   {
     path: '/Main_control',

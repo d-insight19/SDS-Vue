@@ -786,6 +786,13 @@ select:required:invalid {
 //Spinner
 #spinner{height: 30px;width: 30px;border-radius: 50%;display: block;margin:0 auto;transform: rotate(220deg); animation-name: rotate-spinner;animation-timing-function: cubic-bezier(0.7,0.4,0.5,0.7); animation-duration: 0.65s;   animation-iteration-count: infinite;}
 
+//ScrollTop
+a.top{ position: fixed; left: 50%; bottom: 50px; display: none;}
+a.top:hover{ background:#fff; color:#1AAB8A;}
+a.top:before,a.top:after{ content:''; position:absolute; top:0; right:0; height:2px; width:0; background: #1AAB8A;  transition:400ms ease all;}
+a.top:after{ right:inherit; top:inherit; left:0; bottom:0;}
+a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
+
 @keyframes rotate-spinner{
   0%{ transform:rotate(220deg); }
   100%{ transform:rotate(580deg); }
