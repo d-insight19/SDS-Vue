@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
         <!-- container -->
-        <div id="container" class="mediaquery study_question_de ">
+        <div id="container" class="mediaquery study_qpqa ">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
             <div v-if="headerType == '1'" id="header" class="expand">          
@@ -13,29 +13,18 @@
                 </div>  
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
                     <div class="hide-inner"> 
-                        <span class="chip">질문방</span>     
+                        <span class="chip">Quick Poll/Answer</span>     
                         <p class="h-tit1">
-                            <strong class="q-tit">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</strong> 
-                            <span class="fr ico more28"></span>                            
+                            <strong class="q-tit">Quick Poll/Answer 타이틀 영역입니다 타이틀 영역입니다</strong>                           
                         </p>
-                        <p class="info-group fwr">
-                            <span>비공개</span>
-                            <span class="pipe"></span>
-                            <span>1차시</span>
-                            <span class="pipe"></span>
-                            <span>2018.10.10</span>
-                            <span class="pipe"></span>
-                            <span>정해민</span>
-                            <span class="pipe"></span>
-                            <span class="ico play"></span>
-                            <span>10:36</span>
+                        <p class="info-group ">
+                            <span class="color_clr3 mr6 fwb">진행중</span>
+                            <span class="fwr">2018.10.10 - 2018.11.18</span>
                         </p>
                         <div class="ico-group">
-                            <span class="ico-status">미답변</span>
-                            <p class="fr">
-                                <span class="ico clip "></span>
-                                <span class="ico-txt">첨부파일</span>
-                            </p>
+                            <span class="fwr op80">정해민</span>
+                            <span class="pipe"></span>
+                            <span class="fwb">45/99명</span>
                         </div> 
                     </div>
                 </div>
@@ -71,9 +60,8 @@
                     </div>
                 </div>
             </div>
-            <!-- //header -->
-
-            
+            <!-- //header -->         
+           
             <!-- header scroll 헤더  작업중-->
             <div v-if="headerType == '3'" id="header" class="tab">
                 
@@ -104,48 +92,32 @@
                     </div>
                 </div>
             </div>
-            <!-- //header -->                    
+            <!-- //header -->   
 
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">                       
-                        <div>
-                            <p class="inner-txt">본질적인 조건을 생각해보다가 떠오른게 있는데 관련보고 형식과 리더십의 조건에 대한 강의를 참고하는게좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. </p>
-                        </div>
-                        <p class="label-tit-2 mt36"><strong>첨부파일</strong></p>
+                        <p class="txt-tit">Q. 다음의 학습 과정을 읽고 개선이 필요해 보이는 부분에 대해 간략히 의견을 작성해 주세요.</p>
+                        <p class="label-tit16"><strong>결과</strong> <span class="pipe"></span> 
+                        <span class="total">총 <span class="total-num">45명</span> 참여</span></p>
                         <ul class="ulList type4">
                             <li>
-                            <div>
-                                <span class="ico img-a"></span>
-                                <span class="at-tit">Solution listup.jpg</span>
-                                <div class="fr">
-                                <span class="at-num">500KB</span>
-                                <span class="ico down-load"></span>
-                                </div>
-                            </div>                         
-                            </li>                
+                                <p class="reply-txt">이 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 까지 고군분투하는 과정을 그리고 있다. 이 영화는 주인공이 동료와 함께 한다.</p>
+                                <p class="reply-txt-2">정*민</p>
+                            </li>
                             <li>
-                            <div>
-                                <span class="ico ppt-a"></span>
-                                <span class="at-tit">20180101_AD_Draft.ppt</span>
-                                <div class="fr">
-                                <span class="at-num">4.5M</span>
-                                <span class="ico down-load"></span>
-                                </div>
-                            </div>                         
-                            </li>                
+                                <p class="reply-txt">제대로 쓰여진 글만이 신뢰와 재미를 줄 수 있다.</p>
+                                <p class="reply-txt-2">홍*동</p>
+                            </li>
                             <li>
-                            <div>
-                                <span class="ico ppt-a"></span>
-                                <span class="at-tit">20180101_AD_Draft.ppt</span>
-                                <div class="fr">
-                                <span class="at-num">4.5M</span>
-                                <span class="ico down-load"></span>
-                                </div>
-                            </div>                         
-                            </li>                
+                                <p class="reply-txt">속에 얼마나 구하기 이것이다. 듣기만 아니한 크고 것이다.역사를 할지니, 이성은 쓸쓸하랴?</p>
+                                <p class="reply-txt-2">이*재</p>
+                            </li>
+                            <li>
+                                <p class="reply-txt">이 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 까지 군분투하는 과정을 그리고 있다. 이 영화는 주인공이 동료와 함께 한다.</p>
+                                <p class="reply-txt-2">지*이</p>
+                            </li>
                         </ul>
-
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -158,7 +130,7 @@
 
 <script>
 export default {
-  name: 'Study_02_studyquestion_detail',
+  name: 'Study_02_studyquestion_detail_02',
   /* vue lifecycle */
   created () {
   },

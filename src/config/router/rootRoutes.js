@@ -87,6 +87,7 @@ import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studys
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
 import Study02inquiryedit from '~workplace/study/Study_02_inquiry_edit'
+import Study02qpqaresult02 from '~workplace/study/Study_02_qpqa_result_02'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentintro from '~workplace/study/Study_04_SO_assinment_intro'
@@ -177,6 +178,11 @@ import MainB2CFreeCourse from '~workplace/main/Main_B2C_freeCourse'
 import MainB2CFreeCourse2 from '~workplace/main/Main_B2C_freeCourse2'
 import MainB2CAppstore from '~workplace/main/Main_B2C_appstore'
 import MainB2CDirections from '~workplace/main/Main_B2C_directions'
+import MainFreecourse from '~workplace/main/Main_freecourse'
+import MainFreecourseList from '~workplace/main/Main_freecourse_list'
+import MainFreecourseImg from '~workplace/main/Main_freecourse_img'
+import MainCourseRefund from '~workplace/main/Main_course_refund'
+import MainCourseRefundList from '~workplace/main/Main_course_refund_list'
 
 import CLIPingMain from '~workplace/cliping/CLIPing_main'
 import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
@@ -702,6 +708,11 @@ var rootRoutes = [
     component: Study02inquiryedit
   },
   {
+    path: '/Study_02_qpqa_result_02',
+    name: 'Study_02_qpqa_result_02',
+    component: Study02qpqaresult02
+  },
+  {
     path: '/Study_03_LO_viewer_fs',
     name: 'Study_03_LO_viewer_fs',
     component: Study03LOviewerfs
@@ -1144,6 +1155,31 @@ var rootRoutes = [
     path: '/Main_B2C_directions',
     name: 'Main_B2C_directions',
     component: MainB2CDirections
+  },
+  {
+    path: '/Main_freecourse',
+    name: 'Main_freecourse',
+    component: MainFreecourse
+  },
+  {
+    path: '/Main_freecourse_list',
+    name: 'Main_freecourse_list',
+    component: MainFreecourseList
+  },
+  {
+    path: '/Main_freecourse_img',
+    name: 'Main_freecourse_img',
+    component: MainFreecourseImg
+  },
+  {
+    path: '/Main_course_refund',
+    name: 'Main_course_refund',
+    component: MainCourseRefund
+  },
+  {
+    path: '/Main_course_refund_list',
+    name: 'Main_course_refund_list',
+    component: MainCourseRefundList
   },
   {
     path: '/CLIPing_main',

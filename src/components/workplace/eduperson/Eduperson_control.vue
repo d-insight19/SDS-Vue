@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery MainType">
+      <div id="container" class="mediaquery MainType eduperson">
 
         <!-- header 2단형 -->
         <div id="header" class="mainType2">

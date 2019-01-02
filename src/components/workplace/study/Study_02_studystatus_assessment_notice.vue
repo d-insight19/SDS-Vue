@@ -13,7 +13,7 @@
             <div id="content" class="etc">
                 <div class="cell">
                   <div class="inner">
-                      <p class="sub-tit"><strong>정해민님의 평가 상태</strong></p>
+                      <p class="label-tit18"><strong>정해민님의 평가 상태</strong></p>
                       <div class="tb_wrap">
                         <table>
                           <tr>
@@ -26,7 +26,7 @@
                           </tr>  
                         </table> 
                       </div>                     
-                      <p class="sub-tit"><strong>평가 기본 정보</strong></p>
+                      <p class="label-tit18"><strong>평가 기본 정보</strong></p>
                       <ul class="ulList type4">
                           <li>
                             <p class="li-tit">평가문항수</p>
