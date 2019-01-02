@@ -5341,8 +5341,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.51.qpqa_result_02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_qpqa_result_02' }">
+            Study_02_qpqa_result_02
           </router-link>
         </td>
         <td></td>
@@ -6612,8 +6612,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.03.etc_authorization_employment</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_authorization_employment' }">
+            Study_05_etc_authorization_employment
           </router-link>
         </td>
         <td></td>
@@ -10435,7 +10435,9 @@
 
       </tbody>
     </table>
-  </div>
+    <a href="#" class="top">Top</a>
+  </div>  	
+
 </template>
 
 <script>
@@ -10451,6 +10453,17 @@ export default {
       // for (let i = 0; i <= $('.table tbody tr').length; i++) {
       //   $('.table tbody tr:nth-child(' + i + ')').prepend('<td class="tac">' + i + '</td>')
       // }
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $('.top').fadeIn()
+        } else {
+          $('.top').fadeOut()
+        }
+      })
+      $('.top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 400)
+        return false
+      })
     })
   },
   mounted () {

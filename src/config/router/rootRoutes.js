@@ -87,6 +87,7 @@ import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studys
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
 import Study02inquiryedit from '~workplace/study/Study_02_inquiry_edit'
+import Study02qpqaresult02 from '~workplace/study/Study_02_qpqa_result_02'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
 import Study04SOassinmentintro from '~workplace/study/Study_04_SO_assinment_intro'
@@ -131,6 +132,7 @@ import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
 import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
 import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
+import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -693,6 +695,11 @@ var rootRoutes = [
     component: Study02inquiryedit
   },
   {
+    path: '/Study_02_qpqa_result_02',
+    name: 'Study_02_qpqa_result_02',
+    component: Study02qpqaresult02
+  },
+  {
     path: '/Study_03_LO_viewer_fs',
     name: 'Study_03_LO_viewer_fs',
     component: Study03LOviewerfs
@@ -911,6 +918,11 @@ var rootRoutes = [
     path: '/Study_05_etc_agreement_salary',
     name: 'Study_05_etc_agreement_salary',
     component: Study05etcagreementsalary
+  },
+  {
+    path: '/Study_05_etc_authorization_employment',
+    name: 'Study_05_etc_authorization_employment',
+    component: Study05etcauthorizationemployment
   },
   {
     path: '/Main_control',

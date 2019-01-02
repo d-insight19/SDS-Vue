@@ -18,7 +18,7 @@
                             <strong class="q-tit">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</strong> 
                             <span class="fr ico more28"></span>                            
                         </p>
-                        <p class="info-group">
+                        <p class="info-group fwr">
                             <span>비공개</span>
                             <span class="pipe"></span>
                             <span>1차시</span>
