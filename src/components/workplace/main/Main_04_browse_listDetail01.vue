@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="line8 ml-18 mr-18"></div>
+            <p class="hr mb0 mt0"></p>
           </div>
 
                 
@@ -139,7 +139,7 @@
 
 <script>
 export default {
-  name: 'Main_browse_listDetail01',
+  name: 'Main_04_browse_listDetail01',
   /* vue lifecycle */
   created () {
   },
