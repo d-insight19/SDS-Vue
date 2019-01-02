@@ -8399,11 +8399,19 @@
             Eduperson_login
           </router-link>
           ,
+          <router-link :to="{ name: 'Eduperson_drawer_setting' }">
+            Eduperson_drawer_setting
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Eduperson_drawer_profile' }">
+            Eduperson_drawer_profile
+          </router-link>
+          ,
           <router-link :to="{ name: 'Eduperson_drawer' }">
             Eduperson_drawer
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">486</td>
@@ -8416,8 +8424,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_02.01_Edugroup</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_edugroup' }">
+            Eduperson_edugroup
           </router-link>
         </td>
         <td></td>
@@ -8437,7 +8445,7 @@
             Eduperson_contorl
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">488</td>

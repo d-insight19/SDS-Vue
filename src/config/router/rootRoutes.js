@@ -260,6 +260,7 @@ import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
 import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
+import EdupersonEdugroup from '~workplace/eduperson/Eduperson_edugroup'
 import EdupersonControl from '~workplace/eduperson/Eduperson_control'
 
 // 1번 영역
@@ -1532,6 +1533,11 @@ var rootRoutes = [
     path: '/Eduperson_drawer_profile',
     name: 'Eduperson_drawer_profile',
     component: EdupersonDrawerProfile
+  },
+  {
+    path: '/Eduperson_edugroup',
+    name: 'Eduperson_edugroup',
+    component: EdupersonEdugroup
   },
   {
     path: '/Eduperson_contorl',

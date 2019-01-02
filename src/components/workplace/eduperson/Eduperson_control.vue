@@ -3,19 +3,21 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery MainType eduperson">
+      <div id="container" class="mediaquery eduperson">
 
         <!-- header 2단형 -->
         <div id="header" class="mainType2">
             <div class="header_inner line1">
                 <button type="button" class="btn allMenu" @click="toggleDrawer()"><span class="ico">전체메뉴</span><span class="ico new"></span></button>  
-                <span>LEARNING GROUP TITLE1</span>          
-                <button type="button" class="btn btnHome"><span class="ico">홈</span></button>
+                <div class="eduperson_title" @click="changeTitle()">
+                  <span>LEARNING GROUP TITLE1</span>
+                  <span class="eduperson_title_ico"></span>
+                </div>
             </div>            
             <div class="header_inner line2">
                 <ul class="gnbMenu text">
                     <!-- selected class:on -->
-                    <li class="menu on"  :class="{'on': tabIdx == 1}" @click="onClick(1)">
+                    <li class="menu"  :class="{'on': tabIdx == 1}" @click="onClick(1)">
                         학습현황
                     </li>
                     <li class="menu"  :class="{'on': tabIdx == 2}" @click="onClick(2)">
@@ -43,6 +45,23 @@
       </div>
       <!-- //container -->    
 
+      <!-- 회사운영자 타이틀 선택 -->
+      <div id="edu_person_title_list" v-show="title_list_flag">
+        <ul @click="changeTitle()">
+          <li class="active">LEARNING GROUP TITLE 1<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 2<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 3<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 4<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 5<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 6<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 7<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 8<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 9<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 10<span class="checkIcon"></span></li>
+          <li>LEARNING GROUP TITLE 11<span class="checkIcon"></span></li>
+        </ul>
+      </div>
+
       <!-- Drawer  아코디언 디자인 나오면 추가해야함 -->
       <div id="drawer" :class="{'show': drawerFlag }">
         <div class="drawer_inner">
@@ -58,7 +77,8 @@
             <div class="profile_img">
               <img src="@/assets/img/benjamin_parker_736167_unsplash.png" class="thumImg" alt="profile img">
             </div>
-            <span class="profile_name">정해민</span>
+            <p class="profile_name_main">정해민</p>
+            <p class="profile_name_sub">회사운영자</p>
             <span class="ico next"></span>
           </div>
           <ul class="drawer_list">
@@ -89,9 +109,11 @@
 <script>
 import EdupersonStudycurrent from './Eduperson_studycurrent'
 import EdupersonOperation from './Eduperson_operation'
+import EdupersonStatement from './Eduperson_statement'
+import EdupersonVoc from './Eduperson_voc'
 export default {
   name: 'Eduperson_control',
-  components: {'Eduperson_studycurrent': EdupersonStudycurrent, 'Eduperson_operation': EdupersonOperation},
+  components: {'Eduperson_studycurrent': EdupersonStudycurrent, 'Eduperson_operation': EdupersonOperation, 'Eduperson_statement': EdupersonStatement, 'Eduperson_voc': EdupersonVoc},
   /* vue lifecycle */
   created () {
   },
@@ -102,7 +124,8 @@ export default {
     return {
       tabIdx: 1,
       component: 'Eduperson_studycurrent',
-      drawerFlag: false
+      drawerFlag: false,
+      title_list_flag: false
     }
   },
   /* vue function */
@@ -113,8 +136,10 @@ export default {
         this.component = 'Eduperson_studycurrent'
       } else if (idx === 2) {
         this.component = 'Eduperson_operation'
-      } else {
-        this.component = 'Main_subscribe'
+      } else if (idx === 3) {
+        this.component = 'Eduperson_statement'
+      } else if (idx === 4) {
+        this.component = 'Eduperson_voc'
       }
     },
     toggleDrawer () {
@@ -126,6 +151,9 @@ export default {
       } else {
         event.target.classList.add('open')
       }
+    },
+    changeTitle () {
+      this.title_list_flag = !this.title_list_flag
     }
   }
 }
