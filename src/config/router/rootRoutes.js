@@ -193,6 +193,9 @@ import CLIPingBookSummary from '~workplace/cliping/CLIPing_bookSummary'
 import CLIPingBookSummaryDetail from '~workplace/cliping/CLIPing_bookSummary_detail'
 import CLIPingColumn from '~workplace/cliping/CLIPing_column'
 import CLIPingColumnDetail from '~workplace/cliping/CLIPing_column_detail'
+import CLIPingPaperPro from '~workplace/cliping/CLIPing_paperPro'
+import CLIPingPaperProDetail from '~workplace/cliping/CLIPing_paperProDetail'
+import CLIPingPaperProDetailPort from '~workplace/cliping/CLIPing_paperProDetail_port'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1217,6 +1220,21 @@ var rootRoutes = [
     path: '/CLIPing_column_detail',
     name: 'CLIPing_column_detail',
     component: CLIPingColumnDetail
+  },
+  {
+    path: '/CLIPing_paperPro',
+    name: 'CLIPing_paperPro',
+    component: CLIPingPaperPro
+  },
+  {
+    path: '/CLIPing_paperProDetail',
+    name: 'CLIPing_paperProDetail',
+    component: CLIPingPaperProDetail
+  },
+  {
+    path: '/CLIPing_paperProDetail_port',
+    name: 'CLIPing_paperProDetail_port',
+    component: CLIPingPaperProDetailPort
   },
   {
     path: '/Drawer_alerm',

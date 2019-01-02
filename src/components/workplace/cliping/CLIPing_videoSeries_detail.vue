@@ -13,7 +13,7 @@
             </div>
             <div class="hide_header" style="padding-top: 74px; height:234px;">
                 <div class="tagWrap mb10"><span>지식영상</span></div>
-                <h2 class="h-tit2 fwb600 mb20 font_22">나승연의 글로벌 비즈니스<br/> 커뮤니케이션</h2>
+                <h2 class="h-tit2 fwb600 mb20 font_22 multiline line2">나승연의 글로벌 비즈니스<br/> 커뮤니케이션</h2>
                 <ul class="info mb20">
                     <li class="icon fwr"><span class="star ico"></span><span>4.5</span></li>
                     <li class="fwr">총 <span>119</span>편</li>

@@ -2346,8 +2346,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.06.PaperPro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_paperPro' }">
+            CLIPing_paperPro
           </router-link>
         </td>
         <td></td>
@@ -2363,8 +2363,12 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.06.PaperProDetail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_paperProDetail' }">
+            CLIPing_paperProDetail
+          </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_paperProDetail_port' }">
+            CLIPing_paperProDetail_port
           </router-link>
         </td>
         <td></td>
