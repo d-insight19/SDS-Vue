@@ -975,7 +975,7 @@ label.rdo .label{position: relative;}
 // Drawer 알림
 #container.drawer .alerm_wrap + .alerm_wrap{margin-top:20px;}
 #container.drawer .alerm_wrap .alerm_tit{font-size:map-get($font-size, font_22);line-height:33px;letter-spacing:-1.1px;margin-bottom:29px;font-weight:29px;}
-#container.drawer .alerm_wrap ul{margin-left:5px;border-left:2px solid #d9d9d9;}
+#container.drawer .alerm_wrap ul{margin-left:5px; border-left:2px solid #d9d9d9;}
 #container.drawer .alerm_wrap ul li{position:relative;padding:17px 0px 27px 19px;}
 #container.drawer .alerm_wrap ul li .alerm_cate{font-size:map-get($font-size, font_11);border:1px solid rgba(0,0,0,0.8);padding:0px 9px; line-height: 17px;border-radius: 20px;display: inline-block;position: absolute;   top: -5px;font-weight:500;}
 #container.drawer .alerm_wrap ul li .alerm_content{font-size:map-get($font-size, font_14);line-height:21px;letter-spacing:-0.42px;margin-bottom:4px;}
@@ -991,21 +991,22 @@ label.rdo .label{position: relative;}
 #container.drawer .black_next{width:16px;height:16px;background: url("../img/ic_next_16.png") no-repeat; position: absolute; right: 0; bottom: 19px;}
 
 // 기본정보 관리
+#container.drawer .multiList.type2 > li + li {margin-top:0}
 #container.drawer button.btn14 {font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px; position: absolute; right: 18px; bottom: 18px; font-weight: 500}
-#container.drawer .multiList.type1 > li { border-bottom: 1px solid #e3e3e3; padding:15px 0; min-height: 0 }
+#container.drawer .multiList.type1 > li { border-bottom: 1px solid #999; padding:15px 0; min-height: 0;}
 #container.drawer .multiList.type2 > li { padding:0; min-height: 0 }
 
 #container.drawer .id_info .btn { position: absolute; right: 0; bottom: 20px; z-index: 1; width:93px; border:#ccc 1px solid; padding:7px 10px;}
 #container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:map-get($mono_colors, mono_80); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
 #container.drawer .multiList.type2 .id_info button {position: absolute; right: 0; bottom:19px}
 #container.drawer .multiList.type2 input {margin-top:8px}
-#container.drawer .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
-#container.drawer .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px !important;}
-#container.drawer .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px !important;}
-#container.drawer .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px !important;}
-#container.drawer .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px !important;}
-#container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 13px !important;}
-#container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px !important; }
+#container.drawer .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px;}
+#container.drawer .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
+#container.drawer .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
+#container.drawer .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
+#container.drawer .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px;}
+#container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 13px;}
+#container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px; }
 #container.drawer .labelChk {width:auto}
 
 #container.drawer .contents14{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:map-get($mono_colors, mono_65); }
@@ -1199,6 +1200,22 @@ label.rdo .label{position: relative;}
 #container.board.request a.respondent_num {display: block; padding-bottom:22px}
 #container.board.request #header p.desc {font-size:map-get($font_size, font_12); color:rgba(0,0,0,0.65); font-weight: 300; overflow:auto; white-space: inherit; line-height: 18px; margin-top:8px}
 #container.board.request #header p.h-tit1 .q-tit {width:100%}
+
+// etc
+#container.terms #content .inner {padding-top:26px}
+#container.drawer.terms h2.label-tit18 {margin-bottom:18px}
+.trainIntro .logowrap {position:absolute; top:182px; left:calc(50% - 90px); width:181px; height:80px; background: url("../img/multicampus_logo_white.png") no-repeat; }
+.trainIntro p.offline_txt {position:absolute; bottom:36px; left:calc(50% - 101px); font-size:map-get($font_size, font_16); color:rgba(255,255,255,0.75); font-weight: 300; }
+.helpdesk_wrap {position: fixed; left:0; bottom:0; width:100%; background-color: #eaeaea; padding:20px 18px}
+.helpdesk_wrap .helpdesk {width:324px; margin:0 auto; font-family: 'Roboto' ; font-size:map-get($font_size, font_13);}
+.helpdesk_wrap .helpdesk ul.btn {overflow: hidden; text-align: center}
+.helpdesk_wrap .helpdesk ul.btn li {float:left; background-color: #fff; padding:14px 0 15px; width:161px; font-size:map-get($font_size, font_16); font-weight: bold ; line-height: 21px}
+.helpdesk_wrap .helpdesk ul.btn li.tel {margin-right:2px}
+.helpdesk_wrap .helpdesk .btn span.ico {margin-right:8px; }
+.helpdesk_wrap .helpdesk ul.date {overflow: hidden; color:rgba(0,0,0,0.65); margin:15px 0 2px}
+.helpdesk_wrap .helpdesk ul.date li {float:left}
+.helpdesk_wrap .helpdesk ul.date li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin: 0 6px; background: #d9d9d9;}
+.helpdesk_wrap .helpdesk p.copy {color:rgba(0,0,0,0.4);}
 
 
 

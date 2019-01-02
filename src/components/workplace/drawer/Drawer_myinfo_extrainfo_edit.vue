@@ -38,15 +38,15 @@
                             </li>
                             <li class="noline">
                                 <strong class="label-tit14">전문분야</strong>
-                                <input type="text" class="input mb20" value="IT 기획" ><p class="contents14"></p>                                
+                                <input type="text" class="input" value="IT 기획" ><p class="contents14"></p>                                
                             </li>                                       
                         </ul>
-                        <p class="divide_line"></p>
+                        <p class="hr"></p>
                         <ul class="multiList type1">
                             <li class="pt0 title_line">
                                 <strong class="label-tit14">어학등급</strong><button type="button" class="btn14 color_clr2">편집</button>
                             </li> 
-                            <div class="extrainfo mt8">
+                            <div class="extrainfo mt20">
                             <select class="select subject">
                                 <option>영어</option>
                             </select>
@@ -62,7 +62,7 @@
                             <li class="pt0 title_line mt20">
                                 <strong class="label-tit14">자격증</strong><button type="button" class="btn14 color_clr2">편집</button>
                             </li> 
-                            <div class="extrainfo mt8">
+                            <div class="extrainfo mt20">
                             <select class="select subject">
                                 <option>IT</option>
                             </select>
@@ -74,7 +74,7 @@
 
                             <!-- 추가 리스트 -->
                             <a href="#" class="btn sm add w100p mb0" @click="addList1()" ><span class="ico"></span>자격증 추가</a>
-                            <p class="divide_line mt20"></p>
+                            <p class="hr"></p>
                             </ul>
                             
                             <!-- list -->
@@ -108,7 +108,7 @@
                         </ul>
                         <!-- //list -->
 
-                        <p class="divide_line mt26"></p>
+                        <p class="hr"></p>
                         <ul class="multiList type1">
                            <li class="pt0 title_line">
                                 <strong class="label-tit14">개인정보 마케팅 활용 동의</strong>
