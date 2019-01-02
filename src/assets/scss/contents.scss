@@ -457,9 +457,24 @@
 #container.eduperson_edugroup .ulList li + li{margin-top:0px;}
 #container.eduperson_edugroup .ulList li .ico.next_gray_16{position: absolute;top: 50%;right: 18px;transform: translateY(-50%);}
 
-
-
-
+//회사운영자 학습현황
+#container.eduperson .edu_study_date{font-size:map-get($font-size, font_16);letter-spacing: -0.4px;color:rgba(0,0,0,0.8);padding-bottom:6px;border-bottom:1px solid #999999}
+#container.eduperson .edu_studycurrent_wrap{margin-top:22px;padding-bottom:40px;}
+#container.eduperson .type_title_wrap{width: 100%;height: 29px;margin-bottom:13px;}
+#container.eduperson .type_title{font-size:map-get($font-size, font_20);letter-spacing: -0.6px;line-height: 29px;font-weight:600;}
+#container.eduperson .type_more{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;line-height: 29px;}
+#container.eduperson .type_box{clear:both;border-top:1px solid #999;border-bottom:1px solid #999;background:#f2f3f7;padding: 10px 39px 10px 152px;position: relative;margin-bottom:17px;}
+#container.eduperson .type_box .info{position:absolute}
+#container.eduperson .type_box .info.type1{top:37px;left:30px;}
+#container.eduperson .type_box .info .tit{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;color:rgba(0,0,0,0.8);line-height: 20px;}
+#container.eduperson .type_box .info .value{font-size:map-get($font-size, font_28);color:#000;line-height: 37px;}
+#container.eduperson .type_box .info .value_sub{font-size:map-get($font-size, font_18);color:rgba(0,0,0,0.8);line-height: 37px;}
+#container.eduperson .type_box dl{width:100%;display:table;line-height: 35px;}
+#container.eduperson .type_box dl + dl{border-top:1px solid #d9d9d9}
+#container.eduperson .type_box dl dt{display:table-cell;color:rgba(0,0,0,0.8);font-size:map-get($font-size, font_13)}
+#container.eduperson .type_box dl dd{display:table-cell;text-align: right;font-weight:500;color:#000;font-size:map-get($font-size, font_16)}
+#container.eduperson .progBox_wrap .tit{font-size:map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.8px;font-weight:500;margin-bottom:14px;}
+#container.eduperson .progBox_wrap .bar{border-radius: 100px;height:8px;}
 
 
 
