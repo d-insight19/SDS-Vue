@@ -463,11 +463,13 @@
 .tb_wrap{ margin-bottom:16px; background:#f2f3f7; padding:20px; border-top: 1px solid #999999; border-bottom: 1px solid #999999;}
 table td.sub-txt{ color:#000;}
 table td.pb10{padding-bottom: 10px;}
-.in12_16{padding-left: 12px;text-indent: -16px;}
+.in12_16{padding-left: 12px;text-indent: -16px;} // 글자 앞정렬 조정
 .danger{color:map-get($static_colors, danger) !important;}
 .op80{color: rgba(0,0,0,0.8)!important}
 .op65{ color:rgba(0,0,0,0.65) !important;}
 .inner-txt{ font-weight:400; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8) }
+.guide-btn {border:1px solid map-get($line_colors, B85);color:map-get($mono_colors, mono_65); margin-bottom: 20px; padding:4px 6px; font-weight: 500; font-size:map-get($font-size, font_12); letter-spacing: -0.36px;}
+
 
 /*chip 공통*/
 .chip {font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 16px; letter-spacing: -0.36px}
@@ -559,14 +561,14 @@ table td.pb10{padding-bottom: 10px;}
 
 
 // 링크/독서통신/집합 - Study_03_LO_viewer_fs // 
-#container.study_link .txt-tit{font-weight:600; font-size:map-get($font-size, font_20); line-height: 21px; letter-spacing: -0.6px;margin-bottom: 14px;}
-#container.study_link .txt-line{padding-top:10px; padding-bottom:10px;}
+#container.study_link .txt-tit{font-weight:600; font-size:map-get($font-size, font_20); letter-spacing: -0.6px;margin-bottom: 14px;}
+#container.study_link .txt-line{padding-top:10px !important; padding-bottom:10px !important; margin-top:0 !important;}
 #container.study_link .txt-line .ops{font-size:map-get($font-size, font_15);line-height: 21px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8)}
 #container.study_link .txt-line .val{font-size:map-get($font-size, font_15);line-height: 21px; letter-spacing: -0.45px; float: right; font-weight:500;}
-#container.study_link .txt-tit{font-weight:500; margin-top:32px; margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px;}
+#container.study_link .sub-tit{font-weight:500; margin-top:32px; margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px;}
 #container.study_link .gr_box{padding: 14px 16px; background-color: #f5f5f5;}
 #container.study_link .gr_box .gb_txt{font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;color:map-get($mono_colors, mono_80);}
-#container.study_link .sub-txt-a{font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;}
+#container.study_link .sub-txt-a{font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; color: rgba(0,0,0,0.8);}
 #container.study_link .sub-txt-b{font-size:map-get($font-size, font_12);line-height: 21px; letter-spacing: -0.36px; color: rgba(0,0,0,0.5);}
 
 // 설문-제출완료 
@@ -721,14 +723,16 @@ table td.pb10{padding-bottom: 10px;}
 
 // 핵심요약
 #container.study_summary #header .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
+// 핵심요약 디테일 
+#container.study_summary .label-tit-2 .total{font-weight:400;  font-size:map-get($font-size, font_14);line-height: 26px; letter-spacing: -0.42px;}
+
+
 
 // ox퀴즈
 #container.study_quiz_ox #header.wh .h-tit1{font-weight:500;  font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 #container.study_quiz_ox #header.wh .h-tit5{padding:10px 0 0 0 ; font-size:map-get($font-size, font_16);line-height: 18px; letter-spacing: -0.48px;color:rgba(255,255,255,0.8); }
 #container.study_quiz_ox .txt-tit {margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 #header.quiz-head-bg{background: url("../img/img_quiz_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
-
-
 
 .inb-box{display: inline-block; width:49%;}
 .inb-box label.labelRdo input.rdo + .ico{vertical-align: middle; margin:0 16px 0 0 ;}
@@ -815,7 +819,6 @@ label.rdo .label{position: relative;}
 #container.study_opinion #header div.hide-inner p.h-tit5 {font-weight:400;  padding:12px 0 0 0 ; font-size:map-get($font-size, font_14);line-height: 25px; letter-spacing: -0.35px; }
 #container.study_opinion .txt-tit {margin-bottom: 6px;font-weight: 500; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px;}
 #header.opinion-head-bg{background: url("../img/img_opinion_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
-.guide-btn {border:1px solid map-get($line_colors, B85);color:map-get($mono_colors, mono_65); margin-bottom: 20px; padding:4px 6px; font-weight: 500; font-size:map-get($font-size, font_12); letter-spacing: -0.36px;}
 
 // 의견공유 제출 모든댓글
 #container.study_opinion .inner .h-tit5{margin-bottom:16px; font-weight:500; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
@@ -938,7 +941,7 @@ label.rdo .label{position: relative;}
 
 // qpaq result - Study_02_qpqa_result_02
 #container.study_qpqa .ulList.type4 li{ height:auto;}
-#container.study_qpqa .info-group .mr6{ margin-right: 6px;}
+.info-group .mr6{ margin-right: 6px;}
 #container.study_qpqa .ico-group {color: #000;}
 #container.study_qpqa .txt-tit{margin-bottom: 22px; font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; font-weight:500; }
 #container.study_qpqa .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 600; line-height: 26px; letter-spacing: -0.48px; margin-bottom: 10px;    }
@@ -946,6 +949,19 @@ label.rdo .label{position: relative;}
 #container.study_qpqa .label-tit16 .total .total-num {font-weight: 500;}
 #container.study_qpqa .reply-txt{font-size:map-get($font-size , font_14);line-height:20px; letter-spacing:-0.42px;margin-top:0;     margin-bottom: 4px;} 
 #container.study_qpqa .reply-txt-2{font-size:map-get($font-size , font_12);line-height:20px; letter-spacing:-0.36px; color:rgba(0,0,0,0.60)}
+#container.study_qpqa .fr .part-num-2{color:rgba(0,0,0,0.8)}
+
+
+// 설문조사 - Study_02_survey_detail
+
+#container.study_survey .inner-txt { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; margin-bottom: 36px;}
+#container.study_survey .info-group{ margin-top: 18px;}
+#container.study_survey .label-tit16 { font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; }
+#container.study_survey .line01.tp{margin-top:10px; margin-bottom:16px; border:1px solid rgba(99,99,99,0.6);}
+#container.study_survey .line01.bot{margin-top:26px; margin-bottom:14px; border:1px solid #e3e3e3;}
+
+
+
 
 
 
