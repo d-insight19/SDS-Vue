@@ -261,6 +261,14 @@ import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_settin
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
 import EdupersonControl from '~workplace/eduperson/Eduperson_control'
 
+import etcTerms from '~workplace/etc/etc_Terms'
+import etcNetworkerror from '~workplace/etc/etc_Networkerror'
+import etcAuthority1 from '~workplace/etc/etc_Authority1'
+import etcAuthority from '~workplace/etc/etc_Authority'
+import etcUpdateguide from '~workplace/etc/etc_Updateguide'
+import etcOfflineguide from '~workplace/etc/etc_Offlineguide'
+import etcHelpdesk from '~workplace/etc/etc_Helpdesk'
+
 // 1번 영역
 var rootRoutes = [
   {
@@ -1531,6 +1539,41 @@ var rootRoutes = [
     path: '/Eduperson_contorl',
     name: 'Eduperson_contorl',
     component: EdupersonControl
+  },
+  {
+    path: '/etc_Terms',
+    name: 'etc_Terms',
+    component: etcTerms
+  },
+  {
+    path: 'etc_Networkerror',
+    name: 'etc_Networkerror',
+    component: etcNetworkerror
+  },
+  {
+    path: 'etc_Authority1',
+    name: 'etc_Authority1',
+    component: etcAuthority1
+  },
+  {
+    path: 'etc_Authority',
+    name: 'etc_Authority',
+    component: etcAuthority
+  },
+  {
+    path: 'etc_Updateguide',
+    name: 'etc_Updateguide',
+    component: etcUpdateguide
+  },
+  {
+    path: 'etc_Offlineguide',
+    name: 'etc_Offlineguide',
+    component: etcOfflineguide
+  },
+  {
+    path: 'etc_Helpdesk',
+    name: 'etc_Helpdesk',
+    component: etcHelpdesk
   }
 ]
 

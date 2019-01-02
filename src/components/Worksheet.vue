@@ -9096,8 +9096,8 @@
         <td>　</td>
         <td class="textL">etc_Helpdesk</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Helpdesk' }">
+            etc_Helpdesk
           </router-link>
         </td>
         <td></td>
@@ -9164,8 +9164,8 @@
         <td>　</td>
         <td class="textL">etc_Offlineguide</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Offlineguide' }">
+            etc_Offlineguide
           </router-link>
         </td>
         <td></td>
@@ -9181,8 +9181,8 @@
         <td>　</td>
         <td class="textL">etc_Updateguide</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Updateguide' }">
+            etc_Updateguide
           </router-link>
         </td>
         <td></td>
@@ -9215,8 +9215,8 @@
         <td>　</td>
         <td class="textL">etc_Terms</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Terms' }">
+            etc_Terms
           </router-link>
         </td>
         <td></td>
@@ -9317,8 +9317,8 @@
         <td>　</td>
         <td class="textL">etc_Networkerror</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Networkerror' }">
+            etc_Networkerror
           </router-link>
         </td>
         <td></td>
@@ -9351,8 +9351,11 @@
         <td>　</td>
         <td class="textL">etc_Authority</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Authority1' }">
+            etc_Authority1
+          </router-link>,
+           <router-link :to="{ name: 'etc_Authority' }">
+            etc_Authority
           </router-link>
         </td>
         <td></td>
