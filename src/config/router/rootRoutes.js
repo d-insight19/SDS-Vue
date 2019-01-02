@@ -183,6 +183,11 @@ import MainB2CFreeCourse from '~workplace/main/Main_B2C_freeCourse'
 import MainB2CFreeCourse2 from '~workplace/main/Main_B2C_freeCourse2'
 import MainB2CAppstore from '~workplace/main/Main_B2C_appstore'
 import MainB2CDirections from '~workplace/main/Main_B2C_directions'
+import MainFreecourse from '~workplace/main/Main_freecourse'
+import MainFreecourseList from '~workplace/main/Main_freecourse_list'
+import MainFreecourseImg from '~workplace/main/Main_freecourse_img'
+import MainCourseRefund from '~workplace/main/Main_course_refund'
+import MainCourseRefundList from '~workplace/main/Main_course_refund_list'
 
 import CLIPingMain from '~workplace/cliping/CLIPing_main'
 import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
@@ -266,6 +271,14 @@ import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
 import EdupersonControl from '~workplace/eduperson/Eduperson_control'
+
+import etcTerms from '~workplace/etc/etc_Terms'
+import etcNetworkerror from '~workplace/etc/etc_Networkerror'
+import etcAuthority1 from '~workplace/etc/etc_Authority1'
+import etcAuthority from '~workplace/etc/etc_Authority'
+import etcUpdateguide from '~workplace/etc/etc_Updateguide'
+import etcOfflineguide from '~workplace/etc/etc_Offlineguide'
+import etcHelpdesk from '~workplace/etc/etc_Helpdesk'
 
 // 1번 영역
 var rootRoutes = [
@@ -1174,6 +1187,31 @@ var rootRoutes = [
     component: MainB2CDirections
   },
   {
+    path: '/Main_freecourse',
+    name: 'Main_freecourse',
+    component: MainFreecourse
+  },
+  {
+    path: '/Main_freecourse_list',
+    name: 'Main_freecourse_list',
+    component: MainFreecourseList
+  },
+  {
+    path: '/Main_freecourse_img',
+    name: 'Main_freecourse_img',
+    component: MainFreecourseImg
+  },
+  {
+    path: '/Main_course_refund',
+    name: 'Main_course_refund',
+    component: MainCourseRefund
+  },
+  {
+    path: '/Main_course_refund_list',
+    name: 'Main_course_refund_list',
+    component: MainCourseRefundList
+  },
+  {
     path: '/CLIPing_main',
     name: 'CLIPing_main',
     component: CLIPingMain
@@ -1567,6 +1605,41 @@ var rootRoutes = [
     path: '/Eduperson_contorl',
     name: 'Eduperson_contorl',
     component: EdupersonControl
+  },
+  {
+    path: '/etc_Terms',
+    name: 'etc_Terms',
+    component: etcTerms
+  },
+  {
+    path: 'etc_Networkerror',
+    name: 'etc_Networkerror',
+    component: etcNetworkerror
+  },
+  {
+    path: 'etc_Authority1',
+    name: 'etc_Authority1',
+    component: etcAuthority1
+  },
+  {
+    path: 'etc_Authority',
+    name: 'etc_Authority',
+    component: etcAuthority
+  },
+  {
+    path: 'etc_Updateguide',
+    name: 'etc_Updateguide',
+    component: etcUpdateguide
+  },
+  {
+    path: 'etc_Offlineguide',
+    name: 'etc_Offlineguide',
+    component: etcOfflineguide
+  },
+  {
+    path: 'etc_Helpdesk',
+    name: 'etc_Helpdesk',
+    component: etcHelpdesk
   }
 ]
 

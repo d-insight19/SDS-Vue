@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="line8"></div>
+            <p class="hr mb0 mt0"></p>
           </div>
 
           <div class="cell">
@@ -149,7 +149,7 @@
                     <!-- //list -->
                 </div>
             </div>
-            <div class="line8"></div>
+            <p class="hr mb0 mt0"></p>
           </div>
           
           <div class="cell">
@@ -257,7 +257,7 @@
                     <!-- //list -->
                 </div>
             </div>
-            <div class="line8"></div>
+            <p class="hr mb0 mt0"></p>
           </div>
 
           <div class="cell">
@@ -365,7 +365,7 @@
                     <!-- //list -->
                 </div>
             </div>
-            <div class="line8"></div>
+            <p class="hr mb0 mt0"></p>
           </div>
 
           <div class="cell">
@@ -483,7 +483,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="line8"></div>
+            <p class="hr mb0 mt0"></p>
           </div>
 
           <div class="cell">

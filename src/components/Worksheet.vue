@@ -7671,11 +7671,11 @@
         <td>　</td>
         <td class="textL">02.Main_02.02.02.B2C    Directions</td>
         <td>
-          <!--<router-link :to="{ name: 'Main_B2C_directions' }">
+          <router-link :to="{ name: 'Main_B2C_directions' }">
             Main_B2C_directions
-          </router-link>-->
+          </router-link>
         </td>
-        <td><!--작업중--></td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">445</td>
@@ -7739,8 +7739,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.03.03.Freecourse</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_freecourse' }">
+            Main_freecourse
           </router-link>
         </td>
         <td></td>
@@ -7756,8 +7756,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.03.03.Freecourse_list</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_freecourse_list' }">
+            Main_freecourse_list
           </router-link>
         </td>
         <td></td>
@@ -7773,8 +7773,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.03.03.Freecourse_img</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_freecourse_img' }">
+            Main_freecourse_img
           </router-link>
         </td>
         <td></td>
@@ -7790,8 +7790,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.03.03.Course    refund</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_course_refund' }">
+            Main_course_refund
           </router-link>
         </td>
         <td></td>
@@ -7807,8 +7807,8 @@
         <td>　</td>
         <td class="textL">02.Main_02.03.03.Course    refund_list</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_course_refund_list' }">
+            Main_course_refund_list
           </router-link>
         </td>
         <td></td>
@@ -9096,8 +9096,8 @@
         <td>　</td>
         <td class="textL">etc_Helpdesk</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Helpdesk' }">
+            etc_Helpdesk
           </router-link>
         </td>
         <td></td>
@@ -9164,8 +9164,8 @@
         <td>　</td>
         <td class="textL">etc_Offlineguide</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Offlineguide' }">
+            etc_Offlineguide
           </router-link>
         </td>
         <td></td>
@@ -9181,8 +9181,8 @@
         <td>　</td>
         <td class="textL">etc_Updateguide</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Updateguide' }">
+            etc_Updateguide
           </router-link>
         </td>
         <td></td>
@@ -9215,8 +9215,8 @@
         <td>　</td>
         <td class="textL">etc_Terms</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Terms' }">
+            etc_Terms
           </router-link>
         </td>
         <td></td>
@@ -9317,8 +9317,8 @@
         <td>　</td>
         <td class="textL">etc_Networkerror</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Networkerror' }">
+            etc_Networkerror
           </router-link>
         </td>
         <td></td>
@@ -9351,8 +9351,11 @@
         <td>　</td>
         <td class="textL">etc_Authority</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Authority1' }">
+            etc_Authority1
+          </router-link>,
+           <router-link :to="{ name: 'etc_Authority' }">
+            etc_Authority
           </router-link>
         </td>
         <td></td>
