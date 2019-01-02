@@ -14,11 +14,11 @@
             <div id="content" class="etc">
                 <div class="cell">
                   <div class="inner">
-                      <p class="sub-tit">제목</p>
+                      <p class="txt-tit">제목</p>
                       <div class="singleList ">                        
                             <input  type="text" placeholder="제목을 입력해 주세요" />                        
                       </div>                      
-                      <p class="sub-tit">주제분류</p>
+                      <p class="txt-tit">주제분류</p>
                       <div class="singleList ">                        
                             <select class="select w100p">
                               <option value="">주제를 선택해주세요.</option>
@@ -36,7 +36,7 @@
                                 <div class="chk_box"><span class="ball"></span><ul class="txt"><li class="m1"></li><li class="m2"></li></ul></div>
                             </label>                          
                       </div>
-                      <p class="sub-tit">토론기간</p>
+                      <p class="txt-tit">토론기간</p>
                       <div class="singleList ">                        
                             <select class="select dis_num" placeholder="시작일">
                               <option value="">시작일</option>
@@ -44,12 +44,12 @@
                               <option value="">종료일</option>
                             </select>                        
                       </div>
-                      <p class="sub-tit">참여가능 인원</p>
+                      <p class="txt-tit">참여가능 인원</p>
                       <div class="singleList ">                        
                             <input type="number"  class="input" placeholder="참여가능 인원을 입력해주세요." />
                             <span class="pos_a">명</span>                        
                       </div>
-                      <p class="sub-tit">내용</p>
+                      <p class="txt-tit">내용</p>
                       <div class="singleList ">                        
                             <input type="text"  class="input" placeholder="내용을 입력해주세요." />                        
                       </div>

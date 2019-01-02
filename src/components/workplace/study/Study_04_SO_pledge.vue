@@ -35,7 +35,7 @@
                     본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다  
                     </p>
                     <p class="hr"></p> 
-                    <!-- <p class="sub-tit">회사명</p>
+                    <!-- <p class="label-tit14">회사명</p>
                     <div class="intSchBox singleList">
                       <div class="search-wrapper">
                           <input type="text"  pattern="^\s+" class="input" placeholder="회사명 검색" />
@@ -43,19 +43,19 @@
                       </div>
                       <a href="#" class="btn"><span class="ico"></span></a>
                     </div>   
-                    <p class="sub-tit"><strong>부서명</strong></p>
+                    <p class="label-tit14"><strong>부서명</strong></p>
                     <div class="singleList">
                           <input type="text"  class="input" placeholder="부서를 입력해주세요." />                      
                     </div>
-                    <p class="sub-tit"><strong>직급</strong></p>
+                    <p class="label-tit14"><strong>직급</strong></p>
                     <div class="singleList">                      
                           <input type="text"  class="input" placeholder="직급을 입력해주세요." />                      
                     </div>
-                    <p class="sub-tit"><strong>사번</strong></p>
+                    <p class="label-tit14"><strong>사번</strong></p>
                     <div class="singleList">                      
                           <input type="text"  class="input" placeholder="사번을 입력해주세요." />                      
                     </div>
-                    <p class="sub-tit"><strong>성명</strong></p>
+                    <p class="label-tit14"><strong>성명</strong></p>
                     <div class="singleList">                      
                           <input type="text"  class="input" placeholder="성명을 입력해주세요." />                      
                     </div> -->

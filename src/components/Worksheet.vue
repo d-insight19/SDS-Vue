@@ -5341,8 +5341,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.51.qpqa_result_02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_qpqa_result_02' }">
+            Study_02_qpqa_result_02
           </router-link>
         </td>
         <td></td>
