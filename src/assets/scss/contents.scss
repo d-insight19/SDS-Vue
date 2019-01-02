@@ -1195,6 +1195,7 @@ table td.pb10{padding-bottom: 10px;}
 // common.css 에 추가
 .mb0{margin-bottom: 0px !important;}
 .mb5{margin-bottom: 5px !important;}
+.mb8{margin-bottom: 8px !important;}
 .mb10{margin-bottom: 10px !important;}
 .mb13{margin-bottom: 13px !important;}
 .mb14{margin-bottom: 14px !important;}
@@ -1209,6 +1210,8 @@ table td.pb10{padding-bottom: 10px;}
 .pa15{padding:15px !important;}
 .pa25{padding:25px !important;}
 .pt10{padding-top:10px !important;}
+.pl18 {padding-left:18px !important;}
+.pr18 {padding-right:18px !important;}
 .mono_100 {color: map-get($mono_colors, mono_100) !important;}
 .mono_80 {color: map-get($mono_colors, mono_80) !important;}
 .mono_65 {color: map-get($mono_colors, mono_65) !important;}
@@ -1218,6 +1221,7 @@ table td.pb10{padding-bottom: 10px;}
 .mono_0  {color: map-get($mono_colors, mono_0)  !important;}
 .width_inherit {width: inherit !important;}
 .width100 {width:100% !important;}
+.width50 {width:50% !important;}
 // 총합계
 .MainType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
 .MainType .total span {font-size: map-get($font_size, font_15);}
@@ -1287,7 +1291,6 @@ table td.pb10{padding-bottom: 10px;}
 .MainType .scroll-x.type2 .inner2 {display: inline-block; margin-right: 8px;}
 .MainType .scroll-x.type2 .inner2 .category {font-size: map-get($font_size, font_16); color: map-get($mono_colors, mono_80); font-weight:700; height:23px; margin-bottom:8px; display:block; vertical-align: top;}
 .MainType .scroll-x.type2 .inner2 .category .ico {vertical-align: inherit; margin-top: 5px;}
-.MainType .line8 {height: 8px; background-color: map-get($line_colors, B95); margin-left:-18px; margin-right:-18px;}
 .MainType .scroll-x.type1 .inner2 {width:310px; display:inline-block; margin-right:8px;}
 .MainType .scroll-x.type1 .inner2 .thumList .tit {white-space: normal; width: 165px;}
 .MainType .scroll-x.type1 .inner2 .thumList > li {width:310px; border-bottom:0;}
@@ -1335,6 +1338,9 @@ table td.pb10{padding-bottom: 10px;}
 .MainType .bg_appstore .dim45 {background-color:rgba(#000000, 0.45); padding-top: 24px; height:220px;}
 .MainType .bg_appstore .banner_appstore img {width: 150px; height: 48px; display:inline-block;}
 .MainType .bg_appstore .banner_appstore img + img {margin-left:10px;}
+//directions
+.MainType .directions {height: 190px;}
+.MainType .directions .br{border-right:1px solid map-get($line_colors, B95);}
 //지식 클리핑
 .CLIPingType #container #content .inner {padding-bottom: 12px;}
 // 총합계
@@ -1347,8 +1353,6 @@ table td.pb10{padding-bottom: 10px;}
 .CLIPingType .total .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; margin-bottom:2px; background-size: 16px;}
 .CLIPingType .total .ico.seris{width:16px;height:16px;background: map-get($mono_colors, mono_40) url("../img/ic_seris_line_bg_16.png") no-repeat center center; margin-bottom:2px; background-size: 16px;}
 .CLIPingType .total.noline {border:0 none; margin-bottom:0;}
-
-.CLIPingType .line8 {height: 8px; background-color: map-get($line_colors, B95); margin-left:-18px; margin-right:-18px;}
 
 .CLIPingType .myLearn {height: 64px; width:100%;}
 .CLIPingType .myLearn > div {padding:9px 0px 12px 64px; position:relative; width:50%;}

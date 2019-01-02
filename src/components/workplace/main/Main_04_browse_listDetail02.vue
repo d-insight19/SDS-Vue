@@ -138,7 +138,7 @@
 
 <script>
 export default {
-  name: 'Main_browse_listDetail02',
+  name: 'Main_04_browse_listDetail02',
   /* vue lifecycle */
   created () {
   },

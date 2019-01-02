@@ -212,7 +212,7 @@
 
 <script>
 export default {
-  name: 'Main_browse_main',
+  name: 'Main_04_browse_main',
   /* vue lifecycle */
   created () {
   },

@@ -177,6 +177,11 @@ import MainB2CFreeCourse from '~workplace/main/Main_B2C_freeCourse'
 import MainB2CFreeCourse2 from '~workplace/main/Main_B2C_freeCourse2'
 import MainB2CAppstore from '~workplace/main/Main_B2C_appstore'
 import MainB2CDirections from '~workplace/main/Main_B2C_directions'
+import MainFreecourse from '~workplace/main/Main_freecourse'
+import MainFreecourseList from '~workplace/main/Main_freecourse_list'
+import MainFreecourseImg from '~workplace/main/Main_freecourse_img'
+import MainCourseRefund from '~workplace/main/Main_course_refund'
+import MainCourseRefundList from '~workplace/main/Main_course_refund_list'
 
 import CLIPingMain from '~workplace/cliping/CLIPing_main'
 import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
@@ -1136,6 +1141,31 @@ var rootRoutes = [
     path: '/Main_B2C_directions',
     name: 'Main_B2C_directions',
     component: MainB2CDirections
+  },
+  {
+    path: '/Main_freecourse',
+    name: 'Main_freecourse',
+    component: MainFreecourse
+  },
+  {
+    path: '/Main_freecourse_list',
+    name: 'Main_freecourse_list',
+    component: MainFreecourseList
+  },
+  {
+    path: '/Main_freecourse_img',
+    name: 'Main_freecourse_img',
+    component: MainFreecourseImg
+  },
+  {
+    path: '/Main_course_refund',
+    name: 'Main_course_refund',
+    component: MainCourseRefund
+  },
+  {
+    path: '/Main_course_refund_list',
+    name: 'Main_course_refund_list',
+    component: MainCourseRefundList
   },
   {
     path: '/CLIPing_main',
