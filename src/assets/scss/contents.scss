@@ -508,7 +508,8 @@ table td.pb10{padding-bottom: 10px;}
 #header p.h-tit1 .q-tit{display:inline-block; width: 90%; font-weight:600; font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;}
 #header p.h-tit1 .ico.more28{display:inline-block; margin-top:6px;}
 #header .ico-group .ico.view{vertical-align: -3px;}
-#header .ico-group{ font-weight:500 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_65); }
+#header .ico-group .ico-txt{font-weight:400 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80);}
+#header .ico-group{font-weight:500 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80); }
 #header .info-group{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_80); }
 #header .info-group .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background: rgba(0,0,0,0.5);} 
 #header .info-group .ico.play{vertical-align: -2px;}
@@ -638,7 +639,7 @@ table td.pb10{padding-bottom: 10px;}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 .ulList li.bottom-bd-x{border-bottom:none;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
-.ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
+.ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_14);line-height: 19px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
 .ulList.type4 li:nth-last-child(1){border-bottom:none;}
 
 
@@ -652,7 +653,7 @@ table td.pb10{padding-bottom: 10px;}
 
 // 공지사항 상세
 
-#container.study_notice_de .ico-group{padding:18px 0 0 0; font-weight:400; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_80); }
+#container.study_notice_de .ico-group{padding:18px 0 0 0; font-weight:400 !important; font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_80); }
 #container.study_notice_de .ico-group .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background: rgba(0,0,0,0.5);} 
 #container.study_notice_de .h-tit1{ font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;}
 #container.study_notice_de .notice-txt{ font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; }
