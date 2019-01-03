@@ -109,7 +109,7 @@
 
 
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <button type="button" disabled="disabled" class="btn md clr1">제출</button>
             </div>
             <!-- //floatingbtn -->

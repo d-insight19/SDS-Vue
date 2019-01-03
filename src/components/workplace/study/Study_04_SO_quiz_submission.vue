@@ -146,7 +146,7 @@
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <ul>
                 <li>
                     <button type="button" class="btn md">다시풀기</button>

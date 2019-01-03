@@ -112,7 +112,7 @@
             </div>
 
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <button type="button" class="btn md clr1">결과보기</button>
             </div>
             <!-- //floatingbtn -->

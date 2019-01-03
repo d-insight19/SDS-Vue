@@ -145,7 +145,7 @@
 
 
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <button type="button" disabled="disabled" class="btn md" :class="{ clr1 : on }">제출</button>
             </div>
             <!-- //floatingbtn -->

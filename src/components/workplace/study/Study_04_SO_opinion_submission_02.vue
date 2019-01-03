@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <button type="button" class="btn md clr1">제출</button>
             </div>
             

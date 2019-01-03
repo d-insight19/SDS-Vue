@@ -90,7 +90,7 @@
             </div>
 
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <button type="button" class="btn md "><span class="ico plus"></span>파일 추가</button>
             </div>
             <!-- //floatingbtn -->
