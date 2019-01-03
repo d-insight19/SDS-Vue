@@ -87,6 +87,11 @@ import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studys
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
 import Study02inquiryedit from '~workplace/study/Study_02_inquiry_edit'
+import Study02summarydetail from '~workplace/study/Study_02_summary_detail'
+import Study02surveydetail from '~workplace/study/Study_02_survey_detail'
+import Study02qpqadetail from '~workplace/study/Study_02_qpqa_detail'
+import Study02qpqadetail02 from '~workplace/study/Study_02_qpqa_detail_02'
+import Study02qpqaresult from '~workplace/study/Study_02_qpqa_result'
 import Study02qpqaresult02 from '~workplace/study/Study_02_qpqa_result_02'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
@@ -714,6 +719,31 @@ var rootRoutes = [
     path: '/Study_02_inquiry_edit',
     name: 'Study_02_inquiry_edit',
     component: Study02inquiryedit
+  },
+  {
+    path: '/Study_02_summary_detail',
+    name: 'Study_02_summary_detail',
+    component: Study02summarydetail
+  },
+  {
+    path: '/Study_02_survey_detail',
+    name: 'Study_02_survey_detail',
+    component: Study02surveydetail
+  },
+  {
+    path: '/Study_02_qpqa_detail',
+    name: 'Study_02_qpqa_detail',
+    component: Study02qpqadetail
+  },
+  {
+    path: '/Study_02_qpqa_detail_02',
+    name: 'Study_02_qpqa_detail_02',
+    component: Study02qpqadetail02
+  },
+  {
+    path: '/Study_02_qpqa_result',
+    name: 'Study_02_qpqa_result',
+    component: Study02qpqaresult
   },
   {
     path: '/Study_02_qpqa_result_02',
