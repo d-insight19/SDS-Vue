@@ -525,7 +525,13 @@
 #container.eduperson_studycurrent_detail .progBox_wrap.multi .progBox_multi .progBox .fr{position:absolute;right:-48px;top:-8px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;}
 #container.eduperson_studycurrent_detail .progBox_wrap.multi{margin-bottom:0px;}
 
-
+#container.eduperson_studycurrent_detail .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
+#container.eduperson_studycurrent_detail .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
+#container.eduperson_studycurrent_detail .detail_table tr td:nth-last-child(1){padding-right:10px;}
+#container.eduperson_studycurrent_detail .detail_table thead{background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
+#container.eduperson_studycurrent_detail .detail_table tbody tr{height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
+#container.eduperson_studycurrent_detail .detail_table tbody tr:nth-last-child(1){border:none;font-weight: 500;}
+#container.eduperson_studycurrent_detail .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
 
 
 
