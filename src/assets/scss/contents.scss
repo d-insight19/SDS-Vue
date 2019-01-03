@@ -1075,7 +1075,7 @@ label.rdo .label{position: relative;}
 // 기본정보 관리
 #container.drawer .multiList.type2 > li + li {margin-top:0}
 #container.drawer button.btn14 {font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px; position: absolute; right: 18px; bottom: 18px; font-weight: 500}
-#container.drawer .multiList.type1 > li { border-bottom: 1px solid #999; padding:15px 0; min-height: 0;}
+#container.drawer .multiList.type1 > li { border-bottom: 1px solid #e3e3e3; padding:15px 0; min-height: 0;}
 #container.drawer .multiList.type2 > li { padding:0; min-height: 0 }
 
 #container.drawer .id_info .btn { position: absolute; right: 0; bottom: 20px; z-index: 1; width:93px; border:#ccc 1px solid; padding:7px 10px;}
@@ -1110,15 +1110,16 @@ label.rdo .label{position: relative;}
 #container.drawer .multiList.type1 > li.noline {border-bottom:0}
 #container.drawer .multiList.type1 > .mt0 {margin-top:0}
 #container.drawer .multiList.type1 > li slp-checkbox.mr10 {margin-right:10px}
+#container.drawer .multiList.type1 > li.title_line {border-bottom:#999 1px solid; padding-bottom:8px}
 #container.drawer .title_line {border-bottom:#999 1px solid; padding-bottom:8px}
-#container.drawer .title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
+#container.drawer .multiList.type1 > li.title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
 #container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); margin:20px 0}
 #container.drawer .version {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); }
 #container.drawer .version .num {font-family: 'Roboto' ; margin-left:6px}
 #container.drawer .intSchBox .btn{top:20px}
 #container.drawer .subject {width:33%; margin-right:6px}
 #container.drawer .subdivide {width:65%}
-#container.drawer .pt0 {padding-top:0}
+#container.drawer .pt0 {padding-top:0 !important}
 .divide_line { width: 100%; height: 8px; background-color:#f6f6f6; margin:26px 0 22px; }
 
 #container.drawer .withdrawal>li {width:50%; border-bottom:#eaeaea 1px solid; padding:20px 6px;}
@@ -1298,6 +1299,60 @@ label.rdo .label{position: relative;}
 .helpdesk_wrap .helpdesk ul.date li {float:left}
 .helpdesk_wrap .helpdesk ul.date li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin: 0 6px; background: #d9d9d9;}
 .helpdesk_wrap .helpdesk p.copy {color:rgba(0,0,0,0.4);}
+
+//bpo강사
+#container.login.bpo .loginGuide {margin-top:134px}
+#container.login.bpo .tit1 {font-size:map-get($font_size, font_20); font-weight: bold}
+#container.login.bpo .tit2 {font-size:map-get($font_size, font_34); font-weight: 400; letter-spacing: -1.36px; margin-bottom:30px; line-height: 47px}
+#container.login.bpo #content .inner {padding: 90px 18px 0}
+#container.login.bpo .loginGuide dd {font-weight: 500}
+#container.login.bpo .loginGuide dd.privacypolicy {font-size:map-get($font_size, font_14); text-decoration: underline; line-height: 18px; margin: 2px 0 20px; }
+#container.drawer .title_line {font-size:map-get($font_size, font_15); font-weight: 500; }
+#container.drawer .title_line span.time {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); font-weight: 400; margin-left:4px}
+#container.drawer .title_line span.status {font-size:map-get($font_size, font_14); }
+#container.drawer .title_line span.title_txt {margin-right:6px}
+#container.drawer .title_line span.total_txt {margin-right:5px}
+#container.drawer.bpo ul.multiList.type1 span.time {color:rgba(0,0,0,0.65); }
+#container.drawer.bpo ul.multiList.type1 span.status {color:rgba(0,0,0,0.65); font-weight: 500; margin-right: 5px}
+#container.drawer.bpo .label-tit {font-size:map-get($font_size, font_14); }
+#container.drawer.bpo button.btn.logout {position: fixed; bottom:0; margin:70px 24px 0 }
+
+#container.drawer.bpo_myinfo #content .inner {padding-top: 88px}
+#container.drawer.bpo_myinfo .lecturer {font-size:map-get($font_size, font_13); text-align: center; font-weight: 300}
+
+#container.drawer.bpo_student {font-size:map-get($font_size, font_15); font-weight: 500}
+#container.drawer.bpo_student .name_wrap .name {margin-right: 4px; line-height: 24px}
+#container.drawer.bpo_student .calender {padding:11px 10px 11px 16px ; border:#ccc 1px solid; color:rgba(0,0,0,0.8); margin-top: 4px; }
+#container.drawer.bpo_student ul.multiList.type1 .date {font-size:map-get($font_size, font_16); font-weight: bold}
+#container.drawer.bpo_student ul.multiList.type1 li {padding:20px 0}
+#container.drawer.bpo_student .desc {margin:0; color:rgba(0,0,0,0.8); font-weight: 400}
+#container.drawer.bpo_student .desc::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin: 0 6px; background: #d9d9d9;}
+#container.drawer.bpo_student .time {margin:0; color:rgba(0,0,0,0.8); font-weight: 400; margin-left:5px}
+#container.drawer.bpo_calcel select:required:invalid {color:rgba(0,0,0,0.8);}
+
+#container.drawer .title_line .date {font-family: 'Roboto'; color:rgba(0,0,0,0.65);}
+#container.drawer.bpo_shorten input::placeholder {color:rgba(0,0,0,0.25);}
+#container.drawer.bpo_shorten .calender {padding:11px 10px 11px 16px ; color:rgba(0,0,0,0.8); margin-top: 8px; background-color: #f6f6f6 }
+
+#container.drawer.bpo .num {font-family: 'Roboto'; color:rgba(0,0,0,0.65);}
+#container.drawer.bpo .multiList.type1 > li {padding:22px 0}
+#container.drawer.bpo_classstatus .multiList.type1 > li .in {padding:0}
+#container.drawer.bpo_classstatus .multiList.type1 > li {padding:15px 0}
+#container.drawer.bpo_classstatus .multiList.type1 > li .date {font-family: 'Roboto'; font-weight: 500 }
+#container.drawer.bpo_classstatus .multiList.type1 .attendance {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65);}
+#container.drawer.bpo_classstatus .multiList.type1 .attendance span.check {color:rgba(0,0,0,0.5); margin-right: 6px}
+#container.drawer.bpo_classstatus .multiList.type1 .time {position: absolute; top: calc(50% - 10px) ;  right:0}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

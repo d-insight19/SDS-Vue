@@ -291,6 +291,19 @@ import etcUpdateguide from '~workplace/etc/etc_Updateguide'
 import etcOfflineguide from '~workplace/etc/etc_Offlineguide'
 import etcHelpdesk from '~workplace/etc/etc_Helpdesk'
 
+import BPOLogin from '~workplace/bpo/BPO_Login'
+import BPOsubjectlistdetailcheck from '~workplace/bpo/BPO_subjectlist_detail_check'
+import BPOsubjectlistdetailSMSreciever from '~workplace/bpo/BPO_subjectlist_detail_SMS_reciever'
+import BPOMyinfo from '~workplace/bpo/BPO_Myinfo'
+import BPOManual from '~workplace/bpo/BPO_Manual'
+import BPOsubjectlistdetailstudent from '~workplace/bpo/BPO_subjectlist_detail_student'
+import BPOsubjectlistdetailcancel from '~workplace/bpo/BPO_subjectlist_detail_cancel'
+import BPOsubjectlistdetailshorten from '~workplace/bpo/BPO_subjectlist_detail_shorten'
+import BPOsubjectlistdetailextend from '~workplace/bpo/BPO_subjectlist_detail_extend'
+import BPOsubjectlistdetailSMS from '~workplace/bpo/BPO_subjectlist_detail_SMS'
+import BPOClassstatusdetail from '~workplace/bpo/BPO_Classstatus_detail'
+import BPOsubjectlistdetailcheckpopup from '~workplace/bpo/BPO_subjectlist_detail_check_popup'
+
 // 1번 영역
 var rootRoutes = [
   {
@@ -1706,6 +1719,66 @@ var rootRoutes = [
     path: 'etc_Helpdesk',
     name: 'etc_Helpdesk',
     component: etcHelpdesk
+  },
+  {
+    path: 'BPO_Login',
+    name: 'BPO_Login',
+    component: BPOLogin
+  },
+  {
+    path: 'BPO_subjectlist_detail_check',
+    name: 'BPO_subjectlist_detail_check',
+    component: BPOsubjectlistdetailcheck
+  },
+  {
+    path: 'BPO_subjectlist_detail_SMS_reciever',
+    name: 'BPO_subjectlist_detail_SMS_reciever',
+    component: BPOsubjectlistdetailSMSreciever
+  },
+  {
+    path: 'BPO_Myinfo',
+    name: 'BPO_Myinfo',
+    component: BPOMyinfo
+  },
+  {
+    path: 'BPO_Manual',
+    name: 'BPO_Manual',
+    component: BPOManual
+  },
+  {
+    path: 'BPO_subjectlist_detail_student',
+    name: 'BPO_subjectlist_detail_student',
+    component: BPOsubjectlistdetailstudent
+  },
+  {
+    path: 'BPO_subjectlist_detail_cancel',
+    name: 'BPO_subjectlist_detail_cancel',
+    component: BPOsubjectlistdetailcancel
+  },
+  {
+    path: 'BPO_subjectlist_detail_shorten',
+    name: 'BPO_subjectlist_detail_shorten',
+    component: BPOsubjectlistdetailshorten
+  },
+  {
+    path: 'BBPO_subjectlist_detail_extend',
+    name: 'BPO_subjectlist_detail_extend',
+    component: BPOsubjectlistdetailextend
+  },
+  {
+    path: 'BPO_subjectlist_detail_SMS',
+    name: 'BPO_subjectlist_detail_SMS',
+    component: BPOsubjectlistdetailSMS
+  },
+  {
+    path: 'BPO_Classstatus_detail',
+    name: 'BPO_Classstatus_detail',
+    component: BPOClassstatusdetail
+  },
+  {
+    path: 'BPO_subjectlist_detail_check_popup',
+    name: 'BPO_subjectlist_detail_check_popup',
+    component: BPOsubjectlistdetailcheckpopup
   }
 ]
 
