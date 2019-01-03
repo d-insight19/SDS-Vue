@@ -50,13 +50,15 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .color_black65{color:rgba(0,0,0,0.65) !important;}
 
 
+
 // 헤더 
 #header .btn.prev .ico{width:28px; height:28px; background-position:-13px -61px;}
 #header .btn.close .ico{width:28px; height:28px; background-position:-298px -60px;} 
 #header .btn.prev .ico.white{width:28px; height:28px; background-position:-48px -27px;}
 #header .btn.share {position:absolute; right:14px; top: 14px; width: auto;}
 #header .btn.share .ico{width:28px; height:28px; background:url("../img/ic_share.png") no-repeat; background-size:28px;} 
-
+#header .header_text.font_19{font-size:map-get($font_size, font_18) !important;}
+#header .header_text.visible{display:block;}
 
 /* title */
 .h-tit{ font-size: map-get($font_size, font_30); line-height: 45px; font-weight:500; letter-spacing: -0.9px; margin: 12px 0 17px; }
@@ -720,9 +722,12 @@ select:required:invalid {
 #drawer .drawer_header .arm .icon{width:32px;height:32px;background: url("../img/ic_alarm_line_32.png") no-repeat; background-size: contain;display: inline-block;}
 #drawer .drawer_header .setting{width:32px;height:32px;position:absolute;top:15px;right:0px;}
 #drawer .drawer_header .setting .icon{width:32px;height:32px;background: url("../img/ic_setting_line_32.png") no-repeat; background-size: contain;display: inline-block;}
-#drawer .drawer_profile{  display:block;  width:100%;  height:90px;  font-size:map-get($font-size, font_20 );position: relative;padding:0px 30px 0px 60px;line-height: 90px;font-weight:500;}
-#drawer .drawer_profile .profile_img{width:48px;height:48px;position: absolute;top:0px;left:0px;}
-#drawer .drawer_profile .profile_img img{    position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
+#drawer .drawer_profile{  display:block;  width:100%;  height:90px;  font-size:map-get($font-size, font_20 );position: relative;padding:0px 30px 0px 60px;font-weight:500;}
+#drawer .drawer_profile .profile_img{width:48px;height:48px;position: absolute;top:0px;left:0px;line-height: 90px; }
+#drawer .drawer_profile .profile_img img{    position: relative;left: 50%;transform: translateX(-50%);height: 100%;} 
+#drawer .drawer_profile .profile_name{line-height: 90px;}
+#drawer .drawer_profile .profile_name_main{padding-top:19px;font-size:map-get($font-size, font_22);letter-spacing: -0.66px;}
+#drawer .drawer_profile .profile_name_sub{font-size:map-get($font-size, font_12);letter-spacing: -0.12px;color:rgba(0,0,0,0.65);font-weight: 400;}
 #drawer .drawer_profile .ico.next{width:24px;height:24px;background: url("../img/ic_next_24.png") no-repeat; background-size: contain;display:inline-block;position:absolute;top:33px;right:0px;}
 #drawer .drawer_list > li{color:rgba(0,0,0,0.8);font-size:map-get($font-size, font_15 );font-weight: 500;letter-spacing: -0.45px;min-height:48px;line-height: 48px;border-bottom:1px solid #eaeaea;}
 #drawer .drawer_list > li .ico{  float: right;  margin-top: 16px;}

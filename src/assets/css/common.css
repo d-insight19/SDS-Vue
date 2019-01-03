@@ -16,6 +16,8 @@
 .ico.arrow{width:16px;height:16px;background: url("../img/ic_next_line_black.png") no-repeat; background-size: contain; }
 .ico.gray_next{width:16px;height:16px;background: url("../img/ic_next.png") no-repeat; }
 .ico.comment{width:20px;height:20px;background: url("../img/ic_bubble_line_20.png") no-repeat; }
+.ico.next_16 {width:16px; height:16px; background: url("../img/ic_next_16.png") no-repeat;}
+.ico.next_gray_16{width:16px; height:16px; background: url("../img/ic_next_line_gray_16.png") no-repeat; background-size:cover}
 
 /* 추가이미지 2018-12-07 */
 .ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }
@@ -79,6 +81,7 @@
 .ico.like_32.red {background: url("../img/ic_thumb_line_red_32.png")}
 .ico.like_solid_32{width:32px;height:32px;background: url("../img/ic_thumb_solid.png") no-repeat; background-size:32px;}
 .ico.heart_solid_32{width:32px; height:32px; background: url("../img/ic_heart_solid.png") no-repeat; margin-top:-6px; background-size: 32px;}
+.ico.heart_solid_bg_32{width:32px; height:32px; background: url("../img/ic_heart_solid_bg.png") no-repeat; margin-top:-6px; background-size: 32px;}
 .ico.download_32{width:32px;height:32px;background: url("../img/ic_download.png") no-repeat; background-size:32px;}
 .ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
