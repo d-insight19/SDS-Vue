@@ -130,7 +130,7 @@
 
 <script>
 export default {
-  name: 'Study_02_studyquestion_detail_02',
+  name: 'Study_02_qpqa_result_02',
   /* vue lifecycle */
   created () {
   },

@@ -2346,8 +2346,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.06.PaperPro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_paperPro' }">
+            CLIPing_paperPro
           </router-link>
         </td>
         <td></td>
@@ -2363,8 +2363,12 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.06.PaperProDetail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_paperProDetail' }">
+            CLIPing_paperProDetail
+          </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_paperProDetail_port' }">
+            CLIPing_paperProDetail_port
           </router-link>
         </td>
         <td></td>
@@ -2448,8 +2452,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClub</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClub' }">
+            CLIPing_languageClub
           </router-link>
         </td>
         <td></td>
@@ -2465,8 +2469,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubList02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubList02' }">
+            CLIPing_languageClubList02
           </router-link>
         </td>
         <td></td>
@@ -2482,8 +2486,12 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubDetail01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01' }">
+            CLIPing_languageClubDetail01
+          </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01_scroll' }">
+            CLIPing_languageClubDetail01_scroll
           </router-link>
         </td>
         <td></td>
@@ -5015,8 +5023,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.32.discuss_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_discuss_detail' }">
+            Study_02_discuss_detail
           </router-link>
         </td>
         <td></td>
@@ -5032,8 +5040,11 @@
         <td>　</td>
         <td class="textL">05.Study_02.33.discuss_reply</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_discuss_reply' }">
+            Study_discuss_reply
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_02_discuss_reply_02' }">
+            Study_discuss_reply_02
           </router-link>
         </td>
         <td></td>
@@ -5188,8 +5199,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.41.summary_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_summary_detail' }">
+            Study_02_summary_detail
           </router-link>
         </td>
         <td></td>
@@ -5222,8 +5233,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.44.survey_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_survey_detail' }">
+            Study_02_survey_detail
           </router-link>
         </td>
         <td></td>
@@ -5290,8 +5301,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.48.qpqa_detail_01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_qpqa_detail' }">
+            Study_02_qpqa_detail
           </router-link>
         </td>
         <td></td>
@@ -5307,8 +5318,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.49.qpqa_result_01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_qpqa_result' }">
+            Study_02_qpqa_result
           </router-link>
         </td>
         <td></td>
@@ -5324,8 +5335,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.50.qpqa_detail_02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_qpqa_detail_02' }">
+            Study_02_qpqa_detail_02
           </router-link>
         </td>
         <td></td>
@@ -5992,7 +6003,7 @@
             Study_04_SO_survey_answer
           </router-link>
         </td>
-        <td>12-20 작업중</td>
+        <td>01-02 작업중</td>
       </tr>
       <tr>
       <td align="center">346</td>
@@ -6120,7 +6131,7 @@
             Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
-        <td>12-20-작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">354</td>
@@ -6259,7 +6270,7 @@
             Study_04_SO_assinment_input
           </router-link>
         </td>
-        <td>12-26 작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">362</td>
@@ -6395,7 +6406,7 @@
             Study_04_SO_actionplan_input
           </router-link>
         </td>
-        <td>12-26 작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">370</td>
@@ -6788,6 +6799,7 @@
         </td>
         <td></td>
       </tr>
+      <tr>
       <tr>
       <td align="center">393</td>
         <td>수강신청 (일반)</td>
@@ -8399,11 +8411,19 @@
             Eduperson_login
           </router-link>
           ,
+          <router-link :to="{ name: 'Eduperson_drawer_setting' }">
+            Eduperson_drawer_setting
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Eduperson_drawer_profile' }">
+            Eduperson_drawer_profile
+          </router-link>
+          ,
           <router-link :to="{ name: 'Eduperson_drawer' }">
             Eduperson_drawer
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">486</td>
@@ -8416,8 +8436,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_02.01_Edugroup</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_edugroup' }">
+            Eduperson_edugroup
           </router-link>
         </td>
         <td></td>
@@ -8437,7 +8457,7 @@
             Eduperson_contorl
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">488</td>

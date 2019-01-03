@@ -123,7 +123,7 @@
                                 </div>
                             </div>                         
                             </li>                
-                            <li>
+                            <li class="bottom-bd">
                             <div>
                                 <span class="ico ppt-a"></span>
                                 <span class="at-tit">20180101_AD_Draft.ppt</span>

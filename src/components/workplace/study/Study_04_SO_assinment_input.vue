@@ -99,9 +99,9 @@
                         <p class="empty_img">
                             <img src="" alt="">
                         </p>
-                        <input @input.prevent="onInput(value, $event)" v-model="input01"  type="text" class="input01" placeholder="의견을 입력해 주세요">
+                        <input @input.prevent="e => keylength = e.target.value.length"   type="text" class="input01" placeholder="의견을 입력해 주세요">
                         <label class="inputbottom inp-num">
-                            <span class="strlenth" >{{input01}}/300</span>
+                            <span class="strlenth" ><span v-text="keylength"></span>/300</span>
                         </label>
                         <p class="hr"></p>
                         <p class="txt-tit">2. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
@@ -109,10 +109,10 @@
                         <p class="empty_img">
                             <img src="" alt="">
                         </p>                        
-                        <input @input.prevent="onInput(value, $event)"  v-model="input02"   type="text" class="input02" placeholder="의견을 입력해 주세요">
-                        <div class="inputbottom inp-num">
-                            <span class="strlenth" >{{input02}}/300</span>
-                        </div> 
+                        <input @input.prevent="e => keylength2 = e.target.value.length"  type="text" class="input02" placeholder="의견을 입력해 주세요">
+                        <label class="inputbottom inp-num">
+                            <span class="strlenth" ><span v-text="keylength2"></span>/300</span>
+                        </label> 
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -120,8 +120,8 @@
 
 
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
-                <button type="button" disabled="disabled" class="btn md clr1">제출</button>
+            <div class="fixBtmBtn abs">  
+                <button type="button" v-bind:disabled="disabled" class="btn md clr1">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -148,21 +148,21 @@ export default {
   data () {
     return {
       headerType: 1,
-      active_el: 2,
-      input01: undefined,
-      input02: undefined
+      keylength: 0,
+      keylength2: 0,
+      disabled: true
     }
   },
   /* vue function */
   methods: {
-    activate: function (el) {
-      this.active_el = el
-    },
-    onInput: function (value, event) {
-      console.log(event.target)
-      console.log(this.input01.length)
-      return value// 데이터를 어떻게 배열로.. data array set
-    }
+    // toggleSub () {
+    //   this.disabled = !this.disabled
+    // },
+    // onChange () {
+    //   if( this.keylength.value == true && this.keylength2.value == true){
+    //       return toggleSub()
+    //   }
+    // }
   }
 }
 </script>

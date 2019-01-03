@@ -100,9 +100,8 @@
                                 </div>
                             </li>
                             <li class="top_bottom_pd">
-                                <div class="infoChk">
-                                    <input type="text" placeholder="답글을 입력하세요" class="input"> 
-                                    <button type="button" class="btn sm clr1">등록</button>
+                                <div class="infoChk pr0">
+                                    <input type="text" placeholder="답글을 입력하세요" class="input"><button type="button" class="btn sm clr1 w17p">등록</button>
                                 </div>
                             </li>
                             <li>
@@ -141,7 +140,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li>
+                            <li class="bottom-bd">
                                 <p class="reply-name mt20">                                    
                                     <span class="chip type2 type2 agree">찬성</span>
                                     <span>정*민</span>

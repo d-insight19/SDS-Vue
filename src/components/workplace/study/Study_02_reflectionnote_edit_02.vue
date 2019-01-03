@@ -44,7 +44,7 @@
                 </div>
             </div>
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a>
             </div>
             <!-- //floatingbtn -->                
