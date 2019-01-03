@@ -3,23 +3,18 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_assinment pd70">
+        <div id="container" class="mediaquery study_summary">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand wh assinment-head-bg">          
+            <div v-if="headerType == '1'" id="header" class="expand">          
                 <div class="header_inner line1">
-                    <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
-                    <div class="page-btn">
-                        <span class="ico back-wh"></span>
-                        <div class="num "><span>03</span> / <span>36</span></div>
-                        <span class="ico next-wh"></span>
-                    </div>
+                    <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                 </div>  
-                <div class="hide_header" style="background-color:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:60px">                
+                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:32px">                
                     <div class="hide-inner">
-                        <span class="chip wh">액션플랜</span>                         
-                        <p class="h-tit1">인정받는 팀 리더의 액션 플랜 인정받는 팀 리더의 액션 플랜</p>
+                        <span class="chip">요약집</span>                         
+                        <p class="h-tit1">요약집 타이틀 영역입니다 요약집 타이틀 영역입니다</p>
                     </div>
                 </div>
             </div>
@@ -90,40 +85,54 @@
             <!-- //header -->        
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner"> 
-                        <p class="inner-txt">설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 </p>
-                        <p class="line02"></p>
-                        <p class="txt-tit">1. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
-                        <button class="guide-btn">작성가이드</button>
-                        <button class="guide-btn">모범답안</button>
+                    <div class="inner">                        
+                        <p class="inner-txt op80">설명 입니다. 설명 입니다. 설명 입니다. Admin에서 등록된 내용 출력 (선택사항) </p>
                         <p class="empty_img">
                             <img src="" alt="">
                         </p>
-                        <input @input.prevent="e => keylength = e.target.value.length"   type="text" class="input01" placeholder="의견을 입력해 주세요">
-                        <label class="inputbottom inp-num">
-                            <span class="strlenth" ><span v-text="keylength"></span>/300</span>
-                        </label>
-                        <p class="hr"></p>
-                        <p class="txt-tit">2. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
-                        <button class="guide-btn" >작성가이드</button>
-                        <p class="empty_img">
-                            <img src="" alt="">
-                        </p>                        
-                        <input @input.prevent="e => keylength2 = e.target.value.length"  type="text" class="input02" placeholder="의견을 입력해 주세요">
-                        <label class="inputbottom inp-num">
-                            <span class="strlenth" ><span v-text="keylength2"></span>/300</span>
-                        </label> 
+                        <p class="inner-txt op65">본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 </p>
+                        
+                        <p class="label-tit-2 mt40">
+                            <strong>첨부파일</strong>
+                            <span class="fr color_clr2 total">전체 다운로드</span>
+                        </p>
+                        <ul class="ulList type4">
+                            <li>
+                            <div>
+                                <span class="ico img-a"></span>
+                                <span class="at-tit">Solution listup.jpg</span>
+                                <div class="fr">
+                                <span class="at-num">500KB</span>
+                                <span class="ico down-load"></span>
+                                </div>
+                            </div>                         
+                            </li>                
+                            <li>
+                            <div>
+                                <span class="ico ppt-a"></span>
+                                <span class="at-tit">20180101_AD_Draft.ppt</span>
+                                <div class="fr">
+                                <span class="at-num">4.5M</span>
+                                <span class="ico down-load"></span>
+                                </div>
+                            </div>                         
+                            </li>                
+                            <li>
+                            <div>
+                                <span class="ico ppt-a"></span>
+                                <span class="at-tit">20180101_AD_Draft.ppt</span>
+                                <div class="fr">
+                                <span class="at-num">4.5M</span>
+                                <span class="ico down-load"></span>
+                                </div>
+                            </div>                         
+                            </li>                
+                        </ul>
+
                     </div>
                     <!-- //inner -->
                 </div>  
             </div>
-
-
-            <!-- floatingbtn -->
-            <div class="absBtmBtn">  
-                <button type="button" v-bind:disabled="disabled" class="btn md clr1">제출</button>
-            </div>
-            <!-- //floatingbtn -->
         </div>
         <!-- //container --> 
     </div>
@@ -136,9 +145,7 @@
   1 : 기본헤더 + 확장 ,  2 : 헤더 + 확장 + 텝  or  헤더 + 텝 ,  3 : 헤더 + 확장 + 스크롤텝
 */
 export default {
-  name: 'Study_04_SO_opinion_multiopinon',
-  props: {
-  },
+  name: 'Study_02_faq_detail',
   /* vue lifecycle */
   created () {
   },
@@ -147,22 +154,11 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1,
-      keylength: 0,
-      keylength2: 0,
-      disabled: true
+      headerType: 1
     }
   },
   /* vue function */
   methods: {
-    // toggleSub () {
-    //   this.disabled = !this.disabled
-    // },
-    // onChange () {
-    //   if( this.keylength.value == true && this.keylength2.value == true){
-    //       return toggleSub()
-    //   }
-    // }
   }
 }
 </script>

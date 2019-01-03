@@ -97,31 +97,64 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">                       
-                        <p class="txt-tit">Q. 다음의 학습 과정을 읽고 개선이 필요해 보이는 부분에 대해 간략히 의견을 작성해 주세요.</p>
-                        <p class="label-tit16"><strong>결과</strong> <span class="pipe"></span> 
-                        <span class="total">총 <span class="total-num">45명</span> 참여</span></p>
-                        <ul class="ulList type4">
+                        <p class="txt-tit">Q. 본 교육과정의 수업방식에 대해 전반적으로 만족 하십니까?</p>
+                        
+                        <ul class="ul-block com-rdo">
                             <li>
-                                <p class="reply-txt">이 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 까지 고군분투하는 과정을 그리고 있다. 이 영화는 주인공이 동료와 함께 한다.</p>
-                                <p class="reply-txt-2">정*민</p>
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[0]">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label">매우 아니다.</span>                    
+                                </label>
                             </li>
                             <li>
-                                <p class="reply-txt">제대로 쓰여진 글만이 신뢰와 재미를 줄 수 있다.</p>
-                                <p class="reply-txt-2">홍*동</p>
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[1]">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label">아니다.</span>                    
+                                </label>
                             </li>
                             <li>
-                                <p class="reply-txt">속에 얼마나 구하기 이것이다. 듣기만 아니한 크고 것이다.역사를 할지니, 이성은 쓸쓸하랴?</p>
-                                <p class="reply-txt-2">이*재</p>
+                                <label class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[2]">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label">보통이다.</span>                    
+                                </label>
                             </li>
                             <li>
-                                <p class="reply-txt">이 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 까지 군분투하는 과정을 그리고 있다. 이 영화는 주인공이 동료와 함께 한다.</p>
-                                <p class="reply-txt-2">지*이</p>
+                                <label  class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[3]">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label">그렇다.</span>                    
+                                </label>
+                            </li>
+                            <li>
+                                <label  class="labelRdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[4]">
+                                    <span class="ico">
+                                        <span class="ico chk-blue"></span>
+                                    </span>
+                                    <span class="label">매우 그렇다.</span>                    
+                                </label>
                             </li>
                         </ul>
                     </div>
                     <!-- //inner -->
                 </div>  
             </div>
+            <!-- floatingbtn -->
+            <div class="absBtmBtn">  
+                <button type="button" class="btn md" :class="{clr1: rdo}">확인</button>
+            </div>
+            <!-- //floatingbtn -->
         </div>
         <!-- //container --> 
     </div>
@@ -130,7 +163,7 @@
 
 <script>
 export default {
-  name: 'Study_02_qpqa_result_02',
+  name: 'Study_02_studyquestion_detail_02',
   /* vue lifecycle */
   created () {
   },
@@ -139,7 +172,9 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1
+      headerType: 1,
+      rdo: undefined,
+      rdos: [1, 2, 3, 4, 5]
     }
   },
   /* vue function */

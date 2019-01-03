@@ -5196,8 +5196,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.41.summary_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_summary_detail' }">
+            Study_02_summary_detail
           </router-link>
         </td>
         <td></td>
@@ -5230,8 +5230,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.44.survey_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_survey_detail' }">
+            Study_02_survey_detail
           </router-link>
         </td>
         <td></td>
@@ -5298,8 +5298,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.48.qpqa_detail_01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_qpqa_detail' }">
+            Study_02_qpqa_detail
           </router-link>
         </td>
         <td></td>
@@ -5315,8 +5315,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.49.qpqa_result_01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_qpqa_result' }">
+            Study_02_qpqa_result
           </router-link>
         </td>
         <td></td>
@@ -5332,8 +5332,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.50.qpqa_detail_02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_qpqa_detail_02' }">
+            Study_02_qpqa_detail_02
           </router-link>
         </td>
         <td></td>
@@ -6000,7 +6000,7 @@
             Study_04_SO_survey_answer
           </router-link>
         </td>
-        <td>12-20 작업중</td>
+        <td>01-02 작업중</td>
       </tr>
       <tr>
       <td align="center">346</td>
@@ -6128,7 +6128,7 @@
             Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
-        <td>12-20-작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">354</td>
@@ -6267,7 +6267,7 @@
             Study_04_SO_assinment_input
           </router-link>
         </td>
-        <td>12-26 작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">362</td>
@@ -6403,7 +6403,7 @@
             Study_04_SO_actionplan_input
           </router-link>
         </td>
-        <td>12-26 작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">370</td>
@@ -6796,6 +6796,7 @@
         </td>
         <td></td>
       </tr>
+      <tr>
       <tr>
       <td align="center">393</td>
         <td>수강신청 (일반)</td>

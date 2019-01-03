@@ -97,27 +97,66 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">                       
-                        <p class="txt-tit">Q. 다음의 학습 과정을 읽고 개선이 필요해 보이는 부분에 대해 간략히 의견을 작성해 주세요.</p>
+                        <p class="txt-tit">Q. 본 교육과정의 수업방식에 대해 전반적으로 만족 하십니까?</p>
                         <p class="label-tit16"><strong>결과</strong> <span class="pipe"></span> 
                         <span class="total">총 <span class="total-num">45명</span> 참여</span></p>
-                        <ul class="ulList type4">
-                            <li>
-                                <p class="reply-txt">이 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 까지 고군분투하는 과정을 그리고 있다. 이 영화는 주인공이 동료와 함께 한다.</p>
-                                <p class="reply-txt-2">정*민</p>
-                            </li>
-                            <li>
-                                <p class="reply-txt">제대로 쓰여진 글만이 신뢰와 재미를 줄 수 있다.</p>
-                                <p class="reply-txt-2">홍*동</p>
-                            </li>
-                            <li>
-                                <p class="reply-txt">속에 얼마나 구하기 이것이다. 듣기만 아니한 크고 것이다.역사를 할지니, 이성은 쓸쓸하랴?</p>
-                                <p class="reply-txt-2">이*재</p>
-                            </li>
-                            <li>
-                                <p class="reply-txt">이 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 까지 군분투하는 과정을 그리고 있다. 이 영화는 주인공이 동료와 함께 한다.</p>
-                                <p class="reply-txt-2">지*이</p>
-                            </li>
-                        </ul>
+                        
+                        <div class="progBox mt20">
+                            <div class="bar clr2" style="width: 17%; height:8px; border-radius: 100px; "></div>                            
+                        </div>
+                        <div class="txt-wrap clearfix">
+                            <p class="prog-txt">매우 아니다.</p>
+                            <div class="fr">
+                                <span class="part-num"><span>8</span>명</span>
+                                <span class="pipe"></span>
+                                <span class="part-num-2"><span>17</span>%</span>
+                            </div>                                   
+                        </div>
+                        <div class="progBox mt24">
+                            <div class="bar clr2" style="width: 24%; height:8px; border-radius: 100px;"></div>                            
+                        </div>
+                        <div class="txt-wrap clearfix">
+                            <p class="prog-txt">아니다.</p>
+                            <div class="fr">
+                                <span class="part-num"><span>10</span>명</span>
+                                <span class="pipe"></span>
+                                <span class="part-num-2"><span>24</span>%</span>
+                            </div>                                  
+                        </div>                        
+                        <div class="progBox mt24">
+                            <div class="bar clr2" style="width: 31%; height:8px; border-radius: 100px;"></div>                            
+                        </div>
+                        <div class="txt-wrap clearfix">
+                            <p class="prog-txt">보통이다.</p>
+                            <div class="fr">
+                                <span class="part-num"><span>14</span>명</span>
+                                <span class="pipe"></span>
+                                <span class="part-num-2"><span>31</span>%</span>
+                            </div>                                
+                        </div>
+                        <div class="progBox mt24">
+                            <div class="bar clr2" style="width: 16%; height:8px; border-radius: 100px;"></div>                            
+                        </div>
+                        <div class="txt-wrap clearfix">
+                            <p class="prog-txt">그렇다.</p>
+                            <div class="fr">
+                                <span class="part-num"><span>7</span>명</span>
+                                <span class="pipe"></span>
+                                <span class="part-num-2"><span>16</span>%</span>
+                            </div>                                
+                        </div>
+                        <div class="progBox mt24">
+                            <div class="bar clr2" style="width: 12%; height:8px; border-radius: 100px;"></div>                            
+                        </div>
+                        <div class="txt-wrap clearfix">
+                            <p class="prog-txt">매우 그렇다.</p>
+                            <div class="fr">
+                                <span class="part-num"><span>5</span>명</span>
+                                <span class="pipe"></span>
+                                <span class="part-num-2"><span>12</span>%</span>
+                            </div>                                
+                        </div>
+                        <!-- //txt-wrap -->
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -130,7 +169,7 @@
 
 <script>
 export default {
-  name: 'Study_02_qpqa_result_02',
+  name: 'Study_02_qpqa_result',
   /* vue lifecycle */
   created () {
   },
