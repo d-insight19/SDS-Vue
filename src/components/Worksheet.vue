@@ -8470,8 +8470,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_03.01.01_Studycurrent_elearning</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_studycurrent_elearning' }">
+            Eduperson_studycurrent_elearning
           </router-link>
         </td>
         <td></td>
@@ -8487,8 +8487,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_03.01.02_Studycurrent_set</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_studycurrent_set' }">
+            Eduperson_studycurrent_set
           </router-link>
         </td>
         <td></td>
@@ -8504,8 +8504,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_03.01.02_Studycurrent_autonomy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_studycurrent_autonomy' }">
+            Eduperson_studycurrent_autonomy
           </router-link>
         </td>
         <td></td>

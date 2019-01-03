@@ -282,6 +282,9 @@ import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_settin
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
 import EdupersonEdugroup from '~workplace/eduperson/Eduperson_edugroup'
 import EdupersonControl from '~workplace/eduperson/Eduperson_control'
+import EdupersonStudycurrentElearning from '~workplace/eduperson/Eduperson_studycurrent_elearning'
+import EdupersonStudycurrentSet from '~workplace/eduperson/Eduperson_studycurrent_set'
+import EdupersonStudycurrentAutonomy from '~workplace/eduperson/Eduperson_studycurrent_autonomy'
 
 import etcTerms from '~workplace/etc/etc_Terms'
 import etcNetworkerror from '~workplace/etc/etc_Networkerror'
@@ -1684,6 +1687,21 @@ var rootRoutes = [
     path: '/Eduperson_contorl',
     name: 'Eduperson_contorl',
     component: EdupersonControl
+  },
+  {
+    path: '/Eduperson_studycurrent_elearning',
+    name: 'Eduperson_studycurrent_elearning',
+    component: EdupersonStudycurrentElearning
+  },
+  {
+    path: '/Eduperson_studycurrent_set',
+    name: 'Eduperson_studycurrent_set',
+    component: EdupersonStudycurrentSet
+  },
+  {
+    path: '/Eduperson_studycurrent_autonomy',
+    name: 'Eduperson_studycurrent_autonomy',
+    component: EdupersonStudycurrentAutonomy
   },
   {
     path: '/etc_Terms',

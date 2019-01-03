@@ -7,7 +7,7 @@
         <!-- header -->
         <div id="header">
           <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-          <p class="header_text font_19"></p>
+          <p class="header_text font_18"></p>
         </div>
         <!-- //header -->
         

@@ -784,8 +784,7 @@ select:required:invalid {
 #bottomsheet ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
 #bottomsheet ul li .ico{position:absolute;top:12px;right:18px;display:none;}
 #bottomsheet ul li.active .ico{display:block}
-// 답변에 따라서 General_scss에 컬러값 추가하고, 수정해야함.
-#bottomsheet ul li .checkIcon{border-color:#00adfb;position: absolute;top: 13px;right: 25px;width: 9.8px;height: 16.5px;border-bottom: 3px solid;border-right: 3px solid;transform: rotate(45deg);display:none;}
+#bottomsheet ul li .checkIcon{position: absolute;top: 13px;right: 25px;width: 9.8px;height: 16.5px;border-bottom: 3px solid;border-right: 3px solid;transform: rotate(45deg);display:none;}
 #bottomsheet ul li.active .checkIcon{display:block}
 
 //Spinner

@@ -7,7 +7,7 @@
         <!-- header -->
         <div id="header">
           <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-          <p class="header_text font_19">아이핀 인증</p>
+          <p class="header_text font_18">아이핀 인증</p>
         </div>
         <!-- //header -->
         

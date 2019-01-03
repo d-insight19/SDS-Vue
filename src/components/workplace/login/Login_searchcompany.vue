@@ -8,7 +8,7 @@
         <div id="header" class="tab">          
           <div class="header_inner line1">
             <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-            <p class="header_text font_19">회사검색</p>
+            <p class="header_text font_18">회사검색</p>
           </div>  
           <div class="header_inner line2 tabMenu">
               <ul class="fixTab">
