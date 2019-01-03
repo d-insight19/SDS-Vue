@@ -96,7 +96,7 @@
                 </div>
             </div>
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <button type="button" class="btn md clr1">완료</button>
             </div>
             <!-- //floatingbtn -->

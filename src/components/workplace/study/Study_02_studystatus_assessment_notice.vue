@@ -68,7 +68,7 @@
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
               <ul>
                 <li>
                   <button type="button" class="btn md">다음에 응시</button>

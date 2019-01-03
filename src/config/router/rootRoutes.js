@@ -72,6 +72,9 @@ import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
 
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
+import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
+import Study02discussreply from '~workplace/study/Study_02_discuss_reply'
+import Study02discussreply02 from '~workplace/study/Study_02_discuss_reply_02'
 import Study02discussedit from '~workplace/study/Study_02_discuss_edit'
 import Study02discussedit02 from '~workplace/study/Study_02_discuss_edit_02'
 import Study02noticedetail from '~workplace/study/Study_02_notice_detail'
@@ -644,6 +647,21 @@ var rootRoutes = [
     path: '/Study_dictionary_detail',
     name: 'Study_dictionary_detail',
     component: Studydictionarydetail
+  },
+  {
+    path: '/Study_02_discuss_detail',
+    name: 'Study_02_discuss_detail',
+    component: Study02discussdetail
+  },
+  {
+    path: '/Study_02_discuss_reply',
+    name: 'Study_02_discuss_reply',
+    component: Study02discussreply
+  },
+  {
+    path: '/Study_02_discuss_reply_02',
+    name: 'Study_02_discuss_reply_02',
+    component: Study02discussreply02
   },
   {
     path: '/Study_02_discuss_edit',

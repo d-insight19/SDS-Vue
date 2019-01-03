@@ -69,7 +69,7 @@
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <button type="button" class="btn md clr1">확인</button>
             </div>
             <!-- //floatingbtn -->   

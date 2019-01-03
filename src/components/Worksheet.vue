@@ -5023,8 +5023,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.32.discuss_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_discuss_detail' }">
+            Study_02_discuss_detail
           </router-link>
         </td>
         <td></td>
@@ -5040,8 +5040,11 @@
         <td>　</td>
         <td class="textL">05.Study_02.33.discuss_reply</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_discuss_reply' }">
+            Study_discuss_reply
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_02_discuss_reply_02' }">
+            Study_discuss_reply_02
           </router-link>
         </td>
         <td></td>

@@ -75,7 +75,7 @@
             </div>
 
             <!-- floatingbtn -->
-            <div class="absBtmBtn">  
+            <div class="fixBtmBtn abs">  
                 <button type="button" class="btn md" :class="{clr1: rdo}">제출</button>
             </div>
             <!-- //floatingbtn -->
