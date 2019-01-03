@@ -196,6 +196,10 @@ import CLIPingColumnDetail from '~workplace/cliping/CLIPing_column_detail'
 import CLIPingPaperPro from '~workplace/cliping/CLIPing_paperPro'
 import CLIPingPaperProDetail from '~workplace/cliping/CLIPing_paperProDetail'
 import CLIPingPaperProDetailPort from '~workplace/cliping/CLIPing_paperProDetail_port'
+import CLIPingLanguageClub from '~workplace/cliping/CLIPing_languageClub'
+import CLIPingLanguageClubList02 from '~workplace/cliping/CLIPing_languageClubList02'
+import CLIPingLanguageClubDetail01 from '~workplace/cliping/CLIPing_languageClubDetail01'
+import CLIPingLanguageClubDetail01Scroll from '~workplace/cliping/CLIPing_languageClubDetail01_scroll'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1244,6 +1248,26 @@ var rootRoutes = [
     path: '/CLIPing_paperProDetail_port',
     name: 'CLIPing_paperProDetail_port',
     component: CLIPingPaperProDetailPort
+  },
+  {
+    path: '/CLIPing_languageClub',
+    name: 'CLIPing_languageClub',
+    component: CLIPingLanguageClub
+  },
+  {
+    path: '/CLIPing_languageClubList02',
+    name: 'CLIPing_languageClubList02',
+    component: CLIPingLanguageClubList02
+  },
+  {
+    path: '/CLIPing_languageClubDetail01',
+    name: 'CLIPing_languageClubDetail01',
+    component: CLIPingLanguageClubDetail01
+  },
+  {
+    path: '/CLIPing_languageClubDetail01_scroll',
+    name: 'CLIPing_languageClubDetail01_scroll',
+    component: CLIPingLanguageClubDetail01Scroll
   },
   {
     path: '/Drawer_alerm',

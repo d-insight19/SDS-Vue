@@ -1461,4 +1461,11 @@ label.rdo .label{position: relative;}
 .CLIPingType .thumList.type6 .in {height:90px;}
 // li 글자색 변경
 .CLIPingType .thumList .info li {color: map-get($mono_colors, mono_80);}
-.lh39 {line-height: 39px !important;}
+// fixTab a 높이 변경
+.CLIPingType #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
+// multiList 수정
+.CLIPingType .multiList.type3 > li{padding-top: 20px;}
+.CLIPingType .multiList.type3 > li:last-child{  border-bottom:0px none;}
+
+.national_flag{width:20px; height:20px; margin-top: -5px; border-radius:10px;}
+.national_flag.line{border:1px solid map-get($line_colors, B95);}

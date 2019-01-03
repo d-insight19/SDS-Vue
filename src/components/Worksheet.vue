@@ -2452,8 +2452,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClub</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClub' }">
+            CLIPing_languageClub
           </router-link>
         </td>
         <td></td>
@@ -2469,8 +2469,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubList02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubList02' }">
+            CLIPing_languageClubList02
           </router-link>
         </td>
         <td></td>
@@ -2486,11 +2486,15 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubDetail01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01' }">
+            CLIPing_languageClubDetail01
+          </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01_scroll' }">
+            CLIPing_languageClubDetail01_scroll
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">141</td>

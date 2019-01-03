@@ -38,8 +38,8 @@
             </div>
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="fixTab">
-                    <li class="on"><a href="#tab1" class="lh39">설명</a></li><!-- selected class "on" -->
-                    <li><a href="#tab2" class="lh39">댓글</a></li>
+                    <li class="on"><a href="#tab1">설명</a></li><!-- selected class "on" -->
+                    <li><a href="#tab2">댓글</a></li>
                 </ul>
             </div>
         </div>
