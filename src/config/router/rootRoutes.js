@@ -87,11 +87,6 @@ import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studys
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
 import Study02inquiryedit from '~workplace/study/Study_02_inquiry_edit'
-import Study02summarydetail from '~workplace/study/Study_02_summary_detail'
-import Study02surveydetail from '~workplace/study/Study_02_survey_detail'
-import Study02qpqadetail from '~workplace/study/Study_02_qpqa_detail'
-import Study02qpqadetail02 from '~workplace/study/Study_02_qpqa_detail_02'
-import Study02qpqaresult from '~workplace/study/Study_02_qpqa_result'
 import Study02qpqaresult02 from '~workplace/study/Study_02_qpqa_result_02'
 import Study03LOviewerfs from '~workplace/study/Study_03_LO_viewer_fs'
 import Study03LOdocsfs from '~workplace/study/Study_03_LO_docs_fs'
@@ -198,6 +193,13 @@ import CLIPingBookSummary from '~workplace/cliping/CLIPing_bookSummary'
 import CLIPingBookSummaryDetail from '~workplace/cliping/CLIPing_bookSummary_detail'
 import CLIPingColumn from '~workplace/cliping/CLIPing_column'
 import CLIPingColumnDetail from '~workplace/cliping/CLIPing_column_detail'
+import CLIPingPaperPro from '~workplace/cliping/CLIPing_paperPro'
+import CLIPingPaperProDetail from '~workplace/cliping/CLIPing_paperProDetail'
+import CLIPingPaperProDetailPort from '~workplace/cliping/CLIPing_paperProDetail_port'
+import CLIPingLanguageClub from '~workplace/cliping/CLIPing_languageClub'
+import CLIPingLanguageClubList02 from '~workplace/cliping/CLIPing_languageClubList02'
+import CLIPingLanguageClubDetail01 from '~workplace/cliping/CLIPing_languageClubDetail01'
+import CLIPingLanguageClubDetail01Scroll from '~workplace/cliping/CLIPing_languageClubDetail01_scroll'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -270,6 +272,7 @@ import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
 import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
+import EdupersonEdugroup from '~workplace/eduperson/Eduperson_edugroup'
 import EdupersonControl from '~workplace/eduperson/Eduperson_control'
 
 import etcTerms from '~workplace/etc/etc_Terms'
@@ -711,31 +714,6 @@ var rootRoutes = [
     path: '/Study_02_inquiry_edit',
     name: 'Study_02_inquiry_edit',
     component: Study02inquiryedit
-  },
-  {
-    path: '/Study_02_summary_detail',
-    name: 'Study_02_summary_detail',
-    component: Study02summarydetail
-  },
-  {
-    path: '/Study_02_survey_detail',
-    name: 'Study_02_survey_detail',
-    component: Study02surveydetail
-  },
-  {
-    path: '/Study_02_qpqa_detail',
-    name: 'Study_02_qpqa_detail',
-    component: Study02qpqadetail
-  },
-  {
-    path: '/Study_02_qpqa_detail_02',
-    name: 'Study_02_qpqa_detail_02',
-    component: Study02qpqadetail02
-  },
-  {
-    path: '/Study_02_qpqa_result',
-    name: 'Study_02_qpqa_result',
-    component: Study02qpqaresult
   },
   {
     path: '/Study_02_qpqa_result_02',
@@ -1257,6 +1235,41 @@ var rootRoutes = [
     component: CLIPingColumnDetail
   },
   {
+    path: '/CLIPing_paperPro',
+    name: 'CLIPing_paperPro',
+    component: CLIPingPaperPro
+  },
+  {
+    path: '/CLIPing_paperProDetail',
+    name: 'CLIPing_paperProDetail',
+    component: CLIPingPaperProDetail
+  },
+  {
+    path: '/CLIPing_paperProDetail_port',
+    name: 'CLIPing_paperProDetail_port',
+    component: CLIPingPaperProDetailPort
+  },
+  {
+    path: '/CLIPing_languageClub',
+    name: 'CLIPing_languageClub',
+    component: CLIPingLanguageClub
+  },
+  {
+    path: '/CLIPing_languageClubList02',
+    name: 'CLIPing_languageClubList02',
+    component: CLIPingLanguageClubList02
+  },
+  {
+    path: '/CLIPing_languageClubDetail01',
+    name: 'CLIPing_languageClubDetail01',
+    component: CLIPingLanguageClubDetail01
+  },
+  {
+    path: '/CLIPing_languageClubDetail01_scroll',
+    name: 'CLIPing_languageClubDetail01_scroll',
+    component: CLIPingLanguageClubDetail01Scroll
+  },
+  {
     path: '/Drawer_alerm',
     name: 'Drawer_alerm',
     component: DrawerAlerm
@@ -1600,6 +1613,11 @@ var rootRoutes = [
     path: '/Eduperson_drawer_profile',
     name: 'Eduperson_drawer_profile',
     component: EdupersonDrawerProfile
+  },
+  {
+    path: '/Eduperson_edugroup',
+    name: 'Eduperson_edugroup',
+    component: EdupersonEdugroup
   },
   {
     path: '/Eduperson_contorl',

@@ -422,6 +422,61 @@
 #container.eduperson_login .loginEtcBtn li a{display: inline-block; vertical-align: middle;}
 #container.eduperson_login #dropdown{top:50px;right:30px;}
 
+// 회사운영자 - amin
+#container.eduperson #header.mainType2 .header_inner.line1{padding:0px 0px 0px 72px;font-size:map-get($font-size, font_18);text-align:left;}
+#container.eduperson .eduperson_title{position:relative;}
+#container.eduperson .eduperson_title_ico{margin-left:6px;width:16px;height:16px;background: url("../img/ic_dropdown_white.png") no-repeat; background-size:cover;position: absolute;top: 50%;transform: translateY(-50%);}
+
+// 회사운영자 - 타이틀 선택
+#edu_person_title_list{position:fixed;top:56px;left:0px;background:#fff;z-index:50;width:100%;overflow-y: scroll;height: 100%;}
+#edu_person_title_list ul li{width:100%;padding:20px 18px;font-size:map-get($font-size, font_16);letter-spacing: -0.48px;border-bottom:1px solid #e3e3e3}
+#edu_person_title_list ul li .checkIcon{color:#00adfb;position: absolute;top: 19px;right: 18px;width: 9.8px;height: 16.5px;border-bottom: 3px solid;border-right: 3px solid;transform: rotate(45deg);display:none;}
+#edu_person_title_list ul li.active .checkIcon{display:block}
+
+// 회사운영자 drawer-설정, 나의정보
+#container.eduperson_drawer_setting .ulList.type1 .label-tit{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;line-height: 20px;margin-bottom:8px;}
+#container.eduperson_drawer_setting .ulList.type1 li{border-bottom:1px solid #eaeaea;min-height:50px;line-height: 50px;position:relative;}
+#container.eduperson_drawer_setting .ulList.type1 li:nth-child(1){padding-bottom:20px;}
+#container.eduperson_drawer_setting .ulList.type1 li + li{margin-top:0px;}
+#container.eduperson_drawer_setting .ulList.type1 li .ico.next_16{position: absolute;top: 50%;right: 0px;transform: translateY(-50%);}
+#container.eduperson_drawer_setting .edu_setting_title{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;font-weight:500;}
+#container.eduperson_drawer_setting .edu_setting_version{color:rgba(0,0,0,0.65);font-size:map-get($font-size, font_14);letter-spacing: -0.35px;}
+#container.eduperson_drawer_setting .edu_setting_version .num{font-size:map-get($font-size, font_15);letter-spacing: -0.75px;font-family:'Roboto';margin-left:5px;}
+#container.eduperson_drawer_setting .myinfo_img {position: relative; background: url("../img/img_man_80.png"); width: 80px; height:80px; margin: 64px auto 7px;}
+#container.eduperson_drawer_setting .myinfo_img img{    position: relative;left: 50%;transform: translateX(-50%);height: 100%;} 
+#container.eduperson_drawer_setting .myinfo_name{font-size:map-get($font-size, font_22);line-height: 33px;letter-spacing: -0.22px;text-align:center;font-weight:500;}
+#container.eduperson_drawer_setting .myinfo_position{font-size:map-get($font-size, font_12);line-height: 18px;letter-spacing: -0.12px;color:rgba(0,0,0,0.65);text-align:center}
+
+// 회사운영자 edugroup
+#container.eduperson_edugroup .edugroup_bg{color:#fff;width:100%;height:257px;background: url("../img/splash_bg.png") no-repeat; margin-bottom:8px;padding:73px 0px 0px 30px;line-height:initial;background-position: center 25%;}
+#container.eduperson_edugroup .edugroup_title{font-size:map-get($font-size, font_20);letter-spacing: -0.8px;font-weight: 600;line-height:24px;}
+#container.eduperson_edugroup .edugroup_sub_title{font-size:map-get($font-size, font_34);letter-spacing: -1.36px;font-weight: 400 !important;line-height: 53px;}
+#container.eduperson_edugroup .edugroup_info{font-size:map-get($font-size, font_15);letter-spacing: -0.45px;font-weight: 400 !important;margin-top:8px;line-height:25px;}
+#container.eduperson_edugroup .ulList{margin-top:8px;margin-left:-18px;margin-right:-18px;}
+#container.eduperson_edugroup .ulList li{border-bottom:1px solid #e3e3e3;min-height:63px;line-height: 63px;position:relative;padding:0px 30px;}
+#container.eduperson_edugroup .ulList li + li{margin-top:0px;}
+#container.eduperson_edugroup .ulList li .ico.next_gray_16{position: absolute;top: 50%;right: 18px;transform: translateY(-50%);}
+
+//회사운영자 학습현황
+#container.eduperson .edu_study_date{font-size:map-get($font-size, font_16);letter-spacing: -0.4px;color:rgba(0,0,0,0.8);padding-bottom:6px;border-bottom:1px solid #999999}
+#container.eduperson .edu_studycurrent_wrap{margin-top:22px;padding-bottom:40px;}
+#container.eduperson .type_title_wrap{width: 100%;height: 29px;margin-bottom:13px;}
+#container.eduperson .type_title{font-size:map-get($font-size, font_20);letter-spacing: -0.6px;line-height: 29px;font-weight:600;}
+#container.eduperson .type_more{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;line-height: 29px;}
+#container.eduperson .type_box{clear:both;border-top:1px solid #999;border-bottom:1px solid #999;background:#f2f3f7;padding: 10px 39px 10px 152px;position: relative;margin-bottom:17px;}
+#container.eduperson .type_box .info{position:absolute}
+#container.eduperson .type_box .info.type1{top:37px;left:30px;}
+#container.eduperson .type_box .info .tit{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;color:rgba(0,0,0,0.8);line-height: 20px;}
+#container.eduperson .type_box .info .value{font-size:map-get($font-size, font_28);color:#000;line-height: 37px;}
+#container.eduperson .type_box .info .value_sub{font-size:map-get($font-size, font_18);color:rgba(0,0,0,0.8);line-height: 37px;}
+#container.eduperson .type_box dl{width:100%;display:table;line-height: 35px;}
+#container.eduperson .type_box dl + dl{border-top:1px solid #d9d9d9}
+#container.eduperson .type_box dl dt{display:table-cell;color:rgba(0,0,0,0.8);font-size:map-get($font-size, font_13)}
+#container.eduperson .type_box dl dd{display:table-cell;text-align: right;font-weight:500;color:#000;font-size:map-get($font-size, font_16)}
+#container.eduperson .progBox_wrap .tit{font-size:map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.8px;font-weight:500;margin-bottom:14px;}
+#container.eduperson .progBox_wrap .bar{border-radius: 100px;height:8px;}
+
+
 
 
 
@@ -1438,3 +1493,4 @@ label.rdo .label{position: relative;}
 .CLIPingType .thumList.type6 .in {height:90px;}
 // li 글자색 변경
 .CLIPingType .thumList .info li {color: map-get($mono_colors, mono_80);}
+.lh39 {line-height: 39px !important;}
