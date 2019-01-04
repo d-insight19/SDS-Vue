@@ -493,12 +493,12 @@
 #container.eduperson_studycurrent_detail .type_box .info.type1{left:30px;}
 #container.eduperson_studycurrent_detail .type_box .info.type2{left:38px;}
 #container.eduperson_studycurrent_detail .type_box .info .tit{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;color:rgba(0,0,0,0.8);line-height: 20px;}
-#container.eduperson_studycurrent_detail .type_box .info .value{font-size:map-get($font-size, font_28);color:#000;line-height: 37px;}
+#container.eduperson_studycurrent_detail .type_box .info .value{font-family:'Roboto';font-size:map-get($font-size, font_28);color:#000;line-height: 37px;font-weight:500;}
 #container.eduperson_studycurrent_detail .type_box .info .value_sub{font-size:map-get($font-size, font_18);color:rgba(0,0,0,0.8);line-height: 37px;}
 #container.eduperson_studycurrent_detail .type_box dl{width:100%;display:table;line-height: 35px;}
 #container.eduperson_studycurrent_detail .type_box dl + dl{border-top:1px solid #d9d9d9}
 #container.eduperson_studycurrent_detail .type_box dl dt{display:table-cell;color:rgba(0,0,0,0.8);font-size:map-get($font-size, font_13)}
-#container.eduperson_studycurrent_detail .type_box dl dd{display:table-cell;text-align: right;font-weight:500;color:#000;font-size:map-get($font-size, font_16)}
+#container.eduperson_studycurrent_detail .type_box dl dd{font-family:'Roboto';display:table-cell;text-align: right;font-weight:500;color:#000;font-size:map-get($font-size, font_16)}
 #container.eduperson_studycurrent_detail .progBox_wrap {margin-bottom:28px;}
 #container.eduperson_studycurrent_detail .progBox_wrap .tit{font-size:map-get($font-size, font_22);line-height: 29px;letter-spacing: -0.6px;font-weight:600;margin-bottom:20px;margin-top:22px;}
 #container.eduperson_studycurrent_detail .progBox_wrap .bar{border-radius: 100px;height:8px;}
