@@ -1575,15 +1575,21 @@ label.rdo .label{position: relative;}
 .CLIPingType #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .CLIPingType #header .hide_header p {white-space: normal !important;}
 .CLIPingType #header .tagWrap span {border-color:map-get($mono_colors, mono_25); color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_12); height: 26px; line-height: 24px; padding: 0 10px;}
-.CLIPingType #header .info li{display: inline-block; font-size: map-get($font_size, font_14); line-height: 14px; letter-spacing: -0.036em; vertical-align: top;}
-.CLIPingType #header .info li+li{margin-left: 5px;}
-.CLIPingType #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
-.CLIPingType #header .info .ico.star {margin-top: 2px;}
 .CLIPingType #header dl{display: table; line-height: 140%;}
 .CLIPingType #header dt{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_65); width: 50px; display: table-cell; }
 .CLIPingType #header dd{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_100); display: table-cell;}
 .CLIPingType #header .book {position: absolute; top: 74px; left: 22px;}
 .CLIPingType #header .book img {width: 132px; height: 194px;}
+.CLIPingType #header .national_flag {position: absolute; top: 74px; left: 18px; width: 40px; height: 40px;}
+.CLIPingType #header .national_flag img {width: 40px; height: 40px;}
+.CLIPingType #header .thum{position: absolute; z-index: 0; width:128px; height:100px; right: 0; top: 0;}
+.CLIPingType #header .thum .progWrap{height:6px;}
+.CLIPingType #header .thumbnail{overflow: hidden; margin: auto;height: 100%;position: relative;}
+.CLIPingType #header .thumbnail .thumImg{position: relative; left: 50%; transform: translateX(-50%); height: 100%;}
+.CLIPingType .info li{display: inline-block; font-size: map-get($font_size, font_14); line-height: 14px; letter-spacing: -0.036em; vertical-align: top;}
+.CLIPingType .info li+li{margin-left: 5px;}
+.CLIPingType .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
+.CLIPingType .info .ico.star {margin-top: 2px;}
 // type6 높이 수정
 .CLIPingType .thumList.type6 .in {height:90px;}
 // li 글자색 변경
@@ -1596,9 +1602,16 @@ label.rdo .label{position: relative;}
 // 국기
 .CLIPingType .national_flag {width:20px; height:20px; margin-top: -5px; border-radius:20px;}
 .CLIPingType .national_flag.line {border:1px solid map-get($line_colors, B95);}
-.CLIPingType #header .national_flag {position: absolute; top: 74px; left: 18px; width: 40px; height: 40px;}
-.CLIPingType #header .national_flag img {width: 40px; height: 40px;}
 //
 .CLIPingType .color_primary{color: map-get($static_colors , primary);}
 .CLIPingType .alert{background-color: map-get($static_colors , alert);}
 .CLIPingType .speaker{margin-left: -25px; width: 25px; display: inline-block;}
+
+.CLIPingType .rating {border: none; display:inline;}
+.CLIPingType .rating > input { display: none; } 
+.CLIPingType .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
+.CLIPingType .rating > input:checked + label:hover, 
+.CLIPingType .rating > input:checked ~ label:hover,
+.CLIPingType .rating > label:hover ~ input:checked ~ label, 
+.CLIPingType .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
+.CLIPingType .reply-list .rating > label {width:20px;height:20px;}

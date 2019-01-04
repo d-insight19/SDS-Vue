@@ -53,14 +53,6 @@
           </div>
 
         </div>
-
-        <!-- floating button -->
-        <div class="fixBtmBtn">
-            <ul>
-                <li><slp-button class="md mono_65"><span class="ico like_solid_32"></span>좋아요</slp-button></li>
-            </ul>
-        </div>
-        <!-- //floating button --> 
       </div>
       <!-- //container -->     
     </div>

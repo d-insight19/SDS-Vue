@@ -2722,11 +2722,11 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.VideoComment</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_videoComment' }">
+            CLIPing_videoComment
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">153</td>

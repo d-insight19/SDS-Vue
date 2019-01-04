@@ -34,9 +34,9 @@
                   <span class="ico arr down"></span>
                   <span>답글 4</span>
                   <p class="fr reply-num">
-                  <span class=" ico reply-like"></span>
+                  <span class=" ico like_32 blue"></span>
                   <span class="">12</span>
-                  <span class=" ico reply-unlike"></span>
+                  <span class=" ico unlike_32"></span>
                   <span class="">3</span>
                   </p>
                 </div>
@@ -48,6 +48,16 @@
                 </p>
                 <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
                 <p><span class="reply-date">2018.09.14  21:34</span></p>
+                <div class="reply-wrap">
+                  <span class="ico arr down"></span>
+                  <span>답글 4</span>
+                  <p class="fr reply-num">
+                  <span class=" ico like_32"></span>
+                  <span class="">12</span>
+                  <span class=" ico unlike_32"></span>
+                  <span class="">3</span>
+                  </p>
+                </div>
             </li>
         </ul>
         <!-- 댓글 -->

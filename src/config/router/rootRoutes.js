@@ -208,6 +208,7 @@ import CLIPingLanguageClub from '~workplace/cliping/CLIPing_languageClub'
 import CLIPingLanguageClubList02 from '~workplace/cliping/CLIPing_languageClubList02'
 import CLIPingLanguageClubDetail01 from '~workplace/cliping/CLIPing_languageClubDetail01'
 import CLIPingLanguageClubDetail01Scroll from '~workplace/cliping/CLIPing_languageClubDetail01_scroll'
+import CLIPingVideoComment from '~workplace/cliping/CLIPing_videoComment'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1332,6 +1333,11 @@ var rootRoutes = [
     path: '/CLIPing_languageClubDetail01_scroll',
     name: 'CLIPing_languageClubDetail01_scroll',
     component: CLIPingLanguageClubDetail01Scroll
+  },
+  {
+    path: '/CLIPing_videoComment',
+    name: 'CLIPing_videoComment',
+    component: CLIPingVideoComment
   },
   {
     path: '/Drawer_alerm',
