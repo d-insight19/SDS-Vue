@@ -28,9 +28,9 @@
       <col width="140px" />
       <col width="140px" />
       <col width="140px" />
-      <col width="150px" />
+      <col width="120px" />
       <col width="260px" />
-      <col width="160px" />
+      <col width="190px" />
       <col width="*" />
 		</colgroup>
 	  <thead>
@@ -9743,7 +9743,19 @@
         <td></td>
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail</td>
-        <td>
+        <td>         
+          <router-link :to="{ name: 'BPO_subjectlist_detail' }">
+            BPO_subjectlist_detail
+          </router-link>,
+           <router-link :to="{ name: 'BPO_subjectlist_detail_popup' }">
+            BPO_subjectlist_detail_popup
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail02' }">
+            BPO_subjectlist_detail02
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_disable' }">
+            BPO_subjectlist_detail_disable
+          </router-link>,
           <router-link :to="{ name: 'BPO_subjectlist_detail_check' }">
             BPO_subjectlist_detail_check
           </router-link>,
