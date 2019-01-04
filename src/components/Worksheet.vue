@@ -9747,8 +9747,14 @@
           <router-link :to="{ name: 'BPO_subjectlist_detail' }">
             BPO_subjectlist_detail
           </router-link>,
-           <router-link :to="{ name: 'BPO_subjectlist_detail_popup' }">
+          <router-link :to="{ name: 'BPO_subjectlist_detail_popup' }">
             BPO_subjectlist_detail_popup
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_popup_disable' }">
+            BPO_subjectlist_detail_popup_disable
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_popup_save' }">
+            BPO_subjectlist_detail_popup_save
           </router-link>,
           <router-link :to="{ name: 'BPO_subjectlist_detail02' }">
             BPO_subjectlist_detail02
@@ -9795,6 +9801,9 @@
         <td>
           <router-link :to="{ name: 'BPO_subjectlist_detail_cancel' }">
             BPO_subjectlist_detail_cancel
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_cancel_popup' }">
+            BPO_subjectlist_detail_cancel_popup
           </router-link>
         </td>
         <td></td>
@@ -9931,6 +9940,9 @@
         <td>
           <router-link :to="{ name: 'BPO_subjectlist_detail_SMS' }">
             BPO_subjectlist_detail_SMS
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_SMS_popup' }">
+            BPO_subjectlist_detail_SMS_popup
           </router-link>
         </td>
         <td></td>

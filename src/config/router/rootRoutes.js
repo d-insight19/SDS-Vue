@@ -301,15 +301,19 @@ import BPOMyinfo from '~workplace/bpo/BPO_Myinfo'
 import BPOManual from '~workplace/bpo/BPO_Manual'
 import BPOsubjectlistdetailstudent from '~workplace/bpo/BPO_subjectlist_detail_student'
 import BPOsubjectlistdetailcancel from '~workplace/bpo/BPO_subjectlist_detail_cancel'
+import BPOsubjectlistdetailcancelpopup from '~workplace/bpo/BPO_subjectlist_detail_cancel_popup'
 import BPOsubjectlistdetailshorten from '~workplace/bpo/BPO_subjectlist_detail_shorten'
 import BPOsubjectlistdetailextend from '~workplace/bpo/BPO_subjectlist_detail_extend'
 import BPOsubjectlistdetailSMS from '~workplace/bpo/BPO_subjectlist_detail_SMS'
+import BPOsubjectlistdetailSMSpopup from '~workplace/bpo/BPO_subjectlist_detail_SMS_popup'
 import BPOClassstatusdetail from '~workplace/bpo/BPO_Classstatus_detail'
 import BPOsubjectlistdetailcheckpopup from '~workplace/bpo/BPO_subjectlist_detail_check_popup'
 import BPOsubjectlistdetail from '~workplace/bpo/BPO_subjectlist_detail'
 import BPOsubjectlistdetail02 from '~workplace/bpo/BPO_subjectlist_detail02'
 import BPOsubjectlistdetaildisable from '~workplace/bpo/BPO_subjectlist_detail_disable'
 import BPOsubjectlistdetailpopup from '~workplace/bpo/BPO_subjectlist_detail_popup'
+import BPOsubjectlistdetailpopupdisable from '~workplace/bpo/BPO_subjectlist_detail_popup_disable'
+import BPOsubjectlistdetailpopupsave from '~workplace/bpo/BPO_subjectlist_detail_popup_save'
 
 // 1번 영역
 var rootRoutes = [
@@ -1778,6 +1782,11 @@ var rootRoutes = [
     component: BPOsubjectlistdetailcancel
   },
   {
+    path: 'BPO_subjectlist_detail_cancel_popup',
+    name: 'BPO_subjectlist_detail_cancel_popup',
+    component: BPOsubjectlistdetailcancelpopup
+  },
+  {
     path: 'BPO_subjectlist_detail_shorten',
     name: 'BPO_subjectlist_detail_shorten',
     component: BPOsubjectlistdetailshorten
@@ -1791,6 +1800,11 @@ var rootRoutes = [
     path: 'BPO_subjectlist_detail_SMS',
     name: 'BPO_subjectlist_detail_SMS',
     component: BPOsubjectlistdetailSMS
+  },
+  {
+    path: 'BPO_subjectlist_detail_SMS_popup',
+    name: 'BPO_subjectlist_detail_SMS_popup',
+    component: BPOsubjectlistdetailSMSpopup
   },
   {
     path: 'BPO_Classstatus_detail',
@@ -1821,6 +1835,16 @@ var rootRoutes = [
     path: 'BPO_subjectlist_detail_popup',
     name: 'BPO_subjectlist_detail_popup',
     component: BPOsubjectlistdetailpopup
+  },
+  {
+    path: 'BPO_subjectlist_detail_popup_disable',
+    name: 'BPO_subjectlist_detail_popup_disable',
+    component: BPOsubjectlistdetailpopupdisable
+  },
+  {
+    path: 'BPO_subjectlist_detail_popup_save',
+    name: 'BPO_subjectlist_detail_popup_save',
+    component: BPOsubjectlistdetailpopupsave
   }
 ]
 

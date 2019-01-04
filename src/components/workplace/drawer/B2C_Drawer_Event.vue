@@ -29,7 +29,7 @@
                                         <h1 class="h-tit5 title_line">
                                             <span class="total_txt">총</span>
                                             <strong class="fwb600 count">112</strong><span>건</span>
-                                            <a href="#"><span class="ico down fr"></span><span class="total fr">전체</span></a>
+                                            <a href="#"><span class="ico down fr"></span><span class="total fr" >전체</span></a>
                                         </h1>
                 
                                         <ul class="multiList type3">
@@ -92,6 +92,35 @@
             </div>
           </div>
         </div>
+
+        <!-- Bottom Sheet -->
+        <div id="bottomsheet_wrap" v-show="bottomsheetFlag">
+          <div id="sheetDim"  @click="bottomsheetToggle"></div>
+          <div id="bottomsheet">            
+            <ul  @click="bottomsheetToggle">
+              <!-- 
+                현재 아이콘이 이미지라 문의했지만, 순수  css로 바꿔야한다면 
+                <span class="ico check_24_blue"></span> -> <span class="checkIcon"></span>                 
+              -->
+              <li class="">교육차수 1<span class="checkIcon"></span></li>
+              <li class="">교육차수 2<span class="checkIcon"></span></li>
+              <li class="">교육차수 3<span class="checkIcon"></span></li>
+              <li class="">교육차수 4<span class="checkIcon"></span></li>
+              <li class="">교육차수 5<span class="checkIcon"></span></li>
+              <li class="active">선택된 차수<span class="checkIcon"></span></li>
+            </ul>
+            <div class="bottomsheetBtn">              
+              <span class="ico close_24_black"></span>
+              닫기
+            </div>
+          </div>
+        </div>
+        <!-- // Bottom Sheet -->
+
+        
+      </div>
+      <!-- //container -->
+
 
       </div>
       <!-- //container -->     

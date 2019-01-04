@@ -616,6 +616,9 @@ select:required:invalid {
   overflow: auto;
 }
 
+.disable {color:rgba(0,0,0,0.25) !important; }
+
+
 // 통합 ID
 .join-id{display: table; width:100%; padding-bottom: 15px; border-bottom:1px solid #1a1a1a;}
 .join-id .label-tit{display: table-cell !important; font-size:map-get($font_size, font_15); font-weight: 300 !important; line-height: 21px !important; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}

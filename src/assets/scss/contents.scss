@@ -737,7 +737,7 @@ table td.pb10{padding-bottom: 10px;}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_14);line-height: 19px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
-.ulList.type4 li:nth-last-child(1){border-bottom:none;}
+.ulList.type4.btn li:nth-last-child(1){border-bottom:none;}
 
 
 // 질문방 상세 2
@@ -1105,6 +1105,7 @@ label.rdo .label{position: relative;}
 #container.drawer button.btn14 {font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px; position: absolute; right: 18px; bottom: 18px; font-weight: 500}
 #container.drawer .multiList.type1 > li { border-bottom: 1px solid #e3e3e3; padding:15px 0; min-height: 0;}
 #container.drawer .multiList.type2 > li { padding:0; min-height: 0 }
+#container.drawer .multiList.type4 > li { padding:20px 0; min-height: 0 }
 
 #container.drawer .id_info .btn { position: absolute; right: 0; bottom: 20px; z-index: 1; width:93px; border:#ccc 1px solid; padding:7px 10px;}
 #container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:map-get($mono_colors, mono_80); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
@@ -1118,6 +1119,7 @@ label.rdo .label{position: relative;}
 #container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 13px;}
 #container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px; }
 #container.drawer .labelChk {width:auto}
+#container.drawer.extrainfo_edit .multiList.type1 > li.title_line {padding:20px 0 8px}
 
 #container.drawer .contents14{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:map-get($mono_colors, mono_65); }
 #container.drawer .contents13{margin-top:2px;font-size:map-get($font_size, font_13);line-height: 29px;color:map-get($mono_colors, mono_65); letter-spacing: -0.39px;}
@@ -1130,7 +1132,7 @@ label.rdo .label{position: relative;}
 // 배송지 관리
 #container .noline {border-bottom:0 !important}
 #container.drawer .multiList.type1 > li span.default {border-radius:20px; font-size:map-get($font_size, font_11); color:#fff; padding:2px 9px; margin-left:7px}
-#container.drawer .multiList.type1 > li button.btn14 {position: absolute; top:15px; right: 0; height:20px}
+#container.drawer .multiList.type1 > li button.btn14 {position: absolute; top: calc(50% - 10px); right: 0; height:20px}
 #container.drawer .multiList.type1 > li button.btn14.first {top:0;}
 #container.drawer .multiList.type1 > li .address {font-size:map-get($font_size, font_16); padding-right: 67px; margin:5px 0 }
 #container.drawer .multiList.type1 > li .name_line {color:map-get($mono_colors, mono_80);}
@@ -1138,7 +1140,8 @@ label.rdo .label{position: relative;}
 #container.drawer .multiList.type1 > li.id_info {padding-top:0}
 #container.drawer .multiList.type1 > .mt0 {margin-top:0}
 #container.drawer .multiList.type1 > li slp-checkbox.mr10 {margin-right:10px}
-#container .title_line {border-bottom:#999 1px solid; padding-bottom:8px}
+#container .title_line {border-bottom:#999 1px solid !important; padding-bottom:8px; font-size:map-get($font_size, font_15); font-weight: 500; }
+#container .title_line.noline {border-bottom:0 !important }
 #container .title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
 #container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); margin:20px 0}
 #container.drawer .version {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); }
@@ -1331,7 +1334,7 @@ label.rdo .label{position: relative;}
 #container.login.bpo #content .inner {padding: 90px 18px 0}
 #container.login.bpo .loginGuide dd {font-weight: 500}
 #container.login.bpo .loginGuide dd.privacypolicy {font-size:map-get($font_size, font_14); text-decoration: underline; line-height: 18px; margin: 2px 0 20px; }
-#container .title_line {font-size:map-get($font_size, font_15); font-weight: 500; }
+
 #container .title_line span.time {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); font-weight: 400; margin-left:4px}
 #container .title_line span.status {font-size:map-get($font_size, font_14); }
 #container .title_line span.title_txt {margin-right:6px}
@@ -1371,7 +1374,7 @@ label.rdo .label{position: relative;}
 #container.bpo_subjectlist_detail .multiList.type3 .ico.arrow {top:calc(50% - 8px)}
 #container.bpo_subjectlist_detail .btn.md {height:40px; line-height: 40px}
 #container.bpo_subjectlist_detail .btn.md.attend_check {height:44px; line-height: 44px; font-size:map-get($font_size, font_14); color:#000; font-weight: 500; margin-bottom:8px}
-#container.bpo_subjectlist_detail .type_box {margin-bottom:8px}
+#container.bpo_subjectlist_detail .type_box {margin-bottom:8px; margin-top:6px}
 #container.bpo_subjectlist_detail .date_wrap {margin-bottom:6px}
 #container.bpo_subjectlist_detail .date {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8); font-weight: 500; margin-right: 2px}
 #container.bpo_subjectlist_detail .ico.check_16_blue {margin-top:3px; margin-right:2px}
@@ -1383,6 +1386,7 @@ label.rdo .label{position: relative;}
 #container.bpo_subjectlist_detail .multiList .multiline {max-height: none}
 #container.bpo_subjectlist_detail .detail_info {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); line-height: 20px; margin-top:2px}
 #container.bpo_subjectlist_detail .detail_info span.num {color:rgba(0,0,0,0.8);}
+#container.bpo_subjectlist_detail .title_line {padding-bottom:0}
 
 .layerWrap .popup-select {overflow:hidden; width:100%}
 .layerWrap .popup-select li {float:left; width: calc(50% - 4px); box-sizing: border-box}

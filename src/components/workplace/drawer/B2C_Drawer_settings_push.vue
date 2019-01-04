@@ -16,8 +16,8 @@
                 <div class="cell">
                     <div class="inner nopad">                     
                     <!-- list -->
-                    <ul class="multiList type1">                   
-                        <li class="noline" style="padding-top:0">
+                    <ul class="multiList type4">                   
+                        <li class="noline" style="padding:0">
                             <strong class="label-tit14">다국어 설정</strong>
                             <select class="select w100p mt8">
                             <option>선택</option>
