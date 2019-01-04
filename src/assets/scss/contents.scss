@@ -493,12 +493,12 @@
 #container.eduperson_studycurrent_detail .type_box .info.type1{left:30px;}
 #container.eduperson_studycurrent_detail .type_box .info.type2{left:38px;}
 #container.eduperson_studycurrent_detail .type_box .info .tit{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;color:rgba(0,0,0,0.8);line-height: 20px;}
-#container.eduperson_studycurrent_detail .type_box .info .value{font-size:map-get($font-size, font_28);color:#000;line-height: 37px;}
+#container.eduperson_studycurrent_detail .type_box .info .value{font-family:'Roboto';font-size:map-get($font-size, font_28);color:#000;line-height: 37px;font-weight:500;}
 #container.eduperson_studycurrent_detail .type_box .info .value_sub{font-size:map-get($font-size, font_18);color:rgba(0,0,0,0.8);line-height: 37px;}
 #container.eduperson_studycurrent_detail .type_box dl{width:100%;display:table;line-height: 35px;}
 #container.eduperson_studycurrent_detail .type_box dl + dl{border-top:1px solid #d9d9d9}
 #container.eduperson_studycurrent_detail .type_box dl dt{display:table-cell;color:rgba(0,0,0,0.8);font-size:map-get($font-size, font_13)}
-#container.eduperson_studycurrent_detail .type_box dl dd{display:table-cell;text-align: right;font-weight:500;color:#000;font-size:map-get($font-size, font_16)}
+#container.eduperson_studycurrent_detail .type_box dl dd{font-family:'Roboto';display:table-cell;text-align: right;font-weight:500;color:#000;font-size:map-get($font-size, font_16)}
 #container.eduperson_studycurrent_detail .progBox_wrap {margin-bottom:28px;}
 #container.eduperson_studycurrent_detail .progBox_wrap .tit{font-size:map-get($font-size, font_22);line-height: 29px;letter-spacing: -0.6px;font-weight:600;margin-bottom:20px;margin-top:22px;}
 #container.eduperson_studycurrent_detail .progBox_wrap .bar{border-radius: 100px;height:8px;}
@@ -1150,6 +1150,7 @@ label.rdo .label{position: relative;}
 #container.drawer .multiList.type1 .labelRdo {width:50%}
 
 // 배송지 관리
+#container .noline {border-bottom:0 !important}
 #container.drawer .multiList.type1 > li span.default {border-radius:20px; font-size:map-get($font_size, font_11); color:#fff; padding:2px 9px; margin-left:7px}
 #container.drawer .multiList.type1 > li button.btn14 {position: absolute; top:15px; right: 0; height:20px}
 #container.drawer .multiList.type1 > li button.btn14.first {top:0;}
@@ -1157,12 +1158,10 @@ label.rdo .label{position: relative;}
 #container.drawer .multiList.type1 > li .name_line {color:map-get($mono_colors, mono_80);}
 #container.drawer .multiList.type1 > li .bar {border-left:map-get($line_colors, B85) 1px solid; height:10px; margin:0 8px; display: inline-block}
 #container.drawer .multiList.type1 > li.id_info {padding-top:0}
-#container.drawer .multiList.type1 > li.noline {border-bottom:0}
 #container.drawer .multiList.type1 > .mt0 {margin-top:0}
 #container.drawer .multiList.type1 > li slp-checkbox.mr10 {margin-right:10px}
-#container.drawer .multiList.type1 > li.title_line {border-bottom:#999 1px solid; padding-bottom:8px}
-#container.drawer .title_line {border-bottom:#999 1px solid; padding-bottom:8px}
-#container.drawer .multiList.type1 > li.title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
+#container .title_line {border-bottom:#999 1px solid; padding-bottom:8px}
+#container .title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
 #container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); margin:20px 0}
 #container.drawer .version {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); }
 #container.drawer .version .num {font-family: 'Roboto' ; margin-left:6px}
@@ -1189,7 +1188,6 @@ label.rdo .label{position: relative;}
 
 //이벤트
 #container.event .tabWrap.type2 .tabCnt {padding-top:0}
-#header.noline {border-bottom:0}
 #container #content .inner.event {padding-top:18px}
 #container.event #header .header_text {display: block; padding-left: 70px}
 #container.drawer .multiList.type3 > li .in {padding:15px 0}
@@ -1245,7 +1243,6 @@ label.rdo .label{position: relative;}
 #container.drawer.inquiry .content_wapper .content_inner {display:table-cell; text-align:center; vertical-align:middle}
 #container.drawer.inquiry .content_wapper .content {display:inline-block; font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.65); }
 #container.drawer.inquiry .header_inner button.btn14 {top:18px; right:18px}
-.ulList.type4 li.noline {border-bottom: 0}
 #container.drawer.inquiry .textarea_wrap{background-color: #f5f5f5;margin-top:8px;}
 #container.drawer.inquiry textarea.content {height:44px;border:1px solid transparent;padding:11px 14px 12px 16px;  max-height:63px ;background-color: #f5f5f5;width: 100%; color:rgba(0,0,0,0.8);font-size:map-get($font_size, font_14);line-height: 21px;letter-spacing: -0.42px;}
 #container.drawer.inquiry textarea.content:focus{border:1px solid map-get($static_colors , primary);}
@@ -1283,7 +1280,6 @@ label.rdo .label{position: relative;}
 #container.drawer.studysupport dl dt {font-size:map-get($font_size, font_16); height: 24px; margin-bottom: 6px}
 #container.drawer.studysupport dl dd {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.65); margin-bottom: 10px}
 #container.drawer.studysupport .singleList.type_2 li {border-top: 1px solid rgba(0,0,0,0.25); border-bottom: 1px solid rgba(0,0,0,0.25);}
-#container.drawer.studysupport .singleList.type_2 li.noline {border-bottom: 0}
 #container.drawer.studysupport .singleList.type_2 li a {line-height: 23px; font-weight: 500}
 #container.drawer.studysupport .ico.accordion_down {position: absolute; right: 0; bottom:17px}
 #container.drawer.studysupport .ico.accordion_up {position: absolute; right: 0; bottom:17px}
@@ -1357,11 +1353,11 @@ label.rdo .label{position: relative;}
 #container.login.bpo #content .inner {padding: 90px 18px 0}
 #container.login.bpo .loginGuide dd {font-weight: 500}
 #container.login.bpo .loginGuide dd.privacypolicy {font-size:map-get($font_size, font_14); text-decoration: underline; line-height: 18px; margin: 2px 0 20px; }
-#container.drawer .title_line {font-size:map-get($font_size, font_15); font-weight: 500; }
-#container.drawer .title_line span.time {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); font-weight: 400; margin-left:4px}
-#container.drawer .title_line span.status {font-size:map-get($font_size, font_14); }
-#container.drawer .title_line span.title_txt {margin-right:6px}
-#container.drawer .title_line span.total_txt {margin-right:5px}
+#container .title_line {font-size:map-get($font_size, font_15); font-weight: 500; }
+#container .title_line span.time {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); font-weight: 400; margin-left:4px}
+#container .title_line span.status {font-size:map-get($font_size, font_14); }
+#container .title_line span.title_txt {margin-right:6px}
+#container .title_line span.total_txt {margin-right:5px}
 #container.drawer.bpo ul.multiList.type1 span.time {color:rgba(0,0,0,0.65); }
 #container.drawer.bpo ul.multiList.type1 span.status {color:rgba(0,0,0,0.65); font-weight: 500; margin-right: 5px}
 #container.drawer.bpo .label-tit {font-size:map-get($font_size, font_14); }
@@ -1380,7 +1376,7 @@ label.rdo .label{position: relative;}
 #container.drawer.bpo_student .time {margin:0; color:rgba(0,0,0,0.8); font-weight: 400; margin-left:5px}
 #container.drawer.bpo_calcel select:required:invalid {color:rgba(0,0,0,0.8);}
 
-#container.drawer .title_line .date {font-family: 'Roboto'; color:rgba(0,0,0,0.65);}
+#container .title_line .date {font-family: 'Roboto'; color:rgba(0,0,0,0.65);}
 #container.drawer.bpo_shorten input::placeholder {color:rgba(0,0,0,0.25);}
 #container.drawer.bpo_shorten .calender {padding:11px 10px 11px 16px ; color:rgba(0,0,0,0.8); margin-top: 8px; background-color: #f6f6f6 }
 
@@ -1393,11 +1389,26 @@ label.rdo .label{position: relative;}
 #container.drawer.bpo_classstatus .multiList.type1 .attendance span.check {color:rgba(0,0,0,0.5); margin-right: 6px}
 #container.drawer.bpo_classstatus .multiList.type1 .time {position: absolute; top: calc(50% - 10px) ;  right:0}
 
+#container.bpo_subjectlist_detail .multiList.type3 > li .in {padding:15px 0}
+#container.bpo_subjectlist_detail .multiList.type3 .ico.arrow {top:calc(50% - 8px)}
+#container.bpo_subjectlist_detail .btn.md {height:40px; line-height: 40px}
+#container.bpo_subjectlist_detail .btn.md.attend_check {height:44px; line-height: 44px; font-size:map-get($font_size, font_14); color:#000; font-weight: 500; margin-bottom:8px}
+#container.bpo_subjectlist_detail .type_box {margin-bottom:8px}
+#container.bpo_subjectlist_detail .date_wrap {margin-bottom:6px}
+#container.bpo_subjectlist_detail .date {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8); font-weight: 500; margin-right: 2px}
+#container.bpo_subjectlist_detail .ico.check_16_blue {margin-top:3px; margin-right:2px}
+#container.bpo_subjectlist_detail .attend_view {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.4); font-weight: 400}
+#container.bpo_subjectlist_detail .attend {font-size:map-get($font_size, font_14); }
+#container.bpo_subjectlist_detail .disable {color:rgba(0,0,0,0.25) !important; }
+#container.bpo_subjectlist_detail .attend .time {color:rgba(0,0,0,0.65); margin-left:4px}
+#container.bpo_subjectlist_detail .attend button.check {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.8); padding:4px 7px; border:#ccc 1px solid; line-height: 19px; margin-left:5px; }
+#container.bpo_subjectlist_detail .multiList .multiline {max-height: none}
+#container.bpo_subjectlist_detail .detail_info {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); line-height: 20px; margin-top:2px}
+#container.bpo_subjectlist_detail .detail_info span.num {color:rgba(0,0,0,0.8);}
 
-
-
-
-
+.layerWrap .popup-select {overflow:hidden; width:100%}
+.layerWrap .popup-select li {float:left; width: calc(50% - 4px); box-sizing: border-box}
+.layerWrap .popup-select li+li {margin-left:8px}
 
 
 
@@ -1421,6 +1432,7 @@ label.rdo .label{position: relative;}
 .mb20{margin-bottom: 20px !important;}
 .mb25{margin-bottom: 25px !important;}
 .mb30{margin-bottom: 25px !important;}
+.mr15{margin-right: 15px !important;}
 .ml-18 {margin-left:-18px !important;}
 .mr-18 {margin-right:-18px !important;}
 .pa0{padding:0px !important;}
@@ -1428,6 +1440,7 @@ label.rdo .label{position: relative;}
 .pa25{padding:25px !important;}
 .pt10{padding-top:10px !important;}
 .pl18 {padding-left:18px !important;}
+.pl25 {padding-left:25px !important;}
 .pr18 {padding-right:18px !important;}
 .mono_100 {color: map-get($mono_colors, mono_100) !important;}
 .mono_80 {color: map-get($mono_colors, mono_80) !important;}
@@ -1613,6 +1626,12 @@ label.rdo .label{position: relative;}
 // multiList 수정
 .CLIPingType .multiList.type3 > li{padding-top: 20px;}
 .CLIPingType .multiList.type3 > li:last-child{  border-bottom:0px none;}
-
-.national_flag{width:20px; height:20px; margin-top: -5px; border-radius:10px;}
-.national_flag.line{border:1px solid map-get($line_colors, B95);}
+// 국기
+.CLIPingType .national_flag {width:20px; height:20px; margin-top: -5px; border-radius:20px;}
+.CLIPingType .national_flag.line {border:1px solid map-get($line_colors, B95);}
+.CLIPingType #header .national_flag {position: absolute; top: 74px; left: 18px; width: 40px; height: 40px;}
+.CLIPingType #header .national_flag img {width: 40px; height: 40px;}
+//
+.CLIPingType .color_primary{color: map-get($static_colors , primary);}
+.CLIPingType .alert{background-color: map-get($static_colors , alert);}
+.CLIPingType .speaker{margin-left: -25px; width: 25px; display: inline-block;}
