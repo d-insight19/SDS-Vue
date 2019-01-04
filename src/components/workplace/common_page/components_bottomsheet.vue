@@ -43,16 +43,16 @@
                 <span class="ico check_24_blue"></span> -> <span class="checkIcon"></span>
                  
               -->
-              <li class="">첫번째 메뉴<span class="ico check_24_blue"></span></li>
-              <li class="">두번째 메뉴<span class="ico check_24_blue"></span></li>
-              <li class="">세번째 메뉴<span class="ico check_24_blue"></span></li>
-              <li class="">네번째 메뉴<span class="ico check_24_blue"></span></li>
-              <li class="">선택한 메뉴<span class="ico check_24_blue"></span></li>
-              <li class="active">기존에 선택된 메뉴<span class="ico check_24_blue"></span></li>
+              <li class="">첫번째 메뉴<span class="checkIcon"></span></li>
+              <li class="">두번째 메뉴<span class="checkIcon"></span></li>
+              <li class="">세번째 메뉴<span class="checkIcon"></span></li>
+              <li class="">네번째 메뉴<span class="checkIcon"></span></li>
+              <li class="">선택한 메뉴<span class="checkIcon"></span></li>
+              <li class="active">기존에 선택된 메뉴<span class="checkIcon"></span></li>
             </ul>
             <div class="bottomsheetBtn">              
               <span class="ico close_24_black"></span>
-              취소
+              닫기
             </div>
           </div>
         </div>

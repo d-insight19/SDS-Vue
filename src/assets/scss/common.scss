@@ -784,8 +784,7 @@ select:required:invalid {
 #bottomsheet ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
 #bottomsheet ul li .ico{position:absolute;top:12px;right:18px;display:none;}
 #bottomsheet ul li.active .ico{display:block}
-// 답변에 따라서 General_scss에 컬러값 추가하고, 수정해야함.
-#bottomsheet ul li .checkIcon{border-color:#00adfb;position: absolute;top: 13px;right: 25px;width: 9.8px;height: 16.5px;border-bottom: 3px solid;border-right: 3px solid;transform: rotate(45deg);display:none;}
+#bottomsheet ul li .checkIcon{position: absolute;top: 13px;right: 25px;width: 9.8px;height: 16.5px;border-bottom: 3px solid;border-right: 3px solid;transform: rotate(45deg);display:none;}
 #bottomsheet ul li.active .checkIcon{display:block}
 
 //Spinner
@@ -814,3 +813,16 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 // 답변에 따라서 General_scss에 컬러값 추가하고, 수정해야함.
 #dropdown ul li .checkIcon{border-color:#00adfb;position: absolute;top: 13px;right: 25px;width: 9.8px;height: 16.5px;border-bottom: 3px solid;border-right: 3px solid;transform: rotate(45deg);display:none;}
 #dropdown ul li.active .checkIcon{display:block}
+
+// type box (공통요청) 기존틀과 다를 시 앞에 클래스 붙여서 유연하게 사용
+.type_box{clear:both;border-top:1px solid #999;border-bottom:1px solid #999;background:#f2f3f7;padding: 10px 39px 10px 152px;position: relative;margin-bottom:26px;margin-top:14px;}
+.type_box .info{position:absolute;top: 50%;transform: translateY(-50%);}
+.type_box .info.type1{left:30px;}
+.type_box .info.type2{left:38px;}
+.type_box .info .tit{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;color:rgba(0,0,0,0.8);line-height: 20px;}
+.type_box .info .value{font-family:'Roboto';font-size:map-get($font-size, font_28);color:#000;line-height: 37px;font-weight:500;}
+.type_box .info .value_sub{font-size:map-get($font-size, font_18);color:rgba(0,0,0,0.8);line-height: 37px;}
+.type_box dl{width:100%;display:table;line-height: 35px;}
+.type_box dl + dl{border-top:1px solid #d9d9d9}
+.type_box dl dt{display:table-cell;color:rgba(0,0,0,0.8);font-size:map-get($font-size, font_13)}
+.type_box dl dd{font-family:'Roboto';display:table-cell;text-align: right;font-weight:500;color:#000;font-size:map-get($font-size, font_16)}

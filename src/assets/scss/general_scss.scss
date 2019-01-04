@@ -161,6 +161,9 @@ $brand_colors: (
 
     // 스피너
     #spinner{border: 3px solid map-get($color , clr2); border-right-color: transparent;}
+
+    // bottomsheet 체크박스
+    #bottomsheet ul li .checkIcon{color:map-get($color , clr2);}
   }
 }
 // Including themes. 
