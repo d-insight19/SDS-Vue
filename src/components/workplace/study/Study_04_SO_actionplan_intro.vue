@@ -17,7 +17,7 @@
             </div>
             <!-- //header -->
             
-            <div id="content" class="etc">
+            <div id="content" class="etc_30">
                 <div class="cell">
                     <div class="inner wh" style="padding-top:50px;">
                         <span class="chip wh">액션플랜</span>

@@ -559,6 +559,7 @@ table td.pb10{padding-bottom: 10px;}
 .top-bd-x{border-top: none !important;}
 .bottom-bd-x{border-bottom: none !important;}
 .full-box{background:#f2f2f2; margin-right:-18px; margin-left:-18px; padding-top:15px; padding-bottom:15px; font-size:map-get($font-size, font_14) !important;line-height: 26px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8)}
+.full-box.pd{padding:22px 18px 24px;}
 .fixBtmBtn .btn[disabled] {color: rgba(0, 0, 0, 0.25) !important;background: #ededed !important; border:none !important;}
 
 
@@ -911,8 +912,12 @@ label.rdo .label{position: relative;}
 #container.study_action.bg {background: url("../img/img_actionplan_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 
 
-// 액션플랜 인트로
+// flinto 과제 인트로
 #container.study_assinment.bg {background: url("../img/img_assinment_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+
+// 토론 인트로
+#container.study_debate.bg {background: url("../img/img_debate_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+
 
 
 // 의견공유 서술형
@@ -962,7 +967,7 @@ label.rdo .label{position: relative;}
 .multiList .left_pd .reply-num.mt{margin-top: 4px;}
 .top_bottom_pd{padding-top: 14px; padding-bottom: 14px;}
 .infoChk.pr0{padding-right: 0 !important;}
-.infoChk .input{width:calc(100% - 17%); background: #fff; border: 1px solid #ebebeb;}
+.infoChk .input.type2{width:calc(100% - 17%); background: #fff; border: 1px solid #ebebeb;}
 .infoChk .btn.w17p{width:17%}
 
 
@@ -997,7 +1002,7 @@ label.rdo .label{position: relative;}
 
 
 // 서약서 법률사항 Study_05_etc_pledge_law
-#container.study_pledge .sub-txt { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:rgba(0,0,0,0.8)}
+#container.study_pledge .sub-txt { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; }
 #container.study_pledge .sub-txt-2 { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:#000; font-weight: 500;}
 #container.study_pledge ul.ulList li{margin-bottom: 18px;}
 #container.study_pledge ul.ulList li.mb36{margin-bottom: 36px;}
@@ -1035,7 +1040,7 @@ label.rdo .label{position: relative;}
 #container.study_auth .txt-tit-2{ margin-bottom:6px;font-size:map-get($font-size , font_14);line-height:25px; letter-spacing:-0.42px; color:rgba(0,0,0,0.65)}
 #container.study_auth .sub-txt{ font-size:map-get($font-size , font_15);line-height:20px; letter-spacing:-0.45px; } // 라인높이 문제.. 제플린과 실제안맞음
 #container.study_auth .sub-txt.fw500{font-weight: 500; }
-#container.study_auth .info{vertical-align: -1px; border:1px solid #ccc; border-radius: 100%; width:16px; height:16px;display:inline-block; line-height:14px; margin:0px 4px; text-align: center;}
+// #container.study_auth .info{vertical-align: -1px; border:1px solid #ccc; border-radius: 100%; width:16px; height:16px;display:inline-block; line-height:14px; margin:0px 4px; text-align: center;}
 
 // qpaq result - Study_02_qpqa_result_02
 #container.study_qpqa .ulList.type4 li{ height:auto;}
@@ -1058,7 +1063,7 @@ label.rdo .label{position: relative;}
 #container.study_survey .line01.bot{margin-top:26px; margin-bottom:14px; border:1px solid #e3e3e3;}
 
 
-//
+// 찬반토론 - normal
 #header.debate-head-bg{background: url("../img/img_debate_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 #container.study_debate #header div.hide-inner  p.h-tit5.sm{font-weight:500; font-size:map-get($font-size , font_14);line-height:25px; letter-spacing:-0.35px;}
 #container.study_debate .txt-tit {font-weight:500; font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; margin-bottom:6px;}

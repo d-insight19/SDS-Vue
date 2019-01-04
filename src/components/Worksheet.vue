@@ -6202,7 +6202,7 @@
             Study_04_SO_debate_input_normal
           </router-link>
         </td>
-        <td></td>
+        <td>01-04 작업중</td>
       </tr>
       <tr>
       <td align="center">358</td>
@@ -6321,7 +6321,7 @@
             
           </router-link>
         </td>
-        <td>제플린 없음</td>
+        <td>PU 피드백으로 삭제</td>
       </tr>
       <tr>
       <td align="center">365</td>

@@ -101,7 +101,7 @@
                             </li>
                             <li class="top_bottom_pd">
                                 <div class="infoChk pr0">
-                                    <input type="text" placeholder="답글을 입력하세요" class="input"><button type="button" class="btn sm clr1 w17p">등록</button>
+                                    <input type="text" placeholder="답글을 입력하세요" class="input type2"><button type="button" class="btn sm clr1 w17p">등록</button>
                                 </div>
                             </li>
                             <li>

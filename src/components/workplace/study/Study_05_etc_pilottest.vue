@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_inquery">
+      <div id="container" class="mediaquery study_etc">
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div v-if="headerType == '1'" id="header" class="expand">          
           <div class="header_inner line1">
@@ -83,9 +83,15 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">
-                        <div class="full-box">
-                          <strong class="label-tit16">상품정보</strong> 
-                          <span class="fr guide-btn">오류 유형표</span>
+                      <p class="label-tit16"> 
+                        <strong>상품정보</strong> 
+                        <span class="fr guide-btn">오류 유형표</span>
+                      </p>
+                        <div class="full-box pd">
+                          <p>상품명</p>
+                          <p>상품코드</p>
+                          <p>접수기간</p>
+                          <p>접수자</p>
                         </div>
                         <div class="tabCnt dpb pt0" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
                         <!-- list -->
