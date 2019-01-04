@@ -84,6 +84,7 @@
 .ico.heart_solid_bg_32{width:32px; height:32px; background: url("../img/ic_heart_solid_bg.png") no-repeat; margin-top:-6px; background-size: 32px;}
 .ico.download_32{width:32px;height:32px;background: url("../img/ic_download.png") no-repeat; background-size:32px;}
 .ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}
+.ico.check_16 {width:16px; height:16px; background: url("../img/ic_check_line_16.png")} /*추가 이미지 2019-1-4*/
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
 .ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}
 .ico.deletemode_20_black {width:20px; height:20px; background: url("../img/ic_deletemode_20_black.png")}
@@ -214,6 +215,7 @@
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
 
+.mr4{margin-right: 6px !important;}/*1월 3일 추가*/
 .mr6{margin-right: 6px !important;}/*1월 3일 추가*/
 
 .pdt22{padding-top:22px !important;}

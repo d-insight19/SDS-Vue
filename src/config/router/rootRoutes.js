@@ -306,6 +306,10 @@ import BPOsubjectlistdetailextend from '~workplace/bpo/BPO_subjectlist_detail_ex
 import BPOsubjectlistdetailSMS from '~workplace/bpo/BPO_subjectlist_detail_SMS'
 import BPOClassstatusdetail from '~workplace/bpo/BPO_Classstatus_detail'
 import BPOsubjectlistdetailcheckpopup from '~workplace/bpo/BPO_subjectlist_detail_check_popup'
+import BPOsubjectlistdetail from '~workplace/bpo/BPO_subjectlist_detail'
+import BPOsubjectlistdetail02 from '~workplace/bpo/BPO_subjectlist_detail02'
+import BPOsubjectlistdetaildisable from '~workplace/bpo/BPO_subjectlist_detail_disable'
+import BPOsubjectlistdetailpopup from '~workplace/bpo/BPO_subjectlist_detail_popup'
 
 // 1번 영역
 var rootRoutes = [
@@ -1797,6 +1801,26 @@ var rootRoutes = [
     path: 'BPO_subjectlist_detail_check_popup',
     name: 'BPO_subjectlist_detail_check_popup',
     component: BPOsubjectlistdetailcheckpopup
+  },
+  {
+    path: 'BPO_subjectlist_detail',
+    name: 'BPO_subjectlist_detail',
+    component: BPOsubjectlistdetail
+  },
+  {
+    path: 'BPO_subjectlist_detail02',
+    name: 'BPO_subjectlist_detail02',
+    component: BPOsubjectlistdetail02
+  },
+  {
+    path: 'BPO_subjectlist_detail_disable',
+    name: 'BPO_subjectlist_detail_disable',
+    component: BPOsubjectlistdetaildisable
+  },
+  {
+    path: 'BPO_subjectlist_detail_popup',
+    name: 'BPO_subjectlist_detail_popup',
+    component: BPOsubjectlistdetailpopup
   }
 ]
 
