@@ -12,8 +12,8 @@
             <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">
-                        <p class="sub-txt">나는 법과 윤리를 준수하고, 삼성인의 사고와 행동기준이 되는 「삼성 경영원칙」, 「청결한 조직문화를 위한 임직원 가이드 라인」, 「컴플라이언스 운영규정」을 적극 실천할 것을 서약합니다.</p>
+                    <div class="inner" style="padding-top:82px;">
+                        <p class="sub-txt op80">나는 법과 윤리를 준수하고, 삼성인의 사고와 행동기준이 되는 「삼성 경영원칙」, 「청결한 조직문화를 위한 임직원 가이드 라인」, 「컴플라이언스 운영규정」을 적극 실천할 것을 서약합니다.</p>
                         <p class="line01 mtb"></p>
                         <ul class="ulList">
                             <li>

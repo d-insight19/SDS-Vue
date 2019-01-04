@@ -64,6 +64,7 @@
 
 /* main 추가 이미지 2018-12-17 */
 .ico.info {width:28px; height:28px; background: url("../img/ic_info.png") no-repeat; background-size: 28px;}
+.ico.info.blue {width:24px; height:24px; background: url("../img/ic_info_blue_24.png") no-repeat;}
 .ico.grade_gold {width:25px;height:25px;background: url("../img/ic_grade_gold.png") no-repeat; background-size: 36px; background-position:center center;}
 .ico.next_16_80 {width:16px; height:16px; background: url("../img/ic_next_16_80.png") no-repeat; background-size: 16px;}
 

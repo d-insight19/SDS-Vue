@@ -12,7 +12,7 @@
             <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">
+                    <div class="inner" style="padding-top:82px;">
                         <p class="sub-txt-2">본 서약서 제출을 완료하셔야 학습을 진행하실 수 있습니다.</p>
                         <p class="line01 mtb-2"></p>
                         <p class="sub-txt">본인은 직무를 수행함에 있어 고객에게는 정직하고, 협력회사에 대해서는 공정한 거래를 통한 상호발전을 추구하며, 경쟁사와는 정정당당하게 경쟁하여 주주와 사회에 책임과 의무를 다하기 위하여 다음 사항을 준수할 것을 서약합니다.</p>

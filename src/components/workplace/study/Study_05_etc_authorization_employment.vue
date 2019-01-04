@@ -12,7 +12,7 @@
             <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">
+                    <div class="inner" style="padding-top:82px;">
                         <p class="txt-tit">본인인증</p>
                         <ul class="ulList">
                             <li>
@@ -87,7 +87,7 @@
                                     <button class="auth-btn mr12">휴대폰 인증</button><button class="auth-btn">아이핀 인증</button>
                                 </li>
                                 <li>
-                                    <p class="tar"> 인증 오류 조치 <span class="info color_clr2 border_clr2">i</span> </p>
+                                    <p class="tar"> 인증 오류 조치 <span class="ico info blue"></span> </p>
                                 </li>
                             </ul>                           
                         </div>

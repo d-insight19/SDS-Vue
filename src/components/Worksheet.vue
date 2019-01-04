@@ -2722,8 +2722,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.VideoComment</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_videoComment' }">
+            CLIPing_videoComment
           </router-link>
         </td>
         <td></td>
@@ -6205,8 +6205,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.22.SO_debate_intro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_debate_intro' }">
+            Study_04_SO_debate_intro
           </router-link>
         </td>
         <td></td>
@@ -6222,11 +6222,11 @@
         <td>　</td>
         <td class="textL">05.Study_04.23.SO_debate_input</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_debate_input_normal' }">
+            Study_04_SO_debate_input_normal
           </router-link>
         </td>
-        <td></td>
+        <td>01-04 작업중</td>
       </tr>
       <tr>
       <td align="center">358</td>
@@ -6345,7 +6345,7 @@
             
           </router-link>
         </td>
-        <td>제플린 없음</td>
+        <td>PU 피드백으로 삭제</td>
       </tr>
       <tr>
       <td align="center">365</td>
@@ -6766,8 +6766,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.10.etc_pilottest</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_pilottest' }">
+            Study_05_etc_pilottest
           </router-link>
         </td>
         <td></td>
