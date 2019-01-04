@@ -6181,8 +6181,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.22.SO_debate_intro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_debate_intro' }">
+            Study_04_SO_debate_intro
           </router-link>
         </td>
         <td></td>
@@ -6198,8 +6198,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.23.SO_debate_input</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_debate_input_normal' }">
+            Study_04_SO_debate_input_normal
           </router-link>
         </td>
         <td></td>
@@ -6742,8 +6742,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.10.etc_pilottest</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_pilottest' }">
+            Study_05_etc_pilottest
           </router-link>
         </td>
         <td></td>

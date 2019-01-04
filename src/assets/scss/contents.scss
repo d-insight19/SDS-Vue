@@ -558,7 +558,10 @@ table td.pb10{padding-bottom: 10px;}
 .top-bd-d9{border-top: 1px solid #d9d9d9 !important;}
 .top-bd-x{border-top: none !important;}
 .bottom-bd-x{border-bottom: none !important;}
-.finish{background:#f2f2f2; margin-right:-18px; margin-left:-18px; padding-top:15px; padding-bottom:15px; font-size:map-get($font-size, font_14) !important;line-height: 26px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8)}
+.full-box{background:#f2f2f2; margin-right:-18px; margin-left:-18px; padding-top:15px; padding-bottom:15px; font-size:map-get($font-size, font_14) !important;line-height: 26px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8)}
+.fixBtmBtn .btn[disabled] {color: rgba(0, 0, 0, 0.25) !important;background: #ededed !important; border:none !important;}
+
+
 
 /*chip 공통*/
 .chip {font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 16px; letter-spacing: -0.36px}
@@ -1053,6 +1056,20 @@ label.rdo .label{position: relative;}
 #container.study_survey .label-tit16 { font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; }
 #container.study_survey .line01.tp{margin-top:10px; margin-bottom:16px; border:1px solid rgba(99,99,99,0.6);}
 #container.study_survey .line01.bot{margin-top:26px; margin-bottom:14px; border:1px solid #e3e3e3;}
+
+
+//
+#header.debate-head-bg{background: url("../img/img_debate_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+#container.study_debate #header div.hide-inner  p.h-tit5.sm{font-weight:500; font-size:map-get($font-size , font_14);line-height:25px; letter-spacing:-0.35px;}
+#container.study_debate .txt-tit {font-weight:500; font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; margin-bottom:6px;}
+#container.study_debate .guide-btn {margin-bottom: 12px;}
+#container.study_debate .cir-box {padding:30px 18px;}
+#container.study_debate .cir-box .big-cir { cursor:pointer; width: 128px;border: 5px solid #d9d9d9; display: inline-block;border-radius: 100%; padding: 37px 32px;}
+#container.study_debate .cir-box .big-cir span{font-weight:600; font-size:map-get($font-size , font_30);line-height:45px; letter-spacing:-0.9px; color:rgba(0,0,0,0.5);}
+
+
+
+
 
 
 
