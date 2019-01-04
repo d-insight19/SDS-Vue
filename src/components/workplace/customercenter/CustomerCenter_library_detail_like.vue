@@ -38,7 +38,7 @@
                         </div>
                         <div class="notice_imgs"></div>
                         <p class="label-tit-2 mt36"><strong>첨부파일</strong></p>
-                        <ul class="ulList type4">
+                        <ul class="ulList type1">
                             <li>
                             <div>
                                 <span class="ico img-a"></span>
@@ -121,7 +121,7 @@
             </div>
 
             <!-- floating button -->
-            <slp-button class="md staus_crl1"><span class="ico like_32 red"></span>좋아요</slp-button>
+            <slp-button class="md fixBtmBtn staus_crl1"><span class="ico like_32 red"></span>좋아요</slp-button>
             <!-- //floating button -->      
         </div>       
         <!-- //container --> 
