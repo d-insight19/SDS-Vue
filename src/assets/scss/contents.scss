@@ -1399,6 +1399,7 @@ label.rdo .label{position: relative;}
 .mb20{margin-bottom: 20px !important;}
 .mb25{margin-bottom: 25px !important;}
 .mb30{margin-bottom: 25px !important;}
+.mr15{margin-right: 15px !important;}
 .ml-18 {margin-left:-18px !important;}
 .mr-18 {margin-right:-18px !important;}
 .pa0{padding:0px !important;}
@@ -1406,6 +1407,7 @@ label.rdo .label{position: relative;}
 .pa25{padding:25px !important;}
 .pt10{padding-top:10px !important;}
 .pl18 {padding-left:18px !important;}
+.pl25 {padding-left:25px !important;}
 .pr18 {padding-right:18px !important;}
 .mono_100 {color: map-get($mono_colors, mono_100) !important;}
 .mono_80 {color: map-get($mono_colors, mono_80) !important;}
@@ -1591,6 +1593,12 @@ label.rdo .label{position: relative;}
 // multiList 수정
 .CLIPingType .multiList.type3 > li{padding-top: 20px;}
 .CLIPingType .multiList.type3 > li:last-child{  border-bottom:0px none;}
-
-.national_flag{width:20px; height:20px; margin-top: -5px; border-radius:10px;}
-.national_flag.line{border:1px solid map-get($line_colors, B95);}
+// 국기
+.CLIPingType .national_flag {width:20px; height:20px; margin-top: -5px; border-radius:20px;}
+.CLIPingType .national_flag.line {border:1px solid map-get($line_colors, B95);}
+.CLIPingType #header .national_flag {position: absolute; top: 74px; left: 18px; width: 40px; height: 40px;}
+.CLIPingType #header .national_flag img {width: 40px; height: 40px;}
+//
+.CLIPingType .color_primary{color: map-get($static_colors , primary);}
+.CLIPingType .alert{background-color: map-get($static_colors , alert);}
+.CLIPingType .speaker{margin-left: -25px; width: 25px; display: inline-block;}

@@ -2494,7 +2494,7 @@
             CLIPing_languageClubDetail01_scroll
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">141</td>
@@ -2507,9 +2507,10 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubList02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubList02' }">
+            CLIPing_languageClubList02
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -2524,9 +2525,14 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubDetail01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01' }">
+            CLIPing_languageClubDetail01
           </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01_scroll' }">
+            CLIPing_languageClubDetail01_scroll
+          </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -2541,9 +2547,10 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubList01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubList02' }">
+            CLIPing_languageClubList02
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -2558,9 +2565,14 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubDetail01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01' }">
+            CLIPing_languageClubDetail01
           </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01_scroll' }">
+            CLIPing_languageClubDetail01_scroll
+          </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -2575,9 +2587,10 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubList02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubList02' }">
+            CLIPing_languageClubList02
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -2592,9 +2605,14 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubDetail01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01' }">
+            CLIPing_languageClubDetail01
           </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01_scroll' }">
+            CLIPing_languageClubDetail01_scroll
+          </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -2609,9 +2627,10 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubList02</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubList02' }">
+            CLIPing_languageClubList02
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -2626,9 +2645,14 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubDetail01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01' }">
+            CLIPing_languageClubDetail01
           </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_languageClubDetail01_scroll' }">
+            CLIPing_languageClubDetail01_scroll
+          </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8186,9 +8210,10 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_10.01_Regiclass</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Main_04_browse_main' }">
+            Main_04_browse_main
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
