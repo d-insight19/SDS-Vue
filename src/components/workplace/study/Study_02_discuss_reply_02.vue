@@ -138,7 +138,7 @@
                             </div>                         
                             </li>
                         </ul>
-                        <div class="infoChk pr0 top_bottom_mg_2 finish">
+                        <div class="infoChk pr0 top_bottom_mg_2 full-box">
                             <p class="tac"><span class="ico warning"></span><span class="ml5">토론 기간이 종료되었습니다.</span></p>
                         </div>
                         <ul class="ulList type4 top-bd-x">

@@ -134,10 +134,13 @@ import Study04SOpollinput from '~workplace/study/Study_04_SO_poll_input'
 import Study04SOpollsubmissionrod from '~workplace/study/Study_04_SO_poll_submission_rod'
 import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
+import Study04SOdebateintro from '~workplace/study/Study_04_SO_debate_intro'
+import Study04SOdebateinputnormal from '~workplace/study/Study_04_SO_debate_input_normal'
 import Study04SOdebatesubmission from '~workplace/study/Study_04_SO_debate_submission'
 import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_submission_all'
 import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
 import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
+import Study05etcpilottest from '~workplace/study/Study_05_etc_pilottest'
 import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
@@ -980,6 +983,16 @@ var rootRoutes = [
     component: Study04SOstudygoal
   },
   {
+    path: '/Study_04_SO_debate_intro',
+    name: 'Study_04_SO_debate_intro',
+    component: Study04SOdebateintro
+  },
+  {
+    path: '/Study_04_SO_debate_input_normal',
+    name: 'Study_04_SO_debate_input_normal',
+    component: Study04SOdebateinputnormal
+  },
+  {
     path: '/Study_04_SO_debate_submission',
     name: 'Study_04_SO_debate_submission',
     component: Study04SOdebatesubmission
@@ -993,6 +1006,11 @@ var rootRoutes = [
     path: '/Study_05_etc_pledge_law',
     name: 'Study_05_etc_pledge_law',
     component: Study05etcpledgelaw
+  },
+  {
+    path: '/Study_05_etc_pilottest',
+    name: 'Study_05_etc_pilottest',
+    component: Study05etcpilottest
   },
   {
     path: '/Study_05_etc_pledge_ethics',
