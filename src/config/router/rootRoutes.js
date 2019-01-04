@@ -136,6 +136,8 @@ import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
 import Study04SOdebateintro from '~workplace/study/Study_04_SO_debate_intro'
 import Study04SOdebateinputnormal from '~workplace/study/Study_04_SO_debate_input_normal'
+import Study04SOdebateinputtyping from '~workplace/study/Study_04_SO_debate_input_typing'
+import Study04SOdebateinputopposite from '~workplace/study/Study_04_SO_debate_input_opposite'
 import Study04SOdebatesubmission from '~workplace/study/Study_04_SO_debate_submission'
 import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_submission_all'
 import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
@@ -990,6 +992,16 @@ var rootRoutes = [
     path: '/Study_04_SO_debate_input_normal',
     name: 'Study_04_SO_debate_input_normal',
     component: Study04SOdebateinputnormal
+  },
+  {
+    path: '/Study_04_SO_debate_input_typing',
+    name: 'Study_04_SO_debate_input_typing',
+    component: Study04SOdebateinputtyping
+  },
+  {
+    path: '/Study_04_SO_debate_input_opposite',
+    name: 'Study_04_SO_debate_input_opposite',
+    component: Study04SOdebateinputopposite
   },
   {
     path: '/Study_04_SO_debate_submission',

@@ -6224,6 +6224,12 @@
         <td>
           <router-link :to="{ name: 'Study_04_SO_debate_input_normal' }">
             Study_04_SO_debate_input_normal
+          </router-link><br/>
+          <router-link :to="{ name: '' }">
+            Study_04_SO_debate_input_typing
+          </router-link><br/>
+          <router-link :to="{ name: '' }">
+            Study_04_SO_debate_input_opposite
           </router-link>
         </td>
         <td>01-04 작업중</td>

@@ -584,7 +584,7 @@ table td.pb10{padding-bottom: 10px;}
 .absBtmBtn li + li .btn[disabled]{border-left:1px solid #e0e0e0 !important;}
 
 /*댓글 공통*/
-.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:16px;}
+.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; }
 .reply-txt {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:8px; color:#1a1a1a;}
 .reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
 .reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);     margin-bottom: 10px;}
@@ -741,7 +741,7 @@ table td.pb10{padding-bottom: 10px;}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_14);line-height: 19px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
-.ulList.type4 li:nth-last-child(1){border-bottom:none;}
+.ulList.type4.bot-btn li:nth-last-child(1){border-bottom:none;}
 
 
 // 질문방 상세 2
