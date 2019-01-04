@@ -2726,7 +2726,7 @@
             CLIPing_videoComment
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">153</td>
