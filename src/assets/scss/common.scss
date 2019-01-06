@@ -50,6 +50,7 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .color_black65{color:rgba(0,0,0,0.65) !important;}
 
 
+.clear{clear:both;}
 
 // 헤더 
 #header .btn.prev .ico{width:28px; height:28px; background-position:-13px -61px;}
@@ -90,6 +91,9 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 }
 .multiline{
   text-overflow: ellipsis; width: inherit; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden;
+}
+.multiline.line1{  
+  -webkit-line-clamp: 1;
 }
 .multiline.line2{  
   -webkit-line-clamp: 2;
@@ -172,10 +176,21 @@ textarea::placeholder {
 .intSchBox{position: relative;}
 .intSchBox .input{padding-right:70px;}
 .intSchBox .btn{position:absolute; top:12px; right:12px; z-index: 1; border:0;}
+.intSchBox .btn.eye{position:absolute; top:12px; right:0px; z-index: 1; border:0;}
 .intSchBox .btn .ico{ width:22px; height:22px; vertical-align: top; background-position: -147px -64px;}
+.intSchBox .btn.eye .ico{width:22px; height:22px;background:url("../img/ic_password_view.png") no-repeat;background-size:cover;}
+.intSchBox .btn.eye_slash .ico{width:22px; height:22px;background:url("../img/ic_password_notview.png") no-repeat;background-size:cover;}
 .intSchBox input[type="search"]::-webkit-search-cancel-button{right:-8px}
 // 검색형 Input padding 추가 ( x 아이콘보다 오버되지않기 )
 .search-wrapper input{padding-right:40px !important}
+
+/* 패스워드 예외형 */
+.passwordBox{position: relative;}
+.passwordBox .input{padding-right:70px;}
+.passwordBox .btn.eye{position:absolute; top:12px; right:0px; z-index: 1; border:0;}
+.passwordBox .btn .ico{ width:22px; height:22px; vertical-align: top; background-position: -147px -64px;}
+.passwordBox input[type="search"]::-webkit-search-cancel-button{right:-8px}
+
 
 /* form error */
 input.error{border-color:map-get($static_colors , danger) !important}
@@ -361,8 +376,8 @@ select:required:invalid {
 .multiList.type4 .info{margin-top:8px;}
 
 
-.thumList > li{display: table; width:100%; padding-bottom: 10px; border-bottom: 1px solid #e3e3e3;}
-.thumList > li + li{ margin-top: 10px; }
+.thumList > li{display: table; width:100%; padding-bottom: 10px; border-bottom: 1px solid #e3e3e3;margin-bottom:10px;}
+.thumList > li:nth-last-child(1){ margin-bottom: 0px; }
 .thumList .in{display: table-cell; position: relative; height:100px; padding-left:116px; vertical-align: middle;}
 .thumList .thum{display: block; position: absolute; left:0; top:0; width:100px; height:100px;}
 .thumList .thum .label {display:inline-block; position: absolute; left:0; top:0; z-index: 3; font-size: map-get($font_size, font_12); color:#fff; line-height: 20px; letter-spacing: -0.06em; padding:0 7px; background: rgba(0,0,0,0.4);}
@@ -375,7 +390,7 @@ select:required:invalid {
 .thumList .tit{display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 23px; letter-spacing: -0.048em; max-height: 46px; margin-bottom: 5px; overflow: hidden;}
 // 멀티라인 2줄
 .thumList .tit{text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;  word-wrap: break-word;}
-.thumList .info{font-size: 0; margin-bottom: 9px;}
+.thumList .info{font-size: 0;}
 .thumList .info .ico.star{margin-top:2px;}
 .thumList .info li{display: inline-block; font-size: map-get($font_size, font_13); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
 .thumList .info li+li{margin-left: 5px;}
@@ -437,7 +452,7 @@ select:required:invalid {
 .scroll-x .thumList.type4 .thum {width:324px;}
 
 /* Thumbnail list _ vertical view : 구복 */
-.thumList.type5 .tit{display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
+.thumList.type5 .tit{display: -webkit-box; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
 .thumList.type5 .writer{font-size:map-get($font_size, font_13); line-height: 19px; letter-spacing: -0.0036em; color:rgba(0,0,0,0.8);margin-top:5px;}
 .thumList.type5 .writer + .info{margin-top: 5px;line-height: 20px;}
 .thumList.type5 .info{margin-top: 7px;line-height: 20px;}
@@ -474,7 +489,8 @@ select:required:invalid {
 .thumList.type8 .sub-tit{font-size: map-get($font_size, font_12); color: map-get($mono_colors, mono_80); text-align: center;}
 
 /* tag */
-.tagWrap{font-size: 0;}
+.thumList .tagWrap{margin-top:9px;margin-bottom:0px}
+.tagWrap{font-size: 0;margin-bottom:9px;}
 .tagWrap span{display: inline-block; font-size: map-get($font_size, font_11); line-height: 20px; height: 21px; padding:0 7px; border:1px solid #d9d9d9; border-radius: 50px; vertical-align: top;color:rgba(0,0,0,0.8)}
 .tagWrap span + span{margin-left:4px;}
 
@@ -819,6 +835,7 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .type_box .info{position:absolute;top: 50%;transform: translateY(-50%);}
 .type_box .info.type1{left:30px;}
 .type_box .info.type2{left:38px;}
+.type_box .info.type3{left:32px;}
 .type_box .info .tit{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;color:rgba(0,0,0,0.8);line-height: 20px;}
 .type_box .info .value{font-family:'Roboto';font-size:map-get($font-size, font_28);color:#000;line-height: 37px;font-weight:500;}
 .type_box .info .value_sub{font-size:map-get($font-size, font_18);color:rgba(0,0,0,0.8);line-height: 37px;}

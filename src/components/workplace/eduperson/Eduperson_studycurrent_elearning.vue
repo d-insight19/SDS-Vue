@@ -32,7 +32,7 @@
                   <dl>
                     <dt>신청인원</dt> <dd>2,260</dd>
                   </dl>
-                  <dl class="line">
+                  <dl>
                     <dt>학습인원</dt><dd>540</dd>
                   </dl>
                 </div>
@@ -89,13 +89,13 @@
                     <span  class="bar bar5" style="height:30%" title="80점 미만" value="30.0%"></span>
                   </li>
                   <li>
-                    <span class="bar bar5" style="height:38.1%" title="80-90점" value="38.1%"></span>
+                    <span class="bar bar1" style="height:38.1%" title="80-90점" value="38.1%"></span>
                   </li>
                   <li>
                     <span class="bar bar5" style="height:21.2%" title="90-95점" value="21.2%"></span>
                   </li>
                   <li>
-                    <span class="bar bar1" style="height:12.0%" title="90점 이상" value="12.0%"></span>
+                    <span class="bar bar5" style="height:12.0%" title="90점 이상" value="12.0%"></span>
                   </li>
                 </ul>    
               </div>
@@ -105,6 +105,10 @@
               <div class="detail_box">
                 <ul class="progBox_wrap multi">
                   <h2 class="tit">월별 입과 인원현황</h2>
+                  <p class="graph_detail">
+                    <span class="bar5">2017</span>
+                    <span class="bar1">2018</span>
+                  </p>
 
                   <li v-for="(item, index) in list1" :key="index">
                     <p class="chart_multi_tit">{{item.month}}</p>

@@ -307,6 +307,9 @@ import BPOsubjectlistdetailSMS from '~workplace/bpo/BPO_subjectlist_detail_SMS'
 import BPOClassstatusdetail from '~workplace/bpo/BPO_Classstatus_detail'
 import BPOsubjectlistdetailcheckpopup from '~workplace/bpo/BPO_subjectlist_detail_check_popup'
 
+import AtormDrawer from '~workplace/atorm/Atorm_drawer'
+import AtormControl from '~workplace/atorm/Atorm_control'
+
 // 1번 영역
 var rootRoutes = [
   {
@@ -1797,7 +1800,16 @@ var rootRoutes = [
     path: 'BPO_subjectlist_detail_check_popup',
     name: 'BPO_subjectlist_detail_check_popup',
     component: BPOsubjectlistdetailcheckpopup
+  },
+  {
+    path: '/Atorm_drawer',
+    name: 'Atorm_drawer',
+    component: AtormDrawer
+  },
+  {
+    path: '/Atorm_control',
+    name: 'Atorm_control',
+    component: AtormControl
   }
 ]
-
 export default rootRoutes

@@ -32,7 +32,7 @@
                   <dl>
                     <dt>학습인원</dt> <dd>3,812</dd>
                   </dl>
-                  <dl class="line">
+                  <dl>
                     <dt>학습시간</dt><dd>23:40:16</dd>
                   </dl>
                 </div>
@@ -42,6 +42,10 @@
               <div class="detail_box">
                 <ul class="progBox_wrap multi">
                   <h2 class="tit">분류별 학습현황</h2>
+                  <p class="graph_detail">
+                    <span class="bar5">개설과정</span>
+                    <span class="bar1">학습과정</span>
+                  </p>
 
                   <li v-for="(item, index) in list1" :key="index">
                     <p class="chart_multi_tit">{{item.month}}</p>

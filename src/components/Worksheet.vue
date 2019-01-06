@@ -1367,9 +1367,10 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.06._Alarm</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Drawer_alerm' }">
+            Drawer_alerm
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -1384,8 +1385,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.01.    Main_User</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_control' }">
+            Atorm_control
           </router-link>
         </td>
         <td></td>
