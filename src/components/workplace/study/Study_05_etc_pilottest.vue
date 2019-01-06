@@ -3,36 +3,101 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_inquery">
-            <!-- header -->
-            <div id="header" class="fixed">
-            <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-            <p class="header_text font_18">1:1문의 수정</p>
-            <p class="end color_clr2">완료</p>
-            </div>
-            <!-- //header -->            
+      <div id="container" class="mediaquery study_etc">
+            <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div v-if="headerType == '1'" id="header" class="expand">          
+          <div class="header_inner line1">
+            <button type="button" class="btn only prev"><span class="ico">이전</span></button>
+            <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+          </div>  
+          <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+          </div>
+        </div>
+        <!-- //header -->
+
+
+        <!-- header + 확장형 + tab  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div v-if="headerType == '2'" id="header" class="tab fixed">          
+          <div class="header_inner line1">
+            <button type="button" class="btn only close"><span class="ico">이전</span></button>
+            <p class="header_text font_19">콘텐츠검사 결과</p>
+          </div>  
+          <div class="header_inner line2 tabMenu">
+              <ul class="fixTab">
+                <li class="on"><a href="#tab1">오류 등록</a></li><!-- selected class "on" -->
+                <li><a href="#tab2">오류 결과</a></li>
+              </ul>
+          </div>  
+          <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+          </div>
+        </div>
+        <!-- //header -->
+
+        
+        <!-- header scroll 헤더  작업중-->
+        <div v-if="headerType == '3'" id="header" class="tab fixed">
+          
+          <div class="header_inner line1">
+            <button type="button" class="btn only prev"><span class="ico">이전</span></button>
+            <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+          </div>            
+          <div class="header_inner line2 tabMenu scroll-x">
+              <ul class="scrollTab">
+                <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
+                <li><a href="#tab2">이미지투데이</a></li>
+                <li><a href="#tab3">인문학이야기</a></li>
+                <li><a href="#tab3">인문학이야기</a></li>
+                <li><a href="#tab3">인문학이야기</a></li>
+              </ul>
+          </div>     
+          <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기.  -->
+          <div class="blur_wrap">
+            <div class="left blur"></div>
+            <div class="right blur"></div>
+          </div>
+          <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+            <p>asdfasdf</p>
+          </div>     
+        </div>
+        <!-- //header -->         
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">
-                        
+                      <p class="label-tit16"> 
+                        <strong>상품정보</strong> 
+                        <span class="fr guide-btn">오류 유형표</span>
+                      </p>
+                        <div class="full-box pd">
+                          <p>상품명</p>
+                          <p>상품코드</p>
+                          <p>접수기간</p>
+                          <p>접수자</p>
+                        </div>
                         <div class="tabCnt dpb pt0" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
                         <!-- list -->
                             <ul class="multiList type2">
                                 <li>
-                                    <strong class="label-tit14">제목</strong>
-                                    <slp-text-field ref="refInput"
-        :class="[computedClass, classObject]"
-        :type="inputType"
-        :value="realText"
-        :disabled="disabled"
-        :readonly="readonly"
-        :maxlength="maxlength"
-        :pattern="pattern"
-        class="input"
-        @input="inputText($event.target.value)"
-        @focus="slpTextFieldFocused"
-        @blur="slpTextFieldBlur"
-        @keyup ="slpTextFieldKeyup" placeholder="내용 문의합니다"></slp-text-field>
+                                    
                                 </li>
                                 <li class="custom">
                                     <strong class="label-tit14">과정명</strong>
@@ -103,56 +168,8 @@
 
 <script>
 export default {
-  name: 'Study_02_inquiry_edit',
+  name: 'Study_05_etc_pilottest',
   props: {
-    value: {
-      type: String,
-      default: null
-    },
-    type: {
-      type: String,
-      default: 'text'
-    },
-    placeholder: {
-      type: String,
-      default: null
-    },
-    icon: {
-      type: String,
-      default: null
-    },
-    clearable: {
-      type: Boolean,
-      default: false
-    },
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    readonly: {
-      type: Boolean,
-      default: false
-    },
-    success: {
-      type: Boolean,
-      default: false
-    },
-    error: {
-      type: Boolean,
-      default: false
-    },
-    message: {
-      type: String,
-      default: null
-    },
-    maxlength: {
-      type: [Number, String],
-      default: 100
-    },
-    classObject: {
-      type: [String, Object],
-      default: null
-    }
   },
   /* vue lifecycle */
   created () {
@@ -163,45 +180,12 @@ export default {
   data () {
     return {
       headerType: 2,
-      list1: [],
-      realText: this.value,
-      visible: true,
-      isFocus: true,
-      inputType: this.type,
-      intSchBox: true
+      list1: []
     }
   },
   computed: {
-    rootClass () {
-      return {
-        'intSchBox': this.icon === 'search'
-      }
-    },
-    wrapperClass () {
-      return {
-        'search-wrapper': this.clearable
-      }
-    },
-    computedClass () {
-      return {
-        'succ': this.success,
-        'error': this.error
-      }
-    },
-    pattern () {
-      if (this.clearable) {
-        return ''
-      } else {
-        return null
-      }
-    }
   },
   watch: {
-    value (v) {
-      if (this.realText !== v) {
-        this.inputText(v)
-      }
-    }
   },
   /* vue function */
   methods: {
@@ -216,33 +200,6 @@ export default {
       this.keylength = event.target.value.length
       event.target.style.height = '1px'
       event.target.style.height = (event.target.scrollHeight) + 'px'
-    },
-    inputText (inputValue) {
-      this.realText = inputValue
-      this.$emit('input', this.realText)
-    },
-    setFocus () {
-      this.$refs.refInput.focus()
-    },
-    toggleIcon: function (event, iconName) {
-      if (this.icon && iconName) {
-        this.$emit('click', this.realText)
-      } else if (this.clearable) {
-        this.realText = ''
-        this.$emit('input', '')
-      }
-    },
-    slpTextFieldKeyup (event) {
-      this.$emit('keyup', event)
-    },
-    slpTextFieldFocused (event) {
-      if (this.isFocus) return
-      this.isFocus = true
-      this.$emit('focus', event)
-    },
-    slpTextFieldBlur (event) {
-      this.isFocus = false
-      this.$emit('blur', event)
     }
   }
 }

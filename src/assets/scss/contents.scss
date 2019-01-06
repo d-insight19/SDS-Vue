@@ -579,7 +579,11 @@ table td.pb10{padding-bottom: 10px;}
 .top-bd-d9{border-top: 1px solid #d9d9d9 !important;}
 .top-bd-x{border-top: none !important;}
 .bottom-bd-x{border-bottom: none !important;}
-.finish{background:#f2f2f2; margin-right:-18px; margin-left:-18px; padding-top:15px; padding-bottom:15px; font-size:map-get($font-size, font_14) !important;line-height: 26px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8)}
+.full-box{background:#f2f2f2; margin-right:-18px; margin-left:-18px; padding-top:15px; padding-bottom:15px; font-size:map-get($font-size, font_14) !important;line-height: 26px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8)}
+.full-box.pd{padding:22px 18px 24px;}
+.fixBtmBtn .btn[disabled] {color: rgba(0, 0, 0, 0.25) !important;background: #ededed !important; border:none !important;}
+
+
 
 /*chip 공통*/
 .chip {font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 16px; letter-spacing: -0.36px}
@@ -601,7 +605,7 @@ table td.pb10{padding-bottom: 10px;}
 .absBtmBtn li + li .btn[disabled]{border-left:1px solid #e0e0e0 !important;}
 
 /*댓글 공통*/
-.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:16px;}
+.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; }
 .reply-txt {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:8px; color:#1a1a1a;}
 .reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
 .reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);     margin-bottom: 10px;}
@@ -758,7 +762,7 @@ table td.pb10{padding-bottom: 10px;}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_14);line-height: 19px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
-.ulList.type4 li:nth-last-child(1){border-bottom:none;}
+.ulList.type4.bot-btn li:nth-last-child(1){border-bottom:none;}
 
 
 // 질문방 상세 2
@@ -929,8 +933,12 @@ label.rdo .label{position: relative;}
 #container.study_action.bg {background: url("../img/img_actionplan_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 
 
-// 액션플랜 인트로
+// flinto 과제 인트로
 #container.study_assinment.bg {background: url("../img/img_assinment_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+
+// 토론 인트로
+#container.study_debate.bg {background: url("../img/img_debate_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+
 
 
 // 의견공유 서술형
@@ -980,7 +988,7 @@ label.rdo .label{position: relative;}
 .multiList .left_pd .reply-num.mt{margin-top: 4px;}
 .top_bottom_pd{padding-top: 14px; padding-bottom: 14px;}
 .infoChk.pr0{padding-right: 0 !important;}
-.infoChk .input{width:calc(100% - 17%); background: #fff; border: 1px solid #ebebeb;}
+.infoChk .input.type2{width:calc(100% - 17%); background: #fff; border: 1px solid #ebebeb;}
 .infoChk .btn.w17p{width:17%}
 
 
@@ -1015,7 +1023,7 @@ label.rdo .label{position: relative;}
 
 
 // 서약서 법률사항 Study_05_etc_pledge_law
-#container.study_pledge .sub-txt { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:rgba(0,0,0,0.8)}
+#container.study_pledge .sub-txt { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; }
 #container.study_pledge .sub-txt-2 { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; color:#000; font-weight: 500;}
 #container.study_pledge ul.ulList li{margin-bottom: 18px;}
 #container.study_pledge ul.ulList li.mb36{margin-bottom: 36px;}
@@ -1053,7 +1061,7 @@ label.rdo .label{position: relative;}
 #container.study_auth .txt-tit-2{ margin-bottom:6px;font-size:map-get($font-size , font_14);line-height:25px; letter-spacing:-0.42px; color:rgba(0,0,0,0.65)}
 #container.study_auth .sub-txt{ font-size:map-get($font-size , font_15);line-height:20px; letter-spacing:-0.45px; } // 라인높이 문제.. 제플린과 실제안맞음
 #container.study_auth .sub-txt.fw500{font-weight: 500; }
-#container.study_auth .info{vertical-align: -1px; border:1px solid #ccc; border-radius: 100%; width:16px; height:16px;display:inline-block; line-height:14px; margin:0px 4px; text-align: center;}
+// #container.study_auth .info{vertical-align: -1px; border:1px solid #ccc; border-radius: 100%; width:16px; height:16px;display:inline-block; line-height:14px; margin:0px 4px; text-align: center;}
 
 // qpaq result - Study_02_qpqa_result_02
 #container.study_qpqa .ulList.type4 li{ height:auto;}
@@ -1074,6 +1082,20 @@ label.rdo .label{position: relative;}
 #container.study_survey .label-tit16 { font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; }
 #container.study_survey .line01.tp{margin-top:10px; margin-bottom:16px; border:1px solid rgba(99,99,99,0.6);}
 #container.study_survey .line01.bot{margin-top:26px; margin-bottom:14px; border:1px solid #e3e3e3;}
+
+
+// 찬반토론 - normal
+#header.debate-head-bg{background: url("../img/img_debate_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+#container.study_debate #header div.hide-inner  p.h-tit5.sm{font-weight:500; font-size:map-get($font-size , font_14);line-height:25px; letter-spacing:-0.35px;}
+#container.study_debate .txt-tit {font-weight:500; font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; margin-bottom:6px;}
+#container.study_debate .guide-btn {margin-bottom: 12px;}
+#container.study_debate .cir-box {padding:30px 18px;}
+#container.study_debate .cir-box .big-cir { cursor:pointer; width: 128px;border: 5px solid #d9d9d9; display: inline-block;border-radius: 100%; padding: 37px 32px;}
+#container.study_debate .cir-box .big-cir span{font-weight:600; font-size:map-get($font-size , font_30);line-height:45px; letter-spacing:-0.9px; color:rgba(0,0,0,0.5);}
+
+
+
+
 
 
 
@@ -1126,6 +1148,7 @@ label.rdo .label{position: relative;}
 #container.drawer button.btn14 {font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px; position: absolute; right: 18px; bottom: 18px; font-weight: 500}
 #container.drawer .multiList.type1 > li { border-bottom: 1px solid #e3e3e3; padding:15px 0; min-height: 0;}
 #container.drawer .multiList.type2 > li { padding:0; min-height: 0 }
+#container.drawer .multiList.type4 > li { padding:20px 0; min-height: 0 }
 
 #container.drawer .id_info .btn { position: absolute; right: 0; bottom: 20px; z-index: 1; width:93px; border:#ccc 1px solid; padding:7px 10px;}
 #container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:map-get($mono_colors, mono_80); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
@@ -1139,6 +1162,7 @@ label.rdo .label{position: relative;}
 #container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 13px;}
 #container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px; }
 #container.drawer .labelChk {width:auto}
+#container.drawer.extrainfo_edit .multiList.type1 > li.title_line {padding:20px 0 8px}
 
 #container.drawer .contents14{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:map-get($mono_colors, mono_65); }
 #container.drawer .contents13{margin-top:2px;font-size:map-get($font_size, font_13);line-height: 29px;color:map-get($mono_colors, mono_65); letter-spacing: -0.39px;}
@@ -1149,19 +1173,19 @@ label.rdo .label{position: relative;}
 #container.drawer .multiList.type1 .labelRdo {width:50%}
 
 // 배송지 관리
+#container .noline {border-bottom:0 !important}
 #container.drawer .multiList.type1 > li span.default {border-radius:20px; font-size:map-get($font_size, font_11); color:#fff; padding:2px 9px; margin-left:7px}
-#container.drawer .multiList.type1 > li button.btn14 {position: absolute; top:15px; right: 0; height:20px}
+#container.drawer .multiList.type1 > li button.btn14 {position: absolute; top: calc(50% - 10px); right: 0; height:20px}
 #container.drawer .multiList.type1 > li button.btn14.first {top:0;}
 #container.drawer .multiList.type1 > li .address {font-size:map-get($font_size, font_16); padding-right: 67px; margin:5px 0 }
 #container.drawer .multiList.type1 > li .name_line {color:map-get($mono_colors, mono_80);}
 #container.drawer .multiList.type1 > li .bar {border-left:map-get($line_colors, B85) 1px solid; height:10px; margin:0 8px; display: inline-block}
 #container.drawer .multiList.type1 > li.id_info {padding-top:0}
-#container.drawer .multiList.type1 > li.noline {border-bottom:0}
 #container.drawer .multiList.type1 > .mt0 {margin-top:0}
 #container.drawer .multiList.type1 > li slp-checkbox.mr10 {margin-right:10px}
-#container.drawer .multiList.type1 > li.title_line {border-bottom:#999 1px solid; padding-bottom:8px}
-#container.drawer .title_line {border-bottom:#999 1px solid; padding-bottom:8px}
-#container.drawer .multiList.type1 > li.title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
+#container .title_line {border-bottom:#999 1px solid !important; padding-bottom:8px; font-size:map-get($font_size, font_15); font-weight: 500; }
+#container .title_line.noline {border-bottom:0 !important }
+#container .title_line.pb12 {border-bottom:#999 1px solid; padding-bottom:12px}
 #container.drawer .desc {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); margin:20px 0}
 #container.drawer .version {font-size:map-get($font_size, font_14);line-height: 20px; color:map-get($mono_colors, mono_65); }
 #container.drawer .version .num {font-family: 'Roboto' ; margin-left:6px}
@@ -1188,7 +1212,6 @@ label.rdo .label{position: relative;}
 
 //이벤트
 #container.event .tabWrap.type2 .tabCnt {padding-top:0}
-#header.noline {border-bottom:0}
 #container #content .inner.event {padding-top:18px}
 #container.event #header .header_text {display: block; padding-left: 70px}
 #container.drawer .multiList.type3 > li .in {padding:15px 0}
@@ -1244,7 +1267,6 @@ label.rdo .label{position: relative;}
 #container.drawer.inquiry .content_wapper .content_inner {display:table-cell; text-align:center; vertical-align:middle}
 #container.drawer.inquiry .content_wapper .content {display:inline-block; font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.65); }
 #container.drawer.inquiry .header_inner button.btn14 {top:18px; right:18px}
-.ulList.type4 li.noline {border-bottom: 0}
 #container.drawer.inquiry .textarea_wrap{background-color: #f5f5f5;margin-top:8px;}
 #container.drawer.inquiry textarea.content {height:44px;border:1px solid transparent;padding:11px 14px 12px 16px;  max-height:63px ;background-color: #f5f5f5;width: 100%; color:rgba(0,0,0,0.8);font-size:map-get($font_size, font_14);line-height: 21px;letter-spacing: -0.42px;}
 #container.drawer.inquiry textarea.content:focus{border:1px solid map-get($static_colors , primary);}
@@ -1282,7 +1304,6 @@ label.rdo .label{position: relative;}
 #container.drawer.studysupport dl dt {font-size:map-get($font_size, font_16); height: 24px; margin-bottom: 6px}
 #container.drawer.studysupport dl dd {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.65); margin-bottom: 10px}
 #container.drawer.studysupport .singleList.type_2 li {border-top: 1px solid rgba(0,0,0,0.25); border-bottom: 1px solid rgba(0,0,0,0.25);}
-#container.drawer.studysupport .singleList.type_2 li.noline {border-bottom: 0}
 #container.drawer.studysupport .singleList.type_2 li a {line-height: 23px; font-weight: 500}
 #container.drawer.studysupport .ico.accordion_down {position: absolute; right: 0; bottom:17px}
 #container.drawer.studysupport .ico.accordion_up {position: absolute; right: 0; bottom:17px}
@@ -1356,11 +1377,11 @@ label.rdo .label{position: relative;}
 #container.login.bpo #content .inner {padding: 90px 18px 0}
 #container.login.bpo .loginGuide dd {font-weight: 500}
 #container.login.bpo .loginGuide dd.privacypolicy {font-size:map-get($font_size, font_14); text-decoration: underline; line-height: 18px; margin: 2px 0 20px; }
-#container.drawer .title_line {font-size:map-get($font_size, font_15); font-weight: 500; }
-#container.drawer .title_line span.time {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); font-weight: 400; margin-left:4px}
-#container.drawer .title_line span.status {font-size:map-get($font_size, font_14); }
-#container.drawer .title_line span.title_txt {margin-right:6px}
-#container.drawer .title_line span.total_txt {margin-right:5px}
+
+#container .title_line span.time {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); font-weight: 400; margin-left:4px}
+#container .title_line span.status {font-size:map-get($font_size, font_14); }
+#container .title_line span.title_txt {margin-right:6px}
+#container .title_line span.total_txt {margin-right:5px}
 #container.drawer.bpo ul.multiList.type1 span.time {color:rgba(0,0,0,0.65); }
 #container.drawer.bpo ul.multiList.type1 span.status {color:rgba(0,0,0,0.65); font-weight: 500; margin-right: 5px}
 #container.drawer.bpo .label-tit {font-size:map-get($font_size, font_14); }
@@ -1379,7 +1400,7 @@ label.rdo .label{position: relative;}
 #container.drawer.bpo_student .time {margin:0; color:rgba(0,0,0,0.8); font-weight: 400; margin-left:5px}
 #container.drawer.bpo_calcel select:required:invalid {color:rgba(0,0,0,0.8);}
 
-#container.drawer .title_line .date {font-family: 'Roboto'; color:rgba(0,0,0,0.65);}
+#container .title_line .date {font-family: 'Roboto'; color:rgba(0,0,0,0.65);}
 #container.drawer.bpo_shorten input::placeholder {color:rgba(0,0,0,0.25);}
 #container.drawer.bpo_shorten .calender {padding:11px 10px 11px 16px ; color:rgba(0,0,0,0.8); margin-top: 8px; background-color: #f6f6f6 }
 
@@ -1392,11 +1413,27 @@ label.rdo .label{position: relative;}
 #container.drawer.bpo_classstatus .multiList.type1 .attendance span.check {color:rgba(0,0,0,0.5); margin-right: 6px}
 #container.drawer.bpo_classstatus .multiList.type1 .time {position: absolute; top: calc(50% - 10px) ;  right:0}
 
+#container.bpo_subjectlist_detail .multiList.type3 > li .in {padding:15px 0}
+#container.bpo_subjectlist_detail .multiList.type3 .ico.arrow {top:calc(50% - 8px)}
+#container.bpo_subjectlist_detail .btn.md {height:40px; line-height: 40px}
+#container.bpo_subjectlist_detail .btn.md.attend_check {height:44px; line-height: 44px; font-size:map-get($font_size, font_14); color:#000; font-weight: 500; margin-bottom:8px}
+#container.bpo_subjectlist_detail .type_box {margin-bottom:8px; margin-top:6px}
+#container.bpo_subjectlist_detail .date_wrap {margin-bottom:6px}
+#container.bpo_subjectlist_detail .date {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8); font-weight: 500; margin-right: 2px}
+#container.bpo_subjectlist_detail .ico.check_16_blue {margin-top:3px; margin-right:2px}
+#container.bpo_subjectlist_detail .attend_view {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.4); font-weight: 400}
+#container.bpo_subjectlist_detail .attend {font-size:map-get($font_size, font_14); }
+#container.bpo_subjectlist_detail .disable {color:rgba(0,0,0,0.25) !important; }
+#container.bpo_subjectlist_detail .attend .time {color:rgba(0,0,0,0.65); margin-left:4px}
+#container.bpo_subjectlist_detail .attend button.check {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.8); padding:4px 7px; border:#ccc 1px solid; line-height: 19px; margin-left:5px; }
+#container.bpo_subjectlist_detail .multiList .multiline {max-height: none}
+#container.bpo_subjectlist_detail .detail_info {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); line-height: 20px; margin-top:2px}
+#container.bpo_subjectlist_detail .detail_info span.num {color:rgba(0,0,0,0.8);}
+#container.bpo_subjectlist_detail .title_line {padding-bottom:0}
 
-
-
-
-
+.layerWrap .popup-select {overflow:hidden; width:100%}
+.layerWrap .popup-select li {float:left; width: calc(50% - 4px); box-sizing: border-box}
+.layerWrap .popup-select li+li {margin-left:8px}
 
 
 
@@ -1420,6 +1457,7 @@ label.rdo .label{position: relative;}
 .mb20{margin-bottom: 20px !important;}
 .mb25{margin-bottom: 25px !important;}
 .mb30{margin-bottom: 25px !important;}
+.mr15{margin-right: 15px !important;}
 .ml-18 {margin-left:-18px !important;}
 .mr-18 {margin-right:-18px !important;}
 .pa0{padding:0px !important;}
@@ -1427,6 +1465,7 @@ label.rdo .label{position: relative;}
 .pa25{padding:25px !important;}
 .pt10{padding-top:10px !important;}
 .pl18 {padding-left:18px !important;}
+.pl25 {padding-left:25px !important;}
 .pr18 {padding-right:18px !important;}
 .mono_100 {color: map-get($mono_colors, mono_100) !important;}
 .mono_80 {color: map-get($mono_colors, mono_80) !important;}
@@ -1598,15 +1637,21 @@ label.rdo .label{position: relative;}
 .CLIPingType #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .CLIPingType #header .hide_header p {white-space: normal !important;}
 .CLIPingType #header .tagWrap span {border-color:map-get($mono_colors, mono_25); color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_12); height: 26px; line-height: 24px; padding: 0 10px;}
-.CLIPingType #header .info li{display: inline-block; font-size: map-get($font_size, font_14); line-height: 14px; letter-spacing: -0.036em; vertical-align: top;}
-.CLIPingType #header .info li+li{margin-left: 5px;}
-.CLIPingType #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
-.CLIPingType #header .info .ico.star {margin-top: 2px;}
 .CLIPingType #header dl{display: table; line-height: 140%;}
 .CLIPingType #header dt{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_65); width: 50px; display: table-cell; }
 .CLIPingType #header dd{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_100); display: table-cell;}
 .CLIPingType #header .book {position: absolute; top: 74px; left: 22px;}
 .CLIPingType #header .book img {width: 132px; height: 194px;}
+.CLIPingType #header .national_flag {position: absolute; top: 74px; left: 18px; width: 40px; height: 40px;}
+.CLIPingType #header .national_flag img {width: 40px; height: 40px;}
+.CLIPingType #header .thum{position: absolute; z-index: 0; width:128px; height:100px; right: 0; top: 0;}
+.CLIPingType #header .thum .progWrap{height:6px;}
+.CLIPingType #header .thumbnail{overflow: hidden; margin: auto;height: 100%;position: relative;}
+.CLIPingType #header .thumbnail .thumImg{position: relative; left: 50%; transform: translateX(-50%); height: 100%;}
+.CLIPingType .info li{display: inline-block; font-size: map-get($font_size, font_14); line-height: 14px; letter-spacing: -0.036em; vertical-align: top;}
+.CLIPingType .info li+li{margin-left: 5px;}
+.CLIPingType .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
+.CLIPingType .info .ico.star {margin-top: 2px;}
 // type6 높이 수정
 .CLIPingType .thumList.type6 .in {height:90px;}
 // li 글자색 변경
@@ -1616,6 +1661,19 @@ label.rdo .label{position: relative;}
 // multiList 수정
 .CLIPingType .multiList.type3 > li{padding-top: 20px;}
 .CLIPingType .multiList.type3 > li:last-child{  border-bottom:0px none;}
+// 국기
+.CLIPingType .national_flag {width:20px; height:20px; margin-top: -5px; border-radius:20px;}
+.CLIPingType .national_flag.line {border:1px solid map-get($line_colors, B95);}
+//
+.CLIPingType .color_primary{color: map-get($static_colors , primary);}
+.CLIPingType .alert{background-color: map-get($static_colors , alert);}
+.CLIPingType .speaker{margin-left: -25px; width: 25px; display: inline-block;}
 
-.national_flag{width:20px; height:20px; margin-top: -5px; border-radius:10px;}
-.national_flag.line{border:1px solid map-get($line_colors, B95);}
+.CLIPingType .rating {border: none; display:inline;}
+.CLIPingType .rating > input { display: none; } 
+.CLIPingType .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
+.CLIPingType .rating > input:checked + label:hover, 
+.CLIPingType .rating > input:checked ~ label:hover,
+.CLIPingType .rating > label:hover ~ input:checked ~ label, 
+.CLIPingType .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
+.CLIPingType .reply-list .rating > label {width:20px;height:20px;}

@@ -632,6 +632,9 @@ select:required:invalid {
   overflow: auto;
 }
 
+.disable {color:rgba(0,0,0,0.25) !important; }
+
+
 // 통합 ID
 .join-id{display: table; width:100%; padding-bottom: 15px; border-bottom:1px solid #1a1a1a;}
 .join-id .label-tit{display: table-cell !important; font-size:map-get($font_size, font_15); font-weight: 300 !important; line-height: 21px !important; letter-spacing: -0.45px; width:50px; margin-bottom: 0px !important;}
@@ -716,7 +719,7 @@ select:required:invalid {
 .reply_input button {width:57px; height:44px; background-color:#21277c; color:#fff; }
 .bd_bt {border-bottom:#e3e3e3 1px solid; padding-bottom:22px}
 .reply-list {border-bottom:#e3e3e3 1px solid; padding:16px 0 10px}
-.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:16px;}
+.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; }
 .reply-txt {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:8px; color:#1a1a1a;}
 .reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
 .reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);}

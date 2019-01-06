@@ -21,7 +21,7 @@
                         <div class="txt-line">
                             <p class="tar">
                                 <span>전체의견</span>
-                                <span class="ico arr down"></span>
+                                <span class="ico down_blue_24"></span>
                             </p>
                         </div>                        
                         <p class="line01"></p>
@@ -46,7 +46,7 @@
                                 </div>
                             </li>
                             <li class="left_pd">
-                                <p class="reply-name">
+                                <p class="reply-name mt16">
                                     <span class="ico indent n-ml18"></span>
                                     <span class="chip type2 agree-x">반대</span>
                                     <span>김*영</span>
@@ -64,7 +64,7 @@
                                 </div>
                             </li>
                             <li class="left_pd">
-                                <p class="reply-name">
+                                <p class="reply-name mt16">
                                     <span class="ico indent n-ml18"></span>
                                     <span class="chip type2 agree-x">반대</span>
                                     <span>이*우</span>
@@ -82,7 +82,7 @@
                                 </div>
                             </li>
                             <li class="left_pd">
-                                <p class="reply-name">
+                                <p class="reply-name mt16">
                                     <span class="ico indent n-ml18"></span>
                                     <span class="chip type2 agree">찬성</span>
                                     <span>이*우</span>
@@ -101,7 +101,7 @@
                             </li>
                             <li class="top_bottom_pd">
                                 <div class="infoChk pr0">
-                                    <input type="text" placeholder="답글을 입력하세요" class="input"><button type="button" class="btn sm clr1 w17p">등록</button>
+                                    <input type="text" placeholder="답글을 입력하세요" class="input type2"><button type="button" class="btn sm clr1 w17p">등록</button>
                                 </div>
                             </li>
                             <li>

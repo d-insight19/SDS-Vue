@@ -125,7 +125,7 @@
                             </p> 
                         </div>
                         <p class="line01"></p>
-                        <p class="reply-name">
+                        <p class="reply-name mt16">
                             <span class="chip agree">찬성</span>
                             <span>정*민 [작성자]</span>
                             <span class="fr ico more"></span>
@@ -174,7 +174,7 @@
                             </p> 
                         </div>
                         <p class="line01"></p>
-                        <p class="reply-name">
+                        <p class="reply-name mt16">
                             <span class="chip agree-x">반대</span>
                             <span>정*민 [작성자]</span>
                             <span class="fr ico more"></span>

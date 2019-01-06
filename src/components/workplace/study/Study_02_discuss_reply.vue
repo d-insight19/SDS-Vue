@@ -19,8 +19,6 @@
                             <span class="fr ico more28"></span>                            
                         </p>
                         <p class="info-group fwr">
-                            <span>공개</span>
-                            <span class="pipe"></span>
                             <span>2018.10.10</span>
                             <span class="pipe"></span>
                             <span>정해민</span>
@@ -141,7 +139,7 @@
                             </li>
                         </ul>
                         <div class="infoChk pr0 top_bottom_mg">
-                            <input type="text" placeholder="의견을 입력하세요.(0/300)" class="input" @focus="focusToggle"><button type="button" class="btn sm clr1 w17p">등록</button>
+                            <input type="text" placeholder="의견을 입력하세요.(0/300)" class="input type2" @focus="focusToggle"><button type="button" class="btn sm clr1 w17p">등록</button>
                         </div>
                         <ul class="ulList type4 top-bd-d9">
                             <li>

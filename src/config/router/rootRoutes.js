@@ -134,10 +134,15 @@ import Study04SOpollinput from '~workplace/study/Study_04_SO_poll_input'
 import Study04SOpollsubmissionrod from '~workplace/study/Study_04_SO_poll_submission_rod'
 import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
+import Study04SOdebateintro from '~workplace/study/Study_04_SO_debate_intro'
+import Study04SOdebateinputnormal from '~workplace/study/Study_04_SO_debate_input_normal'
+import Study04SOdebateinputtyping from '~workplace/study/Study_04_SO_debate_input_typing'
+import Study04SOdebateinputopposite from '~workplace/study/Study_04_SO_debate_input_opposite'
 import Study04SOdebatesubmission from '~workplace/study/Study_04_SO_debate_submission'
 import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_submission_all'
 import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
 import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
+import Study05etcpilottest from '~workplace/study/Study_05_etc_pilottest'
 import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
@@ -208,6 +213,7 @@ import CLIPingLanguageClub from '~workplace/cliping/CLIPing_languageClub'
 import CLIPingLanguageClubList02 from '~workplace/cliping/CLIPing_languageClubList02'
 import CLIPingLanguageClubDetail01 from '~workplace/cliping/CLIPing_languageClubDetail01'
 import CLIPingLanguageClubDetail01Scroll from '~workplace/cliping/CLIPing_languageClubDetail01_scroll'
+import CLIPingVideoComment from '~workplace/cliping/CLIPing_videoComment'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -301,11 +307,19 @@ import BPOMyinfo from '~workplace/bpo/BPO_Myinfo'
 import BPOManual from '~workplace/bpo/BPO_Manual'
 import BPOsubjectlistdetailstudent from '~workplace/bpo/BPO_subjectlist_detail_student'
 import BPOsubjectlistdetailcancel from '~workplace/bpo/BPO_subjectlist_detail_cancel'
+import BPOsubjectlistdetailcancelpopup from '~workplace/bpo/BPO_subjectlist_detail_cancel_popup'
 import BPOsubjectlistdetailshorten from '~workplace/bpo/BPO_subjectlist_detail_shorten'
 import BPOsubjectlistdetailextend from '~workplace/bpo/BPO_subjectlist_detail_extend'
 import BPOsubjectlistdetailSMS from '~workplace/bpo/BPO_subjectlist_detail_SMS'
+import BPOsubjectlistdetailSMSpopup from '~workplace/bpo/BPO_subjectlist_detail_SMS_popup'
 import BPOClassstatusdetail from '~workplace/bpo/BPO_Classstatus_detail'
 import BPOsubjectlistdetailcheckpopup from '~workplace/bpo/BPO_subjectlist_detail_check_popup'
+import BPOsubjectlistdetail from '~workplace/bpo/BPO_subjectlist_detail'
+import BPOsubjectlistdetail02 from '~workplace/bpo/BPO_subjectlist_detail02'
+import BPOsubjectlistdetaildisable from '~workplace/bpo/BPO_subjectlist_detail_disable'
+import BPOsubjectlistdetailpopup from '~workplace/bpo/BPO_subjectlist_detail_popup'
+import BPOsubjectlistdetailpopupdisable from '~workplace/bpo/BPO_subjectlist_detail_popup_disable'
+import BPOsubjectlistdetailpopupsave from '~workplace/bpo/BPO_subjectlist_detail_popup_save'
 
 import AtormDrawer from '~workplace/atorm/Atorm_drawer'
 import AtormControl from '~workplace/atorm/Atorm_control'
@@ -978,6 +992,26 @@ var rootRoutes = [
     component: Study04SOstudygoal
   },
   {
+    path: '/Study_04_SO_debate_intro',
+    name: 'Study_04_SO_debate_intro',
+    component: Study04SOdebateintro
+  },
+  {
+    path: '/Study_04_SO_debate_input_normal',
+    name: 'Study_04_SO_debate_input_normal',
+    component: Study04SOdebateinputnormal
+  },
+  {
+    path: '/Study_04_SO_debate_input_typing',
+    name: 'Study_04_SO_debate_input_typing',
+    component: Study04SOdebateinputtyping
+  },
+  {
+    path: '/Study_04_SO_debate_input_opposite',
+    name: 'Study_04_SO_debate_input_opposite',
+    component: Study04SOdebateinputopposite
+  },
+  {
     path: '/Study_04_SO_debate_submission',
     name: 'Study_04_SO_debate_submission',
     component: Study04SOdebatesubmission
@@ -991,6 +1025,11 @@ var rootRoutes = [
     path: '/Study_05_etc_pledge_law',
     name: 'Study_05_etc_pledge_law',
     component: Study05etcpledgelaw
+  },
+  {
+    path: '/Study_05_etc_pilottest',
+    name: 'Study_05_etc_pilottest',
+    component: Study05etcpilottest
   },
   {
     path: '/Study_05_etc_pledge_ethics',
@@ -1337,6 +1376,11 @@ var rootRoutes = [
     component: CLIPingLanguageClubDetail01Scroll
   },
   {
+    path: '/CLIPing_videoComment',
+    name: 'CLIPing_videoComment',
+    component: CLIPingVideoComment
+  },
+  {
     path: '/Drawer_alerm',
     name: 'Drawer_alerm',
     component: DrawerAlerm
@@ -1662,6 +1706,16 @@ var rootRoutes = [
     component: CustomerCenterInquirywrite02error
   },
   {
+    path: '/Atorm_drawer',
+    name: 'Atorm_drawer',
+    component: AtormDrawer
+  },
+  {
+    path: '/Atorm_control',
+    name: 'Atorm_control',
+    component: AtormControl
+  },
+  {
     path: '/Eduperson_login',
     name: 'Eduperson_login',
     component: EdupersonLogin
@@ -1777,6 +1831,11 @@ var rootRoutes = [
     component: BPOsubjectlistdetailcancel
   },
   {
+    path: 'BPO_subjectlist_detail_cancel_popup',
+    name: 'BPO_subjectlist_detail_cancel_popup',
+    component: BPOsubjectlistdetailcancelpopup
+  },
+  {
     path: 'BPO_subjectlist_detail_shorten',
     name: 'BPO_subjectlist_detail_shorten',
     component: BPOsubjectlistdetailshorten
@@ -1792,6 +1851,11 @@ var rootRoutes = [
     component: BPOsubjectlistdetailSMS
   },
   {
+    path: 'BPO_subjectlist_detail_SMS_popup',
+    name: 'BPO_subjectlist_detail_SMS_popup',
+    component: BPOsubjectlistdetailSMSpopup
+  },
+  {
     path: 'BPO_Classstatus_detail',
     name: 'BPO_Classstatus_detail',
     component: BPOClassstatusdetail
@@ -1802,14 +1866,34 @@ var rootRoutes = [
     component: BPOsubjectlistdetailcheckpopup
   },
   {
-    path: '/Atorm_drawer',
-    name: 'Atorm_drawer',
-    component: AtormDrawer
+    path: 'BPO_subjectlist_detail',
+    name: 'BPO_subjectlist_detail',
+    component: BPOsubjectlistdetail
   },
   {
-    path: '/Atorm_control',
-    name: 'Atorm_control',
-    component: AtormControl
+    path: 'BPO_subjectlist_detail02',
+    name: 'BPO_subjectlist_detail02',
+    component: BPOsubjectlistdetail02
+  },
+  {
+    path: 'BPO_subjectlist_detail_disable',
+    name: 'BPO_subjectlist_detail_disable',
+    component: BPOsubjectlistdetaildisable
+  },
+  {
+    path: 'BPO_subjectlist_detail_popup',
+    name: 'BPO_subjectlist_detail_popup',
+    component: BPOsubjectlistdetailpopup
+  },
+  {
+    path: 'BPO_subjectlist_detail_popup_disable',
+    name: 'BPO_subjectlist_detail_popup_disable',
+    component: BPOsubjectlistdetailpopupdisable
+  },
+  {
+    path: 'BPO_subjectlist_detail_popup_save',
+    name: 'BPO_subjectlist_detail_popup_save',
+    component: BPOsubjectlistdetailpopupsave
   }
 ]
 export default rootRoutes

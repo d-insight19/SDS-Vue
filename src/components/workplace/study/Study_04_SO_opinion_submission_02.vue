@@ -130,7 +130,7 @@
                             </p> 
                         </div>
                         <p class="line01"></p>
-                        <p class="reply-name">
+                        <p class="reply-name mt16">
                             <span>정*민 [작성자]</span>
                             <span class="fr ico more"></span>
                         </p>

@@ -65,6 +65,7 @@
 
 /* main 추가 이미지 2018-12-17 */
 .ico.info {width:28px; height:28px; background: url("../img/ic_info.png") no-repeat; background-size: 28px;}
+.ico.info.blue {width:24px; height:24px; background: url("../img/ic_info_blue_24.png") no-repeat;}
 .ico.grade_gold {width:25px;height:25px;background: url("../img/ic_grade_gold.png") no-repeat; background-size: 36px; background-position:center center;}
 .ico.next_16_80 {width:16px; height:16px; background: url("../img/ic_next_16_80.png") no-repeat; background-size: 16px;}
 
@@ -85,6 +86,7 @@
 .ico.heart_solid_bg_32{width:32px; height:32px; background: url("../img/ic_heart_solid_bg.png") no-repeat; margin-top:-6px; background-size: 32px;}
 .ico.download_32{width:32px;height:32px;background: url("../img/ic_download.png") no-repeat; background-size:32px;}
 .ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}
+.ico.check_16 {width:16px; height:16px; background: url("../img/ic_check_line_16.png")} /*추가 이미지 2019-1-4*/
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
 .ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}
 .ico.deletemode_20_black {width:20px; height:20px; background: url("../img/ic_deletemode_20_black.png")}
@@ -183,10 +185,12 @@
 
 /* margin */
 .mt0{margin-top: 0px !important;}
+.mt6{margin-top: 6px !important;}/*12월12일 추가*/ 
 .mt8{margin-top: 8px !important;}/*12월12일 추가*/ 
 .mt9{margin-top: 9px !important;}
 .mt10{margin-top: 10px !important;}
-.mt12{margin-top: 12px !important;}/*12월12일 추가*/ 
+.mt12{margin-top: 12px !important;}/*12월12일 추가*/
+.mt16{margin-top: 16px !important;} 
 .mt20{margin-top: 20px !important;}/*12월12일 추가*/ 
 .mt22{margin-top: 22px !important;}/*12월19일 추가*/
 .mt24{margin-top: 24px !important;}
@@ -215,6 +219,7 @@
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
 
+.mr4{margin-right: 6px !important;}/*1월 3일 추가*/
 .mr6{margin-right: 6px !important;}/*1월 3일 추가*/
 
 .pdt22{padding-top:22px !important;}
