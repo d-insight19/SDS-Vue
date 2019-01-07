@@ -136,6 +136,8 @@ import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
 import Study04SOdebateintro from '~workplace/study/Study_04_SO_debate_intro'
 import Study04SOdebateinputnormal from '~workplace/study/Study_04_SO_debate_input_normal'
+import Study04SOdebateinputtyping from '~workplace/study/Study_04_SO_debate_input_typing'
+import Study04SOdebateinputopposite from '~workplace/study/Study_04_SO_debate_input_opposite'
 import Study04SOdebatesubmission from '~workplace/study/Study_04_SO_debate_submission'
 import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_submission_all'
 import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
@@ -318,6 +320,9 @@ import BPOsubjectlistdetaildisable from '~workplace/bpo/BPO_subjectlist_detail_d
 import BPOsubjectlistdetailpopup from '~workplace/bpo/BPO_subjectlist_detail_popup'
 import BPOsubjectlistdetailpopupdisable from '~workplace/bpo/BPO_subjectlist_detail_popup_disable'
 import BPOsubjectlistdetailpopupsave from '~workplace/bpo/BPO_subjectlist_detail_popup_save'
+
+import AtormDrawer from '~workplace/atorm/Atorm_drawer'
+import AtormControl from '~workplace/atorm/Atorm_control'
 
 // 1번 영역
 var rootRoutes = [
@@ -995,6 +1000,16 @@ var rootRoutes = [
     path: '/Study_04_SO_debate_input_normal',
     name: 'Study_04_SO_debate_input_normal',
     component: Study04SOdebateinputnormal
+  },
+  {
+    path: '/Study_04_SO_debate_input_typing',
+    name: 'Study_04_SO_debate_input_typing',
+    component: Study04SOdebateinputtyping
+  },
+  {
+    path: '/Study_04_SO_debate_input_opposite',
+    name: 'Study_04_SO_debate_input_opposite',
+    component: Study04SOdebateinputopposite
   },
   {
     path: '/Study_04_SO_debate_submission',
@@ -1691,6 +1706,16 @@ var rootRoutes = [
     component: CustomerCenterInquirywrite02error
   },
   {
+    path: '/Atorm_drawer',
+    name: 'Atorm_drawer',
+    component: AtormDrawer
+  },
+  {
+    path: '/Atorm_control',
+    name: 'Atorm_control',
+    component: AtormControl
+  },
+  {
     path: '/Eduperson_login',
     name: 'Eduperson_login',
     component: EdupersonLogin
@@ -1871,5 +1896,4 @@ var rootRoutes = [
     component: BPOsubjectlistdetailpopupsave
   }
 ]
-
 export default rootRoutes

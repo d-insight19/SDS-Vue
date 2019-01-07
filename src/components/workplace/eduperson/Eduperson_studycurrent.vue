@@ -9,17 +9,17 @@
       </div>
 
       <div class="type_box">
-        <div class="info type1">
+        <div class="info type3">
           <p class="tit">수료율</p>
           <p><span class="value">89.91</span><span class="value_sub">%</span></p>
         </div>
         <dl>
           <dt>총인원</dt> <dd>2,360</dd>
         </dl>
-        <dl class="line">
+        <dl>
           <dt>수료인원</dt><dd>327</dd>
         </dl>
-        <dl class="line">
+        <dl>
           <dt>미수료인원</dt><dd>33</dd>
         </dl>
       </div>

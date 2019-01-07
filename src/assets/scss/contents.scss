@@ -507,6 +507,7 @@
 
 // 수직그래프 (미완성) -> 라이브러리 사용시 수정해야함
 #container.eduperson_studycurrent_detail .detail_box .progBox_tit{font-size:map-get($font-size, font_22);line-height: 29px;letter-spacing: -0.6px;font-weight:600;margin-bottom:20px;margin-top:22px;}
+#container.eduperson_studycurrent_detail .detail_box .progBox_tit .proBox_sub_tit{float:right;font-size:map-get($font-size, font_14);color:rgba(0,0,0,0.5);letter-spacing: -0.42px;font-weight: 400;}
 #container.eduperson_studycurrent_detail .progBox_wrap.vertical{display:table;table-layout: fixed;width:100%;height:150px; margin:0 auto;  margin-bottom:56px;}
 #container.eduperson_studycurrent_detail .progBox_wrap.vertical li{position:relative;display:table-cell;vertical-align:bottom; height:150px;}
 #container.eduperson_studycurrent_detail .progBox_wrap.vertical li span{display: block;background: rgba(#d1ecfa, .75);width:24px;margin:0 auto;border-radius:0px;}
@@ -524,6 +525,10 @@
 #container.eduperson_studycurrent_detail .progBox_wrap.multi .progBox_multi .progBox .bar{border-radius: 0px 100px 100px 0px}
 #container.eduperson_studycurrent_detail .progBox_wrap.multi .progBox_multi .progBox .fr{position:absolute;right:-48px;top:-8px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;}
 #container.eduperson_studycurrent_detail .progBox_wrap.multi{margin-bottom:0px;}
+#container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail{text-align: right;font-size:map-get($font-size, font_12);line-height: 18px;letter-spacing: -0.36;margin-bottom:20px;}
+#container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail span.bar5:before{width: 10px;height: 10px;display: inline-block; content: ''; border-radius: 100%;margin-right: 4px;background-color:map-get($contents_colors, type_5 );}
+#container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail span.bar1:before{width: 10px;height: 10px;display: inline-block; content: ''; border-radius: 100%;margin-right: 4px;background-color:map-get($contents_colors, type_1 );}
+#container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail span + span{margin-left:12px;}
 
 #container.eduperson_studycurrent_detail .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
 #container.eduperson_studycurrent_detail .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
@@ -534,6 +539,22 @@
 #container.eduperson_studycurrent_detail .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
 
 
+// ATORM
+#container.atorm .tit1{font-size:map-get($font-size, font_30);line-height:45px;letter-spacing: -0.9px;font-weight: 600;margin-bottom:13px;}
+#container.atorm .tit2{font-size:map-get($font-size, font_20);line-height:28px;letter-spacing: -0.6px;font-weight: 600;margin-bottom:13px;}
+#container.atorm .tit2 .num{font-family: 'Roboto';font-weight: 500;margin-left:5px;}
+#container.atorm .showall{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;font-weight: 400;}
+#container.atorm .manual_btn{float:right;width:82px;height:32px;color:#fff;font-size:map-get($font-size, font_13);font-weight:500;letter-spacing: -0.39px;border-radius: 16px;margin-top:7px;line-height: 32px;text-align: center}
+#container.atorm .manual_btn .ico.down-load-wh{margin-left:-8px;}
+#container.atorm .type_box{padding:10px 32px 10px 142px;}
+#container.atorm .type_box dt{position: relative;left:6.5px}
+#container.atorm .type_box dl dt::before{content:'';position: absolute;top: 50%;left:-6px;transform: translateY(-50%);width: 3px;height: 3px;background:rgba(0,0,0,0.5);border-radius: 50%;}
+#container.atorm .thumList .info li{color:rgba(0,0,0,0.8)}
+#container.atorm .thumList .cur_state{margin-top:5px;font-size:map-get($font-size, font_13);letter-spacing: -0.13px;color:rgba(0,0,0,0.8)}
+#container.atorm .multiList > li .in{width:100%;padding:15px 0px}
+#container.atorm .multiList > li{border-top:1px solid #e3e3e3}
+#container.atorm .multiList > li:nth-last-child(1){border-bottom:1px solid #e3e3e3}
+#container.atorm .multiList > li .ico.star{margin-top:5px;}
 
 
 
@@ -584,7 +605,7 @@ table td.pb10{padding-bottom: 10px;}
 .absBtmBtn li + li .btn[disabled]{border-left:1px solid #e0e0e0 !important;}
 
 /*댓글 공통*/
-.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:16px;}
+.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; }
 .reply-txt {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:8px; color:#1a1a1a;}
 .reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
 .reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);     margin-bottom: 10px;}
@@ -741,7 +762,7 @@ table td.pb10{padding-bottom: 10px;}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 .ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_14);line-height: 19px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
-.ulList.type4.btn li:nth-last-child(1){border-bottom:none;}
+.ulList.type4.bot-btn li:nth-last-child(1){border-bottom:none;}
 
 
 // 질문방 상세 2
@@ -836,7 +857,7 @@ table td.pb10{padding-bottom: 10px;}
 #container.study_quiz_ox .txt-tit {margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 #header.quiz-head-bg{background: url("../img/img_quiz_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 
-.inb-box{display: inline-block; width:49%;}
+.inb-box{display: inline-block; width:49.5%;}
 .inb-box label.labelRdo input.rdo + .ico{vertical-align: middle; margin:0 16px 0 0 ;}
 ul.com-rdo label.labelRdo input.rdo:checked + .ico .chk-blue { display: inline-block; background-position: -5px -5px; width: 22px; height: 22px; }
 ul.com-rdo label.labelRdo input.rdo:checked ~ .label { color:#00ADFB;}
@@ -1069,12 +1090,15 @@ label.rdo .label{position: relative;}
 #container.study_debate .txt-tit {font-weight:500; font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; margin-bottom:6px;}
 #container.study_debate .guide-btn {margin-bottom: 12px;}
 #container.study_debate .cir-box {padding:30px 18px;}
-#container.study_debate .cir-box .big-cir { cursor:pointer; width: 128px;border: 5px solid #d9d9d9; display: inline-block;border-radius: 100%; padding: 37px 32px;}
-#container.study_debate .cir-box .big-cir span{font-weight:600; font-size:map-get($font-size , font_30);line-height:45px; letter-spacing:-0.9px; color:rgba(0,0,0,0.5);}
+#container.study_debate .cir-box .big-cir { cursor:pointer; width: 128px; border: 5px solid #d9d9d9; display: inline-block; border-radius: 100%; padding:42px 32px; font-weight:600; font-size:map-get($font-size , font_30);line-height:45px; letter-spacing:-0.9px; color:rgba(0,0,0,0.5);}
 
-
-
-
+// 찬반토론 - opposite
+.cir-box .inb-box{width:50%;}
+.labelRdo.type2{ padding-left:0;}
+.labelRdo.type2 label {background: #fff;border: 1px solid #ddd; border-radius: 5px;cursor: pointer;color: #444;}
+.labelRdo.type2 input[type="radio"] { display: none;}
+.labelRdo.type2 input[type="radio"]:checked + label {background: #00b6e8; color: #fff !important;border-color: #00b6e8 !important;}
+.labelRdo.type2.oppose input[type="radio"]:checked + label {background: #ff726d; color: #fff !important;border-color: #ff726d !important;}
 
 
 
@@ -1456,6 +1480,10 @@ label.rdo .label{position: relative;}
 .width_inherit {width: inherit !important;}
 .width100 {width:100% !important;}
 .width50 {width:50% !important;}
+//MainType 공통 타이틀 수정
+.MainType .h-tit1{margin-top:4px;margin-bottom:0px;}
+.MainType .h-tit1 + .h-tit2{margin-top:13px;}
+.MainType .h-tit2{margin-bottom:14px;}
 // 총합계
 .MainType .total {height:30px; margin-bottom:10px; color: map-get($mono_colors, mono_80); border-bottom: 1px solid map-get($line_colors, B60);}
 .MainType .total span {font-size: map-get($font_size, font_15);}

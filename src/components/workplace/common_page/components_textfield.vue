@@ -91,6 +91,18 @@
 			</ul>
 
 
+            <!-- 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가됨 -->
+            <div class="intSchBox">
+                <!-- X 아이콘이 필요한 input -->
+                <div class="search-wrapper">
+                    <input type="text"  pattern="^\s+" class="input underline" placeholder="비밀번호" />
+                    <button class="close-icon" type="button"></button>
+                </div>
+                <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+            </div>
+
+
             
 
         </div>
@@ -112,10 +124,20 @@ export default {
   /* vue data */
   data () {
     return {
+      password_show: false
     }
   },
   /* vue function */
   methods: {
+    passwordtoggle (event) {
+      var inputTag = event.target.parentElement.parentElement.getElementsByTagName('input')[0]
+      if (this.password_show) {
+        inputTag.setAttribute('type', 'password')
+      } else {
+        inputTag.setAttribute('type', 'text')
+      }
+      this.password_show = !this.password_show
+    }
   }
 }
 </script>

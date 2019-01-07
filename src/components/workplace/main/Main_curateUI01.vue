@@ -29,8 +29,8 @@
           <!-- component -->
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 fwb700 mb20">추천</h1>
-                <h2 class="h-tit2 fwb600 mb10">정해민님을 위한 맞춤 추천과정</h2>
+                <h1 class="h-tit1 fwb700">추천</h1>
+                <h2 class="h-tit2 fwb600">정해민님을 위한 맞춤 추천과정</h2>
                 <div class="scroll-x type2">
                     <!-- list -->
                     <ul class="thumList type3">
@@ -75,13 +75,8 @@
                     </ul>
                     <!-- //list -->
                 </div>
-            </div>
-          </div>
 
-              
-          <div class="cell">  
-            <div class="inner">
-                <h2 class="h-tit2 fwb600 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mt40">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>
@@ -137,9 +132,11 @@
                     </li>
                 </ul>
                 <!-- //list -->
+
             </div>
           </div>
-          <!-- //component -->
+
+              
 
         </div>
         <div class="btn-quickWrite"></div>

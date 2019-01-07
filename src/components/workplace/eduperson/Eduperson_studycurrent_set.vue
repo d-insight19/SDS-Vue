@@ -32,7 +32,7 @@
                   <dl>
                     <dt>신청인원</dt> <dd>3,812</dd>
                   </dl>
-                  <dl class="line">
+                  <dl>
                     <dt>입과인원</dt><dd>2,174</dd>
                   </dl>
                 </div>
@@ -41,7 +41,10 @@
               <p class="hr"></p>
               <div class="detail_box">
                 <ul class="progBox_wrap">
-                  <h2 class="progBox_tit">출석률</h2>
+                  <h2 class="progBox_tit">
+                    출석률
+                    <span class="proBox_sub_tit">평균 80.00%</span>
+                  </h2>
                   <li>
                     0%<span class="fr">101명</span>
                     <div class="progBox">
@@ -86,6 +89,10 @@
               <div class="detail_box">
                 <ul class="progBox_wrap multi">
                   <h2 class="tit">월별 입과 인원현황</h2>
+                  <p class="graph_detail">
+                    <span class="bar5">2017</span>
+                    <span class="bar1">2018</span>
+                  </p>
 
                   <li v-for="(item, index) in list1" :key="index">
                     <p class="chart_multi_tit">{{item.month}}</p>

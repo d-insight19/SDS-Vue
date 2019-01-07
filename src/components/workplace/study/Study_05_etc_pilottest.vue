@@ -135,7 +135,7 @@
                                 </li>
                                 <li>
                                     <strong class="label-tit14"> 첨부파일 추가</strong>
-                                    <ul v-show="list1.length" class="ulList type4">
+                                    <ul v-show="list1.length" class="ulList type4 bot-btn">
                                         <li v-for="(item, index) in list1" :key="index">
                                         <div>
                                             <span class="ico img-a"></span>
