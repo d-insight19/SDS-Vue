@@ -34,7 +34,7 @@
                 <button type="button" class="btn btnSch"><span class="ico">검색</span></button>
             </div>
             <div class="header_inner line2">
-                <ul class="gnbMenu text">
+                <ul class="gnbMenu">
                     <!-- selected class:on -->
                     <li class="menu menu_home on">
                         <a href="#" class="menu_icon"><span class="ico"></span></a>
@@ -126,7 +126,7 @@
                 <button type="button" class="btn btnHome"><span class="ico">홈</span></button>
             </div>            
             <div class="header_inner line2">
-                <ul class="gnbMenu text">
+                <ul class="gnbMenu">
                     <!-- selected class:on -->
                     <li class="menu menu_home on">
                         <a href="#" class="menu_icon"><span class="ico"></span></a>
@@ -157,7 +157,7 @@
                 <button type="button" class="btn btnHome"><span class="ico">홈</span></button>
             </div>            
             <div class="header_inner line2">
-                <ul class="gnbMenu text">
+                <ul class="gnbMenu">
                     <!-- selected class:on -->
                     <li class="menu menu_home on">
                         <a href="#" class="menu_icon"><span class="ico"></span></a>
@@ -180,6 +180,39 @@
         </div>
         <!-- //header -->
 
+        <h3>학습운영자 예외형 헤더 2단형</h3>
+        <!-- header 2단형 :: mainTpye2 에 txt 클래스 추가 -->
+        <div id="header" class="mainType eduperson step2 txt">
+            <div class="header_inner line1">
+                <button type="button" class="btn allMenu" @click="toggleDrawer()"><span class="ico">전체메뉴</span><span class="ico new"></span></button>  
+                <div class="eduperson_title" @click="changeTitle()">
+                    <span>LEARNING GROUP TITLE1</span>
+                    <span class="eduperson_title_ico"></span>
+                </div>
+            </div>            
+            <div class="header_inner line2">
+                <ul class="gnbMenu text">
+                    <!-- selected class:on -->
+                    <li class="menu menu_home on">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">학습현황</a>
+                    </li>
+                    <li class="menu menu_exploration">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">운영보고서</a>
+                    </li>
+                    <li class="menu menu_subscription">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">검색통계</a>
+                    </li>
+                    <li class="menu menu_learn">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">문의현황</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //header -->
 
 
 
@@ -197,23 +230,29 @@
                 <button type="button" class="btn btnHome"><span class="ico">홈</span></button>
             </div>            
             <div class="header_inner line2">
-                <ul class="gnbMenu text">
+                <ul class="gnbMenu">
                     <!-- selected class:on -->
-                    <li class="menu menu_home on">
+                    <li class="menu menu_conirm on">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <span class="icon_desc">과정승인</span>
+                    </li>
+                    <li class="menu menu_product">
                         <a href="#" class="menu_icon"><span class="ico"></span></a>
                         <span class="icon_desc">과정제작</span>
                     </li>
-                    <li class="menu menu_exploration">
+                    <li class="menu menu_process">
                         <a href="#" class="menu_icon"><span class="ico"></span></a>
                         <span class="icon_desc">제작중</span>
                     </li>
-                    <li class="menu menu_subscription">
+                    <li class="menu menu_status">
                         <a href="#" class="menu_icon"><span class="ico"></span></a>
                         <span class="icon_desc">과정운영관리</span>
                     </li>
                 </ul>
             </div>
         </div>
+
+        
         
         <div id="content" class="etc">
           <div class="cell">

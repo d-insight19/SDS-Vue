@@ -9,25 +9,31 @@
         <div id="header" class="mainType2">
             <div class="header_inner line1">
                 <button type="button" class="btn allMenu" @click="toggleDrawer()"><span class="ico">전체메뉴</span><span class="ico new"></span></button>  
-                <span>ATORM</span>          
-                <button type="button" class="btn btnHome"><span class="ico">홈</span></button>
+                <p class="main_tit_txt">ATORM</p>          
+                <button type="button" class="btn btnHome"  @click="onClick(1)"><span class="ico">홈</span></button>
             </div>            
             <div class="header_inner line2">
-                <ul class="gnbMenu">
+                <ul class="gnbMenu text">
                     <!-- selected class:on -->
-                    <li class="menu menu_home" :class="{'on': tabIdx == 1}"   @click="onClick(1)">
-                        <a href="#"><span class="ico">추천</span></a>
+                    <li class="menu menu_conirm" :class="{'on': tabIdx == 5}"   @click="onClick(5)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <span class="icon_desc">과정승인</span>
                     </li>
-                    <li class="menu menu_exploration" :class="{'on': tabIdx == 2}"  @click="onClick(2)">
-                        <a href="#"><span class="ico">카테고리</span></a>
+                    <li class="menu menu_product" :class="{'on': tabIdx == 2}"   @click="onClick(2)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <span class="icon_desc">과정제작</span>
                     </li>
-                    <li class="menu menu_subscription" :class="{'on': tabIdx == 3}"  @click="onClick(3)">
-                        <a href="#"><span class="ico">나의공간</span></a>
+                    <li class="menu menu_process" :class="{'on': tabIdx == 3}"   @click="onClick(3)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <span class="icon_desc">제작중</span>
+                    </li>
+                    <li class="menu menu_status" :class="{'on': tabIdx == 4}"   @click="onClick(4)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <span class="icon_desc">과정운영관리</span>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- //header -->
 
 
         <div id="content" class="list">
@@ -90,12 +96,13 @@
 
 <script>
 import AtormHomeDesigner from './Atorm_home_designer'
+import AtormConfirmMain from './Atorm_confirm_main'
 import AtormProductMain from './Atorm_product_main'
 import AtormProcessMain from './Atorm_process_main'
 import AtormStatusMain from './Atorm_status_main'
 export default {
   name: 'Atorm_control',
-  components: {'Atorm_home_designer': AtormHomeDesigner, 'Atorm_product_main': AtormProductMain, 'Atorm_process_main': AtormProcessMain, 'Atorm_status_main': AtormStatusMain},
+  components: {'Atorm_home_designer': AtormHomeDesigner, 'Atorm_confirm_main': AtormConfirmMain, 'Atorm_product_main': AtormProductMain, 'Atorm_process_main': AtormProcessMain, 'Atorm_status_main': AtormStatusMain},
   /* vue lifecycle */
   created () {
   },
@@ -122,6 +129,8 @@ export default {
         this.component = 'Atorm_process_main'
       } else if (idx === 4) {
         this.component = 'Atorm_status_main'
+      } else if (idx === 5) {
+        this.component = 'Atorm_confirm_main'
       }
     },
     toggleDrawer () {
