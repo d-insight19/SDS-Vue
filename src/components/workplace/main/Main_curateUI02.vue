@@ -29,7 +29,7 @@
           <!-- //component -->
           <div class="cell">
             <div class="inner">
-                <h2 class="h-tit2 fwb600 mb10">'마케팅직무'를 위한 추천과정</h2>
+                <h2 class="h-tit2 fwb600">'마케팅직무'를 위한 추천과정</h2>
                 <!-- list -->
                 <ul class="thumList">
                     <li>
@@ -85,13 +85,7 @@
                     </li>
                 </ul>
                 <!-- //list -->
-            </div>
-          </div>
-
-                
-          <div class="cell">
-            <div class="inner">
-                <h2 class="h-tit2 fwb600 mb10">임직원 필수 교육 추천과정</h2>
+                <h2 class="h-tit2 fwb600 mt40">임직원 필수 교육 추천과정</h2>
                 <div class="scroll-x type2">
                     <!-- list -->
                     <ul class="thumList type2">
@@ -149,7 +143,6 @@
                 </div>
             </div>
           </div>
-          <!-- //component -->
 
         </div>
         <div class="btn-quickWrite"></div>

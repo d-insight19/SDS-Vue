@@ -321,6 +321,9 @@ import BPOsubjectlistdetailpopup from '~workplace/bpo/BPO_subjectlist_detail_pop
 import BPOsubjectlistdetailpopupdisable from '~workplace/bpo/BPO_subjectlist_detail_popup_disable'
 import BPOsubjectlistdetailpopupsave from '~workplace/bpo/BPO_subjectlist_detail_popup_save'
 
+import AtormDrawer from '~workplace/atorm/Atorm_drawer'
+import AtormControl from '~workplace/atorm/Atorm_control'
+
 // 1번 영역
 var rootRoutes = [
   {
@@ -1703,6 +1706,16 @@ var rootRoutes = [
     component: CustomerCenterInquirywrite02error
   },
   {
+    path: '/Atorm_drawer',
+    name: 'Atorm_drawer',
+    component: AtormDrawer
+  },
+  {
+    path: '/Atorm_control',
+    name: 'Atorm_control',
+    component: AtormControl
+  },
+  {
     path: '/Eduperson_login',
     name: 'Eduperson_login',
     component: EdupersonLogin
@@ -1883,5 +1896,4 @@ var rootRoutes = [
     component: BPOsubjectlistdetailpopupsave
   }
 ]
-
 export default rootRoutes
