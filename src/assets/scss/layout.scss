@@ -107,6 +107,16 @@
           & .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8) > li:nth-child(2n){
             padding-left:18px;
           }
+
+          & .scroll-x .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8){overflow: hidden;}
+          & .scroll-x .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8) > li{
+            display:inherit;
+            width:inherit;
+            float:inherit;
+          }
+          & .scroll-x .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8) > li:nth-child(2n){
+            padding-left:0px;
+          }
         }
         //일반형
         &.normal{
@@ -157,6 +167,16 @@
           }
           & .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8) > li:nth-child(2n){
             padding-left:18px;
+          }
+          
+          & .scroll-x .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8){overflow: hidden;}
+          & .scroll-x .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8) > li{
+            display:inherit;
+            width:inherit;
+            float:inherit;
+          }
+          & .scroll-x .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8) > li:nth-child(2n){
+            padding-left:0px;
           }
         }
         //일반형
@@ -434,3 +454,5 @@
 #container.MainType #content .inner{padding-top:22px}
 // ATORM
 #container.MainType #content .inner{padding-top:26px}
+// ATORM 아이템팩퇴
+#container.atorm_itemfactory #content .inner{padding-top:0px}

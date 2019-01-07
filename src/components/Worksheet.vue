@@ -1402,11 +1402,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.01._Item    factory_old</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_control' }">
+            Atorm_itemfactory_control
           </router-link>
         </td>
-        <td></td>
+        <td>3가지 유형 변수로 확인가능</td>
       </tr>
       <tr>
       <td align="center">76</td>
@@ -1419,8 +1419,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_new list</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_control' }">
+            Atorm_itemfactory_control
           </router-link>
         </td>
         <td></td>
@@ -2228,8 +2228,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.01.    Main_Designer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_control_designer' }">
+            Atorm_control_designer
           </router-link>
         </td>
         <td></td>

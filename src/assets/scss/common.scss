@@ -231,9 +231,9 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .labelRdo.err input.rdo + .ico {border:1px solid map-get($static_colors, danger) }
 .labelRdo.err + .InfoChK-resultTxt{padding-left:39px;}
 // radio 멀티 
-.labelRdo.multi{.labelChk.thum{padding-left:44px;}}
-.labelRdo.multi .label{color:#000;}
-.labelRdo .sub_label{color:rgba(0,0,0,0.65);font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px;margin-top:3px;}
+.labelRdo.multi{padding-left:44px;}
+.labelRdo.multi .label{color:#000;font-size:map-get($font_size, font_15);}
+.labelRdo .sub_label{color:rgba(0,0,0,0.65);font-size:map-get($font_size, font_14); line-height: 20px; letter-spacing: -0.42px;margin-top:3px;}
 
 
 /* check box */
@@ -258,8 +258,8 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 
 
 // 체크박스 + 멀티
-.labelChk.multi{.labelChk.thum{padding-left:44px;}}
-.labelChk.multi .label{color:#000;}
+.labelChk.multi{padding-left:44px;}
+.labelChk.multi .label{color:#000;font-size:map-get($font_size, font_15);}
 .labelChk .sub_label{color:rgba(0,0,0,0.65);font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px;margin-top:3px;}
 // 체크박스 + 썸네일
 .labelChk.thum{padding-left:40px;}
@@ -318,8 +318,8 @@ select:required:invalid {
 
 /* Single Line List :  List + button */
 .singleList.type_1 li{border-bottom:1px solid #e3e3e3;font-size:map-get($font_size, font_16);height:54px}
-.singleList.type_1 li a{display: block; position: relative; z-index: 1; line-height:27px; letter-spacing: -0.045em; padding: 15px 30px 15px 0;}
-.singleList.type_1 li a .ico{position: absolute; top:50%; right:12px; width:8px; height:12px; margin-top:-6px; background-position: 0 -67px;}
+.singleList.type_1 li a{display: block; position: relative; z-index: 1; line-height:27px; letter-spacing: -0.48px; padding: 15px 30px 15px 0;}
+.singleList.type_1 li a .ico{position: absolute; top:50%; right:0px; width:8px; height:12px; margin-top:-6px; background-position: 0 -67px;}
 
 
 /* Single Line List :  List + Switch button */

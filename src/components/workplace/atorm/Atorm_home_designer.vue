@@ -24,8 +24,6 @@
             </dl>
         </div>
 
-        <!-- 학습자 유형은 승인요청 없음. -->
-        <!--
         <p class="tit2 mt40">
             승인요청<span class="num color_clr2" v-show="list1.length">{{list1.length}}</span>
             <span class="fr color_clr2 showall" v-show="list1.length">전체보기</span>
@@ -46,7 +44,6 @@
         <div class="nolistWrap type1" v-show="!list1.length">
             <p class="info"><span class="ico mark_line"></span>승인요청된 과정이 없습니다.</p>
         </div>
-        -->
 
         <p class="tit2 mt40">제작중인 과정
             <span class="num color_clr2" v-show="list2.length">{{list2.length}}</span>

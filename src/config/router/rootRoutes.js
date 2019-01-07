@@ -323,6 +323,8 @@ import BPOsubjectlistdetailpopupsave from '~workplace/bpo/BPO_subjectlist_detail
 
 import AtormDrawer from '~workplace/atorm/Atorm_drawer'
 import AtormControl from '~workplace/atorm/Atorm_control'
+import AtormControlDesigner from '~workplace/atorm/Atorm_control_designer'
+import AtormItemfactoryControl from '~workplace/atorm/Atorm_itemfactory_control'
 
 // 1번 영역
 var rootRoutes = [
@@ -1714,6 +1716,16 @@ var rootRoutes = [
     path: '/Atorm_control',
     name: 'Atorm_control',
     component: AtormControl
+  },
+  {
+    path: '/Atorm_control_designer',
+    name: 'Atorm_control_designer',
+    component: AtormControlDesigner
+  },
+  {
+    path: '/Atorm_itemfactory_control',
+    name: 'Atorm_itemfactory_control',
+    component: AtormItemfactoryControl
   },
   {
     path: '/Eduperson_login',
