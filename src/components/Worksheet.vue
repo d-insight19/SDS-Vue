@@ -3216,8 +3216,12 @@
         <td>　</td>
         <td class="textL">08.search_03.01.Enter</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_enter' }">
+            search_enter
+          </router-link>
+          ,
+          <router-link :to="{ name: 'search_enter_recommend' }">
+            search_enter_recommend
           </router-link>
         </td>
         <td></td>
@@ -3233,8 +3237,12 @@
         <td>　</td>
         <td class="textL">08.search_03.02.typing</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_typing' }">
+            search_typing
+          </router-link>
+          ,
+          <router-link :to="{ name: 'search_typing_snackbar' }">
+            search_typing_snackbar
           </router-link>
         </td>
         <td></td>
@@ -3250,11 +3258,15 @@
         <td>　</td>
         <td class="textL">08.search_04.04.result_course</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_result_course' }">
+            search_result_course
+          </router-link>
+          ,
+          <router-link :to="{ name: 'search_result_course_B2C' }">
+            search_result_course_B2C
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">181</td>
