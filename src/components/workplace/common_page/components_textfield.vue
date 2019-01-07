@@ -11,6 +11,8 @@
             <h3> 로그인 password , 검색 input 만 아이콘 노출  </h3>
             <br/>
             <br/>
+
+            <!-- 기존 :: 변경전 -->
             <div class="intSchBox">
                 <!-- X 아이콘이 필요한 input -->
                 <div class="search-wrapper">
@@ -19,7 +21,26 @@
                 </div>
                 <a href="#" class="btn"><span class="ico"></span></a>
             </div>
-            
+
+            <!--  2019-01-07 :  New-변경후   -->
+            <div class="intSchBox">
+                <!-- X 아이콘이 필요한 input -->
+                <div class="search-wrapper">
+                    <input type="text"  pattern="^\s+" class="input" placeholder="회사명 검색" />
+                    <button class="close-icon" type="button"></button>
+                    <a href="#" class="btn"><span class="ico"></span></a>
+                </div>
+            </div>            
+
+            <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
+            <div class="intSchBox">
+                <div class="search-wrapper">
+                    <input type="text"  pattern="^\s+" class="input underline" placeholder="비밀번호" />
+                    <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                    <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                    <p class="InfoChK-resultTxt err">비밀번호를 입력해주세요.</p>
+                </div>
+            </div>
 
             
             <ul class="loginList">
@@ -89,21 +110,6 @@
                     <p class="InfoChK-resultTxt succ">사용가능한 아이디 입니다</p>
                 </li>
 			</ul>
-
-
-            <!-- 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가됨 -->
-            <div class="intSchBox">
-                <!-- X 아이콘이 필요한 input -->
-                <div class="search-wrapper">
-                    <input type="text"  pattern="^\s+" class="input underline" placeholder="비밀번호" />
-                    <button class="close-icon" type="button"></button>
-                </div>
-                <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
-            </div>
-
-
-            
 
         </div>
 

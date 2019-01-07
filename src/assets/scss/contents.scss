@@ -547,8 +547,7 @@
 #container.atorm .manual_btn{float:right;width:82px;height:32px;color:#fff;font-size:map-get($font-size, font_13);font-weight:500;letter-spacing: -0.39px;border-radius: 16px;margin-top:7px;line-height: 32px;text-align: center}
 #container.atorm .manual_btn .ico.down-load-wh{margin-left:-8px;}
 #container.atorm .type_box{padding:10px 32px 10px 142px;}
-#container.atorm .type_box dt{position: relative;left:6.5px}
-#container.atorm .type_box dl dt::before{content:'';position: absolute;top: 50%;left:-6px;transform: translateY(-50%);width: 3px;height: 3px;background:rgba(0,0,0,0.5);border-radius: 50%;}
+#container.atorm .type_box dt{position: relative;}
 #container.atorm .thumList .info li{color:rgba(0,0,0,0.8)}
 #container.atorm .thumList .cur_state{margin-top:5px;font-size:map-get($font-size, font_13);letter-spacing: -0.13px;color:rgba(0,0,0,0.8)}
 #container.atorm .multiList > li .in{width:100%;padding:15px 0px}
@@ -1490,6 +1489,7 @@ label.rdo .label{position: relative;}
 .pa0{padding:0px !important;}
 .pa15{padding:15px !important;}
 .pa25{padding:25px !important;}
+.pt0 {padding-top:0px !important;}
 .pt10{padding-top:10px !important;}
 .pl18 {padding-left:18px !important;}
 .pl25 {padding-left:25px !important;}
@@ -1504,6 +1504,9 @@ label.rdo .label{position: relative;}
 .width_inherit {width: inherit !important;}
 .width100 {width:100% !important;}
 .width50 {width:50% !important;}
+// fixTab a 높이 변경
+.CLIPingType #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
+.search #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
 //MainType 공통 타이틀 수정
 .MainType .h-tit1{margin-top:4px;margin-bottom:0px;}
 .MainType .h-tit1 + .h-tit2{margin-top:13px;}
@@ -1683,8 +1686,6 @@ label.rdo .label{position: relative;}
 .CLIPingType .thumList.type6 .in {height:90px;}
 // li 글자색 변경
 .CLIPingType .thumList .info li {color: map-get($mono_colors, mono_80);}
-// fixTab a 높이 변경
-.CLIPingType #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
 // multiList 수정
 .CLIPingType .multiList.type3 > li{padding-top: 20px;}
 .CLIPingType .multiList.type3 > li:last-child{  border-bottom:0px none;}
@@ -1695,7 +1696,6 @@ label.rdo .label{position: relative;}
 .CLIPingType .color_primary{color: map-get($static_colors , primary);}
 .CLIPingType .alert{background-color: map-get($static_colors , alert);}
 .CLIPingType .speaker{margin-left: -25px; width: 25px; display: inline-block;}
-
 .CLIPingType .rating {border: none; display:inline;}
 .CLIPingType .rating > input { display: none; } 
 .CLIPingType .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
@@ -1704,3 +1704,9 @@ label.rdo .label{position: relative;}
 .CLIPingType .rating > label:hover ~ input:checked ~ label, 
 .CLIPingType .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
 .CLIPingType .reply-list .rating > label {width:20px;height:20px;}
+// search
+.search .searchList > li{ display:table;width:100%;position: relative; border-bottom:1px solid #e3e3e3;}
+.search .searchList > li .in{width: calc(100% - 34px);padding:15px 0; display: table-cell; position: relative; height:100%;vertical-align: middle;font-size: map-get($font_size, font_16);}
+.search .searchList .ico.arrowsearch{position:absolute;right:0px;top:calc(50% - 8px);}
+.search .searchList .ico.time{width:20px;height:20px;margin-top:-3px;background: url("../img/ic_time_line_80.png") no-repeat; background-size: contain;}
+.search .ico.filter{width:24px;height:24px;margin-top:0px;background: url("../img/ic_filter_96.png") no-repeat; background-size: contain;}

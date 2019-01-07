@@ -14,6 +14,7 @@
 .ico.time{width:16px;height:16px;background: url("../img/ic_time_line_16.png") no-repeat; }
 .ico.view{width:16px;height:16px;background: url("../img/ic_view_line_16.png") no-repeat; }
 .ico.arrow{width:16px;height:16px;background: url("../img/ic_next_line_black.png") no-repeat; background-size: contain; }
+.ico.arrowsearch{width:16px;height:16px;background: url("../img/ic_arrowsearch_16.png") no-repeat; background-size: contain; }
 .ico.gray_next{width:16px;height:16px;background: url("../img/ic_next.png") no-repeat; }
 .ico.comment{width:20px;height:20px;background: url("../img/ic_bubble_line_20.png") no-repeat; }
 .ico.next_16 {width:16px; height:16px; background: url("../img/ic_next_16.png") no-repeat;}
@@ -225,6 +226,7 @@
 
 .pt0{padding-top: 0 !important;}
 .pdt22{padding-top:22px !important;}
+.pdb0{padding-bottom:0 !important;}
 .pdb98{padding-bottom:98px !important;}
 .pdb14{padding-bottom: 14px !important;}
 
