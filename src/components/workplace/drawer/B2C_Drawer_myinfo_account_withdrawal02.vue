@@ -42,17 +42,17 @@
                         </ul>
                         <p class="divide_line"></p>
                         <ul class="multiList type2">
-                            <li>
+                            <li class="mb20">
                                 <strong class="label-tit20">회원 정보 확인</strong>
-                                <p class="contents14_2 mt6 mb20">회원님의 정보보호를 위해 다시 한번<br> 비밀번호를 확인합니다.</p>
+                                <p class="contents14_2 mt6">회원님의 정보보호를 위해 다시 한번<br> 비밀번호를 확인합니다.</p>
                             </li>
-                            <li>
+                            <li class="mb20">
                                 <strong class="label-tit14">아이디</strong>
-                                <input type="text" class="input mb20" value="haemin.jung" >
+                                <input type="text" class="input" value="haemin.jung" >
                             </li>
-                            <li>
+                            <li class="mb20">
                                 <strong class="label-tit14">비밀번호</strong>
-                                <input type="text" class="input mb20" value="*********" >
+                                <input type="text" class="input" value="*********" >
                             </li>    
                             <li>
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
