@@ -99,10 +99,20 @@
                         <p class="txt-tit">다음 지문에 대하여 찬성 혹은 반대를 선택하고 의견을 작성하세요. </p>
                         <button class="guide-btn">작성가이드</button>                        
                         <p class="inner-txt op65">태양계에는 항성인 태양과 그 가까이로부터 수성, 금성, 지구, 화성, 즉 지구형 행성이 순서대로 나열되어 있으며 그 다음에 유성대(asteroid belt)가 존재한다. </p>
-                        <div class="cir-box">
-                            <p class="big-cir"><span>찬성</span></p>
-                            <p class="big-cir fr"><span>반대</span></p>
-                        </div>
+                        <ul class="cir-box">
+                            <li class="inb-box fl">
+                                <div class="labelRdo type2">
+                                    <input type="radio" name="radio" value="click_me" checked="checked" v-model="checked" id="click_me">
+                                    <label for="click_me" class="big-cir">찬성</label>                  
+                                </div>
+                            </li>
+                            <li class="inb-box">
+                                <div class="labelRdo type2 oppose fr">
+                                    <input type="radio" name="radio" value="or_me" v-model="checked" id="or_me"/>
+                                    <label for="or_me" class="big-cir">반대</label>
+                                </div>
+                            </li>
+                        </ul>
                         <input @input.prevent="e => keylength = e.target.value.length"   type="text" class="input01" placeholder="의견을 입력해 주세요">
                         <label class="inputbottom inp-num">
                             <span class="strlenth" ><span v-text="keylength"></span>/300</span>
@@ -115,7 +125,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" :disabled="disabledflag" class="btn md" :class="{ clr1 : keylength }">제출</button>
+                <button type="button" class="btn md" :class="{ clr1 : keylength && checked }">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -143,14 +153,11 @@ export default {
     return {
       headerType: 1,
       keylength: 0,
-      disabled: true
+      checked: ''
     }
   },
   /* vue function */
   methods: {
-    disabledflag () {
-      this.disabled = !this.disabled
-    }
   }
 }
 </script>

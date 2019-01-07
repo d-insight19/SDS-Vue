@@ -33,7 +33,7 @@
                                 <strong class="label-tit15">직무명</strong>
                                 <p class="contents14">CX Service & Space Design Consulting </p>
                             </li>
-                            <li class="noline">
+                            <li class="noline pdb0">
                                 <strong class="label-tit15">전문분야</strong>
                                 <p class="contents14">IT 기획</p>                                
                             </li>                                       
@@ -73,7 +73,7 @@
                                 <strong class="label-tit15">선호 과정</strong>
                                 <p class="contents14">이러닝, 집합,  지식</p>
                             </li>
-                            <li class="noline">
+                            <li class="noline pdb0">
                                 <strong class="label-tit15">선호 강의</strong>
                                 <p class="contents14">Instructor-led, Self-paced with labs, Self-paced</p>
                             </li>                                                                 

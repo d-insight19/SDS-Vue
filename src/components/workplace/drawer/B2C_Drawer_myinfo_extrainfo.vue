@@ -33,12 +33,12 @@
                                 <strong class="label-tit15">직무명</strong>
                                 <p class="contents14">CX Service & Space Design Consulting </p>
                             </li>
-                            <li class="noline">
+                            <li class="noline pdb0">
                                 <strong class="label-tit15">전문분야</strong>
                                 <p class="contents14">IT 기획</p>                                
                             </li>                                       
                         </ul>
-                        <p class="divide_line"></p>
+                        <p class="hr"></p>
                         <ul class="multiList type1">
                             <li class="pt0 title_line">
                                 <strong class="label-tit15">어학등급</strong>
@@ -63,7 +63,7 @@
                                 <p class="contents13">멀티미디어콘텐츠제작 <span class="bar"></span> 전문가</p>
                             </li>                                                                 
                         </ul>
-                        <p class="divide_line mt26"></p>
+                        <p class="hr"></p>
                         <ul class="multiList type1">
                             <li class="pt0">
                                 <strong class="label-tit15">관심 분야</strong>
@@ -73,12 +73,12 @@
                                 <strong class="label-tit15">선호 과정</strong>
                                 <p class="contents14">이러닝, 집합,  지식</p>
                             </li>
-                            <li class="noline">
+                            <li class="noline pdb0">
                                 <strong class="label-tit15">선호 강의</strong>
                                 <p class="contents14">Instructor-led, Self-paced with labs, Self-paced</p>
                             </li>                                                                 
                         </ul>
-                        <p class="divide_line mt26"></p>
+                        <p class="hr"></p>
                         <ul class="multiList type1">
                             <li class="pt0 title_line">
                                 <strong class="label-tit15">개인정보 마케팅 활용 동의</strong>

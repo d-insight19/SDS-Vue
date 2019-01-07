@@ -6226,10 +6226,10 @@
           <router-link :to="{ name: 'Study_04_SO_debate_input_normal' }">
             Study_04_SO_debate_input_normal
           </router-link><br/>
-          <router-link :to="{ name: '' }">
+          <router-link :to="{ name: 'Study_04_SO_debate_input_typing' }">
             Study_04_SO_debate_input_typing
           </router-link><br/>
-          <router-link :to="{ name: '' }">
+          <router-link :to="{ name: 'Study_04_SO_debate_input_opposite' }">
             Study_04_SO_debate_input_opposite
           </router-link>
         </td>
@@ -6777,7 +6777,7 @@
             Study_05_etc_pilottest
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">390</td>
