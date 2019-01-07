@@ -298,6 +298,7 @@
 // 메인타입 1단형 독립형
 #header.mainType.independence .main_tit_txt{display:block;text-align: center !important;font-size:map-get($font-size, font_20);color:#fff;letter-spacing: -0.6px;}
 #header.mainType.independence .gnbMenu{display:none;}
+#header.mainType.independence .header_inner.line2{display:none;}
 
 
 #header.mainType .gnbMenu .menu_home .ico{background-position:-32px -285px;}

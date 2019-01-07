@@ -82,6 +82,27 @@
                 <p class="main_tit_txt">마인드 피트니스</p>
                 <button type="button" class="btn btnSch"><span class="ico">검색</span></button>
             </div>
+            <div class="header_inner line2">
+                <ul class="gnbMenu">
+                    <!-- selected class:on -->
+                    <li class="menu menu_home on">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">추천</a>
+                    </li>
+                    <li class="menu menu_exploration">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">탐색</a>
+                    </li>
+                    <li class="menu menu_subscription">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">구독</a>
+                    </li>
+                    <li class="menu menu_learn">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">학습</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <h3>메인헤더 1단형 독립형</h3>
         <!-- header 1단형_독립형 ::  mainType 에 independence 추가-->
@@ -109,6 +130,27 @@
                 </ul>
                 <p class="main_tit_txt">마인드 피트니스</p>
                 <button type="button" class="btn btnSch"><span class="ico">검색</span></button>
+            </div>
+            <div class="header_inner line2">
+                <ul class="gnbMenu">
+                    <!-- selected class:on -->
+                    <li class="menu menu_home on">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">추천</a>
+                    </li>
+                    <li class="menu menu_exploration">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">탐색</a>
+                    </li>
+                    <li class="menu menu_subscription">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">구독</a>
+                    </li>
+                    <li class="menu menu_learn">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">학습</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -181,7 +223,7 @@
         <!-- //header -->
 
         <h3>학습운영자 예외형 헤더 2단형</h3>
-        <!-- header 2단형 :: mainTpye2 에 txt 클래스 추가 -->
+        <!-- header 2단형 :: 예외형이라 eduperson 클래스추가되며 line1에 다른 태그 추가됨  -->
         <div id="header" class="mainType eduperson step2 txt">
             <div class="header_inner line1">
                 <button type="button" class="btn allMenu" @click="toggleDrawer()"><span class="ico">전체메뉴</span><span class="ico new"></span></button>  
