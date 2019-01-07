@@ -17,24 +17,24 @@
                     <div class="inner">
                         <!-- list -->
                         <ul class="multiList type2">
-                            <li class="pt0">
+                            <li class="pt0 mb20">
                                 <strong class="label-tit14">회사명</strong>
                                 <div class="intSchBox">
-                                <input type="text" class="input mb20" value="멀티캠퍼스">
+                                <input type="text" class="input" value="멀티캠퍼스">
                                 <a href="#" class="btn"><span class="ico"></span></a>
-                            </div>
+                                </div>
                             </li>
-                            <li>
+                            <li class="mb20">
                                 <strong class="label-tit14">부서명</strong>
-                                <input type="text" class="input mb20" value="웹기획" >
+                                <input type="text" class="input" value="웹기획" >
                             </li>
-                            <li>
+                            <li class="mb20">
                                 <strong class="label-tit14">직급명</strong>
-                                <input type="text" class="input mb20" value="대리" >
+                                <input type="text" class="input" value="대리" >
                             </li>
-                            <li>
+                            <li class="mb20">
                                 <strong class="label-tit14">직무명</strong>
-                                <input type="text" class="input mb20" value="CX Service & Space Design Consulting">
+                                <input type="text" class="input" value="CX Service & Space Design Consulting">
                             </li>
                             <li class="noline">
                                 <strong class="label-tit14">전문분야</strong>
@@ -43,10 +43,10 @@
                         </ul>
                         <p class="hr"></p>
                         <ul class="multiList type1">
-                            <li class="pt0 title_line">
+                            <li class="pt0 title_line mb20">
                                 <strong class="label-tit14">어학등급</strong><button type="button" class="btn14 color_clr2">편집</button>
                             </li> 
-                            <div class="extrainfo mt20">
+                            <div class="extrainfo">
                             <select class="select subject">
                                 <option>영어</option>
                             </select>

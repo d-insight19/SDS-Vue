@@ -10068,7 +10068,7 @@
             components_textfield
           </router-link>
         </td>
-        <td>20181206 err 클래스명 수정</td>
+        <td>20190107 추가컴포넌트 </td>
       </tr>
       <tr>
       <td align="center">0</td>

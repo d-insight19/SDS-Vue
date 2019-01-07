@@ -17,17 +17,17 @@
                     <div class="inner">                        
                         <!-- list -->
                         <ul class="multiList type2">                   
-                        <li>
+                        <li class="mb20">
                             <strong class="label-tit14">주소 별칭</strong>
-                            <input type="text" class="input mb20" value="회사" >
+                            <input type="text" class="input" value="회사" >
                         </li>
-                        <li>
+                        <li class="mb20">
                             <strong class="label-tit14">받으시는 분 성함</strong>
-                            <input type="text" class="input mb20" value="정해민">
+                            <input type="text" class="input" value="정해민">
                         </li> 
-                        <li>
+                        <li class="mb20">
                             <strong class="label-tit14">휴대전화</strong>
-                            <input type="text" class="input mb20" value="01012341234">
+                            <input type="text" class="input" value="01012341234">
                         </li>                                       
                         <li>
                             <strong class="label-tit14">주소</strong>                        
