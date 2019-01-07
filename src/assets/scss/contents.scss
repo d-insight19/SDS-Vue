@@ -836,7 +836,7 @@ table td.pb10{padding-bottom: 10px;}
 #container.study_quiz_ox .txt-tit {margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 #header.quiz-head-bg{background: url("../img/img_quiz_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 
-.inb-box{display: inline-block; width:49%;}
+.inb-box{display: inline-block; width:49.5%;}
 .inb-box label.labelRdo input.rdo + .ico{vertical-align: middle; margin:0 16px 0 0 ;}
 ul.com-rdo label.labelRdo input.rdo:checked + .ico .chk-blue { display: inline-block; background-position: -5px -5px; width: 22px; height: 22px; }
 ul.com-rdo label.labelRdo input.rdo:checked ~ .label { color:#00ADFB;}
@@ -1069,12 +1069,15 @@ label.rdo .label{position: relative;}
 #container.study_debate .txt-tit {font-weight:500; font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; margin-bottom:6px;}
 #container.study_debate .guide-btn {margin-bottom: 12px;}
 #container.study_debate .cir-box {padding:30px 18px;}
-#container.study_debate .cir-box .big-cir { cursor:pointer; width: 128px;border: 5px solid #d9d9d9; display: inline-block;border-radius: 100%; padding: 37px 32px;}
-#container.study_debate .cir-box .big-cir span{font-weight:600; font-size:map-get($font-size , font_30);line-height:45px; letter-spacing:-0.9px; color:rgba(0,0,0,0.5);}
+#container.study_debate .cir-box .big-cir { cursor:pointer; width: 128px; border: 5px solid #d9d9d9; display: inline-block; border-radius: 100%; padding:42px 32px; font-weight:600; font-size:map-get($font-size , font_30);line-height:45px; letter-spacing:-0.9px; color:rgba(0,0,0,0.5);}
 
-
-
-
+// 찬반토론 - opposite
+.cir-box .inb-box{width:50%;}
+.labelRdo.type2{ padding-left:0;}
+.labelRdo.type2 label {background: #fff;border: 1px solid #ddd; border-radius: 5px;cursor: pointer;color: #444;}
+.labelRdo.type2 input[type="radio"] { display: none;}
+.labelRdo.type2 input[type="radio"]:checked + label {background: #00b6e8; color: #fff !important;border-color: #00b6e8 !important;}
+.labelRdo.type2.oppose input[type="radio"]:checked + label {background: #ff726d; color: #fff !important;border-color: #ff726d !important;}
 
 
 

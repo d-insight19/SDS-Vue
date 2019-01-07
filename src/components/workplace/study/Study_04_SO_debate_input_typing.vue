@@ -99,14 +99,63 @@
                         <p class="txt-tit">다음 지문에 대하여 찬성 혹은 반대를 선택하고 의견을 작성하세요. </p>
                         <button class="guide-btn">작성가이드</button>                        
                         <p class="inner-txt op65">태양계에는 항성인 태양과 그 가까이로부터 수성, 금성, 지구, 화성, 즉 지구형 행성이 순서대로 나열되어 있으며 그 다음에 유성대(asteroid belt)가 존재한다. </p>
-                        <div class="cir-box">
-                            <p class="big-cir"><span>찬성</span></p>
-                            <p class="big-cir fr"><span>반대</span></p>
-                        </div>
-                        <input @input.prevent="e => keylength = e.target.value.length"   type="text" class="input01" placeholder="의견을 입력해 주세요">
+                        <ul class="cir-box">
+                            <li class="inb-box fl">
+                                <div class="labelRdo type2">
+                                    <input type="radio" name="radio" value="click_me" checked="checked" v-model="checked" id="click_me">
+                                    <label for="click_me" class="big-cir">찬성</label>                  
+                                </div>
+                            </li>
+                            <li class="inb-box">
+                                <div class="labelRdo type2 oppose fr">
+                                    <input type="radio" name="radio" value="or_me" v-model="checked" id="or_me"/>
+                                    <label for="or_me" class="big-cir">반대</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <input @input.prevent="e => keylength = e.target.value.length" @focus="focusToggle"  type="text" class="input01" placeholder="의견을 입력해 주세요">
                         <label class="inputbottom inp-num">
                             <span class="strlenth" ><span v-text="keylength"></span>/300</span>
-                        </label>                        
+                        </label>
+
+
+                        <div id="keyboard_wrap">
+                            <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
+                            <div class="keyboard_input" v-show="focusFlag">                
+                                
+                                <div class="bookmark_wrap" v-if="keyboard_type=='4'">
+                                    <span class="bookmarktxt">북마크</span>
+                                    <span class="fr time">01:36</span>
+                                </div>
+                                <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
+                                    <span class="opentxt">공개여부</span>
+                                    <slp-switch :classObject="{'fr': true}"/>
+                                    <span class="opentxt2">비공개</span>
+                                </div>
+
+                                <div class="rating_wrap" v-if="keyboard_type=='2'">
+                                    <span class="ratingtxt">평점</span>                        
+                                    <fieldset class="fr rating">
+                                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                    </fieldset>
+                                </div>
+
+                                <div class="inputbox" >                        
+                                    <div class="textarea_wrap">
+                                        <textarea @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
+                                    </div>
+                                    <div class="inputbottom">
+                                        <span class="strlenth" >{{keylength}}/300</span>
+                                        <span class="regiBtn" :class="{active: keylength}">등록</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -115,7 +164,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" :disabled="disabledflag" class="btn md" :class="{ clr1 : keylength }">제출</button>
+                <button type="button" :disabled="disabledflag" class="btn md" :class="{ clr1 : keylength && checked  }">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -143,13 +192,29 @@ export default {
     return {
       headerType: 1,
       keylength: 0,
-      disabled: true
+      checked: '',
+      focusFlag: false,
+      value: [],
+      keyboard_type: 1
     }
   },
   /* vue function */
   methods: {
     disabledflag () {
       this.disabled = !this.disabled
+    },
+    focusToggle () {
+      this.focusFlag = !this.focusFlag
+    },
+    addClass (el) {
+      if (this.value === true) {
+        console.log(this.value)
+      }
+    },
+    onKeydown (event) {
+      this.keylength = event.target.value.length
+      event.target.style.height = '1px'
+      event.target.style.height = (event.target.scrollHeight) + 'px'
     }
   }
 }
