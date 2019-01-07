@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_discuss">
+      <div id="container" class="mediaquery study_discuss pd70">
             <!-- header -->
             <div id="header" class="fixed">
             <button type="button" class="btn only close"><span class="ico">닫기</span></button>
@@ -13,90 +13,68 @@
             <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
-                  <div class="inner">
-                      <p class="txt-tit">제목</p>
-                      <div class="singleList ">                        
+                    <div class="inner">
+                        <p class="txt-tit">제목</p>
+                        <div class="singleList ">                        
                             <input  type="text" placeholder="제목을 입력해 주세요" />                        
-                      </div>                      
-                      <p class="txt-tit">주제분류</p>
-                      <div class="singleList ">                        
+                        </div>                      
+                        <p class="txt-tit">주제분류</p>
+                        <div class="singleList ">                        
                             <select class="select w100p">
-                              <option value="">주제를 선택해주세요.</option>
-                              <option value="">경영전문</option>
-                              <option value="">외국어</option>
-                              <option value="">정보기술</option>
-                              <option value="">시사/교양</option>
-                              <option value="">기타</option>
+                                <option value="">주제를 선택해주세요.</option>
+                                <option value="">경영전문</option>
+                                <option value="">외국어</option>
+                                <option value="">정보기술</option>
+                                <option value="">시사/교양</option>
+                                <option value="">기타</option>
                             </select>                        
-                      </div>
-                      <div class="singleList type_2 line">                          
+                        </div>
+                        <div class="singleList type_2 line">                          
                             <span class="txt-tit" href="#">공개여부</span>
                             <label class="labelBtn">
                                 <input type="checkbox" name="" class="chk">
                                 <div class="chk_box"><span class="ball"></span><ul class="txt"><li class="m1"></li><li class="m2"></li></ul></div>
                             </label>                          
-                      </div>
-                      <p class="txt-tit">토론기간</p>
-                      <div class="singleList ">                        
+                        </div>
+                        <p class="txt-tit">토론기간</p>
+                        <div class="singleList ">                        
                             <select class="select dis_num" placeholder="시작일">
-                              <option value="">시작일</option>
+                                <option value="">시작일</option>
                             </select><select class="select dis_num" placeholder="종료일">
-                              <option value="">종료일</option>
+                                <option value="">종료일</option>
                             </select>                        
-                      </div>
-                      <p class="txt-tit">참여가능 인원</p>
-                      <div class="singleList ">                        
+                        </div>
+                        <p class="txt-tit">참여가능 인원</p>
+                        <div class="singleList ">                        
                             <input type="number"  class="input" placeholder="참여가능 인원을 입력해주세요." />
                             <span class="pos_a">명</span>                        
-                      </div>
-                      <p class="txt-tit">내용</p>
-                      <div class="singleList ">                        
+                        </div>
+                        <p class="txt-tit">내용</p>
+                        <div class="singleList ">                        
                             <input type="text"  class="input" placeholder="내용을 입력해주세요." />                        
-                      </div>
-
-                      <p class="label-tit-2 mt36"><strong>첨부파일 추가</strong></p>
-                      <ul class="ulList type4">
-                        <li>
-                        <div>
-                            <span class="ico img-a"></span>
-                            <span class="at-tit">Solution listup.jpg</span>
-                            <div class="fr">
-                            <span class="at-num">500KB</span>
-                            <span class="ico del-blk"></span>
-                            </div>
-                        </div>                         
-                        </li>                
-                        <li>
-                        <div>
-                            <span class="ico ppt-a"></span>
-                            <span class="at-tit">20180101_AD_Draft.ppt</span>
-                            <div class="fr">
-                            <span class="at-num">4.5M</span>
-                            <span class="ico del-blk"></span>
-                            </div>
-                        </div>                         
-                        </li>                
-                        <li class="bottom-bd-x">
-                        <div>
-                            <span class="ico ppt-a"></span>
-                            <span class="at-tit">20180101_AD_Draft.ppt</span>
-                            <div class="fr">
-                            <span class="at-num">4.5M</span>
-                            <span class="ico del-blk"></span>
-                            </div>
-                        </div>                         
-                        </li>                
-                    </ul>
-                  </div>
+                        </div>
+                        <strong class="label-tit16 mt36"> 첨부파일 추가</strong>
+                        <ul v-show="list1.length" class="ulList type4 bot-btn">
+                            <li v-for="(item, index) in list1" :key="index">
+                            <div>
+                                <span class="ico img-a"></span>
+                                <span class="at-tit">Solution listup.jpg</span>
+                                <div class="fr">
+                                <span class="at-num">500KB</span>
+                                <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
+                                </div>
+                            </div>                                                             
+                            </li>  
+                        </ul>
+                        <!-- 추가 리스트 --> 
+                    </div>  
                 </div>
             </div>
-
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" class="btn md "><span class="ico plus"></span>파일 추가</button>
+                <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a> 
             </div>
-            <!-- //floatingbtn -->   
-
+            <!-- //floatingbtn -->    
         </div>
         <!-- //container --> 
     </div>
@@ -115,10 +93,18 @@ export default {
   /* vue data */
   data () {
     return {
+      list1: []
     }
   },
   /* vue function */
   methods: {
+    addList1 () {
+      this.list1.push('tmp 어학등급 아이템')
+    },
+    deleteFileList (index) {
+      console.log(index, '제거')
+      this.list1.splice(index, 1)
+    }
   }
 }
 </script>

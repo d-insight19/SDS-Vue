@@ -8553,8 +8553,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_04.01_VOC</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_contorl' }">
+            Eduperson_voc
           </router-link>
         </td>
         <td></td>
@@ -8570,8 +8570,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_05.01_Statement</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_contorl' }">
+            Eduperson_statement
           </router-link>
         </td>
         <td></td>

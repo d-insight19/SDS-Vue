@@ -558,7 +558,7 @@
 
 
 
-
+// 충돌이 날수있을거같아 회사 운영자 이어서 작성한뒤 마지막에 위쪽으로 붙여놓겠습니다
 /*공통*/
 .underline{border-bottom: 1px solid #000;}
 .line02{width: 100%;  border-bottom: 1px solid #ccc; margin-top: 26px; margin-bottom: 26px;}
@@ -572,18 +572,20 @@ table td.pb10{padding-bottom: 10px;}
 .op80{color: rgba(0,0,0,0.8)!important}
 .op65{ color:rgba(0,0,0,0.65) !important;}
 .inner-txt{ font-weight:400; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8) }
-.guide-btn {border:1px solid map-get($line_colors, B85);color:map-get($mono_colors, mono_65); margin-bottom: 20px; padding:4px 6px; font-weight: 500; font-size:map-get($font-size, font_12); letter-spacing: -0.36px;}
+.guide-btn { cursor:pointer;border:1px solid map-get($line_colors, B85);color:map-get($mono_colors, mono_65); margin-bottom: 20px; padding:4px 6px; font-weight: 500; font-size:map-get($font-size, font_12); letter-spacing: -0.36px;}
 .bottom-bd-e3{border-bottom: 1px solid #e3e3e3 !important;}
 .top-bd-e3{border-top: 1px solid #e3e3e3 !important;}
 .bottom-bd-d9{border-bottom: 1px solid #d9d9d9 !important;}
 .top-bd-d9{border-top: 1px solid #d9d9d9 !important;}
 .top-bd-x{border-top: none !important;}
 .bottom-bd-x{border-bottom: none !important;}
-.full-box{background:#f2f2f2; margin-right:-18px; margin-left:-18px; padding-top:15px; padding-bottom:15px; font-size:map-get($font-size, font_14) !important;line-height: 26px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8)}
+.full-box{background:#f2f3f7; margin-right:-18px; margin-left:-18px; padding-top:15px; padding-bottom:15px; font-size:map-get($font-size, font_14) !important;line-height: 26px; letter-spacing: -0.42px; color:rgba(0,0,0,0.8)}
 .full-box.pd{padding:22px 18px 24px;}
 .fixBtmBtn .btn[disabled] {color: rgba(0, 0, 0, 0.25) !important;background: #ededed !important; border:none !important;}
-
-
+.l-txt{ float:left; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
+.r-txt{width:76%;font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px; color:map-get($mono_colors, mono_80);}
+.l-txt-2{ float:left; font-size:map-get($font-size, font_14);line-height: 22px; letter-spacing: -0.42px;}
+.r-txt-2{width:76%;font-size:map-get($font-size, font_14);line-height: 22px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80);}
 
 /*chip 공통*/
 .chip {font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 16px; letter-spacing: -0.36px}
@@ -594,15 +596,6 @@ table td.pb10{padding-bottom: 10px;}
 .chip.type2 {font-weight: 500;  font-size:map-get($font-size , font_11);display: inline-block;margin-bottom: 0px;height: 22px;border-radius: 16px;
     padding: 3px 10px;line-height: 15px;}
 
-/*absolute-btn 공통*/
-.absBtmBtn{position:absolute;left: 0;bottom: 0;z-index: 100;width: 100%; padding:18px;}
-.absBtmBtn .btn[disabled] {color: #c1c1c1 !important; background: #ededed !important;}
-.absBtmBtn ul{display: table; table-layout: fixed; width: 100%;}
-.absBtmBtn li{display: table-cell;}
-.absBtmBtn li .btn{width:100%; height:54px; border:0; border-top:1px solid #bfbfbf; border-left:1px solid #bfbfbf; border-bottom:1px solid #bfbfbf; font-weight: 500;}
-.absBtmBtn .btn{font-size:map-get($font-size, font_14); line-height: 20px; font-weight:500; letter-spacing: -0.42px;}
-.absBtmBtn .btn.clr1{font-size:map-get($font-size, font_16); line-height: 17px; font-weight:500; letter-spacing: -0.48px;}
-.absBtmBtn li + li .btn[disabled]{border-left:1px solid #e0e0e0 !important;}
 
 /*댓글 공통*/
 .reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; }
@@ -671,7 +664,6 @@ table td.pb10{padding-bottom: 10px;}
 
 // 토론방 - 댓글입력 Study_02_discuss_reply
 #container.study_discuss .top_bottom_mg_2{ margin-top:36px; margin-bottom:2px;}
-#container.study_discuss .ulList.type4 li{ border-bottom:1px solid #d9d9d9; padding:16px 0;}
 
 // 시뮬레이션 
 #container.study_simulation .line01{margin-top:28px;margin-bottom: 26px; width: 100%;  border-bottom: 1px solid #ccc;}
@@ -792,8 +784,7 @@ table td.pb10{padding-bottom: 10px;}
 // 과제작성 -Study_02_studystatus_assignment_apply
 #container.study_stauts_apply .end.sub{right:57px;}
 #container.study_stauts_apply .h-tit5{ font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; margin-bottom: 18px;}
-#container.study_stauts_apply .l-inb{ display: inline-block;width: 26%; float:left; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;}
-#container.study_stauts_apply .r-inb{ display: inline-block; width:74%;  font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px; color:map-get($mono_colors, mono_80);}
+
 #container.study_stauts_apply .ulList.type4 li{ height:auto;}
 #container.study_stauts_apply ul li{ margin-bottom: 14px;}
 #container.study_stauts_apply ul li.bottom-bd{border-bottom: 1px solid map-get($line_colors, B89);}
@@ -913,14 +904,14 @@ label.rdo .label{position: relative;}
 
 // 퀴즈 인트로
 #container.study_quiz_ox.bg {background: url("../img/img_quiz_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
-.inner.wh{color:#fff;}
-.inner.wh .chip{font-weight:400; font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.36px; margin-bottom:8px;}
-.inner.wh .h-tit1{max-width:72%; font-weight:300; font-size:map-get($font-size, font_30);line-height: 42px; letter-spacing: -0.9px; margin-bottom:6px;}
-.inner.wh .txt-tit-2{max-width:66%; color: rgba(255,255,255,0.75); font-weight:300; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; margin-bottom:52px;}
-.inner.wh .h-tit5{ color: rgba(255,255,255,0.8); font-weight:300; font-size:map-get($font-size, font_13);line-height: 20px; letter-spacing: -0.39px;}
-.btmBtn{position: absolute; bottom:32px;left:0; z-index: 1; width: 100%; padding:0 30px;}
-.btmBtn .btn {position: relative; z-index: 1; font-size: 1rem; color: rgba(0, 0, 0, 0.8);line-height: 54px;letter-spacing: -0.48px;font-weight: 500;width: 100%; padding: 0 30px 0 18px;text-align: left; background: rgba(255, 255, 255, 0.85);}
-.btmBtn .btn .ico{ position: absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-8px;}
+#container.intro .inner.wh{color:#fff;}
+#container.intro .inner.wh .chip{font-weight:400; font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.36px; margin-bottom:8px;}
+#container.intro .inner.wh .h-tit1{max-width:72%; font-weight:300; font-size:map-get($font-size, font_30);line-height: 42px; letter-spacing: -0.9px; margin-bottom:6px;}
+#container.intro .inner.wh .txt-tit-2{max-width:66%; color: rgba(255,255,255,0.75); font-weight:300; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; margin-bottom:52px;}
+#container.intro .inner.wh .h-tit5{ color: rgba(255,255,255,0.8); font-weight:300; font-size:map-get($font-size, font_13);line-height: 20px; letter-spacing: -0.39px;}
+#container.intro .btmBtn{position: absolute; bottom:32px;left:0; z-index: 1; width: 100%; padding:0 30px;}
+#container.intro .btmBtn .btn {position: relative; z-index: 1; font-size: 1rem; color: rgba(0, 0, 0, 0.8);line-height: 54px;letter-spacing: -0.48px;font-weight: 500;width: 100%; padding: 0 30px 0 18px;text-align: left; background: rgba(255, 255, 255, 0.85);}
+#container.intro .btmBtn .btn .ico{ position: absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-8px;}
 
 // 설문조사 인트로
 #container.study_survey.bg {background: url("../img/img_survey_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
@@ -1011,13 +1002,13 @@ label.rdo .label{position: relative;}
 
 
 // 1:1문의 수정
+.label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; margin-bottom: 8px; display: inline-block;}
+.label-tit14.mb0{ margin-bottom: 0px !important;}
+.label-tit16{ font-size:map-get($font_size, font_16); font-weight: 600; line-height: 26px; letter-spacing: -0.48px; margin-bottom: 10px; display: inline-block;}
 .multiList.type2 > li + li{margin-top:20px}
 .multiList.type2 .btn.sm{margin:7px 0px 0px 0px}
 .multiList.type2 .pt0{padding-top: 0;}
 .multiList.type2 li.custom{padding: 15px 0; border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
-.multiList.type2 .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; margin-bottom: 8px; display: inline-block;}
-.multiList.type2 .label-tit14.mb0{ margin-bottom: 0px !important;}
-.multiList.type2 .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 600; line-height: 26px; letter-spacing: -0.48px; margin-bottom: 10px; display: inline-block;}
 .multiList.type2 input::placeholder {color:rgba(0,0,0,0.65);}
 .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; line-height: 21px; letter-spacing: -0.42px;}
 
@@ -1101,8 +1092,41 @@ label.rdo .label{position: relative;}
 .labelRdo.type2.oppose input[type="radio"]:checked + label {background: #ff726d; color: #fff !important;border-color: #ff726d !important;}
 
 
+// 학습창 파일럿 테스트	 - etc_pilottest
+#container.study_etc .txt-tit{ font-weight:600; font-size:map-get($font-size , font_18);line-height:27px; letter-spacing:-0.54px;margin-bottom:14px; }
+#container.study_etc .guide-btn{padding:2px 12px;}
+#container.study_etc .gr-box{background: #f5f5f5; width: 100%;padding: 12px 16px;}
 
 
+
+// 운영자 문의사항 탭
+
+.dot{ display:inline-block; width: 8px; height:8px; background:#eee; border-radius: 100%; }
+.chart-txt{ font-size:map-get($font-size , font_14);line-height:29px;}
+.chart-num{ font-family: 'Roboto' ; font-size:map-get($font-size , font_22);line-height:29px;}
+.chart-num .per{ font-family: 'Roboto' ; font-size:map-get($font-size , font_15);line-height:29px;vertical-align: 8%;}
+.chart-list li { padding: 5px 0px; border-bottom: 1px solid #e3e3e3; margin: 0 32px;}
+.label-tit-20{ font-weight:600; font-size:map-get($font-size , font_20);line-height:28px; letter-spacing:-0.6px;}
+.label-tit-20.mg{margin-top:22px; margin-bottom:25px;}
+.eduperson .inner-txt{ font-weight: 400;font-size: map-get($font-size , font_16);line-height: 24px;letter-spacing: -0.8px; color: rgba(0, 0, 0, 0.65);}
+
+
+.edu_tab3 .detail_date{height:58px;line-height: 58px;}
+.edu_tab4 .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
+.edu_tab4 .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
+.edu_tab4 .detail_table tr td:nth-last-child(1){padding-right:10px;}
+.edu_tab4 .detail_table thead{background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
+.edu_tab4 .detail_table tbody tr{height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
+.edu_tab4 .detail_table tbody tr:nth-last-child(1){border:none;font-weight: 500;}
+.edu_tab4 .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
+
+
+.bgc-1{background-color:map-get($contents_colors, type_1 ) !important;}
+.bgc-2{background-color:map-get($contents_colors, type_2 ) !important;}
+.bgc-3{background-color:map-get($contents_colors, type_3 ) !important;}
+.bgc-4{background-color:map-get($contents_colors, type_4 ) !important;}
+
+.w33p{width:33% !important;}
 
 
 

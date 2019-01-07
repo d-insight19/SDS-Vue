@@ -122,10 +122,11 @@ export default {
   /* vue data */
   data () {
     return {
-      tabIdx: 1,
+      tabIdx: undefined,
       component: 'Eduperson_studycurrent',
       drawerFlag: false,
-      title_list_flag: false
+      title_list_flag: false,
+      bottomsheetFlag: false
     }
   },
   /* vue function */
@@ -154,6 +155,9 @@ export default {
     },
     changeTitle () {
       this.title_list_flag = !this.title_list_flag
+    },
+    bottomsheetToggle () {
+      this.bottomsheetFlag = !this.bottomsheetFlag
     }
   }
 }
