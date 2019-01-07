@@ -215,6 +215,18 @@ import CLIPingLanguageClubDetail01 from '~workplace/cliping/CLIPing_languageClub
 import CLIPingLanguageClubDetail01Scroll from '~workplace/cliping/CLIPing_languageClubDetail01_scroll'
 import CLIPingVideoComment from '~workplace/cliping/CLIPing_videoComment'
 
+import searchEnter from '~workplace/search/search_enter'
+import searchEnterRecommend from '~workplace/search/search_enter_recommend'
+import searchTyping from '~workplace/search/search_typing'
+import searchTypingSnackbar from '~workplace/search/search_typing_snackbar'
+import searchResultCourse from '~workplace/search/search_result_course'
+import searchResultCourseB2C from '~workplace/search/search_result_course_B2C'
+import searchResultBook from '~workplace/search/search_result_book'
+import searchResultPaperpro from '~workplace/search/search_result_paperpro'
+import searchResultLanguage from '~workplace/search/search_result_language'
+import searchResultNote from '~workplace/search/search_result_note'
+import searchResultNodata from '~workplace/search/search_result_nodata'
+
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
@@ -291,6 +303,8 @@ import EdupersonControl from '~workplace/eduperson/Eduperson_control'
 import EdupersonStudycurrentElearning from '~workplace/eduperson/Eduperson_studycurrent_elearning'
 import EdupersonStudycurrentSet from '~workplace/eduperson/Eduperson_studycurrent_set'
 import EdupersonStudycurrentAutonomy from '~workplace/eduperson/Eduperson_studycurrent_autonomy'
+import EdupersonVoc from '~workplace/eduperson/Eduperson_voc'
+import EdupersonStatement from '~workplace/eduperson/Eduperson_statement'
 
 import etcTerms from '~workplace/etc/etc_Terms'
 import etcNetworkerror from '~workplace/etc/etc_Networkerror'
@@ -1383,6 +1397,61 @@ var rootRoutes = [
     component: CLIPingVideoComment
   },
   {
+    path: '/search_enter',
+    name: 'search_enter',
+    component: searchEnter
+  },
+  {
+    path: '/search_enter_recommend',
+    name: 'search_enter_recommend',
+    component: searchEnterRecommend
+  },
+  {
+    path: '/search_typing',
+    name: 'search_typing',
+    component: searchTyping
+  },
+  {
+    path: '/search_typing_snackbar',
+    name: 'search_typing_snackbar',
+    component: searchTypingSnackbar
+  },
+  {
+    path: '/search_result_course',
+    name: 'search_result_course',
+    component: searchResultCourse
+  },
+  {
+    path: '/search_result_course_B2C',
+    name: 'search_result_course_B2C',
+    component: searchResultCourseB2C
+  },
+  {
+    path: '/search_result_book',
+    name: 'search_result_book',
+    component: searchResultBook
+  },
+  {
+    path: '/search_result_paperpro',
+    name: 'search_result_paperpro',
+    component: searchResultPaperpro
+  },
+  {
+    path: '/search_result_language',
+    name: 'search_result_language',
+    component: searchResultLanguage
+  },
+  {
+    path: '/search_result_note',
+    name: 'search_result_note',
+    component: searchResultNote
+  },
+  {
+    path: '/search_result_nodata',
+    name: 'search_result_nodata',
+    component: searchResultNodata
+  },
+  {
     path: '/Drawer_alerm',
     name: 'Drawer_alerm',
     component: DrawerAlerm
@@ -1771,6 +1840,16 @@ var rootRoutes = [
     path: '/Eduperson_studycurrent_autonomy',
     name: 'Eduperson_studycurrent_autonomy',
     component: EdupersonStudycurrentAutonomy
+  },
+  {
+    path: '/Eduperson_voc',
+    name: 'Eduperson_voc',
+    component: EdupersonVoc
+  },
+  {
+    path: '/Eduperson_statement',
+    name: 'Eduperson_statement',
+    component: EdupersonStatement
   },
   {
     path: '/etc_Terms',

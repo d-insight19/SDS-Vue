@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_reflection">
+      <div id="container" class="mediaquery study_reflection pd70">
             <!-- header -->
             <div id="header" class="fixed">
             <button type="button" class="btn only close"><span class="ico">닫기</span></button>
@@ -13,7 +13,7 @@
             <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">
+                    <div class="inner" style="padding-top:78px;">
                         <ul class="multiList type2">
                             <li>
                                 <strong class="label-tit14">제목</strong>
@@ -23,23 +23,21 @@
                                 <strong class="label-tit14">내용</strong>
                                 <slp-text-field placeholder="내용을 입력해주세요." value="본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. "></slp-text-field>
                             </li>
-                            <li>
-                                <strong class="label-tit16"> 첨부파일 추가</strong>
-                                <ul v-show="list1.length" class="ulList type4 bot-btn">
-                                    <li v-for="(item, index) in list1" :key="index">
-                                    <div>
-                                        <span class="ico img-a"></span>
-                                        <span class="at-tit">Solution listup.jpg</span>
-                                        <div class="fr">
-                                        <span class="at-num">500KB</span>
-                                        <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
-                                        </div>
-                                    </div>                                                             
-                                    </li>  
-                                </ul>
-                                <!-- 추가 리스트 --> 
-                            </li>
                         </ul>   
+                        <strong class="label-tit16 mt36"> 첨부파일 추가</strong>
+                        <ul v-show="list1.length" class="ulList type4 bot-btn">
+                            <li v-for="(item, index) in list1" :key="index">
+                            <div>
+                                <span class="ico img-a"></span>
+                                <span class="at-tit">Solution listup.jpg</span>
+                                <div class="fr">
+                                <span class="at-num">500KB</span>
+                                <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
+                                </div>
+                            </div>                                                             
+                            </li>  
+                        </ul>
+                        <!-- 추가 리스트 --> 
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_opinion bg">
+      <div id="container" class="mediaquery study_opinion bg intro">
           <!-- op-bg -->
           <div class="op-bg" style="background-color:rgba(0,0,0,0.45); height:100vh">
             <!-- header -->
