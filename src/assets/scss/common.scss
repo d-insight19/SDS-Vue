@@ -575,6 +575,7 @@ select:required:invalid {
 .layerWrap .ly-btn{text-align: right;margin-top:15px;}
 .layerWrap .ly-btn .btn{font-size:map-get($font_size, font_16); color:#666; line-height: 20px; font-weight: 500; letter-spacing: -0.048em; min-width: 60px; width:initial}
 .layerWrap .ly-btn .btn + .btn{margin-left:10px;}
+.layerWrap .time {padding-left:39px}
 
 #dim{position:fixed; z-index:850; top:0; bottom:0; left:0; right:0; background:rgba(0,0,0,0.6)}
 

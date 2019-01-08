@@ -113,7 +113,7 @@
 
         <!-- layer wrap -->
         <slp-popup title="네트워크 확인" confirmInput="확인">
-            <div class="ly-info">
+            <div class="ly-body">
                 <p>현재 회원님의 모바일이 네트워크에 연결되어 있지 않으므로 서비스를 이용하실 수 없습니다. 네트워크 연결을 확인 한 후 다시 실행 해 주시기 바랍니다.</p>
             </div>
         </slp-popup>

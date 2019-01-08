@@ -29,14 +29,13 @@
                                 <!-- list -->                                 
                                     <p class="title_line">
                                     <span class="title_txt">학습일</span><span class="total_txt">총</span><strong class="fwb600 count">58</strong>일                                    
-                                    </p>
-                
+                                    </p>                
                                         <ul class="multiList type1">
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents"> 
                                                     <p class="date">2018.11.30</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
                                                     </div>  
                                                     <p class="time">2시간 00분</p>
                                                     
@@ -45,8 +44,8 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents"> 
-                                                    <p class="date">2018.11.27</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
+                                                    <p class="date">2018.11.30</p>
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
                                                     </div>  
                                                     <p class="time">2시간 00분</p>
                                                     
@@ -55,8 +54,8 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents"> 
-                                                    <p class="date">2018.11.24</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
+                                                    <p class="date">2018.11.30</p>
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
                                                     </div>  
                                                     <p class="time">2시간 00분</p>
                                                     
@@ -65,8 +64,8 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents"> 
-                                                    <p class="date">2018.11.20</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
+                                                    <p class="date">2018.11.30</p>
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
                                                     </div>  
                                                     <p class="time">2시간 00분</p>
                                                     
@@ -75,8 +74,18 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents"> 
-                                                    <p class="date">2018.11.14</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
+                                                    <p class="date">2018.11.30</p>
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
+                                                    </div>  
+                                                    <p class="time">2시간 00분</p>
+                                                    
+                                                </div>                                                
+                                            </li>
+                                           <li>
+                                                <div class="in">                                                                                        
+                                                    <div class="multiline contents"> 
+                                                    <p class="date">2018.11.30</p>
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
                                                     </div>  
                                                     <p class="time">2시간 00분</p>
                                                     
@@ -85,8 +94,8 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents"> 
-                                                    <p class="date">2018.11.10</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
+                                                    <p class="date">2018.11.30</p>
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
                                                     </div>  
                                                     <p class="time">2시간 00분</p>
                                                     
@@ -95,8 +104,18 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents"> 
-                                                    <p class="date">2018.10.30</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
+                                                    <p class="date">2018.11.30</p>
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
+                                                    </div>  
+                                                    <p class="time">2시간 00분</p>
+                                                    
+                                                </div>                                                
+                                            </li>
+                                           <li>
+                                                <div class="in">                                                                                        
+                                                    <div class="multiline contents"> 
+                                                    <p class="date">2018.11.30</p>
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
                                                     </div>  
                                                     <p class="time">2시간 00분</p>
                                                     
@@ -105,28 +124,8 @@
                                             <li>
                                                 <div class="in">                                                                                        
                                                     <div class="multiline contents"> 
-                                                    <p class="date">2018.10.27</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
-                                                    </div>  
-                                                    <p class="time">2시간 00분</p>
-                                                    
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="in">                                                                                        
-                                                    <div class="multiline contents"> 
-                                                    <p class="date">2018.10.24</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
-                                                    </div>  
-                                                    <p class="time">2시간 00분</p>
-                                                    
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="in">                                                                                        
-                                                    <div class="multiline contents"> 
-                                                    <p class="date">2018.10.20</p>
-                                                    <p class="attendance"><span class="check">출석체크</span> 2018.11.30 12:04:25</p>                                                    
+                                                    <p class="date">2018.11.30</p>
+                                                    <p class="attendance">출석체크 <span class="date">2018.11.30 12:04:25</span></p>                                                    
                                                     </div>  
                                                     <p class="time">2시간 00분</p>
                                                     

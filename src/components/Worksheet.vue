@@ -8825,8 +8825,8 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_test</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_test' }">
+            BPO_subjectlist_test
           </router-link>
         </td>
         <td></td>
@@ -8842,8 +8842,11 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_test_completion</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_test_completion' }">
+            BPO_subjectlist_test_completion
+          </router-link>,
+           <router-link :to="{ name: 'BPO_subjectlist_test_completion_popup' }">
+            BPO_subjectlist_test_completion_popup
           </router-link>
         </td>
         <td></td>
@@ -8862,8 +8865,17 @@
           <router-link :to="{ name: 'BPO_Login' }">
             BPO_Login
           </router-link>,
+          <router-link :to="{ name: 'BPO_Login_password_view' }">
+            BPO_Login_password_view
+          </router-link>,
+          <router-link :to="{ name: 'BPO_Login_password_notview' }">
+            BPO_Login_password_notview
+          </router-link>,
           <router-link :to="{ name: 'BPO_Myinfo' }">
             BPO_Myinfo
+          </router-link>,
+          <router-link :to="{ name: 'BPO_Drawer' }">
+            BPO_Drawer
           </router-link>
         </td>
         <td></td>
@@ -8879,8 +8891,8 @@
         <td>　</td>
         <td class="textL">14.BPO_03.01.Classstatus</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_Classstatus' }">
+            BPO_Classstatus
           </router-link>
         </td>
         <td></td>
@@ -8898,7 +8910,7 @@
         <td>
           <router-link :to="{ name: 'BPO_Classstatus_detail' }">
             BPO_Classstatus_detail
-          </router-link>
+          </router-link>         
         </td>
         <td></td>
       </tr>
@@ -9254,8 +9266,8 @@
         <td>　</td>
         <td class="textL">etc_Manual</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_Manual' }">
+            etc_Manual
           </router-link>
         </td>
         <td></td>
@@ -9843,8 +9855,17 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail_supplementary</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_detail_supplementary' }">
+            BPO_subjectlist_detail_supplementary
+          </router-link>,
+           <router-link :to="{ name: 'BPO_subjectlist_detail_supplementary_add' }">
+            BPO_subjectlist_detail_supplementary_add
+          </router-link>,
+           <router-link :to="{ name: 'BPO_subjectlist_detail_supplementary_done' }">
+            BPO_subjectlist_detail_supplementary_done
+          </router-link>,
+           <router-link :to="{ name: 'BPO_subjectlist_detail_supplementary_popup' }">
+            BPO_subjectlist_detail_supplementary_popup
           </router-link>
         </td>
         <td></td>
@@ -9879,6 +9900,9 @@
         <td>
           <router-link :to="{ name: 'BPO_subjectlist_detail_shorten' }">
             BPO_subjectlist_detail_shorten
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten_popup' }">
+            BPO_subjectlist_detail_shorten_popup
           </router-link>
         </td>
         <td></td>
@@ -9913,6 +9937,9 @@
         <td>
           <router-link :to="{ name: 'BPO_subjectlist_detail_extend' }">
             BPO_subjectlist_detail_extend
+          </router-link>,
+           <router-link :to="{ name: 'BPO_subjectlist_detail_extend_popup' }">
+            BPO_subjectlist_detail_extend_popup
           </router-link>
         </td>
         <td></td>

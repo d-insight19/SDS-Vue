@@ -36,6 +36,7 @@
 .ico.ppt-a{width:20px;height:20px;background: url("../img/ic_ppt_line_20.png") no-repeat; }
 .ico.del-blk{width:20px;height:20px;background: url("../img/ic_close_bold_20.png") no-repeat; }
 .ico.plus{width:16px;height:16px;background: url("../img/ic_plus_16.png") no-repeat; vertical-align: -2px; }
+.ico.plus.done{opacity: 0.3; }
 .ico.clip{width:16px;height:16px;background: url("../img/ic_addfile_16.png") no-repeat; }
 .ico.down-load{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
 .ico.down-load-wh{width:20px;height:20px;background: url("../img/ic_download_wh_20.png") no-repeat;  }
@@ -219,7 +220,8 @@
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
 
-.mr4{margin-right: 6px !important;}/*1월 3일 추가*/
+.mr3{margin-right: 3px !important;}
+.mr4{margin-right: 4px !important;}/*1월 3일 추가*/
 .mr6{margin-right: 6px !important;}/*1월 3일 추가*/
 
 .pdt22{padding-top:22px !important;}
@@ -233,3 +235,7 @@
 /* link */
 .link{display: inline-block;}
 .link .ico.arr{width:10px; height: 10px; margin-left: 4px; background-position: -279px -67px;}
+
+
+/* font-weight */
+.font_regular {font-weight:400}
