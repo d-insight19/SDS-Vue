@@ -5,22 +5,53 @@
       <!-- container -->
       <div id="container" class="mediaquery MainType">
 
-        <!-- header 1단형 -->
+        <!-- header 1단형 아이콘 -->
         <div id="header" class="mainType">
-            <button type="button" class="btn allMenu"><span class="ico">전체메뉴</span><span class="ico new"></span></button>
-            <ul class="gnbMenu">
-                <!-- selected class:on -->
-                <li class="menu menu_home" :class="{'on': tabIdx == 1}" @click="onClick(1)">
-                    <a href="#"><span class="ico">추천</span></a>
-                </li>
-                <li class="menu menu_exploration" :class="{'on': tabIdx == 2}" @click="onClick(2)">
-                    <a href="#"><span class="ico">카테고리</span></a>
-                </li>
-                <li class="menu menu_learn" :class="{'on': tabIdx == 3}" @click="onClick(3)">
-                    <a href="#"><span class="ico">학습</span></a>
-                </li>
-            </ul>
-            <button type="button" class="btn btnSch"><span class="ico">검색</span></button>
+            <div class="header_inner line1">
+                <button type="button" class="btn allMenu"><span class="ico">전체메뉴</span><span class="ico new"></span></button>
+                <ul class="gnbMenu">
+                    <!-- selected class:on -->
+                    <li class="menu menu_home" :class="{'on': tabIdx == 1}" @click="onClick(1)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">추천</a>
+                    </li>
+                    <li class="menu menu_exploration" :class="{'on': tabIdx == 2}" @click="onClick(2)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">탐색</a>
+                    </li>
+                    <li class="menu menu_subscription" :class="{'on': tabIdx == 3}" @click="onClick(3)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">구독</a>
+                    </li>
+                    <li class="menu menu_learn" :class="{'on': tabIdx == 4}" @click="onClick(4)" style="display:none;">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">학습</a>
+                    </li>                
+                </ul>
+                <p class="main_tit_txt">타이틀</p>
+                <button type="button" class="btn btnSch"><span class="ico">검색</span></button>
+            </div>
+            <div class="header_inner line2">
+                <ul class="gnbMenu">
+                    <!-- selected class:on -->
+                    <li class="menu menu_home on">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">추천</a>
+                    </li>
+                    <li class="menu menu_exploration">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">탐색</a>
+                    </li>
+                    <li class="menu menu_subscription">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">구독</a>
+                    </li>
+                    <li class="menu menu_learn">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">학습</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- //header -->
 

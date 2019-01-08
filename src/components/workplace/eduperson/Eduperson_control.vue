@@ -5,8 +5,8 @@
       <!-- container -->
       <div id="container" class="mediaquery eduperson">
 
-        <!-- header 2단형 -->
-        <div id="header" class="mainType2">
+        <!-- header 2단형 예외형 학습운영자 :: mainTpye2 에 txt 클래스 추가 -->
+        <div id="header" class="mainType eduperson step2 txt">
             <div class="header_inner line1">
                 <button type="button" class="btn allMenu" @click="toggleDrawer()"><span class="ico">전체메뉴</span><span class="ico new"></span></button>  
                 <div class="eduperson_title" @click="changeTitle()">
@@ -17,22 +17,27 @@
             <div class="header_inner line2">
                 <ul class="gnbMenu text">
                     <!-- selected class:on -->
-                    <li class="menu"  :class="{'on': tabIdx == 1}" @click="onClick(1)">
-                        학습현황
+                    <li class="menu menu_home" :class="{'on': tabIdx == 1}" @click="onClick(1)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">학습현황</a>
                     </li>
-                    <li class="menu"  :class="{'on': tabIdx == 2}" @click="onClick(2)">
-                        운영보고서
+                    <li class="menu menu_exploration" :class="{'on': tabIdx == 2}" @click="onClick(2)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">운영보고서</a>
                     </li>
-                    <li class="menu"  :class="{'on': tabIdx == 3}" @click="onClick(3)">
-                        검색통계
+                    <li class="menu menu_subscription" :class="{'on': tabIdx == 3}" @click="onClick(3)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">검색통계</a>
                     </li>
-                    <li class="menu"  :class="{'on': tabIdx == 4}" @click="onClick(4)">
-                        문의현황
+                    <li class="menu menu_learn" :class="{'on': tabIdx == 4}" @click="onClick(4)">
+                        <a href="#" class="menu_icon"><span class="ico"></span></a>
+                        <a href="#" class="menu_txt">문의현황</a>
                     </li>
                 </ul>
             </div>
         </div>
         <!-- //header -->
+
 
 
         <div id="content" class="list">
@@ -122,10 +127,11 @@ export default {
   /* vue data */
   data () {
     return {
-      tabIdx: 1,
+      tabIdx: undefined,
       component: 'Eduperson_studycurrent',
       drawerFlag: false,
-      title_list_flag: false
+      title_list_flag: false,
+      bottomsheetFlag: false
     }
   },
   /* vue function */
@@ -154,6 +160,9 @@ export default {
     },
     changeTitle () {
       this.title_list_flag = !this.title_list_flag
+    },
+    bottomsheetToggle () {
+      this.bottomsheetFlag = !this.bottomsheetFlag
     }
   }
 }

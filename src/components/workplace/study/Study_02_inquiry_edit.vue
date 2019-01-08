@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_inquery">
+      <div id="container" class="mediaquery study_inquery pd70">
             <!-- header -->
             <div id="header" class="fixed">
             <button type="button" class="btn only close"><span class="ico">닫기</span></button>
@@ -13,26 +13,14 @@
             <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">
+                    <div class="inner" style="padding-top:78px;">
                         
                         <div class="tabCnt dpb pt0" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
                         <!-- list -->
                             <ul class="multiList type2">
                                 <li>
                                     <strong class="label-tit14">제목</strong>
-                                    <slp-text-field ref="refInput"
-        :class="[computedClass, classObject]"
-        :type="inputType"
-        :value="realText"
-        :disabled="disabled"
-        :readonly="readonly"
-        :maxlength="maxlength"
-        :pattern="pattern"
-        class="input"
-        @input="inputText($event.target.value)"
-        @focus="slpTextFieldFocused"
-        @blur="slpTextFieldBlur"
-        @keyup ="slpTextFieldKeyup" placeholder="내용 문의합니다"></slp-text-field>
+                                    <slp-text-field  placeholder="내용 문의합니다"></slp-text-field>
                                 </li>
                                 <li class="custom">
                                     <strong class="label-tit14">과정명</strong>
@@ -67,24 +55,22 @@
                                 <li>
                                     <strong class="label-tit14">내용</strong>
                                     <slp-text-field placeholder="해당 과정에 대해서 질문합니다. 내용은 이렇습니다."></slp-text-field>
-                                </li>
-                                <li>
-                                    <strong class="label-tit14"> 첨부파일 추가</strong>
-                                    <ul v-show="list1.length" class="ulList type4 bot-btn">
-                                        <li v-for="(item, index) in list1" :key="index">
-                                        <div>
-                                            <span class="ico img-a"></span>
-                                            <span class="at-tit">Solution listup.jpg</span>
-                                            <div class="fr">
-                                            <span class="at-num">500KB</span>
-                                            <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
-                                            </div>
-                                        </div>                                                             
-                                        </li>  
-                                    </ul>
-                                    <!-- 추가 리스트 --> 
                                 </li>                                                                                            
                             </ul>
+                            <strong class="label-tit16 mt36"> 첨부파일 추가</strong>
+                            <ul v-show="list1.length" class="ulList type4 bot-btn">
+                                <li v-for="(item, index) in list1" :key="index">
+                                <div>
+                                    <span class="ico img-a"></span>
+                                    <span class="at-tit">Solution listup.jpg</span>
+                                    <div class="fr">
+                                    <span class="at-num">500KB</span>
+                                    <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
+                                    </div>
+                                </div>                                                             
+                                </li>  
+                            </ul>
+                            <!-- 추가 리스트 -->
                         </div>
                     </div>
                 </div>

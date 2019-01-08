@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery study_question_edit">
+      <div id="container" class="mediaquery study_question_edit pd70">
             <!-- header -->
             <div id="header" class="fixed">
             <button type="button" class="btn only close"><span class="ico"></span></button>
@@ -12,7 +12,7 @@
             <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
-                  <div class="inner">
+                  <div class="inner" style="padding-top:78px;">
                       <ul class="multiList type2">
                         <li>
                           <strong class="label-tit14">제목</strong>

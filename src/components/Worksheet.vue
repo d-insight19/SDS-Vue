@@ -1402,11 +1402,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.01._Item    factory_old</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_control' }">
+            Atorm_itemfactory_control
           </router-link>
         </td>
-        <td></td>
+        <td>3가지 유형 변수로 확인가능</td>
       </tr>
       <tr>
       <td align="center">76</td>
@@ -1419,8 +1419,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_new list</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_control' }">
+            Atorm_itemfactory_control
           </router-link>
         </td>
         <td></td>
@@ -2228,8 +2228,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.01.    Main_Designer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_control_designer' }">
+            Atorm_control_designer
           </router-link>
         </td>
         <td></td>
@@ -3216,8 +3216,12 @@
         <td>　</td>
         <td class="textL">08.search_03.01.Enter</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_enter' }">
+            search_enter
+          </router-link>
+          ,
+          <router-link :to="{ name: 'search_enter_recommend' }">
+            search_enter_recommend
           </router-link>
         </td>
         <td></td>
@@ -3233,8 +3237,12 @@
         <td>　</td>
         <td class="textL">08.search_03.02.typing</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_typing' }">
+            search_typing
+          </router-link>
+          ,
+          <router-link :to="{ name: 'search_typing_snackbar' }">
+            search_typing_snackbar
           </router-link>
         </td>
         <td></td>
@@ -3250,11 +3258,15 @@
         <td>　</td>
         <td class="textL">08.search_04.04.result_course</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_result_course' }">
+            search_result_course
+          </router-link>
+          ,
+          <router-link :to="{ name: 'search_result_course_B2C' }">
+            search_result_course_B2C
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">181</td>
@@ -8553,8 +8565,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_04.01_VOC</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_contorl' }">
+            Eduperson_voc
           </router-link>
         </td>
         <td></td>
@@ -8570,8 +8582,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_05.01_Statement</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_contorl' }">
+            Eduperson_statement
           </router-link>
         </td>
         <td></td>
@@ -10083,7 +10095,7 @@
             components_textfield
           </router-link>
         </td>
-        <td>20181206 err 클래스명 수정</td>
+        <td>20190107 추가컴포넌트 </td>
       </tr>
       <tr>
       <td align="center">0</td>
