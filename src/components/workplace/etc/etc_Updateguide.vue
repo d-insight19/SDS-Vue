@@ -27,7 +27,7 @@
 
         <!-- layer wrap -->
         <slp-popup title="최신버전 업데이트" cancelInput="앱 종료" confirmInput="업데이트">
-            <div class="ly-info">
+            <div class="ly-body">
                 <p>업데이트 버전이 있습니다.<br>
                 최신버전으로 업데이트해주세요.</p>
             </div>

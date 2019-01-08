@@ -96,10 +96,10 @@
       <!-- //container -->  
 
       <!-- layer wrap -->
-        <slp-popup confirmInput="확인">
+        <slp-popup confirmInput="닫기">
             <div class="ly-body">
                 <p><span class="ly-info">2018.08.01(월)</span> 수업이<br>
-                    <span class="ly-info">휴강</span>요청 되었습니다 
+                    <span class="ly-info">휴강</span>요청 되었습니다. 
                 </p>
             </div>
         </slp-popup>

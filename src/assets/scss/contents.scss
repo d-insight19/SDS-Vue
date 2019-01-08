@@ -1423,8 +1423,8 @@ label.rdo .label{position: relative;}
 #container.board.request #header p.h-tit1 .q-tit {width:100%}
 
 // etc
-#container.terms #content .inner {padding-top:26px}
-#container.drawer.terms h2.label-tit18 {margin-bottom:18px}
+#container.etc_terms #content .inner {padding-top:26px}
+#container.drawer.etc_terms h2.label-tit18 {margin-bottom:18px}
 .trainIntro .logowrap {position:absolute; top:182px; left:calc(50% - 90px); width:181px; height:80px; background: url("../img/multicampus_logo_white.png") no-repeat; }
 .trainIntro p.offline_txt {position:absolute; bottom:36px; left:calc(50% - 101px); font-size:map-get($font_size, font_16); color:rgba(255,255,255,0.75); font-weight: 300; }
 .helpdesk_wrap {position: fixed; left:0; bottom:0; width:100%; background-color: #eaeaea; padding:20px 18px}
@@ -1448,7 +1448,7 @@ label.rdo .label{position: relative;}
 
 #container .title_line span.time {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); font-weight: 400; margin-left:4px}
 #container .title_line span.status {font-size:map-get($font_size, font_14); }
-#container .title_line span.title_txt {margin-right:6px}
+#container .title_line span.title_txt {color:rgba(0,0,0,0.8); margin-right:6px; }
 #container .title_line span.total_txt {margin-right:5px}
 #container.drawer.bpo ul.multiList.type1 span.time {color:rgba(0,0,0,0.65); }
 #container.drawer.bpo ul.multiList.type1 span.status {color:rgba(0,0,0,0.65); font-weight: 500; margin-right: 5px}
@@ -1460,7 +1460,7 @@ label.rdo .label{position: relative;}
 
 #container.drawer.bpo_student {font-size:map-get($font_size, font_15); font-weight: 500}
 #container.drawer.bpo_student .name_wrap .name {margin-right: 4px; line-height: 24px}
-#container.drawer.bpo_student .calender {padding:11px 10px 11px 16px ; border:#ccc 1px solid; color:rgba(0,0,0,0.8); margin-top: 4px; }
+#container.drawer.bpo_student .calender {padding:11px 10px 11px 16px ; border:#ccc 1px solid; color:rgba(0,0,0,0.8); margin-top: 4px; background-color: #fff}
 #container.drawer.bpo_student ul.multiList.type1 .date {font-size:map-get($font_size, font_16); font-weight: bold}
 #container.drawer.bpo_student ul.multiList.type1 li {padding:20px 0}
 #container.drawer.bpo_student .desc {margin:0; color:rgba(0,0,0,0.8); font-weight: 400}
@@ -1469,39 +1469,74 @@ label.rdo .label{position: relative;}
 #container.drawer.bpo_calcel select:required:invalid {color:rgba(0,0,0,0.8);}
 
 #container .title_line .date {font-family: 'Roboto'; color:rgba(0,0,0,0.65);}
-#container.drawer.bpo_shorten input::placeholder {color:rgba(0,0,0,0.25);}
-#container.drawer.bpo_shorten .calender {padding:11px 10px 11px 16px ; color:rgba(0,0,0,0.8); margin-top: 8px; background-color: #f6f6f6 }
+#container.drawer input::placeholder {color:rgba(0,0,0,0.25);}
+#container.drawer .calender {padding:11px 10px 11px 16px ; color:rgba(0,0,0,0.8); margin-top: 8px; background-color: #f6f6f6 }
 
 #container.drawer.bpo .num {font-family: 'Roboto'; color:rgba(0,0,0,0.65);}
 #container.drawer.bpo .multiList.type1 > li {padding:22px 0}
 #container.drawer.bpo_classstatus .multiList.type1 > li .in {padding:0}
 #container.drawer.bpo_classstatus .multiList.type1 > li {padding:15px 0}
 #container.drawer.bpo_classstatus .multiList.type1 > li .date {font-family: 'Roboto'; font-weight: 500 }
-#container.drawer.bpo_classstatus .multiList.type1 .attendance {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65);}
-#container.drawer.bpo_classstatus .multiList.type1 .attendance span.check {color:rgba(0,0,0,0.5); margin-right: 6px}
+#container.drawer.bpo_classstatus .multiList.type1 .attendance { font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.5);}
+#container.drawer.bpo_classstatus .multiList.type1 .attendance span.date {font-family: 'Roboto'; color:rgba(0,0,0,0.65); margin-left: 6px}
+
 #container.drawer.bpo_classstatus .multiList.type1 .time {position: absolute; top: calc(50% - 10px) ;  right:0}
 
-#container.bpo_subjectlist_detail .multiList.type3 > li .in {padding:15px 0}
-#container.bpo_subjectlist_detail .multiList.type3 .ico.arrow {top:calc(50% - 8px)}
-#container.bpo_subjectlist_detail .btn.md {height:40px; line-height: 40px}
-#container.bpo_subjectlist_detail .btn.md.attend_check {height:44px; line-height: 44px; font-size:map-get($font_size, font_14); color:#000; font-weight: 500; margin-bottom:8px}
-#container.bpo_subjectlist_detail .type_box {margin-bottom:8px; margin-top:6px}
-#container.bpo_subjectlist_detail .date_wrap {margin-bottom:6px}
-#container.bpo_subjectlist_detail .date {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8); font-weight: 500; margin-right: 2px}
-#container.bpo_subjectlist_detail .ico.check_16_blue {margin-top:3px; margin-right:2px}
-#container.bpo_subjectlist_detail .attend_view {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.4); font-weight: 400}
-#container.bpo_subjectlist_detail .attend {font-size:map-get($font_size, font_14); }
-#container.bpo_subjectlist_detail .disable {color:rgba(0,0,0,0.25) !important; }
-#container.bpo_subjectlist_detail .attend .time {color:rgba(0,0,0,0.65); margin-left:4px}
-#container.bpo_subjectlist_detail .attend button.check {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.8); padding:4px 7px; border:#ccc 1px solid; line-height: 19px; margin-left:5px; }
-#container.bpo_subjectlist_detail .multiList .multiline {max-height: none}
-#container.bpo_subjectlist_detail .detail_info {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); line-height: 20px; margin-top:2px}
-#container.bpo_subjectlist_detail .detail_info span.num {color:rgba(0,0,0,0.8);}
-#container.bpo_subjectlist_detail .title_line {padding-bottom:0}
+#container.bpo_subjectlist .multiList.type3 > li .in {padding:15px 0}
+#container.bpo_subjectlist .multiList.type3 .ico.arrow {top:calc(50% - 8px)}
+#container.bpo_subjectlist .btn.md {height:40px; line-height: 40px}
+#container.bpo_subjectlist .btn.md.attend_check {height:44px; line-height: 44px; font-size:map-get($font_size, font_14); color:#000; font-weight: 500; margin-bottom:8px}
+#container.bpo_subjectlist .type_box {margin-bottom:8px; margin-top:6px}
+#container.bpo_subjectlist .date_wrap {margin-bottom:6px}
+#container.bpo_subjectlist .date {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8); font-weight: 500; margin-right: 2px}
+#container.bpo_subjectlist .ico.check_16_blue {margin-top:3px; margin-right:2px}
+#container.bpo_subjectlist .attend_view {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.4); font-weight: 400}
+#container.bpo_subjectlist .attend {font-size:map-get($font_size, font_14); }
+#container.bpo_subjectlist .disable {color:rgba(0,0,0,0.25) !important; }
+#container.bpo_subjectlist .attend .time {color:rgba(0,0,0,0.65); margin-left:4px}
+#container.bpo_subjectlist .attend button.check {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.8); padding:4px 7px; border:#ccc 1px solid; line-height: 19px; margin-left:5px; }
+#container.bpo_subjectlist .multiList .multiline {max-height: none}
+#container.bpo_subjectlist .detail_info {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); line-height: 20px; margin-top:2px}
+#container.bpo_subjectlist .detail_info span.num {color:rgba(0,0,0,0.8);}
+#container.bpo_subjectlist .info-rate {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.65); font-weight:400; line-height: 22px; margin-top:18px}
+#container.bpo_subjectlist .info-rate .rate {font-family: 'Roboto'; color:#000; margin-left:10px}
+#container.bpo_subjectlist .time_schedule { overflow: hidden; border-top:#e3e3e3 1px solid; border-bottom:#e3e3e3 1px solid; font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); padding:19px 20px; margin:20px 0}
+#container.bpo_subjectlist .time_schedule li {float:left; width:50%}
+#container.bpo_subjectlist .time_schedule li+li {border-left:#d9d9d9 1px solid; padding-left:28px}
+#container.bpo_subjectlist .time_schedule dt {line-height: 17px; margin-bottom:7px}
+#container.bpo_subjectlist .time_schedule dd {font-size:map-get($font_size, font_18);}
+#container.bpo_subjectlist .time_schedule dd span.num {font-family: 'Roboto'; color:#000; font-size:map-get($font_size, font_24); font-weight: 500}
+#container.bpo_subjectlist .multiList.type3 .multiline.contents .date {font-family: 'Roboto'; font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65);}
+#container.drawer .total_grade {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); position:absolute; right:0; top: calc(50% - 15px)}
+#container.drawer .total_grade .grade {font-family: 'Roboto'; font-size:map-get($font_size, font_22); color:#000; font-weight: 500; margin-left:5px}
+#container.bpo_subjectlist p.hr {margin:26px -24px 22px}
+#container.bpo_subjectlist .title_line {color:rgba(0,0,0,0.8); padding-bottom:0}
+#container.bpo_subjectlist .title_line .count {color:#000}
+
+#container.drawer.bpo_completion .label-tit14 {width:auto; margin-right: 3px}
+#container.drawer.bpo_completion .total_grade_wrap {position:relative; border-top:#999 1px solid; padding-top:20px; font-weight:500}
+#container.drawer.bpo_completion .total_grade_wrap .total_grade{top: calc(50% - 3px)}
+
+#container.drawer.bpo_classstatus .title_line { color:rgba(0,0,0,0.8);}
+#container.drawer.bpo_classstatus .class_info { font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); line-height: 20px; margin-top:4px}
+#container.drawer.bpo_classstatus .class_info span.info { color:rgba(0,0,0,0.8);}
+#container.drawer.bpo_classstatus .date_wrap { font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8); font-weight:500}
+#container.drawer.bpo_classstatus .date_wrap .ico.calender_blue_24 {margin-top:-3px}
+#container.drawer.bpo_classstatus p.hr {margin:18px -24px 22px}
+#container.login.bpo .ico.eye{width:22px; height:22px; background:url("../img/ic_password_view.png") no-repeat;background-size:cover; position:absolute; right:0; bottom:10px}
+#container.login.bpo .ico.eye_slash{width:22px; height:22px; background:url("../img/ic_password_notview.png") no-repeat;background-size:cover; position:absolute; right:0; bottom:10px}
+
+#container.bpo_shorten .title_line span.title_txt {color:#000; font-weight: 500}
+#container.bpo_shorten .title_line .fr.date {margin-top:4px; letter-spacing: -0.42px}
+#container.drawer.bpo.sms .title_line { font-size:map-get($font_size, font_16); color:#000; font-weight: 500 }
+#container.drawer.bpo.sms .title_line span.title_txt {color:inherit}
+#container.drawer.bpo.sms .multiList.type1 > li {padding:15px 0}
+
 
 .layerWrap .popup-select {overflow:hidden; width:100%}
 .layerWrap .popup-select li {float:left; width: calc(50% - 4px); box-sizing: border-box}
 .layerWrap .popup-select li+li {margin-left:8px}
+
 
 
 

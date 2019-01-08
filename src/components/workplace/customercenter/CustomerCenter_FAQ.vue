@@ -34,15 +34,9 @@
                                             <a href="#"><span class="ico down"></span></a>
                                         </h1> -->
                         <div class="title_line">
-                            <select class="select category">
+                            <div class="select category" @click="changeLang()">
                             <option>동영상 12건</option>
-                            <option>이벤트</option>
-                            <option>리포트</option>
-                            <option>평가</option>
-                            <option>로그인</option>
-                            <option>도서</option>
-                            <option>기타</option>
-                            </select>
+                            </div>
                         </div>
                         <div id="dropdown_wrap" v-show="langFlag">
                             <div id="sheetDim" @click="changeLang()"></div>
@@ -57,10 +51,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="edu_lang"  @click="changeLang()">
-                            <span>한국어</span>
-                            <span class="ico"></span>
-                        </div>
+                      
 
                                         <ul class="multiList type3">
                                             <li>
