@@ -1737,4 +1737,13 @@ label.rdo .label{position: relative;}
 .search .searchList > li .in{width: calc(100% - 34px);padding:15px 0; display: table-cell; position: relative; height:100%;vertical-align: middle;font-size: map-get($font_size, font_16);}
 .search .searchList .ico.arrowsearch{position:absolute;right:0px;top:calc(50% - 8px);}
 .search .searchList .ico.time{width:20px;height:20px;margin-top:-3px;background: url("../img/ic_time_line_80.png") no-repeat; background-size: contain;}
-.search .ico.filter{width:24px;height:24px;margin-top:0px;background: url("../img/ic_filter_96.png") no-repeat; background-size: contain;}
+.search .filterArea {position: relative; background-color: map-get($bg_colors , BG_1); padding:18px;}
+.search .ico.filter{width:24px;height:24px;margin-top:0px;background: url("../img/ic_filter_96.png") no-repeat; background-size: contain; position:absolute; right: 18px; top: calc(50% - 12px);}
+.search .ico.arrowback{width:24px;height:24px;margin-top:0px;background: url("../img/btn_arrowback_96.png") no-repeat; background-size: contain;}
+.search .info li .tagWrap {display: inline-block; margin-top: -2px; vertical-align: top;}
+.search .nodata_area {text-align:center; margin-top: 250px;}
+.search .nodata_area .nodata_img {width:64px; height:64px;}
+.search .color_danger{color: map-get($static_colors , danger);}
+.search .multiList.type3 > li{padding-top: 20px;}
+.search #header .ulList.type1 .in-chk .labelChk2 {margin-top:0px;}
+.search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}

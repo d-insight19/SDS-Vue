@@ -16,14 +16,14 @@
             </div>
             <div class="header_inner line2 scroll-x">
                 <!-- list -->
-                <ul class="ulList type1">
+                <ul class="ulList type1 pl18">
                     <li>
                         <div class="in-chk">
-                            <slp-checkbox type="button" checked>경영 / 리더십</slp-checkbox>
-                            <slp-checkbox type="button">금융</slp-checkbox>
-                            <slp-checkbox type="button">직무 / 자격</slp-checkbox>
-                            <slp-checkbox type="button">OPIC / 외국어</slp-checkbox>
-                            <slp-checkbox type="button">인문 / 교양 / 시사</slp-checkbox>
+                            <slp-checkbox type="button" value="true">이러닝</slp-checkbox>
+                            <slp-checkbox type="button">집합</slp-checkbox>
+                            <slp-checkbox type="button">복합</slp-checkbox>
+                            <slp-checkbox type="button">지식과정</slp-checkbox>
+                            <slp-checkbox type="button">부가서비스</slp-checkbox>
                         </div>
                     </li>
                 </ul>
@@ -34,16 +34,16 @@
         <div id="content" class="list">
         
           <div class="cell">
-            <div class="inner pt0">
-            총검색결과 <span class="color_clr2">156</span>
-            <span class="ico filter"></span>
+            <div class="filterArea ml-18 mr-18">
+                <p class="font_15 mono_100 fwb">총 검색결과 <span class="color_clr2">468</span></p>
+                <span class="ico filter"></span>
             </div>
           </div>
 
           <div class="cell">
             <div class="inner pt0">
                 <h2 class="h-tit2 fwb600 mb20">
-                    이러닝 <span class="color_clr2">156</span>
+                    이러닝 <span class="color_clr2">468</span>
                     <div class="fr color_clr2 font_14 fwl">전체보기</div>
                 </h2>
                 <!-- list -->
@@ -68,7 +68,6 @@
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
-                                <div class="tagWrap"></div>
                             </a>
                             <a href="#" class="tit"><strong>자바스크립트</strong>기초부터 예제까지 iOS 개발자를 위한 업무에 바로 쓰는 스플...</a>
                             <p class="mono_80 font_13 multiline line1"><a href="#">글로벌 비즈니스</a> > <a href="#">글로벌 비즈니스의</a></p>
@@ -122,7 +121,6 @@
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
-                                <div class="tagWrap"></div>
                             </a>
                             <a href="#" class="tit"><strong>자바스크립트</strong>기초부터 예제까지 iOS 개발자를 위한 업무에 바로 쓰는 스플...</a>
                             <p class="mono_80 font_13 multiline line1"><a href="#">글로벌 비즈니스</a> > <a href="#">글로벌 비즈니스의</a></p>
@@ -176,7 +174,6 @@
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
-                                <div class="tagWrap"></div>
                             </a>
                             <a href="#" class="tit"><strong>자바스크립트</strong>기초부터 예제까지 iOS 개발자를 위한 업무에 바로 쓰는 스플...</a>
                             <p class="mono_80 font_13 multiline line1"><a href="#">글로벌 비즈니스</a> > <a href="#">글로벌 비즈니스의</a></p>

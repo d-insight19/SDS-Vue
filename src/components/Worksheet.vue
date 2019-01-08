@@ -3266,7 +3266,7 @@
             search_result_course_B2C
           </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">181</td>
@@ -3279,8 +3279,8 @@
         <td>　</td>
         <td class="textL">08.search_04.04.01.result_book</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_result_book' }">
+            search_result_book
           </router-link>
         </td>
         <td></td>
@@ -3296,8 +3296,8 @@
         <td>　</td>
         <td class="textL">08.search_04.04.02.result_paperpro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_result_paperpro' }">
+            search_result_paperpro
           </router-link>
         </td>
         <td></td>
@@ -3313,8 +3313,8 @@
         <td>　</td>
         <td class="textL">08.search_04.04.03.result_language</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_result_language' }">
+            search_result_language
           </router-link>
         </td>
         <td></td>
@@ -3330,8 +3330,8 @@
         <td>　</td>
         <td class="textL">08.search_04.04.04.result_note</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_result_note' }">
+            search_result_note
           </router-link>
         </td>
         <td></td>
@@ -3347,8 +3347,8 @@
         <td>　</td>
         <td class="textL">08.search_04.04.04.result_nodata</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'search_result_nodata' }">
+            search_result_nodata
           </router-link>
         </td>
         <td></td>

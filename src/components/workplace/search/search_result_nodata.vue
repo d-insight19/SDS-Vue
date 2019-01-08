@@ -6,20 +6,13 @@
       <div id="container" class="mediaquery search">
 
         <!-- header -->
-        <div id="header" class="fixed tab">
+        <div id="header" class="fixed">
             <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">영어</p>
-            </div>
-            <div class="header_inner line2 tabMenu scroll-x">
-                <ul class="fixTab">
-                    <li class="on"><a href="#tab1">Conversation</a></li><!-- selected class "on" -->
-                    <li><a href="#tab2">Fun English</a></li>
-                </ul>
-            </div>
-            <div class="blur_wrap">
-                <div class="left blur"></div>
-                <div class="right blur"></div>
+                <div class="search-wrapper">
+                    <input type="text"  pattern="^\s+" class="input noline" placeholder="검색어를 입력해 주세요" value="자하하" />
+                    <button class="close-icon" type="button"></button>
+                </div>
             </div>
         </div>
         <!-- //header -->
@@ -27,68 +20,10 @@
         <div id="content" class="etc">
         
           <div class="cell">
-            <div class="inner">
-                <div class="total mb0">
-                    <span>총 <strong>120</strong>건</span>
-                </div>
-
-                <ul class="multiList type3">
-                    <li>
-                        <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.14</li>
-                            </ul>
-                        </div>
-                        <span class="ico arrow"></span>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.13</li>
-                            </ul>
-                        </div>
-                        <span class="ico arrow"></span>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.12</li>
-                            </ul>
-                        </div>
-                        <span class="ico arrow"></span>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.11</li>
-                            </ul>
-                        </div>
-                        <span class="ico arrow"></span>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.10</li>
-                            </ul>
-                        </div>
-                        <span class="ico arrow"></span>
-                    </li>
-                </ul>
+            <div class="nodata_area">
+                <img src="@/assets/img/img_nosearch_line_64.png" class="nodata_img" alt="">
+                <p class="font_16"><span class="color_danger">‘자하하’</span>에 대한 검색결과가 없습니다.</p>
+                <p class="font_14 mono_50">입력하신 검색어를 다시 확인해 주세요.</p>
             </div>
           </div>
 
@@ -101,7 +36,7 @@
 
 <script>
 export default {
-  name: 'CLIPing_languageClubList02',
+  name: 'search_result_nodata',
   /* vue lifecycle */
   created () {
   },
