@@ -35,7 +35,7 @@
                   <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -52,7 +52,7 @@
                   <a href="#" class="tit">업무에 바로 쓰는 경영경제 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -69,7 +69,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -86,7 +86,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -103,7 +103,7 @@
                   <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -120,7 +120,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -137,7 +137,7 @@
                   <a href="#" class="tit">업무에 바로 쓰는 경영경제 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -154,7 +154,7 @@
                   <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -171,7 +171,7 @@
                   <a href="#" class="tit">업무에 바로 쓰는 경영경제 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -188,7 +188,7 @@
                   <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -211,7 +211,7 @@
                   <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -228,7 +228,7 @@
                   <a href="#" class="tit">업무에 바로 쓰는 경영경제 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -245,7 +245,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -262,7 +262,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -279,7 +279,7 @@
                   <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -296,7 +296,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -313,7 +313,7 @@
                   <a href="#" class="tit">업무에 바로 쓰는 경영경제 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -330,7 +330,7 @@
                   <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -347,7 +347,7 @@
                   <a href="#" class="tit">업무에 바로 쓰는 경영경제 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -364,7 +364,7 @@
                   <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -387,7 +387,7 @@
                   <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -404,7 +404,7 @@
                   <a href="#" class="tit">업무에 바로 쓰는 경영경제 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -421,7 +421,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -438,7 +438,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -455,7 +455,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -472,7 +472,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -489,7 +489,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -506,7 +506,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -523,7 +523,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -540,7 +540,7 @@
                   <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                   <a href="#" class="date">2018.10.01 ~2018.10.31</a>
                   <ul class="info">
-                     <li class="color_clr3 fwb">이러닝</li>
+                     <li class="color_clr3 fwb">공개집합</li>
                      <li><span class="star ico"></span>4.5</li>
                      <li>수료율 81.51%</li>
                   </ul>
@@ -553,7 +553,6 @@
 
 <script>
 export default {
-
 }
 </script>
 

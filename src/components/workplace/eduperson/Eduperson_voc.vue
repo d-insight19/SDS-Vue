@@ -1,6 +1,6 @@
 <template>
    <div class="edu_tab4">
-      <div class="detail_date">
+      <div class="detail_date tab-txt">
          <p class="select_date">2018.11<span class="ico calender_blue_24"></span></p>
       </div>
       <p class="line01" style="border-color:#999;"></p>

@@ -146,7 +146,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" disabled="disabled" class="btn md" :class="{ clr1 : on }">제출</button>
+                <button type="button" class="btn md" :class="{ clr1 : active_el && keylength && keylength2 }">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -175,8 +175,7 @@ export default {
       headerType: 1,
       active_el: 2,
       keylength: 0,
-      keylength2: 0,
-      on: true
+      keylength2: 0
     }
   },
   /* vue function */

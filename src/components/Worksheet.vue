@@ -6040,7 +6040,7 @@
             Study_04_SO_survey_answer
           </router-link>
         </td>
-        <td>01-02 작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">346</td>
@@ -6245,7 +6245,7 @@
             Study_04_SO_debate_input_opposite
           </router-link>
         </td>
-        <td>01-04 작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">358</td>
@@ -8599,8 +8599,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_06.01_Operation</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_contorl' }">
+            Eduperson_operation
           </router-link>
         </td>
         <td></td>
@@ -8616,8 +8616,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_06.01_Operation_set</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_contorl' }">
+            Eduperson_operation_set
           </router-link>
         </td>
         <td></td>

@@ -123,7 +123,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" class="btn md clr1">제출</button>
+                <button type="button" class="btn md" :class="{ clr1 : keylength && keylength2 && keylength3 }">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -151,8 +151,8 @@ export default {
     return {
       headerType: 1,
       keylength: 0,
-      keylength2: 0,
-      keylength3: 0
+      keylength2: 5,
+      keylength3: 10
     }
   },
   /* vue function */
