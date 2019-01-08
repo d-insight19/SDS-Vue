@@ -393,7 +393,7 @@ select:required:invalid {
 // .thumList .thumImg{width:100px; height:100px;}
 .thumList .thumbnail{overflow: hidden; margin: auto;height: 100%;position: relative;}
 .thumList .thumbnail .thumImg{position: relative; left: 50%; transform: translateX(-50%); height: 100%;}
-.thumList .tit{display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 23px; letter-spacing: -0.048em; max-height: 46px; margin-bottom: 5px; overflow: hidden;}
+.thumList .tit{display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 23px; letter-spacing: -0.48px; max-height: 46px; margin-bottom: 5px; overflow: hidden;}
 // 멀티라인 2줄
 .thumList .tit{text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;  word-wrap: break-word;}
 .thumList .info{font-size: 0;}
@@ -500,7 +500,8 @@ select:required:invalid {
 .tagWrap span{display: inline-block; font-size: map-get($font_size, font_11); line-height: 20px; height: 21px; padding:0 7px; border:1px solid #d9d9d9; border-radius: 50px; vertical-align: top;color:rgba(0,0,0,0.8)}
 .tagWrap span + span{margin-left:4px;}
 
-
+// ATORM 운영관리에서 우측 아이콘 포함되는 유형 추가 20190108
+.thumList.include_ico .in{padding-right:29px}
 
 
 

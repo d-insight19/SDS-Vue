@@ -556,6 +556,7 @@
 #container.atorm .multiList > li{border-top:1px solid #e3e3e3}
 #container.atorm .multiList > li:nth-last-child(1){border-bottom:1px solid #e3e3e3}
 #container.atorm .multiList > li .ico.star{margin-top:5px;}
+#container.atorm .multiList .multiline{letter-spacing: -0.48px}
 #container.atorm .nolistWrap{display:table;width:100%;height:138px;border-top:1px solid #e3e3e3;border-bottom:1px solid #d9d9d9;text-align: center}
 #container.atorm .nolistWrap.type2{border-top:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;padding:19px 0px;}
 #container.atorm .nolistWrap p.info{display:table-cell;font-size:map-get($font-size, font_15);line-height:28px;letter-spacing: -0.45px;color:rgba(0,0,0,0.65);vertical-align: middle}
@@ -568,7 +569,6 @@
 #container.atorm_itemfactory .singleList.type_1 .ico.item_left{left:0px;width:20px;height:20px;background-position:0px 0px;margin-top: 0px;transform: translateY(-50%);}
 #container.atorm_itemfactory .singleList.type_1 .ico.next_16{width:16px;height:16px;background-position:0px 0px;} 
 #container.atorm_itemfactory .singleList.type_1 li a{ padding: 15px 30px 15px 28px;}
-
 #container.atorm_itemfactory .intSchBox{margin:18px 0px;}
 #container.atorm_itemfactory .itemListTotal{height:24px;line-height: 24px;margin-bottom:11px;}
 #container.atorm_itemfactory .itemListTotal .total{font-size:map-get($font-size, font_15);letter-spacing: -0.38px;color:rgba(0,0,0,0.80);font-weight: 500;}
@@ -583,6 +583,28 @@
 #container.atorm_itemfactory .itemList.type1 .labelRdo input.rdo + .ico{display:none;}
 #container.atorm_itemfactory .itemList.type2 .labelRdo.multi{padding-left:74px;}
 
+// ATORM 과정제작
+#container.atorm .product_wrap{margin-top: -24px;background: #f2f2f2;height:calc(100vh - 117px);margin-left: -18px;margin-bottom: -53px;width: calc(100% + 36px);}
+#container.atorm .product_wrap .tit1{margin-bottom:0px;padding: 24px 18px 19px 18px;}
+#container.atorm .product_wrap .product_list{background: #f2f2f2;}
+#container.atorm .product_wrap .product_list li{display:inline-block;width:100%;min-height:130px;background:#fff;padding:21px 26px 19px 28px;position: relative;}
+#container.atorm .product_wrap .product_list li + li{margin-top:13px;}
+#container.atorm .product_wrap .product_list li:nth-last-child(1){margin-bottom:40px;}
+#container.atorm .product_wrap .product_list .product_tit{display:block;font-size:map-get($font-size, font_20);letter-spacing: -0.6px;line-height: 29px;font-weight: 600;width:calc(100% - 116px);}
+#container.atorm .product_wrap .product_list .product_desc{display:inline-block;margin-top:10px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;line-height: 21px;font-weight: 400; color:rgba(0,0,0,0.8);width:calc(100% - 116px)}
+#container.atorm .product_wrap .product_list .product_icon{width:90px;height:90px;position:absolute;top:50%;right:26px;transform: translateY(-50%)}
+#container.atorm .product_wrap .product_list .product_icon.elearning_90{background: url("../img/ic_atorm_elearning_90.png") no-repeat; }
+#container.atorm .product_wrap .product_list .product_icon.group_90{background: url("../img/ic_atorm_group_90.png") no-repeat; }
+#container.atorm .product_wrap .product_list .product_icon.flip_90{background: url("../img/ic_atorm_flip_90.png") no-repeat; }
+#container.atorm .product_wrap .product_list .product_icon.cliping_90{background: url("../img/ic_atorm_cliping_90.png") no-repeat; }
+// ATROM 과정운영관리
+#container.atorm .thumList.include_ico > li{display:inline-block;border-color:#ccc;margin-bottom:20px;padding-bottom:0px;}
+#container.atorm .thumList.include_ico li .in{padding-right:29px ;width:100vw}
+#container.atorm .thumList.include_ico span.share{position:absolute;top:50%;right:0px;transform: translateY(-50%)}
+#container.atorm .thumList.include_ico li .in + .in_sub{margin-top:12px;border-top:1px solid #eaeaea;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;line-height: 37px;height:37px;color:rgba(0,0,0,0.8);font-weight: 400;}
+#container.atorm .thumList.include_ico li .in + .in_sub li{display:inline-block;}
+#container.atorm .thumList.include_ico li .in + .in_sub li + li{margin-left:17px;}
+#container.atorm .thumList.include_ico li .in + .in_sub .num{letter-spacing: 0px;font-weight: 500;color:#000}
 
 
 // 충돌이 날수있을거같아 회사 운영자 이어서 작성한뒤 마지막에 위쪽으로 붙여놓겠습니다

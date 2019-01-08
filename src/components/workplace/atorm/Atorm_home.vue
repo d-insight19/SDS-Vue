@@ -56,7 +56,6 @@
             <li v-for="(item, index) in list2" :key="index">
                 <div class="in">
                     <a href="#" class="thum">
-                        <span class="label">정규</span>
                         <div class="thumbnail">
                             <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                         </div>
