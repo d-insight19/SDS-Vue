@@ -1329,6 +1329,11 @@ label.rdo .label{position: relative;}
 .reply_input button {width:57px; height:44px; background-color:#21277c; color:#fff; }
 #container.board .reply-list {border-bottom:#e3e3e3 1px solid; padding:16px 0 10px}
 #container.drawer.board .down {margin-top:-5px}
+#container.drawer .category_txt {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.8);}
+#container.drawer .category_txt .num {color:#000; font-weight: bold; margin-left:6px}
+#container.drawer .category_txt .ico.down {margin-top:-5px}
+#container.drawer .status_txt {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.8);}
+#container.drawer .status_txt .ico.down {margin-top:-4px}
 
 #container.board .contents15 {font-size:map-get($font_size, font_15); color:rgba(0,0,0,0.65); font-weight: 400; letter-spacing: -0.45px; line-height: 25px}
 #container.board .studyguide {width:324px;height:243px;background: url("../img/studyguide.png") no-repeat; margin:14px auto }
