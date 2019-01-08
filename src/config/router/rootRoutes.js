@@ -143,6 +143,7 @@ import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_su
 import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
 import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
 import Study05etcpilottest from '~workplace/study/Study_05_etc_pilottest'
+import Study05etcpilottest01 from '~workplace/study/Study_05_etc_pilottest_01'
 import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
@@ -1060,6 +1061,11 @@ var rootRoutes = [
     path: '/Study_05_etc_pilottest',
     name: 'Study_05_etc_pilottest',
     component: Study05etcpilottest
+  },
+  {
+    path: '/Study_05_etc_pilottest_01',
+    name: 'Study_05_etc_pilottest_01',
+    component: Study05etcpilottest01
   },
   {
     path: '/Study_05_etc_pledge_ethics',

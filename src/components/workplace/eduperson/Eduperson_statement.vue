@@ -1,7 +1,7 @@
 <template>
    <div class="edu_tab3">
       <div class="detail_date">
-         <p class="fl select_date">
+         <p class="fl select_date tab-txt">
             <span class="label-tit-20">통합검색 통계</span></p>
          <p class="fr select_lecture" @click="bottomsheetToggle">월간<span class="ico ico_dropdown16"></span></p>
       </div>
