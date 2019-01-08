@@ -113,11 +113,6 @@
           </ul>
         </div>
 
-        <div class="drawer_atorm_txt color_clr1">ATORM</div>
-        <div class="drawer_atorm_txt2 color_clr1">진입</div>
-        <div class="exchange_wrap" @click="toggleDrawer()">
-          <span class="icon"></span>
-        </div>
       </div> 
       <!-- // Drawer -->
       <!-- Drawer Dim -->

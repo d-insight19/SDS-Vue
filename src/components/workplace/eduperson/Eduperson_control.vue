@@ -96,9 +96,9 @@
           </ul>
         </div>
 
-        <div class="drawer_atorm_txt color_clr1">ATORM</div>
-        <div class="drawer_atorm_txt2 color_clr1">진입</div>
         <div class="exchange_wrap" @click="toggleDrawer()">
+          <span class="drawer_atorm_txt">ATORM</span>
+          <span class="drawer_atorm_txt2">가기</span>
           <span class="icon"></span>
         </div>
       </div> 

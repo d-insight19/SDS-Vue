@@ -15,7 +15,7 @@
         left:14px;
         top: 14px;
       }
-      & p{
+      & p.header_text{
         text-align: left;
         padding-left: 0px;
         overflow: hidden;
@@ -24,7 +24,8 @@
         font-weight: 600;
       }
       & .end{
-        font-weight:400
+        font-weight:400;
+        & .end_btn1{margin-right:14px;}
       }
     }
     
@@ -505,3 +506,10 @@
 #container.MainType #content .inner{padding-top:26px}
 // ATORM 아이템팩퇴
 #container.atorm_itemfactory #content .inner{padding-top:0px}
+// ATORM 승인요청 리스트
+#container.atorm_confirmlist #content .inner{padding-top:6px}
+// ATORM 승인요청 리스트 상세
+#container.atorm_confirmlist_detail  #content .inner{padding-top:0px}
+
+// 과제작성 헤더 padding 변경 ( 버튼 2개 )
+#container.study_stauts_apply #header{padding: 0 136px 0 72px}

@@ -1679,11 +1679,15 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.Product_main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_control' }">
+            Atorm_control
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_control_designer' }">
+            Atorm_control_designer
           </router-link>
         </td>
-        <td></td>
+        <td>텝 선택으로 확인</td>
       </tr>
       <tr>
       <td align="center">93</td>
@@ -2113,11 +2117,15 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.03._process_main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_control' }">
+            Atorm_control
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_control_designer' }">
+            Atorm_control_designer
           </router-link>
         </td>
-        <td></td>
+        <td>텝 선택으로 확인</td>
       </tr>
       <tr>
       <td align="center">119</td>
@@ -2130,11 +2138,15 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04._status_main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_control' }">
+            Atorm_control
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_control_designer' }">
+            Atorm_control_designer
           </router-link>
         </td>
-        <td></td>
+        <td>텝 선택으로 확인</td>
       </tr>
       <tr>
       <td align="center">120</td>
@@ -2245,11 +2257,15 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.05._confirm    list_main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_control' }">
+            Atorm_control
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_control_designer' }">
+            Atorm_control_designer
           </router-link>
         </td>
-        <td></td>
+        <td>텝 선택으로 확인</td>
       </tr>
       <tr>
       <td align="center">127</td>
@@ -2262,11 +2278,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.05.01._confirm    list_managing details</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_confirm_list' }">
+            Atorm_confirm_list
           </router-link>
         </td>
-        <td></td>
+        <td>선택 터치시 타입 2가지 확인가능</td>
       </tr>
       <tr>
       <td align="center">128</td>
@@ -2279,11 +2295,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.05.02._confirm    list_confirm request details</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_confirm_list_detail' }">
+            Atorm_confirm_list_detail
           </router-link>
         </td>
-        <td></td>
+        <td>작업중 - 디자인요청</td>
       </tr>
       <tr>
       <td align="center">129</td>

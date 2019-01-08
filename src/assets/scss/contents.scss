@@ -606,6 +606,57 @@
 #container.atorm .thumList.include_ico li .in + .in_sub li + li{margin-left:17px;}
 #container.atorm .thumList.include_ico li .in + .in_sub .num{letter-spacing: 0px;font-weight: 500;color:#000}
 
+// ATORM 승인요청리스트
+#container.atorm_confirmlist .multiList{padding-left:0px;}
+#container.atorm_confirmlist .multiList > li{border-bottom:1px solid #e3e3e3;}
+#container.atorm_confirmlist .multiList > li .labelChk{padding-left:0px;}
+#container.atorm_confirmlist .multiList > li .in{padding:20px 0px;}
+#container.atorm_confirmlist .multiList > li .in .multiline{width:100%;letter-spacing: -0.48px;}
+#container.atorm_confirmlist .multiList > li .in{padding-left:0px;padding-right:34px;}
+#container.atorm_confirmlist .multiList > li .ico.next_16{display: block;position: absolute;top:50%;right:0px;transform: translateY(-50%)}
+#container.atorm_confirmlist .multiList > li  input.chk + .ico{display:none;}
+#container.atorm_confirmlist .multiList.checkbox > li .in{padding-left:40px;padding-right:0px;}
+#container.atorm_confirmlist .multiList.checkbox > li .ico.next_16{display: none}
+#container.atorm_confirmlist .multiList.checkbox > li input.chk + .ico{display:inline-block;}
+#container.atorm_confirmlist #header{padding: 0 136px 0 72px}
+#container.atorm_confirmlist #header .end .end_btn1{color:rgba(0,0,0,0.65);margin-right:14px;}
+
+// ATORM 승인요청리스트 디테일
+#container.atorm_confirmlist_detail .confirm_item_detail{margin:0px -18px}
+#container.atorm_confirmlist_detail .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;line-height: 58px;font-weight: 600;letter-spacing: -0.54px;color:#000;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .num{font-family: 'Roboto'}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum{display: block;width: 100px;height: 100px;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;position: relative;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table{border-spacing: 0 10px}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table td:nth-child(1){width:124px;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table tbody td{padding-top:10px}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table tbody tr:nth-child(1) td{padding-top:20px}
+
+
+#container.atorm_confirmlist_detail .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 충돌이 날수있을거같아 회사 운영자 이어서 작성한뒤 마지막에 위쪽으로 붙여놓겠습니다
 /*공통*/

@@ -16,8 +16,10 @@
         <div id="header" class="fixed" style="display:none;">
           <button type="button" class="btn only prev"><span class="ico">이전</span></button>
           <p class="header_text font_19 type2"> 스크롤시  header 에 fixed 클래스 추가</p>
-          <p class="end sub color_clr2">임시저장</p>
-          <p class="end color_clr2">제출</p>
+          <p class="end">
+              <span class="end_btn1 color_clr2">임시저장</span>
+              <span class="end_btn2 color_clr2">제출</span>
+          </p>
         </div>
         <!-- //header -->
 

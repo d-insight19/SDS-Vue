@@ -762,10 +762,10 @@ select:required:invalid {
 #drawer .drawer_list > li.open{border-bottom:0px;}
 #drawer .drawer_list > li.open .drawer_list_inner{display:block}
 #drawer .drawer_list > li.open .ico{background: url("../img/ic_accordion_arr_16_up.png") no-repeat; background-size: contain;}
-#drawer .drawer_atorm_txt{font-family: 'Roboto' ;font-weight:600;font-size:map-get($font-size, font_25 );line-height:29px; letter-spacing: 1.75px;position:absolute;bottom:42px;left:117px}
-#drawer .drawer_atorm_txt2{font-size:map-get($font-size, font_24 );line-height:36px; letter-spacing: 1.75px;position:absolute;bottom:40px;left:215px;letter-spacing: -0.72px;font-weight:500}
-#drawer .exchange_wrap{position:absolute;bottom:27px;left:277px;width:58px;height:58px;}
-#drawer .exchange_wrap .icon{width:58px;height:58px;background: url("../img/ic_atorm_exchange_bold_wh_28.png") no-repeat; background-size: contain;display:inline-block}
+#drawer .exchange_wrap{position:absolute;bottom:40px;left:152px;width:169px;height:48px;line-height:48px;color:#fff;display:table-cell;padding-left:13px;}
+#drawer .drawer_atorm_txt{font-family: 'Roboto' ;font-weight:600;font-size:map-get($font-size, font_17 );line-height:29px; letter-spacing: 1.719px;}
+#drawer .drawer_atorm_txt2{font-size:map-get($font-size, font_16 );line-height:36px;letter-spacing: -0.48px;font-weight:500;margin-left:5px}
+#drawer .exchange_wrap .icon{width:20px;height:20px;background: url("../img/ic_arr_solid_white_20.png") no-repeat; background-size: contain;display:inline-block;position:absolute;top:50%;right:16px;transform:translateY(-50%);}
 #drawer-overlay{position: fixed;top: 0;left: 0;right: 0;height: 100vh;background-color: rgba(0,0,0,0.5);z-index: 997;}
 
 
