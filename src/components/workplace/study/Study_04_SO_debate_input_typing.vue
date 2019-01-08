@@ -164,7 +164,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" :disabled="disabledflag" class="btn md" :class="{ clr1 : keylength && checked  }">제출</button>
+                <button type="button" class="btn md" :class="{ clr1 : keylength && checked  }">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -200,9 +200,6 @@ export default {
   },
   /* vue function */
   methods: {
-    disabledflag () {
-      this.disabled = !this.disabled
-    },
     focusToggle () {
       this.focusFlag = !this.focusFlag
     },

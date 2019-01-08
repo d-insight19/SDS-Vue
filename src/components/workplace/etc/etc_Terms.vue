@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
         <!-- container -->
-        <div id="container" class="mediaquery drawer terms">
+        <div id="container" class="mediaquery drawer etc_terms">
             
             <!-- header -->
             <div id="header" class="fixed">

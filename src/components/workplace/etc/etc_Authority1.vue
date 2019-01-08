@@ -27,7 +27,7 @@
 
         <!-- layer wrap -->
         <slp-popup title="알림" confirmInput="닫기">
-            <div class="ly-info">
+            <div class="ly-body">
                 <p>QR코드를 인식하기 위해 카메라를 사용합니다. 설정에서 승인 해주세요.</p>
             </div>
         </slp-popup>

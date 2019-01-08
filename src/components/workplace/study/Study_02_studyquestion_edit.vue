@@ -49,23 +49,21 @@
                             </div>
                             <!-- //list -->
                         </li>
-                        <li>
-                            <strong class="label-tit16"> 첨부파일 추가</strong>
-                            <ul v-show="list1.length" class="ulList type4 bot-btn">
-                                <li v-for="(item, index) in list1" :key="index">
-                                <div>
-                                    <span class="ico img-a"></span>
-                                    <span class="at-tit">Solution listup.jpg</span>
-                                    <div class="fr">
-                                    <span class="at-num">500KB</span>
-                                    <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
-                                    </div>
-                                </div>                                                             
-                                </li>  
-                            </ul>
-                            <!-- 추가 리스트 --> 
-                        </li>
                       </ul>
+                      <strong class="label-tit16 mt36"> 첨부파일 추가</strong>
+                      <ul v-show="list1.length" class="ulList type4 bot-btn">
+                          <li v-for="(item, index) in list1" :key="index">
+                          <div>
+                              <span class="ico img-a"></span>
+                              <span class="at-tit">Solution listup.jpg</span>
+                              <div class="fr">
+                                <span class="at-num">500KB</span>
+                                <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
+                              </div>
+                          </div>                                                             
+                          </li>  
+                      </ul>
+                      <!-- 추가 리스트 --> 
                   </div>
                 </div>
             </div>

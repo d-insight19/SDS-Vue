@@ -112,12 +112,12 @@
 
 <script>
 import EdupersonStudycurrent from './Eduperson_studycurrent'
-import EdupersonOperation from './Eduperson_operation'
+import EdupersonOperationControl from './Eduperson_operation_control'
 import EdupersonStatement from './Eduperson_statement'
 import EdupersonVoc from './Eduperson_voc'
 export default {
   name: 'Eduperson_drawer',
-  components: {'Eduperson_studycurrent': EdupersonStudycurrent, 'Eduperson_operation': EdupersonOperation, 'Eduperson_statement': EdupersonStatement, 'Eduperson_voc': EdupersonVoc},
+  components: {'Eduperson_studycurrent': EdupersonStudycurrent, 'Eduperson_operation_control': EdupersonOperationControl, 'Eduperson_statement': EdupersonStatement, 'Eduperson_voc': EdupersonVoc},
   /* vue lifecycle */
   created () {
   },
@@ -139,7 +139,7 @@ export default {
       if (idx === 1) {
         this.component = 'Eduperson_studycurrent'
       } else if (idx === 2) {
-        this.component = 'Eduperson_operation'
+        this.component = 'Eduperson_operation_control'
       } else if (idx === 3) {
         this.component = 'Eduperson_statement'
       } else if (idx === 4) {

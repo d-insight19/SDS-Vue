@@ -45,6 +45,7 @@
 .ico.ppt-a{width:20px;height:20px;background: url("../img/ic_ppt_line_20.png") no-repeat; }
 .ico.del-blk{width:20px;height:20px;background: url("../img/ic_close_bold_20.png") no-repeat; }
 .ico.plus{width:16px;height:16px;background: url("../img/ic_plus_16.png") no-repeat; vertical-align: -2px; }
+.ico.plus.done{opacity: 0.3; }
 .ico.clip{width:16px;height:16px;background: url("../img/ic_addfile_16.png") no-repeat; }
 .ico.down-load{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
 .ico.down-load-wh{width:20px;height:20px;background: url("../img/ic_download_wh_20.png") no-repeat;  }
@@ -128,8 +129,12 @@
 /*추가 이미지 2019-1-3*/
 .ico.warning{width:18px; height:18px; background: url("../img/ic_warning_solid_20.png") no-repeat;  vertical-align: -2px;}
 
-
-
+/*추가 이미지 2019-1-8*/
+.ico.ico_dropdown16{margin-top:-5px;margin-left:4px;width:16px; height: 16px; background: url("../img/ic_dropdown_16_bl.png");background-size: cover;}
+.ico.gragh{width:24px;height:24px;background: url("../img/ic_viewgraph_n_24.png") no-repeat; }
+/* .ico.gragh.blue{width:24px;height:24px;background: url("../img/ic_viewgraph_s_24.png") no-repeat; } */
+/* .ico.table{width:24px;height:24px;background: url("../img/ic_viewtable_n_24.png") no-repeat; } */
+.ico.table.blue{width:24px;height:24px;background: url("../img/ic_viewtable_s_24.png") no-repeat; }
 
 
 
@@ -199,6 +204,7 @@
 .mt9{margin-top: 9px !important;}
 .mt10{margin-top: 10px !important;}
 .mt12{margin-top: 12px !important;}/*12월12일 추가*/
+.mt14{margin-top: 14px !important;} 
 .mt16{margin-top: 16px !important;} 
 .mt20{margin-top: 20px !important;}/*12월12일 추가*/ 
 .mt22{margin-top: 22px !important;}/*12월19일 추가*/
@@ -229,10 +235,12 @@
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
 
-.mr4{margin-right: 6px !important;}/*1월 3일 추가*/
+.mr3{margin-right: 3px !important;}
+.mr4{margin-right: 4px !important;}/*1월 3일 추가*/
 .mr6{margin-right: 6px !important;}/*1월 3일 추가*/
 
 .pt0{padding-top: 0 !important;}
+.pdt16{padding-top: 16px !important;}
 .pdt22{padding-top:22px !important;}
 .pdb0{padding-bottom:0 !important;}
 .pdb98{padding-bottom:98px !important;}
@@ -245,3 +253,7 @@
 /* link */
 .link{display: inline-block;}
 .link .ico.arr{width:10px; height: 10px; margin-left: 4px; background-position: -279px -67px;}
+
+
+/* font-weight */
+.font_regular {font-weight:400}
