@@ -8633,8 +8633,11 @@
         <td>　</td>
         <td class="textL">11.Eduperson_06.01_Operation_autonomy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_contorl' }">
+            Eduperson_Operation_autonomy
+          </router-link><br/>
+          <router-link :to="{ name: 'Eduperson_Operation_autonomy_02t' }">
+            Eduperson_Operation_autonomy_02t
           </router-link>
         </td>
         <td></td>

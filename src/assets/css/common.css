@@ -131,7 +131,10 @@
 
 /*추가 이미지 2019-1-8*/
 .ico.ico_dropdown16{margin-top:-5px;margin-left:4px;width:16px; height: 16px; background: url("../img/ic_dropdown_16_bl.png");background-size: cover;}
-
+.ico.gragh{width:24px;height:24px;background: url("../img/ic_viewgraph_n_24.png") no-repeat; }
+/* .ico.gragh.blue{width:24px;height:24px;background: url("../img/ic_viewgraph_s_24.png") no-repeat; } */
+/* .ico.table{width:24px;height:24px;background: url("../img/ic_viewtable_n_24.png") no-repeat; } */
+.ico.table.blue{width:24px;height:24px;background: url("../img/ic_viewtable_s_24.png") no-repeat; }
 
 
 
@@ -201,6 +204,7 @@
 .mt9{margin-top: 9px !important;}
 .mt10{margin-top: 10px !important;}
 .mt12{margin-top: 12px !important;}/*12월12일 추가*/
+.mt14{margin-top: 14px !important;} 
 .mt16{margin-top: 16px !important;} 
 .mt20{margin-top: 20px !important;}/*12월12일 추가*/ 
 .mt22{margin-top: 22px !important;}/*12월19일 추가*/

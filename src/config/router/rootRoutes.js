@@ -304,8 +304,7 @@ import EdupersonControl from '~workplace/eduperson/Eduperson_control'
 import EdupersonStudycurrentElearning from '~workplace/eduperson/Eduperson_studycurrent_elearning'
 import EdupersonStudycurrentSet from '~workplace/eduperson/Eduperson_studycurrent_set'
 import EdupersonStudycurrentAutonomy from '~workplace/eduperson/Eduperson_studycurrent_autonomy'
-import EdupersonVoc from '~workplace/eduperson/Eduperson_voc'
-import EdupersonStatement from '~workplace/eduperson/Eduperson_statement'
+import EdupersonOperationautonomy02t from '~workplace/eduperson/Eduperson_Operation_autonomy_02t'
 
 import etcTerms from '~workplace/etc/etc_Terms'
 import etcNetworkerror from '~workplace/etc/etc_Networkerror'
@@ -1862,14 +1861,9 @@ var rootRoutes = [
     component: EdupersonStudycurrentAutonomy
   },
   {
-    path: '/Eduperson_voc',
-    name: 'Eduperson_voc',
-    component: EdupersonVoc
-  },
-  {
-    path: '/Eduperson_statement',
-    name: 'Eduperson_statement',
-    component: EdupersonStatement
+    path: '/Eduperson_Operation_autonomy_02t',
+    name: 'Eduperson_Operation_autonomy_02t',
+    component: EdupersonOperationautonomy02t
   },
   {
     path: '/etc_Terms',
