@@ -27,7 +27,7 @@
 
         <!-- layer wrap -->
         <slp-popup title="앱 권한 활용 동의(선택)" cancelInput="허용안함" confirmInput="승인">
-            <div class="ly-info">
+            <div class="ly-body">
                 <p>‘K-SPACE’이(가) 사용자의 사진에 접근하려고 합니다. 게시판에 사진을 등록 하기 위해 사용.</p>
             </div>
         </slp-popup>

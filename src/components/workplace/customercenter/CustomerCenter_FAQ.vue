@@ -25,41 +25,31 @@
           <div class="cell">
             <div class="inner">
 
-                <div class="tabCnt dpb pt0" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
-                                <!-- list -->    
-                                        <!--                 
-                                        <h1 class="h-tit5 title_line">
-                                            <span class="total_txt">카테고리명 </span>
-                                            <strong class="fwb600 count">12</strong><span>건</span>
-                                            <a href="#"><span class="ico down"></span></a>
-                                        </h1> -->
-                        <div class="title_line">
-                            <select class="select category">
-                            <option>동영상 12건</option>
-                            <option>이벤트</option>
-                            <option>리포트</option>
-                            <option>평가</option>
-                            <option>로그인</option>
-                            <option>도서</option>
-                            <option>기타</option>
-                            </select>
-                        </div>
                         <div id="dropdown_wrap" v-show="langFlag">
                             <div id="sheetDim" @click="changeLang()"></div>
-                            <div id="dropdown">            
+                            <div id="dropdown" class="category">            
                                 <ul  @click="changeLang()">
                                 <!-- 
                                     position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
                                 -->
-                                <li>한국어</li>
-                                <li>중국어</li>
-                                <li>베트남어</li>
+                                <li>동영상</li>
+                                <li>이벤트</li>
+                                <li>리포트</li>
+                                <li>평가</li>
+                                <li>로그인</li>
+                                <li>도서</li>
+                                <li>기타</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="edu_lang"  @click="changeLang()">
-                            <span>한국어</span>
-                            <span class="ico"></span>
+
+                <div class="tabCnt dpb pt0" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
+                       <!-- list --> 
+                        <div class="title_line">
+                            <div class="category_txt" @click="changeLang()">
+                            <span>동영상<span class="num">12</span>건</span>
+                            <span class="ico down"></span>
+                            </div>
                         </div>
 
                                         <ul class="multiList type3">

@@ -16,17 +16,30 @@
           <div class="cell">
             <div class="inner">
 
+                        <div id="dropdown_wrap" v-show="langFlag">
+                            <div id="sheetDim" @click="changeLang()"></div>
+                            <div id="dropdown" class="status">            
+                                <ul @click="changeLang()">
+                                <!-- 
+                                    position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
+                                -->
+                                <li>진행중</li>
+                                <li>마감</li>
+                                </ul>
+                            </div>
+                        </div>
+
                 <div class="tabCnt dpb pt0" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
                     <!-- list -->                                 
-                    <h1 class="h-tit5 title_line">
+                     <h1 class="h-tit5 title_line">
                         <span class="total_txt">총</span>
-                        <strong class="fwb600 count">2</strong><span>건</span>
-                        <!-- <a href="#"><span class="ico down fr"></span><span class="total fr">마감</span></a> --> 
-                        <select class="select status fr">
-                                            <option>마감</option>
-                                            <option>진행중</option>
-                                            </select>
-                    </h1>                
+                        <strong class="fwb600 count">12</strong><span>건</span>
+
+                        <div class="status_txt fr" @click="changeLang()">
+                        <span>전체</span>
+                        <span class="ico down"></span>
+                        </div>
+                    </h1>
                     <ul class="multiList type3">
                         <li>
                         <div class="in">                                                                                        
@@ -82,11 +95,15 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 2
+      headerType: 2,
+      langFlag: false
     }
   },
   /* vue function */
   methods: {
+    changeLang () {
+      this.langFlag = !this.langFlag
+    }
   }
 }
 </script>

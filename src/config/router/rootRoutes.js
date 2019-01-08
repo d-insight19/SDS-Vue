@@ -143,6 +143,7 @@ import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_su
 import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
 import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
 import Study05etcpilottest from '~workplace/study/Study_05_etc_pilottest'
+import Study05etcpilottest01 from '~workplace/study/Study_05_etc_pilottest_01'
 import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
@@ -303,8 +304,7 @@ import EdupersonControl from '~workplace/eduperson/Eduperson_control'
 import EdupersonStudycurrentElearning from '~workplace/eduperson/Eduperson_studycurrent_elearning'
 import EdupersonStudycurrentSet from '~workplace/eduperson/Eduperson_studycurrent_set'
 import EdupersonStudycurrentAutonomy from '~workplace/eduperson/Eduperson_studycurrent_autonomy'
-import EdupersonVoc from '~workplace/eduperson/Eduperson_voc'
-import EdupersonStatement from '~workplace/eduperson/Eduperson_statement'
+import EdupersonOperationautonomy02t from '~workplace/eduperson/Eduperson_Operation_autonomy_02t'
 
 import etcTerms from '~workplace/etc/etc_Terms'
 import etcNetworkerror from '~workplace/etc/etc_Networkerror'
@@ -312,6 +312,7 @@ import etcAuthority1 from '~workplace/etc/etc_Authority1'
 import etcAuthority from '~workplace/etc/etc_Authority'
 import etcUpdateguide from '~workplace/etc/etc_Updateguide'
 import etcOfflineguide from '~workplace/etc/etc_Offlineguide'
+import etcManual from '~workplace/etc/etc_Manual'
 import etcHelpdesk from '~workplace/etc/etc_Helpdesk'
 
 import BPOLogin from '~workplace/bpo/BPO_Login'
@@ -323,7 +324,9 @@ import BPOsubjectlistdetailstudent from '~workplace/bpo/BPO_subjectlist_detail_s
 import BPOsubjectlistdetailcancel from '~workplace/bpo/BPO_subjectlist_detail_cancel'
 import BPOsubjectlistdetailcancelpopup from '~workplace/bpo/BPO_subjectlist_detail_cancel_popup'
 import BPOsubjectlistdetailshorten from '~workplace/bpo/BPO_subjectlist_detail_shorten'
+import BPOsubjectlistdetailshortenpopup from '~workplace/bpo/BPO_subjectlist_detail_shorten_popup'
 import BPOsubjectlistdetailextend from '~workplace/bpo/BPO_subjectlist_detail_extend'
+import BPOsubjectlistdetailextendpopup from '~workplace/bpo/BPO_subjectlist_detail_extend_popup'
 import BPOsubjectlistdetailSMS from '~workplace/bpo/BPO_subjectlist_detail_SMS'
 import BPOsubjectlistdetailSMSpopup from '~workplace/bpo/BPO_subjectlist_detail_SMS_popup'
 import BPOClassstatusdetail from '~workplace/bpo/BPO_Classstatus_detail'
@@ -334,6 +337,17 @@ import BPOsubjectlistdetaildisable from '~workplace/bpo/BPO_subjectlist_detail_d
 import BPOsubjectlistdetailpopup from '~workplace/bpo/BPO_subjectlist_detail_popup'
 import BPOsubjectlistdetailpopupdisable from '~workplace/bpo/BPO_subjectlist_detail_popup_disable'
 import BPOsubjectlistdetailpopupsave from '~workplace/bpo/BPO_subjectlist_detail_popup_save'
+import BPOsubjectlistdetailsupplementary from '~workplace/bpo/BPO_subjectlist_detail_supplementary'
+import BPOsubjectlistdetailsupplementaryadd from '~workplace/bpo/BPO_subjectlist_detail_supplementary_add'
+import BPOsubjectlistdetailsupplementarydone from '~workplace/bpo/BPO_subjectlist_detail_supplementary_done'
+import BPOsubjectlistdetailsupplementarypopup from '~workplace/bpo/BPO_subjectlist_detail_supplementary_popup'
+import BPOsubjectlisttest from '~workplace/bpo/BPO_subjectlist_test'
+import BPOsubjectlisttestcompletion from '~workplace/bpo/BPO_subjectlist_test_completion'
+import BPOsubjectlisttestcompletionpopup from '~workplace/bpo/BPO_subjectlist_test_completion_popup'
+import BPOClassstatus from '~workplace/bpo/BPO_Classstatus'
+import BPODrawer from '~workplace/bpo/BPO_Drawer'
+import BPOLoginpasswordview from '~workplace/bpo/BPO_Login_password_view'
+import BPOLoginpasswordnotview from '~workplace/bpo/BPO_Login_password_notview'
 
 import AtormDrawer from '~workplace/atorm/Atorm_drawer'
 import AtormControl from '~workplace/atorm/Atorm_control'
@@ -1046,6 +1060,11 @@ var rootRoutes = [
     path: '/Study_05_etc_pilottest',
     name: 'Study_05_etc_pilottest',
     component: Study05etcpilottest
+  },
+  {
+    path: '/Study_05_etc_pilottest_01',
+    name: 'Study_05_etc_pilottest_01',
+    component: Study05etcpilottest01
   },
   {
     path: '/Study_05_etc_pledge_ethics',
@@ -1842,14 +1861,9 @@ var rootRoutes = [
     component: EdupersonStudycurrentAutonomy
   },
   {
-    path: '/Eduperson_voc',
-    name: 'Eduperson_voc',
-    component: EdupersonVoc
-  },
-  {
-    path: '/Eduperson_statement',
-    name: 'Eduperson_statement',
-    component: EdupersonStatement
+    path: '/Eduperson_Operation_autonomy_02t',
+    name: 'Eduperson_Operation_autonomy_02t',
+    component: EdupersonOperationautonomy02t
   },
   {
     path: '/etc_Terms',
@@ -1880,6 +1894,11 @@ var rootRoutes = [
     path: 'etc_Offlineguide',
     name: 'etc_Offlineguide',
     component: etcOfflineguide
+  },
+  {
+    path: 'etc_Manual',
+    name: 'etc_Manual',
+    component: etcManual
   },
   {
     path: 'etc_Helpdesk',
@@ -1932,9 +1951,19 @@ var rootRoutes = [
     component: BPOsubjectlistdetailshorten
   },
   {
+    path: 'BPO_subjectlist_detail_shorten_popup',
+    name: 'BPO_subjectlist_detail_shorten_popup',
+    component: BPOsubjectlistdetailshortenpopup
+  },
+  {
     path: 'BBPO_subjectlist_detail_extend',
     name: 'BPO_subjectlist_detail_extend',
     component: BPOsubjectlistdetailextend
+  },
+  {
+    path: 'BBPO_subjectlist_detail_extend_popup',
+    name: 'BPO_subjectlist_detail_extend_popup',
+    component: BPOsubjectlistdetailextendpopup
   },
   {
     path: 'BPO_subjectlist_detail_SMS',
@@ -1985,6 +2014,61 @@ var rootRoutes = [
     path: 'BPO_subjectlist_detail_popup_save',
     name: 'BPO_subjectlist_detail_popup_save',
     component: BPOsubjectlistdetailpopupsave
+  },
+  {
+    path: 'BPO_subjectlist_detail_supplementary',
+    name: 'BPO_subjectlist_detail_supplementary',
+    component: BPOsubjectlistdetailsupplementary
+  },
+  {
+    path: 'BPO_subjectlist_detail_supplementary_add',
+    name: 'BPO_subjectlist_detail_supplementary_add',
+    component: BPOsubjectlistdetailsupplementaryadd
+  },
+  {
+    path: 'BPO_subjectlist_detail_supplementary_done',
+    name: 'BPO_subjectlist_detail_supplementary_done',
+    component: BPOsubjectlistdetailsupplementarydone
+  },
+  {
+    path: 'BPO_subjectlist_detail_supplementary_popup',
+    name: 'BPO_subjectlist_detail_supplementary_popup',
+    component: BPOsubjectlistdetailsupplementarypopup
+  },
+  {
+    path: 'BPO_subjectlist_test',
+    name: 'BPO_subjectlist_test',
+    component: BPOsubjectlisttest
+  },
+  {
+    path: 'BPO_subjectlist_test_completion',
+    name: 'BPO_subjectlist_test_completion',
+    component: BPOsubjectlisttestcompletion
+  },
+  {
+    path: 'BPO_subjectlist_test_completion_popup',
+    name: 'BPO_subjectlist_test_completion_popup',
+    component: BPOsubjectlisttestcompletionpopup
+  },
+  {
+    path: 'BPO_Classstatus',
+    name: 'BPO_Classstatus',
+    component: BPOClassstatus
+  },
+  {
+    path: 'BPO_Drawer',
+    name: 'BPO_Drawer',
+    component: BPODrawer
+  },
+  {
+    path: 'BPO_Login_password_view',
+    name: 'BPO_Login_password_view',
+    component: BPOLoginpasswordview
+  },
+  {
+    path: 'BPO_Login_password_notview',
+    name: 'BPO_Login_password_notview',
+    component: BPOLoginpasswordnotview
   }
 ]
 export default rootRoutes

@@ -9,86 +9,92 @@
         <div id="header" class="fixed tab">
             <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">영어</p>
+                <div class="search-wrapper">
+                    <input type="text"  pattern="^\s+" class="input noline" placeholder="검색어를 입력해 주세요" value="자바스크립트" />
+                    <button class="close-icon" type="button"></button>
+                </div>
             </div>
-            <div class="header_inner line2 tabMenu scroll-x">
-                <ul class="fixTab">
-                    <li class="on"><a href="#tab1">Conversation</a></li><!-- selected class "on" -->
-                    <li><a href="#tab2">Fun English</a></li>
+            <div class="header_inner line2 scroll-x">
+                <!-- list -->
+                <ul class="ulList type1 pl18">
+                    <li>
+                        <div class="in-chk">
+                            <slp-checkbox type="button">지식과정</slp-checkbox>
+                            <slp-checkbox type="button" value="true">부가서비스</slp-checkbox>
+                            <slp-checkbox type="button">교육안내</slp-checkbox>
+                            <slp-checkbox type="button">학습노트</slp-checkbox>
+                        </div>
+                    </li>
                 </ul>
-            </div>
-            <div class="blur_wrap">
-                <div class="left blur"></div>
-                <div class="right blur"></div>
+                <!-- //list --> value="true"
             </div>
         </div>
         <!-- //header -->
-
-        <div id="content" class="etc">
+        <div id="content" class="list">
         
           <div class="cell">
-            <div class="inner">
-                <div class="total mb0">
-                    <span>총 <strong>120</strong>건</span>
-                </div>
+            <div class="filterArea ml-18 mr-18">
+                <p class="font_15 mono_100 fwb"><span class="ico arrowback"></span> Paper Pro <span class="color_clr2">122</span></p>
+                <span class="ico filter"></span>
+            </div>
+          </div>
 
-                <ul class="multiList type3">
+          <div class="cell">
+            <div class="inner">
+                <!-- list -->
+                <ul class="thumList">
                     <li>
                         <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.14</li>
-                            </ul>
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">현장 생산품 검수 보고서 (입고 내역 통계)</a>
                         </div>
-                        <span class="ico arrow"></span>
                     </li>
                     <li>
                         <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.13</li>
-                            </ul>
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">현장 생산품 검수 보고서 (입고 내역 통계)</a>
                         </div>
-                        <span class="ico arrow"></span>
                     </li>
                     <li>
                         <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.12</li>
-                            </ul>
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">현장 생산품 검수 보고서 (입고 내역 통계)</a>
                         </div>
-                        <span class="ico arrow"></span>
                     </li>
                     <li>
                         <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.11</li>
-                            </ul>
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">현장 생산품 검수 보고서 (입고 내역 통계)</a>
                         </div>
-                        <span class="ico arrow"></span>
                     </li>
                     <li>
                         <div class="in">
-                            <div class="multiline line2">
-                                This meeting is quite disorganized.  Who is in charge of this meeting?  Who is in charge of this meeting?
-                            </div>
-                            <ul class="info">
-                                <li class="">2018.10.10</li>
-                            </ul>
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">현장 생산품 검수 보고서 (입고 내역 통계)</a>
                         </div>
-                        <span class="ico arrow"></span>
                     </li>
                 </ul>
+                <!-- //list -->
             </div>
           </div>
 
@@ -101,7 +107,7 @@
 
 <script>
 export default {
-  name: 'CLIPing_languageClubList02',
+  name: 'search_result_paperpro',
   /* vue lifecycle */
   created () {
   },

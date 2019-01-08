@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
         <!-- container -->
-        <div id="container" class="mediaquery eduperson bpo_subjectlist_detail">
+        <div id="container" class="mediaquery eduperson bpo_subjectlist">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
             <div v-if="headerType == '1'" id="header" class="expand">          
@@ -18,10 +18,9 @@
                             <strong class="q-tit">The Complete App Design Course - UX, UI android …</strong> 
                             <span class="fr ico more28"></span>                            
                         </p>
-                        <p class="info-group fwr">
-                            <span>평균 출석률</span>
-                            <span class="ico-status">80.10%</span>
-                        </p>
+                        <div class="info-rate">
+                            <span>평균 출석률</span><span class="rate">80.10%</span>
+                        </div>
                        
                     </div>
                 </div>
