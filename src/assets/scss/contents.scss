@@ -1692,9 +1692,12 @@ label.rdo .label{position: relative;}
 .width_inherit {width: inherit !important;}
 .width100 {width:100% !important;}
 .width50 {width:50% !important;}
+.color_danger{color: map-get($static_colors , danger);}
+.color_primary{color: map-get($static_colors , primary);}
 // fixTab a 높이 변경
 .CLIPingType #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
 .search #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
+.MySpace #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
 //MainType 공통 타이틀 수정
 .MainType .h-tit1{margin-top:4px;margin-bottom:0px;}
 .MainType .h-tit1 + .h-tit2{margin-top:13px;}
@@ -1811,7 +1814,7 @@ label.rdo .label{position: relative;}
 .MainType .banner .bg_CLIPingMain{background: url("../img/imgBan_no.jpg") repeat-x center center;}
 .MainType .banner .ico.arrow{position: absolute; background-image: url("../img/ic_next_line_bold_wh.png"); top: calc(50% - 10px) !important; right: 6px !important; width:20px; height:20px; }
 // appstore
-.MainType .bg_appstore {height:220px; text-align:center; background: url("../img/thum_no_L.jpg") no-repeat center center;}
+.MainType .bg_appstore {height:220px; text-align:center; background: url("../img/img_appstore_bg.png") no-repeat center center; background-size: cover;}
 .MainType .bg_appstore .dim45 {background-color:rgba(#000000, 0.45); padding-top: 24px; height:220px;}
 .MainType .bg_appstore .banner_appstore img {width: 150px; height: 48px; display:inline-block;}
 .MainType .bg_appstore .banner_appstore img + img {margin-left:10px;}
@@ -1881,7 +1884,6 @@ label.rdo .label{position: relative;}
 .CLIPingType .national_flag {width:20px; height:20px; margin-top: -5px; border-radius:20px;}
 .CLIPingType .national_flag.line {border:1px solid map-get($line_colors, B95);}
 //
-.CLIPingType .color_primary{color: map-get($static_colors , primary);}
 .CLIPingType .alert{background-color: map-get($static_colors , alert);}
 .CLIPingType .speaker{margin-left: -25px; width: 25px; display: inline-block;}
 .CLIPingType .rating {border: none; display:inline;}
@@ -1897,13 +1899,23 @@ label.rdo .label{position: relative;}
 .search .searchList > li .in{width: calc(100% - 34px);padding:15px 0; display: table-cell; position: relative; height:100%;vertical-align: middle;font-size: map-get($font_size, font_16);}
 .search .searchList .ico.arrowsearch{position:absolute;right:0px;top:calc(50% - 8px);}
 .search .searchList .ico.time{width:20px;height:20px;margin-top:-3px;background: url("../img/ic_time_line_80.png") no-repeat; background-size: contain;}
-.search .filterArea {position: relative; background-color: map-get($bg_colors , BG_1); padding:18px;}
-.search .ico.filter{width:24px;height:24px;margin-top:0px;background: url("../img/ic_filter_96.png") no-repeat; background-size: contain; position:absolute; right: 18px; top: calc(50% - 12px);}
-.search .ico.arrowback{width:24px;height:24px;margin-top:0px;background: url("../img/btn_arrowback_96.png") no-repeat; background-size: contain;}
 .search .info li .tagWrap {display: inline-block; margin-top: -2px; vertical-align: top;}
 .search .nodata_area {text-align:center; margin-top: 250px;}
 .search .nodata_area .nodata_img {width:64px; height:64px;}
-.search .color_danger{color: map-get($static_colors , danger);}
 .search .multiList.type3 > li{padding-top: 20px;}
 .search #header .ulList.type1 .in-chk .labelChk2 {margin-top:0px;}
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
+
+.MySpace {background-color: map-get($bg_colors , BG_1);}
+.MySpace .thumList.type4 .text {background-color: #fff;}
+.MySpace .thumList.type4 .tit {height: auto;}
+.MySpace .moredot{width:20px;height:20px;position:absolute;top:26px;right:16px;background: url("../img/ic_moredots_wh_20.png") no-repeat;}
+.MySpace #dropdown{top:0px;right:0px;}
+// Dropdown
+.MySpace .sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
+.MySpace .dropdown{z-index:851;position:absolute;top:0px;right:0px;width:auto;background:#fff;box-shadow: 0px 3px 6px rgba(0,0,0,0.16);border-radius: 4px;}
+.MySpace .dropdown ul{width:100%;padding:8px 0px;}
+.MySpace .dropdown ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
+.MySpace .cardList {background:transparent !important;}
+.MySpace .cardList > li {background:#fff;}
+.MySpace .cardList.type2 .tit {width: auto;}

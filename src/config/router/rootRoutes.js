@@ -228,6 +228,13 @@ import searchResultLanguage from '~workplace/search/search_result_language'
 import searchResultNote from '~workplace/search/search_result_note'
 import searchResultNodata from '~workplace/search/search_result_nodata'
 
+import MySpaceFormalStudying from '~workplace/myspace/MySpace_formal_studying'
+import MySpaceFormalApplication from '~workplace/myspace/MySpace_formal_application'
+import MySpaceFormalComplete from '~workplace/myspace/MySpace_formal_complete'
+import MySpaceFormalCancel from '~workplace/myspace/MySpace_formal_cancel'
+import MySpaceFormalTempcertificate from '~workplace/myspace/MySpace_formal_tempcertificate'
+import MySpaceFormalCertificatekr from '~workplace/myspace/MySpace_formal_certificatekr'
+
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
 import Drawermyinfologout from '~workplace/drawer/Drawer_myinfo_logout'
@@ -1472,6 +1479,36 @@ var rootRoutes = [
     path: '/search_result_nodata',
     name: 'search_result_nodata',
     component: searchResultNodata
+  },
+  {
+    path: '/MySpace_formal_studying',
+    name: 'MySpace_formal_studying',
+    component: MySpaceFormalStudying
+  },
+  {
+    path: '/MySpace_formal_application',
+    name: 'MySpace_formal_application',
+    component: MySpaceFormalApplication
+  },
+  {
+    path: '/MySpace_formal_complete',
+    name: 'MySpace_formal_complete',
+    component: MySpaceFormalComplete
+  },
+  {
+    path: '/MySpace_formal_cancel',
+    name: 'MySpace_formal_cancel',
+    component: MySpaceFormalCancel
+  },
+  {
+    path: '/MySpace_formal_tempcertificate',
+    name: 'MySpace_formal_tempcertificate',
+    component: MySpaceFormalTempcertificate
+  },
+  {
+    path: '/MySpace_formal_certificatekr',
+    name: 'MySpace_formal_certificatekr',
+    component: MySpaceFormalCertificatekr
   },
   {
     path: '/Drawer_alerm',

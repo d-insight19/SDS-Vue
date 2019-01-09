@@ -130,6 +130,12 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .snackbar .close_bold_20_white{width:20px; height:20px; background: url("../img/ic_close_bold_wh_80.png") ;background-size: cover; position: absolute; right: 36px;}
 .snackbar.type2{border-radius:0 !important; background-color:#333; font-weight: 300;}
 
+// 필터
+.filterArea {position: relative; background-color: map-get($bg_colors , BG_1); padding:18px;}
+.filterArea .ico.filter{width:24px;height:24px;margin-top:0px;background: url("../img/ic_filter_96.png") no-repeat; background-size: contain; position:absolute; right: 18px; top: calc(50% - 12px);}
+.filterArea .ico.arrowback{width:24px;height:24px;margin-top:0px;background: url("../img/btn_arrowback_96.png") no-repeat; background-size: contain;}
+.filterArea .ico.down{width:24px;height:24px;background: url("../img/ic_down_blue_24.png") no-repeat; background-size:contain;}
+
 // 로그인시 password , 검색 input 에만 적용되는 x 아이콘 
 .search-wrapper {position: relative;}
 .search-wrapper .close-icon {border:1px solid transparent;background-color: transparent;display: inline-block;vertical-align: middle;outline: 0;cursor: pointer;position:absolute;top:50%;right:0px;margin-top: -12px;width: 24px;height: 24px;}
@@ -387,6 +393,7 @@ select:required:invalid {
 .thumList .thum .label2{display:inline-block; position: absolute; left:0; top:0; z-index: 3; font-size: map-get($font_size, font_12); color:#fff; line-height: 20px; letter-spacing: -0.06em; padding:0 7px; background: rgba(#ff726d,0.9);}
 .thumList .thum .label3{display:inline-block; position: absolute; right:0; bottom:0; z-index: 3; font-size: map-get($font_size, font_12); color:#fff; line-height: 20px; letter-spacing: -0.06em; padding:0 7px; background: rgba(0,0,0,0.4);}
 .thumList .thum .label4{display:inline-block; position: absolute; left:20px; bottom:20px; z-index: 3; font-size: map-get($font_size, font_20); color:#fff; line-height: 26px; letter-spacing: -0.06em; padding:0px; background:none; font-weight: 300;}
+.thumList .thum .label5{display:inline-block; position: absolute; left:20px; top:20px; z-index: 3; font-size: map-get($font_size, font_20); color:#fff; line-height: 26px; letter-spacing: -0.06em; padding:0px; background:none; font-weight: 300;}
 // .thumList .thumImg{width:100px; height:100px;}
 .thumList .thumbnail{overflow: hidden; margin: auto;height: 100%;position: relative;}
 .thumList .thumbnail .thumImg{position: relative; left: 50%; transform: translateX(-50%); height: 100%;}
