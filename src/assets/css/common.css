@@ -132,11 +132,14 @@
 /*추가 이미지 2019-1-8*/
 .ico.ico_dropdown16{margin-top:-5px;margin-left:4px;width:16px; height: 16px; background: url("../img/ic_dropdown_16_bl.png");background-size: cover;}
 .ico.gragh{width:24px;height:24px;background: url("../img/ic_viewgraph_n_24.png") no-repeat; }
-/* .ico.gragh.blue{width:24px;height:24px;background: url("../img/ic_viewgraph_s_24.png") no-repeat; } */
-/* .ico.table{width:24px;height:24px;background: url("../img/ic_viewtable_n_24.png") no-repeat; } */
+.ico.gragh.blue{width:24px;height:24px;background: url("../img/ic_viewgraph_s_24.png") no-repeat; }
+.ico.table{width:24px;height:24px;background: url("../img/ic_viewtable_n_24.png") no-repeat; }
 .ico.table.blue{width:24px;height:24px;background: url("../img/ic_viewtable_s_24.png") no-repeat; }
 
 
+/*추가이미지 2019-1-9*/
+.ico.star_20{width:20px;height:20px;background: url("../img/ic_rate_solid_grey_20.png") no-repeat;}
+.ico.star_30{width:30px;height:30px;background: url("../img/ic_rate_solid_grey_30.png") no-repeat;}
 
 
 /* ico btn */
@@ -221,6 +224,7 @@
 .mt70{margin-top: 70px !important;}/*12월12일 추가*/
 
 .mb0{margin-bottom: 0px !important;}/*1월 3일 추가*/
+.mb16{margin-bottom: 16px !important;}
 .mb20{margin-bottom: 20px !important;}
 .mb22{margin-bottom: 22px !important;}/*12월19일 추가*/
 .mb24{margin-bottom: 24px !important;}

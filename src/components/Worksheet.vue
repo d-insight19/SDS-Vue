@@ -8634,6 +8634,9 @@
         <td>
           <router-link :to="{ name: 'Eduperson_contorl' }">
             Eduperson_operation_set
+          </router-link><br/>
+          <router-link :to="{ name: 'Eduperson_Operation_Set_Control' }">
+            Eduperson_Operation_Set_Control
           </router-link>
         </td>
         <td></td>
@@ -8652,8 +8655,8 @@
           <router-link :to="{ name: 'Eduperson_contorl' }">
             Eduperson_Operation_autonomy
           </router-link><br/>
-          <router-link :to="{ name: 'Eduperson_Operation_autonomy_02t' }">
-            Eduperson_Operation_autonomy_02t
+          <router-link :to="{ name: 'Eduperson_Operation_Autonomy_Control' }">
+            Eduperson_Operation_Autonomy_Control
           </router-link>
         </td>
         <td></td>
