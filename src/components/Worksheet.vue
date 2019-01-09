@@ -3380,8 +3380,8 @@
         <td>플로팅 버튼 사용여부 설정</td>
         <td class="textL">04.MySpace_04.01.formal_studying</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_studying' }">
+            MySpace_formal_studying
           </router-link>
         </td>
         <td></td>
@@ -3397,8 +3397,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_application</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_application' }">
+            MySpace_formal_application
           </router-link>
         </td>
         <td></td>
@@ -3414,8 +3414,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_complete</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_complete' }">
+            MySpace_formal_complete
           </router-link>
         </td>
         <td></td>
@@ -3431,8 +3431,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_cancel</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_cancel' }">
+            MySpace_formal_cancel
           </router-link>
         </td>
         <td></td>
@@ -3465,9 +3465,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_estimate</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_tempcertificate' }">
+            MySpace_formal_tempcertificate
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -3482,9 +3483,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_studyconfirmation</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_tempcertificate' }">
+            MySpace_formal_tempcertificate
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -3499,8 +3501,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_tempcertificate</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_tempcertificate' }">
+            MySpace_formal_tempcertificate
           </router-link>
         </td>
         <td></td>
@@ -3516,9 +3518,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_receiptcash</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_tempcertificate' }">
+            MySpace_formal_tempcertificate
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -3533,9 +3536,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_receiptcard</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_tempcertificate' }">
+            MySpace_formal_tempcertificate
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -3567,9 +3571,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_consignment</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_tempcertificate' }">
+            MySpace_formal_tempcertificate
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -3584,8 +3589,8 @@
         <td></td>
         <td class="textL">04.MySpace_04.01.formal_certificatekr</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_certificatekr' }">
+            MySpace_formal_certificatekr
           </router-link>
         </td>
         <td></td>
@@ -3601,9 +3606,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_certificateeng</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_tempcertificate' }">
+            MySpace_formal_tempcertificate
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -7693,7 +7699,7 @@
             Main_B2C_appstore
           </router-link>
         </td>
-        <td></td>
+        <td>배경이미지 적용</td>
       </tr>
       <tr>
       <td align="center">442</td>

@@ -140,7 +140,7 @@
 
 <script>
 export default {
-  name: 'Main_curateUI02',
+  name: 'Main_B2C_appstore',
   /* vue lifecycle */
   created () {
   },
