@@ -636,12 +636,17 @@
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table td:nth-child(1){width:124px;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table tbody td{padding-top:10px}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table tbody tr:nth-child(1) td{padding-top:20px}
-
-
 #container.atorm_confirmlist_detail .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 
-
+// ATORM FAQ
+#container.atorm_faq .title_line{padding-bottom:6px;}
+#container.atorm_faq .multiList.type3 > li{padding:15px 0px}
+#container.atorm_faq .multiList.type3 > li .in{padding-bottom:0px;}
+#container.atorm_faq .multiList.type3 > li .in .date{font-family: 'Roboto';color:rgba(0,0,0,0.65);letter-spacing: -0.13px;}
+#container.atorm_faq .multiList.type3 > li .info{line-height: 19px;}
+#container.atorm_faq .title_line .status_txt{position: relative;padding-right:20px;}
+#container.atorm_faq .title_line .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; position: absolute;top:50%;right:0px;transform: translateY(-50%)}
 
 
 

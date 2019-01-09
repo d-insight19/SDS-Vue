@@ -1645,11 +1645,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.08._FAQ_main</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_faq_main' }">
+            Atorm_faq_main
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">91</td>
@@ -1662,11 +1662,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.08.01._FAQ_details</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_faq_detail' }">
+            Atorm_faq_detail
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">92</td>
