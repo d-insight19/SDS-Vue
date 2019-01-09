@@ -26,16 +26,40 @@
     </div>
     <div class="tabCnt dpb pt0 mt26" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
     <!-- list -->
-        <p class="txt-tit">오류 결과 정보 (총 20건)</p>
+        <p class="txt-tit mb16">오류 결과 정보 (총 20건)</p>
         <ul class="multiList type2">
-            <li>
-              <p class="txt-tit">
-                <strong>오류정보</strong>
+            <li v-for="item in resultList" :key="item.id" style="padding-bottom:36px;">
+              <p class="label-tit14" style="margin-bottom:6px;">
+                <strong >{{item.Num}}</strong>
               </p>
-              <table>
+              <table class="result-table">
+                <tr>
+                  <td class="l-txt-2 fwb">목차명</td>
+                  <td class="r-txt-2 ">{{item.listName}}</td>
+                </tr>
                 <tr>
                   <td class="l-txt-2 fwb">오류 LO/SO</td>
-                  <td class="r-txt-2 ">(LO코드/SO코드) e-Test Leaders 실기 출제 경향 및 시험응시 방법</td>
+                  <td class="r-txt-2 ">{{item.error}}</td>
+                </tr>
+                <tr>
+                  <td class="l-txt-2 fwb">오류유형</td>
+                  <td class="r-txt-2 ">{{item.type}}</td>
+                </tr>
+                <tr>
+                  <td class="l-txt-2 fwb">오류내용</td>
+                  <td class="r-txt-2 ">{{item.sub}}</td>
+                </tr>
+                <tr>
+                  <td class="l-txt-2 fwb">오류여부</td>
+                  <td class="r-txt-2 ">{{item.check}}</td>
+                </tr>
+                <tr>
+                  <td class="l-txt-2 fwb">테스터</td>
+                  <td class="r-txt-2 ">{{item.name}}</td>
+                </tr>
+                <tr>
+                  <td class="l-txt-2 fwb">오류등록일</td>
+                  <td class="r-txt-2 ">{{item.date}}</td>
                 </tr>
               </table>
             </li>
@@ -46,7 +70,14 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      resultList: [
+        {Num: 'No. 19', listName: '목차명 입니다', error: '(LO코드/SO코드) e-Test Leaders 실기 출제 경향 및 시험응시 방법', type: '기능/메뉴', sub: 'BGM버튼 클릭 안됨', check: '오류', name: '김경수', date: '2018. 01. 01'},
+        {Num: 'No. 20', listName: '목차명 입니다', error: '(LO코드/SO코드) e-Test Leaders 실기 출제 경향 및 시험응시 방법', type: '기능/메뉴', sub: 'BGM버튼 클릭 안됨', check: '오류', name: '김경수', date: '2018. 01. 01'}
+      ]
+    }
+  }
 }
 </script>
 

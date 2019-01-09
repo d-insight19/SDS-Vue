@@ -664,6 +664,8 @@
 
 
 // 충돌이 날수있을거같아 회사 운영자 이어서 작성한뒤 마지막에 위쪽으로 붙여놓겠습니다
+//차기환 작업
+//study 
 /*공통*/
 .underline{border-bottom: 1px solid #000;}
 .line02{width: 100%;  border-bottom: 1px solid #ccc; margin-top: 26px; margin-bottom: 26px;}
@@ -897,9 +899,9 @@ table td.pb10{padding-bottom: 10px;}
 
 
 // 과정평가 학습자 안내창
+table td.right-bd{ border-right:1px solid map-get($line_colors, B85); }
 #container.study_assessment_no .label-tit18{ margin-bottom: 10px; font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px;}
 #container.study_assessment_no .tb_wrap{ margin-bottom:16px; background:#f2f3f7; padding-top: 21px; padding-bottom: 22px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
-#container.study_assessment_no table td.right-bd{ border-right:1px solid map-get($line_colors, B85); }
 #container.study_assessment_no table td{padding-left:24px; }
 #container.study_assessment_no table tr:nth-child(1) td{ padding-bottom:3px;color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_13);line-height: 19px; letter-spacing: -0.39px;}
 #container.study_assessment_no table tr:nth-child(2) td{font-size:map-get($font-size, font_18);line-height: 21px; }
@@ -1201,7 +1203,10 @@ label.rdo .label{position: relative;}
 #container.study_etc .txt-tit{ font-weight:600; font-size:map-get($font-size , font_18);line-height:27px; letter-spacing:-0.54px;margin-bottom:14px; }
 #container.study_etc .guide-btn{padding:2px 12px;}
 #container.study_etc .gr-box{background: #f5f5f5; width: 100%;padding: 12px 16px;}
-
+#container.study_etc .result-table tr:nth-child(1) td{border-top:1px solid #999999;}
+#container.study_etc .result-table tr:nth-last-child(1) {margin-bottom:36px;}
+#container.study_etc .result-table tr td{padding-top:13px; padding-bottom:13px; border-bottom:1px solid #e3e3e3;}
+#container.study_etc .result-table tr td.l-txt-2{float:none; vertical-align: top;}
 
 
 
@@ -1213,6 +1218,7 @@ label.rdo .label{position: relative;}
 .chart-num{ font-family: 'Roboto' ; font-size:map-get($font-size , font_22);line-height:29px;}
 .chart-num .per{ font-family: 'Roboto' ; font-size:map-get($font-size , font_15);line-height:29px;vertical-align: 8%;}
 .chart-list li { padding: 5px 0px; border-bottom: 1px solid #e3e3e3; margin: 0 32px;}
+.chart-list.type2 li {padding: 9px 0px;}
 .label-tit-20{ font-weight:600; font-size:map-get($font-size , font_20);line-height:28px; letter-spacing:-0.6px;}
 .label-tit-20.mg{margin-top:22px; margin-bottom:25px;}
 .eduperson .inner-txt{ font-weight: 400;font-size: map-get($font-size , font_16);line-height: 24px;letter-spacing: -0.8px; color: rgba(0, 0, 0, 0.65);}
@@ -1245,16 +1251,33 @@ label.rdo .label{position: relative;}
 .type_box .info.pos .tit .info-num{font-size:map-get($font-size , font_16);font-family: 'Roboto' ; font-weight:500; color:rgba(0,0,0,1);}
 
 
-// 회사운영자 - 이러닝보고서 Eduperson_Operation_autonomy_02t
-#container.Eduperson_Operation_autonomy .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
-#container.Eduperson_Operation_autonomy .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
-#container.Eduperson_Operation_autonomy .detail_table tr td:nth-last-child(1){padding-right:10px;}
-#container.Eduperson_Operation_autonomy .detail_table thead{background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
-#container.Eduperson_Operation_autonomy .detail_table tbody tr{height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
-#container.Eduperson_Operation_autonomy .detail_table tbody tr:nth-last-child(1){border:none;font-weight: 500;}
-#container.Eduperson_Operation_autonomy .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
+// 회사운영자 - 이러닝보고서 Eduperson_Operation_Set
+#container.Eduperson_Operation .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
+#container.Eduperson_Operation .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
+#container.Eduperson_Operation .detail_table tr td:nth-last-child(1){padding-right:10px;}
+#container.Eduperson_Operation .detail_table thead{background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
+#container.Eduperson_Operation .detail_table tbody tr{height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
+#container.Eduperson_Operation .detail_table tbody tr:nth-last-child(1){border:none;font-weight: 500;}
+#container.Eduperson_Operation .detail_table tbody tr td:nth-child(1){font-weight: 500;}
+#container.Eduperson_Operation .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
+#container.Eduperson_Operation .label-tit-20{margin-bottom:14px;}
+#container.Eduperson_Operation .tb_wrap {margin-bottom:22px; padding: 19px 38px;}
+#container.Eduperson_Operation .tb_wrap td{width:50%}
+#container.Eduperson_Operation .tb_wrap td.left-pd{padding-left:28px;}
+#container.Eduperson_Operation .tb_wrap td.right-pd{padding-right:28px;}
+#container.Eduperson_Operation .tb_wrap td .tb-state{font-family: 'Roboto' ;font-size:map-get($font-size , font_28); font-weight:500;}
+#container.Eduperson_Operation .tb_wrap td .tb-txt{font-size:map-get($font-size , font_18);}
+#container.Eduperson_Operation .line01{margin-top:19px; margin-bottom:18px; border-color:#999999}
+#container.Eduperson_Operation li.rating-list:nth-last-child(1){padding-bottom:0 !important;}
+#container.Eduperson_Operation .rating-tit{font-size:map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.8px;}
+#container.Eduperson_Operation .rating-num{font-size:map-get($font-size, font_20);line-height: 26px;letter-spacing: -1.0px;}
+#container.Eduperson_Operation .rating-txt{font-size:map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.7px;}
+#container.Eduperson_Operation .star-group{vertical-align: super;}
 
 .detail_date:after{clear:both;display:block;content:'';}
+
+
+
 
 
 
@@ -1674,9 +1697,12 @@ label.rdo .label{position: relative;}
 .width_inherit {width: inherit !important;}
 .width100 {width:100% !important;}
 .width50 {width:50% !important;}
+.color_danger{color: map-get($static_colors , danger);}
+.color_primary{color: map-get($static_colors , primary);}
 // fixTab a 높이 변경
 .CLIPingType #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
 .search #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
+.MySpace #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
 //MainType 공통 타이틀 수정
 .MainType .h-tit1{margin-top:4px;margin-bottom:0px;}
 .MainType .h-tit1 + .h-tit2{margin-top:13px;}
@@ -1793,7 +1819,7 @@ label.rdo .label{position: relative;}
 .MainType .banner .bg_CLIPingMain{background: url("../img/imgBan_no.jpg") repeat-x center center;}
 .MainType .banner .ico.arrow{position: absolute; background-image: url("../img/ic_next_line_bold_wh.png"); top: calc(50% - 10px) !important; right: 6px !important; width:20px; height:20px; }
 // appstore
-.MainType .bg_appstore {height:220px; text-align:center; background: url("../img/thum_no_L.jpg") no-repeat center center;}
+.MainType .bg_appstore {height:220px; text-align:center; background: url("../img/img_appstore_bg.png") no-repeat center center; background-size: cover;}
 .MainType .bg_appstore .dim45 {background-color:rgba(#000000, 0.45); padding-top: 24px; height:220px;}
 .MainType .bg_appstore .banner_appstore img {width: 150px; height: 48px; display:inline-block;}
 .MainType .bg_appstore .banner_appstore img + img {margin-left:10px;}
@@ -1863,7 +1889,6 @@ label.rdo .label{position: relative;}
 .CLIPingType .national_flag {width:20px; height:20px; margin-top: -5px; border-radius:20px;}
 .CLIPingType .national_flag.line {border:1px solid map-get($line_colors, B95);}
 //
-.CLIPingType .color_primary{color: map-get($static_colors , primary);}
 .CLIPingType .alert{background-color: map-get($static_colors , alert);}
 .CLIPingType .speaker{margin-left: -25px; width: 25px; display: inline-block;}
 .CLIPingType .rating {border: none; display:inline;}
@@ -1879,13 +1904,23 @@ label.rdo .label{position: relative;}
 .search .searchList > li .in{width: calc(100% - 34px);padding:15px 0; display: table-cell; position: relative; height:100%;vertical-align: middle;font-size: map-get($font_size, font_16);}
 .search .searchList .ico.arrowsearch{position:absolute;right:0px;top:calc(50% - 8px);}
 .search .searchList .ico.time{width:20px;height:20px;margin-top:-3px;background: url("../img/ic_time_line_80.png") no-repeat; background-size: contain;}
-.search .filterArea {position: relative; background-color: map-get($bg_colors , BG_1); padding:18px;}
-.search .ico.filter{width:24px;height:24px;margin-top:0px;background: url("../img/ic_filter_96.png") no-repeat; background-size: contain; position:absolute; right: 18px; top: calc(50% - 12px);}
-.search .ico.arrowback{width:24px;height:24px;margin-top:0px;background: url("../img/btn_arrowback_96.png") no-repeat; background-size: contain;}
 .search .info li .tagWrap {display: inline-block; margin-top: -2px; vertical-align: top;}
 .search .nodata_area {text-align:center; margin-top: 250px;}
 .search .nodata_area .nodata_img {width:64px; height:64px;}
-.search .color_danger{color: map-get($static_colors , danger);}
 .search .multiList.type3 > li{padding-top: 20px;}
 .search #header .ulList.type1 .in-chk .labelChk2 {margin-top:0px;}
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
+
+.MySpace {background-color: map-get($bg_colors , BG_1);}
+.MySpace .thumList.type4 .text {background-color: #fff;}
+.MySpace .thumList.type4 .tit {height: auto;}
+.MySpace .moredot{width:20px;height:20px;position:absolute;top:26px;right:16px;background: url("../img/ic_moredots_wh_20.png") no-repeat;}
+.MySpace #dropdown{top:0px;right:0px;}
+// Dropdown
+.MySpace .sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
+.MySpace .dropdown{z-index:851;position:absolute;top:0px;right:0px;width:auto;background:#fff;box-shadow: 0px 3px 6px rgba(0,0,0,0.16);border-radius: 4px;}
+.MySpace .dropdown ul{width:100%;padding:8px 0px;}
+.MySpace .dropdown ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
+.MySpace .cardList {background:transparent !important;}
+.MySpace .cardList > li {background:#fff;}
+.MySpace .cardList.type2 .tit {width: auto;}

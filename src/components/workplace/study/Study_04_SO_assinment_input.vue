@@ -18,8 +18,8 @@
                 </div>  
                 <div class="hide_header" style="background-color:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:60px">                
                     <div class="hide-inner">
-                        <span class="chip wh">액션플랜</span>                         
-                        <p class="h-tit1">인정받는 팀 리더의 액션 플랜 인정받는 팀 리더의 액션 플랜</p>
+                        <span class="chip wh">과제</span>                         
+                        <p class="h-tit1">Flinto로 뮤직앱 프로토타입 만들기 프로토타입 만들기</p>
                     </div>
                 </div>
             </div>
@@ -91,9 +91,9 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner"> 
-                        <p class="inner-txt">설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 </p>
+                        <p class="inner-txt">과제내용 설명입니다 과제내용 설명입니다 과제내용 설명입니다 과제내용 설명입니다 과제내용 설명입니다 과제내용 설명입니다 과제내용 설명입니다 과제내용 설명입니다 </p>
                         <p class="line02"></p>
-                        <p class="txt-tit">1. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
+                        <p class="txt-tit">1. OO은 OO해야합니다. 의견을 입력하세요.</p>
                         <button class="guide-btn">작성가이드</button>
                         <button class="guide-btn">모범답안</button>
                         <p class="empty_img">
@@ -104,7 +104,7 @@
                             <span class="strlenth" ><span v-text="keylength"></span>/300</span>
                         </label>
                         <p class="hr"></p>
-                        <p class="txt-tit">2. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
+                        <p class="txt-tit">2. OO은 OO해야합니다. 의견을 입력하세요.</p>
                         <button class="guide-btn" >작성가이드</button>
                         <p class="empty_img">
                             <img src="" alt="">
@@ -121,7 +121,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" v-bind:disabled="disabled" class="btn md clr1">제출</button>
+                <button type="button" class="btn md " :class="{ clr1 : keylength && keylength2}">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -149,20 +149,11 @@ export default {
     return {
       headerType: 1,
       keylength: 0,
-      keylength2: 0,
-      disabled: true
+      keylength2: 0
     }
   },
   /* vue function */
   methods: {
-    // toggleSub () {
-    //   this.disabled = !this.disabled
-    // },
-    // onChange () {
-    //   if( this.keylength.value == true && this.keylength2.value == true){
-    //       return toggleSub()
-    //   }
-    // }
   }
 }
 </script>
