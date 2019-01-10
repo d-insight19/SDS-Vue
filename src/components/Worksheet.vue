@@ -8782,6 +8782,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8799,6 +8800,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8816,6 +8818,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8833,6 +8836,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8850,6 +8854,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8867,6 +8872,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8984,6 +8990,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9001,6 +9008,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9018,6 +9026,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9035,6 +9044,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9052,6 +9062,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9069,6 +9080,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9086,6 +9098,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9103,6 +9116,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9120,6 +9134,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9137,6 +9152,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9168,9 +9184,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_01.01_Notice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Notice' }">
+            CustomerCenter_Notice
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -9185,9 +9202,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_01.02_Notice_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Notice_detail' }">
+            CustomerCenter_Notice_detail
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -9274,6 +9292,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9359,6 +9378,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9376,6 +9396,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9461,6 +9482,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9498,6 +9520,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9515,6 +9538,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9532,6 +9556,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9549,6 +9574,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9566,6 +9592,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9703,6 +9730,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -10068,6 +10096,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -10085,6 +10114,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
