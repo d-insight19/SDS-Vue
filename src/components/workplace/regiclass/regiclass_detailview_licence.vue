@@ -36,7 +36,6 @@
           <div class="cell">
             <div class="inner">
                 <p class="font_16 fwb600 mb10 underline">라이센스를 신청 하시겠습니까?</p>
-                <p class="hr"></p>
                 <dl>
                     <dt>과정명</dt>
                     <dd>변화와 성과를 이끄는 프레젠테이션</dd>
