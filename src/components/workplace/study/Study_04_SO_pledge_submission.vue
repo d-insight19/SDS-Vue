@@ -12,7 +12,7 @@
                     <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
                     <div class="page-btn">
                         <span class="ico back"></span>
-                        <div class="num"><span>03</span> / <span>36</span></div>
+                        <div class="num"><span>03</span>/<span>36</span>p</div>
                         <span class="ico next"></span>
                     </div>
                 </div>  
@@ -33,7 +33,7 @@
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
               <div class="page-btn">
                 <span class="ico back"></span>
-                <div class="num"><span>03</span> / <span>36</span></div>
+                <div class="num"><span>03</span>/<span>36</span>p</div>
                 <span class="ico next"></span>
               </div>
             </div>

@@ -1,19 +1,5 @@
 <template>
 <div class="Eduperson_Operation">
-  <h2 class="label-tit-20">교육현황</h2>
-  <div class="tb_wrap">
-    <table>
-      <tr>
-        <td class="right-bd right-pd op80">반 출석률</td>
-        <td class="left-pd op80">학습일수</td>
-      </tr>
-      <tr>
-        <td class="right-bd  right-pd"><span class="tb-state">87.04</span><span class="tb-txt op80">%</span></td>
-        <td class="left-pd"><span class="tb-state">24(40)</span><span class="tb-txt op80">일</span></td>
-      </tr>
-    </table>
-  </div>
-  <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
   <h2 class="label-tit-20">교육결과</h2>
   <div class="js-chart-wrap mb40">
     <div class="js-chart">
@@ -40,14 +26,33 @@
         <li class="rating-list" v-for="item in ratingList" :key="item.id" style="padding-bottom:20px;">
           <span class="rating-tit ">{{item.title}}</span>
           <span class="fr">
-            <span v-for="i in starList" :key="i.id" class="star-group">
-              <span v-html="i.star"></span>
+            <span  class="star-group">
+              <span v-for="i in starList" :key="i.id" v-html="i.star"></span>
             </span>
             <span class="rating-num-2">{{item.num}}</span>
             <span class="rating-txt-2">점</span>
           </span>
         </li>
       </ul>
+  </div>
+  <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+
+  <div class="detail_box">
+    <h2 class="label-tit-20">학습자 성적분포도</h2>
+    <ul class="progBox_wrap vertical">
+      <li>
+        <span  class="bar bar5" style="height:30%" title="80점 미만" value="30%"></span>
+      </li>
+      <li>
+        <span class="bar bar1" style="height:38%" title="80-90점" value="38%"></span>
+      </li>
+      <li>
+        <span class="bar bar5" style="height:21%" title="90-95점" value="21%"></span>
+      </li>
+      <li>
+        <span class="bar bar5" style="height:12%" title="95점 이상" value="12%"></span>
+      </li>
+    </ul>
   </div>
 
   <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
