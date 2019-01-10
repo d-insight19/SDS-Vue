@@ -148,10 +148,10 @@ import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_fi
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
 
-import RegiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
-import RegiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
-import RegiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
-import RegiclassDetailviewWish from '~workplace/regiclass/regiclass_detailview_wish'
+// import RegiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
+// import RegiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
+// import RegiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
+// import RegiclassDetailviewWish from '~workplace/regiclass/regiclass_detailview_wish'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -239,6 +239,16 @@ import MySpaceFormalComplete from '~workplace/myspace/MySpace_formal_complete'
 import MySpaceFormalCancel from '~workplace/myspace/MySpace_formal_cancel'
 import MySpaceFormalTempcertificate from '~workplace/myspace/MySpace_formal_tempcertificate'
 import MySpaceFormalCertificatekr from '~workplace/myspace/MySpace_formal_certificatekr'
+import MySpaceFormalCertificateeng from '~workplace/myspace/MySpace_formal_certificateeng'
+import MySpaceFormalCertificateNameKor from '~workplace/myspace/MySpace_formal_certificate_name_kor'
+import MySpaceFormalCertificateengPop from '~workplace/myspace/MySpace_formal_certificateeng_pop'
+import MySpaceFormalRequeststage from '~workplace/myspace/MySpace_formal_requeststage'
+import MySpaceFormalAttendingconfirmation from '~workplace/myspace/MySpace_formal_attendingconfirmation'
+import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changeplan'
+
+import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
+import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
+import regiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -376,6 +386,8 @@ import AtormConfirmList from '~workplace/atorm/Atorm_confirm_list'
 import AtormConfirmListDetail from '~workplace/atorm/Atorm_confirm_list_detail'
 import AtormFaqMain from '~workplace/atorm/Atorm_faq_main'
 import AtormFaqDetail from '~workplace/atorm/Atorm_faq_detail'
+import Atormitemfactoryurl1 from '~workplace/atorm/Atorm_itemfactory_url1'
+import Atormitemfactoryurl2 from '~workplace/atorm/Atorm_itemfactory_url2'
 
 // 1번 영역
 var rootRoutes = [
@@ -1109,26 +1121,26 @@ var rootRoutes = [
     name: 'Study_05_etc_authorization_employment',
     component: Study05etcauthorizationemployment
   },
-  {
-    path: '/regiclass_detailview_licence',
-    name: 'regiclass_detailview_licence',
-    component: RegiclassDetailviewLicence
-  },
-  {
-    path: '/regiclass_detailview_books',
-    name: 'regiclass_detailview_books',
-    component: RegiclassDetailviewBooks
-  },
-  {
-    path: '/regiclass_detailview_terms',
-    name: 'regiclass_detailview_terms',
-    component: RegiclassDetailviewTerms
-  },
-  {
-    path: '/regiclass_detailview_wish',
-    name: 'regiclass_detailview_wish',
-    component: RegiclassDetailviewWish
-  },
+  // {
+  //   path: '/regiclass_detailview_licence',
+  //   name: 'regiclass_detailview_licence',
+  //   component: RegiclassDetailviewLicence
+  // },
+  // {
+  //   path: '/regiclass_detailview_books',
+  //   name: 'regiclass_detailview_books',
+  //   component: RegiclassDetailviewBooks
+  // },
+  // {
+  //   path: '/regiclass_detailview_terms',
+  //   name: 'regiclass_detailview_terms',
+  //   component: RegiclassDetailviewTerms
+  // },
+  // {
+  //   path: '/regiclass_detailview_wish',
+  //   name: 'regiclass_detailview_wish',
+  //   component: RegiclassDetailviewWish
+  // },
   {
     path: '/Main_control',
     name: 'Main_control',
@@ -1544,6 +1556,51 @@ var rootRoutes = [
     component: MySpaceFormalCertificatekr
   },
   {
+    path: '/MySpace_formal_certificateeng',
+    name: 'MySpace_formal_certificateeng',
+    component: MySpaceFormalCertificateeng
+  },
+  {
+    path: '/MySpace_formal_certificate_name_kor',
+    name: 'MySpace_formal_certificate_name_kor',
+    component: MySpaceFormalCertificateNameKor
+  },
+  {
+    path: '/MySpace_formal_certificateeng_pop',
+    name: 'MySpace_formal_certificateeng_pop',
+    component: MySpaceFormalCertificateengPop
+  },
+  {
+    path: '/MySpace_formal_requeststage',
+    name: 'MySpace_formal_requeststage',
+    component: MySpaceFormalRequeststage
+  },
+  {
+    path: '/MySpace_formal_attendingconfirmation',
+    name: 'MySpace_formal_attendingconfirmation',
+    component: MySpaceFormalAttendingconfirmation
+  },
+  {
+    path: '/MySpace_formal_changeplan',
+    name: 'MySpace_formal_changeplan',
+    component: MySpaceFormalChangeplan
+  },
+  {
+    path: '/regiclass_detailview_books',
+    name: 'regiclass_detailview_books',
+    component: regiclassDetailviewBooks
+  },
+  {
+    path: '/regiclass_detailview_licence',
+    name: 'regiclass_detailview_licence',
+    component: regiclassDetailviewLicence
+  },
+  {
+    path: '/regiclass_detailview_terms',
+    name: 'regiclass_detailview_terms',
+    component: regiclassDetailviewTerms
+  },
+  {
     path: '/Drawer_alerm',
     name: 'Drawer_alerm',
     component: DrawerAlerm
@@ -1907,6 +1964,16 @@ var rootRoutes = [
     path: '/Atorm_faq_detail',
     name: 'Atorm_faq_detail',
     component: AtormFaqDetail
+  },
+  {
+    path: '/Atorm_itemfactory_url1',
+    name: 'Atorm_itemfactory_url1',
+    component: Atormitemfactoryurl1
+  },
+  {
+    path: '/Atorm_itemfactory_url2',
+    name: 'Atorm_itemfactory_url2',
+    component: Atormitemfactoryurl2
   },
   {
     path: '/Eduperson_login',

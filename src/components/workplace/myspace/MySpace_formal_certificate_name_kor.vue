@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery MySpace gray_bg">
+      <div id="container" class="mediaquery MySpace" style="background-color:#fff">
 
         <!-- header -->
         <div id="header" class="fixed tab">
@@ -28,11 +28,31 @@
         
           <div class="cell">
             <div class="inner">
-                <img src="@/assets/img/thum_no_L.jpg" class="w100p" alt="">
+              <h2 class="h-tit2 fwb600 mb5">국문 이름 입력</h2>
+              <p class="font_14 mono_65 mb25">수료증에 표시될 이름을 입력해주세요.</p>
+              <!-- list -->
+              <ul class="ulList type2">
+                <li>
+                <strong class="label-tit">성</strong>
+                <slp-text-field></slp-text-field>
+                </li>
+                <li>
+                <strong class="label-tit">이름</strong>
+                <slp-text-field></slp-text-field>
+                </li>
+              </ul>
+              <!-- //list -->
             </div>
           </div>
 
         </div>
+        
+        <!-- floatingbtn -->
+        <div class="fixBtmBtn abs">  
+            <button type="button" class="btn md clr1">다음</button>
+        </div>
+        <!-- //floatingbtn -->
+        
       </div>
       <!-- //container -->     
     </div>
@@ -41,7 +61,7 @@
 
 <script>
 export default {
-  name: 'MySpace_formal_certificatekr',
+  name: 'MySpace_formal_certificate_name_kor',
   /* vue lifecycle */
   created () {
   },

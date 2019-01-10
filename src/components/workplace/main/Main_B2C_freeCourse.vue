@@ -62,7 +62,7 @@
                 <h1 class="h-tit1 fwb700 mb20">추천</h1>
                 <h2 class="h-tit2 fwb600 mb10">경기 빅데이터 교육</h2>
                 <div class="ml-18 mr-18">
-                    <img src="@/assets/img/img_freeCourse_banner.png" class="width100" alt="">
+                    <img src="@/assets/img/img_freeCourse_banner.png" class="w100p" alt="">
                 </div>
             </div>
           </div>

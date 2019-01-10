@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: 'MySpace_formal_certificatekr',
+  name: 'MySpace_formal_studying',
   /* vue lifecycle */
   created () {
   },
