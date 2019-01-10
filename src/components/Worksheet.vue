@@ -8523,7 +8523,7 @@
             Eduperson_contorl
           </router-link>
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">488</td>
@@ -8591,7 +8591,7 @@
             Eduperson_voc
           </router-link>
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">492</td>
@@ -8608,7 +8608,7 @@
             Eduperson_statement
           </router-link>
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">493</td>
@@ -8623,9 +8623,12 @@
         <td>
           <router-link :to="{ name: 'Eduperson_contorl' }">
             Eduperson_operation
+          </router-link><br/>
+          <router-link :to="{ name: 'Eduperson_operation_elearning_control' }">
+            Eduperson_operation_elearning_control
           </router-link>
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">494</td>
@@ -8641,11 +8644,11 @@
           <router-link :to="{ name: 'Eduperson_contorl' }">
             Eduperson_operation_set
           </router-link><br/>
-          <router-link :to="{ name: 'Eduperson_Operation_Set_Control' }">
-            Eduperson_Operation_Set_Control
+          <router-link :to="{ name: 'Eduperson_operation_set_control' }">
+            Eduperson_operation_set_control
           </router-link>
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">495</td>
@@ -8659,13 +8662,10 @@
         <td class="textL">11.Eduperson_06.01_Operation_autonomy</td>
         <td>
           <router-link :to="{ name: 'Eduperson_contorl' }">
-            Eduperson_Operation_autonomy
-          </router-link><br/>
-          <router-link :to="{ name: 'Eduperson_Operation_Autonomy_Control' }">
-            Eduperson_Operation_Autonomy_Control
+            Eduperson_operation_autonomy
           </router-link>
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">496</td>
@@ -9649,8 +9649,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_05.01_Statement_searchword</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_statement_searchword' }">
+            Eduperson_statement_searchword
           </router-link>
         </td>
         <td></td>
@@ -9667,11 +9667,11 @@
         <td>　</td>
         <td class="textL">11.Eduperson_06.01_Operation_autonomy_report_graph</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_operation_autonomy_control' }">
+            Eduperson_operation_autonomy_control
           </router-link>
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">554</td>
@@ -9684,11 +9684,11 @@
         <td>　</td>
         <td class="textL">11.Eduperson_06.02_Operation_autonomy_report_table</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_operation_autonomy_control' }">
+            Eduperson_operation_autonomy_control
           </router-link>
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">555</td>

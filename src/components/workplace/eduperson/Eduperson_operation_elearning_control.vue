@@ -7,7 +7,7 @@
         <!-- header -->
         <div id="header" class="fixed">
           <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-          <p class="header_text font_18">자율 운영 보고서</p>
+          <p class="header_text font_18">이러닝 운영 보고서</p>
         </div>
         <!-- //header -->
         
@@ -16,7 +16,7 @@
             <div class="inner" style="padding-top:18px;">
               
               <div class="detail_date">
-                <p class="fl select_date">2018.11.01 - 2018.11.30<span class="ico calender_blue_24"></span></p>
+                <p class="fl select_date">2018.11<span class="ico calender_blue_24"></span></p>
                 <ul class="fr" style="border:1px solid #d9d9d9">
                   <li class="inb-box fl"><span class="ico gragh" :class="{'blue': tabIdx == 1}" @click="onClick(1)"></span></li>
                   <li class="inb-box"><span class="ico table " :class="{'blue': tabIdx == 2}" @click="onClick(2)"></span></li>
@@ -37,11 +37,11 @@
 </template>
 
 <script>
-import EdupersonOperationAutonomyGraph from './Eduperson_operation_autonomy_graph'
-import EdupersonOperationAutonomyTable from './Eduperson_operation_autonomy_table'
+import EdupersonOperationelearningGraph from './Eduperson_operation_elearning_graph'
+import EdupersonOperationElearningTable from './Eduperson_operation_elearning_table'
 export default {
-  name: 'Eduperson_Studycurrent_autonomy',
-  components: {'Eduperson_operation_autonomy_graph': EdupersonOperationAutonomyGraph, 'Eduperson_operation_autonomy_table': EdupersonOperationAutonomyTable},
+  name: 'Eduperson_operation_elearning_control',
+  components: {'Eduperson_operation_elearning_graph': EdupersonOperationelearningGraph, 'Eduperson_operation_elearning_table': EdupersonOperationElearningTable},
   /* vue lifecycle */
   created () {
   },
@@ -51,7 +51,7 @@ export default {
   data () {
     return {
       tabIdx: 1,
-      component: 'Eduperson_operation_autonomy_graph'
+      component: 'Eduperson_operation_elearning_graph'
     }
   },
   /* vue function */
@@ -59,9 +59,9 @@ export default {
     onClick (idx) {
       this.tabIdx = idx
       if (idx === 1) {
-        this.component = 'Eduperson_operation_autonomy_graph'
+        this.component = 'Eduperson_operation_elearning_graph'
       } else if (idx === 2) {
-        this.component = 'Eduperson_operation_autonomy_table'
+        this.component = 'Eduperson_operation_elearning_table'
       }
     }
   }
