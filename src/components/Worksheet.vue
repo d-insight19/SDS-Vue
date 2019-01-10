@@ -1436,8 +1436,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_url</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_url1' }">
+            Atorm_itemfactory_url1
+          </router-link>,
+           <router-link :to="{ name: 'Atorm_itemfactory_url2' }">
+            Atorm_itemfactory_url2
           </router-link>
         </td>
         <td></td>

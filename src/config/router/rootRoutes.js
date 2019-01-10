@@ -371,6 +371,8 @@ import AtormConfirmList from '~workplace/atorm/Atorm_confirm_list'
 import AtormConfirmListDetail from '~workplace/atorm/Atorm_confirm_list_detail'
 import AtormFaqMain from '~workplace/atorm/Atorm_faq_main'
 import AtormFaqDetail from '~workplace/atorm/Atorm_faq_detail'
+import Atormitemfactoryurl1 from '~workplace/atorm/Atorm_itemfactory_url1'
+import Atormitemfactoryurl2 from '~workplace/atorm/Atorm_itemfactory_url2'
 
 // 1번 영역
 var rootRoutes = [
@@ -1882,6 +1884,16 @@ var rootRoutes = [
     path: '/Atorm_faq_detail',
     name: 'Atorm_faq_detail',
     component: AtormFaqDetail
+  },
+  {
+    path: '/Atorm_itemfactory_url1',
+    name: 'Atorm_itemfactory_url1',
+    component: Atormitemfactoryurl1
+  },
+  {
+    path: '/Atorm_itemfactory_url2',
+    name: 'Atorm_itemfactory_url2',
+    component: Atormitemfactoryurl2
   },
   {
     path: '/Eduperson_login',

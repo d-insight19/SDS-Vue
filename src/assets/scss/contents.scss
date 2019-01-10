@@ -564,6 +564,10 @@
 #container.atorm .nolistWrap.type2 .info1{font-size:map-get($font-size, font_16);line-height:24px;letter-spacing: -0.48px;color:rgba(0,0,0,0.80);font-weight: 500;}
 #container.atorm .nolistWrap.type2 .info2{font-size:map-get($font-size, font_14);line-height:20px;letter-spacing: -0.42px;color:rgba(0,0,0,0.50);margin-top:2px;}
 #container.atorm .nolistWrap.type2 .info_btn{width:121px;height:38px;color:#fff;font-weight: 500;border-radius: 100px;display:inline-block;line-height: 38px;margin-top:14px;}
+#container.atorm .btn16 {font-size:map-get($font-size, font_16); position: absolute; right:16px; top: calc(50% - 14px);}
+#container.atorm .tit_desc {font-size:map-get($font-size, font_14);color:rgba(0,0,0,0.65);line-height:21px;letter-spacing: -0.42px;}
+#container.atorm .tit_essential {background: url("../img/ic_essential_red_10.png") no-repeat right 1px; padding-right:11px }
+#container.atorm .label-tit14 {width:auto}
 
 // ATROM 아이템팩퇴
 #container.atorm_itemfactory .singleList.type_1 .ico.item_left{left:0px;width:20px;height:20px;background-position:0px 0px;margin-top: 0px;transform: translateY(-50%);}
@@ -582,6 +586,9 @@
 #container.atorm_itemfactory .itemList.type1 .labelRdo.multi{padding-left:30px;}
 #container.atorm_itemfactory .itemList.type1 .labelRdo input.rdo + .ico{display:none;}
 #container.atorm_itemfactory .itemList.type2 .labelRdo.multi{padding-left:74px;}
+#container.atorm_itemfactory .imgbox_wrap {overflow: hidden;}
+#container.atorm_itemfactory .imgbox_wrap .thumnail {float:left; display:inline-block; width: 100px; height:100px}
+#container.atorm_itemfactory .imgbox {border:#e3e3e3 1px solid; border-left:none; padding:27px 16px; height:100px; display:inline-block; width: calc(100% - 100px);}
 
 // ATORM 과정제작
 #container.atorm .product_wrap{margin-top: -24px;background: #f2f2f2;height:calc(100vh - 117px);margin-left: -18px;margin-bottom: -53px;width: calc(100% + 36px);}
@@ -1347,12 +1354,12 @@ label.rdo .label{position: relative;}
 #container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:map-get($mono_colors, mono_80); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
 #container.drawer .multiList.type2 .id_info button {position: absolute; right: 0; bottom:19px}
 #container.drawer .multiList.type2 input {margin-top:8px}
-#container.drawer .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px;}
-#container.drawer .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
-#container.drawer .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
-#container.drawer .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
-#container.drawer .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px;}
-#container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 13px;}
+#container .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px;}
+#container .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
+#container .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
+#container .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
+#container .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px;}
+#container .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 13px;}
 #container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px; }
 #container.drawer .labelChk {width:auto}
 #container.drawer.extrainfo_edit .multiList.type1 > li.title_line {padding:20px 0 8px}
