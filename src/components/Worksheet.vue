@@ -8203,6 +8203,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          B2C_Drawer_settings_push와 동일
         </td>
         <td></td>
       </tr>
@@ -8234,9 +8235,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_studying</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_studying' }">
+            MySpace_formal_studying
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8286,9 +8288,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_01.01_Notice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Notice' }">
+            CustomerCenter_Notice
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8303,9 +8306,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_01.02_Notice_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Notice_detail' }">
+            CustomerCenter_Notice_detail
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8320,9 +8324,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_04.01_FAQ</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_FAQ' }">
+            CustomerCenter_FAQ
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8337,9 +8342,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_04.02_FAQ_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_FAQ_detail' }">
+            CustomerCenter_FAQ_detail
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8354,9 +8360,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_05.01_Inquiry</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Inquiry' }">
+            CustomerCenter_Inquiry
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8371,9 +8378,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_05.02_Inquiry_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_detail' }">
+            CustomerCenter_Inquiry_detail
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8388,9 +8396,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_05.03_Inquiry_write</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Inquiry_write' }">
+            CustomerCenter_Inquiry_write
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8405,9 +8414,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_07.01_Request</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Request' }">
+            CustomerCenter_Request
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8422,9 +8432,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_07.02_Request_result</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Request_result' }">
+            CustomerCenter_Request_result
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -8681,6 +8692,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8698,6 +8710,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8715,6 +8728,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8732,6 +8746,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8749,6 +8764,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8766,6 +8782,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8783,6 +8800,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8800,6 +8818,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8817,6 +8836,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8834,6 +8854,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8851,6 +8872,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8968,6 +8990,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -8985,6 +9008,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9002,6 +9026,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9019,6 +9044,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9036,6 +9062,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9053,6 +9080,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9070,6 +9098,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9087,6 +9116,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9104,6 +9134,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9121,6 +9152,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9152,9 +9184,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_01.01_Notice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Notice' }">
+            CustomerCenter_Notice
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -9169,9 +9202,10 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_01.02_Notice_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Notice_detail' }">
+            CustomerCenter_Notice_detail
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -9258,6 +9292,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9343,6 +9378,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9360,6 +9396,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9445,6 +9482,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9482,6 +9520,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9499,6 +9538,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9516,6 +9556,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9533,6 +9574,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9550,6 +9592,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9687,6 +9730,7 @@
           <router-link :to="{ name: 'Eduperson_operation_autonomy_control' }">
             Eduperson_operation_autonomy_control
           </router-link>
+          제플린 없음
         </td>
         <td>tab page</td>
       </tr>
@@ -9878,8 +9922,8 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail_cancel_setdate</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_detail_cancel_setdate' }">
+            BPO_subjectlist_detail_cancel_setdate
           </router-link>
         </td>
         <td></td>
@@ -9921,8 +9965,8 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail_supplementary_setdate</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_detail_supplementary_setdate' }">
+            BPO_subjectlist_detail_supplementary_setdate
           </router-link>
         </td>
         <td></td>
@@ -9938,11 +9982,8 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail_shorten_setdate</td>
         <td>
-          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten' }">
-            BPO_subjectlist_detail_shorten
-          </router-link>,
-          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten_popup' }">
-            BPO_subjectlist_detail_shorten_popup
+          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten_setdate' }">
+            BPO_subjectlist_detail_shorten_setdate
           </router-link>
         </td>
         <td></td>
@@ -9958,8 +9999,11 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail_shorten_setdate_set</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten' }">
+            BPO_subjectlist_detail_shorten
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten_popup' }">
+            BPO_subjectlist_detail_shorten_popup
           </router-link>
         </td>
         <td></td>
@@ -9995,8 +10039,8 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail_extend_set</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_detail_extend_setdate' }">
+            BPO_subjectlist_detail_extend_setdate
           </router-link>
         </td>
         <td></td>
@@ -10052,6 +10096,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -10069,6 +10114,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          제플린 없음
         </td>
         <td></td>
       </tr>
