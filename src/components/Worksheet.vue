@@ -6811,7 +6811,7 @@
             Study_05_etc_pilottest
           </router-link>
         </td>
-        <td>작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">390</td>
@@ -7556,8 +7556,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_02.01.detailview_books</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_books' }">
+            regiclass_detailview_books
           </router-link>
         </td>
         <td></td>
@@ -7573,8 +7573,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_02.03.detailview_terms</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_terms' }">
+            regiclass_detailview_terms
           </router-link>
         </td>
         <td></td>
@@ -7590,8 +7590,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_02.04.detailview_licence</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_licence' }">
+            regiclass_detailview_licence
           </router-link>
         </td>
         <td></td>
@@ -9726,7 +9726,6 @@
           <router-link :to="{ name: 'Eduperson_operation_autonomy_control' }">
             Eduperson_operation_autonomy_control
           </router-link>
-          제플린 없음
         </td>
         <td>tab page</td>
       </tr>

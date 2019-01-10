@@ -1215,6 +1215,46 @@ label.rdo .label{position: relative;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 수강신청 regiclass_detailview_licence
+#container.Regiclass #header .hide-inner p.h-tit1 {font-size: map-get($font-size , font_22);line-height: 21px;letter-spacing: -1.1px; font-weight:600 !important; }
+#container.Regiclass #header .hide-inner p.h-tit5 {font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px; font-weight:400; }
+#container.Regiclass .label-tit-16 {font-size: map-get($font-size , font_16);line-height: 25px;letter-spacing: -0.48px;font-weight:600;}
+#container.Regiclass .label-tit-15 {font-size: map-get($font-size , font_15);line-height: 21px;letter-spacing: -0.45px;font-weight:500;}
+#container.Regiclass table tr td{padding-bottom:5px;}
+#container.Regiclass table tr td.l-txt{font-size: map-get($font-size , font_15);line-height: 22px;letter-spacing: -0.75px;font-weight:500;}
+#container.Regiclass table tr td.r-txt{font-size: map-get($font-size , font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8)}
+#container.Regiclass .book-wrap {margin-right:15px;}
+#container.Regiclass table.book-tb {width:51.5%}
+#container.Regiclass table.book-tb tr td.book-tit{color:rgba(0,0,0,1.0);font-size: map-get($font-size , font_18);line-height: 24px;letter-spacing: -0.54px;font-weight:600;}
+#container.Regiclass table.book-tb tr td{padding-bottom:3px;font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;color:rgba(0,0,0,0.80)}
+#container.Regiclass table.book-tb tr td:nth-child(1){color:rgba(0,0,0,0.65)}
+
+
+
 // 운영자 문의사항 - Eduperson_control
 .dot{ display:inline-block; width: 8px; height:8px; background:#eee; border-radius: 100%; }
 .chart-txt{ font-size:map-get($font-size , font_14);line-height:29px;}

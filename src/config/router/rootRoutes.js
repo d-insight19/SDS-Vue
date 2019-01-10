@@ -148,6 +148,11 @@ import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_fi
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
 
+import RegiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
+import RegiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
+import RegiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
+import RegiclassDetailviewWish from '~workplace/regiclass/regiclass_detailview_wish'
+
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
 import MainCurateUI02 from '~workplace/main/Main_curateUI02'
@@ -1103,6 +1108,26 @@ var rootRoutes = [
     path: '/Study_05_etc_authorization_employment',
     name: 'Study_05_etc_authorization_employment',
     component: Study05etcauthorizationemployment
+  },
+  {
+    path: '/regiclass_detailview_licence',
+    name: 'regiclass_detailview_licence',
+    component: RegiclassDetailviewLicence
+  },
+  {
+    path: '/regiclass_detailview_books',
+    name: 'regiclass_detailview_books',
+    component: RegiclassDetailviewBooks
+  },
+  {
+    path: '/regiclass_detailview_terms',
+    name: 'regiclass_detailview_terms',
+    component: RegiclassDetailviewTerms
+  },
+  {
+    path: '/regiclass_detailview_wish',
+    name: 'regiclass_detailview_wish',
+    component: RegiclassDetailviewWish
   },
   {
     path: '/Main_control',
