@@ -9535,11 +9535,12 @@
         <td>　</td>
         <td class="textL">11.Eduperson_06.01_Operation_elearning_report_graph</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_operation_elearning_control' }">
+            Eduperson_operation_elearning_control 
           </router-link>
+          와 같음
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">544</td>
@@ -9552,11 +9553,12 @@
         <td>　</td>
         <td class="textL">11.Eduperson_06.01_Operation_elearning_report_table</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_operation_elearning_control' }">
+            Eduperson_operation_elearning_control 
           </router-link>
+          와 같음
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">545</td>
@@ -9569,11 +9571,12 @@
         <td>　</td>
         <td class="textL">11.Eduperson_06.01_Operation_set_report_graph</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_operation_set_control' }">
+            Eduperson_operation_set_control
           </router-link>
+          와 같음
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">546</td>
@@ -9586,11 +9589,12 @@
         <td>　</td>
         <td class="textL">11.Eduperson_06.01_Operation_set_report_table</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_operation_set_control' }">
+            Eduperson_operation_set_control
           </router-link>
+          와 같음
         </td>
-        <td></td>
+        <td>tab page</td>
       </tr>
       <tr>
       <td align="center">547</td>
@@ -9637,7 +9641,7 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_08.02_Event_end_detail</td>
         <td>
-          <router-link :to="{ name: 'B2C_Drawer_08.02_Event_end_detail' }">
+          <router-link :to="{ name: 'B2C_Drawer_Event_Winner_detail' }">
             B2C_Drawer_Event_Winner_detail
           </router-link>
         </td>
