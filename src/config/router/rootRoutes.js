@@ -356,6 +356,10 @@ import BPOClassstatus from '~workplace/bpo/BPO_Classstatus'
 import BPODrawer from '~workplace/bpo/BPO_Drawer'
 import BPOLoginpasswordview from '~workplace/bpo/BPO_Login_password_view'
 import BPOLoginpasswordnotview from '~workplace/bpo/BPO_Login_password_notview'
+import BPOsubjectlistdetailcancelsetdate from '~workplace/bpo/BPO_subjectlist_detail_cancel_setdate'
+import BPOsubjectlistdetailsupplementarysetdate from '~workplace/bpo/BPO_subjectlist_detail_supplementary_setdate'
+import BPOsubjectlistdetailshortensetdate from '~workplace/bpo/BPO_subjectlist_detail_shorten_setdate'
+import BPOsubjectlistdetailextendsetdate from '~workplace/bpo/BPO_subjectlist_detail_extend_setdate'
 
 import AtormDrawer from '~workplace/atorm/Atorm_drawer'
 import AtormControl from '~workplace/atorm/Atorm_control'
@@ -2136,6 +2140,26 @@ var rootRoutes = [
     path: 'BPO_Login_password_notview',
     name: 'BPO_Login_password_notview',
     component: BPOLoginpasswordnotview
+  },
+  {
+    path: 'BPO_subjectlist_detail_cancel_setdate',
+    name: 'BPO_subjectlist_detail_cancel_setdate',
+    component: BPOsubjectlistdetailcancelsetdate
+  },
+  {
+    path: 'BPO_subjectlist_detail_supplementary_setdate',
+    name: 'BPO_subjectlist_detail_supplementary_setdate',
+    component: BPOsubjectlistdetailsupplementarysetdate
+  },
+  {
+    path: 'BPO_subjectlist_detail_shorten_setdate',
+    name: 'BPO_subjectlist_detail_shorten_setdate',
+    component: BPOsubjectlistdetailshortensetdate
+  },
+  {
+    path: 'BPO_subjectlist_detail_extend_setdate',
+    name: 'BPO_subjectlist_detail_extend_setdate',
+    component: BPOsubjectlistdetailextendsetdate
   }
 ]
 export default rootRoutes
