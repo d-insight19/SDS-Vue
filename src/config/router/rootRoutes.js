@@ -234,6 +234,16 @@ import MySpaceFormalComplete from '~workplace/myspace/MySpace_formal_complete'
 import MySpaceFormalCancel from '~workplace/myspace/MySpace_formal_cancel'
 import MySpaceFormalTempcertificate from '~workplace/myspace/MySpace_formal_tempcertificate'
 import MySpaceFormalCertificatekr from '~workplace/myspace/MySpace_formal_certificatekr'
+import MySpaceFormalCertificateeng from '~workplace/myspace/MySpace_formal_certificateeng'
+import MySpaceFormalCertificateNameKor from '~workplace/myspace/MySpace_formal_certificate_name_kor'
+import MySpaceFormalCertificateengPop from '~workplace/myspace/MySpace_formal_certificateeng_pop'
+import MySpaceFormalRequeststage from '~workplace/myspace/MySpace_formal_requeststage'
+import MySpaceFormalAttendingconfirmation from '~workplace/myspace/MySpace_formal_attendingconfirmation'
+import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changeplan'
+
+import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
+import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
+import regiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1519,6 +1529,51 @@ var rootRoutes = [
     path: '/MySpace_formal_certificatekr',
     name: 'MySpace_formal_certificatekr',
     component: MySpaceFormalCertificatekr
+  },
+  {
+    path: '/MySpace_formal_certificateeng',
+    name: 'MySpace_formal_certificateeng',
+    component: MySpaceFormalCertificateeng
+  },
+  {
+    path: '/MySpace_formal_certificate_name_kor',
+    name: 'MySpace_formal_certificate_name_kor',
+    component: MySpaceFormalCertificateNameKor
+  },
+  {
+    path: '/MySpace_formal_certificateeng_pop',
+    name: 'MySpace_formal_certificateeng_pop',
+    component: MySpaceFormalCertificateengPop
+  },
+  {
+    path: '/MySpace_formal_requeststage',
+    name: 'MySpace_formal_requeststage',
+    component: MySpaceFormalRequeststage
+  },
+  {
+    path: '/MySpace_formal_attendingconfirmation',
+    name: 'MySpace_formal_attendingconfirmation',
+    component: MySpaceFormalAttendingconfirmation
+  },
+  {
+    path: '/MySpace_formal_changeplan',
+    name: 'MySpace_formal_changeplan',
+    component: MySpaceFormalChangeplan
+  },
+  {
+    path: '/regiclass_detailview_books',
+    name: 'regiclass_detailview_books',
+    component: regiclassDetailviewBooks
+  },
+  {
+    path: '/regiclass_detailview_licence',
+    name: 'regiclass_detailview_licence',
+    component: regiclassDetailviewLicence
+  },
+  {
+    path: '/regiclass_detailview_terms',
+    name: 'regiclass_detailview_terms',
+    component: regiclassDetailviewTerms
   },
   {
     path: '/Drawer_alerm',

@@ -91,7 +91,7 @@
                 <p class="font_14 mb10">멀티캠퍼스 교육센터 (멀티스퀘어)</p>
                 
                 <div class="">
-                    <img src="@/assets/img/thum_no_L.jpg" class="width100" alt="">
+                    <img src="@/assets/img/thum_no_L.jpg" class="w100p" alt="">
                 </div>
                 <p class="hr mb0"></p>
             </div>

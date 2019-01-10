@@ -52,7 +52,7 @@
           <div class="cell">
             <div class="inner">
                 <div class="mb20">
-                    <img src="@/assets/img/thum_no_L2.jpg" class="width100" alt="">
+                    <img src="@/assets/img/thum_no_L2.jpg" class="w100p" alt="">
                 </div>
                 <p class="font_16 fwb600 mb15">설명</p>
                 <p class="font_15 fwr mono_65 mb20">이미지를 강조한 도형을 그래프형으로 배치한 다이어그램 템플릿입니다. 파워포인트 2007버전에 최적화되어 있습니다.</p>
