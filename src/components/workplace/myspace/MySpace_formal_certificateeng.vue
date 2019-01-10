@@ -13,8 +13,8 @@
             </div>
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="fixTab">
-                    <li class="on"><a href="#tab1">국문</a></li><!-- selected class "on" -->
-                    <li><a href="#tab2">영문</a></li>
+                    <li><a href="#tab1">국문</a></li><!-- selected class "on" -->
+                    <li class="on"><a href="#tab2">영문</a></li>
                 </ul>
             </div>
             <div class="blur_wrap">
@@ -26,6 +26,14 @@
 
         <div id="content" class="list">
         
+          <div class="cell">
+            <div class="inner">
+              <p class="tar font_14 color_clr2 fwb">
+                  <span class="ico pencil_16_blue"></span> 이름 수정
+              </p>
+            </div>
+          </div>
+
           <div class="cell">
             <div class="inner">
                 <img src="@/assets/img/thum_no_L.jpg" class="w100p" alt="">
@@ -41,7 +49,7 @@
 
 <script>
 export default {
-  name: 'MySpace_formal_certificatekr',
+  name: 'MySpace_formal_certificateeng',
   /* vue lifecycle */
   created () {
   },

@@ -72,7 +72,7 @@
                             <span class="progWrap"><em class="bar clr2" style="width:40%;"></em></span>
                             <div class="cDim"></div>
                             <div class="thumbnail">
-                                <img src="@/assets/img/thum_no_L2.jpg" class="width100" alt="">
+                                <img src="@/assets/img/thum_no_L2.jpg" class="w100p" alt="">
                             </div>
                         </div>
                         <div class="text">
@@ -92,7 +92,7 @@
                             <span class="progWrap"><em class="bar clr2" style="width:20%;"></em></span>
                             <div class="cDim"></div>
                             <div class="thumbnail">
-                                <img src="@/assets/img/thum_no_L2.jpg" class="width100" alt="">
+                                <img src="@/assets/img/thum_no_L2.jpg" class="w100p" alt="">
                             </div>
                         </div>
                         <div class="text">

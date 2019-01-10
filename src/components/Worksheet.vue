@@ -3554,9 +3554,9 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_requeststage</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          <!--<router-link :to="{ name: 'MySpace_formal_requeststage' }">
+            MySpace_formal_requeststage
+          </router-link>-->
         </td>
         <td></td>
       </tr>
@@ -3592,6 +3592,11 @@
           <router-link :to="{ name: 'MySpace_formal_certificatekr' }">
             MySpace_formal_certificatekr
           </router-link>
+          ,
+          <router-link :to="{ name: 'MySpace_formal_certificate_name_kor' }">
+            MySpace_formal_certificate_name_kor
+          </router-link>
+          ,
         </td>
         <td></td>
       </tr>
@@ -3606,10 +3611,13 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_certificateeng</td>
         <td>
-          <router-link :to="{ name: 'MySpace_formal_tempcertificate' }">
-            MySpace_formal_tempcertificate
+          <router-link :to="{ name: 'MySpace_formal_certificateeng' }">
+            MySpace_formal_certificateeng
           </router-link>
-          와 동일
+          ,
+          <router-link :to="{ name: 'MySpace_formal_certificateeng_pop' }">
+            MySpace_formal_certificateeng_pop
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -3624,8 +3632,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_attendingconfirmation</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_attendingconfirmation' }">
+            MySpace_formal_attendingconfirmation
           </router-link>
         </td>
         <td></td>
@@ -3641,9 +3649,9 @@
         <td></td>
         <td class="textL">04.MySpace_04.01.formal_changeplan</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          <!--<router-link :to="{ name: 'MySpace_formal_changeplan' }">
+            MySpace_formal_changeplan
+          </router-link>-->
         </td>
         <td></td>
       </tr>
@@ -7556,8 +7564,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_02.01.detailview_books</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_books' }">
+            regiclass_detailview_books
           </router-link>
         </td>
         <td></td>
@@ -7573,8 +7581,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_02.03.detailview_terms</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_terms' }">
+            regiclass_detailview_terms
           </router-link>
         </td>
         <td></td>
@@ -7590,8 +7598,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_02.04.detailview_licence</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_licence' }">
+            regiclass_detailview_licence
           </router-link>
         </td>
         <td></td>
