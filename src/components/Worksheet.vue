@@ -10089,10 +10089,10 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_test</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_test' }">
+            BPO_subjectlist_test
           </router-link>
-          제플린 없음
+          와 같음
         </td>
         <td></td>
       </tr>
@@ -10107,10 +10107,10 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_test_completion</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_test_completion' }">
+            BPO_subjectlist_test_completion
           </router-link>
-          제플린 없음
+          와 같음
         </td>
         <td></td>
       </tr>
