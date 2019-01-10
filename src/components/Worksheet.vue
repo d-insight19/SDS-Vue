@@ -9635,9 +9635,9 @@
         <td>당첨자 상세</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">B2C_Drawer_08.02_Event_Winner_detail</td>
+        <td class="textL">B2C_Drawer_08.02_Event_end_detail</td>
         <td>
-          <router-link :to="{ name: 'B2C_Drawer_Event_Winner_detail' }">
+          <router-link :to="{ name: 'B2C_Drawer_08.02_Event_end_detail' }">
             B2C_Drawer_Event_Winner_detail
           </router-link>
         </td>
@@ -9674,6 +9674,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          화면으로 삭제하여 재플린 미등록
         </td>
         <td></td>
       </tr>
@@ -9721,12 +9722,11 @@
         <td>표 보기</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">11.Eduperson_06.02_Operation_autonomy_report_table</td>
+        <td class="textL">11.Eduperson_06.01_Operation_autonomy_report_table</td>
         <td>
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9993,7 +9993,7 @@
         <td></td>
         <td>단축일 설정</td>
         <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_shorten_setdate_set</td>
+        <td class="textL">14.BPO_01.01.subjectlist_detail_shorten_setdate</td>
         <td>
           <router-link :to="{ name: 'BPO_subjectlist_detail_shorten' }">
             BPO_subjectlist_detail_shorten
@@ -10087,7 +10087,7 @@
         <td></td>
         <td></td>
         <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_test</td>
+        <td class="textL">14.BPO_01.01.subjectlist_test</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -10105,7 +10105,7 @@
         <td>평가 등록/수정</td>
         <td></td>
         <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_test_completion</td>
+        <td class="textL">14.BPO_01.01.subjectlist_test_completion</td>
         <td>
           <router-link :to="{ name: '' }">
             
