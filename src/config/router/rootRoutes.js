@@ -131,6 +131,7 @@ import Study04SOquizmultichoiceresult from '~workplace/study/Study_04_SO_quiz_mu
 import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
 import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
 import Study04SOpollinput from '~workplace/study/Study_04_SO_poll_input'
+import Study04SOpollintro from '~workplace/study/Study_04_SO_poll_intro'
 import Study04SOpollsubmissionrod from '~workplace/study/Study_04_SO_poll_submission_rod'
 import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
@@ -1017,6 +1018,11 @@ var rootRoutes = [
     path: '/Study_04_SO_quiz_shortanswer_result',
     name: 'Study_04_SO_quiz_shortanswer_result',
     component: Study04SOquizshortanswerresult
+  },
+  {
+    path: '/Study_04_SO_poll_intro',
+    name: 'Study_04_SO_poll_intro',
+    component: Study04SOpollintro
   },
   {
     path: '/Study_04_SO_poll_input',

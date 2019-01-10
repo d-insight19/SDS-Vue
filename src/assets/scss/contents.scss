@@ -800,7 +800,7 @@ table td.pb10{padding-bottom: 10px;}
 #header.bg-gr .h-tit5 span:nth-child(2){vertical-align: text-bottom;}
 #header.bg-gr .h-tit1{font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
 #header.bg-gr {background:#efeff6; height:auto; padding:56px 0 0 0;}
-#header .num{ font-weight: 400; display: inline-block;font-size:map-get($font-size, font_17);line-height: 28px; letter-spacing: -0.85px; vertical-align: middle; }
+#header .num{ font-family: 'Roboto' ; font-weight: 400; display: inline-block;font-size:map-get($font-size, font_17);line-height: 28px; letter-spacing: -0.85px; vertical-align: middle; }
 #header.wh{color: white;}
 #header .page-btn{ position: absolute; right: 14px;top: 0;}
 #container.study_survey_sub .h-tit5{font-weight:500; font-size:map-get($font-size, font_18);line-height: 25px; letter-spacing: -0.54px;margin-bottom:10px;}
@@ -1036,6 +1036,9 @@ label.rdo .label{position: relative;}
 
 // 토론 인트로
 #container.study_debate.bg {background: url("../img/img_debate_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+
+// poll 인트로
+#container.study_poll.bg {background: url("../img/img_poll_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 
 
 
