@@ -23,14 +23,14 @@
         </li>
         <li>
             <p class="chart-txt">
-              <span class="dot bgc-2" style="margin-right:8px"></span>
+              <span class="dot bgc-5" style="margin-right:8px"></span>
               <span>10~20시간</span>
               <span class="fr chart-num">28<span class="per">%</span></span>
             </p>
         </li>
-        <li class="bottom-bd-x">
+        <li>
             <p class="chart-txt">
-              <span class="dot bgc-3" style="margin-right:8px"></span>
+              <span class="dot bgc-2" style="margin-right:8px"></span>
               <span>20~30시간</span>
               <span class="fr chart-num">14<span class="per">%</span></span>
             </p>
@@ -67,7 +67,7 @@
         </li>
         <li>
             <p class="chart-txt">
-              <span class="dot bgc-2" style="margin-right:8px"></span>
+              <span class="dot bgc-5" style="margin-right:8px"></span>
               <span>Lynda</span>
               <span class="fr chart-num">28<span class="per">%</span></span>
             </p>
@@ -97,14 +97,14 @@
         </li>
         <li>
             <p class="chart-txt">
-              <span class="dot bgc-2" style="margin-right:8px"></span>
+              <span class="dot bgc-5" style="margin-right:8px"></span>
               <span>OA</span>
               <span class="fr chart-num">28<span class="per">%</span></span>
             </p>
         </li>
-        <li class="bottom-bd-x">
+        <li>
             <p class="chart-txt">
-              <span class="dot bgc-3" style="margin-right:8px"></span>
+              <span class="dot bgc-2" style="margin-right:8px"></span>
               <span>직무</span>
               <span class="fr chart-num">14<span class="per">%</span></span>
             </p>

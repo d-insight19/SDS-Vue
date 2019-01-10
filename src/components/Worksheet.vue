@@ -8692,7 +8692,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
+          삭제
         </td>
         <td></td>
       </tr>
@@ -8710,7 +8710,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
+          삭제
         </td>
         <td></td>
       </tr>
@@ -8728,7 +8728,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
+          삭제
         </td>
         <td></td>
       </tr>
@@ -8746,7 +8746,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
+          삭제
         </td>
         <td></td>
       </tr>
@@ -8764,7 +8764,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
+          삭제
         </td>
         <td></td>
       </tr>
@@ -9692,8 +9692,8 @@
         <td>　</td>
         <td class="textL">11.Eduperson_05.01_Statement_searchword</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Eduperson_Statement_searchword' }">
+            Eduperson_Statement_searchword
           </router-link>
         </td>
         <td></td>
