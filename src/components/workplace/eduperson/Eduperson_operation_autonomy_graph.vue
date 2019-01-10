@@ -1,7 +1,6 @@
 <template>
 <div class="Eduperson_Operation">
-  <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
-  <h2 class="label-tit-20">교육비 현황</h2>
+  <h2 class="label-tit-20">시간대별 학습비율</h2>
   <div class="js-chart-wrap mb40">
       <div class="js-chart">
 
@@ -45,7 +44,7 @@
       </ul>
   </div>
   <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
-  <h2 class="label-tit-20">교육비 현황</h2>
+  <h2 class="label-tit-20">CP사별 학습비율</h2>
   <div class="js-chart-wrap mb40">
       <div class="js-chart">
 
@@ -75,7 +74,7 @@
       </ul>
   </div>
   <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
-  <h2 class="label-tit-20">교육비 현황</h2>
+  <h2 class="label-tit-20">분류별 학습비율</h2>
   <div class="js-chart-wrap mb40">
       <div class="js-chart">
 

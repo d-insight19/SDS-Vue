@@ -95,7 +95,7 @@
                     <span class="bar bar5" style="height:21.2%" title="90-95점" value="21.2%"></span>
                   </li>
                   <li>
-                    <span class="bar bar5" style="height:12.0%" title="90점 이상" value="12.0%"></span>
+                    <span class="bar bar5" style="height:12.0%" title="95점 이상" value="12.0%"></span>
                   </li>
                 </ul>    
               </div>

@@ -7,7 +7,7 @@
         <!-- header -->
         <div id="header" class="fixed">
           <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-          <p class="header_text font_18">집합교육 운영 보고서</p>
+          <p class="header_text font_18">이러닝 운영 보고서</p>
         </div>
         <!-- //header -->
         
@@ -37,11 +37,11 @@
 </template>
 
 <script>
-import EdupersonOperationSetGraph from './Eduperson_operation_set_graph'
-import EdupersonOperationSetTable from './Eduperson_operation_set_table'
+import EdupersonOperationelearningGraph from './Eduperson_operation_elearning_graph'
+import EdupersonOperationElearningTable from './Eduperson_operation_elearning_table'
 export default {
-  name: 'Eduperson_operation_set_control',
-  components: {'Eduperson_operation_set_graph': EdupersonOperationSetGraph, 'Eduperson_operation_set_table': EdupersonOperationSetTable},
+  name: 'Eduperson_operation_elearning_control',
+  components: {'Eduperson_operation_elearning_graph': EdupersonOperationelearningGraph, 'Eduperson_operation_elearning_table': EdupersonOperationElearningTable},
   /* vue lifecycle */
   created () {
   },
@@ -51,7 +51,7 @@ export default {
   data () {
     return {
       tabIdx: 1,
-      component: 'Eduperson_operation_set_graph'
+      component: 'Eduperson_operation_elearning_graph'
     }
   },
   /* vue function */
@@ -59,9 +59,9 @@ export default {
     onClick (idx) {
       this.tabIdx = idx
       if (idx === 1) {
-        this.component = 'Eduperson_operation_set_graph'
+        this.component = 'Eduperson_operation_elearning_graph'
       } else if (idx === 2) {
-        this.component = 'Eduperson_operation_set_table'
+        this.component = 'Eduperson_operation_elearning_table'
       }
     }
   }

@@ -3,13 +3,13 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery eduperson">
+      <div id="container" class="mediaquery eduperson ">
 
         <!-- header 2단형 예외형 학습운영자 :: mainTpye2 에 txt 클래스 추가 -->
         <div id="header" class="mainType eduperson step2 txt">
             <div class="header_inner line1">
                 <button type="button" class="btn allMenu" @click="toggleDrawer()"><span class="ico">전체메뉴</span><span class="ico new"></span></button>  
-                <div class="eduperson_title" @click="changeTitle()">
+                <div class="eduperson_title h58" @click="changeTitle()">
                   <span>LEARNING GROUP TITLE1</span>
                   <span class="eduperson_title_ico"></span>
                 </div>

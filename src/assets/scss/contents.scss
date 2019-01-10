@@ -800,7 +800,7 @@ table td.pb10{padding-bottom: 10px;}
 #header.bg-gr .h-tit5 span:nth-child(2){vertical-align: text-bottom;}
 #header.bg-gr .h-tit1{font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
 #header.bg-gr {background:#efeff6; height:auto; padding:56px 0 0 0;}
-#header .num{ font-weight: 400; display: inline-block;font-size:map-get($font-size, font_17);line-height: 28px; letter-spacing: -0.85px; vertical-align: middle; }
+#header .num{ font-family: 'Roboto' ; font-weight: 400; display: inline-block;font-size:map-get($font-size, font_17);line-height: 28px; letter-spacing: -0.85px; vertical-align: middle; }
 #header.wh{color: white;}
 #header .page-btn{ position: absolute; right: 14px;top: 0;}
 #container.study_survey_sub .h-tit5{font-weight:500; font-size:map-get($font-size, font_18);line-height: 25px; letter-spacing: -0.54px;margin-bottom:10px;}
@@ -1037,6 +1037,9 @@ label.rdo .label{position: relative;}
 // 토론 인트로
 #container.study_debate.bg {background: url("../img/img_debate_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 
+// poll 인트로
+#container.study_poll.bg {background: url("../img/img_poll_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+
 
 
 // 의견공유 서술형
@@ -1271,15 +1274,25 @@ label.rdo .label{position: relative;}
 #container.Eduperson_Operation .line01{margin-top:19px; margin-bottom:18px; border-color:#999999}
 #container.Eduperson_Operation li.rating-list:nth-last-child(1){padding-bottom:0 !important;}
 #container.Eduperson_Operation .rating-tit{font-size:map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.8px;}
-#container.Eduperson_Operation .rating-num{font-size:map-get($font-size, font_20);line-height: 26px;letter-spacing: -1.0px;}
+#container.Eduperson_Operation .rating-num{font-family: 'Roboto' ; font-size:map-get($font-size, font_22);line-height: 29px;letter-spacing: -1.1px;}
+#container.Eduperson_Operation .rating-num-2{font-family: 'Roboto' ; font-size:map-get($font-size, font_20);line-height: 26px;letter-spacing: -1.0px;}
 #container.Eduperson_Operation .rating-txt{font-size:map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.7px;}
-#container.Eduperson_Operation .star-group{vertical-align: super;}
+#container.Eduperson_Operation .rating-txt-2{font-size:map-get($font-size, font_12);line-height: 18px;letter-spacing: -0.6px;}
+#container.Eduperson_Operation .star-group{ vertical-align: 10%;margin-right: 4px; margin-left:8px;}
 
 .detail_date:after{clear:both;display:block;content:'';}
 
+// 수직그래프 operation 
+#container.Eduperson_Operation .progBox_wrap.vertical{display:table;table-layout: fixed;width:100%;height:150px; margin:0 auto;  margin-bottom:56px;}
+#container.Eduperson_Operation .progBox_wrap.vertical li{position:relative;display:table-cell;vertical-align:bottom; height:150px;}
+#container.Eduperson_Operation .progBox_wrap.vertical li span{display: block;background: rgba(#d1ecfa, .75);width:24px;margin:0 auto;border-radius:0px;}
+#container.Eduperson_Operation .progBox_wrap.vertical li span.bar1 {background-color:map-get($contents_colors, type_1 );}
+#container.Eduperson_Operation .progBox_wrap.vertical li span.bar5 {background-color:map-get($contents_colors, type_5 );}
+#container.Eduperson_Operation .progBox_wrap.vertical li span:before{position:absolute;left:0;right:0;top:100%;padding:10px 0 0 0;display:block;text-align:center;content:attr(title);word-wrap: break-word;}
+#container.Eduperson_Operation .progBox_wrap.vertical li span:after{position:absolute;left:0;right:0;top:0%;padding:10px 0 0 0;display:block;text-align:center;content:attr(value);word-wrap: break-word;}
 
-
-
+#container.eduperson .eduperson_title.h58 {position: relative;height: 58px;} // 높이값으로인해 아래 tab이 클릭이잘안되는현상 임시수정
+#container.eduperson .thumList li:nth-last-child(1){border-bottom:none;}
 
 
 

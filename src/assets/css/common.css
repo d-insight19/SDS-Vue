@@ -224,6 +224,7 @@
 .mt70{margin-top: 70px !important;}/*12월12일 추가*/
 
 .mb0{margin-bottom: 0px !important;}/*1월 3일 추가*/
+.mb14{margin-bottom: 14px !important;}
 .mb16{margin-bottom: 16px !important;}
 .mb20{margin-bottom: 20px !important;}
 .mb22{margin-bottom: 22px !important;}/*12월19일 추가*/
@@ -249,6 +250,7 @@
 .pdb0{padding-bottom:0 !important;}
 .pdb98{padding-bottom:98px !important;}
 .pdb14{padding-bottom: 14px !important;}
+.pdl0{padding-left: 0 !important;}
 
 /* hr */
 .hr{height:8px; margin: 25px -24px; background:#f6f6f6;}
