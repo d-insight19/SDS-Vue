@@ -9533,12 +9533,11 @@
         <td>그래프보기</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">11.Eduperson_06.01_Operation_eleargning_report_graph</td>
+        <td class="textL">11.Eduperson_06.01_Operation_elearning_report_graph</td>
         <td>
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -9551,7 +9550,7 @@
         <td>표보기</td>
         <td>  </td>
         <td>　</td>
-        <td class="textL">11.Eduperson_06.02_Operation_eleargning_report_table</td>
+        <td class="textL">11.Eduperson_06.01_Operation_elearning_report_table</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -9569,7 +9568,7 @@
         <td>그래프 보기</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">11.Eduperson_06.03_Operation_set_report_graph</td>
+        <td class="textL">11.Eduperson_06.01_Operation_set_report_graph</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -9587,7 +9586,7 @@
         <td>표보기</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">11.Eduperson_06.04_Operation_set_report_table</td>
+        <td class="textL">11.Eduperson_06.01_Operation_set_report_table</td>
         <td>
           <router-link :to="{ name: '' }">
             

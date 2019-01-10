@@ -65,7 +65,7 @@
               <span class="fr chart-num">30<span class="per">%</span></span>
             </p>
         </li>
-        <li>
+        <li class="bottom-bd-x">
             <p class="chart-txt">
               <span class="dot bgc-5" style="margin-right:8px"></span>
               <span>Lynda</span>
