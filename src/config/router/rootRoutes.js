@@ -249,6 +249,13 @@ import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changepla
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
 import regiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
+import regiclassRegisterOption from '~workplace/regiclass/regiclass_register_option'
+import regiclassRegisterOptionAdd from '~workplace/regiclass/regiclass_register_option_add'
+import regiclassRegisterOptionAdd02 from '~workplace/regiclass/regiclass_register_option_add_02'
+import regiclassRegisterOption02 from '~workplace/regiclass/regiclass_register_option_02'
+import regiclassRegisterOption03 from '~workplace/regiclass/regiclass_register_option_03'
+import regiclassRegisterTermsAdd from '~workplace/regiclass/regiclass_register_terms_add'
+import regiclassRegisterTerms from '~workplace/regiclass/regiclass_register_terms'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1599,6 +1606,41 @@ var rootRoutes = [
     path: '/regiclass_detailview_terms',
     name: 'regiclass_detailview_terms',
     component: regiclassDetailviewTerms
+  },
+  {
+    path: '/regiclass_register_option',
+    name: 'regiclass_register_option',
+    component: regiclassRegisterOption
+  },
+  {
+    path: '/regiclass_register_option_add',
+    name: 'regiclass_register_option_add',
+    component: regiclassRegisterOptionAdd
+  },
+  {
+    path: '/regiclass_register_option_add_02',
+    name: 'regiclass_register_option_add_02',
+    component: regiclassRegisterOptionAdd02
+  },
+  {
+    path: '/regiclass_register_option_02',
+    name: 'regiclass_register_option_02',
+    component: regiclassRegisterOption02
+  },
+  {
+    path: '/regiclass_register_option_03',
+    name: 'regiclass_register_option_03',
+    component: regiclassRegisterOption03
+  },
+  {
+    path: '/regiclass_register_terms_add',
+    name: 'regiclass_register_terms_add',
+    component: regiclassRegisterTermsAdd
+  },
+  {
+    path: '/regiclass_register_terms',
+    name: 'regiclass_register_terms',
+    component: regiclassRegisterTerms
   },
   {
     path: '/Drawer_alerm',
