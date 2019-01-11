@@ -1727,7 +1727,18 @@ label.rdo .label{position: relative;}
 #container.drawer.bpo_classstatus p.hr {margin:18px -24px 22px}
 #container.login.bpo .ico.eye{width:22px; height:22px; background:url("../img/ic_password_view.png") no-repeat;background-size:cover; position:absolute; right:0; bottom:10px}
 #container.login.bpo .ico.eye_slash{width:22px; height:22px; background:url("../img/ic_password_notview.png") no-repeat;background-size:cover; position:absolute; right:0; bottom:10px}
-
+#container.login.bpo .search-wrapper .eye:after {content: "";display: block;width: 24px;height: 24px;position: absolute;z-index:1;right: 13px;top: 0;bottom: 0;padding: 2px;text-align: center;color: #000;font-weight: normal;font-size: 12px;cursor: pointer;-webkit-appearance: none;border-radius:10px;background:url("../img/ic_password_view.png") no-repeat;background-size:cover}
+input[type="text"]:not(:invalid) ~ .eye,
+input[type="password"]:not(:invalid) ~ .eye,
+input[type="search"]:not(:invalid) ~ .eye {
+  display: none;
+}
+#container.login.bpo .search-wrapper .eye.eye_slash:after {content: "";display: block;width: 24px;height: 24px;position: absolute;z-index:1;right: 13px;top: 0;bottom: 0;padding: 2px;text-align: center;color: #000;font-weight: normal;font-size: 12px;cursor: pointer;-webkit-appearance: none;border-radius:10px;background:url("../img/ic_password_notview.png") no-repeat;background-size:cover}
+input[type="text"]:not(:invalid) ~ .eye.eye_slash,
+input[type="password"]:not(:invalid) ~ .eye.eye_slash,
+input[type="search"]:not(:invalid) ~ .eye.eye_slash {
+  display: none;
+}
 #container.bpo_shorten .title_line span.title_txt {color:#000; font-weight: 500}
 #container.bpo_shorten .title_line .fr.date {margin-top:4px; letter-spacing: -0.42px}
 #container.drawer.bpo.sms .title_line { font-size:map-get($font_size, font_16); color:#000; font-weight: 500 }
