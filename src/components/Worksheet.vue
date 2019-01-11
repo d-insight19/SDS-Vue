@@ -10642,6 +10642,23 @@
         </td>
         <td></td>
       </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>chart</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_chart' }">
+            components_chart
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
 
       </tbody>
     </table>

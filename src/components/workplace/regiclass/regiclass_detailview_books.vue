@@ -7,9 +7,13 @@
 
         <!-- header -->
         <div id="header" class="tab clr4">
-            <div class="header_inner line1 pr18">
+            <div class="header_inner line1">
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-                <p class="tar font_17"><span class="ico back"></span> <span class="">01</span>/<span class="">04</span> <span class="ico next"></span></p>
+                <div class="page-btn">
+                    <span class="ico back"></span>
+                    <div class="num"><span>01</span> / <span>04</span></div>
+                    <span class="ico next"></span>
+                </div>
             </div>
             <div class="hide_header pr18" style="padding-top: 74px; padding-bottom: 25px; min-height: 263px; padding-left:141px">
                 <h3 class="h-tit3 fwb600 multiline line2 mb5">기적을 만든 돈키호테의 열 가지 키워드</h3>
@@ -71,7 +75,7 @@
 
 <script>
 export default {
-  name: 'CLIPing_bookSummary_detail',
+  name: 'regiclass_detailview_books',
   /* vue lifecycle */
   created () {
   },
