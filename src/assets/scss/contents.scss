@@ -568,8 +568,11 @@
 #container.atorm .tit_desc {font-size:map-get($font-size, font_14);color:rgba(0,0,0,0.65);line-height:21px;letter-spacing: -0.42px;}
 #container.atorm .tit_essential {background: url("../img/ic_essential_red_10.png") no-repeat right 1px; padding-right:11px }
 #container.atorm .label-tit14 {width:auto}
+#container.atorm .text_limit {font-family: 'Roboto'; color:rgba(0,0,0,0.5); line-height: 29px; letter-spacing: -0.42px}
+#container.atorm .file_name {font-size:map-get($font-size, font_14);line-height:29px;letter-spacing: -0.42px;color:rgba(0,0,0,0.65); margin-top:2px}
+#container.atorm button.sm.add {color:#000; font-weight: 500}
 
-// ATROM 아이템팩퇴
+// ATROM 아이템팩토리
 #container.atorm_itemfactory .singleList.type_1 .ico.item_left{left:0px;width:20px;height:20px;background-position:0px 0px;margin-top: 0px;transform: translateY(-50%);}
 #container.atorm_itemfactory .singleList.type_1 .ico.next_16{width:16px;height:16px;background-position:0px 0px;} 
 #container.atorm_itemfactory .singleList.type_1 li a{ padding: 15px 30px 15px 28px;}
@@ -589,6 +592,12 @@
 #container.atorm_itemfactory .imgbox_wrap {overflow: hidden;}
 #container.atorm_itemfactory .imgbox_wrap .thumnail {float:left; display:inline-block; width: 100px; height:100px}
 #container.atorm_itemfactory .imgbox {border:#e3e3e3 1px solid; border-left:none; padding:27px 16px; height:100px; display:inline-block; width: calc(100% - 100px);}
+#container.atorm_itemfactory #content .inner.pd22{padding-top:22px}
+#container.atorm_itemfactory .multiList.type3 > li{border-top:none; padding:20px 0 }
+#container.atorm_itemfactory .multiList.type3 .ico.deletemode_20{position: absolute;top:50%; right:0; transform: translateY(-50%)} 
+#container.atorm_itemfactory .multiList.type2 > li{border:none }
+#container.atorm_itemfactory .search-wrapper {padding:2px 0 15px; border-bottom:1px solid #e3e3e3;}
+
 
 // ATORM 과정제작
 #container.atorm .product_wrap{margin-top: -24px;background: #f2f2f2;height:calc(100vh - 117px);margin-left: -18px;margin-bottom: -53px;width: calc(100% + 36px);}
@@ -709,7 +718,11 @@ table td.pb10{padding-bottom: 10px;}
 .chip.agree-x{color:map-get($contents_colors, type_1 );border-color:map-get($contents_colors, type_1 );}
 .chip.type2 {font-weight: 500;  font-size:map-get($font-size , font_11);display: inline-block;margin-bottom: 0px;height: 22px;border-radius: 16px;
     padding: 3px 10px;line-height: 15px;}
-
+.chip.color1 {border-color:map-get($contents_colors, type_1 ); color:map-get($contents_colors, type_1 );}
+.chip.color2 {border-color:map-get($contents_colors, type_2 ); color:map-get($contents_colors, type_2 );}
+.chip.color3 {border-color:map-get($contents_colors, type_3 ); color:map-get($contents_colors, type_3 );}
+.chip.color4 {border-color:map-get($contents_colors, type_4 ); color:map-get($contents_colors, type_4 );}
+.chip.color4 {border-color:map-get($contents_colors, type_5 ); color:map-get($contents_colors, type_5 );}
 
 /*댓글 공통*/
 .reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; }
@@ -1418,7 +1431,7 @@ label.rdo .label{position: relative;}
 #container .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
 #container .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
 #container .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px;}
-#container .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 13px;}
+#container .label-tit20{ font-size:map-get($font_size, font_20); line-height: 27px; letter-spacing: -0.6px; margin-bottom: 13px;}
 #container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px; }
 #container.drawer .labelChk {width:auto}
 #container.drawer.extrainfo_edit .multiList.type1 > li.title_line {padding:20px 0 8px}
@@ -1595,7 +1608,7 @@ label.rdo .label{position: relative;}
 
 // 설문조사 결과
 .progBox_wrap {font-size:map-get($font_size, font_14); }
-.progBox_wrap li {margin-bottom:14px}
+.progBox_wrap > li {margin-bottom:14px}
 .progBox_wrap .progBox {margin-top:11px; }
 .progBox_wrap .progBox .bar1 {background-color:map-get($contents_colors, type_1 );}
 .progBox_wrap .progBox .bar2 {background-color:map-get($contents_colors, type_2 );}
@@ -1610,14 +1623,18 @@ label.rdo .label{position: relative;}
 .diagram_wrap {padding:0 32px}
 .diagram_wrap li { position:relative; border-bottom:#e3e3e3 1px solid; padding:10px 0 10px 20px}
 .diagram_wrap li::before{display: inline-block; position: absolute; top:16px; left:0; z-index: 2; content: ''; width:8px; height: 8px; background-color:map-get($contents_colors, type_1 ); border-radius: 100%}
+.diagram_wrap li.type1::before{ background-color:map-get($contents_colors, type_1 );}
 .diagram_wrap li.type2::before{ background-color:map-get($contents_colors, type_2 );}
 .diagram_wrap li.type3::before{ background-color:map-get($contents_colors, type_3 );}
 .diagram_wrap li.type4::before{ background-color:map-get($contents_colors, type_4 );}
 .diagram_wrap li.type5::before{ background-color:map-get($contents_colors, type_5 );}
 .diagram_wrap .percent {font-family: 'Roboto'; font-size:map-get($font_size, font_15); line-height: 22px}
 .diagram_wrap .percent .num {font-size:map-get($font_size, font_22); line-height: 22px}
+.diagram_wrap.square li {border-bottom: 0 none; padding:5px 0 5px 20px}
+.diagram_wrap.square li::before {border-radius:0; width: 14px; height: 14px; top: 13px;}
 .diagram_wrap.type2{padding:0;}
-.diagram_wrap.type2 li{border-bottom: 0 none; display: inline-block; padding:10px;}
+.diagram_wrap.type2 li{border-bottom: 0 none; display: inline-block; padding:3px 10px;}
+.diagram_wrap.type2 li::before{top: 9px;}
 #container.board.request .singleList.type_1 li { border-top:#ebebeb 1px solid; border-bottom:0;}
 #container.board.request .singleList.type_1 li a {line-height: 20px; font-size:map-get($font_size, font_14); color:#1a1a1a; padding:15px 0} 
 #container.board.request a.respondent_num {display: block; padding-bottom:22px}

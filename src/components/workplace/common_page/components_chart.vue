@@ -14,7 +14,7 @@
                         <div>
                         <p> basic bar </p>
                         <!-- basic bar -->
-                        <h2 class="label-tit16 w100p">분류별 접수 현황</h2>
+                        <h2 class="label-tit20 w100p">분류별 접수 현황</h2>
                         <ul class="progBox_wrap">
                             <li>
                                 <p>신청/취소<span class="fr">101명</span> </p>  
@@ -56,9 +56,8 @@
                         <p> basic bar2 </p>
                         <!-- basic bar2 -->
                         <h2 class="label-tit18 w100p">월별 학습시간</h2>
-                        
                         <ul class="diagram_wrap type2 tar">
-                            <li>이러닝</li>
+                            <li class="type1">이러닝</li>
                             <li class="type4">지식</li>
                             <li class="type5">집합</li>             
                         </ul>
@@ -107,43 +106,62 @@
                         <div>
                         <p> basic bar3 </p>
                         <!-- basic bar3 -->
-                        <div>
-                            <p class="inner-tit">당신의 의견은 어떻습니까?</p>
-                            <p class="person">참여인원 <span>50</span>명</p>
-                        </div>
-                        <div class="progBox mt22">
-                            <div class="bar clr1" style="width: 17%; height:8px; border-radius: 100px;"></div>                            
-                        </div>
-                        <div class="txt-wrap clearfix">
-                            <p class="prog-txt">대통령의 가족을 지켜는 법은 필수이기 때문에 현재 정책을 유지해야 한다.</p>
-                            <div class="fr">
-                                <span class="part-num"><span>5</span>명</span>
-                                <span class="pipe"></span>
-                                <span class="part-num-2"><span>17</span>%</span>
-                            </div>                                   
-                        </div>
-                        <div class="progBox mt22">
-                            <div class="bar clr2" style="width: 58%; height:8px; border-radius: 100px;"></div>                            
-                        </div>
-                        <div class="txt-wrap clearfix">
-                            <p class="prog-txt"> <span class="chip border_clr2 color_clr2">나의 선택</span>  대통령의 가족도 우리와 같은 시민일 뿐, 경호 예우는 필요없다.</p>
-                            <div class="fr">
-                                <span class="part-num"><span>16</span>명</span>
-                                <span class="pipe"></span>
-                                <span class="part-num-2"><span>58</span>%</span>
-                            </div>                                  
-                        </div>
-                        <div class="progBox mt22">
-                            <div class="bar clr3" style="width: 21.5%; height:8px; border-radius: 100px;"></div>                            
-                        </div>
-                        <div class="txt-wrap clearfix">
-                            <p class="prog-txt">잘 모르겠다.</p>
-                            <div class="fr">
-                                <span class="part-num"><span>7</span>명</span>
-                                <span class="pipe"></span>
-                                <span class="part-num-2"><span>21.5</span>%</span>
-                            </div>                                
-                        </div>
+                        <h2 class="label-tit18 fwb w100p">1. 좋아하는 커피브랜드 1개이상 선택해주세요.</h2>
+                        <p class="person">참여인원 <span>100</span>명</p>
+                        <ul class="progBox_wrap">
+                            <li>
+                                <div class="progBox">
+                                    <div class="bar2" style="width: 40%; height:8px; border-radius: 100px;"></div>
+                                </div>
+                                <div class="txt-wrap clearfix">
+                                    <p class="prog-txt">스타벅스</p>
+                                    <div class="tar">
+                                        <span class="part-num"><span>38</span>명</span>
+                                        <span class="pipe"></span>
+                                        <span class="part-num-2"><span>38</span>%</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progBox">
+                                    <div class="bar1" style="width: 30%; height:8px; border-radius: 100px;"></div>
+                                </div>
+                                <div class="txt-wrap clearfix">
+                                    <p class="prog-txt">탐앤탐스 <span class="chip color1">나의 선택</span></p>
+                                    <div class="tar">
+                                        <span class="part-num"><span>29</span>명</span>
+                                        <span class="pipe"></span>
+                                        <span class="part-num-2"><span>29</span>%</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progBox">
+                                    <div class="bar2" style="width: 20%; height:8px; border-radius: 100px;"></div>
+                                </div>
+                                <div class="txt-wrap clearfix">
+                                    <p class="prog-txt">이디야</p>
+                                    <div class="tar">
+                                        <span class="part-num"><span>22</span>명</span>
+                                        <span class="pipe"></span>
+                                        <span class="part-num-2"><span>22</span>%</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progBox">
+                                    <div class="bar3" style="width: 10%; height:8px; border-radius: 100px;"></div>
+                                </div>
+                                <div class="txt-wrap clearfix">
+                                    <p class="prog-txt">할리스</p>
+                                    <div class="tar">
+                                        <span class="part-num"><span>11</span>명</span>
+                                        <span class="pipe"></span>
+                                        <span class="part-num-2"><span>11</span>%</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                         <!-- //basic bar3 -->
                         </div>
                         <br/>
@@ -151,6 +169,50 @@
                         <div>
                         <p> basic bar4 </p>
                         <!-- basic bar4 -->
+                        <h2 class="label-tit20 fwb w100p">주요 학습분야</h2>
+                        <ul class="progBox_wrap">
+                            <li>
+                                <h3 class="label-tit16 fwb w100p">2017년</h3>
+                                <div class="progBox" style="height: 10px !important;">
+                                    <div class="bar1 fl" style="width: 20%;height: 10px;border-top-left-radius: 100px;border-bottom-left-radius: 100px;"></div>
+                                    <div class="bar2 fl" style="width: 20%;height: 10px;"></div>
+                                    <div class="bar3 fl" style="width: 40%;height: 10px;"></div>
+                                    <div class="bar4 fl" style="width: 20%;height: 10px;border-top-right-radius: 100px;border-bottom-right-radius: 100px;"></div>
+                                </div>
+                                <div class="txt-wrap clearfix">
+                                    <ul class="diagram_wrap type2">
+                                        <li class="type1 w48p">기타 <span class="fwb">20%</span></li>
+                                        <li class="type2 w48p">직무 <span class="fwb">20%</span></li>
+                                        <li class="type3 w48p">리더십 <span class="fwb">40%</span></li>
+                                        <li class="type4 w48p">외국어 <span class="fwb">20%</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="label-tit16 fwb w100p">2018년</h3>
+                                <div class="progBox" style="height: 10px !important;">
+                                    <div class="bar1 fl" style="width: 10%;height: 10px;border-top-left-radius: 100px;border-bottom-left-radius: 100px;"></div>
+                                    <div class="bar2 fl" style="width: 30%;height: 10px;"></div>
+                                    <div class="bar3 fl" style="width: 20%;height: 10px;"></div>
+                                    <div class="bar4 fl" style="width: 40%;height: 10px;border-top-right-radius: 100px;border-bottom-right-radius: 100px;"></div>
+                                </div>
+                                <div class="txt-wrap clearfix">
+                                    <ul class="diagram_wrap type2">
+                                        <li class="type1 w48p">기타 <span class="fwb">10%</span></li>
+                                        <li class="type2 w48p">직무 <span class="fwb">30%</span></li>
+                                        <li class="type3 w48p">리더십 <span class="fwb">20%</span></li>
+                                        <li class="type4 w48p">외국어 <span class="fwb">40%</span></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //basic bar4 -->
+                        </div>
+                        <br/>
+
+                        <div>
+                        <p> basic bar5 </p>
+                        <!-- basic bar5 -->
                         <div class="txt-wrap clearfix">
                             <p class="fl good-ex"><span class="ico agree"></span> 찬성</p>
                             <p class="fr bad-ex">반대</p>
@@ -172,7 +234,7 @@
                                 <span class="part-num-2"><span>36</span>%</span>
                             </div>                                  
                         </div>
-                        <!-- //basic bar4 -->
+                        <!-- //basic bar5 -->
                         </div>
                         <br/>
 
@@ -208,14 +270,14 @@
                         <br/>
 
                         <div>
-                        <p> stacked donut </p>
+                        <p> stacked donut - circle </p>
                         <!-- stacked donut -->
                         <h2 class="label-tit20 w100p">Q. 질문 1 입니다.</h2>
                         <ul class="diagram_wrap">
                             <div class="diagram2">
                                 <img src="@/assets/img/thum_no_s.jpg" class="" alt="">
                             </div>
-                            <li>
+                            <li class="type1">
                                 <p>직무과정<span class="percent fr"><span class="num">36</span>%(52명)</span></p>  
                             </li>
                             <li class="type4">
@@ -232,6 +294,52 @@
                             </li>                           
                         </ul>
                         <!-- //stacked donut -->
+                        </div>
+                        <br/>
+
+                        <div>
+                        <p> stacked donut2 - square</p>
+                        <!-- stacked donut2 -->
+                        <h2 class="label-tit18 fwb w100p">1. 좋아하는 커피브랜드 1개이상 선택해주세요.</h2>
+                        <p class="person">참여인원 <span>100</span>명</p>
+                        <ul class="diagram_wrap square">
+                            <div class="diagram2">
+                                <img src="@/assets/img/thum_no_s.jpg" class="" alt="">
+                            </div>
+                            <li class="type4">
+                                <p class="prog-txt">스타벅스</p>
+                                <div class="tar">
+                                    <span class="part-num"><span>38</span>명</span>
+                                    <span class="pipe"></span>
+                                    <span class="part-num-2"><span>38</span>%</span>
+                                </div>
+                            </li>
+                            <li class="type1">
+                                <p class="prog-txt">탐앤탐스 <span class="chip color1">나의 선택</span></p>
+                                <div class="tar">
+                                    <span class="part-num"><span>29</span>명</span>
+                                    <span class="pipe"></span>
+                                    <span class="part-num-2"><span>29</span>%</span>
+                                </div>
+                            </li>
+                            <li class="type5">
+                                <p class="prog-txt">이디야</p>
+                                <div class="tar">
+                                    <span class="part-num"><span>22</span>명</span>
+                                    <span class="pipe"></span>
+                                    <span class="part-num-2"><span>22</span>%</span>
+                                </div>
+                            </li>
+                            <li class="type3">
+                                <p class="prog-txt">할리스</p>
+                                <div class="tar">
+                                    <span class="part-num"><span>11</span>명</span>
+                                    <span class="pipe"></span>
+                                    <span class="part-num-2"><span>11</span>%</span>
+                                </div>
+                            </li>                         
+                        </ul>
+                        <!-- //stacked donut2 -->
                         </div>
                         <br/>
 

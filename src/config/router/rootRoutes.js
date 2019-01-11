@@ -396,6 +396,14 @@ import AtormFaqMain from '~workplace/atorm/Atorm_faq_main'
 import AtormFaqDetail from '~workplace/atorm/Atorm_faq_detail'
 import Atormitemfactoryurl1 from '~workplace/atorm/Atorm_itemfactory_url1'
 import Atormitemfactoryurl2 from '~workplace/atorm/Atorm_itemfactory_url2'
+import Atormitemfactoryvideo1 from '~workplace/atorm/Atorm_itemfactory_video1'
+import Atormitemfactoryvideo2 from '~workplace/atorm/Atorm_itemfactory_video2'
+import Atormitemfactorydocument1 from '~workplace/atorm/Atorm_itemfactory_document1'
+import Atormitemfactorydocument2 from '~workplace/atorm/Atorm_itemfactory_document2'
+import Atormitemfactoryaudio1 from '~workplace/atorm/Atorm_itemfactory_audio1'
+import Atormitemfactoryaudio2 from '~workplace/atorm/Atorm_itemfactory_audio2'
+import Atormitemfactoryyoutube1 from '~workplace/atorm/Atorm_itemfactory_youtube1'
+import Atormitemfactoryyoutubesearch1 from '~workplace/atorm/Atorm_itemfactory_youtube_search1'
 
 // 1번 영역
 var rootRoutes = [
@@ -2022,6 +2030,46 @@ var rootRoutes = [
     path: '/Atorm_itemfactory_url2',
     name: 'Atorm_itemfactory_url2',
     component: Atormitemfactoryurl2
+  },
+  {
+    path: '/Atorm_itemfactory_video1',
+    name: 'Atorm_itemfactory_video1',
+    component: Atormitemfactoryvideo1
+  },
+  {
+    path: '/Atorm_itemfactory_video2',
+    name: 'Atorm_itemfactory_video2',
+    component: Atormitemfactoryvideo2
+  },
+  {
+    path: '/Atorm_itemfactory_document1',
+    name: 'Atorm_itemfactory_document1',
+    component: Atormitemfactorydocument1
+  },
+  {
+    path: '/Atorm_itemfactory_audio1',
+    name: 'Atorm_itemfactory_audio1',
+    component: Atormitemfactoryaudio1
+  },
+  {
+    path: '/Atorm_itemfactory_audio2',
+    name: 'Atorm_itemfactory_audio2',
+    component: Atormitemfactoryaudio2
+  },
+  {
+    path: '/Atorm_itemfactory_document2',
+    name: 'Atorm_itemfactory_document2',
+    component: Atormitemfactorydocument2
+  },
+  {
+    path: '/Atorm_itemfactory_youtube1',
+    name: 'Atorm_itemfactory_youtube1',
+    component: Atormitemfactoryyoutube1
+  },
+  {
+    path: '/Atorm_itemfactory_youtube_search1',
+    name: 'Atorm_itemfactory_youtube_search1',
+    component: Atormitemfactoryyoutubesearch1
   },
   {
     path: '/Eduperson_login',

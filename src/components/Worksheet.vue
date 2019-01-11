@@ -1456,8 +1456,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_video</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_video1' }">
+            Atorm_itemfactory_video1
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_itemfactory_video2' }">
+            Atorm_itemfactory_video2
           </router-link>
         </td>
         <td></td>
@@ -1473,8 +1476,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_document</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_document1' }">
+            Atorm_itemfactory_document1
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_itemfactory_document2' }">
+            Atorm_itemfactory_document2
           </router-link>
         </td>
         <td></td>
@@ -1503,8 +1509,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_audio</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_audio1' }">
+            Atorm_itemfactory_audio1
+          </router-link>,
+           <router-link :to="{ name: 'Atorm_itemfactory_audio2' }">
+            Atorm_itemfactory_audio2
           </router-link>
         </td>
         <td></td>
@@ -1520,8 +1529,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_youtube</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_youtube1' }">
+            Atorm_itemfactory_youtube1
           </router-link>
         </td>
         <td></td>
@@ -1537,8 +1546,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_youtube_search</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_youtube_search1' }">
+            Atorm_itemfactory_youtube_search1
           </router-link>
         </td>
         <td></td>
