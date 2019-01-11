@@ -100,6 +100,7 @@
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
 .ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}
 .ico.deletemode_20_black {width:20px; height:20px; background: url("../img/ic_deletemode_20_black.png")}
+.ico.deletemode_20 {width:20px; height:20px; background: url("../img/ic_deletemode_20.png"); background-size: cover}
 
 /* 추가 이미지 2018-12-21*/
 .ico.mark-o.sm{width: 38px;height: 38px;position: absolute;background: url("../img/ic_mark_o_small.png") no-repeat;}
