@@ -1598,20 +1598,26 @@ label.rdo .label{position: relative;}
 .progBox_wrap li {margin-bottom:14px}
 .progBox_wrap .progBox {margin-top:11px; }
 .progBox_wrap .progBox .bar1 {background-color:map-get($contents_colors, type_1 );}
+.progBox_wrap .progBox .bar2 {background-color:map-get($contents_colors, type_2 );}
+.progBox_wrap .progBox .bar3 {background-color:map-get($contents_colors, type_3 );}
+.progBox_wrap .progBox .bar4 {background-color:map-get($contents_colors, type_4 );}
 .progBox_wrap .progBox .bar5 {background-color:map-get($contents_colors, type_5 );}
 #container.board.request h2.label-tit16 {width:100%; font-size:map-get($font_size, font_16); font-weight: 500; margin:26px 0 20px;}
 .progBox_wrap .desc {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); margin-top:7px}
 #container.board .divide_line { margin:26px 0 }
 .diagram_wrap .diagram {margin:0 auto; width:180px; height:180px; background-color: #eee; border-radius: 100%}
+.diagram_wrap .diagram2 {margin:0 auto; width:180px; height:180px;}
 .diagram_wrap {padding:0 32px}
 .diagram_wrap li { position:relative; border-bottom:#e3e3e3 1px solid; padding:10px 0 10px 20px}
 .diagram_wrap li::before{display: inline-block; position: absolute; top:16px; left:0; z-index: 2; content: ''; width:8px; height: 8px; background-color:map-get($contents_colors, type_1 ); border-radius: 100%}
-.diagram_wrap li.type4::before{ background-color:map-get($contents_colors, type_4 );}
-.diagram_wrap li.type5::before{ background-color:map-get($contents_colors, type_5 );}
 .diagram_wrap li.type2::before{ background-color:map-get($contents_colors, type_2 );}
 .diagram_wrap li.type3::before{ background-color:map-get($contents_colors, type_3 );}
+.diagram_wrap li.type4::before{ background-color:map-get($contents_colors, type_4 );}
+.diagram_wrap li.type5::before{ background-color:map-get($contents_colors, type_5 );}
 .diagram_wrap .percent {font-family: 'Roboto'; font-size:map-get($font_size, font_15); line-height: 22px}
 .diagram_wrap .percent .num {font-size:map-get($font_size, font_22); line-height: 22px}
+.diagram_wrap.type2{padding:0;}
+.diagram_wrap.type2 li{border-bottom: 0 none; display: inline-block; padding:10px;}
 #container.board.request .singleList.type_1 li { border-top:#ebebeb 1px solid; border-bottom:0;}
 #container.board.request .singleList.type_1 li a {line-height: 20px; font-size:map-get($font_size, font_14); color:#1a1a1a; padding:15px 0} 
 #container.board.request a.respondent_num {display: block; padding-bottom:22px}
