@@ -9,10 +9,10 @@
         <div id="header" class="expand">          
           <div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-            <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+            <p class="header_text  font_19"> 스크롤시가</p>
           </div>  
           <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
-            <p>asdfasdf</p>
+            <p>111</p>
             <p>asdfasdf</p>
             <p>asdfasdf</p>
             <p>asdfasdf</p>
@@ -316,13 +316,20 @@ export default {
        option: {
         loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
         targetId: "contents", //div target Id
+        // sources: [
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
+        // ],
+        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
         sources: [
-          { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
-          { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
-          { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
-          { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
+            { type: 'video/mp4', src: './static/movie/m010102.mp4'},
+            { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
+            { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
+            { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
         ],
-        src: require('@/assets/movie/m010102.mp4'), //동영상 src
+        src: './static/movie/m010102.mp4', //동영상 src
         title: "Flowplayer", //콘텐츠 제목
         isSpeeds: true, //동영상 배속 사용여부
         speeds: [1, 2, 3], //동영상 배속 설정 값

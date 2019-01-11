@@ -245,7 +245,10 @@
         <td class="textL">01.login_02.02_join_certify</td>
         <td>
           <router-link :to="{ name: 'Login_joincertify' }">
-            Login_joincertify
+            Login_joincertify (국내),
+          </router-link>
+          <router-link :to="{ name: 'Login_joincertify2' }">
+            Login_joincertify (해외)
           </router-link>
         </td>
         <td></td>

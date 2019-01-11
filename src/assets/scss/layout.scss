@@ -2,6 +2,8 @@
     padding:0;
     min-height:calc(100vh - 14px);
     position: relative;
+
+    &.login{min-height:calc(100vh);display: flex;flex-wrap: wrap; flex: 1;}
     // 컨텐츠 내부
     .inner{
       // margin:0 auto;
@@ -456,6 +458,7 @@
 // 연수원
 #container.findcenter #content .inner{padding:24px 6px 0px}
 // 로그인
+#container.login #content {padding-bottom:22px;}
 #container.login #content .inner{padding:52px 18px 0px;}
 // 관심사 패딩
 #container.interest #content .inner{ padding-top:44px;padding-bottom: 0px}

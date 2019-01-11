@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url("3rd/tooltip.css");
+/*
 body { font-size: 15px; }
 
 .ml50 { margin-left: 50px; }
@@ -103,11 +104,14 @@ h3 { font-size: 18px; color: #333; }
 .aside_btm_scroll > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
 
 .aside_btm_scroll > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+*/
 
 /*=============================================
 =                    Layout                   =
 =============================================*/
+/*
 body { overflow-x: hidden; }
+*/
 
 #stwMain { -webkit-transition: margin-left .5s; transition: margin-left .5s; }
 

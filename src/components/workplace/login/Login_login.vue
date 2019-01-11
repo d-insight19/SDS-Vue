@@ -10,7 +10,7 @@
 
                 <!-- 가이드 O : 로고 이미지일 경우 -->
                 <h1 class="h-tit1 type_image">
-                    <img src="@/assets/img/login_logo_sds.png" alt="samsung sds">
+                    <img src="@/assets/img/sdslogo.png" alt="samsung sds">
                 </h1>
                 <!-- 가이드 O : 텍스트일 경우 -->
                 <h1 class="h-tit1 type_txt" style="display:none;"><p>한국도로공사 연수원</p></h1>
@@ -19,7 +19,7 @@
 
                 <!-- 가이드 X : 로고 이미지일 경우 -->
                 <h1 class="h-tit1 type_image noguide" style="display:none;">
-                    <img src="@/assets/img/login_logo_sds.png" alt="samsung sds">
+                    <img src="@/assets/img/sdslogo.png" alt="samsung sds">
                 </h1>
                 <!-- 가이드 X : 텍스트일 경우 -->
                 <h1 class="h-tit1 type_txt noguide" style="display:none;"><p>한국도로공사 연수원</p></h1>
@@ -30,19 +30,17 @@
                     <legend>아이디 비밀번호 입력</legend>
                     <ul class="loginList">
                         <li>
-                            <input type="text" class="input underline " placeholder="아이디">
+                            <slp-text-field placeholder="아이디"></slp-text-field>
                         </li>
                         <li>
-                            <div class="search-wrapper">
-                                <input type="password"  pattern="^\s+" class="input underline" placeholder="비밀번호" />
-                                <button class="close-icon" type="button" id="dd"></button>
-                            </div>
+                            <!-- 추가되는 새로운 비밀번호 컴포넌트로 교체해야함-->
+                            <slp-text-field type="password" placeholder="비밀번호"></slp-text-field>
                         </li>
                     </ul>
 
                     <div class="loginChk">
-                        <label for="id_save" class="labelChk"><input id="id_save" type="checkbox" class="chk" name="id_save"><span class="ico"></span><span class="label">아이디 저장</span></label>
-                        <label for="login_auto" class="labelChk"><input id="login_auto" type="checkbox" class="chk" name="login_auto"><span class="ico"></span><span class="label">자동 로그인</span></label>
+                        <slp-checkbox>아이디 저장</slp-checkbox>
+                        <slp-checkbox>자동 로그인</slp-checkbox>
                     </div>
 
                     <div class="loginBtn">
@@ -50,22 +48,34 @@
                     </div>
                 </fieldset>
 
-                <ul class="loginEtcBtn">
-                    <li><a href="#">회원가입</a></li>
+                <ul class="loginEtcBtn">                    
                     <li><a href="#">아이디찾기</a></li>
                     <li><a href="#">비밀번호 찾기</a></li>
+                    <li><a href="#">회원가입</a></li>
                 </ul>
 
                 <dl class="loginGuide">
                     <dt>초기 로그인 안내</dt>
-                    <dd class="color_clr2">아이디 <span class="fwb">ex사번</span></dd>
-                    <dd class="color_clr2">비밀번호  <span class="fwb">아이디와 동일</span></dd>
-                    <dd>최초 접속 시 아이디와 비밀번호가 동일합니다.</dd>
+                    <dd >아이디 <span class="fwb">ex사번(예 ex123456)</span></dd>
+                    <dd >비밀번호 <span class="fwb">아이디와 동일</span></dd>
+                    <dd class="desc">최초 접속 시 아이디와 비밀번호가 동일합니다.</dd>
                 </dl>
+
+                
 
             </div>
           </div>
         </div>
+        
+        <div class="loginFooter">
+            <p class="custom_txt">고객센터<span class="custom_tel color_clr2">1544 - 9001</span></p>
+            <ul class="custom_info">
+                <li>평일<span class="custom_time">08:00 - 20:00</span></li>
+                <li>휴일<span class="custom_time">09:00 - 18:00</span></li>
+            </ul>
+            <p class="copyright">ⓒ copyright by mulicampus CO.LTD. All right reserved</p>
+        </div>
+        
       </div>
       <!-- //container -->     
     </div>

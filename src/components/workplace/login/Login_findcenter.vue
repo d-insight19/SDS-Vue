@@ -3,6 +3,15 @@
     <!-- wrap -->
     <div id="wrap">
         <div class="trainIntro">
+
+            <div class="select_language_wrap">
+                <div class="inner_wrap">
+                    <span class="language_icon"></span>
+                    <span class="select_language">한국어</span>
+                    <span class="dropdown_arrow"></span>
+                </div>
+            </div>
+
             <div class="txtWrap">
                 연수원 찾기<br>방법을<br>선택해주세요.
             </div>

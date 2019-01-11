@@ -27,7 +27,7 @@ button.btn{
 }
 
 button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
-::-webkit-scrollbar{display:none;}
+// ::-webkit-scrollbar{display:none;}
 
 // 글자 폰트에 따른 클래스명 관리
 .font_11{font-size:map-get($font_size, font_11) !important;}
@@ -573,7 +573,8 @@ select:required:invalid {
 .stepper .num span{font-weight: 500;}
 .stepper .progBox{position: relative; z-index: 1; height:4px; margin-top: 8px; border-radius: 10px; background: #f0f0f0; overflow: hidden;}
 .stepper .progBox .bar{position: absolute; left:0; top:0; z-index: 2; height: 100%; }
-.stepper .txt-desc{line-height: 18px; height:39px;font-size: map-get($font_size , font_12); color:rgba(0,0,0,0.65); letter-spacing: -0.36px ; margin-top:8px;    font-weight: 300; }
+.stepper .txt-desc{line-height: 18px; margin-bottom:21px;font-size: map-get($font_size , font_12); color:rgba(0,0,0,0.65); letter-spacing: -0.36px ; margin-top:8px;    font-weight: 300; }
+.stepper .txt-desc2{margin-top:3px;}
 
 
 
@@ -861,3 +862,10 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .type_box dl + dl{border-top:1px solid #d9d9d9}
 .type_box dl dt{display:table-cell;color:rgba(0,0,0,0.8);font-size:map-get($font-size, font_13)}
 .type_box dl dd{font-family:'Roboto';display:table-cell;text-align: right;font-weight:500;color:#000;font-size:map-get($font-size, font_16)}
+
+// 연수원찾기에서 언어선택 ( 공통으로 쓰일것 같아 선 적용)
+.select_language_wrap{position:absolute;top:26px;text-align: right;width:100%;right:20px;}
+.select_language_wrap .inner_wrap{width:auto;padding-right:20px;float: right;}
+.select_language_wrap .select_language{position: relative;padding-left:20px;display:inline-block;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;color:#fff;}
+.select_language_wrap .select_language:before{content:'';width:16px;height:16px;margin-right:4px;background: url("../img/ic_earth_wh_16.png") no-repeat;display: inline-block;position: absolute;top: 50%;transform: translateY(-50%);left: 0px;}
+.select_language_wrap .dropdown_arrow{display:inline-block;width:16px;height:16px;margin-left:4px;background: url("../img/ic_dropdown_wh_16.png") no-repeat;position: absolute;top: 50%;transform: translateY(-50%);right: 0px;}

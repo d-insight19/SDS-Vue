@@ -19,15 +19,12 @@
                         <!-- list -->
                         <ul class="ulList type2">
                             <li>
-                                <!-- err이 아닌경우 default로  input 에  err 클래스 제거 ,  p 제거 -->
                                 <strong class="label-tit">이름</strong>
-                                <input type="text" class="input err" placeholder="이름 입력">
-                                <p class="InfoChK-resultTxt err">이름을 입력해주세요.</p>
+                                <slp-text-field placeholder="이름" error message="이름을 입력해주세요."></slp-text-field>
                             </li>
                             <li>
                                 <strong class="label-tit">이메일</strong>
-                                <input type="text" class="input err" placeholder="이메일 입력">
-                                <p class="InfoChK-resultTxt err">이메일 형식에 맞지 않습니다.</p>
+                                <slp-text-field placeholder="이메일" error message="이메일 형식에 맞지 않습니다."></slp-text-field>
                             </li>
                         </ul>
                         <!-- //list -->

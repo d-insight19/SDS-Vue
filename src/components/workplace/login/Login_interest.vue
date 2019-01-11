@@ -12,7 +12,7 @@
                         <!-- title txt -->
                         <div class="titTxtWrap">
                             <strong class="txt-tit">관심사를<br>선택해주세요</strong>
-                            <p class="txt-desc">관심사와 관련된 맞춤 정보를 받으실 수 있습니다.</p>
+                            <p class="txt-desc">관심사와 관련있는 맞춤 정보를 받으실 수 있습니다.</p>
                         </div>
                         <!-- //title txt -->
 
@@ -21,27 +21,27 @@
                             <li>
                                 <strong class="label-tit">관심 분야</strong>
                                 <div class="in-chk">
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">경영 / 리더십</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">금융</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">직무 / 자격</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">OPIC / 외국어</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">인문 / 교양 / 시사</span></label>
+                                    <slp-checkbox type="button">경영 / 리더십</slp-checkbox>
+                                    <slp-checkbox type="button">금융</slp-checkbox>
+                                    <slp-checkbox type="button">직무 / 자격</slp-checkbox>
+                                    <slp-checkbox type="button">OPIC / 외국어</slp-checkbox>
+                                    <slp-checkbox type="button">인문 / 교양 / 시사</slp-checkbox>
                                 </div>
                             </li>
                             <li>
                                 <strong class="label-tit">선호 과정</strong>
                                 <div class="in-chk">
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">이러닝</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">집합</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">지식</span></label>
+                                    <slp-checkbox type="button">이러닝</slp-checkbox>
+                                    <slp-checkbox type="button">집합</slp-checkbox>
+                                    <slp-checkbox type="button">지식</slp-checkbox>
                                 </div>
                             </li>
                             <li>
                                 <strong class="label-tit">선호 강의</strong>
                                 <div class="in-chk">
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">Instructor-led</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">Self-paced with labs</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">Self-paced</span></label>
+                                    <slp-checkbox type="button">Instructor-led</slp-checkbox>
+                                    <slp-checkbox type="button">Self-paced with labs</slp-checkbox>
+                                    <slp-checkbox type="button">Self-paced</slp-checkbox>
                                 </div>
                             </li>
                         </ul>

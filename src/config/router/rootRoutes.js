@@ -28,7 +28,7 @@ import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
-// import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
+import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
@@ -40,6 +40,7 @@ import LoginLoginFail from '~workplace/login/Login_login_fail'
 import LoginInterest from '~workplace/login/Login_interest'
 import LoginJoinType from '~workplace/login/Login_jointype'
 import LoginJoinCertify from '~workplace/login/Login_joincertify'
+import LoginJoinCertify2 from '~workplace/login/Login_joincertify2'
 import LoginJoinTerms from '~workplace/login/Login_jointerms'
 import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
 import LoginJoinId from '~workplace/login/Login_joinid'
@@ -513,11 +514,11 @@ var rootRoutes = [
     name: 'components_spinner',
     component: ComponentsSpinner
   },
-  // {
-  //   path: '/components_flowplayer',
-  //   name: 'components_flowplayer',
-  //   component: ComponentsFlowplayer
-  // },
+  {
+    path: '/components_flowplayer',
+    name: 'components_flowplayer',
+    component: ComponentsFlowplayer
+  },
   {
     path: '/components_dropdown',
     name: 'components_dropdown',
@@ -602,6 +603,11 @@ var rootRoutes = [
     path: '/Login_joincertify',
     name: 'Login_joincertify',
     component: LoginJoinCertify
+  },
+  {
+    path: '/Login_joincertify2',
+    name: 'Login_joincertify2',
+    component: LoginJoinCertify2
   },
   {
     path: '/Login_jointerms',

@@ -21,22 +21,17 @@
                         <div class="progBox">
                         <div class="bar clr2" style="width:15%"></div>
                     </div>
-                    <p class="txt-desc" style="display:none1">다음 인증 방법 중 하나를 선택해주세요.</p>
+                    <!-- 해외 사용자 -->
+                    <p class="txt-desc mb0">해외 사용자는 이메일 인증을 진행해주세요.</p>
+                    <p class="txt-desc txt-desc2">(입력하신 고객님의 개인정보를 안전하게 하기 위해 최선을 다하고 있으며, 고객님의 동의없이 제 3자에게 제공되지 않으며, 개인정보 처리방침에 따라외부 위협으로부터 안전하게 보호하고 있습니다.)</p>
                 </div>
-
-                <!-- 국내 사용자 -->
-                <ul class="certList mt45">
-                    <li><a href="#" class="btn">휴대폰 인증<span class="ico"></span></a></li>
-                    <li><a href="#" class="btn">아이핀 인증<span class="ico"></span></a></li>
+                <!-- 해외 사용자 -->
+                <ul class="certList mt54">
+                    <li><a href="#" class="btn">이메일 인증<span class="ico"></span></a></li>
                 </ul>
 
                 <ul class="guideList">
-                    <li>입력하신 고객님의 개인정보를 안전하게 하기 위해 최선을 다하고 있으며, 고객님의 동의없이 제 3자에게 제공되지 않으며, 개인정보 처리방침에 따라 외부 위협으로부터 안전하게 보호하고 있습니다.</li>
-                    <li>고객센터 : 1544-9001</li>
-                    <li>법인 휴대폰 사용자는 이메일 인증 버튼을 클릭하여 회원가입을 진행하시기 바랍니다. </li>
-                    <li>이메일 인증</li>
-                    <li>아이핀(i-PIN) 인증은 아이핀(i-PIN)에 회원가입된 분들에 한하며, 아직 회원으로 가입되지 않은 분들은 버튼을  클릭하여 회원가입을 먼저 진행하시기 바랍니다.</li>
-                    <li>아이핀 가입 바로가기</li>
+                    <li>이름, 생년월일, 성별은 가입 후에 변경이 불가합니다. 추후 본인확인을 위해 정확하게 가입 부탁드립니다.</li>
                 </ul>
 
                 

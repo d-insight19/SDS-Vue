@@ -14,14 +14,14 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1">회원가입 유형선택</h1>
+                <h1 class="h-tit1">회원가입</h1>
 
                 <div class="joinTypeBox">
                   <dl>
-                    <dt>일반회원 가입</dt>
+                    <dt>개인회원 가입</dt>
                     <dd>
                       멀티 캠퍼스는 통합 ID 하나로 모든 서비스를<br>한번에 이용하실 수 있습니다.
-                      <p class="color_clr2">(멀티 캠퍼스, OPic SQUARE, OPic, SERI Pro)</p>
+                      <p class="color_clr2">(멀티 캠퍼스, OPIc, SERI Pro)</p>
                       <div class="btmBtn">
                         <button type="button" class="btn md clr1">일반회원 가입하기</button>
                       </div>

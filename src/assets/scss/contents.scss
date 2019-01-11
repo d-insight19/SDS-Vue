@@ -55,11 +55,11 @@
     z-index: 1; 
     font-size:map-get($font-size, font_16); 
     color:map-get($mono_colors, mono_80); 
-    line-height: 54px; 
+    line-height: 24px; 
     letter-spacing: -0.48px; 
     font-weight:500;
     width:100%; 
-    padding:0 30px 0 18px; 
+    padding:15px 30px 15px 18px; 
     text-align: left; 
     background:rgba(255,255,255,0.85);
 }
@@ -130,28 +130,37 @@
 #container.login .h-tit1{display: table; z-index: 2; width: 100%;line-height: 0;margin-bottom:31px;width:215px;height:74px;word-break: keep-all;}
 #container.login .h-tit1.noguide{margin-top:40px;margin-bottom:31px;}
 #container.login .h-tit1.type_image{position:relative;}
-#container.login .h-tit1 img{position: absolute;top: 50%;transform: translate(0%, -50%);height:25px;}
+#container.login .h-tit1 img{position: absolute;top: 50%;transform: translate(0%, -50%);}
 #container.login .h-tit1 p{display: table-cell;font-size: map-get($font-size, font_26);  line-height: 38px; letter-spacing: -0.78px; font-weight: 500;  height: auto; vertical-align: middle; overflow: hidden;}
 #container.login .loginBox .loginList li{position: relative;}
 #container.login .loginBox .loginList li + li{margin-top: 19px;}
-#container.login .loginBox .loginList .error-msg{position: absolute; left:0; top:45px; z-index: 1;}
-#container.login .loginBox .loginChk{margin-top:35px;}
+#container.login .loginBox .loginChk{margin-top:35px;margin-left:-6px;}
 #container.login .loginBox .loginChk .labelChk{width:auto;}
 #container.login .loginBox input.chk + .ico {width:20px; height:20px;}
 #container.login .loginBox input.chk:checked + .ico {background-position: 0 0;}
 #container.login .loginBox .labelChk .label{color:#333; font-weight: 500; line-height: 20px; }
 #container.login .loginBox .labelChk + .labelChk{margin-left:30px;}
-#container.login .loginBox .loginBtn{margin-top:36px;}
+#container.login .loginBox .loginBtn{margin-top:30px;}
 #container.login .loginBox .loginBtn .btn{width:100%;}
 #container.login .loginEtcBtn{margin-top:17px;color:rgba(0,0,0,0.8)}
 #container.login .loginEtcBtn:after{display: block; content:''; clear: both;}
-#container.login .loginEtcBtn li{float:left; line-height: 19px; vertical-align: middle;}
-#container.login .loginEtcBtn li + li{margin-left:11px;}
-#container.login .loginEtcBtn li + li::before{display: inline-block; content: ''; width:1px; height:9px; margin-right: 9px; vertical-align: middle; background:#b9b9b9;}
+#container.login .loginEtcBtn li{float:left; line-height: 20px; vertical-align: middle;}
+#container.login .loginEtcBtn li + li{margin-left:8px;}
+#container.login .loginEtcBtn li + li::before{display: inline-block; content: ''; width:1px; height:9px; margin-right: 8px; vertical-align: middle; background:#d9d9d9;}
 #container.login .loginEtcBtn li a{display: inline-block; vertical-align: middle;}
 #container.login .loginGuide{margin-top:62px;}
-#container.login .loginGuide dt{font-weight: 500;line-height: 18px;margin-bottom: 3px;font-size: map-get($font-size, font_14);letter-spacing: -0.42px;color:rgba(0,0,0,0.8)}
-#container.login .loginGuide dd{font-size: map-get($font-size, font_13); color:rgba(0,0,0,0.4); letter-spacing: -0.39px; line-height: 19px;}
+#container.login .loginGuide dt{font-weight: 500;line-height: 22px;margin-bottom: 3px;font-size: map-get($font-size, font_14);letter-spacing: -0.42px;color:rgba(0,0,0,0.8)}
+#container.login .loginGuide dd{font-size: map-get($font-size, font_13); color:rgba(0,0,0,0.8); letter-spacing: -0.39px; line-height: 19px;font-weight: 400;}
+#container.login .loginGuide dd .fwb{font-weight: 600 !important;}
+#container.login .loginGuide dd.desc{color:rgba(0,0,0,0.5);font-weight: 500;}
+#container.login .loginFooter{align-self: flex-end;padding:20px 36px;background:#f2f3f7;width:100%;}
+#container.login .loginFooter .custom_txt{font-size: map-get($font-size, font_17); line-height: 25px;letter-spacing: -0.51px; font-weight: 500; }
+#container.login .loginFooter .custom_tel{margin-left:6px;font-family: 'Roboto';font-size: map-get($font-size, font_18); line-height: 25px;letter-spacing: -0.54px; font-weight: 500;}
+#container.login .loginFooter .custom_info{margin-top:2px;font-size: map-get($font-size, font_13); line-height: 19px;letter-spacing: -0.39px; font-weight: 500;color:rgba(0,0,0,0.8)}
+#container.login .loginFooter .custom_info li{display:inline-block;margin-right:8px;}
+#container.login .loginFooter .custom_info li + li::before{display: inline-block; content: ''; width:1px; height:11px; margin-right: 8px; vertical-align: middle; background:#d9d9d9;}
+#container.login .loginFooter .custom_info .custom_time{margin-left:6px;font-family: 'Roboto';font-size: map-get($font-size, font_14); line-height: 25px;letter-spacing: -0.42px; font-weight: 400;color:rgba(0,0,0,0.65)}
+#container.login .loginFooter .copyright{margin-top:11px;font-size: map-get($font-size, font_11); line-height: 15px;letter-spacing: -0.22px; font-weight: 400;color:rgba(0,0,0,0.4)}
 
 // 로그인 - 관심사 선택
 #container.interest .titTxtWrap{padding-top:0px;}
@@ -179,7 +188,7 @@
 #container.join_type .h-tit1{margin-bottom:47px;font-weight:500;}
 #container.join_type .joinTypeBox dt{font-size: map-get($font-size, font_20);line-height: 29px;margin-bottom: 18px;letter-spacing: -0.6px;}
 #container.join_type .joinTypeBox dd{font-size: map-get($font-size, font_14);line-height: 20px;color:map-get($mono_colors, mono_65);letter-spacing: -0.42px;}
-#container.join_type .joinTypeBox p{font-size: map-get($font-size, font_10);line-height: 15px;margin-top: 4px;font-weight:500;letter-spacing: -0.3px;}
+#container.join_type .joinTypeBox p{font-size: map-get($font-size, font_13);line-height: 15px;margin-top: 4px;font-weight:500;letter-spacing: -0.39px;}
 #container.join_type .joinTypeBox .btmBtn{margin-top: 12px;}
 #container.join_type .joinTypeBox .btmBtn .btn{font-size: map-get($font-size, font_14);margin-top: 0px;vertical-align: middle;letter-spacing: -0.42px;font-weight:500;}
 #container.join_type .joinTypeBox dl + dl{margin-top: 59px;}

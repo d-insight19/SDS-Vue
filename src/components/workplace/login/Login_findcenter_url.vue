@@ -21,7 +21,7 @@
                 <ul class="ulList type2">
                     <li>
                         <strong class="label-tit">연수원 URL</strong>
-                        <input type="text" class="input" placeholder="http://">
+                        <slp-text-field placeholder="http://" ></slp-text-field>
                     </li>
                 </ul>
                 <!-- //list -->
