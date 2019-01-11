@@ -142,6 +142,8 @@
 .ico.star_20{width:20px;height:20px;background: url("../img/ic_rate_solid_grey_20.png") no-repeat;}
 .ico.star_30{width:30px;height:30px;background: url("../img/ic_rate_solid_grey_30.png") no-repeat;}
 
+/*추가이미지 2019-1-11*/
+.ico.close_20{width:20px; height:20px; background: url("../img/ic_close_line_20.png") ;background-size: cover;}
 
 /* ico btn */
 .btn.only .ico{display: block;}
@@ -198,7 +200,7 @@
 
 
 /* width */
-.w100p{width:100%;}
+.w100p{width:100% !important;}
 
 
 /* margin */

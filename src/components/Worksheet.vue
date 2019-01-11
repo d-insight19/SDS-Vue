@@ -6831,7 +6831,7 @@
             Study_05_etc_pilottest
           </router-link>
         </td>
-        <td>작업중</td>
+        <td>작업완료</td>
       </tr>
       <tr>
       <td align="center">390</td>
@@ -6896,8 +6896,20 @@
         <td>　</td>
         <td class="textL">06.regiclass_04.01.register_option</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_option' }">
+            regiclass_register_option
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_option_add' }">
+            regiclass_register_option_add
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_option_add_02' }">
+            regiclass_register_option_add_02
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_option_02' }">
+            regiclass_register_option_02
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_option_03' }">
+            regiclass_register_option_03
           </router-link>
         </td>
         <td></td>
@@ -6981,8 +6993,11 @@
         <td>　</td>
         <td class="textL">06.regiclass_04.02.01register_terms_add</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_terms_add' }">
+            regiclass_register_terms_add
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_terms' }">
+            regiclass_register_terms
           </router-link>
         </td>
         <td></td>
@@ -10647,6 +10662,23 @@
         <td>
           <router-link :to="{ name: 'components_dropdown' }">
             components_dropdown
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>chart</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_chart' }">
+            components_chart
           </router-link>
         </td>
         <td></td>

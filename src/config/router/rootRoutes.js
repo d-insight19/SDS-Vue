@@ -30,6 +30,7 @@ import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
 // import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
+import ComponentsChart from '~workplace/common_page/components_chart'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -148,6 +149,11 @@ import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_fi
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
 
+// import RegiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
+// import RegiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
+// import RegiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
+// import RegiclassDetailviewWish from '~workplace/regiclass/regiclass_detailview_wish'
+
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
 import MainCurateUI02 from '~workplace/main/Main_curateUI02'
@@ -244,6 +250,13 @@ import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changepla
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
 import regiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
+import regiclassRegisterOption from '~workplace/regiclass/regiclass_register_option'
+import regiclassRegisterOptionAdd from '~workplace/regiclass/regiclass_register_option_add'
+import regiclassRegisterOptionAdd02 from '~workplace/regiclass/regiclass_register_option_add_02'
+import regiclassRegisterOption02 from '~workplace/regiclass/regiclass_register_option_02'
+import regiclassRegisterOption03 from '~workplace/regiclass/regiclass_register_option_03'
+import regiclassRegisterTermsAdd from '~workplace/regiclass/regiclass_register_terms_add'
+import regiclassRegisterTerms from '~workplace/regiclass/regiclass_register_terms'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -548,6 +561,11 @@ var rootRoutes = [
     path: '/components_dropdown',
     name: 'components_dropdown',
     component: ComponentsDropdown
+  },
+  {
+    path: '/components_chart',
+    name: 'components_chart',
+    component: ComponentsChart
   },
   {
     path: '/Login_findcenter',
@@ -1124,6 +1142,26 @@ var rootRoutes = [
     name: 'Study_05_etc_authorization_employment',
     component: Study05etcauthorizationemployment
   },
+  // {
+  //   path: '/regiclass_detailview_licence',
+  //   name: 'regiclass_detailview_licence',
+  //   component: RegiclassDetailviewLicence
+  // },
+  // {
+  //   path: '/regiclass_detailview_books',
+  //   name: 'regiclass_detailview_books',
+  //   component: RegiclassDetailviewBooks
+  // },
+  // {
+  //   path: '/regiclass_detailview_terms',
+  //   name: 'regiclass_detailview_terms',
+  //   component: RegiclassDetailviewTerms
+  // },
+  // {
+  //   path: '/regiclass_detailview_wish',
+  //   name: 'regiclass_detailview_wish',
+  //   component: RegiclassDetailviewWish
+  // },
   {
     path: '/Main_control',
     name: 'Main_control',
@@ -1582,6 +1620,41 @@ var rootRoutes = [
     path: '/regiclass_detailview_terms',
     name: 'regiclass_detailview_terms',
     component: regiclassDetailviewTerms
+  },
+  {
+    path: '/regiclass_register_option',
+    name: 'regiclass_register_option',
+    component: regiclassRegisterOption
+  },
+  {
+    path: '/regiclass_register_option_add',
+    name: 'regiclass_register_option_add',
+    component: regiclassRegisterOptionAdd
+  },
+  {
+    path: '/regiclass_register_option_add_02',
+    name: 'regiclass_register_option_add_02',
+    component: regiclassRegisterOptionAdd02
+  },
+  {
+    path: '/regiclass_register_option_02',
+    name: 'regiclass_register_option_02',
+    component: regiclassRegisterOption02
+  },
+  {
+    path: '/regiclass_register_option_03',
+    name: 'regiclass_register_option_03',
+    component: regiclassRegisterOption03
+  },
+  {
+    path: '/regiclass_register_terms_add',
+    name: 'regiclass_register_terms_add',
+    component: regiclassRegisterTermsAdd
+  },
+  {
+    path: '/regiclass_register_terms',
+    name: 'regiclass_register_terms',
+    component: regiclassRegisterTerms
   },
   {
     path: '/Drawer_alerm',
