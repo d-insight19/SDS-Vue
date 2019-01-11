@@ -30,6 +30,7 @@ import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
 import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
+import ComponentsChart from '~workplace/common_page/components_chart'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -132,6 +133,7 @@ import Study04SOquizmultichoiceresult from '~workplace/study/Study_04_SO_quiz_mu
 import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
 import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
 import Study04SOpollinput from '~workplace/study/Study_04_SO_poll_input'
+import Study04SOpollintro from '~workplace/study/Study_04_SO_poll_intro'
 import Study04SOpollsubmissionrod from '~workplace/study/Study_04_SO_poll_submission_rod'
 import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
 import Study04SOstudygoal from '~workplace/study/Study_04_SO_studygoal'
@@ -144,10 +146,14 @@ import Study04SOdebatesubmissionall from '~workplace/study/Study_04_SO_debate_su
 import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
 import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
 import Study05etcpilottest from '~workplace/study/Study_05_etc_pilottest'
-import Study05etcpilottest01 from '~workplace/study/Study_05_etc_pilottest_01'
 import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
+
+// import RegiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
+// import RegiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
+// import RegiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
+// import RegiclassDetailviewWish from '~workplace/regiclass/regiclass_detailview_wish'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -235,6 +241,23 @@ import MySpaceFormalComplete from '~workplace/myspace/MySpace_formal_complete'
 import MySpaceFormalCancel from '~workplace/myspace/MySpace_formal_cancel'
 import MySpaceFormalTempcertificate from '~workplace/myspace/MySpace_formal_tempcertificate'
 import MySpaceFormalCertificatekr from '~workplace/myspace/MySpace_formal_certificatekr'
+import MySpaceFormalCertificateeng from '~workplace/myspace/MySpace_formal_certificateeng'
+import MySpaceFormalCertificateNameKor from '~workplace/myspace/MySpace_formal_certificate_name_kor'
+import MySpaceFormalCertificateengPop from '~workplace/myspace/MySpace_formal_certificateeng_pop'
+import MySpaceFormalRequeststage from '~workplace/myspace/MySpace_formal_requeststage'
+import MySpaceFormalAttendingconfirmation from '~workplace/myspace/MySpace_formal_attendingconfirmation'
+import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changeplan'
+
+import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
+import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
+import regiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
+import regiclassRegisterOption from '~workplace/regiclass/regiclass_register_option'
+import regiclassRegisterOptionAdd from '~workplace/regiclass/regiclass_register_option_add'
+import regiclassRegisterOptionAdd02 from '~workplace/regiclass/regiclass_register_option_add_02'
+import regiclassRegisterOption02 from '~workplace/regiclass/regiclass_register_option_02'
+import regiclassRegisterOption03 from '~workplace/regiclass/regiclass_register_option_03'
+import regiclassRegisterTermsAdd from '~workplace/regiclass/regiclass_register_terms_add'
+import regiclassRegisterTerms from '~workplace/regiclass/regiclass_register_terms'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -312,8 +335,10 @@ import EdupersonControl from '~workplace/eduperson/Eduperson_control'
 import EdupersonStudycurrentElearning from '~workplace/eduperson/Eduperson_studycurrent_elearning'
 import EdupersonStudycurrentSet from '~workplace/eduperson/Eduperson_studycurrent_set'
 import EdupersonStudycurrentAutonomy from '~workplace/eduperson/Eduperson_studycurrent_autonomy'
-import EdupersonOperationAutonomyControl from '~workplace/eduperson/Eduperson_Operation_Autonomy_Control'
-import EdupersonOperationSetControl from '~workplace/eduperson/Eduperson_Operation_Set_control'
+import EdupersonOperationAutonomyControl from '~workplace/eduperson/Eduperson_operation_autonomy_control'
+import EdupersonOperationSetControl from '~workplace/eduperson/Eduperson_operation_set_control'
+import EdupersonOperationElearningControl from '~workplace/eduperson/Eduperson_operation_elearning_control'
+import Edupersonstatementsearchword from '~workplace/eduperson/Eduperson_statement_searchword'
 
 import etcTerms from '~workplace/etc/etc_Terms'
 import etcNetworkerror from '~workplace/etc/etc_Networkerror'
@@ -357,6 +382,10 @@ import BPOClassstatus from '~workplace/bpo/BPO_Classstatus'
 import BPODrawer from '~workplace/bpo/BPO_Drawer'
 import BPOLoginpasswordview from '~workplace/bpo/BPO_Login_password_view'
 import BPOLoginpasswordnotview from '~workplace/bpo/BPO_Login_password_notview'
+import BPOsubjectlistdetailcancelsetdate from '~workplace/bpo/BPO_subjectlist_detail_cancel_setdate'
+import BPOsubjectlistdetailsupplementarysetdate from '~workplace/bpo/BPO_subjectlist_detail_supplementary_setdate'
+import BPOsubjectlistdetailshortensetdate from '~workplace/bpo/BPO_subjectlist_detail_shorten_setdate'
+import BPOsubjectlistdetailextendsetdate from '~workplace/bpo/BPO_subjectlist_detail_extend_setdate'
 
 import AtormDrawer from '~workplace/atorm/Atorm_drawer'
 import AtormControl from '~workplace/atorm/Atorm_control'
@@ -366,6 +395,16 @@ import AtormConfirmList from '~workplace/atorm/Atorm_confirm_list'
 import AtormConfirmListDetail from '~workplace/atorm/Atorm_confirm_list_detail'
 import AtormFaqMain from '~workplace/atorm/Atorm_faq_main'
 import AtormFaqDetail from '~workplace/atorm/Atorm_faq_detail'
+import Atormitemfactoryurl1 from '~workplace/atorm/Atorm_itemfactory_url1'
+import Atormitemfactoryurl2 from '~workplace/atorm/Atorm_itemfactory_url2'
+import Atormitemfactoryvideo1 from '~workplace/atorm/Atorm_itemfactory_video1'
+import Atormitemfactoryvideo2 from '~workplace/atorm/Atorm_itemfactory_video2'
+import Atormitemfactorydocument1 from '~workplace/atorm/Atorm_itemfactory_document1'
+import Atormitemfactorydocument2 from '~workplace/atorm/Atorm_itemfactory_document2'
+import Atormitemfactoryaudio1 from '~workplace/atorm/Atorm_itemfactory_audio1'
+import Atormitemfactoryaudio2 from '~workplace/atorm/Atorm_itemfactory_audio2'
+import Atormitemfactoryyoutube1 from '~workplace/atorm/Atorm_itemfactory_youtube1'
+import Atormitemfactoryyoutubesearch1 from '~workplace/atorm/Atorm_itemfactory_youtube_search1'
 
 // 1번 영역
 var rootRoutes = [
@@ -523,6 +562,11 @@ var rootRoutes = [
     path: '/components_dropdown',
     name: 'components_dropdown',
     component: ComponentsDropdown
+  },
+  {
+    path: '/components_chart',
+    name: 'components_chart',
+    component: ComponentsChart
   },
   {
     path: '/Login_findcenter',
@@ -1020,6 +1064,11 @@ var rootRoutes = [
     component: Study04SOquizshortanswerresult
   },
   {
+    path: '/Study_04_SO_poll_intro',
+    name: 'Study_04_SO_poll_intro',
+    component: Study04SOpollintro
+  },
+  {
     path: '/Study_04_SO_poll_input',
     name: 'Study_04_SO_poll_input',
     component: Study04SOpollinput
@@ -1080,11 +1129,6 @@ var rootRoutes = [
     component: Study05etcpilottest
   },
   {
-    path: '/Study_05_etc_pilottest_01',
-    name: 'Study_05_etc_pilottest_01',
-    component: Study05etcpilottest01
-  },
-  {
     path: '/Study_05_etc_pledge_ethics',
     name: 'Study_05_etc_pledge_ethics',
     component: Study05etcpledgeethics
@@ -1104,6 +1148,26 @@ var rootRoutes = [
     name: 'Study_05_etc_authorization_employment',
     component: Study05etcauthorizationemployment
   },
+  // {
+  //   path: '/regiclass_detailview_licence',
+  //   name: 'regiclass_detailview_licence',
+  //   component: RegiclassDetailviewLicence
+  // },
+  // {
+  //   path: '/regiclass_detailview_books',
+  //   name: 'regiclass_detailview_books',
+  //   component: RegiclassDetailviewBooks
+  // },
+  // {
+  //   path: '/regiclass_detailview_terms',
+  //   name: 'regiclass_detailview_terms',
+  //   component: RegiclassDetailviewTerms
+  // },
+  // {
+  //   path: '/regiclass_detailview_wish',
+  //   name: 'regiclass_detailview_wish',
+  //   component: RegiclassDetailviewWish
+  // },
   {
     path: '/Main_control',
     name: 'Main_control',
@@ -1519,6 +1583,86 @@ var rootRoutes = [
     component: MySpaceFormalCertificatekr
   },
   {
+    path: '/MySpace_formal_certificateeng',
+    name: 'MySpace_formal_certificateeng',
+    component: MySpaceFormalCertificateeng
+  },
+  {
+    path: '/MySpace_formal_certificate_name_kor',
+    name: 'MySpace_formal_certificate_name_kor',
+    component: MySpaceFormalCertificateNameKor
+  },
+  {
+    path: '/MySpace_formal_certificateeng_pop',
+    name: 'MySpace_formal_certificateeng_pop',
+    component: MySpaceFormalCertificateengPop
+  },
+  {
+    path: '/MySpace_formal_requeststage',
+    name: 'MySpace_formal_requeststage',
+    component: MySpaceFormalRequeststage
+  },
+  {
+    path: '/MySpace_formal_attendingconfirmation',
+    name: 'MySpace_formal_attendingconfirmation',
+    component: MySpaceFormalAttendingconfirmation
+  },
+  {
+    path: '/MySpace_formal_changeplan',
+    name: 'MySpace_formal_changeplan',
+    component: MySpaceFormalChangeplan
+  },
+  {
+    path: '/regiclass_detailview_books',
+    name: 'regiclass_detailview_books',
+    component: regiclassDetailviewBooks
+  },
+  {
+    path: '/regiclass_detailview_licence',
+    name: 'regiclass_detailview_licence',
+    component: regiclassDetailviewLicence
+  },
+  {
+    path: '/regiclass_detailview_terms',
+    name: 'regiclass_detailview_terms',
+    component: regiclassDetailviewTerms
+  },
+  {
+    path: '/regiclass_register_option',
+    name: 'regiclass_register_option',
+    component: regiclassRegisterOption
+  },
+  {
+    path: '/regiclass_register_option_add',
+    name: 'regiclass_register_option_add',
+    component: regiclassRegisterOptionAdd
+  },
+  {
+    path: '/regiclass_register_option_add_02',
+    name: 'regiclass_register_option_add_02',
+    component: regiclassRegisterOptionAdd02
+  },
+  {
+    path: '/regiclass_register_option_02',
+    name: 'regiclass_register_option_02',
+    component: regiclassRegisterOption02
+  },
+  {
+    path: '/regiclass_register_option_03',
+    name: 'regiclass_register_option_03',
+    component: regiclassRegisterOption03
+  },
+  {
+    path: '/regiclass_register_terms_add',
+    name: 'regiclass_register_terms_add',
+    component: regiclassRegisterTermsAdd
+  },
+  {
+    path: '/regiclass_register_terms',
+    name: 'regiclass_register_terms',
+    component: regiclassRegisterTerms
+  },
+  {
     path: '/Drawer_alerm',
     name: 'Drawer_alerm',
     component: DrawerAlerm
@@ -1884,6 +2028,56 @@ var rootRoutes = [
     component: AtormFaqDetail
   },
   {
+    path: '/Atorm_itemfactory_url1',
+    name: 'Atorm_itemfactory_url1',
+    component: Atormitemfactoryurl1
+  },
+  {
+    path: '/Atorm_itemfactory_url2',
+    name: 'Atorm_itemfactory_url2',
+    component: Atormitemfactoryurl2
+  },
+  {
+    path: '/Atorm_itemfactory_video1',
+    name: 'Atorm_itemfactory_video1',
+    component: Atormitemfactoryvideo1
+  },
+  {
+    path: '/Atorm_itemfactory_video2',
+    name: 'Atorm_itemfactory_video2',
+    component: Atormitemfactoryvideo2
+  },
+  {
+    path: '/Atorm_itemfactory_document1',
+    name: 'Atorm_itemfactory_document1',
+    component: Atormitemfactorydocument1
+  },
+  {
+    path: '/Atorm_itemfactory_audio1',
+    name: 'Atorm_itemfactory_audio1',
+    component: Atormitemfactoryaudio1
+  },
+  {
+    path: '/Atorm_itemfactory_audio2',
+    name: 'Atorm_itemfactory_audio2',
+    component: Atormitemfactoryaudio2
+  },
+  {
+    path: '/Atorm_itemfactory_document2',
+    name: 'Atorm_itemfactory_document2',
+    component: Atormitemfactorydocument2
+  },
+  {
+    path: '/Atorm_itemfactory_youtube1',
+    name: 'Atorm_itemfactory_youtube1',
+    component: Atormitemfactoryyoutube1
+  },
+  {
+    path: '/Atorm_itemfactory_youtube_search1',
+    name: 'Atorm_itemfactory_youtube_search1',
+    component: Atormitemfactoryyoutubesearch1
+  },
+  {
     path: '/Eduperson_login',
     name: 'Eduperson_login',
     component: EdupersonLogin
@@ -1929,14 +2123,24 @@ var rootRoutes = [
     component: EdupersonStudycurrentAutonomy
   },
   {
-    path: '/Eduperson_Operation_Autonomy_Control',
-    name: 'Eduperson_Operation_Autonomy_Control',
+    path: '/Eduperson_operation_autonomy_control',
+    name: 'Eduperson_operation_autonomy_control',
     component: EdupersonOperationAutonomyControl
   },
   {
-    path: '/Eduperson_Operation_Set_Control',
-    name: 'Eduperson_Operation_Set_Control',
+    path: '/Eduperson_operation_set_control',
+    name: 'Eduperson_operation_set_control',
     component: EdupersonOperationSetControl
+  },
+  {
+    path: '/Eduperson_operation_elearning_control',
+    name: 'Eduperson_operation_elearning_control',
+    component: EdupersonOperationElearningControl
+  },
+  {
+    path: '/Eduperson_statement_searchword',
+    name: 'Eduperson_statement_searchword',
+    component: Edupersonstatementsearchword
   },
   {
     path: '/etc_Terms',
@@ -2142,6 +2346,26 @@ var rootRoutes = [
     path: 'BPO_Login_password_notview',
     name: 'BPO_Login_password_notview',
     component: BPOLoginpasswordnotview
+  },
+  {
+    path: 'BPO_subjectlist_detail_cancel_setdate',
+    name: 'BPO_subjectlist_detail_cancel_setdate',
+    component: BPOsubjectlistdetailcancelsetdate
+  },
+  {
+    path: 'BPO_subjectlist_detail_supplementary_setdate',
+    name: 'BPO_subjectlist_detail_supplementary_setdate',
+    component: BPOsubjectlistdetailsupplementarysetdate
+  },
+  {
+    path: 'BPO_subjectlist_detail_shorten_setdate',
+    name: 'BPO_subjectlist_detail_shorten_setdate',
+    component: BPOsubjectlistdetailshortensetdate
+  },
+  {
+    path: 'BPO_subjectlist_detail_extend_setdate',
+    name: 'BPO_subjectlist_detail_extend_setdate',
+    component: BPOsubjectlistdetailextendsetdate
   }
 ]
 export default rootRoutes

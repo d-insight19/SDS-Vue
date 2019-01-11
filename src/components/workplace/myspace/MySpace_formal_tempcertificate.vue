@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery MySpace">
+      <div id="container" class="mediaquery MySpace gray_bg">
 
         <!-- header -->
         <div id="header" class="fixed">
@@ -18,7 +18,7 @@
 
           <div class="cell">
             <div class="inner">
-                <img src="@/assets/img/thum_no_L.jpg" class="width100" alt="">
+                <img src="@/assets/img/thum_no_L.jpg" class="w100p" alt="">
             </div>
           </div>
 
@@ -40,22 +40,10 @@ export default {
   /* vue data */
   data () {
     return {
-      langFlag1: false,
-      langFlag2: false,
-      langFlag3: false
     }
   },
   /* vue function */
   methods: {
-    changeLang1 () {
-      this.langFlag1 = !this.langFlag1
-    },
-    changeLang2 () {
-      this.langFlag2 = !this.langFlag2
-    },
-    changeLang3 () {
-      this.langFlag3 = !this.langFlag3
-    }
   }
 }
 </script>

@@ -24,7 +24,7 @@
         </tr>
       </table>
     </div>
-    <div class="tabCnt dpb pt0 mt26" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
+    <div class="tabCnt dpb pt0 mt26" ><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
     <!-- list -->
         <p class="txt-tit mb16">오류 결과 정보 (총 20건)</p>
         <ul class="multiList type2">

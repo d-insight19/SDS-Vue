@@ -573,8 +573,15 @@
 #container.atorm .nolistWrap.type2 .info1{font-size:map-get($font-size, font_16);line-height:24px;letter-spacing: -0.48px;color:rgba(0,0,0,0.80);font-weight: 500;}
 #container.atorm .nolistWrap.type2 .info2{font-size:map-get($font-size, font_14);line-height:20px;letter-spacing: -0.42px;color:rgba(0,0,0,0.50);margin-top:2px;}
 #container.atorm .nolistWrap.type2 .info_btn{width:121px;height:38px;color:#fff;font-weight: 500;border-radius: 100px;display:inline-block;line-height: 38px;margin-top:14px;}
+#container.atorm .btn16 {font-size:map-get($font-size, font_16); position: absolute; right:16px; top: calc(50% - 14px);}
+#container.atorm .tit_desc {font-size:map-get($font-size, font_14);color:rgba(0,0,0,0.65);line-height:21px;letter-spacing: -0.42px;}
+#container.atorm .tit_essential {background: url("../img/ic_essential_red_10.png") no-repeat right 1px; padding-right:11px }
+#container.atorm .label-tit14 {width:auto}
+#container.atorm .text_limit {font-family: 'Roboto'; color:rgba(0,0,0,0.5); line-height: 29px; letter-spacing: -0.42px}
+#container.atorm .file_name {font-size:map-get($font-size, font_14);line-height:29px;letter-spacing: -0.42px;color:rgba(0,0,0,0.65); margin-top:2px}
+#container.atorm button.sm.add {color:#000; font-weight: 500}
 
-// ATROM 아이템팩퇴
+// ATROM 아이템팩토리
 #container.atorm_itemfactory .singleList.type_1 .ico.item_left{left:0px;width:20px;height:20px;background-position:0px 0px;margin-top: 0px;transform: translateY(-50%);}
 #container.atorm_itemfactory .singleList.type_1 .ico.next_16{width:16px;height:16px;background-position:0px 0px;} 
 #container.atorm_itemfactory .singleList.type_1 li a{ padding: 15px 30px 15px 28px;}
@@ -591,6 +598,15 @@
 #container.atorm_itemfactory .itemList.type1 .labelRdo.multi{padding-left:30px;}
 #container.atorm_itemfactory .itemList.type1 .labelRdo input.rdo + .ico{display:none;}
 #container.atorm_itemfactory .itemList.type2 .labelRdo.multi{padding-left:74px;}
+#container.atorm_itemfactory .imgbox_wrap {overflow: hidden;}
+#container.atorm_itemfactory .imgbox_wrap .thumnail {float:left; display:inline-block; width: 100px; height:100px}
+#container.atorm_itemfactory .imgbox {border:#e3e3e3 1px solid; border-left:none; padding:27px 16px; height:100px; display:inline-block; width: calc(100% - 100px);}
+#container.atorm_itemfactory #content .inner.pd22{padding-top:22px}
+#container.atorm_itemfactory .multiList.type3 > li{border-top:none; padding:20px 0 }
+#container.atorm_itemfactory .multiList.type3 .ico.deletemode_20{position: absolute;top:50%; right:0; transform: translateY(-50%)} 
+#container.atorm_itemfactory .multiList.type2 > li{border:none }
+#container.atorm_itemfactory .search-wrapper {padding:2px 0 15px; border-bottom:1px solid #e3e3e3;}
+
 
 // ATORM 과정제작
 #container.atorm .product_wrap{margin-top: -24px;background: #f2f2f2;height:calc(100vh - 117px);margin-left: -18px;margin-bottom: -53px;width: calc(100% + 36px);}
@@ -711,7 +727,11 @@ table td.pb10{padding-bottom: 10px;}
 .chip.agree-x{color:map-get($contents_colors, type_1 );border-color:map-get($contents_colors, type_1 );}
 .chip.type2 {font-weight: 500;  font-size:map-get($font-size , font_11);display: inline-block;margin-bottom: 0px;height: 22px;border-radius: 16px;
     padding: 3px 10px;line-height: 15px;}
-
+.chip.color1 {border-color:map-get($contents_colors, type_1 ); color:map-get($contents_colors, type_1 );}
+.chip.color2 {border-color:map-get($contents_colors, type_2 ); color:map-get($contents_colors, type_2 );}
+.chip.color3 {border-color:map-get($contents_colors, type_3 ); color:map-get($contents_colors, type_3 );}
+.chip.color4 {border-color:map-get($contents_colors, type_4 ); color:map-get($contents_colors, type_4 );}
+.chip.color4 {border-color:map-get($contents_colors, type_5 ); color:map-get($contents_colors, type_5 );}
 
 /*댓글 공통*/
 .reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; }
@@ -809,7 +829,7 @@ table td.pb10{padding-bottom: 10px;}
 #header.bg-gr .h-tit5 span:nth-child(2){vertical-align: text-bottom;}
 #header.bg-gr .h-tit1{font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
 #header.bg-gr {background:#efeff6; height:auto; padding:56px 0 0 0;}
-#header .num{ font-weight: 400; display: inline-block;font-size:map-get($font-size, font_17);line-height: 28px; letter-spacing: -0.85px; vertical-align: middle; }
+#header .num{ font-family: 'Roboto' ; font-weight: 400; display: inline-block;font-size:map-get($font-size, font_17);line-height: 28px; letter-spacing: -0.85px; vertical-align: middle; }
 #header.wh{color: white;}
 #header .page-btn{ position: absolute; right: 14px;top: 0;}
 #container.study_survey_sub .h-tit5{font-weight:500; font-size:map-get($font-size, font_18);line-height: 25px; letter-spacing: -0.54px;margin-bottom:10px;}
@@ -1046,6 +1066,9 @@ label.rdo .label{position: relative;}
 // 토론 인트로
 #container.study_debate.bg {background: url("../img/img_debate_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 
+// poll 인트로
+#container.study_poll.bg {background: url("../img/img_poll_intro_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
+
 
 
 // 의견공유 서술형
@@ -1221,6 +1244,65 @@ label.rdo .label{position: relative;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 수강신청 regiclass_detailview_licence
+// #container.Regiclass #header .hide-inner p.h-tit1 {font-size: map-get($font-size , font_22);line-height: 21px;letter-spacing: -1.1px; font-weight:600 !important; }
+// #container.Regiclass #header .hide-inner p.h-tit5 {font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px; font-weight:400; }
+// #container.Regiclass .label-tit-16 {font-size: map-get($font-size , font_16);line-height: 25px;letter-spacing: -0.48px;font-weight:600;}
+// #container.Regiclass .label-tit-15 {font-size: map-get($font-size , font_15);line-height: 21px;letter-spacing: -0.45px;font-weight:500;}
+// #container.Regiclass table tr td{padding-bottom:5px;}
+// #container.Regiclass table tr td.l-txt{font-size: map-get($font-size , font_15);line-height: 22px;letter-spacing: -0.75px;font-weight:500;}
+// #container.Regiclass table tr td.r-txt{font-size: map-get($font-size , font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8)}
+// #container.Regiclass .book-wrap {margin-right:15px;}
+// #container.Regiclass table.book-tb {width:51.5%}
+// #container.Regiclass table.book-tb tr td.book-tit{color:rgba(0,0,0,1.0);font-size: map-get($font-size , font_18);line-height: 24px;letter-spacing: -0.54px;font-weight:600;}
+// #container.Regiclass table.book-tb tr td{padding-bottom:3px;font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;color:rgba(0,0,0,0.80)}
+// #container.Regiclass table.book-tb tr td:nth-child(1){color:rgba(0,0,0,0.65)}
+
+// 수강형태 선택 및 실명인증 regiclass_register_option
+#container.regiclass .stepper .txt-desc {height:auto;}
+#container.regiclass .stepper {margin-bottom:0;}
+#container.regiclass .thumList .tit {margin-bottom:6px; font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;font-weight:500;}
+#container.regiclass .thumList .date {font-family:'roboto';font-size: map-get($font-size , font_13);line-height: 24px;letter-spacing: -0.39px;font-weight:400;color:rgba(0,0,0,0.8);}
+#container.regiclass .thumList .info li{font-size: map-get($font-size , font_15);line-height: 24px;letter-spacing: -0.45px;font-weight:400;}
+#container.regiclass .thumList .info li + li::before{display:none;}
+#container.regiclass .thumList .info-num{font-family:'roboto';}
+#container.regiclass .rdoSelBox .labelRdo .rdo:checked + .ico + .label{font-weight:600;}
+#container.regiclass .thumList .info-txt{color:rgba(0,0,0,0.65);}
+#container.regiclass .label-tit-18 { display:inline-block;font-size: map-get($font-size , font_18);line-height: 21px;letter-spacing: -0.54px;font-weight:500; margin-bottom:12px;}
+#container.regiclass .label-tit-14 { display:inline-block;font-size: map-get($font-size , font_14);line-height: 21px;letter-spacing: -0.42px; margin-bottom:8px;}
+#container.regiclass .InfoChK-resultTxt{font-size: map-get($font-size , font_13);line-height: 16px;letter-spacing: -0.39px; margin-top:6px; }
+#container.regiclass .labelChk .label{font-size: map-get($font-size , font_16);line-height: 21px;letter-spacing: -0.48px; color:rgba(0,0,0,1.0)}
+#container.regiclass .labelChk .ico.gray_next{position: absolute;top: 50%;right: 10px;width: 16px;height: 16px;margin-top: -8px;}
+#container.regiclass .img-box{position:relative; width:100%; height:138px; margin-bottom:8px; background-color:#eaeaea; }
+#container.regiclass .img-box .ico.close_20{position:absolute; top:5px; right:8px;}
+
+
+
+
 // 운영자 문의사항 - Eduperson_control
 .dot{ display:inline-block; width: 8px; height:8px; background:#eee; border-radius: 100%; }
 .chart-txt{ font-size:map-get($font-size , font_14);line-height:29px;}
@@ -1246,6 +1328,7 @@ label.rdo .label{position: relative;}
 .bgc-2{background-color:map-get($contents_colors, type_2 ) !important;}
 .bgc-3{background-color:map-get($contents_colors, type_3 ) !important;}
 .bgc-4{background-color:map-get($contents_colors, type_4 ) !important;}
+.bgc-5{background-color:map-get($contents_colors, type_5 ) !important;}
 .bgc-blk{background-color:black !important;}
 .w33p{width:33% !important;}
 
@@ -1279,15 +1362,25 @@ label.rdo .label{position: relative;}
 #container.Eduperson_Operation .line01{margin-top:19px; margin-bottom:18px; border-color:#999999}
 #container.Eduperson_Operation li.rating-list:nth-last-child(1){padding-bottom:0 !important;}
 #container.Eduperson_Operation .rating-tit{font-size:map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.8px;}
-#container.Eduperson_Operation .rating-num{font-size:map-get($font-size, font_20);line-height: 26px;letter-spacing: -1.0px;}
+#container.Eduperson_Operation .rating-num{font-family: 'Roboto' ; font-size:map-get($font-size, font_22);line-height: 29px;letter-spacing: -1.1px;}
+#container.Eduperson_Operation .rating-num-2{font-family: 'Roboto' ; font-size:map-get($font-size, font_20);line-height: 26px;letter-spacing: -1.0px;}
 #container.Eduperson_Operation .rating-txt{font-size:map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.7px;}
-#container.Eduperson_Operation .star-group{vertical-align: super;}
+#container.Eduperson_Operation .rating-txt-2{font-size:map-get($font-size, font_12);line-height: 18px;letter-spacing: -0.6px;}
+#container.Eduperson_Operation .star-group{ vertical-align: 10%;margin-right: 4px; margin-left:8px;}
 
 .detail_date:after{clear:both;display:block;content:'';}
 
+// 수직그래프 operation 
+#container.Eduperson_Operation .progBox_wrap.vertical{display:table;table-layout: fixed;width:100%;height:150px; margin:0 auto;  margin-bottom:56px;}
+#container.Eduperson_Operation .progBox_wrap.vertical li{position:relative;display:table-cell;vertical-align:bottom; height:150px;}
+#container.Eduperson_Operation .progBox_wrap.vertical li span{display: block;background: rgba(#d1ecfa, .75);width:24px;margin:0 auto;border-radius:0px;}
+#container.Eduperson_Operation .progBox_wrap.vertical li span.bar1 {background-color:map-get($contents_colors, type_1 );}
+#container.Eduperson_Operation .progBox_wrap.vertical li span.bar5 {background-color:map-get($contents_colors, type_5 );}
+#container.Eduperson_Operation .progBox_wrap.vertical li span:before{position:absolute;left:0;right:0;top:100%;padding:10px 0 0 0;display:block;text-align:center;content:attr(title);word-wrap: break-word;}
+#container.Eduperson_Operation .progBox_wrap.vertical li span:after{position:absolute;left:0;right:0;top:0%;padding:10px 0 0 0;display:block;text-align:center;content:attr(value);word-wrap: break-word;}
 
-
-
+#container.eduperson .eduperson_title.h58 {position: relative;height: 58px;} // 높이값으로인해 아래 tab이 클릭이잘안되는현상 임시수정
+#container.eduperson .thumList li:nth-last-child(1){border-bottom:none;}
 
 
 
@@ -1342,12 +1435,12 @@ label.rdo .label{position: relative;}
 #container.drawer .id_info .btn.guide { font-size: map-get($font-size, font_11); color:map-get($mono_colors, mono_80); letter-spacing: -0.33px; line-height: 21px; vertical-align: middle;font-weight: 400;}
 #container.drawer .multiList.type2 .id_info button {position: absolute; right: 0; bottom:19px}
 #container.drawer .multiList.type2 input {margin-top:8px}
-#container.drawer .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px;}
-#container.drawer .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
-#container.drawer .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
-#container.drawer .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
-#container.drawer .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px;}
-#container.drawer .label-tit20{ font-size:map-get($font_size, font_20); line-height: 20px; letter-spacing: -0.6px; margin-bottom: 13px;}
+#container .label-tit13{ font-size:map-get($font_size, font_13); font-weight: 500; letter-spacing: -0.45px; width:50px; margin-bottom: 0px;}
+#container .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
+#container .label-tit15{ font-size:map-get($font_size, font_15); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
+#container .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
+#container .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px;}
+#container .label-tit20{ font-size:map-get($font_size, font_20); line-height: 27px; letter-spacing: -0.6px; margin-bottom: 13px;}
 #container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px; }
 #container.drawer .labelChk {width:auto}
 #container.drawer.extrainfo_edit .multiList.type1 > li.title_line {padding:20px 0 8px}
@@ -1524,23 +1617,33 @@ label.rdo .label{position: relative;}
 
 // 설문조사 결과
 .progBox_wrap {font-size:map-get($font_size, font_14); }
-.progBox_wrap li {margin-bottom:14px}
+.progBox_wrap > li {margin-bottom:14px}
 .progBox_wrap .progBox {margin-top:11px; }
 .progBox_wrap .progBox .bar1 {background-color:map-get($contents_colors, type_1 );}
+.progBox_wrap .progBox .bar2 {background-color:map-get($contents_colors, type_2 );}
+.progBox_wrap .progBox .bar3 {background-color:map-get($contents_colors, type_3 );}
+.progBox_wrap .progBox .bar4 {background-color:map-get($contents_colors, type_4 );}
 .progBox_wrap .progBox .bar5 {background-color:map-get($contents_colors, type_5 );}
 #container.board.request h2.label-tit16 {width:100%; font-size:map-get($font_size, font_16); font-weight: 500; margin:26px 0 20px;}
 .progBox_wrap .desc {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); margin-top:7px}
 #container.board .divide_line { margin:26px 0 }
 .diagram_wrap .diagram {margin:0 auto; width:180px; height:180px; background-color: #eee; border-radius: 100%}
+.diagram_wrap .diagram2 {margin:0 auto; width:180px; height:180px;}
 .diagram_wrap {padding:0 32px}
 .diagram_wrap li { position:relative; border-bottom:#e3e3e3 1px solid; padding:10px 0 10px 20px}
 .diagram_wrap li::before{display: inline-block; position: absolute; top:16px; left:0; z-index: 2; content: ''; width:8px; height: 8px; background-color:map-get($contents_colors, type_1 ); border-radius: 100%}
-.diagram_wrap li.type4::before{ background-color:map-get($contents_colors, type_4 );}
-.diagram_wrap li.type5::before{ background-color:map-get($contents_colors, type_5 );}
+.diagram_wrap li.type1::before{ background-color:map-get($contents_colors, type_1 );}
 .diagram_wrap li.type2::before{ background-color:map-get($contents_colors, type_2 );}
 .diagram_wrap li.type3::before{ background-color:map-get($contents_colors, type_3 );}
+.diagram_wrap li.type4::before{ background-color:map-get($contents_colors, type_4 );}
+.diagram_wrap li.type5::before{ background-color:map-get($contents_colors, type_5 );}
 .diagram_wrap .percent {font-family: 'Roboto'; font-size:map-get($font_size, font_15); line-height: 22px}
 .diagram_wrap .percent .num {font-size:map-get($font_size, font_22); line-height: 22px}
+.diagram_wrap.square li {border-bottom: 0 none; padding:5px 0 5px 20px}
+.diagram_wrap.square li::before {border-radius:0; width: 14px; height: 14px; top: 13px;}
+.diagram_wrap.type2{padding:0;}
+.diagram_wrap.type2 li{border-bottom: 0 none; display: inline-block; padding:3px 10px;}
+.diagram_wrap.type2 li::before{top: 9px;}
 #container.board.request .singleList.type_1 li { border-top:#ebebeb 1px solid; border-bottom:0;}
 #container.board.request .singleList.type_1 li a {line-height: 20px; font-size:map-get($font_size, font_14); color:#1a1a1a; padding:15px 0} 
 #container.board.request a.respondent_num {display: block; padding-bottom:22px}
@@ -1650,7 +1753,18 @@ label.rdo .label{position: relative;}
 #container.drawer.bpo_classstatus p.hr {margin:18px -24px 22px}
 #container.login.bpo .ico.eye{width:22px; height:22px; background:url("../img/ic_password_view.png") no-repeat;background-size:cover; position:absolute; right:0; bottom:10px}
 #container.login.bpo .ico.eye_slash{width:22px; height:22px; background:url("../img/ic_password_notview.png") no-repeat;background-size:cover; position:absolute; right:0; bottom:10px}
-
+#container.login.bpo .search-wrapper .eye:after {content: "";display: block;width: 24px;height: 24px;position: absolute;z-index:1;right: 13px;top: 0;bottom: 0;padding: 2px;text-align: center;color: #000;font-weight: normal;font-size: 12px;cursor: pointer;-webkit-appearance: none;border-radius:10px;background:url("../img/ic_password_view.png") no-repeat;background-size:cover}
+input[type="text"]:not(:invalid) ~ .eye,
+input[type="password"]:not(:invalid) ~ .eye,
+input[type="search"]:not(:invalid) ~ .eye {
+  display: none;
+}
+#container.login.bpo .search-wrapper .eye.eye_slash:after {content: "";display: block;width: 24px;height: 24px;position: absolute;z-index:1;right: 13px;top: 0;bottom: 0;padding: 2px;text-align: center;color: #000;font-weight: normal;font-size: 12px;cursor: pointer;-webkit-appearance: none;border-radius:10px;background:url("../img/ic_password_notview.png") no-repeat;background-size:cover}
+input[type="text"]:not(:invalid) ~ .eye.eye_slash,
+input[type="password"]:not(:invalid) ~ .eye.eye_slash,
+input[type="search"]:not(:invalid) ~ .eye.eye_slash {
+  display: none;
+}
 #container.bpo_shorten .title_line span.title_txt {color:#000; font-weight: 500}
 #container.bpo_shorten .title_line .fr.date {margin-top:4px; letter-spacing: -0.42px}
 #container.drawer.bpo.sms .title_line { font-size:map-get($font_size, font_16); color:#000; font-weight: 500 }
@@ -1674,28 +1788,6 @@ label.rdo .label{position: relative;}
 // 김현미 작업
 // 메인
 // common.css 에 추가
-.mb0{margin-bottom: 0px !important;}
-.mb5{margin-bottom: 5px !important;}
-.mb8{margin-bottom: 8px !important;}
-.mb10{margin-bottom: 10px !important;}
-.mb13{margin-bottom: 13px !important;}
-.mb14{margin-bottom: 14px !important;}
-.mb15{margin-bottom: 15px !important;}
-.mb18{margin-bottom: 18px !important;}
-.mb20{margin-bottom: 20px !important;}
-.mb25{margin-bottom: 25px !important;}
-.mb30{margin-bottom: 25px !important;}
-.mr15{margin-right: 15px !important;}
-.ml-18 {margin-left:-18px !important;}
-.mr-18 {margin-right:-18px !important;}
-.pa0{padding:0px !important;}
-.pa15{padding:15px !important;}
-.pa25{padding:25px !important;}
-.pt0 {padding-top:0px !important;}
-.pt10{padding-top:10px !important;}
-.pl18 {padding-left:18px !important;}
-.pl25 {padding-left:25px !important;}
-.pr18 {padding-right:18px !important;}
 .mono_100 {color: map-get($mono_colors, mono_100) !important;}
 .mono_80 {color: map-get($mono_colors, mono_80) !important;}
 .mono_65 {color: map-get($mono_colors, mono_65) !important;}
@@ -1920,7 +2012,7 @@ label.rdo .label{position: relative;}
 .search #header .ulList.type1 .in-chk .labelChk2 {margin-top:0px;}
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
 
-.MySpace {background-color: map-get($bg_colors , BG_1);}
+.MySpace.gray_bg {background-color: map-get($bg_colors , BG_1);}
 .MySpace .thumList.type4 .text {background-color: #fff;}
 .MySpace .thumList.type4 .tit {height: auto;}
 .MySpace .moredot{width:20px;height:20px;position:absolute;top:26px;right:16px;background: url("../img/ic_moredots_wh_20.png") no-repeat;}
@@ -1933,3 +2025,16 @@ label.rdo .label{position: relative;}
 .MySpace .cardList {background:transparent !important;}
 .MySpace .cardList > li {background:#fff;}
 .MySpace .cardList.type2 .tit {width: auto;}
+
+//regiclass
+.regiclass #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
+.regiclass #header .hide_header p {white-space: normal !important;}
+.regiclass #header dl{display: table; line-height: 140%;}
+.regiclass #header dt{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_65); width: 50px; display: table-cell; }
+.regiclass #header dd{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_80); display: table-cell;}
+.regiclass #header .book {position: absolute; top: 74px; left: 22px;}
+.regiclass #header .book img {width: 106px; height: 159px;}
+.regiclass dl{display: table; line-height: 200%;}
+.regiclass dt{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_100); width: 70px; display: table-cell; font-weight: 500;}
+.regiclass dd{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_80); display: table-cell;}
+.regiclass .underline {border-bottom: 1px solid #999; padding-bottom: 10px;}

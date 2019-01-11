@@ -12,8 +12,8 @@
           </div>  
           <div class="header_inner line2 tabMenu">
               <ul class="fixTab">
-                <li :class="{'on': tabIdx == 1}" @click="onClick(1)"><a href="#tab1">오류 등록</a></li><!-- selected class "on" -->
-                <li :class="{'on': tabIdx == 2}" @click="onClick(2)"><a href="#tab2">오류 결과</a></li>
+                <li :class="{'on': tabIdx == 1}" @click.prevent="onClick(1)"><a href="">오류 등록</a></li><!-- selected class "on" -->
+                <li :class="{'on': tabIdx == 2}" @click.prevent="onClick(2)"><a href="">오류 결과</a></li>
               </ul>
           </div>  
           <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
@@ -65,8 +65,8 @@ export default {
   data () {
     return {
       headerType: 2,
-      tabIdx: 1,
-      component: 'Study_05_etc_pilottest_01'
+      tabIdx: 2,
+      component: 'Study_05_etc_pilottest_02'
     }
   },
   /* vue function */

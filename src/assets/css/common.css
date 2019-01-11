@@ -100,6 +100,7 @@
 .ico.check_16_blue {width:16px; height:16px; background: url("../img/ic_check_blue_16.png")}
 .ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}
 .ico.deletemode_20_black {width:20px; height:20px; background: url("../img/ic_deletemode_20_black.png")}
+.ico.deletemode_20 {width:20px; height:20px; background: url("../img/ic_deletemode_20.png"); background-size: cover}
 
 /* 추가 이미지 2018-12-21*/
 .ico.mark-o.sm{width: 38px;height: 38px;position: absolute;background: url("../img/ic_mark_o_small.png") no-repeat;}
@@ -141,6 +142,8 @@
 .ico.star_20{width:20px;height:20px;background: url("../img/ic_rate_solid_grey_20.png") no-repeat;}
 .ico.star_30{width:30px;height:30px;background: url("../img/ic_rate_solid_grey_30.png") no-repeat;}
 
+/*추가이미지 2019-1-11*/
+.ico.close_20{width:20px; height:20px; background: url("../img/ic_close_line_20.png") ;background-size: cover;}
 
 /* ico btn */
 .btn.only .ico{display: block;}
@@ -197,7 +200,9 @@
 
 
 /* width */
-.w100p{width:100%;}
+.w100p{width:100% !important;}
+.w50p{width:50% !important;}
+.w48p{width:48% !important;}
 
 
 /* margin */
@@ -227,11 +232,19 @@
 .mt70{margin-top: 70px !important;}/*12월12일 추가*/
 
 .mb0{margin-bottom: 0px !important;}/*1월 3일 추가*/
+.mb5{margin-bottom: 5px !important;}
+.mb8{margin-bottom: 8px !important;}
+.mb10{margin-bottom: 10px !important;}
+.mb13{margin-bottom: 13px !important;}
+.mb14{margin-bottom: 14px !important;}
+.mb15{margin-bottom: 15px !important;}
 .mb16{margin-bottom: 16px !important;}
+.mb18{margin-bottom: 18px !important;}
 .mb20{margin-bottom: 20px !important;}
 .mb22{margin-bottom: 22px !important;}/*12월19일 추가*/
 .mb24{margin-bottom: 24px !important;}
 .mb26{margin-bottom: 26px !important;}
+.mb25{margin-bottom: 25px !important;}
 .mb28{margin-bottom: 28px !important;}/*12월14일 추가*/
 .mb30{ margin-bottom: 30px !important;}/*1월 3일 추가*/
 .mb32{margin-bottom: 32px !important;}
@@ -245,13 +258,29 @@
 .mr3{margin-right: 3px !important;}
 .mr4{margin-right: 4px !important;}/*1월 3일 추가*/
 .mr6{margin-right: 6px !important;}/*1월 3일 추가*/
+.mr15{margin-right: 15px !important;}
+
+.ml-18 {margin-left:-18px !important;}
+.mr-18 {margin-right:-18px !important;}
 
 .pt0{padding-top: 0 !important;}
+.pt10{padding-top:10px !important;}
 .pdt16{padding-top: 16px !important;}
 .pdt22{padding-top:22px !important;}
+.pb18{padding-bottom:18 !important;}
 .pdb0{padding-bottom:0 !important;}
 .pdb98{padding-bottom:98px !important;}
 .pdb14{padding-bottom: 14px !important;}
+.pdl0{padding-left: 0 !important;}
+
+.pl18 {padding-left:18px !important;}
+.pl25 {padding-left:25px !important;}
+.pr18 {padding-right:18px !important;}
+
+.pa0{padding:0px !important;}
+.pa15{padding:15px !important;}
+.pa25{padding:25px !important;}
+
 
 /* hr */
 .hr{height:8px; margin: 25px -24px; background:#f6f6f6;}

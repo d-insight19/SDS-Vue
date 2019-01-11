@@ -15,7 +15,7 @@
         <div id="content" class="list">
 
           <div class="mr-18 ml-18">
-            <img src="@/assets/img/thum_no_L.jpg" class="width100" alt="">
+            <img src="@/assets/img/thum_no_L.jpg" class="w100p" alt="">
           </div>
           
         </div>

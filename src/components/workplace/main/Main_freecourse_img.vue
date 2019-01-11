@@ -16,7 +16,7 @@
 
         <div id="content" class="etc">
             <div class="ml-18 mr-18">
-                <img src="@/assets/img/thum_no_L.jpg" class="width100" alt="">
+                <img src="@/assets/img/thum_no_L.jpg" class="w100p" alt="">
             </div>
           </div>
 

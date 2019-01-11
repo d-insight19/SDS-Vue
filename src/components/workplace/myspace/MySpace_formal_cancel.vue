@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery MySpace">
+      <div id="container" class="mediaquery MySpace gray_bg">
 
         <!-- header -->
         <div id="header" class="fixed tab">

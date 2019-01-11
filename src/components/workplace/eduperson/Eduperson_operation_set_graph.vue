@@ -43,8 +43,8 @@
             <span v-for="i in starList" :key="i.id" class="star-group">
               <span v-html="i.star"></span>
             </span>
-            <span class="rating-num">{{item.num}}</span>
-            <span class="rating-txt">점</span>
+            <span class="rating-num-2">{{item.num}}</span>
+            <span class="rating-txt-2">점</span>
           </span>
         </li>
       </ul>
