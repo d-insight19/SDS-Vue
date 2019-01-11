@@ -1456,8 +1456,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_video</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_video1' }">
+            Atorm_itemfactory_video1
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_itemfactory_video2' }">
+            Atorm_itemfactory_video2
           </router-link>
         </td>
         <td></td>
@@ -1473,8 +1476,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_document</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_document1' }">
+            Atorm_itemfactory_document1
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_itemfactory_document2' }">
+            Atorm_itemfactory_document2
           </router-link>
         </td>
         <td></td>
@@ -1503,8 +1509,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_audio</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_audio1' }">
+            Atorm_itemfactory_audio1
+          </router-link>,
+           <router-link :to="{ name: 'Atorm_itemfactory_audio2' }">
+            Atorm_itemfactory_audio2
           </router-link>
         </td>
         <td></td>
@@ -1520,8 +1529,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_youtube</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_youtube1' }">
+            Atorm_itemfactory_youtube1
           </router-link>
         </td>
         <td></td>
@@ -1537,8 +1546,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_youtube_search</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_youtube_search1' }">
+            Atorm_itemfactory_youtube_search1
           </router-link>
         </td>
         <td></td>
@@ -6887,8 +6896,20 @@
         <td>　</td>
         <td class="textL">06.regiclass_04.01.register_option</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_option' }">
+            regiclass_register_option
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_option_add' }">
+            regiclass_register_option_add
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_option_add_02' }">
+            regiclass_register_option_add_02
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_option_02' }">
+            regiclass_register_option_02
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_option_03' }">
+            regiclass_register_option_03
           </router-link>
         </td>
         <td></td>
@@ -6972,8 +6993,11 @@
         <td>　</td>
         <td class="textL">06.regiclass_04.02.01register_terms_add</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_terms_add' }">
+            regiclass_register_terms_add
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_terms' }">
+            regiclass_register_terms
           </router-link>
         </td>
         <td></td>

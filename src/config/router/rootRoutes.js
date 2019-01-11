@@ -250,6 +250,13 @@ import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changepla
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
 import regiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
+import regiclassRegisterOption from '~workplace/regiclass/regiclass_register_option'
+import regiclassRegisterOptionAdd from '~workplace/regiclass/regiclass_register_option_add'
+import regiclassRegisterOptionAdd02 from '~workplace/regiclass/regiclass_register_option_add_02'
+import regiclassRegisterOption02 from '~workplace/regiclass/regiclass_register_option_02'
+import regiclassRegisterOption03 from '~workplace/regiclass/regiclass_register_option_03'
+import regiclassRegisterTermsAdd from '~workplace/regiclass/regiclass_register_terms_add'
+import regiclassRegisterTerms from '~workplace/regiclass/regiclass_register_terms'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -389,6 +396,14 @@ import AtormFaqMain from '~workplace/atorm/Atorm_faq_main'
 import AtormFaqDetail from '~workplace/atorm/Atorm_faq_detail'
 import Atormitemfactoryurl1 from '~workplace/atorm/Atorm_itemfactory_url1'
 import Atormitemfactoryurl2 from '~workplace/atorm/Atorm_itemfactory_url2'
+import Atormitemfactoryvideo1 from '~workplace/atorm/Atorm_itemfactory_video1'
+import Atormitemfactoryvideo2 from '~workplace/atorm/Atorm_itemfactory_video2'
+import Atormitemfactorydocument1 from '~workplace/atorm/Atorm_itemfactory_document1'
+import Atormitemfactorydocument2 from '~workplace/atorm/Atorm_itemfactory_document2'
+import Atormitemfactoryaudio1 from '~workplace/atorm/Atorm_itemfactory_audio1'
+import Atormitemfactoryaudio2 from '~workplace/atorm/Atorm_itemfactory_audio2'
+import Atormitemfactoryyoutube1 from '~workplace/atorm/Atorm_itemfactory_youtube1'
+import Atormitemfactoryyoutubesearch1 from '~workplace/atorm/Atorm_itemfactory_youtube_search1'
 
 // 1번 영역
 var rootRoutes = [
@@ -1607,6 +1622,41 @@ var rootRoutes = [
     component: regiclassDetailviewTerms
   },
   {
+    path: '/regiclass_register_option',
+    name: 'regiclass_register_option',
+    component: regiclassRegisterOption
+  },
+  {
+    path: '/regiclass_register_option_add',
+    name: 'regiclass_register_option_add',
+    component: regiclassRegisterOptionAdd
+  },
+  {
+    path: '/regiclass_register_option_add_02',
+    name: 'regiclass_register_option_add_02',
+    component: regiclassRegisterOptionAdd02
+  },
+  {
+    path: '/regiclass_register_option_02',
+    name: 'regiclass_register_option_02',
+    component: regiclassRegisterOption02
+  },
+  {
+    path: '/regiclass_register_option_03',
+    name: 'regiclass_register_option_03',
+    component: regiclassRegisterOption03
+  },
+  {
+    path: '/regiclass_register_terms_add',
+    name: 'regiclass_register_terms_add',
+    component: regiclassRegisterTermsAdd
+  },
+  {
+    path: '/regiclass_register_terms',
+    name: 'regiclass_register_terms',
+    component: regiclassRegisterTerms
+  },
+  {
     path: '/Drawer_alerm',
     name: 'Drawer_alerm',
     component: DrawerAlerm
@@ -1980,6 +2030,46 @@ var rootRoutes = [
     path: '/Atorm_itemfactory_url2',
     name: 'Atorm_itemfactory_url2',
     component: Atormitemfactoryurl2
+  },
+  {
+    path: '/Atorm_itemfactory_video1',
+    name: 'Atorm_itemfactory_video1',
+    component: Atormitemfactoryvideo1
+  },
+  {
+    path: '/Atorm_itemfactory_video2',
+    name: 'Atorm_itemfactory_video2',
+    component: Atormitemfactoryvideo2
+  },
+  {
+    path: '/Atorm_itemfactory_document1',
+    name: 'Atorm_itemfactory_document1',
+    component: Atormitemfactorydocument1
+  },
+  {
+    path: '/Atorm_itemfactory_audio1',
+    name: 'Atorm_itemfactory_audio1',
+    component: Atormitemfactoryaudio1
+  },
+  {
+    path: '/Atorm_itemfactory_audio2',
+    name: 'Atorm_itemfactory_audio2',
+    component: Atormitemfactoryaudio2
+  },
+  {
+    path: '/Atorm_itemfactory_document2',
+    name: 'Atorm_itemfactory_document2',
+    component: Atormitemfactorydocument2
+  },
+  {
+    path: '/Atorm_itemfactory_youtube1',
+    name: 'Atorm_itemfactory_youtube1',
+    component: Atormitemfactoryyoutube1
+  },
+  {
+    path: '/Atorm_itemfactory_youtube_search1',
+    name: 'Atorm_itemfactory_youtube_search1',
+    component: Atormitemfactoryyoutubesearch1
   },
   {
     path: '/Eduperson_login',
