@@ -11,16 +11,6 @@
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             <p class="header_text  font_19"> 스크롤시가</p>
           </div>  
-          <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
-            <p>111</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-            <p>asdfasdf</p>
-          </div>
-
             <!-- s: 동영상 -->
             <div class="player_wrap">
                 <div class="player_inner">
@@ -236,6 +226,15 @@
                 <!-- e: btm_subtitle_area -->
             </div>
             <!-- e: 동영상-->
+            <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
+                <p>111</p>
+                <p>asdfasdf</p>
+                <p>asdfasdf</p>
+                <p>asdfasdf</p>
+                <p>asdfasdf</p>
+                <p>asdfasdf</p>
+                <p>asdfasdf</p>
+            </div>
             
         </div>
         <!-- //header -->
@@ -329,7 +328,8 @@ export default {
             { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
             { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
         ],
-        src: './static/movie/m010102.mp4', //동영상 src
+        // src: './static/movie/m010102.mp4', //동영상 src
+        src: require('@/assets/movie/m010102.mp4'), //동영상 src
         title: "Flowplayer", //콘텐츠 제목
         isSpeeds: true, //동영상 배속 사용여부
         speeds: [1, 2, 3], //동영상 배속 설정 값
@@ -394,11 +394,7 @@ export default {
         $('.fp-nextsec').click(function()
         {
             alert('30초다음!')
-        });
-        
-        /* 구간 반복 라인 */
-        $('.fp-timeline.fp-bar').append('<span class="timeline_block" style=\'left:50%\'></span>');
-        $('.fp-timeline.fp-bar').append('<span class="timeline_circle" style=\'left:25%\'></span>');
+        });        
         var $value = 0;
         $('.fp-repeat').click(function()
         {
