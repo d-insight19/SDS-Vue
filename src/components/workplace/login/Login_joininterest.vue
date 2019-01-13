@@ -19,7 +19,7 @@
                                 </div>
                             </div>
                                 <div class="progBox">
-                                <div class="bar clr2" style="width:50%"></div>
+                                <div class="bar clr2" style="width:83%"></div>
                             </div>
                             <p class="txt-desc">관심사를 선택하시면 회원님에게 맞는<br>다양한 학습강의들을 추천해드립니다.</p>
                         </div>
@@ -30,27 +30,27 @@
                             <li>
                                 <strong class="label-tit">관심 분야</strong>
                                 <div class="in-chk">
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">경영 / 리더십</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">금융</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">직무 / 자격</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">OPIC / 외국어</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">인문 / 교양 / 시사</span></label>
+                                    <slp-checkbox type="button">경영 / 리더십</slp-checkbox>
+                                    <slp-checkbox type="button">금융</slp-checkbox>
+                                    <slp-checkbox type="button">직무 / 자격</slp-checkbox>
+                                    <slp-checkbox type="button">OPIC / 외국어</slp-checkbox>
+                                    <slp-checkbox type="button">인문 / 교양 / 시사</slp-checkbox>
                                 </div>
                             </li>
                             <li>
                                 <strong class="label-tit">선호 과정</strong>
                                 <div class="in-chk">
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">이러닝</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">집합</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">지식</span></label>
+                                    <slp-checkbox type="button">이러닝</slp-checkbox>
+                                    <slp-checkbox type="button">집합</slp-checkbox>
+                                    <slp-checkbox type="button">지식</slp-checkbox>
                                 </div>
                             </li>
                             <li>
                                 <strong class="label-tit">선호 강의</strong>
                                 <div class="in-chk">
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">Instructor-led</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">Self-paced with labs</span></label>
-                                    <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">Self-paced</span></label>
+                                    <slp-checkbox type="button">Instructor-led</slp-checkbox>
+                                    <slp-checkbox type="button">Self-paced with labs</slp-checkbox>
+                                    <slp-checkbox type="button">Self-paced</slp-checkbox>
                                 </div>
                             </li>
                         </ul>
@@ -65,7 +65,7 @@
             <div class="fixBtmBtn">
                 <!-- disable 해제시 활성화 -->
                 <ul>
-                    <li><button type="button" disabled class="btn md">이전</button></li>
+                    <li><button type="button" class="btn md">이전</button></li>
                     <li><button type="button" disabled class="btn md clr1">다음</button></li>
                 </ul>
             </div>

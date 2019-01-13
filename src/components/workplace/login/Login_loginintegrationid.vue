@@ -10,51 +10,101 @@
             <div class="inner">
 
                 <h1 class="h-tit">통합 아이디 생성</h1>
-                <p class="txt-desc">아래 검색된 아이디중에서 통합 아이디로<br>사용하실 아이디를 선택 혹은 입력해주세요.</p>
+                <p class="txt-desc">통합회원으로 가입하시면  한번의 로그인으로<br>이러닝/집합, 오픽, 세리Pro 맞춤 서비스를<br>이용하실 수 있습니다.</p>
+                <p class="txt-desc">아래 검색된 아이디 중에서 통합아이디로<br>사용하실 아이디를 선택 또는 입력 해주십시오.</p>
                 
 
                 <!-- list -->
-                <ul class="ulList type2 mt36">
+                <ul class="ulList type2 mt40">
                   <li>
                     <strong class="label-tit">멀티캠퍼스 이러닝/집합</strong>
                     <ul class="ul-block">
-                      <li><label class="labelRdo"><input type="radio" class="rdo" name="test-rdo"><span class="ico"><span class="innerCircle"></span></span><span class="label">CRD_abc1234</span></label></li>
-                      <li><label class="labelRdo"><input type="radio" class="rdo" name="test-rdo"><span class="ico"><span class="innerCircle"></span></span><span class="label">QMultisos1</span></label></li>
-                      <li><label class="labelRdo"><input type="radio" class="rdo" name="test-rdo"><span class="ico"><span class="innerCircle"></span></span><span class="label">Multisos1</span></label></li>
+                      <li>
+                        <label class="labelRdo">
+                          <input type="radio" class="rdo" name="test-rdo">
+                          <span class="ico">
+                              <span class="innerCircle"></span>
+                          </span>
+                          <span class="label">CRD_abc1234</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="labelRdo">
+                          <input type="radio" class="rdo" name="test-rdo">
+                          <span class="ico">
+                              <span class="innerCircle"></span>
+                          </span>
+                          <span class="label">QMultisos1</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="labelRdo">
+                          <input type="radio" class="rdo" name="test-rdo">
+                          <span class="ico">
+                              <span class="innerCircle"></span>
+                          </span>
+                          <span class="label">Multisos1</span>
+                        </label>
+                      </li>
                     </ul>
                   </li>
                   <li>
                     <strong class="label-tit">OPIc</strong>
                     <ul class="ul-block">
-                      <li><label class="labelRdo"><input type="radio" class="rdo" disabled name="test-rdo"><span class="ico"><span class="innerCircle"></span></span><span class="label">미가입</span></label></li>
+                      <li>
+                        <label class="labelRdo">
+                          <input type="radio" disabled class="rdo" name="test-rdo">
+                          <span class="ico">
+                              <span class="innerCircle"></span>
+                          </span>
+                          <span class="label">미가입</span>
+                        </label>
+                      </li>
                     </ul>
                   </li>
                   <li>
                     <strong class="label-tit">SERI Pro</strong>
                     <ul class="ul-block">
-                      <li><label class="labelRdo"><input type="radio" class="rdo" name="test-rdo"><span class="ico"><span class="innerCircle"></span></span><span class="label">Defg90</span></label></li>
-                      <li><label class="labelRdo"><input type="radio" class="rdo" name="test-rdo"><span class="ico"><span class="innerCircle"></span></span><span class="label">Defg9Defg90</span></label></li>
+                      <li>
+                        <label class="labelRdo">
+                          <input type="radio" class="rdo" name="test-rdo">
+                          <span class="ico">
+                              <span class="innerCircle"></span>
+                          </span>
+                          <span class="label">Defg90</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="labelRdo">
+                          <input type="radio" class="rdo" name="test-rdo">
+                          <span class="ico">
+                              <span class="innerCircle"></span>
+                          </span>
+                          <span class="label">Defg9Defg90</span>
+                        </label>
+                      </li>
                     </ul>
                   </li>
                   <li>
                     <strong class="label-tit">통합 아이디 직접 입력</strong>
                     <div class="rdoInfoChK">
                       <label class="labelRdo">
-                        <input type="radio" class="rdo" name="test-rdo"><span class="ico"><span class="innerCircle"></span></span>
+                        <input type="radio" class="rdo" name="test-rdo">
+                        <span class="ico">
+                            <span class="innerCircle"></span>
+                        </span>
                       </label>
                       <div class="infoChk2">
-                        <input type="text" class="input underline" placeholder="6~16자의 영 소문자 및 숫자 ">
-                        <button type="button" class="btn sm">중복확인</button>
+                        <slp-text-field placeholder="6~16자의 영 소문자 및 숫자" classObject="underline" ></slp-text-field>
+                        <button type="button" class="btn xxs">중복확인</button>
                       </div>
                       <!-- 아이디 체크시 결과 텍스트 -->
-                      <p class="succ-msg">사용 가능한 아이디입니다.</p>
-                      <p class="error-msg" style="display:2e;">이미 사용중인 아이디입니다.</p>
+                      <p class="InfoChK-resultTxt succ">사용 가능한 아이디입니다.</p>
+                      <p class="InfoChK-resultTxt err" style="display:2e;">이미 사용중인 아이디입니다.</p>
                       <!-- //아이디 체크시 결과 텍스트 -->
                     </div>
                   </li>
                 </ul>
-                <!-- //list -->
-
 
             </div>
           </div>

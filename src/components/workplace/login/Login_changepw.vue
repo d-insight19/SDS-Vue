@@ -30,24 +30,42 @@
                 <ul class="ulList type2">
                     <li>
                         <strong class="label-tit">현재 비밀번호</strong>
-                        <input type="password" class="input err" placeholder="현재 비밀번호 입력">
-                        <!-- 아이디 체크시 결과 텍스트 -->
-                        <p class="InfoChK-resultTxt err">비밀번호를 입력해 주세요.</p>
-                        <!-- //아이디 체크시 결과 텍스트 -->
+                        <!-- 추가되는 새로운 비밀번호 컴포넌트로 교체해야함-->
+                        <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
+                        <div class="intSchBox">
+                            <div class="search-wrapper">
+                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <a href="#" class="btn eye r12" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye r12 eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <strong class="label-tit">새 비밀번호</strong>
-                        <input type="password" class="input err" placeholder="6~16자의 영소문자, 숫자 조합">
-                        <!-- 아이디 체크시 결과 텍스트 -->
-                        <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p>
-                        <!-- //아이디 체크시 결과 텍스트 -->
+                        <!-- 추가되는 새로운 비밀번호 컴포넌트로 교체해야함-->
+                        <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
+                        <div class="intSchBox">
+                            <div class="search-wrapper">
+                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <a href="#" class="btn eye r12" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye r12 eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <strong class="label-tit">새 비밀번호 확인</strong>
-                        <input type="password" class="input err" placeholder="6~16자의 영소문자, 숫자 조합">
-                        <!-- 아이디 체크시 결과 텍스트 -->
-                        <p class="InfoChK-resultTxt err">비밀번호가 맞지 않습니다.</p>
-                        <!-- //아이디 체크시 결과 텍스트 -->
+                        <!-- 추가되는 새로운 비밀번호 컴포넌트로 교체해야함-->
+                        <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
+                        <div class="intSchBox">
+                            <div class="search-wrapper">
+                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <a href="#" class="btn eye r12" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye r12 eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <!-- //list -->

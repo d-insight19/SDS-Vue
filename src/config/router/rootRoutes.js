@@ -71,6 +71,7 @@ import LoginFindpwEmail from '~workplace/login/Login_findpwemail'
 import LoginCertifyPhone from '~workplace/login/Login_certifyphone'
 import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
 import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
+import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
 
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
@@ -762,6 +763,11 @@ var rootRoutes = [
     path: '/Login_certifyemail',
     name: 'Login_certifyemail',
     component: LoginCertifyEmail
+  },
+  {
+    path: '/Login_certifyemail_corporate',
+    name: 'Login_certifyemail_corporate',
+    component: LoginCertifyEmailCorporate
   },
   {
     path: '/Study_dictionary',

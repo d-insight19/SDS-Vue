@@ -7,7 +7,7 @@
         <!-- header -->
         <div id="header">
           <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-          <p class="header_text font_18"></p>
+          <p class="header_text font_18">이메일 인증</p>
         </div>
         <!-- //header -->
         
@@ -17,15 +17,22 @@
                 <!-- title -->
                 <div class="titleWrap">
                     <h1 class="h-tit1">이메일 인증</h1>
-                    <p class="txt-desc">입력한 이메일로 인증번호를 발송합니다.</p>
+                    <p class="txt-desc">이메일 인증을 하기 위해서는 콜센터로 문의 후<br>휴대폰 번호를 등록해주세요.</p>
                 </div>
                 <!-- //title -->
 
                 <!-- list -->
                 <ul class="ulList type1">
                     <li>
+                        <strong class="label-tit">법인 휴대폰 번호</strong>
+                        <slp-text-field placeholder="법인 휴대폰 번호" error message="휴대폰 번호를 입력해주세요."></slp-text-field>
+                    </li>
+                    <li>
                         <strong class="label-tit">이름</strong>
-                        <slp-text-field placeholder="이름 입력" error message="이름을 입력해주세요."></slp-text-field>
+                        <div class="infoChk">
+                            <slp-text-field placeholder="이름 입력" error message="이름을 입력해주세요."></slp-text-field>
+                            <button type="button" class="btn sm fwr">중복확인</button>
+                        </div>
                     </li>
                     <li>
                         <strong class="label-tit">이메일</strong>
@@ -77,7 +84,7 @@
 
 <script>
 export default {
-  name: 'Login_certifyemail',
+  name: 'Login_certifyemail_corporate',
   /* vue lifecycle */
   created () {
   },

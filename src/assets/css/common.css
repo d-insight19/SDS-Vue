@@ -27,6 +27,7 @@
 .ico.youtube_20{width:20px;height:20px; background: url("../img/ic_youtube_20.png") no-repeat;}
 .ico.quiz_20{width:20px;height:20px; background: url("../img/ic_quiz_line_20.png") no-repeat;}
 .ico.filter_24{width:24px;height:24px; background: url("../img/ic_filter_24.png") no-repeat;}
+.next_12{background-image: url("../img/ic_next_line_blue_12.png");position: absolute;right: 0px;top: 50%;transform: translateY(-50%);}
 
 /* 추가이미지 2018-12-07 */
 .ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }

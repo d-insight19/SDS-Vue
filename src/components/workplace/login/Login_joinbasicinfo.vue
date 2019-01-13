@@ -15,69 +15,87 @@
                     <div class="clearfix">
                         <h2 class="tit">아이디 생성</h2>
                         <div class="num">
-                            <strong class="color_clr2">2</strong>/<span>6</span>
+                            <strong class="color_clr2">4</strong>/<span>6</span>
                         </div>
                     </div>
                         <div class="progBox">
-                        <div class="bar clr2" style="width:50%"></div>
+                        <div class="bar clr2" style="width:66.66%"></div>
                     </div>
-                    <p class="txt-desc" style="display:none1;">이름, 생년원일, 성별은 가입 후<br>변경이 불가하니 정확히 입력해주세요.</p>
+                    <p class="txt-desc">이름, 생년월일, 성별은 가입 후 변경이 불가합니다.<br>추후 본인확인을 위해 정확하게 입력 부탁드립니다.</p>
                 </div>
 
                 <!-- list -->
                 <ul class="ulList type1">
                     <li class="join-id">
-                        <strong class="label-tit">통합 ID</strong>
+                        <strong class="label-tit">통합 아이디</strong>
                         <span class="label-txt">CRD_abc1234</span>
                     </li>
                     <li>
-                        <strong class="label-tit">이름</strong>
-                        <input type="text" class="input err" placeholder="이름 입력">
-                        <p class="InfoChK-resultTxt err">이름을 입력해주세요.</p>
+                        <strong class="label-tit require_mark">이름</strong>
+                        <slp-text-field placeholder="이름 입력" error message="이름을 입력해주세요."></slp-text-field>
                     </li>
                     <li>
-                        <strong class="label-tit">휴대전화</strong>
-                        <input type="text" class="input err" placeholder="‘-‘ 없이 숫자만 입력">
-                        <p class="InfoChK-resultTxt err">‘-’ 또는 띄어쓰기 없이 10자 이상 입력해주세요.</p>
+                        <strong class="label-tit require_mark">비밀번호</strong>
+                        <!-- 비밀번호 새로운 타입으로 컴포넌트화 필요-->
+                        <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
+                        <div class="intSchBox">
+                            <div class="search-wrapper">
+                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <a href="#" class="btn eye r12" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye r12 eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p>
+                            </div>
+                        </div>
                     </li>
+                    <li>
+                        <strong class="label-tit require_mark">비밀번호 확인</strong>
+                        <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
+                        <div class="intSchBox">
+                            <div class="search-wrapper">
+                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <a href="#" class="btn eye r12" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye r12 eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
+                            </div>
+                        </div>
+                    </li>                    
                     <li>
                         <strong class="label-tit">성별</strong>
                         <div class="rdoSelBox err">
-                            <label class="labelRdo"><input type="radio" class="rdo" name="gender-rdo"><span class="ico"></span><span class="label">남</span></label>
-                            <label class="labelRdo"><input type="radio" class="rdo" name="gender-rdo"><span class="ico"></span><span class="label">여</span></label>
+                            <label class="labelRdo"><input type="radio" class="rdo" name="gender-rdo"><span class="ico"></span><span class="label">남자</span></label>
+                            <label class="labelRdo"><input type="radio" class="rdo" name="gender-rdo"><span class="ico"></span><span class="label">여자</span></label>
                         </div>
-                        <p class="InfoChK-resultTxt err">성별을 선택해주세요.</p>
+                    </li>
+                    <li>
+                        <strong class="label-tit require_mark">이메일</strong>
+                        <slp-text-field placeholder="이메일 입력" error message="이메일 주소를 입력해주세요."></slp-text-field>
+                    </li>
+                    <li>
+                        <strong class="label-tit require_mark">휴대전화</strong>
+                        <slp-text-field placeholder="‘-‘ 없이 숫자만 입력" error message="‘-’ 또는 띄어쓰기 없이 10자 이상 입력해주세요."></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit">생년월일</strong>
                         <div class="birthInt">
-                            <select class="select err">
-                                <option>년도</option>
-                            </select>
-                            <select class="select err">
-                                <option>월</option>
-                            </select>
-                            <select class="select err">
-                                <option>일</option>
-                            </select>
+                            <slp-select required placeholder="년도" class="err">
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                            </slp-select>
+                            <slp-select required placeholder="월" class="err">
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                            </slp-select>
+                            <slp-select required placeholder="일" class="err">
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                            </slp-select>
                         </div>
-                        <p class="InfoChK-resultTxt err">생년월일을 선택해주세요.</p>
-                    </li>
-                    <li>
-                        <strong class="label-tit">비밀번호</strong>
-                        <div class="search-wrapper">
-                            <input type="password"  pattern="^\s+" class="input err" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
-                            <button class="close-icon" type="button"></button>
-                        </div>
-                        <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p>
-                    </li>
-                    <li>
-                        <strong class="label-tit">비밀번호 확인</strong>
-                        <div class="search-wrapper">
-                            <input type="password"  pattern="^\s+" class="input err" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
-                            <button class="close-icon" type="button"></button>
-                        </div>
-                        <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
                     </li>
                     <li>
                         <strong class="label-tit">주소</strong>
@@ -86,18 +104,16 @@
                                 <label class="labelRdo"><input type="radio" class="rdo" name="place-rdo"><span class="ico"></span><span class="label">자택</span></label>
                                 <label class="labelRdo"><input type="radio" class="rdo" name="place-rdo"><span class="ico"></span><span class="label">직장</span></label>
                             </div>
-                            <p class="InfoChK-resultTxt err">주소를 선택해주세요.</p>
                             <ul class="addrInt">
                                 <li>
                                     <div class="postCode infoChk">
-                                        <input type="text" class="input" placeholder="우편번호">
+                                        <slp-text-field placeholder="우편번호"></slp-text-field>
                                         <button type="button" class="btn sm">우편번호</button>
                                     </div>
                                 </li>
-                                <li><input type="text" class="input" placeholder="주소 입력"></li>
-                                <li><input type="text" class="input err" placeholder="나머지 주소 입력"></li>
+                                <li><slp-text-field placeholder="주소입력"></slp-text-field></li>
+                                <li><slp-text-field placeholder="나머지 주소"></slp-text-field></li>
                             </ul>
-                            <p class="InfoChK-resultTxt err">주소를 선택해주세요.</p>
                         </div>
                     </li>
                 </ul>

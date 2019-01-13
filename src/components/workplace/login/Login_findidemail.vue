@@ -20,11 +20,11 @@
                 <ul class="ulList type1">
                     <li>
                         <strong class="label-tit">이름</strong>
-                        <input type="text" class="input" placeholder="이름 입력">
+                        <slp-text-field  placeholder="이름 입력"></slp-text-field>
                     </li>
                     <li>
-                        <strong class="label-tit">이메일</strong>
-                        <input type="text" class="input" placeholder="이메일 입력">
+                        <strong class="label-tit">이메이</strong>
+                        <slp-text-field  placeholder="이메이 입력"></slp-text-field>
                     </li>
                 </ul>
                 <!-- // list -->

@@ -213,25 +213,28 @@
 #container.join .agreeList .labelChk .label{letter-spacing: -0.42px;}
 #container.join .labelChk input.chk + .ico{margin-right: 12px;}
 
-#container.join .ulList.type1 .label-tit{display: block;line-height: 20px;letter-spacing: -0.42px; margin-bottom: 12px;}
+#container.join .ulList.type1 .label-tit{display: inline-block;line-height: 20px;letter-spacing: -0.42px; margin-bottom: 8px;position: relative;}
 #container.join .ulList.type1 .infoChk .btn{color:#000;}
 #container.join .ulList.type1 .join-id{margin-top:42px;}
 #container.join .labelChk2 input.chk + .label{color:#000;font-weight: 500;letter-spacing: -0.36px}
 
 #container.join .ulList.type2{margin-top: 34px;}
 #container.join .ulList.type2 .label-tit{margin-bottom: 16px;font-size:map-get($font-size, font_16);font-weight:500;}
-#container.join .ulList.type2 .infoChk{padding-right: 95px;}
+#container.join .ulList.type2 .infoChk{display:flex;padding-right:0px;}
+#container.join .ulList.type2 .infoChk > div:nth-child(1){flex:1;}
 #container.join .ulList.type2 button{letter-spacing: -0.42px;}
 #container.join .ulList.type2 .infoChk input{letter-spacing: -0.42px;}
-#container.join .ulList.type2 input{color:map-get($mono_colors, mono_80);font-size: map-get($font-size, font_14);line-height: 15px;letter-spacing: -0.42px; }
+#container.join .ulList.type2 .infoChk .btn{position: unset;width:auto;margin-left:5px;flex:0 0 auto;padding:0px 19px;}
+#container.join .ulList.type2 input{color:rgba(0,0,0,0.8);font-size: map-get($font-size, font_14);line-height: 15px;letter-spacing: -0.42px; }
+#container.join .ulList.type2 input.underline{height:35px; }
 #container.join .ulList.type2 li .ul-block li{padding-left:5px;}
 #container.join .ulList.type2 li .ul-block li + li{margin-top:16px;}
-#container.join .ulList.type2 li + li{margin-top:36px}
+#container.join .ulList.type2 li + li{margin-top:32px}
 #container.join .ulList.type2 .labelRdo .label{color:map-get($mono_colors, mono_65);font-size: map-get($font-size, font_14);line-height: 22px;}
 #container.join .ulList.type2 .labelRdo input.rdo + .ico{margin:0px 11px 0 0 }
 #container.join .ulList.type2 .labelRdo input.rdo:disabled + .ico + .label{color:rgba(0,0,0,0.25)}
 #container.join .rdoInfoChK{position: relative; padding-left:40px;}
-#container.join .rdoInfoChK .labelRdo{position: absolute;left: 5px; top: 11px; z-index: 1;}
+#container.join .rdoInfoChK .labelRdo{position: absolute;left: 5px;z-index: 1;width:35px;height:35px;}
 
 #container.join .ulList.type1.mt42 .label-tit{font-size: map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.42px; margin-bottom: 6px;}
 #container.join .ulList.type1.mt42 input{font-size: map-get($font-size, font_14);line-height: 29px;vertical-align: middle;letter-spacing: -0.42px;}
@@ -256,7 +259,7 @@
 #container.join .ulList.type4{border-top: 1px solid rgba(0,0,0,0.5);}
 #container.join .cTitWrap + .ulList.type4{margin-top: 16px;}
 #container.join .ulList.type4 li{border-bottom: 1px solid #ebebeb;}
-#container.join .labelChk .label{line-height: 21px;letter-spacing: -0.42px;font-weight: 400;}
+#container.join .labelChk .label{line-height: 20px;letter-spacing: -0.42px;font-weight: 400;color:#000;}
 #container.join .ulList.type4 li{padding: 16px 0 16px;}
 #container.join .cTitWrap ~ .txt-desc{margin-top: 8px;font-size:map-get($font-size, font_12); color:map-get($mono_colors, mono_65); line-height: 18px; letter-spacing: -0.36px;font-weight: 300;}
 #container.join .hr + .ulList.type1 .label-tit{margin-bottom:8px;}
@@ -264,8 +267,8 @@
 #container.join .hr + .ulList.type1 li + li{margin-top: 19px;}
 
 //계정잠금해제
-#container.join .lock_id{margin-top: 8px;font-size:map-get($font-size, font_14); line-height: 21px; letter-spacing: -0.42px; color:#000}
-#container.join .lock_id span{font-size:map-get($font-size, font_16); letter-spacing: -0.48px; font-weight: 600;margin-left:7px;}
+#container.join .lock_id{margin-top: 8px;font-size:map-get($font-size, font_14); line-height: 24px; letter-spacing: -0.42px; color:#000}
+#container.join .lock_id span{font-size:map-get($font-size, font_16); letter-spacing: -0.48px; font-weight: 600;margin-left:8px;}
 #container.join .lock_id + .txt-desc{margin-top:6px;margin-bottom:16px;font-weight: 300;}
 
 
@@ -276,11 +279,14 @@
 #container.join.complete .btn.fr{font-size: map-get($font-size, font_13);font-weight: 500;letter-spacing: -0.39px;line-height: 27px;color: rgba(0,0,0,0.65)}
 #container.join.complete .btn.fr .ico{width:16px; height: 16px; background: url("../img/ic_next_line_bold_gray_16.png"); background-size: cover;margin: 0px 0px;vertical-align: middle;}
 #container.join.complete .joinComp-tbl tr{height:38px;}
-#container.join.complete .joinComp-tbl th{font-size: map-get($font-size, font_13);width:47px;line-height: 22px;color: rgba(0,0,0,0.65);font-weight: 300;padding: 0px 0px;letter-spacing: -0.39px;vertical-align: top;}
+#container.join.complete .joinComp-tbl th{font-size: map-get($font-size, font_13);width:47px;line-height: 22px;color: rgba(0,0,0,0.65);font-weight: 300;padding: 0px 0px;letter-spacing: -0.39px;vertical-align: top;text-align: left;}
 #container.join.complete .joinComp-tbl td{font-size: map-get($font-size, font_14);line-height: 22px;color: #000;font-weight: 400;padding: 0px 0px 0px 24px;letter-spacing: -0.42px;vertical-align:top;    word-break: keep-all;}
 #container.join.complete .joinComp-tbl{margin-top: 0px;border-top: 0px;}
+#container.join.complete .joinComp-tbl .address_type_btn{display:inline-block;font-size: map-get($font-size, font_11);line-height: 22px;padding:0px 7px;height:22px;width:auto;margin-right:4px;border:1px solid #d9d9d9;border-radius: 100px;}
 
 #container.join.basicinfo .ulList.type1 li + li{margin-top: 20px;}
+
+#container.join .jobselect::after{clear: both;display:block;width:100%;height:44px;}
 
 
 
@@ -288,10 +294,11 @@
 #container.change_id .h-tit{font-size: map-get($font-size, font_30);line-height: 45px;letter-spacing: -0.9px;font-weight: 500;margin:0;margin-bottom:16px;}
 #container.change_id dl.txt dt{font-size: map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.48px;font-weight: 500;margin-bottom: 12px;}
 #container.change_id dl.txt dd{font-size: map-get($font-size, font_13);line-height: 20px;letter-spacing: -0.39px;font-weight: 300;color: rgba(0, 0, 0, 0.65);}
-#container.change_id.main .h-tit{margin-bottom: 36px;}
+#container.change_id dl.txt dd p + p{margin-top:19px;}
+#container.change_id.main .h-tit{margin-bottom: 12px;}
 #container.change_id.main .input.succ{font-size: map-get($font-size, font_14);letter-spacing: -0.42px;line-height: 29px;vertical-align: middle;color: rgba(0, 0, 0, 0.65);font-weight: 400;}
-#container.change_id.main .btn.sm{font-size: map-get($font-size, font_14);letter-spacing: -0.42px;line-height: 21px;vertical-align: middle;font-weight: 400;}
-
+#container.change_id.main .btn.sm{font-size: map-get($font-size, font_14);letter-spacing: -0.42px;line-height: 21px;vertical-align: middle;font-weight: 400;margin-left:8px;}
+#container.change_id.main .tit-desc{margin-bottom:24px;font-size: map-get($font-size, font_13);line-height: 19px;letter-spacing: -0.39px;}
 
 
 // 비밀번호 변경
@@ -302,15 +309,16 @@
 
 // 개인정보 처리 방침
 #container.terms .h-tit1{margin-bottom:20px;}
-.agreeCnt .agree-tit{font-size:map-get($font-size, font_14);; margin-bottom: 8px; color:#000;line-height: 21px;font-weight: 400;}
-.agreeCnt .agree-txt{font-size:map-get($font-size, font_12);; color:map-get($mono_colors, mono_65); letter-spacing: -0.36px;line-height: 20px; font-weight: 300;}
+.agreeCnt .agree-tit{font-size:map-get($font-size, font_14);margin-bottom: 8px; color:#000;line-height: 21px;font-weight: 400;}
+.agreeCnt .agree-txt{font-size:map-get($font-size, font_12);color:rgba(0,0,0,0.65); letter-spacing: -0.36px;line-height: 20px; font-weight: 300;}
 .agreeCnt .agree-txt + .agree-tit{margin-top:20px;}
 
 // 우편번호 찾기
 #container.searchpost .h-tit1{letter-spacing: -1.3px}
 #container.searchpost .search-tit{font-size:map-get($font-size, font_14); line-height: 20px;letter-spacing: -0.42px;margin-bottom:8px;font-weight: 500;}
+#container.searchpost ul.searchul li + li {margin-top:20px;}
 #container.searchpost .search_result_wrap{margin-top:4px;}
-#container.searchpost .search_result{min-height:94px;border-bottom:1px solid #ebebeb;padding: 15px 0px;line-height:21px;color:map-get($mono_colors, mono_80);font-weight:300;font-size:map-get($font-size, font_13);letter-spacing: -0.65px;}
+#container.searchpost .search_result{border-bottom:1px solid #ebebeb;padding: 15px 0px;line-height:21px;color:map-get($mono_colors, mono_80);font-weight:300;font-size:map-get($font-size, font_13);letter-spacing: -0.65px;}
 #container.searchpost .search_result tr+tr{margin-top:4px;}
 #container.searchpost .search_result .address_left.hilight{font-size:map-get($font-size, font_14);font-weight:500;}
 #container.searchpost .search_result .address_left{width: 49px;text-align: left;vertical-align: top;font-weight:400;color: #000;letter-spacing: -0.65px}
@@ -326,13 +334,19 @@
 #container.findid .txt-desc{font-weight: 300;margin-top:12px;}
 #container.findid .link{font-size:map-get($font-size, font_11);margin-left:8px;letter-spacing: -0.55px; }
 #container.findid .link .ico.arr{margin-left:6px;}
-#container.findid .txt-desc3{font-size: map-get($font_size, font_13); color:#000000; letter-spacing: -0.42px; line-height: 18px; font-weight: 400; margin-top: 8px; }
-#container.findid .txt-desc3 strong{font-weight: 500;}
+#container.findid .txt-desc3{font-size: map-get($font_size, font_13); color:#000000; letter-spacing: -0.42px; line-height: 20px; font-weight: 400; margin-top: 8px; }
+#container.findid .txt-desc3 strong{font-weight: 600;}
 #container.findid .resultBox{padding:24px; background:#f5f5f5;}
 #container.findid .resultBox li{font-size:map-get($font_size, font_15); line-height: 18px; letter-spacing: -0.45px; font-weight: 500;}
 #container.findid .resultBox li + li{margin-top: 10px;}
 #container.findid .titleWrap{margin-bottom:20px;}
 #container.findid .titleWrap .h-tit1 + .txt-desc{margin-top:6px;color:#000;font-size:map-get($font-size , font_13 ); line-height: 20px; letter-spacing: -0.39px;font-weight: 300;}
+
+// 아이디차기 결과
+#container.findid .find_result_txt_desc1{margin-top:6px;margin-bottom:16px;font-size:map-get($font-size, font_12); line-height: 18px;letter-spacing: -0.36px;color:rgba(0,0,0,0.65)}
+#container.findid .find_result_txt_desc2{margin-top:6px;margin-bottom:16px;font-size:map-get($font-size, font_13); line-height: 20px;letter-spacing: -0.39px;color:rgba(0,0,0,0.80)}
+#container.findid .find_result_txt_desc2 .link{font-weight: 500;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;position: relative;padding-right:16px;}
+#container.findid .find_result_txt_desc2 .link .next_12{width:12px;height:12px;}
 
 // 이메일 인증
 #container.findid.certify .ulList.type1 li + li{margin-top:16px;}
@@ -355,33 +369,30 @@
 #container.integration.start .login_integr_sel li + li p{margin-top:3px;}
 
 
-#container.integration .txt-desc{font-size: map-get($font-size, font_13);line-height: 20px;letter-spacing: -0.39px;font-weight: 300;}
-#container.integration .ulList.type2.mt36 .label-tit{margin-bottom:21px;font-size: map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.48px;font-weight: 500;}
-#container.integration .ulList.type2.mt36 .labelRdo .ico{margin: 0px 11px 0 0;}
-#container.integration .ulList.type2.mt36 .labelRdo .label{line-height: 20px; vertical-align: middle; font-size: map-get($font-size, font_14);letter-spacing: -0.42px;font-weight: 400;}
-#container.integration .ulList.type2.mt36 > li + li{margin-top: 37px;}
-#container.integration .ulList.type2.mt36 > li + li:last-child .label-tit{margin-bottom: 17px;}
-#container.integration .ulList.type2.mt36 input.text{font-size: map-get($font-size, font_14);line-height: 15px;letter-spacing: -0.42px;font-weight: 500;color: rgba(0,0,0,0.65);}
-#container.integration .ulList.type2.mt36 input{color: rgba(0, 0, 0, 0.8);font-size: map-get($font-size, font_14);line-height: 15px;letter-spacing: -0.42px;}
-#container.integration .ulList.type2.mt36 button{letter-spacing: -0.39px;}
-#container.integration .ulList.type2.mt36 li .ul-block li{padding-left: 5px;}
+#container.integration .txt-desc{font-size: map-get($font-size, font_13);line-height: 20px;letter-spacing: -0.39px;font-weight: 300;color:#000;}
+#container.integration .ulList.type2 .label-tit{margin-bottom:16px;}
+#container.integration .ulList.type2 > li + li{margin-top:32px}
+#container.integration .rdoInfoChK{position: relative; padding-left:40px;}
+#container.integration .rdoInfoChK .labelRdo{position: absolute;left: 5px;z-index: 1;width:35px;height:35px;}
+#container.integration .ulList.type2 li .ul-block li{padding-left:5px;}
+#container.integration .ulList.type2 li .ul-block li + li{margin-top:16px;}
 #container.integration .rdoInfoChK{position: relative; padding-left:40px;}
 #container.integration .rdoInfoChK .labelRdo{position: absolute;left: 5px; top: 11px; z-index: 1;}
 
-#container.integration .ulList.type2.mt25 .join-id{padding-bottom: 10px; border-bottom: 1px solid #d9d9d9;}
-#container.integration .ulList.type2.mt25 .label-tit{font-size: map-get($font-size, font_15);line-height: 21px;letter-spacing: -0.45px;font-weight: 300;vertical-align: middle;}
-#container.integration .ulList.type2.mt25 .label-txt.point2{font-size: map-get($font-size, font_16);height:24px;line-height: 21px;letter-spacing: -0.48px;font-weight: 400;vertical-align: middle; color: #08affb;}
-#container.integration .ulList.type2.mt25 > li:nth-child(2){margin-top: 26px;}
-#container.integration .ulList.type2.mt25 .label-tit{font-size: map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.42px;font-weight: 500;margin-bottom: 12px;}
-#container.integration .ulList.type2.mt25 .ul-block li{font-size: map-get($font-size, font_14);line-height: 21px;letter-spacing: -0.42px;font-weight: 400;color: rgba(0,0,0,0.65);}
-#container.integration .ulList.type2.mt25 .ul-block li + li{margin: 8px 0px 0px;}
-#container.integration .ulList.type2.mt25 > li:nth-child(3){margin-top: 24px;}
-#container.integration .ulList.type2.mt25 > li:nth-child(4){margin-top: 20px;}
+#container.integration .ulList.type2.mt24 .join-id{padding-bottom: 10px; border-bottom: 1px solid #d9d9d9;}
+#container.integration .ulList.type2.mt24 .join-id .label-tit{font-size: map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;font-weight: 300;}
+#container.integration .ulList.type2.mt24 .label-txt.point2{font-size: map-get($font-size, font_16);height:24px;line-height: 21px;letter-spacing: -0.48px;font-weight: 400;vertical-align: middle;}
+#container.integration .ulList.type2.mt24 > li:nth-child(2){margin-top: 26px;}
+#container.integration .ulList.type2.mt24 .label-tit{font-size: map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.42px;font-weight: 500;margin-bottom: 12px;}
+#container.integration .ulList.type2.mt24 .ul-block li{font-size: map-get($font-size, font_14);line-height: 21px;letter-spacing: -0.42px;font-weight: 400;color: rgba(0,0,0,0.65);}
+#container.integration .ulList.type2.mt24 .ul-block li + li{margin: 8px 0px 0px;}
+#container.integration .ulList.type2.mt24 > li:nth-child(3){margin-top: 24px;}
+#container.integration .ulList.type2.mt24 > li:nth-child(4){margin-top: 20px;}
 
 #container.integration .login_integr_sel{margin-top:43px;}
 #container.integration .login_integr_sel li + li{padding-top:28px; margin-top:28px; border-top:2px solid #ebebeb;}
-#container.integration .login_integr_sel li strong{display:block; font-size:19px; line-height: 28px; font-weight:400; letter-spacing: -0.057em;}
-#container.integration .login_integr_sel li > div{position:relative; font-size:13px; font-weight: 300; line-height: 20px; letter-spacing: -0.039em; padding-left:75px; margin-top:12px;}
+#container.integration .login_integr_sel li strong{display:block; font-size:map-get($font-size, font_29); line-height: 28px; font-weight:400; letter-spacing: -0.057em;}
+#container.integration .login_integr_sel li > div{position:relative;font-size:map-get($font-size, font_13); font-weight: 300; line-height: 20px; letter-spacing: -0.039em; padding-left:75px; margin-top:12px;}
 #container.integration .login_integr_sel li .ico{position:absolute; left:0; top:0; z-index:1; width:64px; height:64px}
 #container.integration .login_integr_sel li .ico1{background-position: 0 -104px;}
 #container.integration .login_integr_sel li .ico2{background-position: -73px -104px;}
@@ -1119,7 +1130,7 @@ label.rdo .label{position: relative;}
 .top_bottom_pd{padding-top: 14px; padding-bottom: 14px;}
 .infoChk.pr0{padding-right: 0 !important;}
 .infoChk .input.type2{width:calc(100% - 17%); background: #fff; border: 1px solid #ebebeb;}
-.infoChk .btn.w17p{width:17%}
+.infoChk .btn.w17p{width:17%;margin-left:0px;}
 
 
 // 액션플랜 
@@ -1448,7 +1459,7 @@ label.rdo .label{position: relative;}
 #container.drawer .contents14{margin-top:2px;font-size:map-get($font_size, font_14);line-height: 29px;color:map-get($mono_colors, mono_65); }
 #container.drawer .contents13{margin-top:2px;font-size:map-get($font_size, font_13);line-height: 29px;color:map-get($mono_colors, mono_65); letter-spacing: -0.39px;}
 #container.drawer .contents14_2{font-size:map-get($font_size, font_14);line-height: 22px;color:map-get($mono_colors, mono_65); letter-spacing: -0.39px;}
-#container.drawer .btn.sm {margin:8px 0}
+#container.drawer .btn.sm {margin:8px 0 8px 8px}
 #container.drawer .btn.sm.mb0 {margin-bottom:0}
 #container.drawer .rdoSelBox input:checked span.label {font-weight:bold !important}
 #container.drawer .multiList.type1 .labelRdo {width:50%}

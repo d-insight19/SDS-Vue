@@ -13,6 +13,13 @@
             <br/>
             <br/>
 
+            <slp-select required placeholder="언어">
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+            </slp-select>
+
             <div class="birthInt">
                 <select class="select err">
                     <option>년도</option>

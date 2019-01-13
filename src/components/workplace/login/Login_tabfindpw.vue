@@ -2,7 +2,7 @@
  <!-- eslint-disable -->
     <!-- tab cnt -->
     <div class="tabCnt dpb" id="tab_pw">
-        <p class="txt-desc2">아래 사용자 확인 방법 중 하나를 선택해주세요.</p>
+        <p class="txt-desc2">아래 사용자 확인 방법 중 하나를 선택해 주세요.<br>회원가입 시 등록한 개인정보를 정확하게 입력해 주세요.  </p>
 
         <!-- list -->
         <ul class="certList">

@@ -30,7 +30,7 @@
                           <li>
                             <strong class="label-tit">회사명</strong>
                             <div class="intSchBox">
-                              <input type="text" class="input" placeholder="회사명 검색">
+                              <input type="text" class="input" placeholder="회사 검색">
                               <a href="#" class="btn"><span class="ico"></span></a>
                             </div>
                           </li>
@@ -39,8 +39,24 @@
                             <input type="text" class="input" placeholder="부서명 입력">
                           </li>
                           <li>
+                            <strong class="label-tit">직급명</strong>
+                            <slp-select required placeholder="과장"  width="100%">
+                                <option>과장</option>
+                                <option>차장</option>
+                            </slp-select>
+                          </li>
+                          <li>
                             <strong class="label-tit">직무명</strong>
-                            <input type="text" class="input" placeholder="직무명 입력">
+                            <div class="jobselect">
+                              <slp-select required placeholder="사업관리" class="fl"  width="48.7%">
+                                  <option>사업관리1</option>
+                                  <option>사업관리2</option>
+                              </slp-select>
+                              <slp-select required placeholder="프로젝트 관리" class="fr" width="48.7%">
+                                  <option>프로젝트 관리1</option>
+                                  <option>프로젝트 관리2</option>
+                              </slp-select>
+                            </div>
                           </li>
                           <li>
                             <strong class="label-tit">전문분야</strong>
@@ -54,7 +70,7 @@
                         <!-- list -->
                         <ul class="ulList type1">
                           <li>
-                            <div class="label-tit">
+                            <div class="label-tit block">
                               <strong>어학등급</strong>
                               <div class="fr">
                                 <strong class="color_clr2" @click="editLanguage()" >{{languageTxt}}</strong>
@@ -86,7 +102,7 @@
                             <a href="#" class="btn sm add w100p" @click="addList1()" ><span class="ico"></span>어학등급 추가</a>
                           </li>
                           <li>
-                            <div class="label-tit">
+                            <div class="label-tit block">
                               <strong>자격증</strong>
                               <div class="fr">
                                 <strong class="color_clr2" @click="editLicence()">{{licenceTxt}}</strong>
@@ -124,6 +140,8 @@
 
                         <div class="cTitWrap">
                           <strong class="c-tit">개인정보 마케팅 활용 동의</strong>
+                          <!-- 클릭이벤트 컴포넌트에 추가 해야할듯 아래 참고;-->
+                          <slp-switch :classObject="{'fr': true}" @click="toggleMarketing()"  style="display:none;"/>
                           <label class="labelBtn fr">
                             <input type="checkbox" name="" class="chk">
                             <div class="chk_box" @click="toggleMarketing()" ><span class="ball"></span><ul class="txt"><li class="m1"></li><li class="m2"></li></ul></div>
@@ -132,13 +150,13 @@
 
                         <!-- list -->
                         <ul class="ulList type4" v-show="marketingFlag">
-                          <li><label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">이메일 수신</span></label></li>
-                          <li><label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">SMS 수신</span></label></li>
-                          <li><label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">전화 수신</span></label></li>
+                          <li><slp-checkbox>이메일 수신</slp-checkbox></li>
+                          <li><slp-checkbox>SMS 수신</slp-checkbox></li>
+                          <li><slp-checkbox>전화 수신</slp-checkbox></li>
                         </ul>
                         <!-- //list -->
-
-                        <p class="txt-desc">수신설정에 동의하시면 회사가 이용자의 정보를<br>마케팅/광고 목적으로 활용할 수 있습니다.</p>
+                        <p class="txt-desc" v-show="!marketingFlag">학습진행과 관련된 이메일, SMS 서비스는<br>동의여부와 상관없이 기본적으로 제공됩니다.</p>
+                        <p class="txt-desc" v-show="marketingFlag">수신설정에 동의하시면 회사가 이용자의 개인정보를 마케팅/광고 목적으로 활용하는 것에 동의하는 것으로 간주합니다.</p>
 
                         <div class="hr"></div>
 
@@ -173,7 +191,7 @@
             <div class="fixBtmBtn">
                 <!-- disable 해제시 활성화 -->
                 <ul>
-                    <li><button type="button" disabled class="btn md">이전</button></li>
+                    <li><button type="button" class="btn md">이전</button></li>
                     <li><button type="button" disabled class="btn md clr1">다음</button></li>
                 </ul>
             </div>

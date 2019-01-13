@@ -18,17 +18,28 @@
 
                 <h1 class="h-tit1">우편번호 찾기</h1>
 
-                
-                <p class="search-tit">주소 검색</p>
-                <div class="intSchBox">
-                    <!-- X 아이콘이 필요한 input -->
-                    <div class="search-wrapper">
-                        <input type="text"  pattern="^\s+" class="input" placeholder="도로명, 지번, 건물명 검색하기" />
-                        <button class="close-icon" type="button"></button>
+                <ul class="searchul">
+                  <li>
+                    <p class="search-tit">주소 검색</p>
+                    <slp-select required placeholder="년도"  width="100%">
+                        <option>서울특별시</option>
+                    </slp-select>
+                  </li>
+                  <li>
+                    <p class="search-tit">주소 검색</p>
+                    <div class="intSchBox">
+                        <!-- X 아이콘이 필요한 input -->
+                        <div class="search-wrapper">
+                            <input type="text"  pattern="^\s+" class="input" placeholder="도로명, 지번, 건물명 검색하기" />
+                            <button class="close-icon" type="button"></button>
+                        </div>
+                        <a href="#" class="btn"><span class="ico"></span></a>
                     </div>
-                    <a href="#" class="btn"><span class="ico"></span></a>
-                </div>
-
+                  </li>
+                </ul>
+                
+                
+                
                 <div class="search_result_wrap">
                   <ul>
                     <li class="search_result">

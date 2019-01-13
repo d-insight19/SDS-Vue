@@ -760,6 +760,10 @@
           <router-link :to="{ name: 'Login_certifyemail' }">
             Login_certifyemail
           </router-link>
+          ,
+          <router-link :to="{ name: 'Login_certifyemail_corporate' }">
+            Login_certifyemail_corporate
+          </router-link>
         </td>
         <td></td>
       </tr>

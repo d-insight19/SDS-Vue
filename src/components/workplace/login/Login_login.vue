@@ -34,7 +34,15 @@
                         </li>
                         <li>
                             <!-- 추가되는 새로운 비밀번호 컴포넌트로 교체해야함-->
-                            <slp-text-field type="password" placeholder="비밀번호"></slp-text-field>
+                            <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
+                            <div class="intSchBox">
+                                <div class="search-wrapper">
+                                    <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                    <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                    <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                    <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
 

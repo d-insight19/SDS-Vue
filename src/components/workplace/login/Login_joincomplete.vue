@@ -10,12 +10,11 @@
                     <div class="inner">
 
                         <h1 class="h-tit">회원가입이<br>완료되었습니다.</h1>
-                        <p class="txt-desc">신분증과 동일한 정보를 입력하시면 고용보험과정의<br>본인확인이 용이합니다.</p>
+                        <p class="txt-desc">회원정보는 가급적 신분증과 동일한 정보를 입력하시면, 향후 고용보험 과정 수강 시 본인 확인이 용이합니다.</p>
 
 
                         <div class="joinComp-tit clearfix mt42">
                           <strong class="tit fl">나의 회원정보</strong>
-                          <a href="#" class="btn fr">개인정보수정<span class="ico"></span></a>
                         </div>
                         
                         <caption>나의 회원정보</caption>
@@ -27,7 +26,7 @@
                         <div class="hr"></div>
                         
                         <!-- table -->
-                        <table class="joinComp-tbl">  
+                        <table class="joinComp-tbl">
                           <tbody>
                             <tr>
                               <th scope="row">아이디</th>
@@ -55,7 +54,7 @@
                             </tr>
                             <tr>
                               <th scope="row">주소</th>
-                              <td>[05214]서울특별시 강남구 역삼로 15 402호</td>
+                              <td><span class="address_type_btn">자택</span>[05214]서울특별시 강남구 역삼로 15 402호</td>
                             </tr>
                           </tbody>
                         </table>
@@ -70,9 +69,7 @@
             <div class="fixBtmBtn">
                 <ul>
                     <li>                            
-                        <button type="button" disabled class="btn ld" >확인</button>
-                        <!-- 하단에 활성화 된 버튼은 임시로 display:none -->
-                        <button type="button" class="btn ld clr1" style="display:none;">확인</button>
+                        <button type="button" class="btn ld clr1">로그인 하기</button>
                     </li>
                 </ul>                    
             </div>

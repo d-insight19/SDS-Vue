@@ -21,30 +21,36 @@
                         <div class="progBox">
                         <div class="bar clr2" style="width:33.3%"></div>
                     </div>
-                    <p class="txt-desc">서비스 가입 약관 확인 후 동의해주세요.</p>
+                    <p class="txt-desc">서비스 가입 약관에 동의해주세요.</p>
                 </div>
 
                 <!-- 동의 리스트 -->
-                <div class="agreeAll"><label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">전체 동의</span></label></div>
+                <div class="agreeAll">
+                   <slp-checkbox>전체 동의</slp-checkbox>                  
+                </div>
                 <ul class="agreeList">
                   <li>
-                    <label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">개인정보 수집 및 이용 동의(필수)</span></label>
+                    <slp-checkbox>개인정보 수집 및 이용 동의(필수)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                   <li>
-                    <label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">개인정보 수집 및 이용 동의(필수)</span></label>
+                    <slp-checkbox>개인정보 수집 및 이용 동의(필수)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                   <li>
-                    <label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">개인정보 수집 및 이용 동의(필수)</span></label>
+                    <slp-checkbox>개인정보 수집 및 이용 동의(필수)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                   <li>
-                    <label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">개인정보 마케팅 활용 동의(선택)</span></label>
+                    <slp-checkbox>개인정보 마케팅 활용 동의(선택)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                   <li>
-                    <label class="labelChk"><input id="" type="checkbox" class="chk" name=""><span class="ico"></span><span class="label">개인정보 마케팅 활용 동의(선택)</span></label>
+                    <slp-checkbox>개인정보 마케팅 활용 동의(선택)</slp-checkbox>
+                    <a href="#" class="ico"></a>
+                  </li>
+                  <li>
+                    <slp-checkbox>개인정보 마케팅 활용 동의(선택)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                 </ul>
