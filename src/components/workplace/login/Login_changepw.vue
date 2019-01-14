@@ -35,8 +35,8 @@
                         <div class="intSchBox">
                             <div class="search-wrapper">
                                 <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
-                                <a href="#" class="btn eye r12" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <a href="#" class="btn eye r12 eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
                             </div>
                         </div>
@@ -48,8 +48,8 @@
                         <div class="intSchBox">
                             <div class="search-wrapper">
                                 <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
-                                <a href="#" class="btn eye r12" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <a href="#" class="btn eye r12 eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p>
                             </div>
                         </div>
@@ -61,8 +61,8 @@
                         <div class="intSchBox">
                             <div class="search-wrapper">
                                 <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
-                                <a href="#" class="btn eye r12" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <a href="#" class="btn eye r12 eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
                             </div>
                         </div>

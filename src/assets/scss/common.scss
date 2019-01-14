@@ -191,8 +191,9 @@ textarea::placeholder {
 .intSchBox{position: relative;}
 .intSchBox .input{padding-right:70px;}
 .intSchBox .btn{position:absolute; top:12px; right:12px; z-index: 1; border:0;}
-.intSchBox .btn.eye.r12{right:12px;}
-.intSchBox .btn.eye{position:absolute; top:12px; right:0px; z-index: 1; border:0;}
+.intSchBox input.underline ~ .btn.eye{right:0px;}
+.intSchBox input ~ .btn.eye{right:11px;}
+.intSchBox .btn.eye{position:absolute; top:12px; z-index: 1; border:0;}
 .intSchBox .btn .ico{ width:22px; height:22px; vertical-align: top; background-position: -147px -64px;}
 .intSchBox .btn.eye .ico{width:22px; height:22px;background:url("../img/ic_password_view.png") no-repeat;background-size:cover;}
 .intSchBox .btn.eye_slash .ico{width:22px; height:22px;background:url("../img/ic_password_notview.png") no-repeat;background-size:cover;}

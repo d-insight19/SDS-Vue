@@ -328,8 +328,8 @@ export default {
             { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
             { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
         ],
-        // src: './static/movie/m010102.mp4', //동영상 src
-        src: require('@/assets/movie/m010102.mp4'), //동영상 src
+        src: './static/movie/m010102.mp4', //동영상 src
+        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
         title: "Flowplayer", //콘텐츠 제목
         isSpeeds: true, //동영상 배속 사용여부
         speeds: [1, 2, 3], //동영상 배속 설정 값
