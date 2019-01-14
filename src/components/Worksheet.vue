@@ -10022,10 +10022,13 @@
         <td>단축 등록</td>
         <td></td>
         <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist_detail_shorten_setdate</td>
+        <td class="textL">14.BPO_01.01.subjectlist_detail_shorten</td>
         <td>
-          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten_setdate' }">
-            BPO_subjectlist_detail_shorten_setdate
+          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten' }">
+            BPO_subjectlist_detail_shorten
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten_popup' }">
+            BPO_subjectlist_detail_shorten_popup
           </router-link>
         </td>
         <td></td>
@@ -10041,12 +10044,9 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail_shorten_setdate</td>
         <td>
-          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten' }">
-            BPO_subjectlist_detail_shorten
-          </router-link>,
-          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten_popup' }">
-            BPO_subjectlist_detail_shorten_popup
-          </router-link>
+          <router-link :to="{ name: 'BPO_subjectlist_detail_shorten_setdate' }">
+            BPO_subjectlist_detail_shorten_setdate
+          </router-link>         
         </td>
         <td></td>
       </tr>
@@ -10160,7 +10160,244 @@
         </td>
         <td></td>
       </tr>
-
+      <tr>
+      <td align="center">575</td>
+        <td>BPO 강사</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>일괄 출석체크</td>
+        <td>　</td>
+        <td class="textL">14.BPO_01.01.subjectlist_detail_check</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">576</td>
+        <td>학습창 영역</td>
+        <td>학습창 파일럿 테스트2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">05.Study_05.10.etc_pilottest2</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">577</td>
+        <td>수강신청 (공통)</td>
+        <td>과정상세 (과정요약)</td>
+        <td>과정목차 - 상시</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">06.regiclass_01.03.detailview_autonomy</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">578</td>
+        <td>회사운영자 - Main(TABS)</td>
+        <td>로그인</td>
+        <td>OTP</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">11.Eduperson_01.00_loginOTP</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">579</td>
+        <td>로그인 / 회원가입</td>
+        <td>로그인</td>
+        <td>본인인증</td>
+        <td>이메일 인증</td>
+        <td>법인폰</td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">01.login_09.03_login_corporationphone</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">580</td>
+        <td>학습홈 영역</td>
+        <td>기본메뉴</td>
+        <td>학습현황 (차시노출)</td>
+        <td>포인트 내역 상세</td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">05.Study_02.01.studystatus_point</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">581</td>
+        <td>Drawer - ATORM</td>
+        <td>Splash(아톰 모드전환 시)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">07.ATORM_07.01. Splash</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">582</td>
+        <td>Drawer - ATORM</td>
+        <td>Main - User</td>
+        <td>과정현황</td>
+        <td>과정정보</td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">07.ATORM_07.04.00._status_ info</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">583</td>
+        <td>Drawer - ATORM</td>
+        <td>Main - User</td>
+        <td>과정현황</td>
+        <td>과정상세(집합)</td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">07.ATORM_07.04.01._status_ details_group</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">584</td>
+        <td>Drawer - ATORM</td>
+        <td>Main - User</td>
+        <td>과정현황</td>
+        <td>과정상세(플립)</td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">07.ATORM_07.04.01._status_ details_flip</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">585</td>
+        <td>Drawer - ATORM</td>
+        <td>Main - User</td>
+        <td>과정현황</td>
+        <td>과정상세(지식영상)</td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">07.ATORM_07.04.01._status_ details_basic</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">586</td>
+        <td>학습창 영역</td>
+        <td>구학습창</td>
+        <td>movie, audio</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">05.Study_03.04.03.LO_old_mp4</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">587</td>
+        <td>학습창 영역</td>
+        <td>구학습창</td>
+        <td>movie, audio</td>
+        <td>교안</td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">05.Study_03.04.04.LO_old_mp4_studymaterial</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">588</td>
+        <td>학습창 영역</td>
+        <td>구학습창</td>
+        <td>Image+audio</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>　</td>
+        <td class="textL">05.Study_03.04.05.LO_old_imageaudio</td>
+        <td>
+          <router-link :to="{ name: '' }">
+            
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
       <tr>
       <td align="center">추가페이지-add</td>
         <td></td>
