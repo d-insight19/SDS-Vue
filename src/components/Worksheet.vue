@@ -1503,7 +1503,7 @@
         <td>　</td>
         <td>　</td>
         <td></td>
-        <td></td>
+        <td>삭제</td>
       </tr>
       <tr>
       <td align="center">81</td>
@@ -1570,7 +1570,7 @@
         <td>　</td>
         <td>　</td>
         <td></td>
-        <td></td>
+        <td>삭제</td>
       </tr>
       <tr>
       <td align="center">85</td>
@@ -1583,7 +1583,7 @@
         <td>　</td>
         <td>　</td>
         <td></td>
-        <td></td>
+        <td>삭제</td>
       </tr>
       <tr>
       <td align="center">86</td>
