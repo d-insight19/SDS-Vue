@@ -148,8 +148,12 @@ import Study05etcpledgelaw from '~workplace/study/Study_05_etc_pledge_law'
 import Study05etcpledgeethics from '~workplace/study/Study_05_etc_pledge_ethics'
 import Study05etcpilottest from '~workplace/study/Study_05_etc_pilottest'
 import Study05etcagreementfirst from '~workplace/study/Study_05_etc_agreement_first'
+import Study05etcagreementguidance from '~workplace/study/Study_05_etc_agreement_guidance'
+import Study05etcagreementguidance02 from '~workplace/study/Study_05_etc_agreement_guidance_02'
 import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_salary'
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
+import Study05etcguidance from '~workplace/study/Study_05_etc_guidance'
+import Study05etccaptcha from '~workplace/study/Study_05_etc_captcha'
 
 // import RegiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
 // import RegiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
@@ -257,8 +261,14 @@ import regiclassRegisterOptionAdd from '~workplace/regiclass/regiclass_register_
 import regiclassRegisterOptionAdd02 from '~workplace/regiclass/regiclass_register_option_add_02'
 import regiclassRegisterOption02 from '~workplace/regiclass/regiclass_register_option_02'
 import regiclassRegisterOption03 from '~workplace/regiclass/regiclass_register_option_03'
+import loginJoinTerms from '~workplace/regiclass/login_join_terms'
 import regiclassRegisterTermsAdd from '~workplace/regiclass/regiclass_register_terms_add'
 import regiclassRegisterTerms from '~workplace/regiclass/regiclass_register_terms'
+import regiclassRegisterBasicinfoB2b from '~workplace/regiclass/regiclass_register_basicinfo_b2b'
+import regiclassRegisterBasicinfoB2c from '~workplace/regiclass/regiclass_register_basicinfo_b2c'
+import regiclassRegisterBasicinfoAdd from '~workplace/regiclass/regiclass_register_basicinfo_add'
+import regiclassRegisterBasicinfoAdd02 from '~workplace/regiclass/regiclass_register_basicinfo_add_02'
+import regiclassRegisterBasicinfoAddBot from '~workplace/regiclass/regiclass_register_basicinfo_add_bot'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1145,6 +1155,16 @@ var rootRoutes = [
     component: Study05etcagreementfirst
   },
   {
+    path: '/Study_05_etc_agreement_guidance',
+    name: 'Study_05_etc_agreement_guidance',
+    component: Study05etcagreementguidance
+  },
+  {
+    path: '/Study_05_etc_agreement_guidance_02',
+    name: 'Study_05_etc_agreement_guidance_02',
+    component: Study05etcagreementguidance02
+  },
+  {
     path: '/Study_05_etc_agreement_salary',
     name: 'Study_05_etc_agreement_salary',
     component: Study05etcagreementsalary
@@ -1153,6 +1173,16 @@ var rootRoutes = [
     path: '/Study_05_etc_authorization_employment',
     name: 'Study_05_etc_authorization_employment',
     component: Study05etcauthorizationemployment
+  },
+  {
+    path: '/Study_05_etc_guidance',
+    name: 'Study_05_etc_guidance',
+    component: Study05etcguidance
+  },
+  {
+    path: '/Study_05_etc_captcha',
+    name: 'Study_05_etc_captcha',
+    component: Study05etccaptcha
   },
   // {
   //   path: '/regiclass_detailview_licence',
@@ -1667,6 +1697,36 @@ var rootRoutes = [
     path: '/regiclass_register_terms',
     name: 'regiclass_register_terms',
     component: regiclassRegisterTerms
+  },
+  {
+    path: '/regiclass_register_basicinfo_b2b',
+    name: 'regiclass_register_basicinfo_b2b',
+    component: regiclassRegisterBasicinfoB2b
+  },
+  {
+    path: '/regiclass_register_basicinfo_b2c',
+    name: 'regiclass_register_basicinfo_b2c',
+    component: regiclassRegisterBasicinfoB2c
+  },
+  {
+    path: '/regiclass_register_basicinfo_add',
+    name: 'regiclass_register_basicinfo_add',
+    component: regiclassRegisterBasicinfoAdd
+  },
+  {
+    path: '/regiclass_register_basicinfo_add_02',
+    name: 'regiclass_register_basicinfo_add_02',
+    component: regiclassRegisterBasicinfoAdd02
+  },
+  {
+    path: '/regiclass_register_basicinfo_add_bot',
+    name: 'regiclass_register_basicinfo_add_bot',
+    component: regiclassRegisterBasicinfoAddBot
+  },
+  {
+    path: '/login_join_terms',
+    name: 'login_join_terms',
+    component: loginJoinTerms
   },
   {
     path: '/Drawer_alerm',

@@ -6783,8 +6783,11 @@
         <td>　</td>
         <td class="textL">05.Study_05.07.etc_agreement_guidance</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_agreement_guidance' }">
+            Study_05_etc_agreement_guidance
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_05_etc_agreement_guidance_02' }">
+            Study_05_etc_agreement_guidance_02
           </router-link>
         </td>
         <td></td>
@@ -6817,8 +6820,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.09.etc_guidance</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_guidance' }">
+            Study_05_etc_guidance
           </router-link>
         </td>
         <td></td>
@@ -6868,8 +6871,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.12.etc_accesscontrol</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_captcha' }">
+            Study_05_etc_captcha
           </router-link>
         </td>
         <td></td>
@@ -6966,8 +6969,8 @@
         <td>　</td>
         <td class="textL">01.login_02.02_join_terms</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'login_join_terms' }">
+            login_join_terms
           </router-link>
         </td>
         <td></td>
@@ -7020,8 +7023,20 @@
         <td>　</td>
         <td class="textL">06.regiclass_05.01.register_basicinfo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_basicinfo_b2b' }">
+            regiclass_register_basicinfo_b2b
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_basicinfo_b2c' }">
+            regiclass_register_basicinfo_b2c
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_basicinfo_add' }">
+            regiclass_register_basicinfo_add
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_basicinfo_add_02' }">
+            regiclass_register_basicinfo_add_02
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_basicinfo_add_bot' }">
+            regiclass_register_basicinfo_add_bot
           </router-link>
         </td>
         <td></td>
