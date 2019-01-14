@@ -1502,8 +1502,8 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
         <td>삭제</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">81</td>
@@ -1569,8 +1569,8 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
         <td>삭제</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">85</td>
@@ -1582,8 +1582,8 @@
         <td>TED 검색</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
         <td>삭제</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">86</td>
@@ -1803,7 +1803,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -1816,7 +1816,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -2194,7 +2194,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -3655,7 +3655,7 @@
             MySpace_formal_attendingconfirmation
           </router-link>
         </td>
-        <td></td>
+        <td>삭제</td>
       </tr>
       <tr>
       <td align="center">201</td>
@@ -4211,7 +4211,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -4224,7 +4224,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -4237,7 +4237,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -4339,6 +4339,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -4611,6 +4612,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -4645,6 +4647,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -4696,6 +4699,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -4730,6 +4734,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -4781,6 +4786,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -4845,7 +4851,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -5035,6 +5041,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -5052,6 +5059,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -5065,7 +5073,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -5078,7 +5086,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -5254,7 +5262,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -5454,7 +5462,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -5471,6 +5479,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -5484,7 +5493,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -5718,7 +5727,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -5816,6 +5825,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -5867,6 +5877,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -6169,7 +6180,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -6199,7 +6210,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -6412,6 +6423,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td>PU 피드백으로 삭제</td>
       </tr>
@@ -6681,9 +6693,10 @@
         <td>　</td>
         <td class="textL">05.Study_05.01.etc_authorization_phone</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_certifyphone' }">
+            Login_certifyphone
           </router-link>
+          와 동일
         </td>
         <td>01.login_09.01_certify_phone 동일</td>
       </tr>
@@ -6698,9 +6711,10 @@
         <td>　</td>
         <td class="textL">05.Study_05.02.etc_authorization_ipin</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_certifyipin' }">
+            Login_certifyipin
           </router-link>
+          와 동일
         </td>
         <td>01.login_09.02_certify_ipin 동일</td>
       </tr>
@@ -9720,7 +9734,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          화면으로 삭제하여 재플린 미등록
+          삭제
         </td>
         <td></td>
       </tr>
