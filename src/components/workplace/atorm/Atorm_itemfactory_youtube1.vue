@@ -34,7 +34,7 @@
                         <li>
                             <strong class="label-tit14 tit_essential">Youtube URL</strong>
                             <div class="infoChk">
-                            <slp-text-field placeholder="URL을 입력하세요" class="mt6"></slp-text-field><button type="button" class="btn sm">검색</button>   
+                            <slp-text-field placeholder="URL을 입력하세요" class="mt6"></slp-text-field><button type="button" class="btn sm mt6">검색</button>   
                             </div>                   
                         </li>                        
                         

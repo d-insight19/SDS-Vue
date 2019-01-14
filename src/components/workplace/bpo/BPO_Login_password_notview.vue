@@ -19,9 +19,8 @@
                         </li>
                         <li>
                             <div class="search-wrapper">
-                                <input type="text"  pattern="^\s+" class="input underline" placeholder="비밀번호" />
-                                <button class="close-icon" type="button" id="dd"></button>
-                                <span class="ico eye_slash"></span>
+                                <input type="text" ref="input01"  pattern="^\s+" class="input underline" placeholder="비밀번호" />
+                                <button class="close-icon eye" :class="{ eye_slash : isActive }" type="button" id="dd" @click="active_el()"></button>
                             </div>
                         </li>
                     </ul>
@@ -67,10 +66,19 @@ export default {
   /* vue data */
   data () {
     return {
+      isActive: ''
     }
   },
   /* vue function */
   methods: {
+    active_el () {
+      this.isActive = !this.isActive
+      if (this.isActive === true) {
+        this.$refs.input01.setAttribute('type', 'password')
+      } else if (this.isActive === false) {
+        this.$refs.input01.setAttribute('type', 'text')
+      }
+    }
   }
 }
 </script>
