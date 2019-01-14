@@ -487,12 +487,6 @@
                         </div>
                         <!-- //column -->
                         </div>
-
-                        <div>
-                        <p> column </p>
-                        <!-- column -->
-                        <!-- //column -->
-                        </div>
                     </div>
                 </div>
             </div>
