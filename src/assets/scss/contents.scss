@@ -1635,14 +1635,33 @@ label.rdo .label{position: relative;}
 .progBox_wrap .progBox .bar3 {background-color:map-get($contents_colors, type_3 );}
 .progBox_wrap .progBox .bar4 {background-color:map-get($contents_colors, type_4 );}
 .progBox_wrap .progBox .bar5 {background-color:map-get($contents_colors, type_5 );}
+.progBox_wrap .progBox > div {float:left;}
+.progBox_wrap .progBox > div:first-child {border-top-left-radius: 100px;border-bottom-left-radius: 100px;}
+.progBox_wrap .progBox > div:last-child {border-top-right-radius: 100px;border-bottom-right-radius: 100px;}
 #container.board.request h2.label-tit16 {width:100%; font-size:map-get($font_size, font_16); font-weight: 500; margin:26px 0 20px;}
 .progBox_wrap .desc {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.65); margin-top:7px}
+.progBox_wrap2{font-size:map-get($font_size, font_14);}
+.progBox_wrap2 li {display:table; width:100%;}
+.progBox_wrap2 li > div {display:table-cell; vertical-align: middle;}
+.progBox_wrap2 .progBoxArea {width:100%; border-left:1px solid #e3e3e3;}
+.progBox_wrap2 .progBoxArea .progBox {background: rgba(0,0,0,0.05); border-radius:0 50px 50px 0; margin-top: 0;}
+.progBox_wrap2 .progBoxArea .progBox.bg-x {background-color: transparent; border-radius:0;}
+.progBox_wrap2 .progBoxArea .progMent {font-weight: 500; margin-top: -8px !important; margin-left:5px;}
+.progBox_wrap2 .progBoxArea .progBox > div {border-radius: 0 50px 50px 0; display: inline-block; float:left;}
+.progBox_wrap2 .progBoxArea .progBox .bar1 {background-color:map-get($contents_colors, type_1 );}
+.progBox_wrap2 .progBoxArea .progBox .bar2 {background-color:map-get($contents_colors, type_2 );}
+.progBox_wrap2 .progBoxArea .progBox .bar3 {background-color:map-get($contents_colors, type_3 );}
+.progBox_wrap2 .progBoxArea .progBox .bar4 {background-color:map-get($contents_colors, type_4 );}
+.progBox_wrap2 .progBoxArea .progBox .bar5 {background-color:map-get($contents_colors, type_5 );}
+.progBox_wrap2 .progText {min-width:120px; padding: 6px 0;}
+.progBox_wrap2 .progBoxArea + .progText {min-width:50px; padding: 3px 0; text-align:right;}
 #container.board .divide_line { margin:26px 0 }
 .diagram_wrap .diagram {margin:0 auto; width:180px; height:180px; background-color: #eee; border-radius: 100%}
 .diagram_wrap .diagram2 {margin:0 auto; width:180px; height:180px;}
 .diagram_wrap {padding:0 32px}
 .diagram_wrap li { position:relative; border-bottom:#e3e3e3 1px solid; padding:10px 0 10px 20px}
-.diagram_wrap li::before{display: inline-block; position: absolute; top:16px; left:0; z-index: 2; content: ''; width:8px; height: 8px; background-color:map-get($contents_colors, type_1 ); border-radius: 100%}
+.diagram_wrap li::before{display: inline-block; position: absolute; top:calc(50% - 5px); left:0; z-index: 2; content: ''; width:10px; height: 10px; background-color:map-get($contents_colors, type_1 ); border-radius: 100%}
+.diagram_wrap li.o40::before {opacity:0.4;}
 .diagram_wrap li.type1::before{ background-color:map-get($contents_colors, type_1 );}
 .diagram_wrap li.type2::before{ background-color:map-get($contents_colors, type_2 );}
 .diagram_wrap li.type3::before{ background-color:map-get($contents_colors, type_3 );}
@@ -1650,11 +1669,10 @@ label.rdo .label{position: relative;}
 .diagram_wrap li.type5::before{ background-color:map-get($contents_colors, type_5 );}
 .diagram_wrap .percent {font-family: 'Roboto'; font-size:map-get($font_size, font_15); line-height: 22px}
 .diagram_wrap .percent .num {font-size:map-get($font_size, font_22); line-height: 22px}
-.diagram_wrap.square li {border-bottom: 0 none; padding:5px 0 5px 20px}
-.diagram_wrap.square li::before {border-radius:0; width: 14px; height: 14px; top: 13px;}
+.diagram_wrap.noline li {border-bottom: 0 none; padding:5px 0 5px 20px}
+.diagram_wrap li.square::before {border-radius:0; /*width: 14px; height: 14px; top: calc(50% - 7px);*/}
 .diagram_wrap.type2{padding:0;}
-.diagram_wrap.type2 li{border-bottom: 0 none; display: inline-block; padding:3px 10px;}
-.diagram_wrap.type2 li::before{top: 9px;}
+.diagram_wrap.type2 li{border-bottom: 0 none; display: inline-block; padding:3px 15px;}
 #container.board.request .singleList.type_1 li { border-top:#ebebeb 1px solid; border-bottom:0;}
 #container.board.request .singleList.type_1 li a {line-height: 20px; font-size:map-get($font_size, font_14); color:#1a1a1a; padding:15px 0} 
 #container.board.request a.respondent_num {display: block; padding-bottom:22px}
