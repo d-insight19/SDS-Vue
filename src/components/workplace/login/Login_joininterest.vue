@@ -21,7 +21,7 @@
                                 <div class="progBox">
                                 <div class="bar clr2" style="width:83%"></div>
                             </div>
-                            <p class="txt-desc">관심사를 선택하시면 회원님에게 맞는<br>다양한 학습강의들을 추천해드립니다.</p>
+                            <p class="txt-desc">관심사를 선택하시면 회원님에게 맞는 다양한 학습강의들을 추천해드립니다.</p>
                         </div>
 
 

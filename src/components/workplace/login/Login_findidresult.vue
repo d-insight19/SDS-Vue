@@ -16,7 +16,7 @@
             <div class="inner">
                 <h1 class="h-tit1 mb32">아이디찾기 결과</h1>
 
-                <p class="txt-desc3">아이디 찾기 결과 해당 아이디가 <strong class="color_clr1">4개</strong> 존재합니다.</p>
+                <p class="txt-desc3">아이디 찾기 결과 해당 아이디가 <strong class="color_clr1">N</strong>개 존재합니다.</p>
 
                 <div class="resultBox mt10 color_clr1">
                     <ul>
@@ -30,7 +30,7 @@
                 <p class="find_result_txt_desc1">아이디 뒷자리 확인은 PC에서 확인 할 수 있습니다.</p>
                 <div class="find_result_txt_desc2">
                     <span>혹시 비밀번호도 분실하셨나요?</span>
-                    <a href="#" class="color_clr2 link" style="margin-left:10px;">
+                    <a href="#" class="color_clr2 link">
                         비밀번호 찾기<span class="next_12"></span>
                     </a>
                 </div>
@@ -42,7 +42,7 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li><button type="button" class="btn md clr1">로그인 하기</button></li>
+                <li><button type="button" class="btn md clr1">로그인</button></li>
             </ul>
         </div>
         <!-- //floating button -->

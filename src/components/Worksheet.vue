@@ -126,6 +126,10 @@
           <router-link :to="{ name: 'Login_findcenter_email' }">
             Login_findcenter_email
           </router-link>
+          ,
+          <router-link :to="{ name: 'Login_findcenter_email2' }">
+            Login_findcenter_email2
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -159,6 +163,10 @@
         <td>
           <router-link :to="{ name: 'Login_findcenter_url' }">
             Login_findcenter_url
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Login_findcenter_url2' }">
+            Login_findcenter_url2
           </router-link>
         </td>
         <td></td>

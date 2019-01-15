@@ -21,7 +21,7 @@
                         <div class="progBox">
                         <div class="bar clr2" style="width:66.66%"></div>
                     </div>
-                    <p class="txt-desc">이름, 생년월일, 성별은 가입 후 변경이 불가합니다.<br>추후 본인확인을 위해 정확하게 입력 부탁드립니다.</p>
+                    <p class="txt-desc">이름, 생년월일, 성별은 가입 후 변경이 불가합니다. 추후 본인확인을 위해 정확하게 입력 부탁드립니다.</p>
                 </div>
 
                 <!-- list -->

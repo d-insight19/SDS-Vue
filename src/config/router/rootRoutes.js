@@ -28,14 +28,16 @@ import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
-// import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
+import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 import ComponentsChart from '~workplace/common_page/components_chart'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
+import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
 import LoginFindcenterSelect from '~workplace/login/Login_findcenter_select'
 import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
+import LoginFindcenterUrl2 from '~workplace/login/Login_findcenter_url2'
 import LoginLogin from '~workplace/login/Login_login'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
 import LoginInterest from '~workplace/login/Login_interest'
@@ -564,11 +566,11 @@ var rootRoutes = [
     name: 'components_spinner',
     component: ComponentsSpinner
   },
-  // {
-  //   path: '/components_flowplayer',
-  //   name: 'components_flowplayer',
-  //   component: ComponentsFlowplayer
-  // },
+  {
+    path: '/components_flowplayer',
+    name: 'components_flowplayer',
+    component: ComponentsFlowplayer
+  },
   {
     path: '/components_dropdown',
     name: 'components_dropdown',
@@ -590,6 +592,11 @@ var rootRoutes = [
     component: LoginFindcenterEmail
   },
   {
+    path: '/Login_findcenter_email2',
+    name: 'Login_findcenter_email2',
+    component: LoginFindcenterEmail2
+  },
+  {
     path: '/Login_findcenter_select',
     name: 'Login_findcenter_select',
     component: LoginFindcenterSelect
@@ -598,6 +605,11 @@ var rootRoutes = [
     path: '/Login_findcenter_url',
     name: 'Login_findcenter_url',
     component: LoginFindcenterUrl
+  },
+  {
+    path: '/Login_findcenter_url2',
+    name: 'Login_findcenter_url2',
+    component: LoginFindcenterUrl2
   },
   {
     path: '/Login_login',

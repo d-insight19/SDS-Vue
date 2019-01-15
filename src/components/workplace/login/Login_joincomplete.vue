@@ -13,16 +13,6 @@
                         <p class="txt-desc">회원정보는 가급적 신분증과 동일한 정보를 입력하시면, 향후 고용보험 과정 수강 시 본인 확인이 용이합니다.</p>
 
 
-                        <div class="joinComp-tit clearfix mt42">
-                          <strong class="tit fl">나의 회원정보</strong>
-                        </div>
-                        
-                        <caption>나의 회원정보</caption>
-                        <colgroup>
-                        <col style="width:100px;">
-                        <col style="width:auto;">
-                        </colgroup>
-
                         <div class="hr"></div>
                         
                         <!-- table -->
@@ -69,7 +59,7 @@
             <div class="fixBtmBtn">
                 <ul>
                     <li>                            
-                        <button type="button" class="btn ld clr1">로그인 하기</button>
+                        <button type="button" class="btn ld clr1">로그인</button>
                     </li>
                 </ul>                    
             </div>

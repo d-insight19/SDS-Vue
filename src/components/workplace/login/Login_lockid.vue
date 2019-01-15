@@ -12,7 +12,7 @@
                 <h1 class="h-tit mb24">계정잠금 해제</h1>
                 
                 <p class="lock_id">아이디<span class="color_clr2">cyclo79</span></p>
-                <p class="txt-desc">본인인증 후 서비스를 이용하실 수 있습니다.<br>안전한 사용을 위해 이용자 비밀번호를 꼭 변경해주세요.</p>
+                <p class="txt-desc">본인인증 후 서비스를 이용하실 수 있습니다. 안전한 사용을 위해 이용자 비밀번호를 꼭 변경해주세요.</p>
 
                 <ul class="certList">
                     <li><a href="#" class="btn">휴대폰 인증 (법인 휴대폰 제외)<span class="ico"></span></a></li>
@@ -46,10 +46,10 @@
         <slp-popup v-if="showConfirm" title="이메일 인증" cancelInput="취소" confirmInput="이메일 발송" @cancelClick="cancel" @confirmClick="confirm">
             <!-- popup body -->
             <div class="ly-cnt">
-                <p>회원정보에 등록된 이메일로 잠금을 해제할 수 있는 링크를 발송합니다.<br>메일 내 링크를 클릭해주시면 잠금이 해제됩니다.</p>	
+                <p>회원정보에 등록된 이메일로 잠금을 해제할 수 있는 링크를 발송합니다. 메일 내 링크를 클릭해주시면 잠금이 해제됩니다.</p>	
             </div>
             <div class="ly-info">
-                <p>finedesign@mulcam.com</p>
+                <p>fin********@mulcam.com</p>
                 <p>정해민</p>
             </div>
         </slp-popup>
@@ -57,7 +57,7 @@
         <slp-popup v-if="showConfirm" title="계정장금 해제안내" confirmInput="확인" @cancelClick="cancel" @confirmClick="confirm">
             <!-- popup body -->
             <div class="ly-cnt">
-                <p>회원님의 계정 잠금상태가 해제되어,정상적으로 서비스를 이용하실 수 있습니다.</p>	
+                <p>회원님의 계정 잠금상태가 해제되어, 정상적으로 서비스를 이용하실 수 있습니다.</p>	
             </div>
         </slp-popup>
 
