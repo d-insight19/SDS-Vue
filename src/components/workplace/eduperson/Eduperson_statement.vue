@@ -13,7 +13,7 @@
          <ul class="chart-list">
             <li>
                <p class="chart-txt">
-                  <span class="dot bgc-1" style="margin-right:8px"></span>
+                  <span class="dot bar1" style="margin-right:8px"></span>
                   <span class="chart-num-2">1.</span>
                   <span>리더십</span>
                   <span class="fr chart-num">37<span class="per">%</span></span>
@@ -21,7 +21,7 @@
             </li>
             <li>
                <p class="chart-txt">
-                  <span class="dot bgc-3" style="margin-right:8px"></span>
+                  <span class="dot bar3" style="margin-right:8px"></span>
                   <span class="chart-num-2">2.</span>
                   <span>마케팅</span>
                   <span class="fr chart-num">30<span class="per">%</span></span>
@@ -29,7 +29,7 @@
             </li>
             <li>
                <p class="chart-txt">
-                  <span class="dot bgc-2" style="margin-right:8px"></span>
+                  <span class="dot bar2" style="margin-right:8px"></span>
                   <span class="chart-num-2">3.</span>
                   <span>성과</span>
                   <span class="fr chart-num">28<span class="per">%</span></span>
@@ -37,7 +37,7 @@
             </li>
             <li>
                <p class="chart-txt">
-                  <span class="dot bgc-4" style="margin-right:8px"></span>
+                  <span class="dot bar4" style="margin-right:8px"></span>
                   <span class="chart-num-2">4.</span>
                   <span>지식</span>
                   <span class="fr chart-num">28<span class="per">%</span></span>
@@ -45,7 +45,7 @@
             </li>
             <li class="bottom-bd-x">
                <p class="chart-txt">
-                  <span class="dot bgc-1" style="margin-right:8px"></span>
+                  <span class="dot bar1" style="margin-right:8px"></span>
                   <span class="chart-num-2">5.</span>
                   <span>경영</span>
                   <span class="fr chart-num">14<span class="per">%</span></span>

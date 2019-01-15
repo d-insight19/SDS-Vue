@@ -15,7 +15,7 @@
                 <ul class="scrollTab">
                     <li class="on"><a href="#tab1">정규 학습</a></li><!-- selected class "on" -->
                     <li><a href="#tab2">자율 학습</a></li>
-                    <li><a href="#tab3">학습 게획</a></li>
+                    <li><a href="#tab3">학습 계획</a></li>
                     <li><a href="#tab4">다운로드</a></li>
                     <li><a href="#tab5">나의 지식 CLIPing</a></li>
                 </ul>

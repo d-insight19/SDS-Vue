@@ -46,11 +46,14 @@
                 <p class="label-tit-18 mb15">약관동의</p>
                     <!-- 동의 리스트 -->
                     <div class="agreeAll">
-                        <slp-checkbox class="label-tit-18 mb0" @click='checkAll()' v-model='isCheckAll'>전체동의</slp-checkbox>
+                        <slp-checkbox class="label-tit-18 mb0" @click='checkAll'>전체동의</slp-checkbox>
                     </div>
                     <ul class="agreeList mt14">
-                        <li v-for='lang in langsdata' :key="lang">
-                            <slp-checkbox  v-bind:value='lang' v-model='languages' @change='updateCheckall()'>{{lang}}<span class="ico gray_next"></span></slp-checkbox>
+                        <li v-for="(feature, index) in features" :key="feature" >
+                            <slp-checkbox  :value="feature" :id="'cb-feature-'+index" v-model="selection.features">
+                                <label :for="'cb-feature-'+index">{{feature}}</label>
+                                <span class="ico gray_next"></span>
+                            </slp-checkbox>
                         </li>
                     </ul>
                     <!-- //동의 리스트 -->
@@ -74,6 +77,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'regiclass_register_option',
   /* vue lifecycle */
@@ -84,29 +88,20 @@ export default {
   /* vue data */
   data () {
     return {
-      isCheckAll: false,
-      languages: [],
-      langsdata: ['개인정보 수집 이용 동의', '고유식별 정보 수집 동의', '개인정보 취급 위탁동의']
+      features: ["개인정보 수집 이용 동의", "고유식별 정보 수집 동의", "개인정보 취급 위탁동의"],
+      selection: {
+        member: "0",
+        framework: "vue",
+        features: []
+      }
     }
   },
   /* vue function */
   methods: {
-    checkAll () {
-      this.isCheckAll = !this.isCheckAll
-      this.languages = []
-      if (this.isCheckAll) {
-        for (var key in this.langsdata) {
-          this.languages.push(this.langsdata[key])
-        }
-      }
+    // check or uncheck all
+    checkAll (event) {
+      this.selection.features = event.target.checked ? this.features : [];
     }
-    // updateCheckall: function(){
-    //   if(this.languages.length == this.langsdata.length){
-    //      this.isCheckAll = true;
-    //   }else{
-    //      this.isCheckAll = false;
-    //   }
-    // }
   }
 }
 </script>
