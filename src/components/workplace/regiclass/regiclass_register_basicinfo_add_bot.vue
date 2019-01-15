@@ -9,7 +9,7 @@
           <div class="cell">
             <div class="inner">
               
-                <h1 class="h-tit">수강신청</h1>
+                <h1 class="h-tit" >수강신청</h1>
 
                 <div class="stepper">
                     <div class="clearfix">
@@ -104,12 +104,12 @@
                     </li>                 
                     <li v-if="active">
                         <strong class="label-tit require_mark" >은행명</strong>
-                        <slp-select class="w100p" required placeholder="선택" @click.prevent="bottomsheetToggle" >
-                            <option>선택</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </slp-select>
+                        <div @click="bottomsheetToggle">
+                            <slp-select class="w100p" required v-model="selected" >
+                                <option v-for="item in selects" :key="item.id" @change="selectVal">{{ item.value }}</option>
+                            </slp-select>
+                        </div>
+                        
                     </li>                 
                     <li v-if="active">
                         <strong class="label-tit require_mark">계좌번호</strong>
@@ -155,19 +155,14 @@
       </div>
       <!-- //container -->
 
-      <!-- Bottom Sheet -->
+       <!-- Bottom Sheet -->
          <div id="bottomsheet_wrap" v-show="bottomsheetFlag">
             <div id="sheetDim"  @click="bottomsheetToggle"></div>
             <div id="bottomsheet">
-            <ul  @click="bottomsheetToggle">
-               <li class="">교육차수 1<span class="checkIcon"></span></li>
-               <li class="">교육차수 2<span class="checkIcon"></span></li>
-               <li class="">교육차수 3<span class="checkIcon"></span></li>
-               <li class="">교육차수 4<span class="checkIcon"></span></li>
-               <li class="">교육차수 5<span class="checkIcon"></span></li>
-               <li class="active">선택된 차수<span class="checkIcon"></span></li>
+            <ul >
+               <li  v-for="item in selects" :key="item"><span @click="e => selected = e.target.value">{{item.value}}</span><span class="checkIcon"></span></li>
             </ul>
-            <div class="bottomsheetBtn">
+            <div class="bottomsheetBtn" @click="bottomsheetToggle">
                <span class="ico close_24_black"></span>
                닫기
             </div>
@@ -180,8 +175,10 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
-  name: 'regiclass_register_basicinfo_add_02',
+  name: 'regiclass_register_basicinfo_add_bot',
+  
   /* vue lifecycle */
   created () {
   },
@@ -192,7 +189,16 @@ export default {
     return {
       active: true,
       list1: [],
-      bottomsheetflag: false
+      bottomsheetFlag: false,
+      selected: 'IBK 기업은행',
+      selects: [
+          {value:'IBK 기업은행'},
+          {value:'KEB 하나은행'},
+          {value:'국민은행'},
+          {value:'신한은행'},
+          {value:'우리은행'},
+          {value:'카카오뱅크'}
+      ]
     }
   },
   /* vue function */
@@ -213,6 +219,15 @@ export default {
     },
     bottomsheetToggle () {
       this.bottomsheetFlag = !this.bottomsheetFlag
+    },
+    selectVal (e) {
+        this.selected = e.target.value;
+        console.log(e.target.value);
+    }
+  },
+  watch: {
+    value (value) {
+      this.selected = value
     }
   }
 }

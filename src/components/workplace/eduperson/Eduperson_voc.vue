@@ -12,28 +12,28 @@
          <ul class="chart-list">
             <li>
                <p class="chart-txt">
-                  <span class="dot bgc-1" style="margin-right:8px"></span>
+                  <span class="dot bar1" style="margin-right:8px"></span>
                   <span>전화</span>
                   <span class="fr chart-num">37<span class="per">%</span></span>
                </p>
             </li>
             <li>
                <p class="chart-txt">
-                  <span class="dot bgc-4" style="margin-right:8px"></span>
+                  <span class="dot bar4" style="margin-right:8px"></span>
                   <span>1:1메일문의</span>
                   <span class="fr chart-num">30<span class="per">%</span></span>
                </p>
             </li>
             <li>
                <p class="chart-txt">
-                  <span class="dot bgc-2" style="margin-right:8px"></span>
+                  <span class="dot bar2" style="margin-right:8px"></span>
                   <span>질문방</span>
                   <span class="fr chart-num">28<span class="per">%</span></span>
                </p>
             </li>
             <li class="bottom-bd-x">
                <p class="chart-txt">
-                  <span class="dot bgc-3" style="margin-right:8px"></span>
+                  <span class="dot bar3" style="margin-right:8px"></span>
                   <span>운영자 문의메일</span>
                   <span class="fr chart-num">14<span class="per">%</span></span>
                </p>
@@ -86,31 +86,31 @@
          <li>
             신청/취소<span class="fr">101명</span>
             <div class="progBox">
-               <div class="bar bgc-3" style="width: 30%;"></div>
+               <div class="bar bar3" style="width: 30%;"></div>
             </div>
          </li>
          <li>
             <p>학습<span class="fr">180명</span></p>
             <div class="progBox">
-               <div class="bar bgc-2" style="width: 50%;"></div>
+               <div class="bar bar2" style="width: 50%;"></div>
             </div>
          </li>
          <li>
             <p class="fwb600">평가<span class="fr">245명</span> </p>
             <div class="progBox">
-               <div class="bar bgc-4" style="width: 65%;"></div>
+               <div class="bar bar4" style="width: 65%;"></div>
             </div>
          </li>
          <li>
             <p>수료<span class="fr">297명</span></p>
             <div class="progBox">
-               <div class="bar bgc-1" style="width: 53%;"></div>
+               <div class="bar bar1" style="width: 53%;"></div>
             </div>
          </li>
          <li>
             <p>기타<span class="fr">124명</span></p>
             <div class="progBox">
-               <div class="bar bgc-2" style="width: 35%;"></div>
+               <div class="bar bar2" style="width: 35%;"></div>
             </div>
          </li>
          </ul>

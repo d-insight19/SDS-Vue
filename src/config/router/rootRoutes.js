@@ -271,6 +271,13 @@ import regiclassRegisterBasicinfoB2c from '~workplace/regiclass/regiclass_regist
 import regiclassRegisterBasicinfoAdd from '~workplace/regiclass/regiclass_register_basicinfo_add'
 import regiclassRegisterBasicinfoAdd02 from '~workplace/regiclass/regiclass_register_basicinfo_add_02'
 import regiclassRegisterBasicinfoAddBot from '~workplace/regiclass/regiclass_register_basicinfo_add_bot'
+import regiclassRegisterBook from '~workplace/regiclass/regiclass_register_book'
+import regiclassRegisterBookSelect from '~workplace/regiclass/regiclass_register_book_select'
+import regiclassRegisterBookSelect02 from '~workplace/regiclass/regiclass_register_book_select_02'
+import regiclassRegisterJob from '~workplace/regiclass/regiclass_register_job'
+import regiclassRegisterLanguage from '~workplace/regiclass/regiclass_register_language'
+import regiclassRegisterLanguageGuide from '~workplace/regiclass/regiclass_register_language_guide'
+import regiclassRegisterTraining from '~workplace/regiclass/regiclass_register_training'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1734,6 +1741,41 @@ var rootRoutes = [
     path: '/regiclass_register_basicinfo_add_bot',
     name: 'regiclass_register_basicinfo_add_bot',
     component: regiclassRegisterBasicinfoAddBot
+  },
+  {
+    path: '/regiclass_register_book',
+    name: 'regiclass_register_book',
+    component: regiclassRegisterBook
+  },
+  {
+    path: '/regiclass_register_book_select',
+    name: 'regiclass_register_book_select',
+    component: regiclassRegisterBookSelect
+  },
+  {
+    path: '/regiclass_register_book_select_02',
+    name: 'regiclass_register_book_select_02',
+    component: regiclassRegisterBookSelect02
+  },
+  {
+    path: '/regiclass_register_job',
+    name: 'regiclass_register_job',
+    component: regiclassRegisterJob
+  },
+  {
+    path: '/regiclass_register_language',
+    name: 'regiclass_register_language',
+    component: regiclassRegisterLanguage
+  },
+  {
+    path: '/regiclass_register_language_guide',
+    name: 'regiclass_register_language_guide',
+    component: regiclassRegisterLanguageGuide
+  },
+  {
+    path: '/regiclass_register_training',
+    name: 'regiclass_register_training',
+    component: regiclassRegisterTraining
   },
   {
     path: '/login_join_terms',
