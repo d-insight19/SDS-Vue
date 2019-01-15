@@ -7066,8 +7066,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_05.02.register_book</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_book' }">
+            regiclass_register_book
           </router-link>
         </td>
         <td></td>
@@ -7083,8 +7083,11 @@
         <td>　</td>
         <td class="textL">06.regiclass_05.02.01.register_book_select</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_book_select' }">
+            regiclass_register_book_select
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_book_select_02' }">
+            regiclass_register_book_select_02
           </router-link>
         </td>
         <td></td>
@@ -7100,8 +7103,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_05.03.register_job</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_job' }">
+            regiclass_register_job
           </router-link>
         </td>
         <td></td>
@@ -7117,8 +7120,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_05.04.register_language</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_language' }">
+            regiclass_register_language
           </router-link>
         </td>
         <td></td>
@@ -7134,8 +7137,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_05.04.01.register_language_guide</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_language_guide' }">
+            regiclass_register_language_guide
           </router-link>
         </td>
         <td></td>
@@ -7151,8 +7154,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_05.05.register_training</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_training' }">
+            regiclass_register_training
           </router-link>
         </td>
         <td></td>

@@ -336,9 +336,9 @@
 #header.mainType.step2.txt .gnbMenu li.on a.menu_txt{color:#fff}
 #header.mainType.step2.txt .gnbMenu li a.menu_icon{display:none;}
 // 학습운영자 메인타입 2단형 예외
-#header.mainType.eduperson .eduperson_title{position:relative;letter-spacing: -0.54px;width:100%}
+#header.mainType.eduperson .eduperson_title{position:relative;letter-spacing: -0.54px;width:100%; height:58px;}// 탭메뉴 클릭이안되는부분 수정
 #header.mainType.eduperson .eduperson_title span:nth-child(1){display: inline-block;max-width: calc(100% - 75px);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-#header.mainType.eduperson .eduperson_title_ico{margin-left:6px;width:16px;height:16px;background: url("../img/ic_dropdown_white.png") no-repeat; background-size:cover;position: absolute;top: 50%;transform: translateY(-120%);}
+#header.mainType.eduperson .eduperson_title_ico{margin-left:6px;width:16px;height:16px;background: url("../img/ic_dropdown_white.png") no-repeat; background-size:cover;position: absolute;top: 50%;transform: translateY(-50%);} // 드롭다운 아이콘 높이조정
 #header.mainType.eduperson .header_inner.line1{padding:0px 0px 0px 72px;font-size:map-get($font-size, font_18);text-align:left;}
 #header.mainType.eduperson.step2.txt .gnbMenu li a.menu_txt{font-size:map-get($font-size, font_15);line-height:22px;letter-spacing: -0.45px;color:rgba(255,255,255,0.4)}
 #header.mainType.eduperson.step2.txt .gnbMenu li.on a.menu_txt{color:#fff}

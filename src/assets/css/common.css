@@ -214,6 +214,7 @@
 .mt10{margin-top: 10px !important;}
 .mt12{margin-top: 12px !important;}/*12월12일 추가*/
 .mt14{margin-top: 14px !important;} 
+.mt15{margin-top: 15px !important;}/*12월12일 추가*/
 .mt16{margin-top: 16px !important;} 
 .mt20{margin-top: 20px !important;}/*12월12일 추가*/ 
 .mt22{margin-top: 22px !important;}/*12월19일 추가*/
@@ -269,12 +270,14 @@
 .pt10{padding-top:10px !important;}
 .pdt16{padding-top: 16px !important;}
 .pdt22{padding-top:22px !important;}
-.pb18{padding-bottom:18 !important;}
-.pdb0{padding-bottom:0 !important;}
-.pdb98{padding-bottom:98px !important;}
-.pdb14{padding-bottom: 14px !important;}
-.pdl0{padding-left: 0 !important;}
 
+.pdb0{padding-bottom:0 !important;}
+.pb18{padding-bottom:18px !important;}
+.pdb20{padding-bottom:20px !important;}
+.pdb14{padding-bottom: 14px !important;}
+.pdb98{padding-bottom:98px !important;}
+
+.pdl0{padding-left: 0 !important;}
 .pl18 {padding-left:18px !important;}
 .pl25 {padding-left:25px !important;}
 .pr18 {padding-right:18px !important;}

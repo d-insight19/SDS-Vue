@@ -473,7 +473,7 @@
                             <li class="type1">나의 점수</li>
                             <li class="square o40 type1">회사 평균</li>          
                         </ul>
-                        <div class="w100p">
+                        <div class="tac">
                             <img src="@/assets/img/img_column01.png" class="w100p" alt="">
                         </div>
                         
@@ -482,7 +482,7 @@
                             <li class="type3">나의 학습시간</li>
                             <li class="square o40 type3">회사 평균</li>          
                         </ul>
-                        <div class="w100p">
+                        <div class="tac">
                             <img src="@/assets/img/img_column02.png" class="w100p" alt="">
                         </div>
                         <!-- //column -->

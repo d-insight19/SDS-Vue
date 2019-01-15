@@ -684,6 +684,85 @@
 #container.atorm_faq .title_line .status_txt{position: relative;padding-right:20px;}
 #container.atorm_faq .title_line .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; position: absolute;top:50%;right:0px;transform: translateY(-50%)}
 
+// 운영자 문의사항 - Eduperson_control
+.dot{ display:inline-block; width: 8px; height:8px; background:#eee; border-radius: 100%; }
+.chart-txt{ font-size:map-get($font-size , font_14);line-height:29px;}
+.chart-num{ font-family: 'Roboto' ; font-size:map-get($font-size , font_22);line-height:29px;}
+.chart-num .per{ font-family: 'Roboto' ; font-size:map-get($font-size , font_15);line-height:29px;vertical-align: 8%;}
+.chart-list li { padding: 5px 0px; border-bottom: 1px solid #e3e3e3; margin: 0 32px;}
+.chart-list.type2 li {padding: 9px 0px;}
+.label-tit-20{ font-weight:600; font-size:map-get($font-size , font_20);line-height:28px; letter-spacing:-0.6px;}
+.label-tit-20.mg{margin-top:22px; margin-bottom:25px;}
+.eduperson .inner-txt{ font-weight: 400;font-size: map-get($font-size , font_16);line-height: 24px;letter-spacing: -0.8px; color: rgba(0, 0, 0, 0.65);}
+.thumList .date{ display:block; margin-bottom:5px; font-family: 'Roboto' ; font-size: map-get($font-size , font_13);line-height: 18px; color: rgba(0, 0, 0, 0.65);}
+.detail_date.tab-txt .select_date{ font-size:map-get($font-size , font_15);line-height:26px;letter-spacing: -0.38px; color: rgba(0, 0, 0, 0.80);}
+.edu_tab3 .detail_date:after{clear:both; display:block; content:'';}
+.edu_tab3 .line01{margin-top:13px;}
+.edu_tab4 .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
+.edu_tab4 .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
+.edu_tab4 .detail_table tr td:nth-last-child(1){padding-right:10px;}
+.edu_tab4 .detail_table thead{background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
+.edu_tab4 .detail_table tbody tr{height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
+.edu_tab4 .detail_table tbody tr:nth-last-child(1){border:none;font-weight: 500;}
+.edu_tab4 .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
+
+.bar1{background-color:map-get($contents_colors, type_1 ) !important;}
+.bar2{background-color:map-get($contents_colors, type_2 ) !important;}
+.bar3{background-color:map-get($contents_colors, type_3 ) !important;}
+.bar4{background-color:map-get($contents_colors, type_4 ) !important;}
+.bar5{background-color:map-get($contents_colors, type_5 ) !important;}
+.bgc-blk{background-color:black !important;}
+.w33p{width:33% !important;}
+
+// 회사운영자 - Eduperson_Operation_control
+.edu_tab2 .btn.md{height:40px; line-height:40px;}
+.edu_tab2 .line01 {margin-top:7px;}
+.edu_tab2 .h-tit2 {margin-bottom:14px;}
+.edu_tab2 .thumList .info li {    vertical-align: inherit; font-size:map-get($font-size , font_13);line-height:24px;letter-spacing: -0.13px; color: rgba(0, 0, 0, 0.80);} 
+.type_box.pd-cus {padding:19px 30px !important;}
+.type_box .info.pos{position: static !important; top: 0; transform: none !important; }
+.type_box .info.pos .tit{margin-bottom:7px; font-size:map-get($font-size , font_14);line-height:17px;letter-spacing: -0.42px; color: rgba(0, 0, 0, 0.80); }
+.type_box .info.pos .tit .info-num{font-size:map-get($font-size , font_16);font-family: 'Roboto' ; font-weight:500; color:rgba(0,0,0,1);}
+
+
+// 회사운영자 - 이러닝보고서 Eduperson_Operation_Set
+#container.Eduperson_Operation .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
+#container.Eduperson_Operation .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
+#container.Eduperson_Operation .detail_table tr td:nth-last-child(1){padding-right:10px;}
+#container.Eduperson_Operation .detail_table thead{background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
+#container.Eduperson_Operation .detail_table tbody tr{height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
+#container.Eduperson_Operation .detail_table tbody tr:nth-last-child(1){border:none;font-weight: 500;}
+#container.Eduperson_Operation .detail_table tbody tr td:nth-child(1){font-weight: 500;}
+#container.Eduperson_Operation .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
+#container.Eduperson_Operation .label-tit-20{margin-bottom:14px;}
+#container.Eduperson_Operation .tb_wrap {margin-bottom:22px; padding: 19px 38px;}
+#container.Eduperson_Operation .tb_wrap td{width:50%}
+#container.Eduperson_Operation .tb_wrap td.left-pd{padding-left:28px;}
+#container.Eduperson_Operation .tb_wrap td.right-pd{padding-right:28px;}
+#container.Eduperson_Operation .tb_wrap td .tb-state{font-family: 'Roboto' ;font-size:map-get($font-size , font_28); font-weight:500;}
+#container.Eduperson_Operation .tb_wrap td .tb-txt{font-size:map-get($font-size , font_18);}
+#container.Eduperson_Operation .line01{margin-top:19px; margin-bottom:18px; border-color:#999999}
+#container.Eduperson_Operation li.rating-list:nth-last-child(1){padding-bottom:0 !important;}
+#container.Eduperson_Operation .rating-tit{font-size:map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.8px;}
+#container.Eduperson_Operation .rating-num{font-family: 'Roboto' ; font-size:map-get($font-size, font_22);line-height: 29px;letter-spacing: -1.1px;}
+#container.Eduperson_Operation .rating-num-2{font-family: 'Roboto' ; font-size:map-get($font-size, font_20);line-height: 26px;letter-spacing: -1.0px;}
+#container.Eduperson_Operation .rating-txt{font-size:map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.7px;}
+#container.Eduperson_Operation .rating-txt-2{font-size:map-get($font-size, font_12);line-height: 18px;letter-spacing: -0.6px;}
+#container.Eduperson_Operation .star-group{ vertical-align: 10%;margin-right: 4px; margin-left:8px;}
+
+.detail_date:after{clear:both;display:block;content:'';}
+
+// 수직그래프 operation 
+#container.Eduperson_Operation .progBox_wrap.vertical{display:table;table-layout: fixed;width:100%;height:150px; margin:0 auto;  margin-bottom:56px;}
+#container.Eduperson_Operation .progBox_wrap.vertical li{position:relative;display:table-cell;vertical-align:bottom; height:150px;}
+#container.Eduperson_Operation .progBox_wrap.vertical li span{display: block;background: rgba(#d1ecfa, .75);width:24px;margin:0 auto;border-radius:0px;}
+#container.Eduperson_Operation .progBox_wrap.vertical li span.bar1 {background-color:map-get($contents_colors, type_1 );}
+#container.Eduperson_Operation .progBox_wrap.vertical li span.bar5 {background-color:map-get($contents_colors, type_5 );}
+#container.Eduperson_Operation .progBox_wrap.vertical li span:before{position:absolute;left:0;right:0;top:100%;padding:10px 0 0 0;display:block;text-align:center;content:attr(title);word-wrap: break-word;}
+#container.Eduperson_Operation .progBox_wrap.vertical li span:after{position:absolute;left:0;right:0;top:0%;padding:10px 0 0 0;display:block;text-align:center;content:attr(value);word-wrap: break-word;}
+
+#container.eduperson .eduperson_title.h58 {position: relative;height: 58px;} // 높이값으로인해 아래 tab이 클릭이 안되는현상 임시수정
+#container.eduperson .thumList li:nth-last-child(1){border-bottom:none;}
 
 
 
@@ -699,7 +778,16 @@
 
 
 
-// 충돌이 날수있을거같아 회사 운영자 이어서 작성한뒤 마지막에 위쪽으로 붙여놓겠습니다
+
+
+
+
+
+
+
+
+
+
 //차기환 작업
 //study 
 /*공통*/
@@ -1255,32 +1343,6 @@ label.rdo .label{position: relative;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 수강신청 regiclass_detailview_licence
 // #container.Regiclass #header .hide-inner p.h-tit1 {font-size: map-get($font-size , font_22);line-height: 21px;letter-spacing: -1.1px; font-weight:600 !important; }
 // #container.Regiclass #header .hide-inner p.h-tit5 {font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px; font-weight:400; }
@@ -1296,14 +1358,14 @@ label.rdo .label{position: relative;}
 // #container.Regiclass table.book-tb tr td:nth-child(1){color:rgba(0,0,0,0.65)}
 
 // regiclass 공통
-.w-auto{width:auto !important}
+.w-auto{width:auto !important;}
 #container.regiclass .label-tit-18 { display:inline-block;font-size: map-get($font-size , font_18);line-height: 21px;letter-spacing: -0.54px; font-weight:500; margin-bottom:12px;}
 #container.regiclass .label-tit-16 { display:inline-block;font-size: map-get($font-size , font_16);line-height: 24px;letter-spacing: -0.48px;}
 #container.regiclass .label-tit-15 { display:inline-block;font-size: map-get($font-size , font_15);line-height: 22px;letter-spacing: -0.45px; }
 #container.regiclass .label-tit-14 { display:inline-block;font-size: map-get($font-size , font_14);line-height: 20px;letter-spacing: -0.42px; margin-bottom:8px;}
+#container.regiclass .label-tit-13 { display:inline-block;font-size: map-get($font-size , font_13);line-height: 19px;letter-spacing: -0.39px; margin-bottom:6px;}
 
 // 수강형태 선택 및 실명인증 regiclass_register_option
-
 #container.regiclass .stepper .txt-desc {height:auto;}
 #container.regiclass .stepper {margin-bottom:0;}
 #container.regiclass .thumList .tit {margin-bottom:6px; font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;font-weight:500;}
@@ -1329,88 +1391,16 @@ label.rdo .label{position: relative;}
 #container.regiclass.basicinfo .join-id {border-bottom:1px solid #d9d9d9;}
 #container.regiclass.basicinfo .ulList.type1 li + li {margin-top: 20px;}
 
+// 수강신청 참고도서 선택 팝업
+#container.regiclass.basicinfo.book .ulList.type1 li ~ li {margin-top: 10px;}
 
-// 운영자 문의사항 - Eduperson_control
-.dot{ display:inline-block; width: 8px; height:8px; background:#eee; border-radius: 100%; }
-.chart-txt{ font-size:map-get($font-size , font_14);line-height:29px;}
-.chart-num{ font-family: 'Roboto' ; font-size:map-get($font-size , font_22);line-height:29px;}
-.chart-num .per{ font-family: 'Roboto' ; font-size:map-get($font-size , font_15);line-height:29px;vertical-align: 8%;}
-.chart-list li { padding: 5px 0px; border-bottom: 1px solid #e3e3e3; margin: 0 32px;}
-.chart-list.type2 li {padding: 9px 0px;}
-.label-tit-20{ font-weight:600; font-size:map-get($font-size , font_20);line-height:28px; letter-spacing:-0.6px;}
-.label-tit-20.mg{margin-top:22px; margin-bottom:25px;}
-.eduperson .inner-txt{ font-weight: 400;font-size: map-get($font-size , font_16);line-height: 24px;letter-spacing: -0.8px; color: rgba(0, 0, 0, 0.65);}
-.thumList .date{ display:block; margin-bottom:5px; font-family: 'Roboto' ; font-size: map-get($font-size , font_13);line-height: 18px; color: rgba(0, 0, 0, 0.65);}
-.detail_date.tab-txt .select_date{ font-size:map-get($font-size , font_15);line-height:26px;letter-spacing: -0.38px; color: rgba(0, 0, 0, 0.80);}
-.edu_tab3 .detail_date:after{clear:both; display:block; content:'';}
-.edu_tab3 .line01{margin-top:13px;}
-.edu_tab4 .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
-.edu_tab4 .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
-.edu_tab4 .detail_table tr td:nth-last-child(1){padding-right:10px;}
-.edu_tab4 .detail_table thead{background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
-.edu_tab4 .detail_table tbody tr{height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
-.edu_tab4 .detail_table tbody tr:nth-last-child(1){border:none;font-weight: 500;}
-.edu_tab4 .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
-.bgc-1{background-color:map-get($contents_colors, type_1 ) !important;}
-.bgc-2{background-color:map-get($contents_colors, type_2 ) !important;}
-.bgc-3{background-color:map-get($contents_colors, type_3 ) !important;}
-.bgc-4{background-color:map-get($contents_colors, type_4 ) !important;}
-.bgc-5{background-color:map-get($contents_colors, type_5 ) !important;}
-.bgc-blk{background-color:black !important;}
-.w33p{width:33% !important;}
-
-// 회사운영자 - Eduperson_Operation_control
-.edu_tab2 .btn.md{height:40px; line-height:40px;}
-.edu_tab2 .line01 {margin-top:7px;}
-.edu_tab2 .h-tit2 {margin-bottom:14px;}
-.edu_tab2 .thumList .info li {    vertical-align: inherit; font-size:map-get($font-size , font_13);line-height:24px;letter-spacing: -0.13px; color: rgba(0, 0, 0, 0.80);} 
-.type_box.pd-cus {padding:19px 30px !important;}
-.type_box .info.pos{position: static !important; top: 0; transform: none !important; }
-.type_box .info.pos .tit{margin-bottom:7px; font-size:map-get($font-size , font_14);line-height:17px;letter-spacing: -0.42px; color: rgba(0, 0, 0, 0.80); }
-.type_box .info.pos .tit .info-num{font-size:map-get($font-size , font_16);font-family: 'Roboto' ; font-weight:500; color:rgba(0,0,0,1);}
-
-
-// 회사운영자 - 이러닝보고서 Eduperson_Operation_Set
-#container.Eduperson_Operation .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
-#container.Eduperson_Operation .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
-#container.Eduperson_Operation .detail_table tr td:nth-last-child(1){padding-right:10px;}
-#container.Eduperson_Operation .detail_table thead{background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
-#container.Eduperson_Operation .detail_table tbody tr{height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
-#container.Eduperson_Operation .detail_table tbody tr:nth-last-child(1){border:none;font-weight: 500;}
-#container.Eduperson_Operation .detail_table tbody tr td:nth-child(1){font-weight: 500;}
-#container.Eduperson_Operation .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
-#container.Eduperson_Operation .label-tit-20{margin-bottom:14px;}
-#container.Eduperson_Operation .tb_wrap {margin-bottom:22px; padding: 19px 38px;}
-#container.Eduperson_Operation .tb_wrap td{width:50%}
-#container.Eduperson_Operation .tb_wrap td.left-pd{padding-left:28px;}
-#container.Eduperson_Operation .tb_wrap td.right-pd{padding-right:28px;}
-#container.Eduperson_Operation .tb_wrap td .tb-state{font-family: 'Roboto' ;font-size:map-get($font-size , font_28); font-weight:500;}
-#container.Eduperson_Operation .tb_wrap td .tb-txt{font-size:map-get($font-size , font_18);}
-#container.Eduperson_Operation .line01{margin-top:19px; margin-bottom:18px; border-color:#999999}
-#container.Eduperson_Operation li.rating-list:nth-last-child(1){padding-bottom:0 !important;}
-#container.Eduperson_Operation .rating-tit{font-size:map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.8px;}
-#container.Eduperson_Operation .rating-num{font-family: 'Roboto' ; font-size:map-get($font-size, font_22);line-height: 29px;letter-spacing: -1.1px;}
-#container.Eduperson_Operation .rating-num-2{font-family: 'Roboto' ; font-size:map-get($font-size, font_20);line-height: 26px;letter-spacing: -1.0px;}
-#container.Eduperson_Operation .rating-txt{font-size:map-get($font-size, font_14);line-height: 20px;letter-spacing: -0.7px;}
-#container.Eduperson_Operation .rating-txt-2{font-size:map-get($font-size, font_12);line-height: 18px;letter-spacing: -0.6px;}
-#container.Eduperson_Operation .star-group{ vertical-align: 10%;margin-right: 4px; margin-left:8px;}
-
-.detail_date:after{clear:both;display:block;content:'';}
-
-// 수직그래프 operation 
-#container.Eduperson_Operation .progBox_wrap.vertical{display:table;table-layout: fixed;width:100%;height:150px; margin:0 auto;  margin-bottom:56px;}
-#container.Eduperson_Operation .progBox_wrap.vertical li{position:relative;display:table-cell;vertical-align:bottom; height:150px;}
-#container.Eduperson_Operation .progBox_wrap.vertical li span{display: block;background: rgba(#d1ecfa, .75);width:24px;margin:0 auto;border-radius:0px;}
-#container.Eduperson_Operation .progBox_wrap.vertical li span.bar1 {background-color:map-get($contents_colors, type_1 );}
-#container.Eduperson_Operation .progBox_wrap.vertical li span.bar5 {background-color:map-get($contents_colors, type_5 );}
-#container.Eduperson_Operation .progBox_wrap.vertical li span:before{position:absolute;left:0;right:0;top:100%;padding:10px 0 0 0;display:block;text-align:center;content:attr(title);word-wrap: break-word;}
-#container.Eduperson_Operation .progBox_wrap.vertical li span:after{position:absolute;left:0;right:0;top:0%;padding:10px 0 0 0;display:block;text-align:center;content:attr(value);word-wrap: break-word;}
-
-#container.eduperson .eduperson_title.h58 {position: relative;height: 58px;} // 높이값으로인해 아래 tab이 클릭이잘안되는현상 임시수정
-#container.eduperson .thumList li:nth-last-child(1){border-bottom:none;}
-
-
-
+// 수강신청 직무연관과정
+#container.regiclass.basicinfo.register .tb-wrap{border-top:1px solid #d9d9d9;}
+#container.regiclass.basicinfo.register .tb-wrap tr td{padding-top:14px; width:50%;}
+#container.regiclass.basicinfo.register .tb-wrap tr td .label{font-size: map-get($font-size , font_14);line-height: 21px;letter-spacing: -0.42px;}
+#container.regiclass.basicinfo.register .h-tit1{font-size: map-get($font-size , font_30);line-height: 38px;letter-spacing: -0.9px; margin-bottom:12px;}
+#container.regiclass.basicinfo.register .txt-tit{font-size: map-get($font-size , font_16);line-height: 21px;letter-spacing: -0.48px; font-weight:600; margin-bottom:12px;}
+#container.regiclass.basicinfo.register .label-tit-15{line-height: 24px; margin-bottom:11px; color:rgba(0,0,0,0.8)}
 
 
 

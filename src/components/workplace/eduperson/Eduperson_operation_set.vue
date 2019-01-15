@@ -27,7 +27,7 @@
          <li>
             <div class="in">
                   <a href="#" class="thum">
-                     <span class="label bgc-1">1</span>
+                     <span class="label bar1">1</span>
                      <div class="thumbnail">
                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                      </div>
@@ -44,7 +44,7 @@
          <li>
             <div class="in">
                   <a href="#" class="thum">
-                     <span class="label bgc-1">2</span>
+                     <span class="label bar1">2</span>
                      <div class="thumbnail">
                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                      </div>
@@ -61,7 +61,7 @@
          <li>
             <div class="in">
                   <a href="#" class="thum">
-                     <span class="label bgc-1">3</span>
+                     <span class="label bar1">3</span>
                      <div class="thumbnail">
                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                      </div>
@@ -203,7 +203,7 @@
          <li>
             <div class="in">
                   <a href="#" class="thum">
-                     <span class="label bgc-1">1</span>
+                     <span class="label bar1">1</span>
                      <div class="thumbnail">
                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                      </div>
@@ -220,7 +220,7 @@
          <li>
             <div class="in">
                   <a href="#" class="thum">
-                     <span class="label bgc-1">2</span>
+                     <span class="label bar1">2</span>
                      <div class="thumbnail">
                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                      </div>
@@ -237,7 +237,7 @@
          <li>
             <div class="in">
                   <a href="#" class="thum">
-                     <span class="label bgc-1">3</span>
+                     <span class="label bar1">3</span>
                      <div class="thumbnail">
                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                      </div>
@@ -379,7 +379,7 @@
          <li>
             <div class="in">
                   <a href="#" class="thum">
-                     <span class="label bgc-1">1</span>
+                     <span class="label bar1">1</span>
                      <div class="thumbnail">
                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                      </div>
@@ -396,7 +396,7 @@
          <li>
             <div class="in">
                   <a href="#" class="thum">
-                     <span class="label bgc-1">2</span>
+                     <span class="label bar1">2</span>
                      <div class="thumbnail">
                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                      </div>
@@ -413,7 +413,7 @@
          <li>
             <div class="in">
                   <a href="#" class="thum">
-                     <span class="label bgc-1">3</span>
+                     <span class="label bar1">3</span>
                      <div class="thumbnail">
                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                      </div>
