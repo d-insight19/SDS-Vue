@@ -251,6 +251,8 @@ import MySpaceFormalCertificateNameKor from '~workplace/myspace/MySpace_formal_c
 import MySpaceFormalCertificateengPop from '~workplace/myspace/MySpace_formal_certificateeng_pop'
 import MySpaceFormalRequeststage from '~workplace/myspace/MySpace_formal_requeststage'
 import MySpaceFormalAttendingconfirmation from '~workplace/myspace/MySpace_formal_attendingconfirmation'
+import MySpaceAutonomy from '~workplace/myspace/MySpace_autonomy'
+import MySpaceDownload from '~workplace/myspace/MySpace_download'
 import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changeplan'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
@@ -1647,6 +1649,16 @@ var rootRoutes = [
     path: '/MySpace_formal_changeplan',
     name: 'MySpace_formal_changeplan',
     component: MySpaceFormalChangeplan
+  },
+  {
+    path: '/MySpace_autonomy',
+    name: 'MySpace_autonomy',
+    component: MySpaceAutonomy
+  },
+  {
+    path: '/MySpace_download',
+    name: 'MySpace_download',
+    component: MySpaceDownload
   },
   {
     path: '/regiclass_detailview_books',
