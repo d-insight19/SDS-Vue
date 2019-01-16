@@ -27,39 +27,57 @@
       <ul class="progBox_wrap">
         <h2 class="tit">학습자 진도율</h2>
         <li>
-          0%<span class="fr">101명</span>
+          <p>0%<span class="fr">101명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 30%;"></div>
+            <barStack
+              :chart-data="basicBarData1"
+              :options="basicBarOpt"
+              css-classes="basicBar" />
           </div>
         </li>
         <li>
           <p>10%~20%<span class="fr">314명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 50%;"></div>
+            <barStack
+              :chart-data="basicBarData2"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
           <p>21%~40%<span class="fr">245명</span> </p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 65%;"></div>
+            <barStack
+              :chart-data="basicBarData3"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
           <p>41%~60%<span class="fr">187명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 53%;"></div>
+            <barStack
+              :chart-data="basicBarData4"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
           <p>61%~80%<span class="fr">124명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 35%;"></div>
+            <barStack
+              :chart-data="basicBarData5"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
           <strong><p>81%~100%<span class="fr">327명</span></p></strong>
           <div class="progBox">
-            <div class="bar bar1" style="width: 90%;"></div>
+            <barStack
+              :chart-data="basicBarData6"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
       </ul>
@@ -89,37 +107,55 @@
         <li>
           0%<span class="fr">101명</span>
           <div class="progBox">
-            <div class="bar bar5" style="width: 30%;"></div>
+            <barStack
+              :chart-data="basicBarData11"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
           <p>10%~20%<span class="fr">314명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 50%;"></div>
+            <barStack
+              :chart-data="basicBarData12"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
           <p>21%~40%<span class="fr">245명</span> </p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 65%;"></div>
+            <barStack
+              :chart-data="basicBarData13"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
           <p>41%~60%<span class="fr">187명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 53%;"></div>
+            <barStack
+              :chart-data="basicBarData14"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
           <p>61%~80%<span class="fr">124명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 35%;"></div>
+            <barStack
+              :chart-data="basicBarData15"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
           <strong><p>81%~100%<span class="fr">327명</span></p></strong>
           <div class="progBox">
-            <div class="bar bar1" style="width: 90%;"></div>
+            <barStack
+              :chart-data="basicBarData16"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
       </ul>
@@ -144,41 +180,50 @@
       </div>
 
       <ul class="progBox_wrap">
-        <h2 class="tit">학습자 진도율</h2>
+        <h2 class="tit">분류별 학습현황</h2>
         <li>
-          0%<span class="fr">101명</span>
+          <p>경영·리더십<span class="fr">101명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 30%;"></div>
+            <barStack
+              :chart-data="basicBarData21"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
-          <p>10%~20%<span class="fr">314명</span></p>
+          <p>전문직무<span class="fr">314명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 50%;"></div>
+            <bar-stack
+              :chart-data="basicBarData22"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
-          <p>21%~40%<span class="fr">245명</span> </p>
+          <p>자격대비<span class="fr">245명</span> </p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 65%;"></div>
+            <bar-stack
+              :chart-data="basicBarData23"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
-          <p>41%~60%<span class="fr">187명</span></p>
+          <strong>외국어<span class="fr">187명</span></strong>
           <div class="progBox">
-            <div class="bar bar5" style="width: 53%;"></div>
+            <bar-stack
+              :chart-data="basicBarData24"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
         <li>
-          <p>61%~80%<span class="fr">124명</span></p>
+          <p>글로벌 비즈니스<span class="fr">124명</span></p>
           <div class="progBox">
-            <div class="bar bar5" style="width: 35%;"></div>
-          </div>
-        </li>
-        <li>
-          <strong><p>81%~100%<span class="fr">327명</span></p></strong>
-          <div class="progBox">
-            <div class="bar bar1" style="width: 90%;"></div>
+            <bar-stack
+              :chart-data="basicBarData25"
+              :options="basicBarOpt"
+              class="basicBar"/>
           </div>
         </li>
       </ul>
@@ -187,8 +232,33 @@
 </template>
 
 <script>
+/*eslint-disable*/
+import {Bar, HorizontalBar, Doughnut, mixins} from 'vue-chartjs'
+const {reactiveProp} = mixins
+
+const barStack = {
+  extends: HorizontalBar,
+  mixins: [reactiveProp],
+  props: ['options'],
+  mounted: function () {
+    this.renderChart( this.chartData, this.options )
+  }
+}
+
+const barChart = {
+  extends: Bar,
+  mixins: [reactiveProp],
+  props: ['options'],
+  mounted: function () {
+    this.renderChart( this.chartData, this.options )
+  }
+}
 export default {
   name: 'Eduperson_studycurrent',
+  components: {
+    'barStack': barStack,
+    'barChart': barChart
+  },
   /* vue lifecycle */
   created () {
   },
@@ -197,6 +267,77 @@ export default {
   /* vue data */
   data () {
     return {
+      basicBarOpt: {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        },
+        scales: {
+          xAxes: [{
+            gridLines: {display: false, color: 'rgba(0, 0, 0, 0)', scaleLineColor: 'rgba(0, 0, 0, 0)', drawBorder: false},
+            ticks: { display: false, min: 0, max: 100 }
+          }],
+          yAxes: [{
+            barThickness: 8,
+            gridLines: {display: false, color: 'rgba(0, 0, 0, 0)', scaleLineColor: 'rgba(0, 0, 0, 0)', drawBorder: false},
+            ticks: {display: false}
+          }]
+        }
+      },
+      basicBarData1: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [30] }]
+      },
+      basicBarData2: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [50] }]
+      },
+      basicBarData3: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [70] }]
+      },
+      basicBarData4: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [50] }]
+      },
+      basicBarData5: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [40] }]
+      },
+      basicBarData6: {
+        datasets: [{ backgroundColor: '#ff726D', data: [100] }]
+      },
+
+      basicBarData11: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [30] }]
+      },
+      basicBarData12: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [50] }]
+      },
+      basicBarData13: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [70] }]
+      },
+      basicBarData14: {
+        datasets: [{ backgroundColor: '#ff726D', data: [80] }]
+      },
+      basicBarData15: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [40] }]
+      },
+      basicBarData16: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [20] }]
+      },
+
+      basicBarData21: {
+        datasets: [{ backgroundColor: '#ffba00', data: [30] }]
+      },
+      basicBarData22: {
+        datasets: [{ backgroundColor: '#32667d', data: [50] }]
+      },
+      basicBarData23: {
+        datasets: [{ backgroundColor: '#00b3c4', data: [30] }]
+      },
+      basicBarData24: {
+        datasets: [{ backgroundColor: '#ff726D', data: [80] }]
+      },
+      basicBarData25: {
+        datasets: [{ backgroundColor: '#00b6e8', data: [20] }]
+      }
     }
   },
   /* vue function */
@@ -204,3 +345,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.basicBar {
+  height: 18px;
+}
+</style>

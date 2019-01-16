@@ -97,7 +97,7 @@
                             <label class="labelRdo"><input type="radio" class="rdo" name="place-rdo" @click="active_el(2)" ><span class="ico"></span><span class="label">기존계좌 선택</span></label>
                             <label class="labelRdo"><input type="radio" class="rdo" name="place-rdo" @click="active_el(1)" checked><span class="ico"></span><span class="label">신규등록</span></label>
                         </div>                      
-                    </li>                             
+                    </li>
                     <li v-if="active">
                         <strong class="label-tit require_mark">예금주 성명</strong>
                         <slp-text-field placeholder="성명 입력" ></slp-text-field>
@@ -106,10 +106,9 @@
                         <strong class="label-tit require_mark" >은행명</strong>
                         <div @click="bottomsheetToggle">
                             <slp-select class="w100p" required v-model="selected" >
-                                <option v-for="item in selects" :key="item.id" @change="selectVal">{{ item.value }}</option>
+                                <option v-for="item in selects" :key="item.id" @change="selectVal" style="display:none !important;">{{ item.value }}</option>
                             </slp-select>
                         </div>
-                        
                     </li>                 
                     <li v-if="active">
                         <strong class="label-tit require_mark">계좌번호</strong>
@@ -160,7 +159,7 @@
             <div id="sheetDim"  @click="bottomsheetToggle"></div>
             <div id="bottomsheet">
             <ul >
-               <li  v-for="item in selects" :key="item"><span @click="e => selected = e.target.value">{{item.value}}</span><span class="checkIcon"></span></li>
+               <li  v-for="item in selects" :key="item"><span @click="selectVal(event)">{{item.value}}</span><span class="checkIcon"></span></li>
             </ul>
             <div class="bottomsheetBtn" @click="bottomsheetToggle">
                <span class="ico close_24_black"></span>
@@ -226,8 +225,8 @@ export default {
     }
   },
   watch: {
-    value (value) {
-      this.selected = value
+    selected (oldVal, newVal) {
+      this.selected = newVal
     }
   }
 }

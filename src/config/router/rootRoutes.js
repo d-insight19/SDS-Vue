@@ -1,6 +1,5 @@
 // fdp 기본 route 정보
 import Worksheet from '@/components/Worksheet'
-import test from '~workplace/common_page/test'
 import ComponentsButtons from '~workplace/common_page/components_buttons'
 import ComponentsTextfield from '~workplace/common_page/components_textfield'
 import ComponentsCheckbox from '~workplace/common_page/components_checkbox'
@@ -31,6 +30,7 @@ import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_
 // import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 import ComponentsChart from '~workplace/common_page/components_chart'
+import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -276,6 +276,11 @@ import regiclassRegisterJob from '~workplace/regiclass/regiclass_register_job'
 import regiclassRegisterLanguage from '~workplace/regiclass/regiclass_register_language'
 import regiclassRegisterLanguageGuide from '~workplace/regiclass/regiclass_register_language_guide'
 import regiclassRegisterTraining from '~workplace/regiclass/regiclass_register_training'
+import regiclassRegisterContorl from '~workplace/regiclass/regiclass_register_contorl'
+import regiclassRegisterSearchcp03 from '~workplace/regiclass/regiclass_register_searchcp_03'
+import regiclassRegisterNation from '~workplace/regiclass/regiclass_register_nation'
+import regiclassRegisterPayCreditcard from '~workplace/regiclass/regiclass_register_pay_creditcard'
+import regiclassRegisterPayCreditcard02 from '~workplace/regiclass/regiclass_register_pay_creditcard_02'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -432,11 +437,6 @@ var rootRoutes = [
     component: Worksheet
   },
   {
-    path: '/test',
-    name: 'test',
-    component: test
-  },
-  {
     path: '/components_textfield_slp',
     name: 'components_textfield_slp',
     component: ComponentsTextfieldSlp
@@ -585,6 +585,11 @@ var rootRoutes = [
     path: '/components_chart',
     name: 'components_chart',
     component: ComponentsChart
+  },
+  {
+    path: '/components_chart_lib',
+    name: 'components_chart_lib',
+    component: ComponentsChartLib
   },
   {
     path: '/Login_findcenter',
@@ -1764,6 +1769,31 @@ var rootRoutes = [
     path: '/regiclass_register_training',
     name: 'regiclass_register_training',
     component: regiclassRegisterTraining
+  },
+  {
+    path: '/regiclass_register_contorl',
+    name: 'regiclass_register_contorl',
+    component: regiclassRegisterContorl
+  },
+  {
+    path: '/regiclass_register_searchcp_03',
+    name: 'regiclass_register_searchcp_03',
+    component: regiclassRegisterSearchcp03
+  },
+  {
+    path: '/regiclass_register_nation',
+    name: 'regiclass_register_nation',
+    component: regiclassRegisterNation
+  },
+  {
+    path: '/regiclass_register_pay_creditcard',
+    name: 'regiclass_register_pay_creditcard',
+    component: regiclassRegisterPayCreditcard
+  },
+  {
+    path: '/regiclass_register_pay_creditcard_02',
+    name: 'regiclass_register_pay_creditcard_02',
+    component: regiclassRegisterPayCreditcard02
   },
   {
     path: '/login_join_terms',

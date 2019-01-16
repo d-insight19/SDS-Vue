@@ -1401,6 +1401,19 @@ label.rdo .label{position: relative;}
 #container.regiclass.basicinfo.register .h-tit1{font-size: map-get($font-size , font_30);line-height: 38px;letter-spacing: -0.9px; margin-bottom:12px;}
 #container.regiclass.basicinfo.register .txt-tit{font-size: map-get($font-size , font_16);line-height: 21px;letter-spacing: -0.48px; font-weight:600; margin-bottom:12px;}
 #container.regiclass.basicinfo.register .label-tit-15{line-height: 24px; margin-bottom:11px; color:rgba(0,0,0,0.8)}
+#container.regiclass.basicinfo.register .label-tit-14{font-size: map-get($font-size , font_14);line-height: 20px;letter-spacing: -0.42px; }
+#container.regiclass.basicinfo.register .ulList.type2 li{ padding:15px 0; border-bottom:1px solid #e3e3e3;}
+#container.regiclass.basicinfo.register .ulList.type2 li + li{margin-top:0px;}
+#container.regiclass.basicinfo.register .label-tit-15.cus{line-height: 22px; margin-bottom:0px; color:rgba(0,0,0,1.0)}
+#container.regiclass.basicinfo.register .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 8px;background: #d9d9d9;}
+#container.regiclass.basicinfo.register .pipe-group dd:nth-last-child(1):after{display:none;}
+#container.regiclass.basicinfo.register .pipe-group dd{font-size: map-get($font-size , font_13);line-height: 19px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
+
+#container.regiclass.basicinfo.register .label-tit-15.type1{font-size: map-get($font-size , font_14);line-height: 21px;letter-spacing: -0.42px; }
+#container.regiclass.basicinfo.register .label-tit-14.type1{font-family: 'roboto'; font-size: map-get($font-size , font_15);line-height: 21px;letter-spacing: -0.45px; }
+
+
+
 
 
 
