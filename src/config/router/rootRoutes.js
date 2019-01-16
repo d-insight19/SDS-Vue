@@ -253,9 +253,14 @@ import MySpaceFormalCertificateNameKor from '~workplace/myspace/MySpace_formal_c
 import MySpaceFormalCertificateengPop from '~workplace/myspace/MySpace_formal_certificateeng_pop'
 import MySpaceFormalRequeststage from '~workplace/myspace/MySpace_formal_requeststage'
 import MySpaceFormalAttendingconfirmation from '~workplace/myspace/MySpace_formal_attendingconfirmation'
+import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changeplan'
 import MySpaceAutonomy from '~workplace/myspace/MySpace_autonomy'
 import MySpaceDownload from '~workplace/myspace/MySpace_download'
-import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changeplan'
+import MySpaceDownloading from '~workplace/myspace/MySpace_downloading'
+import MySpaceDownloadEdit from '~workplace/myspace/MySpace_download_edit'
+import MySpaceDownloadDetail from '~workplace/myspace/MySpace_download_detail'
+import MySpaceDownloadDetailEdit from '~workplace/myspace/MySpace_download_detail_edit'
+import MySpaceDownloadOffline from '~workplace/myspace/MySpace_download_offline'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -1678,6 +1683,31 @@ var rootRoutes = [
     path: '/MySpace_download',
     name: 'MySpace_download',
     component: MySpaceDownload
+  },
+  {
+    path: '/MySpace_downloading',
+    name: 'MySpace_downloading',
+    component: MySpaceDownloading
+  },
+  {
+    path: '/MySpace_download_edit',
+    name: 'MySpace_download_edit',
+    component: MySpaceDownloadEdit
+  },
+  {
+    path: '/MySpace_download_detail',
+    name: 'MySpace_download_detail',
+    component: MySpaceDownloadDetail
+  },
+  {
+    path: '/MySpace_download_detail_edit',
+    name: 'MySpace_download_detail_edit',
+    component: MySpaceDownloadDetailEdit
+  },
+  {
+    path: '/MySpace_download_offline',
+    name: 'MySpace_download_offline',
+    component: MySpaceDownloadOffline
   },
   {
     path: '/regiclass_detailview_books',
