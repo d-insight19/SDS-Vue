@@ -14,10 +14,14 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1 mb24">휴대폰 번호로 찾기</h1>
+                <h1 class="h-tit1">휴대폰 번호로 찾기</h1>
 
                 <!-- list -->
                 <ul class="ulList type1">
+                    <li>
+                        <strong class="label-tit">아이디</strong>
+                        <slp-text-field  placeholder="아이디 입력"></slp-text-field>
+                    </li>
                     <li>
                         <strong class="label-tit">이름</strong>
                         <slp-text-field  placeholder="이름 입력"></slp-text-field>

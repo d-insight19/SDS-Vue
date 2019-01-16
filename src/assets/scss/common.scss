@@ -9,7 +9,9 @@ body{
   // background : map-get($static_colors,alert);
   //background: map-get($mono_colors,mono_65);
   // color : $secondary2  
+  font-size:map-get($font_size, font_14);
 }
+input, textarea, label, button {font-size:map-get($font_size, font_14);}
 
 
 button.btn{
@@ -77,12 +79,12 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .btn.type2{padding:0 20px !important; border-radius: 50px;}
 
 /* btn size */
-.btn.xxxs{font-size:map-get($font_size, font_13); line-height: 28px; height: 28px; padding:0 10px; letter-spacing: -0.063px;}
-.btn.xxs{font-size:map-get($font_size, font_13); line-height: 35px; height: 35px; padding:0 18px; letter-spacing: -0.39px;}
-.btn.xs{font-size:map-get($font_size, font_14); line-height: 36px; height: 38px; padding:0 10px; letter-spacing: -0.063px;}
-.btn.sm{font-size:map-get($font_size, font_14); line-height: 42px; height: 44px; padding:0 10px; letter-spacing: -0.063px;}
-.btn.md{font-size:map-get($font_size, font_16); line-height: 50px; height: 50px; padding:0 10px; letter-spacing: -0.48px;}
-.btn.ld{font-size:map-get($font_size, font_16); line-height: 54px; height: 54px; padding:0 10px; letter-spacing: -0.48px;}
+.btn.xxxs{font-size:map-get($font_size, font_13); height: 28px; padding:0 10px; letter-spacing: -0.063px;}
+.btn.xxs{font-size:map-get($font_size, font_13); height: 35px; padding:0 18px; letter-spacing: -0.39px;}
+.btn.xs{font-size:map-get($font_size, font_14); height: 38px; padding:0 10px; letter-spacing: -0.063px;}
+.btn.sm{font-size:map-get($font_size, font_14); height: 44px; padding:0 10px; letter-spacing: -0.063px;}
+.btn.md{font-size:map-get($font_size, font_16); height: 50px; padding:0 10px; letter-spacing: -0.48px;}
+.btn.ld{font-size:map-get($font_size, font_16); height: 54px; padding:0 10px; letter-spacing: -0.48px;}
 .btn.xxxs, .btn.xxs, .btn.xs, .btn.sm, .btn.md , .btn.ld{border: 1px solid #ccc; background-color: #fff;}
 
 
@@ -113,7 +115,7 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .fixBtmBtn{position: fixed; left:0; bottom:0; z-index: 100; width:100%;}
 .fixBtmBtn ul{display: table; table-layout: fixed; width: 100%;}
 .fixBtmBtn li{display: table-cell;}
-.fixBtmBtn li .btn{width:100%; height:54px; border:0; border-top:1px solid #ccc;font-weight: 500;line-height:54px;}
+.fixBtmBtn li .btn{width:100%; height:54px; border:0; border-top:1px solid #ccc;font-weight: 500;}
 .fixBtmBtn li .btn.clr1{border-top: 1px solid transparent;}
 .fixBtmBtn li .btn[disabled]{color:rgba(0,0,0,0.25) !important; border-top:1px solid #ccc !important; background: #ededed !important;}
 .fixBtmBtn li + li .btn[disabled]{border-left:1px solid #d9d9d9 !important;}
@@ -172,11 +174,13 @@ input[type="text"].noline, input[type="password"].noline, input[type="search"].n
 
 /* ***** form ***** */
 input[type="text"],input[type="password"],input[type="search"],input[type="number"]{
+  font-size:map-get($font-size, font_14);
   width:100%; 
   height:44px; 
   padding:0 16px; 
   border:1px solid #f5f5f5; 
   background: #f5f5f5;
+  letter-spacing: -0.42px;
 }
 input.err{
   border-color:map-get($static_colors , danger);
@@ -588,8 +592,8 @@ select:required:invalid {
 .layerWrap .ly-body{font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.045em;color:rgba(0,0,0,0.65);font-weight: 400;    word-break: keep-all;max-height:239px;overflow: scroll}
 .layerWrap .ly-body .ly-info{color:rgba(0,0,0,0.80);margin-top:12px;font-weight: 500;}
 .layerWrap .ly-btn{text-align: right;margin-top:15px;}
-.layerWrap .ly-btn .btn{font-size:map-get($font_size, font_16); color:#666; line-height: 20px; font-weight: 500; letter-spacing: -0.048em; min-width: 60px; width:initial}
-.layerWrap .ly-btn .btn + .btn{margin-left:10px;}
+.layerWrap .ly-btn .btn{font-size:map-get($font_size, font_16); color:#666; line-height: 20px; font-weight: 500; letter-spacing: -0.048em; width:initial}
+.layerWrap .ly-btn .btn + .btn{margin-left:32px;}
 .layerWrap .time {padding-left:39px}
 
 #dim{position:fixed; z-index:850; top:0; bottom:0; left:0; right:0; background:rgba(0,0,0,0.6)}
@@ -783,6 +787,7 @@ select:required:invalid {
 #drawer .drawer_atorm_txt2{font-size:map-get($font-size, font_16 );line-height:36px;letter-spacing: -0.48px;font-weight:500;margin-left:5px}
 #drawer .exchange_wrap .icon{width:20px;height:20px;background: url("../img/ic_arr_solid_white_20.png") no-repeat; background-size: contain;display:inline-block;position:absolute;top:50%;right:16px;transform:translateY(-50%);}
 #drawer-overlay{position: fixed;top: 0;left: 0;right: 0;height: 100vh;background-color: rgba(0,0,0,0.5);z-index: 997;}
+
 
 
 // 키보드관련 : Default

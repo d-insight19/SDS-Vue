@@ -22,9 +22,9 @@
                         <div class="bar clr2" style="width:50%"></div>
                     </div>
                     <!-- B2C -->
-                    <p class="txt-desc" style="display:none1;">연수원에서 사용하실 아이디를<br>입력해주시기 바랍니다.</p>
+                    <p class="txt-desc" style="display:none1;">연수원에서 사용하실 아이디를 입력해주시기 바랍니다.</p>
                     <!-- B2B -->
-                    <p class="txt-desc" style="display:none;">아래 검색된 아이디 중에서 통합 아이디로 사용하실<br>아이디를 선택 혹은 입력해주시기 바랍니다.</p>
+                    <p class="txt-desc" style="display:none;">아래 검색된 아이디 중에서 통합 아이디로 사용하실 아이디를 선택 혹은 입력해주시기 바랍니다.</p>
                 </div>
 
                 <!-- B2C 통합회원가입-->

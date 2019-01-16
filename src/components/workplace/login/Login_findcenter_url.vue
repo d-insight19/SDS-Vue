@@ -32,10 +32,8 @@
         <!-- fixed Bottom Btn -->    
         <div class="fixBtmBtn">
             <ul>
-                <li>                            
-                    <button type="button" disabled class="btn ld">다음</button>
-                    <!-- 하단에 활성화 된 버튼은 임시로 display:none -->
-                    <button type="button" class="btn ld clr1" style="display:none;">다음</button>
+                <li> 
+                    <button type="button" class="btn ld clr1">다음</button>
                 </li>
             </ul>                    
         </div>

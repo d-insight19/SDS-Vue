@@ -21,7 +21,7 @@
                                 <div class="progBox">
                                 <div class="bar clr2" style="width:100%"></div>
                             </div>
-                            <p class="txt-desc">부가 정보를 입력 하시면<br>회원님의 맞춤 정보를 받을 수 있습니다.</p>
+                            <p class="txt-desc">부가 정보를 입력 하시면 회원님의 맞춤 정보를 받을 수 있습니다.</p>
                         </div>
 
 

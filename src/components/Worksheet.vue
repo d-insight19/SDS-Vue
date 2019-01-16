@@ -126,6 +126,10 @@
           <router-link :to="{ name: 'Login_findcenter_email' }">
             Login_findcenter_email
           </router-link>
+          ,
+          <router-link :to="{ name: 'Login_findcenter_email2' }">
+            Login_findcenter_email2
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -159,6 +163,10 @@
         <td>
           <router-link :to="{ name: 'Login_findcenter_url' }">
             Login_findcenter_url
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Login_findcenter_url2' }">
+            Login_findcenter_url2
           </router-link>
         </td>
         <td></td>
@@ -3573,9 +3581,9 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_requeststage</td>
         <td>
-          <!--<router-link :to="{ name: 'MySpace_formal_requeststage' }">
+          <router-link :to="{ name: 'MySpace_formal_requeststage' }">
             MySpace_formal_requeststage
-          </router-link>-->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -3668,9 +3676,9 @@
         <td></td>
         <td class="textL">04.MySpace_04.01.formal_changeplan</td>
         <td>
-          <!--<router-link :to="{ name: 'MySpace_formal_changeplan' }">
+          <router-link :to="{ name: 'MySpace_formal_changeplan' }">
             MySpace_formal_changeplan
-          </router-link>-->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -3685,8 +3693,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.02.autonomy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_autonomy' }">
+            MySpace_autonomy
           </router-link>
         </td>
         <td></td>
@@ -3702,8 +3710,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.03.download</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_download' }">
+            MySpace_download
           </router-link>
         </td>
         <td></td>

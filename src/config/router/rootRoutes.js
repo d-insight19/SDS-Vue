@@ -34,8 +34,10 @@ import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
+import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
 import LoginFindcenterSelect from '~workplace/login/Login_findcenter_select'
 import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
+import LoginFindcenterUrl2 from '~workplace/login/Login_findcenter_url2'
 import LoginLogin from '~workplace/login/Login_login'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
 import LoginInterest from '~workplace/login/Login_interest'
@@ -252,6 +254,13 @@ import MySpaceFormalCertificateengPop from '~workplace/myspace/MySpace_formal_ce
 import MySpaceFormalRequeststage from '~workplace/myspace/MySpace_formal_requeststage'
 import MySpaceFormalAttendingconfirmation from '~workplace/myspace/MySpace_formal_attendingconfirmation'
 import MySpaceFormalChangeplan from '~workplace/myspace/MySpace_formal_changeplan'
+import MySpaceAutonomy from '~workplace/myspace/MySpace_autonomy'
+import MySpaceDownload from '~workplace/myspace/MySpace_download'
+import MySpaceDownloading from '~workplace/myspace/MySpace_downloading'
+import MySpaceDownloadEdit from '~workplace/myspace/MySpace_download_edit'
+import MySpaceDownloadDetail from '~workplace/myspace/MySpace_download_detail'
+import MySpaceDownloadDetailEdit from '~workplace/myspace/MySpace_download_detail_edit'
+import MySpaceDownloadOffline from '~workplace/myspace/MySpace_download_offline'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -602,6 +611,11 @@ var rootRoutes = [
     component: LoginFindcenterEmail
   },
   {
+    path: '/Login_findcenter_email2',
+    name: 'Login_findcenter_email2',
+    component: LoginFindcenterEmail2
+  },
+  {
     path: '/Login_findcenter_select',
     name: 'Login_findcenter_select',
     component: LoginFindcenterSelect
@@ -610,6 +624,11 @@ var rootRoutes = [
     path: '/Login_findcenter_url',
     name: 'Login_findcenter_url',
     component: LoginFindcenterUrl
+  },
+  {
+    path: '/Login_findcenter_url2',
+    name: 'Login_findcenter_url2',
+    component: LoginFindcenterUrl2
   },
   {
     path: '/Login_login',
@@ -1659,6 +1678,41 @@ var rootRoutes = [
     path: '/MySpace_formal_changeplan',
     name: 'MySpace_formal_changeplan',
     component: MySpaceFormalChangeplan
+  },
+  {
+    path: '/MySpace_autonomy',
+    name: 'MySpace_autonomy',
+    component: MySpaceAutonomy
+  },
+  {
+    path: '/MySpace_download',
+    name: 'MySpace_download',
+    component: MySpaceDownload
+  },
+  {
+    path: '/MySpace_downloading',
+    name: 'MySpace_downloading',
+    component: MySpaceDownloading
+  },
+  {
+    path: '/MySpace_download_edit',
+    name: 'MySpace_download_edit',
+    component: MySpaceDownloadEdit
+  },
+  {
+    path: '/MySpace_download_detail',
+    name: 'MySpace_download_detail',
+    component: MySpaceDownloadDetail
+  },
+  {
+    path: '/MySpace_download_detail_edit',
+    name: 'MySpace_download_detail_edit',
+    component: MySpaceDownloadDetailEdit
+  },
+  {
+    path: '/MySpace_download_offline',
+    name: 'MySpace_download_offline',
+    component: MySpaceDownloadOffline
   },
   {
     path: '/regiclass_detailview_books',

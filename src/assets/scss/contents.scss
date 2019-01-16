@@ -274,13 +274,12 @@
 
 #container.join.complete .h-tit{font-size: map-get($font-size, font_30);line-height: 38px;letter-spacing: -0.9px;font-weight: 500;margin-bottom:8px;}
 #container.join.complete .txt-desc{font-size: map-get($font-size, font_13);line-height: 20px;letter-spacing: -0.39px;font-weight: 300;margin-bottom:8px;color: rgba(0,0,0,0.65);margin-bottom:0px;}
-#container.join.complete .hr{height:0px; border-bottom: 1px solid #1a1a1a;margin: 7.5px 0px 17px;}
+#container.join.complete .hr{height: 0px;border-bottom: 1px solid #d9d9d9;margin: 22px 0px 20px;}
 #container.join.complete .tit.fl{font-size: map-get($font-size, font_18);font-weight: 600;letter-spacing: -0.54px;line-height: 27px;}
 #container.join.complete .btn.fr{font-size: map-get($font-size, font_13);font-weight: 500;letter-spacing: -0.39px;line-height: 27px;color: rgba(0,0,0,0.65)}
 #container.join.complete .btn.fr .ico{width:16px; height: 16px; background: url("../img/ic_next_line_bold_gray_16.png"); background-size: cover;margin: 0px 0px;vertical-align: middle;}
-#container.join.complete .joinComp-tbl tr{height:38px;}
-#container.join.complete .joinComp-tbl th{font-size: map-get($font-size, font_13);width:47px;line-height: 22px;color: rgba(0,0,0,0.65);font-weight: 300;padding: 0px 0px;letter-spacing: -0.39px;vertical-align: top;text-align: left;}
-#container.join.complete .joinComp-tbl td{font-size: map-get($font-size, font_14);line-height: 22px;color: #000;font-weight: 400;padding: 0px 0px 0px 24px;letter-spacing: -0.42px;vertical-align:top;    word-break: keep-all;}
+#container.join.complete .joinComp-tbl th{font-size: map-get($font-size, font_13);width:47px;line-height: 19px;color: rgba(0,0,0,0.65);font-weight: 300;padding: 0px 0px;letter-spacing: -0.39px;vertical-align: top;text-align: left;padding-bottom:12px;}
+#container.join.complete .joinComp-tbl td{font-size: map-get($font-size, font_14);line-height: 19px;color: #000;font-weight: 400;padding: 0px 0px 0px 24px;letter-spacing: -0.42px;vertical-align:top;    word-break: keep-all;padding-bottom:12px;}
 #container.join.complete .joinComp-tbl{margin-top: 0px;border-top: 0px;}
 #container.join.complete .joinComp-tbl .address_type_btn{display:inline-block;font-size: map-get($font-size, font_11);line-height: 22px;padding:0px 7px;height:22px;width:auto;margin-right:4px;border:1px solid #d9d9d9;border-radius: 100px;}
 
@@ -334,7 +333,7 @@
 #container.findid .txt-desc{font-weight: 300;margin-top:12px;}
 #container.findid .link{font-size:map-get($font-size, font_11);margin-left:8px;letter-spacing: -0.55px; }
 #container.findid .link .ico.arr{margin-left:6px;}
-#container.findid .txt-desc3{font-size: map-get($font_size, font_13); color:#000000; letter-spacing: -0.42px; line-height: 20px; font-weight: 400; margin-top: 8px; }
+#container.findid .txt-desc3{font-size: map-get($font_size, font_14); color:#000000; letter-spacing: -0.42px; line-height: 20px; font-weight: 400; margin-top: 8px; }
 #container.findid .txt-desc3 strong{font-weight: 600;}
 #container.findid .resultBox{padding:24px; background:#f5f5f5;}
 #container.findid .resultBox li{font-size:map-get($font_size, font_15); line-height: 18px; letter-spacing: -0.45px; font-weight: 500;}
@@ -345,13 +344,19 @@
 // 아이디차기 결과
 #container.findid .find_result_txt_desc1{margin-top:6px;margin-bottom:16px;font-size:map-get($font-size, font_12); line-height: 18px;letter-spacing: -0.36px;color:rgba(0,0,0,0.65)}
 #container.findid .find_result_txt_desc2{margin-top:6px;margin-bottom:16px;font-size:map-get($font-size, font_13); line-height: 20px;letter-spacing: -0.39px;color:rgba(0,0,0,0.80)}
-#container.findid .find_result_txt_desc2 .link{font-weight: 500;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;position: relative;padding-right:16px;}
+#container.findid .find_result_txt_desc2 > span{margin-right:6px;}
+#container.findid .find_result_txt_desc2 .link{font-weight: 500;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;position: relative;padding-right:16px;margin-left:0px;}
 #container.findid .find_result_txt_desc2 .link .next_12{width:12px;height:12px;}
+
+//연수원 URL로 찾기
+#container.findcenter .ulList + .ulList{margin-top:28px}
+#container.findcenter .ulList.type3 .label-tit{display:inline-block;margin-bottom:1px;}
 
 // 이메일 인증
 #container.findid.certify .ulList.type1 li + li{margin-top:16px;}
 #container.findid.certify .emailChk {position: relative;}
-#container.findid.certify .emailChk .time{position: absolute; right:16px; top:0px; display: block; font-size: map-get($font_size, font_11); color:map-get($static_colors , danger); font-weight: 500; line-height: 44px;}
+#container.findid.certify .emailChk .time{position: absolute; right:16px; top:0px; display: block; letter-spacing: -0.28px;font-size: map-get($font_size, font_11); color:map-get($static_colors , danger); font-weight: 500; line-height: 44px;}
+#container.findid.certify .emailChk .time .num{display:inline-block;font-family: 'Roboto';font-size: map-get($font_size, font_12);letter-spacing: -0.36px;margin-right:1px;}
 #container.findid.certify .emailChk .input{padding-right: 60px;}
 #container.findid.certify .emailChk .btn{font-size: map-get($font_size, font_14); color: #1a1a1a; line-height: 42px; letter-spacing: -0.036em; font-weight: 500; height: 44px; margin-top: 8px;}
 #container.findid.certify .ulList.type1 li:nth-last-child(1){margin-top:24px;}
@@ -633,6 +638,7 @@
 #container.atorm .product_wrap .product_list .product_icon.group_90{background: url("../img/ic_atorm_group_90.png") no-repeat; }
 #container.atorm .product_wrap .product_list .product_icon.flip_90{background: url("../img/ic_atorm_flip_90.png") no-repeat; }
 #container.atorm .product_wrap .product_list .product_icon.cliping_90{background: url("../img/ic_atorm_cliping_90.png") no-repeat; }
+#container.atorm .product_wrap .product_list .product_icon.elearning_90.test{background:#ff0000;mask-image: url("../img/ic_atorm_elearning_90.png")}
 // ATROM 과정운영관리
 #container.atorm .thumList.include_ico > li{display:inline-block;border-color:#ccc;margin-bottom:20px;padding-bottom:0px;}
 #container.atorm .thumList.include_ico li .in{padding-right:29px ;width:100vw}
@@ -1102,7 +1108,7 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 #container.study_quiz_ox .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 #container.study_quiz_ox .hr{margin: 32px -24px 26px -24px;} 
 #container.study_quiz_ox .inb-box .ico-ml{ margin-left: 48px;}
-.inner input.input{color: rgba(0,0,0,0.8);}
+#container.study_quiz_ox .inner input.input{color: rgba(0,0,0,0.8);}
 .inner-txt{ font-weight:400; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; color:map-get($mono_colors, mono_80);}
 .bg-sky{background: #e5f3ff; padding: 16px;}
 .bg-sky span{  color:#000; font-weight:500; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;  }
@@ -2073,6 +2079,39 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .cardList {background:transparent !important;}
 .MySpace .cardList > li {background:#fff;}
 .MySpace .cardList.type2 .tit {width: auto;}
+// 비용신청단계 조회
+.MySpace .formal_requeststage {margin-left: 19px; border-left: 2px solid map-get($line_colors,B89);}
+.MySpace .formal_requeststage > li {position:relative;padding:2px 0px 30px 37px;}
+.MySpace .formal_requeststage > li:last-child {padding-bottom: 2px;}
+.MySpace .formal_requeststage > li .state{color:map-get($mono_colors,mono_0); background-color: #CCC; width:30px; height:30px; border-radius:100%; position: absolute; left: -16px; top: -2px; text-align: center; line-height: 22px; font-size:map-get($font-size, font_11); font-weight: 300; border:4px solid #ffffff;}
+.MySpace .formal_requeststage > li .contents{color:map-get($mono_colors,mono_25); font-size:map-get($font-size, font_16);}
+.MySpace .formal_requeststage > li.active .state{background-color:#00adfb;}
+.MySpace .formal_requeststage > li.active .contents{color:map-get($mono_colors,mono_80); font-weight:600;}
+.MySpace .formal_requeststage > li.inactive .state{background: #fff url("../img/ic_checkon_line_32.png") center center no-repeat; background-size:cover; color: transparent;}
+.MySpace .formal_requeststage > li.inactive .contents{color:map-get($mono_colors,mono_80);}
+
+// 다운로드
+.MySpace .downloadCondition {position: relative; background-color: map-get($line_colors , B89); padding:12px 18px; height: 61px;}
+.MySpace .thumList > li {border-bottom:0 none; margin-bottom:0;}
+.MySpace .thumList.type1 .thum {width:120px; height:120px;}
+.MySpace .thumList.type1 .in {background-color: #fff; height: 120px; padding-left: 136px;}
+.MySpace .thumList.type1 .in.done {opacity: 0.4;}
+.MySpace .thumList.type1 .in.done::before{display: inline-block; content: '청강기간 만료'; color: map-get($static_colors , danger); font-size:map-get($font-size, font_13); position: absolute; top: calc(50% - 5px); left:50%;}
+.MySpace .offlineMent {background-color:#333; line-height: 48px;}
+.MySpace #header .info li{display: inline-block; font-size: map-get($font_size, font_13); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
+.MySpace #header .info li+li{margin-left: 5px;}
+.MySpace #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
+.MySpace .multiList.type2 .labelChk .label {width:100%;}
+.MySpace .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 16px; margin-bottom:12px;}
+.MySpace .download_detail .title {white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical;}
+.MySpace .download_detail .txt_wrap {border-bottom: 0 none !important;}
+.MySpace .download_detail .accordion_arrow{width:20px;height:20px;position:absolute;bottom:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+.MySpace .download_detail .info li {color:map-get($mono_colors,mono_65);}
+.MySpace .sub_content{display:none;}
+.MySpace .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 9px 21px; font-weight:600; margin-left: 38px;}
+.MySpace .open .download_detail .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
+.MySpace .open .sub_content{display:block; margin-bottom:12px;}
+.MySpace .open .download_detail {margin-bottom:0px;}
 
 //regiclass
 .regiclass #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}

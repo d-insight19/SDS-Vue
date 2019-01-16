@@ -23,8 +23,8 @@
                         <slp-text-field  placeholder="이름 입력"></slp-text-field>
                     </li>
                     <li>
-                        <strong class="label-tit">이메이</strong>
-                        <slp-text-field  placeholder="이메이 입력"></slp-text-field>
+                        <strong class="label-tit">이메일</strong>
+                        <slp-text-field  placeholder="이메일 입력"></slp-text-field>
                     </li>
                 </ul>
                 <!-- // list -->
