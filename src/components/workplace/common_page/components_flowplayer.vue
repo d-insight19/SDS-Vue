@@ -51,164 +51,76 @@
                     <!-- e: 동영상 재생 후 나오는 영상리스트 -->
                 </div>
                 <!-- s: btm_subtitle_area -->
-                <div class="btm_subtitle_area" data-js="toggle">
-                    <button type="button" class="subtitle_title" data-js="toggle__anchor">Transcript
-                        <i>
-                            <span class="sr-only">자막 보기/숨김</span>
-                        </i>
-                    </button>
+                <div class="btm_subtitle_area" data-js="toggle" >
                     <div class="subtitle_slide_wrap" data-js="toggle__panel">
-                        <div class="btm_subtitle_control">
-                            <span class="toggle_checkbox right">
-                                <input id="toggle_checked2" type="checkbox" class="auto_scroll_chk">
-                                <label for="toggle_checked2" class="auto_scroll_label">자동스크롤</label>
-                            </span>
-                            <div class="combobox" data-js="combobox">
-                                <select name="guide" id="guide" title="guide">
-                                    <option>한국어</option>
-                                    <option>영어</option>
-                                    <option>중국어</option>
-                                </select>
+                        <div class="btm_subtitle_control">                                
+                            <div>
+                                <div class="subtitle_lang_wrap">
+                                    <span class="lang_type">한국어</span>
+                                    <span class="dropdown"></span>         
+                                </div>
+                                <span class="switch_txt">자동스크롤</span>
+                                <slp-switch :value="true"/>
+                                <span class="script_close"></span>
                             </div>
                         </div>
                         <!-- s: timeline_wrapper -->
                         <div class="timeline_wrapper">
+                            <p class="timeline_tit">스크립트</p>
                             <ul class="btm_subtitle_timeline">
                                 <li>
                                     <!-- 현재 재생중인 영상의 자막일 때 -->
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
+                                        <div class="desc">
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. <span class="color_clr2">이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다.</span></p>
+                                        </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
-                                            대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
+                                        <div class="desc">
+                                            <p>[클래스 객체]</p> 
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
+                                            대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
+                                        <div class="desc">                                   
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번
-                                            차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
+                                            차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
+                                        <div class="desc">
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
+                                        <div class="desc">
+                                            <p>[클래스 객체]</p> 
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="time">0:24</span>
-                                        <span class="desc">
-                                            <strong>[클래스 객체]</strong> 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </span>
+                                        <div class="desc">
+                                            <p>[클래스 객체]</p> 
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
                                     </a>
                                 </li>
                             </ul>
@@ -220,6 +132,7 @@
             </div>
             <!-- e: 동영상-->
             <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
+                {{scriptFlag}}
                 <p>111</p>
                 <p>asdfasdf</p>
                 <p>asdfasdf</p>
@@ -227,6 +140,8 @@
                 <p>asdfasdf</p>
                 <p>asdfasdf</p>
                 <p>asdfasdf</p>
+                <slp-switch :value="true"/>
+
             </div>
             
         </div>
@@ -260,7 +175,26 @@
           <div class="cell">
             <div class="inner">
                 
-                
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
 
             </div>
           </div>
@@ -354,7 +288,8 @@ export default {
           }
         ], //자막,
         noseek: true //timeline no
-      }
+      },
+      scriptFlag: false
     }
   },
   methods: {
@@ -380,6 +315,22 @@ export default {
   mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
+        $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
+        $('.fp-ratio').append('<div class="tap_wrap"><div class="half_left"></div><div class="half_right"></div></div>');
+
+        $('.half_left').click(function(){
+            console.error("왼쪽");
+        });
+        $('.half_right').click(function(){
+            console.error("오른쪽");
+        });
+
+        $('.fp-script , .script_close').click(function(){
+            console.error("스크립트");
+            $('.fp-script').toggleClass('active');
+            $('.player_wrap').toggleClass('script');
+        });
+
         $('.fp-presec').click(function()
         {
             alert('30초이전!')
@@ -420,13 +371,16 @@ export default {
             $(window).scroll(function()
             {
                 var $wTop = $(window).scrollTop();
-                if ($wTop >= $top)
+                if ($wTop >= 100)
                 {
-                    $parent.addClass('fixed').css('margin-top', $targetH);
+                    //$parent.addClass('fixed').css('margin-top', $targetH);
+                    $parent.addClass('fixed');
+                    //$("#header").addClass('fixed');
                 }
                 else
                 {
                     $parent.removeClass('fixed').attr('style', '');
+                    //$("#header").removeClass('fixed');
                 }
             })                                          
         }
