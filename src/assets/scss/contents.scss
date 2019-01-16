@@ -1406,6 +1406,19 @@ label.rdo .label{position: relative;}
 #container.regiclass.basicinfo.register .h-tit1{font-size: map-get($font-size , font_30);line-height: 38px;letter-spacing: -0.9px; margin-bottom:12px;}
 #container.regiclass.basicinfo.register .txt-tit{font-size: map-get($font-size , font_16);line-height: 21px;letter-spacing: -0.48px; font-weight:600; margin-bottom:12px;}
 #container.regiclass.basicinfo.register .label-tit-15{line-height: 24px; margin-bottom:11px; color:rgba(0,0,0,0.8)}
+#container.regiclass.basicinfo.register .label-tit-14{font-size: map-get($font-size , font_14);line-height: 20px;letter-spacing: -0.42px; }
+#container.regiclass.basicinfo.register .ulList.type2 li{ padding:15px 0; border-bottom:1px solid #e3e3e3;}
+#container.regiclass.basicinfo.register .ulList.type2 li + li{margin-top:0px;}
+#container.regiclass.basicinfo.register .label-tit-15.cus{line-height: 22px; margin-bottom:0px; color:rgba(0,0,0,1.0)}
+#container.regiclass.basicinfo.register .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 8px;background: #d9d9d9;}
+#container.regiclass.basicinfo.register .pipe-group dd:nth-last-child(1):after{display:none;}
+#container.regiclass.basicinfo.register .pipe-group dd{font-size: map-get($font-size , font_13);line-height: 19px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
+
+#container.regiclass.basicinfo.register .label-tit-15.type1{font-size: map-get($font-size , font_14);line-height: 21px;letter-spacing: -0.42px; }
+#container.regiclass.basicinfo.register .label-tit-14.type1{font-family: 'roboto'; font-size: map-get($font-size , font_15);line-height: 21px;letter-spacing: -0.45px; }
+
+
+
 
 
 
@@ -2077,12 +2090,27 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .formal_requeststage > li.inactive .contents{color:map-get($mono_colors,mono_80);}
 
 // 다운로드
-.MySpace .downloadArea {position: relative; background-color: map-get($line_colors , B89); padding:12px 18px; height: 61px;}
+.MySpace .downloadCondition {position: relative; background-color: map-get($line_colors , B89); padding:12px 18px; height: 61px;}
 .MySpace .thumList > li {border-bottom:0 none; margin-bottom:0;}
 .MySpace .thumList.type1 .thum {width:120px; height:120px;}
 .MySpace .thumList.type1 .in {background-color: #fff; height: 120px; padding-left: 136px;}
 .MySpace .thumList.type1 .in.done {opacity: 0.4;}
 .MySpace .thumList.type1 .in.done::before{display: inline-block; content: '청강기간 만료'; color: map-get($static_colors , danger); font-size:map-get($font-size, font_13); position: absolute; top: calc(50% - 5px); left:50%;}
+.MySpace .offlineMent {background-color:#333; line-height: 48px;}
+.MySpace #header .info li{display: inline-block; font-size: map-get($font_size, font_13); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
+.MySpace #header .info li+li{margin-left: 5px;}
+.MySpace #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
+.MySpace .multiList.type2 .labelChk .label {width:100%;}
+.MySpace .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 16px; margin-bottom:12px;}
+.MySpace .download_detail .title {white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical;}
+.MySpace .download_detail .txt_wrap {border-bottom: 0 none !important;}
+.MySpace .download_detail .accordion_arrow{width:20px;height:20px;position:absolute;bottom:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+.MySpace .download_detail .info li {color:map-get($mono_colors,mono_65);}
+.MySpace .sub_content{display:none;}
+.MySpace .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 9px 21px; font-weight:600; margin-left: 38px;}
+.MySpace .open .download_detail .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
+.MySpace .open .sub_content{display:block; margin-bottom:12px;}
+.MySpace .open .download_detail {margin-bottom:0px;}
 
 //regiclass
 .regiclass #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}

@@ -7179,8 +7179,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_05.06.register_nation</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_nation' }">
+            regiclass_register_nation
           </router-link>
         </td>
         <td></td>
@@ -7281,11 +7281,14 @@
         <td>　</td>
         <td class="textL">06.regiclass_05.07.register_searchcp</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_contorl' }">
+            regiclass_register_contorl
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_searchcp_03' }">
+            regiclass_register_searchcp_03
           </router-link>
         </td>
-        <td></td>
+        <td>tab page 01,02</td>
       </tr>
       <tr>
       <td align="center">413</td>
@@ -7315,8 +7318,11 @@
         <td>　</td>
         <td class="textL">06.regiclass_06.01.register_pay_creditcard</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_pay_creditcard' }">
+            regiclass_register_pay_creditcard
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_pay_creditcard_02' }">
+            regiclass_register_pay_creditcard_02
           </router-link>
         </td>
         <td></td>
@@ -10963,6 +10969,23 @@
         <td>
           <router-link :to="{ name: 'components_chart' }">
             components_chart
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>chart</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_chart_lib' }">
+            components_chart_lib
           </router-link>
         </td>
         <td></td>
