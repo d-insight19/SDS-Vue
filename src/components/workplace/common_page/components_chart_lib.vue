@@ -568,10 +568,10 @@ export default {
         }
       },
       basicBarData1: {
-        datasets: [{ backgroundColor: '#32667d', data: [30] }]
+        datasets: [{ backgroundColor: '#32667d', data: [100] }]
       },
       basicBarData2: {
-        datasets: [{ backgroundColor: '#00b6e8', data: [50] }]
+        datasets: [{ backgroundColor: '#00b6e8', data: [100] }]
       },
       basicBarData3: {
         datasets: [{ backgroundColor: '#ffba00', data: [70] }]
@@ -636,8 +636,8 @@ export default {
         datasets: [
           { backgroundColor: '#ff726D', data: [10] },
           { backgroundColor: '#00b6e8', data: [30] },
-          { backgroundColor: '#32667d', data: [20] },
-          { backgroundColor: '#ffba00', data: [40] }
+          { backgroundColor: '#32667d', data: [30] },
+          { backgroundColor: '#ffba00', data: [30] }
         ]
       },
       basicBar5Data: {
@@ -776,14 +776,17 @@ export default {
 <style>
 
 .basicBar41{
+  width:100%;
   height: 20px;
 }
 
 .basicBar42{
+  width:100%;
   height: 20px;
 }
 
 .basicBar5{
+  width:100%;
   height: 18px;
 }
 
@@ -803,11 +806,12 @@ export default {
 }
 
 .barLine{
-  width:680px;
+  width:100%;
   height:170px;
 }
 
 .basicBar {
+  width:100%;
   height: 18px;
 }
 

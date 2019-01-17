@@ -7443,8 +7443,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_08.01.register_approve</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_approve' }">
+            regiclass_register_approve
           </router-link>
         </td>
         <td></td>

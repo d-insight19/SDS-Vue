@@ -297,6 +297,7 @@ import regiclassRegisterPayAccounttransfer from '~workplace/regiclass/regiclass_
 import regiclassRegisterComplete from '~workplace/regiclass/regiclass_register_complete'
 import regiclassRegisterCompleteAccount from '~workplace/regiclass/regiclass_register_complete_account'
 import regiclassRegisterCompleteWaiting from '~workplace/regiclass/regiclass_register_complete_waiting'
+import regiclassRegisterApprove from '~workplace/regiclass/regiclass_register_approve'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1890,6 +1891,11 @@ var rootRoutes = [
     path: '/regiclass_register_complete_waiting',
     name: 'regiclass_register_complete_waiting',
     component: regiclassRegisterCompleteWaiting
+  },
+  {
+    path: '/regiclass_register_approve',
+    name: 'regiclass_register_approve',
+    component: regiclassRegisterApprove
   },
   {
     path: '/login_join_terms',
