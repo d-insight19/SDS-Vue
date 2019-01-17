@@ -3727,8 +3727,12 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.03.download_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'download_detail' }">
+            download_detail
+          </router-link>
+          ,
+          <router-link :to="{ name: 'download_detail_edit' }">
+            download_detail_edit
           </router-link>
         </td>
         <td></td>
@@ -5781,7 +5785,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td>　</td>
+        <td>삭제</td>
         <td></td>
         <td></td>
       </tr>
