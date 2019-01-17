@@ -52,7 +52,7 @@
                         </a>
                         <a href="#" class="tit fwr">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
                         <dl class="info">
-                            <li class="color_clr3 fwb">이러닝</li>
+                            <li class="color_clr3">이러닝</li>
                         </dl>
                         <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                     </div>
@@ -68,7 +68,7 @@
 
                         <a href="#" class="tit fwr">기초부터 예제까지 iOS 개발자를 위한 업무에 바로 쓰는 스플...</a>
                         <dl class="info">
-                            <li class="color_clr3 fwb">이러닝</li>
+                            <li class="color_clr3">이러닝</li>
                         </dl>
                         <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
                     </div>

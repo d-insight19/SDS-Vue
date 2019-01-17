@@ -23,6 +23,9 @@
 .ico.url_20{width:20px;height:20px; background: url("../img/ic_url_line_20.png") no-repeat;}
 .ico.play_20{width:20px;height:20px; background: url("../img/ic_play_line_20.png") no-repeat;}
 .ico.play_28{width:28px;height:28px; background: url("../img/ic_play_line_28.png") no-repeat; background-size:cover;}
+.ico.pause_20.blue{width:20px;height:20px; background: url("../img/ic_pause_blue_16.png") no-repeat; background-size:cover;}
+.ico.cancel_20.blue{width:20px;height:20px; background: url("../img/ic_cancel_blue_16.png") no-repeat; background-size:cover;}
+.ico.redownload_20.blue{width:20px;height:20px; background: url("../img/ic_redownload_blue_16.png") no-repeat; background-size:cover;}
 .ico.ebook_20{width:20px;height:20px; background: url("../img/ic_ebook_line_20.png") no-repeat;}
 .ico.headphone_20{width:20px;height:20px; background: url("../img/ic_headphone_line_20.png") no-repeat;}
 .ico.youtube_20{width:20px;height:20px; background: url("../img/ic_youtube_20.png") no-repeat;}
@@ -147,6 +150,14 @@
 /*추가이미지 2019-1-11*/
 .ico.close_20{width:20px; height:20px; background: url("../img/ic_close_line_20.png") ;background-size: cover;}
 
+
+/*추가이미지 2019-1-17*/
+.ico.list-btn{width:24px; height:24px; background: url("../img/ic_listchange_24.png") ;background-size: cover;}
+
+
+
+
+
 /* ico btn */
 .btn.only .ico{display: block;}
 .btn.only.trash .ico{width:20px; height:20px; background-position: -82px -64px;}
@@ -258,6 +269,7 @@
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
 .ml12{margin-left: 12px !important;}
+.ml38{margin-left: 38px !important;}
 
 .mr3{margin-right: 3px !important;}
 .mr4{margin-right: 4px !important;}/*1월 3일 추가*/

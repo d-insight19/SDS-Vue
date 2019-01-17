@@ -25,7 +25,7 @@
                 <li>
                   <p>신청/취소<span class="fr">101명</span> </p>
                   <div class="progBox">
-                    <h-bar-chart
+                    <h-bar-chart 
                       :chart-data="basicBarData1"
                       :options="basicBarOpt"
                       css-classes="basicBar" />
@@ -34,16 +34,17 @@
                 <li>
                   <p>학습<span class="fr">180명</span> </p>
                   <div class="progBox">
-                    <barStack
+                    <barStack 
                       :chart-data="basicBarData2"
                       :options="basicBarOpt"
-                      class="basicBar"/>
+                      class="basicBar"
+                      />
                   </div>
                 </li>
                 <li>
                   <strong>평가<span class="fr">245명</span> </strong>
                   <div class="progBox">
-                    <barStack
+                    <barStack 
                       :chart-data="basicBarData3"
                       :options="basicBarOpt"
                       class="basicBar"/>
@@ -463,6 +464,29 @@
 /*eslint-disable*/
 import {Bar, HorizontalBar, Doughnut, mixins} from 'vue-chartjs'
 const {reactiveProp} = mixins
+// import Chart from 'chart.js';
+// Chart.defaults.LineWithLine = Chart.defaults.line;
+// Chart.controllers.LineWithLine = Chart.controllers.line.extend({
+//   draw: function draw(ease) {
+//     Chart.controllers.line.prototype.draw.call(this, ease);
+
+//     if (this.chart.tooltip._active && this.chart.tooltip._active.length) {
+//       var activePoint = this.chart.tooltip._active[0];
+//       var ctx = this.chart.ctx;
+//       var x = activePoint.tooltipPosition().x;
+//       var topY = this.chart.scales['y-axis-0'].top;
+//       var bottomY = this.chart.scales['y-axis-0'].bottom;
+//       ctx.save();
+//       ctx.beginPath();
+//       ctx.moveTo(x, topY);
+//       ctx.lineTo(x, bottomY);
+//       ctx.lineWidth = 2;
+//       ctx.strokeStyle = '#07C';
+//       ctx.stroke();
+//       ctx.restore();
+//     }
+//   }
+// });
 
 const barStack = {
   extends: HorizontalBar,
@@ -555,23 +579,28 @@ export default {
         legend: {
           display: false
         },
+        layout: {
+          padding:{
+            left:-20
+          }
+        },
         scales: {
           xAxes: [{
             gridLines: {display: false, color: 'rgba(0, 0, 0, 0)', scaleLineColor: 'rgba(0, 0, 0, 0)', drawBorder: false},
-            ticks: { display: false, min: 0, max: 100 }
+            ticks: { display: false, min: 0, max: 100 , beginAtZero:true}
           }],
           yAxes: [{
             barThickness: 8,
             gridLines: {display: false, color: 'rgba(0, 0, 0, 0)', scaleLineColor: 'rgba(0, 0, 0, 0)', drawBorder: false},
-            ticks: {display: false}
+            ticks: { display: false}
           }]
         }
       },
       basicBarData1: {
-        datasets: [{ backgroundColor: '#32667d', data: [30] }]
+        datasets: [{ backgroundColor: '#32667d', data: [100] }]
       },
       basicBarData2: {
-        datasets: [{ backgroundColor: '#00b6e8', data: [50] }]
+        datasets: [{ backgroundColor: '#00b6e8', data: [100] }]
       },
       basicBarData3: {
         datasets: [{ backgroundColor: '#ffba00', data: [70] }]
@@ -608,6 +637,11 @@ export default {
         maintainAspectRatio: false,
         legend: {
           display: false
+        },
+        layout: {
+          padding:{
+            left:-20
+          }
         },
         scales: {
           xAxes: [{
@@ -758,7 +792,7 @@ export default {
             ticks: { min: 0, max: 12, stepSize: 3 }
           }]
         }
-      }
+      },
 
     }
   },
@@ -769,21 +803,24 @@ export default {
   },
   /* vue function */
   methods: {
-  }
+  },
 }
 </script>
 
 <style>
 
 .basicBar41{
+  width:100%;
   height: 20px;
 }
 
 .basicBar42{
+  width:100%;
   height: 20px;
 }
 
 .basicBar5{
+  width:100%;
   height: 18px;
 }
 
@@ -803,12 +840,12 @@ export default {
 }
 
 .barLine{
-  width:680px;
   height:170px;
 }
 
 .basicBar {
-  height: 18px;
+  width:100%;
+  height: 100%;
 }
 
 </style>
