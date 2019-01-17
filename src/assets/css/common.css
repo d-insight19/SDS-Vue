@@ -147,6 +147,14 @@
 /*추가이미지 2019-1-11*/
 .ico.close_20{width:20px; height:20px; background: url("../img/ic_close_line_20.png") ;background-size: cover;}
 
+
+/*추가이미지 2019-1-17*/
+.ico.list-btn{width:24px; height:24px; background: url("../img/ic_listchange_24.png") ;background-size: cover;}
+
+
+
+
+
 /* ico btn */
 .btn.only .ico{display: block;}
 .btn.only.trash .ico{width:20px; height:20px; background-position: -82px -64px;}

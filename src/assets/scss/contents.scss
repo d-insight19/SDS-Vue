@@ -1428,7 +1428,12 @@ label.rdo .label{position: relative;}
 #container.regiclass.complete .thumList .info li{font-weight:500; font-size:map-get($font-size , font_13);}
 
 
-
+//
+#container.regiclass.register .ulList.type2 li {position: relative; padding:19px 0; border-bottom:1px solid #e3e3e3}
+#container.regiclass.register .ulList.type2 li:nth-last-child(1) {border-bottom:0 !important;}
+#container.regiclass.register .ulList.type2 li + li{margin-top:0;}
+#container.regiclass.register .ulList.type1 li + li{margin-top:0;}
+#container.regiclass.register .ulList.type2 li .list-btn{position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
 
 
 

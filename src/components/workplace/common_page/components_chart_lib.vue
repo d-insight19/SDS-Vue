@@ -25,7 +25,7 @@
                 <li>
                   <p>신청/취소<span class="fr">101명</span> </p>
                   <div class="progBox">
-                    <h-bar-chart
+                    <h-bar-chart style="margin-left:-1%"
                       :chart-data="basicBarData1"
                       :options="basicBarOpt"
                       css-classes="basicBar" />
@@ -34,7 +34,7 @@
                 <li>
                   <p>학습<span class="fr">180명</span> </p>
                   <div class="progBox">
-                    <barStack
+                    <barStack style="margin-left:-2%"
                       :chart-data="basicBarData2"
                       :options="basicBarOpt"
                       class="basicBar"/>
@@ -43,7 +43,7 @@
                 <li>
                   <strong>평가<span class="fr">245명</span> </strong>
                   <div class="progBox">
-                    <barStack
+                    <barStack style="margin-left:-3%"
                       :chart-data="basicBarData3"
                       :options="basicBarOpt"
                       class="basicBar"/>
@@ -636,8 +636,8 @@ export default {
         datasets: [
           { backgroundColor: '#ff726D', data: [10] },
           { backgroundColor: '#00b6e8', data: [30] },
-          { backgroundColor: '#32667d', data: [30] },
-          { backgroundColor: '#ffba00', data: [30] }
+          { backgroundColor: '#32667d', data: [20] },
+          { backgroundColor: '#ffba00', data: [40] }
         ]
       },
       basicBar5Data: {
@@ -806,7 +806,6 @@ export default {
 }
 
 .barLine{
-  width:100%;
   height:170px;
 }
 
