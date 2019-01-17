@@ -220,7 +220,7 @@
 
 #container.join .ulList.type2{margin-top: 34px;}
 #container.join .ulList.type2 .label-tit{margin-bottom: 16px;font-size:map-get($font-size, font_16);font-weight:500;}
-#container.join .ulList.type2 .infoChk{display:flex;padding-right:0px;}
+#container.join .ulList.type2 .infoChk{display:flex;display:-webkit-flex;padding-right:0px;}
 #container.join .ulList.type2 .infoChk > div:nth-child(1){flex:1;}
 #container.join .ulList.type2 button{letter-spacing: -0.42px;}
 #container.join .ulList.type2 .infoChk input{letter-spacing: -0.42px;}
@@ -638,7 +638,6 @@
 #container.atorm .product_wrap .product_list .product_icon.group_90{background: url("../img/ic_atorm_group_90.png") no-repeat; }
 #container.atorm .product_wrap .product_list .product_icon.flip_90{background: url("../img/ic_atorm_flip_90.png") no-repeat; }
 #container.atorm .product_wrap .product_list .product_icon.cliping_90{background: url("../img/ic_atorm_cliping_90.png") no-repeat; }
-#container.atorm .product_wrap .product_list .product_icon.elearning_90.test{background:#ff0000;mask-image: url("../img/ic_atorm_elearning_90.png")}
 // ATROM 과정운영관리
 #container.atorm .thumList.include_ico > li{display:inline-block;border-color:#ccc;margin-bottom:20px;padding-bottom:0px;}
 #container.atorm .thumList.include_ico li .in{padding-right:29px ;width:100vw}
