@@ -1881,7 +1881,10 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MainType  .thumList.type2 .thum{width:151px; height:113px;}
 .MainType  .thumList.type2 .thumbnail .thumImg {width:151px; height:113px;}
 // li 글자색 변경
-.MainType .thumList .info li {color: map-get($mono_colors, mono_80);}
+.MainType .thumList.type2 .info {color: map-get($mono_colors, mono_80);}
+.MainType .thumList.type4 .info {color: map-get($mono_colors, mono_80);}
+.MainType .thumList.type5 .info {color: map-get($mono_colors, mono_80);}
+.MainType .thumList.type6 .info {color: map-get($mono_colors, mono_80);}
 // enrollNotice 스타일 추가
 .MainType .singleList.type_1 li {height: 48px;}
 .MainType .singleList.type_1 li a {line-height: 20px; padding:14px 30px 14px 18px !important;}
@@ -2066,6 +2069,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
 
 .MySpace.gray_bg {background-color: map-get($bg_colors , BG_1);}
+.MySpace #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .MySpace .thumList.type4 .text {background-color: #fff;}
 .MySpace .thumList.type4 .tit {height: auto;}
 .MySpace .moredot{width:20px;height:20px;position:absolute;top:26px;right:16px;background: url("../img/ic_moredots_wh_20.png") no-repeat;}
@@ -2101,16 +2105,24 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace #header .info li+li{margin-left: 5px;}
 .MySpace #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
 .MySpace .multiList.type2 .labelChk .label {width:100%;}
-.MySpace .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 16px; margin-bottom:12px;}
-.MySpace .download_detail .title {white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical;}
-.MySpace .download_detail .txt_wrap {border-bottom: 0 none !important;}
-.MySpace .download_detail .accordion_arrow{width:20px;height:20px;position:absolute;bottom:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+.MySpace .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 16px; margin-top:12px;}
+.MySpace .download_detail .txt_wrap {border-bottom: 0 none !important; padding-bottom:0 !important;}
+.MySpace .download_detail .txt_wrap .icon_txt {font-weight:500;}
+.MySpace .download_detail .txt_wrap .title {font-weight:500; width:100% !important; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical;}
+.MySpace .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
+.MySpace .download_detail .txt_wrap .action {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($static_colors , danger); text-align: right;}
 .MySpace .download_detail .info li {color:map-get($mono_colors,mono_65);}
+.MySpace .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
+.MySpace .download_detail.done .txt_wrap .title {opacity: 0.4;}
+.MySpace .download_detail.done .txt_wrap .info {opacity: 0.4;}
 .MySpace .sub_content{display:none;}
-.MySpace .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 9px 21px; font-weight:600; margin-left: 38px;}
-.MySpace .open .download_detail .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
-.MySpace .open .sub_content{display:block; margin-bottom:12px;}
-.MySpace .open .download_detail {margin-bottom:0px;}
+.MySpace .open .sub_content{display:block;}
+.MySpace .sub_content .download_detail {border-bottom-width: 0px; border-top:1px solid map-get($line_colors,B89) !important; padding:16px; margin-top:0px;}
+.MySpace .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
+.MySpace .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 9px 21px; font-weight:600; border-left: 1px solid; border-right: 1px solid;}
+.MySpace .ico.line.blue {border:2px solid map-get($contents_colors,type_2); border-radius:100%;}
+.MySpace .ico.accordion_arrow{width:20px;height:20px;position:absolute;bottom:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+.MySpace .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 
 //regiclass
 .regiclass #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}

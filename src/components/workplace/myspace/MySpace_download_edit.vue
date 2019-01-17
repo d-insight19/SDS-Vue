@@ -151,7 +151,7 @@
 
 <script>
 export default {
-  name: 'MySpace_download',
+  name: 'MySpace_download_edit',
   /* vue lifecycle */
   created () {
   },
