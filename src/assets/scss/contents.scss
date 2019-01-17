@@ -1428,6 +1428,42 @@ label.rdo .label{position: relative;}
 
 
 
+// 동영상 하단 Study
+.study_title_wrap{padding:22px 18px 36px 18px;border-bottom:1px solid #d9d9d9;position:relative}
+.study_title_wrap .d-day_wrap{position: relative;line-height:22px;margin-bottom:6px}
+.study_title_wrap .d-day_wrap::after{content:'';clear:both;}
+.study_title_wrap .d-day_wrap .d-day{padding:4px 6px 3px 6px;font-family: 'Roboto';font-size:map-get($font-size, font_13); line-height: 12px;color:#000;border:1px solid #ccc;border-radius: 100px;}
+.study_title_wrap .d-day_wrap .arm{width:24px;height:24px;position:absolute;top:0px;right:0px;}
+.study_title_wrap .d-day_wrap .arm .new{width:5px;height:5px;background:map-get($static_colors , danger);border-radius: 5px;display: inline-block;position: absolute;top: 0px;right: 0px;}
+.study_title_wrap .d-day_wrap .arm .icon{width:24px;height:24px;background: url("../img/ic_alarm_line_24.png") no-repeat; background-size: contain;display: inline-block;position: absolute;;top:0px;}
+.study_title_wrap .study_contens_title{font-weight: 600;font-size:map-get($font-size, font_20);;line-height: 26px;letter-spacing: -0.6px;color:rgba(0,0,0,0.9);margin-bottom:12px;}
+.study_title_wrap .study_date{font-size:map-get($font-size, font_15);line-height:26px;letter-spacing: -0.45px;color:rgba(0,0,0,0.5)}
+.study_title_wrap .study_arrow_down_icon{position:absolute;right:18px;bottom:16px;width:24px;height:24px;background: url("../img/ic_accordion_arr_bold_24_down.png") no-repeat;}
+.study_title_wrap .study_arrow_down_icon.mask_clr2{ -webkit-mask-image: url("../img/ic_accordion_arr_bold_blue_24_up.png");  mask-image: url("../img/ic_accordion_arr_bold_blue_24_up.png");-webkit-mask-size: 100% 100%;}
+
+.study_title_detail{padding:0px 18px}
+.study_title_detail .detail_sub_title{font-size:map-get($font-size, font_16);line-height: 24px;letter-spacing: -0.8px;color:#000;font-weight: 600;margin-bottom:8px;}
+.study_title_detail > .s_detail_wrap{padding:22px 0px 26px;border-bottom:1px solid #e3e3e3};
+.study_title_detail > .s_detail_wrap:nth-last-child(1){border-bottom:0}
+.study_title_detail > .s_detail_wrap.detail_txt{font-size:map-get($font-size, font_15);line-height: 25px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8)}
+
+.study_title_detail > .s_detail_wrap.detail_goal li + li{margin-top:4px;}
+.study_title_detail > .s_detail_wrap.detail_goal li{position:relative;padding-left:10px;font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8)}
+.study_title_detail > .s_detail_wrap.detail_goal li::before{content: '';width:2px;height:2px;position:absolute;top:50%;transform: translateY(-50%);left: 0px;background: #000;}
+
+.study_title_detail > .s_detail_wrap.detail_target li + li{margin-top:4px;}
+.study_title_detail > .s_detail_wrap.detail_target li{position:relative;padding-left:10px;font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8)}
+.study_title_detail > .s_detail_wrap.detail_target li::before{content: '';width:2px;height:2px;position:absolute;top:50%;transform: translateY(-50%);left: 0px;background: #000;}
+
+.study_title_detail > .s_detail_wrap.detail_introduce .teacher_profile{display:flex;flex-direction: row}
+.study_title_detail > .s_detail_wrap.detail_introduce .detail_sub_title{margin-bottom:13px}
+.study_title_detail > .s_detail_wrap.detail_introduce .teacher_img {position: relative; background: url("../img/img_man_80.png") no-repeat; background-size:cover;width: 102px; height:102px;text-align: center}
+.study_title_detail > .s_detail_wrap.detail_introduce .teacher_img img{    position: relative;left: 50%;transform: translateX(-50%);height: 100%;} 
+.study_title_detail > .s_detail_wrap.detail_introduce .teacher_name{font-size:map-get($font-size, font_15);line-height: 31px;letter-spacing: -0.15px;font-weight: 500}
+.study_title_detail > .s_detail_wrap.detail_introduce .teacher_img_wrap{width:102px;margin-right:22px;text-align: center}
+.study_title_detail > .s_detail_wrap.detail_introduce .teacher_career .carear_wrap + .carear_wrap{margin-bottom:8px}
+.study_title_detail > .s_detail_wrap.detail_introduce .career_tit1{font-size:map-get($font-size, font_14);line-height: 31px;letter-spacing: -0.14px;color:#000;font-weight: 500;margin-bottom:4px;}
+.study_title_detail > .s_detail_wrap.detail_introduce .career_sub{font-size:map-get($font-size, font_14);line-height: 19px;letter-spacing: -0.14px;color:rgba(0,0,0,0.65)}
 
 
 

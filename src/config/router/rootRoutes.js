@@ -30,6 +30,7 @@ import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_
 // import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 import ComponentsChart from '~workplace/common_page/components_chart'
+import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -595,6 +596,11 @@ var rootRoutes = [
     path: '/components_chart',
     name: 'components_chart',
     component: ComponentsChart
+  },
+  {
+    path: '/components_chart_lib',
+    name: 'components_chart_lib',
+    component: ComponentsChartLib
   },
   {
     path: '/Login_findcenter',
