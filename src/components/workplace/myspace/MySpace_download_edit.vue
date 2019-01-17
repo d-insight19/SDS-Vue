@@ -44,7 +44,13 @@
 
           <div class="cell">
             <div class="filterArea ml-18 mr-18">
-                <p class="font_15 mono_80 fwb"> 학습 중인 과정 <span class="mono_50">4</span> <span class="ico down"></span><span class="fr font_14 color_clr2 fwr">편집</span></p>
+                <p class="font_15 mono_80 fwb">
+                    학습 중인 과정 <span class="mono_50">4</span> <span class="ico down"></span>
+                    <span class="fr">
+                        <span class="font_14 mono_65 fwr">취소</span>
+                        <span class="font_14 color_danger fwr ml10">삭제하기</span>
+                    </span>
+                </p>
             </div>
           </div>
         
@@ -53,89 +59,99 @@
                 <!-- list -->
                 <ul class="thumList type1">
                     <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문</a>
-                            <ul class="info mb5">
-                                <li class="color_clr3 fwb">이러닝</li>
-                            </ul>
-                            <ul class="info">
-                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
-                                <li class="mono_80"><span>232.23 MB</span></li>
-                            </ul>
-                        </div>
+                        <slp-checkbox value="">
+                            <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문</a>
+                                <ul class="info mb5">
+                                    <li class="color_clr3 fwb">이러닝</li>
+                                </ul>
+                                <ul class="info">
+                                    <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                    <li class="mono_80"><span>232.23 MB</span></li>
+                                </ul>
+                            </div>
+                        </slp-checkbox>
                     </li>
                     <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">기초부터 예제까지, 한 달 안에 배우는 iOS 개발자...</a>
-                            <ul class="info mb5">
-                                <li class="color_clr3 fwb">이러닝</li>
-                            </ul>
-                            <ul class="info">
-                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
-                                <li class="mono_80"><span>232.23 MB</span></li>
-                            </ul>
-                        </div>
+                        <slp-checkbox value="true">
+                            <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">기초부터 예제까지, 한 달 안에 배우는 iOS 개발자...</a>
+                                <ul class="info mb5">
+                                    <li class="color_clr3 fwb">이러닝</li>
+                                </ul>
+                                <ul class="info">
+                                    <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                    <li class="mono_80"><span>232.23 MB</span></li>
+                                </ul>
+                            </div>
+                        </slp-checkbox>
                     </li>
                     <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">초보자를 위한 기술</a>
-                            <ul class="info mb5">
-                                <li class="color_clr3 fwb">이러닝</li>
-                            </ul>
-                            <ul class="info">
-                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
-                                <li class="mono_80"><span>232.23 MB</span></li>
-                            </ul>
-                        </div>
+                        <slp-checkbox value="true">
+                            <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">초보자를 위한 기술</a>
+                                <ul class="info mb5">
+                                    <li class="color_clr3 fwb">이러닝</li>
+                                </ul>
+                                <ul class="info">
+                                    <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                    <li class="mono_80"><span>232.23 MB</span></li>
+                                </ul>
+                            </div>
+                        </slp-checkbox>
                     </li>
                     <li>
-                        <div class="in">
-                            <a href="#" class="thum">
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문</a>
-                            <ul class="info mb5">
-                                <li class="color_clr3 fwb">이러닝</li>
-                            </ul>
-                            <ul class="info">
-                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
-                                <li class="mono_80"><span>232.23 MB</span></li>
-                            </ul>
-                        </div>
+                        <slp-checkbox value="true">
+                            <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문</a>
+                                <ul class="info mb5">
+                                    <li class="color_clr3 fwb">이러닝</li>
+                                </ul>
+                                <ul class="info">
+                                    <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                    <li class="mono_80"><span>232.23 MB</span></li>
+                                </ul>
+                            </div>
+                        </slp-checkbox>
                     </li>
                     <li>
-                        <div class="in done">
-                            <a href="#" class="thum">
-                                <div class="thumbnail">
-                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
-                                </div>
-                            </a>
-                            <a href="#" class="tit">업무에 바로 쓰는 자바 입문</a>
-                            <ul class="info mb5">
-                                <li class="color_clr3 fwb">이러닝</li>
-                            </ul>
-                            <ul class="info">
-                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
-                                <li class="mono_80"><span>232.23 MB</span></li>
-                            </ul>
-                        </div>
+                        <slp-checkbox value="">
+                            <div class="in done">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">업무에 바로 쓰는 자바 입문</a>
+                                <ul class="info mb5">
+                                    <li class="color_clr3 fwb">이러닝</li>
+                                </ul>
+                                <ul class="info">
+                                    <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                    <li class="mono_80"><span>232.23 MB</span></li>
+                                </ul>
+                            </div>
+                        </slp-checkbox>
                     </li>
                 </ul>
                 <!-- //list -->
