@@ -56,10 +56,10 @@
                         <div class="btm_subtitle_control">                                
                             <div>
                                 <div class="subtitle_lang_wrap">
-                                    <span class="lang_type">한국어</span>
+                                    <span class="lang_type">Bahasa Indonesia</span>
                                     <span class="dropdown"></span>         
                                 </div>
-                                <span class="switch_txt">자동스크롤</span>
+                                <span class="switch_txt">Auto Scroll</span>
                                 <slp-switch :value="true"/>
                                 <span class="script_close"></span>
                             </div>
@@ -132,16 +132,9 @@
             </div>
             <!-- e: 동영상-->
             <div class="hide_header" style="background:#e3e3e3;padding-top:100px;">
-                {{scriptFlag}}
                 <p>111</p>
                 <p>asdfasdf</p>
                 <p>asdfasdf</p>
-                <p>asdfasdf</p>
-                <p>asdfasdf</p>
-                <p>asdfasdf</p>
-                <p>asdfasdf</p>
-                <slp-switch :value="true"/>
-
             </div>
             
         </div>
@@ -175,8 +168,8 @@
           <div class="cell">
             <div class="inner">
                 
-                <p>내용</p>
-                <p>내용</p>
+                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
+                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
                 <p>내용</p>
                 <p>내용</p>
                 <p>내용</p>
@@ -293,24 +286,6 @@ export default {
     }
   },
   methods: {
-    miniMovie() {
-        var $parent = $('.player_wrap');
-        var $obj = $('.btm_subtitle_area');
-        var $top = $obj.offset().top;
-        var $targetH = $parent.find('#contents').height();
-        $(window).scroll(function()
-        {
-            var $wTop = $(window).scrollTop();
-            if ($wTop >= $top)
-            {
-                $parent.addClass('fixed').css('margin-top', $targetH);
-            }
-            else
-            {
-                $parent.removeClass('fixed').attr('style', '');
-            }
-        })
-    }
   },
   mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
@@ -371,16 +346,15 @@ export default {
             $(window).scroll(function()
             {
                 var $wTop = $(window).scrollTop();
-                if ($wTop >= 100)
+                if ($wTop > 0)
                 {
-                    //$parent.addClass('fixed').css('margin-top', $targetH);
                     $parent.addClass('fixed');
-                    //$("#header").addClass('fixed');
+                    $("#header").addClass('fixed');
                 }
                 else
                 {
                     $parent.removeClass('fixed').attr('style', '');
-                    //$("#header").removeClass('fixed');
+                    $("#header").removeClass('fixed');
                 }
             })                                          
         }

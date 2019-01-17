@@ -804,6 +804,7 @@
 table td.sub-txt{ color:#000;}
 table td.pb10{padding-bottom: 10px;}
 .in12_16{padding-left: 12px;text-indent: -16px;} // 글자 앞정렬 조정
+.in9_13{padding-left: 9px;text-indent: -13px;} // 글자 앞정렬 조정
 .danger{color:map-get($static_colors, danger) !important;}
 .op80{color: rgba(0,0,0,0.8)!important}
 .op65{ color:rgba(0,0,0,0.65) !important;}
@@ -1374,7 +1375,7 @@ label.rdo .label{position: relative;}
 #container.regiclass .stepper .txt-desc {height:auto;}
 #container.regiclass .stepper {margin-bottom:0;}
 #container.regiclass .thumList .tit {margin-bottom:6px; font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;font-weight:500;}
-#container.regiclass .thumList .date {font-family:'roboto';font-size: map-get($font-size , font_13);line-height: 24px;letter-spacing: -0.39px;font-weight:400;color:rgba(0,0,0,0.8);}
+#container.regiclass .thumList .date {font-family: 'Noto Sans CJK KR';font-size: map-get($font-size , font_13);line-height: 24px;letter-spacing: -0.39px;font-weight:400;color:rgba(0,0,0,0.8);}
 #container.regiclass .thumList .info li{font-size: map-get($font-size , font_15);line-height: 24px;letter-spacing: -0.45px;font-weight:400;}
 #container.regiclass .thumList .info li + li::before{display:none;}
 #container.regiclass .thumList .info-num{font-family:'roboto';}
@@ -1418,13 +1419,21 @@ label.rdo .label{position: relative;}
 #container.regiclass.basicinfo.register .label-tit-14.type1{font-family: 'roboto'; font-size: map-get($font-size , font_15);line-height: 21px;letter-spacing: -0.45px; }
 
 
+// 수강신청 수강신청 완료
+#container.regiclass.complete h2.h-tit2 {font-size: map-get($font-size , font_26);line-height: 34px;letter-spacing: -0.78px; margin-bottom:0;}
+#container.regiclass.complete .l-txt{padding-bottom:10px}
+#container.regiclass.complete .r-txt{padding-bottom:10px; width:72%;}
+#container.regiclass.complete .txt-tit{font-size: map-get($font-size , font_15);line-height: 34px;letter-spacing: -0.45px; }
+#container.regiclass.complete .txt-tit-2{font-size: map-get($font-size , font_13);line-height: 18px;letter-spacing: -0.39px; }
+#container.regiclass.complete .thumList .info li{font-weight:500; font-size:map-get($font-size , font_13);}
 
 
-
-
-
-
-
+//
+#container.regiclass.register .ulList.type2 li {position: relative; padding:19px 0; border-bottom:1px solid #e3e3e3}
+#container.regiclass.register .ulList.type2 li:nth-last-child(1) {border-bottom:0 !important;}
+#container.regiclass.register .ulList.type2 li + li{margin-top:0;}
+#container.regiclass.register .ulList.type1 li + li{margin-top:0;}
+#container.regiclass.register .ulList.type2 li .list-btn{position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
 
 
 
