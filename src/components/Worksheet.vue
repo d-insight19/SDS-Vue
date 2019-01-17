@@ -6876,8 +6876,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.11.etc_captcha</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_05_etc_captcha' }">
+            Study_05_etc_captcha
           </router-link>
         </td>
         <td></td>
@@ -6893,8 +6893,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.12.etc_accesscontrol</td>
         <td>
-          <router-link :to="{ name: 'Study_05_etc_captcha' }">
-            Study_05_etc_captcha
+          <router-link :to="{ name: '' }">
+            
           </router-link>
         </td>
         <td></td>
@@ -7338,8 +7338,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_06.01.register_pay_cyberaccount</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_pay_cyberaccount' }">
+            regiclass_register_pay_cyberaccount
           </router-link>
         </td>
         <td></td>
@@ -7355,8 +7355,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_06.01.register_pay_deposit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_pay_deposit' }">
+            regiclass_register_pay_deposit
           </router-link>
         </td>
         <td></td>
@@ -7372,8 +7372,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_06.01.register_pay_ARS</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_pay_ars' }">
+            regiclass_register_pay_ars
           </router-link>
         </td>
         <td></td>
@@ -7389,8 +7389,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_06.01.register_pay_accounttransfer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_pay_accounttransfer' }">
+            regiclass_register_pay_accounttransfer
           </router-link>
         </td>
         <td></td>
@@ -7406,8 +7406,11 @@
         <td>　</td>
         <td class="textL">06.regiclass_07.01.register_complete</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_complete' }">
+            regiclass_register_complete
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_complete_account' }">
+            regiclass_register_complete_account
           </router-link>
         </td>
         <td></td>
@@ -7423,8 +7426,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_07.01.03.register_complete_waiting</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_complete_waiting' }">
+            regiclass_register_complete_waiting
           </router-link>
         </td>
         <td></td>

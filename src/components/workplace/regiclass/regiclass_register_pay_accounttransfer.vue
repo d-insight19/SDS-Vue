@@ -82,8 +82,8 @@
                 <p class="label-tit-18 mb10">결제수단</p>
                 <ul class="ul-block com-rdo">
                     <li>
-                        <label class="labelRdo" >
-                            <input type="radio" class="rdo" name="test-rdo" checked>
+                        <label class="labelRdo" @click="active_el(1)">
+                            <input type="radio" class="rdo" name="test-rdo" >
                             <span class="ico">
                                 <span class="innerCircle"></span>
                             </span>
@@ -91,7 +91,7 @@
                         </label>
                     </li>
                     <li>
-                        <label class="labelRdo" >
+                        <label class="labelRdo" @click="active_el(2)">
                             <input type="radio" class="rdo" name="test-rdo" >
                             <span class="ico">
                                 <span class="innerCircle"></span>
@@ -100,7 +100,7 @@
                         </label>
                     </li>
                     <li>
-                        <label class="labelRdo" >
+                        <label class="labelRdo" @click="active_el(3)">
                             <input type="radio" class="rdo" name="test-rdo">
                             <span class="ico">
                                 <span class="innerCircle"></span>
@@ -109,8 +109,8 @@
                         </label>
                     </li>
                     <li>
-                        <label  class="labelRdo" >
-                            <input type="radio" class="rdo" name="test-rdo">
+                        <label  class="labelRdo" @click="active_el(4)">
+                            <input type="radio" class="rdo" name="test-rdo" checked>
                             <span class="ico">
                                 <span class="innerCircle"></span>
                             </span>
@@ -118,8 +118,8 @@
                         </label>
                     </li>
                     <li>
-                        <label  class="labelRdo" >
-                            <input type="radio" class="rdo" name="test-rdo">
+                        <label  class="labelRdo" @click="active_el(5)">
+                            <input type="radio" class="rdo" name="test-rdo" checked>
                             <span class="ico">
                                 <span class="innerCircle"></span>
                             </span>
@@ -127,7 +127,27 @@
                         </label>
                     </li>
                 </ul>
-                <p class="label-tit-13 mt20 mono_50">고용보험 과정은 법인카드로만 결제하시기 바랍니다. 개인카드로 결제 시 고용보험 환급을 받을 수 없습니다. </p> 
+                <div v-if="idx == 1">
+                    <p class="label-tit-13 mt20 mono_50">고용보험 과정은 법인카드로만 결제하시기 바랍니다. 개인카드로 결제 시 고용보험 환급을 받을 수 없습니다.</p> 
+                </div>
+                <div v-if="idx == 2">
+                    <p class="label-tit-13 mt20 mono_50 in9_13">・고용보험 과정은 법인카드로만 결제하시기 바랍니다. 개인카드로 결제 시 고용보험 환급을 받을 수 없습니다. </p> 
+                    <p class="label-tit-13 mt5 mono_80 in9_13">・고용보험 환급과정일 경우에는 반드시“회사” 통장에서 “전용계좌”로 입금하여 주십시오. 만일 “개인”통장에서 입금될 경우 고용보험환급이 불가 할 수 있습니다. </p> 
+                    <p class="label-tit-13 mt5 mono_50 in9_13">・교육비 납입기한(교육시작 전일)까지 해당계좌번호로 미입금시에는 신청이 자동취소되니 유의하시기 바랍니다. </p> 
+                    <p class="label-tit-13 mt5 mono_80 in9_13">・입금하실 전용계좌번호는 &lt;신청완료&gt; 및 &lt;신청정보 조회&gt; 화면에서 확인하실 수 있습니다. </p> 
+                    <p class="label-tit-13 mt5 mono_50 in9_13">・입금은행 : 국민,KEB하나(구 외환),기업,수협,농협,우리,제일,신한,부산,광주,시티,우체국(타행입금 시에는 수수료가 발생할 수 있습니다.) </p> 
+                </div>
+                <div v-if="idx == 3">
+                    <p class="label-tit-13 mt20 mono_50 in9_13">・무통장 입금(전자계산서 발행)은 우리은행 계좌로만 입금 가능합니다.(타 은행 입금 시 수수료가 발생할 수 있습니다.) </p> 
+                    <p class="label-tit-13 mt5 mono_80 in9_13">・예금주 : (주) 멀티캠퍼스<br/>계좌번호 : 052-249245-13-201 </p> 
+                </div>
+                <div v-if="idx == 4">
+                    <p class="label-tit-13 mt20 mono_50 in9_13">・ARS 현장결제는 교육시작일 핸드폰으로 수신된 ARS번호로 연락하여 결제를 진행합니다. </p> 
+                    <p class="label-tit-13 mt5 mono_80 in9_13">・회사지원의 경우, 법인카드로 결제하셔야 합니다. </p> 
+                </div>
+                <div v-if="idx == 5">
+                    <p class="label-tit-13 mt20 mono_50">결제화면에서 고객님의 예금을 인출할 은행/증권사를 선택하여 주십시오.</p>
+                </div>
             </div>
           </div>
         </div>
@@ -149,7 +169,7 @@
 <script>
 /* eslint-disable */
 export default {
-  name: 'regiclass_register_option',
+  name: 'regiclass_register_pay_cyberaccount',
   /* vue lifecycle */
   created () {
   },
@@ -158,11 +178,16 @@ export default {
   /* vue data */
   data () {
     return {
-      useCupon: true
+      useCupon: true,
+      idx: [4]
     }
   },
   /* vue function */
   methods: {
+      active_el (el) {
+        this.idx = []
+        this.idx = el
+      }
   }
 }
 </script>

@@ -279,6 +279,18 @@ import regiclassRegisterJob from '~workplace/regiclass/regiclass_register_job'
 import regiclassRegisterLanguage from '~workplace/regiclass/regiclass_register_language'
 import regiclassRegisterLanguageGuide from '~workplace/regiclass/regiclass_register_language_guide'
 import regiclassRegisterTraining from '~workplace/regiclass/regiclass_register_training'
+import regiclassRegisterContorl from '~workplace/regiclass/regiclass_register_contorl'
+import regiclassRegisterSearchcp03 from '~workplace/regiclass/regiclass_register_searchcp_03'
+import regiclassRegisterNation from '~workplace/regiclass/regiclass_register_nation'
+import regiclassRegisterPayCreditcard from '~workplace/regiclass/regiclass_register_pay_creditcard'
+import regiclassRegisterPayCreditcard02 from '~workplace/regiclass/regiclass_register_pay_creditcard_02'
+import regiclassRegisterPayCyberaccount from '~workplace/regiclass/regiclass_register_pay_cyberaccount'
+import regiclassRegisterPayDeposit from '~workplace/regiclass/regiclass_register_pay_deposit'
+import regiclassRegisterPayArs from '~workplace/regiclass/regiclass_register_pay_ars'
+import regiclassRegisterPayAccounttransfer from '~workplace/regiclass/regiclass_register_pay_accounttransfer'
+import regiclassRegisterComplete from '~workplace/regiclass/regiclass_register_complete'
+import regiclassRegisterCompleteAccount from '~workplace/regiclass/regiclass_register_complete_account'
+import regiclassRegisterCompleteWaiting from '~workplace/regiclass/regiclass_register_complete_waiting'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1782,6 +1794,66 @@ var rootRoutes = [
     path: '/regiclass_register_training',
     name: 'regiclass_register_training',
     component: regiclassRegisterTraining
+  },
+  {
+    path: '/regiclass_register_contorl',
+    name: 'regiclass_register_contorl',
+    component: regiclassRegisterContorl
+  },
+  {
+    path: '/regiclass_register_searchcp_03',
+    name: 'regiclass_register_searchcp_03',
+    component: regiclassRegisterSearchcp03
+  },
+  {
+    path: '/regiclass_register_nation',
+    name: 'regiclass_register_nation',
+    component: regiclassRegisterNation
+  },
+  {
+    path: '/regiclass_register_pay_creditcard',
+    name: 'regiclass_register_pay_creditcard',
+    component: regiclassRegisterPayCreditcard
+  },
+  {
+    path: '/regiclass_register_pay_creditcard_02',
+    name: 'regiclass_register_pay_creditcard_02',
+    component: regiclassRegisterPayCreditcard02
+  },
+  {
+    path: '/regiclass_register_pay_cyberaccount',
+    name: 'regiclass_register_pay_cyberaccount',
+    component: regiclassRegisterPayCyberaccount
+  },
+  {
+    path: '/regiclass_register_pay_deposit',
+    name: 'regiclass_register_pay_deposit',
+    component: regiclassRegisterPayDeposit
+  },
+  {
+    path: '/regiclass_register_pay_ars',
+    name: 'regiclass_register_pay_ars',
+    component: regiclassRegisterPayArs
+  },
+  {
+    path: '/regiclass_register_pay_accounttransfer',
+    name: 'regiclass_register_pay_accounttransfer',
+    component: regiclassRegisterPayAccounttransfer
+  },
+  {
+    path: '/regiclass_register_complete',
+    name: 'regiclass_register_complete',
+    component: regiclassRegisterComplete
+  },
+  {
+    path: '/regiclass_register_complete_account',
+    name: 'regiclass_register_complete_account',
+    component: regiclassRegisterCompleteAccount
+  },
+  {
+    path: '/regiclass_register_complete_waiting',
+    name: 'regiclass_register_complete_waiting',
+    component: regiclassRegisterCompleteWaiting
   },
   {
     path: '/login_join_terms',
