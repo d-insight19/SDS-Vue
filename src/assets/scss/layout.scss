@@ -393,7 +393,7 @@
 #header.tab .header_inner.line1{height:56px;padding: 0 36px 0 72px;    position: absolute; top: 0px; left: 0px;z-index:10;}
 #header.tab .header_inner.line1 .btn{top:14px !important;transform: translate(0,0) !important;}
 
-#header.tab .header_inner.line2{height:42px;line-height: 42px;display: table;position: absolute; bottom: 0px; left: 0px;}
+#header.tab .header_inner.line2{height:44px;line-height: 44px;display: table;position: absolute; bottom: 0px; left: 0px;}
 #header.tab .header_inner.line2 .fixTab{display: table; table-layout: fixed; width: 100%;}
 #header.tab .header_inner.line2 .fixTab li{border:0; border-bottom:1px solid #ccc}
 #header.tab .header_inner.line2 .fixTab li.on{border:0;}
@@ -402,6 +402,10 @@
 #header.tab .header_inner.line2.scroll-x .scrollTab{display:block;}
 #header.tab .header_inner.line2.scroll-x .scrollTab li{display:inline-block;border-bottom:0;padding-bottom:0px;border:0; width: initial;padding: 0px 0px 0px 18px;}
 #header.tab .header_inner.line2.scroll-x li a{line-height:34px;}
+
+// 확장형 헤더 + 동영상
+#header.tab.video{padding-bottom:43px;min-height:140px;}
+#header.tab.video .header_inner.line1{height:96px;}
 
 
 .subType2 #header{position: relative;}
