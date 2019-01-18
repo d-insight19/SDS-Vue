@@ -3717,6 +3717,10 @@
           <router-link :to="{ name: 'MySpace_download_edit' }">
             MySpace_download_edit
           </router-link>
+          ,
+          <router-link :to="{ name: 'MySpace_downloading' }">
+            MySpace_downloading
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -3752,9 +3756,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.03.download_done</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_download' }">
+            MySpace_download
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -3769,9 +3774,9 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.03.download_offline</td>
         <td>
-          <!--<router-link :to="{ name: 'MySpace_download_offline' }">
+          <router-link :to="{ name: 'MySpace_download_offline' }">
             MySpace_download_offline
-          </router-link>-->
+          </router-link>
         </td>
         <td></td>
       </tr>
