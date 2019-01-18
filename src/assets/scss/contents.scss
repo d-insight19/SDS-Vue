@@ -828,8 +828,8 @@ table td.pb10{padding-bottom: 10px;}
 .chip {font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 16px; letter-spacing: -0.36px}
 .chip.del{ line-height: 22px; margin-bottom: 0; padding: 0px 2px 0 10px;} 
 .chip.wh{border:1px solid rgba(255,255,255,0.4);}
-.chip.agree{color:map-get($contents_colors, type_2 );border-color:map-get($contents_colors, type_2 );}
 .chip.agree-x{color:map-get($contents_colors, type_1 );border-color:map-get($contents_colors, type_1 );}
+.chip.agree-x.agree{color:map-get($contents_colors, type_2 );border-color:map-get($contents_colors, type_2 );}
 .chip.type2 {font-weight: 500;  font-size:map-get($font-size , font_11);display: inline-block;margin-bottom: 0px;height: 22px;border-radius: 16px;
     padding: 3px 10px;line-height: 15px;}
 .chip.color1 {border-color:map-get($contents_colors, type_1 ); color:map-get($contents_colors, type_1 );}
@@ -1025,11 +1025,17 @@ table td.pb10{padding-bottom: 10px;}
 // 과제작성 -Study_02_studystatus_assignment_apply
 #container.study_stauts_apply .end.sub{right:57px;}
 #container.study_stauts_apply .h-tit5{ font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; margin-bottom: 18px;}
-
 #container.study_stauts_apply .ulList.type4 li{ height:auto;}
 #container.study_stauts_apply ul li{ margin-bottom: 14px;}
 #container.study_stauts_apply ul li.bottom-bd{border-bottom: 1px solid map-get($line_colors, B89);}
 #container.study_stauts_apply ul li.bottom-pd{padding-bottom: 12px;}
+#container.study_stauts_apply .multiList.type2 > li + li{margin-top:20px}
+#container.study_stauts_apply .multiList.type2 .btn.sm{margin:7px 0px 0px 0px}
+#container.study_stauts_apply .multiList.type2 .pt0{padding-top: 0;}
+#container.study_stauts_apply .multiList.type2 input::placeholder {color:rgba(0,0,0,0.65);}
+#container.study_stauts_apply .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; letter-spacing: -0.42px;}
+#container.study_stauts_apply .multiList.type2 li.custom{padding: 15px 0; border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
+
 
 
 // 과정평가 학습자 안내창
@@ -1217,7 +1223,11 @@ label.rdo .label{position: relative;}
 // 찬반 토론 - 댓글펼치기 --Study_04_SO_debate_submission_all
 #container.study_debate .txt-line{ margin-top: 13px; padding-top: 0px; padding-bottom: 14px;}
 #container.study_debate .txt-line p.tar{ text-align: right; font-weight:500; font-size:map-get($font-size , font_15);line-height:28px;}
+#container.study_debate .replyList li{border-top:1px solid #eaeaea;}
+#container.study_debate .replyList li:nth-child(1){border-top:1px solid #d9d9d9;}
+// .multiList.dif li{border-bottom:1px solid #d9d9d9;}
 .multiList .left_pd { padding-left: 18px;}
+.multiList .left_pd:after{clear:both; content:''; display:block;}
 .multiList .left_pd .n-ml18{margin-left: -18px;} 
 .multiList .left_pd .reply-num.mb{margin-bottom: 8px;} 
 .multiList .left_pd .reply-num.mt{margin-top: 4px;}
@@ -1246,15 +1256,15 @@ label.rdo .label{position: relative;}
 
 
 // 1:1문의 수정
-.label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; margin-bottom: 8px; display: inline-block;}
-.label-tit14.mb0{ margin-bottom: 0px !important;}
-.label-tit16{ font-size:map-get($font_size, font_16); font-weight: 600; line-height: 26px; letter-spacing: -0.48px; margin-bottom: 10px; display: inline-block;}
-.study_inquery .multiList.type2 > li + li{margin-top:20px}
-.study_inquery .multiList.type2 .btn.sm{margin:7px 0px 0px 0px}
-.study_inquery .multiList.type2 .pt0{padding-top: 0;}
-.study_inquery .multiList.type2 input::placeholder {color:rgba(0,0,0,0.65);}
-.study_inquery .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; line-height: 21px; letter-spacing: -0.42px;}
-.multiList.type2 li.custom{padding: 15px 0; border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
+#container.study_inquery .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; margin-bottom: 8px; display: inline-block;}
+#container.study_inquery .label-tit14.mb0{ margin-bottom: 0px !important;}
+#container.study_inquery .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 600; line-height: 26px; letter-spacing: -0.48px; margin-bottom: 10px; display: inline-block;}
+#container.study_inquery .multiList.type2 > li + li{margin-top:20px}
+#container.study_inquery .multiList.type2 .btn.sm{margin:7px 0px 0px 0px}
+#container.study_inquery .multiList.type2 .pt0{padding-top: 0;}
+#container.study_inquery .multiList.type2 input::placeholder {color:rgba(0,0,0,0.65);}
+#container.study_inquery .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; letter-spacing: -0.42px;}
+#container.study_inquery .multiList.type2 li.custom{padding: 15px 0; border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
 
 
 // 서약서 법률사항 Study_05_etc_pledge_law
@@ -1348,20 +1358,6 @@ label.rdo .label{position: relative;}
 #container.study_etc .tb-cell{color: white; font-size: 20px;}
 
 
-
-// 수강신청 regiclass_detailview_licence
-// #container.Regiclass #header .hide-inner p.h-tit1 {font-size: map-get($font-size , font_22);line-height: 21px;letter-spacing: -1.1px; font-weight:600 !important; }
-// #container.Regiclass #header .hide-inner p.h-tit5 {font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px; font-weight:400; }
-// #container.Regiclass .label-tit-16 {font-size: map-get($font-size , font_16);line-height: 25px;letter-spacing: -0.48px;font-weight:600;}
-// #container.Regiclass .label-tit-15 {font-size: map-get($font-size , font_15);line-height: 21px;letter-spacing: -0.45px;font-weight:500;}
-// #container.Regiclass table tr td{padding-bottom:5px;}
-// #container.Regiclass table tr td.l-txt{font-size: map-get($font-size , font_15);line-height: 22px;letter-spacing: -0.75px;font-weight:500;}
-// #container.Regiclass table tr td.r-txt{font-size: map-get($font-size , font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8)}
-// #container.Regiclass .book-wrap {margin-right:15px;}
-// #container.Regiclass table.book-tb {width:51.5%}
-// #container.Regiclass table.book-tb tr td.book-tit{color:rgba(0,0,0,1.0);font-size: map-get($font-size , font_18);line-height: 24px;letter-spacing: -0.54px;font-weight:600;}
-// #container.Regiclass table.book-tb tr td{padding-bottom:3px;font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;color:rgba(0,0,0,0.80)}
-// #container.Regiclass table.book-tb tr td:nth-child(1){color:rgba(0,0,0,0.65)}
 
 // regiclass 공통
 .w-auto{width:auto !important;}
@@ -1464,25 +1460,26 @@ label.rdo .label{position: relative;}
 .study_title_detail > .s_detail_wrap.detail_introduce .career_tit1{font-size:map-get($font-size, font_14);line-height: 31px;letter-spacing: -0.14px;color:#000;font-weight: 500;margin-bottom:4px;}
 .study_title_detail > .s_detail_wrap.detail_introduce .career_sub{font-size:map-get($font-size, font_14);line-height: 19px;letter-spacing: -0.14px;color:rgba(0,0,0,0.65)}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
+// 수강신청 결재상신
 #container.regiclass.register .ulList.type2 li {position: relative; padding:19px 0; border-bottom:1px solid #e3e3e3}
 #container.regiclass.register .ulList.type2 li:nth-last-child(1) {border-bottom:0 !important;}
 #container.regiclass.register .ulList.type2 li + li{margin-top:0;}
 #container.regiclass.register .ulList.type1 li + li{margin-top:0;}
-#container.regiclass.register .ulList.type2 li .list-btn{position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
+#container.regiclass.register .ulList.type2 li .ico{position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
+
+#container.regiclass.register .btn14{font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px; position: absolute;right: 18px;top:50%;transform:translateY(-50%);font-weight: 500;}
+#container.regiclass.register .ulList.type1 li {padding:15px 0; border-bottom:1px solid #e3e3e3;}
+#container.regiclass.register .chip-wrap {display:inline-block; margin-right:10px;}
+
+
+
+
+
+
+
+
+
+
 
 
 

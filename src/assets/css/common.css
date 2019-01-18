@@ -40,6 +40,7 @@
 .ico.arr.up{width:16px;height:16px;background: url("../img/ic_accordion_arr_line_16_up.png") no-repeat; }
 .ico.like_32.blue{width:32px;height:32px;background: url("../img/ic_thumb_line_cblue_32.png") no-repeat; }
 .ico.unlike_32{width:32px;height:32px;background: url("../img/ic_unlike_line_3.png") no-repeat; }
+.ico.unlike_32.red{width:32px;height:32px;background: url("../img/ic_unlike_line_red_32.png") no-repeat; }
 .ico.back{width:32px;height:32px;background: url("../img/ic_former_solid_32.png") no-repeat; }
 .ico.next{width:32px;height:32px;background: url("../img/ic_next_solid_black_32.png") no-repeat; }
 
@@ -153,6 +154,7 @@
 
 /*추가이미지 2019-1-17*/
 .ico.list-btn{width:24px; height:24px; background: url("../img/ic_listchange_24.png") ;background-size: cover;}
+.ico.del{width:20px; height: 20px; background: url("../img/ic_deletemode_20.png");background-size: cover;}
 
 
 
@@ -210,6 +212,7 @@
 .taj {text-align:justify;}
 .vt {vertical-align:top !important;}
 .vm {vertical-align:middle;}
+.mac{margin:0 auto !important;}
 
 
 /* width */

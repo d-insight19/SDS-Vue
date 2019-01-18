@@ -298,6 +298,9 @@ import regiclassRegisterComplete from '~workplace/regiclass/regiclass_register_c
 import regiclassRegisterCompleteAccount from '~workplace/regiclass/regiclass_register_complete_account'
 import regiclassRegisterCompleteWaiting from '~workplace/regiclass/regiclass_register_complete_waiting'
 import regiclassRegisterApprove from '~workplace/regiclass/regiclass_register_approve'
+import regiclassRegisterApprove02 from '~workplace/regiclass/regiclass_register_approve_02'
+import regiclassRegisterApproveMember from '~workplace/regiclass/regiclass_register_approve_member'
+import regiclassRegisterApproveMemberDetail from '~workplace/regiclass/regiclass_register_approve_member_detail'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1896,6 +1899,21 @@ var rootRoutes = [
     path: '/regiclass_register_approve',
     name: 'regiclass_register_approve',
     component: regiclassRegisterApprove
+  },
+  {
+    path: '/regiclass_register_approve_02',
+    name: 'regiclass_register_approve_02',
+    component: regiclassRegisterApprove02
+  },
+  {
+    path: '/regiclass_register_approve_member',
+    name: 'regiclass_register_approve_member',
+    component: regiclassRegisterApproveMember
+  },
+  {
+    path: '/regiclass_register_approve_member_detail',
+    name: 'regiclass_register_approve_member_detail',
+    component: regiclassRegisterApproveMemberDetail
   },
   {
     path: '/login_join_terms',
