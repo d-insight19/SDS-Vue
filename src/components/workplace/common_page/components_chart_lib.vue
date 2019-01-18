@@ -845,7 +845,7 @@ export default {
 
 .basicBar {
   width:100%;
-  height: 100%;
+  height:18px;
 }
 
 </style>
