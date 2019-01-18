@@ -261,6 +261,13 @@ import MySpaceDownloadEdit from '~workplace/myspace/MySpace_download_edit'
 import MySpaceDownloadDetail from '~workplace/myspace/MySpace_download_detail'
 import MySpaceDownloadDetailEdit from '~workplace/myspace/MySpace_download_detail_edit'
 import MySpaceDownloadOffline from '~workplace/myspace/MySpace_download_offline'
+import MySpaceLearningjourney1 from '~workplace/myspace/MySpace_learningjourney_1'
+import MySpaceLearningjourney2 from '~workplace/myspace/MySpace_learningjourney_2'
+import MySpaceLearningjourneyEncourage from '~workplace/myspace/MySpace_learningjourney_encourage'
+import MySpaceLearningjourneyEncourageOff from '~workplace/myspace/MySpace_learningjourney_encourage_off'
+import MySpaceLearningjourneyCalendarmanagement2 from '~workplace/myspace/MySpace_learningjourney_calendarmanagement_2'
+import MySpaceLearningjourneyAdd from '~workplace/myspace/MySpace_learningjourney_add'
+import MySpaceLearningjourneyLike from '~workplace/myspace/MySpace_learningjourney_like'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -1721,6 +1728,41 @@ var rootRoutes = [
     path: '/MySpace_download_offline',
     name: 'MySpace_download_offline',
     component: MySpaceDownloadOffline
+  },
+  {
+    path: '/MySpace_learningjourney_1',
+    name: 'MySpace_learningjourney_1',
+    component: MySpaceLearningjourney1
+  },
+  {
+    path: '/MySpace_learningjourney_2',
+    name: 'MySpace_learningjourney_2',
+    component: MySpaceLearningjourney2
+  },
+  {
+    path: '/MySpace_learningjourney_encourage',
+    name: 'MySpace_learningjourney_encourage',
+    component: MySpaceLearningjourneyEncourage
+  },
+  {
+    path: '/MySpace_learningjourney_encourage_off',
+    name: 'MySpace_learningjourney_encourage_off',
+    component: MySpaceLearningjourneyEncourageOff
+  },
+  {
+    path: '/MySpace_learningjourney_calendarmanagement_2',
+    name: 'MySpace_learningjourney_calendarmanagement_2',
+    component: MySpaceLearningjourneyCalendarmanagement2
+  },
+  {
+    path: '/MySpace_learningjourney_add',
+    name: 'MySpace_learningjourney_add',
+    component: MySpaceLearningjourneyAdd
+  },
+  {
+    path: '/MySpace_learningjourney_like',
+    name: 'MySpace_learningjourney_like',
+    component: MySpaceLearningjourneyLike
   },
   {
     path: '/regiclass_detailview_books',

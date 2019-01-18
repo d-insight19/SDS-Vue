@@ -14,7 +14,7 @@
       :value="nativeValue"
       type="radio"
       class="rdo">
-    <span class="ico"/>
+    <span class="ico"><span class="innerCircle"></span></span>
     <span class="label"><slot/></span>
   </label>
 </template>

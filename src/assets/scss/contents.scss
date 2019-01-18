@@ -2188,7 +2188,8 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .ico.line.blue {border:2px solid map-get($contents_colors,type_2); border-radius:100%;}
 .MySpace .ico.accordion_arrow{width:20px;height:20px;position:absolute;bottom:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 .MySpace .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
-
+.MySpace .btB89 {border-top: 1px solid map-get($line_colors , B89);}
+.MySpace .radioList li{margin-bottom:10px;}
 //regiclass
 .regiclass #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .regiclass #header .hide_header p {white-space: normal !important;}

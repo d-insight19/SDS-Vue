@@ -3808,8 +3808,12 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.04.learningjourney_encourage</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_learningjourney_encourage' }">
+            MySpace_learningjourney_encourage
+          </router-link>
+          ,
+          <router-link :to="{ name: 'MySpace_learningjourney_encourage_off' }">
+            MySpace_learningjourney_encourage_off
           </router-link>
         </td>
         <td></td>
