@@ -26,6 +26,9 @@
 .ico.pause_20.blue{width:20px;height:20px; background: url("../img/ic_pause_blue_16.png") no-repeat; background-size:cover;}
 .ico.cancel_20.blue{width:20px;height:20px; background: url("../img/ic_cancel_blue_16.png") no-repeat; background-size:cover;}
 .ico.redownload_20.blue{width:20px;height:20px; background: url("../img/ic_redownload_blue_16.png") no-repeat; background-size:cover;}
+.ico.pause_24.wh{width:24px;height:24px; background: url("../img/ic_pause_wh_16.png") center center no-repeat; background-size:16px;}
+.ico.cancel_24.wh{width:24px;height:24px; background: url("../img/ic_cancel_wh_16.png") center center no-repeat; background-size:16px;}
+.ico.redownload_24.wh{width:24px;height:24px; background: url("../img/ic_redownload_wh_16.png") center center no-repeat; background-size:16px;}
 .ico.ebook_20{width:20px;height:20px; background: url("../img/ic_ebook_line_20.png") no-repeat;}
 .ico.headphone_20{width:20px;height:20px; background: url("../img/ic_headphone_line_20.png") no-repeat;}
 .ico.youtube_20{width:20px;height:20px; background: url("../img/ic_youtube_20.png") no-repeat;}

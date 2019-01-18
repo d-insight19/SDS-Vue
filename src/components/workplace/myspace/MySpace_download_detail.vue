@@ -9,9 +9,9 @@
         <div id="header" class="expand">
             <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">다운로드</p>
+                <p class="header_text font_18">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</p>
             </div>
-            <div class="hide_header pl18 pr18" style="background-color:#fff; padding-top:65px;">
+            <div class="hide_header" style="background-color:#fff; padding-top:65px; padding-bottom:20px;">
                 <h2 class="h-tit2 font_22 fwb600 mb18">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</h2>
                 <ul class="info">
                     <li class="fwr mono_80">다운로드 중...  <span>33% (2/6)</span></li>
@@ -92,8 +92,10 @@
                                         </div>
                                         <div class="txt_wrap">
                                             <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                            <p class="status">일시정지 <span>(50%)</span></p>
-                                            <p class="action">삭제</p>
+                                            <p class="status">
+                                                일시정지 <span>(50%)</span>
+                                                <span class="fr action">삭제</span>
+                                            </p>
                                         </div>
                                     </div>
                                 </li>
