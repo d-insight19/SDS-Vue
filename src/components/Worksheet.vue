@@ -7462,6 +7462,9 @@
         <td>
           <router-link :to="{ name: 'regiclass_register_approve' }">
             regiclass_register_approve
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_approve_02' }">
+            regiclass_register_approve_02
           </router-link>
         </td>
         <td></td>
@@ -7477,8 +7480,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_08.01.01.register_approve_member</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_approve_member' }">
+            regiclass_register_approve_member
           </router-link>
         </td>
         <td></td>
@@ -7494,8 +7497,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_08.01.01.register_approve_member_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_approve_member_detail' }">
+            regiclass_register_approve_member_detail
           </router-link>
         </td>
         <td></td>

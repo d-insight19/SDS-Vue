@@ -13,7 +13,7 @@
             <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
-                  <div class="inner">
+                  <div class="inner" style="padding-top:22px;">
                       <p class="txt-tit">제목</p>
                       <div class="singleList ">                        
                             <input  type="text" placeholder="제목을 입력해 주세요" />                        
@@ -28,13 +28,6 @@
                               <option value="">시사/교양</option>
                               <option value="">기타</option>
                             </select>                        
-                      </div>
-                      <div class="singleList type_2 line">                          
-                            <span href="#">공개여부</span>
-                            <label class="labelBtn">
-                                <input type="checkbox" name="" class="chk">
-                                <div class="chk_box"><span class="ball"></span><ul class="txt"><li class="m1"></li><li class="m2"></li></ul></div>
-                            </label>                          
                       </div>
                       <p class="txt-tit">토론기간</p>
                       <div class="singleList ">                        
