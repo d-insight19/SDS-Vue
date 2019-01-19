@@ -9,7 +9,7 @@
         <div id="header" class="tab video">          
             <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text  font_19"> 스크롤시가</p>
+                <p class="header_text  font_18">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
@@ -33,7 +33,8 @@
             <div class="player_wrap">
                 <div class="player_inner">
                     <div id="contents"></div>
-                    <!-- s: 동영상 재생 후 나오는 영상리스트 -->
+
+                    <!--  s: 연관 콘텐츠 -->
                     <div class="movie_info_list" style="display:none">
                         <p class="movie_info_tit">연관 콘텐츠 추천</p>
                         <ul>
@@ -60,7 +61,9 @@
                             </li>
                         </ul>
                     </div>
+                    <!--  e: 연관 콘텐츠 -->
 
+                    <!-- s: 볼륨영역 -->
                     <div class="volume_wrap" style="display:none;">
                         <div class="volume_left">
                             <div class="inner"></div>
@@ -77,7 +80,21 @@
                             </div>
                         </div>
                     </div>
-                    <!-- e: 동영상 재생 후 나오는 영상리스트 -->
+                    <!--  e: 볼륨영역 -->
+
+                    <!-- s: 텝 영역 -->
+                    <div class="tap_wrap">
+                        <div class="half_left">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
+                        <div class="half_right">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
+                    </div>
+                    <!--  e: 텝 영역 -->
+
                 </div>
                 <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area" data-js="toggle" >
@@ -255,26 +272,26 @@
           <div class="cell">
             <div class="inner">
                 
+                <p>내용1</p>
+                <p>내용2</p>
+                <p>내용3</p>
+                <p>내용4</p>
+                <p>내용5</p>
+                <p>내용6</p>
+                <p>내용7</p>
+                <p>내용8</p>
+                <p>내용9</p>
+                <p>내용10</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p>
+                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
                 <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
                 <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
+                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
+                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
 
             </div>
           </div>
@@ -437,7 +454,15 @@ export default {
             $(window).scroll(function()
             {
                 var $wTop = $(window).scrollTop();
-                if ($wTop > 100)
+                var player_height = $parent.height();
+                var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
+                console.error($wTop , $hederTab-player_height);
+                // 수치값은 수정해야함.
+                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
+                // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
+                // fixed 클래스가 들어가면서 값이 변하기때문에 상수처리해야할듯.
+                // 176 , 1004
+                if ($wTop > 176 )
                 {
                     $parent.addClass('fixed');
                     $("#header").addClass('fixed');

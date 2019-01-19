@@ -246,6 +246,10 @@
   margin-top: 0px;
   padding-top: 100px;
 }
+#header.tab.video.fixed ~ #content{
+  margin-top: 0px;
+  padding-top: 323px;
+}
       
 #header p.header_text.type2{width: calc(100% - 76px)}
 #header .end.sub{right:57px}
