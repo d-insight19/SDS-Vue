@@ -55,69 +55,76 @@
                     <li>
                         <div class="in">
                             <a href="#" class="thum">
+                                <div class="icon_wrap">
+                                    <span class="ico pause_24 wh line"></span>
+                                </div>
+                                <div class="cDim"></div>
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
                             </a>
                             <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문</a>
-                            <ul class="info mb5">
+                            <ul class="info">
                                 <li class="color_clr3 fwb">이러닝</li>
                             </ul>
-                            <ul class="info">
-                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
-                                <li class="mono_80"><span>232.23 MB</span></li>
-                            </ul>
+                            <p class="status">다운로드 중... <span>33% (1/3)</span></p>
                         </div>
                     </li>
                     <li>
                         <div class="in">
                             <a href="#" class="thum">
+                                <div class="icon_wrap">
+                                    <span class="ico pause_24 wh line"></span>
+                                </div>
+                                <div class="cDim"></div>
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
                             </a>
                             <a href="#" class="tit">기초부터 예제까지, 한 달 안에 배우는 iOS 개발자...</a>
-                            <ul class="info mb5">
+                            <ul class="info">
                                 <li class="color_clr3 fwb">이러닝</li>
                             </ul>
-                            <ul class="info">
-                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
-                                <li class="mono_80"><span>232.23 MB</span></li>
-                            </ul>
+                            <p class="status">다운로드 중... <span>45% (1/12)</span></p>
                         </div>
                     </li>
                     <li>
                         <div class="in">
                             <a href="#" class="thum">
+                                <div class="icon_wrap">
+                                    <span class="ico redownload_24 wh line"></span>
+                                </div>
+                                <div class="cDim"></div>
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
                             </a>
                             <a href="#" class="tit">초보자를 위한 기술</a>
-                            <ul class="info mb5">
+                            <ul class="info">
                                 <li class="color_clr3 fwb">이러닝</li>
                             </ul>
-                            <ul class="info">
-                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
-                                <li class="mono_80"><span>232.23 MB</span></li>
-                            </ul>
+                            <p class="status">
+                                일시정지 <span>(50%)</span>
+                                <span class="fr action">삭제</span>
+                            </p>
                         </div>
                     </li>
                     <li>
                         <div class="in">
                             <a href="#" class="thum">
+                                <div class="icon_wrap">
+                                    <span class="ico cancel_24 wh line"></span>
+                                </div>
+                                <div class="cDim"></div>
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
                             </a>
                             <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문</a>
-                            <ul class="info mb5">
+                            <ul class="info">
                                 <li class="color_clr3 fwb">이러닝</li>
                             </ul>
-                            <ul class="info">
-                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
-                                <li class="mono_80"><span>232.23 MB</span></li>
-                            </ul>
+                            <p class="status"><span>대기중</span></p>
                         </div>
                     </li>
                     <li>
@@ -128,13 +135,14 @@
                                 </div>
                             </a>
                             <a href="#" class="tit">업무에 바로 쓰는 자바 입문</a>
-                            <ul class="info mb5">
+                            <ul class="info">
                                 <li class="color_clr3 fwb">이러닝</li>
                             </ul>
                             <ul class="info">
                                 <li class="mono_80"><span>12</span>개 다운로드됨</li>
                                 <li class="mono_80"><span>232.23 MB</span></li>
                             </ul>
+                            <p class="action center">청강기간 만료</p>
                         </div>
                     </li>
                 </ul>

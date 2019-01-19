@@ -18,25 +18,25 @@
                 <div class="cell">
                     <div class="inner" style="padding-top:78px;">
                         <p class="h-tit5"><strong>과제정보</strong></p>
-                        <table >
+                        <table style="margin: 16px 0 14px;">
                             <tr>
-                                <td class="l-txt">과정명</td> 
+                                <td class="l-txt fwb">과정명</td> 
                                 <td class="r-txt">[국가] 실천 PJT중심 자바 기반 웹 개발자 양성</td>
                             </tr>
                             <tr>
-                                <td class="l-txt">과제제목</td> 
+                                <td class="l-txt fwb">과제제목</td> 
                                 <td class="r-txt">중간과제</td>
                             </tr>
                             <tr>
-                                <td class="l-txt">과제유형</td> 
+                                <td class="l-txt fwb">과제유형</td> 
                                 <td class="r-txt">정답작성 + 적용/성찰/의견작성</td>
                             </tr>
                             <tr>
-                                <td class="l-txt">과제내용</td> 
+                                <td class="l-txt fwb">과제내용</td> 
                                 <td class="r-txt">첨부파일 내용을 확인하고 답변과 본인의 의견을 작성하세요</td>
                             </tr>
                         </table>         
-                        <p class="label-tit-2"><strong>첨부파일 추가</strong></p>
+                        <p class="label-tit-2"><strong>첨부파일</strong></p>
                         <ul class="ulList type4 mb32">
                             <li class="bottom-bd">
                             <div>
@@ -44,34 +44,34 @@
                                 <span class="at-tit">Solution listup.jpg</span>
                                 <div class="fr">
                                 <span class="at-num">500KB</span>
-                                <span class="ico del-blk"></span>
+                                <span class="ico down-load"></span>
                                 </div>
                             </div>                         
                             </li>
                         </ul>
                         <p class="h-tit5"><strong>과제작성</strong></p>
-                        <table>
+                        <table style="margin: 16px 0;">
                             <tr>
-                                <td class="l-txt">학습자</td>
+                                <td class="l-txt fwb">학습자</td>
                                 <td class="r-txt">정혜민</td>
                             </tr>
-                            <tr class="bottom-bd bottom-pd">
-                                <td class="l-txt">제출일자</td>
+                            <tr >
+                                <td class="l-txt fwb">제출일자</td>
                                 <td class="r-txt">2018. 03. 17</td>
                             </tr>
                         </table>                
                         <ul class="multiList type2 op25">
                             <li>
-                                <strong class="label-tit14">제출제목</strong>
+                                <p class="label-tit14 mb8">제출제목</p>
                                 <slp-text-field placeholder="제목을 입력해주세요."></slp-text-field>
                             </li>                      
                             <li>
-                                <strong class="label-tit14">제출내용</strong>
+                                <p class="label-tit14 mb8">제출내용</p>
                                 <slp-text-field placeholder="내용을 입력해주세요."></slp-text-field>
                             </li>
                         </ul>    
-                        <strong class="label-tit16 mt36"> 첨부파일 추가</strong>
-                        <ul v-show="list1.length" class="ulList type4 bot-btn">
+                        <p class="label-tit16 mt36"> 첨부파일 추가</p>
+                        <ul v-show="list1.length" class="ulList type4 bot-btn mt10">
                             <li v-for="(item, index) in list1" :key="index">
                             <div>
                                 <span class="ico img-a"></span>

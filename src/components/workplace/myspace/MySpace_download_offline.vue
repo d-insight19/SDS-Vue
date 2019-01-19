@@ -6,17 +6,23 @@
       <div id="container" class="mediaquery MySpace gray_bg">
 
         <!-- header -->
-        <div id="header" class="expand">
+        <div id="header" class="fixed tab">
             <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">다운로드</p>
+            <p class="header_text font_18">나의 공간</p>
             </div>
-            <div class="hide_header pl18 pr18" style="background-color:#fff; padding-top:65px;">
-                <h2 class="h-tit2 font_22 fwb600 mb18">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</h2>
-                <ul class="info">
-                    <li class="fwr mono_80"><span>12</span>개 다운로드됨</li>
-                    <li class="fwr mono_80">123.52MB</li>
+            <div class="header_inner line2 tabMenu scroll-x">
+                <ul class="scrollTab">
+                    <li><a href="#tab1">정규 학습</a></li><!-- selected class "on" -->
+                    <li><a href="#tab2">자율 학습</a></li>
+                    <li><a href="#tab3">학습 계획</a></li>
+                    <li class="on"><a href="#tab4">다운로드</a></li>
+                    <li><a href="#tab5">나의 지식 CLIPing</a></li>
                 </ul>
+            </div>
+            <div class="blur_wrap">
+                <div class="left blur"></div>
+                <div class="right blur"></div>
             </div>
         </div>
         <!-- //header -->
@@ -24,206 +30,130 @@
         <div id="content" class="list">
 
           <div class="cell">
+            <div class="downloadCondition ml-18 mr-18">
+                <div class="w48p fl">
+                    <p class="font_12 mono_50 fwb">저장공간 사용량</p>
+                    <p class="font_13 mono_65 fwb">24% <span class="font_11 mono_50 fwr">(123.21 GB/512.51 GB)</span></p>
+                </div>
+                <div class="w48p fr">
+                    <p class="font_12 mono_50 fwb">다운로드한 강의</p>
+                    <p class="font_13 mono_65 fwb">978.21 MB</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="cell">
             <div class="filterArea ml-18 mr-18">
-                <p class="tar">
-                    <span class="font_14 mono_65 fwr">취소</span>
-                    <span class="font_14 color_danger fwr ml10">삭제하기</span>
+                <p class="font_15 mono_80 fwb">
+                    학습 중인 과정 <span class="mono_50">4</span> <span class="ico down"></span>
+                    <span class="fr">
+                        <span class="font_14 color_clr2 fwr">편집</span>
+                    </span>
                 </p>
             </div>
           </div>
 
           <div class="cell">
-            <div class="inner pt0">
-                <h2 class="h-tit2 fwb600 mb10">데이터 특성 알아보기</h2>
-                
+            <div class="inner pt0 ml-18 mr-18">
                 <!-- list -->
-                <ul class="multiList type2">
+                <ul class="thumList type1">
                     <li>
-                        <slp-checkbox class="w100p" value="true">
-                            <div class="download_detail">
-                                <div class="txt_wrap">
-                                    <p class="icon_txt color_clr3 fwb">1차시</p>
-                                    <p class="title fwb">학습 소개 Orientation </p>
-                                    <ul class="info">
-                                        <li class="">12.33MB</li>
-                                        <li class="">55:12</li>
-                                    </ul>
-                                    <span class="accordion_arrow"></span>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
-                            </div>
-                        </slp-checkbox>
-                    </li>
-                    <li>
-                        <slp-checkbox class="w100p" value="true">
-                            <div class="download_detail">
-                                <div class="txt_wrap">
-                                    <p class="icon_txt color_clr3 fwb">2차시</p>
-                                    <p class="title fwb">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’ 제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’ 제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
-                                    <ul class="info">
-                                        <li class="">12.33MB</li>
-                                        <li class="">55:12</li>
-                                    </ul>
-                                    <span class="accordion_arrow"></span>
-                                </div>
-                            </div>
-                        </slp-checkbox>
-                    </li>
-                    <li class="open">
-                        <slp-checkbox class="w100p" value="">
-                            <div class="download_detail">
-                                <div class="txt_wrap">
-                                    <p class="icon_txt color_clr3 fwb">3차시</p>
-                                    <p class="title fwb">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                    <ul class="info">
-                                        <li class="">12.33MB</li>
-                                        <li class="">55:12</li>
-                                    </ul>
-                                    <span class="accordion_arrow"></span>
-                                </div>
-                            </div>
-                        </slp-checkbox>
-
-                        <div class="sub_content">
-                            <p class="sub_content_title color_clr1 clr4">변수와 데이터 타입</p>
-                            <!-- list -->
-                            <ul class="multiList type2">
-                                <li>
-                                    <slp-checkbox class="" value="true">
-                                        <div class="download_detail">
-                                            <div class="icon_wrap">
-                                                <span class="ico play_28"></span>
-                                            </div>
-                                            <div class="txt_wrap">
-                                                <p class="title fwb">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                <ul class="info">
-                                                    <li class="">12.33MB</li>
-                                                    <li class="">55:12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </slp-checkbox>
-                                </li>
-                                <li>
-                                    <slp-checkbox class="" value="true">
-                                        <div class="download_detail">
-                                            <div class="icon_wrap">
-                                                <span class="ico play_28"></span>
-                                            </div>
-                                            <div class="txt_wrap">
-                                                <p class="title fwb">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                <ul class="info">
-                                                    <li class="">12.33MB</li>
-                                                    <li class="">55:12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </slp-checkbox>
-                                </li>
-                                <li>
-                                    <slp-checkbox class="" value="true">
-                                        <div class="download_detail">
-                                            <div class="icon_wrap">
-                                                <span class="ico play_28"></span>
-                                            </div>
-                                            <div class="txt_wrap">
-                                                <p class="title fwb">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                <ul class="info">
-                                                    <li class="">12.33MB</li>
-                                                    <li class="">55:12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </slp-checkbox>
-                                </li>
+                            </a>
+                            <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문</a>
+                            <ul class="info">
+                                <li class="color_clr3 fwb">이러닝</li>
                             </ul>
-                            <!-- //list -->
-                            <p class="sub_content_title color_clr1 clr4">특성 활용하기</p>
-                            <!-- list -->
-                            <ul class="multiList type2">
-                                <li>
-                                    <slp-checkbox class="" value="">
-                                        <div class="download_detail">
-                                            <div class="icon_wrap">
-                                                <span class="ico play_28"></span>
-                                            </div>
-                                            <div class="txt_wrap">
-                                                <p class="title fwb">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                <ul class="info">
-                                                    <li class="">12.33MB</li>
-                                                    <li class="">55:12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </slp-checkbox>
-                                </li>
-                                <li>
-                                    <slp-checkbox class="" value="">
-                                        <div class="download_detail">
-                                            <div class="icon_wrap">
-                                                <span class="ico play_28"></span>
-                                            </div>
-                                            <div class="txt_wrap">
-                                                <p class="title fwb">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                <ul class="info">
-                                                    <li class="">12.33MB</li>
-                                                    <li class="">55:12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </slp-checkbox>
-                                </li>
+                            <ul class="info">
+                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                <li class="mono_80"><span>232.23 MB</span></li>
                             </ul>
-                            <!-- //list -->
                         </div>
                     </li>
                     <li>
-                        <slp-checkbox class="" value="true">
-                            <div class="download_detail">
-                                <div class="txt_wrap">
-                                    <p class="icon_txt color_clr3 fwb">4차시</p>
-                                    <p class="title fwb">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                    <ul class="info">
-                                        <li class="">12.33MB</li>
-                                        <li class="">55:12</li>
-                                    </ul>
-                                    <span class="accordion_arrow"></span>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
-                            </div>
-                        </slp-checkbox>
+                            </a>
+                            <a href="#" class="tit">기초부터 예제까지, 한 달 안에 배우는 iOS 개발자...</a>
+                            <ul class="info">
+                                <li class="color_clr3 fwb">이러닝</li>
+                            </ul>
+                            <ul class="info">
+                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                <li class="mono_80"><span>232.23 MB</span></li>
+                            </ul>
+                        </div>
                     </li>
-                </ul>
-                <!-- //list -->
-            </div>
-          </div>
-
-          <div class="cell">
-            <div class="inner">
-                <h2 class="h-tit2 fwb600 mb10">데이터 특성 알아보기</h2>
-                <!-- list -->
-                <ul class="multiList type2">
                     <li>
-                        <slp-checkbox class="" value="true">
-                            <div class="download_detail">
-                                <div class="icon_wrap">
-                                    <span class="ico play_28"></span>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
-                                <div class="txt_wrap">
-                                    <p class="title fwb">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                    <ul class="info">
-                                        <li class="">12.33MB</li>
-                                        <li class="">55:12</li>
-                                    </ul>
+                            </a>
+                            <a href="#" class="tit">초보자를 위한 기술</a>
+                            <ul class="info">
+                                <li class="color_clr3 fwb">이러닝</li>
+                            </ul>
+                            <ul class="info">
+                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                <li class="mono_80"><span>232.23 MB</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
-                            </div>
-                        </slp-checkbox>
+                            </a>
+                            <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문</a>
+                            <ul class="info">
+                                <li class="color_clr3 fwb">이러닝</li>
+                            </ul>
+                            <ul class="info">
+                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                <li class="mono_80"><span>232.23 MB</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in done">
+                            <a href="#" class="thum">
+                                <div class="thumbnail">
+                                    <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                </div>
+                            </a>
+                            <a href="#" class="tit">업무에 바로 쓰는 자바 입문</a>
+                            <ul class="info">
+                                <li class="color_clr3 fwb">이러닝</li>
+                            </ul>
+                            <ul class="info">
+                                <li class="mono_80"><span>12</span>개 다운로드됨</li>
+                                <li class="mono_80"><span>232.23 MB</span></li>
+                            </ul>
+                            <p class="action center">청강기간 만료</p>
+                        </div>
                     </li>
                 </ul>
                 <!-- //list -->
             </div>
           </div>
-
 
         </div>
+            <!-- floatingbtn -->
+            <div class="fixBtmBtn abs">
+                <p class="offlineMent mono_0 tac fwl">오프라인 상태입니다</p>
+            </div>
+            <!-- //floatingbtn -->
       </div>
       <!-- //container -->     
     </div>
@@ -232,7 +162,7 @@
 
 <script>
 export default {
-  name: 'download_detail_edit',
+  name: 'MySpace_download_offline',
   /* vue lifecycle */
   created () {
   },

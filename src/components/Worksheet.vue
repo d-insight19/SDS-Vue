@@ -3713,6 +3713,14 @@
           <router-link :to="{ name: 'MySpace_download' }">
             MySpace_download
           </router-link>
+          ,
+          <router-link :to="{ name: 'MySpace_download_edit' }">
+            MySpace_download_edit
+          </router-link>
+          ,
+          <router-link :to="{ name: 'MySpace_downloading' }">
+            MySpace_downloading
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -3727,12 +3735,12 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.03.download_detail</td>
         <td>
-          <router-link :to="{ name: 'download_detail' }">
-            download_detail
+          <router-link :to="{ name: 'MySpace_download_detail' }">
+            MySpace_download_detail
           </router-link>
           ,
-          <router-link :to="{ name: 'download_detail_edit' }">
-            download_detail_edit
+          <router-link :to="{ name: 'MySpace_download_detail_edit' }">
+            MySpace_download_detail_edit
           </router-link>
         </td>
         <td></td>
@@ -3748,9 +3756,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.03.download_done</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_download' }">
+            MySpace_download
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -3765,8 +3774,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.03.download_offline</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_download_offline' }">
+            MySpace_download_offline
           </router-link>
         </td>
         <td></td>
@@ -3799,8 +3808,12 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.04.learningjourney_encourage</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_learningjourney_encourage' }">
+            MySpace_learningjourney_encourage
+          </router-link>
+          ,
+          <router-link :to="{ name: 'MySpace_learningjourney_encourage_off' }">
+            MySpace_learningjourney_encourage_off
           </router-link>
         </td>
         <td></td>
@@ -6351,7 +6364,7 @@
             Study_04_SO_debate_submission_all
           </router-link>
         </td>
-        <td>12-26 작업중</td>
+        <td>sort메서드 구현필요</td>
       </tr>
       <tr>
       <td align="center">360</td>
@@ -7449,6 +7462,9 @@
         <td>
           <router-link :to="{ name: 'regiclass_register_approve' }">
             regiclass_register_approve
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_approve_02' }">
+            regiclass_register_approve_02
           </router-link>
         </td>
         <td></td>
@@ -7464,8 +7480,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_08.01.01.register_approve_member</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_approve_member' }">
+            regiclass_register_approve_member
           </router-link>
         </td>
         <td></td>
@@ -7481,8 +7497,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_08.01.01.register_approve_member_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_approve_member_detail' }">
+            regiclass_register_approve_member_detail
           </router-link>
         </td>
         <td></td>

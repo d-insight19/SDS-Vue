@@ -8,6 +8,9 @@
             <div id="header" class="fixed">
             <button type="button" class="btn only close"><span class="ico"></span></button>
             <p class="header_text font_18">질문 수정</p>
+            <p class="end">
+                <span class="end_btn2 color_clr2">완료</span>
+            </p>
             </div>
             <!-- //header -->            
             <div id="content" class="etc">
@@ -15,11 +18,11 @@
                   <div class="inner" style="padding-top:78px;">
                       <ul class="multiList type2">
                         <li>
-                          <strong class="label-tit14">제목</strong>
+                          <p class="label-tit14 mb8">제목</p>
                           <slp-text-field placeholder="질문 있습니다."></slp-text-field>
                         </li>
                         <li>
-                          <strong class="label-tit14">분류</strong>                                
+                          <p class="label-tit14 mb8">분류</p>                                
                           <slp-select placeholder="1차시" width="100%">
                             <option>1차시</option>
                             <option>수료평과</option>
@@ -43,15 +46,15 @@
                         <li>
                           <!-- list -->
                             <div class="txt-edit" v-if="marketingFlag">
-                              <strong class="label-tit14">내용</strong>
+                              <p class="label-tit14 mb8">내용</p>
                               <textarea class="w100p gr_box" rows="5" >본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 
                               </textarea>
                             </div>
                             <!-- //list -->
                         </li>
                       </ul>
-                      <strong class="label-tit16 mt36"> 첨부파일 추가</strong>
-                      <ul v-show="list1.length" class="ulList type4 bot-btn">
+                      <p class="label-tit16 mt36"> 첨부파일 추가</p>
+                      <ul v-show="list1.length" class="ulList type4 bot-btn mt10">
                           <li v-for="(item, index) in list1" :key="index">
                           <div>
                               <span class="ico img-a"></span>

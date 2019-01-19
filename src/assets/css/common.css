@@ -26,6 +26,9 @@
 .ico.pause_20.blue{width:20px;height:20px; background: url("../img/ic_pause_blue_16.png") no-repeat; background-size:cover;}
 .ico.cancel_20.blue{width:20px;height:20px; background: url("../img/ic_cancel_blue_16.png") no-repeat; background-size:cover;}
 .ico.redownload_20.blue{width:20px;height:20px; background: url("../img/ic_redownload_blue_16.png") no-repeat; background-size:cover;}
+.ico.pause_24.wh{width:24px;height:24px; background: url("../img/ic_pause_wh_16.png") center center no-repeat; background-size:16px;}
+.ico.cancel_24.wh{width:24px;height:24px; background: url("../img/ic_cancel_wh_16.png") center center no-repeat; background-size:16px;}
+.ico.redownload_24.wh{width:24px;height:24px; background: url("../img/ic_redownload_wh_16.png") center center no-repeat; background-size:16px;}
 .ico.ebook_20{width:20px;height:20px; background: url("../img/ic_ebook_line_20.png") no-repeat;}
 .ico.headphone_20{width:20px;height:20px; background: url("../img/ic_headphone_line_20.png") no-repeat;}
 .ico.youtube_20{width:20px;height:20px; background: url("../img/ic_youtube_20.png") no-repeat;}
@@ -40,6 +43,7 @@
 .ico.arr.up{width:16px;height:16px;background: url("../img/ic_accordion_arr_line_16_up.png") no-repeat; }
 .ico.like_32.blue{width:32px;height:32px;background: url("../img/ic_thumb_line_cblue_32.png") no-repeat; }
 .ico.unlike_32{width:32px;height:32px;background: url("../img/ic_unlike_line_3.png") no-repeat; }
+.ico.unlike_32.red{width:32px;height:32px;background: url("../img/ic_unlike_line_red_32.png") no-repeat; }
 .ico.back{width:32px;height:32px;background: url("../img/ic_former_solid_32.png") no-repeat; }
 .ico.next{width:32px;height:32px;background: url("../img/ic_next_solid_black_32.png") no-repeat; }
 
@@ -153,6 +157,7 @@
 
 /*추가이미지 2019-1-17*/
 .ico.list-btn{width:24px; height:24px; background: url("../img/ic_listchange_24.png") ;background-size: cover;}
+.ico.del{width:20px; height: 20px; background: url("../img/ic_deletemode_20.png");background-size: cover;}
 
 
 
@@ -210,6 +215,7 @@
 .taj {text-align:justify;}
 .vt {vertical-align:top !important;}
 .vm {vertical-align:middle;}
+.mac{margin:0 auto !important;}
 
 
 /* width */
@@ -285,6 +291,7 @@
 .pdt22{padding-top:22px !important;}
 
 .pdb0{padding-bottom:0 !important;}
+.pb10{padding-bottom:10px !important;}
 .pb18{padding-bottom:18px !important;}
 .pdb20{padding-bottom:20px !important;}
 .pdb14{padding-bottom: 14px !important;}

@@ -18,7 +18,7 @@
                     <!-- list -->
                     <ul class="multiList type1">                   
                         <li class="noline" style="padding-top:0">
-                            <p class="label-tit14" style="padding-bottom:10px">권한 변경</p>
+                            <p class="label-tit14 dpb" style="padding-bottom:10px">권한 변경</p>
                             <label class="labelRdo">
                                 <input type="radio" class="rdo" name="test-rdo" checked>
                                 <span class="ico">

@@ -802,7 +802,6 @@
 .label-tit-2 {margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 26px; letter-spacing: -0.48px;}
 .tb_wrap{ margin-bottom:16px; background:#f2f3f7; padding:20px; border-top: 1px solid #999999; border-bottom: 1px solid #999999;}
 table td.sub-txt{ color:#000;}
-table td.pb10{padding-bottom: 10px;}
 .in12_16{padding-left: 12px;text-indent: -16px;} // 글자 앞정렬 조정
 .in9_13{padding-left: 9px;text-indent: -13px;} // 글자 앞정렬 조정
 .danger{color:map-get($static_colors, danger) !important;}
@@ -828,8 +827,8 @@ table td.pb10{padding-bottom: 10px;}
 .chip {font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 16px; letter-spacing: -0.36px}
 .chip.del{ line-height: 22px; margin-bottom: 0; padding: 0px 2px 0 10px;} 
 .chip.wh{border:1px solid rgba(255,255,255,0.4);}
-.chip.agree{color:map-get($contents_colors, type_2 );border-color:map-get($contents_colors, type_2 );}
 .chip.agree-x{color:map-get($contents_colors, type_1 );border-color:map-get($contents_colors, type_1 );}
+.chip.agree-x.agree{color:map-get($contents_colors, type_2 );border-color:map-get($contents_colors, type_2 );}
 .chip.type2 {font-weight: 500;  font-size:map-get($font-size , font_11);display: inline-block;margin-bottom: 0px;height: 22px;border-radius: 16px;
     padding: 3px 10px;line-height: 15px;}
 .chip.color1 {border-color:map-get($contents_colors, type_1 ); color:map-get($contents_colors, type_1 );}
@@ -855,21 +854,19 @@ table td.pb10{padding-bottom: 10px;}
 #header p.h-tit1 {margin-bottom: 4px;}
 #header p.h-tit1 .q-tit{display:inline-block; width: 90%; font-weight:600; font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;}
 #header p.h-tit1 .ico.more28{display:inline-block; margin-top:6px;}
+#header p.end{cursor: pointer; width: auto;position: absolute;right: 14px;top: 0;  font-weight:400 !important; font-size:map-get($font-size, font_16); letter-spacing: -0.48px;} 
 #header .ico-group .ico.view{vertical-align: -3px;}
 #header .ico-group .ico-txt{font-weight:400 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80);}
 #header .ico-group{font-weight:500 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80); }
 #header .info-group{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px;color:map-get($mono_colors, mono_80);}
 #header .info-group .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background: rgba(0,0,0,0.5);} 
 #header .info-group .ico.play{vertical-align: -2px;}
-
 /*header hide-inner*/
 #header .hide-inner { width: calc(100% - 18px*2); margin: 0 auto; line-height: 27px; }
 #header .hide-inner { width: calc(100% - 18px*2); margin: 0 auto; line-height: 27px; }
 #header .hide-inner p.h-tit1 {font-weight:500 !important; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 #header .hide-inner p.h-tit5 {font-weight:400 !important; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;  padding:12px 0 0 0 ;}
 #header .ico.chk{ vertical-align: -3px; } 
-
-/*ulList type5*/
 
 
 
@@ -898,7 +895,7 @@ table td.pb10{padding-bottom: 10px;}
 #container.study_discuss .singleList input[type=number]::placeholder{text-align:left}
 #container.study_discuss .singleList input[type=number]{ width: 100%;height: 44px; padding: 0px 35px 0px 16px;text-align:right;}
 #container.study_discuss .singleList input[type=number]::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0;} 
-#header p.end{cursor: pointer; width: auto;position: absolute;right: 14px;top: 0;  font-weight:400 !important; font-size:map-get($font-size, font_16); letter-spacing: -0.48px;} 
+
 #container.study_discuss .ulList.type4 li{ height:auto;}
 #container.study_discuss .top_bottom_mg{ margin-top:36px; margin-bottom:14px;}
 #container.study_discuss .inner-txt{ color:rgba(0,0,0,1); font-weight:400; font-size:map-get($font-size, font_15);  line-height: 25px; letter-spacing: -0.45px;}
@@ -988,6 +985,13 @@ table td.pb10{padding-bottom: 10px;}
 
 // 질문방 수정
 
+#container.study_question_edit .multiList.type2 > li + li{margin-top:20px}
+#container.study_question_edit .multiList.type2 .btn.sm{margin:7px 0px 0px 0px}
+#container.study_question_edit .multiList.type2 .pt0{padding-top: 0;}
+#container.study_question_edit .multiList.type2 input::placeholder {color:rgba(0,0,0,0.25);}
+#container.study_question_edit .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; letter-spacing: -0.42px;}
+#container.study_question_edit .multiList.type2 li.custom{padding: 15px 0; border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
+
 .custom-2{ margin-top:0 !important; padding:17px 0; border-bottom: 1px solid #e3e3e3; }
 .gr_box{padding: 12px 16px; background-color: #f5f5f5; font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; overflow:auto;}
 .ico.plus{vertical-align: -1px;}
@@ -1025,11 +1029,19 @@ table td.pb10{padding-bottom: 10px;}
 // 과제작성 -Study_02_studystatus_assignment_apply
 #container.study_stauts_apply .end.sub{right:57px;}
 #container.study_stauts_apply .h-tit5{ font-size:map-get($font-size, font_18);line-height: 27px; letter-spacing: -0.54px; margin-bottom: 18px;}
-
 #container.study_stauts_apply .ulList.type4 li{ height:auto;}
+#container.study_stauts_apply table tr td{padding-bottom:14px;}
+#container.study_stauts_apply table tr:nth-last-child(1) td{padding-bottom:0px;}
 #container.study_stauts_apply ul li{ margin-bottom: 14px;}
 #container.study_stauts_apply ul li.bottom-bd{border-bottom: 1px solid map-get($line_colors, B89);}
 #container.study_stauts_apply ul li.bottom-pd{padding-bottom: 12px;}
+#container.study_stauts_apply .multiList.type2 > li + li{margin-top:20px}
+#container.study_stauts_apply .multiList.type2 .btn.sm{margin:7px 0px 0px 0px}
+#container.study_stauts_apply .multiList.type2 .pt0{padding-top: 0;}
+#container.study_stauts_apply .multiList.type2 input::placeholder {color:rgba(0,0,0,0.25);}
+#container.study_stauts_apply .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; letter-spacing: -0.42px;}
+#container.study_stauts_apply .multiList.type2 li.custom{padding: 15px 0; border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
+
 
 
 // 과정평가 학습자 안내창
@@ -1217,7 +1229,11 @@ label.rdo .label{position: relative;}
 // 찬반 토론 - 댓글펼치기 --Study_04_SO_debate_submission_all
 #container.study_debate .txt-line{ margin-top: 13px; padding-top: 0px; padding-bottom: 14px;}
 #container.study_debate .txt-line p.tar{ text-align: right; font-weight:500; font-size:map-get($font-size , font_15);line-height:28px;}
+#container.study_debate .replyList li{border-top:1px solid #eaeaea;}
+#container.study_debate .replyList li:nth-child(1){border-top:1px solid #d9d9d9;}
+// .multiList.dif li{border-bottom:1px solid #d9d9d9;}
 .multiList .left_pd { padding-left: 18px;}
+.multiList .left_pd:after{clear:both; content:''; display:block;}
 .multiList .left_pd .n-ml18{margin-left: -18px;} 
 .multiList .left_pd .reply-num.mb{margin-bottom: 8px;} 
 .multiList .left_pd .reply-num.mt{margin-top: 4px;}
@@ -1246,15 +1262,15 @@ label.rdo .label{position: relative;}
 
 
 // 1:1문의 수정
-.label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; margin-bottom: 8px; display: inline-block;}
-.label-tit14.mb0{ margin-bottom: 0px !important;}
-.label-tit16{ font-size:map-get($font_size, font_16); font-weight: 600; line-height: 26px; letter-spacing: -0.48px; margin-bottom: 10px; display: inline-block;}
-.study_inquery .multiList.type2 > li + li{margin-top:20px}
-.study_inquery .multiList.type2 .btn.sm{margin:7px 0px 0px 0px}
-.study_inquery .multiList.type2 .pt0{padding-top: 0;}
-.study_inquery .multiList.type2 input::placeholder {color:rgba(0,0,0,0.65);}
-.study_inquery .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; line-height: 21px; letter-spacing: -0.42px;}
-.multiList.type2 li.custom{padding: 15px 0; border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
+#container.study_inquery .label-tit14{ font-size:map-get($font_size, font_14); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; margin-bottom: 8px; display: inline-block;}
+#container.study_inquery .label-tit14.mb0{ margin-bottom: 0px !important;}
+#container.study_inquery .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 600; line-height: 26px; letter-spacing: -0.48px; margin-bottom: 10px; display: inline-block;}
+#container.study_inquery .multiList.type2 > li + li{margin-top:20px}
+#container.study_inquery .multiList.type2 .btn.sm{margin:7px 0px 0px 0px}
+#container.study_inquery .multiList.type2 .pt0{padding-top: 0;}
+#container.study_inquery .multiList.type2 input::placeholder {color:rgba(0,0,0,0.65);}
+#container.study_inquery .multiList.type2 .labelRdo .label {font-size:map-get($font_size, font_14); font-weight:600; letter-spacing: -0.42px;}
+#container.study_inquery .multiList.type2 li.custom{padding: 15px 0; border-top: 1px solid #e3e3e3;border-bottom: 1px solid #e3e3e3;}
 
 
 // 서약서 법률사항 Study_05_etc_pledge_law
@@ -1348,20 +1364,6 @@ label.rdo .label{position: relative;}
 #container.study_etc .tb-cell{color: white; font-size: 20px;}
 
 
-
-// 수강신청 regiclass_detailview_licence
-// #container.Regiclass #header .hide-inner p.h-tit1 {font-size: map-get($font-size , font_22);line-height: 21px;letter-spacing: -1.1px; font-weight:600 !important; }
-// #container.Regiclass #header .hide-inner p.h-tit5 {font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px; font-weight:400; }
-// #container.Regiclass .label-tit-16 {font-size: map-get($font-size , font_16);line-height: 25px;letter-spacing: -0.48px;font-weight:600;}
-// #container.Regiclass .label-tit-15 {font-size: map-get($font-size , font_15);line-height: 21px;letter-spacing: -0.45px;font-weight:500;}
-// #container.Regiclass table tr td{padding-bottom:5px;}
-// #container.Regiclass table tr td.l-txt{font-size: map-get($font-size , font_15);line-height: 22px;letter-spacing: -0.75px;font-weight:500;}
-// #container.Regiclass table tr td.r-txt{font-size: map-get($font-size , font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8)}
-// #container.Regiclass .book-wrap {margin-right:15px;}
-// #container.Regiclass table.book-tb {width:51.5%}
-// #container.Regiclass table.book-tb tr td.book-tit{color:rgba(0,0,0,1.0);font-size: map-get($font-size , font_18);line-height: 24px;letter-spacing: -0.54px;font-weight:600;}
-// #container.Regiclass table.book-tb tr td{padding-bottom:3px;font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;color:rgba(0,0,0,0.80)}
-// #container.Regiclass table.book-tb tr td:nth-child(1){color:rgba(0,0,0,0.65)}
 
 // regiclass 공통
 .w-auto{width:auto !important;}
@@ -1464,25 +1466,26 @@ label.rdo .label{position: relative;}
 .study_title_detail > .s_detail_wrap.detail_introduce .career_tit1{font-size:map-get($font-size, font_14);line-height: 31px;letter-spacing: -0.14px;color:#000;font-weight: 500;margin-bottom:4px;}
 .study_title_detail > .s_detail_wrap.detail_introduce .career_sub{font-size:map-get($font-size, font_14);line-height: 19px;letter-spacing: -0.14px;color:rgba(0,0,0,0.65)}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
+// 수강신청 결재상신
 #container.regiclass.register .ulList.type2 li {position: relative; padding:19px 0; border-bottom:1px solid #e3e3e3}
 #container.regiclass.register .ulList.type2 li:nth-last-child(1) {border-bottom:0 !important;}
 #container.regiclass.register .ulList.type2 li + li{margin-top:0;}
 #container.regiclass.register .ulList.type1 li + li{margin-top:0;}
-#container.regiclass.register .ulList.type2 li .list-btn{position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
+#container.regiclass.register .ulList.type2 li .ico{position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
+
+#container.regiclass.register .btn14{font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px; position: absolute;right: 18px;top:50%;transform:translateY(-50%);font-weight: 500;}
+#container.regiclass.register .ulList.type1 li {padding:15px 0; border-bottom:1px solid #e3e3e3;}
+#container.regiclass.register .chip-wrap {display:inline-block; margin-right:10px;}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2153,9 +2156,16 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .downloadCondition {position: relative; background-color: map-get($line_colors , B89); padding:12px 18px; height: 61px;}
 .MySpace .thumList > li {border-bottom:0 none; margin-bottom:0;}
 .MySpace .thumList.type1 .thum {width:120px; height:120px;}
-.MySpace .thumList.type1 .in {background-color: #fff; height: 120px; padding-left: 136px;}
-.MySpace .thumList.type1 .in.done {opacity: 0.4;}
-.MySpace .thumList.type1 .in.done::before{display: inline-block; content: '청강기간 만료'; color: map-get($static_colors , danger); font-size:map-get($font-size, font_13); position: absolute; top: calc(50% - 5px); left:50%;}
+.MySpace .thumList.type1 .in {background-color: #fff; height: 120px; padding-left: 136px; padding-right:18px;}
+.MySpace .thumList.type1 .thum .icon_wrap{position: absolute; top:calc(50% - 10px); left:calc(50% - 10px); z-index: 2;}
+.MySpace .thumList.type1 .thum .cDim{position: absolute; bottom:0; left:0; z-index: 1; width:100%; height: 100%; background: linear-gradient(-180deg, rgba(0,0,0,0), rgba(0,0,0,0.5));}
+.MySpace .thumList.type1 .info {margin-top:5px;}
+.MySpace .thumList.type1 .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
+.MySpace .thumList.type1 .action {font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
+.MySpace .thumList.type1 .done .thum {opacity: 0.4;}
+.MySpace .thumList.type1 .done .tit {opacity: 0.4;}
+.MySpace .thumList.type1 .done .info {opacity: 0.4;}
+.MySpace .thumList.type1  .center{position: absolute; top: calc(50% - 5px); left:50%;}
 .MySpace .offlineMent {background-color:#333; line-height: 48px;}
 .MySpace #header .info li{display: inline-block; font-size: map-get($font_size, font_13); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
 .MySpace #header .info li+li{margin-left: 5px;}
@@ -2167,7 +2177,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .download_detail .txt_wrap .icon_txt {font-weight:500;}
 .MySpace .download_detail .txt_wrap .title {font-weight:500; width:100% !important; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical;}
 .MySpace .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
-.MySpace .download_detail .txt_wrap .action {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($static_colors , danger); text-align: right;}
+.MySpace .download_detail .txt_wrap .action {font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
 .MySpace .download_detail .info li {color:map-get($mono_colors,mono_65);}
 .MySpace .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
 .MySpace .download_detail.done .txt_wrap .title {opacity: 0.4;}
@@ -2177,10 +2187,12 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .sub_content .download_detail {border-bottom-width: 0px; border-top:1px solid map-get($line_colors,B89) !important; padding:16px; margin-top:0px;}
 .MySpace .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
 .MySpace .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 9px 21px; font-weight:600; border-left: 1px solid; border-right: 1px solid;}
+.MySpace .ico.line.wh {border:2px solid #fff; border-radius:100%;}
 .MySpace .ico.line.blue {border:2px solid map-get($contents_colors,type_2); border-radius:100%;}
 .MySpace .ico.accordion_arrow{width:20px;height:20px;position:absolute;bottom:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 .MySpace .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
-
+.MySpace .btB89 {border-top: 1px solid map-get($line_colors , B89);}
+.MySpace .radioList li{margin-bottom:10px;}
 //regiclass
 .regiclass #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .regiclass #header .hide_header p {white-space: normal !important;}
