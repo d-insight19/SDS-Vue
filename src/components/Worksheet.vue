@@ -6364,7 +6364,7 @@
             Study_04_SO_debate_submission_all
           </router-link>
         </td>
-        <td>12-26 작업중</td>
+        <td>sort메서드 구현필요</td>
       </tr>
       <tr>
       <td align="center">360</td>

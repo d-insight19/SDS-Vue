@@ -39,7 +39,7 @@
                         </div>                        
                         <p class="line01"></p>
                         <ul class="multiList type3 dif">
-                            <li :is="sortFlag">
+                            <li>
                                 <p class="reply-name mt20">                                    
                                     <span class="chip type2 type2 agree-x agree">찬성</span>
                                     <span>정*민 [작성자]</span>

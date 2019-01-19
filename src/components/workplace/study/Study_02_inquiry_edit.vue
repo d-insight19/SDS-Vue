@@ -77,7 +77,7 @@
             </div>
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <a href="#" class="btn sm add w100p" @click="addList1()" ><span class="ico plus"></span>파일 추가</a> 
+                <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a>  
             </div>
             <!-- //floatingbtn -->                
         </div>
@@ -90,56 +90,6 @@
 <script>
 export default {
   name: 'Study_02_inquiry_edit',
-  props: {
-    value: {
-      type: String,
-      default: null
-    },
-    type: {
-      type: String,
-      default: 'text'
-    },
-    placeholder: {
-      type: String,
-      default: null
-    },
-    icon: {
-      type: String,
-      default: null
-    },
-    clearable: {
-      type: Boolean,
-      default: false
-    },
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    readonly: {
-      type: Boolean,
-      default: false
-    },
-    success: {
-      type: Boolean,
-      default: false
-    },
-    error: {
-      type: Boolean,
-      default: false
-    },
-    message: {
-      type: String,
-      default: null
-    },
-    maxlength: {
-      type: [Number, String],
-      default: 100
-    },
-    classObject: {
-      type: [String, Object],
-      default: null
-    }
-  },
   /* vue lifecycle */
   created () {
   },
@@ -149,44 +99,7 @@ export default {
   data () {
     return {
       headerType: 2,
-      list1: [],
-      realText: this.value,
-      visible: true,
-      isFocus: true,
-      inputType: this.type,
-      intSchBox: true
-    }
-  },
-  computed: {
-    rootClass () {
-      return {
-        'intSchBox': this.icon === 'search'
-      }
-    },
-    wrapperClass () {
-      return {
-        'search-wrapper': this.clearable
-      }
-    },
-    computedClass () {
-      return {
-        'succ': this.success,
-        'error': this.error
-      }
-    },
-    pattern () {
-      if (this.clearable) {
-        return ''
-      } else {
-        return null
-      }
-    }
-  },
-  watch: {
-    value (v) {
-      if (this.realText !== v) {
-        this.inputText(v)
-      }
+      list1: []
     }
   },
   /* vue function */
@@ -197,38 +110,6 @@ export default {
     deleteFileList (index) {
       console.log(index, '제거')
       this.list1.splice(index, 1)
-    },
-    onKeydown (event) {
-      this.keylength = event.target.value.length
-      event.target.style.height = '1px'
-      event.target.style.height = (event.target.scrollHeight) + 'px'
-    },
-    inputText (inputValue) {
-      this.realText = inputValue
-      this.$emit('input', this.realText)
-    },
-    setFocus () {
-      this.$refs.refInput.focus()
-    },
-    toggleIcon: function (event, iconName) {
-      if (this.icon && iconName) {
-        this.$emit('click', this.realText)
-      } else if (this.clearable) {
-        this.realText = ''
-        this.$emit('input', '')
-      }
-    },
-    slpTextFieldKeyup (event) {
-      this.$emit('keyup', event)
-    },
-    slpTextFieldFocused (event) {
-      if (this.isFocus) return
-      this.isFocus = true
-      this.$emit('focus', event)
-    },
-    slpTextFieldBlur (event) {
-      this.isFocus = false
-      this.$emit('blur', event)
     }
   }
 }
