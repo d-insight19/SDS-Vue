@@ -109,7 +109,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" class="btn md clr1">정답확인</button>
+                <button type="button" class="btn md" :class="{ clr1 : keylength}">정답확인</button>
             </div>
             <!-- //floatingbtn -->
         </div>

@@ -53,8 +53,8 @@
                                     <p class="fr reply-num">
                                         <label>
                                             <input type="radio"
-                                            @click="toggleLike()"
-                                            :checked="rdo" v-model="rdo">
+                                            @click="toggleLike(1)"
+                                            >
                                             <span v-if="rdo">
                                                 <span class=" ico like_32" ></span>
                                                 <span class="">{{goodcnt}}</span>
@@ -67,9 +67,9 @@
                                         
                                         <label>
                                             <input type="radio"
-                                            @click="toggleLike()"
-                                            :checked="!rdo" v-model="rdo">
-                                            <span v-if="!rdo">
+                                            @click="toggleLike(2)"
+                                            >
+                                            <span v-if="disrdo">
                                                 <span class=" ico unlike_32" ></span>
                                                 <span class="">{{badcnt}}</span>
                                             </span>
@@ -285,7 +285,8 @@ export default {
         replyFlag: false,
         goodcnt: 12,
         badcnt: 3,
-        rdo: undefined,
+        rdo: false,
+        disrdo: false,
         rdos: ['one', 'two'],
         rdo2: undefined,
         rdos2: ['one', 'two'],
@@ -299,11 +300,16 @@ export default {
   },
   /* vue function */
   methods: {
-      toggleReply () {
+    toggleReply () {
         this.replyFlag = !this.replyFlag 
-      },
-    toggleLike () {
-        this.rdo = !this.rdo;
+    },
+    toggleLike (el) {
+        if( el == 1 ) {
+            this.rdo = !this.rdo;
+            
+        } else if( el == 2 ) {
+            this.disrdo = !this.disrdo;
+        } 
     },
     toggleLike2 () {
         this.rdo2 = !this.rdo2;

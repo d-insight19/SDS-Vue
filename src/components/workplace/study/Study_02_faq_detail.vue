@@ -14,7 +14,7 @@
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
                     <div class="hide-inner">
                         <span class="chip">FAQ</span>                         
-                        <p class="h-tit1">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</p>
+                        <p class="h-tit1 fwb600">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</p>
                         <p class="h-tit5">
                             <span>동영상</span>
                         </p>

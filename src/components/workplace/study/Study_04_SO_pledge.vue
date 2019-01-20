@@ -34,51 +34,31 @@
                     <p class="inner-txt">
                     본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다  
                     </p>
-                    <p class="hr"></p> 
-                    <!-- <p class="label-tit14">회사명</p>
-                    <div class="intSchBox singleList">
-                      <div class="search-wrapper">
-                          <input type="text"  pattern="^\s+" class="input" placeholder="회사명 검색" />
-                          <button class="close-icon" type="button"></button>
-                      </div>
-                      <a href="#" class="btn"><span class="ico"></span></a>
-                    </div>   
-                    <p class="label-tit14"><strong>부서명</strong></p>
-                    <div class="singleList">
-                          <input type="text"  class="input" placeholder="부서를 입력해주세요." />                      
-                    </div>
-                    <p class="label-tit14"><strong>직급</strong></p>
-                    <div class="singleList">                      
-                          <input type="text"  class="input" placeholder="직급을 입력해주세요." />                      
-                    </div>
-                    <p class="label-tit14"><strong>사번</strong></p>
-                    <div class="singleList">                      
-                          <input type="text"  class="input" placeholder="사번을 입력해주세요." />                      
-                    </div>
-                    <p class="label-tit14"><strong>성명</strong></p>
-                    <div class="singleList">                      
-                          <input type="text"  class="input" placeholder="성명을 입력해주세요." />                      
-                    </div> -->
-                    
+                    <p class="hr"></p>                     
                       <ul class="multiList type2 op25">
                         <li>
-                            <strong class="label-tit14">회사명</strong>
-                            <slp-text-field  pattern="^\s+" placeholder="회사명을 입력해주세요"></slp-text-field>
+                            <p class="label-tit14 mb8">회사명</p>                            
+                            <div class="intSchBox">
+                              <div class="search-wrapper">
+                                  <slp-text-field  pattern="^\s+" placeholder="회사명을 입력해주세요"></slp-text-field>
+                                  <a href="#" class="btn"><span class="ico"></span></a>
+                              </div>
+                          </div>
                         </li>
                         <li>
-                            <strong class="label-tit14">부서명</strong>
+                            <p class="label-tit14 mb8">부서명</p>
                             <slp-text-field placeholder="부서명을 입력해주세요."></slp-text-field>
                         </li>
                         <li>
-                            <strong class="label-tit14">직급</strong>
+                            <p class="label-tit14 mb8">직급</p>
                             <slp-text-field placeholder="직급을 입력해주세요."></slp-text-field>
                         </li>
                         <li>
-                            <strong class="label-tit14">사번</strong>
+                            <p class="label-tit14 mb8">사번</p>
                             <slp-text-field placeholder="사번을 입력해주세요."></slp-text-field>
                         </li>
                         <li>
-                            <strong class="label-tit14">성명</strong>
+                            <p class="label-tit14 mb8">성명</p>
                             <slp-text-field placeholder="성명을 입력해주세요."></slp-text-field>
                         </li>
                       </ul>

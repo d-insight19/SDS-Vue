@@ -55,7 +55,7 @@
                                 </tr>  
                             </table>                           
                         </div>
-                        <slp-checkbox >위 사항에 동의합니다.</slp-checkbox>
+                        <slp-checkbox ><span @click="activate()">위 사항에 동의합니다.</span></slp-checkbox>
                         <!-- <div class="loginChk">
                             <label for="agree" class="labelChk">
                             <input id="agree" type="checkbox" class="chk" name="agree">
@@ -70,7 +70,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" class="btn md clr1">확인</button>
+                <button type="button" class="btn md" :class="{ clr1 : active_el }">확인</button>
             </div>
             <!-- //floatingbtn -->   
 
@@ -92,10 +92,15 @@ export default {
   /* vue data */
   data () {
     return {
+      active_el: false
     }
   },
   /* vue function */
   methods: {
+    activate () {
+      console.log(this.active_el)
+      this.active_el = !this.active_el
+    }
   }
 }
 </script>

@@ -21,8 +21,8 @@
                 <strong class="label-tit-14 fwb" style=" display:inline-block; margin-bottom:8px;">회사명 검색</strong>
                 <div class="intSchBox">
                     <div class="search-wrapper">
-                        <input type="text" @input="searchToggle($event)" pattern="^\s+" class="input" placeholder="회사명 입력" />
-                        <button class="close-icon" type="button"></button>
+                        <input type="text" ref="input01" @input="searchToggle($event)" pattern="^\s+" class="input" placeholder="회사명 입력" />
+                        <button class="close-icon" type="button" @click="delTxt"></button>
                         <a href="#" class="btn"><span class="ico"></span></a>
                     </div>
                 </div>
@@ -77,17 +77,14 @@ export default {
         this.searchFlag = !this.searchFlag
       } else {
         this.searchFlag = false
-      }
-      
+      }      
+    },
+    delTxt () {
+        this.$refs.input01.value = ''
     }
     
   },
   computed: {
-    searchRes (data) {
-        if(searchRes === true) {
-              
-        }
-    }
   }
 }
 </script>

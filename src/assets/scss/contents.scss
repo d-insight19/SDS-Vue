@@ -864,8 +864,8 @@ table td.sub-txt{ color:#000;}
 /*header hide-inner*/
 #header .hide-inner { width: calc(100% - 18px*2); margin: 0 auto; line-height: 27px; }
 #header .hide-inner { width: calc(100% - 18px*2); margin: 0 auto; line-height: 27px; }
-#header .hide-inner p.h-tit1 {font-weight:500 !important; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
-#header .hide-inner p.h-tit5 {font-weight:400 !important; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;  padding:12px 0 0 0 ;}
+#header .hide-inner p.h-tit1 {font-weight:500 ; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
+#header .hide-inner p.h-tit5 {font-weight:400 ; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px;  padding:12px 0 0 0 ;}
 #header .ico.chk{ vertical-align: -3px; } 
 
 
@@ -881,10 +881,8 @@ table td.sub-txt{ color:#000;}
 #container.study_assinment .inner-txt {font-weight:400; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px; color: rgba(0,0,0,0.8);}
 
 // 토론방 - 수정,등록 Study_02_discuss_detail
-#container.study_discuss .singleList{margin-top: 8px; margin-bottom:20px;}
-#container.study_discuss .singleList{position: relative;}
-#container.study_discuss .txt-tit{font-weight:400; font-size:map-get($font-size, font_14);  line-height: 20px; letter-spacing: -0.42px; }
-#container.study_discuss .txt-tit{font-weight:400; font-size:map-get($font-size, font_14);  line-height: 20px; letter-spacing: -0.42px; }
+#container.study_discuss .singleList{position: relative; margin-top: 8px; margin-bottom:20px;}
+#container.study_discuss .txt-tit{font-weight:500; font-size:map-get($font-size, font_14);  line-height: 20px; letter-spacing: -0.42px; }
 #container.study_discuss .singleList.type_2.line{border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; padding:17px 0;}
 #container.study_discuss .singleList.type_2 .labelBtn{top:15px;}
 #container.study_discuss .singleList .dis_num{outline: none; width: 48%; height: 44px;}
@@ -902,6 +900,12 @@ table td.sub-txt{ color:#000;}
 
 // 토론방 - 댓글입력 Study_02_discuss_reply
 #container.study_discuss .top_bottom_mg_2{ margin-top:36px; margin-bottom:2px;}
+
+// 리플렉션 노트 수정/등록 Study_02_reflectionnote_edit
+#container.study_reflection .multiList li {margin-bottom:20px;}
+
+
+
 
 // 시뮬레이션 
 #container.study_simulation .line01{margin-top:28px;margin-bottom: 26px; width: 100%;  border-bottom: 1px solid #ccc;}
@@ -973,6 +977,7 @@ table td.sub-txt{ color:#000;}
 #container.study_pledge .empty_img { width: 100%; height: auto; margin-bottom:12px;}
 #container.study_pledge .inner-txt{font-size:map-get($font-size, font_16); color:map-get($mono_colors, mono_65); line-height: 25px; letter-spacing: -0.48px;margin-bottom:36px;}
 #container.study_pledge .singleList{ margin-bottom: 20px;}
+#container.study_pledge .multiList li{ margin-bottom: 20px;}
 
 
 // 서약서 제출완료
@@ -1331,7 +1336,7 @@ label.rdo .label{position: relative;}
 #container.study_survey .inner-txt { font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px; margin-bottom: 36px;}
 #container.study_survey .info-group{ margin-top: 18px;}
 #container.study_survey .label-tit16 { font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; width:auto !important; }
-#container.study_survey .line01.tp{margin-top:10px; margin-bottom:16px; border:1px solid rgba(99,99,99,0.6);}
+#container.study_survey .line01.tp{margin-top:10px; margin-bottom:16px;}
 #container.study_survey .line01.bot{margin-top:26px; margin-bottom:14px; border:1px solid #e3e3e3;}
 
 

@@ -16,15 +16,15 @@
                     <div class="inner" style="padding-top:78px;">
                         <ul class="multiList type2 op25">
                         <li>
-                            <strong class="label-tit14">제목</strong>
+                            <p class="label-tit14 mb8">제목</p>
                             <slp-text-field placeholder="제목을 입력해주세요"></slp-text-field>
                         </li>
                         <li>
-                            <strong class="label-tit14">내용</strong>
+                            <p class="label-tit14 mb8">내용</p>
                             <slp-text-field placeholder="내용을 입력해주세요."></slp-text-field>
                         </li>
                         </ul>
-                        <strong class="label-tit16 mt36"> 첨부파일 추가</strong>
+                        <p class="label-tit16 mt36 mb10"> 첨부파일 추가</p>
                         <ul v-show="list1.length" class="ulList type4 bot-btn">
                             <li v-for="(item, index) in list1" :key="index">
                             <div>

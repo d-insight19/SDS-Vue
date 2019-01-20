@@ -25,7 +25,7 @@
                 <ul class="ulList type1" v-show="searchFlag">
                     <li v-for="item in Resdata" :key="item.id">
                         <label class="labelChk multi">
-                            <input type="checkbox" class="chk" @click="addName">
+                            <input type="checkbox" class="chk" @click="addList1">
                             <span class="ico">
                                 <span class="innerCircle"></span>
                             </span>
@@ -81,14 +81,18 @@ export default {
     delTxt () {
         this.$refs.input01.value = ''
     },
-    addName (key) {
-      if (this.Resdata !== ''){
-        console.log(this.Resdata[key])
-        var obj = {name: this.Resdata}
-        this.checkList.push(obj)
-      } else {
-        this.checkList == ''
-      }
+    addList1 () {
+      const Resdata = [
+        {name: '홍길동', email: '전략기획팀 (gildong@multicampus.com)', id: 1},
+        {name: '홍동이', email: '전략기획팀 (gildong@multicampus.com)', id: 2},
+        {name: '길동이', email: '전략기획팀 (gildong@multicampus.com)', id: 3},
+        {name: '이이이', email: '전략기획팀 (gildong@multicampus.com)', id: 4}
+      ];
+      let result = Resdata.map((val , index, self) => {
+        console.log(self.val.name);
+        console.log(index);
+        return val;
+      });
     }
   },
   computed: {

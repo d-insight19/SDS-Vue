@@ -39,18 +39,18 @@
               </table>
             </li>
             <li class="pdt16">
-                <strong class="label-tit14">오류 유형</strong>
+                <p class="label-tit14 mb8">오류 유형</p>
                 <slp-select placeholder="동영상 속도 (끊김현상)" width="100%">
                     <option>동영상 속도 (끊김현상)</option>
                     <option>체크</option>
                 </slp-select>
             </li>
             <li style="padding-top:20px;">
-              <p><strong class="label-tit14">오류 내용</strong></p>
+              <p class="label-tit14 mb8">오류 내용</p>
               <textarea class="gr-box" name="" cols="30" rows="5">[정해민 테스터] [2차시] (5분 26초~)‘전격에 의한 재해 - 방지대책’에 대하여 설명하던 중‘전격의 재해 주요 원인’으로 내용이 넘어갑니다.</textarea>
             </li>
         </ul>
-        <strong class="label-tit16 mt36" > 첨부파일 추가</strong>
+        <p class="label-tit16 mt36 mb10" > 첨부파일 추가</p>
         <ul v-show="list1.length" class="ulList type4 bot-btn">
             <li v-for="(item, index) in list1" :key="index">
             <div>

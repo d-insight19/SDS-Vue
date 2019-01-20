@@ -101,7 +101,7 @@ export default {
     return {
       list1: [],
       languageEditFlag: true,
-      languageTxt: '완료'
+      languageTxt: '편집'
     }
   },
   /* vue function */
@@ -116,9 +116,9 @@ export default {
     editList () {
       this.languageEditFlag = !this.languageEditFlag
       if (this.languageEditFlag) {
-        this.languageTxt = '완료'
-      } else {
         this.languageTxt = '편집'
+      } else {
+        this.languageTxt = '완료'
       }
     },
     deleteList (index) {

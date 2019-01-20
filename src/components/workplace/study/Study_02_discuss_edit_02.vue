@@ -13,28 +13,21 @@
             <!-- //header -->            
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">
+                    <div class="inner" style="padding-top:78px;">
                         <p class="txt-tit">제목</p>
                         <div class="singleList ">                        
-                            <input  type="text" placeholder="제목을 입력해 주세요" />                        
+                            <input  type="text" placeholder="제목을 입력해 주세요" value="토론 타이틀입니다."/>                        
                         </div>                      
                         <p class="txt-tit">주제분류</p>
                         <div class="singleList ">                        
                             <select class="select w100p">
-                                <option value="">주제를 선택해주세요.</option>
+                                <option value="">1차시</option>
                                 <option value="">경영전문</option>
                                 <option value="">외국어</option>
                                 <option value="">정보기술</option>
                                 <option value="">시사/교양</option>
                                 <option value="">기타</option>
                             </select>                        
-                        </div>
-                        <div class="singleList type_2 line">                          
-                            <span class="txt-tit" href="#">공개여부</span>
-                            <label class="labelBtn">
-                                <input type="checkbox" name="" class="chk">
-                                <div class="chk_box"><span class="ball"></span><ul class="txt"><li class="m1"></li><li class="m2"></li></ul></div>
-                            </label>                          
                         </div>
                         <p class="txt-tit">토론기간</p>
                         <div class="singleList ">                        
@@ -46,14 +39,14 @@
                         </div>
                         <p class="txt-tit">참여가능 인원</p>
                         <div class="singleList ">                        
-                            <input type="number"  class="input" placeholder="참여가능 인원을 입력해주세요." />
+                            <input type="number"  class="input" placeholder="참여가능 인원을 입력해주세요." value="99" />
                             <span class="pos_a">명</span>                        
                         </div>
                         <p class="txt-tit">내용</p>
                         <div class="singleList ">                        
-                            <input type="text"  class="input" placeholder="내용을 입력해주세요." />                        
+                            <input type="text"  class="input" placeholder="내용을 입력해주세요." value="토론 내용입니다." />                        
                         </div>
-                        <strong class="label-tit16 mt36"> 첨부파일 추가</strong>
+                        <p class="label-tit16 mt36 mb10"> 첨부파일 추가</p>
                         <ul v-show="list1.length" class="ulList type4 bot-btn">
                             <li v-for="(item, index) in list1" :key="index">
                             <div>

@@ -19,7 +19,7 @@
                             <span class="fr ico more28"></span>
                         </p>
                         <p class="info-group">
-                            <span class="color_clr3 mr6 fwb">진행중</span>
+                            <span class="mr6 fwb mono_80">미참여</span>
                             <span class="fwr">2018.10.10 - 2018.11.18</span>
                         </p>
                     </div>
@@ -209,7 +209,7 @@
             </div>
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" class="btn md clr1">확인</button>
+                <button type="button" class="btn md" :class="{ clr1 : rdo && rdo2 && keylength}">확인</button>
             </div>
             <!-- //floatingbtn -->
         </div>

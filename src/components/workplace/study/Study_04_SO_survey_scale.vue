@@ -102,7 +102,7 @@
                         <ul class="ul-block com-rdo">
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[0]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -111,7 +111,7 @@
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo" >
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[1]" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -120,7 +120,7 @@
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[2]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -129,7 +129,7 @@
                             </li>
                             <li>
                                 <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[3]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -138,7 +138,7 @@
                             </li>
                             <li>
                                 <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo">
+                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[4]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -151,7 +151,7 @@
                         <ul class="ul-block com-rdo">
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                    <input type="radio" class="rdo" v-model="rdo2" :value="rdos2[0]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -160,7 +160,7 @@
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2" >
+                                    <input type="radio" class="rdo" v-model="rdo2" :value="rdos2[1]" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -169,7 +169,7 @@
                             </li>
                             <li>
                                 <label class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                    <input type="radio" class="rdo" v-model="rdo2" :value="rdos2[2]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -178,7 +178,7 @@
                             </li>
                             <li>
                                 <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2" >
+                                    <input type="radio" class="rdo" v-model="rdo2" :value="rdos2[3]" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -187,7 +187,7 @@
                             </li>
                             <li>
                                 <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" name="test-rdo-2">
+                                    <input type="radio" class="rdo" v-model="rdo2" :value="rdos2[4]">
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
@@ -202,7 +202,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" class="btn md clr1">제출</button>
+                <button type="button" class="btn md" :class="{ clr1 : rdo && rdo2}">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
@@ -228,7 +228,11 @@ export default {
   /* vue data */
   data () {
     return {
-      headerType: 1
+      headerType: 1,
+      rdo: undefined,
+      rdos: ['one', 'two', 'three', 'four', 'five'],
+      rdo2: undefined,
+      rdos2: ['one', 'two', 'three', 'four', 'five']
     }
   },
   /* vue function */
