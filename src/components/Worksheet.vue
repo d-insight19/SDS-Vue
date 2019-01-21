@@ -978,7 +978,7 @@
             Drawer_06_myinfo_account_password
           </router-link>
         </td>
-        <td></td>
+        <td>수정필요</td>
       </tr>
       <tr>
       <td align="center">52</td>
@@ -8171,7 +8171,7 @@
             B2C_Drawer_myinfo_account
           </router-link>
         </td>
-        <td></td>
+        <td>수정필요</td>
       </tr>
       <tr>
       <td align="center">463</td>
@@ -8235,11 +8235,10 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_account_password</td>
         <td>
-          <router-link :to="{ name: 'B2C_Drawer_myinfo_account_password' }">
-            B2C_Drawer_myinfo_account_password
+          <router-link :to="{ name: '' }">
           </router-link>
         </td>
-        <td></td>
+        <td>삭제됨</td>
       </tr>
       <tr>
       <td align="center">466</td>
