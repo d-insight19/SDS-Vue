@@ -52,10 +52,10 @@
                                     <span @click="toggleReply">답글 4</span>
                                     <p class="fr reply-num">
                                         <label>
-                                            <input type="radio"
+                                            <input type="checkbox"
                                             @click="toggleLike(1)"
                                             >
-                                            <span v-if="rdo">
+                                            <span v-if="good">
                                                 <span class=" ico like_32" ></span>
                                                 <span class="">{{goodcnt}}</span>
                                             </span>
@@ -66,10 +66,10 @@
                                         </label>
                                         
                                         <label>
-                                            <input type="radio"
+                                            <input type="checkbox"
                                             @click="toggleLike(2)"
                                             >
-                                            <span v-if="disrdo">
+                                            <span v-if="bad">
                                                 <span class=" ico unlike_32" ></span>
                                                 <span class="">{{badcnt}}</span>
                                             </span>
@@ -81,42 +81,124 @@
                                     </p>
                                 </div>
                                 <ul class="replyList" v-if="replyFlag">
-                                    <li class="left_pd" v-for="item in replyList" :key="item.id">
-                                        <p class="reply-name mt16">
-                                            <span class="ico indent n-ml18"></span>
-                                            <span class="chip type2 agree-x" :class="{ agree : item.active_el }" >{{item.agree}}</span>
-                                            <span>{{item.name}}</span>
+                                    <li class="left_pd" >
+                                        <p class="reply-name mt20">                                    
+                                            <span class="chip type2 type2 agree-x">반대</span>
+                                            <span>박*환</span>
                                         </p>
-                                        <p class="reply-txt">{{item.story}}</p>
-                                        
-                                        <div class="reply-wrap mt0">
-                                            <p><span class="fl reply-date">{{item.date}}</span></p>
-                                            <p class="fr reply-num mb mt">
+                                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
+                                        <p><span class="reply-date">2018.09.14  21:34</span></p>
+                                        <div class="reply-wrap">
+                                            <span class="ico arr down"></span>
+                                            <span>답글 4</span>
+                                            <p class="fr reply-num">
                                                 <label>
-                                                    <input type="radio"
-                                                    @click="toggleLike5(key)"
-                                                    :checked="rdo5" v-model="rdo5">
-                                                    <span v-if="rdo5">
+                                                    <input type="checkbox"
+                                                    @click="toggleLike5(1)"
+                                                    >
+                                                    <span v-if="good5">
                                                         <span class=" ico like_32" ></span>
-                                                        <span class="">{{item.good}}</span>
+                                                        <span class="">{{goodcnt}}</span>
                                                     </span>
                                                     <span v-else="">
                                                         <span class=" ico like_32 blue" ></span>
-                                                        <span class="">{{item.good +1}}</span>
+                                                        <span class="">{{goodcnt +1}}</span>
                                                     </span> 
                                                 </label>
                                                 
                                                 <label>
-                                                    <input type="radio"
-                                                    @click="toggleLike5(key)"
-                                                    :checked="!rdo5" v-model="rdo5">
-                                                    <span v-if="!rdo5">
+                                                    <input type="checkbox"
+                                                    @click="toggleLike5(2)"
+                                                    >
+                                                    <span v-if="bad5">
                                                         <span class=" ico unlike_32" ></span>
-                                                        <span class="">{{item.bad}}</span>
+                                                        <span class="">{{badcnt}}</span>
                                                     </span>
                                                     <span v-else="">
                                                         <span class=" ico unlike_32 red" ></span>
-                                                        <span class="">{{item.bad +1}}</span>
+                                                        <span class="">{{badcnt +1}}</span>
+                                                    </span> 
+                                                </label>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="left_pd" >
+                                        <p class="reply-name mt20">                                    
+                                            <span class="chip type2 type2 agree-x">반대</span>
+                                            <span>박*환</span>
+                                        </p>
+                                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
+                                        <p><span class="reply-date">2018.09.14  21:34</span></p>
+                                        <div class="reply-wrap">
+                                            <span class="ico arr down"></span>
+                                            <span>답글 4</span>
+                                            <p class="fr reply-num">
+                                                <label>
+                                                    <input type="checkbox"
+                                                    @click="toggleLike6(1)"
+                                                    >
+                                                    <span v-if="good6">
+                                                        <span class=" ico like_32" ></span>
+                                                        <span class="">{{goodcnt}}</span>
+                                                    </span>
+                                                    <span v-else="">
+                                                        <span class=" ico like_32 blue" ></span>
+                                                        <span class="">{{goodcnt +1}}</span>
+                                                    </span> 
+                                                </label>
+                                                
+                                                <label>
+                                                    <input type="checkbox"
+                                                    @click="toggleLike6(2)"
+                                                    >
+                                                    <span v-if="bad6">
+                                                        <span class=" ico unlike_32" ></span>
+                                                        <span class="">{{badcnt}}</span>
+                                                    </span>
+                                                    <span v-else="">
+                                                        <span class=" ico unlike_32 red" ></span>
+                                                        <span class="">{{badcnt +1}}</span>
+                                                    </span> 
+                                                </label>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="left_pd" >
+                                        <p class="reply-name mt20">                                    
+                                            <span class="chip type2 type2 agree-x agree">찬성</span>
+                                            <span>이*우</span>
+                                        </p>
+                                        <p class="reply-txt">최대한 쉽고 재미있게 기본개념을 설명해주셨네요.</p>
+                                        <p><span class="reply-date">2018.09.14  21:34</span></p>
+                                        <div class="reply-wrap">
+                                            <span class="ico arr down"></span>
+                                            <span>답글 4</span>
+                                            <p class="fr reply-num">
+                                                <label>
+                                                    <input type="checkbox"
+                                                    @click="toggleLike7(1)"
+                                                    >
+                                                    <span v-if="good7">
+                                                        <span class=" ico like_32" ></span>
+                                                        <span class="">{{goodcnt}}</span>
+                                                    </span>
+                                                    <span v-else="">
+                                                        <span class=" ico like_32 blue" ></span>
+                                                        <span class="">{{goodcnt +1}}</span>
+                                                    </span> 
+                                                </label>
+                                                
+                                                <label>
+                                                    <input type="checkbox"
+                                                    @click="toggleLike7(2)"
+                                                    >
+                                                    <span v-if="bad7">
+                                                        <span class=" ico unlike_32" ></span>
+                                                        <span class="">{{badcnt}}</span>
+                                                    </span>
+                                                    <span v-else="">
+                                                        <span class=" ico unlike_32 red" ></span>
+                                                        <span class="">{{badcnt +1}}</span>
                                                     </span> 
                                                 </label>
                                             </p>
@@ -141,10 +223,10 @@
                                     <span>답글 4</span>
                                     <p class="fr reply-num">
                                         <label>
-                                            <input type="radio"
-                                            @click="toggleLike2()"
-                                            :checked="rdo2" v-model="rdo2">
-                                            <span v-if="rdo2">
+                                            <input type="checkbox"
+                                            @click="toggleLike2(1)"
+                                            >
+                                            <span v-if="good2">
                                                 <span class=" ico like_32" ></span>
                                                 <span class="">{{goodcnt}}</span>
                                             </span>
@@ -155,10 +237,10 @@
                                         </label>
                                         
                                         <label>
-                                            <input type="radio"
-                                            @click="toggleLike2()"
-                                            :checked="!rdo2" v-model="rdo2">
-                                            <span v-if="!rdo2">
+                                            <input type="checkbox"
+                                            @click="toggleLike2(2)"
+                                            >
+                                            <span v-if="bad2">
                                                 <span class=" ico unlike_32" ></span>
                                                 <span class="">{{badcnt}}</span>
                                             </span>
@@ -182,10 +264,10 @@
                                     <span>답글 4</span>
                                     <p class="fr reply-num">
                                         <label>
-                                            <input type="radio"
-                                            @click="toggleLike3()"
-                                            :checked="rdo3" v-model="rdo3">
-                                            <span v-if="rdo3">
+                                            <input type="checkbox"
+                                            @click="toggleLike3(1)"
+                                            >
+                                            <span v-if="good3">
                                                 <span class=" ico like_32" ></span>
                                                 <span class="">{{goodcnt}}</span>
                                             </span>
@@ -196,10 +278,10 @@
                                         </label>
                                         
                                         <label>
-                                            <input type="radio"
-                                            @click="toggleLike3()"
-                                            :checked="!rdo3" v-model="rdo3">
-                                            <span v-if="!rdo3">
+                                            <input type="checkbox"
+                                            @click="toggleLike3(2)"
+                                            >
+                                            <span v-if="bad3">
                                                 <span class=" ico unlike_32" ></span>
                                                 <span class="">{{badcnt}}</span>
                                             </span>
@@ -223,10 +305,10 @@
                                     <span>답글 4</span>
                                     <p class="fr reply-num">
                                         <label>
-                                            <input type="radio"
-                                            @click="toggleLike4()"
-                                            :checked="rdo4" v-model="rdo4">
-                                            <span v-if="rdo4">
+                                            <input type="checkbox"
+                                            @click="toggleLike4(1)"
+                                            >
+                                            <span v-if="good4">
                                                 <span class=" ico like_32" ></span>
                                                 <span class="">{{goodcnt}}</span>
                                             </span>
@@ -237,10 +319,10 @@
                                         </label>
                                         
                                         <label>
-                                            <input type="radio"
-                                            @click="toggleLike4()"
-                                            :checked="!rdo4" v-model="rdo4">
-                                            <span v-if="!rdo4">
+                                            <input type="checkbox"
+                                            @click="toggleLike4(2)"
+                                            >
+                                            <span v-if="bad4">
                                                 <span class=" ico unlike_32" ></span>
                                                 <span class="">{{badcnt}}</span>
                                             </span>
@@ -267,7 +349,7 @@
 <script>
 export default {
 /* eslint-disable */
-  name: 'Study_dictionary',
+  name: 'Study_04_SO_debate_submission_all',
   /* vue lifecycle */
   created () {
   },
@@ -277,25 +359,23 @@ export default {
   data () {
     return {
         langFlag: false,
-        replyList: [
-            {active_el: false, agree:'반대' , name: '김*영', story:'최대한 쉽고 재미있게 기본개념을 설명해주셨네요.', date:'2018.09.14 21:34', good: 2, bad: 3},
-            {active_el: false, agree:'반대' , name: '이*우', story:'최대한 쉽고 재미있게 기본개념을 설명해주셨네요.', date:'2018.09.14 21:34', good: 2, bad: 3},
-            {active_el: true, agree:'찬성' , name: '이*우', story:'최대한 쉽고 재미있게 기본개념을 설명해주셨네요.', date:'2018.09.14 21:34', good: 2, bad: 3}
-        ],
         replyFlag: false,
         goodcnt: 12,
         badcnt: 3,
-        rdo: false,
-        disrdo: false,
-        rdos: ['one', 'two'],
-        rdo2: undefined,
-        rdos2: ['one', 'two'],
-        rdo3: undefined,
-        rdos3: ['one', 'two'],
-        rdo4: undefined,
-        rdos4: ['one', 'two'],
-        rdo5: undefined,
-        rdos5: ['one', 'two']
+        good : true,
+        bad : true,
+        good2 : true,
+        bad2 : true,
+        good3 : true,
+        bad3 : true,
+        good4 : true,
+        bad4 : true,
+        good5 : true,
+        bad5 : true,
+        good6 : true,
+        bad6 : true,
+        good7 : true,
+        bad7 : true
     }
   },
   /* vue function */
@@ -305,23 +385,52 @@ export default {
     },
     toggleLike (el) {
         if( el == 1 ) {
-            this.rdo = !this.rdo;
-            
+            this.good = !this.good || this.bad == ''
         } else if( el == 2 ) {
-            this.disrdo = !this.disrdo;
+            this.bad = !this.bad || this.good ==''
         } 
     },
-    toggleLike2 () {
-        this.rdo2 = !this.rdo2;
+    toggleLike2 (el) {
+        if( el == 1 ) {
+            this.good2 = !this.good2 || this.bad2 == ''
+        } else if( el == 2 ) {
+            this.bad2 = !this.bad2 || this.good2 ==''
+        }
     },
-    toggleLike3 () {
-        this.rdo3 = !this.rdo3;
+    toggleLike3 (el) {
+        if( el == 1 ) {
+            this.good3 = !this.good3 || this.bad3 == ''
+        } else if( el == 2 ) {
+            this.bad3 = !this.bad3 || this.good3 ==''
+        }
     },
-    toggleLike4 () {
-        this.rdo4 = !this.rdo4;
+    toggleLike4 (el) {
+        if( el == 1 ) {
+            this.good4 = !this.good4 || this.bad4 == ''
+        } else if( el == 2 ) {
+            this.bad4 = !this.bad4 || this.good4 ==''
+        }
     },
-    toggleLike5 () {
-        this.rdo5 = !this.rdo5;
+    toggleLike5 (el) {
+        if( el == 1 ) {
+            this.good5 = !this.good5 || this.bad5 == ''
+        } else if( el == 2 ) {
+            this.bad5 = !this.bad5 || this.good5 ==''
+        }
+    },
+    toggleLike6 (el) {
+        if( el == 1 ) {
+            this.good6 = !this.good6 || this.bad6 == ''
+        } else if( el == 2 ) {
+            this.bad6 = !this.bad6 || this.good6 ==''
+        }
+    },
+    toggleLike7 (el) {
+        if( el == 1 ) {
+            this.good7 = !this.good7 || this.bad7 == ''
+        } else if( el == 2 ) {
+            this.bad7 = !this.bad7 || this.good7 ==''
+        }
     },
     changeLang () {
         this.langFlag = !this.langFlag
