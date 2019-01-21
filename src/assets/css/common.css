@@ -104,6 +104,7 @@
 .ico.like_32.red {background: url("../img/ic_thumb_line_red_32.png")}
 .ico.like_solid_32{width:32px;height:32px;background: url("../img/ic_thumb_solid.png") no-repeat; background-size:32px;}
 .ico.heart_solid_32{width:32px; height:32px; background: url("../img/ic_heart_solid.png") no-repeat; margin-top:-6px; background-size: 32px;}
+.ico.heart_solid_32.blue{width:32px; height:32px; background: url("../img/ic_heart_solid_32.png") no-repeat; margin-top:-6px; background-size: 32px;}
 .ico.heart_solid_bg_32{width:32px; height:32px; background: url("../img/ic_heart_solid_bg.png") no-repeat; margin-top:-6px; background-size: 32px;}
 .ico.download_32{width:32px;height:32px;background: url("../img/ic_download.png") no-repeat; background-size:32px;}
 .ico.pencil_16_blue {width:16px; height:16px; background: url("../img/ic_pencil_line_blue_16.png")}

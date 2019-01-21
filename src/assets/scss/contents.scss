@@ -1483,6 +1483,12 @@ label.rdo .label{position: relative;}
 #container.regiclass.register .chip-wrap {display:inline-block; margin-right:10px;}
 
 
+// 혁신성장 청년인재
+#container.regiclass.register .ulList .label-tit{font-size:map-get($font-size, font_14);display: inline-block;line-height: 21px;letter-spacing: -0.42px; margin-bottom: 8px;position: relative;}
+#container.regiclass.register .ulList.type1.dif li {border-bottom:none;padding: 0px; margin-bottom: 20px;}
+#container.regiclass.register .label-tit-12 {font-size:map-get($font-size, font_12);line-height: 18px;letter-spacing: -0.36px;}
+#container.regiclass.register table tr td {padding:12px 0;}
+
 
 
 
@@ -1506,6 +1512,20 @@ label.rdo .label{position: relative;}
 // 정은희 작업
 // drawer 시작
 // Drawer 알림
+// Drawer_myinfo_extrainfo_edit 수정사항 01-21
+#container.drawer.extrainfo_edit .btn.sm {margin: 8px 0 8px 0px;}
+#container.drawer.extrainfo_edit .select::placeholder {font-size:map-get($font-size, font_14);color:rgba(0,0,0,0.8);line-height:29px;}
+#container.drawer.extrainfo_edit .txt-desc {font-size:map-get($font-size, font_12);color:rgba(0,0,0,0.4);line-height:18px;letter-spacing:-0.36px;}
+#container.drawer.extrainfo_edit .multiList.type2 input {margin-top:0px;}
+#container.drawer.extrainfo_edit .intSchBox .btn {top:12px;}
+#container.drawer.extrainfo_edit .label-tit14 {margin-bottom:6px; display:inline-block;}
+#container.drawer.extrainfo_edit .label-tit16{font-size:map-get($font-size, font_16);color:rgba(0,0,0,1.0);line-height:21px;letter-spacing:-0.48px;}
+#container.drawer .li-addList .del .ico{width:20px; height: 20px; background: url("../img/ic_deletemode_20.png");background-size: cover;}
+.in10_12{  padding-left: 10px; text-indent: -12px;}
+
+
+
+
 #container.drawer .alerm_wrap + .alerm_wrap{margin-top:20px;}
 #container.drawer .alerm_wrap .alerm_tit{font-size:map-get($font-size, font_22);line-height:33px;letter-spacing:-1.1px;margin-bottom:29px;font-weight:29px;}
 #container.drawer .alerm_wrap ul{margin-left:5px; border-left:2px solid #d9d9d9;}
