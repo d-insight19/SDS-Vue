@@ -82,21 +82,21 @@
                                 </div>
                                 <ul class="replyList" v-if="replyFlag">
                                     <li class="left_pd" >
-                                        <p class="reply-name mt20">                                    
+                                        <p class="reply-name mt20">
+                                            <span class="ico indent n-ml18"></span>                                    
                                             <span class="chip type2 type2 agree-x">반대</span>
-                                            <span>박*환</span>
+                                            <span>김*영</span>
                                         </p>
-                                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
+                                        <p class="reply-txt">최대한 쉽고 재미있게 기본개념을 설명해주셨네요.</p>
                                         <p><span class="reply-date">2018.09.14  21:34</span></p>
                                         <div class="reply-wrap">
-                                            <span class="ico arr down"></span>
-                                            <span>답글 4</span>
                                             <p class="fr reply-num">
                                                 <label>
                                                     <input type="checkbox"
                                                     @click="toggleLike5(1)"
                                                     >
                                                     <span v-if="good5">
+                                                        
                                                         <span class=" ico like_32" ></span>
                                                         <span class="">{{goodcnt}}</span>
                                                     </span>
@@ -123,15 +123,14 @@
                                         </div>
                                     </li>
                                     <li class="left_pd" >
-                                        <p class="reply-name mt20">                                    
+                                        <p class="reply-name mt20">
+                                            <span class="ico indent n-ml18"></span>                                          
                                             <span class="chip type2 type2 agree-x">반대</span>
-                                            <span>박*환</span>
+                                            <span>이*우</span>
                                         </p>
-                                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
+                                        <p class="reply-txt">최대한 쉽고 재미있게 기본개념을 설명해주셨네요.</p>
                                         <p><span class="reply-date">2018.09.14  21:34</span></p>
                                         <div class="reply-wrap">
-                                            <span class="ico arr down"></span>
-                                            <span>답글 4</span>
                                             <p class="fr reply-num">
                                                 <label>
                                                     <input type="checkbox"
@@ -164,15 +163,14 @@
                                         </div>
                                     </li>
                                     <li class="left_pd" >
-                                        <p class="reply-name mt20">                                    
+                                        <p class="reply-name mt20"> 
+                                            <span class="ico indent n-ml18"></span>                                         
                                             <span class="chip type2 type2 agree-x agree">찬성</span>
                                             <span>이*우</span>
                                         </p>
                                         <p class="reply-txt">최대한 쉽고 재미있게 기본개념을 설명해주셨네요.</p>
                                         <p><span class="reply-date">2018.09.14  21:34</span></p>
                                         <div class="reply-wrap">
-                                            <span class="ico arr down"></span>
-                                            <span>답글 4</span>
                                             <p class="fr reply-num">
                                                 <label>
                                                     <input type="checkbox"
