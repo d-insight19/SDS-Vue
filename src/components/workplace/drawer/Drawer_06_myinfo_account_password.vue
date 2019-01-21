@@ -8,7 +8,7 @@
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">비밀번호 변경</p>
+                <p class="header_text font_18">비밀번호 변경</p><button type="button" class="btn14 color_clr2">완료</button>
             </div>
             <!-- //header -->
 
