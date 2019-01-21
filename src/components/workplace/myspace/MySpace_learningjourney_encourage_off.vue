@@ -37,9 +37,9 @@
           <div class="cell">
             <div class="inner pdt16 ">
                 <p class="font_16 mono_100 pdt16 pb10 btB89">알림 수단</p>
-                <slp-checkbox type="button" class="mono_25" disabled>전화</slp-checkbox>
-                <slp-checkbox type="button" class="mono_25" disabled>카카오톡</slp-checkbox>
-                <slp-checkbox type="button" class="mono_25" disabled>이메일</slp-checkbox>
+                <slp-checkbox type="button" disabled>전화</slp-checkbox>
+                <slp-checkbox type="button" disabled>카카오톡</slp-checkbox>
+                <slp-checkbox type="button" disabled>이메일</slp-checkbox>
             </div>
           </div>
           
@@ -48,15 +48,15 @@
                 <p class="font_16 mono_100 pdt16 btB89 pb10">알림 주기</p>
                 <ul class="radioList">
                     <li>
-                        <slp-radio name="push_cycle" native-value="disabled" disabled>매주 1회</slp-radio>
+                        <slp-radio name="push_cycle" innerCircle="true" native-value="disabled" disabled>매주 1회</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="push_cycle" native-value="disabled" disabled>격주 1회</slp-radio>
+                        <slp-radio name="push_cycle" innerCircle="true" native-value="disabled" disabled>격주 1회</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="push_cycle" native-value="disabled" disabled>
-                        종료일 집중
-                        <p class="font_13 mono_25">종료일 <span>2018.10.14 ~ 2018.10.31</span></p>
+                        <slp-radio name="push_cycle" innerCircle="true" native-value="disabled" disabled>
+                            종료일 집중
+                            <p class="font_13 mono_25">종료일 <span>2018.10.14 ~ 2018.10.31</span></p>
                         </slp-radio>
                     </li>
                 </ul>

@@ -48,20 +48,17 @@
                 <p class="font_16 mono_100 pdt16 btB89 pb10">알림 주기</p>
                 <ul class="radioList">
                     <li>
-                        <slp-radio name="push_cycle">매주 1회</slp-radio>
+                        <slp-radio name="push_cycle" innerCircle="true" value="true" checked="checked">매주 1회</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="push_cycle">격주 1회</slp-radio>
+                        <slp-radio name="push_cycle" innerCircle="true" nativeValue="격주 1회">격주 1회</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="push_cycle">
-                        종료일 집중
-                        <p class="font_13 mono_25">종료일 <span>2018.10.14 ~ 2018.10.31</span></p>
+                        <slp-radio name="push_cycle" innerCircle="true">
+                            종료일 집중
+                            <p class="font_13 mono_25">종료일 <span>2018.10.14 ~ 2018.10.31</span></p>
                         </slp-radio>
                     </li>
-                    <!--<li>
-                        <slp-radio v-model="radioValue" native-value="disabled" disabled>선택불가능</slp-radio>
-                    </li>-->
                 </ul>
             </div>
           </div>

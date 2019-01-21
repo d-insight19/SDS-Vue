@@ -23,6 +23,8 @@
 .ico.url_20{width:20px;height:20px; background: url("../img/ic_url_line_20.png") no-repeat;}
 .ico.play_20{width:20px;height:20px; background: url("../img/ic_play_line_20.png") no-repeat;}
 .ico.play_28{width:28px;height:28px; background: url("../img/ic_play_line_28.png") no-repeat; background-size:cover;}
+.ico.ebook_28{width:28px;height:28px; background: url("../img/ic_ebook_line_28.png") no-repeat; background-size:cover;}
+.ico.headphone_28{width:28px;height:28px; background: url("../img/ic_headphone_line_28.png") no-repeat; background-size:cover;}
 .ico.pause_20.blue{width:20px;height:20px; background: url("../img/ic_pause_blue_16.png") no-repeat; background-size:cover;}
 .ico.cancel_20.blue{width:20px;height:20px; background: url("../img/ic_cancel_blue_16.png") no-repeat; background-size:cover;}
 .ico.redownload_20.blue{width:20px;height:20px; background: url("../img/ic_redownload_blue_16.png") no-repeat; background-size:cover;}
@@ -134,7 +136,9 @@
 .ico.calender_blue_24{width:24px;height:24px;background: url("../img/ic_calender_line_blue_24.png") no-repeat;vertical-align: -23%;line-height: 26px; }
 .ico.calender_24{width:24px;height:24px;background: url("../img/ic_up_line_24.png") no-repeat; }
 
-
+.ico.filter{width:24px;height:24px;background: url("../img/ic_filter_96.png") no-repeat; background-size: contain;}
+.ico.arrowback{width:24px;height:24px;background: url("../img/btn_arrowback_96.png") no-repeat; background-size: contain;}
+.ico.down{width:24px;height:24px;background: url("../img/ic_down_blue_24.png") no-repeat; background-size:contain;}
 
 /*추가 이미지 2019-1-3*/
 .ico.warning{width:18px; height:18px; background: url("../img/ic_warning_solid_20.png") no-repeat;  vertical-align: -2px;}
@@ -292,9 +296,11 @@
 
 .pdb0{padding-bottom:0 !important;}
 .pb10{padding-bottom:10px !important;}
+.pdb12{padding-bottom: 12px !important;}
 .pb18{padding-bottom:18px !important;}
 .pdb20{padding-bottom:20px !important;}
 .pdb14{padding-bottom: 14px !important;}
+.pdb25{padding-bottom: 25px !important;}
 .pdb98{padding-bottom:98px !important;}
 
 .pdl0{padding-left: 0 !important;}

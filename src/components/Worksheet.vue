@@ -3791,8 +3791,16 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.04.learningjourney</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_learningjourney_1' }">
+            MySpace_learningjourney_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'MySpace_learningjourney_2' }">
+            MySpace_learningjourney_2
+          </router-link>
+          ,
+          <router-link :to="{ name: 'MySpace_learningjourney_like' }">
+            MySpace_learningjourney_like
           </router-link>
         </td>
         <td></td>
@@ -3846,8 +3854,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.04.learningjourney_add</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_learningjourney_add' }">
+            MySpace_learningjourney_add
           </router-link>
         </td>
         <td></td>
@@ -3863,11 +3871,14 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.04.learningjourney_like</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'learningjourney_like' }">
+            learningjourney_like
+          </router-link>
+          <router-link :to="{ name: 'MySpace_learningjourney_calendarmanagement_2' }">
+            MySpace_learningjourney_calendarmanagement_2
           </router-link>
         </td>
-        <td></td>
+        <td>calendarmanagement_2 작업중</td>
       </tr>
       <tr>
       <td align="center">212</td>

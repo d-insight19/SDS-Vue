@@ -234,7 +234,7 @@
 
 <script>
 export default {
-  name: 'download_detail_edit',
+  name: 'MySpace_download_detail_edit',
   /* vue lifecycle */
   created () {
   },

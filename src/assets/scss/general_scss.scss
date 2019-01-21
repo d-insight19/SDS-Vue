@@ -143,9 +143,14 @@ $brand_colors: (
     .labelRdo input.rdo:checked + .ico{
       background: map-get($color,clr2);
     }
+    // 라디오 버튼 + 라벨
+    .labelRdo input.rdo:checked + .ico + .label{
+      color: map-get($color,clr2);
+    }
     // 라디오 버튼( 체크아이콘 박스)
     .rdoSelBox .labelRdo .rdo:checked + .ico + .label{
-      border : 1px solid  map-get($color,clr2) !important
+      border : 1px solid  map-get($color,clr2) !important;
+      color: inherit;
     }
     //스위치
     .labelBtn .chk_box .m1{
