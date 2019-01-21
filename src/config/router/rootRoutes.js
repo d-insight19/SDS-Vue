@@ -343,7 +343,8 @@ import B2CDrawerEventWinner from '~workplace/drawer/B2C_Drawer_Event_Winner'
 import B2CDrawerEventdetail from '~workplace/drawer/B2C_Drawer_Event_detail'
 import B2CDrawerEventWinnerdetail from '~workplace/drawer/B2C_Drawer_Event_Winner_detail'
 import B2CDrawerMultiintroduce from '~workplace/drawer/B2C_Drawer_Multiintroduce'
-import Drawermyinfoaccount from '~workplace/drawer/Drawer_myinfo_account'
+import Drawermyinfoaccount1 from '~workplace/drawer/Drawer_myinfo_account1'
+import Drawermyinfoaccount2 from '~workplace/drawer/Drawer_myinfo_account2'
 import B2CDrawermyinfologout from '~workplace/drawer/B2C_Drawer_myinfo_logout'
 import B2CDrawermyinfobasicinfo from '~workplace/drawer/B2C_Drawer_myinfo_basicinfo'
 import B2CDrawermyinfobasicinfoedit from '~workplace/drawer/B2C_Drawer_myinfo_basicinfo_edit'
@@ -2139,9 +2140,14 @@ var rootRoutes = [
     component: B2CDrawerMultiintroduce
   },
   {
-    path: '/Drawer_myinfo_account',
-    name: 'Drawer_myinfo_account',
-    component: Drawermyinfoaccount
+    path: '/Drawer_myinfo_account1',
+    name: 'Drawer_myinfo_account1',
+    component: Drawermyinfoaccount1
+  },
+  {
+    path: '/Drawer_myinfo_account2',
+    name: 'Drawer_myinfo_account2',
+    component: Drawermyinfoaccount2
   },
   {
     path: '/B2C_Drawer_myinfo_logout',
