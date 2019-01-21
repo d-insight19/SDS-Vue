@@ -20,12 +20,12 @@
                     </div>
                 </div>
                 <ul v-show="searchFlag">
-                    <li v-for="item in checkList" :key="item.id" class="chip-wrap"><span class="chip">{{item.name}}</span></li>
+                    <li v-for="item in checkList" :key="item.id" class="chip-wrap"><span class="chip">{{item}}</span></li>
                 </ul> 
                 <ul class="ulList type1" v-show="searchFlag">
                     <li v-for="item in Resdata" :key="item.id">
                         <label class="labelChk multi">
-                            <input type="checkbox" class="chk" @click="addList1">
+                            <input type="checkbox" class="chk" @click="addList1($event)">
                             <span class="ico">
                                 <span class="innerCircle"></span>
                             </span>
@@ -61,10 +61,10 @@ export default {
       headerType: 2,
       searchFlag: false,
       Resdata: [
-        {name: '홍길동', email: '전략기획팀 (gildong@multicampus.com)', id: 1},
-        {name: '홍동이', email: '전략기획팀 (gildong@multicampus.com)', id: 2},
-        {name: '길동이', email: '전략기획팀 (gildong@multicampus.com)', id: 3},
-        {name: '이이이', email: '전략기획팀 (gildong@multicampus.com)', id: 4}
+        {name: '홍길동', email: '전략기획팀 (gildong@multicampus.com)'},
+        {name: '홍동이', email: '전략기획팀 (gildong@multicampus.com)'},
+        {name: '길동이', email: '전략기획팀 (gildong@multicampus.com)'},
+        {name: '이이이', email: '전략기획팀 (gildong@multicampus.com)'}
       ],
       checkList: []
     }
@@ -81,18 +81,11 @@ export default {
     delTxt () {
         this.$refs.input01.value = ''
     },
-    addList1 () {
-      const Resdata = [
-        {name: '홍길동', email: '전략기획팀 (gildong@multicampus.com)', id: 1},
-        {name: '홍동이', email: '전략기획팀 (gildong@multicampus.com)', id: 2},
-        {name: '길동이', email: '전략기획팀 (gildong@multicampus.com)', id: 3},
-        {name: '이이이', email: '전략기획팀 (gildong@multicampus.com)', id: 4}
-      ];
-      let result = Resdata.map((val , index, self) => {
-        console.log(self.val.name);
-        console.log(index);
-        return val;
-      });
+    addList1 (e) {
+      let result = this.Resdata.concat();
+      console.log(result)
+      console.log(e.currentTarget)
+      this.checkList.push(result)
     }
   },
   computed: {

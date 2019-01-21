@@ -978,7 +978,7 @@
             Drawer_06_myinfo_account_password
           </router-link>
         </td>
-        <td>수정필요</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">52</td>
@@ -2591,10 +2591,9 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.05.LanguageClubList01</td>
         <td>
-          <router-link :to="{ name: 'CLIPing_languageClubList02' }">
-            CLIPing_languageClubList02
+          <router-link :to="{ name: 'CLIPing_languageClubList' }">
+            CLIPing_languageClubList
           </router-link>
-          와 동일
         </td>
         <td></td>
       </tr>
@@ -7213,8 +7212,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_09.01.register_innovation</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_innovation' }">
+            regiclass_register_innovation
           </router-link>
         </td>
         <td></td>
@@ -7234,7 +7233,7 @@
             
           </router-link>
         </td>
-        <td></td>
+        <td>확인필요</td>
       </tr>
       <tr>
       <td align="center">409</td>
@@ -7247,8 +7246,11 @@
         <td>　</td>
         <td class="textL">06.regiclass_10.01.register_bigdata</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_bigdata' }">
+            regiclass_register_bigdata
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_bigdata_02' }">
+            regiclass_register_bigdata_02
           </router-link>
         </td>
         <td></td>
@@ -7264,8 +7266,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_11.01.01.register_bigdata_pro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_bigdata_pro' }">
+            regiclass_register_bigdata_pro
           </router-link>
         </td>
         <td></td>
@@ -7281,8 +7283,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_11.01.register_academy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_academy' }">
+            regiclass_register_academy
           </router-link>
         </td>
         <td></td>
@@ -8171,7 +8173,7 @@
             B2C_Drawer_myinfo_account
           </router-link>
         </td>
-        <td>수정필요</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">463</td>
@@ -8235,10 +8237,11 @@
         <td>　</td>
         <td class="textL">B2C_Drawer_06.02_myinfo_account_password</td>
         <td>
-          <router-link :to="{ name: '' }">
+          <router-link :to="{ name: 'B2C_Drawer_myinfo_account_password' }">
+            B2C_Drawer_myinfo_account_password
           </router-link>
         </td>
-        <td>삭제됨</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">466</td>

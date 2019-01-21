@@ -132,7 +132,7 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li><button type="button" class="btn md"><span class="ico heart_solid_32"></span>찜하기</button></li>
+                <li @click="active_el"><button type="button" class="btn md"><span class="ico heart_solid_32" :class="{ blue : active }"></span><span :class="{ color_clr2 : active}">찜하기</span></button></li>
                 <!--<li><button type="button" class="btn md staus_crl1"><span class="ico like_32 red"></span>좋아요</button></li>-->
             </ul>
         </div>
@@ -144,6 +144,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'CLIPing_videoSeries_detail',
   /* vue lifecycle */
@@ -154,10 +155,14 @@ export default {
   /* vue data */
   data () {
     return {
+        active : false
     }
   },
   /* vue function */
   methods: {
+      active_el () {
+          this.active = !this.active
+      }
   }
 }
 </script>

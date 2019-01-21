@@ -225,6 +225,7 @@ import CLIPingPaperPro from '~workplace/cliping/CLIPing_paperPro'
 import CLIPingPaperProDetail from '~workplace/cliping/CLIPing_paperProDetail'
 import CLIPingPaperProDetailPort from '~workplace/cliping/CLIPing_paperProDetail_port'
 import CLIPingLanguageClub from '~workplace/cliping/CLIPing_languageClub'
+import CLIPingLanguageClubList from '~workplace/cliping/CLIPing_languageClubList'
 import CLIPingLanguageClubList02 from '~workplace/cliping/CLIPing_languageClubList02'
 import CLIPingLanguageClubDetail01 from '~workplace/cliping/CLIPing_languageClubDetail01'
 import CLIPingLanguageClubDetail01Scroll from '~workplace/cliping/CLIPing_languageClubDetail01_scroll'
@@ -308,6 +309,11 @@ import regiclassRegisterApprove from '~workplace/regiclass/regiclass_register_ap
 import regiclassRegisterApprove02 from '~workplace/regiclass/regiclass_register_approve_02'
 import regiclassRegisterApproveMember from '~workplace/regiclass/regiclass_register_approve_member'
 import regiclassRegisterApproveMemberDetail from '~workplace/regiclass/regiclass_register_approve_member_detail'
+import regiclassRegisterInnovation from '~workplace/regiclass/regiclass_register_innovation'
+import regiclassRegisterBigdata from '~workplace/regiclass/regiclass_register_bigdata'
+import regiclassRegisterBigdata02 from '~workplace/regiclass/regiclass_register_bigdata_02'
+import regiclassRegisterBigdataPro from '~workplace/regiclass/regiclass_register_bigdata_pro'
+import regiclassRegisterAcademy from '~workplace/regiclass/regiclass_register_academy'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -1563,6 +1569,11 @@ var rootRoutes = [
     component: CLIPingLanguageClub
   },
   {
+    path: '/CLIPing_languageClubList',
+    name: 'CLIPing_languageClubList',
+    component: CLIPingLanguageClubList
+  },
+  {
     path: '/CLIPing_languageClubList02',
     name: 'CLIPing_languageClubList02',
     component: CLIPingLanguageClubList02
@@ -1956,6 +1967,31 @@ var rootRoutes = [
     path: '/regiclass_register_approve_member_detail',
     name: 'regiclass_register_approve_member_detail',
     component: regiclassRegisterApproveMemberDetail
+  },
+  {
+    path: '/regiclass_register_innovation',
+    name: 'regiclass_register_innovation',
+    component: regiclassRegisterInnovation
+  },
+  {
+    path: '/regiclass_register_bigdata',
+    name: 'regiclass_register_bigdata',
+    component: regiclassRegisterBigdata
+  },
+  {
+    path: '/regiclass_register_bigdata_02',
+    name: 'regiclass_register_bigdata_02',
+    component: regiclassRegisterBigdata02
+  },
+  {
+    path: '/regiclass_register_bigdata_pro',
+    name: 'regiclass_register_bigdata_pro',
+    component: regiclassRegisterBigdataPro
+  },
+  {
+    path: '/regiclass_register_academy',
+    name: 'regiclass_register_academy',
+    component: regiclassRegisterAcademy
   },
   {
     path: '/login_join_terms',
