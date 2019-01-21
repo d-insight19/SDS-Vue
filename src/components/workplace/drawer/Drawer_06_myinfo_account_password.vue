@@ -8,26 +8,48 @@
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">계정 관리</p>
+                <p class="header_text font_18">비밀번호 변경</p>
             </div>
             <!-- //header -->
 
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner nopad">
-                     <!-- list -->
-                        <ul class="singleList type_1">
-                            <li>
-                                <a href="# first_line">비밀번호 변경<span class="black_next"></span></a>
-                            </li>
-                        </ul>
-                <!-- //list -->
+                    <div class="inner">
+                    <!-- list -->
+                    <div class="desc mt0">현재 비밀번호를 입력한 후<br>
+                        새로 사용할 비밀번호를 입력해주세요.</div>
+                        <ul class="multiList type2">                   
+                        <li class="mb20">
+                            <strong class="label-tit14">현재 비밀번호</strong>
+                            <input type="text" class="input" placeholder="현재 비밀번호 입력" >
+                        </li>
+                        <li class="mb20">
+                            <strong class="label-tit14">새 비밀번호</strong>
+                            <input type="text" class="input" placeholder="6~16자의 영소문자, 숫자 조합" >
+                        </li>
+                        <li class="mb20">
+                            <strong class="label-tit14">새 비밀번호 확인</strong>
+                            <input type="text" class="input" placeholder="6~16자의 영소문자, 숫자 조합" >
+                        </li>                 
+                    </ul>                   
+                    <!-- //list -->
                        
 
                        
                     </div>
                 </div>
-            </div>           
+            </div>
+
+        <!-- floating button -->
+        <div class="fixBtmBtn">
+            <ul>
+                <!-- 비활성화시 :  disabled 추가 -->
+                <li><button type="button" class="btn md">나중에 변경하기</button></li>
+                <li><button type="button" disabled class="btn ld">확인</button></li>
+            </ul>
+        </div>
+        <!-- //floating button -->
+                       
             
         </div>
         <!-- //container -->   
