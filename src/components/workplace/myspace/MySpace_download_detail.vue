@@ -190,7 +190,7 @@
 
 <script>
 export default {
-  name: 'download_detail',
+  name: 'MySpace_download_detail',
   /* vue lifecycle */
   created () {
   },
