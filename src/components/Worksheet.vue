@@ -110,7 +110,7 @@
             Login_findcenter
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">2</td>
@@ -131,7 +131,7 @@
             Login_findcenter_email2
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">3</td>
@@ -148,7 +148,7 @@
             Login_findcenter_select
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">4</td>
@@ -169,7 +169,7 @@
             Login_findcenter_url2
           </router-link>
         </td>
-        <td></td>
+        <td>수정사항 없음</td>
       </tr>
       <tr>
       <td align="center">5</td>
@@ -188,7 +188,7 @@
             Login_login
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">6</td>
@@ -205,7 +205,7 @@
             Login_login_fail
           </router-link>
         </td>
-        <td></td>
+        <td>로그인 정보필요</td>
       </tr>
       <tr>
       <td align="center">7</td>
@@ -239,7 +239,7 @@
             Login_jointype
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">9</td>
@@ -259,7 +259,7 @@
             Login_joincertify (해외)
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">10</td>
@@ -276,7 +276,7 @@
             Login_jointerms
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">11</td>
@@ -293,7 +293,7 @@
             Login_jointermsdetail
           </router-link>
         </td>
-        <td></td>
+        <td>수정사항 없음</td>
       </tr>
       <tr>
       <td align="center">12</td>
@@ -2751,8 +2751,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.VideoDetail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_videodetail' }">
+            CLIPing_videodetail
           </router-link>
         </td>
         <td></td>
@@ -7430,6 +7430,9 @@
         <td>
           <router-link :to="{ name: 'regiclass_register_complete' }">
             regiclass_register_complete
+          </router-link><br/>
+          <router-link :to="{ name: 'regiclass_register_complete_b2c' }">
+            regiclass_register_complete_b2c
           </router-link><br/>
           <router-link :to="{ name: 'regiclass_register_complete_account' }">
             regiclass_register_complete_account

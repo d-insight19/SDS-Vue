@@ -20,7 +20,7 @@
                         <li>
                             <div class="search-wrapper">
                                 <input type="text" ref="input01"  pattern="^\s+" class="input underline" placeholder="비밀번호" />
-                                <button class="close-icon eye" :class="{ eye_slash : isActive }" type="button" id="dd" @click="active_el()"></button>
+                                <button class="close-icon eye" :class="{ eye_slash : active }" type="button" id="dd" @click="active_el()"></button>
                             </div>
                         </li>
                     </ul>
@@ -66,16 +66,16 @@ export default {
   /* vue data */
   data () {
     return {
-      isActive: ''
+      active: ''
     }
   },
   /* vue function */
   methods: {
     active_el () {
-      this.isActive = !this.isActive
-      if (this.isActive === true) {
+      this.active = !this.active
+      if (this.active === true) {
         this.$refs.input01.setAttribute('type', 'password')
-      } else if (this.isActive === false) {
+      } else if (this.active === false) {
         this.$refs.input01.setAttribute('type', 'text')
       }
     }

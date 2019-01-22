@@ -217,6 +217,7 @@ import CLIPingGuide from '~workplace/cliping/CLIPing_guide'
 import CLIPingVideoAll from '~workplace/cliping/CLIPing_video_all'
 import CLIPingVideoSeries from '~workplace/cliping/CLIPing_videoSeries'
 import CLIPingVideoSeriesDetail from '~workplace/cliping/CLIPing_videoSeries_detail'
+import CLIPingVideoDetail from '~workplace/cliping/CLIPing_videodetail'
 import CLIPingBookSummary from '~workplace/cliping/CLIPing_bookSummary'
 import CLIPingBookSummaryDetail from '~workplace/cliping/CLIPing_bookSummary_detail'
 import CLIPingColumn from '~workplace/cliping/CLIPing_column'
@@ -303,6 +304,7 @@ import regiclassRegisterPayDeposit from '~workplace/regiclass/regiclass_register
 import regiclassRegisterPayArs from '~workplace/regiclass/regiclass_register_pay_ars'
 import regiclassRegisterPayAccounttransfer from '~workplace/regiclass/regiclass_register_pay_accounttransfer'
 import regiclassRegisterComplete from '~workplace/regiclass/regiclass_register_complete'
+import regiclassRegisterCompleteB2c from '~workplace/regiclass/regiclass_register_complete_b2c'
 import regiclassRegisterCompleteAccount from '~workplace/regiclass/regiclass_register_complete_account'
 import regiclassRegisterCompleteWaiting from '~workplace/regiclass/regiclass_register_complete_waiting'
 import regiclassRegisterApprove from '~workplace/regiclass/regiclass_register_approve'
@@ -1530,6 +1532,11 @@ var rootRoutes = [
     component: CLIPingVideoSeriesDetail
   },
   {
+    path: '/CLIPing_videodetail',
+    name: 'CLIPing_videodetail',
+    component: CLIPingVideoDetail
+  },
+  {
     path: '/CLIPing_bookSummary',
     name: 'CLIPing_bookSummary',
     component: CLIPingBookSummary
@@ -1938,6 +1945,11 @@ var rootRoutes = [
     path: '/regiclass_register_complete',
     name: 'regiclass_register_complete',
     component: regiclassRegisterComplete
+  },
+  {
+    path: '/regiclass_register_complete_b2c',
+    name: 'regiclass_register_complete_b2c',
+    component: regiclassRegisterCompleteB2c
   },
   {
     path: '/regiclass_register_complete_account',

@@ -18,9 +18,9 @@
 
                 <div class="joinTypeBox">
                   <dl>
-                    <dt>개인회원 가입</dt>
+                    <dt>개인회원 가입하기</dt>
                     <dd>
-                      멀티 캠퍼스는 통합 ID 하나로 모든 서비스를<br>한번에 이용하실 수 있습니다.
+                      <p class="w80p">멀티 캠퍼스는 통합 ID 하나로 모든 서비스를 한번에 이용하실 수 있습니다.</p>
                       <p class="color_clr2">(멀티 캠퍼스, OPIc, SERI Pro)</p>
                       <div class="btmBtn">
                         <button type="button" class="btn md clr1">일반회원 가입하기</button>
@@ -29,9 +29,9 @@
                   </dl>
 
                   <dl>
-                    <dt>기업회원 가입</dt>
+                    <dt>기업회원 문의하기</dt>
                     <dd>
-                      기업회원은 문의게시판에서 필요한 내용을<br>확인한 뒤 회원가입을 진행해 주시기 바랍니다.
+                      <p class="w80p">기업회원은 문의게시판에서 필요한 내용을 확인한 뒤 회원가입을 진행해 주시기 바랍니다.</p>
                       <div class="btmBtn">
                         <button type="button" class="btn md clr1">기업회원 가입하기</button>
                       </div>

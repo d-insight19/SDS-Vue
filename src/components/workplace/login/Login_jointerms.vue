@@ -9,7 +9,7 @@
           <div class="cell">
             <div class="inner">
 
-                <h1 class="h-tit">통합회원가입</h1>
+                <h1 class="h-tit">회원가입</h1>
 
                 <div class="stepper">
                     <div class="clearfix">
@@ -45,14 +45,6 @@
                     <slp-checkbox>개인정보 마케팅 활용 동의(선택)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
-                  <li>
-                    <slp-checkbox>개인정보 마케팅 활용 동의(선택)</slp-checkbox>
-                    <a href="#" class="ico"></a>
-                  </li>
-                  <li>
-                    <slp-checkbox>개인정보 마케팅 활용 동의(선택)</slp-checkbox>
-                    <a href="#" class="ico"></a>
-                  </li>
                 </ul>
                 <!-- //동의 리스트 -->
 
@@ -62,7 +54,7 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li><button type="button" class="btn md">통합가입 취소</button></li>
+                <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">다음</button></li>
             </ul>
         </div>

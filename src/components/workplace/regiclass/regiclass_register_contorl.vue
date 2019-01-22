@@ -18,7 +18,7 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                <component :is="component"></component>
+                <component :is="component" v-on:delTxt="delTxt"></component>
             </div>
           </div>
         </div>
@@ -63,6 +63,9 @@ export default {
       } else if (el === 2) {
         this.component = 'regiclass_register_searchcp_02'
       }
+    },
+    delTxt () {
+      this.$refs.input01.value = ''
     }
   }
 }

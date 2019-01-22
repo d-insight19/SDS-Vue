@@ -18,7 +18,7 @@ export default {
   name: 'regiclass_register_searchcp',
   method: {
       delTxt () {
-        this.$refs.input01.value = ''
+        this.$emit('delTxt')
       }
   }
 }
