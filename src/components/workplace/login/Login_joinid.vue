@@ -9,11 +9,11 @@
           <div class="cell">
             <div class="inner">
               
-                <h1 class="h-tit">통합회원가입</h1>
+                <h1 class="h-tit">회원가입</h1>
 
                 <div class="stepper">
                     <div class="clearfix">
-                        <h2 class="tit">아이디 생성</h2>
+                        <h2 class="tit">통합 아이디 생성</h2>
                         <div class="num">
                             <strong class="color_clr2">3</strong>/<span>6</span>
                         </div>
@@ -22,26 +22,15 @@
                         <div class="bar clr2" style="width:50%"></div>
                     </div>
                     <!-- B2C -->
-                    <p class="txt-desc" style="display:none1;">연수원에서 사용하실 아이디를 입력해주시기 바랍니다.</p>
+                    <p class="txt-desc" style="display:none1;">아래 검색된 아이디 중에서 통합 아이디로 사용하실 아이디를 선택 혹은 입력해주시기 바랍니다.</p>
                     <!-- B2B -->
                     <p class="txt-desc" style="display:none;">아래 검색된 아이디 중에서 통합 아이디로 사용하실 아이디를 선택 혹은 입력해주시기 바랍니다.</p>
                 </div>
 
-                <!-- B2C 통합회원가입-->
-                <ul class="ulList type2" style="display:none1;">
-                  <li>
-                    <strong class="label-tit">아이디</strong>
-                    <div class="infoChk">
-                      <slp-text-field placeholder="6~16자의 영 소문자 및 숫자"></slp-text-field>
-                      <button type="button" class="btn sm fwr">중복확인</button>
-                    </div>
-                  </li>
-                </ul>
-
                 <!-- B2B 통합회원가입-->
                 <ul class="ulList type2" style="display:none1;">
                   <li>
-                    <strong class="label-tit">연수원 명칭 1</strong>
+                    <strong class="label-tit">멀티캠퍼스 이러닝/집합</strong>
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
@@ -73,7 +62,7 @@
                     </ul>
                   </li>
                   <li>
-                    <strong class="label-tit">연수원 명칭 2</strong>
+                    <strong class="label-tit">OPIc</strong>
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
@@ -87,7 +76,7 @@
                     </ul>
                   </li>
                   <li>
-                    <strong class="label-tit">연수원 명칭 3</strong>
+                    <strong class="label-tit">SERI Pro</strong>
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
@@ -110,7 +99,7 @@
                     </ul>
                   </li>
                   <li>
-                    <strong class="label-tit">통합 아이디 직접 입력</strong>
+                    <strong class="label-tit">직접 입력</strong>
                     <div class="rdoInfoChK">
                       <label class="labelRdo">
                         <input type="radio" class="rdo" name="test-rdo">

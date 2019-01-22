@@ -11,7 +11,13 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                <strong class="label-tit-14 fwb" style=" display:inline-block; margin-bottom:8px;">성명 검색</strong>
+
+                <ul v-show="searchFlag">
+                    <li v-for="item in checkList" :key="item.id" class="chip-wrap"><span class="chip">{{item.name}}<span class="ico close_12" style="vertical-align:-1px; margin-left:2px;" @click="delChip"></span></span></li>
+                </ul> 
+
+                <strong class="label-tit-14 fwb mt14" style=" display:inline-block; margin-bottom:8px;">성명 검색</strong>
+                
                 <div class="intSchBox">
                     <div class="search-wrapper">
                         <input type="text" ref="input01"  @input="searchToggle($event)" pattern="^\s+" class="input" placeholder="성명 입력" />
@@ -19,13 +25,11 @@
                         <a href="#" class="btn"><span class="ico"></span></a>
                     </div>
                 </div>
-                <ul v-show="searchFlag">
-                    <li v-for="item in checkList" :key="item.id" class="chip-wrap"><span class="chip">{{item}}</span></li>
-                </ul> 
+                
                 <ul class="ulList type1" v-show="searchFlag">
                     <li v-for="item in Resdata" :key="item.id">
                         <label class="labelChk multi">
-                            <input type="checkbox" class="chk" @click="addList1($event)">
+                            <input type="checkbox" class="chk" @click="checkList.push(item)">
                             <span class="ico">
                                 <span class="innerCircle"></span>
                             </span>
@@ -81,12 +85,15 @@ export default {
     delTxt () {
         this.$refs.input01.value = ''
     },
-    addList1 (e) {
-      let result = this.Resdata.concat();
-      console.log(result)
-      console.log(e.currentTarget)
-      this.checkList.push(result)
+    delChip (index) {
+      this.checkList.splice(index,1)
     }
+    // addList1 (e) {
+    //   let result = this.Resdata.concat();
+    //   console.log(result)
+    //   console.log(e.currentTarget)
+    //   this.checkList.push(result)
+    // }
   },
   computed: {
     searchRes (data) {

@@ -30,16 +30,16 @@
                     <legend>아이디 비밀번호 입력</legend>
                     <ul class="loginList">
                         <li>
-                            <slp-text-field placeholder="아이디" classObject="underline"></slp-text-field>
+                            <slp-text-field placeholder="아이디를 입력하세요" classObject="underline"></slp-text-field>
                         </li>
                         <li>
                             <!-- 추가되는 새로운 비밀번호 컴포넌트로 교체해야함-->
                             <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
                             <div class="intSchBox">
                                 <div class="search-wrapper">
-                                    <input type="text"  pattern="^\s+" class="input underline" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
-                                    <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                    <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
+                                    <input type="text" ref="input01" pattern="^\s+" class="input underline" placeholder="비밀번호를 입력하세요" />
+                                    <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle()"><span class="ico"></span></a>
+                                    <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle()"><span class="ico"></span></a>
                                     <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                     </ul>
 
                     <div class="loginChk">
-                        <slp-checkbox>아이디 저장</slp-checkbox>
+                        <slp-checkbox checked>아이디 저장</slp-checkbox>
                         <slp-checkbox>자동 로그인</slp-checkbox>
                     </div>
 
@@ -62,12 +62,14 @@
                     <li><a href="#">회원가입</a></li>
                 </ul>
 
-                <dl class="loginGuide">
+                <!-- <dl class="loginGuide" v-if="">
                     <dt>초기 로그인 안내</dt>
                     <dd >아이디 <span class="fwb">ex사번(예 ex123456)</span></dd>
                     <dd >비밀번호 <span class="fwb">아이디와 동일</span></dd>
                     <dd class="desc">최초 접속 시 아이디와 비밀번호가 동일합니다.</dd>
-                </dl>
+                </dl> 
+                초기접속시 활성화 
+                -->
 
                 
 
@@ -93,6 +95,7 @@
 
 <script>
 export default {
+/* eslint-disable */
   name: 'Login_login',
   /* vue lifecycle */
   created () {
@@ -102,10 +105,19 @@ export default {
   /* vue data */
   data () {
     return {
+        password_show: ''
     }
   },
   /* vue function */
   methods: {
-  }
+      passwordtoggle () {
+        this.password_show = !this.password_show
+        if (this.password_show === true) {
+            this.$refs.input01.setAttribute('type', 'password')
+        } else if (this.password_show === false) {
+            this.$refs.input01.setAttribute('type', 'text')
+        }
+      }
+}
 }
 </script>

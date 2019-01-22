@@ -12,7 +12,7 @@
     z-index: 0; 
     height:100%; 
     text-align:center; 
-    background: url("../img/login_splash_bg.png") no-repeat center bottom; 
+    background: url("../img/login_splash_bg_2.png") no-repeat center bottom; 
     background-size: cover;
 }
 
@@ -20,8 +20,18 @@
     display: block; 
     content:''; 
     width:100%;
+    height:100%;
+    background: url("../img/silhouettes.png") no-repeat center bottom;
+    position: absolute;
+    top: 0px;
+    background-size:contain;
+}
+.trainIntro::before{ 
+    display: block; 
+    content:''; 
+    width:100%;
     height:100%; 
-    background:rgba(0,0,0,0.1);
+    background-color:rgba(0,0,0,0.1);
 }
 
 .trainIntro .txtWrap{    
@@ -188,6 +198,7 @@
 #container.join_type .h-tit1{margin-bottom:47px;font-weight:500;}
 #container.join_type .joinTypeBox dt{font-size: map-get($font-size, font_20);line-height: 29px;margin-bottom: 18px;letter-spacing: -0.6px;}
 #container.join_type .joinTypeBox dd{font-size: map-get($font-size, font_14);line-height: 20px;color:map-get($mono_colors, mono_65);letter-spacing: -0.42px;}
+#container.join_type .joinTypeBox dd > p.w80p{width:80%; font-size: map-get($font-size, font_14);line-height: 20px;color:map-get($mono_colors, mono_65);letter-spacing: -0.42px;font-weight:400;}//width값 추가
 #container.join_type .joinTypeBox p{font-size: map-get($font-size, font_13);line-height: 15px;margin-top: 4px;font-weight:500;letter-spacing: -0.39px;}
 #container.join_type .joinTypeBox .btmBtn{margin-top: 12px;}
 #container.join_type .joinTypeBox .btmBtn .btn{font-size: map-get($font-size, font_14);margin-top: 0px;vertical-align: middle;letter-spacing: -0.42px;font-weight:500;}
@@ -206,7 +217,7 @@
 #container.join .certList li + li{margin-top: 12px;}
 #container.join .certList + .guideList{margin-top: 16px;}
 
-#container.join .agreeAll{margin-top:36px;}
+#container.join .agreeAll{margin-top:40px;} // 36px -> 40px 수정
 #container.join .agreeAll .labelChk .label{line-height: 21px;letter-spacing: -0.48px;}
 #container.join .agreeList{border-top: 1px solid #d9d9d9;}
 #container.join .agreeList li{border-bottom: 1px solid #ebebeb;}
@@ -229,7 +240,7 @@
 #container.join .ulList.type2 input.underline{height:35px; }
 #container.join .ulList.type2 li .ul-block li{padding-left:5px;}
 #container.join .ulList.type2 li .ul-block li + li{margin-top:16px;}
-#container.join .ulList.type2 li + li{margin-top:32px}
+#container.join .ulList.type2 li + li{margin-top:36px}
 #container.join .ulList.type2 .labelRdo .label{color:map-get($mono_colors, mono_65);font-size: map-get($font-size, font_14);line-height: 22px;}
 #container.join .ulList.type2 .labelRdo input.rdo + .ico{margin:0px 11px 0 0 }
 #container.join .ulList.type2 .labelRdo input.rdo:disabled + .ico + .label{color:rgba(0,0,0,0.25)}
@@ -952,7 +963,7 @@ table td.sub-txt{ color:#000;}
 // 차트 바부분 
 .inner-tit{font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px;margin-bottom: 6px; }
 .person{font-size:map-get($font-size , font_14);line-height:20px; letter-spacing:-0.42px;margin-bottom: 26px; color:rgba(0,0,0,0.5); }
-.progBox{height: 8px!important; border-radius: 100px; }
+.progBox{height: 8px; border-radius: 100px; }
 .txt-wrap{margin-top:8px;}
 .prog-txt{ display: inline-block; float: left; width: 69%;font-size:map-get($font-size , font_15);line-height:22px; letter-spacing:-0.45px; }
 .part-num{font-size:map-get($font-size , font_15);line-height:20px; letter-spacing:-0.45px; color:map-get($mono_colors, mono_65);}
@@ -1382,10 +1393,11 @@ label.rdo .label{position: relative;}
 #container.regiclass .stepper .txt-desc {height:auto;}
 #container.regiclass .stepper {margin-bottom:0;}
 #container.regiclass .thumList .tit {margin-bottom:6px; font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;font-weight:500;}
-#container.regiclass .thumList .date {font-family: 'Noto Sans CJK KR';font-size: map-get($font-size , font_13);line-height: 24px;letter-spacing: -0.39px;font-weight:400;color:rgba(0,0,0,0.8);}
+#container.regiclass .thumList .date {margin-bottom:0;font-family: 'Noto Sans CJK KR';font-size: map-get($font-size , font_13);line-height: 24px;letter-spacing: -0.39px;font-weight:500;color:rgba(0,0,0,0.8);}
 #container.regiclass .thumList .info li{font-size: map-get($font-size , font_15);line-height: 24px;letter-spacing: -0.45px;font-weight:400;}
 #container.regiclass .thumList .info li + li::before{display:none;}
 #container.regiclass .thumList .info-num{font-family:'roboto';}
+#container.regiclass .thumList .info li.info-num-2{font-weight:500; font-size: map-get($font-size , font_15);line-height: 24px;letter-spacing: -0.45px;}
 #container.regiclass .rdoSelBox .labelRdo .rdo:checked + .ico + .label{font-weight:600;}
 #container.regiclass .thumList .info-txt{color:rgba(0,0,0,0.65);}
 #container.regiclass .InfoChK-resultTxt{font-size: map-get($font-size , font_13);line-height: 16px;letter-spacing: -0.39px; margin-top:6px; }
@@ -1433,6 +1445,8 @@ label.rdo .label{position: relative;}
 #container.regiclass.complete .txt-tit{font-size: map-get($font-size , font_15);line-height: 34px;letter-spacing: -0.45px; }
 #container.regiclass.complete .txt-tit-2{font-size: map-get($font-size , font_13);line-height: 18px;letter-spacing: -0.39px; }
 #container.regiclass.complete .thumList .info li{font-weight:500; font-size:map-get($font-size , font_13);}
+#container.regiclass.complete .thumList .info li.info-num-2{font-weight:500; font-size: map-get($font-size , font_15);line-height: 24px;letter-spacing: -0.45px;}
+
 
 // 동영상 하단 Study
 .study_title_wrap{padding:22px 18px 36px 18px;border-bottom:1px solid #d9d9d9;position:relative}
@@ -1481,6 +1495,7 @@ label.rdo .label{position: relative;}
 #container.regiclass.register .btn14{font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px; position: absolute;right: 18px;top:50%;transform:translateY(-50%);font-weight: 500;}
 #container.regiclass.register .ulList.type1 li {padding:15px 0; border-bottom:1px solid #e3e3e3;}
 #container.regiclass.register .chip-wrap {display:inline-block; margin-right:10px;}
+#container.regiclass.register .chip-wrap .chip {padding-right: 5px; color:rgba(0,0,0,0.8);font-size:map-get($font-size, font_14);letter-spacing: -0.42px; font-weight:500;}
 
 
 // 혁신성장 청년인재
@@ -2104,6 +2119,8 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 // header info
 .CLIPingType #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .CLIPingType #header .hide_header p {white-space: normal !important;}
+.CLIPingType #header .hide_header .h-tit1 { font-size: map-get($font_size, font_20); line-height: 29px; letter-spacing: -0.01em; }
+.CLIPingType #header .hide_header .h-tit5 { font-size: map-get($font_size, font_14); line-height: 20px; letter-spacing: -0.042em; }
 .CLIPingType #header .tagWrap span {border-color:map-get($mono_colors, mono_25); color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_12); height: 26px; line-height: 24px; padding: 0 10px;}
 .CLIPingType #header dl{display: table; line-height: 140%;}
 .CLIPingType #header dt{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_65); width: 50px; display: table-cell; }
@@ -2117,6 +2134,9 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .CLIPingType #header .thumbnail{overflow: hidden; margin: auto;height: 100%;position: relative;}
 .CLIPingType #header .thumbnail .thumImg{position: relative; left: 50%; transform: translateX(-50%); height: 100%;}
 .CLIPingType .info li{display: inline-block; font-size: map-get($font_size, font_14); line-height: 14px; letter-spacing: -0.036em; vertical-align: top;}
+.CLIPingType .info li.type2{color:rgba(0,0,0,0.8);display: inline-block; font-size: map-get($font_size, font_15);letter-spacing: -0.045em; vertical-align: top;}
+.CLIPingType .info li.type2 .ico{vertical-align:-3px;}
+.CLIPingType .info li.type2 .info_value{margin-left:5px; }
 .CLIPingType .info li+li{margin-left: 5px;}
 .CLIPingType .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
 .CLIPingType .info .ico.star {margin-top: 2px;}

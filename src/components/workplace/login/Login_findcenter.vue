@@ -4,12 +4,26 @@
     <div id="wrap">
         <div class="trainIntro">
 
-            <div class="select_language_wrap">
-                <div class="inner_wrap">
+            <div class="select_language_wrap" style="z-index: 10;">
+                <div id="dropdown_wrap" v-show="langFlag" >
+                    <div id="sheetDim" @click="changeLang()"></div>
+                    <div id="dropdown" style="top: 25px;right: 0;">            
+                    <ul  @click="changeLang()">
+                        <!-- 
+                        position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
+                        -->
+                        <li>한국어</li>
+                        <li>중국어</li>
+                        <li>베트남어</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="inner_wrap"  @click="changeLang()">
                     <span class="language_icon"></span>
                     <span class="select_language">한국어</span>
                     <span class="dropdown_arrow"></span>
                 </div>
+
             </div>
 
             <div class="txtWrap">
@@ -37,10 +51,14 @@ export default {
   /* vue data */
   data () {
     return {
+      langFlag: false
     }
   },
   /* vue function */
   methods: {
+    changeLang () {
+      this.langFlag = !this.langFlag
+    }
   }
 }
 </script>

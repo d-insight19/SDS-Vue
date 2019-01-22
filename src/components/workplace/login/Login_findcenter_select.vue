@@ -15,7 +15,7 @@
                 <div class="cell">
                     <div class="inner">
 
-                        <h1 class="h-tit1">연수원 선택하기</h1>
+                        <h1 class="h-tit1">연수원(회사) 선택하기</h1>
 
                         <!-- list -->
                         <ul class="ulList type3">
@@ -37,17 +37,6 @@
                 </div>
             </div>
 
-            <!-- fixed Bottom Btn -->    
-            <div class="fixBtmBtn">
-                <ul>
-                    <li>                            
-                        <button type="button" disabled class="btn ld">다음</button>
-                        <!-- 하단에 활성화 된 버튼은 임시로 display:none -->
-                        <button type="button" class="btn ld clr1" style="display:none;">다음</button>
-                    </li>
-                </ul>                    
-            </div>
-            <!-- //fixed Bottom Btn -->    
         </div>
         <!-- //container -->   
 
