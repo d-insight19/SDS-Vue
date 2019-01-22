@@ -18,6 +18,7 @@
                     <li class="on"><a href="#tab3">학습 계획</a></li>
                     <li><a href="#tab4">다운로드</a></li>
                     <li><a href="#tab5">나의 지식 CLIPing</a></li>
+                    <li><a href="#tab6">학습 관리</a></li>
                 </ul>
             </div>
             <div class="blur_wrap">
@@ -63,7 +64,7 @@
                 <h2 class="h-tit2 fwb600 mt0 mb10">내가 찜한 콘텐츠</h2>
 
                 <!-- list -->
-                <ul class="thumList">
+                <ul class="cardList type2 x100">
                     <li>
                         <div class="in">
                             <a href="#" class="thum">
@@ -78,7 +79,6 @@
                                 <li><span class="star ico"></span>4.5</li>
                             </ul>
                         </div>
-                        <span class="moredot"></span>
                     </li>
                     <li>
                         <div class="in">
@@ -140,7 +140,6 @@
                                 <li><span class="star ico"></span>4.5</li>
                             </ul>
                         </div>
-                        <span class="moredot"></span>
                     </li>
                 </ul>
                 <!-- //list -->

@@ -26,6 +26,28 @@
                     </ul>
                 </div>
             </li>
+            <li>
+                <div class="thum">
+                    <span class="moredot"></span>
+                    <span class="label2">D-10</span>
+                    <span class="progWrap"><em class="bar clr2" style="width:40%;"></em></span>
+                    <div class="cDim"></div>
+                        <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                    </div>
+                    <div class="text">
+                    <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</a>
+                    <ul class="info">
+                        <li class="fwb color_clr3">이러닝</li>
+                        <li class="danger">승인반려</li>                  
+                        <li>최종학습일 2018.10.18</li>
+                    </ul>
+                    <ul class="card_buttons">
+                        <li><a href="#" >취소하기</a></li>                    
+                        <li><a href="#" >결재 재상신</a></li>
+                    </ul>
+                </div>
+            </li>
+
         </ul>
         <br/>
 

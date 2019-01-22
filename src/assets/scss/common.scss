@@ -377,6 +377,7 @@ select:required:invalid {
 .multiList.type2 > li .icon_wrap{display:table-cell;width:30px;height:100%;position: relative;}
 .multiList.type2 > li .icon_wrap .ico2{position: absolute;top:0px;left:0px;}
 .multiList.type2 > li .txt_wrap{display:table-cell;border-bottom:1px solid #e3e3e3;width: calc(100% - 30px);padding-bottom: 15px;}
+.multiList.type2 > li:last-child .txt_wrap {border-bottom:0 none;}
 .multiList.type2 .icon_txt{font-size:map-get($font_size, font_14);font-weight: 600;line-height: 20px}
 .multiList.type2 .title{margin-top:5px;font-size:map-get($font_size, font_16);line-height: 22px;white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;  width: calc( 100% - 66px);}
 .multiList.type2 .contents{margin-top:5px;font-size:map-get($font_size, font_14);line-height: 21px;color:rgba(0,0,0,0.65)}
@@ -602,7 +603,7 @@ select:required:invalid {
 
 
 /* CardList */
-.cardList > li{display: table; width:100%; position: relative;}
+.cardList > li{background:#fff;display: table; width:100%; position: relative;}
 .cardList > li + li{ margin-top: 10px; }
 .cardList .in{display: table-cell; position: relative; height:120px; padding-left:138px; vertical-align: middle;padding-right: 46px; width: calc( 100% - 184px)}
 .cardList .thumImg{    width: 100%;  height: 100%;;}
@@ -623,15 +624,17 @@ select:required:invalid {
 
 .cardList .thum{position: relative; z-index: 0; width:100%; height: auto;}
 .cardList .thum .cDim{position: absolute; top:0; left:0; z-index: 1; width:100%; height: 50%; background: linear-gradient(-180deg, rgba(0,0,0,0.5), rgba(0,0,0,0));}
+.cardList .thum .label{font-size:map-get($font_size, font_12); font-weight : 500 ;color:#fff;padding:1px 7px;position: absolute;top:0px;left:0px;z-index:2;}
+.cardList .thum .label2{font-size:map-get($font_size, font_20); font-weight : 300 ;color:#fff;padding:0px;position: absolute;top:20px;left:20px;z-index:2;}
 
-.cardList.type1{display: table; table-layout: fixed;}
-.cardList.type1 > li{display: table-cell; position: relative; word-break: break-all; width:100%; padding-bottom: 0; vertical-align: top; border:0;}
+/*.cardList.type1{display: table; table-layout: fixed;}*/
+.cardList.type1 > li{/*display: table-cell;*/ position: relative; word-break: break-all; width:100%; padding-bottom: 0; vertical-align: top; border:0;}
 .cardList.type1 .info{font-weight: 400;font-size: map-get($font_size, font_13);}
 .cardList.type1 .info li+li::before{background: #eaeaea;}
-.cardList.type1 .moredot{width:20px;height:20px;position:absolute;top:26px;right:16px;background: url("../img/ic_moredots_wh_20.png") no-repeat;}
-.cardList.type1 .tit{font-size: map-get($font_size, font_16); color:#000; line-height: 22px; font-weight:400; height: 46px; max-height: inherit; margin-bottom: 5px; white-space: normal; overflow: hidden;}
+.cardList.type1 .moredot{width:20px;height:20px;position:absolute;top:26px;right:16px;background: url("../img/ic_moredots_wh_20.png") no-repeat; z-index:2;}
+.cardList.type1 .tit{font-size: map-get($font_size, font_16); color:#000; line-height: 22px; font-weight:400; max-height: 46px; margin-bottom: 5px; white-space: normal; overflow: hidden;}
 
-.cardList.type2{background:#fff;}
+/*.cardList.type2{background:#fff;}*/
 .cardList.type2 .moredot{width:20px;height:20px;position:absolute;top:50px;right:9px;background: url("../img/ic_moredots_20.png") no-repeat;}
 .cardList.type2 .thum{display: block; position: absolute; left:0; top:0; width:120px; height:120px;}
 .cardList.type2 .tit{width: calc( 100% - 184px );display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
@@ -641,11 +644,11 @@ select:required:invalid {
 .cardList.type2 .info li{vertical-align: middle}
 .cardList.type2 .info.type2{margin-top: 5px}
 
-.cardList.type2{background:#fff;}
+/*.cardList.type2{background:#fff;}*/
 .cardList.type2 .series{margin-top:5px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: calc( 100% - 184px ); }
 .cardList.type2 .series li{display:inline-block;}
 .cardList.type2 .series + .info{margin-top:5px;}
-.cardList.type2 .thum .label{font-size:map-get($font_size, font_12); font-weight : 500px ;color:#fff;padding:1px 7px;position: absolute;top:0px;left:0px;}
+
 
 
 .sidebar-wrapper {
