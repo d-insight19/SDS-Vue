@@ -46,7 +46,9 @@ import LoginFindcenterUrlKeyboard from '~workplace/login/Login_findcenter_url_ke
 import LoginLogin from '~workplace/login/Login_login'
 import LoginLogin02 from '~workplace/login/Login_login_02'
 import LoginLoginNotview from '~workplace/login/Login_login_notview'
+import LoginLoginWrite from '~workplace/login/Login_login_write'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
+import LoginLoginError from '~workplace/login/Login_login_error'
 import LoginInterest from '~workplace/login/Login_interest'
 import LoginJoinType from '~workplace/login/Login_jointype'
 import LoginJoinCertify from '~workplace/login/Login_joincertify'
@@ -63,6 +65,7 @@ import LoginJoinInExtrainfo from '~workplace/login/Login_joinextrainfo'
 import LoginJoinComplete from '~workplace/login/Login_joincomplete'
 import LoginLoginIntegration from '~workplace/login/Login_loginintegration'
 import LoginLoginIntegrationId from '~workplace/login/Login_loginintegrationid'
+import LoginLoginIntegrationIdWrite from '~workplace/login/login_loginintegrationidwrite'
 import LoginLoginReIntegration from '~workplace/login/Login_loginreintegration'
 import LoginLoginChangeId from '~workplace/login/Login_loginchangeid'
 import LoginLoginChangeIdMain from '~workplace/login/Login_loginchangeidmain'
@@ -709,9 +712,19 @@ var rootRoutes = [
     component: LoginLoginNotview
   },
   {
+    path: '/Login_login_write',
+    name: 'Login_login_write',
+    component: LoginLoginWrite
+  },
+  {
     path: '/Login_login_fail',
     name: 'Login_login_fail',
     component: LoginLoginFail
+  },
+  {
+    path: '/Login_login_error',
+    name: 'Login_login_error',
+    component: LoginLoginError
   },
   {
     path: '/Login_interest',
@@ -737,6 +750,11 @@ var rootRoutes = [
     path: '/Login_loginintegrationid',
     name: 'Login_loginintegrationid',
     component: LoginLoginIntegrationId
+  },
+  {
+    path: '/login_loginintegrationidwrite',
+    name: 'login_loginintegrationidwrite',
+    component: LoginLoginIntegrationIdWrite
   },
   {
     path: '/Login_loginreintegration',
