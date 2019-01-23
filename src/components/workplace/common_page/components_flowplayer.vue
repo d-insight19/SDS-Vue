@@ -22,7 +22,7 @@
                 </ul>
             </div>
 
-            <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기.  -->
+            <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
             <div class="blur_wrap">
                 <div class="left blur"></div>
                 <div class="right blur"></div>
@@ -34,34 +34,19 @@
                 <div class="player_inner">
                     <div id="contents"></div>
 
-                    <!--  s: 연관 콘텐츠 -->
-                    <div class="movie_info_list" style="display:none">
-                        <p class="movie_info_tit">연관 콘텐츠 추천</p>
-                        <ul>
-                            <li>
-                                <a href="#"></a>
-                                <p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초</p>
-                                <p class="movie_info"><span class="star ico"></span>4.5</p>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                                <p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p>
-                                <p class="movie_info"><span class="star ico"></span>4.5</p>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                                <p class="movie_tit multiline line2">만화로 배우는 알기 쉬운경영 기초전략</p>
-                                <p class="movie_info"><span class="star ico"></span>4.5</p>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                                <p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p>
-                                <p class="movie_info"><span class="star ico"></span>4.5</p>
-                                
-                            </li>
-                        </ul>
+                    <!--  s: 연관 콘텐츠 
+                    <div class="movie_info_list_wrap" style="display:none;">
+                        <div class="movie_info_list">
+                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
+                            <ul>
+                                <li v-for="(item, index) in relatedVideoList" :key="index">
+                                    <a href="#"></a>
+                                    <p class="movie_tit multiline line2">{{item.title}}</p>
+                                </li> 
+                            </ul>
+                        </div>
                     </div>
-                    <!--  e: 연관 콘텐츠 -->
+                    e: 연관 콘텐츠 -->
 
                     <!-- s: 볼륨영역 -->
                     <div class="volume_wrap" style="display:none;">
@@ -82,8 +67,8 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: 텝 영역 -->
-                    <div class="tap_wrap">
+                    <!-- s: double 텝 영역 -->
+                    <div class="tap_wrap" style="display:none;">
                         <div class="half_left">
                             <div class="inner"></div>
                             <div class="inner_ripple"></div>
@@ -93,12 +78,12 @@
                             <div class="inner_ripple"></div>
                         </div>
                     </div>
-                    <!--  e: 텝 영역 -->
+                    <!--  e: double 텝 영역 -->
 
                 </div>
                 <!-- s: btm_subtitle_area -->
-                <div class="btm_subtitle_area" data-js="toggle" >
-                    <div class="subtitle_slide_wrap" data-js="toggle__panel">
+                <div class="btm_subtitle_area">
+                    <div class="subtitle_slide_wrap">
                         <div class="btm_subtitle_control">                                
                             <div>
                                 <div class="subtitle_lang_wrap">
@@ -313,8 +298,8 @@ window.$ = $
 window.jQuery = $
 
 // 2. css
-import 'flowplayer/dist/skin/lo_skin.css'
-import 'flowplayer/dist/skin/stw.css'
+import 'flowplayer/dist/skin/lo_skin.scss'
+import 'flowplayer/dist/skin/stw.scss'
 
 
 // 3. node_modules
@@ -336,6 +321,17 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
+        scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
+        detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
+        relatedVideoList: [
+            {title: '자바스크립트 개발 프로세스 기초'},
+            {title: '모바일 게임 UI 디자인 실무'},
+            {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
+            {title: '모바일 게임 UI 디자인 실무'},
+            {title: '자바스크립트 개발 프로세스 기초1'},
+            {title: '자바스크립트 개발 프로세스 기초2'},
+            {title: '자바스크립트 개발 프로세스 기초3'}
+        ],
        option: {
         loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
         targetId: "contents", //div target Id
@@ -385,9 +381,7 @@ export default {
           }
         ], //자막,
         noseek: true //timeline no
-      },
-      scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
-      detail_show: false        // 동영상 하단 타이틀 디테일 toggle 변수
+      }
     }
   },
   methods: {
@@ -399,8 +393,27 @@ export default {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
         $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
-        $('.fp-ratio').append('<div class="tap_wrap" style="display:none"><div class="half_left"></div><div class="half_right"></div></div>');
 
+        // 연관콘텐츠가 있을경우
+        // fp-controls-inner 에 해당 클래스를 추가 시킨다. has_contens
+        var createVidoeHtml = "";
+        createVidoeHtml += '<div class="movie_info_list_wrap" style="display:none;">';
+        createVidoeHtml += '<div class="movie_info_list">';
+        createVidoeHtml += '<p class="movie_info_tit">연관 콘텐츠 추천</p>';
+        createVidoeHtml += '<ul>';
+        createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초</p></li>';
+        createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
+        createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">만화로 배우는 알기 쉬운 경영 기초전략</p></li>';
+        createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
+        createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초1</p></li>';
+        createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초2</p></li>';
+        createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초3</p></li>';
+        createVidoeHtml += '</ul>';
+        createVidoeHtml += '</div>';
+        createVidoeHtml += '</div>';
+
+        $('.fp-ui').append(createVidoeHtml)
+        
         $('.half_left').click(function(){
             console.error("왼쪽");
         });
@@ -414,13 +427,13 @@ export default {
             $('.player_wrap').toggleClass('script');
         });
 
-        $('.fp-presec').click(function()
+        $('.fp-nextArrow').click(function()
         {
-            alert('30초이전!')
+            alert('다음 콘텐츠!')
         });
-        $('.fp-nextsec').click(function()
+        $('.fp-prevArrow').click(function()
         {
-            alert('30초다음!')
+            alert('이전 콘텐츠!')
         });        
         var $value = 0;
         $('.fp-repeat').click(function()

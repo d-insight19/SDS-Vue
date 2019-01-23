@@ -187,6 +187,19 @@ $brand_colors: (
 
     // bottomsheet 체크박스
     #bottomsheet ul li .checkIcon{color:map-get($color , clr2);}
+    
+    // 동영상 스크립트 아이콘
+    .flowplayer .fp-controls .fp-controls-inner .fp-script.active{background:map-get($color , clr2);}
+
+    // 동영상 볼륨 조절    
+    .volume_wrap .volume_left .inner{background-image: linear-gradient(to top,rgba(map-get($color , clr2),0), map-get($color , clr2) );}
+    .volume_wrap .volume_right .inner{background-image: linear-gradient(to top, rgba(map-get($color , clr2),0), map-get($color , clr2) );}
+
+    // 동영상 프로그래스 circle
+    .flowplayer .fp-progress:before , .flowplayer .fp-color {background: map-get($color , clr2);}
+    .flowplayer.is-live.is-dvr.is-live-position .fp-duration {color: map-get($color , clr2);; }
+    // 동영상 자동재생 circle
+    .autoplay_cicle_circle{stroke:map-get($color , clr2);}
   }
 }
 // Including themes. 
