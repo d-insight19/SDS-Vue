@@ -34,7 +34,7 @@
         <div class="fixBtmBtn">
             <ul>
                 <li><button type="button" class="btn md">취소</button></li>
-                <li><button type="button" class="btn md clr1">아이디 변경하기</button></li>
+                <li><button type="button" class="btn md clr1">아이디 변경</button></li>
             </ul>
         </div>
         <!-- //floating button -->

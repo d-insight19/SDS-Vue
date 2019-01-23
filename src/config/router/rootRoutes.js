@@ -48,12 +48,21 @@ import LoginLogin02 from '~workplace/login/Login_login_02'
 import LoginLoginNotview from '~workplace/login/Login_login_notview'
 import LoginLoginWrite from '~workplace/login/Login_login_write'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
+import LoginLoginFail2 from '~workplace/login/Login_login_fail2'
+import LoginLoginTxt1 from '~workplace/login/Login_login_txt1'
+import LoginLoginTxt2 from '~workplace/login/Login_login_txt2'
+import LoginLoginNoguide from '~workplace/login/Login_login_noguide'
+import LoginLoginNoguideTxt1 from '~workplace/login/Login_login_noguide_txt1'
+import LoginLoginNoguideTxt2 from '~workplace/login/Login_login_noguide_txt2'
 import LoginLoginError from '~workplace/login/Login_login_error'
 import LoginInterest from '~workplace/login/Login_interest'
+import LoginInterestSelect from '~workplace/login/Login_interestselect'
 import LoginJoinType from '~workplace/login/Login_jointype'
 import LoginJoinCertify from '~workplace/login/Login_joincertify'
 import LoginJoinCertify2 from '~workplace/login/Login_joincertify2'
 import LoginJoinTerms from '~workplace/login/Login_jointerms'
+import LoginJoinTermsToast from '~workplace/login/Login_jointermstoast'
+import LoginJoinTermsSelect from '~workplace/login/Login_jointermsselect'
 import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
 import LoginJoinId from '~workplace/login/Login_joinid'
 import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
@@ -92,12 +101,12 @@ import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
 import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
 import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
 
-/*
 import Loginloginchangeidmainconfirm from '~workplace/login/Login_login_changeid_main_confirm'
 import Loginloginchangeidmainerror from '~workplace/login/Login_login_changeid_main_error'
 import Loginloginchangepwerror1 from '~workplace/login/Login_login_changepw_error1'
 import Loginloginchangepwerror2 from '~workplace/login/Login_login_changepw_error2'
 import Loginloginchangepwerror3 from '~workplace/login/Login_login_changepw_error3'
+/*
 import Loginloginunlockiddomestic from '~workplace/login/Login_login_unlockid_domestic'
 import Loginloginunlockidoverseas from '~workplace/login/Login_login_unlockid_overseas'
 import Loginloginunlockidcomplete from '~workplace/login/Login_login_unlockid_complete'
@@ -757,6 +766,36 @@ var rootRoutes = [
     component: LoginLoginFail
   },
   {
+    path: '/Login_login_fail2',
+    name: 'Login_login_fail2',
+    component: LoginLoginFail2
+  },
+  {
+    path: '/Login_login_txt1',
+    name: 'Login_login_txt1',
+    component: LoginLoginTxt1
+  },
+  {
+    path: '/Login_login_txt2',
+    name: 'Login_login_txt2',
+    component: LoginLoginTxt2
+  },
+  {
+    path: '/Login_login_noguide',
+    name: 'Login_login_noguide',
+    component: LoginLoginNoguide
+  },
+  {
+    path: '/Login_login_noguide_txt1',
+    name: 'Login_login_noguide_txt1',
+    component: LoginLoginNoguideTxt1
+  },
+  {
+    path: '/Login_login_noguide_txt2',
+    name: 'Login_login_noguide_txt2',
+    component: LoginLoginNoguideTxt2
+  },
+  {
     path: '/Login_login_error',
     name: 'Login_login_error',
     component: LoginLoginError
@@ -765,6 +804,11 @@ var rootRoutes = [
     path: '/Login_interest',
     name: 'Login_interest',
     component: LoginInterest
+  },
+  {
+    path: '/Login_interestselect',
+    name: 'Login_interestselect',
+    component: LoginInterestSelect
   },
   {
     path: '/Login_joinextrainfo',
@@ -845,6 +889,16 @@ var rootRoutes = [
     path: '/Login_jointerms',
     name: 'Login_jointerms',
     component: LoginJoinTerms
+  },
+  {
+    path: '/Login_jointermstoast',
+    name: 'Login_jointermstoast',
+    component: LoginJoinTermsToast
+  },
+  {
+    path: '/Login_jointermsselect',
+    name: 'Login_jointermsselect',
+    component: LoginJoinTermsSelect
   },
   {
     path: '/Login_jointermsdetail',
@@ -971,7 +1025,6 @@ var rootRoutes = [
     name: 'Login_certifyemail_corporate',
     component: LoginCertifyEmailCorporate
   },
-  /*
   {
     path: '/Login_login_changeid_main_confirm',
     name: 'Login_login_changeid_main_confirm',
@@ -997,6 +1050,7 @@ var rootRoutes = [
     name: 'Login_login_changepw_error3',
     component: Loginloginchangepwerror3
   },
+  /*
   {
     path: '/Login_login_unlockid_domestic',
     name: 'Login_login_unlockid_domestic',

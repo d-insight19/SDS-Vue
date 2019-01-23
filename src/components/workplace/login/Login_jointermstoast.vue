@@ -30,7 +30,7 @@
                 </div>
                 <ul class="agreeList">
                   <li>
-                    <slp-checkbox>개인정보 수집 및 이용 동의(필수)</slp-checkbox>
+                    <slp-checkbox >개인정보 수집 및 이용 동의(필수)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                   <li>
@@ -60,11 +60,11 @@
         </div>
         <!-- //floating button -->
         <!-- toastpopup -->
-        <!-- <div class="toast">
+        <div class="toast">
           <div class="in">
             필수 항목에 동의해주세요.
           </div>
-        </div> -->
+        </div>
         <!-- //toastpopup -->
         
       </div>

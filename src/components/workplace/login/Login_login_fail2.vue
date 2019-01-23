@@ -85,7 +85,9 @@
       <slp-popup v-if="showConfirm" title="로그인 실패" confirmInput="확인" @cancelClick="cancel" @confirmClick="confirm">
             <!-- popup body -->
             <div class="ly-cnt">
-                <p>로그인에 5회 실패하였습니다. 5회 실패 시 계정이 잠금되어 로그인이 불가합니다. 본인인증 후 이용해 주세요.</p>	
+                <p>아이디/비밀번호가 일치하지 않습니다. 다시 확인하시기 바랍니다.
+5회 실패 시 로그인이 불가합니다.
+(로그인 1회 실패하셨습니다.)</p>	
             </div>
             <div class="ly-info">
                 <p></p>

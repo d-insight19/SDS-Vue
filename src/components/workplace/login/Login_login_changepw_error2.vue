@@ -34,10 +34,10 @@
                         <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
                         <div class="intSchBox">
                             <div class="search-wrapper">
-                                <input type="password" ref="refInput" pattern="^\s+" class="input" placeholder="현재 비밀번호를 입력하세요" />
+                                <input type="password" ref="refInput" pattern="^\s+" class="input " placeholder="password" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <!-- <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p> -->
+                                <p class="InfoChK-resultTxt err">비밀번호를 입력해 주세요</p>
                             </div>
                         </div>
                     </li>
@@ -47,10 +47,10 @@
                         <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
                         <div class="intSchBox">
                             <div class="search-wrapper">
-                                <input type="password" value="1234" ref="refInput2"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <input type="password"  ref="refInput2"  pattern="^\s+" class="input error" placeholder="Error password" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <!-- <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p> -->
+                                <p class="InfoChK-resultTxt err">8-12자의 영문자, 특수문자 조합만 가능합니다</p>
                             </div>
                         </div>
                     </li>
@@ -60,7 +60,7 @@
                         <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
                         <div class="intSchBox">
                             <div class="search-wrapper">
-                                <input type="password" value="1234" ref="refInput3" pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <input type="password"  ref="refInput3" pattern="^\s+" class="input" placeholder="6~12자의 영소문자, 숫자, 특수문자를 조합하세요" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <!-- <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p> -->

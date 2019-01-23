@@ -236,6 +236,27 @@
           <router-link :to="{ name: 'Login_login_fail' }">
             Login_login_fail
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_fail2' }">
+            Login_login_fail2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_txt1' }">
+            Login_login_txt1
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_noguide' }">
+            Login_login_noguide
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_noguide_txt1' }">
+            Login_login_noguide_txt1
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_noguide_txt2' }">
+            Login_login_noguide_txt2
+          </router-link>
+          <br/>
         </td>
         <td>수정됨</td>
       </tr>
@@ -308,8 +329,17 @@
         <td class="textL">01.login_02.02_join_terms</td>
         <td>
           <router-link :to="{ name: 'Login_jointerms' }">
-            Login_jointerms
+            Login_jointerms : B2B
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_jointermstoast' }">
+            Login_jointerms : B2B_toastpopup
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_jointermsselect' }">
+            Login_jointerms : B2B_select
+          </router-link>
+          <br/>
         </td>
         <td>수정됨</td>
       </tr>
@@ -435,8 +465,8 @@
           <router-link :to="{ name: 'Login_joininterest' }">
             Login_joininterest
           </router-link><br/>
-          <router-link :to="{ name: 'Login_join_interest_select' }">
-            login_join_interest_select
+          <router-link :to="{ name: 'Login_joininterestselect' }">
+            Login_joininterestselect
           </router-link>
         </td>
         <td>수정됨</td>
@@ -557,7 +587,7 @@
             Login_loginchangeid
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">24</td>
@@ -573,8 +603,16 @@
           <router-link :to="{ name: 'Login_loginchangeidmain' }">
             Login_loginchangeidmain
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_changeid_main_confirm' }">
+            Login_login_changeid_main_confirm
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_changeid_main_error' }">
+            Login_login_changeid_main_error
+          </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">25</td>
@@ -588,7 +626,23 @@
         <td class="textL">01.login_05.01_login_changepw</td>
         <td>
           <router-link :to="{ name: 'Login_changepw' }">
-            Login_changepw
+            Login_changepw1
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_changepw' }">
+            Login_changepw2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_changepw_error1' }">
+            Login_login_changepw_error1
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_changepw_error2' }">
+            Login_login_changepw_error2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_changepw_error3' }">
+            Login_login_changepw_error3
           </router-link>
         </td>
         <td></td>

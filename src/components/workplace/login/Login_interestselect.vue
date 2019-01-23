@@ -3,36 +3,27 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery join pd70">
+      <div id="container" class="mediaquery interest pd70">
           
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">
 
-                        <h1 class="h-tit">회원가입</h1>
-
-                        <div class="stepper">
-                            <div class="clearfix">
-                                <h2 class="tit">관심사 선택</h2>
-                                <div class="num">
-                                    <strong class="color_clr2">5</strong>/<span>6</span>
-                                </div>
-                            </div>
-                                <div class="progBox">
-                                <div class="bar clr2" style="width:83%"></div>
-                            </div>
-                            <p class="txt-desc">관심사를 선택하시면 회원님에게 맞는 다양한 학습강의들을 추천해드립니다.</p>
+                        <!-- title txt -->
+                        <div class="titTxtWrap">
+                            <strong class="txt-tit">관심사를<br>선택해주세요</strong>
+                            <p class="txt-desc">관심사와 관련있는 맞춤 정보를 받으실 수 있습니다.</p>
                         </div>
-
+                        <!-- //title txt -->
 
                         <!-- list -->
-                        <ul class="ulList type1 mt48">
+                        <ul class="ulList type1">
                             <li>
                                 <strong class="label-tit">관심 분야</strong>
                                 <div class="in-chk">
-                                    <slp-checkbox type="button">경영 / 리더십</slp-checkbox>
+                                    <slp-checkbox type="button" >경영 / 리더십</slp-checkbox>
                                     <slp-checkbox type="button" :value="value">금융</slp-checkbox>
-                                    <slp-checkbox type="button" :value="value">직무 / 자격</slp-checkbox>
+                                    <slp-checkbox type="button" :value="value" >직무 / 자격</slp-checkbox>
                                     <slp-checkbox type="button">OPIC / 외국어</slp-checkbox>
                                     <slp-checkbox type="button">인문 / 교양 / 시사</slp-checkbox>
                                 </div>
@@ -61,15 +52,18 @@
                 </div>
             </div>
 
-            <!-- floating button -->
+            <!-- fixed Bottom Btn -->    
             <div class="fixBtmBtn">
-                <!-- disable 해제시 활성화 -->
                 <ul>
-                    <li><button type="button" class="btn md">이전</button></li>
-                    <li><button type="button" class="btn md clr1">다음</button></li>
-                </ul>
+                    <li>                            
+                        <button type="button"  class="btn ld" style="display:none;">다음</button>
+                        <!-- 하단에 활성화 된 버튼은 임시로 display:none :class="[checkedNames.length && checkedNames2.length && checkedNames3.length > 0 ? activeClass : '']" -->
+                        <button type="button" class="btn ld clr1" >다음</button>
+                    </li>
+                </ul>                    
             </div>
-            <!-- //floating button -->
+            <!-- //fixed Bottom Btn --> 
+
             
             
         </div>
@@ -81,8 +75,10 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
-  name: 'Login_joininterest',
+    
+  name: 'Login_interest',
   /* vue lifecycle */
   created () {
   },
@@ -91,7 +87,7 @@ export default {
   /* vue data */
   data () {
     return {
-      value: true
+        value: true
     }
   },
   /* vue function */
