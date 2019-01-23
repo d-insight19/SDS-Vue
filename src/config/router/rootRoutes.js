@@ -92,6 +92,29 @@ import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
 import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
 import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
 
+/*
+import Loginloginchangeidmainconfirm from '~workplace/login/Login_login_changeid_main_confirm'
+import Loginloginchangeidmainerror from '~workplace/login/Login_login_changeid_main_error'
+import Loginloginchangepwerror1 from '~workplace/login/Login_login_changepw_error1'
+import Loginloginchangepwerror2 from '~workplace/login/Login_login_changepw_error2'
+import Loginloginchangepwerror3 from '~workplace/login/Login_login_changepw_error3'
+import Loginloginunlockiddomestic from '~workplace/login/Login_login_unlockid_domestic'
+import Loginloginunlockidoverseas from '~workplace/login/Login_login_unlockid_overseas'
+import Loginloginunlockidcomplete from '~workplace/login/Login_login_unlockid_complete'
+import Loginlogindormant from '~workplace/login/Login_login_dormant'
+import Loginlogindormantemail from '~workplace/login/Login_login_dormant_email'
+import Loginlogindormantcomplete from '~workplace/login/Login_login_dormant_complete'
+import Loginfindidresultpopup from '~workplace/login/Login_findid_result_popup'
+import Loginfindidipin from '~workplace/login/Login_findid_ipin'
+import Loginfindpwemailtoastpopup from '~workplace/login/Login_findpw_email_toastpopup'
+import Logincertifyemailcertifyerror1 from '~workplace/login/Login_certify_email_certify_error1'
+import Logincertifyemailcertifyerror2 from '~workplace/login/Login_certify_email_certify_error2'
+import Logincertifyemailcertifyerror3 from '~workplace/login/Login_certify_email_certify_error3'
+import Loginlogincorporationphone1 from '~workplace/login/Login_login_corporationphone1'
+import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporationphone2'
+import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
+*/
+
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -291,6 +314,11 @@ import MySpaceCliping from '~workplace/myspace/MySpace_cliping'
 import MySpaceClipingViewed from '~workplace/myspace/MySpace_cliping_viewed'
 import MySpaceClipingFav from '~workplace/myspace/MySpace_cliping_fav'
 import MySpaceClipingAnalysis from '~workplace/myspace/MySpace_cliping_analysis'
+import MySpaceStudymanagementNote from '~workplace/myspace/MySpace_studymanagement_note'
+import MySpaceStudymanagementNoteDetail from '~workplace/myspace/MySpace_studymanagement_note_detail'
+import MySpaceStudymanagementNoteEdit from '~workplace/myspace/MySpace_studymanagement_note_edit'
+import MySpaceStudymanagementReminder from '~workplace/myspace/MySpace_studymanagement_reminder'
+import MySpaceStudymanagementReminderDetail from '~workplace/myspace/MySpace_studymanagement_reminder_detail'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -943,6 +971,108 @@ var rootRoutes = [
     name: 'Login_certifyemail_corporate',
     component: LoginCertifyEmailCorporate
   },
+  /*
+  {
+    path: '/Login_login_changeid_main_confirm',
+    name: 'Login_login_changeid_main_confirm',
+    component: Loginloginchangeidmainconfirm
+  },
+  {
+    path: '/Login_login_changeid_main_error',
+    name: 'Login_login_changeid_main_error',
+    component: Loginloginchangeidmainerror
+  },
+  {
+    path: '/Login_login_changepw_error1',
+    name: 'Login_login_changepw_error1',
+    component: Loginloginchangepwerror1
+  },
+  {
+    path: '/Login_login_changepw_error2',
+    name: 'Login_login_changepw_error2',
+    component: Loginloginchangepwerror2
+  },
+  {
+    path: '/Login_login_changepw_error3',
+    name: 'Login_login_changepw_error3',
+    component: Loginloginchangepwerror3
+  },
+  {
+    path: '/Login_login_unlockid_domestic',
+    name: 'Login_login_unlockid_domestic',
+    component: Loginloginunlockiddomestic
+  },
+  {
+    path: '/Login_login_unlockid_overseas',
+    name: 'Login_login_unlockid_overseas',
+    component: Loginloginunlockidoverseas
+  },
+  {
+    path: '/Login_login_unlockid_complete',
+    name: 'Login_login_unlockid_complete',
+    component: Loginloginunlockidcomplete
+  },
+  {
+    path: '/Login_login_dormant',
+    name: 'Login_login_dormant',
+    component: Loginlogindormant
+  },
+  {
+    path: '/Login_login_dormant_email',
+    name: 'Login_login_dormant_email',
+    component: Loginlogindormantemail
+  },
+  {
+    path: '/Login_login_dormant_complete',
+    name: 'Login_login_dormant_complete',
+    component: Loginlogindormantcomplete
+  },
+  {
+    path: '/Login_findid_result_popup',
+    name: 'Login_findid_result_popup',
+    component: Loginfindidresultpopup
+  },
+  {
+    path: '/Login_findid_ipin',
+    name: 'Login_findid_ipin',
+    component: Loginfindidipin
+  },
+  {
+    path: '/Login_findpw_email_toastpopup',
+    name: 'Login_findpw_email_toastpopup',
+    component: Loginfindpwemailtoastpopup
+  },
+  {
+    path: '/Login_certify_email_certify_error1',
+    name: 'Login_certify_email_certify_error1',
+    component: Logincertifyemailcertifyerror1
+  },
+  {
+    path: '/Login_certify_email_certify_error2',
+    name: 'Login_certify_email_certify_error2',
+    component: Logincertifyemailcertifyerror2
+  },
+  {
+    path: '/Login_certify_email_certify_error3',
+    name: 'Login_certify_email_certify_error3',
+    component: Logincertifyemailcertifyerror3
+  },
+  {
+    path: '/Login_login_corporationphone1',
+    name: 'Login_login_corporationphone1',
+    component: Loginlogincorporationphone1
+  },
+  {
+    path: '/Login_login_corporationphone2',
+    name: 'Login_login_corporationphone2',
+    component: Loginlogincorporationphone2
+  },
+  {
+    path: '/Login_login_corporationphone3',
+    name: 'Login_login_corporationphone3',
+    component: Loginlogincorporationphone3
+  },
+  */
   {
     path: '/Study_dictionary',
     name: 'Study_dictionary',
@@ -1911,6 +2041,31 @@ var rootRoutes = [
     path: '/MySpace_cliping_analysis',
     name: 'MySpace_cliping_analysis',
     component: MySpaceClipingAnalysis
+  },
+  {
+    path: '/MySpace_studymanagement_note',
+    name: 'MySpace_studymanagement_note',
+    component: MySpaceStudymanagementNote
+  },
+  {
+    path: '/MySpace_studymanagement_note_detail',
+    name: 'MySpace_studymanagement_note_detail',
+    component: MySpaceStudymanagementNoteDetail
+  },
+  {
+    path: '/MySpace_studymanagement_note_edit',
+    name: 'MySpace_studymanagement_note_edit',
+    component: MySpaceStudymanagementNoteEdit
+  },
+  {
+    path: '/MySpace_studymanagement_reminder',
+    name: 'MySpace_studymanagement_reminder',
+    component: MySpaceStudymanagementReminder
+  },
+  {
+    path: '/MySpace_studymanagement_reminder_detail',
+    name: 'MySpace_studymanagement_reminder_detail',
+    component: MySpaceStudymanagementReminderDetail
   },
   {
     path: '/regiclass_detailview_books',

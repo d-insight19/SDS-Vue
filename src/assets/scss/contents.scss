@@ -2178,6 +2178,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
 
 .MySpace.gray_bg {background-color: map-get($bg_colors , BG_1);}
+.MySpace .white_bg {background-color: #fff}
 .MySpace #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .MySpace #dropdown{top:0px;right:0px;}
 // Dropdown
@@ -2217,24 +2218,26 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
 .MySpace .thumList.type1 .labelChk .label {width:100%; background-color:#fff}
 .MySpace .multiList.type2 .labelChk .label {width:100%;}
-.MySpace .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 16px; margin-top:12px;}
+.MySpace .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 40px 22px 16px; margin-top:12px;}
 .MySpace .download_detail .txt_wrap {border-bottom: 0 none !important; padding-bottom:0 !important;}
 .MySpace .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:5px;}
 .MySpace .download_detail .txt_wrap .title {font-weight:500; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
 .MySpace .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
-.MySpace .download_detail .txt_wrap .action {font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
 .MySpace .download_detail .info li {color:map-get($mono_colors,mono_65);}
 .MySpace .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
 .MySpace .download_detail.done .txt_wrap .title {opacity: 0.4;}
 .MySpace .download_detail.done .txt_wrap .info {opacity: 0.4;}
 .MySpace .sub_content{display:none;}
 .MySpace .open .sub_content{display:block;}
-.MySpace .sub_content .download_detail {border-bottom-width: 0px; border-top:1px solid map-get($line_colors,B89) !important; padding:14px 16px; margin-top:0px;}
+.MySpace .sub_content .download_detail {border-bottom-width: 0px; border-top:1px solid map-get($line_colors,B89) !important; padding:14px 40px 14px 16px; margin-top:0px;}
 .MySpace .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
 .MySpace .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 9px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
 .MySpace .ico.line.wh {border:2px solid #fff; border-radius:100%;}
 .MySpace .ico.line.blue {border:2px solid map-get($contents_colors,type_2); border-radius:100%;}
-.MySpace .ico.accordion_arrow{width:20px;height:20px;position:absolute;bottom:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+.MySpace .multiList.type2 > li .ico.next_16 {position:absolute;top:calc(50% - 2px);right:18px;}
+.MySpace .multiList.type2 > li .action {position:absolute;bottom:18px;right:18px; font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
+.MySpace .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
+.MySpace .ico.accordion_arrow{width:20px;height:20px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat;}
 .MySpace .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 .MySpace .btB89 {border-top: 1px solid map-get($line_colors , B89);}
 .MySpace .radioList li{margin-bottom:10px;}
@@ -2263,6 +2266,17 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .cardList.type2.x100 > li:last-child { margin-bottom: 0px; border-bottom-width: 0px; padding-bottom: 0px;}
 .MySpace .multiList.type2.pb15 > li {padding-bottom:15px;}
 .MySpace .multiList.type2.pb15 > li:last-child {padding-bottom:0px;}
+.MySpace .multiList.type2 > li .txt_wrap {position: relative;}
+.MySpace .multiList .chip{position: absolute; bottom: 6px; right: 0px;}
+.MySpace .chip .ico.play_16{margin-right: -5px; margin-top: -2px;}
+.MySpace .chip .ico.del-blue{margin-right: -5px; margin-top: -2px;}
+.MySpace .multiList.type2 .moredot{width:20px;height:20px;position:absolute;top:6px;right:9px;background: url("../img/ic_moredots_20.png") no-repeat;}
+.MySpace .multiList.type2 .ico.del{position: absolute; top: calc(50% - 10px); right: 18px;}
+.MySpace #header .tagWrap span {border-color:map-get($mono_colors, mono_25); color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_12); height: 26px; line-height: 24px; padding: 0 10px;}
+.MySpace #header .chip{position: absolute; bottom: 18px; right: 18px;}
+.MySpace #header .ico.more28 {position: absolute; top: 106px; right: 18px;}
+.MySpace #header .h-tit3 {width: calc(100% - 30px);}
+.MySpace textarea{font-size:map-get($font-size, font_14); width:100%; padding:10px 16px; border:1px solid #f5f5f5; background: #f5f5f5; letter-spacing: -0.42px;}
 //calendarmanagement
 .MySpace .calendarmanagement {width:100%;}
 .MySpace .calendarmanagement thead {border-bottom:1px solid map-get($line_colors, B92);}
