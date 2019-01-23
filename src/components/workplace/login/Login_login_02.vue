@@ -62,14 +62,13 @@
                     <li><a href="#">회원가입</a></li>
                 </ul>
 
-                <!-- <dl class="loginGuide" v-if="">
+                <dl class="loginGuide" >
                     <dt>초기 로그인 안내</dt>
                     <dd >아이디 <span class="fwb">ex사번(예 ex123456)</span></dd>
                     <dd >비밀번호 <span class="fwb">아이디와 동일</span></dd>
                     <dd class="desc">최초 접속 시 아이디와 비밀번호가 동일합니다.</dd>
                 </dl> 
-                초기접속시 활성화 
-                -->
+               
 
                 
 

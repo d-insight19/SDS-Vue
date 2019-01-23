@@ -35,10 +35,17 @@ import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
 import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
+import LoginFindcenterEmailKeyboard from '~workplace/login/Login_findcenter_email_keyboard'
+import LoginFindcenterEmailComplete from '~workplace/login/Login_findcenter_email_complete'
+import LoginFindcenterEmailError from '~workplace/login/Login_findcenter_email_error'
 import LoginFindcenterSelect from '~workplace/login/Login_findcenter_select'
+import LoginFindcenterSelect02 from '~workplace/login/Login_findcenter_select_02'
 import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
 import LoginFindcenterUrl2 from '~workplace/login/Login_findcenter_url2'
+import LoginFindcenterUrlKeyboard from '~workplace/login/Login_findcenter_url_keyboard'
 import LoginLogin from '~workplace/login/Login_login'
+import LoginLogin02 from '~workplace/login/Login_login_02'
+import LoginLoginNotview from '~workplace/login/Login_login_notview'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
 import LoginInterest from '~workplace/login/Login_interest'
 import LoginJoinType from '~workplace/login/Login_jointype'
@@ -643,9 +650,29 @@ var rootRoutes = [
     component: LoginFindcenterEmail2
   },
   {
+    path: '/Login_findcenter_email_keyboard',
+    name: 'Login_findcenter_email_keyboard',
+    component: LoginFindcenterEmailKeyboard
+  },
+  {
+    path: '/Login_findcenter_email_complete',
+    name: 'Login_findcenter_email_complete',
+    component: LoginFindcenterEmailComplete
+  },
+  {
+    path: '/Login_findcenter_email_error',
+    name: 'Login_findcenter_email_error',
+    component: LoginFindcenterEmailError
+  },
+  {
     path: '/Login_findcenter_select',
     name: 'Login_findcenter_select',
     component: LoginFindcenterSelect
+  },
+  {
+    path: '/Login_findcenter_select_02',
+    name: 'Login_findcenter_select_02',
+    component: LoginFindcenterSelect02
   },
   {
     path: '/Login_findcenter_url',
@@ -658,9 +685,24 @@ var rootRoutes = [
     component: LoginFindcenterUrl2
   },
   {
+    path: '/Login_findcenter_url_keyboard',
+    name: 'Login_findcenter_url_keyboard',
+    component: LoginFindcenterUrlKeyboard
+  },
+  {
     path: '/Login_login',
     name: 'Login_login',
     component: LoginLogin
+  },
+  {
+    path: '/Login_login_02',
+    name: 'Login_login_02',
+    component: LoginLogin02
+  },
+  {
+    path: '/Login_login_notview',
+    name: 'Login_login_notview',
+    component: LoginLoginNotview
   },
   {
     path: '/Login_login_fail',

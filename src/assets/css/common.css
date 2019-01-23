@@ -16,6 +16,7 @@
 .ico.arrow{width:16px;height:16px;background: url("../img/ic_next_line_black.png") no-repeat; background-size: contain; }
 .ico.arrowsearch{width:16px;height:16px;background: url("../img/ic_arrowsearch_16.png") no-repeat; background-size: contain; }
 .ico.gray_next{width:16px;height:16px;background: url("../img/ic_next.png") no-repeat; }
+.ico.gray_down{width:16px;height:16px;background: url("../img/ic_accordian_bold_16.png") no-repeat; }
 .ico.comment{width:20px;height:20px;background: url("../img/ic_bubble_line_20.png") no-repeat; }
 .ico.next_16 {width:16px; height:16px; background: url("../img/ic_next_16.png") no-repeat;}
 .ico.next_gray_16{width:16px; height:16px; background: url("../img/ic_next_line_gray_16.png") no-repeat; background-size:cover}
@@ -164,7 +165,6 @@
 /*추가이미지 2019-1-17*/
 .ico.list-btn{width:24px; height:24px; background: url("../img/ic_listchange_24.png") ;background-size: cover;}
 .ico.del{width:20px; height: 20px; background: url("../img/ic_deletemode_20.png");background-size: cover;}
-
 
 
 

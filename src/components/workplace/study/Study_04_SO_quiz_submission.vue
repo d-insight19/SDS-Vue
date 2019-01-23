@@ -112,10 +112,8 @@
                             <li>
                                 <p class="tit-num">04 정답</p>
                                 <div class="q-box">
-                                    <p class="fl"><span class="q-list-a ">선택</span> </p>
-                                    <p><span class="color_clr2">② 2002년 로드존슨이 출판한 도서가 스프링...</span><br/><span class="color_clr2">④ 2003년 상용으로 소개되었으나 이후 오픈...</span></p>
-                                    <p class="fl"><span class="q-list-a">정답</span></p>
-                                    <p><span>② 2002년 로드존슨이 출판한 도서가 스프링...</span><br/><span>⑤ 동적인 웹 사이트를 개발하기 위한 여러 가...</span></p>
+                                    <p><span class="q-list-a ">선택</span><span class="color_clr2">② 2002년 로드존슨이 출판한 도서가 스프링...</span><br/><span class="color_clr2">④ 2003년 상용으로 소개되었으나 이후 오픈...</span></p>
+                                    <p><span class="q-list-a">정답</span><span>② 2002년 로드존슨이 출판한 도서가 스프링...</span><br/><span>⑤ 동적인 웹 사이트를 개발하기 위한 여러 가...</span></p>
                                 </div>
                             </li>
                             <li>

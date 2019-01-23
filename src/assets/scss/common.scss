@@ -319,7 +319,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .rdoSelBox .labelRdo + .labelRdo .rdo:checked + .ico + .label{padding-left:18px;}
 .rdoSelBox + .addrInt,
 .InfoChK-resultTxt + .addrInt{margin-top:8px;}
-.rdoSelBox.err .rdo + .ico + .label{border-color: map-get($static_colors, danger);border-right: 1px solid #cccccc;}
+.rdoSelBox.err .rdo + .ico + .label{border-color: map-get($static_colors, danger);}
 
 
 

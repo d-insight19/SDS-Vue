@@ -18,7 +18,7 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                <component :is="component" v-on:delTxt="delTxt"></component>
+                <component :is="component" @childs-event="parentsMethod(parentsData)"></component>
             </div>
           </div>
         </div>
@@ -64,9 +64,12 @@ export default {
         this.component = 'regiclass_register_searchcp_02'
       }
     },
-    delTxt () {
-      this.$refs.input01.value = ''
+    parentsMethod (message) {
+      alert(message) // 자식으로 부터받은 메시지를 사용
     }
+    // delTxt () {
+    //   this.$refs.input01.value = ''
+    // }
   }
 }
 </script>

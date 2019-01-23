@@ -126,9 +126,21 @@
           <router-link :to="{ name: 'Login_findcenter_email' }">
             Login_findcenter_email
           </router-link>
-          ,
+          <br/>
           <router-link :to="{ name: 'Login_findcenter_email2' }">
             Login_findcenter_email2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_findcenter_email_keyboard' }">
+            Login_findcenter_email_keyboard
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_findcenter_email_complete' }">
+            Login_findcenter_email_complete
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_findcenter_email_error' }">
+            Login_findcenter_email_error
           </router-link>
         </td>
         <td>수정됨</td>
@@ -147,6 +159,10 @@
           <router-link :to="{ name: 'Login_findcenter_select' }">
             Login_findcenter_select
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_findcenter_select_02' }">
+            Login_findcenter_select_02
+          </router-link>
         </td>
         <td>수정됨</td>
       </tr>
@@ -164,12 +180,16 @@
           <router-link :to="{ name: 'Login_findcenter_url' }">
             Login_findcenter_url
           </router-link>
-          ,
+          <br/>
           <router-link :to="{ name: 'Login_findcenter_url2' }">
             Login_findcenter_url2
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_findcenter_url_keyboard' }">
+            Login_findcenter_url_keyboard
+          </router-link>
         </td>
-        <td>수정사항 없음</td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">5</td>
@@ -186,7 +206,13 @@
         <td>
           <router-link :to="{ name: 'Login_login' }">
             Login_login
-          </router-link>
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_login_02' }">
+            Login_login_02
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_login_notview' }">
+            Login_login_notview
+          </router-link><br/>
         </td>
         <td>수정됨</td>
       </tr>
@@ -327,7 +353,7 @@
             Login_joinbasicinfo
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">14</td>
@@ -344,7 +370,7 @@
             Login_searchpost
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">15</td>
@@ -361,7 +387,7 @@
             Login_searchcompany
           </router-link>
         </td>
-        <td></td>
+        <td>수정</td>
       </tr>
       <tr>
       <td align="center">16</td>
