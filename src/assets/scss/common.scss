@@ -135,9 +135,10 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 
 // 필터
 .filterArea {position: relative; background-color: map-get($bg_colors , BG_1); padding:18px;}
-.filterArea .ico.filter{margin-top:0px;position:absolute; right: 18px; top: calc(50% - 12px);}
+.filterArea .ico.filter{position:absolute; right: 18px; top: calc(50% - 12px);}
 .filterArea .ico.arrowback{margin-top:0px;}
 .filterArea .ico.down{margin-top:0px;}
+.filterArea .ico.addfolder{position:absolute; right: 70px; top: calc(50% - 12px);}
 
 // 로그인시 password , 검색 input 에만 적용되는 x 아이콘 
 .search-wrapper {position: relative;}
@@ -566,8 +567,8 @@ select:required:invalid {
 
 
 /* 프로프래스바 */
-.progBox{position: relative; width:100%; height:2px; margin-top:19px; background: rgba(0,0,0,0.1);}
-.progBox .bar{position: absolute; left:0; top:0; z-index: 1; height:2px; background: #d9d9d9;}
+.progBox{position: relative; width:100%; /*height:2px;*/ margin-top:19px; background: rgba(0,0,0,0.1);}
+.progBox .bar{position: absolute; left:0; top:0; z-index: 1; /*height:2px;*/ background: #d9d9d9;}
 
 
 /* progress bar */

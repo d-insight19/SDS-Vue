@@ -94,10 +94,10 @@
                                             <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                             <p class="status">
                                                 일시정지 <span>(50%)</span>
-                                                <span class="fr action">삭제</span>
                                             </p>
                                         </div>
                                     </div>
+                                    <span class="action">삭제</span>
                                 </li>
                                 <li>
                                     <div class="download_detail border_clr1 done">
@@ -152,8 +152,8 @@
                                 <p class="status">대기중</p>
                             </div>
                         </div>
+                        <span class="ico accordion_arrow"></span>
                     </li>
-                    <span class="ico accordion_arrow"></span>
                 </ul>
                 <!-- //list -->
             </div>

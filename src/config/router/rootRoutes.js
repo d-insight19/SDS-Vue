@@ -274,6 +274,11 @@ import MySpaceCliping from '~workplace/myspace/MySpace_cliping'
 import MySpaceClipingViewed from '~workplace/myspace/MySpace_cliping_viewed'
 import MySpaceClipingFav from '~workplace/myspace/MySpace_cliping_fav'
 import MySpaceClipingAnalysis from '~workplace/myspace/MySpace_cliping_analysis'
+import MySpaceStudymanagementNote from '~workplace/myspace/MySpace_studymanagement_note'
+import MySpaceStudymanagementNoteDetail from '~workplace/myspace/MySpace_studymanagement_note_detail'
+import MySpaceStudymanagementNoteEdit from '~workplace/myspace/MySpace_studymanagement_note_edit'
+import MySpaceStudymanagementReminder from '~workplace/myspace/MySpace_studymanagement_reminder'
+import MySpaceStudymanagementReminderDetail from '~workplace/myspace/MySpace_studymanagement_reminder_detail'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -1809,6 +1814,31 @@ var rootRoutes = [
     path: '/MySpace_cliping_analysis',
     name: 'MySpace_cliping_analysis',
     component: MySpaceClipingAnalysis
+  },
+  {
+    path: '/MySpace_studymanagement_note',
+    name: 'MySpace_studymanagement_note',
+    component: MySpaceStudymanagementNote
+  },
+  {
+    path: '/MySpace_studymanagement_note_detail',
+    name: 'MySpace_studymanagement_note_detail',
+    component: MySpaceStudymanagementNoteDetail
+  },
+  {
+    path: '/MySpace_studymanagement_note_edit',
+    name: 'MySpace_studymanagement_note_edit',
+    component: MySpaceStudymanagementNoteEdit
+  },
+  {
+    path: '/MySpace_studymanagement_reminder',
+    name: 'MySpace_studymanagement_reminder',
+    component: MySpaceStudymanagementReminder
+  },
+  {
+    path: '/MySpace_studymanagement_reminder_detail',
+    name: 'MySpace_studymanagement_reminder_detail',
+    component: MySpaceStudymanagementReminderDetail
   },
   {
     path: '/regiclass_detailview_books',
