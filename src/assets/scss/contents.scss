@@ -111,7 +111,9 @@
 // 로그인 - 연수원 선택하기  type3
 .ulList.type3 li{border-bottom:1px solid #ebebeb;}
 .ulList.type3 li a{display: block; position: relative; z-index: 1; font-size:map-get($font-size, font_18); line-height:27px; letter-spacing: -0.54px; padding: 18px 30px 18px 2px;}
-.ulList.type3 li a .ico{position: absolute; top:50%; right:6px;}
+.ulList.type3 li a .ico{position: absolute; top:50%; right:6px;     transform: translateY(-50%);}
+.ulList.type3 li dl {background: #f2f3f7;margin: 0 -24px; padding: 0 24px 0 34px;}
+.ulList.type3 li dl dt a{ font-size:map-get($font-size, font_16); line-height: 24px; letter-spacing: -0.48px;}
 
 .ulList.type4{border-top:1px solid #bfbfbf;}
 .ulList.type4 li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:1px solid #eaeaea;}
@@ -390,7 +392,7 @@
 #container.integration .ulList.type2 > li + li{margin-top:32px}
 #container.integration .rdoInfoChK{position: relative; padding-left:40px;}
 #container.integration .rdoInfoChK .labelRdo{position: absolute;left: 5px;z-index: 1;width:35px;height:35px;}
-#container.integration .ulList.type2 li .ul-block li{padding-left:5px;}
+// #container.integration .ulList.type2 li .ul-block li{padding-left:5px;}
 #container.integration .ulList.type2 li .ul-block li + li{margin-top:16px;}
 #container.integration .rdoInfoChK{position: relative; padding-left:40px;}
 #container.integration .rdoInfoChK .labelRdo{position: absolute;left: 5px; top: 11px; z-index: 1;}
@@ -1013,7 +1015,7 @@ table td.sub-txt{ color:#000;}
 .ico.plus{vertical-align: -1px;}
 .multiList.type2.op25 input::placeholder{font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_25);}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
-.ulList .at-tit { vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
+.ulList .at-tit {white-space: nowrap; text-overflow: ellipsis; overflow: hidden; max-width: 67%; position:absolute; vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_14);line-height: 19px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
 .ulList.type4.bot-btn li:nth-last-child(1){border-bottom:none;}
 
@@ -1100,7 +1102,7 @@ table td.right-bd{ border-right:1px solid map-get($line_colors, B85); }
 #container.study_quiz_sub .ulList.type4 li{height:auto;} 
 #container.study_quiz_sub .ulList.type4 li .tit-num{ font-weight:600; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;} 
 #container.study_quiz_sub .ulList.type4 li .q-box{padding: 10px 12px;} 
-#container.study_quiz_sub .ulList.type4 li .q-box p{ margin-bottom: 8px; font-weight:500; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;} 
+#container.study_quiz_sub .ulList.type4 li .q-box p{ padding-left: 36px;text-indent: -19px; margin-bottom: 8px; font-weight:500; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;} 
 #container.study_quiz_sub .ulList.type4 li p .q-list-a{ color:map-get($mono_colors, mono_80); display: inline-block; margin-right:6px; font-weight:500; font-size:map-get($font-size, font_15);line-height: 22px; letter-spacing: -0.45px;} 
 #container.study_quiz_sub .ulList.type4 li p .ico{ vertical-align: -2px; } 
 

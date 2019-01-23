@@ -25,8 +25,12 @@
                             <li>
                                 <a href="#">삼성생명<span class="ico gray_next"></span></a>
                             </li>
-                            <li>
-                                <a href="#">삼성증권<span class="ico gray_next"></span></a>
+                            <li @click="toggleBtn">
+                                <a href="#">삼성증권<span class="ico gray_next" :class="{ gray_down : toggleFlag }"></span></a>
+                                <dl class="subList" v-show="toggleFlag">
+                                    <dt><a href="#">회사명1<span class="ico gray_next"></span></a></dt>
+                                    <dt><a href="#">회사명2<span class="ico gray_next"></span></a></dt>
+                                </dl>
                             </li>
                             <li>
                                 <a href="#">삼성그룹<span class="ico gray_next"></span></a>
@@ -49,7 +53,7 @@
 
 <script>
 export default {
-  name: 'Login_findcenter_select',
+  name: 'Login_findcenter_select_02',
   /* vue lifecycle */
   created () {
   },
@@ -58,10 +62,14 @@ export default {
   /* vue data */
   data () {
     return {
+      toggleFlag: true
     }
   },
   /* vue function */
   methods: {
+    toggleBtn () {
+      this.toggleFlag = !this.toggleFlag
+    }
   }
 }
 </script>

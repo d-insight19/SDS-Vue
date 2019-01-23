@@ -9,7 +9,7 @@
                 <div class="cell">
                     <div class="inner">
 
-                        <h1 class="h-tit">통합회원가입</h1>
+                        <h1 class="h-tit">회원가입</h1>
 
                         <div class="stepper">
                             <div class="clearfix">
@@ -66,7 +66,7 @@
                 <!-- disable 해제시 활성화 -->
                 <ul>
                     <li><button type="button" class="btn md">이전</button></li>
-                    <li><button type="button" disabled class="btn md clr1">다음</button></li>
+                    <li><button type="button" class="btn md clr1">다음</button></li>
                 </ul>
             </div>
             <!-- //floating button -->

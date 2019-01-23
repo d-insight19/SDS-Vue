@@ -18,7 +18,7 @@ export default {
   name: 'regiclass_register_searchcp',
   method: {
       delTxt () {
-        this.$emit('delTxt')
+        this.$emit('childs-event', 'hello!')
       }
   }
 }

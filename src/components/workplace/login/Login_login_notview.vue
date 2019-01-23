@@ -110,14 +110,14 @@ export default {
   },
   /* vue function */
   methods: {
-    //   passwordtoggle () {
-    //     this.password_show = !this.password_show
-    //     if (this.password_show === true) {
-    //         this.$refs.input01.setAttribute('type', 'password')
-    //     } else if (this.password_show === false) {
-    //         this.$refs.input01.setAttribute('type', 'text')
-    //     }
-    //   }
+      passwordtoggle () {
+        this.password_show = !this.password_show
+        if (this.password_show === true) {
+            this.$refs.input01.setAttribute('type', 'password')
+        } else if (this.password_show === false) {
+            this.$refs.input01.setAttribute('type', 'text')
+        }
+      }
 }
 }
 </script>

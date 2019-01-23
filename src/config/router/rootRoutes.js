@@ -35,11 +35,20 @@ import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
 import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
+import LoginFindcenterEmailKeyboard from '~workplace/login/Login_findcenter_email_keyboard'
+import LoginFindcenterEmailComplete from '~workplace/login/Login_findcenter_email_complete'
+import LoginFindcenterEmailError from '~workplace/login/Login_findcenter_email_error'
 import LoginFindcenterSelect from '~workplace/login/Login_findcenter_select'
+import LoginFindcenterSelect02 from '~workplace/login/Login_findcenter_select_02'
 import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
 import LoginFindcenterUrl2 from '~workplace/login/Login_findcenter_url2'
+import LoginFindcenterUrlKeyboard from '~workplace/login/Login_findcenter_url_keyboard'
 import LoginLogin from '~workplace/login/Login_login'
+import LoginLogin02 from '~workplace/login/Login_login_02'
+import LoginLoginNotview from '~workplace/login/Login_login_notview'
+import LoginLoginWrite from '~workplace/login/Login_login_write'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
+import LoginLoginError from '~workplace/login/Login_login_error'
 import LoginInterest from '~workplace/login/Login_interest'
 import LoginJoinType from '~workplace/login/Login_jointype'
 import LoginJoinCertify from '~workplace/login/Login_joincertify'
@@ -56,6 +65,7 @@ import LoginJoinInExtrainfo from '~workplace/login/Login_joinextrainfo'
 import LoginJoinComplete from '~workplace/login/Login_joincomplete'
 import LoginLoginIntegration from '~workplace/login/Login_loginintegration'
 import LoginLoginIntegrationId from '~workplace/login/Login_loginintegrationid'
+import LoginLoginIntegrationIdWrite from '~workplace/login/login_loginintegrationidwrite'
 import LoginLoginReIntegration from '~workplace/login/Login_loginreintegration'
 import LoginLoginChangeId from '~workplace/login/Login_loginchangeid'
 import LoginLoginChangeIdMain from '~workplace/login/Login_loginchangeidmain'
@@ -74,6 +84,29 @@ import LoginCertifyPhone from '~workplace/login/Login_certifyphone'
 import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
 import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
 import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
+
+/*
+import Loginloginchangeidmainconfirm from '~workplace/login/Login_login_changeid_main_confirm'
+import Loginloginchangeidmainerror from '~workplace/login/Login_login_changeid_main_error'
+import Loginloginchangepwerror1 from '~workplace/login/Login_login_changepw_error1'
+import Loginloginchangepwerror2 from '~workplace/login/Login_login_changepw_error2'
+import Loginloginchangepwerror3 from '~workplace/login/Login_login_changepw_error3'
+import Loginloginunlockiddomestic from '~workplace/login/Login_login_unlockid_domestic'
+import Loginloginunlockidoverseas from '~workplace/login/Login_login_unlockid_overseas'
+import Loginloginunlockidcomplete from '~workplace/login/Login_login_unlockid_complete'
+import Loginlogindormant from '~workplace/login/Login_login_dormant'
+import Loginlogindormantemail from '~workplace/login/Login_login_dormant_email'
+import Loginlogindormantcomplete from '~workplace/login/Login_login_dormant_complete'
+import Loginfindidresultpopup from '~workplace/login/Login_findid_result_popup'
+import Loginfindidipin from '~workplace/login/Login_findid_ipin'
+import Loginfindpwemailtoastpopup from '~workplace/login/Login_findpw_email_toastpopup'
+import Logincertifyemailcertifyerror1 from '~workplace/login/Login_certify_email_certify_error1'
+import Logincertifyemailcertifyerror2 from '~workplace/login/Login_certify_email_certify_error2'
+import Logincertifyemailcertifyerror3 from '~workplace/login/Login_certify_email_certify_error3'
+import Loginlogincorporationphone1 from '~workplace/login/Login_login_corporationphone1'
+import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporationphone2'
+import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
+*/
 
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
@@ -652,9 +685,29 @@ var rootRoutes = [
     component: LoginFindcenterEmail2
   },
   {
+    path: '/Login_findcenter_email_keyboard',
+    name: 'Login_findcenter_email_keyboard',
+    component: LoginFindcenterEmailKeyboard
+  },
+  {
+    path: '/Login_findcenter_email_complete',
+    name: 'Login_findcenter_email_complete',
+    component: LoginFindcenterEmailComplete
+  },
+  {
+    path: '/Login_findcenter_email_error',
+    name: 'Login_findcenter_email_error',
+    component: LoginFindcenterEmailError
+  },
+  {
     path: '/Login_findcenter_select',
     name: 'Login_findcenter_select',
     component: LoginFindcenterSelect
+  },
+  {
+    path: '/Login_findcenter_select_02',
+    name: 'Login_findcenter_select_02',
+    component: LoginFindcenterSelect02
   },
   {
     path: '/Login_findcenter_url',
@@ -667,14 +720,39 @@ var rootRoutes = [
     component: LoginFindcenterUrl2
   },
   {
+    path: '/Login_findcenter_url_keyboard',
+    name: 'Login_findcenter_url_keyboard',
+    component: LoginFindcenterUrlKeyboard
+  },
+  {
     path: '/Login_login',
     name: 'Login_login',
     component: LoginLogin
   },
   {
+    path: '/Login_login_02',
+    name: 'Login_login_02',
+    component: LoginLogin02
+  },
+  {
+    path: '/Login_login_notview',
+    name: 'Login_login_notview',
+    component: LoginLoginNotview
+  },
+  {
+    path: '/Login_login_write',
+    name: 'Login_login_write',
+    component: LoginLoginWrite
+  },
+  {
     path: '/Login_login_fail',
     name: 'Login_login_fail',
     component: LoginLoginFail
+  },
+  {
+    path: '/Login_login_error',
+    name: 'Login_login_error',
+    component: LoginLoginError
   },
   {
     path: '/Login_interest',
@@ -700,6 +778,11 @@ var rootRoutes = [
     path: '/Login_loginintegrationid',
     name: 'Login_loginintegrationid',
     component: LoginLoginIntegrationId
+  },
+  {
+    path: '/login_loginintegrationidwrite',
+    name: 'login_loginintegrationidwrite',
+    component: LoginLoginIntegrationIdWrite
   },
   {
     path: '/Login_loginreintegration',
@@ -846,6 +929,108 @@ var rootRoutes = [
     name: 'Login_certifyemail_corporate',
     component: LoginCertifyEmailCorporate
   },
+  /*
+  {
+    path: '/Login_login_changeid_main_confirm',
+    name: 'Login_login_changeid_main_confirm',
+    component: Loginloginchangeidmainconfirm
+  },
+  {
+    path: '/Login_login_changeid_main_error',
+    name: 'Login_login_changeid_main_error',
+    component: Loginloginchangeidmainerror
+  },
+  {
+    path: '/Login_login_changepw_error1',
+    name: 'Login_login_changepw_error1',
+    component: Loginloginchangepwerror1
+  },
+  {
+    path: '/Login_login_changepw_error2',
+    name: 'Login_login_changepw_error2',
+    component: Loginloginchangepwerror2
+  },
+  {
+    path: '/Login_login_changepw_error3',
+    name: 'Login_login_changepw_error3',
+    component: Loginloginchangepwerror3
+  },
+  {
+    path: '/Login_login_unlockid_domestic',
+    name: 'Login_login_unlockid_domestic',
+    component: Loginloginunlockiddomestic
+  },
+  {
+    path: '/Login_login_unlockid_overseas',
+    name: 'Login_login_unlockid_overseas',
+    component: Loginloginunlockidoverseas
+  },
+  {
+    path: '/Login_login_unlockid_complete',
+    name: 'Login_login_unlockid_complete',
+    component: Loginloginunlockidcomplete
+  },
+  {
+    path: '/Login_login_dormant',
+    name: 'Login_login_dormant',
+    component: Loginlogindormant
+  },
+  {
+    path: '/Login_login_dormant_email',
+    name: 'Login_login_dormant_email',
+    component: Loginlogindormantemail
+  },
+  {
+    path: '/Login_login_dormant_complete',
+    name: 'Login_login_dormant_complete',
+    component: Loginlogindormantcomplete
+  },
+  {
+    path: '/Login_findid_result_popup',
+    name: 'Login_findid_result_popup',
+    component: Loginfindidresultpopup
+  },
+  {
+    path: '/Login_findid_ipin',
+    name: 'Login_findid_ipin',
+    component: Loginfindidipin
+  },
+  {
+    path: '/Login_findpw_email_toastpopup',
+    name: 'Login_findpw_email_toastpopup',
+    component: Loginfindpwemailtoastpopup
+  },
+  {
+    path: '/Login_certify_email_certify_error1',
+    name: 'Login_certify_email_certify_error1',
+    component: Logincertifyemailcertifyerror1
+  },
+  {
+    path: '/Login_certify_email_certify_error2',
+    name: 'Login_certify_email_certify_error2',
+    component: Logincertifyemailcertifyerror2
+  },
+  {
+    path: '/Login_certify_email_certify_error3',
+    name: 'Login_certify_email_certify_error3',
+    component: Logincertifyemailcertifyerror3
+  },
+  {
+    path: '/Login_login_corporationphone1',
+    name: 'Login_login_corporationphone1',
+    component: Loginlogincorporationphone1
+  },
+  {
+    path: '/Login_login_corporationphone2',
+    name: 'Login_login_corporationphone2',
+    component: Loginlogincorporationphone2
+  },
+  {
+    path: '/Login_login_corporationphone3',
+    name: 'Login_login_corporationphone3',
+    component: Loginlogincorporationphone3
+  },
+  */
   {
     path: '/Study_dictionary',
     name: 'Study_dictionary',
