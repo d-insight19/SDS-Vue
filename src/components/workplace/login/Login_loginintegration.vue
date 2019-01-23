@@ -15,14 +15,14 @@
                 <!-- list -->
                 <ul class="login_integr_sel">
                   <li>
-                    <strong>멀티캠퍼스 통합아이디란?</strong>
+                    <strong class="label-tit19">멀티캠퍼스 통합아이디란?</strong>
                     <div>
                       <span class="ico ico2"></span>
                       <p>멀티캠퍼스의 서비스들을<br>하나의 아이디로 편리하게<br>이용하실 수 있는 아이디입니다. </p>
                     </div>
                   </li>
                   <li>
-                    <strong>통합 아이디 혜택</strong>
+                    <strong class="label-tit19">통합 아이디 혜택</strong>
                     <div>
                       <span class="ico ico1"></span>
                       <p>통합회원으로 가입하시면 멀티캠퍼스의<br>이러닝/집합, OPIc, SERI Pro 맞춤 서비스를<br>한 번에 이용하실 수 있습니다.</p>
@@ -38,7 +38,7 @@
         <div class="fixBtmBtn">
             <ul>
                 <li><button type="button" class="btn md">취소</button></li>
-                <li><button type="button" class="btn md clr1">통합가입하기</button></li>
+                <li><button type="button" class="btn md clr1">통합가입</button></li>
             </ul>
         </div>
         <!-- //floating button -->

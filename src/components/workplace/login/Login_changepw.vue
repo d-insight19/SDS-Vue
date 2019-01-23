@@ -19,7 +19,7 @@
                 <div class="titleWrap">
                     <h1 class="h-tit1 type2">비밀번호 변경</h1>
                     <ul class="txt-desc2">
-                        <li>장기간 비밀번호를 변경하지 않으셨습니다.<br>개인정보 보호를 위해 지금 비밀번호를 변경해주세요.</li>
+                        <li>홍길동님은 장기간 비밀번호를 변경하지 않으셨습니다. 개인정보 보호를 위해 지금 비밀번호를 변경해주세요.</li>
                         <li class="color_clr2">비밀번호 변경문의  1544-9001</li>
                     </ul>
                 </div>
@@ -34,10 +34,10 @@
                         <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
                         <div class="intSchBox">
                             <div class="search-wrapper">
-                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <input type="password" ref="refInput" pattern="^\s+" class="input" placeholder="현재 비밀번호를 입력하세요" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
+                                <!-- <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p> -->
                             </div>
                         </div>
                     </li>
@@ -47,10 +47,10 @@
                         <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
                         <div class="intSchBox">
                             <div class="search-wrapper">
-                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <input type="password" value="1234" ref="refInput2"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p>
+                                <!-- <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p> -->
                             </div>
                         </div>
                     </li>
@@ -60,10 +60,10 @@
                         <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
                         <div class="intSchBox">
                             <div class="search-wrapper">
-                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
+                                <input type="password" value="1234" ref="refInput3" pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
+                                <!-- <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p> -->
                             </div>
                         </div>
                     </li>
@@ -79,7 +79,7 @@
         <div class="fixBtmBtn">
             <ul>
                 <!-- 비활성화시 :  disabled 추가 -->
-                <li><button type="button" class="btn md">나중에 변경하기</button></li>
+                <li><button type="button" class="btn md">나중에 변경</button></li>
                 <li><button type="button" class="btn md clr1">확인</button></li>
             </ul>
         </div>
@@ -95,6 +95,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'Login_changepw',
   /* vue lifecycle */
@@ -105,10 +106,23 @@ export default {
   /* vue data */
   data () {
     return {
+      password_show: ''
     }
   },
   /* vue function */
   methods: {
+    passwordtoggle () {
+        this.password_show = !this.password_show
+        if (this.password_show === false) {
+            this.$refs.refInput.setAttribute('type', 'password')
+            this.$refs.refInput2.setAttribute('type', 'password')
+            this.$refs.refInput3.setAttribute('type', 'password')
+        } else if (this.password_show === true) {
+            this.$refs.refInput.setAttribute('type', 'text')
+            this.$refs.refInput2.setAttribute('type', 'text')
+            this.$refs.refInput3.setAttribute('type', 'text')
+        }
+      }
   }
 }
 </script>

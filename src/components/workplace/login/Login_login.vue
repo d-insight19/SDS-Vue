@@ -40,7 +40,7 @@
                                     <input type="text" ref="input01" pattern="^\s+" class="input underline" placeholder="비밀번호를 입력하세요" />
                                     <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle()"><span class="ico"></span></a>
                                     <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle()"><span class="ico"></span></a>
-                                    <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
+                                    <!-- <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p> -->
                                 </div>
                             </div>
                         </li>
@@ -110,14 +110,14 @@ export default {
   },
   /* vue function */
   methods: {
-      passwordtoggle () {
-        this.password_show = !this.password_show
-        if (this.password_show === true) {
-            this.$refs.input01.setAttribute('type', 'password')
-        } else if (this.password_show === false) {
-            this.$refs.input01.setAttribute('type', 'text')
-        }
-      }
+    //   passwordtoggle () {
+    //     this.password_show = !this.password_show
+    //     if (this.password_show === true) {
+    //         this.$refs.input01.setAttribute('type', 'password')
+    //     } else if (this.password_show === false) {
+    //         this.$refs.input01.setAttribute('type', 'text')
+    //     }
+    //   }
 }
 }
 </script>

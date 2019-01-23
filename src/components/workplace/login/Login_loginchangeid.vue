@@ -9,10 +9,10 @@
           <div class="cell">
             <div class="inner">
 
-                <h1 class="h-tit mb32">임시아이디 변경</h1>
+                <h1 class="h-tit mb32">임시 아이디 변경</h1>
 
                 <dl class="txt">
-                  <dt>현재 장해민님은 임시 아이디 사용 중입니다.</dt>
+                  <dt>현재 홍길동님의 아이디는 임시 아이디로 되어 있습니다.</dt>
 
                   <dd>
                     <p>개인정보보호법 시행 및 개인정보 보호 원칙<br>(법률 제10465호, 제3조, 제26조)에 따라<br>회원님의 개인정보 보호를 위해 아이디 변경이 필요합니다.</p>
@@ -29,8 +29,8 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li><button type="button" class="btn md">아이디만 변경하기</button></li>
-                <li><button type="button" class="btn md clr1">통합가입하기</button></li>
+                <li><button type="button" class="btn md">아이디만 변경</button></li>
+                <li><button type="button" class="btn md clr1">통합가입</button></li>
             </ul>
         </div>
         <!-- //floating button -->

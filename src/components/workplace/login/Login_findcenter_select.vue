@@ -29,7 +29,7 @@
                                 <a href="#">삼성증권<span class="ico gray_next"></span></a>
                             </li>
                             <li>
-                                <a href="#">삼성전자<span class="ico gray_next"></span></a>
+                                <a href="#">삼성그룹<span class="ico gray_next"></span></a>
                             </li>
                         </ul>
                         <!-- //list -->

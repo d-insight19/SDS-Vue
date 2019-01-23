@@ -9,7 +9,7 @@
                 <div class="cell">
                     <div class="inner">
 
-                        <h1 class="h-tit">통합회원가입</h1>
+                        <h1 class="h-tit">회원가입</h1>
 
                         <div class="stepper">
                             <div class="clearfix">
@@ -30,13 +30,12 @@
                           <li>
                             <strong class="label-tit">회사명</strong>
                             <div class="intSchBox">
-                              <input type="text" class="input" placeholder="회사 검색">
-                              <a href="#" class="btn"><span class="ico"></span></a>
+                              <input type="text" class="input" placeholder="회사를 검색하세요">
                             </div>
                           </li>
                           <li>
                             <strong class="label-tit">부서명</strong>
-                            <input type="text" class="input" placeholder="부서명 입력">
+                            <input type="text" class="input" placeholder="부서를 입력하세요">
                           </li>
                           <li>
                             <strong class="label-tit">직급명</strong>
@@ -110,11 +109,11 @@
                             </div>
 
                             <!-- 추가 리스트 -->
-                            <ul class="li-addList">
+                            <ul class="li-addList" style="border-top:1px solid rgba(0,0,0,0.5) !important">
                               <li v-for="(item, index) in list2" :key="index">
                                 <div v-if="licenceEditFlag" @click="deleteLicence(index)" class="tar"><a href="#" class="btn only del"><span class="ico"></span></a></div>
                                 <div class="up">
-                                  <slp-select required placeholder="선택">
+                                  <slp-select required placeholder="언어">
                                       <option>2017</option>
                                       <option>2018</option>
                                       <option>2019</option>
@@ -139,6 +138,7 @@
                         <div class="hr"></div>
 
                         <div class="cTitWrap">
+                          <p class="label-tit18 fwb600 mb18">수신 설정</p>
                           <strong class="c-tit">개인정보 마케팅 활용 동의</strong>
                           <!-- 클릭이벤트 컴포넌트에 추가 해야할듯 아래 참고;-->
                           <slp-switch :classObject="{'fr': true}" @click="toggleMarketing()"  style="display:none;"/>
@@ -160,6 +160,7 @@
 
                         <div class="hr"></div>
 
+                        <p class="label-tit18 fwb600 mb18">기타 설정</p>
                         <!-- list -->
                         <ul class="ulList type1">
                           <li>
@@ -192,7 +193,7 @@
                 <!-- disable 해제시 활성화 -->
                 <ul>
                     <li><button type="button" class="btn md">이전</button></li>
-                    <li><button type="button" disabled class="btn md clr1">다음</button></li>
+                    <li><button type="button" class="btn md clr1">가입완료</button></li>
                 </ul>
             </div>
             <!-- //floating button -->

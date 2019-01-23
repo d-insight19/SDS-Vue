@@ -10,8 +10,10 @@
             <div class="inner">
 
                 <h1 class="h-tit">통합 아이디 생성</h1>
-                <p class="txt-desc">통합회원으로 가입하시면  한번의 로그인으로<br>이러닝/집합, 오픽, 세리Pro 맞춤 서비스를<br>이용하실 수 있습니다.</p>
-                <p class="txt-desc">아래 검색된 아이디 중에서 통합아이디로<br>사용하실 아이디를 선택 또는 입력 해주십시오.</p>
+                <p class="txt-desc">통합회원으로 가입하시면  한번의 로그인으로 이러닝/집합, 오
+픽, 세리Pro 맞춤 서비스를  이용하실 수 있습니다. 아래 검색
+된 아이디 중에서 통합아이디로 사용하실 아이디를 선택 또는 
+입력 해주십시오.</p>
                 
 
                 <!-- list -->
@@ -86,7 +88,7 @@
                     </ul>
                   </li>
                   <li>
-                    <strong class="label-tit">통합 아이디 직접 입력</strong>
+                    <strong class="label-tit">직접 입력</strong>
                     <div class="rdoInfoChK">
                       <label class="labelRdo">
                         <input type="radio" class="rdo" name="test-rdo">
@@ -99,8 +101,8 @@
                         <button type="button" class="btn xxs">중복확인</button>
                       </div>
                       <!-- 아이디 체크시 결과 텍스트 -->
-                      <p class="InfoChK-resultTxt succ">사용 가능한 아이디입니다.</p>
-                      <p class="InfoChK-resultTxt err" style="display:2e;">이미 사용중인 아이디입니다.</p>
+                      <!-- <p class="InfoChK-resultTxt succ">사용 가능한 아이디입니다.</p>
+                      <p class="InfoChK-resultTxt err" style="display:2e;">이미 사용중인 아이디입니다.</p> -->
                       <!-- //아이디 체크시 결과 텍스트 -->
                     </div>
                   </li>

@@ -60,11 +60,11 @@
         </div>
         <!-- //floating button -->
         <!-- toastpopup -->
-        <div class="toast">
+        <!-- <div class="toast">
           <div class="in">
             필수 항목에 동의해주세요.
           </div>
-        </div>
+        </div> -->
         <!-- //toastpopup -->
         
       </div>
@@ -85,6 +85,7 @@ export default {
   /* vue data */
   data () {
     return {
+      value: true
     }
   },
   /* vue function */
