@@ -213,6 +213,12 @@
           <router-link :to="{ name: 'Login_login_notview' }">
             Login_login_notview
           </router-link><br/>
+          <router-link :to="{ name: 'Login_login_write' }">
+            Login_login_write
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_login_error' }">
+            Login_login_error
+          </router-link>
         </td>
         <td>수정됨</td>
       </tr>
@@ -487,9 +493,16 @@
         <td>
           <router-link :to="{ name: 'Login_loginintegrationid' }">
             Login_loginintegrationid
+          </router-link><br/>
+          <router-link :to="{ name: 'login_login_integration_id' }">
+            login_loginintegrationid
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'login_login_integration_id_write' }">
+            login_login_integration_id_write
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">22</td>
@@ -506,7 +519,7 @@
             Login_loginreintegration
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">23</td>
@@ -7360,8 +7373,8 @@
         <td>　</td>
         <td class="textL">01.login_02.03_search_post</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'login_search_post' }">
+            login_search_post
           </router-link>
         </td>
         <td></td>
