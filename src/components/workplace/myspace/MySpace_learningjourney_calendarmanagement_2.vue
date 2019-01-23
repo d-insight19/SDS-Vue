@@ -16,6 +16,35 @@
 
         <div id="content" class="list">
 
+          <div class="cell">
+            <div class="inner ml-18 mr-18 pt0">
+                <table class="calendarmanagement">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span>일</span></th>
+                            <th scope="col"><span>월</span></th>
+                            <th scope="col"><span>화</span></th>
+                            <th scope="col"><span>수</span></th>
+                            <th scope="col"><span>목</span></th>
+                            <th scope="col"><span>금</span></th>
+                            <th scope="col"><span>토</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>13</span></td>
+                            <td><span>14</span></td>
+                            <td><span>15</span></td>
+                            <td><span class="clr1 mono_0">16</span></td>
+                            <td><span>17</span></td>
+                            <td><span>18</span></td>
+                            <td><span>19</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="hr mt0 mb0"></p>
+            </div>
+          </div>
 
           <div class="cell">
             <div class="inner">

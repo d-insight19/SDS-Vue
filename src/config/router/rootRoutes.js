@@ -277,6 +277,10 @@ import MySpaceLearningjourneyEncourageOff from '~workplace/myspace/MySpace_learn
 import MySpaceLearningjourneyCalendarmanagement2 from '~workplace/myspace/MySpace_learningjourney_calendarmanagement_2'
 import MySpaceLearningjourneyAdd from '~workplace/myspace/MySpace_learningjourney_add'
 import MySpaceLearningjourneyLike from '~workplace/myspace/MySpace_learningjourney_like'
+import MySpaceCliping from '~workplace/myspace/MySpace_cliping'
+import MySpaceClipingViewed from '~workplace/myspace/MySpace_cliping_viewed'
+import MySpaceClipingFav from '~workplace/myspace/MySpace_cliping_fav'
+import MySpaceClipingAnalysis from '~workplace/myspace/MySpace_cliping_analysis'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -1827,6 +1831,26 @@ var rootRoutes = [
     path: '/MySpace_learningjourney_like',
     name: 'MySpace_learningjourney_like',
     component: MySpaceLearningjourneyLike
+  },
+  {
+    path: '/MySpace_cliping',
+    name: 'MySpace_cliping',
+    component: MySpaceCliping
+  },
+  {
+    path: '/MySpace_cliping_viewed',
+    name: 'MySpace_cliping_viewed',
+    component: MySpaceClipingViewed
+  },
+  {
+    path: '/MySpace_cliping_fav',
+    name: 'MySpace_cliping_fav',
+    component: MySpaceClipingFav
+  },
+  {
+    path: '/MySpace_cliping_analysis',
+    name: 'MySpace_cliping_analysis',
+    component: MySpaceClipingAnalysis
   },
   {
     path: '/regiclass_detailview_books',

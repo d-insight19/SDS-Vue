@@ -18,6 +18,7 @@
                     <li><a href="#tab3">학습 계획</a></li>
                     <li class="on"><a href="#tab4">다운로드</a></li>
                     <li><a href="#tab5">나의 지식 CLIPing</a></li>
+                    <li><a href="#tab6">학습 관리</a></li>
                 </ul>
             </div>
             <div class="blur_wrap">

@@ -3906,21 +3906,21 @@
             MySpace_learningjourney_calendarmanagement_2
           </router-link>
         </td>
-        <td>calendarmanagement_2 작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">212</td>
         <td>Floating BTN</td>
         <td>　</td>
-        <td>나의 지식 cliping</td>
+        <td>나의 지식 cliping </td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td class="textL">04.MySpace_04.05.cliping</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_cliping' }">
+            MySpace_cliping
           </router-link>
         </td>
         <td></td>
@@ -3936,8 +3936,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.05.cliping_viewed</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_cliping_viewed' }">
+            MySpace_cliping_viewed
           </router-link>
         </td>
         <td></td>
@@ -3953,8 +3953,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.05.cliping_analysis</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_cliping_analysis' }">
+            MySpace_cliping_analysis
           </router-link>
         </td>
         <td></td>
@@ -9901,8 +9901,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.05.cliping_fav</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_cliping_fav' }">
+            MySpace_cliping_fav
           </router-link>
         </td>
         <td></td>
@@ -10784,7 +10784,7 @@
             components_card
           </router-link>
         </td>
-        <td></td>
+        <td>type1 display 수정, label2 추가</td>
       </tr>
       <tr>
       <td align="center">0</td>

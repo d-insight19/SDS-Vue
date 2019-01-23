@@ -99,6 +99,7 @@
 .ico2.share{width:20px;height:20px;background: url("../img/ic_share_line_20.png") no-repeat; }
 .ico2.reply{width:20px;height:20px;background: url("../img/ic_indent_20.png") no-repeat; }
 .ico2.heart{width:20px;height:20px;background: url("../img/ic_heart_line_20.png") no-repeat; }
+.ico2.heart2{width:20px;height:20px;background: url("../img/ic_heart2_line.png") no-repeat; background-size:cover;}
 
 /* 추가 이미지 2018-12-19 */
 .ico.like_32{width:32px; height:32px; background: url("../img/ic_thumb_line_3.png") no-repeat; margin-top:-6px }
