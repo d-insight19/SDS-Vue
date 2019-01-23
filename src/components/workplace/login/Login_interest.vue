@@ -48,9 +48,9 @@
             <div class="fixBtmBtn">
                 <ul>
                     <li>                            
-                        <button type="button" :class="[checkedNames.length && checkedNames2.length && checkedNames3.length > 0 ? activeClass : '']" class="btn ld">다음</button>
-                        <!-- 하단에 활성화 된 버튼은 임시로 display:none -->
-                        <button type="button" class="btn ld clr1" style="display:none;">다음</button>
+                        <button type="button"  class="btn ld" style="display:none;">다음</button>
+                        <!-- 하단에 활성화 된 버튼은 임시로 display:none :class="[checkedNames.length && checkedNames2.length && checkedNames3.length > 0 ? activeClass : '']" -->
+                        <button type="button" class="btn ld clr1" >다음</button>
                     </li>
                 </ul>                    
             </div>

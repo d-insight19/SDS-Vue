@@ -237,7 +237,7 @@
             Login_login_fail
           </router-link>
         </td>
-        <td>로그인 정보필요</td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">7</td>
@@ -252,9 +252,12 @@
         <td>
           <router-link :to="{ name: 'Login_interest' }">
             Login_interest
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_interestselect' }">
+            Login_interestselect
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">8</td>
@@ -325,7 +328,7 @@
             Login_jointermsdetail
           </router-link>
         </td>
-        <td>수정사항 없음</td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">12</td>
@@ -342,7 +345,7 @@
             Login_joinid
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">13</td>
@@ -374,6 +377,9 @@
         <td>
           <router-link :to="{ name: 'Login_searchpost' }">
             Login_searchpost
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_searchposterror' }">
+            Login_searchposterror
           </router-link>
         </td>
         <td>수정됨</td>
@@ -391,9 +397,12 @@
         <td>
           <router-link :to="{ name: 'Login_searchcompany' }">
             Login_searchcompany
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_searchcompany_control' }">
+            Login_searchcompany_control
           </router-link>
         </td>
-        <td>수정</td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">16</td>
@@ -410,7 +419,7 @@
             Login_searchcompanyresult
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">17</td>
@@ -425,9 +434,12 @@
         <td>
           <router-link :to="{ name: 'Login_joininterest' }">
             Login_joininterest
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_join_interest_select' }">
+            login_join_interest_select
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">18</td>
@@ -443,8 +455,20 @@
           <router-link :to="{ name: 'Login_joinextrainfo' }">
             Login_joinextrainfo
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_joinextrainfolanguage' }">
+            Login_joinextrainfolanguage
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_joinextrainfolanguagecomplete' }">
+            login_joinextrainfolanguagecomplete
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_joinextrainfolanguagedelete' }">
+            login_joinextrainfolanguagedelete
+          </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">19</td>
@@ -461,7 +485,7 @@
             Login_joincomplete
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">20</td>
@@ -478,7 +502,7 @@
             Login_loginintegration
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">21</td>
@@ -493,13 +517,10 @@
         <td>
           <router-link :to="{ name: 'Login_loginintegrationid' }">
             Login_loginintegrationid
-          </router-link><br/>
-          <router-link :to="{ name: 'login_login_integration_id' }">
-            login_loginintegrationid
           </router-link>
           <br/>
-          <router-link :to="{ name: 'login_login_integration_id_write' }">
-            login_login_integration_id_write
+          <router-link :to="{ name: 'login_loginintegrationidwrite' }">
+            login_loginintegrationidwrite
           </router-link>
         </td>
         <td>수정됨</td>

@@ -27,20 +27,19 @@
             <div class="inner">
 
                 <!-- 회사명 -->
-                <div style="display:none;">
+                <div style="display:block;">
                   <strong class="label-tit">회사명 검색</strong>
                   <div class="intSchBox">
                     <div class="search-wrapper">
                         <input type="text"  pattern="^\s+" class="input" placeholder="회사명 입력" />
                         <button class="close-icon" type="button"></button>
                     </div>
-                    <a href="#" class="btn"><span class="ico"></span></a>
                   </div>
                 </div>
                 <!-- 회사명 -->
 
                 <!-- 사업자 등록번호 -->
-                <div style="display:none1;">
+                <div style="display:none;">
                   <strong class="label-tit">사업자 등록번호 검색</strong>
                   <div class="intSchBox">
                     <div class="search-wrapper">
@@ -57,30 +56,16 @@
                 <!-- 검색 결과 -->
                 <ul class="companyList">
                   <li class="search_result">
-
-                    <table>
-                      <tr>
-                        <td class="com_name" colspan="2">(주) 멀티캠퍼스</td>
-                      </tr>
-                      <tr>
-                        <td class="com_number text">사업자번호</td>
-                        <td class="com_number num">12345677</td>
-                      </tr>
-                    </table>
-                    <div class="hr table"></div>
-
-                    <table>
-                      <tr>
-                        <td class="com_name" colspan="2">(주) 멀티캠퍼스</td>
-                      </tr>
-                      <tr>
-                        <td class="com_number text">사업자번호</td>
-                        <td class="com_number num">12345677</td>
-                      </tr>
-                    </table>
-                    <div class="hr table"></div>
-
-
+                    <ul class="ulList type2" >
+                      <li v-for="data in Resdata" :key="data.id">
+                        <p class="label-tit-15 cus">{{data.title}}</p>
+                        <dl class="pipe-group">
+                            <dd>사업자번호</dd>
+                            <dd>{{data.num}}</dd>
+                            <dd>홍길동</dd>
+                        </dl>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
                 <!-- 검색 결과 -->
@@ -109,6 +94,12 @@ export default {
   /* vue data */
   data () {
     return {
+      Resdata: [
+        {title: '(주) 멀티캠퍼스', num: 12345677},
+        {title: '(주) 멀티캠퍼스', num: 12345677},
+        {title: '(주) 멀티캠퍼스', num: 12345677},
+        {title: '(주) 멀티캠퍼스', num: 12345677}
+      ]
     }
   },
   /* vue function */

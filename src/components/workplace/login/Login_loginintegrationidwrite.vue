@@ -23,7 +23,7 @@
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo" v-model="active">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -32,7 +32,7 @@
                       </li>
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo" v-model="active">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -41,7 +41,7 @@
                       </li>
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo" v-model="active">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -69,7 +69,7 @@
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo" v-model="active2">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -78,7 +78,7 @@
                       </li>
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo" v-model="active2">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -91,7 +91,7 @@
                     <strong class="label-tit">직접 입력</strong>
                     <div class="rdoInfoChK">
                       <label class="labelRdo">
-                        <input type="radio" class="rdo" name="test-rdo">
+                        <input type="radio" class="rdo" name="test-rdo" v-model="active3">
                         <span class="ico">
                             <span class="innerCircle"></span>
                         </span>
@@ -115,7 +115,7 @@
         <div class="fixBtmBtn">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
-                <li><button type="button" class="btn md clr1">다음</button></li>
+                <li><button type="button" class="btn md" :class="{ clr1 : active || active2 || active3}">다음</button></li>
             </ul>
         </div>
         <!-- //floating button -->
@@ -138,6 +138,9 @@ export default {
   /* vue data */
   data () {
     return {
+      active: [],
+      active2: [],
+      active3: []
     }
   },
   /* vue function */

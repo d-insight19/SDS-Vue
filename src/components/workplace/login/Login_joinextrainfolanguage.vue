@@ -66,7 +66,7 @@
 
                         <div class="hr"></div>
 
-                        <!-- list -->
+                         <!-- list -->
                         <ul class="ulList type1">
                           <li>
                             <div class="label-tit block">
@@ -82,19 +82,19 @@
                                 <div v-if="languageEditFlag" @click="deleteLanguage(index)" class="tar"><a href="#" class="btn only del"><span class="ico"></span></a></div>
                                 <div class="up">
                                   <slp-select required placeholder="언어">
-                                      <option>2017</option>
+                                      <option>스페인어</option>
                                       <option>2018</option>
                                       <option>2019</option>
                                       <option>2020</option>
                                   </slp-select>
                                   <slp-select required placeholder="공인시험 선택">
-                                      <option>2017</option>
+                                      <option>TOEIC (Speaking&Wri..)</option>
                                       <option>2018</option>
                                       <option>2019</option>
                                       <option>2020</option>
                                   </slp-select>
                                 </div>
-                                <input type="text" class="input w100p" placeholder="점수 혹은 레벨 입력">
+                                <input type="text" class="input w100p" placeholder="점수 혹은 레벨 입력" value="850점">
                               </li>
                             </ul>
                             <!-- 추가 리스트 -->
@@ -114,19 +114,19 @@
                                 <div v-if="licenceEditFlag" @click="deleteLicence(index)" class="tar"><a href="#" class="btn only del"><span class="ico"></span></a></div>
                                 <div class="up">
                                   <slp-select required placeholder="언어">
-                                      <option>2017</option>
+                                      <option>스페인어</option>
                                       <option>2018</option>
                                       <option>2019</option>
                                       <option>2020</option>
                                   </slp-select>
-                                  <slp-select required placeholder="선택">
-                                      <option>2017</option>
+                                  <slp-select required placeholder="공인시험 선택">
+                                      <option>TOEIC (Speaking&Wri..)</option>
                                       <option>2018</option>
                                       <option>2019</option>
                                       <option>2020</option>
                                   </slp-select>
                                 </div>
-                                <input type="text" class="input w100p" placeholder="점수, 등급">
+                                <input type="text" class="input w100p" placeholder="점수, 등급" value="850점">
                               </li>
                             </ul>
                             <!-- 추가 리스트 -->
@@ -139,7 +139,7 @@
 
                         <div class="cTitWrap">
                           <p class="label-tit18 fwb600 mb18">수신 설정</p>
-                          <strong class="c-tit">개인정보 마케팅 활용 동의</strong>
+                          <strong class="c-tit">수신 설정</strong>
                           <!-- 클릭이벤트 컴포넌트에 추가 해야할듯 아래 참고;-->
                           <slp-switch :classObject="{'fr': true}" @click="toggleMarketing()"  style="display:none;"/>
                           <label class="labelBtn fr">

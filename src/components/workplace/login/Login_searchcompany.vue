@@ -26,27 +26,25 @@
           <div class="cell">
             <div class="inner">
                 <!-- 회사명 -->
-                <div style="display:none;">
+                <div style="display:block;">
                   <strong class="label-tit">회사명 검색</strong>
                   <div class="intSchBox">
                     <div class="search-wrapper">
                         <input type="text"  pattern="^\s+" class="input" placeholder="회사명 입력" />
                         <button class="close-icon" type="button"></button>
                     </div>
-                    <a href="#" class="btn"><span class="ico"></span></a>
                   </div>
                 </div>
                 <!-- 회사명 -->
 
                 <!-- 사업자 등록번호 -->
-                <div style="display:none1;">
+                <div style="display:none;">
                   <strong class="label-tit">사업자 등록번호 검색</strong>
                   <div class="intSchBox">
                     <div class="search-wrapper">
                         <input type="text"  pattern="^\s+" class="input" placeholder="사업자 등록번호 입력" />
                         <button class="close-icon" type="button"></button>
                     </div>
-                    <a href="#" class="btn"><span class="ico"></span></a>
                   </div>
                 </div>
                 <!-- 사업자 등록번호 -->

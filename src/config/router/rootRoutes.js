@@ -58,11 +58,18 @@ import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
 import LoginJoinId from '~workplace/login/Login_joinid'
 import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
 import LoginSearchPost from '~workplace/login/Login_searchpost'
+import LoginSearchPostError from '~workplace/login/Login_searchposterror'
 import LoginSearchCompany from '~workplace/login/Login_searchcompany'
+import LoginSearchCompanyControl from '~workplace/login/Login_searchcompany_control'
 import LoginSearchCompanyResult from '~workplace/login/Login_searchcompanyresult'
 import LoginJoinInterest from '~workplace/login/Login_joininterest'
+import LoginJoinInterestSelect from '~workplace/login/Login_joininterestselect'
 import LoginJoinInExtrainfo from '~workplace/login/Login_joinextrainfo'
+import LoginJoinInExtrainfoLanguage from '~workplace/login/Login_joinextrainfolanguage'
+import LoginJoinInExtrainfoLanguageComplete from '~workplace/login/Login_joinextrainfolanguagecomplete'
+import LoginJoinInExtrainfoLanguageDelete from '~workplace/login/Login_joinextrainfolanguagedelete'
 import LoginJoinComplete from '~workplace/login/Login_joincomplete'
+import LoginJoinDelete from '~workplace/login/Login_joindelete'
 import LoginLoginIntegration from '~workplace/login/Login_loginintegration'
 import LoginLoginIntegrationId from '~workplace/login/Login_loginintegrationid'
 import LoginLoginIntegrationIdWrite from '~workplace/login/login_loginintegrationidwrite'
@@ -737,9 +744,29 @@ var rootRoutes = [
     component: LoginJoinInExtrainfo
   },
   {
+    path: '/Login_joinextrainfolanguage',
+    name: 'Login_joinextrainfolanguage',
+    component: LoginJoinInExtrainfoLanguage
+  },
+  {
+    path: '/Login_joinextrainfolanguagecomplete',
+    name: 'Login_joinextrainfolanguagecomplete',
+    component: LoginJoinInExtrainfoLanguageComplete
+  },
+  {
+    path: '/Login_joinextrainfolanguagedelete',
+    name: 'Login_joinextrainfolanguagedelete',
+    component: LoginJoinInExtrainfoLanguageDelete
+  },
+  {
     path: '/Login_joincomplete',
     name: 'Login_joincomplete',
     component: LoginJoinComplete
+  },
+  {
+    path: '/Login_joindelete',
+    name: 'Login_joindelete',
+    component: LoginJoinDelete
   },
   {
     path: '/Login_loginintegration',
@@ -812,9 +839,19 @@ var rootRoutes = [
     component: LoginSearchPost
   },
   {
+    path: '/Login_searchposterror',
+    name: 'Login_searchposterror',
+    component: LoginSearchPostError
+  },
+  {
     path: '/Login_searchcompany',
     name: 'Login_searchcompany',
     component: LoginSearchCompany
+  },
+  {
+    path: '/Login_searchcompany_control',
+    name: 'Login_searchcompany_control',
+    component: LoginSearchCompanyControl
   },
   {
     path: '/Login_searchcompanyresult',
@@ -825,6 +862,11 @@ var rootRoutes = [
     path: '/Login_joininterest',
     name: 'Login_joininterest',
     component: LoginJoinInterest
+  },
+  {
+    path: '/Login_joininterestselect',
+    name: 'Login_joininterestselect',
+    component: LoginJoinInterestSelect
   },
   {
     path: '/Login_changepw',
