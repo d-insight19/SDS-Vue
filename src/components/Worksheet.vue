@@ -4000,8 +4000,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.06.studymanagement_note</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studymanagement_note' }">
+            MySpace_studymanagement_note
           </router-link>
         </td>
         <td></td>
@@ -4017,8 +4017,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.06.studymanagement_note_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studymanagement_note_detail' }">
+            MySpace_studymanagement_note_detail
           </router-link>
         </td>
         <td></td>
@@ -4034,8 +4034,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.06.studymanagement_note_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studymanagement_note_edit' }">
+            MySpace_studymanagement_note_edit
           </router-link>
         </td>
         <td></td>
@@ -4051,8 +4051,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.06.studymanagement_reminder</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studymanagement_reminder' }">
+            MySpace_studymanagement_reminder
           </router-link>
         </td>
         <td></td>
@@ -4068,8 +4068,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.06.studymanagement_reminder_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studymanagement_reminder_detail' }">
+            MySpace_studymanagement_reminder_detail
           </router-link>
         </td>
         <td></td>
