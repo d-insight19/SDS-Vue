@@ -395,6 +395,15 @@
           <router-link :to="{ name: 'Login_joinbasicinfo' }">
             Login_joinbasicinfo
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'login_join_basicinfo_inputon' }">
+            login_join_basicinfo_inputon
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'login_join_basicinfo_error' }">
+            login_join_basicinfo_error
+          </router-link>
+          
         </td>
         <td>수정됨</td>
       </tr>
@@ -414,6 +423,12 @@
           </router-link><br/>
           <router-link :to="{ name: 'Login_searchposterror' }">
             Login_searchposterror
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_searchpostresult' }">
+            Login_searchpostresult
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_searchpostkeyboard' }">
+            Login_searchpostkeyboard
           </router-link>
         </td>
         <td>수정됨</td>
@@ -10649,7 +10664,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <!-- <tr>
       <td align="center">589</td>
         <td>로그인/회원가입</td>
         <td></td>
@@ -10988,7 +11003,7 @@
           </router-link>
         </td>
         <td></td>
-      </tr>
+      </tr> -->
       <tr>
       <td align="center">추가페이지-add</td>
         <td></td>

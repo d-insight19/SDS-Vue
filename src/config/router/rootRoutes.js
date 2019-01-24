@@ -67,8 +67,12 @@ import LoginJoinTermsSelect from '~workplace/login/Login_jointermsselect'
 import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
 import LoginJoinId from '~workplace/login/Login_joinid'
 import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
+import LoginJoinBasicInfoInputon from '~workplace/login/login_join_basicinfo_inputon'
+import LoginJoinBasicInfoError from '~workplace/login/login_join_basicinfo_error'
 import LoginSearchPost from '~workplace/login/Login_searchpost'
 import LoginSearchPostError from '~workplace/login/Login_searchposterror'
+import LoginSearchPostResult from '~workplace/login/Login_searchpostresult'
+import LoginSearchPostKeyboard from '~workplace/login/Login_searchpostkeyboard'
 import LoginSearchCompany from '~workplace/login/Login_searchcompany'
 import LoginSearchCompanyControl from '~workplace/login/Login_searchcompany_control'
 import LoginSearchCompanyResult from '~workplace/login/Login_searchcompanyresult'
@@ -919,6 +923,16 @@ var rootRoutes = [
     component: LoginJoinBasicInfo
   },
   {
+    path: '/login_join_basicinfo_inputon',
+    name: 'login_join_basicinfo_inputon',
+    component: LoginJoinBasicInfoInputon
+  },
+  {
+    path: '/login_join_basicinfo_error',
+    name: 'login_join_basicinfo_error',
+    component: LoginJoinBasicInfoError
+  },
+  {
     path: '/Login_searchpost',
     name: 'Login_searchpost',
     component: LoginSearchPost
@@ -927,6 +941,16 @@ var rootRoutes = [
     path: '/Login_searchposterror',
     name: 'Login_searchposterror',
     component: LoginSearchPostError
+  },
+  {
+    path: '/Login_searchpostresult',
+    name: 'Login_searchpostresult',
+    component: LoginSearchPostResult
+  },
+  {
+    path: '/Login_searchpostkeyboard',
+    name: 'Login_searchpostkeyboard',
+    component: LoginSearchPostKeyboard
   },
   {
     path: '/Login_searchcompany',

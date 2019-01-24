@@ -32,7 +32,7 @@
                     </li>
                     <li>
                         <strong class="label-tit require_mark">성명</strong>
-                        <slp-text-field placeholder="성명 입력" message="성명을 입력해주세요."></slp-text-field>
+                        <slp-text-field placeholder="성명 입력" value="정해민" message="성명을 입력해주세요."></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit require_mark">비밀번호</strong>
@@ -40,7 +40,7 @@
                         <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
                         <div class="intSchBox">
                             <div class="search-wrapper">
-                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자의 숫자와 영문자, 특수문자를 조합하세요" />
+                                <input ref="refInput" type="password" value="1234" pattern="^\s+" class="input" placeholder="8~12자의 숫자와 영문자, 특수문자를 조합하세요" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <!-- <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p> -->
@@ -52,7 +52,7 @@
                         <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
                         <div class="intSchBox">
                             <div class="search-wrapper">
-                                <input type="text"  pattern="^\s+" class="input" placeholder="8~12자의 숫자와 영문자, 특수문자를 조합하세요" />
+                                <input ref="refInput2" type="password" value="1234" pattern="^\s+" class="input" placeholder="8~12자의 숫자와 영문자, 특수문자를 조합하세요" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <!-- <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p> -->
@@ -91,11 +91,11 @@
                     </li>
                     <li>
                         <strong class="label-tit require_mark">이메일</strong>
-                        <slp-text-field placeholder="이메일을 입력하세요" message="이메일 주소를 입력해주세요."></slp-text-field>
+                        <slp-text-field value="multicampus@multi.co.kr" placeholder="이메일을 입력하세요" message="이메일 주소를 입력해주세요."></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit require_mark">휴대전화</strong>
-                        <slp-text-field placeholder="‘-‘ 없이 숫자만 입력하세요" message="‘-’ 또는 띄어쓰기 없이 10자 이상 입력해주세요."></slp-text-field>
+                        <slp-text-field value="01029384029" placeholder="‘-‘ 없이 숫자만 입력하세요" message="‘-’ 또는 띄어쓰기 없이 10자 이상 입력해주세요."></slp-text-field>
                     </li>                    
                     <li>
                         <strong class="label-tit">주소</strong>
@@ -107,12 +107,12 @@
                             <ul class="addrInt">
                                 <li>
                                     <div class="postCode infoChk">
-                                        <slp-text-field placeholder="우편번호를 입력하세요"></slp-text-field>
+                                        <slp-text-field value="04891" placeholder="우편번호를 입력하세요"></slp-text-field>
                                         <button type="button" class="btn sm">우편번호 찾기</button>
                                     </div>
                                 </li>
-                                <li><slp-text-field placeholder="주소를 입력하세요"></slp-text-field></li>
-                                <li><slp-text-field placeholder="나머지 주소를 입력하세요"></slp-text-field></li>
+                                <li><slp-text-field value="서울시 강남구 테헤란로 212" placeholder="주소를 입력하세요"></slp-text-field></li>
+                                <li><slp-text-field value="한양아파트 1403호" placeholder="나머지 주소를 입력하세요"></slp-text-field></li>
                             </ul>
                         </div>
                     </li>
@@ -138,6 +138,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'Login_joinbasicinfo',
   /* vue lifecycle */
@@ -148,10 +149,21 @@ export default {
   /* vue data */
   data () {
     return {
+        password_show: ''
     }
   },
   /* vue function */
   methods: {
+      passwordtoggle () {
+        this.password_show = !this.password_show
+        if (this.password_show === true) {
+            this.$refs.refInput.setAttribute('type', 'password')
+            this.$refs.refInput2.setAttribute('type', 'password')
+        } else if (this.password_show === false) {
+            this.$refs.refInput.setAttribute('type', 'text')
+            this.$refs.refInput2.setAttribute('type', 'text')
+        }
+      }
   }
 }
 </script>
