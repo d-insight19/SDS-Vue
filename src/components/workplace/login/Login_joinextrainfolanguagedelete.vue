@@ -59,7 +59,7 @@
                           </li>
                           <li>
                             <strong class="label-tit">전문분야</strong>
-                            <input type="text" class="input" placeholder="전문분야 입력">
+                            <input type="text" class="input" placeholder="전문분야를 입력하세요">
                           </li>
                         </ul>
                         <!-- //list -->
@@ -141,17 +141,17 @@
                           <p class="label-tit18 fwb600 mb18">수신 설정</p>
                           <strong class="c-tit">수신 설정</strong>
                           <!-- 클릭이벤트 컴포넌트에 추가 해야할듯 아래 참고;-->
-                          <slp-switch :classObject="{'fr': true}" @click="toggleMarketing()"  style="display:none;"/>
+                          <!-- <slp-switch :classObject="{'fr': true}" @click="toggleMarketing()"  style="display:none;"/> -->
                           <label class="labelBtn fr">
-                            <input type="checkbox" name="" class="chk">
+                            <input type="checkbox" name="" class="chk" checked>
                             <div class="chk_box" @click="toggleMarketing()" ><span class="ball"></span><ul class="txt"><li class="m1"></li><li class="m2"></li></ul></div>
                           </label>
                         </div>
 
                         <!-- list -->
-                        <ul class="ulList type4" v-show="marketingFlag">
-                          <li><slp-checkbox checked>이메일 수신</slp-checkbox></li>
-                          <li><slp-checkbox checked>SMS 수신</slp-checkbox></li>
+                        <ul class="ulList type4" v-show="!marketingFlag">
+                          <li><slp-checkbox :value="value">이메일 수신</slp-checkbox></li>
+                          <li><slp-checkbox :value="value">SMS 수신</slp-checkbox></li>
                           <li><slp-checkbox >전화 수신</slp-checkbox></li>
                         </ul>
                         <!-- //list -->
@@ -224,7 +224,8 @@ export default {
       languageEditFlag: false,
       licenceEditFlag: false,
       languageTxt: '편집',
-      licenceTxt: '편집'
+      licenceTxt: '편집',
+      value: true
     }
   },
   /* vue function */

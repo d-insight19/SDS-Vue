@@ -20,15 +20,15 @@
                 <ul class="ulList type1">
                     <li>
                         <strong class="label-tit">아이디</strong>
-                        <input type="text" class="input" placeholder="아이디 입력">
+                        <input type="text" class="input" placeholder="아이디를 입력하세요">
                     </li>
                     <li>
                         <strong class="label-tit">이름</strong>
-                        <input type="text" class="input" placeholder="이름 입력">
+                        <input type="text" class="input" placeholder="성명을 입력하세요">
                     </li>
                     <li>
                         <strong class="label-tit">이메일</strong>
-                        <input type="text" class="input" placeholder="이메일 입력">
+                        <input type="text" class="input" placeholder="이메일을 입력하세요">
                     </li>
                 </ul>
                 <!-- // list -->
@@ -45,11 +45,11 @@
         <!-- //floating button -->
         
         <!-- toastpopup -->
-        <div class="toast">
+        <!-- <div class="toast">
           <div class="in">
             입력하신 정보와 일치하는 비밀번호가 없습니다. 정확한 정보 확인 후 다시 이볅해 주세요. 비밀번호 찾기가 어려운 경우 고객센터(1544-3001)로 문의해 주세요.
           </div>
-        </div>
+        </div> -->
         <!-- //toastpopup -->
         
       </div>

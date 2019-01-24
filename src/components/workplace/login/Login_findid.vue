@@ -21,8 +21,8 @@
                 <div class="tabWrap">
                     <!-- tab menu -->
                     <ul class="tabMenu">
-                        <li :class="{'on': tabIdx == 1}" @click="onClick(1)"><a href="#tab_id">아이디</a></li>
-                        <li :class="{'on': tabIdx == 2}" @click="onClick(2)"><a href="#tab_pw">비밀번호</a></li>
+                        <li :class="{'on': tabIdx == 1}" @click="onClick(1)"><a href="#">아이디</a></li>
+                        <li :class="{'on': tabIdx == 2}" @click="onClick(2)"><a href="#">비밀번호</a></li>
                     </ul>
                     <!-- //tab menu -->
                     <component :is="component"/>

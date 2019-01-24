@@ -30,10 +30,10 @@
                     <div class="intSchBox">
                         <!-- X 아이콘이 필요한 input -->
                         <div class="search-wrapper">
-                            <input type="text"  pattern="^\s+" class="input" placeholder="도로명, 지번, 건물명을 검색하세요" />
+                            <input type="text"  pattern="^\s+" class="input err" placeholder="도로명, 지번, 건물명을 검색하세요" />
                             <button class="close-icon" type="button"></button>
                         </div>
-                        <a href="#" class="btn"><span class="ico"></span></a>
+                        <!-- <a href="#" class="btn"><span class="ico"></span></a> -->
                     </div>
                     <p class="InfoChK-resultTxt err">Error message area</p>
                   </li>

@@ -20,12 +20,14 @@
                         <ul class="ulList type2">
                             <li>
                                 <strong class="label-tit" >성명</strong>
-                                <input type="text" placeholder="성명을 입력하세요" @input="e => keylength = e.target.value.length" :class="{ error : keylength }" message="성명을 입력해주세요.">
-                                <!-- <slp-text-field placeholder="성명을 입력하세요" @input="e => keylength = e.target.value.length" message="성명을 입력해주세요."  ></slp-text-field> -->
+                                <input class="err" type="text" placeholder="성명을 입력하세요" @input="e => keylength = e.target.value.length">
+                                <p class="InfoChK-resultTxt err">성명을 입력해 주세요</p>
+                                <!-- <slp-text-field placeholder="성명을 입력하세요" @input="e => keylength = e.target.value.length" error message="성명을 입력해주세요."  ></slp-text-field> -->
                             </li> <!-- @focus="focusToggle" 이벤트 추가시 키보드활성화 -->
                             <li>
                                 <strong class="label-tit">이메일</strong>
-                                <input type="text" placeholder="성명을 입력하세요" @input="e => keylength2 = e.target.value.length" :class="{ error : keylength2 }" message="성명을 입력해주세요.">
+                                <input class="err" type="text" placeholder="이메일 형식에 맞지 않습니다" @input="e => keylength2 = e.target.value.length" >
+                                <p class="InfoChK-resultTxt err">이메일 형식에 맞지 않습니다</p>
                                 <!-- <slp-text-field placeholder="이메일을 입력하세요" @input="e => keylength2 = e.target.value.length" message="이메일 형식에 맞지 않습니다."  ></slp-text-field> -->
                             </li> <!-- @focus="focusToggle" 이벤트 추가시 키보드활성화 -->
                         </ul>
@@ -39,7 +41,7 @@
             <div class="fixBtmBtn">
                 <ul>
                     <li>                            
-                        <button type="button" class="btn ld" :disabled="{ disabled : keylength && keylength2 }">다음</button>
+                        <slp-button type="button" class="btn ld" :class="{ clr1 : keylength && keylength2 }">다음</slp-button>
                     </li>
                 </ul>                    
             </div>

@@ -59,7 +59,7 @@
                           </li>
                           <li>
                             <strong class="label-tit">전문분야</strong>
-                            <input type="text" class="input" placeholder="전문분야 입력">
+                            <input type="text" class="input" placeholder="전문분야를 입력하세요">
                           </li>
                         </ul>
                         <!-- //list -->

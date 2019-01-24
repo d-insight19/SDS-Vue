@@ -20,8 +20,8 @@
 
                 <ul class="searchul">
                   <li>
-                    <p class="search-tit">주소 검색</p>
-                    <slp-select required placeholder="년도"  width="100%">
+                    <p class="search-tit">지역 선택</p>
+                    <slp-select required placeholder="선택"  width="100%">
                         <option>서울특별시</option>
                     </slp-select>
                   </li>
@@ -30,116 +30,14 @@
                     <div class="intSchBox">
                         <!-- X 아이콘이 필요한 input -->
                         <div class="search-wrapper">
-                            <input type="text"  pattern="^\s+" class="input" placeholder="도로명, 지번, 건물명 검색하기" />
+                            <input type="text"  pattern="^\s+" class="input" placeholder="도로명, 지번, 건물명을 검색하세요" />
                             <button class="close-icon" type="button"></button>
                         </div>
-                        <a href="#" class="btn"><span class="ico"></span></a>
+                        <!-- <a href="#" class="btn"><span class="ico"></span></a> -->
                     </div>
+                    <!-- <p class="InfoChK-resultTxt err">Error message area</p> -->
                   </li>
                 </ul>
-                
-                
-                
-                <div class="search_result_wrap">
-                  <ul>
-                    <li class="search_result">
-                      <table>
-                        <tr>
-                          <td class="address_left color_clr2 hilight">06220</td>
-                          <td class="zip_code">(143-847)</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">도로명</td>
-                          <td>서울특별시 강남구 테헤란로 212</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">지번</td>
-                          <td>서울특별시 강남구 역삼동 718-5 서울특별시 강남구 역삼동 718-5 서울특별시 강남구 역삼동 718-5</td>
-                        </tr>
-                      </table>
-                    </li>
-                    <li class="search_result">
-                      <table>
-                        <tr>
-                          <td class="address_left color_clr2 hilight">06220</td>
-                          <td class="zip_code">(143-847)</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">도로명</td>
-                          <td>서울특별시 강남구 테헤란로 212</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">지번</td>
-                          <td>서울특별시 강남구 역삼동 718-5 서울특별시 강남구 역삼동 718-5 서울특별시 강남구 역삼동 718-5</td>
-                        </tr>
-                      </table>
-                    </li>
-                    <li class="search_result">
-                      <table>
-                        <tr>
-                          <td class="address_left color_clr2 hilight">06220</td>
-                          <td class="zip_code">(143-847)</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">도로명</td>
-                          <td>서울특별시 강남구 테헤란로 212</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">지번</td>
-                          <td>서울특별시 강남구 역삼동 718-5</td>
-                        </tr>
-                      </table>
-                    </li>
-                    <li class="search_result">
-                      <table>
-                        <tr>
-                          <td class="address_left color_clr2 hilight">06220</td>
-                          <td class="zip_code">(143-847)</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">도로명</td>
-                          <td>서울특별시 강남구 테헤란로 212</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">지번</td>
-                          <td>서울특별시 강남구 역삼동 718-5</td>
-                        </tr>
-                      </table>
-                    </li>
-                    <li class="search_result">
-                      <table>
-                        <tr>
-                          <td class="address_left color_clr2 hilight">06220</td>
-                          <td class="zip_code">(143-847)</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">도로명</td>
-                          <td>서울특별시 강남구 테헤란로 212</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">지번</td>
-                          <td>서울특별시 강남구 역삼동 718-5</td>
-                        </tr>
-                      </table>
-                    </li>
-                    <li class="search_result">
-                      <table>
-                        <tr>
-                          <td class="address_left color_clr2 hilight">06220</td>
-                          <td class="zip_code">(143-847)</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">도로명</td>
-                          <td>서울특별시 강남구 테헤란로 212</td>
-                        </tr>
-                        <tr>
-                          <td class="address_left">지번</td>
-                          <td>서울특별시 강남구 역삼동 718-5</td>
-                        </tr>
-                      </table>
-                    </li>
-                  </ul>
-                </div>
 
             </div>
           </div>

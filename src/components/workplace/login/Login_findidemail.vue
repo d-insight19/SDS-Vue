@@ -19,12 +19,12 @@
                 <!-- list -->
                 <ul class="ulList type1">
                     <li>
-                        <strong class="label-tit">이름</strong>
-                        <slp-text-field  placeholder="이름 입력"></slp-text-field>
+                        <strong class="label-tit">성명</strong>
+                        <slp-text-field  placeholder="성명을 입력하세요"></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit">이메일</strong>
-                        <slp-text-field  placeholder="이메일 입력"></slp-text-field>
+                        <slp-text-field  placeholder="이메일을 입력하세요"></slp-text-field>
                     </li>
                 </ul>
                 <!-- // list -->

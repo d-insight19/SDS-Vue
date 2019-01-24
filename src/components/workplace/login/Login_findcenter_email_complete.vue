@@ -20,12 +20,12 @@
                         <ul class="ulList type2">
                             <li>
                                 <strong class="label-tit" >성명</strong>
-                                <input type="text" placeholder="성명을 입력하세요" @input="e => keylength = e.target.value.length" message="성명을 입력해주세요.">
+                                <input type="text" placeholder="성명을 입력하세요" @input="e => keylength = e.target.value.length" >
                                 <!-- <slp-text-field placeholder="성명을 입력하세요" @input="e => keylength = e.target.value.length" message="성명을 입력해주세요."  ></slp-text-field> -->
                             </li> <!-- @focus="focusToggle" 이벤트 추가시 키보드활성화 -->
                             <li>
                                 <strong class="label-tit">이메일</strong>
-                                <input type="text" placeholder="성명을 입력하세요" @input="e => keylength2 = e.target.value.length" message="성명을 입력해주세요.">
+                                <input type="text" placeholder="이메일을 입력하세요" @input="e => keylength2 = e.target.value.length" value="CRD_abc1234@multicapus.co.kr" >
                                 <!-- <slp-text-field placeholder="이메일을 입력하세요" @input="e => keylength2 = e.target.value.length" message="이메일 형식에 맞지 않습니다."  ></slp-text-field> -->
                             </li> <!-- @focus="focusToggle" 이벤트 추가시 키보드활성화 -->
                         </ul>

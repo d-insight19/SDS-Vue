@@ -38,6 +38,11 @@ import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
 import LoginFindcenterSelect from '~workplace/login/Login_findcenter_select'
 import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
 import LoginFindcenterUrl2 from '~workplace/login/Login_findcenter_url2'
+<<<<<<< HEAD
+=======
+import LoginFindcenterUrlKeyboard from '~workplace/login/Login_findcenter_url_keyboard'
+import LoginFindcenterUrlComplete from '~workplace/login/Login_findcenter_url_complete'
+>>>>>>> d9dd462679092a7e40374bfbc1d4752df6d7b6ea
 import LoginLogin from '~workplace/login/Login_login'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
 import LoginInterest from '~workplace/login/Login_interest'
@@ -46,9 +51,18 @@ import LoginJoinCertify from '~workplace/login/Login_joincertify'
 import LoginJoinCertify2 from '~workplace/login/Login_joincertify2'
 import LoginJoinTerms from '~workplace/login/Login_jointerms'
 import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
+import LoginJoinTermsdetailscroll from '~workplace/login/Login_jointermsdetailscroll'
 import LoginJoinId from '~workplace/login/Login_joinid'
 import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
+import LoginJoinBasicInfoInputon from '~workplace/login/login_join_basicinfo_inputon'
+import LoginJoinBasicInfoError from '~workplace/login/login_join_basicinfo_error'
 import LoginSearchPost from '~workplace/login/Login_searchpost'
+<<<<<<< HEAD
+=======
+import LoginSearchPostError from '~workplace/login/Login_searchposterror'
+import LoginSearchPostResult from '~workplace/login/Login_searchpostresult'
+import LoginSearchPostKeyboard from '~workplace/login/Login_searchpostkeyboard'
+>>>>>>> d9dd462679092a7e40374bfbc1d4752df6d7b6ea
 import LoginSearchCompany from '~workplace/login/Login_searchcompany'
 import LoginSearchCompanyResult from '~workplace/login/Login_searchcompanyresult'
 import LoginJoinInterest from '~workplace/login/Login_joininterest'
@@ -73,8 +87,31 @@ import LoginFindpwEmail from '~workplace/login/Login_findpwemail'
 import LoginCertifyPhone from '~workplace/login/Login_certifyphone'
 import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
 import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
-import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
+// import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
 
+<<<<<<< HEAD
+=======
+import Loginloginchangeidmainconfirm from '~workplace/login/Login_login_changeid_main_confirm'
+import Loginloginchangeidmainerror from '~workplace/login/Login_login_changeid_main_error'
+import Loginloginchangepwerror1 from '~workplace/login/Login_login_changepw_error1'
+import Loginloginchangepwerror2 from '~workplace/login/Login_login_changepw_error2'
+import Loginloginchangepwerror3 from '~workplace/login/Login_login_changepw_error3'
+import Loginloginunlockid2 from '~workplace/login/Login_login_unlockid2'
+import Loginloginunlockidemail from '~workplace/login/Login_login_unlockid_email'
+import Loginloginunlockidcomplete from '~workplace/login/Login_login_unlockid_complete'
+import Loginlogindormantemail from '~workplace/login/Login_login_dormant_email'
+import Loginlogindormantcomplete from '~workplace/login/Login_login_dormant_complete'
+import Loginfindidresultpopup from '~workplace/login/Login_findid_result_popup'
+import Loginfindpwemailtoastpopup from '~workplace/login/Login_findpw_email_toastpopup'
+import Logincertifyemailcertifyerror1 from '~workplace/login/Login_certify_email_certify_error1'
+import Logincertifyemailcertifyerror2 from '~workplace/login/Login_certify_email_certify_error2'
+import Logincertifyemailcertifyerror3 from '~workplace/login/Login_certify_email_certify_error3'
+import Loginfindidipin from '~workplace/login/Login_findid_ipin'
+import Loginlogincorporationphone1 from '~workplace/login/Login_login_corporationphone1'
+import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporationphone2'
+import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
+
+>>>>>>> d9dd462679092a7e40374bfbc1d4752df6d7b6ea
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -274,6 +311,20 @@ import MySpaceCliping from '~workplace/myspace/MySpace_cliping'
 import MySpaceClipingViewed from '~workplace/myspace/MySpace_cliping_viewed'
 import MySpaceClipingFav from '~workplace/myspace/MySpace_cliping_fav'
 import MySpaceClipingAnalysis from '~workplace/myspace/MySpace_cliping_analysis'
+<<<<<<< HEAD
+=======
+import MySpaceStudymanagementNote from '~workplace/myspace/MySpace_studymanagement_note'
+import MySpaceStudymanagementNoteDetail from '~workplace/myspace/MySpace_studymanagement_note_detail'
+import MySpaceStudymanagementNoteEdit from '~workplace/myspace/MySpace_studymanagement_note_edit'
+import MySpaceStudymanagementReminder from '~workplace/myspace/MySpace_studymanagement_reminder'
+import MySpaceStudymanagementReminderDetail from '~workplace/myspace/MySpace_studymanagement_reminder_detail'
+import MySpaceStudystatistics from '~workplace/myspace/MySpace_studystatistics'
+import MySpaceStudystatisticsGrade from '~workplace/myspace/MySpace_studystatistics_grade'
+import MySpaceStudystatisticsGrown from '~workplace/myspace/MySpace_studystatistics_grown'
+import MySpaceStudystatisticsActivity from '~workplace/myspace/MySpace_studystatistics_activity'
+import MySpaceStudystatisticsKeyword from '~workplace/myspace/MySpace_studystatistics_keyword'
+import MySpaceStudystatisticsKeywordNosearch from '~workplace/myspace/MySpace_studystatistics_keyword_nosearch'
+>>>>>>> d9dd462679092a7e40374bfbc1d4752df6d7b6ea
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -662,6 +713,16 @@ var rootRoutes = [
     component: LoginFindcenterUrl2
   },
   {
+    path: '/Login_findcenter_url_keyboard',
+    name: 'Login_findcenter_url_keyboard',
+    component: LoginFindcenterUrlKeyboard
+  },
+  {
+    path: '/Login_findcenter_url_complete',
+    name: 'Login_findcenter_url_complete',
+    component: LoginFindcenterUrlComplete
+  },
+  {
     path: '/Login_login',
     name: 'Login_login',
     component: LoginLogin
@@ -737,6 +798,11 @@ var rootRoutes = [
     component: LoginJoinTermsdetail
   },
   {
+    path: '/Login_jointermsdetailscroll',
+    name: 'Login_jointermsdetailscroll',
+    component: LoginJoinTermsdetailscroll
+  },
+  {
     path: '/Login_joinid',
     name: 'Login_joinid',
     component: LoginJoinId
@@ -747,9 +813,34 @@ var rootRoutes = [
     component: LoginJoinBasicInfo
   },
   {
+    path: '/login_join_basicinfo_inputon',
+    name: 'login_join_basicinfo_inputon',
+    component: LoginJoinBasicInfoInputon
+  },
+  {
+    path: '/login_join_basicinfo_error',
+    name: 'login_join_basicinfo_error',
+    component: LoginJoinBasicInfoError
+  },
+  {
     path: '/Login_searchpost',
     name: 'Login_searchpost',
     component: LoginSearchPost
+  },
+  {
+    path: '/Login_searchposterror',
+    name: 'Login_searchposterror',
+    component: LoginSearchPostError
+  },
+  {
+    path: '/Login_searchpostresult',
+    name: 'Login_searchpostresult',
+    component: LoginSearchPostResult
+  },
+  {
+    path: '/Login_searchpostkeyboard',
+    name: 'Login_searchpostkeyboard',
+    component: LoginSearchPostKeyboard
   },
   {
     path: '/Login_searchcompany',
@@ -836,10 +927,105 @@ var rootRoutes = [
     name: 'Login_certifyemail',
     component: LoginCertifyEmail
   },
+  // {
+  //   path: '/Login_certifyemail_corporate',
+  //   name: 'Login_certifyemail_corporate',
+  //   component: LoginCertifyEmailCorporate
+  // },
   {
-    path: '/Login_certifyemail_corporate',
-    name: 'Login_certifyemail_corporate',
-    component: LoginCertifyEmailCorporate
+    path: '/Login_login_changeid_main_confirm',
+    name: 'Login_login_changeid_main_confirm',
+    component: Loginloginchangeidmainconfirm
+  },
+  {
+    path: '/Login_login_changeid_main_error',
+    name: 'Login_login_changeid_main_error',
+    component: Loginloginchangeidmainerror
+  },
+  {
+    path: '/Login_login_changepw_error1',
+    name: 'Login_login_changepw_error1',
+    component: Loginloginchangepwerror1
+  },
+  {
+    path: '/Login_login_changepw_error2',
+    name: 'Login_login_changepw_error2',
+    component: Loginloginchangepwerror2
+  },
+  {
+    path: '/Login_login_changepw_error3',
+    name: 'Login_login_changepw_error3',
+    component: Loginloginchangepwerror3
+  },
+  {
+    path: '/Login_login_unlockid2',
+    name: 'Login_login_unlockid2',
+    component: Loginloginunlockid2
+  },
+  {
+    path: '/Login_login_unlockid_email',
+    name: 'Login_login_unlockid_email',
+    component: Loginloginunlockidemail
+  },
+  {
+    path: '/Login_login_unlockid_complete',
+    name: 'Login_login_unlockid_complete',
+    component: Loginloginunlockidcomplete
+  },
+  {
+    path: '/Login_login_dormant_email',
+    name: 'Login_login_dormant_email',
+    component: Loginlogindormantemail
+  },
+  {
+    path: '/Login_login_dormant_complete',
+    name: 'Login_login_dormant_complete',
+    component: Loginlogindormantcomplete
+  },
+  {
+    path: '/Login_findid_result_popup',
+    name: 'Login_findid_result_popup',
+    component: Loginfindidresultpopup
+  },
+  {
+    path: '/Login_findpw_email_toastpopup',
+    name: 'Login_findpw_email_toastpopup',
+    component: Loginfindpwemailtoastpopup
+  },
+  {
+    path: '/Login_certify_email_certify_error1',
+    name: 'Login_certify_email_certify_error1',
+    component: Logincertifyemailcertifyerror1
+  },
+  {
+    path: '/Login_certify_email_certify_error2',
+    name: 'Login_certify_email_certify_error2',
+    component: Logincertifyemailcertifyerror2
+  },
+  {
+    path: '/Login_certify_email_certify_error3',
+    name: 'Login_certify_email_certify_error3',
+    component: Logincertifyemailcertifyerror3
+  },
+  {
+    path: '/Login_findid_ipin',
+    name: 'Login_findid_ipin',
+    component: Loginfindidipin
+  },
+  {
+    path: '/Login_login_corporationphone1',
+    name: 'Login_login_corporationphone1',
+    component: Loginlogincorporationphone1
+  },
+  {
+    path: '/Login_login_corporationphone2',
+    name: 'Login_login_corporationphone2',
+    component: Loginlogincorporationphone2
+  },
+  {
+    path: '/Login_login_corporationphone3',
+    name: 'Login_login_corporationphone3',
+    component: Loginlogincorporationphone3
   },
   {
     path: '/Study_dictionary',
@@ -1809,6 +1995,61 @@ var rootRoutes = [
     path: '/MySpace_cliping_analysis',
     name: 'MySpace_cliping_analysis',
     component: MySpaceClipingAnalysis
+  },
+  {
+    path: '/MySpace_studymanagement_note',
+    name: 'MySpace_studymanagement_note',
+    component: MySpaceStudymanagementNote
+  },
+  {
+    path: '/MySpace_studymanagement_note_detail',
+    name: 'MySpace_studymanagement_note_detail',
+    component: MySpaceStudymanagementNoteDetail
+  },
+  {
+    path: '/MySpace_studymanagement_note_edit',
+    name: 'MySpace_studymanagement_note_edit',
+    component: MySpaceStudymanagementNoteEdit
+  },
+  {
+    path: '/MySpace_studymanagement_reminder',
+    name: 'MySpace_studymanagement_reminder',
+    component: MySpaceStudymanagementReminder
+  },
+  {
+    path: '/MySpace_studymanagement_reminder_detail',
+    name: 'MySpace_studymanagement_reminder_detail',
+    component: MySpaceStudymanagementReminderDetail
+  },
+  {
+    path: '/MySpace_studystatistics',
+    name: 'MySpace_studystatistics',
+    component: MySpaceStudystatistics
+  },
+  {
+    path: '/MySpace_studystatistics_grade',
+    name: 'MySpace_studystatistics_grade',
+    component: MySpaceStudystatisticsGrade
+  },
+  {
+    path: '/MySpace_studystatistics_grown',
+    name: 'MySpace_studystatistics_grown',
+    component: MySpaceStudystatisticsGrown
+  },
+  {
+    path: '/MySpace_studystatistics_activity',
+    name: 'MySpace_studystatistics_activity',
+    component: MySpaceStudystatisticsActivity
+  },
+  {
+    path: '/MySpace_studystatistics_keyword',
+    name: 'MySpace_studystatistics_keyword',
+    component: MySpaceStudystatisticsKeyword
+  },
+  {
+    path: '/MySpace_studystatistics_keyword_nosearch',
+    name: 'MySpace_studystatistics_keyword_nosearch',
+    component: MySpaceStudystatisticsKeywordNosearch
   },
   {
     path: '/regiclass_detailview_books',
