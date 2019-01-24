@@ -217,15 +217,15 @@
 /* common */
 #wrap{height: 100%;}
 
-#header .header_text{visibility: hidden;}
+#header .header_text{visibility:hidden;}
 #header.fixed .header_text {visibility:visible;}
 #header{  
   position: relative;
-  display: flex;
+  display: block;
   width:100%;
   height:56px;
   line-height: 56px;
-  padding:0 0px 0 72px;
+  padding:0 36px 0 72px;
   background:transparent;
   box-sizing:border-box;        
   border-bottom:1px solid transparent;
@@ -259,6 +259,7 @@
 /* layout */
 #header.fixed{position: fixed;width:100%;background:#fff;z-index: 10;}
 #headerTab.fixed{position: fixed;width:100%;height:44px;line-height:43px;z-index: 10;top:56px}
+#header .header_inner.line1{display:flex;}
 
 /* Expand header padding 0 */
 #header.expandheader.fixed {height:56px;background:none;top:0px;}
@@ -526,8 +527,6 @@
 // ATORM faq
 #container.atorm_faq  #content .inner{padding-top:22px}
 
-// 과제작성 헤더 padding 변경 ( 버튼 2개 )
-#container.study_stauts_apply #header{padding: 0 136px 0 72px}
 
 // 개인정보 처리방침
 #container.terms  #content .inner{padding:24px 6px 0px 24px;}

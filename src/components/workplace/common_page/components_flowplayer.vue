@@ -256,7 +256,6 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                
                 <p>내용1</p>
                 <p>내용2</p>
                 <p>내용3</p>
@@ -406,15 +405,16 @@ export default {
             createVidoeHtml += '<div class="movie_info_list">';
             createVidoeHtml += '<p class="movie_info_tit">연관 콘텐츠 추천</p>';
             createVidoeHtml += '<ul>';
-            createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초</p></li>';
-            createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
-            createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">만화로 배우는 알기 쉬운 경영 기초전략</p></li>';
-            createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
-            createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초1</p></li>';
-            createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초2</p></li>';
-            createVidoeHtml += '<li><a href="#"></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초3</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">만화로 배우는 알기 쉬운 경영 기초전략</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초1</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초2</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초3</p></li>';
             createVidoeHtml += '</ul>';
             createVidoeHtml += '</div>';
+
             $('.fp-ui').append(createVidoeHtml);
 
             // 연관 콘텐츠 터치시 활성화
