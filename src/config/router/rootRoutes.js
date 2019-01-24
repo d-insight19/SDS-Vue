@@ -106,19 +106,18 @@ import Loginloginchangeidmainerror from '~workplace/login/Login_login_changeid_m
 import Loginloginchangepwerror1 from '~workplace/login/Login_login_changepw_error1'
 import Loginloginchangepwerror2 from '~workplace/login/Login_login_changepw_error2'
 import Loginloginchangepwerror3 from '~workplace/login/Login_login_changepw_error3'
-/*
-import Loginloginunlockiddomestic from '~workplace/login/Login_login_unlockid_domestic'
-import Loginloginunlockidoverseas from '~workplace/login/Login_login_unlockid_overseas'
+import Loginloginunlockid2 from '~workplace/login/Login_login_unlockid2'
+import Loginloginunlockidemail from '~workplace/login/Login_login_unlockid_email'
 import Loginloginunlockidcomplete from '~workplace/login/Login_login_unlockid_complete'
-import Loginlogindormant from '~workplace/login/Login_login_dormant'
 import Loginlogindormantemail from '~workplace/login/Login_login_dormant_email'
 import Loginlogindormantcomplete from '~workplace/login/Login_login_dormant_complete'
 import Loginfindidresultpopup from '~workplace/login/Login_findid_result_popup'
-import Loginfindidipin from '~workplace/login/Login_findid_ipin'
 import Loginfindpwemailtoastpopup from '~workplace/login/Login_findpw_email_toastpopup'
 import Logincertifyemailcertifyerror1 from '~workplace/login/Login_certify_email_certify_error1'
 import Logincertifyemailcertifyerror2 from '~workplace/login/Login_certify_email_certify_error2'
 import Logincertifyemailcertifyerror3 from '~workplace/login/Login_certify_email_certify_error3'
+/*
+import Loginfindidipin from '~workplace/login/Login_findid_ipin'
 import Loginlogincorporationphone1 from '~workplace/login/Login_login_corporationphone1'
 import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporationphone2'
 import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
@@ -1050,26 +1049,20 @@ var rootRoutes = [
     name: 'Login_login_changepw_error3',
     component: Loginloginchangepwerror3
   },
-  /*
   {
-    path: '/Login_login_unlockid_domestic',
-    name: 'Login_login_unlockid_domestic',
-    component: Loginloginunlockiddomestic
+    path: '/Login_login_unlockid2',
+    name: 'Login_login_unlockid2',
+    component: Loginloginunlockid2
   },
   {
-    path: '/Login_login_unlockid_overseas',
-    name: 'Login_login_unlockid_overseas',
-    component: Loginloginunlockidoverseas
+    path: '/Login_login_unlockid_email',
+    name: 'Login_login_unlockid_email',
+    component: Loginloginunlockidemail
   },
   {
     path: '/Login_login_unlockid_complete',
     name: 'Login_login_unlockid_complete',
     component: Loginloginunlockidcomplete
-  },
-  {
-    path: '/Login_login_dormant',
-    name: 'Login_login_dormant',
-    component: Loginlogindormant
   },
   {
     path: '/Login_login_dormant_email',
@@ -1085,11 +1078,6 @@ var rootRoutes = [
     path: '/Login_findid_result_popup',
     name: 'Login_findid_result_popup',
     component: Loginfindidresultpopup
-  },
-  {
-    path: '/Login_findid_ipin',
-    name: 'Login_findid_ipin',
-    component: Loginfindidipin
   },
   {
     path: '/Login_findpw_email_toastpopup',
@@ -1110,6 +1098,12 @@ var rootRoutes = [
     path: '/Login_certify_email_certify_error3',
     name: 'Login_certify_email_certify_error3',
     component: Logincertifyemailcertifyerror3
+  },
+  /*
+  {
+    path: '/Login_findid_ipin',
+    name: 'Login_findid_ipin',
+    component: Loginfindidipin
   },
   {
     path: '/Login_login_corporationphone1',

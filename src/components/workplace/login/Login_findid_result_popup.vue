@@ -42,7 +42,7 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li><button type="button" class="btn md clr1">로그인</button></li>
+                <li><button type="button" class="btn md clr1">로그인하기</button></li>
             </ul>
         </div>
         <!-- //floating button -->
@@ -50,12 +50,12 @@
       </div>
       <!-- //container --> 
 
-      <!-- <slp-popup v-if="showConfirm" title="아이디 찾기 결과 안내" cancelInput="취소" confirmInput="회원가입" @cancelClick="cancel" @confirmClick="confirm">
+      <slp-popup v-if="showConfirm" title="아이디 찾기 결과 안내" cancelInput="취소" confirmInput="회원가입" @cancelClick="cancel" @confirmClick="confirm">
         
             <div class="ly-cnt">
                 <p>입력하신 정보와 일치하는 아이디가 없습니다. 정확한 정보 확인 후 다시 입력하여 주시기 바랍니다. 아이디 찾기가 불가능하실 경우, 고객센터(1544-9001)로 문의 바랍니다.<br><br>아직! 멀티캠퍼스 회원이 아니신가요? 무료 회원가입을 하시면 각종 서비스 혜택을 받으실 수 있습니다.</p>	
             </div>
-        </slp-popup> -->
+        </slp-popup>
         
       
     </div>

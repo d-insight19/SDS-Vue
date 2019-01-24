@@ -645,7 +645,7 @@
             Login_login_changepw_error3
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">26</td>
@@ -661,8 +661,20 @@
           <router-link :to="{ name: 'Login_lockid' }">
             Login_lockid
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_unlockid2' }">
+            Login_login_unlockid2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_unlockid_email' }">
+            Login_login_unlockid_email
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_unlockid_complete' }">
+            Login_login_unlockid_complete
+          </router-link>          
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">27</td>
@@ -678,8 +690,17 @@
           <router-link :to="{ name: 'Login_dormant' }">
             Login_dormant
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_dormant_email' }">
+            Login_login_dormant_email
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_dormant_complete' }">
+            Login_login_dormant_complete
+          </router-link>
+          <br/>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">28</td>
@@ -696,7 +717,7 @@
             Login_findid
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">29</td>
@@ -730,7 +751,7 @@
             Login_findidphone
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">31</td>
@@ -747,7 +768,7 @@
             Login_findidemail
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">32</td>
@@ -780,8 +801,12 @@
           <router-link :to="{ name: 'Login_findidresult' }">
             Login_findidresult
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_findid_result_popup' }">
+            Login_findid_result_popup
+          </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">34</td>
@@ -798,7 +823,7 @@
             Login_findpw
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">35</td>
@@ -815,7 +840,7 @@
             Login_findpwphone
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">36</td>
@@ -830,9 +855,12 @@
         <td>
           <router-link :to="{ name: 'Login_findpwemail' }">
             Login_findpwemail
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_findpw_email_toastpopup' }">
+            Login_findpw_email_toastpopup
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">37</td>
@@ -849,7 +877,7 @@
             Login_certifyphone
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">38</td>
@@ -882,12 +910,20 @@
           <router-link :to="{ name: 'Login_certifyemail' }">
             Login_certifyemail
           </router-link>
-          ,
+          <br/>
+          <router-link :to="{ name: 'Login_certify_email_certify_error1' }">
+            Login_certify_email_certify_error1
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_certify_email_certify_error2' }">
+            Login_certify_email_certify_error2
+          </router-link>
+          <br/>
           <router-link :to="{ name: 'Login_certifyemail_corporate' }">
             Login_certifyemail_corporate
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">40</td>

@@ -7,7 +7,7 @@
         <!-- header -->
         <div id="header">
           <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-          <p class="header_text font_18">이메일 인증</p>
+          <p class="header_text font_18"></p>
         </div>
         <!-- //header -->
         
@@ -17,27 +17,20 @@
                 <!-- title -->
                 <div class="titleWrap">
                     <h1 class="h-tit1">이메일 인증</h1>
-                    <p class="txt-desc">이메일 인증을 하기 위해서는 콜센터로 문의 후 휴대폰 번호를 등록해주세요.</p>
+                    <p class="txt-desc">입력한 이메일로 인증번호를 발송합니다.</p>
                 </div>
                 <!-- //title -->
 
                 <!-- list -->
                 <ul class="ulList type1">
                     <li>
-                        <strong class="label-tit">법인 휴대폰 번호</strong>
-                        <slp-text-field placeholder="법인 휴대폰 번호" error message="휴대폰 번호를 입력해주세요."></slp-text-field>
-                    </li>
-                    <li>
-                        <strong class="label-tit">이름</strong>
-                        <div class="infoChk">
-                            <slp-text-field placeholder="이름 입력" error message="이름을 입력해주세요."></slp-text-field>
-                            <button type="button" class="btn sm fwr">중복확인</button>
-                        </div>
+                        <strong class="label-tit">성명</strong>
+                        <slp-text-field placeholder="성명을 입력하세요" value="홍길동" ></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit">이메일</strong>
                         <div class="emailChk">
-                          <slp-text-field placeholder="이메일 입력" error message="이메일 형식에 맞지 않습니다."></slp-text-field>
+                          <slp-text-field placeholder="이메일 입력" error message="이메일 형식에 맞지 않습니다" value="multi12@mulcam.com"></slp-text-field>
                           <button type="button" class="btn sm" @click="send()">인증번호 재전송</button>
                         </div>
                     </li>
@@ -45,12 +38,12 @@
                         <strong class="label-tit">인증번호 입력</strong>
                         <!-- 기존 디폴트 텍스트 노출의 경우 컴포넌트가 없어 임의로 메시지 노출 해놨습니다.-->
                         <div class="emailChk">
-                            <slp-text-field placeholder="인증번호 입력" error></slp-text-field>
+                            <slp-text-field placeholder="인증번호를 입력하세요" ></slp-text-field>
                             <span class="time">
-                              <span class="num">00:00</span>분
+                              <span class="num">15:00</span>분
                             </span>
                         </div>
-                        <p class="InfoChK-resultTxt"> 인증번호가 오지 않으면 입력하신 정보가 정확한지 확인해 주세요.</p>
+                        <p class="InfoChK-resultTxt">이메일로 인증번호를 발송했습니다. 인증번호가 오지 않으면 입력하신 정보가 정확한지 확인해 주세요.</p>
                         <p class="InfoChK-resultTxt err" style="display:none"> 유효시간이 초과되었습니다. 인증번호를 다시 전송해주세요.</p>
                     </li>
                 </ul>
@@ -86,7 +79,7 @@
 
 <script>
 export default {
-  name: 'Login_certifyemail_corporate',
+  name: 'Login_certifyemail',
   /* vue lifecycle */
   created () {
   },

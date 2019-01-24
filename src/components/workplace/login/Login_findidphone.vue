@@ -19,12 +19,8 @@
                 <!-- list -->
                 <ul class="ulList type1">
                     <li>
-                        <strong class="label-tit">아이디</strong>
-                        <slp-text-field  placeholder="아이디 입력"></slp-text-field>
-                    </li>
-                    <li>
-                        <strong class="label-tit">이름</strong>
-                        <slp-text-field  placeholder="이름 입력"></slp-text-field>
+                        <strong class="label-tit">성명</strong>
+                        <slp-text-field  placeholder="성명을 입력하세요"></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit">휴대전화</strong>
