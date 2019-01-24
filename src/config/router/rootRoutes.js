@@ -328,6 +328,12 @@ import MySpaceStudymanagementNoteDetail from '~workplace/myspace/MySpace_studyma
 import MySpaceStudymanagementNoteEdit from '~workplace/myspace/MySpace_studymanagement_note_edit'
 import MySpaceStudymanagementReminder from '~workplace/myspace/MySpace_studymanagement_reminder'
 import MySpaceStudymanagementReminderDetail from '~workplace/myspace/MySpace_studymanagement_reminder_detail'
+import MySpaceStudystatistics from '~workplace/myspace/MySpace_studystatistics'
+import MySpaceStudystatisticsGrade from '~workplace/myspace/MySpace_studystatistics_grade'
+import MySpaceStudystatisticsGrown from '~workplace/myspace/MySpace_studystatistics_grown'
+import MySpaceStudystatisticsActivity from '~workplace/myspace/MySpace_studystatistics_activity'
+import MySpaceStudystatisticsKeyword from '~workplace/myspace/MySpace_studystatistics_keyword'
+import MySpaceStudystatisticsKeywordNosearch from '~workplace/myspace/MySpace_studystatistics_keyword_nosearch'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -2120,6 +2126,36 @@ var rootRoutes = [
     path: '/MySpace_studymanagement_reminder_detail',
     name: 'MySpace_studymanagement_reminder_detail',
     component: MySpaceStudymanagementReminderDetail
+  },
+  {
+    path: '/MySpace_studystatistics',
+    name: 'MySpace_studystatistics',
+    component: MySpaceStudystatistics
+  },
+  {
+    path: '/MySpace_studystatistics_grade',
+    name: 'MySpace_studystatistics_grade',
+    component: MySpaceStudystatisticsGrade
+  },
+  {
+    path: '/MySpace_studystatistics_grown',
+    name: 'MySpace_studystatistics_grown',
+    component: MySpaceStudystatisticsGrown
+  },
+  {
+    path: '/MySpace_studystatistics_activity',
+    name: 'MySpace_studystatistics_activity',
+    component: MySpaceStudystatisticsActivity
+  },
+  {
+    path: '/MySpace_studystatistics_keyword',
+    name: 'MySpace_studystatistics_keyword',
+    component: MySpaceStudystatisticsKeyword
+  },
+  {
+    path: '/MySpace_studystatistics_keyword_nosearch',
+    name: 'MySpace_studystatistics_keyword_nosearch',
+    component: MySpaceStudystatisticsKeywordNosearch
   },
   {
     path: '/regiclass_detailview_books',
