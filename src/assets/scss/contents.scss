@@ -2313,8 +2313,8 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .myLearn li > div span {width: 80px; display: inline-block;}
 .MySpace .myLearn li > div strong {font-size: map-get($font_size, font_15);}
 //keyword
-.keyword li .number{font-size: map-get($font_size, font_18); width: 30px; display: inline-block;}
-.keyword li .contents{border-bottom:1px solid map-get($line_colors, B89); padding: 12px 0; font-size: map-get($font_size, font_16); text-overflow: ellipsis; width: inherit; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden; -webkit-line-clamp: 1;}
+.keyword li .number{padding: 12px 0; font-size: map-get($font_size, font_18); width: 30px; display: inline-block;}
+.keyword li .contents{border-bottom:1px solid map-get($line_colors, B89); font-size: map-get($font_size, font_16); text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
 .keyword li .no-date{text-align: center; padding: 24px 0; font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_65);}
 .keyword li .no-date .ico.search {width: 24px; height: 24px; background-size: cover; margin-top: -4px;}
 
