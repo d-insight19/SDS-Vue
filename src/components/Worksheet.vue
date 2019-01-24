@@ -360,6 +360,9 @@
         <td>
           <router-link :to="{ name: 'Login_jointermsdetail' }">
             Login_jointermsdetail
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_jointermsdetailscroll' }">
+            Login_jointermsdetailscroll
           </router-link>
         </td>
         <td>수정됨</td>

@@ -65,6 +65,7 @@ import LoginJoinTerms from '~workplace/login/Login_jointerms'
 import LoginJoinTermsToast from '~workplace/login/Login_jointermstoast'
 import LoginJoinTermsSelect from '~workplace/login/Login_jointermsselect'
 import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
+import LoginJoinTermsdetailscroll from '~workplace/login/Login_jointermsdetailscroll'
 import LoginJoinId from '~workplace/login/Login_joinid'
 import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
 import LoginJoinBasicInfoInputon from '~workplace/login/login_join_basicinfo_inputon'
@@ -911,6 +912,11 @@ var rootRoutes = [
     path: '/Login_jointermsdetail',
     name: 'Login_jointermsdetail',
     component: LoginJoinTermsdetail
+  },
+  {
+    path: '/Login_jointermsdetailscroll',
+    name: 'Login_jointermsdetailscroll',
+    component: LoginJoinTermsdetailscroll
   },
   {
     path: '/Login_joinid',
