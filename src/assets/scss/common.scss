@@ -893,5 +893,8 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .require_mark:after{position:absolute;display:inline-block !important;content:'';width:4px;height:4px;background:map-get($static_colors , danger);border-radius: 4px;right:-7px}
 
 // 동영상
-.volume_wrap .volume_left .inner{background-image: linear-gradient(to top,rgba(#00adfb,0), #00adfb );}
-.volume_wrap .volume_right .inner{background-image: linear-gradient(to top, rgba(#00adfb,0), #00adfb );}
+.flowplayer{font-size:map-get($font_size, font_16);}
+.flowplayer .fp-controls .fp-controls-inner .fp-elapsed,.flowplayer .fp-controls .fp-controls-inner .fp-duration{font-size:map-get($font_size, font_13);}
+.flowplayer .fp-header .fp-header-txt{font-size:map-get($font_size, font_18);}
+.flowplayer.is-finished .fp-nextcontents-tit{font-size:map-get($font_size, font_15);}
+.flowplayer.is-finished .fp-cancleBtn{font-size:map-get($font_size, font_16);}

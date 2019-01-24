@@ -1473,11 +1473,11 @@ label.rdo .label{position: relative;}
 
 .study_title_detail > .s_detail_wrap.detail_goal li + li{margin-top:4px;}
 .study_title_detail > .s_detail_wrap.detail_goal li{position:relative;padding-left:10px;font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8)}
-.study_title_detail > .s_detail_wrap.detail_goal li::before{content: '';width:2px;height:2px;position:absolute;top:50%;transform: translateY(-50%);left: 0px;background: #000;}
+.study_title_detail > .s_detail_wrap.detail_goal li::before{content: '';width:2px;height:2px;position:absolute;top:11px;left: 0px;background: #000;}
 
 .study_title_detail > .s_detail_wrap.detail_target li + li{margin-top:4px;}
 .study_title_detail > .s_detail_wrap.detail_target li{position:relative;padding-left:10px;font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8)}
-.study_title_detail > .s_detail_wrap.detail_target li::before{content: '';width:2px;height:2px;position:absolute;top:50%;transform: translateY(-50%);left: 0px;background: #000;}
+.study_title_detail > .s_detail_wrap.detail_target li::before{content: '';width:2px;height:2px;position:absolute;top:11px;left: 0px;background: #000;}
 
 .study_title_detail > .s_detail_wrap.detail_introduce .teacher_profile{display:flex;flex-direction: row}
 .study_title_detail > .s_detail_wrap.detail_introduce .detail_sub_title{margin-bottom:13px}
