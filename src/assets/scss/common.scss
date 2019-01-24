@@ -898,3 +898,5 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .flowplayer .fp-header .fp-header-txt{font-size:map-get($font_size, font_18);}
 .flowplayer.is-finished .fp-nextcontents-tit{font-size:map-get($font_size, font_15);}
 .flowplayer.is-finished .fp-cancleBtn{font-size:map-get($font_size, font_16);}
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li{font-size:map-get($font_size, font_14);font-family: 'Noto Sans CJK KR'}
+.flowplayer .fp-pauseIcon .pauseIcon_txt{font-family: 'Roboto';font-size:map-get($font_size, font_13);}

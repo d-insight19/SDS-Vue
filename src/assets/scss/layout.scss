@@ -24,6 +24,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         font-weight: 600;
+        flex:1;
       }
       & .end{
         font-weight:400;
@@ -216,15 +217,15 @@
 /* common */
 #wrap{height: 100%;}
 
-#header .header_text{display:none;}
-#header.fixed .header_text {display:block;}
+#header .header_text{visibility: hidden;}
+#header.fixed .header_text {visibility:visible;}
 #header{  
   position: relative;
-  display: block;
+  display: flex;
   width:100%;
   height:56px;
   line-height: 56px;
-  padding:0 36px 0 72px;
+  padding:0 0px 0 72px;
   background:transparent;
   box-sizing:border-box;        
   border-bottom:1px solid transparent;
@@ -409,7 +410,8 @@
 
 // 확장형 헤더 + 동영상
 #header.tab.video{padding-bottom:43px;min-height:140px;}
-#header.tab.video .header_inner.line1{height:96px;}
+#header.tab.video.fixed .header_inner.line1{height:96px;line-height:22px;padding: 17px 138px 0px 72px;color:#fff;font-weight: 400;letter-spacing: -0.45px;}
+#header.tab.video.fixed p.header_text{display: -webkit-box;white-space: unset !important;}
 
 
 .subType2 #header{position: relative;}
