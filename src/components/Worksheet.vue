@@ -188,6 +188,10 @@
           <router-link :to="{ name: 'Login_findcenter_url_keyboard' }">
             Login_findcenter_url_keyboard
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_findcenter_url_complete' }">
+            Login_findcenter_url_complete
+          </router-link>
         </td>
         <td>수정됨</td>
       </tr>
@@ -781,11 +785,11 @@
         <td>　</td>
         <td class="textL">01.login_08.01_findid_ipin</td>
         <td>
-          <router-link :to="{ name: 'Login_certifyipin' }">
-            Login_certifyipin
+          <router-link :to="{ name: 'Login_findid_ipin' }">
+            Login_findid_ipin
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">33</td>
@@ -894,7 +898,7 @@
             Login_certifyipin
           </router-link>
         </td>
-        <td></td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">39</td>
@@ -919,9 +923,18 @@
             Login_certify_email_certify_error2
           </router-link>
           <br/>
-          <router-link :to="{ name: 'Login_certifyemail_corporate' }">
-            Login_certifyemail_corporate
+          <router-link :to="{ name: 'Login_login_corporationphone1' }">
+            Login_login_corporationphone1
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_corporationphone2' }">
+            Login_login_corporationphone2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_corporationphone3' }">
+            Login_login_corporationphone3
+          </router-link>
+          
         </td>
         <td>수정됨</td>
       </tr>

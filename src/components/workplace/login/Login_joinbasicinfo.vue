@@ -32,7 +32,7 @@
                     </li>
                     <li>
                         <strong class="label-tit require_mark">이름</strong>
-                        <slp-text-field placeholder="이름 입력" error message="이름을 입력해주세요."></slp-text-field>
+                        <slp-text-field placeholder="이름 입력" message="이름을 입력해주세요."></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit require_mark">비밀번호</strong>
@@ -43,7 +43,7 @@
                                 <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p>
+                                <!-- <p class="InfoChK-resultTxt err">8~12자의 영문자, 특수문자 조합만 가능합니다.</p> -->
                             </div>
                         </div>
                     </li>
@@ -55,7 +55,7 @@
                                 <input type="text"  pattern="^\s+" class="input" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" />
                                 <a href="#" class="btn eye" v-show="password_show" @click="passwordtoggle"><span class="ico"></span></a>
                                 <a href="#" class="btn eye eye_slash" v-show="!password_show" @click="passwordtoggle"><span class="ico"></span></a>
-                                <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p>
+                                <!-- <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p> -->
                             </div>
                         </div>
                     </li>                    
@@ -68,11 +68,11 @@
                     </li>
                     <li>
                         <strong class="label-tit require_mark">이메일</strong>
-                        <slp-text-field placeholder="이메일 입력" error message="이메일 주소를 입력해주세요."></slp-text-field>
+                        <slp-text-field placeholder="이메일 입력" message="이메일 주소를 입력해주세요."></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit require_mark">휴대전화</strong>
-                        <slp-text-field placeholder="‘-‘ 없이 숫자만 입력" error message="‘-’ 또는 띄어쓰기 없이 10자 이상 입력해주세요."></slp-text-field>
+                        <slp-text-field placeholder="‘-‘ 없이 숫자만 입력" message="‘-’ 또는 띄어쓰기 없이 10자 이상 입력해주세요."></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit">생년월일</strong>

@@ -43,6 +43,7 @@ import LoginFindcenterSelect02 from '~workplace/login/Login_findcenter_select_02
 import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
 import LoginFindcenterUrl2 from '~workplace/login/Login_findcenter_url2'
 import LoginFindcenterUrlKeyboard from '~workplace/login/Login_findcenter_url_keyboard'
+import LoginFindcenterUrlComplete from '~workplace/login/Login_findcenter_url_complete'
 import LoginLogin from '~workplace/login/Login_login'
 import LoginLogin02 from '~workplace/login/Login_login_02'
 import LoginLoginNotview from '~workplace/login/Login_login_notview'
@@ -99,7 +100,7 @@ import LoginFindpwEmail from '~workplace/login/Login_findpwemail'
 import LoginCertifyPhone from '~workplace/login/Login_certifyphone'
 import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
 import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
-import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
+// import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
 
 import Loginloginchangeidmainconfirm from '~workplace/login/Login_login_changeid_main_confirm'
 import Loginloginchangeidmainerror from '~workplace/login/Login_login_changeid_main_error'
@@ -116,12 +117,10 @@ import Loginfindpwemailtoastpopup from '~workplace/login/Login_findpw_email_toas
 import Logincertifyemailcertifyerror1 from '~workplace/login/Login_certify_email_certify_error1'
 import Logincertifyemailcertifyerror2 from '~workplace/login/Login_certify_email_certify_error2'
 import Logincertifyemailcertifyerror3 from '~workplace/login/Login_certify_email_certify_error3'
-/*
 import Loginfindidipin from '~workplace/login/Login_findid_ipin'
 import Loginlogincorporationphone1 from '~workplace/login/Login_login_corporationphone1'
 import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporationphone2'
 import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
-*/
 
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
@@ -740,6 +739,11 @@ var rootRoutes = [
     component: LoginFindcenterUrlKeyboard
   },
   {
+    path: '/Login_findcenter_url_complete',
+    name: 'Login_findcenter_url_complete',
+    component: LoginFindcenterUrlComplete
+  },
+  {
     path: '/Login_login',
     name: 'Login_login',
     component: LoginLogin
@@ -1019,11 +1023,11 @@ var rootRoutes = [
     name: 'Login_certifyemail',
     component: LoginCertifyEmail
   },
-  {
-    path: '/Login_certifyemail_corporate',
-    name: 'Login_certifyemail_corporate',
-    component: LoginCertifyEmailCorporate
-  },
+  // {
+  //   path: '/Login_certifyemail_corporate',
+  //   name: 'Login_certifyemail_corporate',
+  //   component: LoginCertifyEmailCorporate
+  // },
   {
     path: '/Login_login_changeid_main_confirm',
     name: 'Login_login_changeid_main_confirm',
@@ -1099,7 +1103,6 @@ var rootRoutes = [
     name: 'Login_certify_email_certify_error3',
     component: Logincertifyemailcertifyerror3
   },
-  /*
   {
     path: '/Login_findid_ipin',
     name: 'Login_findid_ipin',
@@ -1120,7 +1123,6 @@ var rootRoutes = [
     name: 'Login_login_corporationphone3',
     component: Loginlogincorporationphone3
   },
-  */
   {
     path: '/Study_dictionary',
     name: 'Study_dictionary',
