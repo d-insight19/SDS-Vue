@@ -14,21 +14,21 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                <h1 class="h-tit1">핸드폰 번호로 찾기</h1>
+                <h1 class="h-tit1">휴대폰 번호로 찾기</h1>
 
                 <!-- list -->
                 <ul class="ulList type1">
                     <li>
                         <strong class="label-tit">아이디</strong>
-                        <input type="text" class="input" placeholder="아이디 입력">
+                        <input type="text" class="input" placeholder="아이디를 입력하세요">
                     </li>
                     <li>
-                        <strong class="label-tit">이름</strong>
-                        <input type="text" class="input" placeholder="이름 입력">
+                        <strong class="label-tit">성명</strong>
+                        <input type="text" class="input" placeholder="성명을 입력하세요">
                     </li>
                     <li>
                         <strong class="label-tit">휴대전화</strong>
-                        <input type="text" class="input" placeholder="‘-‘ 없이 숫자만 입력">
+                        <input type="text" class="input" placeholder="‘-’없이 숫자만 입력하세요">
                     </li>
                 </ul>
                 <!-- // list -->

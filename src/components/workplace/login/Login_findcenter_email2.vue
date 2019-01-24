@@ -20,11 +20,11 @@
                         <ul class="ulList type2">
                             <li>
                                 <strong class="label-tit">성명</strong>
-                                <slp-text-field placeholder="성명을 입력하세요" error message="성명을 입력해주세요."></slp-text-field>
+                                <slp-text-field placeholder="성명을 입력하세요"></slp-text-field>
                             </li>
                             <li>
                                 <strong class="label-tit">이메일</strong>
-                                <slp-text-field placeholder="이메일을 입력하세요" error message="이메일 형식에 맞지 않습니다."></slp-text-field>
+                                <slp-text-field placeholder="이메일을 입력하세요"></slp-text-field>
                             </li>
                         </ul>
                         <!-- //list -->

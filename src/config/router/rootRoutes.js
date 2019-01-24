@@ -43,6 +43,7 @@ import LoginFindcenterSelect02 from '~workplace/login/Login_findcenter_select_02
 import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
 import LoginFindcenterUrl2 from '~workplace/login/Login_findcenter_url2'
 import LoginFindcenterUrlKeyboard from '~workplace/login/Login_findcenter_url_keyboard'
+import LoginFindcenterUrlComplete from '~workplace/login/Login_findcenter_url_complete'
 import LoginLogin from '~workplace/login/Login_login'
 import LoginLogin02 from '~workplace/login/Login_login_02'
 import LoginLoginNotview from '~workplace/login/Login_login_notview'
@@ -64,10 +65,15 @@ import LoginJoinTerms from '~workplace/login/Login_jointerms'
 import LoginJoinTermsToast from '~workplace/login/Login_jointermstoast'
 import LoginJoinTermsSelect from '~workplace/login/Login_jointermsselect'
 import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
+import LoginJoinTermsdetailscroll from '~workplace/login/Login_jointermsdetailscroll'
 import LoginJoinId from '~workplace/login/Login_joinid'
 import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
+import LoginJoinBasicInfoInputon from '~workplace/login/login_join_basicinfo_inputon'
+import LoginJoinBasicInfoError from '~workplace/login/login_join_basicinfo_error'
 import LoginSearchPost from '~workplace/login/Login_searchpost'
 import LoginSearchPostError from '~workplace/login/Login_searchposterror'
+import LoginSearchPostResult from '~workplace/login/Login_searchpostresult'
+import LoginSearchPostKeyboard from '~workplace/login/Login_searchpostkeyboard'
 import LoginSearchCompany from '~workplace/login/Login_searchcompany'
 import LoginSearchCompanyControl from '~workplace/login/Login_searchcompany_control'
 import LoginSearchCompanyResult from '~workplace/login/Login_searchcompanyresult'
@@ -99,30 +105,27 @@ import LoginFindpwEmail from '~workplace/login/Login_findpwemail'
 import LoginCertifyPhone from '~workplace/login/Login_certifyphone'
 import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
 import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
-import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
+// import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
 
 import Loginloginchangeidmainconfirm from '~workplace/login/Login_login_changeid_main_confirm'
 import Loginloginchangeidmainerror from '~workplace/login/Login_login_changeid_main_error'
 import Loginloginchangepwerror1 from '~workplace/login/Login_login_changepw_error1'
 import Loginloginchangepwerror2 from '~workplace/login/Login_login_changepw_error2'
 import Loginloginchangepwerror3 from '~workplace/login/Login_login_changepw_error3'
-/*
-import Loginloginunlockiddomestic from '~workplace/login/Login_login_unlockid_domestic'
-import Loginloginunlockidoverseas from '~workplace/login/Login_login_unlockid_overseas'
+import Loginloginunlockid2 from '~workplace/login/Login_login_unlockid2'
+import Loginloginunlockidemail from '~workplace/login/Login_login_unlockid_email'
 import Loginloginunlockidcomplete from '~workplace/login/Login_login_unlockid_complete'
-import Loginlogindormant from '~workplace/login/Login_login_dormant'
 import Loginlogindormantemail from '~workplace/login/Login_login_dormant_email'
 import Loginlogindormantcomplete from '~workplace/login/Login_login_dormant_complete'
 import Loginfindidresultpopup from '~workplace/login/Login_findid_result_popup'
-import Loginfindidipin from '~workplace/login/Login_findid_ipin'
 import Loginfindpwemailtoastpopup from '~workplace/login/Login_findpw_email_toastpopup'
 import Logincertifyemailcertifyerror1 from '~workplace/login/Login_certify_email_certify_error1'
 import Logincertifyemailcertifyerror2 from '~workplace/login/Login_certify_email_certify_error2'
 import Logincertifyemailcertifyerror3 from '~workplace/login/Login_certify_email_certify_error3'
+import Loginfindidipin from '~workplace/login/Login_findid_ipin'
 import Loginlogincorporationphone1 from '~workplace/login/Login_login_corporationphone1'
 import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporationphone2'
 import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
-*/
 
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
@@ -747,6 +750,11 @@ var rootRoutes = [
     component: LoginFindcenterUrlKeyboard
   },
   {
+    path: '/Login_findcenter_url_complete',
+    name: 'Login_findcenter_url_complete',
+    component: LoginFindcenterUrlComplete
+  },
+  {
     path: '/Login_login',
     name: 'Login_login',
     component: LoginLogin
@@ -912,6 +920,11 @@ var rootRoutes = [
     component: LoginJoinTermsdetail
   },
   {
+    path: '/Login_jointermsdetailscroll',
+    name: 'Login_jointermsdetailscroll',
+    component: LoginJoinTermsdetailscroll
+  },
+  {
     path: '/Login_joinid',
     name: 'Login_joinid',
     component: LoginJoinId
@@ -922,6 +935,16 @@ var rootRoutes = [
     component: LoginJoinBasicInfo
   },
   {
+    path: '/login_join_basicinfo_inputon',
+    name: 'login_join_basicinfo_inputon',
+    component: LoginJoinBasicInfoInputon
+  },
+  {
+    path: '/login_join_basicinfo_error',
+    name: 'login_join_basicinfo_error',
+    component: LoginJoinBasicInfoError
+  },
+  {
     path: '/Login_searchpost',
     name: 'Login_searchpost',
     component: LoginSearchPost
@@ -930,6 +953,16 @@ var rootRoutes = [
     path: '/Login_searchposterror',
     name: 'Login_searchposterror',
     component: LoginSearchPostError
+  },
+  {
+    path: '/Login_searchpostresult',
+    name: 'Login_searchpostresult',
+    component: LoginSearchPostResult
+  },
+  {
+    path: '/Login_searchpostkeyboard',
+    name: 'Login_searchpostkeyboard',
+    component: LoginSearchPostKeyboard
   },
   {
     path: '/Login_searchcompany',
@@ -1026,11 +1059,11 @@ var rootRoutes = [
     name: 'Login_certifyemail',
     component: LoginCertifyEmail
   },
-  {
-    path: '/Login_certifyemail_corporate',
-    name: 'Login_certifyemail_corporate',
-    component: LoginCertifyEmailCorporate
-  },
+  // {
+  //   path: '/Login_certifyemail_corporate',
+  //   name: 'Login_certifyemail_corporate',
+  //   component: LoginCertifyEmailCorporate
+  // },
   {
     path: '/Login_login_changeid_main_confirm',
     name: 'Login_login_changeid_main_confirm',
@@ -1056,26 +1089,20 @@ var rootRoutes = [
     name: 'Login_login_changepw_error3',
     component: Loginloginchangepwerror3
   },
-  /*
   {
-    path: '/Login_login_unlockid_domestic',
-    name: 'Login_login_unlockid_domestic',
-    component: Loginloginunlockiddomestic
+    path: '/Login_login_unlockid2',
+    name: 'Login_login_unlockid2',
+    component: Loginloginunlockid2
   },
   {
-    path: '/Login_login_unlockid_overseas',
-    name: 'Login_login_unlockid_overseas',
-    component: Loginloginunlockidoverseas
+    path: '/Login_login_unlockid_email',
+    name: 'Login_login_unlockid_email',
+    component: Loginloginunlockidemail
   },
   {
     path: '/Login_login_unlockid_complete',
     name: 'Login_login_unlockid_complete',
     component: Loginloginunlockidcomplete
-  },
-  {
-    path: '/Login_login_dormant',
-    name: 'Login_login_dormant',
-    component: Loginlogindormant
   },
   {
     path: '/Login_login_dormant_email',
@@ -1091,11 +1118,6 @@ var rootRoutes = [
     path: '/Login_findid_result_popup',
     name: 'Login_findid_result_popup',
     component: Loginfindidresultpopup
-  },
-  {
-    path: '/Login_findid_ipin',
-    name: 'Login_findid_ipin',
-    component: Loginfindidipin
   },
   {
     path: '/Login_findpw_email_toastpopup',
@@ -1118,6 +1140,11 @@ var rootRoutes = [
     component: Logincertifyemailcertifyerror3
   },
   {
+    path: '/Login_findid_ipin',
+    name: 'Login_findid_ipin',
+    component: Loginfindidipin
+  },
+  {
     path: '/Login_login_corporationphone1',
     name: 'Login_login_corporationphone1',
     component: Loginlogincorporationphone1
@@ -1132,7 +1159,6 @@ var rootRoutes = [
     name: 'Login_login_corporationphone3',
     component: Loginlogincorporationphone3
   },
-  */
   {
     path: '/Study_dictionary',
     name: 'Study_dictionary',
