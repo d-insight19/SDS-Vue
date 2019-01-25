@@ -1944,20 +1944,6 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 
 // 김현미 작업
 // 메인
-// common.css 에 추가
-.mono_100 {color: map-get($mono_colors, mono_100) !important;}
-.mono_80 {color: map-get($mono_colors, mono_80) !important;}
-.mono_65 {color: map-get($mono_colors, mono_65) !important;}
-.mono_50 {color: map-get($mono_colors, mono_50) !important;}
-.mono_40 {color: map-get($mono_colors, mono_40) !important;}
-.mono_25 {color: map-get($mono_colors, mono_25) !important;}
-.mono_0  {color: map-get($mono_colors, mono_0)  !important;}
-.width_inherit {width: inherit !important;}
-.width100 {width:100% !important;}
-.width50 {width:50% !important;}
-.color_danger{color: map-get($static_colors , danger);}
-.color_primary{color: map-get($static_colors , primary);}
-.o6{opacity: 0.6;}
 // fixTab a 높이 변경
 .CLIPingType #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
 .search #header.tab .header_inner.line2.scroll-x .fixTab li a {line-height: 39px;}
@@ -2013,8 +1999,8 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MainType .status .white .info p + p {font-size: map-get($font_size, font_18);}
 .MainType .status dl{width: 100%; display: table; line-height: 180%; left: 24px;}
 .MainType .status dl.line {border-top: 1px solid map-get($line_colors, B89);}
-.MainType .status dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 40%; display: table-cell; }
-.MainType .status dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); width: 60%; display: table-cell; text-align: right;}
+.MainType .status dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); display: table-cell; }
+.MainType .status dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); display: table-cell; text-align: right;}
 .MainType .status dd strong{font-size: map-get($font_size, font_16);}
 .MainType .status .white.big {padding-top:25px; padding-bottom:25px;}
 .MainType .status .white.big dl {line-height: 280%;}
@@ -2178,7 +2164,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .search #header .ulList.type1 .in-chk .labelChk2 {margin-top:0px;}
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
 
-.MySpace.gray_bg {background-color: map-get($bg_colors , BG_1);}
+.MySpace .gray_bg {background-color: map-get($bg_colors , BG_1);}
 .MySpace .white_bg {background-color: #fff}
 .MySpace #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .MySpace #dropdown{top:0px;right:0px;}
@@ -2249,19 +2235,23 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .status .white .info {position:absolute; margin-top:-25px; top:50%; left: 24px;}
 .MySpace .status .white .info strong {font-size: map-get($font_size, font_30);}
 .MySpace .status .white .info p {font-size: map-get($font_size, font_20); color: map-get($mono_colors, mono_80);}
-.MySpace .status .gray_bg{background-color: map-get($bg_colors, BG_1);}
+.MySpace .status .gray_bg{background-color: #f2f3f7;}
 .MySpace .status dl{width: 100%; display: table; line-height: 220%; left: 24px;}
 .MySpace .status dl.line {border-top: 1px solid map-get($line_colors, B89);}
-.MySpace .status dt{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_80); width: 40%; display: table-cell; }
-.MySpace .status dd{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_80); width: 60%; display: table-cell; text-align: right;}
-.MySpace .status dd strong{font-size: map-get($font_size, font_20);}
+.MySpace .status dt{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); display: table-cell; }
+.MySpace .status dd{font-size: map-get($font_size, font_14); color: map-get($mono_colors, mono_80); display: table-cell; text-align: right;}
+.MySpace .status dd strong{font-size: map-get($font_size, font_16);}
 .MySpace .status .white.big {padding:25px 24px 25px 145px;}
-.MySpace .status .white.big dl {line-height: 280%;}
 .MySpace .status .white.big .info {position:absolute; margin-top:-60px; top:50%; left: 0px;}
 .MySpace .status .white.big .info img{width: 120px; height: 120px;}
-.MySpace .status .big dt{font-size: map-get($font_size, font_14);}
-.MySpace .status .big dd{font-size: map-get($font_size, font_14);}
-.MySpace .status .big dd strong{font-size: map-get($font_size, font_16);}
+.MySpace .status .big dl {line-height: 290%;}
+.MySpace .status .big dt{font-size: map-get($font_size, font_16);}
+.MySpace .status .big dd{font-size: map-get($font_size, font_16);}
+.MySpace .status .big dd strong{font-size: map-get($font_size, font_18);}
+.MySpace .status .big2 dl {line-height: 380%;}
+.MySpace .status .big2 dt{font-size: map-get($font_size, font_16);}
+.MySpace .status .big2 dd{font-size: map-get($font_size, font_16);}
+.MySpace .status .big2 dd strong{font-size: map-get($font_size, font_18);}
 .MySpace .cardList.type2.x100 .thum {width:100px; height:100px;}
 .MySpace .cardList.type2.x100 .in {height:100px; padding-left: 118px;}
 .MySpace .cardList.type2.x100 .moredot {top:calc(50% - 10px)}
@@ -2312,11 +2302,38 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .myLearn li > div p {font-size: map-get($font_size, font_14);}
 .MySpace .myLearn li > div span {width: 80px; display: inline-block;}
 .MySpace .myLearn li > div strong {font-size: map-get($font_size, font_15);}
+//point_area
+.MySpace .point_area {display:table; table-layout: fixed;}
+.MySpace .point_area > li {display:table-cell;}
+.MySpace .point_area > li .in {width:324px; height:216px; background-color:#fff; margin-right: 8px;}
+.MySpace .point_area > li:first-child .in{margin-left: 18px;}
+.MySpace .point_area > li:last-child .in{margin-right: 18px;}
+.MySpace .point_area .title {font-size: map-get($font_size, font_15); font-weight:500; margin-bottom:22px; padding: 24px 24px 0 24px;}
+.MySpace .point_area .score {font-size: map-get($font_size, font_34); font-weight:500; margin-bottom:22px; text-align: center;}
+.MySpace .point_area .score strong {font-size: map-get($font_size, font_40); font-weight:600;}
+.MySpace .point_area .rank {font-size: map-get($font_size, font_18); color: map-get($mono_colors, mono_65); text-align: center; font-weight:500;}
+.MySpace .point_area .grade1 {font-size: map-get($font_size, font_18); color: map-get($mono_colors, mono_65); text-align: center; font-weight:400;}
+.MySpace .point_area .grade2 {font-size: map-get($font_size, font_12); color: map-get($mono_colors, mono_50); text-align: center; font-weight:400;}
+.MySpace .point_area .progBox_wrap {margin: 0px 40px;}
+.MySpace .point_area .progBox_wrap > li {margin-bottom:4px;}
+.MySpace .point_area .point_list {display:table; width:100%;}
+.MySpace .point_area .point_list > li {display:table-cell; border-right:1px solid map-get($line_colors, B85); text-align: center;}
+.MySpace .point_area .point_list > li:last-child {border-right:0 none;}
+.MySpace .point_area .point_list > li .point_title{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_50);}
+.MySpace .point_area .point_list > li .point_score{font-size: map-get($font_size, font_18); font-weight:600;}
+.MySpace .pager_list {display:table; margin:5px auto;}
+.MySpace .pager_list > li {display:table-cell;}
+.MySpace .pager_list > li .dot {margin-right: 6px; margin-bottom: 13px; width:6px; height:6px; border-radius:100%; background-color:map-get($mono_colors, mono_25);}
+.MySpace .pager_list > li.active .dot {background-color:map-get($mono_colors, mono_65);}
+.MySpace .pager_list > li:last-child .dot{margin-right: 0px;}
+.MySpace .multiList.type1 > li{  border-top:1px solid #e3e3e3; border-bottom: 0 none;}
+
 //keyword
 .keyword li .number{padding: 12px 0; font-size: map-get($font_size, font_18); width: 30px; display: inline-block;}
 .keyword li .contents{border-bottom:1px solid map-get($line_colors, B89); font-size: map-get($font_size, font_16); text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
 .keyword li .no-date{text-align: center; padding: 24px 0; font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_65);}
 .keyword li .no-date .ico.search {width: 24px; height: 24px; background-size: cover; margin-top: -4px;}
+.keyword .multiList.type1 > li{  border-top:1px solid #e3e3e3;}
 
 //regiclass
 .regiclass #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}

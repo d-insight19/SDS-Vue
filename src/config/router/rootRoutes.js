@@ -337,6 +337,11 @@ import MySpaceStudystatisticsGrown from '~workplace/myspace/MySpace_studystatist
 import MySpaceStudystatisticsActivity from '~workplace/myspace/MySpace_studystatistics_activity'
 import MySpaceStudystatisticsKeyword from '~workplace/myspace/MySpace_studystatistics_keyword'
 import MySpaceStudystatisticsKeywordNosearch from '~workplace/myspace/MySpace_studystatistics_keyword_nosearch'
+import MySpacePoint from '~workplace/myspace/MySpace_point'
+import MySpaceCredit from '~workplace/myspace/MySpace_credit'
+import MySpaceCoupon from '~workplace/myspace/MySpace_coupon'
+import MySpaceCouponRegister from '~workplace/myspace/MySpace_coupon_register'
+import MySpaceCouponUsed from '~workplace/myspace/MySpace_coupon_used'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -2182,6 +2187,31 @@ var rootRoutes = [
     path: '/MySpace_studystatistics_keyword_nosearch',
     name: 'MySpace_studystatistics_keyword_nosearch',
     component: MySpaceStudystatisticsKeywordNosearch
+  },
+  {
+    path: '/MySpace_point',
+    name: 'MySpace_point',
+    component: MySpacePoint
+  },
+  {
+    path: '/MySpace_credit',
+    name: 'MySpace_credit',
+    component: MySpaceCredit
+  },
+  {
+    path: '/MySpace_coupon',
+    name: 'MySpace_coupon',
+    component: MySpaceCoupon
+  },
+  {
+    path: '/MySpace_coupon_register',
+    name: 'MySpace_coupon_register',
+    component: MySpaceCouponRegister
+  },
+  {
+    path: '/MySpace_coupon_used',
+    name: 'MySpace_coupon_used',
+    component: MySpaceCouponUsed
   },
   {
     path: '/regiclass_detailview_books',

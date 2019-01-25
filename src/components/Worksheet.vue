@@ -4316,8 +4316,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.08.point</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_point' }">
+            MySpace_point
           </router-link>
         </td>
         <td></td>
@@ -4333,9 +4333,10 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.08.point_log</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_point' }">
+            MySpace_point
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -4350,8 +4351,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.09.credit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_credit' }">
+            MySpace_credit
           </router-link>
         </td>
         <td></td>
@@ -4367,9 +4368,9 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.10.coupon</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          <!--<router-link :to="{ name: 'MySpace_coupon' }">
+            MySpace_coupon
+          </router-link>-->
         </td>
         <td></td>
       </tr>
@@ -4384,8 +4385,8 @@
         <td></td>
         <td class="textL">04.MySpace_04.10.coupon_register</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_coupon_register' }">
+            MySpace_coupon_register
           </router-link>
         </td>
         <td></td>
@@ -4401,9 +4402,9 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.10.coupon_used</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          <!--<router-link :to="{ name: 'MySpace_coupon_used' }">
+            MySpace_coupon_used
+          </router-link>-->
         </td>
         <td></td>
       </tr>

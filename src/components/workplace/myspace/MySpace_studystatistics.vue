@@ -37,7 +37,7 @@
           <div class="cell">
             <div class="filterArea ml-18 mr-18">
                 <p class="font_15 mono_80 fwb">
-                    학습 현황 통계 <span class="mono_50">6</span> <span class="ico down"></span>
+                    학습 현황 통계 <span class="ico down"></span>
                     <span class="ico filter"></span>
                 </p>
             </div>
