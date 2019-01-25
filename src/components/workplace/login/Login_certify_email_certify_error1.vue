@@ -25,12 +25,12 @@
                 <ul class="ulList type1">
                     <li>
                         <strong class="label-tit">성명</strong>
-                        <slp-text-field placeholder="성명을 입력하세요" error message="성명을 입력하세요."></slp-text-field>
+                        <slp-text-field realText placeholder="성명을 입력하세요" error message="성명을 입력하세요."></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit">이메일</strong>
                         <div class="emailChk">
-                          <slp-text-field placeholder="이메일 입력" value="multi12@mulcam.com"></slp-text-field>
+                          <slp-text-field realText placeholder="이메일 입력" value="multi12@mulcam.com"></slp-text-field>
                           <button type="button" class="btn sm" @click="send()">인증번호 재전송</button>
                         </div>
                     </li>
@@ -38,7 +38,7 @@
                         <strong class="label-tit">인증번호 입력</strong>
                         <!-- 기존 디폴트 텍스트 노출의 경우 컴포넌트가 없어 임의로 메시지 노출 해놨습니다.-->
                         <div class="emailChk">
-                            <slp-text-field placeholder="인증번호를 입력하세요" error></slp-text-field>
+                            <slp-text-field realText placeholder="인증번호를 입력하세요" error></slp-text-field>
                             <span class="time">
                               <span class="num">15:00</span>분
                             </span>
@@ -55,7 +55,7 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li><button type="button" class="btn md clr1">인증</button></li>
+                <li><button type="button" class="btn md " :class="{ clr1 : realText }">인증</button></li>
             </ul>
         </div>
         <!-- //floating button -->

@@ -32,7 +32,7 @@
                   <div class="intSchBox">
                     <div class="search-wrapper">
                         <input type="text"  pattern="^\s+" class="input" placeholder="회사명 입력" />
-                        <button class="close-icon" type="button"></button>
+                        <button class="close-icon" type="button" style="right:0 !important;"></button>
                     </div>
                   </div>
                 </div>

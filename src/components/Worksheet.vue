@@ -2897,10 +2897,6 @@
           <router-link :to="{ name: 'CLIPing_video_all' }">
             CLIPing_video_all
           </router-link>
-          ,
-          <router-link :to="{ name: 'CLIPing_videoSeries' }">
-            CLIPing_videoSeries
-          </router-link>
         </td>
         <td></td>
       </tr>
@@ -2917,6 +2913,9 @@
         <td>
           <router-link :to="{ name: 'CLIPing_videoSeries_detail' }">
             CLIPing_videoSeries_detail
+          </router-link><br/>
+          <router-link :to="{ name: 'CLIPing_videoSeries' }">
+            CLIPing_videoSeries
           </router-link>
         </td>
         <td></td>
@@ -7424,8 +7423,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_09.01.register_innovation</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_innovation' }">
+            regiclass_register_innovation
           </router-link>
         </td>
         <td>확인필요</td>
@@ -7515,8 +7514,8 @@
         <td>　</td>
         <td class="textL">01.login_02.03_search_post</td>
         <td>
-          <router-link :to="{ name: 'login_search_post' }">
-            login_search_post
+          <router-link :to="{ name: 'Login_searchpost' }">
+            Login_searchpost
           </router-link>
         </td>
         <td></td>
