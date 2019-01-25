@@ -1442,6 +1442,13 @@ label.rdo .label{position: relative;}
 #container.regiclass.basicinfo.register .label-tit-15.type1{font-size: map-get($font-size , font_14);line-height: 21px;letter-spacing: -0.42px; }
 #container.regiclass.basicinfo.register .label-tit-14.type1{font-family: 'roboto'; font-size: map-get($font-size , font_15);line-height: 21px;letter-spacing: -0.45px; }
 
+#container.searchcompany .label-tit-15.cus{line-height: 22px; margin-bottom:0px; color:rgba(0,0,0,1.0)}
+#container.searchcompany .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 8px;background: #d9d9d9;}
+#container.searchcompany .pipe-group dd:nth-last-child(1):after{display:none;}
+#container.searchcompany .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 19px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
+#container.searchcompany  .ulList.type2 li{ padding:15px 0; border-bottom:1px solid #e3e3e3;}
+#container.searchcompany  .ulList.type2 li + li{margin-top:0px;}
+
 
 // 수강신청 수강신청 완료
 #container.regiclass.complete h2.h-tit2 {font-size: map-get($font-size , font_26);line-height: 34px;letter-spacing: -0.78px; margin-bottom:0;}

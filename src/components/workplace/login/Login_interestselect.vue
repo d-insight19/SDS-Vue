@@ -21,7 +21,7 @@
                             <li>
                                 <strong class="label-tit">관심 분야</strong>
                                 <div class="in-chk">
-                                    <slp-checkbox type="button" >경영 / 리더십</slp-checkbox>
+                                    <slp-checkbox type="button" :value="value" @click="computedValue">경영 / 리더십</slp-checkbox>
                                     <slp-checkbox type="button" :value="value">금융</slp-checkbox>
                                     <slp-checkbox type="button" :value="value" >직무 / 자격</slp-checkbox>
                                     <slp-checkbox type="button">OPIC / 외국어</slp-checkbox>
@@ -58,7 +58,7 @@
                     <li>                            
                         <button type="button"  class="btn ld" style="display:none;">다음</button>
                         <!-- 하단에 활성화 된 버튼은 임시로 display:none :class="[checkedNames.length && checkedNames2.length && checkedNames3.length > 0 ? activeClass : '']" -->
-                        <button type="button" class="btn ld clr1" >다음</button>
+                        <button type="button" class="btn ld " :class="{ clr1 : value }" >다음</button>
                     </li>
                 </ul>                    
             </div>
@@ -87,11 +87,23 @@ export default {
   /* vue data */
   data () {
     return {
-        value: true
+        value: true,
+        newValue: true
     }
   },
   /* vue function */
   methods: {
+  },
+  computed: {
+    computedValue : {
+        get () {
+            return this.newValue
+        },
+        set (value) {
+            this.newValue = value
+            this.$emit('input', value)
+        }
+    }
   }
 }
 </script>

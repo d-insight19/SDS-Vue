@@ -35,18 +35,34 @@ import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
 import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
+import LoginFindcenterEmailKeyboard from '~workplace/login/Login_findcenter_email_keyboard'
+import LoginFindcenterEmailComplete from '~workplace/login/Login_findcenter_email_complete'
+import LoginFindcenterEmailError from '~workplace/login/Login_findcenter_email_error'
 import LoginFindcenterSelect from '~workplace/login/Login_findcenter_select'
+import LoginFindcenterSelect02 from '~workplace/login/Login_findcenter_select_02'
 import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
 import LoginFindcenterUrl2 from '~workplace/login/Login_findcenter_url2'
 import LoginFindcenterUrlKeyboard from '~workplace/login/Login_findcenter_url_keyboard'
 import LoginFindcenterUrlComplete from '~workplace/login/Login_findcenter_url_complete'
 import LoginLogin from '~workplace/login/Login_login'
+import LoginLogin02 from '~workplace/login/Login_login_02'
+import LoginLoginNotview from '~workplace/login/Login_login_notview'
+import LoginLoginWrite from '~workplace/login/Login_login_write'
+import LoginLoginError from '~workplace/login/Login_login_error'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
+import LoginLoginFail2 from '~workplace/login/Login_login_fail2'
+import LoginLoginTxt1 from '~workplace/login/Login_login_txt1'
+import LoginLoginNoguide from '~workplace/login/Login_login_noguide'
+import LoginLoginNoguideTxt1 from '~workplace/login/Login_login_noguide_txt1'
+import LoginLoginNoguideTxt2 from '~workplace/login/Login_login_noguide_txt2'
 import LoginInterest from '~workplace/login/Login_interest'
+import LoginInterestSelect from '~workplace/login/Login_interestselect'
 import LoginJoinType from '~workplace/login/Login_jointype'
 import LoginJoinCertify from '~workplace/login/Login_joincertify'
 import LoginJoinCertify2 from '~workplace/login/Login_joincertify2'
 import LoginJoinTerms from '~workplace/login/Login_jointerms'
+import LoginJoinTermsToast from '~workplace/login/Login_jointermstoast'
+import LoginJoinTermsSelect from '~workplace/login/Login_jointermsselect'
 import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
 import LoginJoinTermsdetailscroll from '~workplace/login/Login_jointermsdetailscroll'
 import LoginJoinId from '~workplace/login/Login_joinid'
@@ -58,12 +74,18 @@ import LoginSearchPostError from '~workplace/login/Login_searchposterror'
 import LoginSearchPostResult from '~workplace/login/Login_searchpostresult'
 import LoginSearchPostKeyboard from '~workplace/login/Login_searchpostkeyboard'
 import LoginSearchCompany from '~workplace/login/Login_searchcompany'
+import LoginSearchCompanyControl from '~workplace/login/Login_searchcompany_control'
 import LoginSearchCompanyResult from '~workplace/login/Login_searchcompanyresult'
 import LoginJoinInterest from '~workplace/login/Login_joininterest'
+import LoginJoinInterestSelect from '~workplace/login/Login_joininterestselect'
 import LoginJoinInExtrainfo from '~workplace/login/Login_joinextrainfo'
+import LoginJoinInExtrainfoLanguage from '~workplace/login/Login_joinextrainfolanguage'
+import LoginJoinInExtrainfoLanguageComplete from '~workplace/login/Login_joinextrainfolanguagecomplete'
+import LoginJoinInExtrainfoLanguageDelete from '~workplace/login/Login_joinextrainfolanguagedelete'
 import LoginJoinComplete from '~workplace/login/Login_joincomplete'
 import LoginLoginIntegration from '~workplace/login/Login_loginintegration'
 import LoginLoginIntegrationId from '~workplace/login/Login_loginintegrationid'
+import LoginLoginIntegrationIdWrite from '~workplace/login/login_loginintegrationidwrite'
 import LoginLoginReIntegration from '~workplace/login/Login_loginreintegration'
 import LoginLoginChangeId from '~workplace/login/Login_loginchangeid'
 import LoginLoginChangeIdMain from '~workplace/login/Login_loginchangeidmain'
@@ -683,9 +705,29 @@ var rootRoutes = [
     component: LoginFindcenterEmail2
   },
   {
+    path: '/Login_findcenter_email_keyboard',
+    name: 'Login_findcenter_email_keyboard',
+    component: LoginFindcenterEmailKeyboard
+  },
+  {
+    path: '/Login_findcenter_email_complete',
+    name: 'Login_findcenter_email_complete',
+    component: LoginFindcenterEmailComplete
+  },
+  {
+    path: '/Login_findcenter_email_error',
+    name: 'Login_findcenter_email_error',
+    component: LoginFindcenterEmailError
+  },
+  {
     path: '/Login_findcenter_select',
     name: 'Login_findcenter_select',
     component: LoginFindcenterSelect
+  },
+  {
+    path: '/Login_findcenter_select_02',
+    name: 'Login_findcenter_select_02',
+    component: LoginFindcenterSelect02
   },
   {
     path: '/Login_findcenter_url',
@@ -713,9 +755,54 @@ var rootRoutes = [
     component: LoginLogin
   },
   {
+    path: '/Login_login_02',
+    name: 'Login_login_02',
+    component: LoginLogin02
+  },
+  {
+    path: '/Login_login_notview',
+    name: 'Login_login_notview',
+    component: LoginLoginNotview
+  },
+  {
+    path: '/Login_login_write',
+    name: 'Login_login_write',
+    component: LoginLoginWrite
+  },
+  {
+    path: '/Login_login_error',
+    name: 'Login_login_error',
+    component: LoginLoginError
+  },
+  {
     path: '/Login_login_fail',
     name: 'Login_login_fail',
     component: LoginLoginFail
+  },
+  {
+    path: '/Login_login_fail2',
+    name: 'Login_login_fail2',
+    component: LoginLoginFail2
+  },
+  {
+    path: '/Login_login_txt1',
+    name: 'Login_login_txt1',
+    component: LoginLoginTxt1
+  },
+  {
+    path: '/Login_login_noguide',
+    name: 'Login_login_noguide',
+    component: LoginLoginNoguide
+  },
+  {
+    path: '/Login_login_noguide_txt1',
+    name: 'Login_login_noguide_txt1',
+    component: LoginLoginNoguideTxt1
+  },
+  {
+    path: '/Login_login_noguide_txt2',
+    name: 'Login_login_noguide_txt2',
+    component: LoginLoginNoguideTxt2
   },
   {
     path: '/Login_interest',
@@ -723,9 +810,29 @@ var rootRoutes = [
     component: LoginInterest
   },
   {
+    path: '/Login_interestselect',
+    name: 'Login_interestselect',
+    component: LoginInterestSelect
+  },
+  {
     path: '/Login_joinextrainfo',
     name: 'Login_joinextrainfo',
     component: LoginJoinInExtrainfo
+  },
+  {
+    path: '/Login_joinextrainfolanguage',
+    name: 'Login_joinextrainfolanguage',
+    component: LoginJoinInExtrainfoLanguage
+  },
+  {
+    path: '/Login_joinextrainfolanguagecomplete',
+    name: 'Login_joinextrainfolanguagecomplete',
+    component: LoginJoinInExtrainfoLanguageComplete
+  },
+  {
+    path: '/Login_joinextrainfolanguagedelete',
+    name: 'Login_joinextrainfolanguagedelete',
+    component: LoginJoinInExtrainfoLanguageDelete
   },
   {
     path: '/Login_joincomplete',
@@ -741,6 +848,11 @@ var rootRoutes = [
     path: '/Login_loginintegrationid',
     name: 'Login_loginintegrationid',
     component: LoginLoginIntegrationId
+  },
+  {
+    path: '/login_loginintegrationidwrite',
+    name: 'login_loginintegrationidwrite',
+    component: LoginLoginIntegrationIdWrite
   },
   {
     path: '/Login_loginreintegration',
@@ -776,6 +888,16 @@ var rootRoutes = [
     path: '/Login_jointerms',
     name: 'Login_jointerms',
     component: LoginJoinTerms
+  },
+  {
+    path: '/Login_jointermstoast',
+    name: 'Login_jointermstoast',
+    component: LoginJoinTermsToast
+  },
+  {
+    path: '/Login_jointermsselect',
+    name: 'Login_jointermsselect',
+    component: LoginJoinTermsSelect
   },
   {
     path: '/Login_jointermsdetail',
@@ -833,6 +955,11 @@ var rootRoutes = [
     component: LoginSearchCompany
   },
   {
+    path: '/Login_searchcompany_control',
+    name: 'Login_searchcompany_control',
+    component: LoginSearchCompanyControl
+  },
+  {
     path: '/Login_searchcompanyresult',
     name: 'Login_searchcompanyresult',
     component: LoginSearchCompanyResult
@@ -841,6 +968,11 @@ var rootRoutes = [
     path: '/Login_joininterest',
     name: 'Login_joininterest',
     component: LoginJoinInterest
+  },
+  {
+    path: '/Login_joininterestselect',
+    name: 'Login_joininterestselect',
+    component: LoginJoinInterestSelect
   },
   {
     path: '/Login_changepw',

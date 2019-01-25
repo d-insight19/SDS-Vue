@@ -149,17 +149,17 @@ export default {
   /* vue data */
   data () {
     return {
-        password_show: ''
+        password_show: true
     }
   },
   /* vue function */
   methods: {
       passwordtoggle () {
         this.password_show = !this.password_show
-        if (this.password_show === true) {
+        if (this.password_show === false) {
             this.$refs.refInput.setAttribute('type', 'password')
             this.$refs.refInput2.setAttribute('type', 'password')
-        } else if (this.password_show === false) {
+        } else if (this.password_show === true) {
             this.$refs.refInput.setAttribute('type', 'text')
             this.$refs.refInput2.setAttribute('type', 'text')
         }
