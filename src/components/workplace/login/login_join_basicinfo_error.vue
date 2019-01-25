@@ -149,7 +149,7 @@ export default {
   /* vue data */
   data () {
     return {
-        password_show: ''
+        password_show: true
     }
   },
   /* vue function */

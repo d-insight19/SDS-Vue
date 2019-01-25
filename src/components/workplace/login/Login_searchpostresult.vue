@@ -21,7 +21,7 @@
                 <ul class="searchul">
                   <li>
                     <p class="search-tit">주소 검색</p>
-                    <slp-select required placeholder="년도"  width="100%">
+                    <slp-select required placeholder="선택"  width="100%">
                         <option>서울특별시</option>
                     </slp-select>
                   </li>
@@ -31,7 +31,7 @@
                         <!-- X 아이콘이 필요한 input -->
                         <div class="search-wrapper">
                             <input type="text"  pattern="^\s+" class="input" placeholder="도로명, 지번, 건물명 검색하기" />
-                            <button class="close-icon" type="button"></button>
+                            <button class="close-icon" type="button" style="right:0"></button>
                         </div>
                         <!-- <a href="#" class="btn"><span class="ico"></span></a> -->
                     </div>

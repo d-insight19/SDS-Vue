@@ -941,6 +941,10 @@
             Login_certify_email_certify_error2
           </router-link>
           <br/>
+          <router-link :to="{ name: 'Login_certify_email_certify_error3' }">
+            Login_certify_email_certify_error3
+          </router-link>
+          <br/>
           <router-link :to="{ name: 'Login_login_corporationphone1' }">
             Login_login_corporationphone1
           </router-link>

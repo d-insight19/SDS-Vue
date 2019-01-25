@@ -30,12 +30,12 @@
                     <li>
                         <strong class="label-tit">이메일</strong>
                         <div class="emailChk">
-                          <slp-text-field placeholder="이메일 입력" error message="이메일 형식에 맞지 않습니다" value="multi12@mulcam.com"></slp-text-field>
+                          <slp-text-field placeholder="이메일을 입력하세요" error message="이메일 형식에 맞지 않습니다" value="multi12@mulcam.com"></slp-text-field>
                           <button type="button" class="btn sm" @click="send()">인증번호 재전송</button>
                         </div>
                     </li>
                     <li v-show="sendFlag">
-                        <strong class="label-tit">인증번호 입력</strong>
+                        <strong class="label-tit">인증번호</strong>
                         <!-- 기존 디폴트 텍스트 노출의 경우 컴포넌트가 없어 임의로 메시지 노출 해놨습니다.-->
                         <div class="emailChk">
                             <slp-text-field placeholder="인증번호를 입력하세요" ></slp-text-field>

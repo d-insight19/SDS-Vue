@@ -18,7 +18,7 @@
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo" :value="active" v-model="active">
+                          <input type="radio" class="rdo" name="test-rdo" @input="pushChk()" >
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -27,7 +27,7 @@
                       </li>
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo" :value="active" v-model="active">
+                          <input type="radio" class="rdo" name="test-rdo" @input="pushChk()" >
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -36,7 +36,7 @@
                       </li>
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo" :value="active" v-model="active">
+                          <input type="radio" class="rdo" name="test-rdo" @input="pushChk()" >
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -50,7 +50,7 @@
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" disabled class="rdo" name="test-rdo">
+                          <input type="radio" disabled class="rdo" name="test-rdo" >
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -64,7 +64,7 @@
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo" :value="active2" v-model="active2">
+                          <input type="radio" class="rdo" name="test-rdo" @input="pushChk()" >
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -73,7 +73,7 @@
                       </li>
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo" :value="active2" v-model="active2">
+                          <input type="radio" class="rdo" name="test-rdo" @input="pushChk()" >
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -86,13 +86,13 @@
                     <strong class="label-tit">직접 입력</strong>
                     <div class="rdoInfoChK">
                       <label class="labelRdo">
-                        <input type="radio" class="rdo" name="test-rdo" :value="active3" v-model="active3">
+                        <input type="radio" class="rdo" name="test-rdo" @input="pushChk()" >
                         <span class="ico">
                             <span class="innerCircle"></span>
                         </span>
                       </label>
                       <div class="infoChk2">
-                        <slp-text-field placeholder="6~16자의 영 소문자 및 숫자" realText="true" classObject="underline" ></slp-text-field>
+                        <slp-text-field  @input="pushChk()" placeholder="6~16자의 영 소문자 및 숫자"  classObject="underline" ></slp-text-field>
                         <button type="button" class="btn xxs">중복확인</button>
                       </div>
                       <!-- 아이디 체크시 결과 텍스트 -->
@@ -110,7 +110,7 @@
         <div class="fixBtmBtn">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
-                <li><button type="button" class="btn md" :class="{ clr1 : realText }">다음</button></li>
+                <li><button type="button" class="btn md" :class="{ clr1 : chk }">다음</button></li>
             </ul>
         </div>
         <!-- //floating button -->
@@ -133,10 +133,14 @@ export default {
   /* vue data */
   data () {
     return {
+      chk: ''
     }
   },
   /* vue function */
   methods: {
+    pushChk () {
+      this.chk = event.target.value
+    }
   }
 }
 </script>
