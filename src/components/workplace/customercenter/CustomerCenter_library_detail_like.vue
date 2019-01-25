@@ -45,7 +45,7 @@
                                 <span class="at-tit">Solution listup.jpg</span>
                                 <div class="fr">
                                 <span class="at-num">500KB</span>
-                                <span class="ico down-load"></span>
+                                <span class="ico download"></span>
                                 </div>
                             </div>                         
                             </li>     

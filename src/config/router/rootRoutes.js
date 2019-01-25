@@ -123,6 +123,8 @@ import Loginfindidipin from '~workplace/login/Login_findid_ipin'
 import Loginlogincorporationphone1 from '~workplace/login/Login_login_corporationphone1'
 import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporationphone2'
 import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
+
+import StudyHomeCoursewareModule01 from '~workplace/study/Study_home_courseware_module_01'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -1143,6 +1145,11 @@ var rootRoutes = [
     path: '/Login_login_corporationphone3',
     name: 'Login_login_corporationphone3',
     component: Loginlogincorporationphone3
+  },
+  {
+    path: '/Study_home_courseware_module_01',
+    name: 'Study_home_courseware_module_01',
+    component: StudyHomeCoursewareModule01
   },
   {
     path: '/Study_dictionary',
