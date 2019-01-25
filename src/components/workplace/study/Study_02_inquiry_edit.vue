@@ -6,9 +6,13 @@
       <div id="container" class="mediaquery study_inquery pd70">
             <!-- header -->
             <div id="header" class="fixed">
-            <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-            <p class="header_text font_18">1:1문의 수정</p>
-            <p class="end color_clr2">완료</p>
+                <div class="header_inner line1">
+                    <button type="button" class="btn only close"><span class="ico">닫기</span></button>
+                    <p class="header_text font_18">1:1문의 수정</p>
+                    <p class="end">
+                        <span class="end_btn2 color_clr2">완료</span>
+                    </p>
+                </div>
             </div>
             <!-- //header -->            
             <div id="content" class="etc">

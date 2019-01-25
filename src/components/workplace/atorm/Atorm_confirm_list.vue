@@ -11,7 +11,9 @@
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             <p class="header_text  font_18">승인요청</p>
             
-            <p class="end color_clr2" @click="toggleCheckbox()"  v-show="!checkboxFlag">선택</p>
+            <p class="end" @click="toggleCheckbox()"  v-show="!checkboxFlag">
+              <span class="end_btn2 color_clr2">선택</span>
+            </p>
             <p class="end"  v-show="checkboxFlag">
                 <span class="end_btn1" @click="toggleCheckbox()" v-show="checkboxFlag">취소</span>
                 <span class="end_btn2 color_clr2">3개 승인</span>

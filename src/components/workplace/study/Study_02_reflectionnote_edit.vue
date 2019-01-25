@@ -4,13 +4,19 @@
     <div id="wrap" class="colorCode2">        
       <!-- container -->
       <div id="container" class="mediaquery study_reflection pd70">
+          
             <!-- header -->
             <div id="header" class="fixed">
-            <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-            <p class="header_text font_18">리플렉션노트 작성</p>
-            <p class="end color_clr2">완료</p>
+                <div class="header_inner line1">
+                    <button type="button" class="btn only close"><span class="ico">닫기</span></button>
+                    <p class="header_text font_18">리플렉션노트 작성</p>
+                    <p class="end">
+                        <span class="end_btn2 color_clr2">완료</span>
+                    </p>
+                </div>
             </div>
-            <!-- //header -->            
+            <!-- //header -->
+
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner" style="padding-top:78px;">
