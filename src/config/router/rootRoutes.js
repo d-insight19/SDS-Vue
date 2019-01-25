@@ -335,15 +335,12 @@ import MySpaceStudystatisticsGrown from '~workplace/myspace/MySpace_studystatist
 import MySpaceStudystatisticsActivity from '~workplace/myspace/MySpace_studystatistics_activity'
 import MySpaceStudystatisticsKeyword from '~workplace/myspace/MySpace_studystatistics_keyword'
 import MySpaceStudystatisticsKeywordNosearch from '~workplace/myspace/MySpace_studystatistics_keyword_nosearch'
-<<<<<<< HEAD
 import MySpacePoint from '~workplace/myspace/MySpace_point'
 import MySpaceCredit from '~workplace/myspace/MySpace_credit'
 import MySpaceCoupon from '~workplace/myspace/MySpace_coupon'
 import MySpaceCouponRegister from '~workplace/myspace/MySpace_coupon_register'
 import MySpaceCouponUsed from '~workplace/myspace/MySpace_coupon_used'
 
-=======
->>>>>>> dbab370898e3836d2162f5e10efcbc0612a13f20
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
 import regiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'

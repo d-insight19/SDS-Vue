@@ -182,11 +182,9 @@
 .ico.people_32{width:32px; height:32px; background: url("../img/ic_people_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
 .ico.chart_32{width:32px; height:32px; background: url("../img/ic_chart_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
 
-<<<<<<< HEAD
 .ico.trophy_64{width:64px; height:64px; background: url("../img/ic_trophy_solid.png") no-repeat; margin-top:-8px; background-size: cover;}
 .ico.grade_64.gold{width:64px; height:64px; background: url("../img/ic_grade_gold.png") no-repeat; margin-top:-8px; background-size: cover;}
 .ico.coin_64{width:64px; height:64px; background: url("../img/ic_coin_solid.png") no-repeat; margin-top:-8px; background-size: cover;}
-=======
 .ico.check_14{width:14px; height:14px; background: url("../img/ic_complete_check_solid_blue_14.png") no-repeat; background-size: cover;}
 .ico.check_14.wh{width:14px; height:14px; background: url("../img/ic_complete_check_solid_wh_14.png") no-repeat; background-size: cover;}
 .ico.download_24{width:24px; height:24px; background: url("../img/ic_download_line_24.png") no-repeat; background-size: cover;}
@@ -194,7 +192,6 @@
 .ico.lock_16{width:16px; height:16px; background: url("../img/ic_lock_solid_16.png") no-repeat; background-size: cover;}
 .ico.ongoing_16{width:14px; height:14px; background: url("../img/ic_ongoing_solid_blue_14.png") no-repeat; background-size: cover;}
 
->>>>>>> dbab370898e3836d2162f5e10efcbc0612a13f20
 
 
 /* ico btn */
