@@ -26,23 +26,23 @@
 
                 <!-- 동의 리스트 -->
                 <div class="agreeAll">
-                   <slp-checkbox :value="value.val1"  >전체 동의</slp-checkbox>                  
+                    <slp-checkbox :value="value" @input="pushChk(1)" >전체 동의</slp-checkbox>                  
                 </div>
                 <ul class="agreeList">
                   <li>
-                    <slp-checkbox :value="value.val2" >개인정보 수집 및 이용 동의(필수)</slp-checkbox>
+                    <slp-checkbox :value="value" @input="pushChk(2)" >개인정보 수집 및 이용 동의(필수)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                   <li>
-                    <slp-checkbox :value="value.val3">개인정보 수집 및 이용 동의(필수)</slp-checkbox>
+                    <slp-checkbox :value="value" @input="pushChk(2)">개인정보 수집 및 이용 동의(필수)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                   <li>
-                    <slp-checkbox :value="value.val4">개인정보 수집 및 이용 동의(필수)</slp-checkbox>
+                    <slp-checkbox :value="value" @input="pushChk(2)">개인정보 수집 및 이용 동의(필수)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                   <li>
-                    <slp-checkbox :value="value.val5">개인정보 마케팅 활용 동의(선택)</slp-checkbox>
+                    <slp-checkbox :value="value" @input="pushChk(2)">개인정보 마케팅 활용 동의(선택)</slp-checkbox>
                     <a href="#" class="ico"></a>
                   </li>
                 </ul>
@@ -55,7 +55,7 @@
         <div class="fixBtmBtn">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
-                <li><button type="button" class="btn md" :class="{ clr1 : value.val1 && value.val2 && value.val3 && value.val4 && value.val5}">다음</button></li>
+                <li><button type="button" class="btn md" :class="{ clr1 : value }">다음</button></li>
             </ul>
         </div>
         <!-- //floating button -->
@@ -86,17 +86,20 @@ export default {
   /* vue data */
   data () {
     return {
-      value: {
-        val1: true,
-        val2: true,
-        val3: true,
-        val4: true,
-        val5: true
-      }
+      value: true
     }
   },
   /* vue function */
   methods: {
+    pushChk (el) {
+      if( el == 1) {
+        this.value = event.target.value
+        console.log(event.target.value)
+      } else if ( el == 2) {
+        console.log(event.target.value)
+        this.value = event.target.value
+      } 
+    } 
   }
 }
 </script>

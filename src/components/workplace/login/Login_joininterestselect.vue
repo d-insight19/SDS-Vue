@@ -30,27 +30,27 @@
                             <li>
                                 <strong class="label-tit">관심 분야</strong>
                                 <div class="in-chk">
-                                    <slp-checkbox type="button">경영 / 리더십</slp-checkbox>
-                                    <slp-checkbox type="button" :value="value">금융</slp-checkbox>
-                                    <slp-checkbox type="button" :value="value">직무 / 자격</slp-checkbox>
-                                    <slp-checkbox type="button">OPIC / 외국어</slp-checkbox>
-                                    <slp-checkbox type="button">인문 / 교양 / 시사</slp-checkbox>
+                                    <slp-checkbox type="button" @input="pushChk(1)">경영 / 리더십</slp-checkbox>
+                                    <slp-checkbox type="button"  @input="pushChk(1)">금융</slp-checkbox>
+                                    <slp-checkbox type="button"  @input="pushChk(1)">직무 / 자격</slp-checkbox>
+                                    <slp-checkbox type="button" @input="pushChk(1)">OPIC / 외국어</slp-checkbox>
+                                    <slp-checkbox type="button" @input="pushChk(1)">인문 / 교양 / 시사</slp-checkbox>
                                 </div>
                             </li>
                             <li>
                                 <strong class="label-tit">선호 과정</strong>
                                 <div class="in-chk">
-                                    <slp-checkbox type="button">이러닝</slp-checkbox>
-                                    <slp-checkbox type="button" :value="value">집합</slp-checkbox>
-                                    <slp-checkbox type="button">지식</slp-checkbox>
+                                    <slp-checkbox type="button" @input="pushChk(2)">이러닝</slp-checkbox>
+                                    <slp-checkbox type="button"  @input="pushChk(2)">집합</slp-checkbox>
+                                    <slp-checkbox type="button" @input="pushChk(2)">지식</slp-checkbox>
                                 </div>
                             </li>
                             <li>
                                 <strong class="label-tit">선호 강의</strong>
                                 <div class="in-chk">
-                                    <slp-checkbox type="button">Instructor-led</slp-checkbox>
-                                    <slp-checkbox type="button" :value="value">Self-paced with labs</slp-checkbox>
-                                    <slp-checkbox type="button">Self-paced</slp-checkbox>
+                                    <slp-checkbox type="button" @input="pushChk(3)">Instructor-led</slp-checkbox>
+                                    <slp-checkbox type="button"  @input="pushChk(3)">Self-paced with labs</slp-checkbox>
+                                    <slp-checkbox type="button" @input="pushChk(3)">Self-paced</slp-checkbox>
                                 </div>
                             </li>
                         </ul>
@@ -66,7 +66,7 @@
                 <!-- disable 해제시 활성화 -->
                 <ul>
                     <li><button type="button" class="btn md">이전</button></li>
-                    <li><button type="button" class="btn md clr1">다음</button></li>
+                    <li><button type="button" class="btn md" :class="{ clr1 : chk && chk2 && chk3 }">다음</button></li>
                 </ul>
             </div>
             <!-- //floating button -->
@@ -81,6 +81,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'Login_joininterest',
   /* vue lifecycle */
@@ -91,11 +92,33 @@ export default {
   /* vue data */
   data () {
     return {
-      value: true
+      value: true,
+      chk: '',
+      chk2: '',
+      chk3: ''
     }
   },
   /* vue function */
-  methods: {
+  methods: {  
+    pushChk (el) {
+      if( el == 1) {
+        this.chk = event.target.value
+        console.log(event.target.value)
+        // if(event.target.value == true ) {
+        //     console.log(event.target.value)
+        // } else if(event.target.value == false) {
+        //     this.chk = ''
+        // }        
+      } else if ( el == 2) {
+        console.log(event.target.value)
+        this.chk2 = event.target.value
+      } else if ( el == 3) {
+        this.chk3 = event.target.value
+      } 
+    }  
+  },
+  computed: {
+    
   }
 }
 </script>

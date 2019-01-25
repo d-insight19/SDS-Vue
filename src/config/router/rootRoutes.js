@@ -48,14 +48,13 @@ import LoginLogin from '~workplace/login/Login_login'
 import LoginLogin02 from '~workplace/login/Login_login_02'
 import LoginLoginNotview from '~workplace/login/Login_login_notview'
 import LoginLoginWrite from '~workplace/login/Login_login_write'
+import LoginLoginError from '~workplace/login/Login_login_error'
 import LoginLoginFail from '~workplace/login/Login_login_fail'
 import LoginLoginFail2 from '~workplace/login/Login_login_fail2'
 import LoginLoginTxt1 from '~workplace/login/Login_login_txt1'
-import LoginLoginTxt2 from '~workplace/login/Login_login_txt2'
 import LoginLoginNoguide from '~workplace/login/Login_login_noguide'
 import LoginLoginNoguideTxt1 from '~workplace/login/Login_login_noguide_txt1'
 import LoginLoginNoguideTxt2 from '~workplace/login/Login_login_noguide_txt2'
-import LoginLoginError from '~workplace/login/Login_login_error'
 import LoginInterest from '~workplace/login/Login_interest'
 import LoginInterestSelect from '~workplace/login/Login_interestselect'
 import LoginJoinType from '~workplace/login/Login_jointype'
@@ -84,7 +83,6 @@ import LoginJoinInExtrainfoLanguage from '~workplace/login/Login_joinextrainfola
 import LoginJoinInExtrainfoLanguageComplete from '~workplace/login/Login_joinextrainfolanguagecomplete'
 import LoginJoinInExtrainfoLanguageDelete from '~workplace/login/Login_joinextrainfolanguagedelete'
 import LoginJoinComplete from '~workplace/login/Login_joincomplete'
-import LoginJoinDelete from '~workplace/login/Login_joindelete'
 import LoginLoginIntegration from '~workplace/login/Login_loginintegration'
 import LoginLoginIntegrationId from '~workplace/login/Login_loginintegrationid'
 import LoginLoginIntegrationIdWrite from '~workplace/login/login_loginintegrationidwrite'
@@ -106,7 +104,6 @@ import LoginCertifyPhone from '~workplace/login/Login_certifyphone'
 import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
 import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
 // import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
-
 import Loginloginchangeidmainconfirm from '~workplace/login/Login_login_changeid_main_confirm'
 import Loginloginchangeidmainerror from '~workplace/login/Login_login_changeid_main_error'
 import Loginloginchangepwerror1 from '~workplace/login/Login_login_changepw_error1'
@@ -127,6 +124,7 @@ import Loginlogincorporationphone1 from '~workplace/login/Login_login_corporatio
 import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporationphone2'
 import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
 
+import StudyHomeCoursewareModule01 from '~workplace/study/Study_home_courseware_module_01'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -337,12 +335,15 @@ import MySpaceStudystatisticsGrown from '~workplace/myspace/MySpace_studystatist
 import MySpaceStudystatisticsActivity from '~workplace/myspace/MySpace_studystatistics_activity'
 import MySpaceStudystatisticsKeyword from '~workplace/myspace/MySpace_studystatistics_keyword'
 import MySpaceStudystatisticsKeywordNosearch from '~workplace/myspace/MySpace_studystatistics_keyword_nosearch'
+<<<<<<< HEAD
 import MySpacePoint from '~workplace/myspace/MySpace_point'
 import MySpaceCredit from '~workplace/myspace/MySpace_credit'
 import MySpaceCoupon from '~workplace/myspace/MySpace_coupon'
 import MySpaceCouponRegister from '~workplace/myspace/MySpace_coupon_register'
 import MySpaceCouponUsed from '~workplace/myspace/MySpace_coupon_used'
 
+=======
+>>>>>>> dbab370898e3836d2162f5e10efcbc0612a13f20
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
 import regiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
@@ -780,6 +781,11 @@ var rootRoutes = [
     component: LoginLoginWrite
   },
   {
+    path: '/Login_login_error',
+    name: 'Login_login_error',
+    component: LoginLoginError
+  },
+  {
     path: '/Login_login_fail',
     name: 'Login_login_fail',
     component: LoginLoginFail
@@ -795,11 +801,6 @@ var rootRoutes = [
     component: LoginLoginTxt1
   },
   {
-    path: '/Login_login_txt2',
-    name: 'Login_login_txt2',
-    component: LoginLoginTxt2
-  },
-  {
     path: '/Login_login_noguide',
     name: 'Login_login_noguide',
     component: LoginLoginNoguide
@@ -813,11 +814,6 @@ var rootRoutes = [
     path: '/Login_login_noguide_txt2',
     name: 'Login_login_noguide_txt2',
     component: LoginLoginNoguideTxt2
-  },
-  {
-    path: '/Login_login_error',
-    name: 'Login_login_error',
-    component: LoginLoginError
   },
   {
     path: '/Login_interest',
@@ -853,11 +849,6 @@ var rootRoutes = [
     path: '/Login_joincomplete',
     name: 'Login_joincomplete',
     component: LoginJoinComplete
-  },
-  {
-    path: '/Login_joindelete',
-    name: 'Login_joindelete',
-    component: LoginJoinDelete
   },
   {
     path: '/Login_loginintegration',
@@ -1163,6 +1154,11 @@ var rootRoutes = [
     path: '/Login_login_corporationphone3',
     name: 'Login_login_corporationphone3',
     component: Loginlogincorporationphone3
+  },
+  {
+    path: '/Study_home_courseware_module_01',
+    name: 'Study_home_courseware_module_01',
+    component: StudyHomeCoursewareModule01
   },
   {
     path: '/Study_dictionary',

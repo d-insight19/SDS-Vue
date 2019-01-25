@@ -3,7 +3,7 @@
         <p class="tit1">
             과정제작
             <span class="manual_btn clr2">
-                <span class="ico down-load-wh"></span>
+                <span class="ico download-wh"></span>
                 매뉴얼
             </span>
         </p>

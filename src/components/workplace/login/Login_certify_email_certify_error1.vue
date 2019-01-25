@@ -25,20 +25,21 @@
                 <ul class="ulList type1">
                     <li>
                         <strong class="label-tit">성명</strong>
-                        <slp-text-field placeholder="성명을 입력하세요" error message="성명을 입력하세요."></slp-text-field>
+                        <slp-text-field @input="pushKey(1)"  placeholder="성명을 입력하세요" error message="성명을 입력하세요."></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit">이메일</strong>
                         <div class="emailChk">
-                          <slp-text-field placeholder="이메일 입력" value="multi12@mulcam.com"></slp-text-field>
+                          <slp-text-field @input="pushKey(2)" placeholder="이메일을 입력하세요" ></slp-text-field>
                           <button type="button" class="btn sm" @click="send()">인증번호 재전송</button>
                         </div>
+                        <!-- 인증번호까지 입력해야 버튼에 배경색이 들어옵니다 -->
                     </li>
                     <li v-show="sendFlag">
-                        <strong class="label-tit">인증번호 입력</strong>
+                        <strong class="label-tit">인증번호</strong>
                         <!-- 기존 디폴트 텍스트 노출의 경우 컴포넌트가 없어 임의로 메시지 노출 해놨습니다.-->
                         <div class="emailChk">
-                            <slp-text-field placeholder="인증번호를 입력하세요" error></slp-text-field>
+                            <slp-text-field @input="pushKey(3)"  placeholder="인증번호를 입력하세요" error></slp-text-field>
                             <span class="time">
                               <span class="num">15:00</span>분
                             </span>
@@ -55,7 +56,7 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li><button type="button" class="btn md clr1">인증</button></li>
+                <li><button type="button" class="btn md " :class="{ clr1 : keylength && keylength2 && keylength3 }">인증</button></li>
             </ul>
         </div>
         <!-- //floating button -->
@@ -79,6 +80,7 @@
 
 <script>
 export default {
+  /*eslint-disable */
   name: 'Login_certifyemail',
   /* vue lifecycle */
   created () {
@@ -88,13 +90,25 @@ export default {
   /* vue data */
   data () {
     return {
-      sendFlag: false
+      sendFlag: false,
+      keylength: '',
+      keylength2: '',
+      keylength3: ''
     }
   },
   /* vue function */
   methods: {
     send () {
       this.sendFlag = true
+    },
+    pushKey (el) {
+      if( el == 1) {
+        this.keylength = event.target.value.length
+      } else if ( el == 2) {
+        this.keylength2 = event.target.value.length
+      } else if ( el == 3) {
+        this.keylength3 = event.target.value.length
+      }      
     }
   }
 }

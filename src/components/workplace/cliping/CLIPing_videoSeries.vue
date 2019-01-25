@@ -16,6 +16,9 @@
 
           <div class="cell">
             <div class="inner">
+
+
+
                 <div class="scroll-x type2">
                     <!-- list -->
                     <ul class="thumList type2">
@@ -121,11 +124,7 @@
                     </ul>
                     <!-- //list -->
                 </div>
-            </div>
-          </div>
-          
-          <div class="cell">
-            <div class="inner">
+
                 <div class="total">
                     <span>총 <strong>1,620</strong>건</span>
                     <ul class="fr">
@@ -134,7 +133,7 @@
                     </ul>
                 </div>
 
-                <h4 class="h-tit4 fwb600 mb0">
+                <h4 class="h-tit4 fwb600 mb0 mt20">
                     나승연의 글로벌 비즈니스 커뮤니케이션
                     <div class="fr color_clr2 font_14 fwl">전체보기</div>
                 </h4>
@@ -239,17 +238,15 @@
                         </div>
                     </li>
                     </ul>
-                    <!-- //list -->
+                    <!-- //list -->                   
+                    
                 </div>
-            </div>
-          </div>
 
-          
-          <div class="cell">
-            <div class="inner">
-                <h4 class="h-tit4 fwb600 mb0">
+
+                <h4 class="h-tit4 fwb600 mb0 mt20">
                     세상을 바꾸는 시간 15분:리더십
                     <div class="fr color_clr2 font_14 fwl">전체보기</div>
+                
                 </h4>
                 <p class="sub-tit mono_65 mb10">총 <span>110</span>편</p>
 
@@ -354,6 +351,9 @@
                     </ul>
                     <!-- //list -->
                 </div>
+
+
+
             </div>
           </div>
 

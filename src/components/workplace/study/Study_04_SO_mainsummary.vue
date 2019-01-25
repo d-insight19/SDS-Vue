@@ -108,7 +108,7 @@
                                 <span class="at-tit">Solution listup.jpg</span>
                                 <div class="fr">
                                 <span class="at-num">500KB</span>
-                                <span class="ico down-load"></span>
+                                <span class="ico download"></span>
                                 </div>
                             </div>                         
                             </li>                
@@ -118,7 +118,7 @@
                                 <span class="at-tit">20180101_AD_Draft.ppt</span>
                                 <div class="fr">
                                 <span class="at-num">4.5M</span>
-                                <span class="ico down-load"></span>
+                                <span class="ico download"></span>
                                 </div>
                             </div>                         
                             </li>                
@@ -128,7 +128,7 @@
                                 <span class="at-tit">20180101_AD_Draft.ppt</span>
                                 <div class="fr">
                                 <span class="at-num">4.5M</span>
-                                <span class="ico down-load"></span>
+                                <span class="ico download"></span>
                                 </div>
                             </div>                         
                             </li>                

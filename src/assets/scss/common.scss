@@ -884,7 +884,7 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 #dropdown.category {top:54px; left:0; right:auto}
 #dropdown.status {top:52px; right:0;}
 #dropdown ul{width:100%;padding:8px 0px;}
-#dropdown ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
+#dropdown ul li{font-size:map-get($font-size, font_13);line-height:19px;letter-spacing: -0.39px;padding: 14px 16px 15px 16px;position: relative;max-width: 180px;text-align: left;}
 #dropdown ul li .ico{position:absolute;top:12px;right:18px;display:none;}
 #dropdown ul li.active .ico{display:block}
 // 답변에 따라서 General_scss에 컬러값 추가하고, 수정해야함.
@@ -921,3 +921,5 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .flowplayer .fp-header .fp-header-txt{font-size:map-get($font_size, font_18);}
 .flowplayer.is-finished .fp-nextcontents-tit{font-size:map-get($font_size, font_15);}
 .flowplayer.is-finished .fp-cancleBtn{font-size:map-get($font_size, font_16);}
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li{font-size:map-get($font_size, font_14);font-family: 'Noto Sans CJK KR'}
+.flowplayer .fp_Icon_txt{font-family: 'Roboto';font-size:map-get($font_size, font_13);}

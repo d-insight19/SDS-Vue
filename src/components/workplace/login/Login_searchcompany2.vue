@@ -5,7 +5,7 @@
     <div class="intSchBox">
         <div class="search-wrapper">
             <input type="text" ref="input01" pattern="^\s+" class="input" placeholder="사업자 등록번호 입력" />
-            <button class="close-icon" type="button" @click="delTxt"></button>
+            <button class="close-icon" type="button" @click="delTxt" style="right:0"></button>
         </div>
     </div>
 </div>

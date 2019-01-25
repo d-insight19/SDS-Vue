@@ -182,7 +182,8 @@
 
 // 관심사 선택
 #container.interest .ulList{margin-top:26px}
-#container.interest .labelChk2 input.chk + .label{color:#000;font-weight: 500;letter-spacing: -0.36px}
+#container.interest .labelChk2 input.chk + .label,
+#container.drawer .labelChk2 input.chk + .label{color:#000;font-weight: 500;letter-spacing: -0.36px}
 
 // 용어사전
 #container.study_dictionary .h-tit5{letter-spacing: -0.12px;}
@@ -587,7 +588,7 @@
 #container.atorm .tit2 .num{font-family: 'Roboto';font-weight: 500;margin-left:5px;}
 #container.atorm .showall{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;font-weight: 400;}
 #container.atorm .manual_btn{float:right;width:82px;height:32px;color:#fff;font-size:map-get($font-size, font_13);font-weight:500;letter-spacing: -0.39px;border-radius: 16px;margin-top:7px;line-height: 32px;text-align: center}
-#container.atorm .manual_btn .ico.down-load-wh{margin-left:-8px;}
+#container.atorm .manual_btn .ico.download-wh{margin-left:-8px;}
 #container.atorm .type_box{padding:10px 32px 10px 142px;}
 #container.atorm .type_box dt{position: relative;}
 #container.atorm .thumList .info li{color:rgba(0,0,0,0.8)}
@@ -674,8 +675,8 @@
 #container.atorm_confirmlist .multiList.checkbox > li .in{padding-left:40px;padding-right:0px;}
 #container.atorm_confirmlist .multiList.checkbox > li .ico.next_16{display: none}
 #container.atorm_confirmlist .multiList.checkbox > li input.chk + .ico{display:inline-block;}
-#container.atorm_confirmlist #header{padding: 0 136px 0 72px}
-#container.atorm_confirmlist #header .end .end_btn1{color:rgba(0,0,0,0.65);margin-right:14px;}
+// #container.atorm_confirmlist #header{padding: 0 136px 0 72px}
+#container.atorm_confirmlist #header .end .end_btn1{color:rgba(0,0,0,0.65);}
 
 // ATORM 승인요청리스트 디테일
 #container.atorm_confirmlist_detail .confirm_item_detail{margin:0px -18px}
@@ -869,7 +870,7 @@ table td.sub-txt{ color:#000;}
 #header p.h-tit1 {margin-bottom: 4px;}
 #header p.h-tit1 .q-tit{display:inline-block; width: 90%; font-weight:600; font-size:map-get($font-size, font_22);line-height: 31px; letter-spacing: -0.66px;}
 #header p.h-tit1 .ico.more28{display:inline-block; margin-top:6px;}
-#header p.end{cursor: pointer; width: auto;position: absolute;right: 14px;top: 0;  font-weight:400 !important; font-size:map-get($font-size, font_16); letter-spacing: -0.48px;} 
+#header p.end{cursor: pointer; width: auto;font-weight:400 !important; font-size:map-get($font-size, font_16); letter-spacing: -0.48px;margin-right:-22px;margin-left:16px;} 
 #header .ico-group .ico.view{vertical-align: -3px;}
 #header .ico-group .ico-txt{font-weight:400 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80);}
 #header .ico-group{font-weight:500 ; padding:22px 0 0 0;  font-size:map-get($font-size, font_14);line-height: 20px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80); }
@@ -1441,6 +1442,13 @@ label.rdo .label{position: relative;}
 #container.regiclass.basicinfo.register .label-tit-15.type1{font-size: map-get($font-size , font_14);line-height: 21px;letter-spacing: -0.42px; }
 #container.regiclass.basicinfo.register .label-tit-14.type1{font-family: 'roboto'; font-size: map-get($font-size , font_15);line-height: 21px;letter-spacing: -0.45px; }
 
+#container.searchcompany .label-tit-15.cus{line-height: 22px; margin-bottom:0px; color:rgba(0,0,0,1.0)}
+#container.searchcompany .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 8px;background: #d9d9d9;}
+#container.searchcompany .pipe-group dd:nth-last-child(1):after{display:none;}
+#container.searchcompany .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 19px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
+#container.searchcompany  .ulList.type2 li{ padding:15px 0; border-bottom:1px solid #e3e3e3;}
+#container.searchcompany  .ulList.type2 li + li{margin-top:0px;}
+
 
 // 수강신청 수강신청 완료
 #container.regiclass.complete h2.h-tit2 {font-size: map-get($font-size , font_26);line-height: 34px;letter-spacing: -0.78px; margin-bottom:0;}
@@ -1509,9 +1517,23 @@ label.rdo .label{position: relative;}
 #container.regiclass.register table tr td {padding:12px 0;}
 
 
-
-
-
+//
+#container.courseware .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 40px 22px 16px; margin-top:12px;}
+#container.courseware .download_detail .txt_wrap {border-bottom: 0 none !important; padding-bottom:0 !important;}
+#container.courseware .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:5px;}
+#container.courseware .download_detail .txt_wrap .title {font-weight:500; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
+#container.courseware .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
+#container.courseware .download_detail .info li {color:map-get($mono_colors,mono_65); vertical-align: unset;}
+#container.courseware .download_detail .info .check_14 {vertical-align: -2px;}
+#container.courseware .download_detail .info .time {vertical-align: -4px;}
+#container.courseware .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
+#container.courseware .download_detail.done .txt_wrap .title {opacity: 0.4;}
+#container.courseware .download_detail.done .txt_wrap .info {opacity: 0.4;}
+#container.courseware .multiList.type2 > li .ico.next_16 {position:absolute;top:calc(50% - 2px);right:18px;}
+#container.courseware .multiList.type2 > li .action {position:absolute;bottom:18px;right:18px; font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
+#container.courseware .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
+#container.courseware .bot-wrap{background:white; padding:18px; margin-top:26px;}
+#container.courseware .wh{color:white;}
 
 
 

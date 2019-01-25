@@ -12,6 +12,7 @@
 .ico.search{width:16px;height:16px;background: url("../img/ic_search_solid_black.png") no-repeat; }
 .ico.like{width:16px;height:16px;background: url("../img/ic_thumb_line_16.png") no-repeat; }
 .ico.time{width:16px;height:16px;background: url("../img/ic_time_line_16.png") no-repeat; }
+.ico.time.wh{width:16px;height:16px;background: url("../img/ic_time_line_wh_16.png") no-repeat; }
 .ico.view{width:16px;height:16px;background: url("../img/ic_view_line_16.png") no-repeat; }
 .ico.arrow{width:16px;height:16px;background: url("../img/ic_next_line_black.png") no-repeat; background-size: contain; }
 .ico.arrowsearch{width:16px;height:16px;background: url("../img/ic_arrowsearch_16.png") no-repeat; background-size: contain; }
@@ -61,8 +62,8 @@
 .ico.plus{width:16px;height:16px;background: url("../img/ic_plus_16.png") no-repeat; vertical-align: -2px; }
 .ico.plus.done{opacity: 0.3; }
 .ico.clip{width:16px;height:16px;background: url("../img/ic_addfile_16.png") no-repeat; }
-.ico.down-load{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
-.ico.down-load-wh{width:20px;height:20px;background: url("../img/ic_download_wh_20.png") no-repeat;  }
+.ico.download{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
+.ico.download-wh{width:20px;height:20px;background: url("../img/ic_download_wh_20.png") no-repeat;  }
 
 
 /* 추가 이미지 2018-12-12*/
@@ -181,9 +182,19 @@
 .ico.people_32{width:32px; height:32px; background: url("../img/ic_people_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
 .ico.chart_32{width:32px; height:32px; background: url("../img/ic_chart_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
 
+<<<<<<< HEAD
 .ico.trophy_64{width:64px; height:64px; background: url("../img/ic_trophy_solid.png") no-repeat; margin-top:-8px; background-size: cover;}
 .ico.grade_64.gold{width:64px; height:64px; background: url("../img/ic_grade_gold.png") no-repeat; margin-top:-8px; background-size: cover;}
 .ico.coin_64{width:64px; height:64px; background: url("../img/ic_coin_solid.png") no-repeat; margin-top:-8px; background-size: cover;}
+=======
+.ico.check_14{width:14px; height:14px; background: url("../img/ic_complete_check_solid_blue_14.png") no-repeat; background-size: cover;}
+.ico.check_14.wh{width:14px; height:14px; background: url("../img/ic_complete_check_solid_wh_14.png") no-repeat; background-size: cover;}
+.ico.download_24{width:24px; height:24px; background: url("../img/ic_download_line_24.png") no-repeat; background-size: cover;}
+.ico.complete_14{width:14px; height:14px; background: url("../img/ic_complete_blank_solid_14.png") no-repeat; background-size: cover;}
+.ico.lock_16{width:16px; height:16px; background: url("../img/ic_lock_solid_16.png") no-repeat; background-size: cover;}
+.ico.ongoing_16{width:14px; height:14px; background: url("../img/ic_ongoing_solid_blue_14.png") no-repeat; background-size: cover;}
+
+>>>>>>> dbab370898e3836d2162f5e10efcbc0612a13f20
 
 
 /* ico btn */

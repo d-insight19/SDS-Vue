@@ -23,7 +23,7 @@
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo"  @input="pushChk()">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -32,7 +32,7 @@
                       </li>
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo"  @input="pushChk()">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -41,7 +41,7 @@
                       </li>
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo"  @input="pushChk()">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -55,7 +55,7 @@
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" disabled class="rdo" name="test-rdo">
+                          <input type="radio" disabled class="rdo" name="test-rdo"  @input="pushChk()">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -69,7 +69,7 @@
                     <ul class="ul-block">
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo"  @input="pushChk()">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -78,7 +78,7 @@
                       </li>
                       <li>
                         <label class="labelRdo">
-                          <input type="radio" class="rdo" name="test-rdo">
+                          <input type="radio" class="rdo" name="test-rdo"  @input="pushChk()">
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
@@ -91,13 +91,13 @@
                     <strong class="label-tit">직접 입력</strong>
                     <div class="rdoInfoChK">
                       <label class="labelRdo">
-                        <input type="radio" class="rdo" name="test-rdo">
+                        <input type="radio" class="rdo" name="test-rdo"  @input="pushChk()">
                         <span class="ico">
                             <span class="innerCircle"></span>
                         </span>
                       </label>
                       <div class="infoChk2">
-                        <slp-text-field placeholder="6~16자의 영 소문자 및 숫자" classObject="underline" ></slp-text-field>
+                        <slp-text-field placeholder="6~16자의 영 소문자 및 숫자" classObject="underline"  @input="pushChk()"></slp-text-field>
                         <button type="button" class="btn xxs">중복확인</button>
                       </div>
                       <!-- 아이디 체크시 결과 텍스트 -->
@@ -115,7 +115,7 @@
         <div class="fixBtmBtn">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
-                <li><button type="button" class="btn md clr1">다음</button></li>
+                <li><button type="button" class="btn md" :class="{ clr1 : chk }">다음</button></li>
             </ul>
         </div>
         <!-- //floating button -->
@@ -138,10 +138,14 @@ export default {
   /* vue data */
   data () {
     return {
+      chk: ''
     }
   },
   /* vue function */
   methods: {
+    pushChk () {
+      this.chk = event.target.value
+    }
   }
 }
 </script>
