@@ -6,12 +6,14 @@
       <div id="container" class="mediaquery study_stauts_apply pd70">
             <!-- header -->
             <div id="header" class="fixed">
-                <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">과제 작성</p>
-                <p class="end">
-                    <span class="end_btn1 color_clr2">임시저장</span>
-                    <span class="end_btn2 color_clr2">제출</span>
-                </p>
+                <div class="header_inner line1">
+                    <button type="button" class="btn only prev"><span class="ico">이전</span></button>
+                    <p class="header_text font_18">과제 작성</p>
+                    <p class="end">
+                        <span class="end_btn1 color_clr2">임시저장</span>
+                        <span class="end_btn2 color_clr2">제출</span>
+                    </p>
+                </div>
             </div>
             <!-- //header -->            
             <div id="content" class="etc">

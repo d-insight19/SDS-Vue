@@ -170,6 +170,16 @@
 .ico.list-btn{width:24px; height:24px; background: url("../img/ic_listchange_24.png") ;background-size: cover;}
 .ico.del{width:20px; height: 20px; background: url("../img/ic_deletemode_20.png");background-size: cover;}
 
+.ico.test_32{width:32px; height:32px; background: url("../img/ic_test_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.bubble_32{width:32px; height:32px; background: url("../img/ic_bubble_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.thumb2_32{width:32px; height:32px; background: url("../img/ic_thumb_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.rate_32{width:32px; height:32px; background: url("../img/ic_rate_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.share_32{width:32px; height:32px; background: url("../img/ic_share_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.graph_32{width:32px; height:32px; background: url("../img/ic_graph_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.newfolder_32{width:32px; height:32px; background: url("../img/ic_newfolder_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.repair_32{width:32px; height:32px; background: url("../img/ic_repair_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.people_32{width:32px; height:32px; background: url("../img/ic_people_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.chart_32{width:32px; height:32px; background: url("../img/ic_chart_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
 
 
 
@@ -236,6 +246,7 @@
 
 /* margin */
 .mt0{margin-top: 0px !important;}
+.mt4{margin-top: 4px !important;}
 .mt6{margin-top: 6px !important;}/*12월12일 추가*/ 
 .mt8{margin-top: 8px !important;}/*12월12일 추가*/ 
 .mt9{margin-top: 9px !important;}

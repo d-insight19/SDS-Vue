@@ -4226,8 +4226,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.07.studystatistics</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studystatistics' }">
+            MySpace_studystatistics
           </router-link>
         </td>
         <td></td>
@@ -4243,8 +4243,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.07.studystatistics_grade</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studystatistics_grade' }">
+            MySpace_studystatistics_grade
           </router-link>
         </td>
         <td></td>
@@ -4260,8 +4260,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.07.studystatistics_grown</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studystatistics_grown' }">
+            MySpace_studystatistics_grown
           </router-link>
         </td>
         <td></td>
@@ -4277,8 +4277,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.07.studystatistics_activity</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studystatistics_activity' }">
+            MySpace_studystatistics_activity
           </router-link>
         </td>
         <td></td>
@@ -4294,8 +4294,12 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.07.studystatistics_keyword</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_studystatistics_keyword' }">
+            MySpace_studystatistics_keyword
+          </router-link>
+          ,
+          <router-link :to="{ name: 'MySpace_studystatistics_keyword_nosearch' }">
+            MySpace_studystatistics_keyword_nosearch
           </router-link>
         </td>
         <td></td>
