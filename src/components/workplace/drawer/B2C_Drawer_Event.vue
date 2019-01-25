@@ -6,7 +6,7 @@
       <div id="container" class="mediaquery drawer event">
         <!-- header + 확장형 + tab  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div v-if="headerType == '2'" id="header" class="tab">          
-          <div class="header_inner">
+          <div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             <p class="header_text font_18"> 이벤트</p>
           </div>  
@@ -120,10 +120,6 @@
         
       </div>
       <!-- //container -->
-
-
-      </div>
-      <!-- //container -->     
     </div>
     <!-- //wrap -->
 

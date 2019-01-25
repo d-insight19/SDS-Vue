@@ -259,7 +259,7 @@
 /* layout */
 #header.fixed{position: fixed;width:100%;background:#fff;z-index: 10;}
 #headerTab.fixed{position: fixed;width:100%;height:44px;line-height:43px;z-index: 10;top:56px}
-#header .header_inner.line1{display:flex;}
+#header .header_inner.line1{display:flex !important;}
 
 /* Expand header padding 0 */
 #header.expandheader.fixed {height:56px;background:none;top:0px;}
