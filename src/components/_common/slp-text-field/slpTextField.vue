@@ -16,8 +16,9 @@
         @focus="slpTextFieldFocused"
         @blur="slpTextFieldBlur"
         @keyup ="slpTextFieldKeyup">
+      <!-- search icon이 존재하는 경우에만 x 버튼 노출 // 2019-01-07 publishing  -->
       <button
-        v-if="clearable"
+        v-if="icon && clearable"
         class="close-icon"
         type="button"
         @click="toggleIcon"/>
@@ -27,6 +28,14 @@
       href="#"
       class="btn"
       @click="toggleIcon($event, 'search')"><span class="ico"/></a>
+    <a
+      v-if="type === 'password'"
+      v-show="realText"
+      :class="{'eye_slash': !isPasswordVisible}"
+      href="#"
+      class="btn eye r12"
+      @click="togglePasswordVisibility"><span class="ico"/>
+    </a>
     <p
       v-if="success && message"
       class="succ-msg">{{ message }}</p>
@@ -94,18 +103,19 @@ export default {
       realText: this.value,
       visible: false,
       isFocus: false,
+      isPasswordVisible: false,
       inputType: this.type
     }
   },
   computed: {
     rootClass () {
       return {
-        'intSchBox': this.icon === 'search'
+        'intSchBox': this.icon === 'search' || this.type === 'password'
       }
     },
     wrapperClass () {
       return {
-        'search-wrapper': this.clearable
+        'search-wrapper': this.clearable || this.type === 'password'
       }
     },
     computedClass () {
@@ -147,6 +157,13 @@ export default {
         this.realText = ''
         this.$emit('input', '')
       }
+    },
+    togglePasswordVisibility () {
+      this.isPasswordVisible = !this.isPasswordVisible
+      this.inputType = this.isPasswordVisible ? 'text' : 'password'
+      this.$nextTick(() => {
+        this.$refs.refInput.focus()
+      })
     },
     slpTextFieldKeyup (event) {
       this.$emit('keyup', event)

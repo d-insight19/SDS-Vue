@@ -6,6 +6,16 @@
         <!-- container -->
         <div id="container">
 
+            <slp-select placeholder="년도" width="100%" v-model="selected">
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+            </slp-select>
+
+            <br/>
+            <br/>
+
             <slp-select placeholder="년도" width="100%">
                 <option>2017</option>
                 <option>2018</option>
@@ -35,7 +45,7 @@
                     </option>
                 </slp-select>
 
-                <slp-select placeholder="Select Charactor" width="350px">
+                <slp-select placeholder="Select Charactor" width="100%">
                     <optgroup label="Black Sails">
                         <option value="flint">Flint</option>
                         <option value="silver">Silver</option>
@@ -52,7 +62,7 @@
                     </optgroup>
 
                     <optgroup label="Game of Thrones">
-                        <option value="tyrion-lannister">Tyrion Lannister</option>
+                        <option value="tyrion-lannister">Tyrion ㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇ ㄻㄴㅇ ㅁㄴㅇ ㄻㄴㅇㄹ Lannister</option>
                         <option value="jamie-lannister">Jamie Lannister</option>
                         <option value="daenerys-targaryen">Daenerys Targaryen</option>
                         <option value="jon-snow">Jon Snow</option>
@@ -104,18 +114,19 @@ export default {
   /* vue data */
   data () {
     return {
-        data: [
-            {"id":1,"user":{"first_name":"Jesse","last_name":"Simmons"},"date":"2016/10/15 13:43:27","gender":"Male"},
-            {"id":2,"user":{"first_name":"John","last_name":"Jacobs"},"date":"2016/12/15 06:00:53","gender":"Male"},
-            {"id":3,"user":{"first_name":"Tina","last_name":"Gilbert"},"date":"2016/04/26 06:26:28","gender":"Female"},
-            {"id":4,"user":{"first_name":"Clarence","last_name":"Flores"},"date":"2016/04/10 10:28:46","gender":"Male"},
-            {"id":5,"user":{"first_name":"Anne","last_name":"Lee"},"date":"2016/12/06 14:38:38","gender":"Female"},
-            {"id":6,"user":{"first_name":"Sara","last_name":"Armstrong"},"date":"2016/09/23 18:50:04","gender":"Female"},
-            {"id":7,"user":{"first_name":"Anthony","last_name":"Webb"},"date":"2016/08/30 23:49:38","gender":"Male"},
-            {"id":8,"user":{"first_name":"Andrew","last_name":"Greene"},"date":"2016/11/20 14:57:47","gender":"Male"},
-            {"id":9,"user":{"first_name":"Russell","last_name":"White"},"date":"2016/07/13 09:29:49","gender":"Male"},
-            {"id":10,"user":{"first_name":"Lori","last_name":"Hunter"},"date":"2016/12/09 01:44:05","gender":"Female"}
-        ]
+      selected: 2019,
+      data: [
+        {'id': 1, 'user': {'first_name': 'Jesse', 'last_name': 'Simmons'}, 'date': '2016/10/15 13: 43: 27', 'gender': 'Male'},
+        {'id': 2, 'user': {'first_name': 'John', 'last_name': 'Jacobs'}, 'date': '2016/12/15 06: 00: 53', 'gender': 'Male'},
+        {'id': 3, 'user': {'first_name': 'Tina', 'last_name': 'Gilbert'}, 'date': '2016/04/26 06: 26: 28', 'gender': 'Female'},
+        {'id': 4, 'user': {'first_name': 'Clarence', 'last_name': 'Flores'}, 'date': '2016/04/10 10: 28: 46', 'gender': 'Male'},
+        {'id': 5, 'user': {'first_name': 'Anne', 'last_name': 'Lee'}, 'date': '2016/12/06 14: 38: 38', 'gender': 'Female'},
+        {'id': 6, 'user': {'first_name': 'Sara', 'last_name': 'Armstrong'}, 'date': '2016/09/23 18: 50: 04', 'gender': 'Female'},
+        {'id': 7, 'user': {'first_name': 'Anthony', 'last_name': 'Webb'}, 'date': '2016/08/30 23: 49: 38', 'gender': 'Male'},
+        {'id': 8, 'user': {'first_name': 'Andrew', 'last_name': 'Greene'}, 'date': '2016/11/20 14: 57: 47', 'gender': 'Male'},
+        {'id': 9, 'user': {'first_name': 'Russell', 'last_name': 'White'}, 'date': '2016/07/13 09: 29: 49', 'gender': 'Male'},
+        {'id': 10, 'user': {'first_name': 'Lori', 'last_name': 'Hunter'}, 'date': '2016/12/09 01: 44: 05', 'gender': 'Female'}
+      ]
     }
   },
   /* vue function */

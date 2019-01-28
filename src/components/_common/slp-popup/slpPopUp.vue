@@ -2,7 +2,9 @@
   <div >
     <div class="layerWrap">
       <div class="ly-in">
-        <div class="ly-hd">
+        <div
+          v-if="!!title"
+          class="ly-hd">
           {{ title }}
         </div>
         <div class="ly-body">

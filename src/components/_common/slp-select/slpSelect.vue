@@ -1,30 +1,39 @@
 <template>
-  <select
-    ref="select"
-    v-model="computedValue"
-    :class="computedClass"
-    :style="{'width': width, 'height': height}"
-    v-bind="$attrs"
-    class="select"
-    @focus="$emit('focus', $event)">
-    <template v-if="placeholder">
-      <option
-        v-if="!computedValue"
-        :value="undefined"
-        selected
-        disabled
-        hidden>
-        {{ placeholder }}
-      </option>
-    </template>
-    <slot/>
-  </select>
+  <div>
+    <select
+      ref="select"
+      v-model="computedValue"
+      :class="computedClass"
+      :style="{'width': width, 'height': height}"
+      v-bind="$attrs"
+      class="select"
+      @focus="$emit('focus', $event)">
+      <template v-if="placeholder">
+        <option
+          v-if="!computedValue"
+          :value="undefined"
+          selected
+          disabled
+          hidden>
+          {{ placeholder }}
+        </option>
+      </template>
+      <slot/>
+    </select>
+    <p
+      v-if="error && message"
+      class="error-msg">{{ message }}</p>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'SlpSelect',
   props: {
+    value: {
+      type: [String, Number, Boolean, Object, Function],
+      default: undefined
+    },
     width: {
       type: String,
       default: null
@@ -40,6 +49,10 @@ export default {
     error: {
       type: Boolean,
       default: false
+    },
+    message: {
+      type: String,
+      default: null
     }
   },
   data () {

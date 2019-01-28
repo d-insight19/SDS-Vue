@@ -27,7 +27,7 @@ import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
-// import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
+import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
@@ -536,6 +536,17 @@ import Atormitemfactoryaudio2 from '~workplace/atorm/Atorm_itemfactory_audio2'
 import Atormitemfactoryyoutube1 from '~workplace/atorm/Atorm_itemfactory_youtube1'
 import Atormitemfactoryyoutubesearch1 from '~workplace/atorm/Atorm_itemfactory_youtube_search1'
 
+import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
+import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
+import ComponentsTestPage3 from '~workplace/common_page/components_checkbox_slp'
+import ComponentsTestPage4 from '~workplace/common_page/components_dropdown_slp'
+import ComponentsTestPage5 from '~workplace/common_page/components_popup_slp'
+import ComponentsTestPage6 from '~workplace/common_page/components_radio_slp'
+import ComponentsTestPage7 from '~workplace/common_page/components_select_slp'
+import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_slp'
+import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
+import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
+
 // 1번 영역
 var rootRoutes = [
   {
@@ -678,11 +689,11 @@ var rootRoutes = [
     name: 'components_spinner',
     component: ComponentsSpinner
   },
-  // {
-  //   path: '/components_flowplayer',
-  //   name: 'components_flowplayer',
-  //   component: ComponentsFlowplayer
-  // },
+  {
+    path: '/components_flowplayer',
+    name: 'components_flowplayer',
+    component: ComponentsFlowplayer
+  },
   {
     path: '/components_dropdown',
     name: 'components_dropdown',
@@ -697,6 +708,56 @@ var rootRoutes = [
     path: '/components_chart_lib',
     name: 'components_chart_lib',
     component: ComponentsChartLib
+  },
+  {
+    path: '/components_app_bar_slp',
+    name: 'components_app_bar_slp',
+    component: ComponentsTestPage1
+  },
+  {
+    path: '/components_bottom_sheet_slp',
+    name: 'components_bottom_sheet_slp',
+    component: ComponentsTestPage2
+  },
+  {
+    path: '/components_checkbox_slp',
+    name: 'components_checkbox_slp',
+    component: ComponentsTestPage3
+  },
+  {
+    path: '/components_dropdown_slp',
+    name: 'components_dropdown_slp',
+    component: ComponentsTestPage4
+  },
+  {
+    path: '/components_popup_slp',
+    name: 'components_popup_slp',
+    component: ComponentsTestPage5
+  },
+  {
+    path: '/components_radio_slp',
+    name: 'components_radio_slp',
+    component: ComponentsTestPage6
+  },
+  {
+    path: '/components_select_slp',
+    name: 'components_select_slp',
+    component: ComponentsTestPage7
+  },
+  {
+    path: '/components_radiobutton_slp',
+    name: 'components_radiobutton_slp',
+    component: ComponentsTestPage8
+  },
+  {
+    path: '/components_slider_slp',
+    name: 'components_slider_slp',
+    component: ComponentsTestPage9
+  },
+  {
+    path: '/components_switch_slp',
+    name: 'components_switch_slp',
+    component: ComponentsTestPage10
   },
   {
     path: '/Login_findcenter',
