@@ -47,6 +47,7 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .font_26{font-size:map-get($font_size, font_26) !important;}
 .font_28{font-size:map-get($font_size, font_28) !important;}
 .font_30{font-size:map-get($font_size, font_30) !important;}
+.font_32{font-size:map-get($font_size, font_32) !important;}
 .font_34{font-size:map-get($font_size, font_34) !important;}
 .font_40{font-size:map-get($font_size, font_40) !important;}
 
@@ -75,8 +76,9 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .color_star{color: map-get($static_colors , star);}
 .color_alert{color: map-get($static_colors , alert);}
 
-.o6{opacity: 0.6;}
+.o2{opacity: 0.2;}
 .o4{opacity: 0.4;}
+.o6{opacity: 0.6;}
 
 // 헤더 
 #header .btn.prev .ico{width:28px; height:28px; background-position:-13px -61px;}
@@ -159,9 +161,13 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 // 필터
 .filterArea {position: relative; background-color: map-get($bg_colors , BG_1); padding:18px;}
 .filterArea .ico.filter{position:absolute; right: 18px; top: calc(50% - 12px);}
+.filterArea .ico.addcoupon{position:absolute; right: 18px; top: calc(50% - 12px);}
 .filterArea .ico.arrowback{margin-top:0px;}
 .filterArea .ico.down{margin-top:0px;}
 .filterArea .ico.addfolder{position:absolute; right: 70px; top: calc(50% - 12px);}
+.filterListArea{z-index: 851; position: absolute; bottom: 0; background-color: #fff; width: 100%;}
+.filterListArea .handle {width:34px; height:3px; background-color: map-get($line_colors , B89); display: block; margin: 12px auto;}
+.filterListArea .radioList2 li{margin-bottom:15px;}
 
 // 로그인시 password , 검색 input 에만 적용되는 x 아이콘 
 .search-wrapper {position: relative;}
@@ -851,6 +857,7 @@ select:required:invalid {
 
 // BottomSheet 
 // #bottomsheet_wrap{position:fixed;top:0px;left:0px;width:100%;height:100%;}
+.sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
 #sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
 #bottomsheet{z-index:851;position:fixed;bottom:0px;left:0px;width:100%;background:#fff;}
 #bottomsheet .bottomsheetBtn{width:100%;height:64px;line-height:61px;border-top:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_16);letter-spacing: -0.48px;padding-left:58px;color:rgba(0,0,0,0.8)}

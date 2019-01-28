@@ -340,6 +340,7 @@ import MySpaceCredit from '~workplace/myspace/MySpace_credit'
 import MySpaceCoupon from '~workplace/myspace/MySpace_coupon'
 import MySpaceCouponRegister from '~workplace/myspace/MySpace_coupon_register'
 import MySpaceCouponUsed from '~workplace/myspace/MySpace_coupon_used'
+import MySpaceFilter from '~workplace/myspace/MySpace_filter'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -2205,6 +2206,11 @@ var rootRoutes = [
     path: '/MySpace_coupon_used',
     name: 'MySpace_coupon_used',
     component: MySpaceCouponUsed
+  },
+  {
+    path: '/MySpace_filter',
+    name: 'MySpace_filter',
+    component: MySpaceFilter
   },
   {
     path: '/regiclass_detailview_books',
