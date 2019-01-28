@@ -14,11 +14,21 @@
 
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li class="on"><a href="#tab1">학습현황</a></li>
-                    <li><a href="#tab2">학습목차</a></li> 
-                    <li><a href="#tab3">학습노트</a></li> 
-                    <li><a href="#tab3">질문방</a></li> 
-                    <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
+                    <li class="on"><a href="#">학습현황</a></li>
+                    <li><a href="#">학습목차</a></li> 
+                    <li><a href="#">학습노트</a></li> 
+                    <li><a href="#">질문방</a></li> 
+                    <li><a href="#">설문조사</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">자료실</a></li>
+                    <li><a href="#">토론방</a></li>
+                    <li><a href="#">리플렉션노트</a></li>
+                    <li><a href="#">리마인더</a></li>
+                    <li><a href="#">용어사전</a></li>
+                    <li><a href="#">요약집</a></li>
+                    <li><a href="#">Quick Poll/Answer</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
 
@@ -258,7 +268,29 @@
             <div class="inner">
                 <p>내용1</p>
                 <p>내용2</p>
-                <p>내용3</p>
+                <slp-select placeholder="Select Charactor" width="auto">
+                    <optgroup label="Black Sails">
+                        <option value="flint">Flint</option>
+                        <option value="silver">Silver</option>
+                        <option value="vane">Vane</option>
+                        <option value="billy">Billy</option>
+                        <option value="jack">Jack</option>
+                    </optgroup>
+
+                    <optgroup label="Breaking Bad">
+                        <option value="heisenberg">Heisenberg</option>
+                        <option value="jesse">Jesse</option>
+                        <option value="saul">Saul</option>
+                        <option value="mike">Mike</option>
+                    </optgroup>
+
+                    <optgroup label="Game of Thrones">
+                        <option value="tyrion-lannister">Tyrion ㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇ ㄻㄴㅇ asdf sad fasd fasad fsd fasd fasd fasd fㅁㄴㅇ ㄻㄴㅇㄹ Lannister</option>
+                        <option value="jamie-lannister">Jamie Lannister</option>
+                        <option value="daenerys-targaryen">Daenerys Targaryen</option>
+                        <option value="jon-snow">Jon Snow</option>
+                    </optgroup>
+                </slp-select>
                 <p>내용4</p>
                 <p>내용5</p>
                 <p>내용6</p>

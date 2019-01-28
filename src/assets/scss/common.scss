@@ -923,3 +923,5 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .flowplayer.is-finished .fp-cancleBtn{font-size:map-get($font_size, font_16);}
 .btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li{font-size:map-get($font_size, font_14);font-family: 'Noto Sans CJK KR'}
 .flowplayer .fp_Icon_txt{font-family: 'Roboto';font-size:map-get($font_size, font_13);}
+/* 수강신청-> 우측상단 비디오 태그*/
+.fp-videotag{background:#ff726D;font-size:map-get($font_size, font_12);letter-spacing: -0.36px;}
