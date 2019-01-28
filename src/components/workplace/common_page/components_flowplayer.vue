@@ -266,11 +266,59 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                <p>내용1</p>
+                <slp-dropdown 
+                    v-model="lang"
+                    @change="(v) => eDropdown('@change:', v)" 
+                    @input="(v) => eDropdown('@input:', v)" >
+                    <div class="wrapper" style="top: 150px; left: 20px" slot="trigger">
+                    <span class="content">{{lang}}</span>
+                    </div>
+
+                    <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
+                    <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
+                    <slp-dropdown-item :value="'중국어'">중국어</slp-dropdown-item>
+                    <slp-dropdown-item :value="'일본어'">일본어</slp-dropdown-item>
+                </slp-dropdown>
                 <p>내용2</p>
                 <p>내용4</p>
                 <p>내용5</p>
                 <p>내용6</p>
+                <slp-dropdown dimmed
+                    @change="(v) => eDropdown('@change:', v)" 
+                    @input="(v) => eDropdown('@input:', v)" >
+
+                    <button type="button" title="title" class="btn ld" slot="trigger">Dropdown (with Dim sheet)</button>
+
+                    <slp-dropdown-item disabled>Disabled</slp-dropdown-item>
+                    <slp-dropdown-item :value="true">True</slp-dropdown-item>
+                    <slp-dropdown-item :value="false">False</slp-dropdown-item>
+                </slp-dropdown>
+
+                <slp-dropdown
+                    :top="50" :right="100"
+                    @change="(v) => eDropdown('@change:', v)" 
+                    @input="(v) => eDropdown('@input:', v)" >
+
+                    <button type="button" title="title" class="btn ld" slot="trigger">Dropdown Position change (Top/Right)</button>
+
+                    <slp-dropdown-item disabled>Disabled</slp-dropdown-item>
+                    <slp-dropdown-item :value="true">True</slp-dropdown-item>
+                    <slp-dropdown-item :value="false">False</slp-dropdown-item>
+                </slp-dropdown>
+
+                <slp-dropdown 
+                    v-model="lang"
+                    @change="(v) => eDropdown('@change:', v)" 
+                    @input="(v) => eDropdown('@input:', v)" >
+                    
+
+                    <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
+                    <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
+                    <slp-dropdown-item :value="'중국어'">중국어</slp-dropdown-item>
+                    <slp-dropdown-item :value="'일본어'">일본어</slp-dropdown-item>
+                </slp-dropdown>
+                <p slot="trigger">{{lang}}</p>
+
                 <p>내용7</p>
                 <p>내용8</p>
                 <p>내용9</p>
@@ -329,6 +377,7 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
+        lang: '한국어',
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         relatedVideoList: [

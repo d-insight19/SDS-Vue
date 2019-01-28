@@ -11626,6 +11626,10 @@
           <router-link :to="{ name: 'components_dropdown_slp' }">
             components_dropdown_slp
           </router-link>
+          ,
+          <router-link :to="{ name: 'components_dropdown_slp2' }">
+            components_dropdown_slp2
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -11744,6 +11748,23 @@
         <td>
           <router-link :to="{ name: 'components_textfield_slp' }">
             components_textfield_slp
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>SnackBar</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_snackbar' }">
+            components_snackbar
           </router-link>
         </td>
         <td></td>
