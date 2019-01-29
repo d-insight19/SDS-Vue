@@ -44,20 +44,6 @@
                 <div class="player_inner">
                     <div id="contents"></div>
 
-                    <!--  s: 연관 콘텐츠 -->
-                    <div class="movie_info_list_wrap" style="display:none;">
-                        <div class="movie_info_list">
-                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
-                            <ul>
-                                <li v-for="(item, index) in relatedVideoList" :key="index">
-                                    <a href="#"></a>
-                                    <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li> 
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- e: 연관 콘텐츠 -->
-
                     <!-- s: 볼륨영역 -->
                     <div class="volume_wrap" style="display:none;">
                         <div class="volume_left">
@@ -89,6 +75,33 @@
                         </div>
                     </div>
                     <!--  e: double 텝 영역 -->
+
+                    <!-- s: 일반 콘텐츠일 경우 플레이 버튼 wrap -->
+                    <div class="content_play_wrap" style="display:none;">
+                        <div class="content_play_wrap_inner">
+                            <div class="fp-playWrap">
+                                <div class="fp-prevArrow">
+                                    <p class="fp_Icon_txt"></p>
+                                </div>
+                                <div class="fp-playIcon"></div>
+                                <div class="fp-pauseIcon">
+                                    <p class="fp_Icon_txt">1/10</p>
+                                </div>
+                                <div class="fp-replayIcon"></div>
+                                <div class="fp-startIcon">
+                                    <div class="startIcon">
+                                        <span class="playIcon"></span>
+                                        <span class="playTxt">학습하기</span>
+                                    </div>
+                                    <p class="fp_Icon_txt">1/10</p>
+                                </div>
+                                <div class="fp-nextArrow">
+                                    <p class="fp_Icon_txt"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e: 일반 콘텐츠일 경우 플레이 버튼 wrap -->
 
                 </div>
                 <!-- s: btm_subtitle_area -->
@@ -266,59 +279,11 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                <slp-dropdown 
-                    v-model="lang"
-                    @change="(v) => eDropdown('@change:', v)" 
-                    @input="(v) => eDropdown('@input:', v)" >
-                    <div class="wrapper" style="top: 150px; left: 20px" slot="trigger">
-                    <span class="content">{{lang}}</span>
-                    </div>
-
-                    <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
-                    <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
-                    <slp-dropdown-item :value="'중국어'">중국어</slp-dropdown-item>
-                    <slp-dropdown-item :value="'일본어'">일본어</slp-dropdown-item>
-                </slp-dropdown>
+                <p>내용1</p>
                 <p>내용2</p>
                 <p>내용4</p>
                 <p>내용5</p>
                 <p>내용6</p>
-                <slp-dropdown dimmed
-                    @change="(v) => eDropdown('@change:', v)" 
-                    @input="(v) => eDropdown('@input:', v)" >
-
-                    <button type="button" title="title" class="btn ld" slot="trigger">Dropdown (with Dim sheet)</button>
-
-                    <slp-dropdown-item disabled>Disabled</slp-dropdown-item>
-                    <slp-dropdown-item :value="true">True</slp-dropdown-item>
-                    <slp-dropdown-item :value="false">False</slp-dropdown-item>
-                </slp-dropdown>
-
-                <slp-dropdown
-                    :top="50" :right="100"
-                    @change="(v) => eDropdown('@change:', v)" 
-                    @input="(v) => eDropdown('@input:', v)" >
-
-                    <button type="button" title="title" class="btn ld" slot="trigger">Dropdown Position change (Top/Right)</button>
-
-                    <slp-dropdown-item disabled>Disabled</slp-dropdown-item>
-                    <slp-dropdown-item :value="true">True</slp-dropdown-item>
-                    <slp-dropdown-item :value="false">False</slp-dropdown-item>
-                </slp-dropdown>
-
-                <slp-dropdown 
-                    v-model="lang"
-                    @change="(v) => eDropdown('@change:', v)" 
-                    @input="(v) => eDropdown('@input:', v)" >
-                    
-
-                    <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
-                    <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
-                    <slp-dropdown-item :value="'중국어'">중국어</slp-dropdown-item>
-                    <slp-dropdown-item :value="'일본어'">일본어</slp-dropdown-item>
-                </slp-dropdown>
-                <p slot="trigger">{{lang}}</p>
-
                 <p>내용7</p>
                 <p>내용8</p>
                 <p>내용9</p>
@@ -377,7 +342,6 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
-        lang: '한국어',
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         relatedVideoList: [

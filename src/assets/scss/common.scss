@@ -662,12 +662,13 @@ select:required:invalid {
 .cardList.type1 .info{font-weight: 400;font-size: map-get($font_size, font_13);}
 .cardList.type1 .info li+li::before{background: #eaeaea;}
 .cardList.type1 .moredot{width:20px;height:20px;position:absolute;top:26px;right:16px;background: url("../img/ic_moredots_wh_20.png") no-repeat; z-index:2;}
-.cardList.type1 .tit{font-size: map-get($font_size, font_16); color:#000; line-height: 22px; font-weight:400; max-height: 46px; margin-bottom: 5px; white-space: normal; overflow: hidden;}
+.cardList.type1 .tit{font-size: map-get($font_size, font_16); color:#000; line-height: 22px; font-weight:400; margin-bottom: 5px;display: -webkit-box; white-space: normal; overflow: hidden;;-webkit-line-clamp: 2;-webkit-box-orient: vertical;    text-overflow: ellipsis;}
 
 /*.cardList.type2{background:#fff;}*/
-.cardList.type2 .moredot{width:20px;height:20px;position:absolute;top:50%;right:9px;background: url("../img/ic_moredots_20.png") no-repeat;transform: translateY(-50%)}
+.cardList.type2 .moredot{width:20px;height:20px;position:absolute;top:50px;right:9px;background: url("../img/ic_moredots_20.png") no-repeat;}
 .cardList.type2 .thum{display: block; position: absolute; left:0; top:0; width:120px; height:120px;}
-.cardList.type2 .tit{width: calc( 100% - 184px );display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
+// .cardList.type2 .tit{width: auto;display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
+.cardList.type2 .tit{width: auto;font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; display: -webkit-box; overflow: hidden;-webkit-line-clamp: 2;-webkit-box-orient: vertical;    text-overflow: ellipsis;}
 .cardList.type2 .writer{font-size:map-get($font_size, font_13); line-height: 19px; letter-spacing: -0.0036em; color:rgba(0,0,0,0.8);margin-top:5px;}
 .cardList.type2 .writer + .info{margin-top: 5px;line-height: 20px;}
 .cardList.type2 .info{margin-top: 7px;line-height: 20px;}
@@ -675,8 +676,7 @@ select:required:invalid {
 .cardList.type2 .info.type2{margin-top: 5px}
 
 /*.cardList.type2{background:#fff;}*/
-.cardList.type2 .series{margin-top:5px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: calc( 100% - 184px ); }
-.cardList.type2 .series li{display:inline-block;}
+.cardList.type2 .series{margin-top:5px; width: auto;    display: -webkit-box;overflow: hidden;-webkit-line-clamp: 1;-webkit-box-orient: vertical;  text-overflow: ellipsis; }
 .cardList.type2 .series + .info{margin-top:5px;}
 
 
@@ -932,6 +932,20 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .flowplayer .fp_Icon_txt{font-family: 'Roboto';font-size:map-get($font_size, font_13);}
 /* 수강신청-> 우측상단 비디오 태그*/
 .fp-videotag{background:#ff726D;font-size:map-get($font_size, font_12);letter-spacing: -0.36px;}
+.content_play_wrap{position:absolute;top:0;left:0;width:100%;height:100%}
+.content_play_wrap .content_play_wrap_inner{height:100%}
+.content_play_wrap .fp-playWrap{display: flex;flex-direction: row;line-height: 18px;align-items: center;justify-content: center;width: 100%;height: 100%;}
+.content_play_wrap .fp-playIcon{display:none; width:64px;height:64px;background:url("../img/ic_play_solid_wh_64.png");;background-size: cover}
+.content_play_wrap .fp-pauseIcon{display:none; width:64px;height:64px;background:url("../img/ic_pause_solid_wh_64.png");;background-size: cover}
+.content_play_wrap .fp_Icon_txt{line-height:20px;margin-top:70px;text-align: center;color:#fff;}
+.content_play_wrap .fp-startIcon{position: relative;}
+.content_play_wrap .fp-startIcon .startIcon{padding:8px 15px;background:#fff;border-radius: 20px;min-width:104px;min-height:40px;}
+.content_play_wrap .fp-startIcon .startIcon .playIcon{width:9px;height:10px;background:url("../img/32287.png");;background-size: cover;display:inline-block;}
+.content_play_wrap .fp-startIcon .startIcon .playTxt{line-height: 24px;letter-spacing: -0.48px;color:rgba(0,0,0,0.8);font-size:map-get($font_size, font_16);margin-left:7.8px;font-weight: 500;}
+.content_play_wrap .fp-startIcon .fp_Icon_txt{margin-top:6px;top: 40px;position: absolute;left: 50%;transform: translateX(-50%);}
+.content_play_wrap .fp-replayIcon{display:none; width:64px;height:64px;background:url("../img/ic_replay_solid_wh_64.png");;background-size: cover}
+.content_play_wrap .fp-nextArrow{margin-left:40px; width:64px;height:64px;background:url("../img/ic_next_solid_wh_64.png");;background-size: cover}
+.content_play_wrap .fp-prevArrow{margin-right:40px; width:64px;height:64px;background:url("../img/ic_former_solid_wh_64.png");background-size: cover}
 
 
 
@@ -944,3 +958,4 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .toast .download_wrap .download_hilight{color:#fff}
 .toast .toast_title{color:#fff;margin-bottom:4px}
 .toast .toast_contents{overflow: hidden;width:100%;text-overflow: ellipsis;white-space: nowrap;}
+
