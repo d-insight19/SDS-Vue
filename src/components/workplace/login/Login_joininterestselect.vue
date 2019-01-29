@@ -102,13 +102,13 @@ export default {
   methods: {  
     pushChk (el) {
       if( el == 1) {
-        this.chk = event.target.value
-        console.log(event.target.value)
-        // if(event.target.value == true ) {
-        //     console.log(event.target.value)
-        // } else if(event.target.value == false) {
-        //     this.chk = ''
-        // }        
+        if( this.chk == 'on' ) {
+            this.chk =''
+            console.log(event.target.value)
+        } else if(this.chk == '') {
+            console.log(event.target.value)
+            this.chk =''
+        }        
       } else if ( el == 2) {
         console.log(event.target.value)
         this.chk2 = event.target.value

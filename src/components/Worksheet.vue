@@ -4481,6 +4481,10 @@
           <router-link :to="{ name: 'Study_home_courseware_module_01' }">
             Study_home_courseware_module_01
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_home_courseware_module_02' }">
+            Study_home_courseware_module_02
+          </router-link>
         </td>
         <td></td>
       </tr>
