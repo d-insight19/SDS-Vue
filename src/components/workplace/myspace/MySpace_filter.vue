@@ -103,7 +103,7 @@
         </div>
         
         <!-- filterListArea -->
-        <div class="sheetDim"></div>
+        <div id="sheetDim"></div>
         <div class="filterListArea">
             <span class="handle"></span>
             <h2 class="h-tit2 fwb600 mb10 pl18 pr18">

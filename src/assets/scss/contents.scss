@@ -853,17 +853,6 @@ table td.sub-txt{ color:#000;}
 .chip.color4 {border-color:map-get($contents_colors, type_4 ); color:map-get($contents_colors, type_4 );}
 .chip.color4 {border-color:map-get($contents_colors, type_5 ); color:map-get($contents_colors, type_5 );}
 
-/*댓글 공통*/
-.reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; }
-.reply-txt {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:8px; color:#1a1a1a;}
-.reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
-.reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);     margin-bottom: 10px;}
-.reply-name .ico.more {cursor: pointer;}
-.reply-wrap .arr.down {cursor: pointer; margin-right:1px;}
-.reply-wrap .like_32 {cursor: pointer;}
-.reply-wrap .reply-num {font-size:map-get($font-size, font_14);line-height: 19px; }
-.reply-wrap .unlike_32 {cursor: pointer; margin-left:8px;}
-
 /*header 공통*/
 #header p.h-tit1{text-overflow: unset !important; white-space:unset !important;}
 #header p.h-tit5{text-overflow: unset !important; white-space:unset !important;}
