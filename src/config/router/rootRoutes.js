@@ -126,6 +126,7 @@ import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporatio
 import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
 
 import StudyHomeCoursewareModule01 from '~workplace/study/Study_home_courseware_module_01'
+import StudyHomeCoursewareModule02 from '~workplace/study/Study_home_courseware_module_02'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -245,6 +246,7 @@ import MainChannelDetailAfter from '~workplace/main/Main_channel_detail_after'
 import MainKeywordList from '~workplace/main/Main_keyword_list'
 import MainArticleDetail from '~workplace/main/Main_article_detail'
 import MainArticleDetailLike from '~workplace/main/Main_article_detail_like'
+import MainArticleDetailQnA from '~workplace/main/Main_article_detailQnA'
 import MainWriterChannel from '~workplace/main/Main_writer_channel'
 import MainWriterArticle from '~workplace/main/Main_writer_article'
 import MainWriterHistory from '~workplace/main/Main_writer_history'
@@ -276,6 +278,7 @@ import CLIPingColumnDetail from '~workplace/cliping/CLIPing_column_detail'
 import CLIPingPaperPro from '~workplace/cliping/CLIPing_paperPro'
 import CLIPingPaperProDetail from '~workplace/cliping/CLIPing_paperProDetail'
 import CLIPingPaperProDetailPort from '~workplace/cliping/CLIPing_paperProDetail_port'
+import CLIPingPaperProDetailComment from '~workplace/cliping/CLIPing_paperProDetailComment'
 import CLIPingLanguageClub from '~workplace/cliping/CLIPing_languageClub'
 import CLIPingLanguageClubList from '~workplace/cliping/CLIPing_languageClubList'
 import CLIPingLanguageClubList02 from '~workplace/cliping/CLIPing_languageClubList02'
@@ -1232,6 +1235,11 @@ var rootRoutes = [
     component: StudyHomeCoursewareModule01
   },
   {
+    path: '/Study_home_courseware_module_02',
+    name: 'Study_home_courseware_module_02',
+    component: StudyHomeCoursewareModule02
+  },
+  {
     path: '/Study_dictionary',
     name: 'Study_dictionary',
     component: StudyDictionary
@@ -1816,6 +1824,11 @@ var rootRoutes = [
     component: MainArticleDetailLike
   },
   {
+    path: '/Main_article_detailQnA',
+    name: 'Main_article_detailQnA',
+    component: MainArticleDetailQnA
+  },
+  {
     path: '/Main_writer_channel',
     name: 'Main_writer_channel',
     component: MainWriterChannel
@@ -1964,6 +1977,11 @@ var rootRoutes = [
     path: '/CLIPing_paperProDetail_port',
     name: 'CLIPing_paperProDetail_port',
     component: CLIPingPaperProDetailPort
+  },
+  {
+    path: '/CLIPing_paperProDetailComment',
+    name: 'CLIPing_paperProDetailComment',
+    component: CLIPingPaperProDetailComment
   },
   {
     path: '/CLIPing_languageClub',

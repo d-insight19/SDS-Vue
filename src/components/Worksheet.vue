@@ -2602,6 +2602,10 @@
           <router-link :to="{ name: 'CLIPing_paperProDetail_port' }">
             CLIPing_paperProDetail_port
           </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_paperProDetailComment' }">
+            CLIPing_paperProDetailComment
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -2917,9 +2921,6 @@
         <td>
           <router-link :to="{ name: 'CLIPing_videoSeries_detail' }">
             CLIPing_videoSeries_detail
-          </router-link><br/>
-          <router-link :to="{ name: 'CLIPing_videoSeries' }">
-            CLIPing_videoSeries
           </router-link>
         </td>
         <td></td>
@@ -3342,8 +3343,12 @@
           <router-link :to="{ name: 'Main_article_detail_like' }">
             Main_article_detail_like
           </router-link>
+          ,
+          <router-link :to="{ name: 'Main_article_detailQnA' }">
+            Main_article_detailQnA
+          </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">173</td>
@@ -4140,6 +4145,10 @@
           <router-link :to="{ name: 'CLIPing_paperProDetail_port' }">
             CLIPing_paperProDetail_port
           </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_paperProDetailComment' }">
+            CLIPing_paperProDetailComment
+          </router-link>
           등 지식클리핑의 상세
         </td>
         <td></td>
@@ -4490,6 +4499,9 @@
         <td>
           <router-link :to="{ name: 'Study_home_courseware_module_01' }">
             Study_home_courseware_module_01
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_home_courseware_module_02' }">
+            Study_home_courseware_module_02
           </router-link>
         </td>
         <td></td>
@@ -10125,8 +10137,8 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.02.VideoSeries</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_videoSeries' }">
+            CLIPing_videoSeries
           </router-link>
         </td>
         <td></td>
@@ -10148,6 +10160,10 @@
           ,
           <router-link :to="{ name: 'CLIPing_paperProDetail_port' }">
             CLIPing_paperProDetail_port
+          </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_paperProDetailComment' }">
+            CLIPing_paperProDetailComment
           </router-link>
         </td>
         <td></td>
