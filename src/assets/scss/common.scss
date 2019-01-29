@@ -782,12 +782,16 @@ select:required:invalid {
 .reply-name {font-weight:600;font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; }
 .reply-txt {font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px; margin-top:8px; color:#1a1a1a;}
 .reply-date {font-size:map-get($font-size, font_12);line-height: 18px; letter-spacing: -0.12px; color:map-get($mono_colors, mono_65);}
-.reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80);}
+.reply-wrap {margin-top:8px; font-size:map-get($font-size, font_13);line-height: 32px; letter-spacing: -0.39px; color:map-get($mono_colors, mono_80); margin-bottom: 10px;}
 .reply-name .ico.more {cursor: pointer;}
 .reply-wrap .arr.down {cursor: pointer; margin-right:1px;}
-.reply-wrap .reply-like {cursor: pointer;}
+.reply-wrap .like_32 {cursor: pointer;}
 .reply-wrap .reply-num {font-size:map-get($font-size, font_14);line-height: 19px; }
-.reply-wrap .reply-unlike {cursor: pointer; margin-left:8px;}
+.reply-wrap .unlike_32 {cursor: pointer; margin-left:8px;}
+.reply-list2 {padding-left:30px; background: url("../img/ic_indent_20.png") 0px 16px no-repeat;}
+.QnA_Q {border-radius:100%; color:#21277c; background-color:#ffffff; padding: 2px 6px; border:1px solid #21277c;}
+.QnA_A {border-radius:100%; color:#ffffff; background-color:#21277c; padding: 3px 7px; border:0px solid #ffffff;}
+
 
 // Drawer SideNav
 #drawer{position:fixed;top:0px;left:-335px;width:335px;height:100vh;z-index:998;transition: 0.5s;}

@@ -246,6 +246,7 @@ import MainChannelDetailAfter from '~workplace/main/Main_channel_detail_after'
 import MainKeywordList from '~workplace/main/Main_keyword_list'
 import MainArticleDetail from '~workplace/main/Main_article_detail'
 import MainArticleDetailLike from '~workplace/main/Main_article_detail_like'
+import MainArticleDetailQnA from '~workplace/main/Main_article_detailQnA'
 import MainWriterChannel from '~workplace/main/Main_writer_channel'
 import MainWriterArticle from '~workplace/main/Main_writer_article'
 import MainWriterHistory from '~workplace/main/Main_writer_history'
@@ -277,6 +278,7 @@ import CLIPingColumnDetail from '~workplace/cliping/CLIPing_column_detail'
 import CLIPingPaperPro from '~workplace/cliping/CLIPing_paperPro'
 import CLIPingPaperProDetail from '~workplace/cliping/CLIPing_paperProDetail'
 import CLIPingPaperProDetailPort from '~workplace/cliping/CLIPing_paperProDetail_port'
+import CLIPingPaperProDetailComment from '~workplace/cliping/CLIPing_paperProDetailComment'
 import CLIPingLanguageClub from '~workplace/cliping/CLIPing_languageClub'
 import CLIPingLanguageClubList from '~workplace/cliping/CLIPing_languageClubList'
 import CLIPingLanguageClubList02 from '~workplace/cliping/CLIPing_languageClubList02'
@@ -1822,6 +1824,11 @@ var rootRoutes = [
     component: MainArticleDetailLike
   },
   {
+    path: '/Main_article_detailQnA',
+    name: 'Main_article_detailQnA',
+    component: MainArticleDetailQnA
+  },
+  {
     path: '/Main_writer_channel',
     name: 'Main_writer_channel',
     component: MainWriterChannel
@@ -1970,6 +1977,11 @@ var rootRoutes = [
     path: '/CLIPing_paperProDetail_port',
     name: 'CLIPing_paperProDetail_port',
     component: CLIPingPaperProDetailPort
+  },
+  {
+    path: '/CLIPing_paperProDetailComment',
+    name: 'CLIPing_paperProDetailComment',
+    component: CLIPingPaperProDetailComment
   },
   {
     path: '/CLIPing_languageClub',

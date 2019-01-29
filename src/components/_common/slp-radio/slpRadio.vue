@@ -14,7 +14,7 @@
       :value="nativeValue"
       type="radio"
       class="rdo">
-    <span class="ico"/>
+    <span class="ico"><span v-if="!!innerCircle" class="innerCircle"></span></span>
     <span class="label"><slot/></span>
   </label>
 </template>
@@ -30,7 +30,8 @@ export default {
     disabled: Boolean,
     required: Boolean,
     name: String,
-    size: String
+    size: String,
+    innerCircle: String
   },
   data () {
     return {
