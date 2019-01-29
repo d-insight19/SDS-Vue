@@ -62,8 +62,8 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li @click="active_el" style="width:54px; border-right:1px solid #cccccc"><slp-button class="md"><span class="ico like_solid_32" :class="{ blue : active }"></span></slp-button></li>
-                <li  ><slp-button class="md"><span class="ico download_32"></span>다운로드</slp-button></li>
+                <li style="width:54px; border-right:1px solid #cccccc"><slp-button class="md"><span class="ico like_solid_32"></span></slp-button></li>
+                <li><slp-button class="md"><span class="ico download_32"></span>다운로드</slp-button></li>
             </ul>
         </div>
         <!-- //floating button --> 
@@ -74,7 +74,6 @@
 </template>
 
 <script>
-/*eslint-disable */
 export default {
   name: 'CLIPing_bookSummary_detail',
   /* vue lifecycle */
@@ -85,14 +84,10 @@ export default {
   /* vue data */
   data () {
     return {
-        active : false
     }
   },
   /* vue function */
   methods: {
-      active_el () {
-          this.active = !this.active
-      }
   }
 }
 </script>

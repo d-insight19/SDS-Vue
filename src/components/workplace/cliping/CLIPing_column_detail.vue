@@ -69,7 +69,7 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li @click="active_el" ><slp-button class="md mono_65"><span class="ico like_solid_32" :class="{ blue : active }"></span><span :class="{ color_clr2 : active }">좋아요</span></slp-button></li>
+                <li><slp-button class="md mono_65"><span class="ico like_solid_32"></span>좋아요</slp-button></li>
             </ul>
         </div>
         <!-- //floating button --> 
@@ -80,7 +80,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 export default {
   name: 'CLIPing_column_detail',
   /* vue lifecycle */
@@ -91,14 +90,10 @@ export default {
   /* vue data */
   data () {
     return {
-        active : false
     }
   },
   /* vue function */
   methods: {
-    active_el () {
-        this.active = !this.active
-    }
   }
 }
 </script>

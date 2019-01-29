@@ -174,11 +174,11 @@
                                     <li class="">
                                         <span class="ico check_14"></span>
                                         <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
+                                        <span>2017.11.05</span>
                                     </li>
                                     <li class="">
                                         <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
+                                        <span>12:45</span>/<span>23:43</span>
                                     </li>
                                 </ul>
                             </div>
@@ -194,11 +194,11 @@
                                     <li class="">
                                         <span class="ico check_14"></span>
                                         <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
+                                        <span>2017.11.05</span>
                                     </li>
                                     <li class="">
                                         <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
+                                        <span>12:45</span>/<span>23:43</span>
                                     </li>
                                 </ul>
                             </div>
@@ -214,11 +214,11 @@
                                     <li>
                                         <span class="ico check_14 wh"></span>
                                         <span class="wh">학습완료</span>
-                                        <span class="wh mono_65">2017.11.05</span>
+                                        <span class="wh">2017.11.05</span>
                                     </li>
                                     <li>
                                         <span class="ico time wh"></span>
-                                        <span class="wh">12:45</span><span class="wh">/</span><span class="wh mono_65">23:43</span>
+                                        <span class="wh">12:45</span><span class="wh">/</span><span class="wh">23:43</span>
                                     </li>
                                 </ul>
                             </div>
@@ -237,7 +237,7 @@
                                     </li>
                                     <li class="">
                                         <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
+                                        <span>12:45</span>/<span>23:43</span>
                                     </li>
                                 </ul>
                             </div>
@@ -256,7 +256,7 @@
                                     </li>
                                     <li class="">
                                         <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
+                                        <span>23:43</span>
                                     </li>
                                 </ul>
                             </div>
@@ -275,7 +275,7 @@
                                     </li>
                                     <li class="">
                                         <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
+                                        <span>23:43</span>
                                     </li>
                                 </ul>
                             </div>

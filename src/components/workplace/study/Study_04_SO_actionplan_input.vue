@@ -99,15 +99,13 @@
                         <label class="inputbottom inp-num">
                             <span class="strlenth" ><span v-text="keylength"></span>/300</span>
                         </label>
-                        <button class="fr save-btn mt26 mono_25">저장</button>
                         <p class="hr"></p>
                         <p class="txt-tit">2. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
                         <button class="guide-btn" >작성가이드</button>                        
                         <input @input.prevent="e => keylength2 = e.target.value.length"    type="text" class="input02" placeholder="의견을 입력해 주세요">
                         <label class="inputbottom inp-num">
                             <span class="strlenth" ><span v-text="keylength2"></span>/300</span>
-                        </label>
-                        <button class="fr save-btn mt26 mono_25">저장</button> 
+                        </label> 
                     </div>
                     <!-- //inner -->
                 </div>  
@@ -116,7 +114,7 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <button type="button" class="btn md clr1">제출</button>
+                <button type="button" disabled="disabled" class="btn md clr1">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
