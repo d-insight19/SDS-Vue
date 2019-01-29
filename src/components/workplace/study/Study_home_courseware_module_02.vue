@@ -323,6 +323,11 @@
                         </div>
                         <span class="ico accordion_arrow"></span>
                     </li>
+                </ul>
+
+                <p class="label-tit-18 mt19 mb12">모듈타이틀입니다</p>
+
+                <ul class="multiList type2">
                     <li>
                         <div class="download_detail">
                             <div class="txt_wrap">
@@ -362,7 +367,6 @@
                         <span class="ico accordion_arrow"></span>
                     </li>
                 </ul>
-
                 <div class="bot-wrap ml-18 mr-18">
                     <h2 class="h-tit2 fwb600" style="margin-top:4px; margin-bottom:15px;">연관 콘텐츠 추천</h2>
                     <div class="scroll-x type2">
@@ -400,34 +404,6 @@
                             </li>                        
                         </ul>
                         <!-- //list -->
-
-                        <p class="label-tit-18 mt19 mb12">모듈타이틀입니다</p>
-
-                        <!-- list -->
-                        <ul class="multiList type2">
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>                        
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>      
-                        </ul>
-                        <!-- //list -->
-
                     </div>
                 </div>
 

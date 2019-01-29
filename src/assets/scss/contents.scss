@@ -1517,13 +1517,16 @@ label.rdo .label{position: relative;}
 #container.regiclass.register table tr td {padding:12px 0;}
 
 
-//
-#container.courseware .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 40px 22px 16px; margin-top:12px;}
+// 모듈명이 없을때
+#container.courseware .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 32px 20px 22px 23px; margin-top:12px;}
 #container.courseware .download_detail .txt_wrap {border-bottom: 0 none !important; padding-bottom:0 !important;}
 #container.courseware .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:5px;}
 #container.courseware .download_detail .txt_wrap .title {font-weight:500; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
 #container.courseware .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
-#container.courseware .download_detail .info li {color:map-get($mono_colors,mono_65); vertical-align: unset;}
+#container.courseware .download_detail .info li { vertical-align: unset;}
+#container.courseware .download_detail .info li .wh.mono_65 {color:rgba(255,255,255,0.65) !important;}
+#container.courseware .download_detail .info li:nth-child(1) .ico {margin-right:5px; vertical-align: -2px;}
+#container.courseware .download_detail .info li:nth-child(1) .mono_65{margin-left:6px;}
 #container.courseware .download_detail .info .check_14 {vertical-align: -2px;}
 #container.courseware .download_detail .info .time {vertical-align: -4px;}
 #container.courseware .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
@@ -1534,6 +1537,11 @@ label.rdo .label{position: relative;}
 #container.courseware .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
 #container.courseware .bot-wrap{background:white; padding:18px; margin-top:26px;}
 #container.courseware .wh{color:white;}
+
+// 모듈명이 있을때
+
+
+#container.courseware .download_detail .label-tit-18 { font-weight:600; font-size: map-get($font_size, font_18); line-height:28px; letter-spacing:0.54px;}
 
 
 
