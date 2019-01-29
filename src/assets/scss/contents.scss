@@ -2195,12 +2195,11 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .search #header .ulList.type1 .in-chk .labelChk2 {margin-top:0px;}
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
 
-.MySpace .gray_bg {background-color: map-get($bg_colors , BG_1);}
+.MySpace.gray_bg {background-color: map-get($bg_colors , BG_1);}
 .MySpace .white_bg {background-color: #fff}
 .MySpace #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .MySpace #dropdown{top:0px;right:0px;}
 // Dropdown
-.MySpace .sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
 .MySpace .dropdown{z-index:851;position:absolute;top:0px;right:0px;width:auto;background:#fff;box-shadow: 0px 3px 6px rgba(0,0,0,0.16);border-radius: 4px;}
 .MySpace .dropdown ul{width:100%;padding:8px 0px;}
 .MySpace .dropdown ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
@@ -2257,8 +2256,6 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
 .MySpace .ico.accordion_arrow{width:20px;height:20px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat;}
 .MySpace .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
-.MySpace .btB89 {border-top: 1px solid map-get($line_colors , B89);}
-.MySpace .radioList li{margin-bottom:10px;}
 // Status 
 .MySpace .status .border{border-top: 1px solid map-get($line_colors, B60); border-bottom: 1px solid map-get($line_colors, B60);}
 .MySpace .status strong {color: map-get($mono_colors, mono_100); font-weight:500;}
@@ -2358,6 +2355,16 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .pager_list > li.active .dot {background-color:map-get($mono_colors, mono_65);}
 .MySpace .pager_list > li:last-child .dot{margin-right: 0px;}
 .MySpace .multiList.type1 > li{  border-top:1px solid #e3e3e3; border-bottom: 0 none;}
+// couponList
+.MySpace .couponList .in {display: table; width: 100%; min-height: 110px; padding: 16px; margin-bottom: 8px; background: #fff url("../img/img_coupon_ellipse.png") left center no-repeat; background-size: 10px 20px;;}
+.MySpace .couponList .in .summary {display: table-cell; vertical-align: middle; width:86px; text-align:center; color:map-get($mono_colors, mono_25); padding-right: 6px; font-weight: 400;}
+.MySpace .couponList .in .summary .chip {font-size: map-get($font_size, font_10); height:20px; padding: 2px 6px; margin-bottom:0px; border-color:map-get($mono_colors, mono_25); color:map-get($mono_colors, mono_50);}
+.MySpace .couponList .in .detail {display: table-cell; vertical-align: middle; width:calc(100% - 86px); padding-left: 24px; font-size: map-get($font_size, font_16); border-left:1px dotted  map-get($line_colors, B60);}
+.MySpace .couponList .in .detail .title {font-size: map-get($font_size, font_16); font-weight: 500; text-overflow: ellipsis; width: inherit; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden; -webkit-line-clamp: 2;}
+.MySpace .couponList .in .detail .term {font-size: map-get($font_size, font_13); color:map-get($mono_colors, mono_65);}
+
+.MySpace .btB89 {border-top: 1px solid map-get($line_colors , B89);}
+.MySpace .radioList li{margin-bottom:10px;}
 
 //keyword
 .keyword li .number{padding: 12px 0; font-size: map-get($font_size, font_18); width: 30px; display: inline-block;}

@@ -3661,9 +3661,7 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_tracking</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          웹 브라우저로 이동
         </td>
         <td></td>
       </tr>
@@ -3805,11 +3803,6 @@
           <router-link :to="{ name: 'MySpace_formal_certificatekr' }">
             MySpace_formal_certificatekr
           </router-link>
-          ,
-          <router-link :to="{ name: 'MySpace_formal_certificate_name_kor' }">
-            MySpace_formal_certificate_name_kor
-          </router-link>
-          ,
         </td>
         <td></td>
       </tr>
@@ -4128,9 +4121,26 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.05.cliping_analysis_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_videodetail' }">
+            CLIPing_videodetail
           </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_column_detail' }">
+            CLIPing_column_detail
+          </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_bookSummary_detail' }">
+            CLIPing_bookSummary_detail
+          </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_paperProDetail' }">
+            CLIPing_paperProDetail
+          </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_paperProDetail_port' }">
+            CLIPing_paperProDetail_port
+          </router-link>
+          등 지식클리핑의 상세
         </td>
         <td></td>
       </tr>
@@ -4371,9 +4381,9 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.10.coupon</td>
         <td>
-          <!--<router-link :to="{ name: 'MySpace_coupon' }">
+          <router-link :to="{ name: 'MySpace_coupon' }">
             MySpace_coupon
-          </router-link>-->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -4405,9 +4415,9 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.10.coupon_used</td>
         <td>
-          <!--<router-link :to="{ name: 'MySpace_coupon_used' }">
+          <router-link :to="{ name: 'MySpace_coupon_used' }">
             MySpace_coupon_used
-          </router-link>-->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -4422,8 +4432,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.11.filter</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_filter' }">
+            MySpace_filter
           </router-link>
         </td>
         <td></td>
@@ -10085,8 +10095,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.01.formal_certificate_name</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_formal_certificate_name_kor' }">
+            MySpace_formal_certificate_name_kor
           </router-link>
         </td>
         <td></td>
@@ -10136,8 +10146,12 @@
         <td>　</td>
         <td class="textL">15.CLIPing_15.03.06.PaperProDetail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CLIPing_paperProDetail' }">
+            CLIPing_paperProDetail
+          </router-link>
+          ,
+          <router-link :to="{ name: 'CLIPing_paperProDetail_port' }">
+            CLIPing_paperProDetail_port
           </router-link>
         </td>
         <td></td>
@@ -11630,6 +11644,10 @@
           <router-link :to="{ name: 'components_dropdown_slp' }">
             components_dropdown_slp
           </router-link>
+          ,
+          <router-link :to="{ name: 'components_dropdown_slp2' }">
+            components_dropdown_slp2
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -11748,6 +11766,23 @@
         <td>
           <router-link :to="{ name: 'components_textfield_slp' }">
             components_textfield_slp
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>SnackBar</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_snackbar' }">
+            components_snackbar
           </router-link>
         </td>
         <td></td>

@@ -207,6 +207,8 @@ export default {
         y = trRect.top - (ddRect.height + pointerSize)
       }
       
+      console.log(trRect);
+      console.log(target.offsetLeft , target.offsetTop )
       console.log(x, y)
       return {
         right: x - scrollWidth,

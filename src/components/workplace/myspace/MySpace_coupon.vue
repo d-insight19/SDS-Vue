@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery MySpace">
+      <div id="container" class="mediaquery MySpace gray_bg">
 
         <!-- header -->
         <div id="header" class="fixed tab">
@@ -35,120 +35,84 @@
         <div id="content" class="list">
 
           <div class="cell">
-            <div class="inner mr-18 ml-18 gray_bg ">
-                <h2 class="label-tit20 w100p">나의 순위</h2>
-                
+            <div class="filterArea ml-18 mr-18">
+                <p class="font_15 mono_80 fwb">
+                    보유 내역 <span class="mono_50">6</span> <span class="ico down"></span>
+                    <span class="ico addcoupon"></span>
+                </p>
             </div>
           </div>
 
           <div class="cell">
-            <div class="inner">
-                <h2 class="label-tit20 w100p">
-                    포인트 적립 내역
-                    <span class="fr ico filter"></span>
-                </h2>
-                <ul class="multiList type1">
+            <div class="inner pt0">
+                <ul class="couponList">
                     <li>
                         <div class="in">
-                            <div class="multiline line3">
-                                4차 산업혁명, 이것만 알면 다 된다! - 인공지능 편 [스마트러닝] 학습
+                            <div class="summary">
+                                <p class="color_clr2"><span class="font_32">30</span>%</p>
                             </div>
-                            <ul class="info">
-                                <li class="fwb color_clr3">학습포인트</li>
-                                <li class="">포인트 적립일 2018.10.10</li>
-                            </ul>
+                            <div class="detail">
+                                <p class="title">[기간한정] 특별 교육 대상자 추가 할인 쿠폰</p>
+                                <p class="term">유효기간 <span>2018.10.01 - 2018.10.31</span></p>
+                            </div>
                         </div>
-                        <span class="metatxt color_clr2">+230P</span>
                     </li>
                     <li>
                         <div class="in">
-                            <div class="multiline line3">
-                                세상을 바꾸는 제 4차 산업혁명의 미래, 노트공유 포인트 획득 
+                            <div class="summary">
+                                <p class="color_clr2">무료강의</p>
                             </div>
-                            <ul class="info">
-                                <li class="fwb color_clr3">학습포인트</li>
-                                <li class="">포인트 적립일 2018.10.10</li>
-                            </ul>
+                            <div class="detail">
+                                <p class="title">[무료] 한글날 특별 이벤트 무료 교육 대상자 무료강의 쿠...</p>
+                                <p class="term">유효기간 <span>2018.10.01 - 2018.10.31</span></p>
+                            </div>
                         </div>
-                        <span class="metatxt color_clr2">+15P</span>
                     </li>
                     <li>
                         <div class="in">
-                            <div class="multiline line3">
-                                업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정 - 한 눈에 살펴 보는 자바의 기본, 자바 기본 개념 프로그래밍 입문 과정 프로그래밍 입문 과정
+                            <div class="summary">
+                                <p><span class="font_32">45</span>%</p>
+                                <span class="chip">기간만료</span>
                             </div>
-                            <ul class="info">
-                                <li class="fwb color_clr3">학습포인트</li>
-                                <li class="">포인트 적립일 2018.10.10</li>
-                            </ul>
+                            <div class="detail">
+                                <p class="title">[기간한정] 특별 교육 대상자 추가 할인 쿠폰</p>
+                                <p class="term">유효기간 <span>2018.10.01 - 2018.10.31</span></p>
+                            </div>
                         </div>
-                        <span class="metatxt color_clr2">+230P</span>
                     </li>
                     <li>
                         <div class="in">
-                            <div class="multiline line3">
-                                4차 산업혁명, 이것만 알면 다 된다! - 인공지능 편 [스마트러닝] 학습
+                            <div class="summary">
+                                <p><span class="font_32">45</span>%</p>
+                                <span class="chip">사용완료</span>
                             </div>
-                            <ul class="info">
-                                <li class="fwb color_clr3">학습포인트</li>
-                                <li class="">포인트 적립일 2018.10.10</li>
-                            </ul>
+                            <div class="detail">
+                                <p class="title">[기간한정] 특별 교육 대상자 추가 할인 쿠폰</p>
+                                <p class="term">유효기간 <span>2018.10.01 - 2018.10.31</span></p>
+                            </div>
                         </div>
-                        <span class="metatxt color_clr2">+20P</span>
                     </li>
                     <li>
                         <div class="in">
-                            <div class="multiline line3">
-                                4차 산업혁명, 이것만 알면 다 된다!
+                            <div class="summary">
+                                <p class="color_clr2"><span class="font_32">30</span>%</p>
                             </div>
-                            <ul class="info">
-                                <li class="fwb color_clr3">학습포인트</li>
-                                <li class="">포인트 적립일 2018.10.10</li>
-                            </ul>
+                            <div class="detail">
+                                <p class="title">[특급] 한글날 이벤트 쿠폰</p>
+                                <p class="term">유효기간 <span>2018.10.01 - 2018.10.31</span></p>
+                            </div>
                         </div>
-                        <span class="metatxt color_clr2">+230P</span>
                     </li>
                     <li>
                         <div class="in">
-                            <div class="multiline line3">
-                                업무에 바로 쓰는 자바 스크립트 프로
-그래밍 입문 과정 - 한 눈에 살펴보는 
-자바의 기본, 자바 기본 개념 
+                            <div class="summary">
+                                <p class="color_clr2"><span class="font_32">70</span>%</p>
                             </div>
-                            <ul class="info">
-                                <li class="fwb color_clr3">학습포인트</li>
-                                <li class="">포인트 적립일 2018.10.10</li>
-                            </ul>
-                        </div>
-                        <span class="metatxt color_clr2">+230P</span>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <div class="multiline line3">
-                                업무에 바로 쓰는 자바 스크립트 프로
-그래밍 입문 과정 - 한 눈에 살펴보는 
-자바의 기본, 자바 기본 개념 
+                            <div class="detail">
+                                <p class="title">[특가] 특별 교육 대상자 추가 할인 쿠폰</p>
+                                <p class="term">유효기간 <span>2018.10.01 - 2018.10.31</span></p>
                             </div>
-                            <ul class="info">
-                                <li class="fwb color_clr3">학습포인트</li>
-                                <li class="">포인트 적립일 2018.10.10</li>
-                            </ul>
                         </div>
-                        <span class="metatxt color_clr2">+230P</span>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <div class="multiline line3">
-                                업무에 바로 쓰는 자바 스크립트 프로
-그래밍 입문 과정 - 한 눈에 살펴보는 
-자바의 기본, 자바 기본 개념 
-                            </div>
-                            <ul class="info">
-                                <li class="fwb color_clr3">학습포인트</li>
-                                <li class="">포인트 적립일 2018.10.10</li>
-                            </ul>
-                        </div>
-                        <span class="metatxt color_clr2">+5P</span>
                     </li>
                 </ul>
             </div>
@@ -163,7 +127,7 @@
 
 <script>
 export default {
-  name: 'MySpace_point',
+  name: 'MySpace_coupon',
   /* vue lifecycle */
   created () {
   },

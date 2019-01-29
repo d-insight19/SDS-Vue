@@ -146,6 +146,7 @@
 .ico.arrowback{width:24px;height:24px;background: url("../img/btn_arrowback_96.png") no-repeat; background-size: contain;}
 .ico.down{width:24px;height:24px;background: url("../img/ic_down_blue_24.png") no-repeat; background-size:contain;}
 .ico.addfolder{width:24px;height:24px;background: url("../img/ic_addfolder_line_24.png") no-repeat; background-size: contain;}
+.ico.addcoupon{width:24px;height:24px;background: url("../img/ic_addcoupon_line_24.png") no-repeat; background-size: contain;}
 
 /*추가 이미지 2019-1-3*/
 .ico.warning{width:18px; height:18px; background: url("../img/ic_warning_solid_20.png") no-repeat;  vertical-align: -2px;}
@@ -338,6 +339,7 @@
 .pdb0{padding-bottom:0 !important;}
 .pb10{padding-bottom:10px !important;}
 .pdb12{padding-bottom: 12px !important;}
+.pdb15{padding-bottom: 15px !important;}
 .pb18{padding-bottom:18px !important;}
 .pdb20{padding-bottom:20px !important;}
 .pdb14{padding-bottom: 14px !important;}
