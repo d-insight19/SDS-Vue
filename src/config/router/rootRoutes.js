@@ -31,6 +31,7 @@ import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
+import ComponentsSnackBar from '~workplace/common_page/components_snackbar'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -542,6 +543,7 @@ import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
 import ComponentsTestPage3 from '~workplace/common_page/components_checkbox_slp'
 import ComponentsTestPage4 from '~workplace/common_page/components_dropdown_slp'
+import ComponentsTestPage44 from '~workplace/common_page/components_dropdown_slp2'
 import ComponentsTestPage5 from '~workplace/common_page/components_popup_slp'
 import ComponentsTestPage6 from '~workplace/common_page/components_radio_slp'
 import ComponentsTestPage7 from '~workplace/common_page/components_select_slp'
@@ -712,6 +714,11 @@ var rootRoutes = [
     component: ComponentsChartLib
   },
   {
+    path: '/components_snackbar',
+    name: 'components_snackbar',
+    component: ComponentsSnackBar
+  },
+  {
     path: '/components_app_bar_slp',
     name: 'components_app_bar_slp',
     component: ComponentsTestPage1
@@ -730,6 +737,11 @@ var rootRoutes = [
     path: '/components_dropdown_slp',
     name: 'components_dropdown_slp',
     component: ComponentsTestPage4
+  },
+  {
+    path: '/components_dropdown_slp2',
+    name: 'components_dropdown_slp2',
+    component: ComponentsTestPage44
   },
   {
     path: '/components_popup_slp',

@@ -1,6 +1,6 @@
 <template>
   <!-- wrap -->
-  <div>
+  <div class="colorCode2">
     <div class="">
       <button
         type="button"

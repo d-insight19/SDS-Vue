@@ -354,7 +354,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 
 
 /* select */
-.select{font-family: 'Noto Sans CJK KR', "Apple SD Gothic Neo", sans-serif, Arial;font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); height:44px; padding:0 15px; background: #f5f5f5 url("../img/ico_sel.png") no-repeat; background-size:28px 16px; background-position: right 14px;  -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.select{font-family: 'Noto Sans CJK KR', "Apple SD Gothic Neo", sans-serif, Arial;font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); height:44px; padding:0 30px 0px 15px; background: #f5f5f5 url("../img/ico_sel.png") no-repeat; background-size:28px 16px; background-position: right 14px;  -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; -webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .select.err{border: 1px solid map-get($static_colors, danger);}
 select:required:invalid {
   color: rgba(0,0,0,0.25);
@@ -665,7 +665,7 @@ select:required:invalid {
 .cardList.type1 .tit{font-size: map-get($font_size, font_16); color:#000; line-height: 22px; font-weight:400; max-height: 46px; margin-bottom: 5px; white-space: normal; overflow: hidden;}
 
 /*.cardList.type2{background:#fff;}*/
-.cardList.type2 .moredot{width:20px;height:20px;position:absolute;top:50px;right:9px;background: url("../img/ic_moredots_20.png") no-repeat;}
+.cardList.type2 .moredot{width:20px;height:20px;position:absolute;top:50%;right:9px;background: url("../img/ic_moredots_20.png") no-repeat;transform: translateY(-50%)}
 .cardList.type2 .thum{display: block; position: absolute; left:0; top:0; width:120px; height:120px;}
 .cardList.type2 .tit{width: calc( 100% - 184px );display: block; font-size: map-get($font_size, font_16); font-weight: 400; color:#000; line-height: 22px; letter-spacing: -0.042em; max-height: 44px; margin-bottom: 5px; overflow: hidden;}
 .cardList.type2 .writer{font-size:map-get($font_size, font_13); line-height: 19px; letter-spacing: -0.0036em; color:rgba(0,0,0,0.8);margin-top:5px;}
@@ -710,7 +710,7 @@ select:required:invalid {
 
 /* toast popup */
 .toast{position:fixed; bottom:0; z-index:100; width:100%; padding:0px 16px 16px 16px;}
-.toast .in{font-size:map-get($font_size, font_13); color:rgba(255,255,255,0.8); line-height: 20px; letter-spacing: -0.39px; font-weight: 300; padding:16px 18px; border-radius: 4px; background: rgba(0,0,0,0.8);}
+.toast .in{font-size:map-get($font_size, font_13); color:rgba(255,255,255,0.8); line-height: 20px; letter-spacing: -0.39px; font-weight: 400; padding:17px 20px; border-radius: 4px; background: rgba(0,0,0,0.8);}
 
 
 
@@ -866,11 +866,11 @@ select:required:invalid {
 #bottomsheet{z-index:851;position:fixed;bottom:0px;left:0px;width:100%;background:#fff;}
 #bottomsheet .bottomsheetBtn{width:100%;height:64px;line-height:61px;border-top:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_16);letter-spacing: -0.48px;padding-left:58px;color:rgba(0,0,0,0.8)}
 #bottomsheet .bottomsheetBtn .ico{position:absolute;top:20px;left:18px;width:24px;height:24px;}
-#bottomsheet ul{width:100%;padding:8px 0px;}
+#bottomsheet ul{width:100%;padding:8px 0px;height:calc(50vh - 64px);overflow-y: scroll}
 #bottomsheet ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
 #bottomsheet ul li .ico{position:absolute;top:12px;right:18px;display:none;}
 #bottomsheet ul li.active .ico{display:block}
-#bottomsheet ul li .checkIcon{position: absolute;top: 13px;right: 25px;width: 9.8px;height: 16.5px;border-bottom: 3px solid;border-right: 3px solid;transform: rotate(45deg);display:none;}
+#bottomsheet ul li .checkIcon{position: absolute;top: 50%;right: 35px;width: 9.8px;height: 16.5px;border-bottom: 3px solid;border-right: 3px solid;transform: rotate(45deg) translateY(-110%);;display:none;}
 #bottomsheet ul li.active .checkIcon{display:block}
 
 //Spinner
@@ -936,3 +936,15 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .flowplayer .fp_Icon_txt{font-family: 'Roboto';font-size:map-get($font_size, font_13);}
 /* 수강신청-> 우측상단 비디오 태그*/
 .fp-videotag{background:#ff726D;font-size:map-get($font_size, font_12);letter-spacing: -0.36px;}
+
+
+
+// SnackBar
+.toast .progBox{position: relative; width:100%; height:6px; margin-top:19px; background: #eaeaea;margin-top:15px;}
+.toast .progBox .bar{position: absolute; left:0; top:0; z-index: 1; height:6px;border-radius: 100px;}
+.toast .toastBtnWrap{margin-top:15px;text-align:right;}
+.toast .toastBtnWrap a{display:inline-block;color:#fff;}
+.toast .toastBtnWrap a + a{margin-left:18px;font-weight: 500;}
+.toast .download_wrap .download_hilight{color:#fff}
+.toast .toast_title{color:#fff;margin-bottom:4px}
+.toast .toast_contents{overflow: hidden;width:100%;text-overflow: ellipsis;white-space: nowrap;}

@@ -87,7 +87,7 @@ export default {
     margin-top: 10px;
   }
   .slider {
-    width: 450px;
+    width: 100%;
     height: 300px;
   }
   img {
