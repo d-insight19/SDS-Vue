@@ -840,7 +840,7 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">03.Drawer_02.01_Alerm</td>
+        <td class="textL">03.Drawer_02.01_Alarm</td>
         <td>
           <router-link :to="{ name: 'Drawer_alerm' }">
             Drawer_alerm
@@ -9441,9 +9441,10 @@
         <td>　</td>
         <td class="textL">etc_Notice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+         <router-link :to="{ name: 'Drawer_alerm' }">
+            Drawer_alerm
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -9461,7 +9462,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
+          components_snackbar 와 동일
         </td>
         <td></td>
       </tr>
@@ -9544,10 +9545,10 @@
         <td>　</td>
         <td class="textL">etc_PrivacyPolicy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-          제플린 없음
+           <router-link :to="{ name: 'Login_jointermsdetail' }">
+            Login_jointermsdetail
+          </router-link>, Login_jointermsdetailscroll
+           과 동일
         </td>
         <td></td>
       </tr>
@@ -9651,7 +9652,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
+          components_snackbar 와 동일
         </td>
         <td></td>
       </tr>
