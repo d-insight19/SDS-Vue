@@ -4504,6 +4504,9 @@
           </router-link><br/>
           <router-link :to="{ name: 'Study_home_courseware_module_02' }">
             Study_home_courseware_module_02
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_home_courseware_loso' }">
+            Study_home_courseware_loso
           </router-link>
         </td>
         <td></td>

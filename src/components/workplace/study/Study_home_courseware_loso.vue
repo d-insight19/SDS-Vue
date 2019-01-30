@@ -234,7 +234,7 @@
             <div class="inner pt0">
                 
                 <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_15 mono_80 fwb dib">전체보기</p>
+                    <p class="font_15 mono_80 fwb dib">차시별</p>
                     <p class="fr">
                         <span class="ico filter" style="position:static;margin-right: 12px;"></span>
                         <span class="ico download"></span>
@@ -255,10 +255,6 @@
                                         <span>학습완료</span>
                                         <span class="mono_65">2017.11.05</span>
                                     </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -284,16 +280,16 @@
                         </div>
                         <span class="ico accordion_arrow"></span>
                     </li>
-                    <li>
-                        <div class="download_detail clr1 wh">
+                    <li class="open">
+                        <div class="download_detail border_clr1 clr1 wh">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="icon_txt color_clr3">3차시</p>
                                 <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
                                 <ul class="info">
                                     <li>
                                         <span class="ico check_14 wh"></span>
-                                        <span class="wh">학습완료</span>
-                                        <span class="wh mono_65">2017.11.05</span>
+                                        <span class="wh">진행중</span>
+                                        <span class="wh mono_65">1/4</span>
                                     </li>
                                     <li>
                                         <span class="ico time wh"></span>
@@ -302,7 +298,82 @@
                                 </ul>
                             </div>
                         </div>
-                        <span class="ico accordion_arrow"></span>
+                        <span class="ico accordion_arrow wh"></span>
+                    </li>
+                    <li class="open">
+                        <div class="sub_content">
+                            <p class="sub_content_title border_clr1  color_clr1 clr4">변수와 데이터 타입</p>
+                            <!-- list -->
+                            <ul class="multiList type2">
+                                <li>
+                                    <div class="download_detail border_clr1 done">
+                                        <div class="icon_wrap">
+                                            <span class="ico pause_20 blue line"></span>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                            <p class="status">다운로드 중... <span>75%</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="download_detail border_clr1 done clr4">
+                                        <div class="icon_wrap">
+                                            <span class="ico redownload_20 blue line"></span>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                            <p class="status">
+                                                일시정지 <span>(50%)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="action">삭제</span>
+                                </li>
+                                <li>
+                                    <div class="download_detail border_clr1 done clr4 bottom-bd-x ">
+                                        <div class="icon_wrap">
+                                            <span class="ico cancel_20 blue line"></span>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                            <p class="status">대기중</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- //list -->
+                            <p class="sub_content_title border_clr1 color_clr1 clr4">특성 활용하기</p>
+                            <!-- list -->
+                            <ul class="multiList type2">
+                                <li>
+                                    <div class="download_detail border_clr1 done clr4">
+                                        <div class="icon_wrap">
+                                            <span class="ico pause_20 blue line"></span>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                            <p class="status">다운로드 중... <span>75%</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="download_detail clr4">
+                                        <div class="icon_wrap">
+                                            <span class="ico play_28"></span>
+                                        </div>
+                                        <div class="txt_wrap">
+                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                            <ul class="info">
+                                                <li class="">12.33MB</li>
+                                                <li class="">55:12</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- //list -->
+                        </div>
                     </li>
                     <li>
                         <div class="download_detail">
@@ -325,13 +396,13 @@
                     </li>
                 </ul>
 
-                <p class="label-tit-18 mt26 ">모듈타이틀입니다</p>
+                <p class="label-tit-18 mt26 ">데이터 특성 알아보기</p>
 
                 <ul class="multiList type2">
                     <li>
                         <div class="download_detail">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="icon_txt color_clr3">1차시</p>
                                 <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
                                 <ul class="info">
                                     <li class="">
@@ -350,7 +421,7 @@
                     <li>
                         <div class="download_detail">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="icon_txt color_clr3">2차시</p>
                                 <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
                                 <ul class="info">
                                     <li class="">
@@ -367,45 +438,7 @@
                         <span class="ico accordion_arrow"></span>
                     </li>
                 </ul>
-                <div class="bot-wrap ml-18 mr-18">
-                    <h2 class="h-tit2 fwb600" style="margin-top:4px; margin-bottom:15px;">연관 콘텐츠 추천</h2>
-                    <div class="scroll-x type2">
-                        <!-- list -->
-                        <ul class="thumList type2">
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>                        
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>                        
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>                        
-                        </ul>
-                        <!-- //list -->
-                    </div>
-                </div>
+                <!-- 리스트끝 -->                
 
             </div>
           </div>
