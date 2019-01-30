@@ -9631,10 +9631,10 @@
         <td>　</td>
         <td class="textL">etc_Toast</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'components_snackbar' }">
+            components_snackbar
           </router-link>
-          components_snackbar 와 동일
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -9821,10 +9821,10 @@
         <td>　</td>
         <td class="textL">etc_Toast</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+         <router-link :to="{ name: 'components_snackbar' }">
+            components_snackbar
           </router-link>
-          components_snackbar 와 동일
+          와 동일
         </td>
         <td></td>
       </tr>
