@@ -129,6 +129,8 @@ import StudyHomeCoursewareModule01 from '~workplace/study/Study_home_courseware_
 import StudyHomeCoursewareModule02 from '~workplace/study/Study_home_courseware_module_02'
 import StudyHomeCoursewareLoso from '~workplace/study/Study_home_courseware_loso'
 import StudyHomeMoocOpen from '~workplace/study/Study_home_mooc_open'
+import StudyHomeMoocClose from '~workplace/study/Study_home_mooc_close'
+import StudyHomeSetBook from '~workplace/study/Study_home_set_book'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -1250,6 +1252,16 @@ var rootRoutes = [
     path: '/Study_home_mooc_open',
     name: 'Study_home_mooc_open',
     component: StudyHomeMoocOpen
+  },
+  {
+    path: '/Study_home_mooc_close',
+    name: 'Study_home_mooc_close',
+    component: StudyHomeMoocClose
+  },
+  {
+    path: '/Study_home_set_book',
+    name: 'Study_home_set_book',
+    component: StudyHomeSetBook
   },
   {
     path: '/Study_dictionary',

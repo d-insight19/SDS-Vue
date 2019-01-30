@@ -4609,8 +4609,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.06.home_set_book</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_book' }">
+            Study_home_set_book
           </router-link>
         </td>
         <td></td>

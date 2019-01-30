@@ -1522,6 +1522,7 @@ label.rdo .label{position: relative;}
 #container.courseware .multiList.type2 > li .action {position:absolute;bottom:18px;right:18px; font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
 #container.courseware .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
 #container.courseware .ico.accordion_arrow{width:20px;height:20px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat;}
+#container.courseware .ico.accordion_arrow.wh{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_down.png") no-repeat;}
 #container.courseware .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 #container.courseware .bot-wrap{background:white; padding:18px; margin-top:26px;}
 #container.courseware .wh{color:white;}
@@ -1545,6 +1546,10 @@ label.rdo .label{position: relative;}
 #container.courseware .clr4 {background-color:#f2f3f7 !important;}
 #container.courseware .clr3 {background-color:#a3a9ff!important;}
 
+
+// home_courseware_LO/SO
+
+#container.courseware.book .sub_content .download_detail {padding:16px 16px 20px 20px;}
 
 
 
