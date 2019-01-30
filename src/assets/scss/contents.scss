@@ -1524,13 +1524,26 @@ label.rdo .label{position: relative;}
 #container.courseware .multiList.type2 > li .ico.next_16 {position:absolute;top:calc(50% - 2px);right:18px;}
 #container.courseware .multiList.type2 > li .action {position:absolute;bottom:18px;right:18px; font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
 #container.courseware .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
+#container.courseware .ico.accordion_arrow{width:20px;height:20px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat;}
+#container.courseware .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 #container.courseware .bot-wrap{background:white; padding:18px; margin-top:26px;}
 #container.courseware .wh{color:white;}
 
 // 모듈명이 있을때
 
 
-#container.courseware .download_detail .label-tit-18 { font-weight:600; font-size: map-get($font_size, font_18); line-height:28px; letter-spacing:0.54px;}
+#container.courseware .label-tit-18 { font-weight:600; font-size: map-get($font_size, font_18); line-height:28px; letter-spacing:0.54px;}
+
+
+// home_courseware_LO/SO
+
+#container.courseware .sub_content{display:none;}
+#container.courseware .open .sub_content{display:block;}
+#container.courseware .sub_content .download_detail {border-bottom-width: 0px; border-top:1px solid map-get($line_colors,B89) !important; padding:14px 40px 14px 16px; margin-top:0px;}
+#container.courseware .sub_content .download_detail.bottom-bd-x {border-bottom:1px solid map-get($line_colors,B89) !important; }
+#container.courseware .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
+#container.courseware .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 9px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
+#container.courseware .open .ico.accordion_arrow.wh{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_up.png") no-repeat;}
 
 
 
