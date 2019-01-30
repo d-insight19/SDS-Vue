@@ -48,13 +48,13 @@
                 <p class="font_16 mono_100 pdt16 btB89 pb10">알림 주기</p>
                 <ul class="radioList">
                     <li>
-                        <slp-radio name="push_cycle" innerCircle="true" native-value="disabled" disabled>매주 1회</slp-radio>
+                        <slp-radio name="push_cycle" innerCircle="true" v-model="radioValue" native-value="disabled" disabled>매주 1회</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="push_cycle" innerCircle="true" native-value="disabled" disabled>격주 1회</slp-radio>
+                        <slp-radio name="push_cycle" innerCircle="true" v-model="radioValue" native-value="disabled" disabled>격주 1회</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="push_cycle" innerCircle="true" native-value="disabled" disabled>
+                        <slp-radio name="push_cycle" innerCircle="true" v-model="radioValue" native-value="disabled" disabled>
                             종료일 집중
                             <p class="font_13 mono_25">종료일 <span>2018.10.14 ~ 2018.10.31</span></p>
                         </slp-radio>
@@ -87,6 +87,7 @@ export default {
   /* vue data */
   data () {
     return {
+      radioValue: 'checked'
     }
   },
   /* vue function */

@@ -68,8 +68,6 @@
                             </div>
                         </div>
                         <span class="ico accordion_arrow"></span>
-                    </li>
-                    <li class="open">
                         <div class="sub_content">
                             <p class="sub_content_title border_clr1 color_clr1 clr4">변수와 데이터 타입</p>
                             <!-- list -->

@@ -7,7 +7,7 @@
 
         <div id="content" class="etc">
           <div class="cell">
-            <div class="inner">
+            <div class="inner mb70">
               
                 <h1 class="h-tit">수강신청</h1>
 
@@ -91,7 +91,7 @@
 
 <script>
 export default {
-  name: 'regiclass_register_basicinfo_add_02',
+  name: 'regiclass_register_book',
   /* vue lifecycle */
   created () {
   },

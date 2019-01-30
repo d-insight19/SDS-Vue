@@ -114,29 +114,29 @@
                 <p class="font_16 mono_100 pdt22  pb10">리스트 타이틀</p>
                 <ul class="radioList2 pb10">
                     <li>
-                        <slp-radio name="name1" innerCircle="true" value="true">선택됨</slp-radio>
+                        <slp-radio name="name1" innerCircle="true" v-model="radioValue" native-value="checked">선택됨</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="name1" innerCircle="true">선택가능</slp-radio>
+                        <slp-radio name="name1" innerCircle="true" v-model="radioValue" native-value="checkable">선택가능</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="name1" innerCircle="true">선택가능</slp-radio>
+                        <slp-radio name="name1" innerCircle="true" v-model="radioValue" native-value="checkable">선택가능</slp-radio>
                     </li>
                 </ul>
 
                 <p class="font_16 mono_100 pdt22 btB89 pb10">리스트 타이틀</p>
                 <ul class="radioList2 pb10">
                     <li>
-                        <slp-radio name="name2" innerCircle="true" checked="checked">선택됨</slp-radio>
+                        <slp-radio name="name2" innerCircle="true" v-model="radioValue" native-value="checked">선택됨</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="name2" innerCircle="true">선택가능</slp-radio>
+                        <slp-radio name="name2" innerCircle="true" v-model="radioValue" native-value="checkable">선택가능</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="name2" innerCircle="true">선택가능</slp-radio>
+                        <slp-radio name="name2" innerCircle="true" v-model="radioValue" native-value="checkable">선택가능</slp-radio>
                     </li>
                     <li>
-                        <slp-radio name="name2" innerCircle="true">선택가능</slp-radio>
+                        <slp-radio name="name2" innerCircle="true" v-model="radioValue" native-value="checkable">선택가능</slp-radio>
                     </li>
                 </ul>
 
@@ -176,6 +176,7 @@ export default {
   /* vue data */
   data () {
     return {
+      radioValue: 'checked'
     }
   },
   /* vue function */
