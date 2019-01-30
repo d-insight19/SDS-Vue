@@ -32,8 +32,6 @@
         
           <div class="cell">
             <div class="inner ml-18 mr-18 pt0">
-
-                
                 
                 <!-- list -->
                 <ul class="cardList type2">
@@ -48,11 +46,12 @@
                                 <li class="mono_80">수료 처리 중</li>
                             </ul>
                         </div>
-                        <span class="content moredot"  slot="trigger"></span>
+                        
                         <slp-dropdown 
                             v-model="lang"
                             @change="(v) => eDropdown('@change:', v)" 
-                            @input="(v) => eDropdown('@input:', v)" >                            
+                            @input="(v) => eDropdown('@input:', v)" >    
+                            <span class="content moredot"  slot="trigger"></span>                        
 
                             <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
                             <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
@@ -99,22 +98,17 @@
                                 <li class="mono_80">수료</li>
                             </ul>
                         </div>
-                        <span class="moredot" @click="changeLang3()"></span>
-                        <div class="dropdown_wrap" v-show="langFlag3" >
-                            <div class="sheetDim" @click="changeLang3()"></div>
-                            <div class="dropdown">            
-                                <ul  @click="changeLang3()">
-                                <!-- 
-                                    position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
-                                -->
-                                <li>나의 지식 CLIPing</li>
-                                <li>나의 지식 CLIPing</li>
-                                <li>내가 본 콘텐츠</li>
-                                <li>관심 CLIPing</li>
-                                <li>나의 지식 CLIPing 활동 이력</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <slp-dropdown 
+                            v-model="lang"
+                            @change="(v) => eDropdown('@change:', v)" 
+                            @input="(v) => eDropdown('@input:', v)" >    
+                            <span class="content moredot"  slot="trigger"></span>                        
+
+                            <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'중국어'">중국어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'일본어'">일본어</slp-dropdown-item>
+                        </slp-dropdown>
                     </li>
                     <li>
                         <div class="thum">
