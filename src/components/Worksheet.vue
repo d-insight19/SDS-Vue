@@ -1969,6 +1969,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -1986,6 +1987,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -3927,7 +3929,7 @@
             MySpace_download_detail_edit
           </router-link>
         </td>
-        <td></td>
+        <td>20190130 수정</td>
       </tr>
       <tr>
       <td align="center">205</td>
@@ -7323,7 +7325,7 @@
             regiclass_register_book
           </router-link>
         </td>
-        <td></td>
+        <td>20190130 수정</td>
       </tr>
       <tr>
       <td align="center">401</td>

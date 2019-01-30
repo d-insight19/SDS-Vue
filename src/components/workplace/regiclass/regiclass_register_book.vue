@@ -91,7 +91,7 @@
 
 <script>
 export default {
-  name: 'regiclass_register_basicinfo_add_02',
+  name: 'regiclass_register_book',
   /* vue lifecycle */
   created () {
   },
