@@ -27,7 +27,7 @@ import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
-import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
+// import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
@@ -126,6 +126,8 @@ import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporatio
 import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
 
 import StudyHomeCoursewareModule01 from '~workplace/study/Study_home_courseware_module_01'
+import StudyHomeCoursewareModule02 from '~workplace/study/Study_home_courseware_module_02'
+import StudyHomeCoursewareLoso from '~workplace/study/Study_home_courseware_loso'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -693,11 +695,11 @@ var rootRoutes = [
     name: 'components_spinner',
     component: ComponentsSpinner
   },
-  {
-    path: '/components_flowplayer',
-    name: 'components_flowplayer',
-    component: ComponentsFlowplayer
-  },
+  // {
+  //   path: '/components_flowplayer',
+  //   name: 'components_flowplayer',
+  //   component: ComponentsFlowplayer
+  // },
   {
     path: '/components_dropdown',
     name: 'components_dropdown',
@@ -1232,6 +1234,16 @@ var rootRoutes = [
     path: '/Study_home_courseware_module_01',
     name: 'Study_home_courseware_module_01',
     component: StudyHomeCoursewareModule01
+  },
+  {
+    path: '/Study_home_courseware_module_02',
+    name: 'Study_home_courseware_module_02',
+    component: StudyHomeCoursewareModule02
+  },
+  {
+    path: '/Study_home_courseware_loso',
+    name: 'Study_home_courseware_loso',
+    component: StudyHomeCoursewareLoso
   },
   {
     path: '/Study_dictionary',

@@ -62,7 +62,7 @@
                     </optgroup>
 
                     <optgroup label="Game of Thrones">
-                        <option value="tyrion-lannister">Tyrion ㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇ ㄻㄴㅇ ㅁㄴㅇ ㄻㄴㅇㄹ Lannister</option>
+                        <option value="tyrion-lannister">Tyrion ㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇ ㄻㄴㅇ dfasdasdfa sd fa sd fㅁㄴㅇ ㄻㄴㅇㄹ Lannister</option>
                         <option value="jamie-lannister">Jamie Lannister</option>
                         <option value="daenerys-targaryen">Daenerys Targaryen</option>
                         <option value="jon-snow">Jon Snow</option>
