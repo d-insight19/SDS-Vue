@@ -6,7 +6,7 @@
 
         <!-- list -->
         <ul class="certList">
-            <li><a href="#" class="btn">핸드폰 번호로 찾기<span class="ico"></span></a></li>
+            <li><a href="#" class="btn">휴대폰 번호로 찾기<span class="ico"></span></a></li>
             <li><a href="#" class="btn">이메일로 찾기<span class="ico"></span></a></li>
             <li><a href="#" class="btn">아이핀으로 찾기<span class="ico"></span></a></li>
         </ul>

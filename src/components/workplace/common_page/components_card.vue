@@ -102,10 +102,10 @@
                 </div>
                 <div class="in">                                        
                     <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</a>
-                    <ul class="series">
-                        <li class="fwb">시리즈</li>
-                        <li class="">세상을 바꾸는 시간 15분: 라이프</li>
-                    </ul>
+                    <p class="series">
+                        <span class="fwb">시리즈</span>
+                        <span class="">세상을 바꾸는 시간 15분: 라이프</span>
+                    </p>
                     <ul class="info">
                         <li class="fwb color_clr3">도서요약</li>
                         <li class="">2018.10.10</li>

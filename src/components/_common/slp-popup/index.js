@@ -1,5 +1,11 @@
-import slpModule from './slpPopUp'
-slpModule.install = function install (Vue) {
-  Vue.component(slpModule.name, slpModule)
+import slpPopup from './slpPopUp'
+import slpModal from './slpModal'
+
+const Plugin = {
+  install (Vue) {
+    Vue.component(slpPopup.name, slpPopup)
+    Vue.component(slpModal.name, slpModal)
+  }
 }
-export default slpModule
+
+export default Plugin

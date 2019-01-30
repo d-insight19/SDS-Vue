@@ -33,7 +33,7 @@ export default {
   /* vue data */
   data () {
     return {
-        radioValue: 'checked'
+      radioValue: 'checked'
     }
   },
   /* vue function */

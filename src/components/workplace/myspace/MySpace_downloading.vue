@@ -106,9 +106,9 @@
                             </ul>
                             <p class="status">
                                 일시정지 <span>(50%)</span>
-                                <span class="fr action">삭제</span>
                             </p>
                         </div>
+                        <span class="action">삭제</span>
                     </li>
                     <li>
                         <div class="in">

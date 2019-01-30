@@ -27,10 +27,11 @@ import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
-// import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
+import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
+import ComponentsSnackBar from '~workplace/common_page/components_snackbar'
 
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
@@ -43,25 +44,45 @@ import LoginFindcenterSelect02 from '~workplace/login/Login_findcenter_select_02
 import LoginFindcenterUrl from '~workplace/login/Login_findcenter_url'
 import LoginFindcenterUrl2 from '~workplace/login/Login_findcenter_url2'
 import LoginFindcenterUrlKeyboard from '~workplace/login/Login_findcenter_url_keyboard'
+import LoginFindcenterUrlComplete from '~workplace/login/Login_findcenter_url_complete'
 import LoginLogin from '~workplace/login/Login_login'
 import LoginLogin02 from '~workplace/login/Login_login_02'
 import LoginLoginNotview from '~workplace/login/Login_login_notview'
 import LoginLoginWrite from '~workplace/login/Login_login_write'
-import LoginLoginFail from '~workplace/login/Login_login_fail'
 import LoginLoginError from '~workplace/login/Login_login_error'
+import LoginLoginFail from '~workplace/login/Login_login_fail'
+import LoginLoginFail2 from '~workplace/login/Login_login_fail2'
+import LoginLoginTxt1 from '~workplace/login/Login_login_txt1'
+import LoginLoginNoguide from '~workplace/login/Login_login_noguide'
+import LoginLoginNoguideTxt1 from '~workplace/login/Login_login_noguide_txt1'
+import LoginLoginNoguideTxt2 from '~workplace/login/Login_login_noguide_txt2'
 import LoginInterest from '~workplace/login/Login_interest'
+import LoginInterestSelect from '~workplace/login/Login_interestselect'
 import LoginJoinType from '~workplace/login/Login_jointype'
 import LoginJoinCertify from '~workplace/login/Login_joincertify'
 import LoginJoinCertify2 from '~workplace/login/Login_joincertify2'
 import LoginJoinTerms from '~workplace/login/Login_jointerms'
+import LoginJoinTermsToast from '~workplace/login/Login_jointermstoast'
+import LoginJoinTermsSelect from '~workplace/login/Login_jointermsselect'
 import LoginJoinTermsdetail from '~workplace/login/Login_jointermsdetail'
+import LoginJoinTermsdetailscroll from '~workplace/login/Login_jointermsdetailscroll'
 import LoginJoinId from '~workplace/login/Login_joinid'
 import LoginJoinBasicInfo from '~workplace/login/Login_joinbasicinfo'
+import LoginJoinBasicInfoInputon from '~workplace/login/login_join_basicinfo_inputon'
+import LoginJoinBasicInfoError from '~workplace/login/login_join_basicinfo_error'
 import LoginSearchPost from '~workplace/login/Login_searchpost'
+import LoginSearchPostError from '~workplace/login/Login_searchposterror'
+import LoginSearchPostResult from '~workplace/login/Login_searchpostresult'
+import LoginSearchPostKeyboard from '~workplace/login/Login_searchpostkeyboard'
 import LoginSearchCompany from '~workplace/login/Login_searchcompany'
+import LoginSearchCompanyControl from '~workplace/login/Login_searchcompany_control'
 import LoginSearchCompanyResult from '~workplace/login/Login_searchcompanyresult'
 import LoginJoinInterest from '~workplace/login/Login_joininterest'
+import LoginJoinInterestSelect from '~workplace/login/Login_joininterestselect'
 import LoginJoinInExtrainfo from '~workplace/login/Login_joinextrainfo'
+import LoginJoinInExtrainfoLanguage from '~workplace/login/Login_joinextrainfolanguage'
+import LoginJoinInExtrainfoLanguageComplete from '~workplace/login/Login_joinextrainfolanguagecomplete'
+import LoginJoinInExtrainfoLanguageDelete from '~workplace/login/Login_joinextrainfolanguagedelete'
 import LoginJoinComplete from '~workplace/login/Login_joincomplete'
 import LoginLoginIntegration from '~workplace/login/Login_loginintegration'
 import LoginLoginIntegrationId from '~workplace/login/Login_loginintegrationid'
@@ -83,31 +104,29 @@ import LoginFindpwEmail from '~workplace/login/Login_findpwemail'
 import LoginCertifyPhone from '~workplace/login/Login_certifyphone'
 import LoginCertifyIpin from '~workplace/login/Login_certifyipin'
 import LoginCertifyEmail from '~workplace/login/Login_certifyemail'
-import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
-
-/*
+// import LoginCertifyEmailCorporate from '~workplace/login/Login_certifyemail_corporate'
 import Loginloginchangeidmainconfirm from '~workplace/login/Login_login_changeid_main_confirm'
 import Loginloginchangeidmainerror from '~workplace/login/Login_login_changeid_main_error'
 import Loginloginchangepwerror1 from '~workplace/login/Login_login_changepw_error1'
 import Loginloginchangepwerror2 from '~workplace/login/Login_login_changepw_error2'
 import Loginloginchangepwerror3 from '~workplace/login/Login_login_changepw_error3'
-import Loginloginunlockiddomestic from '~workplace/login/Login_login_unlockid_domestic'
-import Loginloginunlockidoverseas from '~workplace/login/Login_login_unlockid_overseas'
+import Loginloginunlockid2 from '~workplace/login/Login_login_unlockid2'
+import Loginloginunlockidemail from '~workplace/login/Login_login_unlockid_email'
 import Loginloginunlockidcomplete from '~workplace/login/Login_login_unlockid_complete'
-import Loginlogindormant from '~workplace/login/Login_login_dormant'
 import Loginlogindormantemail from '~workplace/login/Login_login_dormant_email'
 import Loginlogindormantcomplete from '~workplace/login/Login_login_dormant_complete'
 import Loginfindidresultpopup from '~workplace/login/Login_findid_result_popup'
-import Loginfindidipin from '~workplace/login/Login_findid_ipin'
 import Loginfindpwemailtoastpopup from '~workplace/login/Login_findpw_email_toastpopup'
 import Logincertifyemailcertifyerror1 from '~workplace/login/Login_certify_email_certify_error1'
 import Logincertifyemailcertifyerror2 from '~workplace/login/Login_certify_email_certify_error2'
 import Logincertifyemailcertifyerror3 from '~workplace/login/Login_certify_email_certify_error3'
+import Loginfindidipin from '~workplace/login/Login_findid_ipin'
 import Loginlogincorporationphone1 from '~workplace/login/Login_login_corporationphone1'
 import Loginlogincorporationphone2 from '~workplace/login/Login_login_corporationphone2'
 import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporationphone3'
-*/
 
+import StudyHomeCoursewareModule01 from '~workplace/study/Study_home_courseware_module_01'
+import StudyHomeCoursewareModule02 from '~workplace/study/Study_home_courseware_module_02'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -227,6 +246,7 @@ import MainChannelDetailAfter from '~workplace/main/Main_channel_detail_after'
 import MainKeywordList from '~workplace/main/Main_keyword_list'
 import MainArticleDetail from '~workplace/main/Main_article_detail'
 import MainArticleDetailLike from '~workplace/main/Main_article_detail_like'
+import MainArticleDetailQnA from '~workplace/main/Main_article_detailQnA'
 import MainWriterChannel from '~workplace/main/Main_writer_channel'
 import MainWriterArticle from '~workplace/main/Main_writer_article'
 import MainWriterHistory from '~workplace/main/Main_writer_history'
@@ -258,6 +278,7 @@ import CLIPingColumnDetail from '~workplace/cliping/CLIPing_column_detail'
 import CLIPingPaperPro from '~workplace/cliping/CLIPing_paperPro'
 import CLIPingPaperProDetail from '~workplace/cliping/CLIPing_paperProDetail'
 import CLIPingPaperProDetailPort from '~workplace/cliping/CLIPing_paperProDetail_port'
+import CLIPingPaperProDetailComment from '~workplace/cliping/CLIPing_paperProDetailComment'
 import CLIPingLanguageClub from '~workplace/cliping/CLIPing_languageClub'
 import CLIPingLanguageClubList from '~workplace/cliping/CLIPing_languageClubList'
 import CLIPingLanguageClubList02 from '~workplace/cliping/CLIPing_languageClubList02'
@@ -307,6 +328,23 @@ import MySpaceCliping from '~workplace/myspace/MySpace_cliping'
 import MySpaceClipingViewed from '~workplace/myspace/MySpace_cliping_viewed'
 import MySpaceClipingFav from '~workplace/myspace/MySpace_cliping_fav'
 import MySpaceClipingAnalysis from '~workplace/myspace/MySpace_cliping_analysis'
+import MySpaceStudymanagementNote from '~workplace/myspace/MySpace_studymanagement_note'
+import MySpaceStudymanagementNoteDetail from '~workplace/myspace/MySpace_studymanagement_note_detail'
+import MySpaceStudymanagementNoteEdit from '~workplace/myspace/MySpace_studymanagement_note_edit'
+import MySpaceStudymanagementReminder from '~workplace/myspace/MySpace_studymanagement_reminder'
+import MySpaceStudymanagementReminderDetail from '~workplace/myspace/MySpace_studymanagement_reminder_detail'
+import MySpaceStudystatistics from '~workplace/myspace/MySpace_studystatistics'
+import MySpaceStudystatisticsGrade from '~workplace/myspace/MySpace_studystatistics_grade'
+import MySpaceStudystatisticsGrown from '~workplace/myspace/MySpace_studystatistics_grown'
+import MySpaceStudystatisticsActivity from '~workplace/myspace/MySpace_studystatistics_activity'
+import MySpaceStudystatisticsKeyword from '~workplace/myspace/MySpace_studystatistics_keyword'
+import MySpaceStudystatisticsKeywordNosearch from '~workplace/myspace/MySpace_studystatistics_keyword_nosearch'
+import MySpacePoint from '~workplace/myspace/MySpace_point'
+import MySpaceCredit from '~workplace/myspace/MySpace_credit'
+import MySpaceCoupon from '~workplace/myspace/MySpace_coupon'
+import MySpaceCouponRegister from '~workplace/myspace/MySpace_coupon_register'
+import MySpaceCouponUsed from '~workplace/myspace/MySpace_coupon_used'
+import MySpaceFilter from '~workplace/myspace/MySpace_filter'
 
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
@@ -502,6 +540,18 @@ import Atormitemfactoryaudio2 from '~workplace/atorm/Atorm_itemfactory_audio2'
 import Atormitemfactoryyoutube1 from '~workplace/atorm/Atorm_itemfactory_youtube1'
 import Atormitemfactoryyoutubesearch1 from '~workplace/atorm/Atorm_itemfactory_youtube_search1'
 
+import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
+import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
+import ComponentsTestPage3 from '~workplace/common_page/components_checkbox_slp'
+import ComponentsTestPage4 from '~workplace/common_page/components_dropdown_slp'
+import ComponentsTestPage44 from '~workplace/common_page/components_dropdown_slp2'
+import ComponentsTestPage5 from '~workplace/common_page/components_popup_slp'
+import ComponentsTestPage6 from '~workplace/common_page/components_radio_slp'
+import ComponentsTestPage7 from '~workplace/common_page/components_select_slp'
+import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_slp'
+import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
+import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
+
 // 1번 영역
 var rootRoutes = [
   {
@@ -644,11 +694,11 @@ var rootRoutes = [
     name: 'components_spinner',
     component: ComponentsSpinner
   },
-  // {
-  //   path: '/components_flowplayer',
-  //   name: 'components_flowplayer',
-  //   component: ComponentsFlowplayer
-  // },
+  {
+    path: '/components_flowplayer',
+    name: 'components_flowplayer',
+    component: ComponentsFlowplayer
+  },
   {
     path: '/components_dropdown',
     name: 'components_dropdown',
@@ -663,6 +713,66 @@ var rootRoutes = [
     path: '/components_chart_lib',
     name: 'components_chart_lib',
     component: ComponentsChartLib
+  },
+  {
+    path: '/components_snackbar',
+    name: 'components_snackbar',
+    component: ComponentsSnackBar
+  },
+  {
+    path: '/components_app_bar_slp',
+    name: 'components_app_bar_slp',
+    component: ComponentsTestPage1
+  },
+  {
+    path: '/components_bottom_sheet_slp',
+    name: 'components_bottom_sheet_slp',
+    component: ComponentsTestPage2
+  },
+  {
+    path: '/components_checkbox_slp',
+    name: 'components_checkbox_slp',
+    component: ComponentsTestPage3
+  },
+  {
+    path: '/components_dropdown_slp',
+    name: 'components_dropdown_slp',
+    component: ComponentsTestPage4
+  },
+  {
+    path: '/components_dropdown_slp2',
+    name: 'components_dropdown_slp2',
+    component: ComponentsTestPage44
+  },
+  {
+    path: '/components_popup_slp',
+    name: 'components_popup_slp',
+    component: ComponentsTestPage5
+  },
+  {
+    path: '/components_radio_slp',
+    name: 'components_radio_slp',
+    component: ComponentsTestPage6
+  },
+  {
+    path: '/components_select_slp',
+    name: 'components_select_slp',
+    component: ComponentsTestPage7
+  },
+  {
+    path: '/components_radiobutton_slp',
+    name: 'components_radiobutton_slp',
+    component: ComponentsTestPage8
+  },
+  {
+    path: '/components_slider_slp',
+    name: 'components_slider_slp',
+    component: ComponentsTestPage9
+  },
+  {
+    path: '/components_switch_slp',
+    name: 'components_switch_slp',
+    component: ComponentsTestPage10
   },
   {
     path: '/Login_findcenter',
@@ -720,6 +830,11 @@ var rootRoutes = [
     component: LoginFindcenterUrlKeyboard
   },
   {
+    path: '/Login_findcenter_url_complete',
+    name: 'Login_findcenter_url_complete',
+    component: LoginFindcenterUrlComplete
+  },
+  {
     path: '/Login_login',
     name: 'Login_login',
     component: LoginLogin
@@ -740,14 +855,39 @@ var rootRoutes = [
     component: LoginLoginWrite
   },
   {
+    path: '/Login_login_error',
+    name: 'Login_login_error',
+    component: LoginLoginError
+  },
+  {
     path: '/Login_login_fail',
     name: 'Login_login_fail',
     component: LoginLoginFail
   },
   {
-    path: '/Login_login_error',
-    name: 'Login_login_error',
-    component: LoginLoginError
+    path: '/Login_login_fail2',
+    name: 'Login_login_fail2',
+    component: LoginLoginFail2
+  },
+  {
+    path: '/Login_login_txt1',
+    name: 'Login_login_txt1',
+    component: LoginLoginTxt1
+  },
+  {
+    path: '/Login_login_noguide',
+    name: 'Login_login_noguide',
+    component: LoginLoginNoguide
+  },
+  {
+    path: '/Login_login_noguide_txt1',
+    name: 'Login_login_noguide_txt1',
+    component: LoginLoginNoguideTxt1
+  },
+  {
+    path: '/Login_login_noguide_txt2',
+    name: 'Login_login_noguide_txt2',
+    component: LoginLoginNoguideTxt2
   },
   {
     path: '/Login_interest',
@@ -755,9 +895,29 @@ var rootRoutes = [
     component: LoginInterest
   },
   {
+    path: '/Login_interestselect',
+    name: 'Login_interestselect',
+    component: LoginInterestSelect
+  },
+  {
     path: '/Login_joinextrainfo',
     name: 'Login_joinextrainfo',
     component: LoginJoinInExtrainfo
+  },
+  {
+    path: '/Login_joinextrainfolanguage',
+    name: 'Login_joinextrainfolanguage',
+    component: LoginJoinInExtrainfoLanguage
+  },
+  {
+    path: '/Login_joinextrainfolanguagecomplete',
+    name: 'Login_joinextrainfolanguagecomplete',
+    component: LoginJoinInExtrainfoLanguageComplete
+  },
+  {
+    path: '/Login_joinextrainfolanguagedelete',
+    name: 'Login_joinextrainfolanguagedelete',
+    component: LoginJoinInExtrainfoLanguageDelete
   },
   {
     path: '/Login_joincomplete',
@@ -815,9 +975,24 @@ var rootRoutes = [
     component: LoginJoinTerms
   },
   {
+    path: '/Login_jointermstoast',
+    name: 'Login_jointermstoast',
+    component: LoginJoinTermsToast
+  },
+  {
+    path: '/Login_jointermsselect',
+    name: 'Login_jointermsselect',
+    component: LoginJoinTermsSelect
+  },
+  {
     path: '/Login_jointermsdetail',
     name: 'Login_jointermsdetail',
     component: LoginJoinTermsdetail
+  },
+  {
+    path: '/Login_jointermsdetailscroll',
+    name: 'Login_jointermsdetailscroll',
+    component: LoginJoinTermsdetailscroll
   },
   {
     path: '/Login_joinid',
@@ -830,14 +1005,44 @@ var rootRoutes = [
     component: LoginJoinBasicInfo
   },
   {
+    path: '/login_join_basicinfo_inputon',
+    name: 'login_join_basicinfo_inputon',
+    component: LoginJoinBasicInfoInputon
+  },
+  {
+    path: '/login_join_basicinfo_error',
+    name: 'login_join_basicinfo_error',
+    component: LoginJoinBasicInfoError
+  },
+  {
     path: '/Login_searchpost',
     name: 'Login_searchpost',
     component: LoginSearchPost
   },
   {
+    path: '/Login_searchposterror',
+    name: 'Login_searchposterror',
+    component: LoginSearchPostError
+  },
+  {
+    path: '/Login_searchpostresult',
+    name: 'Login_searchpostresult',
+    component: LoginSearchPostResult
+  },
+  {
+    path: '/Login_searchpostkeyboard',
+    name: 'Login_searchpostkeyboard',
+    component: LoginSearchPostKeyboard
+  },
+  {
     path: '/Login_searchcompany',
     name: 'Login_searchcompany',
     component: LoginSearchCompany
+  },
+  {
+    path: '/Login_searchcompany_control',
+    name: 'Login_searchcompany_control',
+    component: LoginSearchCompanyControl
   },
   {
     path: '/Login_searchcompanyresult',
@@ -848,6 +1053,11 @@ var rootRoutes = [
     path: '/Login_joininterest',
     name: 'Login_joininterest',
     component: LoginJoinInterest
+  },
+  {
+    path: '/Login_joininterestselect',
+    name: 'Login_joininterestselect',
+    component: LoginJoinInterestSelect
   },
   {
     path: '/Login_changepw',
@@ -919,12 +1129,11 @@ var rootRoutes = [
     name: 'Login_certifyemail',
     component: LoginCertifyEmail
   },
-  {
-    path: '/Login_certifyemail_corporate',
-    name: 'Login_certifyemail_corporate',
-    component: LoginCertifyEmailCorporate
-  },
-  /*
+  // {
+  //   path: '/Login_certifyemail_corporate',
+  //   name: 'Login_certifyemail_corporate',
+  //   component: LoginCertifyEmailCorporate
+  // },
   {
     path: '/Login_login_changeid_main_confirm',
     name: 'Login_login_changeid_main_confirm',
@@ -951,24 +1160,19 @@ var rootRoutes = [
     component: Loginloginchangepwerror3
   },
   {
-    path: '/Login_login_unlockid_domestic',
-    name: 'Login_login_unlockid_domestic',
-    component: Loginloginunlockiddomestic
+    path: '/Login_login_unlockid2',
+    name: 'Login_login_unlockid2',
+    component: Loginloginunlockid2
   },
   {
-    path: '/Login_login_unlockid_overseas',
-    name: 'Login_login_unlockid_overseas',
-    component: Loginloginunlockidoverseas
+    path: '/Login_login_unlockid_email',
+    name: 'Login_login_unlockid_email',
+    component: Loginloginunlockidemail
   },
   {
     path: '/Login_login_unlockid_complete',
     name: 'Login_login_unlockid_complete',
     component: Loginloginunlockidcomplete
-  },
-  {
-    path: '/Login_login_dormant',
-    name: 'Login_login_dormant',
-    component: Loginlogindormant
   },
   {
     path: '/Login_login_dormant_email',
@@ -984,11 +1188,6 @@ var rootRoutes = [
     path: '/Login_findid_result_popup',
     name: 'Login_findid_result_popup',
     component: Loginfindidresultpopup
-  },
-  {
-    path: '/Login_findid_ipin',
-    name: 'Login_findid_ipin',
-    component: Loginfindidipin
   },
   {
     path: '/Login_findpw_email_toastpopup',
@@ -1011,6 +1210,11 @@ var rootRoutes = [
     component: Logincertifyemailcertifyerror3
   },
   {
+    path: '/Login_findid_ipin',
+    name: 'Login_findid_ipin',
+    component: Loginfindidipin
+  },
+  {
     path: '/Login_login_corporationphone1',
     name: 'Login_login_corporationphone1',
     component: Loginlogincorporationphone1
@@ -1025,7 +1229,16 @@ var rootRoutes = [
     name: 'Login_login_corporationphone3',
     component: Loginlogincorporationphone3
   },
-  */
+  {
+    path: '/Study_home_courseware_module_01',
+    name: 'Study_home_courseware_module_01',
+    component: StudyHomeCoursewareModule01
+  },
+  {
+    path: '/Study_home_courseware_module_02',
+    name: 'Study_home_courseware_module_02',
+    component: StudyHomeCoursewareModule02
+  },
   {
     path: '/Study_dictionary',
     name: 'Study_dictionary',
@@ -1611,6 +1824,11 @@ var rootRoutes = [
     component: MainArticleDetailLike
   },
   {
+    path: '/Main_article_detailQnA',
+    name: 'Main_article_detailQnA',
+    component: MainArticleDetailQnA
+  },
+  {
     path: '/Main_writer_channel',
     name: 'Main_writer_channel',
     component: MainWriterChannel
@@ -1759,6 +1977,11 @@ var rootRoutes = [
     path: '/CLIPing_paperProDetail_port',
     name: 'CLIPing_paperProDetail_port',
     component: CLIPingPaperProDetailPort
+  },
+  {
+    path: '/CLIPing_paperProDetailComment',
+    name: 'CLIPing_paperProDetailComment',
+    component: CLIPingPaperProDetailComment
   },
   {
     path: '/CLIPing_languageClub',
@@ -1994,6 +2217,91 @@ var rootRoutes = [
     path: '/MySpace_cliping_analysis',
     name: 'MySpace_cliping_analysis',
     component: MySpaceClipingAnalysis
+  },
+  {
+    path: '/MySpace_studymanagement_note',
+    name: 'MySpace_studymanagement_note',
+    component: MySpaceStudymanagementNote
+  },
+  {
+    path: '/MySpace_studymanagement_note_detail',
+    name: 'MySpace_studymanagement_note_detail',
+    component: MySpaceStudymanagementNoteDetail
+  },
+  {
+    path: '/MySpace_studymanagement_note_edit',
+    name: 'MySpace_studymanagement_note_edit',
+    component: MySpaceStudymanagementNoteEdit
+  },
+  {
+    path: '/MySpace_studymanagement_reminder',
+    name: 'MySpace_studymanagement_reminder',
+    component: MySpaceStudymanagementReminder
+  },
+  {
+    path: '/MySpace_studymanagement_reminder_detail',
+    name: 'MySpace_studymanagement_reminder_detail',
+    component: MySpaceStudymanagementReminderDetail
+  },
+  {
+    path: '/MySpace_studystatistics',
+    name: 'MySpace_studystatistics',
+    component: MySpaceStudystatistics
+  },
+  {
+    path: '/MySpace_studystatistics_grade',
+    name: 'MySpace_studystatistics_grade',
+    component: MySpaceStudystatisticsGrade
+  },
+  {
+    path: '/MySpace_studystatistics_grown',
+    name: 'MySpace_studystatistics_grown',
+    component: MySpaceStudystatisticsGrown
+  },
+  {
+    path: '/MySpace_studystatistics_activity',
+    name: 'MySpace_studystatistics_activity',
+    component: MySpaceStudystatisticsActivity
+  },
+  {
+    path: '/MySpace_studystatistics_keyword',
+    name: 'MySpace_studystatistics_keyword',
+    component: MySpaceStudystatisticsKeyword
+  },
+  {
+    path: '/MySpace_studystatistics_keyword_nosearch',
+    name: 'MySpace_studystatistics_keyword_nosearch',
+    component: MySpaceStudystatisticsKeywordNosearch
+  },
+  {
+    path: '/MySpace_point',
+    name: 'MySpace_point',
+    component: MySpacePoint
+  },
+  {
+    path: '/MySpace_credit',
+    name: 'MySpace_credit',
+    component: MySpaceCredit
+  },
+  {
+    path: '/MySpace_coupon',
+    name: 'MySpace_coupon',
+    component: MySpaceCoupon
+  },
+  {
+    path: '/MySpace_coupon_register',
+    name: 'MySpace_coupon_register',
+    component: MySpaceCouponRegister
+  },
+  {
+    path: '/MySpace_coupon_used',
+    name: 'MySpace_coupon_used',
+    component: MySpaceCouponUsed
+  },
+  {
+    path: '/MySpace_filter',
+    name: 'MySpace_filter',
+    component: MySpaceFilter
   },
   {
     path: '/regiclass_detailview_books',

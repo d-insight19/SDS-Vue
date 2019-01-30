@@ -12,6 +12,7 @@
 .ico.search{width:16px;height:16px;background: url("../img/ic_search_solid_black.png") no-repeat; }
 .ico.like{width:16px;height:16px;background: url("../img/ic_thumb_line_16.png") no-repeat; }
 .ico.time{width:16px;height:16px;background: url("../img/ic_time_line_16.png") no-repeat; }
+.ico.time.wh{width:16px;height:16px;background: url("../img/ic_time_line_wh_16.png") no-repeat; }
 .ico.view{width:16px;height:16px;background: url("../img/ic_view_line_16.png") no-repeat; }
 .ico.arrow{width:16px;height:16px;background: url("../img/ic_next_line_black.png") no-repeat; background-size: contain; }
 .ico.arrowsearch{width:16px;height:16px;background: url("../img/ic_arrowsearch_16.png") no-repeat; background-size: contain; }
@@ -38,6 +39,8 @@
 .ico.quiz_20{width:20px;height:20px; background: url("../img/ic_quiz_line_20.png") no-repeat;}
 .ico.filter_24{width:24px;height:24px; background: url("../img/ic_filter_24.png") no-repeat;}
 .next_12{background-image: url("../img/ic_next_line_blue_12.png");position: absolute;right: 0px;top: 50%;transform: translateY(-50%);}
+.ico.folder_16{width:16px;height:16px;background: url("../img/ic_folder_line_16.png") no-repeat; background-size: contain;}
+.ico.play_16.blue{width:16px;height:16px;background: url("../img/ic_play_line_blue_16.png") no-repeat; background-size: contain;}
 
 /* 추가이미지 2018-12-07 */
 .ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }
@@ -59,8 +62,8 @@
 .ico.plus{width:16px;height:16px;background: url("../img/ic_plus_16.png") no-repeat; vertical-align: -2px; }
 .ico.plus.done{opacity: 0.3; }
 .ico.clip{width:16px;height:16px;background: url("../img/ic_addfile_16.png") no-repeat; }
-.ico.down-load{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
-.ico.down-load-wh{width:20px;height:20px;background: url("../img/ic_download_wh_20.png") no-repeat;  }
+.ico.download{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
+.ico.download-wh{width:20px;height:20px;background: url("../img/ic_download_wh_20.png") no-repeat;  }
 
 
 /* 추가 이미지 2018-12-12*/
@@ -142,6 +145,8 @@
 .ico.filter{width:24px;height:24px;background: url("../img/ic_filter_96.png") no-repeat; background-size: contain;}
 .ico.arrowback{width:24px;height:24px;background: url("../img/btn_arrowback_96.png") no-repeat; background-size: contain;}
 .ico.down{width:24px;height:24px;background: url("../img/ic_down_blue_24.png") no-repeat; background-size:contain;}
+.ico.addfolder{width:24px;height:24px;background: url("../img/ic_addfolder_line_24.png") no-repeat; background-size: contain;}
+.ico.addcoupon{width:24px;height:24px;background: url("../img/ic_addcoupon_line_24.png") no-repeat; background-size: contain;}
 
 /*추가 이미지 2019-1-3*/
 .ico.warning{width:18px; height:18px; background: url("../img/ic_warning_solid_20.png") no-repeat;  vertical-align: -2px;}
@@ -166,6 +171,39 @@
 /*추가이미지 2019-1-17*/
 .ico.list-btn{width:24px; height:24px; background: url("../img/ic_listchange_24.png") ;background-size: cover;}
 .ico.del{width:20px; height: 20px; background: url("../img/ic_deletemode_20.png");background-size: cover;}
+
+.ico.test_32{width:32px; height:32px; background: url("../img/ic_test_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.bubble_32{width:32px; height:32px; background: url("../img/ic_bubble_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.thumb2_32{width:32px; height:32px; background: url("../img/ic_thumb_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.rate_32{width:32px; height:32px; background: url("../img/ic_rate_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.share_32{width:32px; height:32px; background: url("../img/ic_share_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.graph_32{width:32px; height:32px; background: url("../img/ic_graph_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.newfolder_32{width:32px; height:32px; background: url("../img/ic_newfolder_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.repair_32{width:32px; height:32px; background: url("../img/ic_repair_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.people_32{width:32px; height:32px; background: url("../img/ic_people_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+.ico.chart_32{width:32px; height:32px; background: url("../img/ic_chart_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
+
+.ico.trophy_64{width:64px; height:64px; background: url("../img/ic_trophy_solid.png") no-repeat; margin-top:-8px; background-size: cover;}
+.ico.grade_64.gold{width:64px; height:64px; background: url("../img/ic_grade_gold.png") no-repeat; margin-top:-8px; background-size: cover;}
+.ico.coin_64{width:64px; height:64px; background: url("../img/ic_coin_solid.png") no-repeat; margin-top:-8px; background-size: cover;}
+.ico.check_14{width:14px; height:14px; background: url("../img/ic_complete_check_solid_blue_14.png") no-repeat; background-size: cover;}
+.ico.check_14.wh{width:14px; height:14px; background: url("../img/ic_complete_check_solid_wh_14.png") no-repeat; background-size: cover;}
+.ico.download_24{width:24px; height:24px; background: url("../img/ic_download_line_24.png") no-repeat; background-size: cover;}
+.ico.complete_14{width:14px; height:14px; background: url("../img/ic_complete_blank_solid_14.png") no-repeat; background-size: cover;}
+.ico.lock_16{width:16px; height:16px; background: url("../img/ic_lock_solid_16.png") no-repeat; background-size: cover;}
+.ico.ongoing_16{width:14px; height:14px; background: url("../img/ic_ongoing_solid_blue_14.png") no-repeat; background-size: cover;}
+
+
+
+
+
+
+
+
+
+
+.ico.like_solid_32.blue{width:32px;height:32px;background: url("../img/ic_thumb_line_b_32.png") no-repeat; background-size:32px;}
+
 
 
 
@@ -233,6 +271,7 @@
 
 /* margin */
 .mt0{margin-top: 0px !important;}
+.mt4{margin-top: 4px !important;}
 .mt6{margin-top: 6px !important;}/*12월12일 추가*/ 
 .mt8{margin-top: 8px !important;}/*12월12일 추가*/ 
 .mt9{margin-top: 9px !important;}
@@ -294,12 +333,15 @@
 
 .pt0{padding-top: 0 !important;}
 .pt10{padding-top:10px !important;}
+.pt18{padding-top:18px !important;}
 .pdt16{padding-top: 16px !important;}
 .pdt22{padding-top:22px !important;}
+.pdt38{padding-top:38px !important;}
 
 .pdb0{padding-bottom:0 !important;}
 .pb10{padding-bottom:10px !important;}
 .pdb12{padding-bottom: 12px !important;}
+.pdb15{padding-bottom: 15px !important;}
 .pb18{padding-bottom:18px !important;}
 .pdb20{padding-bottom:20px !important;}
 .pdb14{padding-bottom: 14px !important;}

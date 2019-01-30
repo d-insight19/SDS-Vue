@@ -24,26 +24,26 @@
                 <!-- list -->
                 <ul class="ulList type1">
                     <li>
-                        <strong class="label-tit">이름</strong>
-                        <slp-text-field placeholder="이름 입력" error message="이름을 입력해주세요."></slp-text-field>
+                        <strong class="label-tit">성명</strong>
+                        <slp-text-field placeholder="성명을 입력하세요" ></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit">이메일</strong>
                         <div class="emailChk">
-                          <slp-text-field placeholder="이메일 입력" error message="이메일 형식에 맞지 않습니다."></slp-text-field>
+                          <slp-text-field placeholder="이메일을 입력하세요" ></slp-text-field>
                           <button type="button" class="btn sm" @click="send()">인증번호 전송</button>
                         </div>
                     </li>
                     <li v-show="sendFlag">
-                        <strong class="label-tit">인증번호 입력</strong>
+                        <strong class="label-tit">인증번호</strong>
                         <!-- 기존 디폴트 텍스트 노출의 경우 컴포넌트가 없어 임의로 메시지 노출 해놨습니다.-->
                         <div class="emailChk">
-                            <slp-text-field placeholder="인증번호 입력" error></slp-text-field>
-                            <span class="time">
-                              <span class="num">00:00</span>분
-                            </span>
+                            <slp-text-field placeholder="인증번호를 입력하세요" ></slp-text-field>
+                            <!-- <span class="time">
+                              <span class="num">15:00</span>분
+                            </span> -->
                         </div>
-                        <p class="InfoChK-resultTxt"> 인증번호가 오지 않으면 입력하신 정보가 정확한지 확인해 주세요.</p>
+                        <p class="InfoChK-resultTxt"  style="display:none">이메일로 인증번호를 발송했습니다. 인증번호가 오지 않으면 입력하신 정보가 정확한지 확인해 주세요.</p>
                         <p class="InfoChK-resultTxt err" style="display:none"> 유효시간이 초과되었습니다. 인증번호를 다시 전송해주세요.</p>
                     </li>
                 </ul>

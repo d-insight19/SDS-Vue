@@ -7,22 +7,32 @@
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video">          
-            <div class="header_inner line1">
-                <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text  font_18">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
+            <div class="header_inner line1 clr1">
+                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
+                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li class="on"><a href="#tab1">학습현황</a></li>
-                    <li><a href="#tab2">학습목차</a></li> 
-                    <li><a href="#tab3">학습노트</a></li> 
-                    <li><a href="#tab3">질문방</a></li> 
-                    <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
+                    <li class="on"><a href="#">학습현황</a></li>
+                    <li><a href="#">학습목차</a></li> 
+                    <li><a href="#">학습노트</a></li> 
+                    <li><a href="#">질문방</a></li> 
+                    <li><a href="#">설문조사</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">자료실</a></li>
+                    <li><a href="#">토론방</a></li>
+                    <li><a href="#">리플렉션노트</a></li>
+                    <li><a href="#">리마인더</a></li>
+                    <li><a href="#">용어사전</a></li>
+                    <li><a href="#">요약집</a></li>
+                    <li><a href="#">Quick Poll/Answer</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
 
-            <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기.  -->
+            <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
             <div class="blur_wrap">
                 <div class="left blur"></div>
                 <div class="right blur"></div>
@@ -33,35 +43,6 @@
             <div class="player_wrap">
                 <div class="player_inner">
                     <div id="contents"></div>
-
-                    <!--  s: 연관 콘텐츠 -->
-                    <div class="movie_info_list" style="display:none">
-                        <p class="movie_info_tit">연관 콘텐츠 추천</p>
-                        <ul>
-                            <li>
-                                <a href="#"></a>
-                                <p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초</p>
-                                <p class="movie_info"><span class="star ico"></span>4.5</p>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                                <p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p>
-                                <p class="movie_info"><span class="star ico"></span>4.5</p>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                                <p class="movie_tit multiline line2">만화로 배우는 알기 쉬운경영 기초전략</p>
-                                <p class="movie_info"><span class="star ico"></span>4.5</p>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                                <p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p>
-                                <p class="movie_info"><span class="star ico"></span>4.5</p>
-                                
-                            </li>
-                        </ul>
-                    </div>
-                    <!--  e: 연관 콘텐츠 -->
 
                     <!-- s: 볼륨영역 -->
                     <div class="volume_wrap" style="display:none;">
@@ -82,8 +63,8 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: 텝 영역 -->
-                    <div class="tap_wrap">
+                    <!-- s: double 텝 영역 -->
+                    <div class="tap_wrap" style="display:none;">
                         <div class="half_left">
                             <div class="inner"></div>
                             <div class="inner_ripple"></div>
@@ -93,12 +74,39 @@
                             <div class="inner_ripple"></div>
                         </div>
                     </div>
-                    <!--  e: 텝 영역 -->
+                    <!--  e: double 텝 영역 -->
+
+                    <!-- s: 일반 콘텐츠일 경우 플레이 버튼 wrap -->
+                    <div class="content_play_wrap" style="display:none;">
+                        <div class="content_play_wrap_inner">
+                            <div class="fp-playWrap">
+                                <div class="fp-prevArrow">
+                                    <p class="fp_Icon_txt"></p>
+                                </div>
+                                <div class="fp-playIcon"></div>
+                                <div class="fp-pauseIcon">
+                                    <p class="fp_Icon_txt">1/10</p>
+                                </div>
+                                <div class="fp-replayIcon"></div>
+                                <div class="fp-startIcon">
+                                    <div class="startIcon">
+                                        <span class="playIcon"></span>
+                                        <span class="playTxt">학습하기</span>
+                                    </div>
+                                    <p class="fp_Icon_txt">1/10</p>
+                                </div>
+                                <div class="fp-nextArrow">
+                                    <p class="fp_Icon_txt"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- e: 일반 콘텐츠일 경우 플레이 버튼 wrap -->
 
                 </div>
                 <!-- s: btm_subtitle_area -->
-                <div class="btm_subtitle_area" data-js="toggle" >
-                    <div class="subtitle_slide_wrap" data-js="toggle__panel">
+                <div class="btm_subtitle_area">
+                    <div class="subtitle_slide_wrap">
                         <div class="btm_subtitle_control">                                
                             <div>
                                 <div class="subtitle_lang_wrap">
@@ -271,10 +279,8 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-                
                 <p>내용1</p>
                 <p>내용2</p>
-                <p>내용3</p>
                 <p>내용4</p>
                 <p>내용5</p>
                 <p>내용6</p>
@@ -313,8 +319,8 @@ window.$ = $
 window.jQuery = $
 
 // 2. css
-import 'flowplayer/dist/skin/lo_skin.css'
-import 'flowplayer/dist/skin/stw.css'
+import 'flowplayer/dist/skin/lo_skin.scss'
+import 'flowplayer/dist/skin/stw.scss'
 
 
 // 3. node_modules
@@ -336,6 +342,17 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
+        scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
+        detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
+        relatedVideoList: [
+            {title: '자바스크립트 개발 프로세스 기초'},
+            {title: '모바일 게임 UI 디자인 실무'},
+            {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
+            {title: '모바일 게임 UI 디자인 실무'},
+            {title: '자바스크립트 개발 프로세스 기초1'},
+            {title: '자바스크립트 개발 프로세스 기초2'},
+            {title: '자바스크립트 개발 프로세스 기초3'}
+        ],
        option: {
         loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
         targetId: "contents", //div target Id
@@ -385,22 +402,66 @@ export default {
           }
         ], //자막,
         noseek: true //timeline no
-      },
-      scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
-      detail_show: false        // 동영상 하단 타이틀 디테일 toggle 변수
+      }
     }
   },
   methods: {
-    detail_toggle () {
+    detail_toggle () {        
         this.detail_show = !this.detail_show;
     }
   },
   mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
-        $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
-        $('.fp-ratio').append('<div class="tap_wrap" style="display:none"><div class="half_left"></div><div class="half_right"></div></div>');
+        
 
+        // 동영상 헤더 텍스트 입력
+        $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
+
+        var has_contents = true;
+        // has_contents = false;
+        if( has_contents ){
+            // 연관콘텐츠가 있을경우 추가 ( 없을경우는 처리 안하면 됨)
+            $(".flowplayer").addClass("has_contents");              // 해당 클래스로, 컨트롤bar 높이 재설정
+            var createVidoeHtml = "";
+            createVidoeHtml += '<div class="movie_info_list">';
+            createVidoeHtml += '<p class="movie_info_tit">연관 콘텐츠 추천</p>';
+            createVidoeHtml += '<ul>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">만화로 배우는 알기 쉬운 경영 기초전략</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초1</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초2</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초3</p></li>';
+            createVidoeHtml += '</ul>';
+            createVidoeHtml += '</div>';
+
+            $('.fp-ui').append(createVidoeHtml);
+
+            // 연관 콘텐츠 터치시 활성화
+            $(".movie_info_list").click(function(){
+                // 터치시 활성화
+                $(".movie_info_list").addClass("active");
+                // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
+                // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
+                $(".flowplayer").toggleClass("is-open-related-contents");
+            
+                // TODO
+                // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
+                //      -> 동영상 pause 처리하면 될듯
+                // 2. 연관 콘텐츠 터치 후 활성화 되었을때 바깥영역 터치시 play || hover 되는 기능 막아야함
+
+            });
+
+            //연관 콘텐츠 활성화 되었을때 X 아이콘 터치시 비활성화
+            $(".fp-header .fp-closeicon").click(function(){
+                $(".movie_info_list").removeClass("active");
+                $(".flowplayer").toggleClass("is-open-related-contents");
+            });
+        }
+
+        
         $('.half_left').click(function(){
             console.error("왼쪽");
         });
@@ -409,41 +470,22 @@ export default {
         });
 
         $('.fp-script , .script_close').click(function(){
-            console.error("스크립트");
+            // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
+            $('body').toggleClass("scroll-n");
             $('.fp-script').toggleClass('active');
             $('.player_wrap').toggleClass('script');
         });
 
-        $('.fp-presec').click(function()
+        $('.fp-nextArrow').click(function()
         {
-            alert('30초이전!')
+            console.error('다음 콘텐츠!')
         });
-        $('.fp-nextsec').click(function()
+        $('.fp-prevArrow').click(function()
         {
-            alert('30초다음!')
-        });        
-        var $value = 0;
-        $('.fp-repeat').click(function()
-        {
-            if ($value == 0)
-            {
-                $(this).addClass('type01');
-                alert('1');
-                $value = 1;
-            }
-            else if ($value == 1)
-            {
-                $(this).removeClass('type01').addClass('type02');
-                alert('2');
-                $value = 2;
-            }
-            else if ($value == 2)
-            {
-                $(this).removeClass('type02');
-                alert('3');
-                $value = 0;
-            }
-        })
+            console.error('이전 콘텐츠!')
+        });
+
+
         miniMovie();
 
         function miniMovie(){
@@ -451,20 +493,25 @@ export default {
             var $obj = $('.btm_subtitle_area');
             var $top = $obj.offset().top;
             var $targetH = $parent.find('#contents').height();
+
             $(window).scroll(function()
             {
                 var $wTop = $(window).scrollTop();
-                var player_height = $parent.height();
+                var player_height = $('.player_wrap').height();
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
-                console.error($wTop , $hederTab-player_height);
+
+                var scroll=$(this).scrollTop()+$(this).height();
+                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
                 // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
-                // fixed 클래스가 들어가면서 값이 변하기때문에 상수처리해야할듯.
+                // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
-                if ($wTop > 176 )
+                // if ($wTop >= $hederTab-player_height )
+                if ($wTop >= 176 )
                 {
-                    $parent.addClass('fixed');
+                    // $parent.addClass('fixed').css({'margin-top': $targetH });
+                    $parent.addClass('fixed')
                     $("#header").addClass('fixed');
                 }
                 else
@@ -472,7 +519,7 @@ export default {
                     $parent.removeClass('fixed').attr('style', '');
                     $("#header").removeClass('fixed');
                 }
-            })                                          
+            })
         }
 
         function scriptScroll()

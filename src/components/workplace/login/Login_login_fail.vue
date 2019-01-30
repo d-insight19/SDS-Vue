@@ -30,11 +30,14 @@
                     <legend>아이디 비밀번호 입력</legend>
                     <ul class="loginList">
                         <li>
-                            <slp-text-field placeholder="아이디"  error message="아이디를 입력해주세요" ></slp-text-field>
+                            <slp-text-field placeholder="아이디를 입력하세요" error classObject="underline"></slp-text-field>
+                            <p class="InfoChK-resultTxt err">아이디를 입력해 주세요</p>
                         </li>
                         <li>
                             <!-- 추가되는 새로운 비밀번호 컴포넌트로 교체해야함-->
-                            <slp-text-field type="password" error message="비밀번호를 입력해주세요" placeholder="비밀번호"></slp-text-field>
+                            <!-- 2019-01-07 : 기존 Seach 컴포넌트에   버튼 a태그에  eye 클래스 추가되고 x 아이콘 삭제 -->
+                            <slp-text-field placeholder="비밀번호를 입력하세요" error classObject="underline"></slp-text-field>
+                            <p class="InfoChK-resultTxt err">비밀번호를 입력해 주세요</p>
                         </li>
                     </ul>
 
@@ -44,7 +47,7 @@
                     </div>
 
                     <div class="loginBtn">
-                        <button type="button" class="btn md clr1">로그인</button>
+                        <button type="button" class="btn md clr1" @click="() => {showConfirm = true}">로그인</button>
                     </div>
                 </fieldset>
 
@@ -74,10 +77,20 @@
                 <li>휴일<span class="custom_time">09:00 - 18:00</span></li>
             </ul>
             <p class="copyright">ⓒ copyright by mulicampus CO.LTD. All right reserved</p>
-        </div>
+        </div>        
         
       </div>
-      <!-- //container -->     
+      <!-- //container --> 
+
+      <slp-popup v-if="showConfirm" title="로그인 실패" confirmInput="확인" @cancelClick="cancel" @confirmClick="confirm">
+            <!-- popup body -->
+            <div class="ly-cnt">
+                <p>로그인에 5회 실패하였습니다. 5회 실패 시 계정이 잠금되어 로그인이 불가합니다. 본인인증 후 이용해 주세요.</p>	
+            </div>
+            <div class="ly-info">
+                <p></p>
+            </div>
+        </slp-popup>    
     </div>
     <!-- //wrap -->
 
@@ -94,10 +107,17 @@ export default {
   /* vue data */
   data () {
     return {
+      showConfirm: true
     }
   },
   /* vue function */
   methods: {
+    cancel: function () {
+      this.showConfirm = false
+    },
+    confirm: function () {
+      this.showConfirm = false
+    }
   }
 }
 </script>

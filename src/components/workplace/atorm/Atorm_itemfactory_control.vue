@@ -10,7 +10,9 @@
           <div class="header_inner line1">
             <button type="button" class="btn only" :class="{'prev': showOldComponentType == 1,'close': showOldComponentType != 1}"><span class="ico">이전</span></button>
             <p class="header_text  font_18">아이템 팩토리</p>
-            <p class="end color_clr2" v-show="showOldComponentType!=1">등록</p>
+            <p class="end" v-show="showOldComponentType!=1">
+                <span class="end_btn2 color_clr2">등록</span>
+            </p>
           </div>
           <div class="header_inner line2 tabMenu">
               <ul class="fixTab">
