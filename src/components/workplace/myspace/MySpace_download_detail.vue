@@ -66,84 +66,87 @@
                                 <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
                                 <p class="status">다운로드 중... <span>10% (1/10)</span></p>
                             </div>
+                            <span class="ico accordion_arrow"></span>
                         </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                    <li class="open">
-                        <div class="sub_content">
-                            <p class="sub_content_title border_clr1 color_clr1 clr4">변수와 데이터 타입</p>
-                            <!-- list -->
-                            <ul class="multiList type2">
-                                <li>
-                                    <div class="download_detail border_clr1 done">
-                                        <div class="icon_wrap">
-                                            <span class="ico pause_20 blue line"></span>
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                            <p class="status">다운로드 중... <span>75%</span></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="download_detail border_clr1 done">
-                                        <div class="icon_wrap">
-                                            <span class="ico redownload_20 blue line"></span>
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                            <p class="status">
-                                                일시정지 <span>(50%)</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <span class="action">삭제</span>
-                                </li>
-                                <li>
-                                    <div class="download_detail border_clr1 done">
-                                        <div class="icon_wrap">
-                                            <span class="ico cancel_20 blue line"></span>
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                            <p class="status">대기중</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- //list -->
-                            <p class="sub_content_title border_clr1 color_clr1 clr4">특성 활용하기</p>
-                            <!-- list -->
-                            <ul class="multiList type2">
-                                <li>
-                                    <div class="download_detail border_clr1 done">
-                                        <div class="icon_wrap">
-                                            <span class="ico pause_20 blue line"></span>
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                            <p class="status">다운로드 중... <span>75%</span></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="download_detail border_clr1">
-                                        <div class="icon_wrap">
-                                            <span class="ico play_28"></span>
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                            <ul class="info">
-                                                <li class="">12.33MB</li>
-                                                <li class="">55:12</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- //list -->
-                        </div>
-                    </li>
+                        
+                        <ul class="multiList type2">
+                            <li class="open">
+                                <div class="sub_content">
+                                    <p class="sub_content_title border_clr1 color_clr1 clr4">변수와 데이터 타입</p>
+                                    <!-- list -->
+                                    <ul class="multiList type2">
+                                        <li>
+                                            <div class="download_detail border_clr1 done">
+                                                <div class="icon_wrap">
+                                                    <span class="ico pause_20 blue line"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                    <p class="status">다운로드 중... <span>75%</span></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="download_detail border_clr1 done">
+                                                <div class="icon_wrap">
+                                                    <span class="ico redownload_20 blue line"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                    <p class="status">
+                                                        일시정지 <span>(50%)</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="action">삭제</span>
+                                        </li>
+                                        <li>
+                                            <div class="download_detail border_clr1 done">
+                                                <div class="icon_wrap">
+                                                    <span class="ico cancel_20 blue line"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                    <p class="status">대기중</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- //list -->
+                                    <p class="sub_content_title border_clr1 color_clr1 clr4">특성 활용하기</p>
+                                    <!-- list -->
+                                    <ul class="multiList type2">
+                                        <li>
+                                            <div class="download_detail border_clr1 done">
+                                                <div class="icon_wrap">
+                                                    <span class="ico pause_20 blue line"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                    <p class="status">다운로드 중... <span>75%</span></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="download_detail border_clr1">
+                                                <div class="icon_wrap">
+                                                    <span class="ico play_28"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                    <ul class="info">
+                                                        <li class="">12.33MB</li>
+                                                        <li class="">55:12</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- //list -->
+                                </div>
+                            </li>
+                        </ul>
+                    </li>                    
                     <li>
                         <div class="download_detail">
                             <div class="txt_wrap">

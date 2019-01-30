@@ -4503,9 +4503,7 @@
           <router-link :to="{ name: 'Study_home_courseware_module_02' }">
             Study_home_courseware_module_02
           </router-link><br/>
-          <router-link :to="{ name: 'Study_home_courseware_loso' }">
-            Study_home_courseware_loso
-          </router-link>
+          
         </td>
         <td></td>
       </tr>
@@ -4520,8 +4518,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.01.home_courseware_LO/SO</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_courseware_loso' }">
+            Study_home_courseware_loso
           </router-link>
         </td>
         <td></td>
@@ -4537,8 +4535,11 @@
         <td>　</td>
         <td class="textL">05.Study_01.02.home_mooc</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_mooc_open' }">
+            Study_home_mooc_open
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_home_mooc_close' }">
+            Study_home_mooc_close
           </router-link>
         </td>
         <td></td>

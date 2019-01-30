@@ -128,6 +128,7 @@ import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporatio
 import StudyHomeCoursewareModule01 from '~workplace/study/Study_home_courseware_module_01'
 import StudyHomeCoursewareModule02 from '~workplace/study/Study_home_courseware_module_02'
 import StudyHomeCoursewareLoso from '~workplace/study/Study_home_courseware_loso'
+import StudyHomeMoocOpen from '~workplace/study/Study_home_mooc_open'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -1244,6 +1245,11 @@ var rootRoutes = [
     path: '/Study_home_courseware_loso',
     name: 'Study_home_courseware_loso',
     component: StudyHomeCoursewareLoso
+  },
+  {
+    path: '/Study_home_mooc_open',
+    name: 'Study_home_mooc_open',
+    component: StudyHomeMoocOpen
   },
   {
     path: '/Study_dictionary',
