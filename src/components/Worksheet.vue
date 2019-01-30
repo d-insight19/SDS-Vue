@@ -1792,8 +1792,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_multiple</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_multiple' }">
+            Atorm_itemfactory_multiple
           </router-link>
         </td>
         <td></td>
@@ -1809,8 +1809,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_ox</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_ox' }">
+            Atorm_itemfactory_ox
           </router-link>
         </td>
         <td></td>
@@ -1826,8 +1826,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_short</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_short' }">
+            Atorm_itemfactory_short
           </router-link>
         </td>
         <td></td>
@@ -1843,8 +1843,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.01._Item    factory_old_filter</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_old_filter' }">
+            Atorm_itemfactory_old_filter
           </router-link>
         </td>
         <td></td>

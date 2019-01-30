@@ -543,6 +543,10 @@ import Atormitemfactoryaudio1 from '~workplace/atorm/Atorm_itemfactory_audio1'
 import Atormitemfactoryaudio2 from '~workplace/atorm/Atorm_itemfactory_audio2'
 import Atormitemfactoryyoutube1 from '~workplace/atorm/Atorm_itemfactory_youtube1'
 import Atormitemfactoryyoutubesearch1 from '~workplace/atorm/Atorm_itemfactory_youtube_search1'
+import AtormItemfactoryMultiple from '~workplace/atorm/Atorm_itemfactory_multiple'
+import AtormItemfactoryOx from '~workplace/atorm/Atorm_itemfactory_ox'
+import AtormItemfactoryShort from '~workplace/atorm/Atorm_itemfactory_short'
+import AtormItemfactoryOldFilter from '~workplace/atorm/Atorm_itemfactory_old_filter'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -2971,6 +2975,26 @@ var rootRoutes = [
     path: '/Atorm_itemfactory_youtube_search1',
     name: 'Atorm_itemfactory_youtube_search1',
     component: Atormitemfactoryyoutubesearch1
+  },
+  {
+    path: '/Atorm_itemfactory_multiple',
+    name: 'Atorm_itemfactory_multiple',
+    component: AtormItemfactoryMultiple
+  },
+  {
+    path: '/Atorm_itemfactory_ox',
+    name: 'Atorm_itemfactory_ox',
+    component: AtormItemfactoryOx
+  },
+  {
+    path: '/Atorm_itemfactory_short',
+    name: 'Atorm_itemfactory_short',
+    component: AtormItemfactoryShort
+  },
+  {
+    path: '/Atorm_itemfactory_old_filter',
+    name: 'Atorm_itemfactory_old_filter',
+    component: AtormItemfactoryOldFilter
   },
   {
     path: '/Eduperson_login',
