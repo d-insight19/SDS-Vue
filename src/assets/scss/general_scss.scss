@@ -97,6 +97,9 @@ $brand_colors: (
     .color_clr4{
       color: map-get($color,clr4) !important;
     }
+    .color_clr6{
+      color: map-get($color,clr6) !important;
+    }
     .border_clr1{
       border-color: map-get($color,clr1) !important;
     }    

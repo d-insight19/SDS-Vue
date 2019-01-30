@@ -1518,9 +1518,6 @@ label.rdo .label{position: relative;}
 #container.courseware .download_detail .info li:nth-child(1) .mono_65{margin-left:6px;}
 #container.courseware .download_detail .info .check_14 {vertical-align: -2px;}
 #container.courseware .download_detail .info .time {vertical-align: -4px;}
-#container.courseware .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
-#container.courseware .download_detail.done .txt_wrap .title {opacity: 0.4;}
-#container.courseware .download_detail.done .txt_wrap .info {opacity: 0.4;}
 #container.courseware .multiList.type2 > li .ico.next_16 {position:absolute;top:calc(50% - 2px);right:18px;}
 #container.courseware .multiList.type2 > li .action {position:absolute;bottom:18px;right:18px; font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
 #container.courseware .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
@@ -1539,14 +1536,14 @@ label.rdo .label{position: relative;}
 
 #container.courseware .sub_content{display:none;}
 #container.courseware .open .sub_content{display:block;}
-#container.courseware .sub_content .download_detail {border-bottom-width: 0px; border-top:1px solid map-get($line_colors,B89) !important; padding:14px 40px 14px 16px; margin-top:0px;}
+#container.courseware .sub_content .download_detail {border-bottom-width: 0px; border-top:1px solid map-get($line_colors,B89) !important; padding:20px 40px 20px 16px; margin-top:0px;}
 #container.courseware .sub_content .download_detail.bottom-bd-x {border-bottom:1px solid map-get($line_colors,B89) !important; }
 #container.courseware .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
 #container.courseware .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 9px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
 #container.courseware .open .ico.accordion_arrow.wh{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_up.png") no-repeat;}
 
-
-
+#container.courseware .clr4 {background-color:#f2f3f7 !important;}
+#container.courseware .clr3 {background-color:#a3a9ff!important;}
 
 
 

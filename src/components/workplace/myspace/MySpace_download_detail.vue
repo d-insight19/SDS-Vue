@@ -66,6 +66,7 @@
                                 <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
                                 <p class="status">다운로드 중... <span>10% (1/10)</span></p>
                             </div>
+                            <span class="ico accordion_arrow"></span>
                         </div>
                         <span class="ico accordion_arrow"></span>
                         <div class="sub_content">
