@@ -7,7 +7,7 @@
 
         <div id="content" class="etc">
           <div class="cell">
-            <div class="inner mb70">
+            <div class="inner">
               
                 <h1 class="h-tit">수강신청</h1>
 
