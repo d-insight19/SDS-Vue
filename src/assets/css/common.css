@@ -193,6 +193,7 @@
 .ico.lock_16{width:16px; height:16px; background: url("../img/ic_lock_solid_16.png") no-repeat; background-size: cover;}
 .ico.ongoing_16{width:14px; height:14px; background: url("../img/ic_ongoing_solid_blue_14.png") no-repeat; background-size: cover;}
 
+.ico.photo_16{width:16px; height:16px; background: url("../img/ic_atorm_photo_edit_solid.png") no-repeat; background-size: cover;}
 
 
 
@@ -328,7 +329,10 @@
 .mr3{margin-right: 3px !important;}
 .mr4{margin-right: 4px !important;}/*1월 3일 추가*/
 .mr6{margin-right: 6px !important;}/*1월 3일 추가*/
+.mr8{margin-right: 8px !important;}
+.mr10{margin-right: 10px !important;}
 .mr15{margin-right: 15px !important;}
+.mr20{margin-right: 20px !important;}
 .mr30{margin-right: 30px !important;}
 
 .ml-18 {margin-left:-18px !important;}

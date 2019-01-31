@@ -1915,8 +1915,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.03._short    clip</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_shortclip_1' }">
+            Atorm_shortclip_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_shortclip_2' }">
+            Atorm_shortclip_2
           </router-link>
         </td>
         <td></td>
@@ -7208,9 +7212,10 @@
         <td>　</td>
         <td class="textL">06.regiclass_04.03.register_photo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_photo' }">
+            regiclass_register_photo
           </router-link>
+          네이티브 영역. 개발필요
         </td>
         <td></td>
       </tr>
@@ -7228,6 +7233,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          네이티브 영역. 개발필요
         </td>
         <td></td>
       </tr>

@@ -400,6 +400,7 @@ import regiclassRegisterBigdata from '~workplace/regiclass/regiclass_register_bi
 import regiclassRegisterBigdata02 from '~workplace/regiclass/regiclass_register_bigdata_02'
 import regiclassRegisterBigdataPro from '~workplace/regiclass/regiclass_register_bigdata_pro'
 import regiclassRegisterAcademy from '~workplace/regiclass/regiclass_register_academy'
+import regiclassRegisterPhoto from '~workplace/regiclass/regiclass_register_photo'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -552,6 +553,8 @@ import AtormItemfactoryMultiple from '~workplace/atorm/Atorm_itemfactory_multipl
 import AtormItemfactoryOx from '~workplace/atorm/Atorm_itemfactory_ox'
 import AtormItemfactoryShort from '~workplace/atorm/Atorm_itemfactory_short'
 import AtormItemfactoryOldFilter from '~workplace/atorm/Atorm_itemfactory_old_filter'
+import AtormShortclip1 from '~workplace/atorm/Atorm_shortclip_1'
+import AtormShortclip2 from '~workplace/atorm/Atorm_shortclip_2'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -2582,6 +2585,11 @@ var rootRoutes = [
     component: regiclassRegisterAcademy
   },
   {
+    path: '/regiclass_register_photo',
+    name: 'regiclass_register_photo',
+    component: regiclassRegisterPhoto
+  },
+  {
     path: '/login_join_terms',
     name: 'login_join_terms',
     component: loginJoinTerms
@@ -3025,6 +3033,16 @@ var rootRoutes = [
     path: '/Atorm_itemfactory_old_filter',
     name: 'Atorm_itemfactory_old_filter',
     component: AtormItemfactoryOldFilter
+  },
+  {
+    path: '/Atorm_shortclip_1',
+    name: 'Atorm_shortclip_1',
+    component: AtormShortclip1
+  },
+  {
+    path: '/Atorm_shortclip_2',
+    name: 'Atorm_shortclip_2',
+    component: AtormShortclip2
   },
   {
     path: '/Eduperson_login',
