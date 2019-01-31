@@ -350,7 +350,7 @@
                                             <li>
                                                 <div class="download_detail border_clr1 done clr4 bottom-bd-x ">
                                                     <div class="icon_wrap">
-                                                        <span class="ico ebook_20"></span>
+                                                        <span class="ico ebook_28"></span>
                                                     </div>
                                                     <div class="txt_wrap">
                                                         <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 E-book / HTML5</p>
@@ -371,7 +371,7 @@
                                             <li>
                                                 <div class="download_detail border_clr1 done clr4">
                                                     <div class="icon_wrap">
-                                                        <span class="ico headphone_20"></span>
+                                                        <span class="ico headphone_28 "></span>
                                                     </div>
                                                     <div class="txt_wrap">
                                                         <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
@@ -461,9 +461,9 @@
 
                 <ul class="multiList type2">
                     <li>
-                        <div class="download_detail border_clr1 done clr4">
+                        <div class="download_detail done">
                             <div class="icon_wrap">
-                                <span class="ico headphone_20"></span>
+                                <span class="ico play_28"></span>
                             </div>
                             <div class="txt_wrap">
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>

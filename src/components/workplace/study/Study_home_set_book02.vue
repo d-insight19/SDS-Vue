@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery courseware pd70" style="background:#f2f2f2">   
+      <div id="container" class="mediaquery courseware book pd70" style="background:#f2f2f2">   
         
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">          
@@ -234,253 +234,172 @@
             <div class="inner pt0">
                 
                 <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_15 mono_80 fwb dib">차시별</p>
+                    <p class="font_15 mono_80 fwb dib">전체보기</p>
                     <p class="fr">
-                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
-                        <span class="ico download"></span>
+                        <span class="ico filter" style="position:static;"></span>
                     </p>                    
                 </div>
                 <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
-                <!-- list -->
                 <ul class="multiList type2">
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 한 줄</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
+                                        <span class="mr6">학습완료</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
                     </li>
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span v-if="play" class="ico play_28" :class="{ book_28 : book}" ></span>
+                                <span v-else-if="book" class="ico book_28" :class="{ play_28 : play}" ></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
+                                        <span class="mr6">학습완료</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
                     </li>
-                    <li class="open">
-                        <div class="download_detail border_clr1 clr1 wh">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr6">3차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li>
-                                        <span class="ico check_14 wh"></span>
-                                        <span class="wh">진행중</span>
-                                        <span class="wh mono_65">1/4</span>
-                                    </li>
-                                    <li>
-                                        <span class="ico time wh"></span>
-                                        <span class="wh">12:45</span><span class="wh">/</span><span class="wh mono_65">23:43</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="ico accordion_arrow wh_up"></span>
-                        </div>
-                        
-                            
-                            <ul>
-                                <li class="open">
-                                    <div class="sub_content">
-                                        <p class="sub_content_title border_clr1  color_clr1 clr4">변수와 데이터 타입</p>
-                                        <!-- list -->
-                                        <ul class="multiList type2">
-                                            <li>
-                                                <div class="download_detail border_clr1 clr4 done">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico play_28"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico check_14"></span>
-                                                                <span>학습완료</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>                                                    
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 done clr3">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico play_28"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico ongoing_16"></span>
-                                                                <span>진행중</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 done clr4 bottom-bd-x ">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico ebook_20"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 E-book / HTML5</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico ongoing_16"></span>
-                                                                <span>진행중</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- //list -->
-                                        <p class="sub_content_title border_clr1 color_clr1 clr4">변수와 데이터 타입</p>
-                                        <!-- list -->
-                                        <ul class="multiList type2">
-                                            <li>
-                                                <div class="download_detail border_clr1 done clr4">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico headphone_20"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico complete_14"></span>
-                                                                <span>미진행</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail clr4 border_clr1">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico play_28"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico locked_16"></span>
-                                                                <span>학습불가</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- //list -->
-                                    </div>
-                                </li>
-                            </ul>
-                            <!--//inner list -->
-                    </li>
-                    
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">4차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-                                        <span>1/4</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
+                                        <span class="mr6">진행중</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
                     </li>
-                </ul>
-
-                <p class="label-tit-18 mt26 ">데이터 특성 알아보기</p>
-
-                <ul class="multiList type2">
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span v-if="play" class="ico play_28" :class="{ book_28 : book}" ></span>
+                                <span v-else-if="book" class="ico book_28" :class="{ play_28 : play}" ></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">1차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico ongoing_16"></span>
+                                        <span class="mr6">진행중</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>                                                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
+                            <div class="txt_wrap">
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico complete_14"></span>
-                                        <span>미진행</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
+                                        <span class="mr6">미진행</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
                     </li>
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span v-if="play" class="ico play_28" :class="{ book_28 : book}" ></span>
+                                <span v-else-if="book" class="ico book_28" :class="{ play_28 : play}" ></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">2차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico complete_14"></span>
+                                        <span class="mr6">미진행</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>                                                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
+                            <div class="txt_wrap">
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico lock_16"></span>
-                                        <span>학습불가</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
+                                        <span class="mr6">학습불가</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span v-if="play" class="ico play_28" :class="{ book_28 : book}" ></span>
+                                <span v-else-if="book" class="ico book_28" :class="{ play_28 : play}" ></span>
+                            </div>
+                            <div class="txt_wrap">
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico lock_16"></span>
+                                        <span class="mr6">학습불가</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>                                                    
+                        </div>
                     </li>
                 </ul>
-                <!-- 리스트끝 -->                
+
 
             </div>
           </div>
@@ -525,6 +444,8 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
+        play: true,
+        book: false,
         active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수

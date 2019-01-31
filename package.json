@@ -5,7 +5,7 @@
   "author": "FDP",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --open --config build/webpack.dev.conf.js",
+    "dev": "node --max_old_space_size=8000 node_modules/webpack-dev-server/bin/webpack-dev-server.js  --inline --progress --config build/webpack.dev.conf.js",
     "stg": "node build/build.js stage",
     "prd": "node build/build.js production",
     "stg_off": "node build/build.js stage offline",

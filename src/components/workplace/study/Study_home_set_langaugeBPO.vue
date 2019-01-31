@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery courseware pd70" style="background:#f2f2f2">   
+      <div id="container" class="mediaquery courseware bpo pd70" >   
         
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">          
@@ -29,59 +29,10 @@
             </div> -->
 
             
-            <!-- s: 동영상 -->
-            <!-- s: 동영상 -->
-            <div class="player_wrap">
-                <div class="player_inner">
-                    <div id="contents"></div>
-
-                    <!--  s: 연관 콘텐츠 -->
-                    <div class="movie_info_list_wrap" style="display:none;">
-                        <div class="movie_info_list">
-                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
-                            <ul>
-                                <li v-for="(item, index) in relatedVideoList" :key="index">
-                                    <a href="#"></a>
-                                    <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li> 
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- e: 연관 콘텐츠 -->
-
-                    <!-- s: 볼륨영역 -->
-                    <div class="volume_wrap" style="display:none;">
-                        <div class="volume_left">
-                            <div class="inner"></div>
-                            <div class="icon_wrap">
-                                <span class="light_icon"></span>
-                                <span class="light_value">75</span>
-                            </div>                            
-                        </div>
-                        <div class="volume_right">
-                            <div class="inner"></div>
-                            <div class="icon_wrap">
-                                <span class="volume_icon"></span>
-                                <span class="volume_value">65</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  e: 볼륨영역 -->
-
-                    <!-- s: double 텝 영역 -->
-                    <div class="tap_wrap" style="display:none;">
-                        <div class="half_left">
-                            <div class="inner"></div>
-                            <div class="inner_ripple"></div>
-                        </div>
-                        <div class="half_right">
-                            <div class="inner"></div>
-                            <div class="inner_ripple"></div>
-                        </div>
-                    </div>
-                    <!--  e: double 텝 영역 -->
-
+                <div class="img_wrap">
+                    <div class="img_bg"></div>
                 </div>
+            
                 <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
@@ -161,8 +112,6 @@
                     </div>
                 </div>
                 <!-- e: btm_subtitle_area -->
-            </div>
-            <!-- e: 동영상-->
 
             <div class="hide_header">
 
@@ -177,8 +126,11 @@
                         <p class="multiline line2">SPRINT - 구글 벤처스의 5일만에 기획부터 실행까지 끝내는 법(참고도서제공)</p>
                     </div>
                     <p class="study_date">2018.09.10 - 2018.10.10</p>
-
-                    <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
+                    <div class="ico_wrap">
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">학습하기
+                            <span class="ico next_16 wh"></span></span></label>
+                        <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
+                    </div>                   
                 </div>
 
                 <div class="study_title_detail" v-show="detail_show">
@@ -230,258 +182,119 @@
 
         <div id="content" class="etc" >
         
-          <div class="cell">
+            <div class="cell">
             <div class="inner pt0">
+            
+                <p class="label-tit-18 mt22 mb10">일정표</p>                
                 
-                <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_15 mono_80 fwb dib">차시별</p>
-                    <p class="fr">
-                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
-                        <span class="ico download"></span>
-                    </p>                    
-                </div>
-                <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
-
-                <!-- list -->
-                <ul class="multiList type2">
-                    <li>
-                        <div class="download_detail">
+                    <ul class="ulList type4">
+                        <li>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 한 줄</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                    <li>
-                        <div class="download_detail">
+                                <p class="icon_txt color_clr3">1일차</p>
+                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <dl class="info">
+                                    <dd class="pipe_wrap">
+                                        <span>시간</span>
+                                        <span class="mono_65">2018.09.06</span>
+                                        <span class="mono_65">10:00 - 11:00</span>
+                                    </dd>
+                                    <dd class="">
+                                        <span>장소</span>
+                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
+                                    </dd>
+                                </dl>
+                            </div>                            
+                        </li>
+                        <li>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
+                                <p class="icon_txt color_clr3">2일차</p>
+                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <dl class="info">
+                                    <dd class="pipe_wrap">
+                                        <span>시간</span>
+                                        <span class="mono_65">2018.09.06</span>
+                                        <span class="mono_65">10:00 - 11:00</span>
+                                        <span class="mono_65">휴강</span>
+                                    </dd>
+                                    <dd class="">
+                                        <span>장소</span>
+                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
+                                    </dd>
+                                </dl>
                             </div>
-                        </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                    <li class="open">
-                        <div class="download_detail border_clr1 clr1 wh">
+                        </li>
+                        <li>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr6">3차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li>
-                                        <span class="ico check_14 wh"></span>
-                                        <span class="wh">진행중</span>
-                                        <span class="wh mono_65">1/4</span>
-                                    </li>
-                                    <li>
-                                        <span class="ico time wh"></span>
-                                        <span class="wh">12:45</span><span class="wh">/</span><span class="wh mono_65">23:43</span>
-                                    </li>
-                                </ul>
+                                <p class="icon_txt color_clr3">3일차</p>
+                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <dl class="info">
+                                    <dd class="pipe_wrap">
+                                        <span>시간</span>
+                                        <span class="mono_65">2018.09.06</span>
+                                        <span class="mono_65">10:00 - 11:00</span>
+                                        <span class="mono_65">보강</span>
+                                    </dd>
+                                    <dd class="">
+                                        <span>장소</span>
+                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
+                                    </dd>
+                                </dl>
                             </div>
-                            <span class="ico accordion_arrow wh_up"></span>
-                        </div>
-                        
-                            
-                            <ul>
-                                <li class="open">
-                                    <div class="sub_content">
-                                        <p class="sub_content_title border_clr1  color_clr1 clr4">변수와 데이터 타입</p>
-                                        <!-- list -->
-                                        <ul class="multiList type2">
-                                            <li>
-                                                <div class="download_detail border_clr1 clr4 done">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico play_28"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico check_14"></span>
-                                                                <span>학습완료</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>                                                    
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 done clr3">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico play_28"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico ongoing_16"></span>
-                                                                <span>진행중</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 done clr4 bottom-bd-x ">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico ebook_20"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 E-book / HTML5</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico ongoing_16"></span>
-                                                                <span>진행중</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- //list -->
-                                        <p class="sub_content_title border_clr1 color_clr1 clr4">변수와 데이터 타입</p>
-                                        <!-- list -->
-                                        <ul class="multiList type2">
-                                            <li>
-                                                <div class="download_detail border_clr1 done clr4">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico headphone_20"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico complete_14"></span>
-                                                                <span>미진행</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail clr4 border_clr1">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico play_28"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico locked_16"></span>
-                                                                <span>학습불가</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- //list -->
-                                    </div>
-                                </li>
-                            </ul>
-                            <!--//inner list -->
-                    </li>
-                    
-                    <li>
-                        <div class="download_detail">
+                        </li>
+                        <li>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">4차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-                                        <span>1/4</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
+                                <p class="icon_txt color_clr3">4일차</p>
+                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <dl class="info">
+                                    <dd class="pipe_wrap">
+                                        <span>시간</span>
+                                        <span class="mono_65">2018.09.06</span>
+                                        <span class="mono_65">10:00 - 11:00</span>
+                                        <span class="mono_65">휴강</span>
+                                    </dd>
+                                    <dd class="">
+                                        <span>장소</span>
+                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
+                                    </dd>
+                                </dl>
                             </div>
-                        </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                </ul>
-
-                <p class="label-tit-18 mt26 ">데이터 특성 알아보기</p>
-
-                <ul class="multiList type2">
-                    <li>
-                        <div class="download_detail">
+                        </li>
+                        <li>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">1차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico complete_14"></span>
-                                        <span>미진행</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
+                                <p class="icon_txt color_clr3">5일차</p>
+                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <dl class="info">
+                                    <dd class="pipe_wrap">
+                                        <span>시간</span>
+                                        <span class="mono_65">2018.09.06</span>
+                                        <span class="mono_65">10:00 - 11:00</span>
+                                        <span class="mono_65">보강</span>
+                                    </dd>
+                                    <dd class="">
+                                        <span>장소</span>
+                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
+                                    </dd>
+                                </dl>
                             </div>
-                        </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                    <li>
-                        <div class="download_detail">
+                        </li>
+                        <li>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">2차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico lock_16"></span>
-                                        <span>학습불가</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
+                                <p class="icon_txt color_clr3">6일차</p>
+                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <dl class="info">
+                                    <dd class="pipe_wrap">
+                                        <span>시간</span>
+                                        <span class="mono_65">2018.09.06</span>
+                                        <span class="mono_65">10:00 - 11:00</span>
+                                    </dd>
+                                    <dd class="">
+                                        <span>장소</span>
+                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
+                                    </dd>
+                                </dl>
                             </div>
-                        </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                </ul>
-                <!-- 리스트끝 -->                
-
+                        </li>
+                    </ul>
             </div>
           </div>
 
@@ -525,6 +338,8 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
+        play: true,
+        book: false,
         active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수

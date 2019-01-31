@@ -129,6 +129,13 @@ import StudyHomeCoursewareModule01 from '~workplace/study/Study_home_courseware_
 import StudyHomeCoursewareModule02 from '~workplace/study/Study_home_courseware_module_02'
 import StudyHomeCoursewareLoso from '~workplace/study/Study_home_courseware_loso'
 import StudyHomeMoocOpen from '~workplace/study/Study_home_mooc_open'
+import StudyHomeMoocClose from '~workplace/study/Study_home_mooc_close'
+import StudyHomeSetBook from '~workplace/study/Study_home_set_book'
+import StudyHomeSetBook02 from '~workplace/study/Study_home_set_book02'
+import StudyHomeSetPhonelanguage from '~workplace/study/Study_home_set_phonelanguage'
+import StudyHomeSetLanguageBPO from '~workplace/study/Study_home_set_langaugeBPO'
+import StudyHomeSetQuarterSurveyDo from '~workplace/study/Study_home_set_quarter_survey_do'
+import StudyHomeSetQuarterEmphasis from '~workplace/study/Study_home_set_quarter_emphasis'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -393,6 +400,7 @@ import regiclassRegisterBigdata from '~workplace/regiclass/regiclass_register_bi
 import regiclassRegisterBigdata02 from '~workplace/regiclass/regiclass_register_bigdata_02'
 import regiclassRegisterBigdataPro from '~workplace/regiclass/regiclass_register_bigdata_pro'
 import regiclassRegisterAcademy from '~workplace/regiclass/regiclass_register_academy'
+import regiclassRegisterPhoto from '~workplace/regiclass/regiclass_register_photo'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -541,6 +549,14 @@ import Atormitemfactoryaudio1 from '~workplace/atorm/Atorm_itemfactory_audio1'
 import Atormitemfactoryaudio2 from '~workplace/atorm/Atorm_itemfactory_audio2'
 import Atormitemfactoryyoutube1 from '~workplace/atorm/Atorm_itemfactory_youtube1'
 import Atormitemfactoryyoutubesearch1 from '~workplace/atorm/Atorm_itemfactory_youtube_search1'
+import AtormItemfactoryMultiple from '~workplace/atorm/Atorm_itemfactory_multiple'
+import AtormItemfactoryOx from '~workplace/atorm/Atorm_itemfactory_ox'
+import AtormItemfactoryShort from '~workplace/atorm/Atorm_itemfactory_short'
+import AtormItemfactoryOldFilter from '~workplace/atorm/Atorm_itemfactory_old_filter'
+import AtormShortclip1 from '~workplace/atorm/Atorm_shortclip_1'
+import AtormShortclip2 from '~workplace/atorm/Atorm_shortclip_2'
+import AtormELearningBasic1 from '~workplace/atorm/Atorm_e-learning_basic_1'
+import AtormELearningBasic2 from '~workplace/atorm/Atorm_e-learning_basic_2'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -1250,6 +1266,41 @@ var rootRoutes = [
     path: '/Study_home_mooc_open',
     name: 'Study_home_mooc_open',
     component: StudyHomeMoocOpen
+  },
+  {
+    path: '/Study_home_mooc_close',
+    name: 'Study_home_mooc_close',
+    component: StudyHomeMoocClose
+  },
+  {
+    path: '/Study_home_set_book',
+    name: 'Study_home_set_book',
+    component: StudyHomeSetBook
+  },
+  {
+    path: '/Study_home_set_book02',
+    name: 'Study_home_set_book02',
+    component: StudyHomeSetBook02
+  },
+  {
+    path: '/Study_home_set_phonelanguage',
+    name: 'Study_home_set_phonelanguage',
+    component: StudyHomeSetPhonelanguage
+  },
+  {
+    path: '/Study_home_set_langaugeBPO',
+    name: 'Study_home_set_langaugeBPO',
+    component: StudyHomeSetLanguageBPO
+  },
+  {
+    path: '/Study_home_set_quarter_survey_do',
+    name: 'Study_home_set_quarter_survey_do',
+    component: StudyHomeSetQuarterSurveyDo
+  },
+  {
+    path: '/Study_home_set_quarter_emphasis',
+    name: 'Study_home_set_quarter_emphasis',
+    component: StudyHomeSetQuarterEmphasis
   },
   {
     path: '/Study_dictionary',
@@ -2536,6 +2587,11 @@ var rootRoutes = [
     component: regiclassRegisterAcademy
   },
   {
+    path: '/regiclass_register_photo',
+    name: 'regiclass_register_photo',
+    component: regiclassRegisterPhoto
+  },
+  {
     path: '/login_join_terms',
     name: 'login_join_terms',
     component: loginJoinTerms
@@ -2959,6 +3015,46 @@ var rootRoutes = [
     path: '/Atorm_itemfactory_youtube_search1',
     name: 'Atorm_itemfactory_youtube_search1',
     component: Atormitemfactoryyoutubesearch1
+  },
+  {
+    path: '/Atorm_itemfactory_multiple',
+    name: 'Atorm_itemfactory_multiple',
+    component: AtormItemfactoryMultiple
+  },
+  {
+    path: '/Atorm_itemfactory_ox',
+    name: 'Atorm_itemfactory_ox',
+    component: AtormItemfactoryOx
+  },
+  {
+    path: '/Atorm_itemfactory_short',
+    name: 'Atorm_itemfactory_short',
+    component: AtormItemfactoryShort
+  },
+  {
+    path: '/Atorm_itemfactory_old_filter',
+    name: 'Atorm_itemfactory_old_filter',
+    component: AtormItemfactoryOldFilter
+  },
+  {
+    path: '/Atorm_shortclip_1',
+    name: 'Atorm_shortclip_1',
+    component: AtormShortclip1
+  },
+  {
+    path: '/Atorm_shortclip_2',
+    name: 'Atorm_shortclip_2',
+    component: AtormShortclip2
+  },
+  {
+    path: '/Atorm_e-learning_basic_1',
+    name: 'Atorm_e-learning_basic_1',
+    component: AtormELearningBasic1
+  },
+  {
+    path: '/Atorm_e-learning_basic_2',
+    name: 'Atorm_e-learning_basic_2',
+    component: AtormELearningBasic2
   },
   {
     path: '/Eduperson_login',

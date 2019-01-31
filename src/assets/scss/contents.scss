@@ -680,17 +680,20 @@
 
 // ATORM 승인요청리스트 디테일
 #container.atorm_confirmlist_detail .confirm_item_detail{margin:0px -18px}
-#container.atorm_confirmlist_detail .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;line-height: 58px;font-weight: 600;letter-spacing: -0.54px;color:#000;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li > span:first-child{line-height: 58px;font-weight: 600;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .num{font-family: 'Roboto'}
-#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum{display: block;width: 100px;height: 100px;}
-#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;position: relative;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum{display: block;width: 100px;height: 100px; position: relative;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .circle {position: absolute; padding:4px; right: 10px; bottom: 10px; border-radius: 100%; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(0,0,0,0.25);}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .circle .ico{display:block;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table{border-spacing: 0 10px}
-#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table td:nth-child(1){width:124px;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table td:nth-child(1){width:116px;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table tbody td{padding-top:10px}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table tbody tr:nth-child(1) td{padding-top:20px}
 #container.atorm_confirmlist_detail .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
@@ -817,6 +820,7 @@
 .pipe{display: inline-block; margin:0 6px; width: 1px; height: 10px; background-color:map-get($line_colors, B85);}
 .label-tit-2 {margin-bottom: 10px; font-size:map-get($font-size, font_16);line-height: 26px; letter-spacing: -0.48px;}
 .tb_wrap{ margin-bottom:16px; background:#f2f3f7; padding:20px; border-top: 1px solid #999999; border-bottom: 1px solid #999999;}
+.tb_wrap.type2{ border-top:0;border-bottom:0;}
 table td.sub-txt{ color:#000;}
 .in12_16{padding-left: 12px;text-indent: -16px;} // 글자 앞정렬 조정
 .in9_13{padding-left: 9px;text-indent: -13px;} // 글자 앞정렬 조정
@@ -851,7 +855,9 @@ table td.sub-txt{ color:#000;}
 .chip.color2 {border-color:map-get($contents_colors, type_2 ); color:map-get($contents_colors, type_2 );}
 .chip.color3 {border-color:map-get($contents_colors, type_3 ); color:map-get($contents_colors, type_3 );}
 .chip.color4 {border-color:map-get($contents_colors, type_4 ); color:map-get($contents_colors, type_4 );}
-.chip.color4 {border-color:map-get($contents_colors, type_5 ); color:map-get($contents_colors, type_5 );}
+.chip.color5 {border-color:map-get($contents_colors, type_5 ); color:map-get($contents_colors, type_5 );}
+
+.chip.b_color3{background-color:#4E51D4; border-color:transparent; color:white;}
 
 /*header 공통*/
 #header p.h-tit1{text-overflow: unset !important; white-space:unset !important;}
@@ -1522,28 +1528,56 @@ label.rdo .label{position: relative;}
 #container.courseware .multiList.type2 > li .action {position:absolute;bottom:18px;right:18px; font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
 #container.courseware .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
 #container.courseware .ico.accordion_arrow{width:20px;height:20px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat;}
+#container.courseware .ico.accordion_arrow.wh_down{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_down.png") no-repeat;}
 #container.courseware .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 #container.courseware .bot-wrap{background:white; padding:18px; margin-top:26px;}
 #container.courseware .wh{color:white;}
 
 // 모듈명이 있을때
-
-
 #container.courseware .label-tit-18 { font-weight:600; font-size: map-get($font_size, font_18); line-height:28px; letter-spacing:0.54px;}
 
 
 // home_courseware_LO/SO
-
 #container.courseware .sub_content{display:none;}
 #container.courseware .open .sub_content{display:block;}
 #container.courseware .sub_content .download_detail {border-bottom-width: 0px; border-top:1px solid map-get($line_colors,B89) !important; padding:20px 40px 20px 16px; margin-top:0px;}
 #container.courseware .sub_content .download_detail.bottom-bd-x {border-bottom:1px solid map-get($line_colors,B89) !important; }
 #container.courseware .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
-#container.courseware .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 9px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
-#container.courseware .open .ico.accordion_arrow.wh{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_up.png") no-repeat;}
-
+#container.courseware .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 15px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
+#container.courseware .open .ico.accordion_arrow.wh_up{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_up.png") no-repeat;}
 #container.courseware .clr4 {background-color:#f2f3f7 !important;}
 #container.courseware .clr3 {background-color:#a3a9ff!important;}
+
+
+// home_courseware_LO/SO
+#container.courseware.book .sub_content .download_detail {padding:16px 16px 20px 20px;}
+
+
+// set_book
+#container.courseware .img_wrap .img_bg{background: url("../img/img_opinion_bg.png") bottom center no-repeat; background-size:cover; width:100%; height:152px}
+
+
+
+
+// set_phonelanguage
+#container.courseware.phone .ico_wrap {position: relative;}
+#container.courseware.phone .ulList.type4 li{ height:auto;}
+#container.courseware.phone .ulList.type4 li .li-num{ font-family:'roboto'; font-size: map-get($font_size, font_16);float: left;margin-top: 2px;}
+#container.courseware.phone .ulList.type4 li .li-txt{padding-left:31px; text-indent:-2px;  font-size: map-get($font_size, font_15); letter-spacing:-0.045em; color:rgba(0,0,0,0.8)}
+#container.courseware.phone .pipe_wrap span:nth-last-child(1)::before{content:''; border-left:1px solid #d9d9d9;height: 10px;margin: 0 6px;display: inline-block;}
+#container.courseware.phone .sub_content .study_title_wrap {padding:22px 18px 13px 18px;}
+
+
+// set_languageBPO
+#container.courseware.bpo .ulList.type4 li{ height:auto;}
+#container.courseware.bpo .ulList.type4 li .li-num{ font-family:'roboto'; font-size: map-get($font_size, font_16);float: left;margin-top: 2px;}
+#container.courseware.bpo .ulList.type4 li .li-txt{padding-left:31px; text-indent:-2px;  font-size: map-get($font_size, font_15); letter-spacing:-0.045em; color:rgba(0,0,0,0.8)}
+#container.courseware.bpo .ulList.type4 li .li-txt-2{font-size: map-get($font_size, font_15); letter-spacing:-0.045em; color:rgba(0,0,0,0.8)}
+#container.courseware.bpo .txt_wrap .title {font-size: map-get($font_size, font_16); letter-spacing: -0.048em;font-weight:500; }
+
+
+
+#container.courseware.surveydo .label-tit-18{}
 
 
 
@@ -2361,7 +2395,6 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .couponList .in .detail .title {font-size: map-get($font_size, font_16); font-weight: 500; text-overflow: ellipsis; width: inherit; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden; -webkit-line-clamp: 2;}
 .MySpace .couponList .in .detail .term {font-size: map-get($font_size, font_13); color:map-get($mono_colors, mono_65);}
 
-.MySpace .btB89 {border-top: 1px solid map-get($line_colors , B89);}
 .MySpace .radioList li{margin-bottom:10px;}
 
 //keyword
@@ -2383,3 +2416,9 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .regiclass dt{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_100); width: 70px; display: table-cell; font-weight: 500;}
 .regiclass dd{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_80); display: table-cell;}
 .regiclass .underline {border-bottom: 1px solid #999; padding-bottom: 10px;}
+
+// ATORM
+.atorm .labelChk .label {width:100%;}
+.atorm .w80List li {width:80px; display:inline-block;}
+.atorm_confirmlist_detail .fixTab {display:table; width:100%;}
+.atorm_confirmlist_detail .fixTab li {display:table-cell;}

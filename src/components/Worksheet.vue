@@ -1792,8 +1792,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_multiple</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_multiple' }">
+            Atorm_itemfactory_multiple
           </router-link>
         </td>
         <td></td>
@@ -1809,8 +1809,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_ox</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_ox' }">
+            Atorm_itemfactory_ox
           </router-link>
         </td>
         <td></td>
@@ -1826,8 +1826,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_short</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_short' }">
+            Atorm_itemfactory_short
           </router-link>
         </td>
         <td></td>
@@ -1843,8 +1843,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.01._Item    factory_old_filter</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_old_filter' }">
+            Atorm_itemfactory_old_filter
           </router-link>
         </td>
         <td></td>
@@ -1915,8 +1915,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.03._short    clip</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_shortclip_1' }">
+            Atorm_shortclip_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_shortclip_2' }">
+            Atorm_shortclip_2
           </router-link>
         </td>
         <td></td>
@@ -1932,8 +1936,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_basic</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_basic_1' }">
+            Atorm_e-learning_basic_1
+          </router-link>
+          <router-link :to="{ name: 'Atorm_e-learning_basic_2' }">
+            Atorm_e-learning_basic_2
           </router-link>
         </td>
         <td></td>
@@ -4609,8 +4616,12 @@
         <td>　</td>
         <td class="textL">05.Study_01.06.home_set_book</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_book' }">
+            Study_home_set_book
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_home_set_book02' }">
+            Study_home_set_book02
           </router-link>
         </td>
         <td></td>
@@ -4626,8 +4637,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.07.home_set_phonelangauge</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_phonelanguage' }">
+            Study_home_set_phonelanguage
           </router-link>
         </td>
         <td></td>
@@ -4643,8 +4654,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.08.home_set_langaugeBPO</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_langaugeBPO' }">
+            Study_home_set_langaugeBPO
           </router-link>
         </td>
         <td></td>
@@ -4660,8 +4671,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.09.home_set_quarter_emphasis</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_quarter_emphasis' }">
+            Study_home_set_quarter_emphasis
           </router-link>
         </td>
         <td></td>
@@ -4677,8 +4688,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.10.home_set_quarter_survey</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_quarter_survey_do' }">
+            Study_home_set_quarter_survey_do
           </router-link>
         </td>
         <td></td>
@@ -7204,9 +7215,10 @@
         <td>　</td>
         <td class="textL">06.regiclass_04.03.register_photo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_register_photo' }">
+            regiclass_register_photo
           </router-link>
+          네이티브 영역. 개발필요
         </td>
         <td></td>
       </tr>
@@ -7224,6 +7236,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          네이티브 영역. 개발필요
         </td>
         <td></td>
       </tr>
@@ -9124,12 +9137,12 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist</td>
+        <td class="textL">14.BPO_01.01.subjectlist_01</td>
         <td>
           <router-link :to="{ name: '' }">
             
           </router-link>
-          질의사항
+          
         </td>
         <td></td>
       </tr>
