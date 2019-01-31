@@ -47,11 +47,11 @@
                 <ul class="ulList type1 dif">
                     <li>
                         <strong class="label-tit require_mark">받는분</strong>
-                        <slp-text-field placeholder="정해민" ></slp-text-field>
+                        <slp-text-field error message="test error" placeholder="정해민" ></slp-text-field>
                     </li>   
                     <li>
                         <strong class="label-tit require_mark">연락처</strong>
-                        <slp-text-field placeholder="01029382747" ></slp-text-field>
+                        <slp-text-field error message="test error" placeholder="01029382747" ></slp-text-field>
                     </li>              
                     <li>
                         <strong class="label-tit">주소</strong>
@@ -59,12 +59,12 @@
                             <ul class="addrInt">
                                 <li>
                                     <div class="postCode infoChk">
-                                        <slp-text-field placeholder="926301"></slp-text-field>
+                                        <slp-text-field  error message="test error" placeholder="926301"></slp-text-field>
                                         <button type="button" class="btn sm">우편번호</button>
                                     </div>
                                 </li>
-                                <li><slp-text-field placeholder="서울특별시 강남구 테헤란로 212"></slp-text-field></li>
-                                <li><slp-text-field placeholder="상록회관 1층 104호"></slp-text-field></li>
+                                <li><slp-text-field error message="test error" placeholder="서울특별시 강남구 테헤란로 212"></slp-text-field></li>
+                                <li><slp-text-field error message="test error" placeholder="상록회관 1층 104호"></slp-text-field></li>
                             </ul>
                         </div>
                     </li>
@@ -91,7 +91,7 @@
 
 <script>
 export default {
-  name: 'regiclass_register_basicinfo_add_02',
+  name: 'regiclass_register_book',
   /* vue lifecycle */
   created () {
   },

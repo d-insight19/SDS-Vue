@@ -128,6 +128,9 @@ import Loginlogincorporationphone3 from '~workplace/login/Login_login_corporatio
 import StudyHomeCoursewareModule01 from '~workplace/study/Study_home_courseware_module_01'
 import StudyHomeCoursewareModule02 from '~workplace/study/Study_home_courseware_module_02'
 import StudyHomeCoursewareLoso from '~workplace/study/Study_home_courseware_loso'
+import StudyHomeMoocOpen from '~workplace/study/Study_home_mooc_open'
+import StudyHomeMoocClose from '~workplace/study/Study_home_mooc_close'
+import StudyHomeSetBook from '~workplace/study/Study_home_set_book'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -540,6 +543,10 @@ import Atormitemfactoryaudio1 from '~workplace/atorm/Atorm_itemfactory_audio1'
 import Atormitemfactoryaudio2 from '~workplace/atorm/Atorm_itemfactory_audio2'
 import Atormitemfactoryyoutube1 from '~workplace/atorm/Atorm_itemfactory_youtube1'
 import Atormitemfactoryyoutubesearch1 from '~workplace/atorm/Atorm_itemfactory_youtube_search1'
+import AtormItemfactoryMultiple from '~workplace/atorm/Atorm_itemfactory_multiple'
+import AtormItemfactoryOx from '~workplace/atorm/Atorm_itemfactory_ox'
+import AtormItemfactoryShort from '~workplace/atorm/Atorm_itemfactory_short'
+import AtormItemfactoryOldFilter from '~workplace/atorm/Atorm_itemfactory_old_filter'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -1244,6 +1251,21 @@ var rootRoutes = [
     path: '/Study_home_courseware_loso',
     name: 'Study_home_courseware_loso',
     component: StudyHomeCoursewareLoso
+  },
+  {
+    path: '/Study_home_mooc_open',
+    name: 'Study_home_mooc_open',
+    component: StudyHomeMoocOpen
+  },
+  {
+    path: '/Study_home_mooc_close',
+    name: 'Study_home_mooc_close',
+    component: StudyHomeMoocClose
+  },
+  {
+    path: '/Study_home_set_book',
+    name: 'Study_home_set_book',
+    component: StudyHomeSetBook
   },
   {
     path: '/Study_dictionary',
@@ -2953,6 +2975,26 @@ var rootRoutes = [
     path: '/Atorm_itemfactory_youtube_search1',
     name: 'Atorm_itemfactory_youtube_search1',
     component: Atormitemfactoryyoutubesearch1
+  },
+  {
+    path: '/Atorm_itemfactory_multiple',
+    name: 'Atorm_itemfactory_multiple',
+    component: AtormItemfactoryMultiple
+  },
+  {
+    path: '/Atorm_itemfactory_ox',
+    name: 'Atorm_itemfactory_ox',
+    component: AtormItemfactoryOx
+  },
+  {
+    path: '/Atorm_itemfactory_short',
+    name: 'Atorm_itemfactory_short',
+    component: AtormItemfactoryShort
+  },
+  {
+    path: '/Atorm_itemfactory_old_filter',
+    name: 'Atorm_itemfactory_old_filter',
+    component: AtormItemfactoryOldFilter
   },
   {
     path: '/Eduperson_login',

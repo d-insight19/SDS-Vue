@@ -1792,8 +1792,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_multiple</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_multiple' }">
+            Atorm_itemfactory_multiple
           </router-link>
         </td>
         <td></td>
@@ -1809,8 +1809,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_ox</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_ox' }">
+            Atorm_itemfactory_ox
           </router-link>
         </td>
         <td></td>
@@ -1826,8 +1826,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item    factory_short</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_short' }">
+            Atorm_itemfactory_short
           </router-link>
         </td>
         <td></td>
@@ -1843,8 +1843,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.01._Item    factory_old_filter</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_old_filter' }">
+            Atorm_itemfactory_old_filter
           </router-link>
         </td>
         <td></td>
@@ -3929,7 +3929,7 @@
             MySpace_download_detail_edit
           </router-link>
         </td>
-        <td></td>
+        <td>20190130 수정</td>
       </tr>
       <tr>
       <td align="center">205</td>
@@ -4505,9 +4505,7 @@
           <router-link :to="{ name: 'Study_home_courseware_module_02' }">
             Study_home_courseware_module_02
           </router-link><br/>
-          <router-link :to="{ name: 'Study_home_courseware_loso' }">
-            Study_home_courseware_loso
-          </router-link>
+          
         </td>
         <td></td>
       </tr>
@@ -4522,8 +4520,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.01.home_courseware_LO/SO</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_courseware_loso' }">
+            Study_home_courseware_loso
           </router-link>
         </td>
         <td></td>
@@ -4539,8 +4537,11 @@
         <td>　</td>
         <td class="textL">05.Study_01.02.home_mooc</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_mooc_open' }">
+            Study_home_mooc_open
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_home_mooc_close' }">
+            Study_home_mooc_close
           </router-link>
         </td>
         <td></td>
@@ -4608,8 +4609,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.06.home_set_book</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_book' }">
+            Study_home_set_book
           </router-link>
         </td>
         <td></td>
@@ -7324,7 +7325,7 @@
             regiclass_register_book
           </router-link>
         </td>
-        <td></td>
+        <td>20190130 수정</td>
       </tr>
       <tr>
       <td align="center">401</td>
