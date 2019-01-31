@@ -9123,12 +9123,12 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">14.BPO_01.01.subjectlist</td>
+        <td class="textL">14.BPO_01.01.subjectlist_01</td>
         <td>
           <router-link :to="{ name: '' }">
             
           </router-link>
-          질의사항
+          
         </td>
         <td></td>
       </tr>
