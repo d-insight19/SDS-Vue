@@ -45,7 +45,7 @@
                                 </tr>  
                             </table>                           
                         </div>
-                        <slp-checkbox ><span @click="activate()">위 사항에 동의합니다.</span></slp-checkbox>
+                        <slp-checkbox  @input="activate()"><span >위 사항에 동의합니다.</span></slp-checkbox>
                         <!-- <div class="loginChk">
                             <label for="agree" class="labelChk">
                             <input id="agree" type="checkbox" class="chk" name="agree">
@@ -83,13 +83,12 @@ export default {
   /* vue data */
   data () {
     return {
-      active_el: false
+      active_el: true
     }
   },
   /* vue function */
   methods: {
     activate () {
-      console.log(this.active_el)
       this.active_el = !this.active_el
     }
   }

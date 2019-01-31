@@ -28,10 +28,61 @@
                 <div class="right blur"></div>
             </div> -->
 
-                <div class="img_wrap">
-                    <div class="img_bg"></div>
-                </div>
             
+            <!-- s: 동영상 -->
+            <!-- s: 동영상 -->
+            <div class="player_wrap">
+                <div class="player_inner">
+                    <div id="contents"></div>
+
+                    <!--  s: 연관 콘텐츠 -->
+                    <div class="movie_info_list_wrap" style="display:none;">
+                        <div class="movie_info_list">
+                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
+                            <ul>
+                                <li v-for="(item, index) in relatedVideoList" :key="index">
+                                    <a href="#"></a>
+                                    <p class="movie_tit multiline line2">{{item.title}}</p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- e: 연관 콘텐츠 -->
+
+                    <!-- s: 볼륨영역 -->
+                    <div class="volume_wrap" style="display:none;">
+                        <div class="volume_left">
+                            <div class="inner"></div>
+                            <div class="icon_wrap">
+                                <span class="light_icon"></span>
+                                <span class="light_value">75</span>
+                            </div>                            
+                        </div>
+                        <div class="volume_right">
+                            <div class="inner"></div>
+                            <div class="icon_wrap">
+                                <span class="volume_icon"></span>
+                                <span class="volume_value">65</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  e: 볼륨영역 -->
+
+                    <!-- s: double 텝 영역 -->
+                    <div class="tap_wrap" style="display:none;">
+                        <div class="half_left">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
+                        <div class="half_right">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
+                    </div>
+                    <!--  e: double 텝 영역 -->
+
+                </div>
+                <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
                         <div class="btm_subtitle_control">                                
@@ -110,6 +161,8 @@
                     </div>
                 </div>
                 <!-- e: btm_subtitle_area -->
+            </div>
+            <!-- e: 동영상-->
 
             <div class="hide_header">
 
@@ -211,7 +264,8 @@
                     <li>
                         <div class="download_detail  done">
                             <div class="icon_wrap">
-                                <span class="ico book_28"></span>
+                                <span v-if="play" class="ico play_28" :class="{ book_28 : book}" ></span>
+                                <span v-else-if="book" class="ico book_28" :class="{ play_28 : play}" ></span>
                             </div>
                             <div class="txt_wrap">
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
@@ -249,7 +303,8 @@
                     <li>
                         <div class="download_detail  done">
                             <div class="icon_wrap">
-                                <span class="ico book_28"></span>
+                                <span v-if="play" class="ico play_28" :class="{ book_28 : book}" ></span>
+                                <span v-else-if="book" class="ico book_28" :class="{ play_28 : play}" ></span>
                             </div>
                             <div class="txt_wrap">
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
@@ -287,7 +342,8 @@
                     <li>
                         <div class="download_detail  done">
                             <div class="icon_wrap">
-                                <span class="ico book_28"></span>
+                                <span v-if="play" class="ico play_28" :class="{ book_28 : book}" ></span>
+                                <span v-else-if="book" class="ico book_28" :class="{ play_28 : play}" ></span>
                             </div>
                             <div class="txt_wrap">
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
@@ -325,7 +381,8 @@
                     <li>
                         <div class="download_detail  done">
                             <div class="icon_wrap">
-                                <span class="ico book_28"></span>
+                                <span v-if="play" class="ico play_28" :class="{ book_28 : book}" ></span>
+                                <span v-else-if="book" class="ico book_28" :class="{ play_28 : play}" ></span>
                             </div>
                             <div class="txt_wrap">
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
@@ -387,6 +444,8 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
+        play: true,
+        book: false,
         active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수

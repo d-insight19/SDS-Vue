@@ -4612,6 +4612,10 @@
           <router-link :to="{ name: 'Study_home_set_book' }">
             Study_home_set_book
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_home_set_book02' }">
+            Study_home_set_book02
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -4626,8 +4630,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.07.home_set_phonelangauge</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_phonelanguage' }">
+            Study_home_set_phonelanguage
           </router-link>
         </td>
         <td></td>
@@ -4643,8 +4647,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.08.home_set_langaugeBPO</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_langaugeBPO' }">
+            Study_home_set_langaugeBPO
           </router-link>
         </td>
         <td></td>
