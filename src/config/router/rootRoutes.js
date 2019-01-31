@@ -27,7 +27,7 @@ import ComponentsReply from '~workplace/common_page/components_reply'
 import ComponentsBottomsheet from '~workplace/common_page/components_bottomsheet'
 import ComponentsSpinner from '~workplace/common_page/components_spinner'
 import ComponentsTextfieldSlp from '~workplace/common_page/components_textfield_slp'
-// import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
+import ComponentsFlowplayer from '~workplace/common_page/components_flowplayer'
 import ComponentsDropdown from '~workplace/common_page/components_dropdown'
 import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
@@ -696,11 +696,11 @@ var rootRoutes = [
     name: 'components_spinner',
     component: ComponentsSpinner
   },
-  // {
-  //   path: '/components_flowplayer',
-  //   name: 'components_flowplayer',
-  //   component: ComponentsFlowplayer
-  // },
+  {
+    path: '/components_flowplayer',
+    name: 'components_flowplayer',
+    component: ComponentsFlowplayer
+  },
   {
     path: '/components_dropdown',
     name: 'components_dropdown',

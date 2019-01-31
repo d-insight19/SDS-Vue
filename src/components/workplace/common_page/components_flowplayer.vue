@@ -1,5 +1,5 @@
 <template>
- <!-- eslint-disable -->
+  <!-- eslint-disable -->
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
@@ -14,21 +14,11 @@
 
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li class="on"><a href="#">학습현황</a></li>
-                    <li><a href="#">학습목차</a></li> 
-                    <li><a href="#">학습노트</a></li> 
-                    <li><a href="#">질문방</a></li> 
-                    <li><a href="#">설문조사</a></li>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">자료실</a></li>
-                    <li><a href="#">토론방</a></li>
-                    <li><a href="#">리플렉션노트</a></li>
-                    <li><a href="#">리마인더</a></li>
-                    <li><a href="#">용어사전</a></li>
-                    <li><a href="#">요약집</a></li>
-                    <li><a href="#">Quick Poll/Answer</a></li>
-                    <li><a href="#">1:1문의</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li class="on"><a href="#tab1">학습현황</a></li>
+                    <li><a href="#tab2">학습목차</a></li> 
+                    <li><a href="#tab3">학습노트</a></li> 
+                    <li><a href="#tab3">질문방</a></li> 
+                    <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
                 </ul>
             </div>
 
@@ -43,6 +33,20 @@
             <div class="player_wrap">
                 <div class="player_inner">
                     <div id="contents"></div>
+
+                    <!--  s: 연관 콘텐츠 -->
+                    <div class="movie_info_list_wrap" style="display:none;">
+                        <div class="movie_info_list">
+                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
+                            <ul>
+                                <li v-for="(item, index) in relatedVideoList" :key="index">
+                                    <a href="#"></a>
+                                    <p class="movie_tit multiline line2">{{item.title}}</p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- e: 연관 콘텐츠 -->
 
                     <!-- s: 볼륨영역 -->
                     <div class="volume_wrap" style="display:none;">
@@ -64,44 +68,21 @@
                     <!--  e: 볼륨영역 -->
 
                     <!-- s: double 텝 영역 -->
-                    <div class="tap_wrap" style="display:none;">
-                        <div class="half_left">
-                            <div class="inner"></div>
-                            <div class="inner_ripple"></div>
-                        </div>
-                        <div class="half_right">
-                            <div class="inner"></div>
-                            <div class="inner_ripple"></div>
-                        </div>
+                    <div class="tap_wrap">
+                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
+                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
+                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
+                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
+                          </div>
+                        </v-touch>                            
+                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
+                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
+                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
+                                <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
+                            </div>
+                        </v-touch>                            
                     </div>
                     <!--  e: double 텝 영역 -->
-
-                    <!-- s: 일반 콘텐츠일 경우 플레이 버튼 wrap -->
-                    <div class="content_play_wrap" style="display:none;">
-                        <div class="content_play_wrap_inner">
-                            <div class="fp-playWrap">
-                                <div class="fp-prevArrow">
-                                    <p class="fp_Icon_txt"></p>
-                                </div>
-                                <div class="fp-playIcon"></div>
-                                <div class="fp-pauseIcon">
-                                    <p class="fp_Icon_txt">1/10</p>
-                                </div>
-                                <div class="fp-replayIcon"></div>
-                                <div class="fp-startIcon">
-                                    <div class="startIcon">
-                                        <span class="playIcon"></span>
-                                        <span class="playTxt">학습하기</span>
-                                    </div>
-                                    <p class="fp_Icon_txt">1/10</p>
-                                </div>
-                                <div class="fp-nextArrow">
-                                    <p class="fp_Icon_txt"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- e: 일반 콘텐츠일 경우 플레이 버튼 wrap -->
 
                 </div>
                 <!-- s: btm_subtitle_area -->
@@ -281,6 +262,7 @@
             <div class="inner">
                 <p>내용1</p>
                 <p>내용2</p>
+                <p>내용3</p>
                 <p>내용4</p>
                 <p>내용5</p>
                 <p>내용6</p>
@@ -338,10 +320,30 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
+import Vue from 'vue'
+import VueTouch from 'vue-touch'
+
+VueTouch.registerCustomEvent('singletap', {
+  type: 'tap',
+  taps: 1,
+})
+
+VueTouch.registerCustomEvent('doubletap', {
+  type: 'tap',
+  taps: 2,
+})
+
+Vue.use(VueTouch, {name: 'v-touch'})
+
 export default {
   name: 'components_flowplayer',
   data () {
     return {
+        innerRipple: false,
+        halfRight: false,
+        halfLeft: false,
+        none: true,
+        left: true,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         relatedVideoList: [
@@ -408,6 +410,36 @@ export default {
   methods: {
     detail_toggle () {        
         this.detail_show = !this.detail_show;
+    },
+    prevTen() {
+        console.error("왼쪽");
+        this.halfRight = true
+        this.innerRipple = true
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_right').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfRight = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_right').css('display', 'block');
+            }, 600);       
+    },
+    nextTen() {
+        console.error("오른쪽");
+        this.halfLeft = true
+        this.innerRipple = true
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_left').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfLeft = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_left').css('display', 'block');
+            }, 600);       
     }
   },
   mounted () {
@@ -462,12 +494,6 @@ export default {
         }
 
         
-        $('.half_left').click(function(){
-            console.error("왼쪽");
-        });
-        $('.half_right').click(function(){
-            console.error("오른쪽");
-        });
 
         $('.fp-script , .script_close').click(function(){
             // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
@@ -478,6 +504,7 @@ export default {
 
         $('.fp-nextArrow').click(function()
         {
+            $('.half_right').css('display', 'block');
             console.error('다음 콘텐츠!')
         });
         $('.fp-prevArrow').click(function()
@@ -543,3 +570,21 @@ export default {
   }
 }
 </script>
+
+<style scoepd>
+.innerRipple {
+  display: none;
+}
+.halfRight {
+  display: none;
+}
+.halfLeft {
+  display: none;
+}
+.display {
+  display: block;
+}
+.none {
+  display: none;
+}
+</style>
