@@ -67,14 +67,14 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: double 텝 영역 -->
-                    <div class="tap_wrap">
+                    <!-- s: double 텝 영역  임시 display:none 처리 -->
+                    <div class="tap_wrap" style="display:none;">
                         <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
                           <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
                               <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
                               <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
                           </div>
-                        </v-touch>                            
+                        </v-touch>
                         <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
                             <div class="half_right" v-bind:class="{'halfRight': halfRight}">
                                 <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>

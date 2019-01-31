@@ -211,14 +211,6 @@ $brand_colors: (
   @include theme($key, $value);
 }
 
-// 컬러군 선택 
-// $select_color : 'brand_indigo';
-// $brand_color: map-get($brand_colors,$select_color);
-// $primary1: map-get($brand_color,primary1_color);
-// $primary2: map-get($brand_color,primary2_color);
-// $secondary1: map-get($brand_color,secondary1_color);
-// $secondary2: map-get($brand_color,secondary2_color);
-
 // 고정컬러 
 // ( 기능단위로 표현하며 고정컬러로 제공하는 것들 )
 $static_colors: (
