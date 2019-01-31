@@ -1936,8 +1936,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_basic</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_basic_1' }">
+            Atorm_e-learning_basic_1
+          </router-link>
+          <router-link :to="{ name: 'Atorm_e-learning_basic_2' }">
+            Atorm_e-learning_basic_2
           </router-link>
         </td>
         <td></td>

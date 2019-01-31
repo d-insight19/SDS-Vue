@@ -553,6 +553,8 @@ import AtormItemfactoryShort from '~workplace/atorm/Atorm_itemfactory_short'
 import AtormItemfactoryOldFilter from '~workplace/atorm/Atorm_itemfactory_old_filter'
 import AtormShortclip1 from '~workplace/atorm/Atorm_shortclip_1'
 import AtormShortclip2 from '~workplace/atorm/Atorm_shortclip_2'
+import AtormELearningBasic1 from '~workplace/atorm/Atorm_e-learning_basic_1'
+import AtormELearningBasic2 from '~workplace/atorm/Atorm_e-learning_basic_2'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -3031,6 +3033,16 @@ var rootRoutes = [
     path: '/Atorm_shortclip_2',
     name: 'Atorm_shortclip_2',
     component: AtormShortclip2
+  },
+  {
+    path: '/Atorm_e-learning_basic_1',
+    name: 'Atorm_e-learning_basic_1',
+    component: AtormELearningBasic1
+  },
+  {
+    path: '/Atorm_e-learning_basic_2',
+    name: 'Atorm_e-learning_basic_2',
+    component: AtormELearningBasic2
   },
   {
     path: '/Eduperson_login',
