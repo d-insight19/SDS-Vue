@@ -4664,8 +4664,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.09.home_set_quarter_emphasis</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_quarter_emphasis' }">
+            Study_home_set_quarter_emphasis
           </router-link>
         </td>
         <td></td>
@@ -4681,8 +4681,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.10.home_set_quarter_survey</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_quarter_survey_do' }">
+            Study_home_set_quarter_survey_do
           </router-link>
         </td>
         <td></td>

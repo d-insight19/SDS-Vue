@@ -297,7 +297,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <span class="ico accordion_arrow wh"></span>
+                            <span class="ico accordion_arrow wh_up"></span>
                         </div>
                         
                             

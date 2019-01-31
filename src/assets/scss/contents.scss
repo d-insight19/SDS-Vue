@@ -852,7 +852,9 @@ table td.sub-txt{ color:#000;}
 .chip.color2 {border-color:map-get($contents_colors, type_2 ); color:map-get($contents_colors, type_2 );}
 .chip.color3 {border-color:map-get($contents_colors, type_3 ); color:map-get($contents_colors, type_3 );}
 .chip.color4 {border-color:map-get($contents_colors, type_4 ); color:map-get($contents_colors, type_4 );}
-.chip.color4 {border-color:map-get($contents_colors, type_5 ); color:map-get($contents_colors, type_5 );}
+.chip.color5 {border-color:map-get($contents_colors, type_5 ); color:map-get($contents_colors, type_5 );}
+
+.chip.b_color3{background-color:#4E51D4; border-color:transparent; color:white;}
 
 /*header 공통*/
 #header p.h-tit1{text-overflow: unset !important; white-space:unset !important;}
@@ -1567,7 +1569,14 @@ label.rdo .label{position: relative;}
 #container.courseware.bpo .ulList.type4 li{ height:auto;}
 #container.courseware.bpo .ulList.type4 li .li-num{ font-family:'roboto'; font-size: map-get($font_size, font_16);float: left;margin-top: 2px;}
 #container.courseware.bpo .ulList.type4 li .li-txt{padding-left:31px; text-indent:-2px;  font-size: map-get($font_size, font_15); letter-spacing:-0.045em; color:rgba(0,0,0,0.8)}
+#container.courseware.bpo .ulList.type4 li .li-txt-2{font-size: map-get($font_size, font_15); letter-spacing:-0.045em; color:rgba(0,0,0,0.8)}
 #container.courseware.bpo .txt_wrap .title {font-size: map-get($font_size, font_16); letter-spacing: -0.048em;font-weight:500; }
+
+
+
+#container.courseware.surveydo .label-tit-18{}
+
+
 
 
 
