@@ -280,7 +280,7 @@
                         </div>
                         <span class="ico accordion_arrow"></span>
                     </li>
-                    <li class="open">
+                    <li class="">
                         <div class="download_detail border_clr1 clr1 wh">
                             <div class="txt_wrap">
                                 <p class="icon_txt color_clr6">N차시</p>
@@ -297,7 +297,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <span class="ico accordion_arrow wh"></span>
+                            <span class="ico accordion_arrow wh_down"></span>
                         </div>
                     </li>
                     
@@ -365,10 +365,10 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="open">
                         <div class="download_detail border_clr1">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="icon_txt color_clr3">1차시</p>
                                 <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
                                 <ul class="info">
                                     <li class="">
@@ -380,11 +380,9 @@
                                         <span>12:45</span>/<span class="mono_65">23:43</span>
                                     </li>
                                 </ul>
+                                <span class="ico accordion_arrow wh"></span>
                             </div>
                         </div>
-                        <span class="ico accordion_arrow wh"></span>
-
-                        
                             
                             <ul>
                                 <li class="open">

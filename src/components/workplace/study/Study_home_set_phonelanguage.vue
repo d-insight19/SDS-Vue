@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery courseware book pd70" style="background:#f2f2f2">   
+      <div id="container" class="mediaquery courseware phone pd70" >   
         
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">          
@@ -28,10 +28,12 @@
                 <div class="right blur"></div>
             </div> -->
 
+            
                 <div class="img_wrap">
                     <div class="img_bg"></div>
                 </div>
             
+                <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
                         <div class="btm_subtitle_control">                                
@@ -113,7 +115,7 @@
 
             <div class="hide_header">
 
-                <div class="study_title_wrap">
+                <div class="study_title_wrap" style="padding-bottom">
                     <div class="d-day_wrap">
                         <span class="d-day">D-29</span>
                         <div class="arm">
@@ -124,8 +126,11 @@
                         <p class="multiline line2">SPRINT - 구글 벤처스의 5일만에 기획부터 실행까지 끝내는 법(참고도서제공)</p>
                     </div>
                     <p class="study_date">2018.09.10 - 2018.10.10</p>
-
-                    <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
+                    <div class="ico_wrap">
+                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label" style="padding: 0 10px 0 16px;">학습하기<span class="ico next_16 wh" style="margin-top: -3px;
+    margin-left: 5px;" ></span></span></label>
+                        <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
+                    </div>                   
                 </div>
 
                 <div class="study_title_detail" v-show="detail_show">
@@ -177,173 +182,86 @@
 
         <div id="content" class="etc" >
         
-          <div class="cell">
+            <div class="cell">
             <div class="inner pt0">
+            
+                <p class="label-tit-18 mt22 mb10">평가 내역</p>
                 
-                <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_15 mono_80 fwb dib">전체보기</p>
-                    <p class="fr">
-                        <span class="ico filter" style="position:static;"></span>
-                    </p>                    
+                <p class="line01"></p>
+                <table style="margin:15px 0;">
+                    <tr>
+                        <td class="l-txt mb5">평가항목</td>
+                        <td class="r-txt">진도 (전화영어 출석률) 100% 반영</td>
+                    </tr>
+                    <tr>
+                        <td class="l-txt">수료기준</td>
+                        <td class="r-txt">진도 (전화영어 출석률) 70% 이상 시 수료 </td>
+                    </tr>
+                </table>
+                <div class="tb_wrap type2">
+                    <p class="mb10"><span class="ico warning"></span> 진도율 반영 안내</p>
+                    <p>진도율은 현지 센터와의 데이터 연동 시점에 따라 다소 차이가 있을 수 있습니다.정확한 진도율은 학습하기 버튼을 클릭하여 확인해주세요.</p>
                 </div>
-                <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
-
-                <ul class="multiList type2">
+                <p class="label-tit-18">목차</p>
+                <ul class="ulList type4">
                     <li>
-                        <div class="download_detail  done">
-                            <div class="icon_wrap">
-                                <span class="ico book_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico check_14"></span>
-                                        <span class="mr6">학습완료</span>
-                                        <span>
-                                            2018.01.01 - 2018.01.31
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>                                                    
-                        </div>
+                        <span class="fwb li-num">1</span>
+                        <p class="li-txt mono_80"> 전화외국어 목차 타이틀입니다. 전화외국어 목차 타이틀입니다.</p>
                     </li>
                     <li>
-                        <div class="download_detail  done">
-                            <div class="icon_wrap">
-                                <span class="ico book_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico check_14"></span>
-                                        <span class="mr6">학습완료</span>
-                                        <span>
-                                            2018.01.01 - 2018.01.31
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>                                                    
-                        </div>
+                        <span class="fwb li-num">2</span>
+                        <p class="li-txt mono_80"> 전화외국어 목차 타이틀입니다. 전화외국어 목차 타이틀입니다.</p>
                     </li>
                     <li>
-                        <div class="download_detail  done">
-                            <div class="icon_wrap">
-                                <span class="ico book_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico ongoing_16"></span>
-                                        <span class="mr6">진행중</span>
-                                        <span>
-                                            2018.01.01 - 2018.01.31
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>                                                    
-                        </div>
+                        <span class="fwb li-num">3</span>
+                        <p class="li-txt mono_80"> 전화외국어 목차 타이틀입니다. 전화외국어 목차 타이틀입니다.</p>
                     </li>
                     <li>
-                        <div class="download_detail  done">
-                            <div class="icon_wrap">
-                                <span class="ico book_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico ongoing_16"></span>
-                                        <span class="mr6">진행중</span>
-                                        <span>
-                                            2018.01.01 - 2018.01.31
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>                                                    
-                        </div>
+                        <span class="fwb li-num">4</span>
+                        <p class="li-txt mono_80"> 전화외국어 목차 타이틀입니다. 전화외국어 목차 타이틀입니다.</p>
                     </li>
                     <li>
-                        <div class="download_detail  done">
-                            <div class="icon_wrap">
-                                <span class="ico book_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico complete_14"></span>
-                                        <span class="mr6">미진행</span>
-                                        <span>
-                                            2018.01.01 - 2018.01.31
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>                                                    
-                        </div>
+                        <span class="fwb li-num">5</span>
+                        <p class="li-txt mono_80"> 전화외국어 목차 타이틀입니다. 전화외국어 목차 타이틀입니다.</p>
                     </li>
                     <li>
-                        <div class="download_detail  done">
-                            <div class="icon_wrap">
-                                <span class="ico book_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico complete_14"></span>
-                                        <span class="mr6">미진행</span>
-                                        <span>
-                                            2018.01.01 - 2018.01.31
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>                                                    
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download_detail  done">
-                            <div class="icon_wrap">
-                                <span class="ico book_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico lock_16"></span>
-                                        <span class="mr6">학습불가</span>
-                                        <span>
-                                            2018.01.01 - 2018.01.31
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>                                                    
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download_detail  done">
-                            <div class="icon_wrap">
-                                <span class="ico book_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico lock_16"></span>
-                                        <span class="mr6">학습불가</span>
-                                        <span>
-                                            2018.01.01 - 2018.01.31
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>                                                    
-                        </div>
+                        <span class="fwb li-num">6</span>
+                        <p class="li-txt mono_80"> 전화외국어 목차 타이틀입니다. 전화외국어 목차 타이틀입니다.</p>
                     </li>
                 </ul>
-
-
+                <p class="label-tit-18 mt26 mb10">유의사항</p>
+                <ul class="ulList type4">
+                    <li>
+                        <p class="in12_16 li-txt">・횟수 무제한 수업은 내가 원하는 시간을 직접 예약하여 수업 횟수 상관없이 학습을 할 수 있는 과정입니다.</p>
+                    </li>
+                    <li>
+                        <p class="in12_16 li-txt">・수업시작 20분전부터 24시간 이내 수업만 예약이 가능하며, 예약이 가능한 시간 순으로 보여집니다.</p>
+                    </li>
+                    <li>
+                        <p class="in12_16 li-txt">・수업 예약은 한번에 1개만 가능하며, 해당 수업이 종료된 이후 다음 수업을 예약할 수 있습니다. </p>
+                    </li>
+                    <li>
+                        <p class="in12_16 li-txt">・수업예약 취소는 수업 시작 20분전까지 가능합니다. </p>
+                    </li>
+                    <li>
+                        <p class="in12_16 li-txt">・수업시간의 50% 이상을 진행해야 출석으로 인정됩니다. (ex 10분 수업의 경우 5분 이상, 20분 수업의 경우 10분 이상) </p>
+                    </li>
+                    <li>
+                        <p class="in12_16 li-txt">・진도율은 결석과 상관없이 출석한 횟수 기준으로 최대 12회까지 계산됩니다. </p>
+                    </li>
+                    <li>
+                        <p class="in12_16 li-txt">・회사지원 과정의 경우 정해진 기간 내에 모든 수업이 진행되어야 하며 대리수강 적발 시 불이익이 있을 수 있습니다. </p>
+                    </li>
+                    <li>
+                        <p class="in12_16 li-txt">・한국,현지 공휴일에는 휴강입니다. </p>
+                    </li>
+                    <li>
+                        <p class="in12_16 li-txt">・해외수업의 경우 070 인터넷 전화로만 신청 및 수업이 가능합니다.(단, 현지 네트워크 사정에 따라 수시로 전화 수신에 문제가 발생할 수 있으며, 이 부분은 별도로 보상처리가 불가한 점 양해 부탁드립니다.) </p>
+                    </li>
+                    <li>
+                        <p class="in12_16 li-txt">・학습창 내"수업방법/규정" 버튼을 클릭하셔서 자세한 내용 한번 더 확인해주세요. </p>
+                    </li>                   
+                </ul>
             </div>
           </div>
 
@@ -387,6 +305,8 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
+        play: true,
+        book: false,
         active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
