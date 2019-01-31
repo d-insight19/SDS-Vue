@@ -134,6 +134,8 @@ import StudyHomeSetBook from '~workplace/study/Study_home_set_book'
 import StudyHomeSetBook02 from '~workplace/study/Study_home_set_book02'
 import StudyHomeSetPhonelanguage from '~workplace/study/Study_home_set_phonelanguage'
 import StudyHomeSetLanguageBPO from '~workplace/study/Study_home_set_langaugeBPO'
+import StudyHomeSetQuarterSurveyDo from '~workplace/study/Study_home_set_quarter_survey_do'
+import StudyHomeSetQuarterEmphasis from '~workplace/study/Study_home_set_quarter_emphasis'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -1289,6 +1291,16 @@ var rootRoutes = [
     path: '/Study_home_set_langaugeBPO',
     name: 'Study_home_set_langaugeBPO',
     component: StudyHomeSetLanguageBPO
+  },
+  {
+    path: '/Study_home_set_quarter_survey_do',
+    name: 'Study_home_set_quarter_survey_do',
+    component: StudyHomeSetQuarterSurveyDo
+  },
+  {
+    path: '/Study_home_set_quarter_emphasis',
+    name: 'Study_home_set_quarter_emphasis',
+    component: StudyHomeSetQuarterEmphasis
   },
   {
     path: '/Study_dictionary',
