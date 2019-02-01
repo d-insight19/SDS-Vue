@@ -34,22 +34,8 @@
                 <div class="player_inner">
                     <div id="contents"></div>
 
-                    <!--  s: 연관 콘텐츠 -->
-                    <div class="movie_info_list_wrap" style="display:none;">
-                        <div class="movie_info_list">
-                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
-                            <ul>
-                                <li v-for="(item, index) in relatedVideoList" :key="index">
-                                    <a href="#"></a>
-                                    <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li> 
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- e: 연관 콘텐츠 -->
-
-                    <!-- s: 볼륨영역 -->
-                    <div class="volume_wrap" style="display:none;">
+                    <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
+                    <div class="volume_wrap" style="display:none;pointer-events:none">
                         <div class="volume_left">
                             <div class="inner"></div>
                             <div class="icon_wrap">
@@ -67,8 +53,8 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: double 텝 영역  임시 display:none 처리 -->
-                    <div class="tap_wrap" style="display:none;">
+                    <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
+                    <div class="tap_wrap" style="display:none;pointer-events:none">
                         <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
                           <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
                               <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
