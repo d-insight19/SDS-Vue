@@ -70,8 +70,6 @@
                                 </div>
                             </div>
                         </slp-checkbox>
-                    </li>
-                    <li class="open">
                         <div class="sub_content">
                             <p class="sub_content_title color_clr1 clr4 ml38">변수와 데이터 타입</p>
                             <!-- list -->

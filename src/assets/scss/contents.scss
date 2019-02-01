@@ -691,6 +691,7 @@
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .circle {position: absolute; padding:4px; right: 10px; bottom: 10px; border-radius: 100%; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(0,0,0,0.25);}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .circle .ico{display:block;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail:empty {background: #fff url("../img/ic_atorm_photo.png") center center no-repeat; background-size:34px; padding: 33px; border: 1px solid map-get($line_colors, B85);}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table{border-spacing: 0 10px}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner table td:nth-child(1){width:116px;}
@@ -2227,8 +2228,6 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .search #header .ulList.type1 .in-chk .labelChk2 {margin-top:0px;}
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
 
-.MySpace.gray_bg {background-color: map-get($bg_colors , BG_1);}
-.MySpace .white_bg {background-color: #fff}
 .MySpace #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
 .MySpace #dropdown{top:0px;right:0px;}
 // Dropdown
@@ -2420,5 +2419,36 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 // ATORM
 .atorm .labelChk .label {width:100%;}
 .atorm .w80List li {width:80px; display:inline-block;}
-.atorm_confirmlist_detail .fixTab {display:table; width:100%;}
-.atorm_confirmlist_detail .fixTab li {display:table-cell;}
+.atorm .fixTab {display:table; width:100%;}
+.atorm .fixTab li {display:table-cell;}
+
+.imgTable tr td .thum {width: 100%; height: 85px; padding:4px;}
+.imgTable tr:first-child td .thum{padding-top: 0px;}
+.imgTable tr:last-child td .thum{padding-bottom: 0px;}
+.imgTable tr td:first-child .thum{padding-left: 0px;}
+.imgTable tr td:last-child .thum{padding-right: 0px;}
+.imgTable .thum .labelRdo {width: 100%; height: 100%; padding-left: 0;}
+.imgTable .thum .labelRdo input.rdo + .ico{top: 5px; right: 5px; z-index: 1; left: inherit; transform: inherit;}
+.imgTable .thum .labelRdo .label .radioImage{position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0;}
+
+.atorm .materialModeList li{display:table; padding:25px 32px 25px 0; position:relative; border-bottom: 1px solid map-get($line_colors , B89);}
+.atorm .materialModeList li .icon_wrap{display:table-cell; vertical-align: middle; width:79px; padding-right:18px;}
+.atorm .materialModeList li .txt_wrap{display:table-cell; vertical-align: middle;}
+.atorm .materialModeList li .txt_wrap .title{font-size: map-get($font_size, font_16); font-weight:500; color: map-get($mono_colors, mono_100); padding-bottom:5px; text-overflow: ellipsis; width: inherit; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden; -webkit-line-clamp: 1;}
+.atorm .materialModeList li .txt_wrap .contents{font-size: map-get($font_size, font_13); font-weight:400; color: map-get($mono_colors, mono_65); text-overflow: ellipsis; width: inherit; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden; -webkit-line-clamp: 3;}
+.atorm .materialModeList li .txt_wrap .ico.next_24{position:absolute; top:50%; right:10px; margin-top:-12px;}
+
+.atorm_elearning .bw0 {border-width:0px !important;}
+.atorm_elearning .download_detail {display:table; background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 20px; margin-top:12px;}
+.atorm_elearning .download_detail .txt_wrap {padding-bottom:0 !important;}
+.atorm_elearning .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:5px;}
+.atorm_elearning .download_detail .txt_wrap .title {font-weight:500; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
+.atorm_elearning .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
+.atorm_elearning .download_detail .info li {color:map-get($mono_colors,mono_65);}
+.atorm_elearning .sub_content{display:none;}
+/*.atorm_elearning .open {border: 1px solid map-get($line_colors , B60);}*/
+.atorm_elearning .open .sub_content{display:block;}
+.atorm_elearning .sub_content .download_detail {background-color:#f5f5f5; border: 0 none !important; padding:10px 20px; margin-top:0px;}
+.atorm_elearning .sub_content .download_detail .txt_wrap {border-bottom: 0 none !important;}
+.atorm_elearning .sub_content .download_detail .txt_wrap .title {color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_14);}
+.atorm_elearning .sub_content .sub_content_add {background-color:#f5f5f5; text-align: center; padding-bottom: 16px;}

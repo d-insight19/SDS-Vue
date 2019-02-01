@@ -2035,11 +2035,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_material</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'e-learning_material' }">
+            e-learning_material
           </router-link>
         </td>
-        <td></td>
+        <td>작업중</td>
       </tr>
       <tr>
       <td align="center">101</td>
@@ -9968,8 +9968,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_material_mode</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_material_mode' }">
+            Atorm_e-learning_material_mode
           </router-link>
         </td>
         <td></td>
