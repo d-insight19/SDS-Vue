@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery courseware bpo pd70" >   
+      <div id="container" class="mediaquery courseware union pd70" style="background:#f2f2f2">   
         
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">          
@@ -28,12 +28,10 @@
                 <div class="right blur"></div>
             </div> -->
 
-            
                 <div class="img_wrap">
                     <div class="img_bg"></div>
                 </div>
             
-                <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
                         <div class="btm_subtitle_control">                                
@@ -126,11 +124,8 @@
                         <p class="multiline line2">SPRINT - 구글 벤처스의 5일만에 기획부터 실행까지 끝내는 법(참고도서제공)</p>
                     </div>
                     <p class="study_date">2018.09.10 - 2018.10.10</p>
-                    <div class="ico_wrap">
-                        <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label">학습하기
-                            <span class="ico next_16 wh"></span></span></label>
-                        <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
-                    </div>                   
+
+                    <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
                 </div>
 
                 <div class="study_title_detail" v-show="detail_show">
@@ -182,119 +177,165 @@
 
         <div id="content" class="etc" >
         
-            <div class="cell">
+          <div class="cell">
             <div class="inner pt0">
-            
-                <p class="label-tit-18 mt22 mb10">일정표</p>                
                 
-                    <ul class="ulList type4">
-                        <li>
+                <div class="filterArea ml-18 mr-18" style="padding:19px;">
+                    <p class="font_15 mono_80 fwb dib">현재 학습과정</p>
+                    <p class="fr">
+                        <span class="ico filter" style="position:static;"></span>
+                    </p>                    
+                </div>
+                <ul class="multiList type2">
+                    <li>
+                        <div class="download_detail">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3 fwb600">1일차</p>
-                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <dl class="info">
-                                    <dd class="font_13">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">2018.09.06</span>
-                                        <span class="mono_65">10:00 - 11:00</span>
-                                    </dd>
-                                    <dd class="font_13">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
-                            </div>                            
-                        </li>
-                        <li>
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3 fwb600">2일차</p>
-                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <dl class="info">
-                                    <dd class="pipe_wrap font_13">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">2018.09.06</span>
-                                        <span class="mono_65">10:00 - 11:00</span>
-                                        <span class="mono_65">휴강</span>
-                                    </dd>
-                                    <dd class="font_13">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap mb10">
+                                    <li class="color_clr3 font_13">집합</li>
+                                    <li class="font_13">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info">
+                                    <li>
+                                        <span class="ico check_14"></span>
+                                        <span class="mr6">학습완료</span>
+                                    </li>
+                                    <li class="">                                        
+                                        <span class="mono_100 mr4">수료</span>
+                                        <span class="mono_65">
+                                            총점 85/100
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3 fwb600">3일차</p>
-                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <dl class="info">
-                                    <dd class="pipe_wrap font_13">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">2018.09.06</span>
-                                        <span class="mono_65">10:00 - 11:00</span>
-                                        <span class="mono_65">보강</span>
-                                    </dd>
-                                    <dd class="font_13">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap mb10">
+                                    <li class="color_clr3 font_13 fwb">집합</li>
+                                    <li class="mono_65 font_13">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico check_14"></span>
+                                        <span class="mr6">학습완료</span>
+                                    </li>
+                                    <li class="">                                        
+                                        <span class="danger mr4">미수료</span>
+                                        <span class="mono_65">
+                                            총점 22/100
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3 fwb600">4일차</p>
-                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <dl class="info">
-                                    <dd class="pipe_wrap font_13">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">2018.09.06</span>
-                                        <span class="mono_65">10:00 - 11:00</span>
-                                        <span class="mono_65">휴강</span>
-                                    </dd>
-                                    <dd class="font_13">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap mb10 font_13">
+                                    <li class="color_clr3">이러닝</li>
+                                    <li>D-21</li>
+                                    <li>2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info">
+                                    <li>
+                                        <span class="ico ongoing_16"></span>
+                                        <span class="mr6">진행중</span>
+                                    </li>
+                                    <li class="">                                        
+                                        <span class="mr4">수료</span>
+                                        <span>
+                                            총점 85/100
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3 fwb600">5일차</p>
-                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <dl class="info">
-                                    <dd class="pipe_wrap font_13">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">2018.09.06</span>
-                                        <span class="mono_65">10:00 - 11:00</span>
-                                        <span class="mono_65">보강</span>
-                                    </dd>
-                                    <dd class="font_13">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap font_13 mb10">
+                                    <li class="color_clr3  fwb">이러닝</li>
+                                    <li>D-21</li>
+                                    <li class="mono_65 ">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico ongoing_16"></span>
+                                        <span class="mr6">진행중</span>
+                                    </li>
+                                    <li class="">                                        
+                                        <span class="danger mr4">미수료</span>
+                                        <span class="mono_65">
+                                            총점 22/100
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3 fwb600">6일차</p>
-                                <p class="title mb10">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <dl class="info">
-                                    <dd class="font_13">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">2018.09.06</span>
-                                        <span class="mono_65">10:00 - 11:00</span>
-                                    </dd>
-                                    <dd class="font_13">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap font_13 mb10">
+                                    <li class="color_clr3  fwb">독서통신</li>
+                                    <li class="mono_65 ">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico complete_14"></span>
+                                        <span class="mr6">미진행</span>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
+                     <li>
+                        <div class="download_detail  done">
+                            <div class="txt_wrap">
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap font_13 mb10">
+                                    <li class="color_clr3  fwb">독서통신</li>
+                                    <li>D-21</li>
+                                    <li class="mono_65 ">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico complete_14"></span>
+                                        <span class="mr6">미진행</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <div class="download_detail  done">
+                            <div class="txt_wrap">
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap font_13 mb10">
+                                    <li class="color_clr3  fwb">이러닝</li>
+                                    <li class="mono_65 ">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico lock_16"></span>
+                                        <span class="mr6">진행불가</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>                   
+                </ul>
+
+
             </div>
           </div>
 
@@ -338,8 +379,6 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
-        play: true,
-        book: false,
         active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수

@@ -136,6 +136,11 @@ import StudyHomeSetPhonelanguage from '~workplace/study/Study_home_set_phonelang
 import StudyHomeSetLanguageBPO from '~workplace/study/Study_home_set_langaugeBPO'
 import StudyHomeSetQuarterSurveyDo from '~workplace/study/Study_home_set_quarter_survey_do'
 import StudyHomeSetQuarterEmphasis from '~workplace/study/Study_home_set_quarter_emphasis'
+import StudyHomeSetQuarterSurveyAbility from '~workplace/study/Study_home_set_quarter_survey_ability'
+import StudyHomeUnion from '~workplace/study/Study_home_union'
+import StudyHomeUnionMap from '~workplace/study/Study_home_union_map'
+import StudyHomeUnionStudycondition from '~workplace/study/Study_home_union_studycondition'
+import StudyHomeQuickfit from '~workplace/study/Study_home_quickfit'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -217,11 +222,6 @@ import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_s
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
 import Study05etcguidance from '~workplace/study/Study_05_etc_guidance'
 import Study05etccaptcha from '~workplace/study/Study_05_etc_captcha'
-
-// import RegiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
-// import RegiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
-// import RegiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
-// import RegiclassDetailviewWish from '~workplace/regiclass/regiclass_detailview_wish'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -1301,6 +1301,31 @@ var rootRoutes = [
     path: '/Study_home_set_quarter_emphasis',
     name: 'Study_home_set_quarter_emphasis',
     component: StudyHomeSetQuarterEmphasis
+  },
+  {
+    path: '/Study_home_set_quarter_survey_ability',
+    name: 'Study_home_set_quarter_survey_ability',
+    component: StudyHomeSetQuarterSurveyAbility
+  },
+  {
+    path: '/Study_home_union',
+    name: 'Study_home_union',
+    component: StudyHomeUnion
+  },
+  {
+    path: '/Study_home_union_map',
+    name: 'Study_home_union_map',
+    component: StudyHomeUnionMap
+  },
+  {
+    path: '/Study_home_union_studycondition',
+    name: 'Study_home_union_studycondition',
+    component: StudyHomeUnionStudycondition
+  },
+  {
+    path: '/Study_home_quickfit',
+    name: 'Study_home_quickfit',
+    component: StudyHomeQuickfit
   },
   {
     path: '/Study_dictionary',

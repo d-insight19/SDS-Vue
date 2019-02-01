@@ -4688,8 +4688,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.10.home_set_quarter_survey</td>
         <td>
-          <router-link :to="{ name: 'Study_home_set_quarter_survey_do' }">
-            Study_home_set_quarter_survey_do
+          <router-link :to="{ name: '' }">
+           
           </router-link>
         </td>
         <td></td>
@@ -4705,8 +4705,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.11.home_set_quarter_survey_do</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_quarter_survey_do' }">
+             Study_home_set_quarter_survey_do
           </router-link>
         </td>
         <td></td>
@@ -4722,8 +4722,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.12.home_set_quarter_survey_ability</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_quarter_survey_ability' }">
+            Study_home_set_quarter_survey_ability
           </router-link>
         </td>
         <td></td>
@@ -4739,8 +4739,11 @@
         <td>　</td>
         <td class="textL">05.Study_01.13.home_union</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_union' }">
+            Study_home_union
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_home_union_studycondition' }">
+            Study_home_union_studycondition
           </router-link>
         </td>
         <td></td>
@@ -4756,8 +4759,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.14.home_union_map</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_union_map' }">
+            Study_home_union_map
           </router-link>
         </td>
         <td></td>
@@ -4773,8 +4776,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.15.home_quickfit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_quickfit' }">
+            Study_home_quickfit
           </router-link>
         </td>
         <td></td>

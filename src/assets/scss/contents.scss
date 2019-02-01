@@ -1558,7 +1558,6 @@ label.rdo .label{position: relative;}
 
 
 
-
 // set_phonelanguage
 #container.courseware.phone .ico_wrap {position: relative;}
 #container.courseware.phone .ulList.type4 li{ height:auto;}
@@ -1570,14 +1569,31 @@ label.rdo .label{position: relative;}
 
 // set_languageBPO
 #container.courseware.bpo .ulList.type4 li{ height:auto;}
+#container.courseware.bpo .pipe_wrap span:nth-last-child(1)::before{content:''; border-left:1px solid #d9d9d9;height: 10px;margin: 0 6px;display: inline-block;}
 #container.courseware.bpo .ulList.type4 li .li-num{ font-family:'roboto'; font-size: map-get($font_size, font_16);float: left;margin-top: 2px;}
 #container.courseware.bpo .ulList.type4 li .li-txt{padding-left:31px; text-indent:-2px;  font-size: map-get($font_size, font_15); letter-spacing:-0.045em; color:rgba(0,0,0,0.8)}
 #container.courseware.bpo .ulList.type4 li .li-txt-2{font-size: map-get($font_size, font_15); letter-spacing:-0.045em; color:rgba(0,0,0,0.8)}
 #container.courseware.bpo .txt_wrap .title {font-size: map-get($font_size, font_16); letter-spacing: -0.048em;font-weight:500; }
 
 
+// Study_home_union
+#container.courseware.union .pipe_wrap li{display: inline-block;}
+#container.courseware.union .pipe_wrap li::after{content:''; border-left:1px solid #d9d9d9;height: 10px;margin: 0 6px;display: inline-block;}
+#container.courseware.union .pipe_wrap li:last-child::after{display:none;}
+#container.courseware.union .pipe_wrap .font_13{font-size: map-get($font_size, font_13); letter-spacing:-0.039em;}
+#container.courseware.union .download_detail {padding:20px;}
+#container.courseware.union .mr4{margin-right:4px;}
 
-#container.courseware.surveydo .label-tit-18{}
+// Study_home_union_condition
+#container.courseware.union .label-tit-16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
+#container.courseware.union .tb_wrap table tr:nth-child(1) td{border-bottom:1px solid #d9d9d9;}
+#container.courseware.union .tb_wrap table tr td{padding:10px 0;}
+#container.courseware.union .tb_wrap {padding: 31px 33px;}
+#container.courseware.union .tb_wrap .font_18{font-size: map-get($font_size, font_18);letter-spacing: -0.039em;}
+
+
+
+
 
 
 
