@@ -1,14 +1,14 @@
 <template>
-  <!-- eslint-disable -->
+ <!-- eslint-disable -->
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery">
-
+      <div id="container" class="mediaquery courseware union pd70" style="background:#f2f2f2">   
+        
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video">          
-            <div class="header_inner line1 clr1">
-                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
+        <div id="header" class="tab video" style="background:#fff">          
+            <div class="header_inner line1 ">
+                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
 
@@ -23,55 +23,15 @@
             </div>
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
-            <div class="blur_wrap">
+            <!-- <div class="blur_wrap">
                 <div class="left blur"></div>
                 <div class="right blur"></div>
-            </div>
+            </div> -->
 
-            
-            <!-- s: 동영상 -->
-            <div class="player_wrap">
-                <div class="player_inner">
-                    <div id="contents"></div>
-
-                    <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="volume_wrap" style="display:none;pointer-events:none">
-                        <div class="volume_left">
-                            <div class="inner"></div>
-                            <div class="icon_wrap">
-                                <span class="light_icon"></span>
-                                <span class="light_value">75</span>
-                            </div>                            
-                        </div>
-                        <div class="volume_right">
-                            <div class="inner"></div>
-                            <div class="icon_wrap">
-                                <span class="volume_icon"></span>
-                                <span class="volume_value">65</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  e: 볼륨영역 -->
-
-                    <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="tap_wrap" style="display:none;pointer-events:none">
-                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
-                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
-                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
-                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                          </div>
-                        </v-touch>
-                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
-                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
-                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
-                                <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                            </div>
-                        </v-touch>                            
-                    </div>
-                    <!--  e: double 텝 영역 -->
-
+                <div class="img_wrap">
+                    <div class="img_bg"></div>
                 </div>
-                <!-- s: btm_subtitle_area -->
+            
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
                         <div class="btm_subtitle_control">                                
@@ -150,9 +110,7 @@
                     </div>
                 </div>
                 <!-- e: btm_subtitle_area -->
-            </div>
-            <!-- e: 동영상-->
-            
+
             <div class="hide_header">
 
                 <div class="study_title_wrap">
@@ -214,68 +172,179 @@
                     </div>
                 </div>
             </div>
-
             
-        </div>
-        <!-- //header -->
+        </div>        
 
-        <!--
-            상태 관련 css (추후 아이콘 교체될 수 있음)
-            stat01 : 미진행 // 아이콘 미수급 // 추후 이미지 교체 예정
-            stat02 : 진행중
-            stat03 : 학습완료
-            stat04 : 진행불가 // 아이콘 미수급 // 추후 이미지 교체 예정
-
-            카드 UI 아이콘 css (추후 아이콘 교체될 수 있음)
-
-            LO
-            type01 : 동영상/VR & AR
-            type02 : E-BOOK/HTML5
-            type03 : Audio
-            type04 : 집합
-
-            SO
-            type05 : Summary, 과정OT, 목표안내, 액션플랜 과정요약집, 서약서, 간지페이지
-            type06 : 사례,의견공유, 토론, 멘토링
-            type07 : 음성녹음
-            type08 : 평가, Poll, 과제
-            type09 : 퀴즈, 설문, 시뮬레이션
-            type10 : 공지
-        -->
-
-        <div id="content" class="etc">
+        <div id="content" class="etc" >
+        
           <div class="cell">
-            <div class="inner">
-                <p>내용1</p>
-                <p>내용2</p>
-                <p>내용3</p>
-                <p>내용4</p>
-                <p>내용5</p>
-                <p>내용6</p>
-                <p>내용7</p>
-                <p>내용8</p>
-                <p>내용9</p>
-                <p>내용10</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
+            <div class="inner pt0">
+                
+                <div class="filterArea ml-18 mr-18" style="padding:19px;">
+                    <p class="font_15 mono_80 fwb dib">현재 학습과정</p>
+                    <p class="fr">
+                        <span class="ico filter" style="position:static;"></span>
+                    </p>                    
+                </div>
+                <ul class="multiList type2">
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap mb10">
+                                    <li class="color_clr3 font_13">집합</li>
+                                    <li class="font_13">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info">
+                                    <li>
+                                        <span class="ico check_14"></span>
+                                        <span class="mr6">학습완료</span>
+                                    </li>
+                                    <li class="">                                        
+                                        <span class="mono_100 mr4">수료</span>
+                                        <span class="mono_65">
+                                            총점 85/100
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="txt_wrap">
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap mb10">
+                                    <li class="color_clr3 font_13 fwb">집합</li>
+                                    <li class="mono_65 font_13">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico check_14"></span>
+                                        <span class="mr6">학습완료</span>
+                                    </li>
+                                    <li class="">                                        
+                                        <span class="danger mr4">미수료</span>
+                                        <span class="mono_65">
+                                            총점 22/100
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="txt_wrap">
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap mb10 font_13">
+                                    <li class="color_clr3">이러닝</li>
+                                    <li>D-21</li>
+                                    <li>2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info">
+                                    <li>
+                                        <span class="ico ongoing_16"></span>
+                                        <span class="mr6">진행중</span>
+                                    </li>
+                                    <li class="">                                        
+                                        <span class="mr4">수료</span>
+                                        <span>
+                                            총점 85/100
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="txt_wrap">
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap font_13 mb10">
+                                    <li class="color_clr3  fwb">이러닝</li>
+                                    <li>D-21</li>
+                                    <li class="mono_65 ">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico ongoing_16"></span>
+                                        <span class="mr6">진행중</span>
+                                    </li>
+                                    <li class="">                                        
+                                        <span class="danger mr4">미수료</span>
+                                        <span class="mono_65">
+                                            총점 22/100
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="txt_wrap">
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap font_13 mb10">
+                                    <li class="color_clr3  fwb">독서통신</li>
+                                    <li class="mono_65 ">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico complete_14"></span>
+                                        <span class="mr6">미진행</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <div class="download_detail  done">
+                            <div class="txt_wrap">
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap font_13 mb10">
+                                    <li class="color_clr3  fwb">독서통신</li>
+                                    <li>D-21</li>
+                                    <li class="mono_65 ">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico complete_14"></span>
+                                        <span class="mr6">미진행</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <div class="download_detail  done">
+                            <div class="txt_wrap">
+                                <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                <ul class="pipe_wrap font_13 mb10">
+                                    <li class="color_clr3  fwb">이러닝</li>
+                                    <li class="mono_65 ">2018.01.01 - 2018.12.31</li>
+                                </ul>
+                                <ul class="info mt10">
+                                    <li>
+                                        <span class="ico lock_16"></span>
+                                        <span class="mr6">진행불가</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>                   
+                </ul>
+
 
             </div>
           </div>
-        </div>
 
+        </div>
+            
       </div>
       <!-- //container -->     
     </div>
     <!-- //wrap -->
-
 </template>
 
 <script>
@@ -306,30 +375,11 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
-import Vue from 'vue'
-import VueTouch from 'vue-touch'
-
-VueTouch.registerCustomEvent('singletap', {
-  type: 'tap',
-  taps: 1,
-})
-
-VueTouch.registerCustomEvent('doubletap', {
-  type: 'tap',
-  taps: 2,
-})
-
-Vue.use(VueTouch, {name: 'v-touch'})
-
 export default {
   name: 'components_flowplayer',
   data () {
     return {
-        innerRipple: false,
-        halfRight: false,
-        halfLeft: false,
-        none: true,
-        left: true,
+        active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         relatedVideoList: [
@@ -397,35 +447,8 @@ export default {
     detail_toggle () {        
         this.detail_show = !this.detail_show;
     },
-    prevTen() {
-        console.error("왼쪽");
-        this.halfRight = true
-        this.innerRipple = true
-        // $('.inner_ripple').css('display', 'block');
-        // $('.half_right').css('display', 'none');
-        var vm = this
-        setTimeout(
-            function(){
-              vm.halfRight = false
-              vm.innerRipple = false
-                // $('.inner_ripple').css('display', 'none'); 
-                // $('.half_right').css('display', 'block');
-            }, 600);       
-    },
-    nextTen() {
-        console.error("오른쪽");
-        this.halfLeft = true
-        this.innerRipple = true
-        // $('.inner_ripple').css('display', 'block');
-        // $('.half_left').css('display', 'none');
-        var vm = this
-        setTimeout(
-            function(){
-              vm.halfLeft = false
-              vm.innerRipple = false
-                // $('.inner_ripple').css('display', 'none'); 
-                // $('.half_left').css('display', 'block');
-            }, 600);       
+    active_el () {
+        this.active = !this.active
     }
   },
   mounted () {
@@ -480,6 +503,12 @@ export default {
         }
 
         
+        $('.half_left').click(function(){
+            console.error("왼쪽");
+        });
+        $('.half_right').click(function(){
+            console.error("오른쪽");
+        });
 
         $('.fp-script , .script_close').click(function(){
             // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
@@ -490,7 +519,6 @@ export default {
 
         $('.fp-nextArrow').click(function()
         {
-            $('.half_right').css('display', 'block');
             console.error('다음 콘텐츠!')
         });
         $('.fp-prevArrow').click(function()
@@ -514,7 +542,7 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
                 // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
@@ -556,21 +584,3 @@ export default {
   }
 }
 </script>
-
-<style scoepd>
-.innerRipple {
-  display: none;
-}
-.halfRight {
-  display: none;
-}
-.halfLeft {
-  display: none;
-}
-.display {
-  display: block;
-}
-.none {
-  display: none;
-}
-</style>

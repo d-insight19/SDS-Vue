@@ -36,14 +36,12 @@
     & #content{
       position: relative;
       margin: 0 auto;
-      // height:100%;
-      // background:tomato;
       .cell{
         // display: block;
         position: relative;
         width:100%;
         .inner{
-          // background:lightblue;
+
         }
       }
     }
@@ -337,10 +335,12 @@
 #header.mainType.step2 .gnbMenu li .ico{width:100%; height:100%;}
 #header.mainType.step2 .header_inner.line2 .gnbMenu li .ico{margin-top:-14px;}
 #header.mainType.step2 .gnbMenu li a.menu_txt{display:none;}
+
 // 메인타입 2단형 텍스트타입
 #header.mainType.step2.txt .gnbMenu li a.menu_txt{display:inline-block;font-size:map-get($font-size, font_18);color:rgba(255,255,255,0.5);line-height: 20px;}
 #header.mainType.step2.txt .gnbMenu li.on a.menu_txt{color:#fff}
 #header.mainType.step2.txt .gnbMenu li a.menu_icon{display:none;}
+
 // 학습운영자 메인타입 2단형 예외
 #header.mainType.eduperson .eduperson_title{position:relative;letter-spacing: -0.54px;width:100%; height:58px;}// 탭메뉴 클릭이안되는부분 수정
 #header.mainType.eduperson .eduperson_title span:nth-child(1){display: inline-block;max-width: calc(100% - 75px);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
@@ -439,32 +439,6 @@
 
 #container #content{padding:0px 0px 40px 0px}
 #container.pd70 #content{padding:0px 0px 124px 0px}
-/*
-#container #content .inner{padding-top:24px;}
-// 연수원
-#container.findcenter #content .inner{padding:24px 6px 124px}
-// 로그인
-#container.login #content .inner{padding:52px 18px 0px;}
-// 관심사 패딩
-#container.interest #content .inner{ padding-top:44px;padding-bottom: 90px}
-// 회원가입 선택
-#container.join_type #content .inner{ padding:24px 6px 0px}
-// 통합회원가입
-#container.join #content .inner{padding:36px 6px 81px}
-// 통합회원가입2
-#container.integration #content .inner{padding:36px 6px 81px}
-#container.integration.start #content .inner{padding:74px 6px 81px}
-// 임시아이디 변경
-#container.change_id #content .inner{padding:36px 6px 81px}
-// 용어사전
-#container.study_dictionary #content .inner{ padding-top:26px;padding-bottom: 70px}
-// 우편번호 찾기
-#container.searchpost #content .inner{ padding:24px 6px 70px 6px;}
-//아이디 찾기
-#container.findid #content .inner{ padding: 24px 6px 0px}
-//비밀번호 변경
-#container.changepw  #content .inner{ padding: 24px 6px 0px}
-*/
 #container #content .inner{padding-top:24px;}
 // 연수원
 #container.findcenter #content .inner{padding:24px 6px 0px}
