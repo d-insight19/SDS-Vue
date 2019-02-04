@@ -1591,6 +1591,28 @@ label.rdo .label{position: relative;}
 #container.courseware.union .tb_wrap {padding: 31px 33px;}
 #container.courseware.union .tb_wrap .font_18{font-size: map-get($font_size, font_18);letter-spacing: -0.039em;}
 
+//Study_studystatus_point
+
+#container.studystatus .label-tit-15{font-size: map-get($font_size, font_15); letter-spacing: -0.045em;}
+#container.studystatus .abs-num{position: absolute;top: 50%;transform: translateY(-50%);font-family:'roboto'; font-size: map-get($font_size, font_17);}
+#container.studystatus .ulList.type4 li {height: auto;}
+#container.studystatus .ulList.type4 li p{padding-left:42px;}
+#container.studystatus .ulList.type4 li.font_16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
+
+
+
+#container.studystatus .type_box{border-top: 0;border-bottom: 0;}
+#container.studystatus .title_txt{font-size: map-get($font_size, font_20); letter-spacing: -0.06em;color:rgba(0,0,0,1)}
+
+
+
+
+
+
+
+
+
+
 
 
 

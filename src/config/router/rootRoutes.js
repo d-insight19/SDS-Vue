@@ -141,6 +141,7 @@ import StudyHomeUnion from '~workplace/study/Study_home_union'
 import StudyHomeUnionMap from '~workplace/study/Study_home_union_map'
 import StudyHomeUnionStudycondition from '~workplace/study/Study_home_union_studycondition'
 import StudyHomeQuickfit from '~workplace/study/Study_home_quickfit'
+import StudyStudystatusPoint from '~workplace/study/Study_studystatus_point'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -1326,6 +1327,11 @@ var rootRoutes = [
     path: '/Study_home_quickfit',
     name: 'Study_home_quickfit',
     component: StudyHomeQuickfit
+  },
+  {
+    path: '/Study_studystatus_point',
+    name: 'Study_studystatus_point',
+    component: StudyStudystatusPoint
   },
   {
     path: '/Study_dictionary',
