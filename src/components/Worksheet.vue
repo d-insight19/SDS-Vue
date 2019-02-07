@@ -1939,6 +1939,7 @@
           <router-link :to="{ name: 'Atorm_e-learning_basic_1' }">
             Atorm_e-learning_basic_1
           </router-link>
+          ,
           <router-link :to="{ name: 'Atorm_e-learning_basic_2' }">
             Atorm_e-learning_basic_2
           </router-link>
@@ -2038,8 +2039,12 @@
           <router-link :to="{ name: 'e-learning_material' }">
             e-learning_material
           </router-link>
+          ,
+          <router-link :to="{ name: 'e-learning_material_user' }">
+            e-learning_material_user
+          </router-link>
         </td>
-        <td>작업중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">101</td>

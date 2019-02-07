@@ -562,6 +562,7 @@ import AtormELearningBasic1 from '~workplace/atorm/Atorm_e-learning_basic_1'
 import AtormELearningBasic2 from '~workplace/atorm/Atorm_e-learning_basic_2'
 import AtormELearningThumbnail from '~workplace/atorm/Atorm_e-learning_thumbnail'
 import AtormELearningMaterial from '~workplace/atorm/Atorm_e-learning_material'
+import AtormELearningMaterialUser from '~workplace/atorm/Atorm_e-learning_material_user'
 import AtormELearningMaterialMode from '~workplace/atorm/Atorm_e-learning_material_mode'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
@@ -3111,6 +3112,11 @@ var rootRoutes = [
     path: '/Atorm_e-learning_material',
     name: 'Atorm_e-learning_material',
     component: AtormELearningMaterial
+  },
+  {
+    path: '/Atorm_e-learning_material_user',
+    name: 'Atorm_e-learning_material_user',
+    component: AtormELearningMaterialUser
   },
   {
     path: '/Atorm_e-learning_material_mode',
