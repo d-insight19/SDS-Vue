@@ -183,6 +183,10 @@
 .ico.people_32{width:32px; height:32px; background: url("../img/ic_people_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
 .ico.chart_32{width:32px; height:32px; background: url("../img/ic_chart_line_32.png") no-repeat; margin-top:-4px; background-size: cover;}
 
+.ico.atorm_module_79{width:79px; height:79px; background: url("../img/ic_atorm_module.png") no-repeat; background-size: cover;}
+.ico.atorm_class_79{width:79px; height:79px; background: url("../img/ic_atorm_class.png") no-repeat; background-size: cover;}
+.ico.next_24{width:24px;height:24px;background: url("../img/ic_next_24.png") no-repeat; background-size: cover;}
+
 .ico.trophy_64{width:64px; height:64px; background: url("../img/ic_trophy_solid.png") no-repeat; margin-top:-8px; background-size: cover;}
 .ico.grade_64.gold{width:64px; height:64px; background: url("../img/ic_grade_gold.png") no-repeat; margin-top:-8px; background-size: cover;}
 .ico.coin_64{width:64px; height:64px; background: url("../img/ic_coin_solid.png") no-repeat; margin-top:-8px; background-size: cover;}

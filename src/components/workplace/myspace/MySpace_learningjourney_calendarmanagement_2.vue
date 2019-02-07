@@ -94,8 +94,6 @@
                                 <p class="title">HCI 개론 언어 특성 활용하여 실제 업무에서 사용하는 방법 접하기</p>
                             </div>
                         </div>
-                    </li>
-                    <li class="open">
                         <div class="sub_content">
                             <p class="sub_content_title color_clr1 clr4">변수와 데이터 타입</p>
                             <!-- list -->

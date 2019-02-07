@@ -1939,6 +1939,7 @@
           <router-link :to="{ name: 'Atorm_e-learning_basic_1' }">
             Atorm_e-learning_basic_1
           </router-link>
+          ,
           <router-link :to="{ name: 'Atorm_e-learning_basic_2' }">
             Atorm_e-learning_basic_2
           </router-link>
@@ -2035,8 +2036,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_material</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'e-learning_material' }">
+            e-learning_material
+          </router-link>
+          ,
+          <router-link :to="{ name: 'e-learning_material_user' }">
+            e-learning_material_user
           </router-link>
         </td>
         <td></td>
@@ -2539,6 +2544,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
@@ -9974,8 +9980,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_material_mode</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_material_mode' }">
+            Atorm_e-learning_material_mode
           </router-link>
         </td>
         <td></td>
@@ -10239,13 +10245,7 @@
           </router-link>,
           <router-link :to="{ name: 'BPO_subjectlist_detail_disable' }">
             BPO_subjectlist_detail_disable
-          </router-link>,
-          <router-link :to="{ name: 'BPO_subjectlist_detail_check' }">
-            BPO_subjectlist_detail_check
-          </router-link>,
-          <router-link :to="{ name: 'BPO_subjectlist_detail_check_popup' }">
-            BPO_subjectlist_detail_check_popup
-          </router-link>
+          </router-link>         
         </td>
         <td></td>
       </tr>
@@ -10504,8 +10504,11 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail_check</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_detail_check' }">
+            BPO_subjectlist_detail_check
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_check_popup' }">
+            BPO_subjectlist_detail_check_popup
           </router-link>
         </td>
         <td></td>
@@ -10731,16 +10734,16 @@
         </td>
         <td></td>
       </tr>
-      <!-- <tr>
+      <tr>
       <td align="center">589</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
+        <td>검색</td>
+        <td>검색 메인</td>
+        <td>추천 키워드</td>
         <td></td>
         <td></td>
         <td></td>
         <td>　</td>
-        <td class="textL">login_04.02_login_changeid_main_confirm</td>
+        <td class="textL">08.search_03.01.Enter_recomm</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -10750,14 +10753,14 @@
       </tr>
       <tr>
       <td align="center">590</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
+        <td>검색</td>
+        <td>검색어 입력</td>
+        <td>정규과정</td>
         <td></td>
         <td></td>
         <td></td>
         <td>　</td>
-        <td class="textL">login_04.02_login_changeid_main_error</td>
+        <td class="textL">08.search_03.02.typing_courses</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -10767,14 +10770,14 @@
       </tr>
       <tr>
       <td align="center">591</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
+        <td>검색</td>
+        <td>검색어 입력</td>
+        <td>콘텐츠</td>
         <td></td>
         <td></td>
         <td></td>
         <td>　</td>
-        <td class="textL">login_05.01_login_changepw_error1</td>
+        <td class="textL">08.search_03.02.typing_contents</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -10784,14 +10787,14 @@
       </tr>
       <tr>
       <td align="center">592</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Drawer - ATORM</td>
+        <td>Main - User</td>
+        <td>과정 제작</td>
+        <td>집합/플립러닝</td>
+        <td>수료 기준</td>
+        <td>플립</td>
         <td>　</td>
-        <td class="textL">login_05.01_login_changepw_error2</td>
+        <td class="textL">07.ATORM_07.02.02._group/flip_criteria_flip</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -10801,14 +10804,14 @@
       </tr>
       <tr>
       <td align="center">593</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Drawer - ATORM</td>
+        <td>Main - User</td>
+        <td>과정 제작</td>
+        <td>집합/플립러닝</td>
+        <td>완료</td>
+        <td>플립</td>
         <td>　</td>
-        <td class="textL">login_05.01_login_changepw_error3</td>
+        <td class="textL">07.ATORM_07.02.02._group/flip_complete_flip</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -10818,14 +10821,14 @@
       </tr>
       <tr>
       <td align="center">594</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Drawer - ATORM</td>
+        <td>Main - User</td>
+        <td>아이템팩토리</td>
+        <td>신규아이템추가</td>
+        <td>quiz</td>
         <td></td>
         <td>　</td>
-        <td class="textL">login_06.01_login_unlockid_국내이용자</td>
+        <td class="textL">07.ATORM_07.07.02._Item factory_quiz</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -10835,14 +10838,14 @@
       </tr>
       <tr>
       <td align="center">595</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Drawer - 고객센터</td>
+        <td>고객센터</td>
+        <td>학습가이드</td>
+        <td>학습방법 안내2</td>
         <td></td>
         <td></td>
         <td>　</td>
-        <td class="textL">login_06.01_login_unlockid_해외이용자</td>
+        <td class="textL">13.CustomerCenter_03.02_Studyguide_detail2</td>
         <td>
           <router-link :to="{ name: '' }">
             
@@ -10850,227 +10853,6 @@
         </td>
         <td></td>
       </tr>
-      <tr>
-      <td align="center">596</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_06.01_login_unlockid_complete</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">597</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_07.01_login_dormant</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">598</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_07.01_login_dormant_email</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">599</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_07.01_login_dormant_complete</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">600</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_08.01_findid_result_popup</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">601</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_08.01_findid_ipin</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">602</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_08.02_findpw_email_toastpopup</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">603</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_09.03_certify_email_certify_error1</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">604</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_09.03_certify_email_certify_error2</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">605</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_09.03_certify_email_certify_error3</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">606</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_09.03_login_corporationphone_1</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">607</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_09.03_login_corporationphone_2</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-      <td align="center">608</td>
-        <td>로그인/회원가입</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>　</td>
-        <td class="textL">login_09.03_login_corporationphone_3</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
-      </tr> -->
       <tr>
       <td align="center">추가페이지-add</td>
         <td></td>
