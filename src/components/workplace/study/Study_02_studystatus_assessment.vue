@@ -20,48 +20,41 @@
                     </div>
                     <div class="date_wrap">
                         <div class="title_line noline mt20">
-                            <span class="title_txt">중간과제</span>  
+                            <span class="title_txt">중간평가</span>  
                             <div class="in-chk fr"><label class="labelChk2"><input id="" type="checkbox" name="" class="chk"><span class="label">제출내역확인</span></label></div>
                         </div>
-                          <div class="type_box">
+                          <div class="type_box type2">
                               <div class="info type1">
-                                <span class="ico mark_line_32" style="vertical-align: -6px;"></span>
-                                <span class="font_24">제출</span>
+                                <span class="font_24">응시완료</span>
                               </div>
                               <ul>
-                                <li class="mono_80 font_13">제출파일</li>
-                                <li class="mb8 "><span class="font_16 fwb600">2</span><span class="font_14">건</span></li>
+                                <li class="mono_80 font_13">출제범위</li>
+                                <li class="mb8 "><span class="font_16 fwb600">1 - 11</span><span class="font_14">차시</span></li>
                               </ul>
                               <ul class="line">
                                 <li class="mt8 mono_80 font_13">점수/만점</li>
-                                <li><span class="fwb600 font_16">98/100</span><span class="font_14">점</span></li>
+                                <li><span class="fwb600 font_16">60/100</span><span class="font_14">점</span></li>
                               </ul>
                           </div>
                         <div class="title_line noline mt20">
-                          <span class="title_txt">최종과제</span>  
-                          <div class="in-chk fr"><label class="labelChk2"><input id="" type="checkbox" name="" class="chk"><span class="label">작성</span></label></div>
+                          <span class="title_txt">최종평가</span>  
+                          <div class="in-chk fr"><label class="labelChk2"><input id="" type="checkbox" name="" class="chk"><span class="label">응시</span></label></div>
                         </div>
-                          <div class="type_box">
-                              <div class="info type1">
-                                <span class="ico mark_line_32 non" style="vertical-align: -6px;"></span>
-                                <span class="font_24">미제출</span>
+                          <div class="type_box type2">
+                              <div class="info type1 tac">
+                                <span class="font_24 dpb">응시가능</span>
+                                <span class="font_11">진도율 80% 이상 학습</span>
                               </div>
                               <ul>
-                                <li class="mono_80 font_13">제출파일</li>
-                                <li class="mb8 "><span class="font_16 fwb600">2</span><span class="font_14">건</span></li>
+                                <li class="mono_80 font_13">출제범위</li>
+                                <li class="mb8 "><span class="font_16 fwb600">12 - 20</span><span class="font_14">차시</span></li>
                               </ul>
                               <ul class="line">
                                 <li class="mt8 mono_80 font_13">점수/만점</li>
-                                <li><span class="fwb600 font_16">98/100</span><span class="font_14">점</span></li>
+                                <li><span class="fwb font_16">미응시</span></li>
                               </ul>
                           </div>
                         </div>
-
-                        <div>
-                          <button class="guide-btn mr8">작성 관련 안내 사항</button>
-                          <button class="guide-btn">모사 답안 처리 규정</button>
-                        </div>
-
 
                   </div>
                 </div>

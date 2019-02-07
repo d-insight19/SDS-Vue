@@ -141,6 +141,7 @@ import StudyHomeUnion from '~workplace/study/Study_home_union'
 import StudyHomeUnionMap from '~workplace/study/Study_home_union_map'
 import StudyHomeUnionStudycondition from '~workplace/study/Study_home_union_studycondition'
 import StudyHomeQuickfit from '~workplace/study/Study_home_quickfit'
+import StudyStudystatusPoint from '~workplace/study/Study_studystatus_point'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -156,7 +157,9 @@ import Study02reflectionnotedetail from '~workplace/study/Study_02_reflectionnot
 import Study02reflectionnoteedit from '~workplace/study/Study_02_reflectionnote_edit'
 import Study02reflectionnoteedit02 from '~workplace/study/Study_02_reflectionnote_edit_02'
 import Study02studystatusassignment from '~workplace/study/Study_02_studystatus_assignment'
+import Study02studystatusassignmentresult from '~workplace/study/Study_02_studystatus_assignment_result'
 import Study02studystatusassignmentapply from '~workplace/study/Study_02_studystatus_assignment_apply'
+import Study02studystatusassessment from '~workplace/study/Study_02_studystatus_assessment'
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
@@ -1331,6 +1334,11 @@ var rootRoutes = [
     component: StudyHomeQuickfit
   },
   {
+    path: '/Study_studystatus_point',
+    name: 'Study_studystatus_point',
+    component: StudyStudystatusPoint
+  },
+  {
     path: '/Study_dictionary',
     name: 'Study_dictionary',
     component: StudyDictionary
@@ -1406,9 +1414,19 @@ var rootRoutes = [
     component: Study02studystatusassignment
   },
   {
+    path: '/Study_02_studystatus_assignment_result',
+    name: 'Study_02_studystatus_assignment_result',
+    component: Study02studystatusassignmentresult
+  },
+  {
     path: '/Study_02_studystatus_assignment_apply',
     name: 'Study_02_studystatus_assignment_apply',
     component: Study02studystatusassignmentapply
+  },
+  {
+    path: '/Study_02_studystatus_assessment',
+    name: 'Study_02_studystatus_assessment',
+    component: Study02studystatusassessment
   },
   {
     path: '/Study_02_studystatus_assessment_notice',

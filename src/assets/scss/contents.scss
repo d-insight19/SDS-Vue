@@ -1592,6 +1592,53 @@ label.rdo .label{position: relative;}
 #container.courseware.union .tb_wrap {padding: 31px 33px;}
 #container.courseware.union .tb_wrap .font_18{font-size: map-get($font_size, font_18);letter-spacing: -0.039em;}
 
+//Study_studystatus_point
+
+#container.studystatus .label-tit-15{font-size: map-get($font_size, font_15); letter-spacing: -0.045em;}
+#container.studystatus .abs-num{position: absolute;top: 50%;transform: translateY(-50%);font-family:'roboto'; font-size: map-get($font_size, font_17);}
+#container.studystatus .ulList.type4 li {height: auto;}
+#container.studystatus .ulList.type4 li p{padding-left:42px;}
+#container.studystatus .ulList.type4 li.font_16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
+
+
+
+#container.studystatus .type_box{border-top: 0;border-bottom: 0;padding-top:23px;padding-bottom:23px;}
+#container.studystatus .type_box ul.line{border-top: 1px solid #d9d9d9;}
+#container.studystatus .type_box .font_13 {font-size: map-get($font_size, font_13); letter-spacing: -0.039em;}
+#container.studystatus .type_box .font_14 {font-size: map-get($font_size, font_14); letter-spacing: -0.042em;}
+#container.studystatus .type_box .font_16 {font-size: map-get($font_size, font_16); }
+#container.studystatus .title_txt{font-size: map-get($font_size, font_20); letter-spacing: -0.06em;font-weight:600;}
+#container.studystatus .font_24{font-size: map-get($font_size, font_24); letter-spacing: -0.072em;}
+#container.studystatus .guide-btn{padding:7px 12px;}
+#container.studystatus .num{font-family: 'Roboto' ;}
+
+
+#container.studystatus .confirm_item_detail{margin:0px -18px}
+#container.studystatus .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
+#container.studystatus .confirm_item_detail > li > span:first-child{line-height: 58px;font-weight: 600;}
+#container.studystatus .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .num{font-family: 'Roboto'}
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .thum{display: block;width: 100px;height: 100px; position: relative;}
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .thum .circle {position: absolute; padding:4px; right: 10px; bottom: 10px; border-radius: 100%; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(0,0,0,0.25);}
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .thum .circle .ico{display:block;}
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;}
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
+#container.studystatus .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
+#container.studystatus .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
+#container.studystatus .type_box.type2 {padding: 10px 39px 10px 172px;}
+#container.studystatus .font_11{font-size:map-get($font-size, font_11);letter-spacing: -0.033em;}
+
+
+
+
+
+
+
+
+
 
 
 
