@@ -90,7 +90,7 @@
     }
   }
   
-  @media only screen and (min-width:768px) and (max-width:1023px){
+  @media only screen and (min-width:768px) and (max-width:1023px){ //최소768부터~최대1023까지 일때 적용 min-width 768보다 큰 브라우저 넓이에 적용되며 max-width 1023보다 작은브라우저 너비에 적용됩니다
     $l_padding: 18px;
     $c_padding: 74px;
     #container.mediaquery{      

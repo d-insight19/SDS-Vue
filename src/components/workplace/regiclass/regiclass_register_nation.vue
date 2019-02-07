@@ -27,9 +27,9 @@
                 <ul class="ulList type1 ">
                     <li>
                         <strong class="label-tit require_mark">최종학력</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="select w100p" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li>                 
                     <li>
                         <strong class="label-tit require_mark">학교명</strong>
@@ -45,40 +45,40 @@
                     </li>                 
                     <li>
                         <strong class="label-tit require_mark">전공계열</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li> 
                     <li>
                         <strong class="label-tit require_mark">수료학기</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li> 
                     <li>
                         <strong class="label-tit require_mark">졸업예정 년월</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li> 
                     <li>
                         <strong class="label-tit require_mark">근로여부</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li> 
                     <li>
                         <strong class="label-tit require_mark">근로여부</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                         <slp-text-field class="mt8" placeholder="신청경로 입력" ></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit require_mark">교육관심분야</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li>
                     <li>
                         <strong class="label-tit require_mark">거주지역</strong>
