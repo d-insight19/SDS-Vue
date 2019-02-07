@@ -1841,7 +1841,7 @@ label.rdo .label{position: relative;}
 #container.drawer.inquiry .btn.sm{margin:7px 0px 0px 0px}
 
 //개인정보 처리방침
-#container.drawer.privacypolicy .select_wrap {position: fixed; left:0; bottom:0; z-index: 100; width:100%; padding: 18px}
+#container.drawer.privacypolicy .select_wrap {width:100%; padding: 18px 0}
 #container.drawer.privacypolicy select{ width:100%; }
 
 //문의내용 답변 -- CustomerCenter_Inquiry_detail

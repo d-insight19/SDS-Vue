@@ -6051,8 +6051,8 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td>삭제</td>
         <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -9766,12 +9766,11 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">etc_Keepstucy</td>
+        <td class="textL">etc_Keepstudy</td>
         <td>
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
         </td>
         <td></td>
       </tr>
