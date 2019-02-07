@@ -2544,6 +2544,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          삭제
         </td>
         <td></td>
       </tr>
