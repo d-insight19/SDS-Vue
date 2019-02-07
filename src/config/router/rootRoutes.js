@@ -157,7 +157,9 @@ import Study02reflectionnotedetail from '~workplace/study/Study_02_reflectionnot
 import Study02reflectionnoteedit from '~workplace/study/Study_02_reflectionnote_edit'
 import Study02reflectionnoteedit02 from '~workplace/study/Study_02_reflectionnote_edit_02'
 import Study02studystatusassignment from '~workplace/study/Study_02_studystatus_assignment'
+import Study02studystatusassignmentresult from '~workplace/study/Study_02_studystatus_assignment_result'
 import Study02studystatusassignmentapply from '~workplace/study/Study_02_studystatus_assignment_apply'
+import Study02studystatusassessment from '~workplace/study/Study_02_studystatus_assessment'
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
@@ -1409,9 +1411,19 @@ var rootRoutes = [
     component: Study02studystatusassignment
   },
   {
+    path: '/Study_02_studystatus_assignment_result',
+    name: 'Study_02_studystatus_assignment_result',
+    component: Study02studystatusassignmentresult
+  },
+  {
     path: '/Study_02_studystatus_assignment_apply',
     name: 'Study_02_studystatus_assignment_apply',
     component: Study02studystatusassignmentapply
+  },
+  {
+    path: '/Study_02_studystatus_assessment',
+    name: 'Study_02_studystatus_assessment',
+    component: Study02studystatusassessment
   },
   {
     path: '/Study_02_studystatus_assessment_notice',

@@ -4844,8 +4844,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.04.studystatus_assignment_result</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_studystatus_assignment_result' }">
+            Study_02_studystatus_assignment_result
           </router-link>
         </td>
         <td></td>
@@ -4861,8 +4861,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.05.studystatus_assessment</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_02_studystatus_assessment' }">
+            Study_02_studystatus_assessment
           </router-link>
         </td>
         <td></td>
