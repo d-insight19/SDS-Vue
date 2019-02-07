@@ -21,7 +21,7 @@
                     </div>
                 </div>
                     <div class="progBox">
-                    <div class="bar clr2" style="width:50%"></div>
+                    <div class="bar clr2" style="width:40%"></div>
                 </div>
                 <p class="txt-desc">학습과정의 기본정보를 입력합니다.</p>
             </div>
@@ -45,14 +45,14 @@
                                         <thead>
                                             <tr>
                                                 <td>
-                                                <div class="thum">
-                                                    <div class="thumbnail">
-                                                        <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
+                                                    <div class="thum">
+                                                        <div class="thumbnail">
+                                                            <!--<img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">-->
+                                                        </div>
+                                                        <!--<div class="circle">
+                                                            <span class="ico photo_16"></span>
+                                                        </div>-->
                                                     </div>
-                                                    <div class="circle">
-                                                        <span class="ico photo_16"></span>
-                                                    </div>
-                                                </div>
                                                 </td>
                                                 <td class="txt-desc">
                                                     <strong class="label-tit14 tit_essential">과정명</strong>
