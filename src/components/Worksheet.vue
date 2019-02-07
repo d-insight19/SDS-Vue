@@ -10242,13 +10242,7 @@
           </router-link>,
           <router-link :to="{ name: 'BPO_subjectlist_detail_disable' }">
             BPO_subjectlist_detail_disable
-          </router-link>,
-          <router-link :to="{ name: 'BPO_subjectlist_detail_check' }">
-            BPO_subjectlist_detail_check
-          </router-link>,
-          <router-link :to="{ name: 'BPO_subjectlist_detail_check_popup' }">
-            BPO_subjectlist_detail_check_popup
-          </router-link>
+          </router-link>         
         </td>
         <td></td>
       </tr>
@@ -10507,8 +10501,11 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail_check</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'BPO_subjectlist_detail_check' }">
+            BPO_subjectlist_detail_check
+          </router-link>,
+          <router-link :to="{ name: 'BPO_subjectlist_detail_check_popup' }">
+            BPO_subjectlist_detail_check_popup
           </router-link>
         </td>
         <td></td>
