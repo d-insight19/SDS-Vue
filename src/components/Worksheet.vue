@@ -4931,8 +4931,11 @@
         <td>　</td>
         <td class="textL">05.Study_02.09.studystatus_assessment_window</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_studystatus_assessment_window_01' }">
+            Study_studystatus_assessment_window_01
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_studystatus_assessment_window_02' }">
+            Study_studystatus_assessment_window_02
           </router-link>
         </td>
         <td></td>
@@ -4948,8 +4951,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.10.studystatus_assessment_applyresult</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_studystatus_assessment_applyresult' }">
+            Study_studystatus_assessment_applyresult
           </router-link>
         </td>
         <td></td>
@@ -4983,8 +4986,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.12.studystatus_assessment_resultanalysis</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_studystatus_assessment_resultanalysis' }">
+            Study_studystatus_assessment_resultanalysis
           </router-link>
         </td>
         <td></td>
@@ -5151,8 +5154,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.21.studyquestion</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_studyquestion' }">
+            Study_studyquestion
           </router-link>
         </td>
         <td></td>

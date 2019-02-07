@@ -161,6 +161,11 @@ import Study02studystatusassignmentresult from '~workplace/study/Study_02_studys
 import Study02studystatusassignmentapply from '~workplace/study/Study_02_studystatus_assignment_apply'
 import Study02studystatusassessment from '~workplace/study/Study_02_studystatus_assessment'
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
+import Studystudystatusassessmentapplyresult from '~workplace/study/Study_studystatus_assessment_applyresult'
+import Studystudystatusassessmentwindow01 from '~workplace/study/Study_studystatus_assessment_window_01'
+import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystatus_assessment_window_02'
+import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
+import Studyquestion from '~workplace/study/Study_studyquestion'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
 import Study02inquiryedit from '~workplace/study/Study_02_inquiry_edit'
@@ -1429,6 +1434,31 @@ var rootRoutes = [
     path: '/Study_02_studystatus_assessment_notice',
     name: 'Study_02_studystatus_assessment_notice',
     component: Study02studystatusassessmentnotice
+  },
+  {
+    path: '/Study_studystatus_assessment_applyresult',
+    name: 'Study_studystatus_assessment_applyresult',
+    component: Studystudystatusassessmentapplyresult
+  },
+  {
+    path: '/Study_studystatus_assessment_window_01',
+    name: 'Study_studystatus_assessment_window_01',
+    component: Studystudystatusassessmentwindow01
+  },
+  {
+    path: '/Study_studystatus_assessment_window_02',
+    name: 'Study_studystatus_assessment_window_02',
+    component: Studystudystatusassessmentwindow02
+  },
+  {
+    path: '/Study_studystatus_assessment_resultanalysis',
+    name: 'Study_studystatus_assessment_resultanalysis',
+    component: Studystudystatusassessmentresultanalysis
+  },
+  {
+    path: '/Study_studyquestion',
+    name: 'Study_studyquestion',
+    component: Studyquestion
   },
   {
     path: '/Study_02_faq_detail',

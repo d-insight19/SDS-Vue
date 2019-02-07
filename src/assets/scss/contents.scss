@@ -569,8 +569,8 @@
 #container.eduperson_studycurrent_detail .progBox_wrap.multi .progBox_multi .progBox .fr{position:absolute;right:-48px;top:-8px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;}
 #container.eduperson_studycurrent_detail .progBox_wrap.multi{margin-bottom:0px;}
 #container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail{text-align: right;font-size:map-get($font-size, font_12);line-height: 18px;letter-spacing: -0.36;margin-bottom:20px;}
-#container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail span.bar5:before{width: 10px;height: 10px;display: inline-block; content: ''; border-radius: 100%;margin-right: 4px;background-color:map-get($contents_colors, type_5 );}
-#container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail span.bar1:before{width: 10px;height: 10px;display: inline-block; content: ''; border-radius: 100%;margin-right: 4px;background-color:map-get($contents_colors, type_1 );}
+#container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail span.bar-cir5:before{width: 10px;height: 10px;display: inline-block; content: ''; border-radius: 100%;margin-right: 4px;background-color:map-get($contents_colors, type_5 );}
+#container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail span.bar-cir1:before{width: 10px;height: 10px;display: inline-block; content: ''; border-radius: 100%;margin-right: 4px;background-color:map-get($contents_colors, type_1 );}
 #container.eduperson_studycurrent_detail .progBox_wrap.multi .graph_detail span + span{margin-left:12px;}
 
 #container.eduperson_studycurrent_detail .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
@@ -1117,7 +1117,7 @@ table td.right-bd{ border-right:1px solid map-get($line_colors, B85); }
 #container.study_quiz_ox .txt-tit {margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 #header.quiz-head-bg{background: url("../img/img_quiz_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 
-.inb-box{display: inline-block; width:49.5%;}
+.inb-box{display: table-cell; width:100%;}
 .inb-box label.labelRdo input.rdo + .ico{vertical-align: middle; margin:0 16px 0 0 ;}
 ul.com-rdo label.labelRdo input.rdo:checked + .ico .chk-blue { display: inline-block; background-position: -5px -5px; width: 22px; height: 22px; }
 ul.com-rdo label.labelRdo input.rdo:checked ~ .label { color:#00ADFB;}
@@ -1129,13 +1129,13 @@ ul.com-rdo label.labelRdo input.rdo + .ico .chk-blue { display: none; }
 .inb-box label.labelRdo input.rdo:checked ~ .label .chk-x{ width:48px;height:48px;background: url("../img/ic_x_48_s.png") no-repeat; }
 .inb-box label:nth-child(1){margin-right:16px;} 
 
-
 // ox퀴즈 채점결과
 #container.study_quiz_ox #header div.hide-inner p.h-tit1 {font-weight:500; font-size:map-get($font-size, font_24);line-height: 32px; letter-spacing: -0.72px;}
 #container.study_quiz_ox #header div.hide-inner p.h-tit5 {font-weight:400;  padding:10px 0 0 0 ; font-size:map-get($font-size, font_16);line-height: 18px; letter-spacing: -0.48px;color:rgba(255,255,255,0.8); }
 #container.study_quiz_ox .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 #container.study_quiz_ox .hr{margin: 32px -24px 26px -24px;} 
 #container.study_quiz_ox .inb-box .ico-ml{ margin-left: 48px;}
+#container.study_quiz_ox .inb-box .ico-mr{ margin-right: 48px;}
 #container.study_quiz_ox .inner input.input{color: rgba(0,0,0,0.8);}
 .inner-txt{ font-weight:400; font-size:map-get($font-size, font_16);line-height: 25px; letter-spacing: -0.48px; color:map-get($mono_colors, mono_80);}
 .bg-sky{background: #e5f3ff; padding: 16px;}
@@ -1584,7 +1584,7 @@ label.rdo .label{position: relative;}
 #container.courseware.union .download_detail {padding:20px;}
 #container.courseware.union .mr4{margin-right:4px;}
 
-// Study_home_union_condition
+//Study_home_union_condition
 #container.courseware.union .label-tit-16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
 #container.courseware.union .tb_wrap table tr:nth-child(1) td{border-bottom:1px solid #d9d9d9;}
 #container.courseware.union .tb_wrap table tr td{padding:10px 0;}
@@ -1600,7 +1600,7 @@ label.rdo .label{position: relative;}
 #container.studystatus .ulList.type4 li.font_16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
 
 
-
+//Studystatus_assessment
 #container.studystatus .type_box{border-top: 0;border-bottom: 0;padding-top:23px;padding-bottom:23px;}
 #container.studystatus .type_box ul.line{border-top: 1px solid #d9d9d9;}
 #container.studystatus .type_box .font_13 {font-size: map-get($font_size, font_13); letter-spacing: -0.039em;}
@@ -1611,7 +1611,7 @@ label.rdo .label{position: relative;}
 #container.studystatus .guide-btn{padding:7px 12px;}
 #container.studystatus .num{font-family: 'Roboto' ;}
 
-
+//studystatus_assignment_result
 #container.studystatus .confirm_item_detail{margin:0px -18px}
 #container.studystatus .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
 #container.studystatus .confirm_item_detail > li > span:first-child{line-height: 58px;font-weight: 600;}
@@ -1631,14 +1631,23 @@ label.rdo .label{position: relative;}
 #container.studystatus .font_11{font-size:map-get($font-size, font_11);letter-spacing: -0.033em;}
 
 
+//Study_studystatus_assessment_applyresult
+#container.studystatus .inb-box .ico-ml{ margin-left: 48px;}
+#container.studystatus .inb-box .ico-mr{ margin-right: 48px;}
+#container.studystatus .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 
 
+//Study_studystatus_assessment_window
+#container.studystatus .font_16{font-size:map-get($font-size, font_16);  letter-spacing: -0.48px;}
+#container.studystatus .r-txt{font-weight:500;font-size:map-get($font-size, font_13);  letter-spacing: -0.39px;}
+#container.studystatus .l-txt{font-weight:500;font-size:map-get($font-size, font_13);  letter-spacing: -0.39px;}
+#container.studystatus .stepper{margin-bottom:24px;}
 
-
-
-
-
-
+//Study_studystatus_assessment_resultanalysis
+#container.studystatus .diagram_wrap.type2 li.no-cir:before{content:none;}
+#container.studystatus .diagram_wrap.type2 li.no-cir{padding-left: 0;font-size:map-get($font-size, font_15);  letter-spacing: -0.45px;}
+#container.studystatus .progBox_wrap .font_16{font-size:map-get($font-size, font_16);  letter-spacing: -0.48px;}
+#container.studystatus .progBox_wrap > li {margin-bottom:42px;}
 
 
 
