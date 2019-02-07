@@ -2054,7 +2054,10 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 #container.drawer.bpo.sms .title_line { font-size:map-get($font_size, font_16); color:#000; font-weight: 500 }
 #container.drawer.bpo.sms .title_line span.title_txt {color:inherit}
 #container.drawer.bpo.sms .multiList.type1 > li {padding:15px 0}
-
+#container.drawer.teachersclub .down {margin-top:-6px}
+#container.drawer.teachersclub  #dropdown.status {left:0; right:auto}
+#container.drawer.bpo .teachersclub_title h2.font_20 {color:#fff}
+#container.drawer.teachersclub .title_line .date_wrap {margin-top:14px}
 
 .layerWrap .popup-select {overflow:hidden; width:100%}
 .layerWrap .popup-select li {float:left; width: calc(50% - 4px); box-sizing: border-box}
