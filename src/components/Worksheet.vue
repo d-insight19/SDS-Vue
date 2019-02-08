@@ -6832,8 +6832,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.38.SO_voicerecord</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_voicerecord' }">
+            Study_04_SO_voicerecord
           </router-link>
         </td>
         <td></td>
@@ -6849,8 +6849,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.39.SO_voicerecord_player</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player' }">
+            Study_04_SO_voicerecord_player
           </router-link>
         </td>
         <td></td>
@@ -6934,8 +6934,8 @@
         <td>　</td>
         <td class="textL">05.Study_04.44.SO_poll_submission_circle</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_04_SO_poll_submission_circle' }">
+            Study_04_SO_poll_submission_circle
           </router-link>
         </td>
         <td></td>
@@ -7160,8 +7160,8 @@
         <td>　</td>
         <td class="textL">05.Study_05.12.etc_accesscontrol</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_etc_accesscontrol' }">
+            Study_etc_accesscontrol
           </router-link>
         </td>
         <td></td>

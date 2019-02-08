@@ -3,14 +3,13 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery CLIPingType">
+      <div id="container" class="mediaquery studyquestion">
 
-        <!-- header -->
-        <div id="header" class="tab clr1">
-
-            <div class="header_inner line1">
-                <button type="button" class="btn only prev"><span class="ico white">이전</span></button>
-                <p class="header_text font_18 mono_0">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
+       <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div id="header" class="tab video">          
+            <div class="header_inner line1 clr1">
+                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
+                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
@@ -24,10 +23,10 @@
             </div>
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
-            <!-- <div class="blur_wrap">
+            <div class="blur_wrap">
                 <div class="left blur"></div>
                 <div class="right blur"></div>
-            </div> -->
+            </div>
 
             
             <!-- s: 동영상 -->
@@ -35,22 +34,8 @@
                 <div class="player_inner">
                     <div id="contents"></div>
 
-                    <!--  s: 연관 콘텐츠 -->
-                    <div class="movie_info_list_wrap" style="display:none;">
-                        <div class="movie_info_list">
-                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
-                            <ul>
-                                <li v-for="(item, index) in relatedVideoList" :key="index">
-                                    <a href="#"></a>
-                                    <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li> 
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- e: 연관 콘텐츠 -->
-
-                    <!-- s: 볼륨영역 -->
-                    <div class="volume_wrap" style="display:none;">
+                    <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
+                    <div class="volume_wrap" style="display:none;pointer-events:none">
                         <div class="volume_left">
                             <div class="inner"></div>
                             <div class="icon_wrap">
@@ -68,51 +53,107 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: double 텝 영역 -->
-                    <div class="tap_wrap" style="display:none;">
-                        <div class="half_left">
-                            <div class="inner"></div>
-                            <div class="inner_ripple"></div>
-                        </div>
-                        <div class="half_right">
-                            <div class="inner"></div>
-                            <div class="inner_ripple"></div>
-                        </div>
+                    <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
+                    <div class="tap_wrap" style="display:none;pointer-events:none">
+                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
+                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
+                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
+                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
+                          </div>
+                        </v-touch>
+                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
+                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
+                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
+                                <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
+                            </div>
+                        </v-touch>                            
                     </div>
                     <!--  e: double 텝 영역 -->
 
                 </div>
                 <!-- s: btm_subtitle_area -->
-                
-                <!-- e: btm_subtitle_area -->
-            </div>
-            <!-- e: 동영상 -->
-
-            <!-- 
-            <div class="header_inner line1">
-                <button type="button" class="btn only prev"><span class="ico white">이전</span></button>
-                <p class="header_text font_18 mono_0">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
-            </div>
-            <div class="hide_header" style="padding-top: 15px; height:96px; padding-left:66px; padding-right: 150px;">
-                <h3 class="h-tit3 fwl multiline line3 font_15 mono_0 mb20">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</h3>
-                <div class="thum">
-                    <span class="progWrap"><em class="bar clr2" style="width:70%;"></em></span>
-                    <div class="cDim"></div>
-                    <div class="thumbnail">
-                        <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                <div class="btm_subtitle_area">
+                    <div class="subtitle_slide_wrap">
+                        <div class="btm_subtitle_control">                                
+                            <div>
+                                <div class="subtitle_lang_wrap">
+                                    <span class="lang_type">Bahasa Indonesia</span>
+                                    <span class="dropdown"></span>         
+                                </div>
+                                <span class="switch_txt">Auto Scroll</span>
+                                <slp-switch :value="true"/>
+                                <span class="script_close"></span>
+                            </div>
+                        </div>
+                        <!-- s: timeline_wrapper -->
+                        <div class="timeline_wrapper">
+                            <p class="timeline_tit">스크립트</p>
+                            <ul class="btm_subtitle_timeline">
+                                <li>
+                                    <!-- 현재 재생중인 영상의 자막일 때 -->
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. <span class="color_clr2">이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다.</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>[클래스 객체]</p> 
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
+                                            대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">                                   
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
+                                            대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번
+                                            차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>[클래스 객체]</p> 
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>[클래스 객체]</p> 
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- e: timeline_wrapper -->
                     </div>
                 </div>
-            </div> -->
-            <!--<div class="header_inner line2 tabMenu scroll-x">
-                <ul class="fixTab">
-                    <li><a href="#tab1">요약</a></li>
-                    <li class="on"><a href="#tab2">댓글</a></li>
-                </ul>
+                <!-- e: btm_subtitle_area -->
             </div>
-            <div class="blur_wrap">
-                <div class="left blur"></div>
-                <div class="right blur"></div>
-            </div>-->
+            <!-- e: 동영상-->                
+
+            
         </div>
         <!-- //header -->
 
@@ -120,115 +161,53 @@
         
           <div class="cell">
             <div class="inner">
-                <!-- 댓글 -->
-                <div class="txt-line mt0">
-                    <span class="my-op font_16">평균평점 <span class="mono_65 fwr">총 <span>25</span>건</span></span>
-                </div>
+                <p class="mb5">총 <span class="fwb">1,620</span></p>
 
-                <div class="rating_wrap mb15">
-                    <fieldset class="rating">
-                        <input type="radio" id="star05" name="rating" value="5" /><label class = "full" for="star05" title="Awesome - 5 stars"></label>
-                        <input type="radio" id="star04" name="rating" value="4" /><label class = "full" for="star04" title="Pretty good - 4 stars"></label>
-                        <input type="radio" id="star03" name="rating" value="3" /><label class = "full" for="star03" title="Meh - 3 stars"></label>
-                        <input type="radio" id="star02" name="rating" value="2" /><label class = "full" for="star02" title="Kinda bad - 2 stars"></label>
-                        <input type="radio" id="star01" name="rating" value="1" /><label class = "full" for="star01" title="Sucks big time - 1 star"></label>
-                    </fieldset>
-                    <span class="font_26 fwb" style="vertical-align: bottom; line-height: 120%;">4.5</span><span class="font_14 fwb" style="vertical-align: bottom; line-height: 150%;">점</span>
-                </div>
-
-                <ul class="reply_input bd_bt">
-                    <li class="bd">                   
-                        <input type="text" class="input reply" placeholder="댓글을 입력하세요." @focus="focusToggle" /><button>등록</button>
+                <ul class="ulList type4">
+                    <li style="padding: 9px 0;"> 
+                        <span class="tar">
+                            <dl class="pipe-group type2">
+                                <dd class="color_clr2"><span class="ico note blue"></span> 나의질문만</dd>
+                                <dd>전체폴더 <span class="ico ico_dropdown16 gr"></span> </dd>
+                            </dl>
+                        </span> 
+                    </li>
+                    <li>
+                        <p class="icon_txt mono_65">1차시</p>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>비공개</dd>
+                            <dd>정혜민</dd>
+                            <dd>2018.10.10</dd>                                
+                            <dd><span class="ico play"></span>02:36</dd>
+                            <dd><span class="ico clip"></span>첨부파일</dd>
+                        </dl>
+                        <p class="color_clr3">답변완료</p>
+                    </li>
+                    <li>
+                        <p class="icon_txt mono_65">수료평가</p>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>비공개</dd>
+                            <dd>정혜민</dd>
+                            <dd>2018.10.10</dd>                                
+                            <dd><span class="ico play"></span>02:36</dd>
+                            <dd><span class="ico clip"></span>첨부파일</dd>
+                        </dl>
+                        <p class="color_clr3 mono_80">미답변</p>
+                    </li>
+                    <li>
+                        <p class="icon_txt mono_65">기타</p>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>비공개</dd>
+                            <dd>정혜민</dd>
+                            <dd>2018.10.10</dd>                                
+                            <dd><span class="ico play"></span>02:36</dd>
+                            <dd><span class="ico clip"></span>첨부파일</dd>
+                        </dl>
                     </li>
                 </ul>
-                <ul>
-                    <li class="reply-list">
-                        <div class="rating_wrap">
-                            <fieldset class="rating">
-                                <input type="radio" id="star15" name="rating" value="5" /><label class = "full" for="star15" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star14" name="rating" value="4" /><label class = "full" for="star14" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star13" name="rating" value="3" /><label class = "full" for="star13" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star12" name="rating" value="2" /><label class = "full" for="star12" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star11" name="rating" value="1" /><label class = "full" for="star11" title="Sucks big time - 1 star"></label>
-                            </fieldset>
-                        </div>
-                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
-
-                        <ul class="info">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
-                        </ul>
-                    </li>
-                    <li class="reply-list">
-                        <div class="rating_wrap">
-                            <fieldset class="rating">
-                                <input type="radio" id="star25" name="rating" value="5" /><label class = "full" for="star25" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star24" name="rating" value="4" /><label class = "full" for="star24" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star23" name="rating" value="3" /><label class = "full" for="star23" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star22" name="rating" value="2" /><label class = "full" for="star22" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star21" name="rating" value="1" /><label class = "full" for="star21" title="Sucks big time - 1 star"></label>
-                            </fieldset>
-                        </div>
-                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
-                        
-                        <ul class="info">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
-                        </ul>
-                    </li>
-                    <li class="reply-list">
-                        <div class="rating_wrap">
-                            <fieldset class="rating">
-                                <input type="radio" id="star25" name="rating" value="5" /><label class = "full" for="star25" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star24" name="rating" value="4" /><label class = "full" for="star24" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star23" name="rating" value="3" /><label class = "full" for="star23" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star22" name="rating" value="2" /><label class = "full" for="star22" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star21" name="rating" value="1" /><label class = "full" for="star21" title="Sucks big time - 1 star"></label>
-                            </fieldset>
-                        </div>
-                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
-                        
-                        <ul class="info">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
-                        </ul>
-                    </li>
-                    <li class="reply-list">
-                        <div class="rating_wrap">
-                            <fieldset class="rating">
-                                <input type="radio" id="star25" name="rating" value="5" /><label class = "full" for="star25" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star24" name="rating" value="4" /><label class = "full" for="star24" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star23" name="rating" value="3" /><label class = "full" for="star23" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star22" name="rating" value="2" /><label class = "full" for="star22" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star21" name="rating" value="1" /><label class = "full" for="star21" title="Sucks big time - 1 star"></label>
-                            </fieldset>
-                        </div>
-                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
-                        
-                        <ul class="info">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
-                        </ul>
-                    </li>
-                    <li class="reply-list">
-                        <div class="rating_wrap">
-                            <fieldset class="rating">
-                                <input type="radio" id="star25" name="rating" value="5" /><label class = "full" for="star25" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star24" name="rating" value="4" /><label class = "full" for="star24" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star23" name="rating" value="3" /><label class = "full" for="star23" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star22" name="rating" value="2" /><label class = "full" for="star22" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star21" name="rating" value="1" /><label class = "full" for="star21" title="Sucks big time - 1 star"></label>
-                            </fieldset>
-                        </div>
-                        <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
-                        
-                        <ul class="info">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- 댓글 -->
 
 
                 <!-- keyboard -->
@@ -286,6 +265,7 @@
     </div>
     <!-- //wrap -->
 </template>
+
 <script>
 /* eslint-disable */
 
@@ -314,11 +294,30 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
+import Vue from 'vue'
+import VueTouch from 'vue-touch'
+
+VueTouch.registerCustomEvent('singletap', {
+  type: 'tap',
+  taps: 1,
+})
+
+VueTouch.registerCustomEvent('doubletap', {
+  type: 'tap',
+  taps: 2,
+})
+
+Vue.use(VueTouch, {name: 'v-touch'})
+
 export default {
   name: 'components_flowplayer',
   data () {
     return {
-        active : false,
+        innerRipple: false,
+        halfRight: false,
+        halfLeft: false,
+        none: true,
+        left: true,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         relatedVideoList: [
@@ -386,8 +385,35 @@ export default {
     detail_toggle () {        
         this.detail_show = !this.detail_show;
     },
-    active_el () {
-        this.active = !this.active
+    prevTen() {
+        console.error("왼쪽");
+        this.halfRight = true
+        this.innerRipple = true
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_right').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfRight = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_right').css('display', 'block');
+            }, 600);       
+    },
+    nextTen() {
+        console.error("오른쪽");
+        this.halfLeft = true
+        this.innerRipple = true
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_left').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfLeft = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_left').css('display', 'block');
+            }, 600);       
     }
   },
   mounted () {
@@ -442,12 +468,6 @@ export default {
         }
 
         
-        $('.half_left').click(function(){
-            console.error("왼쪽");
-        });
-        $('.half_right').click(function(){
-            console.error("오른쪽");
-        });
 
         $('.fp-script , .script_close').click(function(){
             // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
@@ -458,6 +478,7 @@ export default {
 
         $('.fp-nextArrow').click(function()
         {
+            $('.half_right').css('display', 'block');
             console.error('다음 콘텐츠!')
         });
         $('.fp-prevArrow').click(function()
@@ -524,3 +545,20 @@ export default {
 }
 </script>
 
+<style scoepd>
+.innerRipple {
+  display: none;
+}
+.halfRight {
+  display: none;
+}
+.halfLeft {
+  display: none;
+}
+.display {
+  display: block;
+}
+.none {
+  display: none;
+}
+</style>

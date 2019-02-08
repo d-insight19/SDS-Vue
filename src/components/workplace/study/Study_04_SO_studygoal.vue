@@ -9,7 +9,7 @@
             <div v-if="headerType == '1'" id="header" class="expand">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                    <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                    <p class="header_text  font_19"> </p>
                     <div class="page-btn">
                         <span class="ico back"></span>
                         <div class="num"><span>3</span> / <span>36</span></div>
@@ -21,7 +21,7 @@
                         <span class="chip">학습목표</span>                         
                         <p class="h-tit1">목표안내 타이틀 영역입니다 목표 안내 타이틀 영역입니다</p>
                         <p class="h-tit5">설명 입니다. 설명 입니다. 설명 입니다. Admin에서 등록된 내용 출력 (선택사항)</p>
-                        <button class="guide-btn">용어사전</button>
+                        <button class="btn-md">용어사전</button>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <div v-if="headerType == '2'" id="header" class="tab">          
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                <p class="header_text font_19"> </p>
                 </div>  
                 <div class="header_inner line2 tabMenu">
                     <ul class="fixTab">
@@ -64,7 +64,7 @@
                 
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                <p class="header_text font_19"> </p>
                 </div>            
                 <div class="header_inner line2 tabMenu scroll-x">
                     <ul class="scrollTab">

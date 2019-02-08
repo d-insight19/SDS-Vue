@@ -197,6 +197,8 @@ import Study04SOopinionchoose from '~workplace/study/Study_04_SO_opinion_choose'
 import Study04SOopinionmultiopinon from '~workplace/study/Study_04_SO_opinion_multiopinon'
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulation_submission'
+import Study04SOvoicerecord from '~workplace/study/Study_04_SO_voicerecord'
+import Study04SOvoicerecordplayer from '~workplace/study/Study_04_SO_voicerecord_player'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
 import Study04SOactionplanintro from '~workplace/study/Study_04_SO_actionplan_intro'
 import Study04SOmainsummary from '~workplace/study/Study_04_SO_mainsummary'
@@ -210,6 +212,7 @@ import Study04SOquizmultichoiceresult from '~workplace/study/Study_04_SO_quiz_mu
 import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
 import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
 import Study04SOpollinput from '~workplace/study/Study_04_SO_poll_input'
+import Study04SOpollsubmissioncircle from '~workplace/study/Study_04_SO_poll_submission_circle'
 import Study04SOpollintro from '~workplace/study/Study_04_SO_poll_intro'
 import Study04SOpollsubmissionrod from '~workplace/study/Study_04_SO_poll_submission_rod'
 import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
@@ -233,6 +236,7 @@ import Study05etccaptcha from '~workplace/study/Study_05_etc_captcha'
 import StudyLOoldimageaudio from '~workplace/study/Study_LO_old_imageaudio'
 import StudyLOoldmp4studymaterial from '~workplace/study/Study_LO_old_mp4_studymaterial'
 import StudyLOoldmp4 from '~workplace/study/Study_LO_old_mp4'
+import Studyetcaccesscontrol from '~workplace/study/Study_etc_accesscontrol'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -1555,6 +1559,16 @@ var rootRoutes = [
     component: Study04SOsimulationsubmission
   },
   {
+    path: '/Study_04_SO_voicerecord',
+    name: 'Study_04_SO_voicerecord',
+    component: Study04SOvoicerecord
+  },
+  {
+    path: '/Study_04_SO_voicerecord_player',
+    name: 'Study_04_SO_voicerecord_player',
+    component: Study04SOvoicerecordplayer
+  },
+  {
     path: '/Study_04_SO_actionplan_input',
     name: 'Study_04_SO_actionplan_input',
     component: Study04SOactionplaninput
@@ -1695,6 +1709,11 @@ var rootRoutes = [
     component: Study04SOpollinput
   },
   {
+    path: '/Study_04_SO_poll_submission_circle',
+    name: 'Study_04_SO_poll_submission_circle',
+    component: Study04SOpollsubmissioncircle
+  },
+  {
     path: '/Study_04_SO_poll_submission_rod',
     name: 'Study_04_SO_poll_submission_rod',
     component: Study04SOpollsubmissionrod
@@ -1803,6 +1822,11 @@ var rootRoutes = [
     path: '/Study_LO_old_mp4',
     name: 'Study_LO_old_mp4',
     component: StudyLOoldmp4
+  },
+  {
+    path: '/Study_etc_accesscontrol',
+    name: 'Study_etc_accesscontrol',
+    component: Studyetcaccesscontrol
   },
   // {
   //   path: '/regiclass_detailview_licence',

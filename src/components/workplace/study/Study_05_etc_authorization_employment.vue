@@ -92,7 +92,7 @@
                             </ul>                           
                         </div>
                         <p class="txt-tit-2">※ 인증에 사용하는 정보와 회원정보가 일치해야 합니다. 올바르지 않다면 회원정보 수정 후 인증해 주세요.</p>
-                        <button class="guide-btn">회원정보 수정</button>
+                        <button class="btn-md">회원정보 수정</button>
                         <!-- <div class="loginChk">
                             <label for="agree" class="labelChk">
                             <input id="agree" type="checkbox" class="chk" name="agree">

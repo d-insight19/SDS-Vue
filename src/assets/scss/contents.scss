@@ -829,7 +829,7 @@ table td.sub-txt{ color:#000;}
 .op80{color: rgba(0,0,0,0.8)!important}
 .op65{ color:rgba(0,0,0,0.65) !important;}
 .inner-txt{ font-weight:400; font-size:map-get($font-size, font_15);line-height: 25px; letter-spacing: -0.45px; color:rgba(0,0,0,0.8) }
-.guide-btn { cursor:pointer;border:1px solid map-get($line_colors, B85);color:map-get($mono_colors, mono_65); margin-bottom: 20px; padding:4px 6px; font-weight: 500; font-size:map-get($font-size, font_12); letter-spacing: -0.36px;}
+.btn-md { cursor:pointer;border:1px solid map-get($line_colors, B85);color:map-get($mono_colors, mono_65); margin-bottom: 20px; padding:4px 6px; font-weight: 500; font-size:map-get($font-size, font_12); letter-spacing: -0.36px;}
 .bottom-bd-e3{border-bottom: 1px solid #e3e3e3 !important;}
 .top-bd-e3{border-top: 1px solid #e3e3e3 !important;}
 .bottom-bd-d9{border-bottom: 1px solid #d9d9d9 !important;}
@@ -1225,10 +1225,14 @@ label.rdo .label{position: relative;}
 #container.study_poll .inner .h-tit5{margin-bottom:20px; font-weight:500; font-size:map-get($font-size, font_16);line-height: 28px; letter-spacing: -0.48px;}
 
 
+// poll_submission_circle
+#container.study_poll .inner .h-tit5{margin-bottom:20px; font-weight:500; font-size:map-get($font-size, font_16);line-height: 28px; letter-spacing: -0.48px;}
+
+
 // 간지 middle
 #container.study_middle  #header div.hide-inner  p.h-tit1{font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
 #container.study_middle  #header div.hide-inner  p.h-tit5{font-weight:400; font-size:map-get($font-size , font_15);line-height:25px; letter-spacing:-0.45px;margin-top: 12px; }
-#container.study_middle  .guide-btn{margin-bottom:0px; margin-top:8px; }
+#container.study_middle  .btn-md{margin-bottom:0px; margin-top:8px; }
 
 
 // 찬반 토론 - 제출
@@ -1236,8 +1240,8 @@ label.rdo .label{position: relative;}
 .txt-wrap .bad-ex {color:map-get($contents_colors, type_1 );  font-size:map-get($font-size , font_16); line-height:20px; letter-spacing:-0.48px; font-weight:600;}
 .progBox .bar.r-bar{border-radius: 0 50px 50px 0; right:0; left:unset; background-color:map-get($contents_colors, type_1 );}
 .progBox .bar.l-bar{border-radius: 50px 0 0 50px; background-color:map-get($contents_colors, type_2 );}
-.fl .part-num-2{color:map-get($contents_colors, type_2 )}
-.fr .part-num-2{color:map-get($contents_colors, type_1 )}
+.txt-wrap  .fl .part-num-2{color:map-get($contents_colors, type_2 )}
+.txt-wrap  .fr .part-num-2{color:map-get($contents_colors, type_1 )}
 .progBox.bg-x{background:none; margin-top:6px;}
 
 #container.study_debate #header div.hide-inner  p.h-tit1{font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px; margin-top: 12px;}
@@ -1267,7 +1271,7 @@ label.rdo .label{position: relative;}
 
 // 과제내용 입력
 #header.assinment-head-bg{background: url("../img/img_assinment_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
-#container.study_assinment .guide-btn.mr8{margin-right:8px;}
+#container.study_assinment .btn-md.mr8{margin-right:8px;}
 
 // 1:1문의
 #container.study_inquery #header div.txt-group{font-weight:400; font-size:map-get($font-size , font_14);line-height:20px; letter-spacing:-0.42px;color:rgba(0,0,0,0.8)}
@@ -1356,7 +1360,7 @@ label.rdo .label{position: relative;}
 #header.debate-head-bg{background: url("../img/img_debate_bg.png") no-repeat center bottom; background-size: cover !important; position: relative;z-index: 0;}
 #container.study_debate #header div.hide-inner  p.h-tit5.sm{font-weight:500; font-size:map-get($font-size , font_14);line-height:25px; letter-spacing:-0.35px;}
 #container.study_debate .txt-tit {font-weight:500; font-size:map-get($font-size , font_16);line-height:25px; letter-spacing:-0.48px; margin-bottom:6px;}
-#container.study_debate .guide-btn {margin-bottom: 12px;}
+#container.study_debate .btn-md {margin-bottom: 12px;}
 #container.study_debate .cir-box {padding:30px 18px;}
 #container.study_debate .cir-box .big-cir { cursor:pointer; width: 128px; border: 5px solid #d9d9d9; display: inline-block; border-radius: 100%; padding:42px 32px; font-weight:600; font-size:map-get($font-size , font_30);line-height:45px; letter-spacing:-0.9px; color:rgba(0,0,0,0.5);}
 
@@ -1371,7 +1375,7 @@ label.rdo .label{position: relative;}
 
 // 학습창 파일럿 테스트	 - etc_pilottest
 #container.study_etc .txt-tit{ font-weight:600; font-size:map-get($font-size , font_18);line-height:27px; letter-spacing:-0.54px;margin-bottom:14px; }
-#container.study_etc .guide-btn{padding:2px 12px;}
+#container.study_etc .btn-md{padding:2px 12px;}
 #container.study_etc .gr-box{background: #f5f5f5; width: 100%;padding: 12px 16px;}
 #container.study_etc .result-table tr:nth-child(1) td{border-top:1px solid #999999;}
 #container.study_etc .result-table tr:nth-last-child(1) {margin-bottom:36px;}
@@ -1609,7 +1613,7 @@ label.rdo .label{position: relative;}
 #container.studystatus .type_box .font_16 {font-size: map-get($font_size, font_16); }
 #container.studystatus .title_txt{font-size: map-get($font_size, font_20); letter-spacing: -0.06em;font-weight:600;}
 #container.studystatus .font_24{font-size: map-get($font_size, font_24); letter-spacing: -0.072em;}
-#container.studystatus .guide-btn{padding:7px 12px;}
+#container.studystatus .btn-md{padding:7px 12px;}
 #container.studystatus .num{font-family: 'Roboto' ;}
 
 //studystatus_assignment_result
@@ -1649,6 +1653,43 @@ label.rdo .label{position: relative;}
 #container.studystatus .diagram_wrap.type2 li.no-cir{padding-left: 0;font-size:map-get($font-size, font_15);  letter-spacing: -0.45px;}
 #container.studystatus .progBox_wrap .font_16{font-size:map-get($font-size, font_16);  letter-spacing: -0.48px;}
 #container.studystatus .progBox_wrap > li {margin-bottom:42px;}
+
+
+//study_studyquestion
+#container.studyquestion .pipe-group.type2 dd:after{margin:0 6px;}
+#container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 6px;background: #d9d9d9;}
+#container.studyquestion .pipe-group dd:nth-last-child(1):after{display:none;}
+#container.studyquestion .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
+#container.studyquestion .ulList.type4 li{height:auto;}
+#container.studyquestion .ulList.type4 li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
+#container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
+
+
+
+#container.voice .record_box{background:#f2f3f7; padding:24px 34px;}
+#container.voice .font_15{font-size: map-get($font-size , font_15);letter-spacing: -0.045em;color:rgba(0,0,0,0.8)}
+#container.voice .font_16{font-size: map-get($font-size , font_16);letter-spacing: -0.048em;}
+#container.voice .record_box .record_tb{display:table;margin: 0 auto;}
+#container.voice .record_box ul.record_tb li{display:table-cell;vertical-align: middle;}
+#container.voice .record_box ul.record_tb li .circle{cursor:pointer;margin-left:28px;margin-right:26px;padding:30px;background:white;border-radius:50%; border:1px solid #e3e3e3;}
+#container.voice .record_box .record_txt{text-align: center;font-size:map-get($font-size, font_14);  letter-spacing: -0.042em;color:rgba(0,0,0,0.65)}
+#container.voice .record_box .btn-md{max-width: 56px;padding:8px 16px;background-color:white;font-size:map-get($font-size, font_12); letter-spacing: -0.036em;color:rgba(0,0,0,0.25)}
+#container.voice .record_box .play_wrap .record_wrap{position: relative;}
+#container.voice .record_box .play_wrap .record_bar{height:4px; width:56%;background-color:rgba(0,0,0,0.1);}
+#container.voice .record_box .play_wrap .record_bar .record_ball{position: absolute;left: 0;background:#00adfb; width:10px; height:10px;}
+#container.voice .record_box .play_wrap li{float:left;}
+#container.voice .record_box .play_wrap li .num{font-family:'roboto'; font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.65)}
+
+
+#container.voice .record_box .play_wrap li{float:left;}
+#container.voice .record_box .play_wrap .font_18{font-family:'roboto'; font-size:map-get($font-size, font_18);letter-spacing: -0.054em; }
+#container.voice .record_box .play_wrap .font_14{ font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.5) }
+
+
+
+
+
+
 
 
 

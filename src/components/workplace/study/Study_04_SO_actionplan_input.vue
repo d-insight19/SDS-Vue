@@ -14,7 +14,7 @@
                         <div class="num "><span>03</span>/<span>36</span>p</div>
                         <span class="ico next-wh"></span>
                     </div>
-                    <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                    <p class="header_text  font_19"> </p>
                 </div>  
                 <div class="hide_header" style="background-color:rgba(0,0,0,0.45); padding-top:66px; padding-bottom:60px">                
                     <div class="hide-inner">
@@ -30,7 +30,7 @@
             <div v-if="headerType == '2'" id="header" class="tab">          
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                <p class="header_text font_19"> </p>
                 </div>  
                 <div class="header_inner line2 tabMenu">
                     <ul class="fixTab">
@@ -62,7 +62,7 @@
                 
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                <p class="header_text font_19"> </p>
                 </div>            
                 <div class="header_inner line2 tabMenu scroll-x">
                     <ul class="scrollTab">
@@ -94,14 +94,14 @@
                         <p class="inner-txt">설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 설명글입니다 </p>
                         <p class="line02"></p>
                         <p class="txt-tit">1. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
-                        <button class="guide-btn">작성가이드</button>
+                        <button class="btn-md">작성가이드</button>
                         <input @input.prevent="e => keylength = e.target.value.length"   type="text" class="input01" placeholder="의견을 입력해 주세요">
                         <label class="inputbottom inp-num">
                             <span class="strlenth" ><span v-text="keylength"></span>/300</span>
                         </label>
                         <p class="hr"></p>
                         <p class="txt-tit">2. OO은 OO해야 합니다. 액션플랜 텍스트 질문영역입니다.  당신의 의견은 어떻습니까? </p>
-                        <button class="guide-btn" >작성가이드</button>                        
+                        <button class="btn-md" >작성가이드</button>                        
                         <input @input.prevent="e => keylength2 = e.target.value.length"    type="text" class="input02" placeholder="의견을 입력해 주세요">
                         <label class="inputbottom inp-num">
                             <span class="strlenth" ><span v-text="keylength2"></span>/300</span>
