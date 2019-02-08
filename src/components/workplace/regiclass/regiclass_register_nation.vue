@@ -21,64 +21,66 @@
                         <div class="progBox" style="height:4px !important;">
                         <div class="bar clr2" style="width:50%; height:4px;"></div>
                     </div>
-                    <p class="txt-desc" style="display:none1; width:55%;">국가기간 전략산업 취업교육 지원서를 입력해주세요.</p>
+                    <p class="txt-desc" style="display:none1; width:55%;">수강생 정보를 입력해 주세요.</p>
                 </div>
                 <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1 ">
                     <li>
-                        <strong class="label-tit require_mark">최종학력</strong>
-                        <slp-select class="w100p" required placeholder="선택">
-                            <option>1</option>
-                        </slp-select>
+                        <p><span class="fl mr10">성명</span> <span>정해민</span></p>
+                        <p class="line01"></p>
+                    </li>
+                    <li>
+                        <strong class="label-tit require_mark">주민등록번호</strong>
+                        <div>
+                            <slp-text-field class="w48p dib" value="1234567"></slp-text-field><span class="connec" style="display:inline-block; width: 4%; text-align: center;">-</span><slp-text-field class="w48p dib" value="1234567" type="password" ></slp-text-field>
+                        </div>
                     </li>                 
                     <li>
-                        <strong class="label-tit require_mark">학교명</strong>
-                        <slp-text-field placeholder="학교명 입력" ></slp-text-field>
+                        <strong class="label-tit require_mark">소속</strong>
+                        <slp-text-field placeholder="시스템개발팀" ></slp-text-field>
                     </li>                 
                     <li>
-                        <strong class="label-tit require_mark">단과대명</strong>
-                        <slp-text-field placeholder="단과대명 입력" ></slp-text-field>
+                        <strong class="label-tit require_mark">생년월일</strong>
+                        <slp-text-field type="number" placeholder="1980.12.13" ></slp-text-field>
                     </li>                 
                     <li>
-                        <strong class="label-tit require_mark">전공학과</strong>
-                        <slp-text-field placeholder="전공학과 입력" ></slp-text-field>
+                        <strong class="label-tit require_mark">전화번호</strong>
+                        <slp-text-field placeholder="0201830201" ></slp-text-field>
                     </li>                 
                     <li>
-                        <strong class="label-tit require_mark">전공계열</strong>
-                        <slp-select class="w100p" required placeholder="선택">
-                            <option>1</option>
-                        </slp-select>
+                        <strong class="label-tit require_mark">휴대전화</strong>
+                        <slp-text-field placeholder="01012345678" ></slp-text-field>
                     </li> 
                     <li>
                         <strong class="label-tit require_mark">수료학기</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li> 
                     <li>
                         <strong class="label-tit require_mark">졸업예정 년월</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li> 
                     <li>
                         <strong class="label-tit require_mark">근로여부</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li> 
                     <li>
                         <strong class="label-tit require_mark">근로여부</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                         <slp-text-field class="mt8" placeholder="신청경로 입력" ></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit require_mark">교육관심분야</strong>
-                        <slp-select class="w100p" required placeholder="선택">
+                        <select class="w100p select" required placeholder="선택">
                             <option>1</option>
-                        </slp-select>
+                        </select>
                     </li>
                     <li>
                         <strong class="label-tit require_mark">거주지역</strong>

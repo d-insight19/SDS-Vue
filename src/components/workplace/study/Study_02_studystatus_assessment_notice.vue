@@ -51,7 +51,7 @@
                           </li>
                           <li class="bottom-bd-x">
                             <p class="li-txt li-txt-3 mb16">기타 평가 추가 안내 문구 기타 평가 추가 안내 문구 기타 평가 추가 안내 문구 기타 평가 추가 안내 문구</p>
-                            <slp-checkbox ><span @click="activate()">주의사항에 동의합니다.</span> </slp-checkbox>
+                            <slp-checkbox @input="activate()"><span>주의사항에 동의합니다.</span> </slp-checkbox>
                             <!-- <div class="loginChk">
                               <label for="agree" class="labelChk">
                                 <input id="agree" type="checkbox" class="chk" name="agree">

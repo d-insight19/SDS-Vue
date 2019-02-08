@@ -41,12 +41,13 @@
 
               <div class="detail_box">
                 <ul class="progBox_wrap multi">
-                  <h2 class="tit">분류별 학습현황</h2>
-                  <p class="graph_detail">
-                    <span class="bar5">개설과정</span>
-                    <span class="bar1">학습과정</span>
-                  </p>
-
+                  <li>
+                    <h2 class="tit">분류별 학습현황</h2>
+                    <p class="graph_detail">
+                      <span class="bar-cir5">개설과정</span>
+                      <span class="bar-cir1">학습과정</span>
+                    </p>
+                  </li>
                   <li v-for="(item, index) in list1" :key="index">
                     <p class="chart_multi_tit">{{item.month}}</p>
                     <div class="progBox_multi">

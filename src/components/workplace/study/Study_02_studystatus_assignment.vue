@@ -58,8 +58,8 @@
                         </div>
 
                         <div>
-                          <button class="guide-btn mr8">작성 관련 안내 사항</button>
-                          <button class="guide-btn">모사 답안 처리 규정</button>
+                          <button class="btn-md mr8">작성 관련 안내 사항</button>
+                          <button class="btn-md">모사 답안 처리 규정</button>
                         </div>
 
 

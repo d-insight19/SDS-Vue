@@ -161,6 +161,11 @@ import Study02studystatusassignmentresult from '~workplace/study/Study_02_studys
 import Study02studystatusassignmentapply from '~workplace/study/Study_02_studystatus_assignment_apply'
 import Study02studystatusassessment from '~workplace/study/Study_02_studystatus_assessment'
 import Study02studystatusassessmentnotice from '~workplace/study/Study_02_studystatus_assessment_notice'
+import Studystudystatusassessmentapplyresult from '~workplace/study/Study_studystatus_assessment_applyresult'
+import Studystudystatusassessmentwindow01 from '~workplace/study/Study_studystatus_assessment_window_01'
+import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystatus_assessment_window_02'
+import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
+import Studyquestion from '~workplace/study/Study_studyquestion'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
 import Study02inquiryedit from '~workplace/study/Study_02_inquiry_edit'
@@ -192,6 +197,8 @@ import Study04SOopinionchoose from '~workplace/study/Study_04_SO_opinion_choose'
 import Study04SOopinionmultiopinon from '~workplace/study/Study_04_SO_opinion_multiopinon'
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulation_submission'
+import Study04SOvoicerecord from '~workplace/study/Study_04_SO_voicerecord'
+import Study04SOvoicerecordplayer from '~workplace/study/Study_04_SO_voicerecord_player'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
 import Study04SOactionplanintro from '~workplace/study/Study_04_SO_actionplan_intro'
 import Study04SOmainsummary from '~workplace/study/Study_04_SO_mainsummary'
@@ -205,6 +212,7 @@ import Study04SOquizmultichoiceresult from '~workplace/study/Study_04_SO_quiz_mu
 import Study04SOpledge from '~workplace/study/Study_04_SO_pledge'
 import Study04SOpledgesubmission from '~workplace/study/Study_04_SO_pledge_submission'
 import Study04SOpollinput from '~workplace/study/Study_04_SO_poll_input'
+import Study04SOpollsubmissioncircle from '~workplace/study/Study_04_SO_poll_submission_circle'
 import Study04SOpollintro from '~workplace/study/Study_04_SO_poll_intro'
 import Study04SOpollsubmissionrod from '~workplace/study/Study_04_SO_poll_submission_rod'
 import Study04SOmiddle from '~workplace/study/Study_04_SO_middle'
@@ -225,6 +233,10 @@ import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_s
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
 import Study05etcguidance from '~workplace/study/Study_05_etc_guidance'
 import Study05etccaptcha from '~workplace/study/Study_05_etc_captcha'
+import StudyLOoldimageaudio from '~workplace/study/Study_LO_old_imageaudio'
+import StudyLOoldmp4studymaterial from '~workplace/study/Study_LO_old_mp4_studymaterial'
+import StudyLOoldmp4 from '~workplace/study/Study_LO_old_mp4'
+import Studyetcaccesscontrol from '~workplace/study/Study_etc_accesscontrol'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -533,6 +545,8 @@ import BPOsubjectlistdetailcancelsetdate from '~workplace/bpo/BPO_subjectlist_de
 import BPOsubjectlistdetailsupplementarysetdate from '~workplace/bpo/BPO_subjectlist_detail_supplementary_setdate'
 import BPOsubjectlistdetailshortensetdate from '~workplace/bpo/BPO_subjectlist_detail_shorten_setdate'
 import BPOsubjectlistdetailextendsetdate from '~workplace/bpo/BPO_subjectlist_detail_extend_setdate'
+import BPOsubjectlist01 from '~workplace/bpo/BPO_subjectlist01'
+import BPOsubjectlist02 from '~workplace/bpo/BPO_subjectlist02'
 
 import AtormDrawer from '~workplace/atorm/Atorm_drawer'
 import AtormControl from '~workplace/atorm/Atorm_control'
@@ -1435,6 +1449,31 @@ var rootRoutes = [
     component: Study02studystatusassessmentnotice
   },
   {
+    path: '/Study_studystatus_assessment_applyresult',
+    name: 'Study_studystatus_assessment_applyresult',
+    component: Studystudystatusassessmentapplyresult
+  },
+  {
+    path: '/Study_studystatus_assessment_window_01',
+    name: 'Study_studystatus_assessment_window_01',
+    component: Studystudystatusassessmentwindow01
+  },
+  {
+    path: '/Study_studystatus_assessment_window_02',
+    name: 'Study_studystatus_assessment_window_02',
+    component: Studystudystatusassessmentwindow02
+  },
+  {
+    path: '/Study_studystatus_assessment_resultanalysis',
+    name: 'Study_studystatus_assessment_resultanalysis',
+    component: Studystudystatusassessmentresultanalysis
+  },
+  {
+    path: '/Study_studyquestion',
+    name: 'Study_studyquestion',
+    component: Studyquestion
+  },
+  {
     path: '/Study_02_faq_detail',
     name: 'Study_02_faq_detail',
     component: Study02faqdetail
@@ -1518,6 +1557,16 @@ var rootRoutes = [
     path: '/Study_04_SO_simulation_submission',
     name: 'Study_04_SO_simulation_submission',
     component: Study04SOsimulationsubmission
+  },
+  {
+    path: '/Study_04_SO_voicerecord',
+    name: 'Study_04_SO_voicerecord',
+    component: Study04SOvoicerecord
+  },
+  {
+    path: '/Study_04_SO_voicerecord_player',
+    name: 'Study_04_SO_voicerecord_player',
+    component: Study04SOvoicerecordplayer
   },
   {
     path: '/Study_04_SO_actionplan_input',
@@ -1660,6 +1709,11 @@ var rootRoutes = [
     component: Study04SOpollinput
   },
   {
+    path: '/Study_04_SO_poll_submission_circle',
+    name: 'Study_04_SO_poll_submission_circle',
+    component: Study04SOpollsubmissioncircle
+  },
+  {
     path: '/Study_04_SO_poll_submission_rod',
     name: 'Study_04_SO_poll_submission_rod',
     component: Study04SOpollsubmissionrod
@@ -1753,6 +1807,26 @@ var rootRoutes = [
     path: '/Study_05_etc_captcha',
     name: 'Study_05_etc_captcha',
     component: Study05etccaptcha
+  },
+  {
+    path: '/Study_LO_old_imageaudio',
+    name: 'Study_LO_old_imageaudio',
+    component: StudyLOoldimageaudio
+  },
+  {
+    path: '/Study_LO_old_mp4_studymaterial',
+    name: 'Study_LO_old_mp4_studymaterial',
+    component: StudyLOoldmp4studymaterial
+  },
+  {
+    path: '/Study_LO_old_mp4',
+    name: 'Study_LO_old_mp4',
+    component: StudyLOoldmp4
+  },
+  {
+    path: '/Study_etc_accesscontrol',
+    name: 'Study_etc_accesscontrol',
+    component: Studyetcaccesscontrol
   },
   // {
   //   path: '/regiclass_detailview_licence',
@@ -3412,6 +3486,16 @@ var rootRoutes = [
     path: 'BPO_subjectlist_detail_extend_setdate',
     name: 'BPO_subjectlist_detail_extend_setdate',
     component: BPOsubjectlistdetailextendsetdate
+  },
+  {
+    path: 'BPO_subjectlist01',
+    name: 'BPO_subjectlist01',
+    component: BPOsubjectlist01
+  },
+  {
+    path: 'BPO_subjectlist02',
+    name: 'BPO_subjectlist02',
+    component: BPOsubjectlist02
   }
 ]
 export default rootRoutes

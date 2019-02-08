@@ -9,7 +9,7 @@
             <div v-if="headerType == '1'" id="header" class="expand">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                    <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                    <p class="header_text  font_19"> </p>
                 </div>  
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
                     <div class="hide-inner"> 
@@ -47,7 +47,7 @@
             <div v-if="headerType == '2'" id="header" class="tab">          
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                <p class="header_text font_19"> </p>
                 </div>  
                 <div class="header_inner line2 tabMenu">
                     <ul class="fixTab">
@@ -78,7 +78,7 @@
                 
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_19"> 스크롤시  header 에 fixed 클래스 추가</p>
+                <p class="header_text font_19"> </p>
                 </div>            
                 <div class="header_inner line2 tabMenu scroll-x">
                     <ul class="scrollTab">

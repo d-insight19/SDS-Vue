@@ -153,6 +153,7 @@
 
 /*추가 이미지 2019-1-8*/
 .ico.ico_dropdown16{margin-top:-5px;margin-left:4px;width:16px; height: 16px; background: url("../img/ic_dropdown_16_bl.png");background-size: cover;}
+.ico.ico_dropdown16.gr{width:16px; height: 16px; background: url("../img/ic_dropdown_16.png");background-size: cover;}
 .ico.gragh{width:24px;height:24px;background: url("../img/ic_viewgraph_n_24.png") no-repeat; }
 .ico.gragh.blue{width:24px;height:24px;background: url("../img/ic_viewgraph_s_24.png") no-repeat; }
 .ico.table{width:24px;height:24px;background: url("../img/ic_viewtable_n_24.png") no-repeat; }
@@ -211,6 +212,7 @@
 .ico.mark_line_24.blue{width:24px;height:24px;background: url("../img/ic_mark_line_b_24.png") no-repeat; }
 .ico.mark_line_32{width:32px;height:32px;background: url("../img/ic_markv_line_32.png") no-repeat; }
 .ico.mark_line_32.non{width:32px;height:32px;background: url("../img/ic_markx_line_32.png") no-repeat; }
+.ico.note.blue{width:16px;height:16px;background: url("../img/ic_mynote_line_blue_16.png") no-repeat; }
 
 
 
@@ -325,6 +327,7 @@
 .mb30{ margin-bottom: 30px !important;}/*1월 3일 추가*/
 .mb32{margin-bottom: 32px !important;}
 .mb40{margin-bottom: 40px !important;}
+.mb42{margin-bottom: 42px !important;}
 .mb58{margin-bottom: 58px !important;}/*12월12일 추가*/
 .mb70{margin-bottom: 70px !important;}/*12월19일 추가*/
 
