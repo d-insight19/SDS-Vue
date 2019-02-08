@@ -183,11 +183,11 @@
         }
         //일반형
         &.normal{
-          width:840px;
+          width:844px;
           .cell{
             .inner{}
           }
-          &~.fixBtmBtn.abs{width:840px;left:50%;transform:translateX(-50%)}
+          &~.fixBtmBtn.abs{width:844px;left:50%;transform:translateX(-50%)}
         }
         //예외형
         &.etc{
