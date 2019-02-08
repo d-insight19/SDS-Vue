@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-        <div id="container" class="mediaquery study_poll ">
+        <div id="container" class="mediaquery voice ">
             
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
             <div v-if="headerType == '1'" id="header" class="expand">          
@@ -11,18 +11,17 @@
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                     <div class="page-btn">
                         <span class="ico back"></span>
-                        <div class="num"><span>03</span>/<span>36</span>p</div>
+                        <div class="num"><span>17</span>/<span>36</span></div>
                         <span class="ico next"></span>
                     </div>
                     <p class="header_text  font_19"> </p>
                 </div>  
-                <div class="hide_header" style="background:#efeff6; padding-top:76px; padding-bottom:32px">                
+                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
                     <div class="hide-inner">                           
-                        <p class="h-tit5"> 
-                            <span class="ico chk"></span>
-                            <span >제출 완료!</span>
+                        <p class="chip"> 
+                            <span >음성녹음</span>
                         </p>
-                        <p class="h-tit1">선호 커피 브랜드 시장 조사 선호 커피 브랜드 시장 조사</p>
+                        <p class="h-tit1">음성녹음 타이틀 영역입니다 녹음 타이틀 영역입니다</p>
                     </div>
                 </div>
             </div>
@@ -87,55 +86,46 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">              
-                        <div>
-                            <p class="inner-tit">1. 좋아하는 커피브랜드 1개이상 선택해주세요.</p>
-                            <p class="person">참여인원 <span>100</span>명</p>
+                        <p class="font_15">
+                            음성녹음에 대한 소개와 방법을 설명합니다. 음성녹음에 대한 소개텍스트를 기입합니다.
+                        </p>
+                        <p class="line01" style="margin-top:26px; margin-bottom:26px;"></p>
+                        <p class="font_16 fwb mb12">1. 다음의 내용을 듣고, 답변을 등록해 주세요.</p>
+                        <p class="inner-txt">
+                            태양계에는 항성인 태양과 그 가까이로부터 수성, 금성, 지구, 화성, 즉 지구형 행성이 순서대로 나열되어 있으며 그 다음에 유성대(asteroid belt)가 존재한다.
+                        </p>
+                        <div class="play_wrap mt20 mb40">
+                            <ul>
+                                <li><img src="@/assets/img/ic_record_play_blue_40.png" alt=""></li>
+                                <li><span class="num">00:00</span></li>
+                                <li class="record_wrap">
+                                    <div class="record_bar">                                        
+                                    </div>
+                                    <span class="record_ball"></span>
+                                </li>
+                                <li>
+                                    <span class="num">03:20</span>
+                                </li>
+                            </ul>
+                            
                         </div>
-                        <div class="progBox mt22">
-                            <div class="bar clr1" style="width: 38%; height:8px; border-radius: 100px;"></div>                            
+                        <p class="inner-txt fwb mb8">답변 녹음하기</p>
+                        <div class="record_box">
+                            <ul class="record_tb">
+                                <li>
+                                    <img src="@/assets/img/ic_equalizer_off.png" alt="">
+                                </li>
+                                <li>
+                                    <div class="circle">
+                                        <img src="@/assets/img/ic_record_default_solid_red_40.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="btn-md mb0">등록</button>
+                                </li>
+                            </ul>
+                            <p class="record_txt mt12">버튼을 눌러 답변을 녹음하세요.</p>
                         </div>
-                        <div class="txt-wrap clearfix">
-                            <p class="prog-txt">스타벅스</p>
-                            <div class="fr">
-                                <span class="part-num"><span>38</span>명</span>
-                                <span class="pipe"></span>
-                                <span class="part-num-2"><span>38</span>%</span>
-                            </div>                                   
-                        </div>
-                        <div class="progBox mt22">
-                            <div class="bar clr2" style="width: 29%; height:8px; border-radius: 100px;"></div>                            
-                        </div>
-                        <div class="txt-wrap clearfix">
-                            <p class="prog-txt">탐앤탐스 <span class="chip border_clr2 color_clr2" style="mrgin-left:6px; mrgin-bottom:0;">나의 선택</span></p>
-                            <div class="fr">
-                                <span class="part-num"><span>29</span>명</span>
-                                <span class="pipe"></span>
-                                <span class="part-num-2"><span>29</span>%</span>
-                            </div>                                  
-                        </div>                        
-                        <div class="progBox mt22">
-                            <div class="bar clr1" style="width: 22%; height:8px; border-radius: 100px;"></div>                            
-                        </div>
-                        <div class="txt-wrap clearfix">
-                            <p class="prog-txt">이디야</p>
-                            <div class="fr">
-                                <span class="part-num"><span>22</span>명</span>
-                                <span class="pipe"></span>
-                                <span class="part-num-2"><span>22</span>%</span>
-                            </div>                                
-                        </div>
-                        <div class="progBox mt22">
-                            <div class="bar clr1" style="width: 11%; height:8px; border-radius: 100px;"></div>                            
-                        </div>
-                        <div class="txt-wrap clearfix">
-                            <p class="prog-txt">할리스</p>
-                            <div class="fr">
-                                <span class="part-num"><span>11</span>명</span>
-                                <span class="pipe"></span>
-                                <span class="part-num-2"><span>11</span>%</span>
-                            </div>                                
-                        </div>
-                        <!-- //txt-wrap -->
                     </div>
                 </div>
             </div>
@@ -143,16 +133,9 @@
 
             <!-- floatingbtn -->
             <div class="fixBtmBtn abs">  
-                <ul>
-                <li>
-                    <button type="button" class="btn md">재투표</button>
-                </li> 
-                <li>
-                    <button type="button" class="btn md clr1">완료</button>
-                </li>
-                </ul>
+                <button type="button" class="btn md clr1">제출</button>
             </div>
-            <!-- //floatingbtn -->   
+            <!-- //floatingbtn -->
 
         </div>
         <!-- //container --> 
@@ -162,7 +145,7 @@
 
 <script>
 export default {
-  name: 'Study_SO_poll_submission_rod',
+  name: 'Study_04_SO_survey_submission',
   /* vue lifecycle */
   created () {
   },

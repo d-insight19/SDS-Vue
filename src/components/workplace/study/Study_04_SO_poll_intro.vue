@@ -9,7 +9,7 @@
             <!-- header -->
             <div id="header" class="wh">
                 <div class="header_inner line1"><button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button> 
-                <div class="page-btn"><span class="ico back-wh"></span> <div class="num "><span>03</span>/<span>36</span>p</div> <span class="ico next-wh"></span></div> <p class="header_text  font_19"> 스크롤시  header 에 fixed 클래스 추가</p></div>
+                <div class="page-btn"><span class="ico back-wh"></span> <div class="num "><span>03</span>/<span>36</span>p</div> <span class="ico next-wh"></span></div> <p class="header_text  font_19"> </p></div>
             </div>
             <!-- //header -->
             

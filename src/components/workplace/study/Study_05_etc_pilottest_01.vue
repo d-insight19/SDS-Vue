@@ -2,7 +2,7 @@
   <div>
     <p class="txt-tit">
       <strong>상품정보</strong>
-      <span class="fr guide-btn">오류 유형표</span>
+      <span class="fr btn-md">오류 유형표</span>
     </p>
     <div class="full-box pd">
       <table >
