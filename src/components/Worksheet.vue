@@ -11218,7 +11218,7 @@
       <td align="center">0</td>
         <td>공통</td>
         <td>레이아웃</td>
-        <td>리스트형</td>
+        <td>리스트형(리스트(메인)):100%</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
@@ -11235,7 +11235,7 @@
       <td align="center">0</td>
         <td>공통</td>
         <td>레이아웃</td>
-        <td>일바녕</td>
+        <td>일반형(동영상):100%, 620px, 844px</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
@@ -11252,7 +11252,7 @@
       <td align="center">0</td>
         <td>공통</td>
         <td>레이아웃</td>
-        <td>예외형</td>
+        <td>예외형(로그인):520px</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
@@ -11270,7 +11270,7 @@
         <td>공통</td>
         <td>키보드</td>
         <td></td>
-        <td>　</td>
+        <td>　</td>s
         <td>　</td>
         <td>　</td>
         <td>　</td>
