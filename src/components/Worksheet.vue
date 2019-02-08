@@ -5904,6 +5904,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          아쿠아 플레이어
         </td>
         <td></td>
       </tr>
