@@ -4747,10 +4747,7 @@
         <td>
           <router-link :to="{ name: 'Study_home_union' }">
             Study_home_union
-          </router-link><br/>
-          <router-link :to="{ name: 'Study_home_union_studycondition' }">
-            Study_home_union_studycondition
-          </router-link>
+          </router-link><br/>         
         </td>
         <td></td>
       </tr>
@@ -10032,8 +10029,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.13.home_union_studycondition</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+           <router-link :to="{ name: 'Study_home_union_studycondition' }">
+            Study_home_union_studycondition
           </router-link>
         </td>
         <td></td>
@@ -10696,8 +10693,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.04.03.LO_old_mp4</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_old_mp4' }">
+            Study_LO_old_mp4
           </router-link>
         </td>
         <td></td>
@@ -10713,8 +10710,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.04.04.LO_old_mp4_studymaterial</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_old_mp4_studymaterial' }">
+            Study_LO_old_mp4_studymaterial
           </router-link>
         </td>
         <td></td>
@@ -10730,8 +10727,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.04.05.LO_old_imageaudio</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_old_imageaudio' }">
+            Study_LO_old_imageaudio
           </router-link>
         </td>
         <td></td>
