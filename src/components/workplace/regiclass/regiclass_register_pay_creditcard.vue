@@ -23,7 +23,7 @@
                     </div>
                     <p class="txt-desc" style="display:none1;">결제방식을 선택해주세요.</p>
                 </div>
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <p class="label-tit-18">결제강좌</p>
                 <ul class="thumList">
                     <li class="bottom-bd-x pdb0">
@@ -44,7 +44,7 @@
                 </ul>
                 <!-- useCupon  -->
                 <div class="cupon-wrap" v-if="useCupon">
-                    <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+                    <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
                     <p class="label-tit-18 dpb">할인정보</p>
                     <strong class="label-tit" style="margin-bottom:8px; display:inline-block;">쿠폰선택</strong>
                     <slp-select class="w100p" required placeholder="선택 안함" style="color:rgba(0,0,0,0.8)">
@@ -52,7 +52,7 @@
                     </slp-select>
                 </div>
                 <!-- //useCupon -->
-                <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
                 <p class="label-tit-18">결제정보</p>
                 <ul>
                     <li style="margin-bottom:7px;">
@@ -74,7 +74,7 @@
                         <span class="fr fwb600 label-tit-18">2,135,000 원</span>
                     </li>
                 </ul>
-                <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
                 <p class="label-tit-18 mb10">결제수단</p>
                 <ul class="ul-block com-rdo">
                     <li>
@@ -128,7 +128,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">결제</button></li>

@@ -23,7 +23,7 @@
                     </div>
                     <p class="txt-desc" style="display:none1; width:55%;">수강생 정보를 입력해 주세요.</p>
                 </div>
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1 ">
                     <li>
                         <p><span class="fl mr10">성명</span> <span>정해민</span></p>
@@ -93,7 +93,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">다음</button></li>

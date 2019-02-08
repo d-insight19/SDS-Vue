@@ -23,7 +23,7 @@
                     </div>
                     <p class="txt-desc" style="display:none1;">수강신청을 위한 정보를 입력해주세요.</p>
                 </div>
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1 dif">
                     <li class="join-id bottom-bd-d9">
                         <p class="mb8">
@@ -55,9 +55,9 @@
                     </li>                 
                     <li>
                         <strong class="label-tit require_mark">최종학력</strong>
-                        <slp-select required placeholder="선택" width="100%">
+                        <select class="select" required placeholder="선택" width="100%">
                             <option>선택</option>
-                        </slp-select>
+                        </select>
                         <p class="label-tit-12 mono_50">대학교 2학년 재학중인 경우 최종학력은 ‘대학교재중’으로 선택합니다.</p>
                     </li>
                     <li>
@@ -74,32 +74,32 @@
                     </li>                    
                     <li>
                         <strong class="label-tit require_mark">전공계열</strong>
-                        <slp-select required placeholder="선택" width="100%">
+                        <select class="select" required placeholder="선택" width="100%">
                             <option>선택</option>
-                        </slp-select>
+                        </select>
                     </li>                    
                     <li>
                         <strong class="label-tit require_mark">수료학기</strong>
-                        <slp-select required placeholder="선택" width="100%">
+                        <select class="select" required placeholder="선택" width="100%">
                             <option>선택</option>
-                        </slp-select>
+                        </select>
                     </li>                    
                     <li>
                         <strong class="label-tit require_mark">졸업예정 년월</strong>
-                        <slp-select required placeholder="선택" width="100%">
+                        <select class="select" required placeholder="선택" width="100%">
                             <option>선택</option>
-                        </slp-select>
+                        </select>
                     </li>                    
                     <li>
                         <strong class="label-tit require_mark">근로여부</strong>
-                        <slp-select required placeholder="선택" width="100%">
+                        <select  class="select" required placeholder="선택" width="100%">
                             <option>선택</option>
-                        </slp-select>
+                        </select>
                     </li>                    
                 </ul>
                 <!-- //list -->
 
-                <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
                 <p class="label-tit-18 fwb600">지원동기 및 신청경로</p>
                 <ul  class="ulList type1 dif">
                     <li>
@@ -126,7 +126,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">수강신청</button></li>

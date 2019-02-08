@@ -377,7 +377,7 @@
 
 /* hr */
 .hr{height:8px; margin: 25px -24px; background:#f6f6f6;}
-
+.hr_2{height:8px; margin: 25px -18px; background:#f6f6f6;}
 
 /* link */
 .link{display: inline-block;}

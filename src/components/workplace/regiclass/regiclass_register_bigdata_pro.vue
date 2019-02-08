@@ -23,7 +23,7 @@
                     </div>
                     <p class="txt-desc" style="display:none1;">수강신청을 위한 정보를 입력해주세요.</p>
                 </div>
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1 dif">
                     <li class="join-id bottom-bd-d9">
                         <p class="mb8">
@@ -108,7 +108,7 @@
                     <slp-checkbox ><span class="label-tit-14 mono_80 mb0">입력하신 정보로 개인정보를 수정합니다.</span></slp-checkbox>
                 </div>
 
-                <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
                 <p class="label-tit-18 fwb600">컴퓨터 사용능력</p>
                 <ul class="ulList">
                     <li>
@@ -217,7 +217,7 @@
                     </li>  
                 </ul>
 
-                <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
                 <p class="label-tit-18 fwb600">추천인 및 신청경로</p>
                 <ul  class="ulList type1 dif">
                     <li>
@@ -243,7 +243,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">다음</button></li>
