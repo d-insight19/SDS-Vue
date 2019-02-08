@@ -11,7 +11,7 @@
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                     <div class="page-btn">
                         <span class="ico back"></span>
-                        <div class="num"><span>03</span>/<span>36</span>p</div>
+                        <div class="num"><span>03</span>/<span>36</span></div>
                         <span class="ico next"></span>
                     </div>
                     <p class="header_text  font_19"> </p>
@@ -87,13 +87,14 @@
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">
-                        <p class="font_18 mb6">1. 좋아하는 커피브랜드 1개이상 선택해주세요.</p>
-                        <p class="font_14">참여인원 <span class="">100</span>명</p>              
+                        <p class="font_18 mb5 fwb">1. 좋아하는 커피브랜드 1개이상 선택해주세요.</p>
+                        <p class="font_14 mono_50">참여인원 <span class="fwb">100</span>명</p>              
                         <div class="diagram2">
                         <stackedDoghnut01
                             :data="stackedDoghnut01.data"
                             class="doughnut01"/>
                         </div>
+                        <p class="tac font_14 mono_80 mb5 mt8">스타벅스</p>
                         <ul class="chart-list">
                             <li>
                             <p class="chart-txt">

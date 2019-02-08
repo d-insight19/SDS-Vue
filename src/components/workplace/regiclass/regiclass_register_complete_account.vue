@@ -38,7 +38,7 @@
                     </div>
                 </li>
             </ul> 
-            <p class="hr" style="margin-top:26px; margin-bottom:20px;"></p>
+            <p class="hr_2" style="margin-top:26px; margin-bottom:20px;"></p>
             <p class="label-tit-18">결제정보</p>
                 <ul>
                     <li style="margin-bottom:7px;">
@@ -64,7 +64,7 @@
                         <span class="fr fwb600 label-tit-18">2,135,000 원</span>
                     </li>
                 </ul>
-            <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+            <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
             <p class="label-tit-18">입금 계좌번호</p>
                 <table>
                     <tr>
@@ -84,7 +84,7 @@
                         <td class="r-txt pdb0">123-2345-3346</td>
                     </tr>
                 </table>
-            <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+            <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
             <p class="label-tit-18">연관과정</p>
             <ul class="thumList">
                 <li>
@@ -123,7 +123,7 @@
         </div>
 
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><slp-button class="md">나의공간</slp-button></li>
                 <li><slp-button class="md clr1">학습시작</slp-button></li>

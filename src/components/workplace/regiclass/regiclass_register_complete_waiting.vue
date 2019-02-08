@@ -40,7 +40,7 @@
                     </div>
                 </li>
             </ul>             
-            <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p>
+            <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
             <p class="label-tit-18">연관과정</p>
             <ul class="thumList">
                 <li>
@@ -79,7 +79,7 @@
         </div>
 
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><slp-button class="md clr1">나의공간</slp-button></li>
             </ul>

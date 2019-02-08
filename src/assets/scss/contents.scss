@@ -1227,7 +1227,7 @@ label.rdo .label{position: relative;}
 
 // poll_submission_circle
 #container.study_poll .inner .h-tit5{margin-bottom:20px; font-weight:500; font-size:map-get($font-size, font_16);line-height: 28px; letter-spacing: -0.48px;}
-
+#container.study_poll .diagram2 {margin:0 auto; width:180px; height:180px;}
 
 // 간지 middle
 #container.study_middle  #header div.hide-inner  p.h-tit1{font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
@@ -1673,6 +1673,7 @@ label.rdo .label{position: relative;}
 #container.voice .record_box ul.record_tb li{display:table-cell;vertical-align: middle;}
 #container.voice .record_box ul.record_tb li .circle{cursor:pointer;margin-left:28px;margin-right:26px;padding:30px;background:white;border-radius:50%; border:1px solid #e3e3e3;}
 #container.voice .record_box .record_txt{text-align: center;font-size:map-get($font-size, font_14);  letter-spacing: -0.042em;color:rgba(0,0,0,0.65)}
+#container.voice .record_box .record_time{text-align: center;font-family:'roboto';font-weight:500;font-size:map-get($font-size, font_18);  letter-spacing: -0.042em;color:rgba(0,0,0,0.80)}
 #container.voice .record_box .btn-md{max-width: 56px;padding:8px 16px;background-color:white;font-size:map-get($font-size, font_12); letter-spacing: -0.036em;color:rgba(0,0,0,0.25)}
 #container.voice .play_wrap .record_wrap{position: relative;vertical-align: middle; width:100%;}
 #container.voice .play_wrap .record_bar{height:4px; width:100%;background-color:rgba(0,0,0,0.1);}
@@ -1683,7 +1684,7 @@ label.rdo .label{position: relative;}
 
 
 #container.voice .record_box .play_wrap li{float:left;}
-#container.voice .record_box .diagram2 {margin:0 auto; width:180px; height:180px;}
+
 #container.voice .play_wrap .font_18{font-family:'roboto'; font-size:map-get($font-size, font_18);letter-spacing: -0.054em; }
 #container.voice .play_wrap .font_14{ font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.5) }
 

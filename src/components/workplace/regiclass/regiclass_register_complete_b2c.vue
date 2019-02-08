@@ -42,7 +42,7 @@
         </div>
 
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><slp-button class="md">나의공간</slp-button></li>
                 <li><slp-button class="md clr1">학습시작</slp-button></li>

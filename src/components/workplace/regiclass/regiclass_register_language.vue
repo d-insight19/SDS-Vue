@@ -23,7 +23,7 @@
                     </div>
                     <p class="txt-desc" style="display:none1;">기존 수강자의 경우, 이전 과정과 동일한 과정이 신청되지 않도록 유의해 주십시오.</p>
                 </div>
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1 ">
                     <li>
                         <strong class="label-tit require_mark">수업 희망시간</strong>
@@ -57,7 +57,7 @@
                     </li>            
                 </ul>
                 <!-- //list -->
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 
                 <ul class="ulList type1" >
                     <li>
@@ -163,7 +163,7 @@
                         </table>  
                     </li>
                 </ul>
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1">                    
                     <li>
                         <strong class="label-tit require_mark">기타 요청사항</strong>
@@ -183,7 +183,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">다음</button></li>
