@@ -2518,6 +2518,12 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 
 .MySpace .radioList li{margin-bottom:10px;}
 
+
+//209번 추가작업
+.MySpace.calendar .tit-box{padding-bottom:27px;}
+.MySpace.calendar .font_18{font-size: map-get($font_size, font_18); letter-spacing: -0.054em;}
+.MySpace.calendar .font_20{font-family:'roboto';font-size: map-get($font_size, font_20); letter-spacing: -0.06em;}
+
 //keyword
 .keyword li .number{padding: 12px 0; font-size: map-get($font_size, font_18); width: 30px; display: inline-block;}
 .keyword li .contents{border-bottom:1px solid map-get($line_colors, B89); font-size: map-get($font_size, font_16); text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}

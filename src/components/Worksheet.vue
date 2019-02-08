@@ -4036,8 +4036,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.04.learningjourney_calendar</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_learningjourney_calendar_2' }">
+            MySpace_learningjourney_calendar_2
           </router-link>
         </td>
         <td></td>
@@ -11268,7 +11268,7 @@
         <td>공통</td>
         <td>키보드</td>
         <td></td>
-        <td>　</td>s
+        <td>　</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>

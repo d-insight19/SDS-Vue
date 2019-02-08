@@ -346,6 +346,7 @@ import MySpaceLearningjourney2 from '~workplace/myspace/MySpace_learningjourney_
 import MySpaceLearningjourneyEncourage from '~workplace/myspace/MySpace_learningjourney_encourage'
 import MySpaceLearningjourneyEncourageOff from '~workplace/myspace/MySpace_learningjourney_encourage_off'
 import MySpaceLearningjourneyCalendarmanagement2 from '~workplace/myspace/MySpace_learningjourney_calendarmanagement_2'
+import MySpaceLearningjourneyCalendar2 from '~workplace/myspace/MySpace_learningjourney_calendar_2'
 import MySpaceLearningjourneyAdd from '~workplace/myspace/MySpace_learningjourney_add'
 import MySpaceLearningjourneyLike from '~workplace/myspace/MySpace_learningjourney_like'
 import MySpaceCliping from '~workplace/myspace/MySpace_cliping'
@@ -2371,6 +2372,11 @@ var rootRoutes = [
     path: '/MySpace_learningjourney_calendarmanagement_2',
     name: 'MySpace_learningjourney_calendarmanagement_2',
     component: MySpaceLearningjourneyCalendarmanagement2
+  },
+  {
+    path: '/MySpace_learningjourney_calendar_2',
+    name: 'MySpace_learningjourney_calendar_2',
+    component: MySpaceLearningjourneyCalendar2
   },
   {
     path: '/MySpace_learningjourney_add',

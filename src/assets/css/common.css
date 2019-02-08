@@ -60,6 +60,7 @@
 .ico.ppt-a{width:20px;height:20px;background: url("../img/ic_ppt_line_20.png") no-repeat; }
 .ico.del-blk{width:20px;height:20px;background: url("../img/ic_close_bold_20.png") no-repeat; }
 .ico.plus{width:16px;height:16px;background: url("../img/ic_plus_16.png") no-repeat; vertical-align: -2px; }
+.ico.plus.wh{width:16px;height:16px;background: url("../img/ic_plus_solidWhite.png") no-repeat; vertical-align: -4px; }
 .ico.plus.done{opacity: 0.3; }
 .ico.clip{width:16px;height:16px;background: url("../img/ic_addfile_16.png") no-repeat; }
 .ico.download{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
