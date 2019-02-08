@@ -11604,7 +11604,7 @@
         <td class="textL"></td>
         <td>
           <router-link :to="{ name: 'components_snackbar' }">
-            components_snackbar1
+            components_snackbar
           </router-link>
         </td>
         <td></td>
