@@ -96,9 +96,11 @@
                         </p>
                         <div class="play_wrap mt20 mb40">
                             <ul>
-                                <li><img src="@/assets/img/ic_record_play_blue_40.png" alt=""></li>
-                                <li><span class="num">00:00</span></li>
-                                <li class="record_wrap">
+                                <li style="padding-right:14px;"><img src="@/assets/img/ic_record_play_blue_40.png" alt=""></li>
+                                <li style="padding-right:8px;">
+                                    <span class="num">00:00</span>
+                                </li>
+                                <li class="record_wrap" style="padding-right:8px;">
                                     <div class="record_bar">                                        
                                     </div>
                                     <span class="record_ball"></span>

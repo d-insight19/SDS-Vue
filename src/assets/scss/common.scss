@@ -145,6 +145,7 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 
 /* 하단 고정 버튼 fixed button */
 .fixBtmBtn{position: fixed; left:0; bottom:0; z-index: 100; width:100%;}
+.fixBtmBtn.zin0{z-index: 0 !important;}
 .fixBtmBtn ul{display: table; table-layout: fixed; width: 100%;}
 .fixBtmBtn li{display: table-cell;}
 .fixBtmBtn li .btn{width:100%; height:54px; border:0; border-top:1px solid #ccc;font-weight: 500;line-height:22px;}

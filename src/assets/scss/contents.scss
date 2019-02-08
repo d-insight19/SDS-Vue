@@ -1227,7 +1227,7 @@ label.rdo .label{position: relative;}
 
 // poll_submission_circle
 #container.study_poll .inner .h-tit5{margin-bottom:20px; font-weight:500; font-size:map-get($font-size, font_16);line-height: 28px; letter-spacing: -0.48px;}
-
+#container.study_poll .diagram2 {margin:0 auto; width:180px; height:180px;}
 
 // 간지 middle
 #container.study_middle  #header div.hide-inner  p.h-tit1{font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
@@ -1673,17 +1673,20 @@ label.rdo .label{position: relative;}
 #container.voice .record_box ul.record_tb li{display:table-cell;vertical-align: middle;}
 #container.voice .record_box ul.record_tb li .circle{cursor:pointer;margin-left:28px;margin-right:26px;padding:30px;background:white;border-radius:50%; border:1px solid #e3e3e3;}
 #container.voice .record_box .record_txt{text-align: center;font-size:map-get($font-size, font_14);  letter-spacing: -0.042em;color:rgba(0,0,0,0.65)}
+#container.voice .record_box .record_time{text-align: center;font-family:'roboto';font-weight:500;font-size:map-get($font-size, font_18);  letter-spacing: -0.042em;color:rgba(0,0,0,0.80)}
 #container.voice .record_box .btn-md{max-width: 56px;padding:8px 16px;background-color:white;font-size:map-get($font-size, font_12); letter-spacing: -0.036em;color:rgba(0,0,0,0.25)}
-#container.voice .record_box .play_wrap .record_wrap{position: relative;}
-#container.voice .record_box .play_wrap .record_bar{height:4px; width:56%;background-color:rgba(0,0,0,0.1);}
-#container.voice .record_box .play_wrap .record_bar .record_ball{position: absolute;left: 0;background:#00adfb; width:10px; height:10px;}
-#container.voice .record_box .play_wrap li{float:left;}
-#container.voice .record_box .play_wrap li .num{font-family:'roboto'; font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.65)}
+#container.voice .play_wrap .record_wrap{position: relative;vertical-align: middle; width:100%;}
+#container.voice .play_wrap .record_bar{height:4px; width:100%;background-color:rgba(0,0,0,0.1);}
+#container.voice .play_wrap .record_ball{position: absolute;  left: 0; top: 50%; background: #00adfb;width: 11px;height: 12px;
+    border-radius: 50%; transform: translateY(-50%);}
+#container.voice .play_wrap li{display:table-cell;}
+#container.voice .play_wrap li .num{font-family:'roboto'; font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.65)}
 
 
 #container.voice .record_box .play_wrap li{float:left;}
-#container.voice .record_box .play_wrap .font_18{font-family:'roboto'; font-size:map-get($font-size, font_18);letter-spacing: -0.054em; }
-#container.voice .record_box .play_wrap .font_14{ font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.5) }
+
+#container.voice .play_wrap .font_18{font-family:'roboto'; font-size:map-get($font-size, font_18);letter-spacing: -0.054em; }
+#container.voice .play_wrap .font_14{ font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.5) }
 
 
 
@@ -2378,7 +2381,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .thumList.type1 .done .thum {opacity: 0.4;}
 .MySpace .thumList.type1 .done .tit {opacity: 0.4;}
 .MySpace .thumList.type1 .done .info {opacity: 0.4;}
-.MySpace .thumList.type1  .center{position: absolute; top: calc(50% - 5px); left:50%;}
+.MySpace .thumList.type1  .center{position: absolute; top: calc(50% - 0px); left:50%;}
 .MySpace .offlineMent {background-color:#333; line-height: 48px;}
 .MySpace #header .info li{display: inline-block; font-size: map-get($font_size, font_13); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
 .MySpace #header .info li+li{margin-left: 5px;}
@@ -2514,6 +2517,12 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .couponList .in .detail .term {font-size: map-get($font_size, font_13); color:map-get($mono_colors, mono_65);}
 
 .MySpace .radioList li{margin-bottom:10px;}
+
+
+//209번 추가작업
+.MySpace.calendar .tit-box{padding-bottom:27px;}
+.MySpace.calendar .font_18{font-size: map-get($font_size, font_18); letter-spacing: -0.054em;}
+.MySpace.calendar .font_20{font-family:'roboto';font-size: map-get($font_size, font_20); letter-spacing: -0.06em;}
 
 //keyword
 .keyword li .number{padding: 12px 0; font-size: map-get($font_size, font_18); width: 30px; display: inline-block;}

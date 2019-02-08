@@ -23,7 +23,7 @@
                     </div>
                     <p class="txt-desc" style="display:none1;">약관에 동의해주세요.</p>
                 </div>
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>               
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>               
                 <p class="label-tit-18 mb15">약관동의</p>
                     <!-- 동의 리스트 -->
                     <div class="agreeAll">
@@ -46,7 +46,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">다음</button></li>

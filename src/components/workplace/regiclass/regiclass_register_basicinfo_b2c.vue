@@ -23,7 +23,7 @@
                     </div>
                     <p class="txt-desc" style="display:none1;">수강신청을 위한 정보를 입력해주세요.</p>
                 </div>
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1 dif">
                     <li class="join-id mt0 pdb0">
                         <strong class="label-name fwb">성명</strong>
@@ -51,7 +51,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">다음</button></li>
