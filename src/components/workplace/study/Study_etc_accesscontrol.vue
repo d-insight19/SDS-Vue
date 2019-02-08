@@ -491,12 +491,13 @@
       <!-- //container -->   
 
         <!-- layer wrap -->
-      <slp-popup title="공지사항" confirmInput="확인">
+      <slp-popup v-if="showConfirm" title="공지 사항" confirmInput="확인" @cancelClick="cancel" @confirmClick="confirm">
+        <!-- popup body -->
         <div class="ly-cnt">
-            <p>일일 진도량 제한을 안내하는 텍스트가 기입됩니다. 일일 진도량 제한을 안내하는 텍스트가 기입됩니다. 일일 진도량 제한을 안내하는 텍스트 기입</p>
+            <p>SPRINT - 구글 벤처스의 5일만에 기획부터 실행까지 끝내는 법(참고도서제공)</p>	
         </div>
         <slp-checkbox>1주일간 보지 않기</slp-checkbox>
-      </slp-popup>
+    </slp-popup>
       <!-- //layer wrap -->
 
     </div>
@@ -537,8 +538,7 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
-        showConfirm: false,
-        showModal: false,
+        showConfirm: true,
         active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
@@ -611,10 +611,10 @@ export default {
         this.active = !this.active
     },
     cancel: function () {
-        this.showConfirm = false
+      this.showConfirm = false
     },
     confirm: function () {
-        this.showConfirm = false
+      this.showConfirm = false
     }
   },
   mounted () {

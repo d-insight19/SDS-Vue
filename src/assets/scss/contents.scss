@@ -1682,6 +1682,7 @@ label.rdo .label{position: relative;}
 
 
 #container.voice .record_box .play_wrap li{float:left;}
+#container.voice .record_box .diagram2 {margin:0 auto; width:180px; height:180px;}
 #container.voice .record_box .play_wrap .font_18{font-family:'roboto'; font-size:map-get($font-size, font_18);letter-spacing: -0.054em; }
 #container.voice .record_box .play_wrap .font_14{ font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.5) }
 
