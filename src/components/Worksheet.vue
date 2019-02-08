@@ -6051,8 +6051,8 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td>삭제</td>
         <td></td>
+        <td>삭제</td>
         <td></td>
       </tr>
       <tr>
@@ -9151,10 +9151,12 @@
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_01</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-          
+          <router-link :to="{ name: 'BPO_subjectlist01' }">
+            BPO_subjectlist01
+          </router-link>,
+           <router-link :to="{ name: 'BPO_subjectlist02' }">
+            BPO_subjectlist02
+          </router-link>          
         </td>
         <td></td>
       </tr>
@@ -9764,12 +9766,11 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">etc_Keepstucy</td>
+        <td class="textL">etc_Keepstudy</td>
         <td>
           <router-link :to="{ name: '' }">
             
           </router-link>
-          제플린 없음
         </td>
         <td></td>
       </tr>
@@ -10524,9 +10525,10 @@
         <td>　</td>
         <td class="textL">05.Study_05.10.etc_pilottest2</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+           <router-link :to="{ name: 'Study_05_etc_pilottest' }">
+            Study_05_etc_pilottest
           </router-link>
+          와 같음
         </td>
         <td></td>
       </tr>

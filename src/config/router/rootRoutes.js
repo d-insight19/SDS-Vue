@@ -542,6 +542,8 @@ import BPOsubjectlistdetailcancelsetdate from '~workplace/bpo/BPO_subjectlist_de
 import BPOsubjectlistdetailsupplementarysetdate from '~workplace/bpo/BPO_subjectlist_detail_supplementary_setdate'
 import BPOsubjectlistdetailshortensetdate from '~workplace/bpo/BPO_subjectlist_detail_shorten_setdate'
 import BPOsubjectlistdetailextendsetdate from '~workplace/bpo/BPO_subjectlist_detail_extend_setdate'
+import BPOsubjectlist01 from '~workplace/bpo/BPO_subjectlist01'
+import BPOsubjectlist02 from '~workplace/bpo/BPO_subjectlist02'
 
 import AtormDrawer from '~workplace/atorm/Atorm_drawer'
 import AtormControl from '~workplace/atorm/Atorm_control'
@@ -3466,6 +3468,16 @@ var rootRoutes = [
     path: 'BPO_subjectlist_detail_extend_setdate',
     name: 'BPO_subjectlist_detail_extend_setdate',
     component: BPOsubjectlistdetailextendsetdate
+  },
+  {
+    path: 'BPO_subjectlist01',
+    name: 'BPO_subjectlist01',
+    component: BPOsubjectlist01
+  },
+  {
+    path: 'BPO_subjectlist02',
+    name: 'BPO_subjectlist02',
+    component: BPOsubjectlist02
   }
 ]
 export default rootRoutes
