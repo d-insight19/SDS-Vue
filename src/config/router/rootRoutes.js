@@ -233,6 +233,9 @@ import Study05etcagreementsalary from '~workplace/study/Study_05_etc_agreement_s
 import Study05etcauthorizationemployment from '~workplace/study/Study_05_etc_authorization_employment'
 import Study05etcguidance from '~workplace/study/Study_05_etc_guidance'
 import Study05etccaptcha from '~workplace/study/Study_05_etc_captcha'
+import StudyLOoldimageaudio from '~workplace/study/Study_LO_old_imageaudio'
+import StudyLOoldmp4studymaterial from '~workplace/study/Study_LO_old_mp4_studymaterial'
+import StudyLOoldmp4 from '~workplace/study/Study_LO_old_mp4'
 import Studyetcaccesscontrol from '~workplace/study/Study_etc_accesscontrol'
 
 import MainControl from '~workplace/main/Main_control'
@@ -1804,6 +1807,21 @@ var rootRoutes = [
     path: '/Study_05_etc_captcha',
     name: 'Study_05_etc_captcha',
     component: Study05etccaptcha
+  },
+  {
+    path: '/Study_LO_old_imageaudio',
+    name: 'Study_LO_old_imageaudio',
+    component: StudyLOoldimageaudio
+  },
+  {
+    path: '/Study_LO_old_mp4_studymaterial',
+    name: 'Study_LO_old_mp4_studymaterial',
+    component: StudyLOoldmp4studymaterial
+  },
+  {
+    path: '/Study_LO_old_mp4',
+    name: 'Study_LO_old_mp4',
+    component: StudyLOoldmp4
   },
   {
     path: '/Study_etc_accesscontrol',

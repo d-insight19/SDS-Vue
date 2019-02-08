@@ -4747,10 +4747,7 @@
         <td>
           <router-link :to="{ name: 'Study_home_union' }">
             Study_home_union
-          </router-link><br/>
-          <router-link :to="{ name: 'Study_home_union_studycondition' }">
-            Study_home_union_studycondition
-          </router-link>
+          </router-link><br/>         
         </td>
         <td></td>
       </tr>
@@ -5907,6 +5904,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          아쿠아 플레이어
         </td>
         <td></td>
       </tr>
@@ -10032,8 +10030,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.13.home_union_studycondition</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+           <router-link :to="{ name: 'Study_home_union_studycondition' }">
+            Study_home_union_studycondition
           </router-link>
         </td>
         <td></td>
@@ -10696,8 +10694,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.04.03.LO_old_mp4</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_old_mp4' }">
+            Study_LO_old_mp4
           </router-link>
         </td>
         <td></td>
@@ -10713,8 +10711,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.04.04.LO_old_mp4_studymaterial</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_old_mp4_studymaterial' }">
+            Study_LO_old_mp4_studymaterial
           </router-link>
         </td>
         <td></td>
@@ -10730,8 +10728,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.04.05.LO_old_imageaudio</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_old_imageaudio' }">
+            Study_LO_old_imageaudio
           </router-link>
         </td>
         <td></td>
@@ -11218,7 +11216,7 @@
       <td align="center">0</td>
         <td>공통</td>
         <td>레이아웃</td>
-        <td>리스트형</td>
+        <td>리스트형(리스트(메인)):100%</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
@@ -11235,7 +11233,7 @@
       <td align="center">0</td>
         <td>공통</td>
         <td>레이아웃</td>
-        <td>일바녕</td>
+        <td>일반형(동영상):100%, 620px, 844px</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
@@ -11252,7 +11250,7 @@
       <td align="center">0</td>
         <td>공통</td>
         <td>레이아웃</td>
-        <td>예외형</td>
+        <td>예외형(로그인):520px</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
@@ -11270,7 +11268,7 @@
         <td>공통</td>
         <td>키보드</td>
         <td></td>
-        <td>　</td>
+        <td>　</td>s
         <td>　</td>
         <td>　</td>
         <td>　</td>
