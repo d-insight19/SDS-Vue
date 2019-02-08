@@ -1715,6 +1715,7 @@ label.rdo .label{position: relative;}
 #container .label-tit16{ font-size:map-get($font_size, font_16); font-weight: 500; line-height: 22px; letter-spacing: -0.45px; width:100px; margin-bottom: 0px;}
 #container .label-tit18{ font-size:map-get($font_size, font_18); line-height: 21px; letter-spacing: -0.54px; margin-bottom: 9px;}
 #container .label-tit20{ font-size:map-get($font_size, font_20); line-height: 27px; letter-spacing: -0.6px; margin-bottom: 13px;}
+#container .label-tit24{ font-size:map-get($font_size, font_24); line-height: 32px; letter-spacing: -0.72px; margin-top: 21px; margin-bottom: 18px; font-weight: 500}
 #container.drawer .label-tit-etc{ font-size:map-get($font_size, font_15); line-height: 22px; letter-spacing: -0.42px; width:50px; margin-bottom: 0px; }
 #container.drawer .labelChk {width:auto}
 #container.drawer.extrainfo_edit .multiList.type1 > li.title_line {padding:20px 0 8px}
@@ -1843,6 +1844,8 @@ label.rdo .label{position: relative;}
 //개인정보 처리방침
 #container.drawer.privacypolicy .select_wrap {width:100%; padding: 18px 0}
 #container.drawer.privacypolicy select{ width:100%; }
+#container.drawer.privacypolicy .hide_header{ height:auto !important; padding-left:18px !important;  }
+#container.drawer.privacypolicy #header.tab .header_inner.line1 {border-bottom:#d9d9d9 1px solid}
 
 //문의내용 답변 -- CustomerCenter_Inquiry_detail
 .qa_content p {font-size:map-get($font_size, font_15);}
