@@ -5867,8 +5867,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.01.LO_mp4</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_mp4' }">
+            Study_LO_mp4
           </router-link>
         </td>
         <td></td>
@@ -6116,8 +6116,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.15.LO_docs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_docs' }">
+            Study_LO_docs
           </router-link>
         </td>
         <td></td>
@@ -7190,8 +7190,11 @@
         <td>　</td>
         <td class="textL">05.Study_05.13.etc_studycheerAlarm</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_etc_studycheerAlarm_calendar01' }">
+            Study_etc_studycheerAlarm_calendar01
+          </router-link>,
+           <router-link :to="{ name: 'Study_etc_studycheerAlarm_calendar03' }">
+            Study_etc_studycheerAlarm_calendar03
           </router-link>
         </td>
         <td></td>
@@ -7921,8 +7924,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.01.LO_mp4</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+           <router-link :to="{ name: 'Study_LO_mp4' }">
+            Study_LO_mp4
           </router-link>
         </td>
         <td></td>
