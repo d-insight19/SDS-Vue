@@ -6835,6 +6835,9 @@
         <td>
           <router-link :to="{ name: 'Study_04_SO_voicerecord' }">
             Study_04_SO_voicerecord
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_02' }">
+            Study_04_SO_voicerecord_02
           </router-link>
         </td>
         <td></td>
@@ -6852,6 +6855,15 @@
         <td>
           <router-link :to="{ name: 'Study_04_SO_voicerecord_player' }">
             Study_04_SO_voicerecord_player
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player_02' }">
+            Study_04_SO_voicerecord_player_02
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player_03' }">
+            Study_04_SO_voicerecord_player_03
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player_04' }">
+            Study_04_SO_voicerecord_player_04
           </router-link>
         </td>
         <td></td>

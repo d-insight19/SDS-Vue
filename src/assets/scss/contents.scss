@@ -1675,19 +1675,29 @@ label.rdo .label{position: relative;}
 #container.voice .record_box .record_txt{text-align: center;font-size:map-get($font-size, font_14);  letter-spacing: -0.042em;color:rgba(0,0,0,0.65)}
 #container.voice .record_box .record_time{text-align: center;font-family:'roboto';font-weight:500;font-size:map-get($font-size, font_18);  letter-spacing: -0.042em;color:rgba(0,0,0,0.80)}
 #container.voice .record_box .btn-md{max-width: 56px;padding:8px 16px;background-color:white;font-size:map-get($font-size, font_12); letter-spacing: -0.036em;color:rgba(0,0,0,0.25)}
-#container.voice .play_wrap .record_wrap{position: relative;vertical-align: middle; width:100%;}
-#container.voice .play_wrap .record_bar{height:4px; width:100%;background-color:rgba(0,0,0,0.1);}
-#container.voice .play_wrap .record_ball{position: absolute;  left: 0; top: 50%; background: #00adfb;width: 11px;height: 12px;
+#container.voice .record_box .btn-md.w76{max-width: 76px;padding:8px 16px;background-color:white;font-size:map-get($font-size, font_12); letter-spacing: -0.036em;color:rgba(0,0,0,0.65)}
+
+#container.voice .record_wrap{position: relative;vertical-align: middle; width:100%;}
+#container.voice .record_bar{height:4px;position: relative; width:100%;background-color:rgba(0,0,0,0.1);}
+#container.voice .record_bar.playing:before{content:'';height:4px;position: absolute;left:0; width:20%;background-color:#00adfb;}
+#container.voice .record_ball{position: absolute;  left: 0; top: 50%; background: #00adfb;width: 11px;height: 12px;
     border-radius: 50%; transform: translateY(-50%);}
 #container.voice .play_wrap li{display:table-cell;}
 #container.voice .play_wrap li .num{font-family:'roboto'; font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.65)}
 
 
-#container.voice .record_box .play_wrap li{float:left;}
-
+// #container.voice .record_box .play_wrap li{float:left;}
 #container.voice .play_wrap .font_18{font-family:'roboto'; font-size:map-get($font-size, font_18);letter-spacing: -0.054em; }
 #container.voice .play_wrap .font_14{ font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.5) }
 
+
+
+//record
+#container.voice .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 8px;background: #d9d9d9;}
+#container.voice .pipe-group dd:nth-last-child(1):after{display:none;}
+#container.voice .pipe-group dd{display: inline-block;font-size: map-get($font-size , font_13);line-height: 19px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
+
+.clr_wh{color:white !important;}
 
 
 

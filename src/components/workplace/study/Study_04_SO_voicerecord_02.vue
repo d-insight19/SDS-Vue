@@ -96,14 +96,14 @@
                         </p>
                         <div class="play_wrap mt20 mb40">
                             <ul>
-                                <li style="padding-right:14px;"><span class="ico play_40 blue"></span> </li>
+                                <li style="padding-right:14px;"><span class="ico pause_40 blue"></span> </li>
                                 <li style="padding-right:8px;">
-                                    <span class="num">00:00</span>
+                                    <span class="num">01:26</span>
                                 </li>
                                 <li class="record_wrap" style="padding-right:8px;">
-                                    <div class="record_bar">                                        
+                                    <div class="record_bar playing">                                        
                                     </div>
-                                    <span class="record_ball"></span>
+                                    <span class="record_ball" style="left:19%"></span>
                                 </li>
                                 <li>
                                     <span class="num">03:20</span>
