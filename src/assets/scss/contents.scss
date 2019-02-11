@@ -1665,9 +1665,11 @@ label.rdo .label{position: relative;}
 #container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
 
 //study_lo_docs
+#container.study_lo_docs #header.tab .header_inner.line1{z-index:999}
 #container.courseware .multiList .info {color:#000;}
 
 //study_lo_viewer
+#container.study_lo_viewer #header.tab .header_inner.line1{z-index:999}
 #container.study_lo_viewer h2.label-tit18 {line-height: 28px}
 #container.study_lo_viewer .multiList .info li {display: block}
 #container.courseware.study_lo_viewer .download_detail {padding:21px 20px 23px 20px}
