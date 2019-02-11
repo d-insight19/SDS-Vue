@@ -4796,8 +4796,8 @@
         <td>각 과정별 메뉴 사용여부 설정</td>
         <td class="textL">05.Study_02.01.studystatus</td>
         <td>
-          <router-link :to="{ name: 'Study_studystatus_point' }">
-            Study_studystatus_point 
+          <router-link :to="{ name: '' }">
+             
           </router-link>
         </td>
         <td></td>
@@ -10612,8 +10612,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.01.studystatus_point</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+           <router-link :to="{ name: 'Study_studystatus_point' }">
+            Study_studystatus_point 
           </router-link>
         </td>
         <td></td>
