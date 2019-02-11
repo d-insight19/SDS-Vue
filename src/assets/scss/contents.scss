@@ -1664,6 +1664,9 @@ label.rdo .label{position: relative;}
 #container.studyquestion .ulList.type4 li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
 #container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
 
+//study_lo_docs
+#container.courseware .multiList .info {color:#000;}
+
 //study_lo_viewer
 #container.study_lo_viewer h2.label-tit18 {line-height: 28px}
 #container.study_lo_viewer .multiList .info li {display: block}
@@ -1676,6 +1679,10 @@ label.rdo .label{position: relative;}
 #container.courseware.study_lo_viewer .download_detail .txt_wrap .title {min-height: 0}
 #container.courseware.study_lo_viewer .download_detail.wh .info {color:#fff}
 #container.courseware.study_lo_viewer .download_detail.wh .mono_65 {color:#fff !important}
+
+//study_lo_mp4_script
+#container.courseware.Study_LO_mp4_script .header_inner.line2 {border-bottom:#d9d9d9 1px solid; padding-left: 18px ; height:64px; line-height: 64px}
+#container.mediaquery.Study_LO_mp4_script #header .btn.close {right:18px; left:auto}
 
 
 #container.voice .record_box{background:#f2f3f7; padding:24px 34px;}

@@ -246,6 +246,12 @@ import StudyetcstudycheerAlarmcalendar01 from '~workplace/study/Study_etc_studyc
 import StudyetcstudycheerAlarmcalendar03 from '~workplace/study/Study_etc_studycheerAlarm_calendar03'
 import StudyLOdocs from '~workplace/study/Study_LO_docs'
 import StudyLOviewer from '~workplace/study/Study_LO_viewer'
+import StudyLOaudiofs from '~workplace/study/Study_LO_audio_fs'
+import StudyLOaudio from '~workplace/study/Study_LO_audio'
+import StudyLOhtml5 from '~workplace/study/Study_LO_html5'
+import StudyLOhtml5fs from '~workplace/study/Study_LO_html5_fs'
+import StudyLOmp4fs from '~workplace/study/Study_LO_mp4_fs'
+import StudyLOmp4script2 from '~workplace/study/Study_LO_mp4_script2'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -1887,6 +1893,36 @@ var rootRoutes = [
     path: '/Study_LO_viewer',
     name: 'Study_LO_viewer',
     component: StudyLOviewer
+  },
+  {
+    path: '/Study_LO_audio_fs',
+    name: 'Study_LO_audio_fs',
+    component: StudyLOaudiofs
+  },
+  {
+    path: '/Study_LO_audio',
+    name: 'Study_LO_audio',
+    component: StudyLOaudio
+  },
+  {
+    path: '/Study_LO_html5',
+    name: 'Study_LO_html5',
+    component: StudyLOhtml5
+  },
+  {
+    path: '/Study_LO_html5_fs',
+    name: 'Study_LO_html5_fs',
+    component: StudyLOhtml5fs
+  },
+  {
+    path: '/Study_LO_mp4_fs',
+    name: 'Study_LO_mp4_fs',
+    component: StudyLOmp4fs
+  },
+  {
+    path: '/Study_LO_mp4_script2',
+    name: 'Study_LO_mp4_script2',
+    component: StudyLOmp4script2
   },
   // {
   //   path: '/regiclass_detailview_licence',
