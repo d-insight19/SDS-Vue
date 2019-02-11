@@ -1664,6 +1664,18 @@ label.rdo .label{position: relative;}
 #container.studyquestion .ulList.type4 li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
 #container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
 
+//study_lo_viewer
+#container.study_lo_viewer h2.label-tit18 {line-height: 28px}
+#container.study_lo_viewer .multiList .info li {display: block}
+#container.courseware.study_lo_viewer .download_detail {padding:21px 20px 23px 20px}
+#container.courseware.study_lo_viewer .multiList.type2 > li .txt_wrap {width:auto; display: block; float:right;}
+#container.courseware.study_lo_viewer .download_detail {overflow: hidden}
+#container.courseware.study_lo_viewer .ico.set_line_28 {float:left; width: 28px; margin-top:-5px}
+#container.courseware.study_lo_viewer .ico.set_line_wh_28 {float:left; width: 28px; margin-top:-5px}
+#container.courseware.study_lo_viewer .multiList .info {color:#000; margin-top:8px}
+#container.courseware.study_lo_viewer .download_detail .txt_wrap .title {min-height: 0}
+#container.courseware.study_lo_viewer .download_detail.wh .info {color:#fff}
+#container.courseware.study_lo_viewer .download_detail.wh .mono_65 {color:#fff !important}
 
 
 #container.voice .record_box{background:#f2f3f7; padding:24px 34px;}

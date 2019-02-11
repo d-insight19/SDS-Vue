@@ -216,7 +216,8 @@
 .ico.note.blue{width:16px;height:16px;background: url("../img/ic_mynote_line_blue_16.png") no-repeat; }
 .ico.play_40.blue{width:40px;height:40px;background: url("../img/ic_record_play_blue_40.png") no-repeat; }
 .ico.pause_40.blue{width:40px;height:40px;background: url("../img/ic_record_pause_blue_40.png") no-repeat; }
-
+.ico.set_line_28 {width:28px;height:28px;background: url("../img/ic_set_line_28.png") no-repeat; }
+.ico.set_line_wh_28 {width:28px;height:28px;background: url("../img/ic_set_line_wh_28.png") no-repeat; }
 
 
 
@@ -285,6 +286,7 @@
 
 /* margin */
 .mt0{margin-top: 0px !important;}
+.mt2{margin-top: 2px !important;}
 .mt4{margin-top: 4px !important;}
 .mt6{margin-top: 6px !important;}/*12월12일 추가*/ 
 .mt8{margin-top: 8px !important;}/*12월12일 추가*/ 
