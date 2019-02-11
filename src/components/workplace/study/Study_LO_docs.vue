@@ -28,16 +28,16 @@
                 <div class="right blur"></div>
             </div> -->
 
-            <div class="study_kukudocs">
+            <div class="kukudocs_area_wrap">
                     
-                <div class="img_bg">
+                <div class="kukudocs_area">
+                    <div class="box_shadow"></div>
+                    <div class="kukudocs"></div>
                     <a href="#"><div class="fp-prevArrow"></div></a>
                     <a href="#"><div class="fp-nextArrow"></div></a>
-                    <div class="dim"></div>
                     <div class="button_wrap">
                         <button type="button" class="play"><span class="ico playIcon"></span>이어학습
-                        <p class="fp_Icon_txt">1/10</p></button>
-                        
+                        <p class="fp_Icon_txt">1/10</p></button>                        
                     </div>
                 </div>
                                         
