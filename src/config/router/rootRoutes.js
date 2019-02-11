@@ -198,7 +198,11 @@ import Study04SOopinionmultiopinon from '~workplace/study/Study_04_SO_opinion_mu
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulation_submission'
 import Study04SOvoicerecord from '~workplace/study/Study_04_SO_voicerecord'
+import Study04SOvoicerecord02 from '~workplace/study/Study_04_SO_voicerecord_02'
 import Study04SOvoicerecordplayer from '~workplace/study/Study_04_SO_voicerecord_player'
+import Study04SOvoicerecordplayer02 from '~workplace/study/Study_04_SO_voicerecord_player_02'
+import Study04SOvoicerecordplayer03 from '~workplace/study/Study_04_SO_voicerecord_player_03'
+import Study04SOvoicerecordplayer04 from '~workplace/study/Study_04_SO_voicerecord_player_04'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
 import Study04SOactionplanintro from '~workplace/study/Study_04_SO_actionplan_intro'
 import Study04SOmainsummary from '~workplace/study/Study_04_SO_mainsummary'
@@ -237,6 +241,10 @@ import StudyLOoldimageaudio from '~workplace/study/Study_LO_old_imageaudio'
 import StudyLOoldmp4studymaterial from '~workplace/study/Study_LO_old_mp4_studymaterial'
 import StudyLOoldmp4 from '~workplace/study/Study_LO_old_mp4'
 import Studyetcaccesscontrol from '~workplace/study/Study_etc_accesscontrol'
+import StudyLOmp4 from '~workplace/study/Study_LO_mp4'
+import StudyetcstudycheerAlarmcalendar01 from '~workplace/study/Study_etc_studycheerAlarm_calendar01'
+import StudyetcstudycheerAlarmcalendar03 from '~workplace/study/Study_etc_studycheerAlarm_calendar03'
+import StudyLOdocs from '~workplace/study/Study_LO_docs'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -346,6 +354,7 @@ import MySpaceLearningjourney2 from '~workplace/myspace/MySpace_learningjourney_
 import MySpaceLearningjourneyEncourage from '~workplace/myspace/MySpace_learningjourney_encourage'
 import MySpaceLearningjourneyEncourageOff from '~workplace/myspace/MySpace_learningjourney_encourage_off'
 import MySpaceLearningjourneyCalendarmanagement2 from '~workplace/myspace/MySpace_learningjourney_calendarmanagement_2'
+import MySpaceLearningjourneyCalendar2 from '~workplace/myspace/MySpace_learningjourney_calendar_2'
 import MySpaceLearningjourneyAdd from '~workplace/myspace/MySpace_learningjourney_add'
 import MySpaceLearningjourneyLike from '~workplace/myspace/MySpace_learningjourney_like'
 import MySpaceCliping from '~workplace/myspace/MySpace_cliping'
@@ -1569,9 +1578,29 @@ var rootRoutes = [
     component: Study04SOvoicerecord
   },
   {
+    path: '/Study_04_SO_voicerecord_02',
+    name: 'Study_04_SO_voicerecord_02',
+    component: Study04SOvoicerecord02
+  },
+  {
     path: '/Study_04_SO_voicerecord_player',
     name: 'Study_04_SO_voicerecord_player',
     component: Study04SOvoicerecordplayer
+  },
+  {
+    path: '/Study_04_SO_voicerecord_player_02',
+    name: 'Study_04_SO_voicerecord_player_02',
+    component: Study04SOvoicerecordplayer02
+  },
+  {
+    path: '/Study_04_SO_voicerecord_player_03',
+    name: 'Study_04_SO_voicerecord_player_03',
+    component: Study04SOvoicerecordplayer03
+  },
+  {
+    path: '/Study_04_SO_voicerecord_player_04',
+    name: 'Study_04_SO_voicerecord_player_04',
+    component: Study04SOvoicerecordplayer04
   },
   {
     path: '/Study_04_SO_actionplan_input',
@@ -1833,6 +1862,46 @@ var rootRoutes = [
     name: 'Study_etc_accesscontrol',
     component: Studyetcaccesscontrol
   },
+  {
+    path: '/Study_LO_mp4',
+    name: 'Study_LO_mp4',
+    component: StudyLOmp4
+  },
+  {
+    path: '/Study_etc_studycheerAlarm_calendar01',
+    name: 'Study_etc_studycheerAlarm_calendar01',
+    component: StudyetcstudycheerAlarmcalendar01
+  },
+  {
+    path: '/Study_etc_studycheerAlarm_calendar03',
+    name: 'Study_etc_studycheerAlarm_calendar03',
+    component: StudyetcstudycheerAlarmcalendar03
+  },
+  {
+    path: '/Study_LO_docs',
+    name: 'Study_LO_docs',
+    component: StudyLOdocs
+  },
+  // {
+  //   path: '/regiclass_detailview_licence',
+  //   name: 'regiclass_detailview_licence',
+  //   component: RegiclassDetailviewLicence
+  // },
+  // {
+  //   path: '/regiclass_detailview_books',
+  //   name: 'regiclass_detailview_books',
+  //   component: RegiclassDetailviewBooks
+  // },
+  // {
+  //   path: '/regiclass_detailview_terms',
+  //   name: 'regiclass_detailview_terms',
+  //   component: RegiclassDetailviewTerms
+  // },
+  // {
+  //   path: '/regiclass_detailview_wish',
+  //   name: 'regiclass_detailview_wish',
+  //   component: RegiclassDetailviewWish
+  // },
   {
     path: '/Main_control',
     name: 'Main_control',
@@ -2356,6 +2425,11 @@ var rootRoutes = [
     path: '/MySpace_learningjourney_calendarmanagement_2',
     name: 'MySpace_learningjourney_calendarmanagement_2',
     component: MySpaceLearningjourneyCalendarmanagement2
+  },
+  {
+    path: '/MySpace_learningjourney_calendar_2',
+    name: 'MySpace_learningjourney_calendar_2',
+    component: MySpaceLearningjourneyCalendar2
   },
   {
     path: '/MySpace_learningjourney_add',

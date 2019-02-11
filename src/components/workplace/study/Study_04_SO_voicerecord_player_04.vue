@@ -96,7 +96,7 @@
                         </p>
                         <div class="play_wrap mt20 mb40">
                             <ul>
-                                <li style="padding-right:14px;"><span class="ico play_40 blue"></span> </li>
+                                <li style="padding-right:14px;"><img src="@/assets/img/ic_record_play_blue_40.png" alt=""></li>
                                 <li style="padding-right:8px;">
                                     <span class="num">00:00</span>
                                 </li>
@@ -111,22 +111,43 @@
                             </ul>
                             
                         </div>
-                        <p class="inner-txt fwb mb8">답변 녹음하기</p>
+                        <div class="inner-txt fwb mb8">
+                            녹음완료
+                            <dl class="fr pipe-group ">
+                                <dd>2018.10.10</dd>
+                                <dd>13:08</dd>
+                            </dl>
+                        </div>
                         <div class="record_box">
                             <ul class="record_tb">
                                 <li>
-                                    <img src="@/assets/img/ic_equalizer_off.png" alt="">
                                 </li>
                                 <li>
                                     <div class="circle">
-                                        <img src="@/assets/img/ic_record_default_solid_red_40.png" alt="">
+                                        <img src="@/assets/img/ic_record_play_40.png" alt="">
                                     </div>
                                 </li>
                                 <li>
-                                    <button class="btn-md mb0">등록</button>
                                 </li>
                             </ul>
-                            <p class="record_txt mt12">버튼을 눌러 답변을 녹음하세요.</p>
+                            <div class="record_time mt12">
+                                <div class="play_wrap mt20">
+                                    <ul>
+                                        <li style="padding-right:8px;">
+                                            <span class="num">00:00:00</span>
+                                        </li>
+                                        <li class="record_wrap" style="padding-right:8px;">
+                                            <div class="record_bar">                                        
+                                            </div>
+                                            <span class="record_ball"></span>
+                                        </li>
+                                        <li>
+                                            <span class="num">00:03:20</span>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

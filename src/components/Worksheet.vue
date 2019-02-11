@@ -4036,8 +4036,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.04.learningjourney_calendar</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_learningjourney_calendar_2' }">
+            MySpace_learningjourney_calendar_2
           </router-link>
         </td>
         <td></td>
@@ -5867,8 +5867,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.01.LO_mp4</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_mp4' }">
+            Study_LO_mp4
           </router-link>
         </td>
         <td></td>
@@ -6116,8 +6116,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.15.LO_docs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_docs' }">
+            Study_LO_docs
           </router-link>
         </td>
         <td></td>
@@ -6835,6 +6835,9 @@
         <td>
           <router-link :to="{ name: 'Study_04_SO_voicerecord' }">
             Study_04_SO_voicerecord
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_02' }">
+            Study_04_SO_voicerecord_02
           </router-link>
         </td>
         <td></td>
@@ -6852,6 +6855,15 @@
         <td>
           <router-link :to="{ name: 'Study_04_SO_voicerecord_player' }">
             Study_04_SO_voicerecord_player
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player_02' }">
+            Study_04_SO_voicerecord_player_02
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player_03' }">
+            Study_04_SO_voicerecord_player_03
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player_04' }">
+            Study_04_SO_voicerecord_player_04
           </router-link>
         </td>
         <td></td>
@@ -7178,8 +7190,11 @@
         <td>　</td>
         <td class="textL">05.Study_05.13.etc_studycheerAlarm</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_etc_studycheerAlarm_calendar01' }">
+            Study_etc_studycheerAlarm_calendar01
+          </router-link>,
+           <router-link :to="{ name: 'Study_etc_studycheerAlarm_calendar03' }">
+            Study_etc_studycheerAlarm_calendar03
           </router-link>
         </td>
         <td></td>
@@ -7913,8 +7928,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.01.LO_mp4</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+           <router-link :to="{ name: 'Study_LO_mp4' }">
+            Study_LO_mp4
           </router-link>
         </td>
         <td></td>
@@ -11272,7 +11287,7 @@
         <td>공통</td>
         <td>키보드</td>
         <td></td>
-        <td>　</td>s
+        <td>　</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
