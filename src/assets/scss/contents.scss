@@ -1213,7 +1213,7 @@ label.rdo .label{position: relative;}
 
 // poll_submission_circle
 #container.study_poll .inner .h-tit5{margin-bottom:20px; font-weight:500; font-size:map-get($font-size, font_16);line-height: 28px; letter-spacing: -0.48px;}
-
+#container.study_poll .diagram2 {margin:0 auto; width:180px; height:180px;}
 
 // 간지 middle
 #container.study_middle  #header div.hide-inner  p.h-tit1{font-weight:500; font-size:map-get($font-size , font_24);line-height:32px; letter-spacing:-0.72px;}
@@ -1650,6 +1650,27 @@ label.rdo .label{position: relative;}
 #container.studyquestion .ulList.type4 li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
 #container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
 
+//study_lo_docs
+#container.study_lo_docs #header.tab .header_inner.line1{z-index:999}
+#container.courseware .multiList .info {color:#000;}
+
+//study_lo_viewer
+#container.study_lo_viewer #header.tab .header_inner.line1{z-index:999}
+#container.study_lo_viewer h2.label-tit18 {line-height: 28px}
+#container.study_lo_viewer .multiList .info li {display: block}
+#container.courseware.study_lo_viewer .download_detail {padding:21px 20px 23px 20px}
+#container.courseware.study_lo_viewer .multiList.type2 > li .txt_wrap {width:auto; display: block; float:right;}
+#container.courseware.study_lo_viewer .download_detail {overflow: hidden}
+#container.courseware.study_lo_viewer .ico.set_line_28 {float:left; width: 28px; margin-top:-5px}
+#container.courseware.study_lo_viewer .ico.set_line_wh_28 {float:left; width: 28px; margin-top:-5px}
+#container.courseware.study_lo_viewer .multiList .info {color:#000; margin-top:8px}
+#container.courseware.study_lo_viewer .download_detail .txt_wrap .title {min-height: 0}
+#container.courseware.study_lo_viewer .download_detail.wh .info {color:#fff}
+#container.courseware.study_lo_viewer .download_detail.wh .mono_65 {color:#fff !important}
+
+//study_lo_mp4_script
+#container.courseware.Study_LO_mp4_script .header_inner.line2 {border-bottom:#d9d9d9 1px solid; padding-left: 18px ; height:64px; line-height: 64px}
+#container.mediaquery.Study_LO_mp4_script #header .btn.close {right:18px; left:auto}
 
 
 #container.voice .record_box{background:#f2f3f7; padding:24px 34px;}
@@ -1659,20 +1680,31 @@ label.rdo .label{position: relative;}
 #container.voice .record_box ul.record_tb li{display:table-cell;vertical-align: middle;}
 #container.voice .record_box ul.record_tb li .circle{cursor:pointer;margin-left:28px;margin-right:26px;padding:30px;background:white;border-radius:50%; border:1px solid #e3e3e3;}
 #container.voice .record_box .record_txt{text-align: center;font-size:map-get($font-size, font_14);  letter-spacing: -0.042em;color:rgba(0,0,0,0.65)}
+#container.voice .record_box .record_time{text-align: center;font-family:'roboto';font-weight:500;font-size:map-get($font-size, font_18);  letter-spacing: -0.042em;color:rgba(0,0,0,0.80)}
 #container.voice .record_box .btn-md{max-width: 56px;padding:8px 16px;background-color:white;font-size:map-get($font-size, font_12); letter-spacing: -0.036em;color:rgba(0,0,0,0.25)}
-#container.voice .play_wrap .record_wrap{position: relative;vertical-align: middle; width:100%;}
-#container.voice .play_wrap .record_bar{height:4px; width:100%;background-color:rgba(0,0,0,0.1);}
-#container.voice .play_wrap .record_ball{position: absolute;  left: 0; top: 50%; background: #00adfb;width: 11px;height: 12px;
+#container.voice .record_box .btn-md.w76{max-width: 76px;padding:8px 16px;background-color:white;font-size:map-get($font-size, font_12); letter-spacing: -0.036em;color:rgba(0,0,0,0.65)}
+
+#container.voice .record_wrap{position: relative;vertical-align: middle; width:100%;}
+#container.voice .record_bar{height:4px;position: relative; width:100%;background-color:rgba(0,0,0,0.1);}
+#container.voice .record_bar.playing:before{content:'';height:4px;position: absolute;left:0; width:20%;background-color:#00adfb;}
+#container.voice .record_ball{position: absolute;  left: 0; top: 50%; background: #00adfb;width: 11px;height: 12px;
     border-radius: 50%; transform: translateY(-50%);}
 #container.voice .play_wrap li{display:table-cell;}
 #container.voice .play_wrap li .num{font-family:'roboto'; font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.65)}
 
 
-#container.voice .record_box .play_wrap li{float:left;}
-#container.voice .record_box .diagram2 {margin:0 auto; width:180px; height:180px;}
+// #container.voice .record_box .play_wrap li{float:left;}
 #container.voice .play_wrap .font_18{font-family:'roboto'; font-size:map-get($font-size, font_18);letter-spacing: -0.054em; }
 #container.voice .play_wrap .font_14{ font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.5) }
 
+
+
+//record
+#container.voice .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 8px;background: #d9d9d9;}
+#container.voice .pipe-group dd:nth-last-child(1):after{display:none;}
+#container.voice .pipe-group dd{display: inline-block;font-size: map-get($font-size , font_13);line-height: 19px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
+
+.clr_wh{color:white !important;}
 
 
 
@@ -2322,7 +2354,6 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .CLIPingType .rating > input:checked ~ label:hover,
 .CLIPingType .rating > label:hover ~ input:checked ~ label, 
 .CLIPingType .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
-.CLIPingType .reply-list .rating > label {width:20px;height:20px;}
 // search
 .search .searchList > li{ display:table;width:100%;position: relative; border-bottom:1px solid #e3e3e3;}
 .search .searchList > li .in{width: calc(100% - 34px);padding:15px 0; display: table-cell; position: relative; height:100%;vertical-align: middle;font-size: map-get($font_size, font_16);}
@@ -2503,6 +2534,12 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 
 .MySpace .radioList li{margin-bottom:10px;}
 
+
+//209번 추가작업
+.MySpace.calendar .tit-box{padding-bottom:27px;}
+.MySpace.calendar .font_18{font-size: map-get($font_size, font_18); letter-spacing: -0.054em;}
+.MySpace.calendar .font_20{font-family:'roboto';font-size: map-get($font_size, font_20); letter-spacing: -0.06em;}
+
 //keyword
 .keyword li .number{padding: 12px 0; font-size: map-get($font_size, font_18); width: 30px; display: inline-block;}
 .keyword li .contents{border-bottom:1px solid map-get($line_colors, B89); font-size: map-get($font_size, font_16); text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
@@ -2522,6 +2559,28 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .regiclass dt{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_100); width: 70px; display: table-cell; font-weight: 500;}
 .regiclass dd{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_80); display: table-cell;}
 .regiclass .underline {border-bottom: 1px solid #999; padding-bottom: 10px;}
+.regiclass .info li{display: inline-block; font-size: map-get($font_size, font_15); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
+.regiclass .info li+li{margin-left: 5px;}
+.regiclass .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
+// 배너
+.regiclass ul.banner_list {position: relative; height: 137px; overflow: hidden;}
+.regiclass ul.banner_list li {float: left; width: 100%; height:137px;}
+.regiclass ul.banner_list li .banner_area {position: relative; width: 100%; height: 137px;}
+.regiclass ul.banner_list li .banner_area .banner_image {position: absolute; top:0px; right:0px; width: 100%; height:137px;}
+.regiclass ul.banner_list li .banner_area .banner_image img {width: 100%; height: 137px;}
+.regiclass ul.banner_list li .banner_area .banner_pager {position: absolute; top:13px; right:18px; padding: 2px 7px; border-radius: 12px; background-color: rgba(0, 0, 0, 0.5);}
+.regiclass ul.banner_list li .banner_area .banner_pager p {font-size: map-get($font_size, font_12); color: map-get($mono_colors, mono_0); line-height: normal;}
+// 멀티리스트
+.regiclass .multiList.type5 > li .in{width: 100%; padding: 15px 0px;}
+.regiclass .multiList.type5 > li{  border-bottom:1px solid #e3e3e3;}
+// 별점
+.regiclass .rating {border: none; display:inline;}
+.regiclass .rating > input { display: none; } 
+.regiclass .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
+.regiclass .rating > input:checked + label:hover, 
+.regiclass .rating > input:checked ~ label:hover,
+.regiclass .rating > label:hover ~ input:checked ~ label, 
+.regiclass .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
 
 // ATORM
 .atorm .labelChk .label {width:100%;}

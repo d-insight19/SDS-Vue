@@ -61,6 +61,7 @@
 .ico.ppt-a{width:20px;height:20px;background: url("../img/ic_ppt_line_20.png") no-repeat; }
 .ico.del-blk{width:20px;height:20px;background: url("../img/ic_close_bold_20.png") no-repeat; }
 .ico.plus{width:16px;height:16px;background: url("../img/ic_plus_16.png") no-repeat; vertical-align: -2px; }
+.ico.plus.wh{width:16px;height:16px;background: url("../img/ic_plus_solidWhite.png") no-repeat; vertical-align: -4px; }
 .ico.plus.done{opacity: 0.3; }
 .ico.clip{width:16px;height:16px;background: url("../img/ic_addfile_16.png") no-repeat; }
 .ico.download{width:20px;height:20px;background: url("../img/ic_download_20.png") no-repeat;  }
@@ -163,7 +164,9 @@
 
 /*추가이미지 2019-1-9*/
 .ico.star_20{width:20px;height:20px;background: url("../img/ic_rate_solid_grey_20.png") no-repeat;}
+.ico.star_20.gold{width:20px;height:20px;background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover !important;}
 .ico.star_30{width:30px;height:30px;background: url("../img/ic_rate_solid_grey_30.png") no-repeat;}
+.ico.star_30.gold{width:30px;height:30px;background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover !important;}
 
 /*추가이미지 2019-1-11*/
 .ico.close_20{width:20px; height:20px; background: url("../img/ic_close_line_20.png") ;background-size: cover;}
@@ -217,6 +220,12 @@
 
 /*ico study*/
 .ico.ic_set_line_28 {width:28px;height:28px;background: url("../img/ic_set_line_28.png") no-repeat; background-size:contain; } 
+.ico.play_40.blue{width:40px;height:40px;background: url("../img/ic_record_play_blue_40.png") no-repeat; }
+.ico.pause_40.blue{width:40px;height:40px;background: url("../img/ic_record_pause_blue_40.png") no-repeat; }
+.ico.set_line_28 {width:28px;height:28px;background: url("../img/ic_set_line_28.png") no-repeat; }
+.ico.set_line_wh_28 {width:28px;height:28px;background: url("../img/ic_set_line_wh_28.png") no-repeat; }
+
+
 
 
 
@@ -282,7 +291,9 @@
 
 
 /* margin */
+.mt-4{margin-top: -4px !important;}
 .mt0{margin-top: 0px !important;}
+.mt2{margin-top: 2px !important;}
 .mt4{margin-top: 4px !important;}
 .mt6{margin-top: 6px !important;}/*12월12일 추가*/ 
 .mt8{margin-top: 8px !important;}/*12월12일 추가*/ 
@@ -310,6 +321,7 @@
 .mt70{margin-top: 70px !important;}/*12월12일 추가*/
 
 .mb0{margin-bottom: 0px !important;}/*1월 3일 추가*/
+.mb4{margin-bottom: 4px !important;}
 .mb5{margin-bottom: 5px !important;}
 .mb8{margin-bottom: 8px !important;}
 .mb10{margin-bottom: 10px !important;}
@@ -378,7 +390,7 @@
 
 /* hr */
 .hr{height:8px; margin: 25px -24px; background:#f6f6f6;}
-
+.hr_2{height:8px; margin: 25px -18px; background:#f6f6f6;}
 
 /* link */
 .link{display: inline-block;}

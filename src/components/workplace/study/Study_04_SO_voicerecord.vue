@@ -96,7 +96,7 @@
                         </p>
                         <div class="play_wrap mt20 mb40">
                             <ul>
-                                <li style="padding-right:14px;"><img src="@/assets/img/ic_record_play_blue_40.png" alt=""></li>
+                                <li style="padding-right:14px;"><span class="ico play_40 blue"></span> </li>
                                 <li style="padding-right:8px;">
                                     <span class="num">00:00</span>
                                 </li>

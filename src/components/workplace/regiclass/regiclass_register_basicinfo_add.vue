@@ -23,7 +23,7 @@
                     </div>
                     <p class="txt-desc" style="display:none1;">수강신청을 위한 정보를 입력해주세요.</p>
                 </div>
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1 dif">
                     <li class="join-id mt0 pdb0">
                         <strong class="label-name fwb">성명</strong>
@@ -59,7 +59,7 @@
                     <slp-checkbox ><span class="label-tit-14 mono_65 mb0">입력하신 정보로 개인정보를 수정합니다.</span></slp-checkbox>
                 </div>
                 <!-- //list -->
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1">
                     <li class="join-id mt0">
                         <strong class="label-tit-16 fwb">소속회사 담당자 정보</strong>
@@ -87,7 +87,7 @@
                     </li>                 
                 </ul>
                 <!-- //list -->
-                <p class="hr" style="margin-top:28px; margin-bottom:22px;"></p>
+                <p class="hr_2" style="margin-top:28px; margin-bottom:22px;"></p>
                 <ul class="ulList type1">                    
                     <li>
                         <p class="label-tit-16 fwb">고용보험 환급 정보</p>
@@ -101,18 +101,18 @@
                 </ul>
 
                 <div class="loginChk mt8">
-                    <slp-select class="w100p" required placeholder="선택" >
+                    <select class="w100p select" required placeholder="선택" >
                         <option>선택</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
-                    </slp-select>
+                    </select>
                 </div>
             </div>
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn zin0">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">다음</button></li>

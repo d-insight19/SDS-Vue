@@ -119,14 +119,14 @@
                                 </li>
                                 <li>
                                     <div class="circle">
-                                        <img src="@/assets/img/ic_record_default_solid_red_40.png" alt="">
+                                        <img src="@/assets/img/ic_record_stop_red_40.png" alt="">
                                     </div>
                                 </li>
                                 <li>
                                     <button class="btn-md mb0">등록</button>
                                 </li>
                             </ul>
-                            <p class="record_txt mt12">버튼을 눌러 답변을 녹음하세요.</p>
+                            <p class="record_time mt12">00:01:56</p>
                         </div>
                     </div>
                 </div>

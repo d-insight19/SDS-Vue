@@ -4036,8 +4036,8 @@
         <td>　</td>
         <td class="textL">04.MySpace_04.04.learningjourney_calendar</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'MySpace_learningjourney_calendar_2' }">
+            MySpace_learningjourney_calendar_2
           </router-link>
         </td>
         <td></td>
@@ -5027,6 +5027,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          etc_QR 동일, 네이티브 영역. 개발필요
         </td>
         <td></td>
       </tr>
@@ -5867,8 +5868,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.01.LO_mp4</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_mp4' }">
+            Study_LO_mp4
           </router-link>
         </td>
         <td></td>
@@ -5884,8 +5885,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.02.LO_mp4_fs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_mp4_fs' }">
+            Study_LO_mp4_fs
           </router-link>
         </td>
         <td></td>
@@ -5936,8 +5937,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.04.02.LO_mp4_script2</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_mp4_script2' }">
+            Study_LO_mp4_script2
           </router-link>
         </td>
         <td></td>
@@ -5970,8 +5971,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.06.LO_html5</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_html5' }">
+            Study_LO_html5
           </router-link>
         </td>
         <td></td>
@@ -5987,8 +5988,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.07.LO_html5_fs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_html5_fs' }">
+            Study_LO_html5_fs
           </router-link>
         </td>
         <td></td>
@@ -6017,8 +6018,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.09.LO_audio</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_audio' }">
+            Study_LO_audio
           </router-link>
         </td>
         <td></td>
@@ -6034,8 +6035,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.10.LO_audio_fs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_audio_fs' }">
+            Study_LO_audio_fs
           </router-link>
         </td>
         <td></td>
@@ -6064,8 +6065,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.12.LO_viewer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_viewer' }">
+            Study_LO_viewer
           </router-link>
         </td>
         <td></td>
@@ -6116,8 +6117,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.15.LO_docs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_docs' }">
+            Study_LO_docs
           </router-link>
         </td>
         <td></td>
@@ -6835,6 +6836,9 @@
         <td>
           <router-link :to="{ name: 'Study_04_SO_voicerecord' }">
             Study_04_SO_voicerecord
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_02' }">
+            Study_04_SO_voicerecord_02
           </router-link>
         </td>
         <td></td>
@@ -6852,6 +6856,15 @@
         <td>
           <router-link :to="{ name: 'Study_04_SO_voicerecord_player' }">
             Study_04_SO_voicerecord_player
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player_02' }">
+            Study_04_SO_voicerecord_player_02
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player_03' }">
+            Study_04_SO_voicerecord_player_03
+          </router-link><br/>
+          <router-link :to="{ name: 'Study_04_SO_voicerecord_player_04' }">
+            Study_04_SO_voicerecord_player_04
           </router-link>
         </td>
         <td></td>
@@ -7178,8 +7191,11 @@
         <td>　</td>
         <td class="textL">05.Study_05.13.etc_studycheerAlarm</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_etc_studycheerAlarm_calendar01' }">
+            Study_etc_studycheerAlarm_calendar01
+          </router-link>,
+           <router-link :to="{ name: 'Study_etc_studycheerAlarm_calendar03' }">
+            Study_etc_studycheerAlarm_calendar03
           </router-link>
         </td>
         <td></td>
@@ -7773,8 +7789,12 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.02.detailview_summary</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_summary_1' }">
+            regiclass_detailview_summary_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'regiclass_detailview_summary_2' }">
+            regiclass_detailview_summary_2
           </router-link>
         </td>
         <td></td>
@@ -7790,8 +7810,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.01.detailview_intro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_intro' }">
+            regiclass_detailview_intro
           </router-link>
         </td>
         <td></td>
@@ -7807,8 +7827,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.03.detailview_course</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_course' }">
+            regiclass_detailview_course
           </router-link>
         </td>
         <td></td>
@@ -7892,8 +7912,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.04.detailview_review</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_review' }">
+            regiclass_detailview_review
           </router-link>
         </td>
         <td></td>
@@ -7909,8 +7929,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.01.LO_mp4</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+           <router-link :to="{ name: 'Study_LO_mp4' }">
+            Study_LO_mp4
           </router-link>
         </td>
         <td></td>
