@@ -4587,8 +4587,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.04.home_set</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set' }">
+            Study_home_set
           </router-link>
         </td>
         <td></td>
@@ -10870,7 +10870,23 @@
         </td>
         <td></td>
       </tr>
-      
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>아이콘</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_icons' }">
+            components_icons
+          </router-link>
+        </td>
+        <td></td>
+      </tr>      
       <tr>
       <td align="center">0</td>
         <td>공통컴포넌트</td>
@@ -11268,7 +11284,7 @@
         <td>공통</td>
         <td>키보드</td>
         <td></td>
-        <td>　</td>s
+        <td>　</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>

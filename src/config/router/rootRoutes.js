@@ -1,5 +1,6 @@
 // fdp 기본 route 정보
 import Worksheet from '@/components/Worksheet'
+import ComponentsIcons from '~workplace/common_page/components_icons'
 import ComponentsButtons from '~workplace/common_page/components_buttons'
 import ComponentsTextfield from '~workplace/common_page/components_textfield'
 import ComponentsCheckbox from '~workplace/common_page/components_checkbox'
@@ -130,6 +131,7 @@ import StudyHomeCoursewareModule02 from '~workplace/study/Study_home_courseware_
 import StudyHomeCoursewareLoso from '~workplace/study/Study_home_courseware_loso'
 import StudyHomeMoocOpen from '~workplace/study/Study_home_mooc_open'
 import StudyHomeMoocClose from '~workplace/study/Study_home_mooc_close'
+import StudyHomeSet from '~workplace/study/Study_home_set'
 import StudyHomeSetBook from '~workplace/study/Study_home_set_book'
 import StudyHomeSetBook02 from '~workplace/study/Study_home_set_book02'
 import StudyHomeSetPhonelanguage from '~workplace/study/Study_home_set_phonelanguage'
@@ -603,6 +605,11 @@ var rootRoutes = [
     name: 'components_textfield_slp',
     component: ComponentsTextfieldSlp
   },
+  {
+    path: '/components_icons',
+    name: 'components_icons',
+    component: ComponentsIcons
+  }, 
   {
     path: '/components_buttons',
     name: 'components_buttons',
@@ -1292,6 +1299,11 @@ var rootRoutes = [
     path: '/Study_home_mooc_close',
     name: 'Study_home_mooc_close',
     component: StudyHomeMoocClose
+  },
+  {
+    path: '/Study_home_set',
+    name: 'Study_home_set',
+    component: StudyHomeSet
   },
   {
     path: '/Study_home_set_book',
