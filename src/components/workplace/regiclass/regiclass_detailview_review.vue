@@ -18,9 +18,9 @@
             <div class="header_inner line2 tabMenu scroll-x" style="border-top:1px solid #eaeaea">
                 <ul class="scrollTab">
                     <li><a href="#tab1">과정소개</a></li><!-- selected class "on" -->
-                    <li class="on"><a href="#tab2">과정요약</a></li>
+                    <li><a href="#tab2">과정요약</a></li>
                     <li><a href="#tab3">과정목차</a></li>
-                    <li><a href="#tab4">수강후기</a></li>
+                    <li class="on"><a href="#tab4">수강후기</a></li>
                 </ul>
             </div>
 
@@ -154,7 +154,7 @@
                 <div>
                     <ul class="info mb5">
                         <li class="icon type2 fwb">
-                            <span class="star ico" style="vertical-align:1px;"></span><span class="info_value">4.5</span><span class="info_value">(후기 999개)</span>
+                            <span class="star ico" style="vertical-align:1px;"></span><span class="info_value mono_80">4.5</span><span class="info_value mono_80">(후기 999개)</span>
                         </li>
                         <li class="fwb">
                             <span class="info_value color_clr1">1,135,000원</span>
@@ -169,33 +169,88 @@
         
 
         <div id="content" class="etc">
+
           <div class="cell">
-            <div class="inner">
-                <p class="font_15 fwb mb4">강사(SME)</p>
-                <p class="font_15 fwr mono_80 mb15">심승보</p>
-                <p class="font_15 fwb mb4">학습기간</p>
-                <p class="font_15 fwr mono_80 mb15">4주(16차시)  / 청강기간 : 교육 후 1년</p>
-                <p class="font_15 fwb mb4">신청기간</p>
-                <p class="font_15 fwr mono_80 mb15">2018.11.10 ~ 2018.11.30</p>
-                <p class="font_15 fwb mb4">교육비 지원 <span class="ico info blue mt-4">i</span></p>
-                <p class="font_15 fwr mono_80">일반 70,000원 </p>
-                <p class="font_15 fwr mono_80">대기업 60,000원</p>
-                <p class="font_15 fwr mono_80 mb15">우선기업 50,000원</p>
-                <p class="font_15 fwb mb4">수료기준</p>
-                <p class="font_15 fwr mono_80 mb15">총점 60점 이상 수료시</p>
-                <p class="font_15 fwb mb4">평가항목</p>
-                <p class="font_15 fwr mono_80">중간평가 100%</p>
-                <p class="font_15 fwr mono_80">최종평가 40%</p>
-                <p class="font_15 fwr mono_80 mb15">리포트 50%</p>
-                <p class="font_15 fwb mb4">교재정보 <span class="ico info blue mt-4">i</span></p>
-                <p class="font_15 fwr mono_80">1.경영이란 무엇인가</p>
-                <p class="font_15 fwr mono_80 mb15">2. <span class="chip mb0" style="height: 19px;padding: 1px 8px;">E-Book</span> 라즈베리파이 기초부터 응용까지 바로 익히고 연습하여 고수가 되어보기</p>
-                <p class="font_15 fwb mb4">1일 진도제한</p>
-                <p class="font_15 fwr mono_80 mb15">8차시</p>
-                <p class="font_15 fwb mb4">문의</p>
-                <p class="font_15 fwr mono_80 mb15">1544 - 9001</p>
-                <p class="font_15 fwb mb4">모바일 병행</p>
-                <p class="font_15 fwr mono_80 mb40">본 과정은 모바일 과정에 최적화 되어있으며, PC를 통한 학습도 가능합니다.</p>
+            <div class="inner mb40">
+                <!-- 댓글 -->
+                <div class="txt-line mt0">
+                    <span class="my-op font_16">평균평점</span>
+                </div>
+
+                <div class="rating_wrap bd_bt mb20">
+                    <fieldset class="rating">
+                        <input type="radio" id="star05" name="rating" value="5" /><label class = "full" for="star05" title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star04" name="rating" value="4" /><label class = "full" for="star04" title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star03" name="rating" value="3" /><label class = "full" for="star03" title="Meh - 3 stars"></label>
+                        <input type="radio" id="star02" name="rating" value="2" /><label class = "full" for="star02" title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star01" name="rating" value="1" /><label class = "full" for="star01" title="Sucks big time - 1 star"></label>
+                    </fieldset>
+                    <span class="font_26 fwb" style="vertical-align: bottom; line-height: 120%;">4.5</span><span class="font_14 fwb" style="vertical-align: bottom; line-height: 150%;">/5.0</span>
+                </div>
+
+                <ul class="info">
+                    <li class="font_16 fwb600">수강후기</li>
+                    <li class="font_16 mono_65">26</li>
+                </ul>
+                <ul>
+                    <li class="reply-list">
+                        <div class="rating_wrap">
+                            <span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20"></span><span class="ico star_20"></span>
+                        </div>
+                        <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
+                        <ul class="info" style="display: inline;">
+                            <li class="mono_60"><span class="info_value">이*강</span></li>
+                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                        </ul>
+                        <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
+                    </li>
+                    <li class="reply-list">
+                        <div class="rating_wrap">
+                            <span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20"></span><span class="ico star_20"></span>
+                        </div>
+                        <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
+                        <ul class="info" style="display: inline;">
+                            <li class="mono_60"><span class="info_value">이*강</span></li>
+                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                        </ul>
+                        <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
+                    </li>
+                    <li class="reply-list">
+                        <div class="rating_wrap">
+                            <span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20"></span><span class="ico star_20"></span>
+                        </div>
+                        <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
+                        <ul class="info" style="display: inline;">
+                            <li class="mono_60"><span class="info_value">이*강</span></li>
+                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                        </ul>
+                        <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
+                    </li>
+                    <li class="reply-list">
+                        <div class="rating_wrap">
+                            <span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20"></span><span class="ico star_20"></span>
+                        </div>
+                        <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
+                        <ul class="info" style="display: inline;">
+                            <li class="mono_60"><span class="info_value">이*강</span></li>
+                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                        </ul>
+                        <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
+                    </li>
+                    <li class="reply-list">
+                        <div class="rating_wrap">
+                            <span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20"></span><span class="ico star_20"></span>
+                        </div>
+                        <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
+                        <ul class="info" style="display: inline;">
+                            <li class="mono_60"><span class="info_value">이*강</span></li>
+                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                        </ul>
+                        <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
+                    </li>
+                </ul>
+                <!-- 댓글 -->
+
             </div>
           </div>
 
@@ -204,8 +259,8 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li @click="active_el"><slp-button class="md"><span class="ico heart_solid_32" :class="{ blue : active }"></span><span :class="{ color_clr2 : active}">찜하기</span></slp-button></li>
-                <li><slp-button class="md clr1">라이센스 신청</slp-button></li>
+                <li><slp-button class="md">희망과정 등록</slp-button></li>
+                <li><slp-button class="md clr1">수강신청</slp-button></li>
             </ul>
         </div>
         <!-- //floating button --> 
@@ -259,7 +314,7 @@ VueTouch.registerCustomEvent('doubletap', {
 Vue.use(VueTouch, {name: 'v-touch'})
 
 export default {
-  name: 'regiclass_detailview_summary_1',
+  name: 'regiclass_detailview_review',
   data () {
     return {
         active : false,

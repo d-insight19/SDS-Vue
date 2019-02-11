@@ -2347,7 +2347,6 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .CLIPingType .rating > input:checked ~ label:hover,
 .CLIPingType .rating > label:hover ~ input:checked ~ label, 
 .CLIPingType .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
-.CLIPingType .reply-list .rating > label {width:20px;height:20px;}
 // search
 .search .searchList > li{ display:table;width:100%;position: relative; border-bottom:1px solid #e3e3e3;}
 .search .searchList > li .in{width: calc(100% - 34px);padding:15px 0; display: table-cell; position: relative; height:100%;vertical-align: middle;font-size: map-get($font_size, font_16);}
@@ -2553,9 +2552,28 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .regiclass dt{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_100); width: 70px; display: table-cell; font-weight: 500;}
 .regiclass dd{font-size: map-get($font_size, font_15); color: map-get($mono_colors, mono_80); display: table-cell;}
 .regiclass .underline {border-bottom: 1px solid #999; padding-bottom: 10px;}
-.regiclass #header .info li{display: inline-block; font-size: map-get($font_size, font_15); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
-.regiclass #header .info li+li{margin-left: 5px;}
-.regiclass #header .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
+.regiclass .info li{display: inline-block; font-size: map-get($font_size, font_15); line-height: 13px; letter-spacing: -0.036em; vertical-align: top;}
+.regiclass .info li+li{margin-left: 5px;}
+.regiclass .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
+// 배너
+.regiclass ul.banner_list {position: relative; height: 137px; overflow: hidden;}
+.regiclass ul.banner_list li {float: left; width: 100%; height:137px;}
+.regiclass ul.banner_list li .banner_area {position: relative; width: 100%; height: 137px;}
+.regiclass ul.banner_list li .banner_area .banner_image {position: absolute; top:0px; right:0px; width: 100%; height:137px;}
+.regiclass ul.banner_list li .banner_area .banner_image img {width: 100%; height: 137px;}
+.regiclass ul.banner_list li .banner_area .banner_pager {position: absolute; top:13px; right:18px; padding: 2px 7px; border-radius: 12px; background-color: rgba(0, 0, 0, 0.5);}
+.regiclass ul.banner_list li .banner_area .banner_pager p {font-size: map-get($font_size, font_12); color: map-get($mono_colors, mono_0); line-height: normal;}
+// 멀티리스트
+.regiclass .multiList.type5 > li .in{width: 100%; padding: 15px 0px;}
+.regiclass .multiList.type5 > li{  border-bottom:1px solid #e3e3e3;}
+// 별점
+.regiclass .rating {border: none; display:inline;}
+.regiclass .rating > input { display: none; } 
+.regiclass .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
+.regiclass .rating > input:checked + label:hover, 
+.regiclass .rating > input:checked ~ label:hover,
+.regiclass .rating > label:hover ~ input:checked ~ label, 
+.regiclass .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
 
 // ATORM
 .atorm .labelChk .label {width:100%;}

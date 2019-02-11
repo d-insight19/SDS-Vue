@@ -154,7 +154,7 @@
                 <div>
                     <ul class="info mb5">
                         <li class="icon type2 fwb">
-                            <span class="star ico" style="vertical-align:1px;"></span><span class="info_value">4.5</span><span class="info_value">(후기 999개)</span>
+                            <span class="star ico" style="vertical-align:1px;"></span><span class="info_value mono_80">4.5</span><span class="info_value mono_80">(후기 999개)</span>
                         </li>
                         <li class="fwb">
                             <span class="info_value color_clr1">1,135,000원</span>
