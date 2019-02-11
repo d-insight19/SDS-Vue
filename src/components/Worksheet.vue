@@ -7789,8 +7789,12 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.02.detailview_summary</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_summary_1' }">
+            regiclass_detailview_summary_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'regiclass_detailview_summary_2' }">
+            regiclass_detailview_summary_2
           </router-link>
         </td>
         <td></td>

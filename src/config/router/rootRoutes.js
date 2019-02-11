@@ -383,6 +383,11 @@ import MySpaceFilter from '~workplace/myspace/MySpace_filter'
 import regiclassDetailviewBooks from '~workplace/regiclass/regiclass_detailview_books'
 import regiclassDetailviewLicence from '~workplace/regiclass/regiclass_detailview_licence'
 import regiclassDetailviewTerms from '~workplace/regiclass/regiclass_detailview_terms'
+import regiclassDetailviewSummary1 from '~workplace/regiclass/regiclass_detailview_summary_1'
+import regiclassDetailviewSummary2 from '~workplace/regiclass/regiclass_detailview_summary_2'
+import regiclassDetailviewIntro from '~workplace/regiclass/regiclass_detailview_intro'
+import regiclassDetailviewCourse from '~workplace/regiclass/regiclass_detailview_course'
+import regiclassDetailviewReview from '~workplace/regiclass/regiclass_detailview_review'
 import regiclassRegisterOption from '~workplace/regiclass/regiclass_register_option'
 import regiclassRegisterOptionAdd from '~workplace/regiclass/regiclass_register_option_add'
 import regiclassRegisterOptionAdd02 from '~workplace/regiclass/regiclass_register_option_add_02'
@@ -2561,6 +2566,31 @@ var rootRoutes = [
     path: '/regiclass_detailview_terms',
     name: 'regiclass_detailview_terms',
     component: regiclassDetailviewTerms
+  },
+  {
+    path: '/regiclass_detailview_summary_1',
+    name: 'regiclass_detailview_summary_1',
+    component: regiclassDetailviewSummary1
+  },
+  {
+    path: '/regiclass_detailview_summary_2',
+    name: 'regiclass_detailview_summary_2',
+    component: regiclassDetailviewSummary2
+  },
+  {
+    path: '/regiclass_detailview_intro',
+    name: 'regiclass_detailview_intro',
+    component: regiclassDetailviewIntro
+  },
+  {
+    path: '/regiclass_detailview_course',
+    name: 'regiclass_detailview_course',
+    component: regiclassDetailviewCourse
+  },
+  {
+    path: '/regiclass_detailview_review',
+    name: 'regiclass_detailview_review',
+    component: regiclassDetailviewReview
   },
   {
     path: '/regiclass_register_option',

@@ -285,6 +285,7 @@
 
 
 /* margin */
+.mt-4{margin-top: -4px !important;}
 .mt0{margin-top: 0px !important;}
 .mt2{margin-top: 2px !important;}
 .mt4{margin-top: 4px !important;}
@@ -314,6 +315,7 @@
 .mt70{margin-top: 70px !important;}/*12월12일 추가*/
 
 .mb0{margin-bottom: 0px !important;}/*1월 3일 추가*/
+.mb4{margin-bottom: 4px !important;}
 .mb5{margin-bottom: 5px !important;}
 .mb8{margin-bottom: 8px !important;}
 .mb10{margin-bottom: 10px !important;}
