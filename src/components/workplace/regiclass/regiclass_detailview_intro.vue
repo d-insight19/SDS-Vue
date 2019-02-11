@@ -17,8 +17,8 @@
             
             <div class="header_inner line2 tabMenu scroll-x" style="border-top:1px solid #eaeaea">
                 <ul class="scrollTab">
-                    <li><a href="#tab1">과정소개</a></li><!-- selected class "on" -->
-                    <li class="on"><a href="#tab2">과정요약</a></li>
+                    <li class="on"><a href="#tab1">과정소개</a></li><!-- selected class "on" -->
+                    <li><a href="#tab2">과정요약</a></li>
                     <li><a href="#tab3">과정목차</a></li>
                     <li><a href="#tab4">수강후기</a></li>
                 </ul>
@@ -154,7 +154,7 @@
                 <div>
                     <ul class="info mb5">
                         <li class="icon type2 fwb">
-                            <span class="star ico" style="vertical-align:1px;"></span><span class="info_value">4.5</span><span class="info_value">(후기 999개)</span>
+                            <span class="star ico" style="vertical-align:1px;"></span><span class="info_value mono_80">4.5</span><span class="info_value mono_80">(후기 999개)</span>
                         </li>
                         <li class="fwb">
                             <span class="info_value color_clr1">1,135,000원</span>
@@ -169,43 +169,147 @@
         
 
         <div id="content" class="etc">
-          <div class="cell">
-            <div class="inner">
-                <p class="font_15 fwb mb4">강사(SME)</p>
-                <p class="font_15 fwr mono_80 mb15">심승보</p>
-                <p class="font_15 fwb mb4">학습기간</p>
-                <p class="font_15 fwr mono_80 mb15">4주(16차시)  / 청강기간 : 교육 후 1년</p>
-                <p class="font_15 fwb mb4">신청기간</p>
-                <p class="font_15 fwr mono_80 mb15">2018.11.10 ~ 2018.11.30</p>
-                <p class="font_15 fwb mb4">교육비 지원 <span class="ico info blue mt-4">i</span></p>
-                <p class="font_15 fwr mono_80">일반 70,000원 </p>
-                <p class="font_15 fwr mono_80">대기업 60,000원</p>
-                <p class="font_15 fwr mono_80 mb15">우선기업 50,000원</p>
-                <p class="font_15 fwb mb4">수료기준</p>
-                <p class="font_15 fwr mono_80 mb15">총점 60점 이상 수료시</p>
-                <p class="font_15 fwb mb4">평가항목</p>
-                <p class="font_15 fwr mono_80">중간평가 100%</p>
-                <p class="font_15 fwr mono_80">최종평가 40%</p>
-                <p class="font_15 fwr mono_80 mb15">리포트 50%</p>
-                <p class="font_15 fwb mb4">교재정보 <span class="ico info blue mt-4">i</span></p>
-                <p class="font_15 fwr mono_80">1.경영이란 무엇인가</p>
-                <p class="font_15 fwr mono_80 mb15">2. <span class="chip mb0" style="height: 19px;padding: 1px 8px;">E-Book</span> 라즈베리파이 기초부터 응용까지 바로 익히고 연습하여 고수가 되어보기</p>
-                <p class="font_15 fwb mb4">1일 진도제한</p>
-                <p class="font_15 fwr mono_80 mb15">8차시</p>
-                <p class="font_15 fwb mb4">문의</p>
-                <p class="font_15 fwr mono_80 mb15">1544 - 9001</p>
-                <p class="font_15 fwb mb4">모바일 병행</p>
-                <p class="font_15 fwr mono_80 mb40">본 과정은 모바일 과정에 최적화 되어있으며, PC를 통한 학습도 가능합니다.</p>
+            <div class="study_title_detail pa0">
+                <div class="s_detail_wrap detail_txt">
+                    세계에서 가장 영향력 있는 CEO들의 삶과 경영스토리를 1:1 인터뷰로 만나다! 누구나 만나고 싶었지만, 쉽게 만나볼 수 없었던 세계 정상급 CEO들을 만나 칼라일그룹 CEO 루벤스타인이 날카로운 질문으로 밀착 인터뷰해 자기경영과 조직경영을 위한 리더십 인사이트를 제시합니다.
+                    <ul class="banner_list">
+                        <li>
+                            <div class="banner_area">
+                                <div class="banner_image">
+                                    <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                                </div>
+                                <div class="banner_pager">
+                                    <p>01/06</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner_area">
+                                <div class="banner_image">
+                                    <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
+                                </div>
+                                <div class="banner_pager">
+                                    <p>02/06</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="s_detail_wrap detail_goal">
+                    <p class="detail_sub_title">학습목표</p>
+                    <ul>
+                        <li>프레젠테이션 기획의 본질을 이해하자. </li>
+                        <li>단순하지만 임팩트 있는 슬라이드의 특징을 이해하고 이를 실제로 제작하고 팀원들과 의견을 공유해보자.</li>
+                        <li>발표를 스킬이 아닌 콘텐츠가 중심이라는 점을 이해하고, 올바른 발표 준비 및 실전 발표 팁을 배우자</li>
+                    </ul>
+                </div>
+                <div class="s_detail_wrap detail_target">
+                    <p class="detail_sub_title">학습대상</p>
+                    <ul>
+                        <li>경쟁PT/내부보고/설명회/내부행사 등에서 프레젠테이션을 준비해야 하는 분 </li>
+                        <li>실전에서 통하는 프레젠테이션의 기획/제작/발표에 대해 배우고싶은 분</li>
+                    </ul>
+                </div>
+                <div class="s_detail_wrap detail_introduce bbB85">
+                    <p class="detail_sub_title">강사소개</p>
+                    <div class="teacher_profile">
+                        <div class="teacher_img_wrap">
+                            <div class="teacher_img">
+                                <img src="@/assets/img/benjamin_parker_736167_unsplash.png" class="thumImg" alt="profile img">
+                            </div>
+                            <p class="teacher_name">김진혁</p>
+                        </div>
+                        <div class="teacher_career">
+                            <div class="carear_wrap">
+                                <p class="career_tit1">주요경력</p>
+                                <p class="career_sub">현)벨류스퀘어 대표 </p>
+                                <p class="career_sub">한국 인력개발학회 이사</p>
+                                <p class="career_sub">한국 강사협회 리더십 위원장</p>
+                            </div>
+                            <div class="carear_wrap">
+                                <p class="career_tit1">주요 강의분야</p>
+                                <p class="career_sub">변화적용 리더십, 서번트 리더쉽 등</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="cell">
+                <div class="inner mb40">
+                    <p class="label-tit16 fwb600 mb13">관련과정</p>
+                    <div class="scroll-x type2">
+                        <!-- list -->
+                        <ul class="thumList type2">
+                        <li>
+                            <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                </ul>
+                                <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                </ul>
+                                <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                </ul>
+                                <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                <ul class="info">
+                                    <li class="color_clr3">이러닝</li>
+                                </ul>
+                                <div class="tagWrap"><span>교재</span><span>모바일병행</span></div>
+                            </div>
+                        </li>
+                        </ul>
+                        <!-- //list -->
+                    </div>
+                </div>
+            </div>
 
         </div>
 
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li @click="active_el"><slp-button class="md"><span class="ico heart_solid_32" :class="{ blue : active }"></span><span :class="{ color_clr2 : active}">찜하기</span></slp-button></li>
-                <li><slp-button class="md clr1">라이센스 신청</slp-button></li>
+                <li><slp-button class="md">희망과정 등록</slp-button></li>
+                <li><slp-button class="md clr1">수강신청</slp-button></li>
             </ul>
         </div>
         <!-- //floating button --> 
@@ -259,7 +363,7 @@ VueTouch.registerCustomEvent('doubletap', {
 Vue.use(VueTouch, {name: 'v-touch'})
 
 export default {
-  name: 'regiclass_detailview_summary_1',
+  name: 'regiclass_detailview_intro',
   data () {
     return {
         active : false,

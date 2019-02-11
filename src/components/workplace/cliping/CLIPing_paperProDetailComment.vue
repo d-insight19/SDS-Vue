@@ -73,13 +73,7 @@
                 <ul>
                     <li class="reply-list">
                         <div class="rating_wrap">
-                            <fieldset class="rating">
-                                <input type="radio" id="star15" name="rating" value="5" /><label class = "full" for="star15" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star14" name="rating" value="4" /><label class = "full" for="star14" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star13" name="rating" value="3" /><label class = "full" for="star13" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star12" name="rating" value="2" /><label class = "full" for="star12" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star11" name="rating" value="1" /><label class = "full" for="star11" title="Sucks big time - 1 star"></label>
-                            </fieldset>
+                            <span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20"></span><span class="ico star_20"></span>
                         </div>
                         <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
 
@@ -90,13 +84,7 @@
                     </li>
                     <li class="reply-list">
                         <div class="rating_wrap">
-                            <fieldset class="rating">
-                                <input type="radio" id="star25" name="rating" value="5" /><label class = "full" for="star25" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star24" name="rating" value="4" /><label class = "full" for="star24" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star23" name="rating" value="3" /><label class = "full" for="star23" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star22" name="rating" value="2" /><label class = "full" for="star22" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star21" name="rating" value="1" /><label class = "full" for="star21" title="Sucks big time - 1 star"></label>
-                            </fieldset>
+                            <span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20"></span><span class="ico star_20"></span>
                         </div>
                         <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
                         

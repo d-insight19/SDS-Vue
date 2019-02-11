@@ -163,7 +163,9 @@
 
 /*추가이미지 2019-1-9*/
 .ico.star_20{width:20px;height:20px;background: url("../img/ic_rate_solid_grey_20.png") no-repeat;}
+.ico.star_20.gold{width:20px;height:20px;background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover !important;}
 .ico.star_30{width:30px;height:30px;background: url("../img/ic_rate_solid_grey_30.png") no-repeat;}
+.ico.star_30.gold{width:30px;height:30px;background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover !important;}
 
 /*추가이미지 2019-1-11*/
 .ico.close_20{width:20px; height:20px; background: url("../img/ic_close_line_20.png") ;background-size: cover;}

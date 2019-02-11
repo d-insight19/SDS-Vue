@@ -7810,8 +7810,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.01.detailview_intro</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_intro' }">
+            regiclass_detailview_intro
           </router-link>
         </td>
         <td></td>
@@ -7827,8 +7827,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.03.detailview_course</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_course' }">
+            regiclass_detailview_course
           </router-link>
         </td>
         <td></td>
@@ -7912,8 +7912,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.04.detailview_review</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_review' }">
+            regiclass_detailview_review
           </router-link>
         </td>
         <td></td>
