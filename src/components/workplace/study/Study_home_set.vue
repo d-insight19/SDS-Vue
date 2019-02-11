@@ -3,13 +3,13 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery courseware study_lo_docs" style="background:#f2f2f2">   
+      <div id="container" class="mediaquery courseware book pd70" style="background:#f2f2f2">   
         
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">          
             <div class="header_inner line1 ">
-                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
-                
+                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
+                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
@@ -28,21 +28,89 @@
                 <div class="right blur"></div>
             </div> -->
 
-            <div class="kukudocs_area_wrap">
-                    
-                <div class="kukudocs_area">
-                    <div class="box_shadow"></div>
-                    <div class="kukudocs"></div>
-                    <a href="#"><div class="fp-prevArrow"></div></a>
-                    <a href="#"><div class="fp-nextArrow"></div></a>
-                    <div class="button_wrap">
-                        <button type="button" class="play"><span class="ico playIcon"></span>이어학습
-                        <p class="fp_Icon_txt">1/10</p></button>                        
+                <div class="img_wrap">
+                    <div class="img_bg"></div>
+                </div>
+            
+                <div class="btm_subtitle_area">
+                    <div class="subtitle_slide_wrap">
+                        <div class="btm_subtitle_control">                                
+                            <div>
+                                <div class="subtitle_lang_wrap">
+                                    <span class="lang_type">Bahasa Indonesia</span>
+                                    <span class="dropdown"></span>         
+                                </div>
+                                <span class="switch_txt">Auto Scroll</span>
+                                <slp-switch :value="true"/>
+                                <span class="script_close"></span>
+                            </div>
+                        </div>
+                        <!-- s: timeline_wrapper -->
+                        <div class="timeline_wrapper">
+                            <p class="timeline_tit">스크립트</p>
+                            <ul class="btm_subtitle_timeline">
+                                <li>
+                                    <!-- 현재 재생중인 영상의 자막일 때 -->
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. <span class="color_clr2">이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다.</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>[클래스 객체]</p> 
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
+                                            대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">                                   
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
+                                            대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번
+                                            차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>[클래스 객체]</p> 
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="time">0:24</span>
+                                        <div class="desc">
+                                            <p>[클래스 객체]</p> 
+                                            <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- e: timeline_wrapper -->
                     </div>
                 </div>
-                                        
-            </div>                      
-            
+                <!-- e: btm_subtitle_area -->
+
             <div class="hide_header">
 
                 <div class="study_title_wrap">
@@ -107,7 +175,7 @@
             
         </div>        
 
-        <div id="content" class="etc" style="padding:0;">
+        <div id="content" class="etc" >
         
           <div class="cell">
             <div class="inner pt0">
@@ -115,170 +183,179 @@
                 <div class="filterArea ml-18 mr-18" style="padding:19px;">
                     <p class="font_15 mono_80 fwb dib">전체보기</p>
                     <p class="fr">
-                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
-                        <span class="ico download"></span>
+                        <span class="ico filter" style="position:static;"></span>
                     </p>                    
-                </div>                
-                <!-- list -->
+                </div>
+                <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
+
                 <ul class="multiList type2">
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico ic_set_line_28"></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 한 줄</p>
+                                <p class="icon_txt color_clr3">N일차</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                
+                                <ul class="lecInfoGroup">
+                                    <li class="lecInfoGroup-item">
+                                        <span class="lecInfoGroup-text lecInfoGroup-item-title">일시</span> 
+                                        <span class="lecInfoGroup-text lecInfoGroup-item-text">2018.01.01 - 2018.02</span>
+                                    </li>
+                                    <li class="lecInfoGroup-item">
+                                        <span class="lecInfoGroup-text lecInfoGroup-item-title">일시</span> 
+                                        <span class="lecInfoGroup-text lecInfoGroup-item-text">2018.01.01 - 2018.02</span>
+                                    </li>                                    
+                                </ul>
+
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span><span class="mono_65"> / 23:43</span>
+                                        <span class="mr6">학습완료</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
                     </li>
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span><span class="mono_65"> / 23:43</span>
+                                        <span class="mr6">학습완료</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
                     </li>
                     <li>
-                        <div class="download_detail clr1 wh">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li>
-                                        <span class="ico check_14 wh"></span>
-                                        <span class="wh">학습완료</span>
-                                        <span class="wh">2017.11.05</span>
-                                    </li>
-                                    <li>
-                                        <span class="ico time wh"></span>
-                                        <span class="wh">12:45</span><span class="wh">/</span><span class="wh">23:43</span>
-                                    </li>
-                                </ul>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
                             </div>
-                        </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                    <li>
-                        <div class="download_detail">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span><span class="mono_65"> / 23:43</span>
+                                        <span class="mr6">진행중</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
                     </li>
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico ongoing_16"></span>
+                                        <span class="mr6">진행중</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>                                                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
+                            <div class="txt_wrap">
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico complete_14"></span>
-                                        <span>미진행</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>23:43</span>
+                                        <span class="mr6">미진행</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
                     </li>
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico complete_14"></span>
+                                        <span class="mr6">미진행</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>                                                    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
+                            <div class="txt_wrap">
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <ul class="info">
                                     <li class="">
                                         <span class="ico lock_16"></span>
-                                        <span>학습불가</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>23:43</span>
+                                        <span class="mr6">학습불가</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>                                                    
                         </div>
-                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico book_28"></span>
+                            </div>
+                            <div class="txt_wrap">
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico lock_16"></span>
+                                        <span class="mr6">학습불가</span>
+                                        <span>
+                                            2018.01.01 - 2018.01.31
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>                                                    
+                        </div>
                     </li>
                 </ul>
 
-                <div class="bot-wrap ml-18 mr-18">
-                    <h2 class="h-tit2 fwb600" style="margin-top:4px; margin-bottom:15px;">연관 콘텐츠 추천</h2>
-                    <div class="scroll-x type2">
-                        <!-- list -->
-                        <ul class="thumList type2">
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>                        
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>                        
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>                        
-                        </ul>
-                        <!-- //list -->
-                    </div>
-                </div>
 
             </div>
           </div>
@@ -486,7 +563,7 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
                 // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
@@ -528,4 +605,3 @@ export default {
   }
 }
 </script>
-

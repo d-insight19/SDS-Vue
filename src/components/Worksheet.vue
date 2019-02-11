@@ -4587,8 +4587,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.04.home_set</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set' }">
+            Study_home_set
           </router-link>
         </td>
         <td></td>
@@ -4796,8 +4796,8 @@
         <td>각 과정별 메뉴 사용여부 설정</td>
         <td class="textL">05.Study_02.01.studystatus</td>
         <td>
-          <router-link :to="{ name: 'Study_studystatus_point' }">
-            Study_studystatus_point 
+          <router-link :to="{ name: '' }">
+             
           </router-link>
         </td>
         <td></td>
@@ -5885,8 +5885,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.02.LO_mp4_fs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_mp4_fs' }">
+            Study_LO_mp4_fs
           </router-link>
         </td>
         <td></td>
@@ -5937,8 +5937,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.04.02.LO_mp4_script2</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_mp4_script2' }">
+            Study_LO_mp4_script2
           </router-link>
         </td>
         <td></td>
@@ -5971,8 +5971,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.06.LO_html5</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_html5' }">
+            Study_LO_html5
           </router-link>
         </td>
         <td></td>
@@ -5988,8 +5988,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.07.LO_html5_fs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_html5_fs' }">
+            Study_LO_html5_fs
           </router-link>
         </td>
         <td></td>
@@ -6018,8 +6018,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.09.LO_audio</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_audio' }">
+            Study_LO_audio
           </router-link>
         </td>
         <td></td>
@@ -6035,8 +6035,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.10.LO_audio_fs</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_audio_fs' }">
+            Study_LO_audio_fs
           </router-link>
         </td>
         <td></td>
@@ -10612,8 +10612,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.01.studystatus_point</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+           <router-link :to="{ name: 'Study_studystatus_point' }">
+            Study_studystatus_point 
           </router-link>
         </td>
         <td></td>
@@ -10890,7 +10890,23 @@
         </td>
         <td></td>
       </tr>
-      
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>아이콘</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_icons' }">
+            components_icons
+          </router-link>
+        </td>
+        <td></td>
+      </tr>      
       <tr>
       <td align="center">0</td>
         <td>공통컴포넌트</td>

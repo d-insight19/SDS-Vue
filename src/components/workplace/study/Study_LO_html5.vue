@@ -36,7 +36,7 @@
                     <a href="#"><div class="fp-prevArrow"></div></a>
                     <a href="#"><div class="fp-nextArrow"></div></a>
                     <div class="button_wrap">
-                        <button type="button" class="play"><span class="ico playIcon"></span>이어학습
+                        <button type="button" class="play"><span class="ico playIcon"></span>학습하기
                         <p class="fp_Icon_txt">1/10</p></button>                        
                     </div>
                 </div>

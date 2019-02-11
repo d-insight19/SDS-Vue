@@ -396,7 +396,7 @@
 // 확장형 헤더 ( 텝 O )
 #header.tab{/*position: fixed;*/ position:relative; top: 0; z-index: 30; width: 100%;  height:auto; padding:0;    min-height: 100px;}
 #header.tab .header_inner{display:block;width:100%;}
-#header.tab .header_inner.line1{height:56px;padding: 0 36px 0 72px;    position: absolute; top: 0px; left: 0px;z-index:999;}
+#header.tab .header_inner.line1{height:56px;padding: 0 36px 0 72px;    position: absolute; top: 0px; left: 0px;}
 #header.tab .header_inner.line1 .btn{top:14px !important;transform: translate(0,0) !important;}
 
 #header.tab .header_inner.line2{height:44px;line-height: 44px;display: table;position: absolute; bottom: 0px; left: 0px;}
