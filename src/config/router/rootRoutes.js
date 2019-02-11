@@ -388,6 +388,7 @@ import regiclassDetailviewSummary2 from '~workplace/regiclass/regiclass_detailvi
 import regiclassDetailviewIntro from '~workplace/regiclass/regiclass_detailview_intro'
 import regiclassDetailviewCourse from '~workplace/regiclass/regiclass_detailview_course'
 import regiclassDetailviewReview from '~workplace/regiclass/regiclass_detailview_review'
+import regiclassDetailviewAutonomy from '~workplace/regiclass/regiclass_detailview_autonomy'
 import regiclassRegisterOption from '~workplace/regiclass/regiclass_register_option'
 import regiclassRegisterOptionAdd from '~workplace/regiclass/regiclass_register_option_add'
 import regiclassRegisterOptionAdd02 from '~workplace/regiclass/regiclass_register_option_add_02'
@@ -2591,6 +2592,11 @@ var rootRoutes = [
     path: '/regiclass_detailview_review',
     name: 'regiclass_detailview_review',
     component: regiclassDetailviewReview
+  },
+  {
+    path: '/regiclass_detailview_autonomy',
+    name: 'regiclass_detailview_autonomy',
+    component: regiclassDetailviewAutonomy
   },
   {
     path: '/regiclass_register_option',

@@ -10561,8 +10561,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.03.detailview_autonomy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_autonomy' }">
+            regiclass_detailview_autonomy
           </router-link>
         </td>
         <td></td>
