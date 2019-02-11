@@ -245,6 +245,7 @@ import StudyLOmp4 from '~workplace/study/Study_LO_mp4'
 import StudyetcstudycheerAlarmcalendar01 from '~workplace/study/Study_etc_studycheerAlarm_calendar01'
 import StudyetcstudycheerAlarmcalendar03 from '~workplace/study/Study_etc_studycheerAlarm_calendar03'
 import StudyLOdocs from '~workplace/study/Study_LO_docs'
+import StudyLOviewer from '~workplace/study/Study_LO_viewer'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -1881,6 +1882,11 @@ var rootRoutes = [
     path: '/Study_LO_docs',
     name: 'Study_LO_docs',
     component: StudyLOdocs
+  },
+  {
+    path: '/Study_LO_viewer',
+    name: 'Study_LO_viewer',
+    component: StudyLOviewer
   },
   // {
   //   path: '/regiclass_detailview_licence',

@@ -5027,6 +5027,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          etc_QR 동일, 네이티브 영역. 개발필요
         </td>
         <td></td>
       </tr>
@@ -6064,8 +6065,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.12.LO_viewer</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_viewer' }">
+            Study_LO_viewer
           </router-link>
         </td>
         <td></td>
