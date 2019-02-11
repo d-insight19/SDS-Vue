@@ -214,6 +214,8 @@
 .ico.mark_line_32{width:32px;height:32px;background: url("../img/ic_markv_line_32.png") no-repeat; }
 .ico.mark_line_32.non{width:32px;height:32px;background: url("../img/ic_markx_line_32.png") no-repeat; }
 .ico.note.blue{width:16px;height:16px;background: url("../img/ic_mynote_line_blue_16.png") no-repeat; }
+.ico.play_40.blue{width:40px;height:40px;background: url("../img/ic_record_play_blue_40.png") no-repeat; }
+.ico.pause_40.blue{width:40px;height:40px;background: url("../img/ic_record_pause_blue_40.png") no-repeat; }
 
 
 

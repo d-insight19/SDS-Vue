@@ -198,7 +198,11 @@ import Study04SOopinionmultiopinon from '~workplace/study/Study_04_SO_opinion_mu
 import Study04SOsimulation from '~workplace/study/Study_04_SO_simulation'
 import Study04SOsimulationsubmission from '~workplace/study/Study_04_SO_simulation_submission'
 import Study04SOvoicerecord from '~workplace/study/Study_04_SO_voicerecord'
+import Study04SOvoicerecord02 from '~workplace/study/Study_04_SO_voicerecord_02'
 import Study04SOvoicerecordplayer from '~workplace/study/Study_04_SO_voicerecord_player'
+import Study04SOvoicerecordplayer02 from '~workplace/study/Study_04_SO_voicerecord_player_02'
+import Study04SOvoicerecordplayer03 from '~workplace/study/Study_04_SO_voicerecord_player_03'
+import Study04SOvoicerecordplayer04 from '~workplace/study/Study_04_SO_voicerecord_player_04'
 import Study04SOactionplaninput from '~workplace/study/Study_04_SO_actionplan_input'
 import Study04SOactionplanintro from '~workplace/study/Study_04_SO_actionplan_intro'
 import Study04SOmainsummary from '~workplace/study/Study_04_SO_mainsummary'
@@ -1569,9 +1573,29 @@ var rootRoutes = [
     component: Study04SOvoicerecord
   },
   {
+    path: '/Study_04_SO_voicerecord_02',
+    name: 'Study_04_SO_voicerecord_02',
+    component: Study04SOvoicerecord02
+  },
+  {
     path: '/Study_04_SO_voicerecord_player',
     name: 'Study_04_SO_voicerecord_player',
     component: Study04SOvoicerecordplayer
+  },
+  {
+    path: '/Study_04_SO_voicerecord_player_02',
+    name: 'Study_04_SO_voicerecord_player_02',
+    component: Study04SOvoicerecordplayer02
+  },
+  {
+    path: '/Study_04_SO_voicerecord_player_03',
+    name: 'Study_04_SO_voicerecord_player_03',
+    component: Study04SOvoicerecordplayer03
+  },
+  {
+    path: '/Study_04_SO_voicerecord_player_04',
+    name: 'Study_04_SO_voicerecord_player_04',
+    component: Study04SOvoicerecordplayer04
   },
   {
     path: '/Study_04_SO_actionplan_input',
