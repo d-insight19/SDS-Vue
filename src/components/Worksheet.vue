@@ -5246,8 +5246,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.25.notice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_notice' }">
+            Study_notice
           </router-link>
         </td>
         <td></td>
@@ -5783,8 +5783,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.53.faq</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_faq' }">
+            Study_faq
           </router-link>
         </td>
         <td></td>
