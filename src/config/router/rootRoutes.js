@@ -397,6 +397,10 @@ import regiclassDetailviewSummary1 from '~workplace/regiclass/regiclass_detailvi
 import regiclassDetailviewSummary2 from '~workplace/regiclass/regiclass_detailview_summary_2'
 import regiclassDetailviewIntro from '~workplace/regiclass/regiclass_detailview_intro'
 import regiclassDetailviewCourse from '~workplace/regiclass/regiclass_detailview_course'
+import regiclassDetailviewCourseMooc from '~workplace/regiclass/regiclass_detailview_course_mooc'
+import regiclassDetailviewCourseSet from '~workplace/regiclass/regiclass_detailview_course_set'
+import regiclassDetailviewCourseMixed from '~workplace/regiclass/regiclass_detailview_course_mixed'
+import regiclassDetailviewCourseUnion from '~workplace/regiclass/regiclass_detailview_course_union'
 import regiclassDetailviewReview from '~workplace/regiclass/regiclass_detailview_review'
 import regiclassDetailviewAutonomy from '~workplace/regiclass/regiclass_detailview_autonomy'
 import regiclassRegisterOption from '~workplace/regiclass/regiclass_register_option'
@@ -2647,6 +2651,26 @@ var rootRoutes = [
     path: '/regiclass_detailview_course',
     name: 'regiclass_detailview_course',
     component: regiclassDetailviewCourse
+  },
+  {
+    path: '/regiclass_detailview_course_mooc',
+    name: 'regiclass_detailview_course_mooc',
+    component: regiclassDetailviewCourseMooc
+  },
+  {
+    path: '/regiclass_detailview_course_set',
+    name: 'regiclass_detailview_course_set',
+    component: regiclassDetailviewCourseSet
+  },
+  {
+    path: '/regiclass_detailview_course_mixed',
+    name: 'regiclass_detailview_course_mixed',
+    component: regiclassDetailviewCourseMixed
+  },
+  {
+    path: '/regiclass_detailview_course_union',
+    name: 'regiclass_detailview_course_union',
+    component: regiclassDetailviewCourseUnion
   },
   {
     path: '/regiclass_detailview_review',

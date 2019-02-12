@@ -180,11 +180,10 @@
         
           <div class="cell">
             <div class="inner mb20">
-                <p class="label-tit18 fwb600 mb0 pb10 bbB60">데이터 특성 알아보기</p>
+                <p class="label-tit18 fwb600 mb0 pb10 bbB60">사전학습 모듈명</p>
                 <ul class="multiList type5">
                     <li>
                         <div class="in">
-                            <span class="color_clr1 fwb font_13">1차시</span>
                             <div class="multiline line2">
                                 학습 소개 Orientation 
                             </div>
@@ -193,7 +192,13 @@
                     
                     <li>
                         <div class="in">
-                            <span class="color_clr1 fwb font_13">2차시</span>
+                            <div class="multiline line2">
+                                제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’ 정복하기
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in">
                             <div class="multiline line2">
                                 한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
                             </div>
@@ -201,7 +206,6 @@
                     </li>
                     <li>
                         <div class="in">
-                            <span class="color_clr1 fwb font_13">3차시</span>
                             <div class="multiline line2">
                                 한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
                             </div>
@@ -210,34 +214,40 @@
                 </ul>
             </div>
           </div>
+          
 
           <div class="cell">
             <div class="inner mb40">
-                <p class="label-tit18 fwb600 mb0 pb10 bbB60">데이터 특성 알아보기</p>
+                <p class="label-tit18 fwb600 mb0 pb10 bbB60">집합강의 모듈명</p>
                 <ul class="multiList type5">
                     <li>
                         <div class="in">
-                            <span class="color_clr1 fwb font_13">1차시</span>
                             <div class="multiline line2">
                                 학습 소개 Orientation 
                             </div>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <div class="in">
-                            <span class="color_clr1 fwb font_13">2차시</span>
-                            <div class="multiline line2">
-                                한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
-                            </div>
+                            <ul class="info">
+                                <li class="fwb color_clr3">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
+                            </ul>
                         </div>
                     </li>
                     <li>
                         <div class="in">
-                            <span class="color_clr1 fwb font_13">3차시</span>
                             <div class="multiline line2">
                                 한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
                             </div>
+                            <ul class="info">
+                                <li class="fwb color_clr3">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="in">
+                            <div class="multiline line2">
+                                한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
+                            </div>
+                            <ul class="info">
+                                <li class="fwb color_clr3">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
@@ -304,7 +314,7 @@ VueTouch.registerCustomEvent('doubletap', {
 Vue.use(VueTouch, {name: 'v-touch'})
 
 export default {
-  name: 'regiclass_detailview_course',
+  name: 'regiclass_detailview_course_mixed',
   data () {
     return {
         active : false,
