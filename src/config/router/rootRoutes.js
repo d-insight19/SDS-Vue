@@ -1338,7 +1338,7 @@ var rootRoutes = [
     path: '/Study_home_set02',
     name: 'Study_home_set02',
     component: StudyHomeSet02
-  }, 
+  },
   {
     path: '/Study_home_set_book',
     name: 'Study_home_set_book',
