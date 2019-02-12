@@ -132,6 +132,7 @@ import StudyHomeCoursewareLoso from '~workplace/study/Study_home_courseware_loso
 import StudyHomeMoocOpen from '~workplace/study/Study_home_mooc_open'
 import StudyHomeMoocClose from '~workplace/study/Study_home_mooc_close'
 import StudyHomeSet from '~workplace/study/Study_home_set'
+import StudyHomeSet02 from '~workplace/study/Study_home_set02'
 import StudyHomeSetBook from '~workplace/study/Study_home_set_book'
 import StudyHomeSetBook02 from '~workplace/study/Study_home_set_book02'
 import StudyHomeSetPhonelanguage from '~workplace/study/Study_home_set_phonelanguage'
@@ -1333,6 +1334,11 @@ var rootRoutes = [
     name: 'Study_home_set',
     component: StudyHomeSet
   },
+  {
+    path: '/Study_home_set02',
+    name: 'Study_home_set02',
+    component: StudyHomeSet02
+  }, 
   {
     path: '/Study_home_set_book',
     name: 'Study_home_set_book',

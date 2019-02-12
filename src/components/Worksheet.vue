@@ -4590,6 +4590,10 @@
           <router-link :to="{ name: 'Study_home_set' }">
             Study_home_set
           </router-link>
+          <br />
+          <router-link :to="{ name: 'Study_home_set02' }">
+            Study_home_set02(Study_LO_viewer와 화면 동일)
+          </router-link>        
         </td>
         <td></td>
       </tr>
@@ -4607,7 +4611,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          삭제
+          대기
         </td>
         <td></td>
       </tr>
