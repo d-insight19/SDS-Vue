@@ -2418,8 +2418,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04.01._status_    details_rate</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_status_details_rate' }">
+            Atorm_status_details_rate
           </router-link>
         </td>
         <td></td>
@@ -2439,7 +2439,7 @@
             
           </router-link>
         </td>
-        <td></td>
+        <td>공통필터적용중복처리</td>
       </tr>
       <tr>
       <td align="center">124</td>
@@ -2456,7 +2456,7 @@
             
           </router-link>
         </td>
-        <td></td>
+        <td>OS컴포넌트적용중복처리</td>
       </tr>
       <tr>
       <td align="center">125</td>

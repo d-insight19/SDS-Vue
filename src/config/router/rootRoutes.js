@@ -621,9 +621,14 @@ import ComponentsTestPage7 from '~workplace/common_page/components_select_slp'
 import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_slp'
 import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
-
+import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
 // 1번 영역
 var rootRoutes = [
+  {
+    path: '/Atorm_status_details_rate',
+    name: 'Atorm_status_details_rate',
+    component: AtormStatusDetailsRate
+  },
   {
     path: '*',
     name: 'worksheet',
