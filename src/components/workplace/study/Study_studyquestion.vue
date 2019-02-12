@@ -3,13 +3,13 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery studyquestion">
-
-       <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video">          
-            <div class="header_inner line1 clr1">
-                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
-                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
+      <div id="container" class="mediaquery courseware studyquestion">   
+        
+        <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div id="header" class="tab video" style="background:#fff">          
+            <div class="header_inner line1 ">
+                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
+                <p class="header_text multiline line2 font_15"></p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
@@ -23,19 +23,34 @@
             </div>
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
-            <div class="blur_wrap">
+            <!-- <div class="blur_wrap">
                 <div class="left blur"></div>
                 <div class="right blur"></div>
-            </div>
+            </div> -->
 
             
+            <!-- s: 동영상 -->
             <!-- s: 동영상 -->
             <div class="player_wrap">
                 <div class="player_inner">
                     <div id="contents"></div>
 
-                    <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="volume_wrap" style="display:none;pointer-events:none">
+                    <!--  s: 연관 콘텐츠 -->
+                    <div class="movie_info_list_wrap" style="display:none;">
+                        <div class="movie_info_list">
+                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
+                            <ul>
+                                <li v-for="(item, index) in relatedVideoList" :key="index">
+                                    <a href="#"></a>
+                                    <p class="movie_tit multiline line2">{{item.title}}</p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- e: 연관 콘텐츠 -->
+
+                    <!-- s: 볼륨영역 -->
+                    <div class="volume_wrap" style="display:none;">
                         <div class="volume_left">
                             <div class="inner"></div>
                             <div class="icon_wrap">
@@ -53,20 +68,16 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="tap_wrap" style="display:none;pointer-events:none">
-                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
-                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
-                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
-                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                          </div>
-                        </v-touch>
-                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
-                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
-                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
-                                <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                            </div>
-                        </v-touch>                            
+                    <!-- s: double 텝 영역 -->
+                    <div class="tap_wrap" style="display:none;">
+                        <div class="half_left">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
+                        <div class="half_right">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
                     </div>
                     <!--  e: double 텝 영역 -->
 
@@ -151,16 +162,76 @@
                 </div>
                 <!-- e: btm_subtitle_area -->
             </div>
-            <!-- e: 동영상-->                
+            <!-- e: 동영상-->
 
+            <!-- <div class="hide_header">
+
+                <div class="study_title_wrap">
+                    <div class="d-day_wrap">
+                        <span class="d-day">D-29</span>
+                        <div class="arm">
+                            <span class="new"></span> <span class="icon"></span>
+                        </div>
+                    </div>
+                    <div class="study_contens_title">
+                        <p class="multiline line2">SPRINT - 구글 벤처스의 5일만에 기획부터 실행까지 끝내는 법(참고도서제공)</p>
+                    </div>
+                    <p class="study_date">2018.09.10 - 2018.10.10</p>
+
+                    <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
+                </div>
+
+                <div class="study_title_detail" v-show="detail_show">
+                    <div class="s_detail_wrap detail_txt">
+                        세계에서 가장 영향력 있는 CEO들의 삶과 경영스토리를 1:1 인터뷰로 만나다! 누구나 만나고 싶었지만, 쉽게 만나볼 수 없었던 세계 정상급 CEO들을 만나 칼라일그룹 CEO 루벤스타인이 날카로운 질문으로 밀착 인터뷰해 자기경영과 조직경영을 위한 리더십 인사이트를 제시합니다.
+                    </div>
+                    <div class="s_detail_wrap detail_goal">
+                        <p class="detail_sub_title">학습목표</p>
+                        <ul>
+                            <li>프레젠테이션 기획의 본질을 이해하자. </li>
+                            <li>단순하지만 임팩트 있는 슬라이드의 특징을 이해하고 이를 실제로 제작하고 팀원들과 의견을 공유해보자.</li>
+                            <li>발표를 스킬이 아닌 콘텐츠가 중심이라는 점을 이해하고, 올바른 발표 준비 및 실전 발표 팁을 배우자</li>
+                        </ul>
+                    </div>
+                    <div class="s_detail_wrap detail_target">
+                        <p class="detail_sub_title">학습대상</p>
+                        <ul>
+                            <li>경쟁PT/내부보고/설명회/내부행사 등에서 프레젠테이션을 준비해야 하는 분 </li>
+                            <li>실전에서 통하는 프레젠테이션의 기획/제작/발표에 대해 배우고싶은 분</li>
+                        </ul>
+                    </div>
+                    <div class="s_detail_wrap detail_introduce">
+                        <p class="detail_sub_title">강사소개</p>
+                        <div class="teacher_profile">
+                            <div class="teacher_img_wrap">
+                                <div class="teacher_img">
+                                    <img src="@/assets/img/benjamin_parker_736167_unsplash.png" class="thumImg" alt="profile img">
+                                </div>
+                                <p class="teacher_name">김진혁</p>
+                            </div>
+                            <div class="teacher_career">
+                                <div class="carear_wrap">
+                                    <p class="career_tit1">주요경력</p>
+                                    <p class="career_sub">현)벨류스퀘어 대표 </p>
+                                    <p class="career_sub">한국 인력개발학회 이사</p>
+                                    <p class="career_sub">한국 강사협회 리더십 위원장</p>
+                                </div>
+                                <div class="carear_wrap">
+                                    <p class="career_tit1">주요 강의분야</p>
+                                    <p class="career_sub">변화적용 리더십, 서번트 리더쉽 등</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
             
-        </div>
-        <!-- //header -->
+        </div>        
 
-        <div id="content" class="etc">
+        <div id="content" class="etc" >
         
           <div class="cell">
-            <div class="inner">
+            <div class="inner pt0">
                 <p class="mb5">총 <span class="fwb">1,620</span></p>
 
                 <ul class="ulList type4">
@@ -179,7 +250,7 @@
                             <dd>비공개</dd>
                             <dd>정혜민</dd>
                             <dd>2018.10.10</dd>                                
-                            <dd><span class="ico play"></span>02:36</dd>
+                            <dd><span class="ico play" style="vertical-align: -3px;"></span>02:36</dd>
                             <dd><span class="ico clip"></span>첨부파일</dd>
                         </dl>
                         <p class="color_clr3">답변완료</p>
@@ -191,7 +262,7 @@
                             <dd>비공개</dd>
                             <dd>정혜민</dd>
                             <dd>2018.10.10</dd>                                
-                            <dd><span class="ico play"></span>02:36</dd>
+                            <dd><span class="ico play" style="vertical-align: -3px;"></span>02:36</dd>
                             <dd><span class="ico clip"></span>첨부파일</dd>
                         </dl>
                         <p class="color_clr3 mono_80">미답변</p>
@@ -203,67 +274,25 @@
                             <dd>비공개</dd>
                             <dd>정혜민</dd>
                             <dd>2018.10.10</dd>                                
-                            <dd><span class="ico play"></span>02:36</dd>
+                            <dd><span class="ico play" style="vertical-align: -3px;"></span>02:36</dd>
                             <dd><span class="ico clip"></span>첨부파일</dd>
                         </dl>
                     </li>
                 </ul>
 
-
-                <!-- keyboard -->
-                <div id="keyboard_wrap">
-                    <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
-                    <div class="keyboard_input" v-show="focusFlag">                
-                        
-                        <div class="bookmark_wrap" v-if="keyboard_type=='4'">
-                            <span class="bookmarktxt">북마크</span>
-                            <span class="fr time">01:36</span>
-                        </div>
-                        <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
-                            <span class="opentxt">공개여부</span>
-                            <slp-switch :classObject="{'fr': true}"/>
-                            <span class="opentxt2">비공개</span>
-                        </div>
-
-                        <div class="rating_wrap" v-if="keyboard_type=='2'">
-                            <span class="ratingtxt">평점</span>                        
-                            <fieldset class="fr rating">
-                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                            </fieldset>
-                        </div>
-
-                        <div class="inputbox" >                        
-                            <div class="textarea_wrap">
-                                <textarea @keydown="onKeydown" placeholder="댓글을 입력하세요."></textarea>
-                            </div>
-                            <div class="inputbottom">
-                                <span class="strlenth" >{{keylength}}/300</span>
-                                <span class="regiBtn" :class="{active: keylength}">등록</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="infoChk pr0" style="margin-left:-18px; margin-right:-18px; background:#f2f2f2">
+                    <input style="margin: 18px 0px 18px 18px;" type="text" placeholder="질문을 작성해주세요" class="input type2"><button  style="margin-top:18px; margin-right:18px;" type="button" class="btn sm clr1 w17p">등록</button>
                 </div>
-                <!-- //keyboard -->
             </div>
           </div>
 
         </div>
-
-        <!-- floating button -->
-        <!--<div class="fixBtmBtn">
-            <ul>
-                <li><slp-button class="md mono_65"><span class="ico heart_solid_32"></span>찜하기</slp-button></li>
-            </ul>
-        </div>-->
-        <!-- //floating button --> 
+        <!-- //content -->
       </div>
       <!-- //container -->     
     </div>
     <!-- //wrap -->
+       
 </template>
 
 <script>
@@ -546,7 +575,7 @@ export default {
 </script>
 
 <style scoepd>
-.innerRipple {
+/* .innerRipple {
   display: none;
 }
 .halfRight {
@@ -560,5 +589,5 @@ export default {
 }
 .none {
   display: none;
-}
+} */
 </style>

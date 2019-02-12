@@ -1247,7 +1247,7 @@ label.rdo .label{position: relative;}
 .top_bottom_pd{padding-top: 14px; padding-bottom: 14px;}
 .infoChk.pr0{padding-right: 0 !important;}
 .infoChk .input.type2{width:calc(100% - 17%); background: #fff; border: 1px solid #ebebeb;}
-.infoChk .btn.w17p{width:17%;margin-left:0px;}
+.infoChk .btn.w17p{min-width:17%;margin-left:0px;} // 버튼떨어짐방지..
 
 
 // 액션플랜 
