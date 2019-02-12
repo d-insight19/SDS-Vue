@@ -132,6 +132,7 @@ import StudyHomeCoursewareLoso from '~workplace/study/Study_home_courseware_loso
 import StudyHomeMoocOpen from '~workplace/study/Study_home_mooc_open'
 import StudyHomeMoocClose from '~workplace/study/Study_home_mooc_close'
 import StudyHomeSet from '~workplace/study/Study_home_set'
+import StudyHomeSet02 from '~workplace/study/Study_home_set02'
 import StudyHomeSetBook from '~workplace/study/Study_home_set_book'
 import StudyHomeSetBook02 from '~workplace/study/Study_home_set_book02'
 import StudyHomeSetPhonelanguage from '~workplace/study/Study_home_set_phonelanguage'
@@ -254,6 +255,8 @@ import StudyLOhtml5 from '~workplace/study/Study_LO_html5'
 import StudyLOhtml5fs from '~workplace/study/Study_LO_html5_fs'
 import StudyLOmp4fs from '~workplace/study/Study_LO_mp4_fs'
 import StudyLOmp4script2 from '~workplace/study/Study_LO_mp4_script2'
+import Studyfaq from '~workplace/study/Study_faq'
+import Studynotice from '~workplace/study/Study_notice'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -395,6 +398,10 @@ import regiclassDetailviewSummary1 from '~workplace/regiclass/regiclass_detailvi
 import regiclassDetailviewSummary2 from '~workplace/regiclass/regiclass_detailview_summary_2'
 import regiclassDetailviewIntro from '~workplace/regiclass/regiclass_detailview_intro'
 import regiclassDetailviewCourse from '~workplace/regiclass/regiclass_detailview_course'
+import regiclassDetailviewCourseMooc from '~workplace/regiclass/regiclass_detailview_course_mooc'
+import regiclassDetailviewCourseSet from '~workplace/regiclass/regiclass_detailview_course_set'
+import regiclassDetailviewCourseMixed from '~workplace/regiclass/regiclass_detailview_course_mixed'
+import regiclassDetailviewCourseUnion from '~workplace/regiclass/regiclass_detailview_course_union'
 import regiclassDetailviewReview from '~workplace/regiclass/regiclass_detailview_review'
 import regiclassDetailviewAutonomy from '~workplace/regiclass/regiclass_detailview_autonomy'
 import regiclassRegisterOption from '~workplace/regiclass/regiclass_register_option'
@@ -1328,6 +1335,11 @@ var rootRoutes = [
     component: StudyHomeSet
   },
   {
+    path: '/Study_home_set02',
+    name: 'Study_home_set02',
+    component: StudyHomeSet02
+  },
+  {
     path: '/Study_home_set_book',
     name: 'Study_home_set_book',
     component: StudyHomeSetBook
@@ -1936,6 +1948,16 @@ var rootRoutes = [
     path: '/Study_LO_mp4_script2',
     name: 'Study_LO_mp4_script2',
     component: StudyLOmp4script2
+  },
+  {
+    path: '/Study_faq',
+    name: 'Study_faq',
+    component: Studyfaq
+  },
+  {
+    path: '/Study_notice',
+    name: 'Study_notice',
+    component: Studynotice
   },
   // {
   //   path: '/regiclass_detailview_licence',
@@ -2635,6 +2657,26 @@ var rootRoutes = [
     path: '/regiclass_detailview_course',
     name: 'regiclass_detailview_course',
     component: regiclassDetailviewCourse
+  },
+  {
+    path: '/regiclass_detailview_course_mooc',
+    name: 'regiclass_detailview_course_mooc',
+    component: regiclassDetailviewCourseMooc
+  },
+  {
+    path: '/regiclass_detailview_course_set',
+    name: 'regiclass_detailview_course_set',
+    component: regiclassDetailviewCourseSet
+  },
+  {
+    path: '/regiclass_detailview_course_mixed',
+    name: 'regiclass_detailview_course_mixed',
+    component: regiclassDetailviewCourseMixed
+  },
+  {
+    path: '/regiclass_detailview_course_union',
+    name: 'regiclass_detailview_course_union',
+    component: regiclassDetailviewCourseUnion
   },
   {
     path: '/regiclass_detailview_review',

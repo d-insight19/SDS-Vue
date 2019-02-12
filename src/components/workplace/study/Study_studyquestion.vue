@@ -23,7 +23,7 @@
             </div>
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
-            <!-- <div class="blur_wrap">
+            <!--<div class="blur_wrap">
                 <div class="left blur"></div>
                 <div class="right blur"></div>
             </div> -->

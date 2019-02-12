@@ -105,7 +105,7 @@
           <div class="cell">
             <div class="inner pt0">
                 
-                <h2 class="label-tit16"><b>스크립트</b></h2>         
+                <h2 class="label-tit18"><b>스크립트</b></h2>         
               <p class="mono_80">이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
               [클래스 객체]
                 프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와 

@@ -3,27 +3,32 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery regiclass">   
+      <div id="container" class="mediaquery studyquestion">
 
-        <!-- header -->
-        <div id="header" class="tab video">
-            <div class="video_area">
-
-            </div>
+       <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div id="header" class="tab video">          
             <div class="header_inner line1 clr1">
                 <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
-                <p class="header_text multiline line2 font_15">변화와 성과를 이끄는 프레젠테이션과 이를 실제 업무에 적용하기</p>
+                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
-            
-            <div class="header_inner line2 tabMenu scroll-x" style="border-top:1px solid #eaeaea">
+
+            <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li><a href="#tab1">과정소개</a></li><!-- selected class "on" -->
-                    <li><a href="#tab2">과정요약</a></li>
-                    <li class="on"><a href="#tab3">과정목차</a></li>
-                    <li><a href="#tab4">수강후기</a></li>
+                    <li><a href="#tab1">학습현황</a></li>
+                    <li class="on"><a href="#tab2">공지사항</a></li> 
+                    <li><a href="#tab3">학습노트</a></li> 
+                    <li><a href="#tab3">질문방</a></li> 
+                    <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
                 </ul>
             </div>
 
+            <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
+            <!--<div class="blur_wrap">
+                <div class="left blur"></div>
+                <div class="right blur"></div>
+            </div> -->
+
+            
             <!-- s: 동영상 -->
             <div class="player_wrap">
                 <div class="player_inner">
@@ -146,81 +151,107 @@
                 </div>
                 <!-- e: btm_subtitle_area -->
             </div>
-            <!-- e: 동영상-->
+            <!-- e: 동영상-->                
+
             
-            <div class="hide_header" style="padding-top: 24px; padding-bottom:2px; position: relative;">
-                <p class="h-tit2 fwb600 mb8" style="padding-right: 40px;">변화와 성과를 이끄는 프레젠테이션과 이를 실제 업무에 적용하기</p>
-                <button type="button" class="btn share" style="top: 24px;"><span class="ico"></span></button>
-                <div>
-                    <ul class="info mb5">
-                        <li class="icon type2 fwb">
-                            <span class="star ico" style="vertical-align:1px;"></span><span class="info_value mono_80">4.5</span><span class="info_value mono_80">(후기 999개)</span>
-                        </li>
-                        <li class="fwb">
-                            <span class="info_value color_clr1">1,135,000원</span>
-                            <span class="info_value mono_50">(VAT 없음)</span>
-                        </li>
-                    </ul>
-                    <p class="mb26"><span class="chip">교재</span> <span class="chip">이벤트</span></p>
-                </div>
-            </div>
         </div>
         <!-- //header -->
-        
 
         <div id="content" class="etc">
-          <div class="cell">
-            <div class="inner">
-                <p class="mono_60 font_14">
-                    총 강의 <span class="mono_100 fwb">6</span>
-                    <span class="fr">총 학습시간 <span class="mono_100 fwb">25:32:32</span></span>
-                </p>
-            </div>
-          </div>
         
           <div class="cell">
-            <div class="inner mb20">
-                <p class="label-tit18 fwb600 mb0 pb10 bbB60">데이터 특성 알아보기</p>
-                <ul class="multiList type1">
-                    <li v-for="(item, index) in dataList">
-                        <div class="in">
-                            <span class="color_clr1 fwb font_13">{{item.title}}</span>
-                            <div class="multiline line2">{{item.content}}</div>
-                        </div>
-                        <span @click="data_heart(index)" class="metatxt">
-                            <span class="ico heart_solid_32" :class="{ blue : item.heart }"></span>
-                        </span>
+            <div class="inner">
+                <p class="mb5">총 <span class="fwb"><b>999</b></span>
+                    <span class="tar fr mono_80">전체 <span class="ico ico_dropdown16 gr"></span>
+                    </span>
+                </p>
+
+                <ul class="ulList type4">                    
+                    <li>
+                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                        </dl>
                     </li>
-                </ul>
-            </div>
-          </div>
-          <div class="cell">
-            <div class="inner mb40">
-                <p class="label-tit18 fwb600 mb0 pb10 bbB60">데이터 특성 알아보기</p>
-                <ul class="multiList type1">
-                    <li v-for="(item, index) in dataList2">
-                        <div class="in">
-                            <span class="color_clr1 fwb font_13">{{item.title}}</span>
-                            <div class="multiline line2">{{item.content}}</div>
-                        </div>
-                        <span @click="data_heart2(index)" class="metatxt">
-                            <span class="ico heart_solid_32" :class="{ blue : item.heart }"></span>
-                        </span>
+                    <li>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>리포트</dd>
+                        </dl>
                     </li>
+                    <li>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>평가</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>동영상</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>리포트</dd>
+                        </dl>
+                    </li>
+                   
                 </ul>
+
+
+                <!-- keyboard -->
+                <div id="keyboard_wrap">
+                    <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
+                    <div class="keyboard_input" v-show="focusFlag">                
+                        
+                        <div class="bookmark_wrap" v-if="keyboard_type=='4'">
+                            <span class="bookmarktxt">북마크</span>
+                            <span class="fr time">01:36</span>
+                        </div>
+                        <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
+                            <span class="opentxt">공개여부</span>
+                            <slp-switch :classObject="{'fr': true}"/>
+                            <span class="opentxt2">비공개</span>
+                        </div>
+
+                        <div class="rating_wrap" v-if="keyboard_type=='2'">
+                            <span class="ratingtxt">평점</span>                        
+                            <fieldset class="fr rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            </fieldset>
+                        </div>
+
+                        <div class="inputbox" >                        
+                            <div class="textarea_wrap">
+                                <textarea @keydown="onKeydown" placeholder="댓글을 입력하세요."></textarea>
+                            </div>
+                            <div class="inputbottom">
+                                <span class="strlenth" >{{keylength}}/300</span>
+                                <span class="regiBtn" :class="{active: keylength}">등록</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //keyboard -->
             </div>
           </div>
 
         </div>
 
-        <!-- floating button 
-        <div class="fixBtmBtn">
+        <!-- floating button -->
+        <!--<div class="fixBtmBtn">
             <ul>
-                <li><slp-button class="md">희망과정 등록</slp-button></li>
-                <li><slp-button class="md clr1">수강신청</slp-button></li>
+                <li><slp-button class="md mono_65"><span class="ico heart_solid_32"></span>찜하기</slp-button></li>
             </ul>
-        </div>
-         //floating button --> 
+        </div>-->
+        <!-- //floating button --> 
       </div>
       <!-- //container -->     
     </div>
@@ -271,25 +302,16 @@ VueTouch.registerCustomEvent('doubletap', {
 Vue.use(VueTouch, {name: 'v-touch'})
 
 export default {
-  name: 'regiclass_detailview_autonomy',
+  name: 'components_flowplayer',
   data () {
     return {
-        dataList: [
-            {title: '1차시', content:'학습 소개 Orientation', heart:false},
-            {title: '2차시', content:'한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기', heart:false},
-            {title: '3차시', content:'한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기', heart:false}
-        ],
-        dataList2: [
-            {title: '1차시', content:'학습 소개 Orientation', heart:false},
-            {title: '2차시', content:'한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기', heart:false},
-            {title: '3차시', content:'한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기', heart:false}
-        ],
         innerRipple: false,
         halfRight: false,
         halfLeft: false,
         none: true,
         left: true,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
+        detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         relatedVideoList: [
             {title: '자바스크립트 개발 프로세스 기초'},
             {title: '모바일 게임 UI 디자인 실무'},
@@ -352,11 +374,8 @@ export default {
     }
   },
   methods: {
-    data_heart (index) {
-        this.dataList[index].heart = !this.dataList[index].heart;
-    },
-    data_heart2 (index) {
-        this.dataList2[index].heart = !this.dataList2[index].heart;
+    detail_toggle () {        
+        this.detail_show = !this.detail_show;
     },
     prevTen() {
         console.error("왼쪽");

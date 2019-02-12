@@ -984,3 +984,6 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .kukudocs_area_wrap .playIcon{width:9px;height:10px;background:url("../img/32287.png"); background-size: cover;display:inline-block; margin-right:8px; margin-bottom:3px}
 .kukudocs_area_wrap button.play {position:absolute; z-index:999; left:calc(50% - 52px); top: calc(50% - 20px); color:rgba(0,0,0,0.8); background-color: #fff; border-radius: 20px; height:40px; line-height: 40px; padding:0 15px; font-size: map-get($font_size, font_16); font-weight:500 }
 .kukudocs_area_wrap .fp_Icon_txt { font-family: 'Roboto';  font-size: 0.8125rem; margin-top:6px; color:#fff; font-weight:400}
+
+/*utilities classes*/
+.d-block { display:block !important; }
