@@ -254,6 +254,8 @@ import StudyLOhtml5 from '~workplace/study/Study_LO_html5'
 import StudyLOhtml5fs from '~workplace/study/Study_LO_html5_fs'
 import StudyLOmp4fs from '~workplace/study/Study_LO_mp4_fs'
 import StudyLOmp4script2 from '~workplace/study/Study_LO_mp4_script2'
+import Studyfaq from '~workplace/study/Study_faq'
+import Studynotice from '~workplace/study/Study_notice'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -1936,6 +1938,16 @@ var rootRoutes = [
     path: '/Study_LO_mp4_script2',
     name: 'Study_LO_mp4_script2',
     component: StudyLOmp4script2
+  },
+  {
+    path: '/Study_faq',
+    name: 'Study_faq',
+    component: Studyfaq
+  },
+  {
+    path: '/Study_notice',
+    name: 'Study_notice',
+    component: Studynotice
   },
   // {
   //   path: '/regiclass_detailview_licence',

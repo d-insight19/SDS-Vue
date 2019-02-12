@@ -115,7 +115,7 @@
 .ulList.type3 li dl {background: #f2f3f7;margin: 0 -24px; padding: 0 24px 0 34px;}
 .ulList.type3 li dl dt a{ font-size:map-get($font-size, font_16); line-height: 24px; letter-spacing: -0.48px;}
 
-.ulList.type4{border-top:1px solid #bfbfbf;}
+.ulList.type4{border-top:1px solid #999999;}
 .ulList.type4 li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:1px solid #eaeaea;}
 .ulList.type4 li > .labelChk{vertical-align: top;}
 .ulList.type4 li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
@@ -1642,13 +1642,14 @@ label.rdo .label{position: relative;}
 
 
 //study_studyquestion
+#container.studyquestion .pipe-group {margin-top:5px}
 #container.studyquestion .pipe-group.type2 dd:after{margin:0 6px;}
 #container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 6px;background: #d9d9d9;}
 #container.studyquestion .pipe-group dd:nth-last-child(1):after{display:none;}
 #container.studyquestion .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
 #container.studyquestion .ulList.type4 li{height:auto;}
 #container.studyquestion .ulList.type4 li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
-#container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
+#container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px; font-weight: 500}
 
 //study_lo_docs
 #container.study_lo_docs #header.tab .header_inner.line1{z-index:999}
@@ -1671,7 +1672,8 @@ label.rdo .label{position: relative;}
 //study_lo_mp4_script
 #container.courseware.Study_LO_mp4_script .header_inner.line2 {border-bottom:#d9d9d9 1px solid; padding-left: 18px ; height:64px; line-height: 64px}
 #container.mediaquery.Study_LO_mp4_script #header .btn.close {right:18px; left:auto}
-
+#container.mediaquery.Study_LO_mp4_script #header.tab.video {padding-bottom: 64px}
+#container.mediaquery.Study_LO_mp4_script .label-tit18 {margin: 23px 0 18px}
 
 #container.voice .record_box{background:#f2f3f7; padding:24px 34px;}
 #container.voice .font_15{font-size: map-get($font-size , font_15);letter-spacing: -0.045em;color:rgba(0,0,0,0.8)}

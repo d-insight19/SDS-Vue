@@ -490,7 +490,7 @@ export default {
 .iconList { width:844px; margin:0 auto 100px auto; }
 .iconList h1 { margin-bottom:40px; font-size:50px; }
 .iconList h2 { margin-top:40px; font-size:30px; color:blue; }
-ul { display: flex; flex-wrap: wrap;}
-li { padding:10px; }
+.iconList ul { display: flex; flex-wrap: wrap;}
+.iconList li { padding:10px; }
 .bc-black{background-color: black;}
 </style>
