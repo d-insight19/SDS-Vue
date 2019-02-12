@@ -14,8 +14,8 @@
 
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li class="on"><a href="#tab1">학습현황</a></li>
-                    <li><a href="#tab2">학습목차</a></li> 
+                    <li><a href="#tab1">학습현황</a></li>
+                    <li class="on"><a href="#tab2">FAQ</a></li> 
                     <li><a href="#tab3">학습노트</a></li> 
                     <li><a href="#tab3">질문방</a></li> 
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
@@ -161,52 +161,43 @@
         
           <div class="cell">
             <div class="inner">
-                <p class="mb5">총 <span class="fwb">1,620</span></p>
+                <p class="mb5">총 <span class="fwb"><b>1,620</b></span>
+                    <span class="tar fr mono_80">전체 <span class="ico ico_dropdown16 gr"></span>
+                    </span>
+                </p>
 
-                <ul class="ulList type4">
-                    <li style="padding: 9px 0;"> 
-                        <span class="tar">
-                            <dl class="pipe-group type2">
-                                <dd class="color_clr2"><span class="ico note blue"></span> 나의질문만</dd>
-                                <dd>전체폴더 <span class="ico ico_dropdown16 gr"></span> </dd>
-                            </dl>
-                        </span> 
-                    </li>
+                <ul class="ulList type4">                    
                     <li>
-                        <p class="icon_txt mono_65">1차시</p>
                         <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
-                        <dl class="pipe-group mono_65 mb12">
-                            <dd>비공개</dd>
-                            <dd>정혜민</dd>
-                            <dd>2018.10.10</dd>                                
-                            <dd><span class="ico play"></span>02:36</dd>
-                            <dd><span class="ico clip"></span>첨부파일</dd>
-                        </dl>
-                        <p class="color_clr3">답변완료</p>
-                    </li>
-                    <li>
-                        <p class="icon_txt mono_65">수료평가</p>
-                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
-                        <dl class="pipe-group mono_65 mb12">
-                            <dd>비공개</dd>
-                            <dd>정혜민</dd>
-                            <dd>2018.10.10</dd>                                
-                            <dd><span class="ico play"></span>02:36</dd>
-                            <dd><span class="ico clip"></span>첨부파일</dd>
-                        </dl>
-                        <p class="color_clr3 mono_80">미답변</p>
-                    </li>
-                    <li>
-                        <p class="icon_txt mono_65">기타</p>
-                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
-                        <dl class="pipe-group mono_65 mb12">
-                            <dd>비공개</dd>
-                            <dd>정혜민</dd>
-                            <dd>2018.10.10</dd>                                
-                            <dd><span class="ico play"></span>02:36</dd>
-                            <dd><span class="ico clip"></span>첨부파일</dd>
+                        <dl class="pipe-group mono_65">
+                            <dd>동영상</dd>
                         </dl>
                     </li>
+                    <li>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>리포트</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>평가</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>동영상</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>리포트</dd>
+                        </dl>
+                    </li>
+                   
                 </ul>
 
 
