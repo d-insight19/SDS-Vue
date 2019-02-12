@@ -53,6 +53,7 @@
 .ico.back{width:32px;height:32px;background: url("../img/ic_former_solid_32.png") no-repeat; }
 .ico.next{width:32px;height:32px;background: url("../img/ic_next_solid_black_32.png") no-repeat; }
 
+
 /* 추가이미지 2018-12-10*/
 
 .ico.del-blue{width:16px;height:16px;background: url("../img/ic_blue_16.png") no-repeat; }
@@ -216,6 +217,9 @@
 .ico.mark_line_32{width:32px;height:32px;background: url("../img/ic_markv_line_32.png") no-repeat; }
 .ico.mark_line_32.non{width:32px;height:32px;background: url("../img/ic_markx_line_32.png") no-repeat; }
 .ico.note.blue{width:16px;height:16px;background: url("../img/ic_mynote_line_blue_16.png") no-repeat; }
+
+/*ico study*/
+.ico.ic_set_line_28 {width:28px;height:28px;background: url("../img/ic_set_line_28.png") no-repeat; background-size:contain; } 
 .ico.play_40.blue{width:40px;height:40px;background: url("../img/ic_record_play_blue_40.png") no-repeat; }
 .ico.pause_40.blue{width:40px;height:40px;background: url("../img/ic_record_pause_blue_40.png") no-repeat; }
 .ico.set_line_28 {width:28px;height:28px;background: url("../img/ic_set_line_28.png") no-repeat; }
