@@ -631,7 +631,7 @@ var rootRoutes = [
     path: '/components_icons',
     name: 'components_icons',
     component: ComponentsIcons
-  }, 
+  },
   {
     path: '/components_buttons',
     name: 'components_buttons',
