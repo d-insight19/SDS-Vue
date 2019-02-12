@@ -182,38 +182,13 @@
             <div class="inner mb20">
                 <p class="label-tit18 fwb600 mb0 pb10 bbB60">데이터 특성 알아보기</p>
                 <ul class="multiList type1">
-                    <li>
+                    <li v-for="(item, index) in dataList">
                         <div class="in">
-                            <span class="color_clr1 fwb font_13">1차시</span>
-                            <div class="multiline line2">
-                                학습 소개 Orientation 
-                            </div>
+                            <span class="color_clr1 fwb font_13">{{item.title}}</span>
+                            <div class="multiline line2">{{item.content}}</div>
                         </div>
-                        <span @click="active_el" class="metatxt">
-                            <span class="ico heart_solid_32" :class="{ blue : active }"></span>
-                        </span>
-                    </li>
-                    
-                    <li>
-                        <div class="in">
-                            <span class="color_clr1 fwb font_13">2차시</span>
-                            <div class="multiline line2">
-                                한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
-                            </div>
-                        </div>
-                        <span @click="active_el" class="metatxt">
-                            <span class="ico heart_solid_32" :class="{ blue : active }"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <span class="color_clr1 fwb font_13">3차시</span>
-                            <div class="multiline line2">
-                                한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
-                            </div>
-                        </div>
-                        <span @click="active_el" class="metatxt">
-                            <span class="ico heart_solid_32" :class="{ blue : active }"></span>
+                        <span @click="data_heart(index)" class="metatxt">
+                            <span class="ico heart_solid_32" :class="{ blue : item.heart }"></span>
                         </span>
                     </li>
                 </ul>
@@ -223,38 +198,13 @@
             <div class="inner mb40">
                 <p class="label-tit18 fwb600 mb0 pb10 bbB60">데이터 특성 알아보기</p>
                 <ul class="multiList type1">
-                    <li>
+                    <li v-for="(item, index) in dataList2">
                         <div class="in">
-                            <span class="color_clr1 fwb font_13">1차시</span>
-                            <div class="multiline line2">
-                                학습 소개 Orientation 
-                            </div>
+                            <span class="color_clr1 fwb font_13">{{item.title}}</span>
+                            <div class="multiline line2">{{item.content}}</div>
                         </div>
-                        <span @click="active_el" class="metatxt">
-                            <span class="ico heart_solid_32" :class="{ blue : active }"></span>
-                        </span>
-                    </li>
-                    
-                    <li>
-                        <div class="in">
-                            <span class="color_clr1 fwb font_13">2차시</span>
-                            <div class="multiline line2">
-                                한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
-                            </div>
-                        </div>
-                        <span @click="active_el" class="metatxt">
-                            <span class="ico heart_solid_32" :class="{ blue : active }"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <div class="in">
-                            <span class="color_clr1 fwb font_13">3차시</span>
-                            <div class="multiline line2">
-                                한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
-                            </div>
-                        </div>
-                        <span @click="active_el" class="metatxt">
-                            <span class="ico heart_solid_32" :class="{ blue : active }"></span>
+                        <span @click="data_heart2(index)" class="metatxt">
+                            <span class="ico heart_solid_32" :class="{ blue : item.heart }"></span>
                         </span>
                     </li>
                 </ul>
@@ -324,7 +274,16 @@ export default {
   name: 'regiclass_detailview_autonomy',
   data () {
     return {
-        active : false,
+        dataList: [
+            {title: '1차시', content:'학습 소개 Orientation', heart:false},
+            {title: '2차시', content:'한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기', heart:false},
+            {title: '3차시', content:'한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기', heart:false}
+        ],
+        dataList2: [
+            {title: '1차시', content:'학습 소개 Orientation', heart:false},
+            {title: '2차시', content:'한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기', heart:false},
+            {title: '3차시', content:'한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기', heart:false}
+        ],
         innerRipple: false,
         halfRight: false,
         halfLeft: false,
@@ -393,8 +352,11 @@ export default {
     }
   },
   methods: {
-    active_el () {
-        this.active = !this.active
+    data_heart (index) {
+        this.dataList[index].heart = !this.dataList[index].heart;
+    },
+    data_heart2 (index) {
+        this.dataList2[index].heart = !this.dataList2[index].heart;
     },
     prevTen() {
         console.error("왼쪽");
