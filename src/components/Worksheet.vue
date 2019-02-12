@@ -4590,6 +4590,10 @@
           <router-link :to="{ name: 'Study_home_set' }">
             Study_home_set
           </router-link>
+          <br />
+          <router-link :to="{ name: 'Study_home_set02' }">
+            Study_home_set02(Study_LO_viewer와 화면 동일)
+          </router-link>        
         </td>
         <td></td>
       </tr>
@@ -4607,7 +4611,7 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
-          삭제
+          대기
         </td>
         <td></td>
       </tr>
@@ -7294,9 +7298,13 @@
         <td>　</td>
         <td class="textL">01.login_02.02_join_terms_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Login_jointermsdetail' }">
+            Login_jointermsdetail
+          </router-link><br/>
+          <router-link :to="{ name: 'Login_jointermsdetailscroll' }">
+            Login_jointermsdetailscroll
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -7844,8 +7852,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.03.01.detailview_course_mooc</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_course_mooc' }">
+            regiclass_detailview_course_mooc
           </router-link>
         </td>
         <td></td>
@@ -7861,8 +7869,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.03.02.detailview_course_set</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_course_set' }">
+            regiclass_detailview_course_set
           </router-link>
         </td>
         <td></td>
@@ -7878,8 +7886,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.03.03.detailview_course_mixed</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_course_mixed' }">
+            regiclass_detailview_course_mixed
           </router-link>
         </td>
         <td></td>
@@ -7895,8 +7903,8 @@
         <td>　</td>
         <td class="textL">06.regiclass_01.03.04.detailview_course_union</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'regiclass_detailview_course_union' }">
+            regiclass_detailview_course_union
           </router-link>
         </td>
         <td></td>
