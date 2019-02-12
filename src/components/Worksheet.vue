@@ -5280,8 +5280,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.27.data</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_data' }">
+            Study_data
           </router-link>
         </td>
         <td></td>
@@ -5297,8 +5297,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.28.data_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_data_detail' }">
+            Study_data_detail
           </router-link>
         </td>
         <td></td>
@@ -5376,8 +5376,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.31.discuss</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_discuss' }">
+            Study_discuss
           </router-link>
         </td>
         <td></td>
@@ -5450,8 +5450,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.35.reflectionnote</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_reflectionnote' }">
+            Study_reflectionnote
           </router-link>
         </td>
         <td></td>
@@ -5505,8 +5505,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.38.reminder</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_reminder' }">
+            Study_reminder
           </router-link>
         </td>
         <td></td>
@@ -5654,8 +5654,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.47.qpqa</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_qpqa' }">
+            Study_qpqa
           </router-link>
         </td>
         <td></td>
@@ -5817,8 +5817,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.55.inquiry</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_inquiry' }">
+            Study_inquiry
           </router-link>
         </td>
         <td></td>

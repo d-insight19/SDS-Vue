@@ -256,6 +256,13 @@ import StudyLOmp4fs from '~workplace/study/Study_LO_mp4_fs'
 import StudyLOmp4script2 from '~workplace/study/Study_LO_mp4_script2'
 import Studyfaq from '~workplace/study/Study_faq'
 import Studynotice from '~workplace/study/Study_notice'
+import Studydata from '~workplace/study/Study_data'
+import Studydatadetail from '~workplace/study/Study_data_detail'
+import Studyreminder from '~workplace/study/Study_reminder'
+import Studyreflectionnote from '~workplace/study/Study_reflectionnote'
+import Studyinquiry from '~workplace/study/Study_inquiry'
+import Studydiscuss from '~workplace/study/Study_discuss'
+import Studyqpqa from '~workplace/study/Study_qpqa'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -1948,6 +1955,41 @@ var rootRoutes = [
     path: '/Study_notice',
     name: 'Study_notice',
     component: Studynotice
+  },
+  {
+    path: '/Study_data',
+    name: 'Study_data',
+    component: Studydata
+  },
+  {
+    path: '/Study_data_detail',
+    name: 'Study_data_detail',
+    component: Studydatadetail
+  },
+  {
+    path: '/Study_reminder',
+    name: 'Study_reminder',
+    component: Studyreminder
+  },
+  {
+    path: '/Study_reflectionnote',
+    name: 'Study_reflectionnote',
+    component: Studyreflectionnote
+  },
+  {
+    path: '/Study_inquiry',
+    name: 'Study_inquiry',
+    component: Studyinquiry
+  },
+  {
+    path: '/Study_discuss',
+    name: 'Study_discuss',
+    component: Studydiscuss
+  },
+  {
+    path: '/Study_qpqa',
+    name: 'Study_qpqa',
+    component: Studyqpqa
   },
   // {
   //   path: '/regiclass_detailview_licence',

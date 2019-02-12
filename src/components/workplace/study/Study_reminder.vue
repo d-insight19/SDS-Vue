@@ -15,7 +15,7 @@
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
                     <li><a href="#tab1">학습현황</a></li>
-                    <li class="on"><a href="#tab2">공지사항</a></li> 
+                    <li class="on"><a href="#tab2">리마인더</a></li> 
                     <li><a href="#tab3">학습노트</a></li> 
                     <li><a href="#tab3">질문방</a></li> 
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
@@ -166,46 +166,41 @@
 
                 <ul class="ulList type4">                    
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">리마인더 타이틀 : 액셀러레이팅 프로그램 실전연습</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd>2018.10.10</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">정보시스템 개발팀/ACE THE 포트폴리오 기능개선 관련 학사시스템</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            <dd>2018.10.10</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">리마인더 타이틀 : 액셀러레이팅 프로그램 실전연습</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            <dd>2018.10.10</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">[기계/일반경쟁]차세대기술공학부/형광 도립 현미경 이미지 분석 시스템 구입</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            <dd>2018.10.10</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">리마인더 타이틀 : 액셀러레이팅 프로그램 실전연습</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            <dd>2018.10.10</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">프레임아카데미 : 문화산업 Merchandiser 양성과정 수강생 모집</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            <dd>2018.10.10</dd>
                         </dl>
-                    </li>                  
+                    </li>                            
                    
                 </ul>
 

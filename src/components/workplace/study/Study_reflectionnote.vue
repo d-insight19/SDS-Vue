@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery studyquestion">
+      <div id="container" class="mediaquery studyquestion study_reflection">
 
        <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video">          
@@ -15,7 +15,7 @@
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
                     <li><a href="#tab1">학습현황</a></li>
-                    <li class="on"><a href="#tab2">공지사항</a></li> 
+                    <li class="on"><a href="#tab2">리플렉션노트</a></li> 
                     <li><a href="#tab3">학습노트</a></li> 
                     <li><a href="#tab3">질문방</a></li> 
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
@@ -164,48 +164,69 @@
                 <p class="mb5">총 <span class="fwb ml2"><b>999</b></span>
                 </p>
 
-                <ul class="ulList type4">                    
+                <ul class="ulList type4">
+                    <li style="padding: 9px 0;"> 
+                        <span class="tar">
+                            <dl class="pipe-group type2">
+                                <dd class="color_clr2"><span class="ico note blue"></span> 나의질문만</dd>
+                                <dd class="color_clr2">작성</dd>
+                            </dl>
+                        </span> 
+                    </li>                    
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">리플렉션노트 타이틀 영역입니다.</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
-                        <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
-                        <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">리플렉션노트 타이틀 영역입니다. 타이틀을 기입해 주세요.</p>
                         <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
+                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                        </dl>
+                    </li>
+                     <li>
+                        <p class="title">리플렉션노트 타이틀 영역입니다.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">리플렉션노트 타이틀 영역입니다. 타이틀을 기입해 주세요.</p>
                         <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
+                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                        </dl>
+                    </li>
+                     <li>
+                        <p class="title">리플렉션노트 타이틀 영역입니다.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">리플렉션노트 타이틀 영역입니다. 타이틀을 기입해 주세요.</p>
                         <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
-                    </li>                  
+                    </li>                                                
                    
                 </ul>
 

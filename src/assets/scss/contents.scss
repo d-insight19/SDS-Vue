@@ -901,8 +901,8 @@ table td.sub-txt{ color:#000;}
 
 // 리플렉션 노트 수정/등록 Study_02_reflectionnote_edit
 #container.study_reflection .multiList li {margin-bottom:20px;}
-
-
+#container.study_reflection .ico.note.blue {margin-top:-3px}
+#container.study_reflection.studyquestion .pipe-group.type2 dd:after {margin:0px 7px 0 12px}
 
 
 // 시뮬레이션 
@@ -1644,7 +1644,7 @@ label.rdo .label{position: relative;}
 //study_studyquestion
 #container.studyquestion .pipe-group {margin-top:5px}
 #container.studyquestion .pipe-group.type2 dd:after{margin:0 6px;}
-#container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 6px;background: #d9d9d9;}
+#container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 2px 0 6px;background: #d9d9d9;}
 #container.studyquestion .pipe-group dd:nth-last-child(1):after{display:none;}
 #container.studyquestion .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
 #container.studyquestion .ulList.type4 li{height:auto;}
