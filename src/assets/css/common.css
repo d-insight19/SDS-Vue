@@ -227,7 +227,8 @@
 
 
 
-
+/* 추가이미지 2019-2-13 */
+.ico.info_24.blue {width:24px;height:24px;background: url("../img/ic_info_blue_24.png") no-repeat; }
 /* ico btn */
 .btn.only .ico{display: block;}
 .btn.only.trash .ico{width:20px; height:20px; background-position: -82px -64px;}

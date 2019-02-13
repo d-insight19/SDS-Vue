@@ -34,6 +34,8 @@ import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 import ComponentsSnackBar from '~workplace/common_page/components_snackbar'
 
+import LoginSplashB2C from '~workplace/login/login_Splash_B2C'
+import LoginSplashB2B from '~workplace/login/login_Splash_B2B'
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
 import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
@@ -629,6 +631,8 @@ import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
 import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
 import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
 import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
+import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
+// import AtormGroupFlipComplete02 from '~workplace/atorm/Atorm_group_flip_complete_02'
 // 1번 영역
 var rootRoutes = [
   {
@@ -646,6 +650,16 @@ var rootRoutes = [
     name: 'Atorm_group_flip_complete',
     component: AtormGroupFlipComplete
   },
+  {
+    path: '/Atorm_group_flip_criteria',
+    name: 'Atorm_group_flip_criteria',
+    component: AtormGroupFlipCriteria
+  },
+  // {
+  //   path: '/Atorm_group_flip_complete_02',
+  //   name: 'Atorm_group_flip_complete_02',
+  //   component: AtormGroupFlipComplete02
+  // },
   {
     path: '*',
     name: 'worksheet',
@@ -870,6 +884,16 @@ var rootRoutes = [
     path: '/components_switch_slp',
     name: 'components_switch_slp',
     component: ComponentsTestPage10
+  },
+  {
+    path: '/login_Splash_B2C',
+    name: 'login_Splash_B2C',
+    component: LoginSplashB2C
+  },
+  {
+    path: '/login_Splash_B2B',
+    name: 'login_Splash_B2B',
+    component: LoginSplashB2B
   },
   {
     path: '/Login_findcenter',
