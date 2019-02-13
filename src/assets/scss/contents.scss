@@ -1636,7 +1636,9 @@ label.rdo .label{position: relative;}
 #container.studystatus .diagram_wrap.type2 li.no-cir{padding-left: 0;font-size:map-get($font-size, font_15);  letter-spacing: -0.45px;}
 #container.studystatus .progBox_wrap .font_16{font-size:map-get($font-size, font_16);  letter-spacing: -0.48px;}
 #container.studystatus .progBox_wrap > li {margin-bottom:42px;}
-
+#container.studystatus .diagram_wrap.type2 li {font-size:map-get($font-size, font_12); }
+#container.studystatus .progBox_wrap .progBox {width: 83%;   display: inline-block;}
+#container.studystatus .progBox_wrap span.res-num{font-weight:500;font-family:'roboto';font-size:map-get($font-size, font_14);float:right;margin-top:5px;}
 
 //study_studyquestion
 #container.studyquestion .pipe-group {margin-top:5px}
@@ -1703,8 +1705,10 @@ label.rdo .label{position: relative;}
 
 //ATORM_status_details_rate
 #container.atorm.status_rate .num{font-family:'roboto';font-size: map-get($font-size , font_26);font-weight:500;}
-#container.atorm.status_rate .l-num{font-family:'roboto';font-size:map-get($font-size , font_26);letter-spacing:-0.13em;font-weight:500; }
-#container.atorm.status_rate .r-num{font-family:'roboto';font-size:map-get($font-size , font_18);letter-spacing:-0.09em; }
+#container.atorm.status_rate .l-num{vertical-align:bottom;font-family:'roboto';font-size:map-get($font-size , font_26);letter-spacing:-0.13em;font-weight:500; }
+#container.atorm.status_rate .r-num{vertical-align: -5px; font-family:'roboto';font-size:map-get($font-size , font_18);letter-spacing:-0.09em; }
+#container.atorm.status_rate .reply-txt{font-size:map-get($font-size , font_14);letter-spacing:-0.042em; }
+#container.atorm.status_rate .info_value{font-size:map-get($font-size , font_12);letter-spacing:-0.036em; }
 #container.atorm.status_rate .rating {border: none; display:inline;}
 #container.atorm.status_rate .rating > input { display: none; } 
 #container.atorm.status_rate .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
@@ -1713,7 +1717,27 @@ label.rdo .label{position: relative;}
 #container.atorm.status_rate .rating > label:hover ~ input:checked ~ label, 
 #container.atorm.status_rate .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
 
-//ATORM_status_details
+//atorm_group_flip_complete
+#container.atorm.flip .confirm_item_detail{margin:0px -18px}
+#container.atorm.flip .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
+#container.atorm.flip .confirm_item_detail > li > span:first-child{line-height: 58px;font-weight: 600;}
+#container.atorm.flip .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .num{font-family: 'Roboto'}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .thum{display: block;width: 100px;height: 100px; position: relative;}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .thum .circle {position: absolute; padding:4px; right: 10px; bottom: 10px; border-radius: 100%; background-color: rgba(255, 255, 255, 0.9); border: 1px solid rgba(0,0,0,0.25);}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .thum .circle .ico{display:block;}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail:empty {background: #fff url("../img/ic_atorm_photo.png") center center no-repeat; background-size:34px; padding: 33px; border: 1px solid map-get($line_colors, B85);}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table{border-spacing: 0 10px}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table td:nth-child(1){width:116px;}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table tbody td{padding-top:10px}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table tbody tr:nth-child(1) td{padding-top:20px}
+#container.atorm.flip .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
+#container.atorm.flip .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 
 
 

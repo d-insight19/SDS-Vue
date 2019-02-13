@@ -623,6 +623,7 @@ import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
 import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
 import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
+import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
 // 1번 영역
 var rootRoutes = [
   {
@@ -634,6 +635,11 @@ var rootRoutes = [
     path: '/Atorm_status_details',
     name: 'Atorm_status_details',
     component: AtormStatusDetails
+  },
+  {
+    path: '/Atorm_group_flip_complete',
+    name: 'Atorm_group_flip_complete',
+    component: AtormGroupFlipComplete
   },
   {
     path: '*',
