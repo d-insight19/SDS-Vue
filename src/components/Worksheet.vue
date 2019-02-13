@@ -2324,6 +2324,15 @@
           <router-link :to="{ name: 'Atorm_group_flip_criteria' }">
             Atorm_group_flip_criteria
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Atorm_group_flip_criteria_02' }">
+            Atorm_group_flip_criteria_02
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Atorm_group_flip_criteria_03' }">
+            Atorm_group_flip_criteria_03
+          </router-link>
+          <br/>
         </td>
         <td></td>
       </tr>

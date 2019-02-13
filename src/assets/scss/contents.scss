@@ -830,6 +830,7 @@ table td.sub-txt{ color:#000;}
 .l-txt-2{ float:left; font-size:map-get($font-size, font_14);line-height: 22px; letter-spacing: -0.42px;}
 .r-txt-2{width:76%;font-size:map-get($font-size, font_14);line-height: 22px; letter-spacing: -0.42px; color:map-get($mono_colors, mono_80);}
 
+
 /*chip 공통*/
 .chip {font-weight: 400; display:inline-block;margin-bottom: 6px; height: 26px; border-radius: 16px; border: 1px solid rgba(0,0,0,0.4); padding: 4px 10px ;font-size: map-get($font-size, font_12);line-height: 16px; letter-spacing: -0.36px}
 .chip.del{ line-height: 22px; margin-bottom: 0; padding: 0px 2px 0 10px;} 
@@ -1739,6 +1740,15 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.atorm.flip .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 
+
+//ATORM_group/flip_criteria_1
+#container.atorm.flip .inp-wrap{position: relative;}
+#container.atorm.flip .inp-wrap .score{position: absolute;right: 16px;top: 0px;display: block;letter-spacing: -0.28px;
+    font-size:map-get($font-size, font_15);letter-spacing: -0.42px;line-height: 44px;}
+    #container.atorm.flip .criteria-wrap{position:relative;}
+#container.atorm.flip .criteria-wrap:after{position:absolute;top:0;bottom:0;right:0;left:0;content:'';z-index:1;opacity:0.25 !important;}
+#container.atorm.flip .criteria-wrap .total{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;}
+#container.atorm.flip .criteria-wrap .total .total-num{font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px;}
 
 
 

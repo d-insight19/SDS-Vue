@@ -2,8 +2,9 @@
     <!-- eslint-disable -->
     <!-- wrap -->
     <div id="wrap">
-        <div class="splash_wrap" style="height:100vmax">
-            <video style="width:100%" src="@/assets/movie/SLP_Mobile_GUI_Splash_B2C.mp4" autoplay></video>
+        <div class="splash_wrap" style="">
+            <video style="width: 100%;
+    height: 100vh;" src="@/assets/movie/SLP_Mobile_GUI_Splash_B2C.mp4" autoplay></video>
         </div>
     </div>
     <!-- //wrap -->

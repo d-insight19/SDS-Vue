@@ -9,9 +9,7 @@
                 <div class="header_inner line1">
                     <button type="button" class="btn only close"><span class="ico">닫기</span></button>
                     <p class="header_text font_18">1:1문의 수정</p>
-                    <p class="end">
-                        <span class="end_btn2 color_clr2">완료</span>
-                    </p>
+                    <button type="button" class="btn14 color_clr2">완료</button>
                 </div>
             </div>
             <!-- //header -->            

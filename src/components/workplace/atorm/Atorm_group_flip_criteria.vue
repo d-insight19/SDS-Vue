@@ -14,15 +14,16 @@
             <p class="font_30 fwb">집합 제작</p>
             <div class="stepper mb30">
                 <div class="clearfix">
-                    <h2 class="tit">완료</h2>
+                    <h2 class="tit">수료기준</h2>
                     <div class="num">
-                        <strong class="color_clr2">4</strong>/<span>4</span>
+                        <strong class="color_clr2">3</strong>/<span>4</span>
                     </div>
                 </div>
                     <div class="progBox">
-                    <div class="bar clr2" style="width:100%"></div>
+                    <div class="bar clr2" style="width:75%"></div>
                 </div>
-                <p class="txt-desc">학습과정의 기본정보를 입력합니다.</p>
+                <p class="txt-desc">제작한 학습에 대한 수료 기준 및 가중치를 설정할 수 있습니다.</p>
+                <button class="btn-md">수료기준 가이드</button>
             </div>
             <p class="hr_2 mb0"></p>
           </div>
@@ -32,75 +33,83 @@
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner pdb20" style="padding-top:0;">
+                    <p class="font_16 mb20">과정 수료기준</p>
+                    <p class="mb8 font_14">총점 <span class="mono_50">(100점 기준)</span></p>
+                    <div class="inp-wrap">                  
+                      <input type="text">
+                      <span class="score mono_80">
+                          <span class="num">70</span> 점 이상
+                      </span>
+                    </div>
+                    <p class="mb8 font_14 mt10">진도율 <span class="mono_50">(100% 기준)</span></p>
+                    <div class="inp-wrap">                  
+                      <input type="text">
+                      <span class="score mono_80">
+                          <span class="num">85</span> % 이상
+                      </span>
+                    </div>
+                    <p>이 과정은 총점 <span class="color_clr">0</span> 점 이상을 획득하고<br/>집합강의 <span class="color_clr">0%</span> 이상 출석 시, 수료가 가능한 과정입니다.</p>
 
-                <ul class="confirm_item_detail">
-                    <li class="open" @click="toggleMenu($event)">
-                        <span>필수정보</span>
-                        <span class="accordion_arrow"></span>
-                        <div class="confirm_item_detail_inner pt0">
-                            <!-- list -->
-                            <ul class="singleList type1">
-                                <li class="mb20">
-                                    <table>
-                                            <tr>
-                                                <td>
-                                                    <div class="thum">
-                                                        <div class="thumbnail">
-                                                            <!--<img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">-->
-                                                        </div>
-                                                        <!--<div class="circle">
-                                                            <span class="ico photo_16"></span>
-                                                        </div>-->
-                                                    </div>
-                                                </td>
-                                                <td class="txt-desc">
-                                                    <strong class="label-tit14">과정명</strong>
-                                                    <p>1%의 핵심인재를 내사람으로 만들어 보템이 되기</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>과정코드</td>
-                                                <td class="fwr">K1111</td>
-                                            </tr>
-                                            <tr>
-                                                <td>학습시간</td>
-                                                <td class="fwr">3시간</td>
-                                            </tr>
-                                            <tr>
-                                                <td>학습기간</td>
-                                                <td class="fwr">3일(Days)</td>
-                                            </tr>
-                                    </table>
-                                </li>
-                            </ul>
-                            <!-- //list -->
+                   
+
+                    <!-- opacity -->
+                    <div class="criteria-wrap">
+                        <p class="line01" style="margin: 29px 0 18px;"></p>
+                        <div>
+                          <span class="font_18">총점 평가항목 및 반영 비율 설정</span> <span class="ico info_24 blue fr"></span>  
                         </div>
-                    </li>
-                    <li @click="toggleMenu($event)">
-                        <span>선택정보</span>
-                        <span class="accordion_arrow"></span>
-                        
-                        <div class="confirm_item_detail_inner pt0">
-                            
+                        <p class="font_13" style="width:88%"> 
+                          평가항목의 중요도에 따라 점수반영비율(가중치)을 설정할 수 있습니다. 평가 항목 비율 합산은 반드시 100%가 되어야 합니다.  
+                        </p>
+    
+                        <p class="mb8 font_14 mt10">
+                          <label for="id_save" class="labelChk">
+                            <input id="id_save" type="checkbox" class="chk" name="id_save">
+                            <span class="ico"></span>
+                            <span class="label color_black">출석율</span>
+                        </label>
+                        </p>
+                        <div class="inp-wrap">                  
+                          <input type="text">
+                          <span class="score">
+                            %
+                          </span>
                         </div>
-                    </li>
-                    <li @click="toggleMenu($event)">
-                        <span>학습목차 및 구성컨텐츠</span>
-                        <span class="accordion_arrow"></span>
-                        
-                        <div class="confirm_item_detail_inner pt0">
-                            
+                        <p class="mb8 font_14 mt10">
+                          <label for="id_save2" class="labelChk">
+                            <input id="id_save2" type="checkbox" class="chk" name="id_save2">
+                            <span class="ico"></span>
+                            <span class="label color_black">평가점수</span>
+                          </label>
+                        </p>
+                        <div class="inp-wrap">                  
+                          <input type="text">
+                          <span class="score">
+                              %
+                          </span>
                         </div>
-                    </li>
-                    <li @click="toggleMenu($event)">
-                        <span>수료기준</span>
-                        <span class="accordion_arrow"></span>
-                        
-                        <div class="confirm_item_detail_inner pt0">
-                            
-                        </div>
-                    </li>
-                </ul>
+    
+                        <p class="mb8 font_14 mt10">
+                          <label for="id_save3" class="labelChk">
+                              <input id="id_save3" type="checkbox" class="chk" name="id_save3">
+                              <span class="ico"></span>
+                              <span class="label color_black">레포트점수</span>
+                          </label>
+                        </p>
+                        <div class="inp-wrap">                  
+                          <input type="text">
+                          <span class="score">
+                            %
+                          </span>
+                        </div> 
+                        <p class="mt15 total">합계 <span class="fr total-num fwb"><span>100</span>%</span></p>
+
+                        <p class="line01" style="margin-top:33px; margin-bottom:18px;"></p>
+
+                        <p class="font_18 fwb" style="margin-bottom:27px;">기타설정</p>
+                        <a href="#" class="btn sm w100p add" @click="addList1()" >설문 및 별점</a>  
+                  </div>
+                  <!-- //opacity -->
 
             </div>
           </div>
@@ -109,7 +118,7 @@
         <div class="fixBtmBtn">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
-                <li><button type="button" class="btn md clr1">완료</button></li>
+                <li><button type="button" class="btn md clr1">다음</button></li>
             </ul>
         </div>
         
@@ -132,7 +141,8 @@ export default {
   /* vue data */
   data () {
     return {
-     toggleFlag: true
+     toggleFlag: true,
+     list1: []
     }
   },
   /* vue function */
@@ -143,6 +153,13 @@ export default {
       } else {
         event.target.classList.add('open')
       }
+    },
+    addList1 () {
+      this.list1.push('tmp 어학등급 아이템')
+    },
+    deleteFileList (index) {
+      console.log(index, '제거')
+      this.list1.splice(index, 1)
     }
   }
 }
