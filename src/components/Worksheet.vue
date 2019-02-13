@@ -2386,10 +2386,10 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">07.ATORM_07.04.01._status_    details</td>
+        <td class="textL">07.ATORM_07.04.01._status_details</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_status_details' }">
+            Atorm_status_details
           </router-link>
         </td>
         <td></td>
@@ -2416,10 +2416,10 @@
         <td>평점 및 후기 자세히보기</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">07.ATORM_07.04.01._status_    details_rate</td>
+        <td class="textL">07.ATORM_07.04.01._status_details_rate</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_status_details_rate' }">
+            Atorm_status_details_rate
           </router-link>
         </td>
         <td></td>
@@ -10671,8 +10671,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04.01._status_ details_group</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_status_details_group' }">
+            Atorm_status_details_group
           </router-link>
         </td>
         <td></td>
@@ -10688,8 +10688,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04.01._status_ details_flip</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_status_details_flip' }">
+            Atorm_status_details_flip
           </router-link>
         </td>
         <td></td>
@@ -10705,8 +10705,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04.01._status_ details_basic</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_status_details_basic' }">
+            Atorm_status_details_basic
           </router-link>
         </td>
         <td></td>

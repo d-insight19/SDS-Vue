@@ -616,6 +616,11 @@ import AtormELearningThumbnail from '~workplace/atorm/Atorm_e-learning_thumbnail
 import AtormELearningMaterial from '~workplace/atorm/Atorm_e-learning_material'
 import AtormELearningMaterialUser from '~workplace/atorm/Atorm_e-learning_material_user'
 import AtormELearningMaterialMode from '~workplace/atorm/Atorm_e-learning_material_mode'
+import Atormstatusdetailsbasic from '~workplace/atorm/Atorm_status_details_basic'
+import Atormstatusdetailsgroup from '~workplace/atorm/Atorm_status_details_group'
+import Atormstatusdetails from '~workplace/atorm/Atorm_status_details'
+import Atormstatusdetailsrate from '~workplace/atorm/Atorm_status_details_rate'
+import Atormstatusdetailsflip from '~workplace/atorm/Atorm_status_details_flip'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -3424,6 +3429,31 @@ var rootRoutes = [
     path: '/Atorm_e-learning_material_mode',
     name: 'Atorm_e-learning_material_mode',
     component: AtormELearningMaterialMode
+  },
+  {
+    path: '/Atorm_status_details_basic',
+    name: 'Atorm_status_details_basic',
+    component: Atormstatusdetailsbasic
+  },
+  {
+    path: '/Atorm_status_details_group',
+    name: 'Atorm_status_details_group',
+    component: Atormstatusdetailsgroup
+  },
+  {
+    path: '/Atorm_status_details',
+    name: 'Atorm_status_details',
+    component: Atormstatusdetails
+  },
+  {
+    path: '/Atorm_status_details_rate',
+    name: 'Atorm_status_details_rate',
+    component: Atormstatusdetailsrate
+  },
+  {
+    path: '/Atorm_status_details_flip',
+    name: 'Atorm_status_details_flip',
+    component: Atormstatusdetailsflip
   },
   {
     path: '/Eduperson_login',
