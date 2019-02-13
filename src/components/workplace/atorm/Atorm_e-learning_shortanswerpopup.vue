@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
         <!-- container -->
-        <div id="container" class="mediaquery atorm">
+        <div id="container" class="mediaquery atorm flip ">
             
             <!-- header -->
             <div id="header" class="fixed">
@@ -39,7 +39,10 @@
                             </li>
                             <li class="mb20">
                                 <p class="label-tit14">문항배점</p>
-                                <slp-text-field class="mt6" ></slp-text-field>
+                                <div class="inp-wrap mt6">    
+                                    <slp-text-field></slp-text-field>
+                                    <span class="score mono_65">점</span>
+                                </div>
                                 <p class="hr mb0"></p>
                             </li>
                             <li class="mb20">
