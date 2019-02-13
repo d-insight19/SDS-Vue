@@ -1957,8 +1957,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_thumbnail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_thumbnail' }">
+            Atorm_e-learning_thumbnail
           </router-link>
         </td>
         <td></td>
@@ -2036,12 +2036,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_material</td>
         <td>
-          <router-link :to="{ name: 'e-learning_material' }">
-            e-learning_material
+          <router-link :to="{ name: 'Atorm_e-learning_material' }">
+            Atorm_e-learning_material
           </router-link>
           ,
-          <router-link :to="{ name: 'e-learning_material_user' }">
-            e-learning_material_user
+          <router-link :to="{ name: 'Atorm_e-learning_material_user' }">
+            Atorm_e-learning_material_user
           </router-link>
         </td>
         <td></td>
@@ -2057,9 +2057,14 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_add    item</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_material' }">
+            Atorm_e-learning_material
           </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_material_user' }">
+            Atorm_e-learning_material_user
+          </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -2074,8 +2079,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_evaluation</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'ATORM_e-learning_evaluation_1' }">
+            ATORM_e-learning_evaluation_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'ATORM_e-learning_evaluation_2' }">
+            ATORM_e-learning_evaluation_2
           </router-link>
         </td>
         <td></td>

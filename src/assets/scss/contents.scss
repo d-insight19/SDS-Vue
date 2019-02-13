@@ -2549,11 +2549,6 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .point_area .point_list > li:last-child {border-right:0 none;}
 .MySpace .point_area .point_list > li .point_title{font-size: map-get($font_size, font_13); color: map-get($mono_colors, mono_50);}
 .MySpace .point_area .point_list > li .point_score{font-size: map-get($font_size, font_18); font-weight:600;}
-.MySpace .pager_list {display:table; margin:5px auto;}
-.MySpace .pager_list > li {display:table-cell;}
-.MySpace .pager_list > li .dot {margin-right: 6px; margin-bottom: 13px; width:6px; height:6px; border-radius:100%; background-color:map-get($mono_colors, mono_25);}
-.MySpace .pager_list > li.active .dot {background-color:map-get($mono_colors, mono_65);}
-.MySpace .pager_list > li:last-child .dot{margin-right: 0px;}
 .MySpace .multiList.type1 > li{  border-top:1px solid #e3e3e3; border-bottom: 0 none;}
 // couponList
 .MySpace .couponList .in {display: table; width: 100%; min-height: 110px; padding: 16px; margin-bottom: 8px; background: #fff url("../img/img_coupon_ellipse.png") left center no-repeat; background-size: 10px 20px;;}
@@ -2616,8 +2611,17 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 // ATORM
 .atorm .labelChk .label {width:100%;}
 .atorm .w80List li {width:80px; display:inline-block;}
+.atorm .w64List li {width:64px; display:inline-block;}
 .atorm .fixTab {display:table; width:100%;}
 .atorm .fixTab li {display:table-cell;}
+
+//평가리스트
+.atorm .evaluationList {border-top: 1px solid map-get($line_colors , B60)}
+.atorm .evaluationList li {position:relative; border-bottom: 1px solid map-get($line_colors , B89); padding:15px 40px 15px 44px;}
+.atorm .evaluationList li .ico.multiplechoice_32 {position:absolute; top:calc(50% - 10px); left:0px;}
+.atorm .evaluationList li .ico.shortanswer_32 {position:absolute; top:calc(50% - 5px); left:0px;}
+.atorm .evaluationList li .ico.ox_32 {position:absolute; top:calc(50% - 5px); left:0px;}
+.atorm .evaluationList li .ico.del {position:absolute; top:calc(50% - 5px); right:0px;}
 
 .imgTable tr td .thum {width: 100%; height: 85px; padding:4px;}
 .imgTable tr:first-child td .thum{padding-top: 0px;}
