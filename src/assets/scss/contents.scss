@@ -2623,6 +2623,8 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm .evaluationList li .ico.ox_32 {position:absolute; top:calc(50% - 5px); left:0px;}
 .atorm .evaluationList li .ico.del {position:absolute; top:calc(50% - 5px); right:0px;}
 
+.atorm .singleList.type1 .labelChk input.chk + .ico {top:20px;}
+
 .imgTable tr td .thum {width: 100%; height: 85px; padding:4px;}
 .imgTable tr:first-child td .thum{padding-top: 0px;}
 .imgTable tr:last-child td .thum{padding-bottom: 0px;}

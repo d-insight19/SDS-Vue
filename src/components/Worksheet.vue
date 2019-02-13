@@ -2100,8 +2100,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_multiple    popup</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_multiplepopup' }">
+            Atorm_e-learning_multiplepopup
           </router-link>
         </td>
         <td></td>
@@ -2117,8 +2117,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_ox    popup</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_oxpopup' }">
+            Atorm_e-learning_oxpopup
           </router-link>
         </td>
         <td></td>
@@ -2134,8 +2134,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_short    answer popup</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_shortanswerpopup' }">
+            Atorm_e-learning_shortanswerpopup
           </router-link>
         </td>
         <td></td>
