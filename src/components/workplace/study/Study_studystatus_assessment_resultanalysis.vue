@@ -14,7 +14,8 @@
                 <div class="cell">
                     <div class="inner " style="padding-top:56px;">
                         <div class="full-box pd mb26">
-                            <p class="font_16 mono_80 mb12">안녕하세요. 정해민님의 점수는 100점 만점에서 <span class="color_clr2">60점</span>으로 모듈별 정답 비율은 다음과 같습니다.</p>
+                            <p class="font_16 mono_80" style="width:90%">안녕하세요.</p>
+                            <p class="font_16 mono_80 mb12" style="width:90%"> 정해민님의 점수는 100점 만점에서 <span class="color_clr2 fwb600">60점</span>으로 모듈별 정답 비율은 다음과 같습니다.</p>
                             <p class="font_16 mono_80 mb12">전체 평균 점수는 63점으로 평균보다 낮은 점수입니다. 부족한 모듈은 청강기간에 재학습을 통해 보완하시기 바랍니다</p>
                             <p class="font_16 mono_80">자세한 평가 결과 화면은 [결과 확인] 버튼을 클릭하여 확인 가능합니다.</p>
                         </div>
@@ -31,79 +32,91 @@
 
                             <ul class="progBox_wrap">
                                 <li>
-                                <p class="font_16 fwb" >・ OPic 문장의 정석</p>
+                                <p class="font_16 fwb" >・OPic 문장의 정석</p>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData21"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
+                                    
                                 </div>
+                                <span class="res-num">100%</span>  
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
+                                    
                                 </div>
+                                <span class="res-num">74%</span> 
                                 </li>
                                 <li>
-                                <p class="font_16 fwb">・ OPic 문법의 정석</p>
+                                <p class="font_16 fwb">・OPic 문법의 정석</p>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData21"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
+                                <span class="res-num">100%</span>  
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
+                                <span class="res-num">74%</span>  
                                 </li>
                                 <li>
-                                <p class="font_16 fwb">・ OPic 주제의 정석</p>
+                                <p class="font_16 fwb">・OPic 주제의 정석</p>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData21"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
+                                <span class="res-num">100%</span>  
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
+                                <span class="res-num">74%</span>  
                                 </li>
                                 <li>
-                                <p class="font_16 fwb">・ OPic 표현의 정석</p>
+                                <p class="font_16 fwb">・OPic 표현의 정석</p>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData21"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
+                                <span class="res-num">100%</span>  
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
+                                <span class="res-num">74%</span>  
                                 </li>
                                 <li>
-                                <p class="font_16 fwb">・ 총 합계</p>
+                                <p class="font_16 fwb">・총 합계</p>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData21"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
+                                <span class="res-num">100%</span>  
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
+                                <span class="res-num">74%</span>  
                                 </li>
                             </ul>
                             <!-- //basic bar2 -->
@@ -212,3 +225,9 @@ export default {
   },
 }
 </script>
+<style>
+.basicBar {
+  width:90%;
+  height:18px;
+}
+</style>

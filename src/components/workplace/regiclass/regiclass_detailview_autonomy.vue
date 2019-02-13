@@ -182,7 +182,7 @@
             <div class="inner mb20">
                 <p class="label-tit18 fwb600 mb0 pb10 bbB60">데이터 특성 알아보기</p>
                 <ul class="multiList type1">
-                    <li v-for="(item, index) in dataList">
+                    <li v-for="(item, index) in dataList" :key="index">
                         <div class="in">
                             <span class="color_clr1 fwb font_13">{{item.title}}</span>
                             <div class="multiline line2">{{item.content}}</div>
@@ -198,7 +198,7 @@
             <div class="inner mb40">
                 <p class="label-tit18 fwb600 mb0 pb10 bbB60">데이터 특성 알아보기</p>
                 <ul class="multiList type1">
-                    <li v-for="(item, index) in dataList2">
+                    <li v-for="(item, index) in dataList2" :key="index">
                         <div class="in">
                             <span class="color_clr1 fwb font_13">{{item.title}}</span>
                             <div class="multiline line2">{{item.content}}</div>
