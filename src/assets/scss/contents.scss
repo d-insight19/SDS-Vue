@@ -1702,10 +1702,9 @@ label.rdo .label{position: relative;}
 #container.voice .pipe-group dd{display: inline-block;font-size: map-get($font-size , font_13);line-height: 19px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
 
 //ATORM_status_details_rate
-
 #container.atorm.status_rate .num{font-family:'roboto';font-size: map-get($font-size , font_26);font-weight:500;}
-#container.atorm.status_rate .r-num{font-family:'roboto';font-size: map-get($font-size , font_26);letter-spacing:-0.13em;font-weight:500;}
-#container.atorm.status_rate .l-num{font-family:'roboto';font-size: map-get($font-size , font_18);letter-spacing:-0.09em;}
+#container.atorm.status_rate .l-num{font-family:'roboto';font-size:map-get($font-size , font_26);letter-spacing:-0.13em;font-weight:500; }
+#container.atorm.status_rate .r-num{font-family:'roboto';font-size:map-get($font-size , font_18);letter-spacing:-0.09em; }
 #container.atorm.status_rate .rating {border: none; display:inline;}
 #container.atorm.status_rate .rating > input { display: none; } 
 #container.atorm.status_rate .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
@@ -1714,6 +1713,7 @@ label.rdo .label{position: relative;}
 #container.atorm.status_rate .rating > label:hover ~ input:checked ~ label, 
 #container.atorm.status_rate .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
 
+//ATORM_status_details
 
 
 

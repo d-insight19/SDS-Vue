@@ -622,12 +622,18 @@ import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_s
 import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
 import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
+import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
 // 1번 영역
 var rootRoutes = [
   {
     path: '/Atorm_status_details_rate',
     name: 'Atorm_status_details_rate',
     component: AtormStatusDetailsRate
+  },
+  {
+    path: '/Atorm_status_details',
+    name: 'Atorm_status_details',
+    component: AtormStatusDetails
   },
   {
     path: '*',

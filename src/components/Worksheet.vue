@@ -2312,8 +2312,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_criteria</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_criteria' }">
+            Atorm_group_flip_criteria
           </router-link>
         </td>
         <td></td>
@@ -2329,8 +2329,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_complete</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_complete' }">
+            Atorm_group_flip_complete
           </router-link>
         </td>
         <td></td>
@@ -2388,8 +2388,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04.01._status_    details</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_status_details' }">
+            Atorm_status_details
           </router-link>
         </td>
         <td></td>
