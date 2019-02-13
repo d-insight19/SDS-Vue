@@ -609,6 +609,8 @@ import AtormELearningThumbnail from '~workplace/atorm/Atorm_e-learning_thumbnail
 import AtormELearningMaterial from '~workplace/atorm/Atorm_e-learning_material'
 import AtormELearningMaterialUser from '~workplace/atorm/Atorm_e-learning_material_user'
 import AtormELearningMaterialMode from '~workplace/atorm/Atorm_e-learning_material_mode'
+import AtormELearningEvaluation1 from '~workplace/atorm/Atorm_e-learning_evaluation_1'
+import AtormELearningEvaluation2 from '~workplace/atorm/Atorm_e-learning_evaluation_2'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -3382,6 +3384,16 @@ var rootRoutes = [
     path: '/Atorm_e-learning_material_mode',
     name: 'Atorm_e-learning_material_mode',
     component: AtormELearningMaterialMode
+  },
+  {
+    path: '/Atorm_e-learning_evaluation_1',
+    name: 'Atorm_e-learning_evaluation_1',
+    component: AtormELearningEvaluation1
+  },
+  {
+    path: '/Atorm_e-learning_evaluation_2',
+    name: 'Atorm_e-learning_evaluation_2',
+    component: AtormELearningEvaluation2
   },
   {
     path: '/Eduperson_login',
