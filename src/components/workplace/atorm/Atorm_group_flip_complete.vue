@@ -31,10 +31,10 @@
 
         <div id="content" class="etc">
           <div class="cell">
-            <div class="inner pdb20">
+            <div class="inner pdb20" style="padding-top:0;">
 
                 <ul class="confirm_item_detail">
-                    <li class="open" @click="toggleBtn ()">
+                    <li class="open" @click="toggleMenu($event)">
                         <span>필수정보</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pt0">
@@ -42,7 +42,6 @@
                             <ul class="singleList type1">
                                 <li class="mb20">
                                     <table>
-                                        <thead>
                                             <tr>
                                                 <td>
                                                     <div class="thum">
@@ -55,40 +54,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="txt-desc">
-                                                    <strong class="label-tit14 tit_essential">과정명</strong>
+                                                    <strong class="label-tit14">과정명</strong>
                                                     <p>1%의 핵심인재를 내사람으로 만들어 보템이 되기</p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>과정코드</td>
-                                                <td>K1111</td>
+                                                <td class="fwr">K1111</td>
                                             </tr>
                                             <tr>
                                                 <td>학습시간</td>
-                                                <td>3시간</td>
+                                                <td class="fwr">3시간</td>
                                             </tr>
                                             <tr>
                                                 <td>학습기간</td>
-                                                <td>3일(Days)</td>
+                                                <td class="fwr">3일(Days)</td>
                                             </tr>
-                                        </thead>
                                     </table>
-                                </li>
-                                <li class="mb20">
-                                    
-                                </li>
-                                <li class="mb20">
-                                   
-                                </li>
-
-                                <li class="mb20">
-                                    
                                 </li>
                             </ul>
                             <!-- //list -->
                         </div>
                     </li>
-                    <li @click="toggleBtn ()">
+                    <li @click="toggleMenu($event)">
                         <span>선택정보</span>
                         <span class="accordion_arrow"></span>
                         
@@ -96,7 +84,7 @@
                             
                         </div>
                     </li>
-                    <li @click="toggleBtn ()">
+                    <li @click="toggleMenu($event)">
                         <span>학습목차 및 구성컨텐츠</span>
                         <span class="accordion_arrow"></span>
                         
@@ -104,7 +92,7 @@
                             
                         </div>
                     </li>
-                    <li @click="toggleBtn ()">
+                    <li @click="toggleMenu($event)">
                         <span>수료기준</span>
                         <span class="accordion_arrow"></span>
                         
@@ -149,8 +137,12 @@ export default {
   },
   /* vue function */
   methods: {
-    toggleBtn () {
-      this.toggleFlag = !this.toggleFlag
+    toggleMenu (event) {
+      if (event.target.classList.contains('open')) {
+        event.target.classList.remove('open')
+      } else {
+        event.target.classList.add('open')
+      }
     }
   }
 }

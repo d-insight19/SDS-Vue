@@ -2332,6 +2332,19 @@
           <router-link :to="{ name: 'Atorm_group_flip_complete' }">
             Atorm_group_flip_complete
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Atorm_group_flip_complete_02' }">
+            Atorm_group_flip_complete_02
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Atorm_group_flip_complete_03' }">
+            Atorm_group_flip_complete_03
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Atorm_group_flip_complete_04' }">
+            Atorm_group_flip_complete_04
+          </router-link>
+          <br/>
         </td>
         <td></td>
       </tr>
@@ -9828,8 +9841,8 @@
         <td>　</td>
         <td class="textL">01.login_01,01_splash_B2B</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'login_Splash_B2B' }">
+            login_Splash_B2B
           </router-link>
         </td>
         <td></td>
@@ -9845,8 +9858,8 @@
         <td>　</td>
         <td class="textL">01.login_01,01_splash_B2C</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'login_Splash_B2C' }">
+            login_Splash_B2C
           </router-link>
         </td>
         <td></td>

@@ -1734,8 +1734,8 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table{border-spacing: 0 10px}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table td:nth-child(1){width:116px;}
-#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table tbody td{padding-top:10px}
-#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table tbody tr:nth-child(1) td{padding-top:20px}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table td{font-weight:500;font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;padding-top:10px}
+// #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table tr:nth-child(1) td{padding-top:20px}
 #container.atorm.flip .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.atorm.flip .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 
