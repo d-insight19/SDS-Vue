@@ -102,7 +102,7 @@
 
         <div id="content" class="etc" style="padding:0;">          
 
-            <div class="mp4Script_optionBlock mb">
+            <div class="mp4Script_optionBlock position_absolute w-full">
                 <div class="mp4Script_options short d_flex align_items_center position_relative" >
                     <div class="position_relative">
                         <div @click="changeLang()">한국어 <span class="ico ico_dropdown16 gr"></span></div>

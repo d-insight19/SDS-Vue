@@ -117,6 +117,16 @@
                             </div>
                         </div>  
                     </div>
+ 
+                    <div class="ml20"><span>자동스크롤</span> 
+                        <label class="labelBtn">
+                            <input type="checkbox" name="" class="chk"> 
+                            <div class="chk_box">
+                                <span class="ball"></span>
+                                <ul class="txt"><li class="m1"></li><li class="m2"></li></ul>
+                            </div>
+                        </label>
+                    </div>
                     <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>   
                 </div>            
             </div>  

@@ -102,8 +102,8 @@
 
         <div id="content" class="etc" style="padding:0;">          
 
-            <div class="mp4Script_optionBlock mb">
-                <div class="mp4Script_options short d_flex align_items_center position_relative" >
+            <div class="mp4Script_optionBlock position_absolute w-full">
+                <div class="mp4Script_options tall d_flex align_items_center position_relative" >
                     <div class="position_relative">
                         <div @click="changeLang()">한국어 <span class="ico ico_dropdown16 gr"></span></div>
                         <div id="dropdown_wrap" v-show="langFlag">
@@ -116,6 +116,16 @@
                                 </ul>
                             </div>
                         </div>  
+                    </div>
+ 
+                    <div class="ml20"><span>자동스크롤</span> 
+                        <label class="labelBtn">
+                            <input type="checkbox" name="" class="chk"> 
+                            <div class="chk_box">
+                                <span class="ball"></span>
+                                <ul class="txt"><li class="m1"></li><li class="m2"></li></ul>
+                            </div>
+                        </label>
                     </div>
                     <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>   
                 </div>            

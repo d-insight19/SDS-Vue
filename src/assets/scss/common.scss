@@ -915,6 +915,7 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 
 // type box (공통요청) 기존틀과 다를 시 앞에 클래스 붙여서 유연하게 사용
 .type_box{clear:both;border-top:1px solid #999;border-bottom:1px solid #999;background:#f2f3f7;padding: 10px 39px 10px 152px;position: relative;margin-bottom:26px;margin-top:14px;}
+.type_box.type_1 { padding: 24px 34px; }  
 .type_box .info{position:absolute;top: 50%;transform: translateY(-50%);}
 .type_box .info.type1{left:30px;}
 .type_box .info.type2{left:38px;}
@@ -985,5 +986,50 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .kukudocs_area_wrap button.play {position:absolute; z-index:999; left:calc(50% - 52px); top: calc(50% - 20px); color:rgba(0,0,0,0.8); background-color: #fff; border-radius: 20px; height:40px; line-height: 40px; padding:0 15px; font-size: map-get($font_size, font_16); font-weight:500 }
 .kukudocs_area_wrap .fp_Icon_txt { font-family: 'Roboto';  font-size: 0.8125rem; margin-top:6px; color:#fff; font-weight:400}
 
-/*utilities classes*/
-.d-block { display:block !important; }
+/*******************
+utilities classes
+/*******************
+/*block*/
+.d_block,
+.d-block  { display:block !important; }
+
+/*position*/
+.position_relative { position:relative; left:0; top:0; }
+.position_absolute { position:absolute; }
+
+/*flex*/
+.d_flex { 
+  display: -webkit-flex; /* Safari */  
+  display: flex;  
+  
+  &.justify_content_center { 
+    -webkit-justify-content: center;
+    justify-content: center; 
+  }
+  &.justify_content_center { 
+    -webkit-justify-content: center;
+    justify-content: center; 
+  }
+  &.align_items_center {   
+    -webkit-align-items: center; /* Safari 7.0+ */
+    align-items: center; 
+  }
+  &.align_items_end {   
+    -webkit-align-items: flex-end; /* Safari 7.0+ */
+    align-items: flex-end;
+  }
+  & .ml_auto { margin-left:auto !important;}
+  & .mr_auto { margin-right:auto !important;}
+  & .mt_auto { margin-top:auto !important;}  
+}
+.font_size_xs { font-size:map-get($font-size, font_14); }
+.font_size_base { font-size:map-get($font-size, font_16); }
+
+.font_weight_base { font-weight: 400; }
+
+.font_size_base { font-size:map-get($font-size, font_16); }
+.table {
+  min-width:360px;
+  & th { padding:0 9px;}
+}
+.border { border:1px solid red !important; }
