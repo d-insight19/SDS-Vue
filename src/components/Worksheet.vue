@@ -2304,8 +2304,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_post-material</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_post_material' }">
+            Atorm_group_flip_post_material
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Atorm_group_flip_post_material_02' }">
+            Atorm_group_flip_post_material_02
           </router-link>
         </td>
         <td></td>

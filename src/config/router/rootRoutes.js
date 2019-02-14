@@ -630,6 +630,7 @@ import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
 import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
 import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
 // import AtormGroupFlipComplete02 from '~workplace/atorm/Atorm_group_flip_complete_02'
+import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
 // 1번 영역
 var rootRoutes = [
   {
@@ -657,6 +658,11 @@ var rootRoutes = [
   //   name: 'Atorm_group_flip_complete_02',
   //   component: AtormGroupFlipComplete02
   // },
+  {
+    path: '/Atorm_group_flip_post_material',
+    name: 'Atorm_group_flip_post_material',
+    component: AtormGroupFlipPostMaterial
+  },
   {
     path: '*',
     name: 'worksheet',
