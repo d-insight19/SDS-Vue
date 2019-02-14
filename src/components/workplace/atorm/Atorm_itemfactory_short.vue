@@ -41,7 +41,7 @@
                                 <p class="label-tit14">답안 <span class="tit_essential"></span></p>
                                 <p class="tit_desc font_13 mono_50">답안은 단어 또는 문장을 입력해주세요.</p> 
                                 
-                                <div class="infoChk">
+                                <div class="infoChk mt14">
                                     <slp-text-field placeholder="답안을 입력하세요"></slp-text-field>
                                     <span class="ico deletemode_20 mt12 ml12"></span>
                                 </div>

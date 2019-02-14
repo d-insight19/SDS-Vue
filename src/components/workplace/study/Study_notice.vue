@@ -161,43 +161,51 @@
         
           <div class="cell">
             <div class="inner">
-                <p class="mb5">총 <span class="fwb"><b>999</b></span>
-                    <span class="tar fr mono_80">전체 <span class="ico ico_dropdown16 gr"></span>
-                    </span>
+                <p class="mb5">총 <span class="fwb ml2"><b>999</b></span>
                 </p>
 
                 <ul class="ulList type4">                    
                     <li>
                         <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
-                        <dl class="pipe-group mono_65 mb12">
+                        <dl class="pipe-group mono_65">
+                            <dd><span class="ico view mr2"></span>2190</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <dl class="pipe-group mono_65">
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <dl class="pipe-group mono_65">
-                            <dd>리포트</dd>
+                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <dl class="pipe-group mono_65">
-                            <dd>평가</dd>
+                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <dl class="pipe-group mono_65">
-                            <dd>동영상</dd>
+                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
                     </li>
                     <li>
-                        <p class="title">질문이 있습니다. 여기에서 이렇게 해결하고 싶은데요. 답변 부탁드려요.</p>
+                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <dl class="pipe-group mono_65">
-                            <dd>리포트</dd>
+                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
-                    </li>
+                    </li>                  
                    
                 </ul>
 

@@ -161,7 +161,7 @@
         
           <div class="cell">
             <div class="inner">
-                <p class="mb5">총 <span class="fwb"><b>1,620</b></span>
+                <p class="mb5">총 <span class="fwb ml2"><b>1,620</b></span>
                     <span class="tar fr mono_80">전체 <span class="ico ico_dropdown16 gr"></span>
                     </span>
                 </p>

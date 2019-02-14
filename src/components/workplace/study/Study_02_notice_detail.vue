@@ -80,10 +80,10 @@
                         <span class="chip">FAQ</span>     
                         <p class="h-tit1">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <p class="ico-group">
-                            <span class="ico clip"></span>
+                            <span class="ico view"></span>
                             <span>2,190</span>
                             <span class="pipe"></span>
-                            <span class="ico view"></span>
+                            <span class="ico clip"></span>
                             <span>첨부파일</span>
                         </p>
                     </div>
