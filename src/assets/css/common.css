@@ -204,6 +204,10 @@
 
 .ico.photo_16{width:16px; height:16px; background: url("../img/ic_atorm_photo_edit_solid.png") no-repeat; background-size: cover;}
 
+/* 추가이미지 2019-2-12 */
+.ico.multiplechoice_32{width:32px; height:32px; background: url("../img/ic_multiplechoice.png") no-repeat; margin-top:-12px; background-size: cover;}
+.ico.shortanswer_32{width:32px; height:32px; background: url("../img/ic_shortanswer.png") no-repeat; margin-top:-12px; background-size: cover;}
+.ico.ox_32{width:32px; height:32px; background: url("../img/ic_ox.png") no-repeat; margin-top:-12px; background-size: cover;}
 
 .ico.like_solid_32.blue{width:32px;height:32px;background: url("../img/ic_thumb_line_b_32.png") no-repeat; background-size:32px;}
 .ico.book_28{width:28px;height:28px;background: url("../img/ic_book_line_28.png") no-repeat; background-size:32px;}
@@ -226,7 +230,8 @@ ic_attendace_line_24
 ic_badge_line_bk_24
 
 
-
+/* 추가이미지 2019-2-13 */
+.ico.info_24.blue {width:24px;height:24px;background: url("../img/ic_info_blue_24.png") no-repeat; }
 /* ico btn */
 .btn.only .ico{display: block;}
 .btn.only.trash .ico{width:20px; height:20px; background-position: -82px -64px;}
@@ -321,6 +326,7 @@ ic_badge_line_bk_24
 .mb0{margin-bottom: 0px !important;}/*1월 3일 추가*/
 .mb4{margin-bottom: 4px !important;}
 .mb5{margin-bottom: 5px !important;}
+.mb7{margin-bottom: 7px !important;}
 .mb8{margin-bottom: 8px !important;}
 .mb10{margin-bottom: 10px !important;}
 .mb12{margin-bottom: 12px !important;}
@@ -342,6 +348,7 @@ ic_badge_line_bk_24
 .mb58{margin-bottom: 58px !important;}/*12월12일 추가*/
 .mb70{margin-bottom: 70px !important;}/*12월19일 추가*/
 
+.ml2{margin-left: 2px !important;}
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
 .ml12{margin-left: 12px !important;}
@@ -357,6 +364,7 @@ ic_badge_line_bk_24
 .mr15{margin-right: 15px !important;}
 .mr20{margin-right: 20px !important;}
 .mr30{margin-right: 30px !important;}
+.mr40{margin-right: 40px !important;}
 
 .ml-18 {margin-left:-18px !important;}
 .mr-18 {margin-right:-18px !important;}
@@ -369,6 +377,7 @@ ic_badge_line_bk_24
 .pdt38{padding-top:38px !important;}
 
 .pdb0{padding-bottom:0 !important;}
+.pdb5{padding-bottom:5px !important;}
 .pb10{padding-bottom:10px !important;}
 .pdb12{padding-bottom: 12px !important;}
 .pdb15{padding-bottom: 15px !important;}
