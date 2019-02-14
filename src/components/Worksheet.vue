@@ -2308,8 +2308,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_post-material</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_post_material' }">
+            Atorm_group_flip_post_material
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Atorm_group_flip_post_material_02' }">
+            Atorm_group_flip_post_material_02
           </router-link>
         </td>
         <td></td>
@@ -9872,11 +9876,11 @@
         <td>　</td>
         <td class="textL">01.login_01,01_splash_B2B</td>
         <td>
-          <router-link :to="{ name: 'login_Splash_B2B' }">
+          <router-link :to="{ name: '' }">
             login_Splash_B2B
           </router-link>
         </td>
-        <td></td>
+        <td>수정중</td>
       </tr>
       <tr>
       <td align="center">538</td>
@@ -9889,11 +9893,11 @@
         <td>　</td>
         <td class="textL">01.login_01,01_splash_B2C</td>
         <td>
-          <router-link :to="{ name: 'login_Splash_B2C' }">
+          <router-link :to="{ name: '' }">
             login_Splash_B2C
           </router-link>
         </td>
-        <td></td>
+        <td>수정중</td>
       </tr>
       <tr>
       <td align="center">539</td>
@@ -10942,6 +10946,23 @@
         </td>
         <td></td>
       </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>아이콘</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_color' }">
+            components_color
+          </router-link>
+        </td>
+        <td></td>
+      </tr>      
       <tr>
       <td align="center">0</td>
         <td>공통컴포넌트</td>

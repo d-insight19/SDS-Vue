@@ -1,5 +1,6 @@
 // fdp 기본 route 정보
 import Worksheet from '@/components/Worksheet'
+import ComponentsColor from '~workplace/common_page/components_color'
 import ComponentsIcons from '~workplace/common_page/components_icons'
 import ComponentsTables from '~workplace/common_page/components_tables'
 import ComponentsButtons from '~workplace/common_page/components_buttons'
@@ -533,6 +534,7 @@ import CustomerCenterInquirywrite02 from '~workplace/customercenter/CustomerCent
 import CustomerCenterInquirywrite02error from '~workplace/customercenter/CustomerCenter_Inquiry_write02_error'
 
 import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
+import EdupersonLoginOTP from '~workplace/eduperson/Eduperson_loginOTP'
 import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
@@ -658,6 +660,7 @@ import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
 import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
 import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
 // import AtormGroupFlipComplete02 from '~workplace/atorm/Atorm_group_flip_complete_02'
+import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
 // 1번 영역
 var rootRoutes = [
   // {
@@ -686,6 +689,11 @@ var rootRoutes = [
   //   component: AtormGroupFlipComplete02
   // },
   {
+    path: '/Atorm_group_flip_post_material',
+    name: 'Atorm_group_flip_post_material',
+    component: AtormGroupFlipPostMaterial
+  },
+  {
     path: '*',
     name: 'worksheet',
     component: Worksheet
@@ -694,6 +702,11 @@ var rootRoutes = [
     path: '/components_textfield_slp',
     name: 'components_textfield_slp',
     component: ComponentsTextfieldSlp
+  },
+  {
+    path: '/components_color',
+    name: 'components_color',
+    component: ComponentsColor
   },
   {
     path: '/components_icons',
@@ -3608,6 +3621,11 @@ var rootRoutes = [
     path: '/Eduperson_login',
     name: 'Eduperson_login',
     component: EdupersonLogin
+  },
+  {
+    path: '/Eduperson_loginOTP',
+    name: 'Eduperson_loginOTP',
+    component: EdupersonLoginOTP
   },
   {
     path: '/Eduperson_drawer',
