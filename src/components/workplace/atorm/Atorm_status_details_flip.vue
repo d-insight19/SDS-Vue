@@ -154,8 +154,8 @@
                                                 <td class="pdb5 mono_100 tar">제출</td>
                                             </tr>
                                             <tr>
-                                                <td class="sub_subject pdb5">사후</td>
-                                                <td class="pdb5 mono_100 tar">미제출</td>
+                                                <td class="sub_subject pdb5 pdr4">사후</td>
+                                                <td class="pdb5 mono_100 tar pdl4">미제출</td>
                                             </tr>                                           
                                         </table>
                                     </div>
@@ -238,8 +238,92 @@
                                                 <td class="pdb5 mono_100 tar">제출</td>
                                             </tr>
                                             <tr>
+                                                <td class="sub_subject pdb5 pdr4">사후</td>
+                                                <td class="pdb5 mono_100 tar pdl4">미제출</td>
+                                            </tr>                                          
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+
+                    <div class="status_table_wrap">
+                        <table class="status_table">
+                        <thead>
+                            <tr>
+                                <td class="color_clr3 fwb600" style="width:50%;">정해민</td>
+                                <td class="tar fwb">학습한 차수 <span class="num">5</span></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="detail_list_wrap border_right">
+                                        <table class="detail_list">
+                                            <tr>
+                                                <td class="pdb5">출석률</td>
+                                                <td class="pdb5 mono_100 tar">90%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">총점</td>
+                                                <td class="pdb5 mono_100 tar">92점</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="pdb5">평가결과</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub_subject pdb5">사전</td>
+                                                <td class="pdb5 mono_100 tar">90점</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub_subject pdb5">집합</td>
+                                                <td class="pdb5 mono_100 tar">85점</td>
+                                            </tr>
+                                            <tr>
                                                 <td class="sub_subject pdb5">사후</td>
-                                                <td class="pdb5 mono_100 tar">미제출</td>
+                                                <td class="pdb5 mono_100 tar">90점</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="pdb5">아이템학습</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub_subject pdb5">사전</td>
+                                                <td class="pdb5 mono_100 tar">95%</td>
+                                            </tr>                                            
+                                            <tr>
+                                                <td class="sub_subject pdb5">사후</td>
+                                                <td class="pdb5 mono_100 tar">85%</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td style="vertical-align:top">
+                                    <div class="detail_list_wrap">
+                                        <table class="detail_list">
+                                            <tr>
+                                                <td class="pdb5">설문</td>
+                                                <td class="pdb5 mono_100 tar">응답</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">평점</td>
+                                                <td class="pdb5 mono_100 tar">4.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="pdb5">레포트</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub_subject pdb5">사전</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub_subject pdb5">집합</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub_subject pdb5 pdr4">사후</td>
+                                                <td class="pdb5 mono_100 tar pdl4">미제출</td>
                                             </tr>                                           
                                         </table>
                                     </div>
@@ -322,92 +406,8 @@
                                                 <td class="pdb5 mono_100 tar">제출</td>
                                             </tr>
                                             <tr>
-                                                <td class="sub_subject pdb5">사후</td>
-                                                <td class="pdb5 mono_100 tar">미제출</td>
-                                            </tr>                                           
-                                        </table>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
-
-                    <div class="status_table_wrap">
-                        <table class="status_table">
-                        <thead>
-                            <tr>
-                                <td class="color_clr3 fwb600" style="width:50%;">정해민</td>
-                                <td class="tar fwb">학습한 차수 <span class="num">5</span></td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="detail_list_wrap border_right">
-                                        <table class="detail_list">
-                                            <tr>
-                                                <td class="pdb5">출석률</td>
-                                                <td class="pdb5 mono_100 tar">90%</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pdb5">총점</td>
-                                                <td class="pdb5 mono_100 tar">92점</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="pdb5">평가결과</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="sub_subject pdb5">사전</td>
-                                                <td class="pdb5 mono_100 tar">90점</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="sub_subject pdb5">집합</td>
-                                                <td class="pdb5 mono_100 tar">85점</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="sub_subject pdb5">사후</td>
-                                                <td class="pdb5 mono_100 tar">90점</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="pdb5">아이템학습</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="sub_subject pdb5">사전</td>
-                                                <td class="pdb5 mono_100 tar">95%</td>
-                                            </tr>                                            
-                                            <tr>
-                                                <td class="sub_subject pdb5">사후</td>
-                                                <td class="pdb5 mono_100 tar">85%</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </td>
-                                <td style="vertical-align:top">
-                                    <div class="detail_list_wrap">
-                                        <table class="detail_list">
-                                            <tr>
-                                                <td class="pdb5">설문</td>
-                                                <td class="pdb5 mono_100 tar">응답</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pdb5">평점</td>
-                                                <td class="pdb5 mono_100 tar">4.0</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="pdb5">레포트</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="sub_subject pdb5">사전</td>
-                                                <td class="pdb5 mono_100 tar">제출</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="sub_subject pdb5">집합</td>
-                                                <td class="pdb5 mono_100 tar">제출</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="sub_subject pdb5">사후</td>
-                                                <td class="pdb5 mono_100 tar">미제출</td>
+                                                <td class="sub_subject pdb5 pdr4">사후</td>
+                                                <td class="pdb5 mono_100 tar pdl4">미제출</td>
                                             </tr>                                           
                                         </table>
                                     </div>

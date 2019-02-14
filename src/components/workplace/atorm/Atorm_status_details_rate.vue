@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
         <!-- container -->
-        <div id="container" class="mediaquery atorm_status regiclass">
+        <div id="container" class="mediaquery atorm_status">
             
            <!-- header -->
             <div id="header" class="fixed">

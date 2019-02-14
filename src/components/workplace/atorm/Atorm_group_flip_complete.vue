@@ -49,7 +49,7 @@
                                                             <!--<img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">-->
                                                         </div>
                                                         <!--<div class="circle">
-                                                            <span class="ico photo_16"></span>
+                                                            <span class="ico atorm_photo_edit_solid_16"></span>
                                                         </div>-->
                                                     </div>
                                                 </td>
