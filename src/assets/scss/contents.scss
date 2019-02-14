@@ -115,7 +115,7 @@
 .ulList.type3 li dl {background: #f2f3f7;margin: 0 -24px; padding: 0 24px 0 34px;}
 .ulList.type3 li dl dt a{ font-size:map-get($font-size, font_16); line-height: 24px; letter-spacing: -0.48px;}
 
-.ulList.type4{border-top:1px solid #999999;}
+.ulList.type4{border-top:1px solid #bfbfbf;}
 .ulList.type4 li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:1px solid #eaeaea;}
 .ulList.type4 li > .labelChk{vertical-align: top;}
 .ulList.type4 li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
@@ -587,8 +587,10 @@
 #container.atorm .tit2{font-size:map-get($font-size, font_20);line-height:28px;letter-spacing: -0.6px;font-weight: 600;margin-bottom:13px;}
 #container.atorm .tit2 .num{font-family: 'Roboto';font-weight: 500;margin-left:5px;}
 #container.atorm .showall{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;font-weight: 400;}
-#container.atorm .manual_btn{float:right;width:82px;height:32px;color:#fff;font-size:map-get($font-size, font_13);font-weight:500;letter-spacing: -0.39px;border-radius: 16px;margin-top:7px;line-height: 32px;text-align: center}
-#container.atorm .manual_btn .ico.download-wh{margin-left:-8px;}
+#container.atorm .manual_btn {float:right;}
+                 .manual_btn { width:82px;height:32px;color:#fff;font-size:map-get($font-size, font_13);font-weight:500;letter-spacing: -0.39px;border-radius: 16px;margin-top:7px;line-height: 32px;text-align: center}
+#container.atorm .manual_btn .ico.download-wh,
+                 .manual_btn .ico.download-wh {margin-left:-8px;}
 #container.atorm .type_box{padding:10px 32px 10px 142px;}
 #container.atorm .type_box dt{position: relative;}
 #container.atorm .thumList .info li{color:rgba(0,0,0,0.8)}
@@ -751,13 +753,20 @@
 .detail_date.tab-txt .select_date{ font-size:map-get($font-size , font_15);line-height:26px;letter-spacing: -0.38px; color: rgba(0, 0, 0, 0.80);}
 .edu_tab3 .detail_date:after{clear:both; display:block; content:'';}
 .edu_tab3 .line01{margin-top:13px;}
-.edu_tab4 .detail_table{margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
-.edu_tab4 .detail_table tr td:nth-child(1){padding-left:10px;text-align: left}
-.edu_tab4 .detail_table tr td:nth-last-child(1){padding-right:10px;}
-.edu_tab4 .detail_table thead{background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
-.edu_tab4 .detail_table tbody tr{height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
-.edu_tab4 .detail_table tbody tr:nth-last-child(1){border:none;font-weight: 500;}
-.edu_tab4 .detail_table tbody tr:nth-last-child(1) td:nth-child(1){font-weight: 600}
+.edu_tab4 .detail_table,
+          .detail_table {margin-top:20px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:map-get($font-size, font_13);letter-spacing: -0.39px;text-align: center}
+.edu_tab4 .detail_table tr td:nth-child(1),
+          .detail_table tr td:nth-child(1) {padding-left:10px;text-align: left}
+.edu_tab4 .detail_table tr td:nth-last-child(1),
+          .detail_table tr td:nth-last-child(1){padding-right:10px;}
+.edu_tab4 .detail_table thead,
+          .detail_table thead {background:#f5f5f5;height:37px;line-height: 37px;font-weight: 500;}
+.edu_tab4 .detail_table tbody tr,
+          .detail_table tbody tr {height:35px;line-height: 35px;border-bottom:1px solid #eaeaea}
+.edu_tab4 .detail_table tbody tr:nth-last-child(1),
+          .detail_table tbody tr:nth-last-child(1) {border:none;font-weight: 500;}
+.edu_tab4 .detail_table tbody tr:nth-last-child(1) td:nth-child(1) {font-weight: 600}
+
 
 .bar1{background-color:map-get($contents_colors, type_1 ) !important;}
 .bar2{background-color:map-get($contents_colors, type_2 ) !important;}
@@ -1670,14 +1679,13 @@ label.rdo .label{position: relative;}
 #container.studystatus .progBox_wrap span.res-num{font-weight:500;font-family:'roboto';font-size:map-get($font-size, font_14);float:right;margin-top:5px;}
 
 //study_studyquestion
-#container.studyquestion .pipe-group {margin-top:5px}
 #container.studyquestion .pipe-group.type2 dd:after{margin:0 6px;}
 #container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 2px 0 6px;background: #d9d9d9;}
 #container.studyquestion .pipe-group dd:nth-last-child(1):after{display:none;}
 #container.studyquestion .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
 #container.studyquestion .ulList.type4 li{height:auto;}
 #container.studyquestion .ulList.type4 li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
-#container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px; font-weight: 500}
+#container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
 
 //study_lo_docs
 #container.study_lo_docs #header.tab .header_inner.line1{z-index:999}
@@ -1698,11 +1706,26 @@ label.rdo .label{position: relative;}
 #container.courseware.study_lo_viewer .download_detail.wh .mono_65 {color:#fff !important}
 */
 
-//study_lo_mp4_script
-#container.courseware.Study_LO_mp4_script .header_inner.line2 {border-bottom:#d9d9d9 1px solid; padding-left: 18px ; height:64px; line-height: 64px}
-#container.mediaquery.Study_LO_mp4_script #header .btn.close {right:18px; left:auto}
-#container.mediaquery.Study_LO_mp4_script #header.tab.video {padding-bottom: 64px}
-#container.mediaquery.Study_LO_mp4_script .label-tit18 {margin: 23px 0 18px}
+//study_lo_mp4_script 학습창영역 스크립트타입
+.mp4Script_optionBlock { 
+    z-index: 100; left:0; right:0; 
+    &.mb { margin-bottom:22px; }
+}
+.mp4Script_options { 
+    padding-bottom:22px; border-bottom:1px solid #d9d9d9; background-color:#ffffff; 
+    &.tall { padding-top:55px; padding-bottom:20px; }
+    &.short { padding-top:22px; padding-bottom:23px; } 
+    & .btn_close { top:18px; right:0; }
+    & .category { top: 43px !important; width:100px !important; }
+}
+.btn_close { width:28px; height:28px; background: url("../img/ic_close_line_24.png") no-repeat 50% 50%; background-size:contain; }
+.w_full { width:100%; }
+
+//05.Study_02.01.studystatus
+.singleListNew { }
+.singleListNew_item {  border-bottom: 1px solid #e3e3e3; font-size: 1rem; }
+.singleListNew_link { display:inline-block; padding: 15px 30px 15px 0; line-height: 27px; letter-spacing: -0.48px; }
+.flex_1 { flex-grow:1 }
 
 #container.voice .record_box{background:#f2f3f7; padding:24px 34px;}
 #container.voice .font_15{font-size: map-get($font-size , font_15);letter-spacing: -0.045em;color:rgba(0,0,0,0.8)}
@@ -1726,6 +1749,9 @@ label.rdo .label{position: relative;}
 #container.voice .play_wrap .font_18{font-family:'roboto'; font-size:map-get($font-size, font_18);letter-spacing: -0.054em; }
 #container.voice .play_wrap .font_14{ font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.5) }
 
+
+
+//record
 //Study_04_SO_voicerecord_player
 .clr_wh{color:white !important;}
 #container.voice .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 8px;background: #d9d9d9;}

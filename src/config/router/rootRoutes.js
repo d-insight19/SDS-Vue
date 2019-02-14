@@ -1,6 +1,7 @@
 // fdp 기본 route 정보
 import Worksheet from '@/components/Worksheet'
 import ComponentsIcons from '~workplace/common_page/components_icons'
+import ComponentsTables from '~workplace/common_page/components_tables'
 import ComponentsButtons from '~workplace/common_page/components_buttons'
 import ComponentsTextfield from '~workplace/common_page/components_textfield'
 import ComponentsCheckbox from '~workplace/common_page/components_checkbox'
@@ -133,12 +134,14 @@ import StudyHomeCoursewareModule02 from '~workplace/study/Study_home_courseware_
 import StudyHomeCoursewareLoso from '~workplace/study/Study_home_courseware_loso'
 import StudyHomeMoocOpen from '~workplace/study/Study_home_mooc_open'
 import StudyHomeMoocClose from '~workplace/study/Study_home_mooc_close'
+import StudyHomeMixed from '~workplace/study/Study_home_mixed'
 import StudyHomeSet from '~workplace/study/Study_home_set'
 import StudyHomeSet02 from '~workplace/study/Study_home_set02'
 import StudyHomeSetBook from '~workplace/study/Study_home_set_book'
 import StudyHomeSetBook02 from '~workplace/study/Study_home_set_book02'
 import StudyHomeSetPhonelanguage from '~workplace/study/Study_home_set_phonelanguage'
 import StudyHomeSetLanguageBPO from '~workplace/study/Study_home_set_langaugeBPO'
+import StudyHomeSetQuarterSurvey from '~workplace/study/Study_home_set_quarter_survey'
 import StudyHomeSetQuarterSurveyDo from '~workplace/study/Study_home_set_quarter_survey_do'
 import StudyHomeSetQuarterEmphasis from '~workplace/study/Study_home_set_quarter_emphasis'
 import StudyHomeSetQuarterSurveyAbility from '~workplace/study/Study_home_set_quarter_survey_ability'
@@ -161,6 +164,7 @@ import Study02studyquestionedit from '~workplace/study/Study_02_studyquestion_ed
 import Study02reflectionnotedetail from '~workplace/study/Study_02_reflectionnote_detail'
 import Study02reflectionnoteedit from '~workplace/study/Study_02_reflectionnote_edit'
 import Study02reflectionnoteedit02 from '~workplace/study/Study_02_reflectionnote_edit_02'
+import Study02studystatus from '~workplace/study/Study_02_studystatus'
 import Study02studystatusassignment from '~workplace/study/Study_02_studystatus_assignment'
 import Study02studystatusassignmentresult from '~workplace/study/Study_02_studystatus_assignment_result'
 import Study02studystatusassignmentapply from '~workplace/study/Study_02_studystatus_assignment_apply'
@@ -256,6 +260,9 @@ import StudyLOaudio from '~workplace/study/Study_LO_audio'
 import StudyLOhtml5 from '~workplace/study/Study_LO_html5'
 import StudyLOhtml5fs from '~workplace/study/Study_LO_html5_fs'
 import StudyLOmp4fs from '~workplace/study/Study_LO_mp4_fs'
+import StudyLOmp4script1scroll from '~workplace/study/Study_LO_mp4_script1scroll'
+import StudyLOmp4script2scroll from '~workplace/study/Study_LO_mp4_script2scroll'
+import StudyLOmp4script1 from '~workplace/study/Study_LO_mp4_script1'
 import StudyLOmp4script2 from '~workplace/study/Study_LO_mp4_script2'
 import Studyfaq from '~workplace/study/Study_faq'
 import Studynotice from '~workplace/study/Study_notice'
@@ -687,6 +694,11 @@ var rootRoutes = [
     path: '/components_icons',
     name: 'components_icons',
     component: ComponentsIcons
+  },
+  {
+    path: '/components_tables',
+    name: 'components_tables',
+    component: ComponentsTables
   },
   {
     path: '/components_buttons',
@@ -1389,6 +1401,11 @@ var rootRoutes = [
     component: StudyHomeMoocClose
   },
   {
+    path: '/Study_home_mixed',
+    name: 'Study_home_mixed',
+    component: StudyHomeMixed
+  },  
+  {
     path: '/Study_home_set',
     name: 'Study_home_set',
     component: StudyHomeSet
@@ -1417,6 +1434,11 @@ var rootRoutes = [
     path: '/Study_home_set_langaugeBPO',
     name: 'Study_home_set_langaugeBPO',
     component: StudyHomeSetLanguageBPO
+  },
+  {
+    path: '/Study_home_set_quarter_survey',
+    name: 'Study_home_set_quarter_survey',
+    component: StudyHomeSetQuarterSurvey
   },
   {
     path: '/Study_home_set_quarter_survey_do',
@@ -1527,6 +1549,11 @@ var rootRoutes = [
     path: '/Study_02_notice_detail',
     name: 'Study_02_notice_detail',
     component: Study02noticedetail
+  },
+  {
+    path: '/Study_02_studystatus',
+    name: 'Study_02_studystatus',
+    component: Study02studystatus
   },
   {
     path: '/Study_02_studystatus_assignment',
@@ -2002,6 +2029,21 @@ var rootRoutes = [
     path: '/Study_LO_mp4_fs',
     name: 'Study_LO_mp4_fs',
     component: StudyLOmp4fs
+  },
+  {
+    path: '/Study_LO_mp4_script1scroll',
+    name: 'Study_LO_mp4_script1scroll',
+    component: StudyLOmp4script1scroll
+  },
+  {
+    path: '/Study_LO_mp4_script2scroll',
+    name: 'Study_LO_mp4_script2scroll',
+    component: StudyLOmp4script2scroll
+  }, 
+  {
+    path: '/Study_LO_mp4_script1',
+    name: 'Study_LO_mp4_script1',
+    component: StudyLOmp4script1
   },
   {
     path: '/Study_LO_mp4_script2',

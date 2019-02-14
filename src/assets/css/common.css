@@ -216,6 +216,7 @@
 .ico.mark_line_32{width:32px;height:32px;background: url("../img/ic_markv_line_32.png") no-repeat; }
 .ico.mark_line_32.non{width:32px;height:32px;background: url("../img/ic_markx_line_32.png") no-repeat; }
 .ico.note.blue{width:16px;height:16px;background: url("../img/ic_mynote_line_blue_16.png") no-repeat; }
+.ico.ic_book_line_28{width:28px;height:28px;background: url("../img/ic_book_line_28.png") no-repeat; background-position:50% 50%; background-size:contain;}
 
 /*ico study*/
 .ico.ic_set_line_28 {width:28px;height:28px;background: url("../img/ic_set_line_28.png") no-repeat; background-size:contain; } 
@@ -223,8 +224,10 @@
 .ico.pause_40.blue{width:40px;height:40px;background: url("../img/ic_record_pause_blue_40.png") no-repeat; }
 .ico.set_line_28 {width:28px;height:28px;background: url("../img/ic_set_line_28.png") no-repeat; }
 .ico.set_line_wh_28 {width:28px;height:28px;background: url("../img/ic_set_line_wh_28.png") no-repeat; }
+.ico.ic_pen_line_24 { width:24px;height:24px;background: url("../img/ic_pen_line_24.png") no-repeat; background-position:50% 50%; background-size:contain; } 
 
-
+ic_attendace_line_24
+ic_badge_line_bk_24
 
 
 /* 추가이미지 2019-2-13 */
@@ -349,6 +352,7 @@
 .ml5{margin-left: 5px !important;}
 .ml10{margin-left: 10px !important;}
 .ml12{margin-left: 12px !important;}
+.ml20{margin-left: 20px !important;}
 .ml38{margin-left: 38px !important;}
 
 .mr2{margin-right: 2px !important;}

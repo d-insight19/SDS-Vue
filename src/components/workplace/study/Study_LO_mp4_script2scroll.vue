@@ -9,7 +9,7 @@
         <div id="header" class="tab video pdb0" style="background:#fff">          
             <div class="header_inner line1 ">
                 <button type="button" class="btn only prev" style="display:none"><span class="ico2 prev-wh"></span></button>
-                <!--  <p class="header_text multiline line2 font_15"></p> -->
+                <!--  <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p> -->
             </div>
 <!--
             <div id="dropdown_wrap" v-show="langFlag">
@@ -102,7 +102,7 @@
 
         <div id="content" class="etc" style="padding:0;">          
 
-            <div class="mp4Script_optionBlock mb">
+            <div class="mp4Script_optionBlock position_absolute w-full">
                 <div class="mp4Script_options short d_flex align_items_center position_relative" >
                     <div class="position_relative">
                         <div @click="changeLang()">한국어 <span class="ico ico_dropdown16 gr"></span></div>

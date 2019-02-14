@@ -4594,15 +4594,15 @@
       <td align="center">239</td>
         <td>학습홈 영역</td>
         <td>　</td>
-        <td>학습홈 (복합형)</td>
+        <td>학습홈 (복합형)(2/13)</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td class="textL">05.Study_01.03.home_mixed</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_mixed' }">
+            Study_home_mixed
           </router-link>
         </td>
         <td></td>
@@ -4611,7 +4611,7 @@
       <td align="center">240</td>
         <td>학습홈 영역</td>
         <td>　</td>
-        <td>학습홈 (집합)</td>
+        <td>학습홈 (집합)(2/12)</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
@@ -4722,15 +4722,15 @@
       <td align="center">246</td>
         <td>학습홈 영역</td>
         <td>　</td>
-        <td>학습홈 (분기설문형)</td>
+        <td>학습홈 (분기설문형)(2/13)</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td class="textL">05.Study_01.10.home_set_quarter_survey</td>
         <td>
-          <router-link :to="{ name: '' }">
-           
+          <router-link :to="{ name: 'Study_home_set_quarter_survey' }">
+           Study_home_set_quarter_survey
           </router-link>
         </td>
         <td></td>
@@ -4831,8 +4831,8 @@
         <td>각 과정별 메뉴 사용여부 설정</td>
         <td class="textL">05.Study_02.01.studystatus</td>
         <td>
-          <router-link :to="{ name: '' }">
-             
+          <router-link :to="{ name: 'Study_02_studystatus' }">
+             Study_02_studystatus
           </router-link>
         </td>
         <td></td>
@@ -5949,15 +5949,18 @@
         <td>학습창 영역</td>
         <td>　</td>
         <td>　</td>
-        <td>스크립트 타입 1</td>
+        <td>스크립트 타입 1(2/13)</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">05.Study_03.04.01.LO_mp4_script1</td>
+        <td class="textL">05.Study_03.04.01.LO_mp4_script1, <br/>Study_LO_mp4_script2</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
+          <router-link :to="{ name: 'Study_LO_mp4_script1' }">
+            Study_LO_mp4_script1
+          </router-link> <br/>
+          <router-link :to="{ name: 'Study_LO_mp4_script2' }">
+            Study_LO_mp4_script2
+          </router-link>     
         </td>
         <td></td>
       </tr>
@@ -5966,15 +5969,19 @@
         <td>학습창 영역</td>
         <td>　</td>
         <td>　</td>
-        <td>스크립트 타입 2</td>
+        <td>스크립트 타입 2(2/13)</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">05.Study_03.04.02.LO_mp4_script2</td>
+        <td class="textL">Study_LO_mp4_script1scroll, <br/>Study_LO_mp4_script2scroll</td>
         <td>
-          <router-link :to="{ name: 'Study_LO_mp4_script2' }">
-            Study_LO_mp4_script2
-          </router-link>
+
+          <router-link :to="{ name: 'Study_LO_mp4_script1scroll' }">
+            Study_LO_mp4_script1scroll
+          </router-link>   <br/>            
+          <router-link :to="{ name: 'Study_LO_mp4_script2scroll' }">
+            Study_LO_mp4_script2scroll
+          </router-link>          
         </td>
         <td></td>
       </tr>
@@ -10947,6 +10954,23 @@
         <td></td>
       </tr>      
       <tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>테이블</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_tables' }">
+            components_tables
+          </router-link>
+        </td>
+        <td></td>
+      </tr>         
       <td align="center">0</td>
         <td>공통컴포넌트</td>
         <td>버튼</td>

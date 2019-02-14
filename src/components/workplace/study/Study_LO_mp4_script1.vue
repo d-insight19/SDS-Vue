@@ -9,7 +9,7 @@
         <div id="header" class="tab video pdb0" style="background:#fff">          
             <div class="header_inner line1 ">
                 <button type="button" class="btn only prev" style="display:none"><span class="ico2 prev-wh"></span></button>
-                <!--  <p class="header_text multiline line2 font_15"></p> -->
+                <!--  <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p> -->
             </div>
 <!--
             <div id="dropdown_wrap" v-show="langFlag">
@@ -116,6 +116,16 @@
                                 </ul>
                             </div>
                         </div>  
+                    </div>
+ 
+                    <div class="ml20"><span>자동스크롤</span> 
+                        <label class="labelBtn">
+                            <input type="checkbox" name="" class="chk"> 
+                            <div class="chk_box">
+                                <span class="ball"></span>
+                                <ul class="txt"><li class="m1"></li><li class="m2"></li></ul>
+                            </div>
+                        </label>
                     </div>
                     <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>   
                 </div>            
