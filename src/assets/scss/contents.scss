@@ -2442,13 +2442,6 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 //
 .CLIPingType .alert{background-color: map-get($static_colors , alert);}
 .CLIPingType .speaker{margin-left: -25px; width: 25px; display: inline-block;}
-.CLIPingType .rating {border: none; display:inline;}
-.CLIPingType .rating > input { display: none; } 
-.CLIPingType .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
-.CLIPingType .rating > input:checked + label:hover, 
-.CLIPingType .rating > input:checked ~ label:hover,
-.CLIPingType .rating > label:hover ~ input:checked ~ label, 
-.CLIPingType .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
 // search
 .search .searchList > li{ display:table;width:100%;position: relative; border-bottom:1px solid #e3e3e3;}
 .search .searchList > li .in{width: calc(100% - 34px);padding:15px 0; display: table-cell; position: relative; height:100%;vertical-align: middle;font-size: map-get($font_size, font_16);}
@@ -2663,14 +2656,6 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 // 멀티리스트
 .regiclass .multiList.type5 > li .in{width: 100%; padding: 15px 0px;}
 .regiclass .multiList.type5 > li{  border-bottom:1px solid #e3e3e3;}
-// 별점
-.regiclass .rating {border: none; display:inline;}
-.regiclass .rating > input { display: none; } 
-.regiclass .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
-.regiclass .rating > input:checked + label:hover, 
-.regiclass .rating > input:checked ~ label:hover,
-.regiclass .rating > label:hover ~ input:checked ~ label, 
-.regiclass .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
 
 // ATORM
 .atorm .labelChk .label {width:100%;}

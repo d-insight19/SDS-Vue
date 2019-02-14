@@ -67,8 +67,8 @@
                         <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
 
                         <ul class="info">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                            <li class="mono_65"><span class="info_value">이*강</span></li>
+                            <li class="mono_65"><span class="info_value">2018.09.14  21:34</span></li>
                         </ul>
                     </li>
                     <li class="reply-list">
@@ -78,8 +78,8 @@
                         <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
                         
                         <ul class="info">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                            <li class="mono_65"><span class="info_value">이*강</span></li>
+                            <li class="mono_65"><span class="info_value">2018.09.14  21:34</span></li>
                         </ul>
                     </li>
                 </ul>
