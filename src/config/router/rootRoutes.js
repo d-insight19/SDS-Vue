@@ -1,5 +1,6 @@
 // fdp 기본 route 정보
 import Worksheet from '@/components/Worksheet'
+import ComponentsColor from '~workplace/common_page/components_color'
 import ComponentsIcons from '~workplace/common_page/components_icons'
 import ComponentsButtons from '~workplace/common_page/components_buttons'
 import ComponentsTextfield from '~workplace/common_page/components_textfield'
@@ -526,6 +527,7 @@ import CustomerCenterInquirywrite02 from '~workplace/customercenter/CustomerCent
 import CustomerCenterInquirywrite02error from '~workplace/customercenter/CustomerCenter_Inquiry_write02_error'
 
 import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
+import EdupersonLoginOTP from '~workplace/eduperson/Eduperson_loginOTP'
 import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
@@ -687,6 +689,11 @@ var rootRoutes = [
     path: '/components_textfield_slp',
     name: 'components_textfield_slp',
     component: ComponentsTextfieldSlp
+  },
+  {
+    path: '/components_color',
+    name: 'components_color',
+    component: ComponentsColor
   },
   {
     path: '/components_icons',
@@ -3536,6 +3543,11 @@ var rootRoutes = [
     path: '/Eduperson_login',
     name: 'Eduperson_login',
     component: EdupersonLogin
+  },
+  {
+    path: '/Eduperson_loginOTP',
+    name: 'Eduperson_loginOTP',
+    component: EdupersonLoginOTP
   },
   {
     path: '/Eduperson_drawer',

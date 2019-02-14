@@ -1773,10 +1773,13 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .inp-wrap{position: relative;}
 #container.atorm.flip .inp-wrap .score{position: absolute;right: 16px;top: 0px;display: block;letter-spacing: -0.28px;
     font-size:map-get($font-size, font_15);letter-spacing: -0.42px;line-height: 44px;}
-    #container.atorm.flip .criteria-wrap{position:relative;}
+#container.atorm.flip .criteria-wrap{position:relative;}
 #container.atorm.flip .criteria-wrap:after{position:absolute;top:0;bottom:0;right:0;left:0;content:'';z-index:1;opacity:0.25 !important;}
 #container.atorm.flip .criteria-wrap .total{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;}
 #container.atorm.flip .criteria-wrap .total .total-num{font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px;}
+
+//color.vue
+.danger{color:map-get($static_colors, danger);}
 
 
 
