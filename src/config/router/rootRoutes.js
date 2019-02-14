@@ -635,7 +635,8 @@ import AtormELearningEvaluation2 from '~workplace/atorm/Atorm_e-learning_evaluat
 import AtormELearningMultiplepopup from '~workplace/atorm/Atorm_e-learning_multiplepopup'
 import AtormELearningOxpopup from '~workplace/atorm/Atorm_e-learning_oxpopup'
 import AtormELearningShortanswerpopup from '~workplace/atorm/Atorm_e-learning_shortanswerpopup'
-import AtormELearningCriteria from '~workplace/atorm/Atorm_e-learning_criteria'
+import AtormELearningCriteria1 from '~workplace/atorm/Atorm_e-learning_criteria_1'
+import AtormELearningCriteria2 from '~workplace/atorm/Atorm_e-learning_criteria_2'
 import AtormELearningCriteriaSurvey from '~workplace/atorm/Atorm_e-learning_criteria_survey'
 import AtormELearningComplete1 from '~workplace/atorm/Atorm_e-learning_complete_1'
 import AtormELearningComplete2 from '~workplace/atorm/Atorm_e-learning_complete_2'
@@ -3574,9 +3575,14 @@ var rootRoutes = [
     component: AtormELearningShortanswerpopup
   },
   {
-    path: '/Atorm_e-learning_criteria',
-    name: 'Atorm_e-learning_criteria',
-    component: AtormELearningCriteria
+    path: '/Atorm_e-learning_criteria_1',
+    name: 'Atorm_e-learning_criteria_1',
+    component: AtormELearningCriteria1
+  },
+  {
+    path: '/Atorm_e-learning_criteria_2',
+    name: 'Atorm_e-learning_criteria_2',
+    component: AtormELearningCriteria2
   },
   {
     path: '/Atorm_e-learning_criteria_survey',

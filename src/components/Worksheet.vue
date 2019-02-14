@@ -2151,8 +2151,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_criteria</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_criteria_1' }">
+            Atorm_e-learning_criteria_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_criteria_2' }">
+            Atorm_e-learning_criteria_2
           </router-link>
         </td>
         <td></td>
@@ -2168,8 +2172,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_criteria_survey</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_criteria_survey' }">
+            Atorm_e-learning_criteria_survey
           </router-link>
         </td>
         <td></td>
