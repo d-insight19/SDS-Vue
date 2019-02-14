@@ -34,6 +34,8 @@ import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 import ComponentsSnackBar from '~workplace/common_page/components_snackbar'
 
+import LoginSplashB2C from '~workplace/login/login_Splash_B2C'
+import LoginSplashB2B from '~workplace/login/login_Splash_B2B'
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
 import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
@@ -621,6 +623,11 @@ import Atormstatusdetailsgroup from '~workplace/atorm/Atorm_status_details_group
 import Atormstatusdetails from '~workplace/atorm/Atorm_status_details'
 import Atormstatusdetailsrate from '~workplace/atorm/Atorm_status_details_rate'
 import Atormstatusdetailsflip from '~workplace/atorm/Atorm_status_details_flip'
+import AtormELearningEvaluation1 from '~workplace/atorm/Atorm_e-learning_evaluation_1'
+import AtormELearningEvaluation2 from '~workplace/atorm/Atorm_e-learning_evaluation_2'
+import AtormELearningMultiplepopup from '~workplace/atorm/Atorm_e-learning_multiplepopup'
+import AtormELearningOxpopup from '~workplace/atorm/Atorm_e-learning_oxpopup'
+import AtormELearningShortanswerpopup from '~workplace/atorm/Atorm_e-learning_shortanswerpopup'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -633,9 +640,38 @@ import ComponentsTestPage7 from '~workplace/common_page/components_select_slp'
 import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_slp'
 import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
-
+// import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
+// import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
+import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
+import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
+// import AtormGroupFlipComplete02 from '~workplace/atorm/Atorm_group_flip_complete_02'
 // 1번 영역
 var rootRoutes = [
+  // {
+  //   path: '/Atorm_status_details_rate',
+  //   name: 'Atorm_status_details_rate',
+  //   component: AtormStatusDetailsRate
+  // },
+  // {
+  //   path: '/Atorm_status_details',
+  //   name: 'Atorm_status_details',
+  //   component: AtormStatusDetails
+  // },
+  {
+    path: '/Atorm_group_flip_complete',
+    name: 'Atorm_group_flip_complete',
+    component: AtormGroupFlipComplete
+  },
+  {
+    path: '/Atorm_group_flip_criteria',
+    name: 'Atorm_group_flip_criteria',
+    component: AtormGroupFlipCriteria
+  },
+  // {
+  //   path: '/Atorm_group_flip_complete_02',
+  //   name: 'Atorm_group_flip_complete_02',
+  //   component: AtormGroupFlipComplete02
+  // },
   {
     path: '*',
     name: 'worksheet',
@@ -860,6 +896,16 @@ var rootRoutes = [
     path: '/components_switch_slp',
     name: 'components_switch_slp',
     component: ComponentsTestPage10
+  },
+  {
+    path: '/login_Splash_B2C',
+    name: 'login_Splash_B2C',
+    component: LoginSplashB2C
+  },
+  {
+    path: '/login_Splash_B2B',
+    name: 'login_Splash_B2B',
+    component: LoginSplashB2B
   },
   {
     path: '/Login_findcenter',
@@ -3454,6 +3500,31 @@ var rootRoutes = [
     path: '/Atorm_status_details_flip',
     name: 'Atorm_status_details_flip',
     component: Atormstatusdetailsflip
+  },
+  {
+    path: '/Atorm_e-learning_evaluation_1',
+    name: 'Atorm_e-learning_evaluation_1',
+    component: AtormELearningEvaluation1
+  },
+  {
+    path: '/Atorm_e-learning_evaluation_2',
+    name: 'Atorm_e-learning_evaluation_2',
+    component: AtormELearningEvaluation2
+  },
+  {
+    path: '/Atorm_e-learning_multiplepopup',
+    name: 'Atorm_e-learning_multiplepopup',
+    component: AtormELearningMultiplepopup
+  },
+  {
+    path: '/Atorm_e-learning_oxpopup',
+    name: 'Atorm_e-learning_oxpopup',
+    component: AtormELearningOxpopup
+  },
+  {
+    path: '/Atorm_e-learning_shortanswerpopup',
+    name: 'Atorm_e-learning_shortanswerpopup',
+    component: AtormELearningShortanswerpopup
   },
   {
     path: '/Eduperson_login',

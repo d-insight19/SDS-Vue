@@ -11,10 +11,16 @@
       class="chk">
     <span
       v-if="type === 'check'"
+      :class="[computedClass, classObject]"
       class="ico"/>
     <span
       v-if="!!Object.keys($slots).length"
-      class="label"><slot/></span>
+      class="label">
+        <slot/>
+        <p
+          v-if="error && message"
+          class="error-msg">{{ message }}</p>
+      </span>
   </label>
 </template>
 
@@ -33,6 +39,18 @@ export default {
     type: {
       type: String,
       default: 'check'
+    },
+    error: {
+      type: Boolean,
+      default: false
+    },
+    message: {
+      type: String,
+      default: null
+    },
+    classObject: {
+      type: [String, Object],
+      default: null
     }
   },
   data () {
@@ -55,6 +73,11 @@ export default {
       set (value) {
         this.newValue = value
         this.$emit('input', value)
+      }
+    },
+    computedClass () {
+      return {
+        'error': this.error
       }
     }
   },

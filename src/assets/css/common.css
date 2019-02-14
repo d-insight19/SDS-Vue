@@ -204,11 +204,10 @@
 
 .ico.photo_16{width:16px; height:16px; background: url("../img/ic_atorm_photo_edit_solid.png") no-repeat; background-size: cover;}
 
-
-
-
-
-
+/* 추가이미지 2019-2-12 */
+.ico.multiplechoice_32{width:32px; height:32px; background: url("../img/ic_multiplechoice.png") no-repeat; margin-top:-12px; background-size: cover;}
+.ico.shortanswer_32{width:32px; height:32px; background: url("../img/ic_shortanswer.png") no-repeat; margin-top:-12px; background-size: cover;}
+.ico.ox_32{width:32px; height:32px; background: url("../img/ic_ox.png") no-repeat; margin-top:-12px; background-size: cover;}
 
 .ico.like_solid_32.blue{width:32px;height:32px;background: url("../img/ic_thumb_line_b_32.png") no-repeat; background-size:32px;}
 .ico.book_28{width:28px;height:28px;background: url("../img/ic_book_line_28.png") no-repeat; background-size:32px;}
@@ -228,7 +227,8 @@
 
 
 
-
+/* 추가이미지 2019-2-13 */
+.ico.info_24.blue {width:24px;height:24px;background: url("../img/ic_info_blue_24.png") no-repeat; }
 /* ico btn */
 .btn.only .ico{display: block;}
 .btn.only.trash .ico{width:20px; height:20px; background-position: -82px -64px;}
@@ -360,6 +360,7 @@
 .mr15{margin-right: 15px !important;}
 .mr20{margin-right: 20px !important;}
 .mr30{margin-right: 30px !important;}
+.mr40{margin-right: 40px !important;}
 
 .ml-18 {margin-left:-18px !important;}
 .mr-18 {margin-right:-18px !important;}
