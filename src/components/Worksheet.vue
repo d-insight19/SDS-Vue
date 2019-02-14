@@ -2464,13 +2464,14 @@
         <td>필터</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">07.ATORM_07.04.01._status_    details_filter</td>
+        <td class="textL">07.ATORM_07.04.01._status_details_filter</td>
         <td>
           <router-link :to="{ name: '' }">
             
           </router-link>
+          공통필터적용중복처리
         </td>
-        <td>공통필터적용중복처리</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">124</td>
@@ -2486,8 +2487,9 @@
           <router-link :to="{ name: '' }">
             
           </router-link>
+          OS컴포넌트적용중복처리
         </td>
-        <td>OS컴포넌트적용중복처리</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">125</td>
@@ -10692,9 +10694,9 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04.00._status_ info</td>
         <td>
-          <router-link :to="{ name: 'Atorm_status_info' }">
+          <!--<router-link :to="{ name: 'Atorm_status_info' }">
             Atorm_status_info
-          </router-link>
+          </router-link>-->
         </td>
         <td></td>
       </tr>

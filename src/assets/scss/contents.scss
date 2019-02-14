@@ -634,7 +634,18 @@
 #container.atorm .status_table .detail_list_wrap {padding:0 12px; margin-top:12px}
 #container.atorm .status_table .detail_list {font-size:map-get($font-size, font_13); color:rgba(0,0,0,0.8); font-weight: 500; }
 #container.atorm .status_table .border_right {border-right: #eaeaea 1px solid}
-
+#container.atorm_status .status_detail { margin-top:7px}
+#container.atorm_status .status_detail .num {font-family: 'Roboto'; font-size:map-get($font-size , font_26); line-height:34px; font-weight: 500;}
+#container.atorm_status .status_detail .unit {font-size:map-get($font-size , font_14); font-weight: 600}
+#container.atorm_status .sub_subject {font-size:map-get($font-size , font_12); font-weight: 400; color:rgba(0,0,0,0.8); padding-left:8px}
+.atorm_status_table .detail_table2,
+                    .detail_table2 {padding:0;}
+.atorm_status_table .detail_table2 tr td,
+                    .detail_table2 tr td {font-size:map-get($font-size , font_14); min-height:48px; border-bottom:#e3e3e3 1px solid; padding:13px 0 13px 8px}
+.atorm_status_table .detail_table2 tr td.data,
+                    .detail_table2 tr td.data {padding-left:16px; color:rgba(0,0,0,0.8);}
+.atorm_status_table .detail_table2 tbody tr:nth-last-child(1) td {border:none}
+                    .detail_table2 tbody tr:nth-last-child(1) td {border:none}
 
 
 // ATROM 아이템팩토리
@@ -733,11 +744,6 @@
 #container.atorm_faq .title_line .status_txt{position: relative;padding-right:20px;}
 #container.atorm_faq .title_line .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; position: absolute;top:50%;right:0px;transform: translateY(-50%)}
 
-// ATORM status
-#container.atorm_status .status_detail { margin-top:7px}
-#container.atorm_status .status_detail .num {font-family: 'Roboto'; font-size:map-get($font-size , font_26); line-height:34px; font-weight: 500;}
-#container.atorm_status .status_detail .unit {font-size:map-get($font-size , font_14); font-weight: 600}
-#container.atorm_status .sub_subject {font-size:map-get($font-size , font_12); font-weight: 400; color:rgba(0,0,0,0.8); padding-left:8px}
 
 // 운영자 문의사항 - Eduperson_control
 .dot{ display:inline-block; width: 8px; height:8px; background:#eee; border-radius: 100%; }
