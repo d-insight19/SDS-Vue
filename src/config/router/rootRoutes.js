@@ -635,6 +635,10 @@ import AtormELearningEvaluation2 from '~workplace/atorm/Atorm_e-learning_evaluat
 import AtormELearningMultiplepopup from '~workplace/atorm/Atorm_e-learning_multiplepopup'
 import AtormELearningOxpopup from '~workplace/atorm/Atorm_e-learning_oxpopup'
 import AtormELearningShortanswerpopup from '~workplace/atorm/Atorm_e-learning_shortanswerpopup'
+import AtormELearningCriteria from '~workplace/atorm/Atorm_e-learning_criteria'
+import AtormELearningCriteriaSurvey from '~workplace/atorm/Atorm_e-learning_criteria_survey'
+import AtormELearningComplete1 from '~workplace/atorm/Atorm_e-learning_complete_1'
+import AtormELearningComplete2 from '~workplace/atorm/Atorm_e-learning_complete_2'
 import Atormstatusinfo from '~workplace/atorm/Atorm_status_info'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
@@ -1404,7 +1408,7 @@ var rootRoutes = [
     path: '/Study_home_mixed',
     name: 'Study_home_mixed',
     component: StudyHomeMixed
-  },  
+  },
   {
     path: '/Study_home_set',
     name: 'Study_home_set',
@@ -2039,7 +2043,7 @@ var rootRoutes = [
     path: '/Study_LO_mp4_script2scroll',
     name: 'Study_LO_mp4_script2scroll',
     component: StudyLOmp4script2scroll
-  }, 
+  },
   {
     path: '/Study_LO_mp4_script1',
     name: 'Study_LO_mp4_script1',
@@ -3568,6 +3572,26 @@ var rootRoutes = [
     path: '/Atorm_e-learning_shortanswerpopup',
     name: 'Atorm_e-learning_shortanswerpopup',
     component: AtormELearningShortanswerpopup
+  },
+  {
+    path: '/Atorm_e-learning_criteria',
+    name: 'Atorm_e-learning_criteria',
+    component: AtormELearningCriteria
+  },
+  {
+    path: '/Atorm_e-learning_criteria_survey',
+    name: 'Atorm_e-learning_criteria_survey',
+    component: AtormELearningCriteriaSurvey
+  },
+  {
+    path: '/Atorm_e-learning_complete_1',
+    name: 'Atorm_e-learning_complete_1',
+    component: AtormELearningComplete1
+  },
+  {
+    path: '/Atorm_e-learning_complete_2',
+    name: 'Atorm_e-learning_complete_2',
+    component: AtormELearningComplete2
   },
   {
     path: '/Atorm_status_info',

@@ -423,7 +423,7 @@
               <p class="ico ongoing_16"></p>
             </li>
             <li>
-              <p class="ico photo_16"></p>
+              <p class="ico atorm_photo_edit_solid_16"></p>
             </li>
             <li>
               <p class="ico like_solid_32 blue"></p>

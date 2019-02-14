@@ -202,12 +202,15 @@
 .ico.lock_16{width:16px; height:16px; background: url("../img/ic_lock_solid_16.png") no-repeat; background-size: cover;}
 .ico.ongoing_16{width:14px; height:14px; background: url("../img/ic_ongoing_solid_blue_14.png") no-repeat; background-size: cover;}
 
-.ico.photo_16{width:16px; height:16px; background: url("../img/ic_atorm_photo_edit_solid.png") no-repeat; background-size: cover;}
+.ico.atorm_photo_edit_solid_16{width:16px; height:16px; background: url("../img/ic_atorm_photo_edit_solid.png") no-repeat; background-size: cover;}
 
 /* 추가이미지 2019-2-12 */
 .ico.multiplechoice_32{width:32px; height:32px; background: url("../img/ic_multiplechoice.png") no-repeat; margin-top:-12px; background-size: cover;}
 .ico.shortanswer_32{width:32px; height:32px; background: url("../img/ic_shortanswer.png") no-repeat; margin-top:-12px; background-size: cover;}
 .ico.ox_32{width:32px; height:32px; background: url("../img/ic_ox.png") no-repeat; margin-top:-12px; background-size: cover;}
+.ico.atorm_total_solid_32{width:32px; height:32px; background: url("../img/ic_atorm_total_solid.png") no-repeat; margin-top:-12px; background-size: cover;}
+.ico.atorm_subjective_solid_32{width:32px; height:32px; background: url("../img/ic_atorm_subjective_solid.png") no-repeat; margin-top:-12px; background-size: cover;}
+.ico.atorm_multiple_solid_32{width:32px; height:32px; background: url("../img/ic_atorm_multiple_solid.png") no-repeat; margin-top:-12px; background-size: cover;}
 
 .ico.like_solid_32.blue{width:32px;height:32px;background: url("../img/ic_thumb_line_b_32.png") no-repeat; background-size:32px;}
 .ico.book_28{width:28px;height:28px;background: url("../img/ic_book_line_28.png") no-repeat; background-size:32px;}
