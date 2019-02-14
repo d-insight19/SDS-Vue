@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery studyquestion">
+      <div id="container" class="mediaquery studyquestion study_reflection">
 
        <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video">          
@@ -14,9 +14,8 @@
 
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li><a href="#tab1">학습현황</a></li>
-                    <li class="on"><a href="#tab2">공지사항</a></li> 
-                    <li><a href="#tab3">학습노트</a></li> 
+                    <li><a href="#tab1">1:1문의</a></li>
+                    <li class="on"><a href="#tab2">Quick Poll/Answer</a></li> 
                     <li><a href="#tab3">질문방</a></li> 
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
                 </ul>
@@ -162,50 +161,62 @@
           <div class="cell">
             <div class="inner">
                 <p class="mb5">총 <span class="fwb ml2"><b>999</b></span>
+                <a href="#"><span class="color_clr2 fr">작성</span></a>
                 </p>
 
-                <ul class="ulList type4">                    
+                <ul class="ulList type4">                                 
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">Quick Poll/Answer 타이틀은 한줄로 표기</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd>정해민</dd>
+                            <dd>진행중</dd>
+                            <dd>2018.12.02 - 2019.01.10</dd>
                         </dl>
+                        <dl class="pipe-group mt12">
+                            <dd class="color_clr3">참여완료</dd>
+                            <dd class="mono_100 fwb">99명 참여</dd>
+                        </dl>   
+                        <span class="ico arrow"></span>                     
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">인공지능에 대한 심층 토론을 진행해보고 싶은데 함께할까요.</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
+                            <dd>삼성인력개발원</dd>
                         </dl>
+                        <dl class="pipe-group mt12">
+                            <dd class="mono_80">마감</dd>
+                            <dd class="mono_80">2017.10.31- 2018.10.31</dd>
+                            <dd class="mono_100 fwb">42/99명</dd>
+                        </dl>                        
+                    </li> 
+                     <li>
+                        <p class="title">인공지능에 대한 심층 토론을 진행해보고 싶은데 함께할까요.</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
+                            <dd>삼성인력개발원</dd>
+                        </dl>
+                        <dl class="pipe-group mt12">
+                            <dd class="color_clr3">진행중</dd>
+                            <dd class="mono_80">2017.10.31- 2018.10.31</dd>
+                            <dd class="mono_100 fwb">42/99명</dd>
+                        </dl>                        
                     </li>
                     <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <p class="title">인공지능에 대한 심층 토론을 진행해보고 싶은데 함께할까요.</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
+                            <dd>삼성인력개발원</dd>
                         </dl>
-                    </li>
-                    <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
-                        <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
-                        <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
-                        <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
-                        </dl>
-                    </li>                  
+                        <dl class="pipe-group mt12">
+                            <dd class="mono_80">마감</dd>
+                            <dd class="mono_80">2017.10.31- 2018.10.31</dd>
+                            <dd class="mono_100 fwb">42/99명</dd>
+                        </dl>                        
+                    </li>                                               
                    
                 </ul>
 

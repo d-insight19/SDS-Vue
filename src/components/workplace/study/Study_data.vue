@@ -15,7 +15,7 @@
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
                     <li><a href="#tab1">학습현황</a></li>
-                    <li class="on"><a href="#tab2">공지사항</a></li> 
+                    <li class="on"><a href="#tab2">자료실</a></li> 
                     <li><a href="#tab3">학습노트</a></li> 
                     <li><a href="#tab3">질문방</a></li> 
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
@@ -168,12 +168,8 @@
                     <li>
                         <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <dl class="pipe-group mono_65">
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
-                        <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
@@ -181,6 +177,8 @@
                     <li>
                         <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
@@ -188,6 +186,8 @@
                     <li>
                         <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
@@ -195,6 +195,8 @@
                     <li>
                         <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
@@ -202,10 +204,21 @@
                     <li>
                         <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
                             <dd><span class="ico view mr2"></span>2190</dd>
                             <dd><span class="ico clip mr2"></span>첨부파일</dd>
                         </dl>
-                    </li>                  
+                    </li>
+                    <li>
+                        <p class="title">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
+                        <dl class="pipe-group mono_65">
+                            <dd>정해민</dd>
+                            <dd>2018.10.10</dd>
+                            <dd><span class="ico view mr2"></span>2190</dd>
+                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                        </dl>
+                    </li>                                 
                    
                 </ul>
 

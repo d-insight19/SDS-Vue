@@ -612,6 +612,28 @@
 #container.atorm .text_limit {font-family: 'Roboto'; color:rgba(0,0,0,0.5); line-height: 29px; letter-spacing: -0.42px}
 #container.atorm .file_name {font-size:map-get($font-size, font_14);line-height:29px;letter-spacing: -0.42px;color:rgba(0,0,0,0.65); margin-top:2px}
 #container.atorm button.sm.add {color:#000; font-weight: 500}
+#container.atorm .multiList.type_1 .study_time {float:right; display:inline-block; color:rgba(0,0,0,0.65); font-size:map-get($font-size, font_13);}
+#container.atorm .multiList.type_1 .study_time .time {margin-left:6px; color:#000; font-weight: 500; font-family: 'Roboto' }
+#container.atorm .multiList.type_2 > li .in {padding:9px 0}
+#container.atorm .multiList.type_2 > li {border:none}
+#container.atorm .multiList.type_2 > li.border_bottom {border-bottom:#e3e3e3 1px solid}
+#container.atorm .multiList.type_2 li .label-tit13 {font-size:map-get($font-size, font_13); color:rgba(0,0,0,0.8); font-weight: 400}
+#container.atorm .multiList.type_2 li .num {float:right; font-size:map-get($font-size, font_16); color:#000; font-weight: 500}
+#container.atorm .reply-list .info_value {font-size:map-get($font-size, font_12); color:rgba(0,0,0,0.6); }
+
+
+//status_table
+#container.atorm .status_table_wrap {margin-bottom:19px}
+#container.atorm .status_table_wrap.last {margin-bottom:0}
+#container.atorm .status_table {border-top:#e3e3e3 1px solid}
+#container.atorm .status_table thead {background-color: #f5f5f5; border-top:#e3e3e3}
+#container.atorm .status_table thead td { padding:8px 0 7px; padding:8px 8px 7px; }
+#container.atorm .status_table thead .num {font-family: 'Roboto'; font-size:map-get($font-size, font_15); color:rgba(0,0,0,0.65); margin-left:8px}
+#container.atorm .status_table .detail_list_wrap {padding:0 12px; margin-top:12px}
+#container.atorm .status_table .detail_list {font-size:map-get($font-size, font_13); color:rgba(0,0,0,0.8); font-weight: 500; }
+#container.atorm .status_table .border_right {border-right: #eaeaea 1px solid}
+
+
 
 // ATROM 아이템팩토리
 #container.atorm_itemfactory .singleList.type_1 .ico.item_left{left:0px;width:20px;height:20px;background-position:0px 0px;margin-top: 0px;transform: translateY(-50%);}
@@ -708,6 +730,12 @@
 #container.atorm_faq .multiList.type3 > li .info{line-height: 19px;}
 #container.atorm_faq .title_line .status_txt{position: relative;padding-right:20px;}
 #container.atorm_faq .title_line .ico.down{width:16px;height:16px;background: url("../img/ic_dropdown_16.png") no-repeat; position: absolute;top:50%;right:0px;transform: translateY(-50%)}
+
+// ATORM status
+#container.atorm_status .status_detail { margin-top:7px}
+#container.atorm_status .status_detail .num {font-family: 'Roboto'; font-size:map-get($font-size , font_26); line-height:34px; font-weight: 500;}
+#container.atorm_status .status_detail .unit {font-size:map-get($font-size , font_14); font-weight: 600}
+#container.atorm_status .sub_subject {font-size:map-get($font-size , font_12); font-weight: 400; color:rgba(0,0,0,0.8); padding-left:8px}
 
 // 운영자 문의사항 - Eduperson_control
 .dot{ display:inline-block; width: 8px; height:8px; background:#eee; border-radius: 100%; }
@@ -902,8 +930,8 @@ table td.sub-txt{ color:#000;}
 
 // 리플렉션 노트 수정/등록 Study_02_reflectionnote_edit
 #container.study_reflection .multiList li {margin-bottom:20px;}
-
-
+#container.study_reflection .ico.note.blue {margin-top:-3px}
+#container.study_reflection.studyquestion .pipe-group.type2 dd:after {margin:0px 7px 0 12px}
 
 
 // 시뮬레이션 
@@ -1644,7 +1672,7 @@ label.rdo .label{position: relative;}
 //study_studyquestion
 #container.studyquestion .pipe-group {margin-top:5px}
 #container.studyquestion .pipe-group.type2 dd:after{margin:0 6px;}
-#container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 6px;background: #d9d9d9;}
+#container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 2px 0 6px;background: #d9d9d9;}
 #container.studyquestion .pipe-group dd:nth-last-child(1):after{display:none;}
 #container.studyquestion .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
 #container.studyquestion .ulList.type4 li{height:auto;}
@@ -2632,6 +2660,8 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm .evaluationList li .ico.shortanswer_32 {position:absolute; top:calc(50% - 5px); left:0px;}
 .atorm .evaluationList li .ico.ox_32 {position:absolute; top:calc(50% - 5px); left:0px;}
 .atorm .evaluationList li .ico.del {position:absolute; top:calc(50% - 5px); right:0px;}
+
+.atorm .singleList.type1 .labelChk input.chk + .ico {top:20px;}
 
 .imgTable tr td .thum {width: 100%; height: 85px; padding:4px;}
 .imgTable tr:first-child td .thum{padding-top: 0px;}

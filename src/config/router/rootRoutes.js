@@ -259,6 +259,13 @@ import StudyLOmp4fs from '~workplace/study/Study_LO_mp4_fs'
 import StudyLOmp4script2 from '~workplace/study/Study_LO_mp4_script2'
 import Studyfaq from '~workplace/study/Study_faq'
 import Studynotice from '~workplace/study/Study_notice'
+import Studydata from '~workplace/study/Study_data'
+import Studydatadetail from '~workplace/study/Study_data_detail'
+import Studyreminder from '~workplace/study/Study_reminder'
+import Studyreflectionnote from '~workplace/study/Study_reflectionnote'
+import Studyinquiry from '~workplace/study/Study_inquiry'
+import Studydiscuss from '~workplace/study/Study_discuss'
+import Studyqpqa from '~workplace/study/Study_qpqa'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -611,8 +618,16 @@ import AtormELearningThumbnail from '~workplace/atorm/Atorm_e-learning_thumbnail
 import AtormELearningMaterial from '~workplace/atorm/Atorm_e-learning_material'
 import AtormELearningMaterialUser from '~workplace/atorm/Atorm_e-learning_material_user'
 import AtormELearningMaterialMode from '~workplace/atorm/Atorm_e-learning_material_mode'
+import Atormstatusdetailsbasic from '~workplace/atorm/Atorm_status_details_basic'
+import Atormstatusdetailsgroup from '~workplace/atorm/Atorm_status_details_group'
+import Atormstatusdetails from '~workplace/atorm/Atorm_status_details'
+import Atormstatusdetailsrate from '~workplace/atorm/Atorm_status_details_rate'
+import Atormstatusdetailsflip from '~workplace/atorm/Atorm_status_details_flip'
 import AtormELearningEvaluation1 from '~workplace/atorm/Atorm_e-learning_evaluation_1'
 import AtormELearningEvaluation2 from '~workplace/atorm/Atorm_e-learning_evaluation_2'
+import AtormELearningMultiplepopup from '~workplace/atorm/Atorm_e-learning_multiplepopup'
+import AtormELearningOxpopup from '~workplace/atorm/Atorm_e-learning_oxpopup'
+import AtormELearningShortanswerpopup from '~workplace/atorm/Atorm_e-learning_shortanswerpopup'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -625,24 +640,24 @@ import ComponentsTestPage7 from '~workplace/common_page/components_select_slp'
 import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_slp'
 import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
-import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
-import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
+// import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
+// import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
 import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
 import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
 // import AtormGroupFlipComplete02 from '~workplace/atorm/Atorm_group_flip_complete_02'
 import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
 // 1번 영역
 var rootRoutes = [
-  {
-    path: '/Atorm_status_details_rate',
-    name: 'Atorm_status_details_rate',
-    component: AtormStatusDetailsRate
-  },
-  {
-    path: '/Atorm_status_details',
-    name: 'Atorm_status_details',
-    component: AtormStatusDetails
-  },
+  // {
+  //   path: '/Atorm_status_details_rate',
+  //   name: 'Atorm_status_details_rate',
+  //   component: AtormStatusDetailsRate
+  // },
+  // {
+  //   path: '/Atorm_status_details',
+  //   name: 'Atorm_status_details',
+  //   component: AtormStatusDetails
+  // },
   {
     path: '/Atorm_group_flip_complete',
     name: 'Atorm_group_flip_complete',
@@ -2007,6 +2022,41 @@ var rootRoutes = [
     path: '/Study_notice',
     name: 'Study_notice',
     component: Studynotice
+  },
+  {
+    path: '/Study_data',
+    name: 'Study_data',
+    component: Studydata
+  },
+  {
+    path: '/Study_data_detail',
+    name: 'Study_data_detail',
+    component: Studydatadetail
+  },
+  {
+    path: '/Study_reminder',
+    name: 'Study_reminder',
+    component: Studyreminder
+  },
+  {
+    path: '/Study_reflectionnote',
+    name: 'Study_reflectionnote',
+    component: Studyreflectionnote
+  },
+  {
+    path: '/Study_inquiry',
+    name: 'Study_inquiry',
+    component: Studyinquiry
+  },
+  {
+    path: '/Study_discuss',
+    name: 'Study_discuss',
+    component: Studydiscuss
+  },
+  {
+    path: '/Study_qpqa',
+    name: 'Study_qpqa',
+    component: Studyqpqa
   },
   // {
   //   path: '/regiclass_detailview_licence',
@@ -3433,6 +3483,31 @@ var rootRoutes = [
     component: AtormELearningMaterialMode
   },
   {
+    path: '/Atorm_status_details_basic',
+    name: 'Atorm_status_details_basic',
+    component: Atormstatusdetailsbasic
+  },
+  {
+    path: '/Atorm_status_details_group',
+    name: 'Atorm_status_details_group',
+    component: Atormstatusdetailsgroup
+  },
+  {
+    path: '/Atorm_status_details',
+    name: 'Atorm_status_details',
+    component: Atormstatusdetails
+  },
+  {
+    path: '/Atorm_status_details_rate',
+    name: 'Atorm_status_details_rate',
+    component: Atormstatusdetailsrate
+  },
+  {
+    path: '/Atorm_status_details_flip',
+    name: 'Atorm_status_details_flip',
+    component: Atormstatusdetailsflip
+  },
+  {
     path: '/Atorm_e-learning_evaluation_1',
     name: 'Atorm_e-learning_evaluation_1',
     component: AtormELearningEvaluation1
@@ -3441,6 +3516,21 @@ var rootRoutes = [
     path: '/Atorm_e-learning_evaluation_2',
     name: 'Atorm_e-learning_evaluation_2',
     component: AtormELearningEvaluation2
+  },
+  {
+    path: '/Atorm_e-learning_multiplepopup',
+    name: 'Atorm_e-learning_multiplepopup',
+    component: AtormELearningMultiplepopup
+  },
+  {
+    path: '/Atorm_e-learning_oxpopup',
+    name: 'Atorm_e-learning_oxpopup',
+    component: AtormELearningOxpopup
+  },
+  {
+    path: '/Atorm_e-learning_shortanswerpopup',
+    name: 'Atorm_e-learning_shortanswerpopup',
+    component: AtormELearningShortanswerpopup
   },
   {
     path: '/Eduperson_login',

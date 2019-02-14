@@ -8,7 +8,7 @@
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                <p class="header_text font_18">단답형 퀴즈</p><button type="button" class="btn16 color_clr2">저장</button>
+                <p class="header_text font_18">OX형</p><button type="button" class="btn16 color_clr2">저장</button>
             </div>
             <!-- //header -->
 
@@ -34,21 +34,24 @@
                             </li>
                             <li class="mb20">
                                 <p class="label-tit14">질문 <span class="tit_essential"></span></p>
-                                <slp-text-field placeholder="질문을 입력하세요" class="mt6"></slp-text-field>
+                                <slp-text-field placeholder="질문을 입력하세요" class="mt6" ></slp-text-field>
+                                <!--<slp-text-field placeholder="질문을 입력하세요" class="mt6" error message="질문을 입력해 주세요"></slp-text-field>-->
+                            </li>
+                            <li class="mb20">
+                                <p class="label-tit14">문항배점</p>
+                                <slp-text-field class="mt6" ></slp-text-field>
                                 <p class="hr mb0"></p>
                             </li>
                             <li class="mb20">
-                                <p class="label-tit14">답안 <span class="tit_essential"></span></p>
-                                <p class="tit_desc font_13 mono_50">답안은 단어 또는 문장을 입력해주세요.</p> 
-                                
-                                <div class="infoChk mt14">
-                                    <slp-text-field placeholder="답안을 입력하세요"></slp-text-field>
-                                    <span class="ico deletemode_20 mt12 ml12"></span>
-                                </div>
-                                    
-                                    
-                                <slp-button class="sm add w100p mt8" @click="addList1()" ><span class="ico"></span>답안 추가</slp-button>
-                                <p class="hr mb0"></p> 
+                                <p class="label-tit14 bbB89 pb10 mb10">답안 <span class="tit_essential"></span></p>
+                                <ul class="w80List">
+                                    <li>
+                                        <slp-radio name="ox" innerCircle="true"><span class="mono_100">O</span></slp-radio>
+                                    </li>
+                                    <li>
+                                        <slp-radio name="ox" innerCircle="true"><span class="mono_100">X</span></slp-radio>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="mb20">
                                 <p class="label-tit14">정답해설</p>
@@ -70,7 +73,7 @@
 
 <script>
 export default {
-  name: 'Atorm_itemfactory_short',
+  name: 'Atorm_e-learning_oxpopup',
   /* vue lifecycle */
   created () {
   },

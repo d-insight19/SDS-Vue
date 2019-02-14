@@ -9,7 +9,7 @@
             <div v-if="headerType == '2'" id="header" class="tab fixed">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                    <p class="header_text font_18">처음부터 배우는 데이터 분석</p>
+                    <p class="header_text font_18">5분 안에 중국어 발음하기</p>
                 </div>  
                 <div class="header_inner line2 tabMenu scroll-x">
                     <ul class="scrollTab">
@@ -32,9 +32,9 @@
                                         <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                     </div>
                                 </a>
-                                <a href="#" class="tit">처음부터 배우는 데이터 분석</a>
+                                <a href="#" class="tit">5분 안에 중국어 발음하기</a>
                                 <ul class="info">
-                                    <li class="color_clr3 fwb">이러닝</li>
+                                    <li class="color_clr3 fwb">집합</li>
                                     <li>K0111</li>
                                 </ul>                               
                             </div>
@@ -76,7 +76,7 @@
 
                     <p class="hr" style="margin:0 -24px 22px"></p>
 
-                    <p class="mb7">총 <span class="fwb ml2"><b>18</b></span>
+                    <p class="mb7">총 <span class="fwb ml2"><b>1,620</b></span>
                     <span class="tar fr mono_80">전체 차수 <span class="ico ico_dropdown16 gr"></span>
                     </span>
                     </p>
@@ -99,27 +99,31 @@
                                                 <td class="pdb5 mono_100 tar">95점</td>
                                             </tr>
                                             <tr>
-                                                <td class="pdb5">총점</td>
-                                                <td class="pdb5 mono_100 tar">92점</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pdb5">평점</td>
-                                                <td class="pdb5 mono_100 tar">4.0</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </td>
-                                <td style="vertical-align:top">
-                                    <div class="detail_list_wrap">
-                                        <table class="detail_list">
-                                            <tr>
-                                                <td class="pdb5">진도율</td>
-                                                <td class="pdb5 mono_100 tar">90%</td>
+                                                <td class="pdb5">레포트</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
                                             </tr>
                                             <tr>
                                                 <td class="pdb5">설문</td>
                                                 <td class="pdb5 mono_100 tar">응답</td>
-                                            </tr>                                           
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="detail_list_wrap">
+                                        <table class="detail_list">
+                                            <tr>
+                                                <td class="pdb5">평가결과</td>
+                                                <td class="pdb5 mono_100 tar">95점</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">레포트</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">설문</td>
+                                                <td class="pdb5 mono_100 tar">응답</td>
+                                            </tr>
                                         </table>
                                     </div>
                                 </td>
@@ -136,7 +140,7 @@
                                 <td class="tar fwb">학습한 차수 <span class="num">5</span></td>
                             </tr>
                         </thead>
-                       <tbody>
+                        <tbody>
                             <tr>
                                 <td>
                                     <div class="detail_list_wrap border_right">
@@ -146,27 +150,31 @@
                                                 <td class="pdb5 mono_100 tar">95점</td>
                                             </tr>
                                             <tr>
-                                                <td class="pdb5">총점</td>
-                                                <td class="pdb5 mono_100 tar">92점</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pdb5">평점</td>
-                                                <td class="pdb5 mono_100 tar">4.0</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </td>
-                                <td style="vertical-align:top">
-                                    <div class="detail_list_wrap">
-                                        <table class="detail_list">
-                                            <tr>
-                                                <td class="pdb5">진도율</td>
-                                                <td class="pdb5 mono_100 tar">90%</td>
+                                                <td class="pdb5">레포트</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
                                             </tr>
                                             <tr>
                                                 <td class="pdb5">설문</td>
                                                 <td class="pdb5 mono_100 tar">응답</td>
-                                            </tr>                                           
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="detail_list_wrap">
+                                        <table class="detail_list">
+                                            <tr>
+                                                <td class="pdb5">평가결과</td>
+                                                <td class="pdb5 mono_100 tar">95점</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">레포트</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">설문</td>
+                                                <td class="pdb5 mono_100 tar">응답</td>
+                                            </tr>
                                         </table>
                                     </div>
                                 </td>
@@ -193,27 +201,31 @@
                                                 <td class="pdb5 mono_100 tar">95점</td>
                                             </tr>
                                             <tr>
-                                                <td class="pdb5">총점</td>
-                                                <td class="pdb5 mono_100 tar">92점</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pdb5">평점</td>
-                                                <td class="pdb5 mono_100 tar">4.0</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </td>
-                                <td style="vertical-align:top">
-                                    <div class="detail_list_wrap">
-                                        <table class="detail_list">
-                                            <tr>
-                                                <td class="pdb5">진도율</td>
-                                                <td class="pdb5 mono_100 tar">90%</td>
+                                                <td class="pdb5">레포트</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
                                             </tr>
                                             <tr>
                                                 <td class="pdb5">설문</td>
                                                 <td class="pdb5 mono_100 tar">응답</td>
-                                            </tr>                                           
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="detail_list_wrap">
+                                        <table class="detail_list">
+                                            <tr>
+                                                <td class="pdb5">평가결과</td>
+                                                <td class="pdb5 mono_100 tar">95점</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">레포트</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">설문</td>
+                                                <td class="pdb5 mono_100 tar">응답</td>
+                                            </tr>
                                         </table>
                                     </div>
                                 </td>
@@ -240,27 +252,31 @@
                                                 <td class="pdb5 mono_100 tar">95점</td>
                                             </tr>
                                             <tr>
-                                                <td class="pdb5">총점</td>
-                                                <td class="pdb5 mono_100 tar">92점</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="pdb5">평점</td>
-                                                <td class="pdb5 mono_100 tar">4.0</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </td>
-                                <td style="vertical-align:top">
-                                    <div class="detail_list_wrap">
-                                        <table class="detail_list">
-                                            <tr>
-                                                <td class="pdb5">진도율</td>
-                                                <td class="pdb5 mono_100 tar">90%</td>
+                                                <td class="pdb5">레포트</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
                                             </tr>
                                             <tr>
                                                 <td class="pdb5">설문</td>
                                                 <td class="pdb5 mono_100 tar">응답</td>
-                                            </tr>                                           
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="detail_list_wrap">
+                                        <table class="detail_list">
+                                            <tr>
+                                                <td class="pdb5">평가결과</td>
+                                                <td class="pdb5 mono_100 tar">95점</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">레포트</td>
+                                                <td class="pdb5 mono_100 tar">제출</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pdb5">설문</td>
+                                                <td class="pdb5 mono_100 tar">응답</td>
+                                            </tr>
                                         </table>
                                     </div>
                                 </td>
