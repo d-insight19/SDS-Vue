@@ -10694,9 +10694,9 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04.00._status_ info</td>
         <td>
-          <router-link :to="{ name: 'Atorm_status_info' }">
+          <!--<router-link :to="{ name: 'Atorm_status_info' }">
             Atorm_status_info
-          </router-link>
+          </router-link>-->
         </td>
         <td></td>
       </tr>
