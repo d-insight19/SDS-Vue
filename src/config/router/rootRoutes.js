@@ -628,6 +628,7 @@ import AtormELearningEvaluation2 from '~workplace/atorm/Atorm_e-learning_evaluat
 import AtormELearningMultiplepopup from '~workplace/atorm/Atorm_e-learning_multiplepopup'
 import AtormELearningOxpopup from '~workplace/atorm/Atorm_e-learning_oxpopup'
 import AtormELearningShortanswerpopup from '~workplace/atorm/Atorm_e-learning_shortanswerpopup'
+import Atormstatusinfo from '~workplace/atorm/Atorm_status_info'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -3525,6 +3526,11 @@ var rootRoutes = [
     path: '/Atorm_e-learning_shortanswerpopup',
     name: 'Atorm_e-learning_shortanswerpopup',
     component: AtormELearningShortanswerpopup
+  },
+  {
+    path: '/Atorm_status_info',
+    name: 'Atorm_status_info',
+    component: Atormstatusinfo
   },
   {
     path: '/Eduperson_login',
