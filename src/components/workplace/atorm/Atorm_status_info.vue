@@ -39,30 +39,67 @@
                    
                     <p class="hr" style="margin:26px -24px 21px"></p>      
 
-                    <ul class="multiList type_1">
-                        <li>
-                            <div class="in">
-                                <span class="label-tit14">정해민</span>
-                                <div class="study_time">학습시간 <span class="time">00:20:42</span></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                                <span class="label-tit14">유희영</span>
-                                <div class="study_time">학습시간 <span class="time">00:20:42</span></div>
-                            </div>
-                        </li>                       
-                    </ul>    
+                    <div class="atorm_status_table">
+                        <table class="detail_table2">
+                            <tbody>
+                            <tr>
+                                <td class="fwb" style="width:95px">과정코드</td> 
+                                <td class="data">K1111</td> 
+                            </tr> 
+                            <tr>
+                                <td class="fwb">학습시간</td> 
+                                <td class="data">3시간</td> 
+                            </tr>
+                            <tr>
+                                <td class="fwb">과정 유형</td> 
+                                <td class="data">이러닝</td> 
+                            </tr>
+                            <tr>
+                                <td class="fwb">과정분류</td> 
+                                <td class="data">경영 리더십<span class="ico next_line_12 ml6 mr6"></span>비지니스 리더십<span class="ico next_line_12 ml6 mr6"></span>커뮤니케이션</td> 
+                            </tr>
+                            <tr>
+                                <td class="fwb">학습대상</td> 
+                                <td class="data">전체</td> 
+                            </tr>
+                            <tr>
+                                <td class="fwb">난이도</td> 
+                                <td class="data">선택 안 함</td> 
+                            </tr>
+                            <tr>
+                                <td class="fwb">강사명</td> 
+                                <td class="data">천경자, 윤동주</td> 
+                            </tr> 
+                            <tr>
+                                <td class="fwb">TAG</td> 
+                                <td class="data">데이터분석, 통계분석</td> 
+                            </tr>
+                            <tr>
+                                <td class="fwb">역량</td> 
+                                <td class="data">커뮤니케이션<span class="ico next_line_12 ml6 mr6"></span>의사결정</td> 
+                            </tr>
+                            <tr>
+                                <td class="fwb">최종평가</td> 
+                                <td class="data">Y / 총 30문항ㅣ100점</td> 
+                            </tr>
+                            <tr>
+                                <td class="fwb">학습목표</td> 
+                                <td class="data">데이터 분석을 통해 데이터를 제대로 분석하고 얘기하며 배워보는 시간을 갖도록합시다. 데이터 분석을 통해 데이터를 제대로 분석하고 얘기하며 배워보는 시간을 갖도록합시다. </td> 
+                            </tr>
+                            <tr>
+                                <td class="fwb pt13">과정소개</td> 
+                                <td class="data">데이터 분석을 통해 데이터를 제대로 분석하고 얘기하며 배워보는 시간을 갖도록합시다. 데이터 분석을 통해 데이터를 제대로 분석하고 얘기하며 배워보는 시간을 갖도록합시다. </td> 
+                            </tr>
+                            </tbody>
+                        </table> 
+                    </div>  
+
+                    <p class="hr" style="margin:26px -24px 22px"></p> 
                        
                     </div>
                 </div>
-            </div>           
-
-         <!-- floating button -->
-        <div class="fixBtmBtn">
-            <button type="button" class="btn clr1 ld">평점 및 후기 자세히보기</button>
-        </div>
-        <!-- //floating button -->   
+            </div>  
+       
         </div>
         <!-- //container -->   
 

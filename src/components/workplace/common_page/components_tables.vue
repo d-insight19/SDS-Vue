@@ -157,11 +157,11 @@
                         <td>-</td>                                        
                       </tr>
                       <tr>
-                        <td class="font_weight_base">스코어</td> 
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">20%</td>
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">0%</td> 
+                        <td class="fwr">스코어</td> 
+                        <td class="fwr">20%</td> 
+                        <td class="fwr">20%</td>
+                        <td class="fwr">20%</td> 
+                        <td class="fwr">0%</td> 
                         <td>-</td>
                         <td>-</td> 
                         <td>-</td>                                        
@@ -169,7 +169,39 @@
                   </tbody>
                 </table>  
               </div>         
-            </li>           
+            </li> 
+
+            <li>
+            <table class="detail_table type2">
+                <tbody>
+                  <tr>
+                    <td>전화</td> 
+                    <td>2513</td> 
+                    <td>1</td>
+                  </tr> 
+                  <tr>
+                    <td>1:1메일문의</td> 
+                    <td>321</td> 
+                    <td>1.2</td>
+                  </tr>
+                  <tr>
+                    <td>질문방</td> 
+                    <td>121</td> 
+                    <td>2</td>
+                  </tr> 
+                  <tr>
+                    <td>운영자 문의메일</td> 
+                    <td>20</td> 
+                    <td>4</td>
+                  </tr> 
+                  <tr>
+                    <td>합계</td> 
+                    <td>2975</td> 
+                    <td>2.1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>          
           </ul>
     
         </div>

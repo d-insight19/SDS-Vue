@@ -1404,7 +1404,7 @@ var rootRoutes = [
     path: '/Study_home_mixed',
     name: 'Study_home_mixed',
     component: StudyHomeMixed
-  },  
+  },
   {
     path: '/Study_home_set',
     name: 'Study_home_set',
@@ -2039,7 +2039,7 @@ var rootRoutes = [
     path: '/Study_LO_mp4_script2scroll',
     name: 'Study_LO_mp4_script2scroll',
     component: StudyLOmp4script2scroll
-  }, 
+  },
   {
     path: '/Study_LO_mp4_script1',
     name: 'Study_LO_mp4_script1',
