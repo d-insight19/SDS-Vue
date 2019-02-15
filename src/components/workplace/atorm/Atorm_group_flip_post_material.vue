@@ -29,7 +29,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner pdb20" style="padding-top:0;">
 
