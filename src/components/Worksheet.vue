@@ -2079,12 +2079,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_evaluation</td>
         <td>
-          <router-link :to="{ name: 'ATORM_e-learning_evaluation_1' }">
-            ATORM_e-learning_evaluation_1
+          <router-link :to="{ name: 'Atorm_e-learning_evaluation_1' }">
+            Atorm_e-learning_evaluation_1
           </router-link>
           ,
-          <router-link :to="{ name: 'ATORM_e-learning_evaluation_2' }">
-            ATORM_e-learning_evaluation_2
+          <router-link :to="{ name: 'Atorm_e-learning_evaluation_2' }">
+            Atorm_e-learning_evaluation_2
           </router-link>
         </td>
         <td></td>
@@ -2206,8 +2206,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_basic</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_basic1' }">
+            Atorm_group_flip_basic1
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_group_flip_basic2' }">
+            Atorm_group_flip_basic2
           </router-link>
         </td>
         <td></td>
@@ -9975,8 +9978,7 @@
         <td>
           <router-link :to="{ name: '' }">
             
-          </router-link>
-          제플린 없음
+          </router-link>         
         </td>
         <td></td>
       </tr>
@@ -10235,8 +10237,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_material_report</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_material_report1' }">
+            Atorm_group_flip_material_report1
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_group_flip_material_report2' }">
+            Atorm_group_flip_material_report2
           </router-link>
         </td>
         <td></td>
@@ -10710,9 +10715,9 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04.00._status_ info</td>
         <td>
-          <!--<router-link :to="{ name: 'Atorm_status_info' }">
+          <router-link :to="{ name: 'Atorm_status_info' }">
             Atorm_status_info
-          </router-link>-->
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -10880,8 +10885,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_criteria_flip</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_criteria_flip' }">
+            Atorm_group_flip_criteria_flip
           </router-link>
         </td>
         <td></td>
@@ -10897,8 +10902,17 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_complete_flip</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_complete_flip' }">
+            Atorm_group_flip_complete_flip
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_group_flip_complete_flip2' }">
+            Atorm_group_flip_complete_flip2
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_group_flip_complete_flip3' }">
+            Atorm_group_flip_complete_flip3 - 작업중
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_group_flip_complete_flip4' }">
+            Atorm_group_flip_complete_flip4
           </router-link>
         </td>
         <td></td>

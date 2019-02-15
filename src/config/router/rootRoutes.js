@@ -638,6 +638,15 @@ import AtormELearningCriteriaSurvey from '~workplace/atorm/Atorm_e-learning_crit
 import AtormELearningComplete1 from '~workplace/atorm/Atorm_e-learning_complete_1'
 import AtormELearningComplete2 from '~workplace/atorm/Atorm_e-learning_complete_2'
 import Atormstatusinfo from '~workplace/atorm/Atorm_status_info'
+import Atormgroupflipmaterialreport1 from '~workplace/atorm/Atorm_group_flip_material_report1'
+import Atormgroupflipmaterialreport2 from '~workplace/atorm/Atorm_group_flip_material_report2'
+import Atormgroupflipbasic1 from '~workplace/atorm/Atorm_group_flip_basic1'
+import Atormgroupflipbasic2 from '~workplace/atorm/Atorm_group_flip_basic2'
+import Atormgroupflipcriteriaflip from '~workplace/atorm/Atorm_group_flip_criteria_flip'
+import Atormgroupflipcompleteflip from '~workplace/atorm/Atorm_group_flip_complete_flip'
+import Atormgroupflipcompleteflip2 from '~workplace/atorm/Atorm_group_flip_complete_flip2'
+import Atormgroupflipcompleteflip3 from '~workplace/atorm/Atorm_group_flip_complete_flip3'
+import Atormgroupflipcompleteflip4 from '~workplace/atorm/Atorm_group_flip_complete_flip4'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -3564,6 +3573,26 @@ var rootRoutes = [
     component: Atormstatusinfo
   },
   {
+    path: '/Atorm_group_flip_material_report1',
+    name: 'Atorm_group_flip_material_report1',
+    component: Atormgroupflipmaterialreport1
+  },
+  {
+    path: '/Atorm_group_flip_material_report2',
+    name: 'Atorm_group_flip_material_report2',
+    component: Atormgroupflipmaterialreport2
+  },
+  {
+    path: '/Atorm_group_flip_basic1',
+    name: 'Atorm_group_flip_basic1',
+    component: Atormgroupflipbasic1
+  },
+  {
+    path: '/Atorm_group_flip_basic2',
+    name: 'Atorm_group_flip_basic2',
+    component: Atormgroupflipbasic2
+  },
+  {
     path: '/Atorm_group_flip_complete',
     name: 'Atorm_group_flip_complete',
     component: AtormGroupFlipComplete
@@ -3572,6 +3601,31 @@ var rootRoutes = [
     path: '/Atorm_group_flip_criteria',
     name: 'Atorm_group_flip_criteria',
     component: AtormGroupFlipCriteria
+  },
+  {
+    path: '/Atorm_group_flip_criteria_flip',
+    name: 'Atorm_group_flip_criteria_flip',
+    component: Atormgroupflipcriteriaflip
+  },
+  {
+    path: '/Atorm_group_flip_complete_flip',
+    name: 'Atorm_group_flip_complete_flip',
+    component: Atormgroupflipcompleteflip
+  },
+  {
+    path: '/Atorm_group_flip_complete_flip2',
+    name: 'Atorm_group_flip_complete_flip2',
+    component: Atormgroupflipcompleteflip2
+  },
+  {
+    path: '/Atorm_group_flip_complete_flip3',
+    name: 'Atorm_group_flip_complete_flip3',
+    component: Atormgroupflipcompleteflip3
+  },
+  {
+    path: '/Atorm_group_flip_complete_flip4',
+    name: 'Atorm_group_flip_complete_flip4',
+    component: Atormgroupflipcompleteflip4
   },
   {
     path: '/Eduperson_login',

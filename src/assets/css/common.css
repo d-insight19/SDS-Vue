@@ -376,10 +376,14 @@
 .mr-18 {margin-right:-18px !important;}
 
 .pt0{padding-top: 0 !important;}
+.pt2{padding-top:2px !important;}
+.pt8{padding-top:8px !important;}
 .pt10{padding-top:10px !important;}
 .pt18{padding-top:18px !important;}
 .pdt16{padding-top: 16px !important;}
+.pdt20{padding-top:20px !important;}
 .pdt22{padding-top:22px !important;}
+.pdt36{padding-top:36px !important;}
 .pdt38{padding-top:38px !important;}
 
 .pdb0{padding-bottom:0 !important;}
@@ -402,6 +406,8 @@
 .pdr6 {padding-right:6px !important;}
 .pdr8 {padding-right:4px !important;}
 .pr18 {padding-right:18px !important;}
+.pr30 {padding-right:30px !important;}
+.pr60 {padding-right:60px !important;}
 
 .pa0{padding:0px !important;}
 .pa15{padding:15px !important;}
