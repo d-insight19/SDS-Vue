@@ -10,8 +10,8 @@
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             <p class="header_text  font_18">이러닝 제작</p>
           </div>-->
-          <div class="hide_header pl18 pr18" style="padding-top:30px;">
-            <p class="font_30 fwb">플립러닝 제작</p>
+          <div class="hide_header pl18 pr18">
+            <p class="font_30 fwb pdt36">플립러닝 제작</p>
             <div class="stepper mb30">
                 <div class="clearfix">
                     <h2 class="tit">수료기준</h2>

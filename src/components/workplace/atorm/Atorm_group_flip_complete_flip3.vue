@@ -34,7 +34,7 @@
             <div class="inner pdb20">
 
                 <ul class="confirm_item_detail">
-                    <li class="open" @click="toggleMenu($event)">
+                    <li @click="toggleMenu($event)">
                         <span>필수정보</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pt0">
@@ -158,7 +158,7 @@
                         </div>
                     </li>
 
-                    <li @click="toggleMenu($event)">
+                    <li class="open" @click="toggleMenu($event)">
                         <span>학습목차 및 구성컨텐츠</span>
                         <span class="accordion_arrow"></span>
                         
