@@ -1811,10 +1811,28 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .criteria-wrap .total .total-num{font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px;}
 
 //color.vue
+.color_list{font-size:30px;}
+.color_list li {margin-bottom : 20px; border-bottom: 10px dashed crimson}
+.color_list  h1 { color: crimson; font-size:44px;}
+.attach{ color: dodgerblue; font-size:30px;}
 .danger{color:map-get($static_colors, danger);}
-
-
-
+.primary{color:map-get($static_colors, primary);}
+.star{color:map-get($static_colors, star);}
+.alert{color:map-get($static_colors, alert);}
+.type_1{color:map-get($contents_colors, type_1);}
+.type_2{color:map-get($contents_colors, type_2);}
+.type_3{color:map-get($contents_colors, type_3);}
+.type_4{color:map-get($contents_colors, type_4);}
+.type_5{color:map-get($contents_colors, type_5);}
+.sizeUp_box{}
+.border_box p { border:1px solid ; maring:10px;}
+.B92{color:map-get($line_colors, B92);}
+.B89{color:map-get($line_colors, B89);}
+.B85{color:map-get($line_colors, B85);}
+.B80{color:map-get($line_colors, B80);}
+.B60{color:map-get($line_colors, B60);}
+.B10{color:map-get($line_colors, B10);}
+.B95{color:map-get($line_colors, B95);}
 
 
 
