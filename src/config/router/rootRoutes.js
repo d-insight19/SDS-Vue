@@ -636,6 +636,10 @@ import AtormELearningMultiplepopup from '~workplace/atorm/Atorm_e-learning_multi
 import AtormELearningOxpopup from '~workplace/atorm/Atorm_e-learning_oxpopup'
 import AtormELearningShortanswerpopup from '~workplace/atorm/Atorm_e-learning_shortanswerpopup'
 import Atormstatusinfo from '~workplace/atorm/Atorm_status_info'
+import Atormgroupflipmaterialreport from '~workplace/atorm/Atorm_group_flip_material_report'
+import Atormgroupflipmaterialreport2 from '~workplace/atorm/Atorm_group_flip_material_report2'
+import Atormgroupflipbasic1 from '~workplace/atorm/Atorm_group_flip_basic1'
+import Atormgroupflipbasic2 from '~workplace/atorm/Atorm_group_flip_basic2'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -3573,6 +3577,26 @@ var rootRoutes = [
     path: '/Atorm_status_info',
     name: 'Atorm_status_info',
     component: Atormstatusinfo
+  },
+  {
+    path: '/Atorm_group_flip_material_report',
+    name: 'Atorm_group_flip_material_report',
+    component: Atormgroupflipmaterialreport
+  },
+  {
+    path: '/Atorm_group_flip_material_report2',
+    name: 'Atorm_group_flip_material_report2',
+    component: Atormgroupflipmaterialreport2
+  },
+  {
+    path: '/Atorm_group_flip_basic1',
+    name: 'Atorm_group_flip_basic1',
+    component: Atormgroupflipbasic1
+  },
+  {
+    path: '/Atorm_group_flip_basic2',
+    name: 'Atorm_group_flip_basic2',
+    component: Atormgroupflipbasic2
   },
   {
     path: '/Eduperson_login',

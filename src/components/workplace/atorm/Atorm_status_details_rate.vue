@@ -19,14 +19,14 @@
                     <h2 class="label-tit16"><b>설문 응시자 수</b></h2>
                     <p class="status_detail"><span class="num">1,245</span> <span class="unit">명</span></p>
  
-            <p class="hr" style="margin-top:26px; margin-bottom:22px;"></p> 
+            <p class="hr" style="margin:26px -24px 22px"></p>  
   
                 <!-- 댓글 -->
                 <div class="txt-line mt0">
                     <span class="my-op font_16">평균평점</span>
                 </div>
 
-                <div class="rating_wrap bd_bt mb20">
+                <div class="rating_wrap bd_bt">
                     <fieldset class="rating">
                         <input type="radio" id="star05" name="rating" value="5" /><label class = "full" for="star05" title="Awesome - 5 stars"></label>
                         <input type="radio" id="star04" name="rating" value="4" /><label class = "full" for="star04" title="Pretty good - 4 stars"></label>

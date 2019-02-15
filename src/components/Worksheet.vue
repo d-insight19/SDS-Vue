@@ -2202,8 +2202,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_basic</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_basic1' }">
+            Atorm_group_flip_basic1
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_group_flip_basic2' }">
+            Atorm_group_flip_basic2
           </router-link>
         </td>
         <td></td>
@@ -10219,8 +10222,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_material_report</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_material_report' }">
+            Atorm_group_flip_material_report
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_group_flip_material_report2' }">
+            Atorm_group_flip_material_report2
           </router-link>
         </td>
         <td></td>
@@ -10694,9 +10700,9 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.04.00._status_ info</td>
         <td>
-          <!--<router-link :to="{ name: 'Atorm_status_info' }">
+          <router-link :to="{ name: 'Atorm_status_info' }">
             Atorm_status_info
-          </router-link>-->
+          </router-link>
         </td>
         <td></td>
       </tr>
