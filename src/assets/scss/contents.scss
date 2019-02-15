@@ -116,9 +116,9 @@
 .ulList.type3 li dl dt a{ font-size:map-get($font-size, font_16); line-height: 24px; letter-spacing: -0.48px;}
 
 .ulList.type4{border-top:1px solid #bfbfbf;}
-.ulList.type4 li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:1px solid #eaeaea;}
-.ulList.type4 li > .labelChk{vertical-align: top;}
-.ulList.type4 li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
+.ulList.type4 > li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:1px solid #eaeaea;}
+.ulList.type4 > li > .labelChk{vertical-align: top;}
+.ulList.type4 > li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
 
 // 개인정보 마케팅 활용 동의
 .cTitWrap + .ulList.type4{margin-top:17px;} 
@@ -1046,7 +1046,7 @@ table td.sub-txt{ color:#000;}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 .ulList .at-tit {white-space: nowrap; text-overflow: ellipsis; overflow: hidden; max-width: 67%; position:absolute; vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_14);line-height: 19px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
-.ulList.type4.bot-btn li:nth-last-child(1){border-bottom:none;}
+.ulList.type4.bot-btn > li:nth-last-child(1){border-bottom:none;}
 
 
 // 질문방 상세 2
@@ -1627,9 +1627,9 @@ label.rdo .label{position: relative;}
 
 #container.studystatus .label-tit-15{font-size: map-get($font_size, font_15); letter-spacing: -0.045em;}
 #container.studystatus .abs-num{position: absolute;top: 50%;transform: translateY(-50%);font-family:'roboto'; font-size: map-get($font_size, font_17);}
-#container.studystatus .ulList.type4 li {height: auto;}
-#container.studystatus .ulList.type4 li p{padding-left:42px;}
-#container.studystatus .ulList.type4 li.font_16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
+#container.studystatus .ulList.type4 > li {height: auto;}
+#container.studystatus .ulList.type4 > li p{padding-left:42px;}
+#container.studystatus .ulList.type4 > li.font_16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
 
 
 //Studystatus_assessment
@@ -1689,9 +1689,9 @@ label.rdo .label{position: relative;}
 #container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 2px 0 6px;background: #d9d9d9;}
 #container.studyquestion .pipe-group dd:nth-last-child(1):after{display:none;}
 #container.studyquestion .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
-#container.studyquestion .ulList.type4 li{height:auto;}
-#container.studyquestion .ulList.type4 li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
-#container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
+#container.studyquestion .ulList.type4 > li{height:auto;}
+#container.studyquestion .ulList.type4 > li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
+#container.studyquestion .ulList.type4 > li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
 
 //study_lo_docs
 #container.study_lo_docs #header.tab .header_inner.line1{z-index:999}
@@ -1725,7 +1725,7 @@ label.rdo .label{position: relative;}
     & .category { top: 43px !important; width:100px !important; }
 }
 .btn_close { width:28px; height:28px; background: url("../img/ic_close_line_24.png") no-repeat 50% 50%; background-size:contain; }
-.w_full { width:100%; }
+
 
 //05.Study_02.01.studystatus
 .singleLineGroupBlock {
@@ -1740,6 +1740,27 @@ label.rdo .label{position: relative;}
 
 .flex_1 { flex-grow:1 }
 
+/*stydy reminder*/
+.reminderListBlock { margin-top:36px; }
+.reminderList {
+    li { 
+        &:last-child {
+            margin-bottom:0;
+        }
+    }
+}
+.reminderList-item { margin-bottom:8px; border: 1px solid map-get($line_colors, B85); }
+.reminderList-link { display:block; height:100%; padding:17px 14px; }
+
+/*study survey*/
+.icon_btwBar {
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    vertical-align: middle;
+    margin-right: 6px;
+    background: #d9d9d9;
+}
 
 #container.voice .record_box{background:#f2f3f7; padding:24px 34px;}
 #container.voice .font_15{font-size: map-get($font-size , font_15);letter-spacing: -0.045em;color:rgba(0,0,0,0.8)}
@@ -2490,7 +2511,8 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .formal_requeststage > li.inactive .contents{color:map-get($mono_colors,mono_80);}
 
 // 다운로드
-.MySpace .downloadCondition {position: relative; background-color: map-get($line_colors , B89); padding:12px 18px; height: 61px;}
+.MySpace .downloadCondition,
+.downloadCondition  {position: relative; background-color: map-get($line_colors , B89); padding:12px 18px; height: 61px;}
 .MySpace .thumList.type1 > li {border-bottom:0 none; margin-bottom:0;}
 .MySpace .thumList.type1 .thum {width:120px; height:120px;}
 .MySpace .thumList.type1 .in {background-color: #fff; height: 120px; padding-left: 136px; padding-right:18px;}

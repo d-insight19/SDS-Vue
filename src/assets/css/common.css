@@ -251,11 +251,11 @@
 
 
 /* font-weight -> 500  */
-.fwl{font-weight: 300 !important;}
-.fwr{font-weight: 400 !important;}
-.fwb{font-weight: 500 !important;}
-.fwb600{font-weight: 600 !important;}
-.fwb700{font-weight: 700 !important;}
+.fwl{font-weight: 300 !important;} /*light*/
+.fwr{font-weight: 400 !important;} /*regular*/
+.fwb{font-weight: 500 !important;} /*medium*/
+.fwb600{font-weight: 600 !important;} /*bold*/
+.fwb700{font-weight: 700 !important;} /*bolder*/
 
 
 

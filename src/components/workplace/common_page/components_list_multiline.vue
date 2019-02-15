@@ -196,6 +196,58 @@
 
                         </ul>
                         <br>
+
+                        <p> study &gt; 05.Study_02.38.reminder </p>
+                        <ul class="reminderList">
+                            <li class="reminderList-item">
+                                <a href="" class="reminderList-link">
+                                    <div class="d_flex align_items_center">
+                                        <div class="d_flex_col">
+                                            <em class="ico headphone_28 mr6"></em>
+                                        </div>
+                                        <div class="d_flex_col flex_1">
+                                            데이터와 배열 활용하기 데이터와 배열 활용하기 데이터와 배열 활용하기데이터와 배열 활용하기데이터와 배열 활용하기
+                                        </div>
+                                        <div class="d_flex_col">
+                                            <em class="ico next_16 ml12"></em>
+                                        </div>
+                                    </div>                                        
+                                </a>
+                            </li>
+                            <li class="reminderList-item">
+                                <a href="" class="reminderList-link">
+                                    <div class="d_flex align_items_center">
+                                        <div class="d_flex_col">
+                                            <em class="ico play_28 mr6"></em>
+                                        </div>
+                                        <div class="d_flex_col flex_1">
+                                            데이터와 배열 활용하기 데이터와 배열 활용하기 데이터와 배열 활용하기데이터와 배열 활용하기데이터와 배열 활용하기
+                                        </div>
+                                        <div class="d_flex_col">
+                                            <em class="ico next_16 ml12"></em>
+                                        </div>
+                                    </div>                                        
+                                </a>
+                            </li> 
+                            <li class="reminderList-item">
+                                <a href="" class="reminderList-link">
+                                    <div class="d_flex align_items_center">
+                                        <div class="d_flex_col">
+                                            <em class="ico ebook_28 mr6"></em>
+                                        </div>
+                                        <div class="d_flex_col flex_1">
+                                            데이터와 배열 활용하기 데이터와 배열 활용하기 데이터와 배열 활용하기데이터와 배열 활용하기데이터와 배열 활용하기
+                                        </div>
+                                        <div class="d_flex_col">
+                                            <em class="ico next_16 ml12"></em>
+                                        </div>
+                                    </div>                                        
+                                </a>
+                            </li>                                                             
+                        </ul>
+
+
+
                     </div>
                 </div>
             </div>
