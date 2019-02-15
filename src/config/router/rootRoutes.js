@@ -173,9 +173,9 @@ import Studystudystatusassessmentapplyresult from '~workplace/study/Study_studys
 import Studystudystatusassessmentwindow01 from '~workplace/study/Study_studystatus_assessment_window_01'
 import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystatus_assessment_window_02'
 import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
-import Study_0217studylist from '~workplace/study/Study_0217studylist'
-import Study_0218studylist_download_01 from '~workplace/study/Study_0218studylist_download_01'
-import Study_0218studylist_download_02 from '~workplace/study/Study_0218studylist_download_02'
+import Study0217studylist from '~workplace/study/Study_0217studylist'
+import Study0218studylistdownload01 from '~workplace/study/Study_0218studylist_download_01'
+import Study0218studylistdownload02 from '~workplace/study/Study_0218studylist_download_02'
 import Studyquestion from '~workplace/study/Study_studyquestion'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
@@ -1388,7 +1388,7 @@ var rootRoutes = [
     path: '/Study_home_set02',
     name: 'Study_home_set02',
     component: StudyHomeSet02
-  }, 
+  },
   {
     path: '/Study_home_set_book',
     name: 'Study_home_set_book',
@@ -1577,18 +1577,18 @@ var rootRoutes = [
   {
     path: '/Study_0217studylist',
     name: 'Study_0217studylist',
-    component: Study_0217studylist
+    component: Study0217studylist
   },
   {
     path: '/Study_0218studylist_download_01',
     name: 'Study_0218studylist_download_01',
-    component: Study_0218studylist_download_01
+    component: Study0218studylistdownload01
   },
   {
     path: '/Study_0218studylist_download_02',
     name: 'Study_0218studylist_download_02',
-    component: Study_0218studylist_download_02
-  },  
+    component: Study0218studylistdownload02
+  },
   {
     path: '/Study_studyquestion',
     name: 'Study_studyquestion',
@@ -3532,6 +3532,16 @@ var rootRoutes = [
     path: '/Atorm_status_info',
     name: 'Atorm_status_info',
     component: Atormstatusinfo
+  },
+  {
+    path: '/Atorm_group_flip_complete',
+    name: 'Atorm_group_flip_complete',
+    component: AtormGroupFlipComplete
+  },
+  {
+    path: '/Atorm_group_flip_criteria',
+    name: 'Atorm_group_flip_criteria',
+    component: AtormGroupFlipCriteria
   },
   {
     path: '/Eduperson_login',

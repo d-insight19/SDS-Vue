@@ -12082,7 +12082,6 @@ export default {
   },
   /* vue function */
   methods: {
-   
   }
 }
 </script>
