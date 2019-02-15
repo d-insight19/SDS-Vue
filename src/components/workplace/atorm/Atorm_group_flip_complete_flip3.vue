@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery atorm atorm_confirmlist_detail pd70">
+      <div id="container" class="mediaquery atorm flip pd70">
 
         <!-- header  -->
         <div id="header" class="expand">          
@@ -34,13 +34,13 @@
             <div class="inner pdb20">
 
                 <ul class="confirm_item_detail">
-                    <li @click="toggleMenu($event)">
+                    <li class="open" @click="toggleMenu($event)">
                         <span>필수정보</span>
                         <span class="accordion_arrow"></span>
-                        <div class="confirm_item_detail_inner pt0">
+                        <div class="confirm_item_detail_inner pdb25">
                             <!-- list -->
                             <ul>
-                                <li class="mb20">
+                                <li>
                                     <table>
                                         <thead>
                                             <tr>
@@ -58,26 +58,22 @@
                                                     <strong class="label-tit15 mono_100">과정명</strong>
                                                     <p>1%의 핵심인재를 내사람으로 만들어 보템이 되기</p>
                                                 </td>
-                                            </tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fwb pdt20">과정코드</td>
+                                                    <td class="pdt20">K1111</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fwb">학습시간</td>
+                                                    <td>3시간</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fwb">학습기간</td>
+                                                    <td>3일(Days)</td>
+                                                </tr>
                                         </thead>
                                     </table>
-                                </li>
-                                <li class="mb7">                                    
-                                    <table class="essential_table">
-                                        <tr>
-                                            <td class="mono_100 fwb">과정코드</td>
-                                            <td class="pl10">K1111</td>
-                                        </tr> 
-                                        <tr>
-                                            <td class="mono_100 fwb">학습시간</td>
-                                            <td class="pl10">3시간</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="mono_100 fwb">학습기간</td>
-                                            <td class="pl10">3일(Days)</td>
-                                        </tr>                                      
-                                    </table>
-                                </li>                                                          
+                                </li>                                                                                     
                             </ul>
                             <!-- //list -->
                         </div>

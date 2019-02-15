@@ -720,8 +720,8 @@
 
 // ATORM 승인요청리스트 디테일
 #container.atorm_confirmlist_detail .confirm_item_detail{margin:0px -18px}
-#container.atorm_confirmlist_detail .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
-#container.atorm_confirmlist_detail .confirm_item_detail > li > span:first-child{line-height: 58px;font-weight: 600;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li > span:first-child{line-height: 68px;font-weight: 600;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
@@ -1808,7 +1808,7 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table{border-spacing: 0 10px}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table td:nth-child(1){width:116px;}
-#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table td{font-weight:500;font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;padding-top:10px}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table td{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;padding-top:10px}
 // #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table tr:nth-child(1) td{padding-top:20px}
 #container.atorm.flip .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.atorm.flip .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
