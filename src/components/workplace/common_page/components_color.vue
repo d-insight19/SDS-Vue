@@ -1,6 +1,6 @@
 <template>
 <!-- eslint-disable -->
-    <div id="wrap" class="colorCode2">
+    <div id="wrap" class="colorCode2 com_clr">
         <ul class="color_list">            
             <li>
                 <h1>text-color</h1>

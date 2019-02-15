@@ -1819,28 +1819,27 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .criteria-wrap .total .total-num{font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px;}
 
 //color.vue
-.color_list{font-size:30px;}
-.color_list li {margin-bottom : 20px; border-bottom: 10px dashed crimson}
-.color_list  h1 { color: crimson; font-size:44px;}
-.attach{ color: dodgerblue; font-size:30px;}
-.danger{color:map-get($static_colors, danger);}
-.primary{color:map-get($static_colors, primary);}
-.star{color:map-get($static_colors, star);}
-.alert{color:map-get($static_colors, alert);}
-.type_1{color:map-get($contents_colors, type_1);}
-.type_2{color:map-get($contents_colors, type_2);}
-.type_3{color:map-get($contents_colors, type_3);}
-.type_4{color:map-get($contents_colors, type_4);}
-.type_5{color:map-get($contents_colors, type_5);}
-.sizeUp_box{}
-.border_box p { border:1px solid ; maring:10px;}
-.B92{color:map-get($line_colors, B92);}
-.B89{color:map-get($line_colors, B89);}
-.B85{color:map-get($line_colors, B85);}
-.B80{color:map-get($line_colors, B80);}
-.B60{color:map-get($line_colors, B60);}
-.B10{color:map-get($line_colors, B10);}
-.B95{color:map-get($line_colors, B95);}
+.com_clr .color_list{font-size:30px;}
+.com_clr .color_list li {margin-bottom : 20px; border-bottom: 10px dashed crimson}
+.com_clr .color_list  h1 { color: crimson; font-size:44px;}
+.com_clr .attach{ color: dodgerblue; font-size:30px;}
+.com_clr .danger{color:map-get($static_colors, danger);}
+.com_clr .primary{color:map-get($static_colors, primary);}
+.com_clr .star{color:map-get($static_colors, star);}
+.com_clr .alert{color:map-get($static_colors, alert);}
+.com_clr .type_1{color:map-get($contents_colors, type_1);}
+.com_clr .type_2{color:map-get($contents_colors, type_2);}
+.com_clr .type_3{color:map-get($contents_colors, type_3);}
+.com_clr .type_4{color:map-get($contents_colors, type_4);}
+.com_clr .type_5{color:map-get($contents_colors, type_5);}
+.com_clr .border_box p { border:1px solid ; maring:10px;}
+.com_clr .B92{color:map-get($line_colors, B92);}
+.com_clr .B89{color:map-get($line_colors, B89);}
+.com_clr .B85{color:map-get($line_colors, B85);}
+.com_clr .B80{color:map-get($line_colors, B80);}
+.com_clr .B60{color:map-get($line_colors, B60);}
+.com_clr .B10{color:map-get($line_colors, B10);}
+.com_clr .B95{color:map-get($line_colors, B95);}
 
 
 
