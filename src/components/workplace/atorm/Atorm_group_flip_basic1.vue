@@ -204,7 +204,7 @@
 
 <script>
 export default {
-  name: 'Atorm_e-learning_complete_1',
+  name: 'Atorm_e-learning_basic_1',
   /* vue lifecycle */
   created () {
   },

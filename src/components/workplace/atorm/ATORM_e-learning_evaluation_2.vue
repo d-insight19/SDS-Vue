@@ -29,7 +29,7 @@
           </div>
         </div>
         <!-- //header -->
-        <div id="content" class="etc">
+        <div id="content" class="normal">
             <div class="cell">
                 <div class="inner mb40">  
                     <p class="label-tit16 w100p pdb20">
@@ -130,7 +130,7 @@
 
 <script>
 export default {
-  name: 'ATORM_e-learning_evaluation_2',
+  name: 'Atorm_e-learning_evaluation_2',
   /* vue lifecycle */
   created () {
   },

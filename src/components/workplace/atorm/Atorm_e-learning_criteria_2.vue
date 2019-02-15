@@ -35,18 +35,14 @@
             <div class="inner pdb20">
                 <p class="font_18 fwb mb20">과정 수료기준</p>
                 <p class="mb8 font_14">총점 <span class="mono_50">(100점 기준)</span></p>
-                <div class="inp-wrap">                  
-                    <input type="text">
-                    <span class="score mono_80 font_14 fwb">
-                        <span class="num">70</span> 점 이상
-                    </span>
+                <div class="inp-wrap">
+                    <slp-text-field classObject="tar pr60" value='70'></slp-text-field>
+                    <span class="score mono_80 font_14 pt2">% 이상</span>
                 </div>
                 <p class="mb8 font_14 mt10">진도율 <span class="mono_50">(100% 기준)</span></p>
-                <div class="inp-wrap">                  
-                    <input type="text">
-                    <span class="score mono_80 font_14 fwb">
-                        <span class="num">85</span> % 이상
-                    </span>
+                <div class="inp-wrap">
+                    <slp-text-field classObject="tar pr60" value='85'></slp-text-field>
+                    <span class="score mono_80 font_14 pt2">% 이상</span>
                 </div>
                 <p class="mono_65 mt26">이 과정은 총점 <span class="color_clr1 fwb">0점</span> 이상을 획득하고<br/>집합강의 <span class="color_clr1 fwb">0%</span> 이상 출석 시, 수료가 가능한 과정입니다.</p>
 
@@ -63,15 +59,15 @@
                     </p>
 
                     <slp-checkbox class="mb8 font_14 mt10" value="true">진도율</slp-checkbox>
-                    <div class="inp-wrap">    
-                        <slp-text-field></slp-text-field>
-                        <span class="score">%</span>
-                    </div>
+<div class="inp-wrap">
+    <slp-text-field classObject="tar pr30"></slp-text-field>
+    <span class="score mono_80 font_14 pt2">%</span>
+</div>
                     
                     <slp-checkbox class="mb8 font_14 mt10">최종평가</slp-checkbox>
-                    <div class="inp-wrap">    
-                        <slp-text-field></slp-text-field>
-                        <span class="score">%</span>
+                    <div class="inp-wrap">
+                        <slp-text-field classObject="tar pr30"></slp-text-field>
+                        <span class="score mono_80 font_14 pt2">%</span>
                     </div>
 
                     <p class="mt15 total">합계 <span class="fr total-num fwb"><span>100</span>%</span></p>
