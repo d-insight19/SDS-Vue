@@ -1,5 +1,6 @@
 // fdp 기본 route 정보
 import Worksheet from '@/components/Worksheet'
+import ComponentsColor from '~workplace/common_page/components_color'
 import ComponentsIcons from '~workplace/common_page/components_icons'
 import ComponentsTables from '~workplace/common_page/components_tables'
 import ComponentsButtons from '~workplace/common_page/components_buttons'
@@ -523,6 +524,7 @@ import CustomerCenterInquirywrite02 from '~workplace/customercenter/CustomerCent
 import CustomerCenterInquirywrite02error from '~workplace/customercenter/CustomerCenter_Inquiry_write02_error'
 
 import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
+import EdupersonLoginOTP from '~workplace/eduperson/Eduperson_loginOTP'
 import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
@@ -625,6 +627,11 @@ import AtormELearningEvaluation2 from '~workplace/atorm/Atorm_e-learning_evaluat
 import AtormELearningMultiplepopup from '~workplace/atorm/Atorm_e-learning_multiplepopup'
 import AtormELearningOxpopup from '~workplace/atorm/Atorm_e-learning_oxpopup'
 import AtormELearningShortanswerpopup from '~workplace/atorm/Atorm_e-learning_shortanswerpopup'
+import AtormELearningCriteria1 from '~workplace/atorm/Atorm_e-learning_criteria_1'
+import AtormELearningCriteria2 from '~workplace/atorm/Atorm_e-learning_criteria_2'
+import AtormELearningCriteriaSurvey from '~workplace/atorm/Atorm_e-learning_criteria_survey'
+import AtormELearningComplete1 from '~workplace/atorm/Atorm_e-learning_complete_1'
+import AtormELearningComplete2 from '~workplace/atorm/Atorm_e-learning_complete_2'
 import Atormstatusinfo from '~workplace/atorm/Atorm_status_info'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
@@ -639,8 +646,19 @@ import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_s
 import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
 
+// import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
+// import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
+import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
+import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
+// import AtormGroupFlipComplete02 from '~workplace/atorm/Atorm_group_flip_complete_02'
+import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
 // 1번 영역
 var rootRoutes = [
+  {
+    path: '/Atorm_group_flip_post_material',
+    name: 'Atorm_group_flip_post_material',
+    component: AtormGroupFlipPostMaterial
+  },
   {
     path: '*',
     name: 'worksheet',
@@ -650,6 +668,11 @@ var rootRoutes = [
     path: '/components_textfield_slp',
     name: 'components_textfield_slp',
     component: ComponentsTextfieldSlp
+  },
+  {
+    path: '/components_color',
+    name: 'components_color',
+    component: ComponentsColor
   },
   {
     path: '/components_icons',
@@ -3481,6 +3504,31 @@ var rootRoutes = [
     component: AtormELearningShortanswerpopup
   },
   {
+    path: '/Atorm_e-learning_criteria_1',
+    name: 'Atorm_e-learning_criteria_1',
+    component: AtormELearningCriteria1
+  },
+  {
+    path: '/Atorm_e-learning_criteria_2',
+    name: 'Atorm_e-learning_criteria_2',
+    component: AtormELearningCriteria2
+  },
+  {
+    path: '/Atorm_e-learning_criteria_survey',
+    name: 'Atorm_e-learning_criteria_survey',
+    component: AtormELearningCriteriaSurvey
+  },
+  {
+    path: '/Atorm_e-learning_complete_1',
+    name: 'Atorm_e-learning_complete_1',
+    component: AtormELearningComplete1
+  },
+  {
+    path: '/Atorm_e-learning_complete_2',
+    name: 'Atorm_e-learning_complete_2',
+    component: AtormELearningComplete2
+  },
+  {
     path: '/Atorm_status_info',
     name: 'Atorm_status_info',
     component: Atormstatusinfo
@@ -3489,6 +3537,11 @@ var rootRoutes = [
     path: '/Eduperson_login',
     name: 'Eduperson_login',
     component: EdupersonLogin
+  },
+  {
+    path: '/Eduperson_loginOTP',
+    name: 'Eduperson_loginOTP',
+    component: EdupersonLoginOTP
   },
   {
     path: '/Eduperson_drawer',
