@@ -44,6 +44,8 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .font_19{font-size:map-get($font_size, font_19) !important;}
 .font_20{font-size:map-get($font_size, font_20) !important;}
 .font_22{font-size:map-get($font_size, font_22) !important;}
+.font_24{font-size:map-get($font_size, font_24) !important;}
+.font_25{font-size:map-get($font_size, font_25) !important;}
 .font_26{font-size:map-get($font_size, font_26) !important;}
 .font_28{font-size:map-get($font_size, font_28) !important;}
 .font_30{font-size:map-get($font_size, font_30) !important;}
@@ -1033,19 +1035,27 @@ utilities classes
   & .ml_auto { margin-left:auto !important;}
   & .mr_auto { margin-right:auto !important;}
   & .mt_auto { margin-top:auto !important;}  
-}
-.font_size_xs { font-size:map-get($font-size, font_14); }
-.font_size_base { font-size:map-get($font-size, font_16); }
 
+  & .flex_1 { flex-grow:1 }
+}
+
+/*font_size*/
+.font_size_xs { font-size: map-get($font-size, font_14); }
+.font_size_base { font-size: map-get($font-size, font_16); }
+
+/*font_weight*/
 .font_weight_base { font-weight: 400; }
 
-.font_size_base { font-size:map-get($font-size, font_16); }
+/*table*/
 .table {
   min-width:360px;
   & th { padding:0 9px;}
 }
+
+/*border*/
 .border { border:1px solid red !important; }
-/*utilities classes*/
+
+/*block*/
 .d-block { display:block !important; }
 
 /* 페이저 */

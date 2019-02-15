@@ -7,7 +7,7 @@
             
             <!-- header -->
             <div id="header" class="fixed">
-                <button type="button" class="btn only prev"><span class="ico">이전</span></button>
+                <button type="button" class="btn only close"><span class="ico">닫기</span></button>
                 <p class="header_text font_18">단답형</p><button type="button" class="btn16 color_clr2">저장</button>
             </div>
             <!-- //header -->

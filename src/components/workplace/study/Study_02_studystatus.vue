@@ -233,14 +233,7 @@
           <div class="cell">
             <div class="inner pt0">
                 
-                <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_15 mono_80 fwb dib">차시별</p>
-                    <p class="fr">
-                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
-                        <span class="ico download"></span>
-                    </p>                    
-                </div>
-                <p class="label-tit-18 mt19 ">QR 출석하기</p>
+                <p class="label-tit-18 studystatus_label_tit_18"><span class="ico ic_qr_blue_24"></span> <span class="color_clr2">QR 출석하기</span></p>
 
                 <div class="type_box type_1 w-full">
                     <dl>
@@ -256,14 +249,48 @@
                         <dd>30%</dd>
                     </dl>
                 </div> 
-                <ul class="singleList type_1">
-                    <li>
-                        <a href="#">과제<span class="ico"></span></a>
-                    </li>
-                </ul>
 
+                <div class="singleLineGroupBlock">
+                    <ul class="singleLineGroup">
+                        <li class="singleLineGroup_item">
+                            <a href="" class="singleLineGroup_link d_flex align_items_center">
+                                <div class="flex_1"> <span class="ico ic_pen_line_24"></span>과제</div> 
+                                <div>1/3</div>
+                                <div><span class="ico next_16"></span></div>
+                            </a>
+                        </li>
+                        <li class="singleLineGroup_item">
+                            <a href="" class="singleLineGroup_link d_flex align_items_center">
+                                <div class="flex_1"><span class="ico mark_line"></span>중간평가</div> 
+                                <div>제출완료</div> 
+                                <div><span class="ico next_16 ml_auto"></span></div>
+                            </a>
+                        </li>  
+                        <li class="singleLineGroup_item">
+                            <a href="" class="singleLineGroup_link d_flex align_items_center">
+                                <div class="flex_1"><span class="ico mark_line"></span>최종평가</div> 
+                                <div>제출완료</div> 
+                                <div><span class="ico next_16 ml_auto"></span></div>
+                            </a>
+                        </li>  
+                        <li class="singleLineGroup_item">
+                            <a href="" class="singleLineGroup_link d_flex align_items_center">
+                                <div class="flex_1"><span class="ico ic_attendace_line_24"></span>출석율</div> 
+                                <div>제출완료</div> 
+                                <div><span class="ico next_16 ml_auto"></span></div>
+                            </a>
+                        </li> 
+                        <li class="singleLineGroup_item">
+                            <a href="" class="singleLineGroup_link d_flex align_items_center">
+                                <div class="flex_1"><span class="ico ic_badge_line_bk_24"></span> 스코어</div> 
+                                <div>제출완료</div> 
+                                <div><span class="ico next_16 ml_auto"></span></div>
+                            </a>
+                        </li>                                                        
+                    </ul>
+                </div>
 
-                <p class="label-tit-18 mt26 ">수료기준</p>
+                <p class="label-tit-18 mt26">수료기준</p>
                 <p calass="font_size_xs mono_80">진도율 80% 이상, 모든 평가항목 참여, 총점 80점 이상되어야 수료 가능합니다.</p>
             
                 <div class="scroll-x">

@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap">
         <div class="splash_wrap" style="height:100vmax">
-            <video style="width:100%" src="@/assets/movie/SLP_Mobile_GUI_Splash_B2B.mp4" autoplay></video>
+            <!-- <video style="width:100%" src="@/assets/movie/SLP_Mobile_GUI_Splash_B2B.mp4" autoplay></video> -->
         </div>
     </div>
     <!-- //wrap -->
