@@ -9973,8 +9973,7 @@
         <td>
           <router-link :to="{ name: '' }">
             
-          </router-link>
-          제플린 없음
+          </router-link>         
         </td>
         <td></td>
       </tr>
@@ -10233,8 +10232,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_material_report</td>
         <td>
-          <router-link :to="{ name: 'Atorm_group_flip_material_report' }">
-            Atorm_group_flip_material_report
+          <router-link :to="{ name: 'Atorm_group_flip_material_report1' }">
+            Atorm_group_flip_material_report1
           </router-link>,
           <router-link :to="{ name: 'Atorm_group_flip_material_report2' }">
             Atorm_group_flip_material_report2
@@ -10881,8 +10880,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_criteria_flip</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_criteria_flip' }">
+            Atorm_group_flip_criteria_flip
           </router-link>
         </td>
         <td></td>
@@ -10898,8 +10897,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_complete_flip</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_complete_flip' }">
+            Atorm_group_flip_complete_flip
           </router-link>
         </td>
         <td></td>

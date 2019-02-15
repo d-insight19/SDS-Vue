@@ -1808,7 +1808,7 @@ label.rdo .label{position: relative;}
 // #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table tr:nth-child(1) td{padding-top:20px}
 #container.atorm.flip .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.atorm.flip .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
-
+#container.atorm.flip .total-num {font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px; color:rgba(0,0,0,0.8); font-weight: 500} 
 
 //ATORM_group/flip_criteria_1
 #container.atorm.flip .inp-wrap{position: relative;}
