@@ -376,6 +376,7 @@
 .mr-18 {margin-right:-18px !important;}
 
 .pt0{padding-top: 0 !important;}
+.pt2{padding-top:2px !important;}
 .pt8{padding-top:8px !important;}
 .pt10{padding-top:10px !important;}
 .pt18{padding-top:18px !important;}
@@ -403,6 +404,8 @@
 .pdr6 {padding-right:6px !important;}
 .pdr8 {padding-right:4px !important;}
 .pr18 {padding-right:18px !important;}
+.pr30 {padding-right:30px !important;}
+.pr60 {padding-right:60px !important;}
 
 .pa0{padding:0px !important;}
 .pa15{padding:15px !important;}
