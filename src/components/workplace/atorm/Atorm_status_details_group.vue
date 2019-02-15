@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
         <!-- container -->
-        <div id="container" class="mediaquery MySpace atorm pd70">
+        <div id="container" class="mediaquery atorm pd70">
             
            <!-- header -->
             <div v-if="headerType == '2'" id="header" class="tab fixed">          

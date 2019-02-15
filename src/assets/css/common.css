@@ -41,6 +41,8 @@
 .next_12{background-image: url("../img/ic_next_line_blue_12.png");position: absolute;right: 0px;top: 50%;transform: translateY(-50%);}
 .ico.folder_16{width:16px;height:16px;background: url("../img/ic_folder_line_16.png") no-repeat; background-size: contain;}
 .ico.play_16.blue{width:16px;height:16px;background: url("../img/ic_play_line_blue_16.png") no-repeat; background-size: contain;}
+.ico.next_line_12 {width:12px; height:12px; background: url("../img/ic_next_line_12.png") no-repeat; background-size:cover}
+
 
 /* 추가이미지 2018-12-07 */
 .ico.chk{width:20px;height:20px;background: url("../img/ic_submission_solid_20.png") no-repeat; }
@@ -350,6 +352,7 @@
 
 .ml2{margin-left: 2px !important;}
 .ml5{margin-left: 5px !important;}
+.ml6{margin-left: 6px !important;}
 .ml10{margin-left: 10px !important;}
 .ml12{margin-left: 12px !important;}
 .ml20{margin-left: 20px !important;}
@@ -388,8 +391,13 @@
 .pdb98{padding-bottom:98px !important;}
 
 .pdl0{padding-left: 0 !important;}
+.pdl4 {padding-left: 4px !important;}
+.pdl6 {padding-left: 6px !important;}
 .pl18 {padding-left:18px !important;}
 .pl25 {padding-left:25px !important;}
+.pdr4 {padding-right:4px !important;}
+.pdr6 {padding-right:6px !important;}
+.pdr8 {padding-right:4px !important;}
 .pr18 {padding-right:18px !important;}
 
 .pa0{padding:0px !important;}

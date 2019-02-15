@@ -615,6 +615,17 @@ import AtormELearningThumbnail from '~workplace/atorm/Atorm_e-learning_thumbnail
 import AtormELearningMaterial from '~workplace/atorm/Atorm_e-learning_material'
 import AtormELearningMaterialUser from '~workplace/atorm/Atorm_e-learning_material_user'
 import AtormELearningMaterialMode from '~workplace/atorm/Atorm_e-learning_material_mode'
+import Atormstatusdetailsbasic from '~workplace/atorm/Atorm_status_details_basic'
+import Atormstatusdetailsgroup from '~workplace/atorm/Atorm_status_details_group'
+import Atormstatusdetails from '~workplace/atorm/Atorm_status_details'
+import Atormstatusdetailsrate from '~workplace/atorm/Atorm_status_details_rate'
+import Atormstatusdetailsflip from '~workplace/atorm/Atorm_status_details_flip'
+import AtormELearningEvaluation1 from '~workplace/atorm/Atorm_e-learning_evaluation_1'
+import AtormELearningEvaluation2 from '~workplace/atorm/Atorm_e-learning_evaluation_2'
+import AtormELearningMultiplepopup from '~workplace/atorm/Atorm_e-learning_multiplepopup'
+import AtormELearningOxpopup from '~workplace/atorm/Atorm_e-learning_oxpopup'
+import AtormELearningShortanswerpopup from '~workplace/atorm/Atorm_e-learning_shortanswerpopup'
+import Atormstatusinfo from '~workplace/atorm/Atorm_status_info'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -1344,7 +1355,7 @@ var rootRoutes = [
     path: '/Study_home_mixed',
     name: 'Study_home_mixed',
     component: StudyHomeMixed
-  },  
+  },
   {
     path: '/Study_home_set',
     name: 'Study_home_set',
@@ -1994,7 +2005,7 @@ var rootRoutes = [
     path: '/Study_LO_mp4_script2scroll',
     name: 'Study_LO_mp4_script2scroll',
     component: StudyLOmp4script2scroll
-  }, 
+  },
   {
     path: '/Study_LO_mp4_script1',
     name: 'Study_LO_mp4_script1',
@@ -3418,6 +3429,61 @@ var rootRoutes = [
     path: '/Atorm_e-learning_material_mode',
     name: 'Atorm_e-learning_material_mode',
     component: AtormELearningMaterialMode
+  },
+  {
+    path: '/Atorm_status_details_basic',
+    name: 'Atorm_status_details_basic',
+    component: Atormstatusdetailsbasic
+  },
+  {
+    path: '/Atorm_status_details_group',
+    name: 'Atorm_status_details_group',
+    component: Atormstatusdetailsgroup
+  },
+  {
+    path: '/Atorm_status_details',
+    name: 'Atorm_status_details',
+    component: Atormstatusdetails
+  },
+  {
+    path: '/Atorm_status_details_rate',
+    name: 'Atorm_status_details_rate',
+    component: Atormstatusdetailsrate
+  },
+  {
+    path: '/Atorm_status_details_flip',
+    name: 'Atorm_status_details_flip',
+    component: Atormstatusdetailsflip
+  },
+  {
+    path: '/Atorm_e-learning_evaluation_1',
+    name: 'Atorm_e-learning_evaluation_1',
+    component: AtormELearningEvaluation1
+  },
+  {
+    path: '/Atorm_e-learning_evaluation_2',
+    name: 'Atorm_e-learning_evaluation_2',
+    component: AtormELearningEvaluation2
+  },
+  {
+    path: '/Atorm_e-learning_multiplepopup',
+    name: 'Atorm_e-learning_multiplepopup',
+    component: AtormELearningMultiplepopup
+  },
+  {
+    path: '/Atorm_e-learning_oxpopup',
+    name: 'Atorm_e-learning_oxpopup',
+    component: AtormELearningOxpopup
+  },
+  {
+    path: '/Atorm_e-learning_shortanswerpopup',
+    name: 'Atorm_e-learning_shortanswerpopup',
+    component: AtormELearningShortanswerpopup
+  },
+  {
+    path: '/Atorm_status_info',
+    name: 'Atorm_status_info',
+    component: Atormstatusinfo
   },
   {
     path: '/Eduperson_login',
