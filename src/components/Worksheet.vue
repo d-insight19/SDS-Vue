@@ -4834,7 +4834,7 @@
       <td align="center">252</td>
         <td>학습홈 영역</td>
         <td>기본메뉴</td>
-        <td>학습현황 (차시노출)</td>
+        <td>학습현황 (차시노출)(2/14</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
@@ -5115,15 +5115,15 @@
       <td align="center">268</td>
         <td>학습홈 영역</td>
         <td>　</td>
-        <td>학습목차</td>
+        <td>학습목차(2/14)</td>
         <td>모아보기</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td class="textL">05.Study_02.17.studylist</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_0217studylist' }">
+            Study_0217studylist
           </router-link>
         </td>
         <td></td>
@@ -5139,8 +5139,11 @@
         <td>　</td>
         <td class="textL">05.Study_02.18.studylist_download</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_0218studylist_download_01' }">
+            Study_0218studylist_download_01
+          </router-link> <br />
+          <router-link :to="{ name: 'Study_0218studylist_download_02' }">
+            Study_0218studylist_download_02
           </router-link>
         </td>
         <td></td>
