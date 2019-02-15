@@ -59,10 +59,10 @@
                     </p>
 
                     <slp-checkbox class="mb8 font_14 mt10" value="true">진도율</slp-checkbox>
-                    <div class="inp-wrap">
-                        <slp-text-field classObject="tar pr30"></slp-text-field>
-                        <span class="score mono_80 font_14 pt2">%</span>
-                    </div>
+<div class="inp-wrap">
+    <slp-text-field classObject="tar pr30"></slp-text-field>
+    <span class="score mono_80 font_14 pt2">%</span>
+</div>
                     
                     <slp-checkbox class="mb8 font_14 mt10">최종평가</slp-checkbox>
                     <div class="inp-wrap">

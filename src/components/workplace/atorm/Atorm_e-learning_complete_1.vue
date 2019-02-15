@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery atorm">
+      <div id="container" class="mediaquery atorm atorm_confirmlist_detail">
 
         <!-- header  -->
         <div id="header" class="expand">          
@@ -12,111 +12,185 @@
             <p class="header_text  font_18">이러닝 제작</p>
           </div>-->
           <div class="hide_header pl18 pr18" style="padding-top:30px;">
-            <p class="font_30 fwb">이러닝 제작</p>
+            <p class="font_30 fwb">집합 제작</p>
             <div class="stepper mb30">
                 <div class="clearfix">
-                    <h2 class="tit">평가제작</h2>
+                    <h2 class="tit">기본정보</h2>
                     <div class="num">
-                        <strong class="color_clr2">3</strong>/<span>5</span>
+                        <strong class="color_clr2">1</strong>/<span>4</span>
                     </div>
                 </div>
                     <div class="progBox">
-                    <div class="bar clr2" style="width:60%"></div>
+                    <div class="bar clr2" style="width:20%"></div>
                 </div>
-                <p class="txt-desc">학습과정을 완료한 학습자들 대상으로 평가를 할 수 있습니다.</p>
+                <p class="txt-desc">학습과정의 기본정보를 입력합니다.</p>
             </div>
             <p class="hr mb0"></p>
           </div>
         </div>
         <!-- //header -->
-        <div id="content" class="etc">
-            <div class="cell">
-                <div class="inner mb40">  
-                    <p class="label-tit16 w100p pdb20">
-                        평가설정
-                        <slp-switch class="fr" value="true"/>
-                    </p>
-                    <!-- list -->
-                    <ul class="singleList type1">
-                        <li class="btB89 pt18 pdb20 ">
-                            <p class="label-tit16 w100p pb10">평가문항</p>
-                            <ul class="w80List tac">
-                              <li class="mono_80 font_16 tal">문항</li>
-                              <li class="mono_80 font_16 tal brB89"><span class="fwb600 mono_100 font_22">10</span>개</li>
-                              <li class="mono_80 font_16">배점</li>
-                              <li class="mono_80 font_16"><span class="fwb600 mono_100 font_22">20</span>점</li>
-                            </ul>
-                        </li>
-                        <li class="btB89 pt18 pdb25">
-                            <p class="label-tit16 w100p pb10">평가등록내역</p>
-                            <ul class="w64List tac">
-                              <li class="mr40">
-                                <p class="mono_50 font_14 mb5">선다형</p>
-                                <p class="mb15"><span class="ico multiplechoice_32"></span> <span class="fwb600 mono_100 font_30">2</span></p>
-                                <slp-button class="xxxs mono_80">추가</slp-button>
-                              </li>
-                              <li class="mr40">
-                                <p class="mono_50 font_14 mb5">OX형</p>
-                                <p class="mb15"><span class="ico ox_32"></span> <span class="fwb600 mono_100 font_30">1</span></p>
-                                <slp-button class="xxxs mono_80">추가</slp-button>
-                              </li>
-                              <li>
-                                <p class="mono_50 font_14 mb5">단답형</p>
-                                <p class="mb15"><span class="ico shortanswer_32"></span> <span class="fwb600 mono_100 font_30">2</span></p>
-                                <slp-button class="xxxs mono_80">추가</slp-button>
-                              </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!-- //list -->
+        <div id="content" class="normal">
+          <div class="cell">
+            <div class="inner pdb20">
 
-                    <!-- list -->
-                    <ul class="evaluationList">
-                        <li>
-                            <p class="multiline line2 font_16 mono_80">
-                                <span class="ico multiplechoice_32"></span>
-                                방해요소에 대한 설명이다. 틀린 것을 고르시오.
-                                <span class="ico del"></span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="multiline line2 font_16 mono_80">
-                                <span class="ico shortanswer_32"></span>
-                                의사소통의 기본 요소 5가지를 적으시오.
-                                <span class="ico del"></span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="multiline line2 font_16 mono_80">
-                                <span class="ico ox_32"></span>
-                                위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
-                                <span class="ico del"></span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="multiline line2 font_16 mono_80">
-                                <span class="ico multiplechoice_32"></span>
-                                위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
-                                <span class="ico del"></span>
-                            </p>
-                        </li>
-                        <li>
-                            <p class="multiline line2 font_16 mono_80">
-                                <span class="ico shortanswer_32"></span>
-                                리스크 분석 프로세스에 대한 설명이다. 다음 중 옳은 것을 고르시오. 
-                                <span class="ico del"></span>
-                            </p>
-                        </li>
-                    </ul>
-                    <!-- //list -->        
-                </div>
+                <ul class="confirm_item_detail">
+                    <li class="open" @click="toggleMenu($event)">
+                        <span>필수정보</span>
+                        <span class="accordion_arrow"></span>
+                        <div class="confirm_item_detail_inner pt0">
+                            <!-- list -->
+                            <ul class="singleList type1">
+                                <li class="mb20">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>
+                                                    <div class="thum">
+                                                        <div class="thumbnail">
+                                                            <!--<img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">-->
+                                                        </div>
+                                                        <!--<div class="circle">
+                                                            <span class="ico photo_16"></span>
+                                                        </div>-->
+                                                    </div>
+                                                </td>
+                                                <td class="txt-desc">
+                                                    <strong class="label-tit14 tit_essential">과정명</strong>
+                                                    <slp-text-field placeholder="과정명을 입력하세요" class="mt8"></slp-text-field>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14 tit_essential">학습시간 설정</strong>
+                                    <ul class="fixTab w100p mt10">
+                                        <li>
+                                           <slp-text-field value="시간" class="mt8"></slp-text-field>
+                                        </li>                                       
+                                    </ul>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14 tit_essential">학습기간 설정</strong>
+                                    <ul class="fixTab w100p mt10">
+                                        <li class="w50p">
+                                            <slp-text-field placeholder="숫자만 입력하세요" class="mt8 mr8"></slp-text-field>
+                                        </li>                                       
+                                        <li class="w50p">
+                                            <slp-select placeholder="일(Day)" class="mt8" width="100%">
+                                                <option>전체</option>
+                                            </slp-select>
+                                        </li> 
+                                    </ul>
+                                </li>                                
+                            </ul>
+                            <!-- //list -->
+                        </div>
+                    </li>
+                    <li @click="toggleMenu($event)">
+                        <span>선택정보</span>
+                        <span class="accordion_arrow"></span>
+                        
+                        <div class="confirm_item_detail_inner pt0">
+                            <!-- list -->
+                            <ul class="singleList type1">
+                                <li class="mb20">
+                                    <strong class="label-tit14">학습분류</strong>
+                                    <slp-select placeholder="대분류" width="100%" class="mt8">
+                                        <option>전체</option>
+                                    </slp-select>
+                                    <slp-select placeholder="중분류" width="100%" class="mt8">
+                                        <option>전체</option>
+                                    </slp-select>
+                                    <slp-select placeholder="소분류" width="100%" class="mt8">
+                                        <option>전체</option>
+                                    </slp-select>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">문의방법</strong>
+                                    <div class="rdoSelBox mt8">    
+                                        <slp-radio name="question">연락처</slp-radio>
+                                        <slp-radio name="question">이메일</slp-radio>
+                                    </div>
+                                    <slp-text-field placeholder="연락처, 이메일 선택 후 정보를 입력하세요" class="mt8"></slp-text-field>
+                                </li>
+                                <li class="mb20">
+                                    <p class="label-tit14">학습대상</p>
+                                    <slp-select placeholder="전체" width="100%" class="mt8">
+                                        <option>전체</option>
+                                    </slp-select>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">난이도</strong>
+                                    <slp-select placeholder="선택안함" width="100%" class="mt8">
+                                        <option>전체</option>
+                                    </slp-select>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">교재 유무</strong>
+                                    <div class="rdoSelBox mt8">    
+                                        <slp-radio name="question">교재 없음</slp-radio>
+                                        <slp-radio name="question">교재 있음</slp-radio>
+                                    </div>
+                                    <slp-button class="sm add w100p mt8" @click="addList1()" ><span class="ico"></span>교재 정보 추가</slp-button>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">교재 제공 여부</strong>
+                                    <div class="rdoSelBox mt8">    
+                                        <slp-radio name="question">제공 안함</slp-radio>
+                                        <slp-radio name="question">제공 함</slp-radio>
+                                    </div>                                    
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">강사명</strong>
+                                    <slp-text-field placeholder="강사명을 입력하세요" class="mt6"></slp-text-field>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">강사소개</strong>
+                                    <slp-text-field placeholder="강사소개를 입력하세요" class="mt6"></slp-text-field>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">역량</strong>
+                                    
+                                    <ul class="fixTab mt10">
+                                        <li>
+                                            <slp-select placeholder="선택" width="100%" class="mr8">
+                                                <option>전체</option>
+                                            </slp-select>
+                                        </li>
+                                        <li>
+                                            <slp-select placeholder="선택" width="100%">
+                                                <option>전체</option>
+                                            </slp-select>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">학습목표</strong>
+                                    <slp-text-field placeholder="학습 목표를 입력하세요" class="mt6"></slp-text-field>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">과정 소개</strong>
+                                    <slp-text-field placeholder="과정 소개를 입력하세요" class="mt6"></slp-text-field>
+                                </li>
+                                <li class="mb20">
+                                    <strong class="label-tit14">TAG</strong>
+                                    <slp-text-field placeholder="예시) 의사소통, 커뮤니케이션" class="mt8"></slp-text-field>
+                                </li>
+                            </ul>
+                            <!-- //list -->
+                        </div>
+                    </li>
+                </ul>
+
             </div>
+          </div>
         </div>
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-                <li><slp-button class="ld">이전</slp-button></li>
-                <li><slp-button class="ld clr1">다음</slp-button></li>
+              <li><button type="button" class="btn ld">취소</button></li>
+              <li><button type="button" class="btn ld clr1">다음</button></li>
             </ul>
         </div>
         <!-- //floating button --> 
@@ -130,7 +204,7 @@
 
 <script>
 export default {
-  name: 'ATORM_e-learning_evaluation_2',
+  name: 'Atorm_e-learning_complete_1',
   /* vue lifecycle */
   created () {
   },
@@ -143,6 +217,13 @@ export default {
   },
   /* vue function */
   methods: {
+    toggleMenu (event) {
+      if (event.target.classList.contains('open')) {
+        event.target.classList.remove('open')
+      } else {
+        event.target.classList.add('open')
+      }
+    }
   }
 }
 </script>

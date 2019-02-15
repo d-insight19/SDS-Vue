@@ -2079,12 +2079,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_evaluation</td>
         <td>
-          <router-link :to="{ name: 'ATORM_e-learning_evaluation_1' }">
-            ATORM_e-learning_evaluation_1
+          <router-link :to="{ name: 'Atorm_e-learning_evaluation_1' }">
+            Atorm_e-learning_evaluation_1
           </router-link>
           ,
-          <router-link :to="{ name: 'ATORM_e-learning_evaluation_2' }">
-            ATORM_e-learning_evaluation_2
+          <router-link :to="{ name: 'Atorm_e-learning_evaluation_2' }">
+            Atorm_e-learning_evaluation_2
           </router-link>
         </td>
         <td></td>
