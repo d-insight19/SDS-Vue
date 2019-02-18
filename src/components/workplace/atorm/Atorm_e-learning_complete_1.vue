@@ -37,7 +37,7 @@
                     <li @click="toggleMenu($event)">
                         <span>필수정보</span>
                         <span class="accordion_arrow"></span>
-                        <div class="confirm_item_detail_inner pt0">
+                        <div class="confirm_item_detail_inner">
                             <!-- list -->
                             <ul class="singleList type1">
                                 <li class="mb20">
@@ -84,8 +84,51 @@
                         <span>선택정보</span>
                         <span class="accordion_arrow"></span>
                         
-                        <div class="confirm_item_detail_inner pt0">
-                            
+                        <div class="confirm_item_detail_inner">
+                            <!-- list -->
+                            <div class="atorm_status_table">
+                                <table class="detail_table2">
+                                    <tbody>                                   
+                                    <tr>
+                                        <td class="fwb vt" style="width:95px">과정분류</td> 
+                                        <td class="data">경영 리더십<span class="ico next_line_12 ml6 mr6"></span>비지니스 리더십<span class="ico next_line_12 ml6 mr6"></span>커뮤니케이션</td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="fwb">문의방법</td> 
+                                        <td class="data">012-3456-7890</td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="fwb">학습대상</td> 
+                                        <td class="data">전체</td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="fwb">난이도</td> 
+                                        <td class="data">하</td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="fwb">강사명</td> 
+                                        <td class="data">정해민</td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="fwb">TAG</td> 
+                                        <td class="data">데이터 분석, 통계분석</td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="fwb">역량</td> 
+                                        <td class="data">커뮤니케이션<span class="ico next_line_12 ml6 mr6"></span>의사결정</td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="fwb vt">학습목표</td> 
+                                        <td class="data">데이터 분석을 통해 데이터를 제대로 분석하고 얘기하며 배워보는 시간을 갖도록합시다. 데이터 분석을 통해 데이터를 제대로 분석하고 얘기하며 배워보는 시간을 갖도록합시다. </td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="fwb vt">과정소개</td> 
+                                        <td class="data pdb25">데이터 분석을 통해 데이터를 제대로 분석하고 얘기하며 배워보는 시간을 갖도록합시다. 데이터 분석을 통해 데이터를 제대로 분석하고 얘기하며 배워보는 시간을 갖도록합시다. </td> 
+                                    </tr>
+                                    </tbody>
+                                </table> 
+                            </div>
+                            <!-- //list -->
                         </div>
                     </li>
                     <li class="open" @click="toggleMenu($event)">
@@ -94,9 +137,6 @@
                             <span class="mono_65 font_13 fwr">모듈 2</span> <span class="mono_65 font_13 fwr">차시 4</span>
                         </span>
                         <span class="accordion_arrow"></span>
-                        
-                        
-                        
                         <div class="confirm_item_detail_inner">
                             <div class="atorm_complete pdb25">
                                 <div class="complete_title mb13">
@@ -264,16 +304,158 @@
                         <span>평가제작</span>
                         <span class="accordion_arrow"></span>
                         
-                        <div class="confirm_item_detail_inner pt0">
+                        <div class="confirm_item_detail_inner">
+                            <!-- list -->
+                            <table class="detail_table2">
+                                <tbody>
+                                <tr>
+                                    <td class="fwb vt" style="width:95px">평가설정</td> 
+                                    <td class="data">선택함</td> 
+                                </tr>
+                                <tr>
+                                    <td class="fwb">수료기준</td> 
+                                    <td class="data"><span class="fwr font_15">80</span> 점 이상 <span class="mono_50">(100점기준)</span></td> 
+                                </tr>
+                                <tr>
+                                    <td class="fwb bbB89">평가문항</td> 
+                                    <td class="data bbB89"><span class="fwr font_15">12</span> 문항 <span class="brB89 ml6 mr6"></span> <span class="fwr font_15">30</span> 점</td> 
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="title_line mt26">
+                                <h3 class="label-tit15"><b>평가 등록 내역</b></h3>
+                            </div>
                             
+                            <div class="atorm_complete pdb25">
+                                <!-- list -->
+                                <ul class="">
+                                    <li>
+                                        <div class="complete_detail white_bg bbB92 btw0 pt5 pdb5">
+                                            <div class="txt_wrap fwb">
+                                                <p class="title font_13">선다형 <span>3</span></p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">1</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">2</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">프레젠테이션 기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">3</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">단순하지만 임팩트 있는 슬라이드의 특징</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="complete_detail white_bg bbB92 pt5 pdb5">
+                                            <div class="txt_wrap fwb">
+                                                <p class="title font_13">단답형 <span>3</span></p>
+                                            </div>
+                                        </div>
+                                        <ul class="pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">1</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">2</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">프레젠테이션 기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">3</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">단순하지만 임팩트 있는 슬라이드의 특징</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- //list -->
+                            </div>
+                            <!-- // list -->
                         </div>
                     </li>
                     <li @click="toggleMenu($event)">
                         <span>수료기준</span>
                         <span class="accordion_arrow"></span>
                         
-                        <div class="confirm_item_detail_inner pt0">
+                        <div class="confirm_item_detail_inner">
+                            <!-- list -->
+                            <div class="title_line">
+                                <h3 class="label-tit15"><b>기본수료기준</b></h3>
+                            </div>
+                            <ul class="multiList type_1">
+                                <li style="border-top:0">
+                                    <div class="in">
+                                        <span class="label-tit14">출석률</span>
+                                        <span class="status_data fr"><span class="status_value mr4">80%</span>이상 </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="in">
+                                        <span class="label-tit14">총점</span>
+                                        <span class="status_data fr"><span class="status_value">5</span>점 이상 </span>
+                                    </div>
+                                </li>
+                            </ul>
                             
+                            <div class="title_line mt26">
+                                <h3 class="label-tit15"><b>총점 평가항목 및 점수반영 비율</b></h3>
+                            </div>
+                            <ul class="multiList type_1">
+                                <li style="border-top:0">
+                                    <div class="in">
+                                        <span class="label-tit14">진도율</span>
+                                        <span class="status_data fr"><span class="status_value mr4">80%</span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="in">
+                                        <span class="label-tit14">최종평가점수</span>
+                                        <span class="status_data fr"><span class="status_value">35%</span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="title_line mt26">
+                                <h3 class="label-tit15"><b>기타 설정</b></h3>
+                            </div>
+                            <ul class="multiList type_1">
+                                <li style="border:0">
+                                    <div class="in">
+                                        <span class="label-tit14">설문 및 별점</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- //list -->
                         </div>
                     </li>
                 </ul>

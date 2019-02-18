@@ -82,6 +82,8 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .o4{opacity: 0.4;}
 .o6{opacity: 0.6;}
 
+.btw0 {border-top-width: 0px !important;}
+.bbB92 {border-bottom: 1px solid map-get($line_colors, B92);}
 .btB89 {border-top: 1px solid map-get($line_colors , B89);}
 .bbB89 {border-bottom: 1px solid map-get($line_colors , B89);}
 .brB89 {border-right: 1px solid map-get($line_colors , B89);}
@@ -89,7 +91,7 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .bbB60 {border-bottom: 1px solid map-get($line_colors , B60)}
 
 .gray_bg {background-color: map-get($bg_colors , BG_1);}
-.white_bg {background-color: #fff}
+.white_bg {background-color: #fff !important;}
 
 // 헤더 
 #header .btn.prev .ico{width:28px; height:28px; background-position:-13px -61px;}
