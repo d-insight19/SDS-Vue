@@ -2784,6 +2784,10 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm_material .chip.done {border-width:1px !important; border-color:map-get($mono_colors, mono_25); color:map-get($mono_colors, mono_25); font-weight: 500;}
 .atorm_material .h-tit2.done {color:map-get($mono_colors, mono_25);}
 
+.atorm_material .sub_content .sub_content_type {padding:20px 24px 32px; border:#999 1px solid; border-top:0}
+.atorm_material .sub_content .sub_content_type .score_list {border-bottom:#eaeaea 1px solid; margin-bottom:16px}
+.atorm_material .sub_content .sub_content_type .score_list .score {font-family: 'Roboto';font-size: map-get($font-size, font_20); line-height: 27px;}
+.atorm_material .sub_content .sub_content_type .score_list > li {padding-bottom:17px;}
 // atorm_elearning_complete
 
 .atorm_complete .complete_title{display:table; width:100%; }
