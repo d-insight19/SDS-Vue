@@ -122,6 +122,7 @@
 .ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}
 .ico.deletemode_20_black {width:20px; height:20px; background: url("../img/ic_deletemode_20_black.png")}
 .ico.deletemode_20 {width:20px; height:20px; background: url("../img/ic_deletemode_20.png"); background-size: cover}
+.ico.poll_line_28 {width:28px; height:28px; background: url("../img/ic_poll_line_28.png"); background-size: cover}
 
 /* 추가 이미지 2018-12-21*/
 .ico.mark-o.sm{width: 38px;height: 38px;position: absolute;background: url("../img/ic_mark_o_small.png") no-repeat;}
@@ -269,6 +270,7 @@
 .blind {overflow:hidden;  position:absolute; top:-9999em; left:-9999em; padding:0 !important; height:0; width:0; border:none !important; background:none !important; line-height:0 !important; text-indent:-9999px;}
 .clearfix {width:100%; zoom:1;}
 .clearfix:after {display:block; visibility:hidden; content:""; clear:both; height:0; }
+.border_none {border:none !important;}
 
 .pr {position:relative;}
 .dpn {display:none !important;}
@@ -395,6 +397,7 @@
 .pdb20{padding-bottom:20px !important;}
 .pdb14{padding-bottom: 14px !important;}
 .pdb25{padding-bottom: 25px !important;}
+.pdb27{padding-bottom: 27px !important;}
 .pdb98{padding-bottom:98px !important;}
 
 .pdl0{padding-left: 0 !important;}

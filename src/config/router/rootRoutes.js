@@ -642,6 +642,9 @@ import Atormgroupflipcompleteflip from '~workplace/atorm/Atorm_group_flip_comple
 import Atormgroupflipcompleteflip2 from '~workplace/atorm/Atorm_group_flip_complete_flip2'
 import Atormgroupflipcompleteflip3 from '~workplace/atorm/Atorm_group_flip_complete_flip3'
 import Atormgroupflipcompleteflip4 from '~workplace/atorm/Atorm_group_flip_complete_flip4'
+import Atormgroupflipprematerial from '~workplace/atorm/Atorm_group_flip_pre_material'
+import Atormgroupflipadditem from '~workplace/atorm/Atorm_group_flip_add_item'
+import Atormgroupflipaddwork from '~workplace/atorm/Atorm_group_flip_add_work'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -3596,6 +3599,21 @@ var rootRoutes = [
     path: '/Atorm_group_flip_complete_flip4',
     name: 'Atorm_group_flip_complete_flip4',
     component: Atormgroupflipcompleteflip4
+  },
+  {
+    path: '/Atorm_group_flip_pre_material',
+    name: 'Atorm_group_flip_pre_material',
+    component: Atormgroupflipprematerial
+  },
+  {
+    path: '/Atorm_group_flip_add_item',
+    name: 'Atorm_group_flip_add_item',
+    component: Atormgroupflipadditem
+  },
+  {
+    path: '/Atorm_group_flip_add_work',
+    name: 'Atorm_group_flip_add_work',
+    component: Atormgroupflipaddwork
   },
   {
     path: '/Eduperson_login',

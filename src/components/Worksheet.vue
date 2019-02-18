@@ -2241,10 +2241,10 @@
         <td>　</td>
         <td>아이템 추가</td>
         <td>　</td>
-        <td class="textL">07.ATORM_07.02.02._group/flip_add    item</td>
+        <td class="textL">07.ATORM_07.02.02._group/flip_add item</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_add_item' }">
+            Atorm_group_flip_add_item
           </router-link>
         </td>
         <td></td>
@@ -2258,10 +2258,10 @@
         <td>　</td>
         <td>레포트 추가</td>
         <td>　</td>
-        <td class="textL">07.ATORM_07.02.02._group/flip_add    work</td>
+        <td class="textL">07.ATORM_07.02.02._group/flip_add work</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_add_work' }">
+            Atorm_group_flip_add_work
           </router-link>
         </td>
         <td></td>
@@ -2294,8 +2294,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_pre-material</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_pre_material' }">
+            Atorm_group_flip_pre_material
           </router-link>
         </td>
         <td></td>

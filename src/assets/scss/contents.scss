@@ -2738,27 +2738,32 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm .materialModeList li .txt_wrap .contents{font-size: map-get($font_size, font_13); font-weight:400; color: map-get($mono_colors, mono_65); text-overflow: ellipsis; width: inherit; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden; -webkit-line-clamp: 3;}
 .atorm .materialModeList li .txt_wrap .ico.next_24{position:absolute; top:50%; right:10px; margin-top:-12px;}
 
-.atorm_elearning_material .chip {border-width:0px !important; height:30px; padding:8px 10px; font-weight:300; color:map-get($mono_colors, mono_0); margin-bottom:0;}
-.atorm_elearning_material .h-tit2 {font-size: map-get($font_size, font_22); padding-bottom:9px; border-bottom: 1px solid map-get($line_colors , B85);}
-.atorm_elearning_material .download_detail {display:table; background-color:#fff; border: 1px solid map-get($line_colors,B60); border-bottom: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 20px; margin-top:12px;}
-.atorm_elearning_material .download_detail .txt_wrap {border-bottom-width:0; padding-bottom:9px !important;}
-.atorm_elearning_material .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:10px;}
-.atorm_elearning_material .download_detail .txt_wrap .title {font-size: map-get($font_size, font_17); font-weight:600; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
-.atorm_elearning_material .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
-.atorm_elearning_material .download_detail .info li {color:map-get($mono_colors,mono_65);}
-.atorm_elearning_material .sub_content{display:none;}
-.atorm_elearning_material .open .sub_content{display:block;}
-.atorm_elearning_material .open .download_detail{border-bottom: 1px solid map-get($line_colors , B85);}
-.atorm_elearning_material .sub_content .download_detail {background-color:#f5f5f5; border-top: 0 none; border-bottom: 0 none;padding:8px 20px; margin-top:0px;}
-.atorm_elearning_material .sub_content li:first-child .download_detail {padding-top:13px;}
-.atorm_elearning_material .sub_content li:last-child .download_detail {padding-bottom:0px;}
-.atorm_elearning_material .sub_content .download_detail .txt_wrap {padding-bottom:0px !important; border-bottom: 0 none !important;}
-.atorm_elearning_material .sub_content .download_detail .txt_wrap .title {font-weight:500; color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_14);}
-.atorm_elearning_material .sub_content .sub_content_add {background-color:#f5f5f5; text-align: center; padding: 15px 0;border: 1px solid map-get($line_colors,B60); border-top:0 none;}
-.atorm_elearning_material .download_detail.done {border: 1px solid map-get($line_colors,B80);}
+.atorm_material .chip {border-width:0px !important; height:30px; padding:8px 10px; font-weight:300; color:map-get($mono_colors, mono_0); margin-bottom:0;}
+.atorm_material .h-tit2 {font-size: map-get($font_size, font_22); padding-bottom:9px; border-bottom: 1px solid map-get($line_colors , B85);}
+.atorm_material .download_detail {display:table; background-color:#fff; border: 1px solid map-get($line_colors,B60); border-bottom: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 20px; margin-top:12px;}
+.atorm_material .download_detail .txt_wrap {border-bottom-width:0; padding-bottom:9px !important;}
+.atorm_material .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:10px;}
+.atorm_material .download_detail .txt_wrap .title {font-size: map-get($font_size, font_17); font-weight:600; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
+.atorm_material .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
+.atorm_material .download_detail .info li {color:map-get($mono_colors,mono_65);}
+.atorm_material .sub_content{display:none;}
+.atorm_material .open .sub_content{display:block;}
+.atorm_material .open .download_detail{border-bottom: 1px solid map-get($line_colors , B85);}
+.atorm_material .sub_content .download_detail {background-color:#f5f5f5; border-top: 0 none; border-bottom: 0 none;padding:8px 20px; margin-top:0px;}
+.atorm_material .sub_content li:first-child .download_detail {padding-top:13px;}
+.atorm_material .sub_content li:last-child .download_detail {padding-bottom:0px;}
+.atorm_material .sub_content .download_detail .txt_wrap {padding-bottom:0px !important; border-bottom: 0 none !important;}
+.atorm_material .sub_content .download_detail .txt_wrap .title {font-weight:500; color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_14);}
+.atorm_material .sub_content .sub_content_add {background-color:#f5f5f5; text-align: center; padding: 15px 0;border: 1px solid map-get($line_colors,B60); border-top:0 none;}
+.atorm_material .download_detail.done {border: 1px solid map-get($line_colors,B80);}
 
-.atorm_elearning_material .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
-.atorm_elearning_material .download_detail.done .txt_wrap .title {opacity: 0.4; font-weight: 400;}
+.atorm_material .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
+.atorm_material .download_detail.done .txt_wrap .title {opacity: 0.4; font-weight: 400;}
 
-.atorm_elearning_material .chip.done {border-width:1px !important; border-color:map-get($mono_colors, mono_25); color:map-get($mono_colors, mono_25); font-weight: 500;}
-.atorm_elearning_material .h-tit2.done {color:map-get($mono_colors, mono_25);}
+.atorm_material .chip.done {border-width:1px !important; border-color:map-get($mono_colors, mono_25); color:map-get($mono_colors, mono_25); font-weight: 500;}
+.atorm_material .h-tit2.done {color:map-get($mono_colors, mono_25);}
+
+.atorm_material .sub_content .sub_content_type {padding:20px 24px 32px; border:#999 1px solid; border-top:0}
+.atorm_material .sub_content .sub_content_type .score_list {border-bottom:#eaeaea 1px solid; margin-bottom:16px}
+.atorm_material .sub_content .sub_content_type .score_list .score {font-family: 'Roboto';font-size: map-get($font-size, font_20); line-height: 27px;}
+.atorm_material .sub_content .sub_content_type .score_list > li {padding-bottom:17px;}
