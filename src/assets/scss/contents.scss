@@ -1794,7 +1794,7 @@ label.rdo .label{position: relative;}
 //atorm_group_flip_complete
 #container.atorm.flip .confirm_item_detail{margin:0px -18px}
 #container.atorm.flip .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
-#container.atorm.flip .confirm_item_detail > li > span:first-child{line-height: 58px;font-weight: 600;}
+#container.atorm.flip .confirm_item_detail > li > span:first-child{line-height: 100%;font-weight: 600; display:inline-block; margin-top:20px;}
 #container.atorm.flip .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
@@ -2762,3 +2762,16 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 
 .atorm_elearning_material .chip.done {border-width:1px !important; border-color:map-get($mono_colors, mono_25); color:map-get($mono_colors, mono_25); font-weight: 500;}
 .atorm_elearning_material .h-tit2.done {color:map-get($mono_colors, mono_25);}
+
+// atorm_elearning_complete
+
+.atorm_elearning_complete .complete_title{display:table; width:100%; }
+.atorm_elearning_complete .complete_title .icon_wrap{display:table-cell; width:60px; vertical-align: top; line-height: 140%;}
+.atorm_elearning_complete .complete_title .txt_wrap{display:table-cell; width:calc(100% - 60px); vertical-align: top; line-height: 140%; }
+.atorm_elearning_complete .complete_detail{display:table; width:100%; background-color:#f5f5f5;border-top: 1px solid map-get($line_colors , B80);}
+.atorm_elearning_complete .complete_detail .icon_wrap{display:table-cell; width:46px; vertical-align: top; line-height: 140%;}
+.atorm_elearning_complete .complete_detail .txt_wrap{display:table-cell; width:calc(100% - 46px); vertical-align: top; line-height: 140%;}
+.atorm_elearning_complete .complete_sub_detail{display:table; width:100%;}
+.atorm_elearning_complete .complete_sub_detail .icon_wrap{display:table-cell; width:46px; vertical-align: top;}
+.atorm_elearning_complete .complete_sub_detail .txt_wrap{display:table-cell; width:calc(100% - 46px); vertical-align: top; line-height: 140%;}
+

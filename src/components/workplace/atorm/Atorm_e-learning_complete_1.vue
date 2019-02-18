@@ -3,8 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery atorm atorm_confirmlist_detail">
-
+      <div id="container" class="mediaquery atorm flip pd70">
         <!-- header  -->
         <div id="header" class="expand">          
           <!--<div class="header_inner line1">
@@ -12,29 +11,30 @@
             <p class="header_text  font_18">이러닝 제작</p>
           </div>-->
           <div class="hide_header pl18 pr18" style="padding-top:30px;">
-            <p class="font_30 fwb">집합 제작</p>
+            <p class="font_30 fwb">이러닝 제작</p>
             <div class="stepper mb30">
                 <div class="clearfix">
-                    <h2 class="tit">기본정보</h2>
+                    <h2 class="tit">완료</h2>
                     <div class="num">
-                        <strong class="color_clr2">1</strong>/<span>4</span>
+                        <strong class="color_clr2">5</strong>/<span>5</span>
                     </div>
                 </div>
                     <div class="progBox">
-                    <div class="bar clr2" style="width:20%"></div>
+                    <div class="bar clr2" style="width:100%"></div>
                 </div>
-                <p class="txt-desc">학습과정의 기본정보를 입력합니다.</p>
+                <p class="txt-desc">제작한 학습과정을 확인 후 완료합니다.</p>
             </div>
-            <p class="hr mb0"></p>
+            <p class="hr_2 mb0"></p>
           </div>
         </div>
         <!-- //header -->
+
         <div id="content" class="normal">
           <div class="cell">
-            <div class="inner pdb20">
+            <div class="inner pdb20" style="padding-top:0;">
 
                 <ul class="confirm_item_detail">
-                    <li class="open" @click="toggleMenu($event)">
+                    <li @click="toggleMenu($event)">
                         <span>필수정보</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pt0">
@@ -42,7 +42,6 @@
                             <ul class="singleList type1">
                                 <li class="mb20">
                                     <table>
-                                        <thead>
                                             <tr>
                                                 <td>
                                                     <div class="thum">
@@ -50,39 +49,33 @@
                                                             <!--<img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">-->
                                                         </div>
                                                         <!--<div class="circle">
-                                                            <span class="ico photo_16"></span>
+                                                            <span class="ico atorm_photo_edit_solid_16"></span>
                                                         </div>-->
                                                     </div>
                                                 </td>
                                                 <td class="txt-desc">
-                                                    <strong class="label-tit14 tit_essential">과정명</strong>
-                                                    <slp-text-field placeholder="과정명을 입력하세요" class="mt8"></slp-text-field>
+                                                    <strong class="label-tit14">과정명</strong>
+                                                    <p>1%의 핵심인재를 내사람으로 만들어 보템이 되기</p>
                                                 </td>
                                             </tr>
-                                        </thead>
+                                            <tr>
+                                                <td>과정코드</td>
+                                                <td class="fwr">K1111</td>
+                                            </tr>
+                                            <tr>
+                                                <td>학습시간</td>
+                                                <td class="fwr">3시간</td>
+                                            </tr>
+                                            <tr>
+                                                <td>학습기간</td>
+                                                <td class="fwr">3일(Days)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>학습순서</td>
+                                                <td class="fwr">순차학습</td>
+                                            </tr>
                                     </table>
                                 </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14 tit_essential">학습시간 설정</strong>
-                                    <ul class="fixTab w100p mt10">
-                                        <li>
-                                           <slp-text-field value="시간" class="mt8"></slp-text-field>
-                                        </li>                                       
-                                    </ul>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14 tit_essential">학습기간 설정</strong>
-                                    <ul class="fixTab w100p mt10">
-                                        <li class="w50p">
-                                            <slp-text-field placeholder="숫자만 입력하세요" class="mt8 mr8"></slp-text-field>
-                                        </li>                                       
-                                        <li class="w50p">
-                                            <slp-select placeholder="일(Day)" class="mt8" width="100%">
-                                                <option>전체</option>
-                                            </slp-select>
-                                        </li> 
-                                    </ul>
-                                </li>                                
                             </ul>
                             <!-- //list -->
                         </div>
@@ -92,93 +85,195 @@
                         <span class="accordion_arrow"></span>
                         
                         <div class="confirm_item_detail_inner pt0">
-                            <!-- list -->
-                            <ul class="singleList type1">
-                                <li class="mb20">
-                                    <strong class="label-tit14">학습분류</strong>
-                                    <slp-select placeholder="대분류" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                    <slp-select placeholder="중분류" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                    <slp-select placeholder="소분류" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">문의방법</strong>
-                                    <div class="rdoSelBox mt8">    
-                                        <slp-radio name="question">연락처</slp-radio>
-                                        <slp-radio name="question">이메일</slp-radio>
+                            
+                        </div>
+                    </li>
+                    <li class="open" @click="toggleMenu($event)">
+                        <span class="mt10">
+                            학습목차 및 구성컨텐츠<br/>
+                            <span class="mono_65 font_13 fwr">모듈 2</span> <span class="mono_65 font_13 fwr">차시 4</span>
+                        </span>
+                        <span class="accordion_arrow"></span>
+                        
+                        
+                        
+                        <div class="confirm_item_detail_inner">
+                            <div class="atorm_elearning_complete pdb25">
+                                <div class="complete_title mb13">
+                                    <div class="icon_wrap">
+                                        <span class="chip clr1 font_12 mono_0 fwl">모듈 1</span>
                                     </div>
-                                    <slp-text-field placeholder="연락처, 이메일 선택 후 정보를 입력하세요" class="mt8"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <p class="label-tit14">학습대상</p>
-                                    <slp-select placeholder="전체" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">난이도</strong>
-                                    <slp-select placeholder="선택안함" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">교재 유무</strong>
-                                    <div class="rdoSelBox mt8">    
-                                        <slp-radio name="question">교재 없음</slp-radio>
-                                        <slp-radio name="question">교재 있음</slp-radio>
+                                    <div class="txt_wrap pt2">
+                                        <p class="title font_18 fwb">데이터 특성 알아보기</p></p>
                                     </div>
-                                    <slp-button class="sm add w100p mt8" @click="addList1()" ><span class="ico"></span>교재 정보 추가</slp-button>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">교재 제공 여부</strong>
-                                    <div class="rdoSelBox mt8">    
-                                        <slp-radio name="question">제공 안함</slp-radio>
-                                        <slp-radio name="question">제공 함</slp-radio>
-                                    </div>                                    
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">강사명</strong>
-                                    <slp-text-field placeholder="강사명을 입력하세요" class="mt6"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">강사소개</strong>
-                                    <slp-text-field placeholder="강사소개를 입력하세요" class="mt6"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">역량</strong>
-                                    
-                                    <ul class="fixTab mt10">
-                                        <li>
-                                            <slp-select placeholder="선택" width="100%" class="mr8">
-                                                <option>전체</option>
-                                            </slp-select>
-                                        </li>
-                                        <li>
-                                            <slp-select placeholder="선택" width="100%">
-                                                <option>전체</option>
-                                            </slp-select>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">학습목표</strong>
-                                    <slp-text-field placeholder="학습 목표를 입력하세요" class="mt6"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">과정 소개</strong>
-                                    <slp-text-field placeholder="과정 소개를 입력하세요" class="mt6"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">TAG</strong>
-                                    <slp-text-field placeholder="예시) 의사소통, 커뮤니케이션" class="mt8"></slp-text-field>
-                                </li>
-                            </ul>
-                            <!-- //list -->
+                                </div>
+                                <!-- list -->
+                                <ul class="">
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="icon_wrap tac">
+                                                <p class="color_clr1 font_13 fwb">1차시</p>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="icon_wrap tac">
+                                                <p class="color_clr1 font_13 fwb">2차시</p>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- //list -->
+                            </div>
+                            <div class="atorm_elearning_complete pdb25">
+                                <div class="complete_title mb13">
+                                    <div class="icon_wrap">
+                                        <span class="chip clr1 font_12 mono_0 fwl">모듈 2</span>
+                                    </div>
+                                    <div class="txt_wrap pt2">
+                                        <p class="title font_18 fwb">실제 예제로 알아보는 자바스크립트의 문법 특성</p></p>
+                                    </div>
+                                </div>
+                                <!-- list -->
+                                <ul class="">
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="icon_wrap tac">
+                                                <p class="color_clr1 font_13 fwb">1차시</p>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="icon_wrap tac">
+                                                <p class="color_clr1 font_13 fwb">2차시</p>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- //list -->
+                            </div>
+                        </div>
+                    </li>
+                    <li @click="toggleMenu($event)">
+                        <span>평가제작</span>
+                        <span class="accordion_arrow"></span>
+                        
+                        <div class="confirm_item_detail_inner pt0">
+                            
+                        </div>
+                    </li>
+                    <li @click="toggleMenu($event)">
+                        <span>수료기준</span>
+                        <span class="accordion_arrow"></span>
+                        
+                        <div class="confirm_item_detail_inner pt0">
+                            
                         </div>
                     </li>
                 </ul>
@@ -189,20 +284,20 @@
         <!-- floating button -->
         <div class="fixBtmBtn">
             <ul>
-              <li><button type="button" class="btn ld">취소</button></li>
-              <li><button type="button" class="btn ld clr1">다음</button></li>
+                <li><button type="button" class="btn md">이전</button></li>
+                <li><button type="button" class="btn md clr1">완료</button></li>
             </ul>
         </div>
-        <!-- //floating button --> 
+        
       </div>
-      <!-- //container -->    
-
+      <!-- //container -->     
     </div>
     <!-- //wrap -->
 
 </template>
 
 <script>
+/*eslint-disable */
 export default {
   name: 'Atorm_e-learning_complete_1',
   /* vue lifecycle */
@@ -213,6 +308,7 @@ export default {
   /* vue data */
   data () {
     return {
+     toggleFlag: true
     }
   },
   /* vue function */
