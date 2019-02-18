@@ -5136,18 +5136,20 @@
         <td>학습홈 영역</td>
         <td>　</td>
         <td>　</td>
-        <td>다운로드</td>
+        <td>다운로드(2/15)</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td class="textL">05.Study_02.18.studylist_download</td>
         <td>
+          <!--
           <router-link :to="{ name: 'Study_0218studylist_download_01' }">
             Study_0218studylist_download_01
           </router-link> <br />
           <router-link :to="{ name: 'Study_0218studylist_download_02' }">
             Study_0218studylist_download_02
           </router-link>
+          -->
         </td>
         <td></td>
       </tr>
@@ -5273,15 +5275,15 @@
       <td align="center">277</td>
         <td>학습홈 영역</td>
         <td>　</td>
-        <td>학습알림</td>
+        <td>학습알림(2/15)</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td class="textL">05.Study_02.24.studynotice</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_notice_alarm' }">
+            StudynoticeAlarm
           </router-link>
         </td>
         <td></td>
@@ -5567,14 +5569,14 @@
         <td>학습홈 영역</td>
         <td>　</td>
         <td>　</td>
-        <td>리마인더 상세</td>
+        <td>리마인더 상세(2/15)</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td class="textL">05.Study_02.39.reminder_detail</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_reminder_detail' }">
+            Study_reminder_detail
           </router-link>
         </td>
         <td></td>
@@ -5630,15 +5632,15 @@
       <td align="center">298</td>
         <td>학습홈 영역</td>
         <td>　</td>
-        <td>설문조사 (만족도 평가)</td>
+        <td>설문조사 (만족도 평가)(2/15)</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td>　</td>
         <td class="textL">05.Study_02.43.survey</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_survey' }">
+            Study_survey
           </router-link>
         </td>
         <td></td>
@@ -5661,21 +5663,24 @@
         <td></td>
       </tr>
       <tr>
-      <td align="center">300</td>
-        <td>학습홈 영역</td>
-        <td>　</td>
-        <td>용어사전</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td>　</td>
-        <td class="textL">05.Study_02.45.dictionary</td>
-        <td>
-          <router-link :to="{ name: '' }">
-            
-          </router-link>
-        </td>
-        <td></td>
+        <td align="center">300</td>
+          <td>학습홈 영역</td>
+          <td>　</td>
+          <td>용어사전(2/15)</td>
+          <td>　</td>
+          <td>　</td>
+          <td>　</td>
+          <td>　</td>
+          <td class="textL">05.Study_02.45.dictionary(tab),<br /> 05.Study_02.45.dictionary</td>
+          <td>
+            <router-link :to="{ name: 'Study_dictionary_tab' }">
+              Study_dictionary_tab
+            </router-link> <br />
+            <router-link :to="{ name: 'Study_dictionary' }">
+              Study_dictionary
+            </router-link>            
+          </td>
+          <td></td>
       </tr>
       <tr>
       <td align="center">301</td>

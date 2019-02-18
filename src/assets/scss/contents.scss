@@ -116,9 +116,9 @@
 .ulList.type3 li dl dt a{ font-size:map-get($font-size, font_16); line-height: 24px; letter-spacing: -0.48px;}
 
 .ulList.type4{border-top:1px solid #bfbfbf;}
-.ulList.type4 li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:1px solid #eaeaea;}
-.ulList.type4 li > .labelChk{vertical-align: top;}
-.ulList.type4 li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
+.ulList.type4 > li{ position: relative; z-index: 1; height:52px; padding:16px 0 15px; border-bottom:1px solid #eaeaea;}
+.ulList.type4 > li > .labelChk{vertical-align: top;}
+.ulList.type4 > li > .ico{position: absolute; top:50%; right:4px; width:16px; height:18px; margin-top:-9px; background-position: 5px -64px;}
 
 // 개인정보 마케팅 활용 동의
 .cTitWrap + .ulList.type4{margin-top:17px;} 
@@ -720,8 +720,8 @@
 
 // ATORM 승인요청리스트 디테일
 #container.atorm_confirmlist_detail .confirm_item_detail{margin:0px -18px}
-#container.atorm_confirmlist_detail .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
-#container.atorm_confirmlist_detail .confirm_item_detail > li > span:first-child{line-height: 58px;font-weight: 600;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
+#container.atorm_confirmlist_detail .confirm_item_detail > li > span:first-child{line-height: 68px;font-weight: 600;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
@@ -1051,7 +1051,7 @@ table td.sub-txt{ color:#000;}
 .multiList.type2 input::placeholder{ font-weight: 400; color:map-get($mono_colors, mono_80); font-size:map-get($font-size, font_14);line-height: 21px; letter-spacing: -0.42px;}
 .ulList .at-tit {white-space: nowrap; text-overflow: ellipsis; overflow: hidden; max-width: 67%; position:absolute; vertical-align: middle; padding-left: 10px; font-size:map-get($font-size, font_16);line-height: 24px; letter-spacing: -0.48px;}
 .ulList .at-num { vertical-align: middle; padding-right: 8px; font-size:map-get($font-size, font_14);line-height: 19px; color:rgba(0,0,0,0.5);} // line-height 동일 21px -> 24px
-.ulList.type4.bot-btn li:nth-last-child(1){border-bottom:none;}
+.ulList.type4.bot-btn > li:nth-last-child(1){border-bottom:none;}
 
 
 // 질문방 상세 2
@@ -1632,9 +1632,9 @@ label.rdo .label{position: relative;}
 
 #container.studystatus .label-tit-15{font-size: map-get($font_size, font_15); letter-spacing: -0.045em;}
 #container.studystatus .abs-num{position: absolute;top: 50%;transform: translateY(-50%);font-family:'roboto'; font-size: map-get($font_size, font_17);}
-#container.studystatus .ulList.type4 li {height: auto;}
-#container.studystatus .ulList.type4 li p{padding-left:42px;}
-#container.studystatus .ulList.type4 li.font_16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
+#container.studystatus .ulList.type4 > li {height: auto;}
+#container.studystatus .ulList.type4 > li p{padding-left:42px;}
+#container.studystatus .ulList.type4 > li.font_16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
 
 
 //Studystatus_assessment
@@ -1694,9 +1694,9 @@ label.rdo .label{position: relative;}
 #container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 2px 0 6px;background: #d9d9d9;}
 #container.studyquestion .pipe-group dd:nth-last-child(1):after{display:none;}
 #container.studyquestion .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
-#container.studyquestion .ulList.type4 li{height:auto;}
-#container.studyquestion .ulList.type4 li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
-#container.studyquestion .ulList.type4 li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
+#container.studyquestion .ulList.type4 > li{height:auto;}
+#container.studyquestion .ulList.type4 > li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
+#container.studyquestion .ulList.type4 > li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
 
 //study_lo_docs
 #container.study_lo_docs #header.tab .header_inner.line1{z-index:999}
@@ -1730,7 +1730,7 @@ label.rdo .label{position: relative;}
     & .category { top: 43px !important; width:100px !important; }
 }
 .btn_close { width:28px; height:28px; background: url("../img/ic_close_line_24.png") no-repeat 50% 50%; background-size:contain; }
-.w_full { width:100%; }
+
 
 //05.Study_02.01.studystatus
 .singleLineGroupBlock {
@@ -1745,6 +1745,27 @@ label.rdo .label{position: relative;}
 
 .flex_1 { flex-grow:1 }
 
+/*stydy reminder*/
+.reminderListBlock { margin-top:36px; }
+.reminderList {
+    li { 
+        &:last-child {
+            margin-bottom:0;
+        }
+    }
+}
+.reminderList-item { margin-bottom:8px; border: 1px solid map-get($line_colors, B85); }
+.reminderList-link { display:block; height:100%; padding:17px 14px; }
+
+/*study survey*/
+.icon_btwBar {
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    vertical-align: middle;
+    margin-right: 6px;
+    background: #d9d9d9;
+}
 
 #container.voice .record_box{background:#f2f3f7; padding:24px 34px;}
 #container.voice .font_15{font-size: map-get($font-size , font_15);letter-spacing: -0.045em;color:rgba(0,0,0,0.8)}
@@ -1808,7 +1829,7 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table{border-spacing: 0 10px}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table td:nth-child(1){width:116px;}
-#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table td{font-weight:500;font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;padding-top:10px}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table td{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;padding-top:10px}
 // #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner table tr:nth-child(1) td{padding-top:20px}
 #container.atorm.flip .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.atorm.flip .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
@@ -1824,28 +1845,27 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .criteria-wrap .total .total-num{font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px;}
 
 //color.vue
-.color_list{font-size:30px;}
-.color_list li {margin-bottom : 20px; border-bottom: 10px dashed crimson}
-.color_list  h1 { color: crimson; font-size:44px;}
-.attach{ color: dodgerblue; font-size:30px;}
-.danger{color:map-get($static_colors, danger);}
-.primary{color:map-get($static_colors, primary);}
-.star{color:map-get($static_colors, star);}
-.alert{color:map-get($static_colors, alert);}
-.type_1{color:map-get($contents_colors, type_1);}
-.type_2{color:map-get($contents_colors, type_2);}
-.type_3{color:map-get($contents_colors, type_3);}
-.type_4{color:map-get($contents_colors, type_4);}
-.type_5{color:map-get($contents_colors, type_5);}
-.sizeUp_box{}
-.border_box p { border:1px solid ; maring:10px;}
-.B92{color:map-get($line_colors, B92);}
-.B89{color:map-get($line_colors, B89);}
-.B85{color:map-get($line_colors, B85);}
-.B80{color:map-get($line_colors, B80);}
-.B60{color:map-get($line_colors, B60);}
-.B10{color:map-get($line_colors, B10);}
-.B95{color:map-get($line_colors, B95);}
+.com_clr .color_list{font-size:30px;}
+.com_clr .color_list li {margin-bottom : 20px; border-bottom: 10px dashed crimson}
+.com_clr .color_list  h1 { color: crimson; font-size:44px;}
+.com_clr .attach{ color: dodgerblue; font-size:30px;}
+.com_clr .danger{color:map-get($static_colors, danger);}
+.com_clr .primary{color:map-get($static_colors, primary);}
+.com_clr .star{color:map-get($static_colors, star);}
+.com_clr .alert{color:map-get($static_colors, alert);}
+.com_clr .type_1{color:map-get($contents_colors, type_1);}
+.com_clr .type_2{color:map-get($contents_colors, type_2);}
+.com_clr .type_3{color:map-get($contents_colors, type_3);}
+.com_clr .type_4{color:map-get($contents_colors, type_4);}
+.com_clr .type_5{color:map-get($contents_colors, type_5);}
+.com_clr .border_box p { border:1px solid ; maring:10px;}
+.com_clr .B92{color:map-get($line_colors, B92);}
+.com_clr .B89{color:map-get($line_colors, B89);}
+.com_clr .B85{color:map-get($line_colors, B85);}
+.com_clr .B80{color:map-get($line_colors, B80);}
+.com_clr .B60{color:map-get($line_colors, B60);}
+.com_clr .B10{color:map-get($line_colors, B10);}
+.com_clr .B95{color:map-get($line_colors, B95);}
 
 
 
@@ -2514,7 +2534,8 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .MySpace .formal_requeststage > li.inactive .contents{color:map-get($mono_colors,mono_80);}
 
 // 다운로드
-.MySpace .downloadCondition {position: relative; background-color: map-get($line_colors , B89); padding:12px 18px; height: 61px;}
+.MySpace .downloadCondition,
+.downloadCondition  {position: relative; background-color: map-get($line_colors , B89); padding:12px 18px; height: 61px;}
 .MySpace .thumList.type1 > li {border-bottom:0 none; margin-bottom:0;}
 .MySpace .thumList.type1 .thum {width:120px; height:120px;}
 .MySpace .thumList.type1 .in {background-color: #fff; height: 120px; padding-left: 136px; padding-right:18px;}

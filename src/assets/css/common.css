@@ -251,11 +251,11 @@
 
 
 /* font-weight -> 500  */
-.fwl{font-weight: 300 !important;}
-.fwr{font-weight: 400 !important;}
-.fwb{font-weight: 500 !important;}
-.fwb600{font-weight: 600 !important;}
-.fwb700{font-weight: 700 !important;}
+.fwl{font-weight: 300 !important;} /*light*/
+.fwr{font-weight: 400 !important;} /*regular*/
+.fwb{font-weight: 500 !important;} /*medium*/
+.fwb600{font-weight: 600 !important;} /*bold*/
+.fwb700{font-weight: 700 !important;} /*bolder*/
 
 
 
@@ -383,6 +383,7 @@
 .pt10{padding-top:10px !important;}
 .pt18{padding-top:18px !important;}
 .pdt16{padding-top: 16px !important;}
+.pdt20{padding-top:20px !important;}
 .pdt22{padding-top:22px !important;}
 .pdt36{padding-top:36px !important;}
 .pdt38{padding-top:38px !important;}

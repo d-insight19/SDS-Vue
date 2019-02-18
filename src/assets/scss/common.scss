@@ -1057,6 +1057,15 @@ utilities classes
 
 /*block*/
 .d-block { display:block !important; }
+.text-truncate { 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+/*width*/
+.w_full { width:100%; }
+.w_min_0 { min-width:0;}
 
 /* 페이저 */
 .pager_list {display:table; margin:5px auto;}
