@@ -32,7 +32,7 @@
         <div id="content" class="etc">
 
           <div class="cell">
-            <div class="inner atorm_elearning_material">
+            <div class="inner atorm_material">
                 <div class="mb12">
                     <span class="chip clr1 font_13">모듈 1</span>
                 </div>
@@ -42,7 +42,7 @@
           </div>
 
           <div class="cell">
-            <div class="inner atorm_elearning_material">
+            <div class="inner atorm_material">
                 <div class="mb12">
                     <span class="chip clr1 font_13">모듈 1</span>
                 </div>
@@ -65,7 +65,7 @@
           </div>
 
           <div class="cell">
-            <div class="inner pdb20 atorm_elearning_material">
+            <div class="inner pdb20 atorm_material">
                 <div class="mb12">
                     <span class="chip clr1 font_13">모듈 1</span>
                     <span class="fr ico deletemode_20"></span>
@@ -104,7 +104,7 @@
           </div>
 
           <div class="cell">
-            <div class="inner pdb20 atorm_elearning_material">
+            <div class="inner pdb20 atorm_material">
                 <div class="mb12">
                     <span class="chip clr1 font_13">모듈 1</span>
                     <span class="fr ico deletemode_20"></span>
@@ -169,7 +169,7 @@
           </div>
 
           <div class="cell">
-            <div class="inner atorm_elearning_material">
+            <div class="inner atorm_material">
                 <div class="mb12">
                     <span class="chip font_13 done">모듈 2</span>
                 </div>
