@@ -98,7 +98,7 @@
                         
                         
                         <div class="confirm_item_detail_inner">
-                            <div class="atorm_elearning_complete pdb25">
+                            <div class="atorm_complete pdb25">
                                 <div class="complete_title mb13">
                                     <div class="icon_wrap">
                                         <span class="chip clr1 font_12 mono_0 fwl">모듈 1</span>
@@ -178,7 +178,7 @@
                                 </ul>
                                 <!-- //list -->
                             </div>
-                            <div class="atorm_elearning_complete pdb25">
+                            <div class="atorm_complete pdb25">
                                 <div class="complete_title mb13">
                                     <div class="icon_wrap">
                                         <span class="chip clr1 font_12 mono_0 fwl">모듈 2</span>
