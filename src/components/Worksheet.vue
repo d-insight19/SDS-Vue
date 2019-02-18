@@ -110,7 +110,7 @@
             Login_findcenter
           </router-link>
         </td>
-        <td>수정됨 test</td>
+        <td>수정됨</td>
       </tr>
       <tr>
       <td align="center">2</td>
