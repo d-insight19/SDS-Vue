@@ -32,7 +32,7 @@
         <div id="content" class="etc">
 
           <div class="cell">
-            <div class="inner atorm_elearning_material">
+            <div class="inner atorm_material">
                 <!-- list -->
                 <ul class="multiList type2">
                     <li>
@@ -51,7 +51,7 @@
           </div>
 
           <div class="cell">
-            <div class="inner pdb20 atorm_elearning_material">
+            <div class="inner pdb20 atorm_material">
                 <!-- list -->
                 <ul class="multiList type2">
                     <li class="open">
@@ -84,7 +84,7 @@
           </div>
 
           <div class="cell">
-            <div class="inner pdb20 atorm_elearning_material">
+            <div class="inner pdb20 atorm_material">
                 <!-- list -->
                 <ul class="multiList type2">
                     <li class="open">

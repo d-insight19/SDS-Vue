@@ -18,13 +18,12 @@
                         <li><a href="#tab3">이러닝</a></li>
                     </ul>
                 </div>  
-        </div>
-        <!-- //header -->
+            </div>
+            <!-- //header -->
        
-        <div id="content" class="etc">
-          <div class="cell">
-            <div class="inner">
-
+            <div id="content" class="etc">
+                <div class="cell">
+                    <div class="inner">
                         <div id="dropdown_wrap" v-show="langFlag">
                             <div id="sheetDim" @click="changeLang()"></div>
                             <div id="dropdown" class="category">            
@@ -43,99 +42,96 @@
                             </div>
                         </div>
 
-                <div class="tabCnt dpb pt0" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
-                       <!-- list --> 
-                        <div class="title_line">
-                            <div class="category_txt" @click="changeLang()">
-                            <span>동영상<span class="num">12</span>건</span>
-                            <span class="ico down"></span>
+                        <div class="tabCnt dpb pt0" id="tab1"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
+                            <!-- list --> 
+                            <div class="title_line">
+                                <div class="category_txt" @click="changeLang()">
+                                <span>동영상<span class="num">12</span>건</span>
+                                <span class="ico down"></span>
+                                </div>
                             </div>
-                        </div>
 
-                                        <ul class="multiList type3">
-                                            <li>
-                                                <div class="in">                                                                                        
-                                                    <div class="multiline contents">
-                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    <span class="ico arrow"></span></a>
-                                                    </div>                                                     
-                                                    <ul class="info">
-                                                    <li class="fwb color_clr3">동영상</li>
-                                                    <li class="icon"><span class="date">2018.10.10</span></li>
-                                                    </ul>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="in">                                                                                        
-                                                    <div class="multiline contents">
-                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    <span class="ico arrow"></span></a>
-                                                    </div>                                                     
-                                                    <ul class="info">
-                                                    <li class="fwb color_clr3">동영상</li>
-                                                    <li class="icon"><span class="date">2018.10.10</span></li>
-                                                    </ul>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="in">                                                                                        
-                                                    <div class="multiline contents">
-                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    <span class="ico arrow"></span></a>
-                                                    </div>                                                     
-                                                    <ul class="info">
-                                                    <li class="fwb color_clr3">동영상</li>
-                                                    <li class="icon"><span class="date">2018.10.10</span></li>
-                                                    </ul>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="in">                                                                                        
-                                                    <div class="multiline contents">
-                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    <span class="ico arrow"></span></a>
-                                                    </div>                                                     
-                                                    <ul class="info">
-                                                    <li class="fwb color_clr3">동영상</li>
-                                                    <li class="icon"><span class="date">2018.10.10</span></li>
-                                                    </ul>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="in">                                                                                        
-                                                    <div class="multiline contents">
-                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    <span class="ico arrow"></span></a>
-                                                    </div>                                                     
-                                                    <ul class="info">
-                                                    <li class="fwb color_clr3">동영상</li>
-                                                    <li class="icon"><span class="date">2018.10.10</span></li>
-                                                    </ul>
-                                                </div>                                                
-                                            </li>
-                                            <li>
-                                                <div class="in">                                                                                        
-                                                    <div class="multiline contents">
-                                                    <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
-                                                    <span class="ico arrow"></span></a>
-                                                    </div>                                                     
-                                                    <ul class="info">
-                                                    <li class="fwb color_clr3">동영상</li>
-                                                    <li class="icon"><span class="date">2018.10.10</span></li>
-                                                    </ul>
-                                                </div>                                                
-                                            </li>                         
+                            <ul class="multiList type3">
+                                <li>
+                                    <div class="in">                                                                                        
+                                        <div class="multiline contents">
+                                        <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                        <span class="ico arrow"></span></a>
+                                        </div>                                                     
+                                        <ul class="info">
+                                        <li class="fwb color_clr3">동영상</li>
+                                        <li class="icon"><span class="date">2018.10.10</span></li>
                                         </ul>
-                                    
-                                <!-- //list -->
-                              </div>   
-
+                                    </div>                                                
+                                </li>
+                                <li>
+                                    <div class="in">                                                                                        
+                                        <div class="multiline contents">
+                                        <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                        <span class="ico arrow"></span></a>
+                                        </div>                                                     
+                                        <ul class="info">
+                                        <li class="fwb color_clr3">동영상</li>
+                                        <li class="icon"><span class="date">2018.10.10</span></li>
+                                        </ul>
+                                    </div>                                                
+                                </li>
+                                <li>
+                                    <div class="in">                                                                                        
+                                        <div class="multiline contents">
+                                        <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                        <span class="ico arrow"></span></a>
+                                        </div>                                                     
+                                        <ul class="info">
+                                        <li class="fwb color_clr3">동영상</li>
+                                        <li class="icon"><span class="date">2018.10.10</span></li>
+                                        </ul>
+                                    </div>                                                
+                                </li>
+                                <li>
+                                    <div class="in">                                                                                        
+                                        <div class="multiline contents">
+                                        <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                        <span class="ico arrow"></span></a>
+                                        </div>                                                     
+                                        <ul class="info">
+                                        <li class="fwb color_clr3">동영상</li>
+                                        <li class="icon"><span class="date">2018.10.10</span></li>
+                                        </ul>
+                                    </div>                                                
+                                </li>
+                                <li>
+                                    <div class="in">                                                                                        
+                                        <div class="multiline contents">
+                                        <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                        <span class="ico arrow"></span></a>
+                                        </div>                                                     
+                                        <ul class="info">
+                                        <li class="fwb color_clr3">동영상</li>
+                                        <li class="icon"><span class="date">2018.10.10</span></li>
+                                        </ul>
+                                    </div>                                                
+                                </li>
+                                <li>
+                                    <div class="in">                                                                                        
+                                        <div class="multiline contents">
+                                        <a href="#">공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.공지사항 타이틀 영역입니다.
+                                        <span class="ico arrow"></span></a>
+                                        </div>                                                     
+                                        <ul class="info">
+                                        <li class="fwb color_clr3">동영상</li>
+                                        <li class="icon"><span class="date">2018.10.10</span></li>
+                                        </ul>
+                                    </div>                                                
+                                </li>                         
+                            </ul>
+                            <!-- //list -->
+                        </div>   
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-
-      </div>
-      <!-- //container -->     
+        <!-- //container -->     
     </div>
     <!-- //wrap -->
 

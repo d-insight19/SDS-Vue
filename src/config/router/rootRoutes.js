@@ -149,6 +149,7 @@ import StudyHomeUnionMap from '~workplace/study/Study_home_union_map'
 import StudyHomeUnionStudycondition from '~workplace/study/Study_home_union_studycondition'
 import StudyHomeQuickfit from '~workplace/study/Study_home_quickfit'
 import StudyStudystatusPoint from '~workplace/study/Study_studystatus_point'
+import StudyDictionaryTab from '~workplace/study/Study_dictionary_tab'
 import StudyDictionary from '~workplace/study/Study_dictionary'
 import Studydictionarydetail from '~workplace/study/Study_dictionary_detail'
 import Study02discussdetail from '~workplace/study/Study_02_discuss_detail'
@@ -266,8 +267,12 @@ import StudyLOmp4script1scroll from '~workplace/study/Study_LO_mp4_script1scroll
 import StudyLOmp4script2scroll from '~workplace/study/Study_LO_mp4_script2scroll'
 import StudyLOmp4script1 from '~workplace/study/Study_LO_mp4_script1'
 import StudyLOmp4script2 from '~workplace/study/Study_LO_mp4_script2'
+import StudyReminder from '~workplace/study/Study_reminder'
+import StudyReminderDetail from '~workplace/study/Study_reminder_detail'
 import Studyfaq from '~workplace/study/Study_faq'
+import Studysurvey from '~workplace/study/Study_survey'
 import Studynotice from '~workplace/study/Study_notice'
+import StudynoticeAlarm from '~workplace/study/Study_notice_alarm'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -1467,6 +1472,11 @@ var rootRoutes = [
     component: StudyStudystatusPoint
   },
   {
+    path: '/Study_dictionary_tab',
+    name: 'Study_dictionary_tab',
+    component: StudyDictionaryTab
+  },
+  {
     path: '/Study_dictionary',
     name: 'Study_dictionary',
     component: StudyDictionary
@@ -2052,14 +2062,34 @@ var rootRoutes = [
     component: StudyLOmp4script2
   },
   {
+    path: '/Study_reminder',
+    name: 'Study_reminder',
+    component: StudyReminder
+  },
+  {
+    path: '/Study_reminder_detail',
+    name: 'Study_reminder_detail',
+    component: StudyReminderDetail
+  },
+  {
     path: '/Study_faq',
     name: 'Study_faq',
     component: Studyfaq
   },
   {
+    path: '/Study_survey',
+    name: 'Study_survey',
+    component: Studysurvey
+  },
+  {
     path: '/Study_notice',
     name: 'Study_notice',
     component: Studynotice
+  },
+  {
+    path: '/Study_notice_alarm',
+    name: 'Study_notice_alarm',
+    component: StudynoticeAlarm
   },
   // {
   //   path: '/regiclass_detailview_licence',
