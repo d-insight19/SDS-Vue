@@ -2192,6 +2192,22 @@
           <router-link :to="{ name: 'Atorm_e-learning_complete_1' }">
             Atorm_e-learning_complete_1
           </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_complete_2' }">
+            Atorm_e-learning_complete_2
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_complete_3' }">
+            Atorm_e-learning_complete_3
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_complete_4' }">
+            Atorm_e-learning_complete_4
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_complete_5' }">
+            Atorm_e-learning_complete_5
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -10928,8 +10944,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item factory_quiz</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_quiz_1' }">
+            Atorm_itemfactory_quiz_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_itemfactory_quiz_2' }">
+            Atorm_itemfactory_quiz_2
           </router-link>
         </td>
         <td></td>
