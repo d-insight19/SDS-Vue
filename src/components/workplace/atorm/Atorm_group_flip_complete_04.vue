@@ -34,7 +34,7 @@
             <div class="inner pdb20" style="padding-top:0;">
 
                 <ul class="confirm_item_detail">
-                    <li class="open" @click="toggleMenu($event)">
+                    <li @click="toggleMenu($event)">
                         <span>필수정보</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner">
@@ -270,9 +270,9 @@
                                             </div>
                                             <div class="txt_wrap tar">
                                                 <p class="title font_13 pdr6">
-                                                  <span class="mono_100 fwb">문항 배점</span> <span class="mono_65"><span class="font_15">10</span> 점</span>
+                                                  <span class="mono_100 fwb">문항 배점</span> <span class="mono_65 ml6"><span class="font_15">10</span> 점</span>
                                                   <span class="brB89 ml6 mr6"></span>
-                                                  <span class="mono_100 fwb">총점</span> <span class="mono_65"><span class="font_15">100</span> 점</span>
+                                                  <span class="mono_100 fwb">총점</span> <span class="mono_65 ml6"><span class="font_15">100</span> 점</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -344,7 +344,7 @@
                             </div>
                         </div>
                     </li>
-                    <li @click="toggleMenu($event)">
+                    <li class="open" @click="toggleMenu($event)">
                         <span>수료기준</span>
                         <span class="accordion_arrow"></span>
                         
@@ -428,7 +428,7 @@
 <script>
 /*eslint-disable */
 export default {
-  name: 'Atorm_group_flip_complete',
+  name: 'Atorm_group_flip_complete_04',
   /* vue lifecycle */
   created () {
   },

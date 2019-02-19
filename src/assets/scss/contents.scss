@@ -2811,4 +2811,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm_complete .complete_sub_detail{display:table; width:100%;}
 .atorm_complete .complete_sub_detail .icon_wrap{display:table-cell; width:46px; line-height: 140%; vertical-align: top;}
 .atorm_complete .complete_sub_detail .txt_wrap{display:table-cell; width:calc(100% - 46px); vertical-align: top; line-height: 140%;}
+.atorm_complete .complete_sub_detail2{display:table; width:100%;}
+.atorm_complete .complete_sub_detail2 .num_wrap{display:table-cell; width:55px; line-height: 140%; vertical-align: top;}
+.atorm_complete .complete_sub_detail2 .txt_wrap{display:table-cell; width:calc(100% - 55px); vertical-align: top; line-height: 140%;}
 
