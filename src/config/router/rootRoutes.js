@@ -637,6 +637,11 @@ import AtormELearningCriteria2 from '~workplace/atorm/Atorm_e-learning_criteria_
 import AtormELearningCriteriaSurvey from '~workplace/atorm/Atorm_e-learning_criteria_survey'
 import AtormELearningComplete1 from '~workplace/atorm/Atorm_e-learning_complete_1'
 import AtormELearningComplete2 from '~workplace/atorm/Atorm_e-learning_complete_2'
+import AtormELearningComplete3 from '~workplace/atorm/Atorm_e-learning_complete_3'
+import AtormELearningComplete4 from '~workplace/atorm/Atorm_e-learning_complete_4'
+import AtormELearningComplete5 from '~workplace/atorm/Atorm_e-learning_complete_5'
+import AtormItemfactoryQuiz1 from '~workplace/atorm/Atorm_itemfactory_quiz_1'
+import AtormItemfactoryQuiz2 from '~workplace/atorm/Atorm_itemfactory_quiz_2'
 import Atormstatusinfo from '~workplace/atorm/Atorm_status_info'
 import Atormgroupflipmaterialreport1 from '~workplace/atorm/Atorm_group_flip_material_report1'
 import Atormgroupflipmaterialreport2 from '~workplace/atorm/Atorm_group_flip_material_report2'
@@ -3563,6 +3568,31 @@ var rootRoutes = [
     path: '/Atorm_e-learning_complete_2',
     name: 'Atorm_e-learning_complete_2',
     component: AtormELearningComplete2
+  },
+  {
+    path: '/Atorm_e-learning_complete_3',
+    name: 'Atorm_e-learning_complete_3',
+    component: AtormELearningComplete3
+  },
+  {
+    path: '/Atorm_e-learning_complete_4',
+    name: 'Atorm_e-learning_complete_4',
+    component: AtormELearningComplete4
+  },
+  {
+    path: '/Atorm_e-learning_complete_5',
+    name: 'Atorm_e-learning_complete_5',
+    component: AtormELearningComplete5
+  },
+  {
+    path: '/Atorm_itemfactory_quiz_1',
+    name: 'Atorm_itemfactory_quiz_1',
+    component: AtormItemfactoryQuiz1
+  },
+  {
+    path: '/Atorm_itemfactory_quiz_2',
+    name: 'Atorm_itemfactory_quiz_2',
+    component: AtormItemfactoryQuiz2
   },
   {
     path: '/Atorm_status_info',

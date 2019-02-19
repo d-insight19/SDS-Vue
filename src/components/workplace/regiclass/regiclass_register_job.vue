@@ -5,9 +5,9 @@
       <!-- container -->
       <div id="container" class="mediaquery regiclass basicinfo register">
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
-            <div class="inner">
+            <div class="inner mb40">
               
                 <h1 class="h-tit">수강신청</h1>
 
@@ -73,7 +73,7 @@
 <script>
 /* eslint-disable */
 export default {
-  name: 'regiclass_register_option_02',
+  name: 'regiclass_register_job',
   /* vue lifecycle */
   created () {
   },

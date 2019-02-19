@@ -14,7 +14,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="list">
+        <div id="content" class="normal">
 
             <div class="cell">
                 <div class="inner pdt38">

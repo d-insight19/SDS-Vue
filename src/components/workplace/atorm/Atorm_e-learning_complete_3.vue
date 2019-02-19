@@ -34,7 +34,7 @@
             <div class="inner pdb20" style="padding-top:0;">
 
                 <ul class="confirm_item_detail">
-                    <li class="open" @click="toggleMenu($event)">
+                    <li @click="toggleMenu($event)">
                         <span>필수정보</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner">
@@ -131,7 +131,7 @@
                             <!-- //list -->
                         </div>
                     </li>
-                    <li @click="toggleMenu($event)">
+                    <li class="open" @click="toggleMenu($event)">
                         <span class="mt10">
                             학습목차 및 구성컨텐츠<br/>
                             <span class="mono_65 font_13 fwr">모듈 2</span> <span class="mono_65 font_13 fwr">차시 4</span>
@@ -481,7 +481,7 @@
 <script>
 /*eslint-disable */
 export default {
-  name: 'Atorm_e-learning_complete_1',
+  name: 'Atorm_e-learning_complete_3',
   /* vue lifecycle */
   created () {
   },
