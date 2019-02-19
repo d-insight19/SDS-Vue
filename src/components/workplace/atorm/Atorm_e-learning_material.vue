@@ -29,14 +29,14 @@
           </div>
         </div>
         <!-- //header -->
-        <div id="content" class="etc">
+        <div id="content" class="normal">
 
           <div class="cell">
             <div class="inner atorm_material">
                 <div class="mb12">
                     <span class="chip clr1 font_13">모듈 1</span>
                 </div>
-                <h2 class="h-tit2 fwb600 mb10 done">모듈명을 입력하세요</h2>
+                <slp-text-field classObject="underline font_22 fwb600" placeholder="모듈명을 입력하세요"></slp-text-field>   
                 <p class="hr mb0"></p>
             </div>
           </div>
@@ -46,15 +46,14 @@
                 <div class="mb12">
                     <span class="chip clr1 font_13">모듈 1</span>
                 </div>
-                <h2 class="h-tit2 fwb600 mb10">데이터 특성 알아보기</h2>
+                <slp-text-field class="mb10" classObject="underline font_22 fwb600" value="데이터 특성 알아보기"></slp-text-field>   
                 <!-- list -->
                 <ul class="multiList type2">
                     <li>
                         <div class="download_detail done">
-                            <div class="txt_wrap bbB85">
-                                <p class="icon_txt">1차시
-                                </p>
-                                <p class="title">차시명을 입력하세요</p>
+                            <div class="txt_wrap">
+                                <p class="icon_txt">1차시</p>
+                                <slp-text-field classObject="underline font_17 fwr" placeholder="차시명을 입력하세요"></slp-text-field>
                             </div>
                         </div>
                     </li>
@@ -70,17 +69,16 @@
                     <span class="chip clr1 font_13">모듈 1</span>
                     <span class="fr ico deletemode_20"></span>
                 </div>
-                <h2 class="h-tit2 fwb600 mb10">데이터 특성 알아보기</h2>
-                
+                <slp-text-field class="mb10" classObject="underline font_22 fwb600" value="데이터 특성 알아보기"></slp-text-field>   
                 <!-- list -->
                 <ul class="multiList type2">
                     <li class="open">
                         <div class="download_detail">
-                            <div class="txt_wrap bbB85">
+                            <div class="txt_wrap">
                                 <p class="icon_txt color_clr3">1차시 
                                     <span class="fr ico deletemode_20"></span>
                                 </p>
-                                <p class="title">학습 소개 Orientation </p>
+                                <slp-text-field classObject="underline" value="학습 소개 Orientation"></slp-text-field>
                             </div>
                         </div>
                         <div class="sub_content">
@@ -91,9 +89,8 @@
                     </li>
                     <li>
                         <div class="download_detail done">
-                            <div class="txt_wrap bbB85">
-                                <p class="icon_txt">2차시</p>
-                                <p class="title">차시명을 입력하세요</p>
+                            <div class="txt_wrap">
+                                <p class="icon_txt">2차시</p><slp-text-field classObject="underline" placeholder="차시명을 입력하세요"></slp-text-field>
                             </div>
                         </div>
                     </li>
@@ -109,17 +106,17 @@
                     <span class="chip clr1 font_13">모듈 1</span>
                     <span class="fr ico deletemode_20"></span>
                 </div>
-                <h2 class="h-tit2 fwb600 mb10">데이터 특성 알아보기</h2>
+                <slp-text-field class="mb10" classObject="underline font_22 fwb600" value="데이터 특성 알아보기"></slp-text-field>   
                 
                 <!-- list -->
                 <ul class="multiList type2">
                     <li class="open">
                         <div class="download_detail">
-                            <div class="txt_wrap bbB85">
+                            <div class="txt_wrap">
                                 <p class="icon_txt color_clr3">1차시 
                                     <span class="fr ico deletemode_20"></span>
                                 </p>
-                                <p class="title">학습 소개 Orientation</p>
+                                <slp-text-field classObject="underline" value="학습 소개 Orientation"></slp-text-field>
                             </div>
                         </div>
                         <div class="sub_content">
@@ -156,9 +153,9 @@
                     </li>
                     <li>
                         <div class="download_detail done">
-                            <div class="txt_wrap bbB85">
+                            <div class="txt_wrap">
                                 <p class="icon_txt">2차시</p>
-                                <p class="title">차시명을 입력하세요</p>
+                                <slp-text-field classObject="underline" placeholder="차시명을 입력하세요"></slp-text-field>
                             </div>
                         </div>
                     </li>
@@ -173,7 +170,7 @@
                 <div class="mb12">
                     <span class="chip font_13 done">모듈 2</span>
                 </div>
-                <h2 class="h-tit2 fwb600 mb10 done">모듈명을 입력하세요</h2>
+                <slp-text-field classObject="underline font_22 fwb600" placeholder="모듈명을 입력하세요"></slp-text-field> 
                 <p class="hr mb0"></p>
             </div>
           </div>

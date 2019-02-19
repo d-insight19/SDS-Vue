@@ -2762,9 +2762,10 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm_material .chip {border-width:0px !important; height:30px; padding:8px 10px; font-weight:300; color:map-get($mono_colors, mono_0); margin-bottom:0;}
 .atorm_material .h-tit2 {font-size: map-get($font_size, font_22); padding-bottom:9px; border-bottom: 1px solid map-get($line_colors , B85);}
 .atorm_material .download_detail {display:table; background-color:#fff; border: 1px solid map-get($line_colors,B60); border-bottom: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 20px; margin-top:12px;}
-.atorm_material .download_detail .txt_wrap {border-bottom-width:0; padding-bottom:9px !important;}
+.atorm_material .download_detail .txt_wrap {border-bottom-width:0 !important; padding-bottom:9px !important;}
 .atorm_material .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:10px;}
 .atorm_material .download_detail .txt_wrap .title {font-size: map-get($font_size, font_17); font-weight:600; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
+.atorm_material .download_detail .txt_wrap input {font-size: map-get($font_size, font_17); font-weight:600; min-height: 28px;}
 .atorm_material .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
 .atorm_material .download_detail .info li {color:map-get($mono_colors,mono_65);}
 .atorm_material .sub_content{display:none;}
@@ -2780,6 +2781,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 
 .atorm_material .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
 .atorm_material .download_detail.done .txt_wrap .title {opacity: 0.4; font-weight: 400;}
+.atorm_material .download_detail.done .txt_wrap input {opacity: 0.4; font-weight: 400;}
 
 .atorm_material .chip.done {border-width:1px !important; border-color:map-get($mono_colors, mono_25); color:map-get($mono_colors, mono_25); font-weight: 500;}
 .atorm_material .h-tit2.done {color:map-get($mono_colors, mono_25);}
