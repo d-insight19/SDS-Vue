@@ -650,6 +650,11 @@ import Atormgroupflipcompleteflip4 from '~workplace/atorm/Atorm_group_flip_compl
 import Atormgroupflipprematerial from '~workplace/atorm/Atorm_group_flip_pre_material'
 import Atormgroupflipadditem from '~workplace/atorm/Atorm_group_flip_add_item'
 import Atormgroupflipaddwork from '~workplace/atorm/Atorm_group_flip_add_work'
+import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
+import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
+import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
+import AtormGroupFlipPostMaterial2 from '~workplace/atorm/Atorm_group_flip_post_material2'
+import Atormgroupflipaddtest from '~workplace/atorm/Atorm_group_flip_add_test'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -663,19 +668,8 @@ import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_s
 import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
 
-// import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
-// import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
-import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
-import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
-// import AtormGroupFlipComplete02 from '~workplace/atorm/Atorm_group_flip_complete_02'
-import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
 // 1번 영역
 var rootRoutes = [
-  {
-    path: '/Atorm_group_flip_post_material',
-    name: 'Atorm_group_flip_post_material',
-    component: AtormGroupFlipPostMaterial
-  },
   {
     path: '*',
     name: 'worksheet',
@@ -3644,6 +3638,21 @@ var rootRoutes = [
     path: '/Atorm_group_flip_add_work',
     name: 'Atorm_group_flip_add_work',
     component: Atormgroupflipaddwork
+  },
+  {
+    path: '/Atorm_group_flip_post_material',
+    name: 'Atorm_group_flip_post_material',
+    component: AtormGroupFlipPostMaterial
+  },
+  {
+    path: '/Atorm_group_flip_post_material2',
+    name: 'Atorm_group_flip_post_material2',
+    component: AtormGroupFlipPostMaterial2
+  },
+  {
+    path: '/Atorm_group_flip_add_test',
+    name: 'Atorm_group_flip_add_test',
+    component: Atormgroupflipaddtest
   },
   {
     path: '/Eduperson_login',

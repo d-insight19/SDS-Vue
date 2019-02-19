@@ -2785,9 +2785,16 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm_material .h-tit2.done {color:map-get($mono_colors, mono_25);}
 
 .atorm_material .sub_content .sub_content_type {padding:20px 24px 32px; border:#999 1px solid; border-top:0}
-.atorm_material .sub_content .sub_content_type .score_list {border-bottom:#eaeaea 1px solid; margin-bottom:16px}
-.atorm_material .sub_content .sub_content_type .score_list .score {font-family: 'Roboto';font-size: map-get($font-size, font_20); line-height: 27px;}
-.atorm_material .sub_content .sub_content_type .score_list > li {padding-bottom:17px;}
+.atorm_material .sub_content .sub_content_type2 {border:#999 1px solid; border-top:0}
+.sub_content_type2 .score_list {padding:20px 24px 0}
+.score_list {border-bottom:#eaeaea 1px solid; margin-bottom:16px}
+.score_list .score {font-family: 'Roboto';font-size: map-get($font-size, font_20); line-height: 27px;}
+.score_list > li {padding-bottom:17px;}
+.evaluationList_box {background-color:#f5f5f5; border-top: #d9d9d9 1px solid; border-bottom: 0 none; padding:0 16px 16px; margin-top:0px;}
+.evaluationList_box .evaluationList {border-top:0}
+.evaluationList_box .evaluationList li:nth-last-child(1){border-bottom:0}
+
+
 // atorm_elearning_complete
 
 .atorm_complete .complete_title{display:table; width:100%; }

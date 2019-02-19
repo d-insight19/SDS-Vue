@@ -2275,10 +2275,10 @@
         <td>　</td>
         <td>시험 추가</td>
         <td>　</td>
-        <td class="textL">07.ATORM_07.02.02._group/flip_add    test</td>
+        <td class="textL">07.ATORM_07.02.02._group/flip_add test</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_add_test' }">
+            Atorm_group_flip_add_test
           </router-link>
         </td>
         <td></td>
@@ -2315,8 +2315,8 @@
             Atorm_group_flip_post_material
           </router-link>
           <br/>
-          <router-link :to="{ name: 'Atorm_group_flip_post_material_02' }">
-            Atorm_group_flip_post_material_02
+          <router-link :to="{ name: 'Atorm_group_flip_post_material2' }">
+            Atorm_group_flip_post_material2
           </router-link>
         </td>
         <td></td>
