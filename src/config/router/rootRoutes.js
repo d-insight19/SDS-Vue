@@ -663,6 +663,8 @@ import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
 import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
 import AtormGroupFlipPostMaterial2 from '~workplace/atorm/Atorm_group_flip_post_material2'
 import Atormgroupflipaddtest from '~workplace/atorm/Atorm_group_flip_add_test'
+import Atormgroupflipmaterial from '~workplace/atorm/Atorm_group_flip_material'
+import Atormgroupflipmaterial2 from '~workplace/atorm/Atorm_group_flip_material2'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -3701,6 +3703,16 @@ var rootRoutes = [
     path: '/Atorm_group_flip_add_test',
     name: 'Atorm_group_flip_add_test',
     component: Atormgroupflipaddtest
+  },
+  {
+    path: '/Atorm_group_flip_material',
+    name: 'Atorm_group_flip_material',
+    component: Atormgroupflipmaterial
+  },
+  {
+    path: '/Atorm_group_flip_material2',
+    name: 'Atorm_group_flip_material2',
+    component: Atormgroupflipmaterial2
   },
   {
     path: '/Eduperson_login',
