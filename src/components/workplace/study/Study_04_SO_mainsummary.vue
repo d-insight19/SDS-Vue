@@ -88,8 +88,8 @@
                 </div>
             </div>
             <!-- //header -->        
-            <div id="content" class="etc">
-                <div class="cell">
+            <div id="content" class="normal">
+                <div class="cell mb40">
                     <div class="inner"> 
                         <p class="inner-txt">설명 입니다. 설명 입니다. 설명 입니다. Admin에서등록된 내용 출력 (선택사항)</p>
                         <p class="empty_img">
