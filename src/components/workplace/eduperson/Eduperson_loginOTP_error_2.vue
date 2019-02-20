@@ -39,6 +39,18 @@
                 <div class="loginBtn">
                     <button type="button" class="btn md clr1">OTP 생성</button>
                 </div>
+
+                <p class="label-tit-20" style="margin-top: 60px; margin-bottom:10px;">인증번호 입력</p>
+
+                <ul class="loginList">
+                    <li>
+                        <slp-text-field class="mb30" classObject="underline" error message="인증시간이 초과되었습니다 OTP를 한번더 생성해주세요"> <span class="time">05:00</span></slp-text-field>
+                    </li>
+                </ul>
+
+                <!-- <div class="loginBtn">
+                    <button type="button" class="btn md clr1">OTP 인증</button>
+                </div> -->
             </div>
           </div>
         </div>

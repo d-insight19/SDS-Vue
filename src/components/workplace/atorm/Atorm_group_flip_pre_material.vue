@@ -38,10 +38,12 @@
                         <span>사전학습</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pdb27 pt0">
-                            <!-- list -->
+                            <!-- list -->                            
                             <div class="cell">
-                                <div class="inner atorm_material">                                    
-                                    <h2 class="h-tit2 mb10 done">사전학습명을 입력하세요</h2>                                   
+                                <div class="inner atorm_material"> 
+                                    <div class="underline_parents">
+                                    <slp-text-field classObject="underline" placeholder="사전학습명을 입력하세요"></slp-text-field>  
+                                    </div>                      
                                 </div>
                             </div>
                             <!-- //list -->
@@ -216,10 +218,12 @@
                         <span>집합강의</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pdb27 pt0">
-                            <!-- list -->
+                            <!-- list -->                            
                             <div class="cell">
-                                <div class="inner atorm_material">                                    
-                                    <h2 class="h-tit2 mb10 done">집합강의명을 입력하세요</h2>                                   
+                                <div class="inner atorm_material"> 
+                                    <div class="underline_parents">
+                                    <slp-text-field classObject="underline" placeholder="집합강의명을 입력하세요"></slp-text-field>  
+                                    </div>                      
                                 </div>
                             </div>
                             <!-- //list -->
@@ -294,10 +298,12 @@
                         <span>사후학습</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pdb27 pt0">
-                            <!-- list -->
+                            <!-- list -->                            
                             <div class="cell">
-                                <div class="inner atorm_material">                                    
-                                    <h2 class="h-tit2 mb10 done">사후학습명을 입력하세요</h2>                                   
+                                <div class="inner atorm_material"> 
+                                    <div class="underline_parents">
+                                    <slp-text-field classObject="underline" placeholder="사후학습명을 입력하세요"></slp-text-field>  
+                                    </div>                      
                                 </div>
                             </div>
                             <!-- //list -->

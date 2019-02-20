@@ -538,9 +538,13 @@ import CustomerCenterStudysupportdetail from '~workplace/customercenter/Customer
 import CustomerCenterRequestresult from '~workplace/customercenter/CustomerCenter_Request_result'
 import CustomerCenterInquirywrite02 from '~workplace/customercenter/CustomerCenter_Inquiry_write02'
 import CustomerCenterInquirywrite02error from '~workplace/customercenter/CustomerCenter_Inquiry_write02_error'
+import CustomerCenterStudyguidedetail2 from '~workplace/customercenter/CustomerCenter_Studyguide_detail2'
 
 import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
 import EdupersonLoginOTP from '~workplace/eduperson/Eduperson_loginOTP'
+import EdupersonLoginOTP2 from '~workplace/eduperson/Eduperson_loginOTP_2'
+import EdupersonLoginOTPError1 from '~workplace/eduperson/Eduperson_loginOTP_error_1'
+import EdupersonLoginOTPError2 from '~workplace/eduperson/Eduperson_loginOTP_error_2'
 import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
@@ -3413,6 +3417,11 @@ var rootRoutes = [
     component: CustomerCenterInquirywrite02error
   },
   {
+    path: '/CustomerCenter_Studyguide_detail2',
+    name: 'CustomerCenter_Studyguide_detail2',
+    component: CustomerCenterStudyguidedetail2
+  },
+  {
     path: '/Atorm_drawer',
     name: 'Atorm_drawer',
     component: AtormDrawer
@@ -3791,6 +3800,21 @@ var rootRoutes = [
     path: '/Eduperson_loginOTP',
     name: 'Eduperson_loginOTP',
     component: EdupersonLoginOTP
+  },
+  {
+    path: '/Eduperson_loginOTP_2',
+    name: 'Eduperson_loginOTP_2',
+    component: EdupersonLoginOTP2
+  },
+  {
+    path: '/Eduperson_loginOTP_error_1',
+    name: 'Eduperson_loginOTP_error_1',
+    component: EdupersonLoginOTPError1
+  },
+  {
+    path: '/Eduperson_loginOTP_error_2',
+    name: 'Eduperson_loginOTP_error_2',
+    component: EdupersonLoginOTPError2
   },
   {
     path: '/Eduperson_drawer',
