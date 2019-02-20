@@ -342,7 +342,7 @@ export default {
             {title: '자바스크립트 개발 프로세스 기초3'}
         ],
        option: {
-        loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
+        loType: "audio", //loType : movie(동영상), audio(오디오), vr(VR)
         targetId: "contents", //div target Id
         // sources: [
         //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
@@ -514,7 +514,7 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
                 // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)

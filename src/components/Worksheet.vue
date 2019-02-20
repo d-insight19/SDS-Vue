@@ -944,19 +944,6 @@
           <router-link :to="{ name: 'Login_certify_email_certify_error3' }">
             Login_certify_email_certify_error3
           </router-link>
-          <br/>
-          <router-link :to="{ name: 'Login_login_corporationphone1' }">
-            Login_login_corporationphone1
-          </router-link>
-          <br/>
-          <router-link :to="{ name: 'Login_login_corporationphone2' }">
-            Login_login_corporationphone2
-          </router-link>
-          <br/>
-          <router-link :to="{ name: 'Login_login_corporationphone3' }">
-            Login_login_corporationphone3
-          </router-link>
-
         </td>
         <td>수정됨</td>
       </tr>
@@ -8953,15 +8940,15 @@
           <router-link :to="{ name: 'Eduperson_login' }">
             Eduperson_login
           </router-link>
-          ,
+          <br/>
           <router-link :to="{ name: 'Eduperson_drawer_setting' }">
             Eduperson_drawer_setting
           </router-link>
-          ,
+          <br/>
           <router-link :to="{ name: 'Eduperson_drawer_profile' }">
             Eduperson_drawer_profile
           </router-link>
-          ,
+          <br/>
           <router-link :to="{ name: 'Eduperson_drawer' }">
             Eduperson_drawer
           </router-link>
@@ -10656,9 +10643,22 @@
         <td>　</td>
         <td class="textL">11.Eduperson_01.00_loginOTP</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'Eduperson_loginOTP' }">
+            Eduperson_loginOTP
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Eduperson_loginOTP_2' }">
+            Eduperson_loginOTP_2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Eduperson_loginOTP_error_1' }">
+            Eduperson_loginOTP_error_1
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Eduperson_loginOTP_error_2' }">
+            Eduperson_loginOTP_error_2
+          </router-link>
+          <br/>
         </td>
         <td></td>
       </tr>
@@ -10673,8 +10673,16 @@
         <td>　</td>
         <td class="textL">01.login_09.03_login_corporationphone</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'Login_login_corporationphone1' }">
+            Login_login_corporationphone1
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_corporationphone2' }">
+            Login_login_corporationphone2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_corporationphone3' }">
+            Login_login_corporationphone3
           </router-link>
         </td>
         <td></td>
@@ -10994,6 +11002,23 @@
         <td>
           <router-link :to="{ name: 'components_color' }">
             components_color
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>아이콘</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_chips' }">
+            components_chips
           </router-link>
         </td>
         <td></td>
@@ -11645,6 +11670,23 @@
         <td>
           <router-link :to="{ name: 'components_popup_slp' }">
             components_popup_slp
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>New 컨포넌트확인페이지</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_picker_slp' }">
+            components_picker_slp
           </router-link>
         </td>
         <td></td>

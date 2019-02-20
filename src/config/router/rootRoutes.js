@@ -1,5 +1,6 @@
 // fdp 기본 route 정보
 import Worksheet from '@/components/Worksheet'
+import ComponentsChips from '~workplace/common_page/components_chips'
 import ComponentsColor from '~workplace/common_page/components_color'
 import ComponentsIcons from '~workplace/common_page/components_icons'
 import ComponentsTables from '~workplace/common_page/components_tables'
@@ -539,6 +540,9 @@ import CustomerCenterStudyguidedetail2 from '~workplace/customercenter/CustomerC
 
 import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
 import EdupersonLoginOTP from '~workplace/eduperson/Eduperson_loginOTP'
+import EdupersonLoginOTP2 from '~workplace/eduperson/Eduperson_loginOTP_2'
+import EdupersonLoginOTPError1 from '~workplace/eduperson/Eduperson_loginOTP_error_1'
+import EdupersonLoginOTPError2 from '~workplace/eduperson/Eduperson_loginOTP_error_2'
 import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
@@ -687,6 +691,7 @@ import ComponentsTestPage7 from '~workplace/common_page/components_select_slp'
 import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_slp'
 import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
+import ComponentsTestPage11 from '~workplace/common_page/components_picker_slp'
 
 // 1번 영역
 var rootRoutes = [
@@ -704,6 +709,11 @@ var rootRoutes = [
     path: '/components_color',
     name: 'components_color',
     component: ComponentsColor
+  },
+  {
+    path: '/components_chips',
+    name: 'components_chips',
+    component: ComponentsChips
   },
   {
     path: '/components_icons',
@@ -924,6 +934,11 @@ var rootRoutes = [
     path: '/components_switch_slp',
     name: 'components_switch_slp',
     component: ComponentsTestPage10
+  },
+  {
+    path: '/components_picker_slp',
+    name: 'components_picker_slp',
+    component: ComponentsTestPage11
   },
   {
     path: '/Login_findcenter',
@@ -3773,6 +3788,21 @@ var rootRoutes = [
     path: '/Eduperson_loginOTP',
     name: 'Eduperson_loginOTP',
     component: EdupersonLoginOTP
+  },
+  {
+    path: '/Eduperson_loginOTP_2',
+    name: 'Eduperson_loginOTP_2',
+    component: EdupersonLoginOTP2
+  },
+  {
+    path: '/Eduperson_loginOTP_error_1',
+    name: 'Eduperson_loginOTP_error_1',
+    component: EdupersonLoginOTPError1
+  },
+  {
+    path: '/Eduperson_loginOTP_error_2',
+    name: 'Eduperson_loginOTP_error_2',
+    component: EdupersonLoginOTPError2
   },
   {
     path: '/Eduperson_drawer',
