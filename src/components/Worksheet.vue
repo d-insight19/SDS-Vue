@@ -10917,7 +10917,7 @@
             Atorm_group_flip_complete_flip2
           </router-link>,
           <router-link :to="{ name: 'Atorm_group_flip_complete_flip3' }">
-            Atorm_group_flip_complete_flip3 - 작업중
+            Atorm_group_flip_complete_flip3
           </router-link>,
           <router-link :to="{ name: 'Atorm_group_flip_complete_flip4' }">
             Atorm_group_flip_complete_flip4
