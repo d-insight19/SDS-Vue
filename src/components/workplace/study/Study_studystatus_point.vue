@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery studystatus ">
             <!-- header -->
@@ -9,7 +9,7 @@
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_18">스코어</p>
             </div>
-            <!-- //header -->            
+            <!-- //header -->
             <div id="content" class="etc" >
                 <div class="cell">
                     <div class="inner ">
@@ -37,7 +37,7 @@
             <!-- //contents -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

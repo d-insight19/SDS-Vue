@@ -1,5 +1,5 @@
 <template>
-
+<!-- eslint-disable-->
     <div>
         <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
@@ -37,7 +37,7 @@
 
                 </div>
             </li>
-            <li :class="compClasses">
+            <li class="compClasses">
 
                 <div class="download_details">
 
@@ -80,7 +80,7 @@
                                         <li>
                                             <div class="edit_parents">
                                                 <div class="edit_child edit_child_frst">
-                                                    <label for="id_save"class="labelChk">
+                                                    <label for="id_save" class="labelChk">
                                                         <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span>
                                                     </label>
                                                 </div>
@@ -163,12 +163,14 @@
                                         </li>
                                     </ul>
                                     <!-- //list -->
+
                                 </div>
                             </li>
                         </ul>
                     </div>
 
                 </div><!-- //download_details -->
+
             </li>
         </ul>
         <!-- //list -->

@@ -1,19 +1,19 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
         <div id="container" class="mediaquery study_summary">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand">          
+            <div v-if="headerType == '1'" id="header" class="expand">
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                     <p class="header_text  font_19"> </p>
-                </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:32px">                
+                </div>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:32px">
                     <div class="hide-inner">
-                        <span class="chip">요약집</span>                         
+                        <span class="chip">요약집</span>
                         <p class="h-tit1">요약집 타이틀 영역입니다 요약집 타이틀 영역입니다</p>
                     </div>
                 </div>
@@ -22,11 +22,11 @@
 
 
             <!-- header + 확장형 + tab  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '2'" id="header" class="tab">          
+            <div v-if="headerType == '2'" id="header" class="tab">
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_19"> </p>
-                </div>  
+                </div>
                 <div class="header_inner line2 tabMenu">
                     <ul class="fixTab">
                     <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
@@ -34,10 +34,10 @@
                     <li><a href="#tab3">인문학이야기</a></li>
                     <li><a href="#tab3">인문학이야기</a></li>
                     </ul>
-                </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">                
-                    <div class="head-inner"> 
-                        <span class="chip">FAQ</span>     
+                </div>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">
+                    <div class="head-inner">
+                        <span class="chip">FAQ</span>
                         <p class="h-tit1">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <p class="ico-group">
                             <span class="ico clip"></span>
@@ -51,14 +51,14 @@
             </div>
             <!-- //header -->
 
-            
+
             <!-- header scroll 헤더  작업중-->
             <div v-if="headerType == '3'" id="header" class="tab">
-                
+
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_19"> </p>
-                </div>            
+                </div>
                 <div class="header_inner line2 tabMenu scroll-x">
                     <ul class="scrollTab">
                     <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
@@ -67,10 +67,10 @@
                     <li><a href="#tab3">인문학이야기</a></li>
                     <li><a href="#tab3">인문학이야기</a></li>
                     </ul>
-                </div>     
-                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">                
-                    <div class="head-inner"> 
-                        <span class="chip">FAQ</span>     
+                </div>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">
+                    <div class="head-inner">
+                        <span class="chip">FAQ</span>
                         <p class="h-tit1">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <p class="ico-group">
                             <span class="ico clip"></span>
@@ -82,16 +82,16 @@
                     </div>
                 </div>
             </div>
-            <!-- //header -->        
+            <!-- //header -->
             <div id="content" class="etc">
                 <div class="cell">
-                    <div class="inner">                        
+                    <div class="inner">
                         <p class="inner-txt op80">설명 입니다. 설명 입니다. 설명 입니다. Admin에서 등록된 내용 출력 (선택사항) </p>
                         <p class="empty_img">
                             <img src="" alt="">
                         </p>
                         <p class="inner-txt op65">본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 </p>
-                        
+
                         <div class="reminderListBlock">
                             <ul class="reminderList">
                                 <li class="reminderList-item">
@@ -106,7 +106,7 @@
                                             <div class="d_flex_col">
                                                 <em class="ico next_16 ml12"></em>
                                             </div>
-                                        </div>                                        
+                                        </div>
                                     </a>
                                 </li>
                                 <li class="reminderList-item">
@@ -121,9 +121,9 @@
                                             <div class="d_flex_col">
                                                 <em class="ico next_16 ml12"></em>
                                             </div>
-                                        </div>                                        
+                                        </div>
                                     </a>
-                                </li> 
+                                </li>
                                 <li class="reminderList-item">
                                     <a href="" class="reminderList-link">
                                         <div class="d_flex align_items_center">
@@ -136,9 +136,9 @@
                                             <div class="d_flex_col">
                                                 <em class="ico next_16 ml12"></em>
                                             </div>
-                                        </div>                                        
+                                        </div>
                                     </a>
-                                </li>                                                             
+                                </li>
                             </ul>
                         </div>
 
@@ -155,8 +155,8 @@
                                 <span class="at-num">500KB</span>
                                 <span class="ico download"></span>
                                 </div>
-                            </div>                         
-                            </li>                
+                            </div>
+                            </li>
                             <li>
                             <div>
                                 <span class="ico ppt-a"></span>
@@ -165,8 +165,8 @@
                                 <span class="at-num">4.5M</span>
                                 <span class="ico download"></span>
                                 </div>
-                            </div>                         
-                            </li>                
+                            </div>
+                            </li>
                             <li>
                             <div>
                                 <span class="ico ppt-a"></span>
@@ -175,16 +175,16 @@
                                 <span class="at-num">4.5M</span>
                                 <span class="ico download"></span>
                                 </div>
-                            </div>                         
-                            </li>                
+                            </div>
+                            </li>
                         </ul>
 
                     </div>
                     <!-- //inner -->
-                </div>  
+                </div>
             </div>
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>

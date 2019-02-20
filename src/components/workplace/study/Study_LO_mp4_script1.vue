@@ -1,12 +1,12 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery courseware Study_LO_mp4_script">   
-        
+      <div id="container" class="mediaquery courseware Study_LO_mp4_script">
+
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video pdb0" style="background:#fff">          
+        <div id="header" class="tab video pdb0" style="background:#fff">
             <div class="header_inner line1 ">
                 <button type="button" class="btn only prev" style="display:none"><span class="ico2 prev-wh"></span></button>
                 <!--  <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p> -->
@@ -14,7 +14,7 @@
 <!--
             <div id="dropdown_wrap" v-show="langFlag">
                 <div id="sheetDim" @click="changeLang()"></div>
-                <div id="dropdown" class="category">            
+                <div id="dropdown" class="category">
                     <ul  @click="changeLang()">
                     <li>영어</li>
                     <li>중국어</li>
@@ -28,7 +28,7 @@
                 <span class="ico ico_dropdown16 gr"></span>
                 <button type="button" class="btn close fr"><span class="ico">닫기</span></button>
             </div>
--->           
+-->
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
             <!-- <div class="blur_wrap">
@@ -36,7 +36,7 @@
                 <div class="right blur"></div>
             </div> -->
 
-            
+
             <!-- s: 동영상 -->
             <div class="player_wrap">
                 <div class="player_inner">
@@ -50,7 +50,7 @@
                                 <li v-for="(item, index) in relatedVideoList" :key="index">
                                     <a href="#"></a>
                                     <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li> 
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                             <div class="icon_wrap">
                                 <span class="light_icon"></span>
                                 <span class="light_value">75</span>
-                            </div>                            
+                            </div>
                         </div>
                         <div class="volume_right">
                             <div class="inner"></div>
@@ -90,17 +90,17 @@
 
                 </div>
                 <!-- s: btm_subtitle_area -->
-                
+
                 <!-- e: btm_subtitle_area -->
             </div>
-            <!-- e: 동영상-->      
+            <!-- e: 동영상-->
 
-                  
-           
-            
-        </div>        
 
-        <div id="content" class="etc" style="padding:0;">          
+
+
+        </div>
+
+        <div id="content" class="etc" style="padding:0;">
 
             <div class="mp4Script_optionBlock mb">
                 <div class="mp4Script_options short d_flex align_items_center position_relative" >
@@ -108,38 +108,38 @@
                         <div @click="changeLang()">한국어 <span class="ico ico_dropdown16 gr"></span></div>
                         <div id="dropdown_wrap" v-show="langFlag">
                             <div id="sheetDim" @click="changeLang()"></div>
-                            <div id="dropdown" class="category">            
+                            <div id="dropdown" class="category">
                                 <ul  @click="changeLang()">
                                     <li>영어</li>
                                     <li>중국어</li>
                                     <li>베트남어</li>
                                 </ul>
                             </div>
-                        </div>  
+                        </div>
                     </div>
- 
-                    <div class="ml20"><span>자동스크롤</span> 
+
+                    <div class="ml20"><span>자동스크롤</span>
                         <label class="labelBtn">
-                            <input type="checkbox" name="" class="chk"> 
+                            <input type="checkbox" name="" class="chk">
                             <div class="chk_box">
                                 <span class="ball"></span>
                                 <ul class="txt"><li class="m1"></li><li class="m2"></li></ul>
                             </div>
                         </label>
                     </div>
-                    <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>   
-                </div>            
-            </div>  
+                    <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>
+                </div>
+            </div>
 
           <div class="cell">
             <div class="inner pt0">
-                
-                <h2 class="label-tit18"><b>스크립트</b></h2>         
+
+                <h2 class="label-tit18"><b>스크립트</b></h2>
               <p class="mono_80">이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
               [클래스 객체]
-                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와 
+                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
                 객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
-                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에 
+                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
                 있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
                 헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
                 이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
@@ -148,9 +148,9 @@
                 는 장치요.
                 이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
               [클래스 객체]
-                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와 
+                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
                 객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
-                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에 
+                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
                 있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
                 헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
                 이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
@@ -159,9 +159,9 @@
                 는 장치요.
                 이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
               [클래스 객체]
-                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와 
+                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
                 객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
-                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에 
+                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
                 있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
                 헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
                 이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
@@ -170,9 +170,9 @@
                 는 장치요.
                 이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
               [클래스 객체]
-                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와 
+                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
                 객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
-                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에 
+                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
                 있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
                 헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
                 이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
@@ -180,16 +180,16 @@
                 치들이 준비가 되어 있고 그 상황에 맞는 슈트, 준비되어 있
                 는 장치요.
               </p>
-                
-               
+
+
 
             </div>
           </div>
 
         </div>
-            
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>
@@ -293,7 +293,7 @@ export default {
     }
   },
   methods: {
-    detail_toggle () {        
+    detail_toggle () {
         this.detail_show = !this.detail_show;
     },
     active_el () {
@@ -306,7 +306,7 @@ export default {
   mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
-        
+
 
         // 동영상 헤더 텍스트 입력
         $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
@@ -339,7 +339,7 @@ export default {
                 // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
                 // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
                 $(".flowplayer").toggleClass("is-open-related-contents");
-            
+
                 // TODO
                 // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
                 //      -> 동영상 pause 처리하면 될듯
@@ -354,7 +354,7 @@ export default {
             });
         }
 
-        
+
         $('.half_left').click(function(){
             console.error("왼쪽");
         });
@@ -394,9 +394,9 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);
                 // 수치값은 수정해야함.
-                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
+                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
                 // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
@@ -432,7 +432,7 @@ export default {
                     /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
                 }
             });
-        }                                        
+        }
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery courseware union ">
             <!-- header -->
@@ -9,12 +9,12 @@
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
                 <p class="header_text font_18">과정 MAP</p>
             </div>
-            <!-- //header -->            
+            <!-- //header -->
             <div id="content" class="etc" >
                 <div class="cell">
                     <div class="inner ">
                         <p class="tb-wrap">
-                           <span class="tb-cell tac">이미지 영역</span> 
+                           <span class="tb-cell tac">이미지 영역</span>
                         </p>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
             <!-- //contents -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

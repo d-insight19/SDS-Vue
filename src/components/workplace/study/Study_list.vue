@@ -1,5 +1,5 @@
 <template>
-
+<!-- eslint-disable-->
     <div>
         <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 

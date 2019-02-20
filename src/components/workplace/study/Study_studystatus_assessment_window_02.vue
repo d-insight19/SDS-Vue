@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery studystatus pd70">
             <!-- header -->
@@ -9,7 +9,7 @@
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_18">과정 평가 창</p>
             </div>
-            <!-- //header -->            
+            <!-- //header -->
             <div id="content" class="etc" >
                 <div class="cell">
                     <div class="inner " style="padding-top:56px;">
@@ -43,7 +43,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"  >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>                    
+                                    <span class="label"  >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>
                                 </label>
                             </li>
                             <li>
@@ -52,7 +52,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>                    
+                                    <span class="label" >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>
                                 </label>
                             </li>
                             <li>
@@ -61,7 +61,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >③ 2003년 Apache 2.0 License로 최초 공개</span>                    
+                                    <span class="label" >③ 2003년 Apache 2.0 License로 최초 공개</span>
                                 </label>
                             </li>
                             <li>
@@ -70,7 +70,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>                    
+                                    <span class="label" >④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>
                                 </label>
                             </li>
                             <li>
@@ -79,12 +79,12 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>                    
+                                    <span class="label" >⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>
                                 </label>
                             </li>
-                        </ul>     
+                        </ul>
                         <p class="hr"></p>
-                        <p class="txt-tit">2. 마이동풍은 이백의 시에서 유래한 말이다. 여기에서 동풍은 어떤 계절의 바람일까?</p>                        
+                        <p class="txt-tit">2. 마이동풍은 이백의 시에서 유래한 말이다. 여기에서 동풍은 어떤 계절의 바람일까?</p>
                         <ul class="ul-block com-rdo">
                             <li>
                                 <label class="labelRdo " :class="{ err : !rdo2 }" >
@@ -92,7 +92,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >① 봄</span>                    
+                                    <span class="label" >① 봄</span>
                                 </label>
                             </li>
                             <li>
@@ -101,7 +101,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"  >② 여름</span>                    
+                                    <span class="label"  >② 여름</span>
                                 </label>
                             </li>
                             <li>
@@ -110,7 +110,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >③ 가을</span>                    
+                                    <span class="label" >③ 가을</span>
                                 </label>
                             </li>
                             <li>
@@ -119,11 +119,11 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >④ 겨울</span>                                                        
+                                    <span class="label" >④ 겨울</span>
                                 </label>
                                 <p v-if="!rdo2" class="InfoChK-resultTxt err">응시하지 않은 문항이 있습니다...</p>
                             </li>
-                        </ul> 
+                        </ul>
 
                         <p class="hr"></p>
                         <p class="txt-tit">3. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
@@ -131,11 +131,11 @@
                         <ul class="com-rdo">
                             <li class="inb-box">
                                 <label class="labelRdo">
-                                    <input type="radio" class="rdo"  v-model="rdo3" :value="rdos3[0]" >                                    
+                                    <input type="radio" class="rdo"  v-model="rdo3" :value="rdos3[0]" >
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"><span  class="ico chk-o"></span></span>                    
+                                    <span class="label"><span  class="ico chk-o"></span></span>
                                 </label>
                             </li>
                             <li class="inb-box">
@@ -144,7 +144,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"><span class="ico chk-x"></span></span>                    
+                                    <span class="label"><span class="ico chk-x"></span></span>
                                 </label>
                             </li>
                         </ul>
@@ -158,7 +158,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"><span class="ico chk-o"></span></span>                    
+                                    <span class="label"><span class="ico chk-o"></span></span>
                                 </label>
                             </li>
                             <li class="inb-box">
@@ -167,7 +167,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"><span class="ico chk-x"></span></span>                    
+                                    <span class="label"><span class="ico chk-x"></span></span>
                                 </label>
                             </li>
                         </ul>
@@ -176,20 +176,20 @@
                         <input @input="onInput" type="text" class="input" placeholder="스프링"/>
                         <div class="inputbottom inp-num">
                             <span class="strlenth" >{{keylength}}/300</span>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
                 <button type="button" class="btn md clr1">최종제출</button>
             </div>
             <!-- //floatingbtn -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 
