@@ -660,6 +660,7 @@ import AtormGroupFlipComplete2 from '~workplace/atorm/Atorm_group_flip_complete_
 import AtormGroupFlipComplete3 from '~workplace/atorm/Atorm_group_flip_complete_03'
 import AtormGroupFlipComplete4 from '~workplace/atorm/Atorm_group_flip_complete_04'
 import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
+import AtormGroupFlipCriteria2 from '~workplace/atorm/Atorm_group_flip_criteria2'
 import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
 import AtormGroupFlipPostMaterial2 from '~workplace/atorm/Atorm_group_flip_post_material2'
 import Atormgroupflipaddtest from '~workplace/atorm/Atorm_group_flip_add_test'
@@ -3648,6 +3649,11 @@ var rootRoutes = [
     path: '/Atorm_group_flip_criteria',
     name: 'Atorm_group_flip_criteria',
     component: AtormGroupFlipCriteria
+  },
+  {
+    path: '/Atorm_group_flip_criteria2',
+    name: 'Atorm_group_flip_criteria2',
+    component: AtormGroupFlipCriteria2
   },
   {
     path: '/Atorm_group_flip_criteria_flip',
