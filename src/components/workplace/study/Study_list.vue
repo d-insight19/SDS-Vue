@@ -4,9 +4,9 @@
         <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
         <!-- list -->
-        <ul class="studyList">            
+        <ul class="studyList">
             <li>
-                <div class="download_details">     
+                <div class="download_details">
                     <div class="text_wrap position_relative">
                         <p class="icon_txt">3차시</p>
                         <p class="title text">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
@@ -25,10 +25,10 @@
                     </div>
                 </div>
             </li>
-            <li :class="compClasses">    
+            <li :class="compClasses">
 
                 <div class="download_details">
-                       
+
                     <div class="text_wrap position_relative">
                         <p class="icon_txt">4차시</p>
                         <p class="title text">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
@@ -44,11 +44,11 @@
                             </li>
                         </ul>
                         <a href="#" class="icon accordion_arrow"  @click="collapse"></a>
-                    </div>                                 
-          
-                    <div v-show="defaultFlag">      
+                    </div>
+
+                    <div v-show="defaultFlag">
                         <p class="sub_content_title border_clr1 color_clr1 clr4">11변수와 데이터 타입</p>
-                       
+
                         <ul>
                             <li>
                                 <div>
@@ -58,9 +58,9 @@
                                             <div class="edit_parents">
                                                 <div class="edit_child edit_child_frst">
                                                     <label for="id_save"class="labelChk">
-                                                        <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span> 
-                                                    </label>                        
-                                                </div>                                                
+                                                        <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span>
+                                                    </label>
+                                                </div>
                                                 <div class="edit_child edit_child_snd">
                                                     <div class="sub_download_details clr4 d_flex align_items_top">
                                                         <div class="icon_wrap">
@@ -78,7 +78,7 @@
                                                                     <span class="mono_65">23:43</span>
                                                                 </li>
                                                             </ul>
-                                                        </div>                                                    
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -87,9 +87,9 @@
                                             <div class="edit_parents">
                                                 <div class="edit_child edit_child_frst">
                                                     <label for="id_save" class="labelChk">
-                                                        <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span> 
-                                                    </label>                        
-                                                </div>  
+                                                        <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span>
+                                                    </label>
+                                                </div>
                                                 <div class="edit_child edit_child_snd">
                                                     <div class="sub_download_details clr4 on d_flex align_items_top">
                                                         <div class="icon_wrap">
@@ -116,9 +116,9 @@
                                             <div class="edit_parents">
                                                 <div class="edit_child edit_child_frst">
                                                     <label for="id_save" class="labelChk">
-                                                        <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span> 
-                                                    </label>                        
-                                                </div>  
+                                                        <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span>
+                                                    </label>
+                                                </div>
                                                 <div class="edit_child edit_child_snd">
                                                     <div class="sub_download_details clr4 d_flex align_items_top">
                                                         <div class="icon_wrap">
@@ -133,27 +133,27 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                    </div>                                                    
+                                                    </div>
                                                 </div>
                                             </div>
 
                                         </li>
                                     </ul>
                                     <!-- //list -->
-                                
+
                                 </div>
                             </li>
-                        </ul>    
+                        </ul>
                     </div>
 
-                </div><!-- //download_details -->    
-            
-            </li>                 
+                </div><!-- //download_details -->
+
+            </li>
         </ul>
         <!-- //list -->
 
     </div>
-    
+
 </template>
 
 <script>
@@ -167,13 +167,13 @@ window.jQuery = $
 
 export default {
     name: 'studyList',
-  
+
     data () {
         return {
             defaultFlag: true,
         }
     },
-  
+
     methods: {
         collapse: function(){
             this.defaultFlag = !this.defaultFlag
@@ -183,7 +183,7 @@ export default {
     computed: {
         compClasses: function(){
             return{
-                open: this.defaultFlag, 
+                open: this.defaultFlag,
             }
         }
     }

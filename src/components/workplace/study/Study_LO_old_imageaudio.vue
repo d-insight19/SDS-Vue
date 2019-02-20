@@ -1,13 +1,13 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery">   
-        
+      <div id="container" class="mediaquery">
+
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab" style="background:#fff">     
-           
+        <div id="header" class="tab" style="background:#fff">
+
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
             <!-- <div class="blur_wrap">
@@ -15,7 +15,7 @@
                 <div class="right blur"></div>
             </div> -->
 
-            
+
             <!-- s: 동영상 -->
             <div class="player_wrap">
                 <div class="player_inner">
@@ -29,7 +29,7 @@
                                 <li v-for="(item, index) in relatedVideoList" :key="index">
                                     <a href="#"></a>
                                     <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li> 
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                             <div class="icon_wrap">
                                 <span class="light_icon"></span>
                                 <span class="light_value">75</span>
-                            </div>                            
+                            </div>
                         </div>
                         <div class="volume_right">
                             <div class="inner"></div>
@@ -69,27 +69,27 @@
 
                 </div>
                 <!-- s: btm_subtitle_area -->
-                
+
                 <!-- e: btm_subtitle_area -->
             </div>
             <!-- e: 동영상-->
-            
+
             <div class="hide_header">
 
-               
 
-              
+
+
             </div>
-            
-        </div>        
 
-       
+        </div>
+
+
           </div>
 
         </div>
-            
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>
@@ -191,7 +191,7 @@ export default {
     }
   },
   methods: {
-    detail_toggle () {        
+    detail_toggle () {
         this.detail_show = !this.detail_show;
     },
     active_el () {
@@ -201,7 +201,7 @@ export default {
   mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
-        
+
 
         // 동영상 헤더 텍스트 입력
         $('.fp-header-txt').text("업무에 바로 쓰는 자바 프로그래밍 입문 과정 ");
@@ -234,7 +234,7 @@ export default {
                 // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
                 // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
                 $(".flowplayer").toggleClass("is-open-related-contents");
-            
+
                 // TODO
                 // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
                 //      -> 동영상 pause 처리하면 될듯
@@ -249,7 +249,7 @@ export default {
             });
         }
 
-        
+
         $('.half_left').click(function(){
             console.error("왼쪽");
         });
@@ -289,9 +289,9 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);
                 // 수치값은 수정해야함.
-                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
+                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
                 // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
@@ -327,7 +327,7 @@ export default {
                     /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
                 }
             });
-        }                                        
+        }
   }
 }
 </script>

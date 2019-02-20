@@ -1618,7 +1618,7 @@ var rootRoutes = [
     path: '/Study_list',
     name: 'Study_list',
     component: StudyList
-  },  
+  },
   {
     path: '/Study_list_edit',
     name: 'Study_list_edit',
@@ -1643,17 +1643,17 @@ var rootRoutes = [
     path: '/Study_studynote_edit',
     name: 'Study_studynote_edit',
     component: Studystudynoteedit
-  },  
+  },
   {
     path: '/Study_studyquestion_regi',
     name: 'Study_studyquestion_regi',
     component: Studystudyquestionregi
-  },  
+  },
   {
     path: '/Study_summary',
     name: 'Study_summary',
     component: Studysummary
-  },     
+  },
   {
     path: '/Study_studyquestion',
     name: 'Study_studyquestion',

@@ -1,12 +1,12 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery courseware union" >   
-        
+      <div id="container" class="mediaquery courseware union" >
+
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video" style="background:#fff">          
+        <div id="header" class="tab video" style="background:#fff">
             <div class="header_inner line1 ">
                 <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15"></p>
@@ -15,9 +15,9 @@
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
                     <li class="on"><a href="#tab1">학습현황</a></li>
-                    <li><a href="#tab2">학습목차</a></li> 
-                    <li><a href="#tab3">학습노트</a></li> 
-                    <li><a href="#tab3">질문방</a></li> 
+                    <li><a href="#tab2">학습목차</a></li>
+                    <li><a href="#tab3">학습노트</a></li>
+                    <li><a href="#tab3">질문방</a></li>
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
                 </ul>
             </div>
@@ -28,19 +28,19 @@
                 <div class="right blur"></div>
             </div> -->
 
-            
+
                 <div class="img_wrap">
                     <div class="img_bg"></div>
                 </div>
-            
+
                 <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
-                        <div class="btm_subtitle_control">                                
+                        <div class="btm_subtitle_control">
                             <div>
                                 <div class="subtitle_lang_wrap">
                                     <span class="lang_type">Bahasa Indonesia</span>
-                                    <span class="dropdown"></span>         
+                                    <span class="dropdown"></span>
                                 </div>
                                 <span class="switch_txt">Auto Scroll</span>
                                 <slp-switch :value="true"/>
@@ -64,7 +64,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p> 
+                                            <p>[클래스 객체]</p>
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
@@ -73,7 +73,7 @@
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <div class="desc">                                   
+                                        <div class="desc">
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번
                                             차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
@@ -92,7 +92,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p> 
+                                            <p>[클래스 객체]</p>
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -101,7 +101,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p> 
+                                            <p>[클래스 객체]</p>
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -128,7 +128,7 @@
                     <p class="study_date">2018.09.10 - 2018.10.10</p>
                     <div class="ico_wrap">
                         <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
-                    </div>                   
+                    </div>
                 </div>
 
                 <div class="study_title_detail" v-show="detail_show">
@@ -175,16 +175,16 @@
                     </div>
                 </div>
             </div>
-            
-        </div>        
+
+        </div>
 
         <div id="content" class="etc" >
-        
+
             <div class="cell">
             <div class="inner pt0">
-            
-                <p class="label-tit-16 color_clr2 mt22 mb26 fwb"><span class="ico mark_line_24 blue" style="vertical-align: -5px;"></span> 과정 MAP 보기</p>                
-                
+
+                <p class="label-tit-16 color_clr2 mt22 mb26 fwb"><span class="ico mark_line_24 blue" style="vertical-align: -5px;"></span> 과정 MAP 보기</p>
+
                 <div class="tb_wrap">
                     <table>
                         <tr>
@@ -201,9 +201,9 @@
           </div>
 
         </div>
-            
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>
@@ -222,14 +222,14 @@ export default {
     }
   },
   methods: {
-    detail_toggle () {        
+    detail_toggle () {
         this.detail_show = !this.detail_show;
     },
     active_el () {
         this.active = !this.active
     }
   },
-  mounted () {      
+  mounted () {
   }
 }
 </script>

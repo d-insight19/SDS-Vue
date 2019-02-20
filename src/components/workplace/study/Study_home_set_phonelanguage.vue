@@ -1,12 +1,12 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery courseware phone pd70" >   
-        
+      <div id="container" class="mediaquery courseware phone pd70" >
+
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video" style="background:#fff">          
+        <div id="header" class="tab video" style="background:#fff">
             <div class="header_inner line1 ">
                 <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15"></p>
@@ -15,9 +15,9 @@
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
                     <li class="on"><a href="#tab1">학습현황</a></li>
-                    <li><a href="#tab2">학습목차</a></li> 
-                    <li><a href="#tab3">학습노트</a></li> 
-                    <li><a href="#tab3">질문방</a></li> 
+                    <li><a href="#tab2">학습목차</a></li>
+                    <li><a href="#tab3">학습노트</a></li>
+                    <li><a href="#tab3">질문방</a></li>
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
                 </ul>
             </div>
@@ -28,19 +28,19 @@
                 <div class="right blur"></div>
             </div> -->
 
-            
+
                 <div class="img_wrap">
                     <div class="img_bg"></div>
                 </div>
-            
+
                 <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
-                        <div class="btm_subtitle_control">                                
+                        <div class="btm_subtitle_control">
                             <div>
                                 <div class="subtitle_lang_wrap">
                                     <span class="lang_type">Bahasa Indonesia</span>
-                                    <span class="dropdown"></span>         
+                                    <span class="dropdown"></span>
                                 </div>
                                 <span class="switch_txt">Auto Scroll</span>
                                 <slp-switch :value="true"/>
@@ -64,7 +64,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p> 
+                                            <p>[클래스 객체]</p>
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
@@ -73,7 +73,7 @@
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <div class="desc">                                   
+                                        <div class="desc">
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번
                                             차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
@@ -92,7 +92,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p> 
+                                            <p>[클래스 객체]</p>
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -101,7 +101,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p> 
+                                            <p>[클래스 객체]</p>
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -130,7 +130,7 @@
                         <label class="labelChk2"><input id="" type="checkbox" class="chk" name=""><span class="label" style="padding: 0 10px 0 16px;">학습하기<span class="ico next_16 wh" style="margin-top: -3px;
     margin-left: 5px;" ></span></span></label>
                         <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
-                    </div>                   
+                    </div>
                 </div>
 
                 <div class="study_title_detail" v-show="detail_show">
@@ -177,16 +177,16 @@
                     </div>
                 </div>
             </div>
-            
-        </div>        
+
+        </div>
 
         <div id="content" class="etc" >
-        
+
             <div class="cell">
             <div class="inner pt0">
-            
+
                 <p class="label-tit-18 mt22 mb10">평가 내역</p>
-                
+
                 <p class="line01"></p>
                 <table style="margin:15px 0;">
                     <tr>
@@ -260,15 +260,15 @@
                     </li>
                     <li>
                         <p class="in12_16 li-txt-2">・학습창 내"수업방법/규정" 버튼을 클릭하셔서 자세한 내용 한번 더 확인해주세요. </p>
-                    </li>                   
+                    </li>
                 </ul>
             </div>
           </div>
 
         </div>
-            
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>
@@ -372,7 +372,7 @@ export default {
     }
   },
   methods: {
-    detail_toggle () {        
+    detail_toggle () {
         this.detail_show = !this.detail_show;
     },
     active_el () {
@@ -382,7 +382,7 @@ export default {
   mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
-        
+
 
         // 동영상 헤더 텍스트 입력
         $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
@@ -415,7 +415,7 @@ export default {
                 // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
                 // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
                 $(".flowplayer").toggleClass("is-open-related-contents");
-            
+
                 // TODO
                 // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
                 //      -> 동영상 pause 처리하면 될듯
@@ -430,7 +430,7 @@ export default {
             });
         }
 
-        
+
         $('.half_left').click(function(){
             console.error("왼쪽");
         });
@@ -470,9 +470,9 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);
                 // 수치값은 수정해야함.
-                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
+                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
                 // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
@@ -508,7 +508,7 @@ export default {
                     /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
                 }
             });
-        }                                        
+        }
   }
 }
 </script>
