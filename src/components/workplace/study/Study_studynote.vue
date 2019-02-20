@@ -1,23 +1,23 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">
+    <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery studyquestion">
-
-       <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video">
-            <div class="header_inner line1 clr1">
-                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
-                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
+      <div id="container" class="mediaquery courseware studynote">   
+        
+        <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div id="header" class="tab video" style="background:#fff">          
+            <div class="header_inner line1 ">
+                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
+                <p class="header_text multiline line2 font_15"></p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li><a href="#tab1">학습현황</a></li>
-                    <li class="on"><a href="#tab2">설문조사</a></li>
-                    <li><a href="#tab3">학습노트</a></li>
-                    <li><a href="#tab3">질문방</a></li>
+                    <li class="on"><a href="#tab1">학습현황</a></li>
+                    <li><a href="#tab2">학습목차</a></li> 
+                    <li><a href="#tab3">학습노트</a></li> 
+                    <li><a href="#tab3">질문방</a></li> 
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
                 </ul>
             </div>
@@ -28,20 +28,35 @@
                 <div class="right blur"></div>
             </div> -->
 
-
+            
+            <!-- s: 동영상 -->
             <!-- s: 동영상 -->
             <div class="player_wrap">
                 <div class="player_inner">
                     <div id="contents"></div>
 
-                    <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="volume_wrap" style="display:none;pointer-events:none">
+                    <!--  s: 연관 콘텐츠 -->
+                    <div class="movie_info_list_wrap" style="display:none;">
+                        <div class="movie_info_list">
+                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
+                            <ul>
+                                <li v-for="(item, index) in relatedVideoList" :key="index">
+                                    <a href="#"></a>
+                                    <p class="movie_tit multiline line2">{{item.title}}</p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- e: 연관 콘텐츠 -->
+
+                    <!-- s: 볼륨영역 -->
+                    <div class="volume_wrap" style="display:none;">
                         <div class="volume_left">
                             <div class="inner"></div>
                             <div class="icon_wrap">
                                 <span class="light_icon"></span>
                                 <span class="light_value">75</span>
-                            </div>
+                            </div>                            
                         </div>
                         <div class="volume_right">
                             <div class="inner"></div>
@@ -53,20 +68,16 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="tap_wrap" style="display:none;pointer-events:none">
-                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
-                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
-                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
-                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                          </div>
-                        </v-touch>
-                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
-                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
-                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
-                                <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                            </div>
-                        </v-touch>
+                    <!-- s: double 텝 영역 -->
+                    <div class="tap_wrap" style="display:none;">
+                        <div class="half_left">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
+                        <div class="half_right">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
                     </div>
                     <!--  e: double 텝 영역 -->
 
@@ -74,11 +85,11 @@
                 <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
-                        <div class="btm_subtitle_control">
+                        <div class="btm_subtitle_control">                                
                             <div>
                                 <div class="subtitle_lang_wrap">
                                     <span class="lang_type">Bahasa Indonesia</span>
-                                    <span class="dropdown"></span>
+                                    <span class="dropdown"></span>         
                                 </div>
                                 <span class="switch_txt">Auto Scroll</span>
                                 <slp-switch :value="true"/>
@@ -102,7 +113,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p>
+                                            <p>[클래스 객체]</p> 
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
@@ -111,7 +122,7 @@
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <div class="desc">
+                                        <div class="desc">                                   
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번
                                             차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
@@ -130,7 +141,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p>
+                                            <p>[클래스 객체]</p> 
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -139,7 +150,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p>
+                                            <p>[클래스 객체]</p> 
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -153,108 +164,148 @@
             </div>
             <!-- e: 동영상-->
 
+            <!-- <div class="hide_header">
 
-        </div>
-        <!-- //header -->
+                <div class="study_title_wrap">
+                    <div class="d-day_wrap">
+                        <span class="d-day">D-29</span>
+                        <div class="arm">
+                            <span class="new"></span> <span class="icon"></span>
+                        </div>
+                    </div>
+                    <div class="study_contens_title">
+                        <p class="multiline line2">SPRINT - 구글 벤처스의 5일만에 기획부터 실행까지 끝내는 법(참고도서제공)</p>
+                    </div>
+                    <p class="study_date">2018.09.10 - 2018.10.10</p>
 
-        <div id="content" class="etc">
+                    <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
+                </div>
 
-          <div class="cell">
-            <div class="inner">
-                <p class="mb5">총 <span class="fwb ml2"><b>1,620</b></span></p>
-
-                <ul class="ulList type4">
-                    <li>
-                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다. 설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.</p>
-                        <div class="pipe-group">
-                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
-                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
-                        <div class="pipe-group">
-                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
-                            <p class="mt12"><span class="fwb mono_80">미참여</span></p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
-                        <div class="pipe-group">
-                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
-                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
-                        <div class="pipe-group">
-                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
-                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
-                        <div class="pipe-group">
-                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
-                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>
-                        </div>
-                    </li>
-                </ul>
-
-                <!-- keyboard -->
-                <div id="keyboard_wrap">
-                    <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
-                    <div class="keyboard_input" v-show="focusFlag">
-
-                        <div class="bookmark_wrap" v-if="keyboard_type=='4'">
-                            <span class="bookmarktxt">북마크</span>
-                            <span class="fr time">01:36</span>
-                        </div>
-                        <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
-                            <span class="opentxt">공개여부</span>
-                            <slp-switch :classObject="{'fr': true}"/>
-                            <span class="opentxt2">비공개</span>
-                        </div>
-
-                        <div class="rating_wrap" v-if="keyboard_type=='2'">
-                            <span class="ratingtxt">평점</span>
-                            <fieldset class="fr rating">
-                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                            </fieldset>
-                        </div>
-
-                        <div class="inputbox" >
-                            <div class="textarea_wrap">
-                                <textarea @keydown="onKeydown" placeholder="댓글을 입력하세요."></textarea>
+                <div class="study_title_detail" v-show="detail_show">
+                    <div class="s_detail_wrap detail_txt">
+                        세계에서 가장 영향력 있는 CEO들의 삶과 경영스토리를 1:1 인터뷰로 만나다! 누구나 만나고 싶었지만, 쉽게 만나볼 수 없었던 세계 정상급 CEO들을 만나 칼라일그룹 CEO 루벤스타인이 날카로운 질문으로 밀착 인터뷰해 자기경영과 조직경영을 위한 리더십 인사이트를 제시합니다.
+                    </div>
+                    <div class="s_detail_wrap detail_goal">
+                        <p class="detail_sub_title">학습목표</p>
+                        <ul>
+                            <li>프레젠테이션 기획의 본질을 이해하자. </li>
+                            <li>단순하지만 임팩트 있는 슬라이드의 특징을 이해하고 이를 실제로 제작하고 팀원들과 의견을 공유해보자.</li>
+                            <li>발표를 스킬이 아닌 콘텐츠가 중심이라는 점을 이해하고, 올바른 발표 준비 및 실전 발표 팁을 배우자</li>
+                        </ul>
+                    </div>
+                    <div class="s_detail_wrap detail_target">
+                        <p class="detail_sub_title">학습대상</p>
+                        <ul>
+                            <li>경쟁PT/내부보고/설명회/내부행사 등에서 프레젠테이션을 준비해야 하는 분 </li>
+                            <li>실전에서 통하는 프레젠테이션의 기획/제작/발표에 대해 배우고싶은 분</li>
+                        </ul>
+                    </div>
+                    <div class="s_detail_wrap detail_introduce">
+                        <p class="detail_sub_title">강사소개</p>
+                        <div class="teacher_profile">
+                            <div class="teacher_img_wrap">
+                                <div class="teacher_img">
+                                    <img src="@/assets/img/benjamin_parker_736167_unsplash.png" class="thumImg" alt="profile img">
+                                </div>
+                                <p class="teacher_name">김진혁</p>
                             </div>
-                            <div class="inputbottom">
-                                <span class="strlenth" >{{keylength}}/300</span>
-                                <span class="regiBtn" :class="{active: keylength}">등록</span>
+                            <div class="teacher_career">
+                                <div class="carear_wrap">
+                                    <p class="career_tit1">주요경력</p>
+                                    <p class="career_sub">현)벨류스퀘어 대표 </p>
+                                    <p class="career_sub">한국 인력개발학회 이사</p>
+                                    <p class="career_sub">한국 강사협회 리더십 위원장</p>
+                                </div>
+                                <div class="carear_wrap">
+                                    <p class="career_tit1">주요 강의분야</p>
+                                    <p class="career_sub">변화적용 리더십, 서번트 리더쉽 등</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- //keyboard -->
+            </div> -->
+            
+        </div>        
+
+        <div id="content" class="etc" style="padding-bottom:0 !important;">
+        
+          <div class="cell">
+            <div class="inner">
+                <p class="label-tit-15 mb5 fwb">총 <span class="fwb600 mono_100">1,620</span></p>
+
+                <ul class="ulList type4">
+                    <li style="padding: 9px 0;"> 
+                        <span class="tar">
+                            <dl class="pipe-group type2">
+                                <dd class="color_clr2"><span class="ico note blue"></span> 나의 노트만</dd>
+                                <dd class="mono_80">전체폴더 <span class="ico ico_dropdown16 gr"></span> </dd>
+                            </dl>
+                        </span> 
+                    </li>
+                    <li>
+                        <p class="title">노트 타이틀은 한줄로 처리됩니다. <span class="ico more fr"></span> </p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>비공개</dd>
+                            <dd>정혜민</dd>
+                            <dd>2018.10.10</dd>                                
+                            <dd><span class="ico play" style="vertical-align: -3px;"></span>02:36</dd>
+                            <dd><span class="ico clip"></span>역사 폴더</dd>
+                        </dl>
+                        <p class="">최근 개봉한 영화 &gt;마션 The Martian | 2015&lt;이 큰 인기를 
+끌고 있다. 이 영화는 주인공이 동료들과 함께 화성으로 탐
+사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 
+까지 고군분투하는 과정을 그리고 있다.</p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>업무에 바로 쓰는 자바 프로그래밍 입문</dd>
+                            <dd>1차시</dd>
+                            <dd>
+                                <span class="chip bd_color2">
+                                    20:36
+                                    <span class="ico play_16"></span>
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="title">노트 타이틀은 한줄로 처리됩니다. <span class="ico more fr"></span> </p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>비공개</dd>
+                            <dd>정혜민</dd>
+                            <dd>2018.10.10</dd>                                
+                            <dd><span class="ico play" style="vertical-align: -3px;"></span>02:36</dd>
+                            <dd><span class="ico clip"></span>역사 폴더</dd>
+                        </dl>
+                        <p class="">최근 개봉한 영화 &gt;마션 The Martian | 2015&lt;이 큰 인기를 
+끌고 있다. 이 영화는 주인공이 동료들과 함께 화성으로 탐
+사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 
+까지 고군분투하는 과정을 그리고 있다.</p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>업무에 바로 쓰는 자바 프로그래밍 입문</dd>
+                            <dd>1차시</dd>
+                            <dd>
+                                <span class="chip bd_color2">
+                                    20:36
+                                    <span class="ico play_16"></span>
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+
+                <div class="infoChk pr0" style="margin-left:-18px; margin-right:-18px; background:#f2f2f2">
+                    <input style="margin: 18px 0px 18px 18px;" type="text" placeholder="질문을 작성해주세요" class="input type2"><button  style="margin-top:18px; margin-right:18px;" type="button" class="btn sm clr1 w17p">등록</button>
+                </div>
             </div>
           </div>
 
         </div>
-
-        <!-- floating button -->
-        <!--<div class="fixBtmBtn">
-            <ul>
-                <li><slp-button class="md mono_65"><span class="ico heart_solid_32"></span>찜하기</slp-button></li>
-            </ul>
-        </div>-->
-        <!-- //floating button -->
+        <!-- //content -->
       </div>
-      <!-- //container -->
+      <!-- //container -->     
     </div>
     <!-- //wrap -->
+       
 </template>
 
 <script>
@@ -373,7 +424,7 @@ export default {
     }
   },
   methods: {
-    detail_toggle () {
+    detail_toggle () {        
         this.detail_show = !this.detail_show;
     },
     prevTen() {
@@ -387,9 +438,9 @@ export default {
             function(){
               vm.halfRight = false
               vm.innerRipple = false
-                // $('.inner_ripple').css('display', 'none');
+                // $('.inner_ripple').css('display', 'none'); 
                 // $('.half_right').css('display', 'block');
-            }, 600);
+            }, 600);       
     },
     nextTen() {
         console.error("오른쪽");
@@ -402,15 +453,15 @@ export default {
             function(){
               vm.halfLeft = false
               vm.innerRipple = false
-                // $('.inner_ripple').css('display', 'none');
+                // $('.inner_ripple').css('display', 'none'); 
                 // $('.half_left').css('display', 'block');
-            }, 600);
+            }, 600);       
     }
   },
   mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
-
+        
 
         // 동영상 헤더 텍스트 입력
         $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
@@ -443,7 +494,7 @@ export default {
                 // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
                 // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
                 $(".flowplayer").toggleClass("is-open-related-contents");
-
+            
                 // TODO
                 // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
                 //      -> 동영상 pause 처리하면 될듯
@@ -458,7 +509,7 @@ export default {
             });
         }
 
-
+        
 
         $('.fp-script , .script_close').click(function(){
             // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
@@ -493,9 +544,9 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);
+                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
-                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함
+                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
                 // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
@@ -531,13 +582,13 @@ export default {
                     /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
                 }
             });
-        }
+        }                                        
   }
 }
 </script>
 
 <style scoepd>
-.innerRipple {
+/* .innerRipple {
   display: none;
 }
 .halfRight {
@@ -551,5 +602,5 @@ export default {
 }
 .none {
   display: none;
-}
+} */
 </style>

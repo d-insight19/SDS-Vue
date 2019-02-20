@@ -893,7 +893,44 @@ table td.sub-txt{ color:#000;}
 .chip.color4 {border-color:map-get($contents_colors, type_4 ); color:map-get($contents_colors, type_4 );}
 .chip.color5 {border-color:map-get($contents_colors, type_5 ); color:map-get($contents_colors, type_5 );}
 
+.chip.b_color1{background-color:#21277C; border-color:transparent; color:white;}
+.chip.b_color2{background-color:#00ADFB; border-color:transparent; color:white;}
 .chip.b_color3{background-color:#4E51D4; border-color:transparent; color:white;}
+.chip.b_color4{background-color:#E6EAF5; border-color:transparent; color:white;}
+.chip.b_color6{background-color:#A3A9FF; border-color:transparent; color:white;}
+
+.chip.bd_color1{border-color:#21277C; color:#21277C;}
+.chip.bd_color2{border-color:#00ADFB; color:#00ADFB;}
+.chip.bd_color3{border-color:#4E51D4; color:#4E51D4;}
+.chip.bd_color4{border-color:#E6EAF5; color:#E6EAF5;}
+.chip.bd_color6{border-color:#A3A9FF; color:#A3A9FF;}
+
+
+
+/*color 공통*/
+.com_clr .color_list{font-size:30px;}
+.com_clr .color_list li {margin-bottom : 20px; border-bottom: 10px dashed crimson}
+.com_clr .color_list  h1 { color: crimson; font-size:44px;}
+.com_clr .attach{ color: dodgerblue; font-size:30px;}
+.com_clr .danger{color:map-get($static_colors, danger);}
+.com_clr .primary{color:map-get($static_colors, primary);}
+.com_clr .star{color:map-get($static_colors, star);}
+.com_clr .alert{color:map-get($static_colors, alert);}
+.com_clr .type_1{color:map-get($contents_colors, type_1);}
+.com_clr .type_2{color:map-get($contents_colors, type_2);}
+.com_clr .type_3{color:map-get($contents_colors, type_3);}
+.com_clr .type_4{color:map-get($contents_colors, type_4);}
+.com_clr .type_5{color:map-get($contents_colors, type_5);}
+.com_clr .border_box p { border:1px solid ; margin:10px;}
+.com_clr .B92{color:map-get($line_colors, B92);}
+.com_clr .B89{color:map-get($line_colors, B89);}
+.com_clr .B85{color:map-get($line_colors, B85);}
+.com_clr .B80{color:map-get($line_colors, B80);}
+.com_clr .B60{color:map-get($line_colors, B60);}
+.com_clr .B10{color:map-get($line_colors, B10);}
+.com_clr .B95{color:map-get($line_colors, B95);}
+
+
 
 /*header 공통*/
 #header p.h-tit1{text-overflow: unset !important; white-space:unset !important;}
@@ -1690,13 +1727,13 @@ label.rdo .label{position: relative;}
 #container.studystatus .progBox_wrap span.res-num{font-weight:500;font-family:'roboto';font-size:map-get($font-size, font_14);float:right;margin-top:5px;}
 
 //study_studyquestion
-#container.studyquestion .pipe-group.type2 dd:after{margin:0 6px;}
-#container.studyquestion .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 2px 0 6px;background: #d9d9d9;}
-#container.studyquestion .pipe-group dd:nth-last-child(1):after{display:none;}
-#container.studyquestion .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
-#container.studyquestion .ulList.type4 > li{height:auto;}
-#container.studyquestion .ulList.type4 > li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
-#container.studyquestion .ulList.type4 > li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
+.studyquestion .pipe-group.type2 dd:after,.studynote .pipe-group.type2 dd:after{margin:0 6px;}
+.studyquestion .pipe-group dd:after,.studynote .pipe-group dd:after{display: inline-block;content: '';width: 1px;height: 11px;vertical-align: middle;margin:0 2px 0 6px;background: #d9d9d9;}
+.studyquestion .pipe-group dd:nth-last-child(1):after,.studynote .pipe-group dd:nth-last-child(1):after{display:none;}
+.studyquestion .pipe-group dd,.studynote .pipe-group dd{display: inline-block; font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px; color:rgba(0,0,0,0.65)}
+.studyquestion .ulList.type4 > li,.studynote .ulList.type4 > li{height:auto;}
+.studyquestion .ulList.type4 > li p.icon_txt,.studynote .ulList.type4 > li p.icon_txt{font-size: map-get($font-size , font_13);line-height: 20px;letter-spacing: -0.39px;}
+.studyquestion .ulList.type4 > li p.title,.studynote .ulList.type4 > li p.title{font-size: map-get($font-size , font_16);line-height: 22px;letter-spacing: -0.48px;}
 
 //study_lo_docs
 #container.study_lo_docs #header.tab .header_inner.line1{z-index:999}
@@ -2003,30 +2040,8 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .criteria-wrap .total{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;}
 #container.atorm.flip .criteria-wrap .total .total-num{font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px;}
 
-//color.vue
-.com_clr .color_list{font-size:30px;}
-.com_clr .color_list li {margin-bottom : 20px; border-bottom: 10px dashed crimson}
-.com_clr .color_list  h1 { color: crimson; font-size:44px;}
-.com_clr .attach{ color: dodgerblue; font-size:30px;}
-.com_clr .danger{color:map-get($static_colors, danger);}
-.com_clr .primary{color:map-get($static_colors, primary);}
-.com_clr .star{color:map-get($static_colors, star);}
-.com_clr .alert{color:map-get($static_colors, alert);}
-.com_clr .type_1{color:map-get($contents_colors, type_1);}
-.com_clr .type_2{color:map-get($contents_colors, type_2);}
-.com_clr .type_3{color:map-get($contents_colors, type_3);}
-.com_clr .type_4{color:map-get($contents_colors, type_4);}
-.com_clr .type_5{color:map-get($contents_colors, type_5);}
-.com_clr .border_box p { border:1px solid ; maring:10px;}
-.com_clr .B92{color:map-get($line_colors, B92);}
-.com_clr .B89{color:map-get($line_colors, B89);}
-.com_clr .B85{color:map-get($line_colors, B85);}
-.com_clr .B80{color:map-get($line_colors, B80);}
-.com_clr .B60{color:map-get($line_colors, B60);}
-.com_clr .B10{color:map-get($line_colors, B10);}
-.com_clr .B95{color:map-get($line_colors, B95);}
 
-
+.studynote .label-tit-15{font-size:map-get($font-size, font_15);letter-spacing: -0.045em; color:rgba(0,0,0,0.8);}
 
 
 
