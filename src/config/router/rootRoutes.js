@@ -176,6 +176,8 @@ import Studystudystatusassessmentwindow01 from '~workplace/study/Study_studystat
 import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystatus_assessment_window_02'
 import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
 import Studystudystatusattendancebpo from '~workplace/study/Study_studystatus_attendance_bpo'
+import StudyHomeSetCalendar from '~workplace/study/Study_home_set_calendar'
+import etcKeepstudy from '~workplace/study/etc_keepstudy'
 import StudyList from '~workplace/study/Study_list'
 import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
@@ -538,6 +540,7 @@ import CustomerCenterStudysupportdetail from '~workplace/customercenter/Customer
 import CustomerCenterRequestresult from '~workplace/customercenter/CustomerCenter_Request_result'
 import CustomerCenterInquirywrite02 from '~workplace/customercenter/CustomerCenter_Inquiry_write02'
 import CustomerCenterInquirywrite02error from '~workplace/customercenter/CustomerCenter_Inquiry_write02_error'
+import CustomerCenterStudyguidedetail2 from '~workplace/customercenter/CustomerCenter_Studyguide_detail2'
 
 import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
 import EdupersonLoginOTP from '~workplace/eduperson/Eduperson_loginOTP'
@@ -1630,6 +1633,16 @@ var rootRoutes = [
     path: '/Study_studystatus_attendance_bpo',
     name: 'Study_studystatus_attendance_bpo',
     component: Studystudystatusattendancebpo
+  },
+  {
+    path: '/Study_home_set_calendar',
+    name: 'Study_home_set_calendar',
+    component: StudyHomeSetCalendar
+  },
+  {
+    path: '/etc_keepstudy',
+    name: 'etc_keepstudy',
+    component: etcKeepstudy
   },
   {
     path: '/Study_list',
@@ -3414,6 +3427,11 @@ var rootRoutes = [
     path: '/CustomerCenter_Inquiry_write02_error',
     name: 'CustomerCenter_Inquiry_write02_error',
     component: CustomerCenterInquirywrite02error
+  },
+  {
+    path: '/CustomerCenter_Studyguide_detail2',
+    name: 'CustomerCenter_Studyguide_detail2',
+    component: CustomerCenterStudyguidedetail2
   },
   {
     path: '/Atorm_drawer',

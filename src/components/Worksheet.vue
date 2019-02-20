@@ -10,7 +10,7 @@
 	  <table class="table">
 		<caption>퍼블리싱 메뉴 구조</caption>
 		<colgroup>
-      <!-- 
+      <!--
       <col width="120px" />
       <col width="140px" />
       <col width="150px" />
@@ -19,7 +19,7 @@
       <col width="140px" />
       <col width="40px" />
       <col width="250px" />
-      <col width="*" /> 
+      <col width="*" />
       -->
       <col width="60px" />
       <col width="140px" />
@@ -47,7 +47,7 @@
         <th scope="col">Comment</th>
       </tr>
       -->
-      <tr>    
+      <tr>
         <th scope="col">순서</th>
         <th scope="col">대구분</th>
         <th scope="col">Depth 1</th>
@@ -76,7 +76,7 @@
             {{item.routeName }}
           </router-link>
         <td>{{item.comment }}</td>
-      </tr>		  
+      </tr>
       -->
       <!-- <tr>
       <td align="center">com-1</td>
@@ -95,7 +95,7 @@
         </td>
         <td></td>
       </tr> -->
-      <tr> 
+      <tr>
       <td align="center">1</td>
         <td>로그인 / 회원가입</td>
         <td>연수원 찾기</td>
@@ -406,7 +406,7 @@
           <router-link :to="{ name: 'login_join_basicinfo_error' }">
             login_join_basicinfo_error
           </router-link>
-          
+
         </td>
         <td>수정됨</td>
       </tr>
@@ -694,7 +694,7 @@
           <br/>
           <router-link :to="{ name: 'Login_login_unlockid_complete' }">
             Login_login_unlockid_complete
-          </router-link>          
+          </router-link>
         </td>
         <td>수정됨</td>
       </tr>
@@ -944,9 +944,6 @@
           <router-link :to="{ name: 'Login_certify_email_certify_error3' }">
             Login_certify_email_certify_error3
           </router-link>
-          <br/>
-          
-          
         </td>
         <td>수정됨</td>
       </tr>
@@ -1048,7 +1045,7 @@
         <td>
           네이티브 영역. 개발필요
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
         </td>
         <td></td>
@@ -1461,7 +1458,7 @@
         <td>
         CustomerCenter_Studysupport_detail과 같음
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
         </td>
         <td></td>
@@ -1965,7 +1962,7 @@
         <td class="textL">07.ATORM_07.02.01._e-learning_learning    time</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -1983,7 +1980,7 @@
         <td class="textL">07.ATORM_07.02.01._e-learning_opening    date</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -2481,7 +2478,7 @@
         <td class="textL">07.ATORM_07.04.01._status_details_filter</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           공통필터적용중복처리
         </td>
@@ -2499,7 +2496,7 @@
         <td class="textL">07.ATORM_07.04.02._status_share</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           OS컴포넌트적용중복처리
         </td>
@@ -2589,7 +2586,7 @@
         <td class="textL">07.ATORM_07.01. manual</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -4565,7 +4562,7 @@
           <router-link :to="{ name: 'Study_home_courseware_module_02' }">
             Study_home_courseware_module_02
           </router-link><br/>
-          
+
         </td>
         <td></td>
       </tr>
@@ -4640,7 +4637,7 @@
           <br />
           <router-link :to="{ name: 'Study_home_set02' }">
             Study_home_set02(Study_LO_viewer와 화면 동일)
-          </router-link>        
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -4656,7 +4653,7 @@
         <td class="textL">05.Study_01.05.home_set_calendar</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           대기
         </td>
@@ -4798,7 +4795,7 @@
         <td>
           <router-link :to="{ name: 'Study_home_union' }">
             Study_home_union
-          </router-link><br/>         
+          </router-link><br/>
         </td>
         <td></td>
       </tr>
@@ -4933,7 +4930,7 @@
         <td class="textL">05.Study_02.06.studystatus_assessment_notice</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -4968,7 +4965,7 @@
         <td class="textL">05.Study_02.08.studystatus_assessment_notice_02</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -5023,7 +5020,7 @@
         <td class="textL">05.Study_02.11.studystatus_assessment_score</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -5058,7 +5055,7 @@
         <td class="textL">05.Study_02.13.studystatus_assessment_mail</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -5076,7 +5073,7 @@
         <td class="textL">05.Study_02.14.studystatus_attendance_set</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           etc_QR 동일, 네이티브 영역. 개발필요
         </td>
@@ -5111,7 +5108,7 @@
         <td class="textL">05.Study_02.16.studystatus_finishstandard</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -5147,7 +5144,7 @@
         <td>
           <router-link :to="{ name: 'Study_0218studylist_download' }">
             Study_0218studylist_download
-          </router-link> 
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -5374,7 +5371,7 @@
         <td class="textL">05.Study_02.29.studycomment</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -5392,7 +5389,7 @@
         <td class="textL">05.Study_02.30.studycomment_detail</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -5684,7 +5681,7 @@
             </router-link> <br />
             <router-link :to="{ name: 'Study_dictionary' }">
               Study_dictionary
-            </router-link>            
+            </router-link>
           </td>
           <td></td>
       </tr>
@@ -5815,7 +5812,7 @@
         <td class="textL">05.Study_02.52.guide</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -5965,7 +5962,7 @@
         <td class="textL">05.Study_03.03.LO_mp4_offline</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           아쿠아 플레이어
         </td>
@@ -5987,7 +5984,7 @@
           </router-link> <br/>
           <router-link :to="{ name: 'Study_LO_mp4_script2' }">
             Study_LO_mp4_script2
-          </router-link>     
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -6005,10 +6002,10 @@
 
           <router-link :to="{ name: 'Study_LO_mp4_script1scroll' }">
             Study_LO_mp4_script1scroll
-          </router-link>   <br/>            
+          </router-link>   <br/>
           <router-link :to="{ name: 'Study_LO_mp4_script2scroll' }">
             Study_LO_mp4_script2scroll
-          </router-link>          
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -6023,9 +6020,10 @@
         <td>　</td>
         <td class="textL">05.Study_03.05.LO_mp4_contents</td>
         <td>
-          <router-link :to="{ name: 'Study_LO_mp4_contents' }">
-            Study_LO_mp4_contents
+          <router-link :to="{ name: 'Study_LO_mp4' }">
+            Study_LO_mp4
           </router-link>
+          와 같음
         </td>
         <td></td>
       </tr>
@@ -6169,7 +6167,7 @@
         <td class="textL">05.Study_03.10.LO_audio_fs</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -6221,7 +6219,7 @@
         <td class="textL">05.Study_03.10.LO_audio_fs</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -6767,7 +6765,7 @@
         <td class="textL">05.Study_04.30.SO_studycontents</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -7329,7 +7327,7 @@
         <td class="textL">06.regiclass_04.03.01.register_photo_camera</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           네이티브 영역. 개발필요
         </td>
@@ -8435,7 +8433,7 @@
         <td>
           네이티브 영역. 개발필요
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
         </td>
         <td></td>
@@ -8469,7 +8467,7 @@
         <td class="textL">B2C_Drawer_04.02_myinfo_basicinfo_edit</td>
         <td>
           <router-link :to="{ name: 'B2C_Drawer_myinfo_basicinfo_edit' }">
-            B2C_Drawer_myinfo_basicinfo_edit 
+            B2C_Drawer_myinfo_basicinfo_edit
           </router-link>
         </td>
         <td></td>
@@ -8503,7 +8501,7 @@
         <td class="textL">B2C_Drawer_05.02_myinfo_extrainfo_edit</td>
         <td>
           <router-link :to="{ name: 'B2C_Drawer_myinfo_extrainfo_edit' }">
-            B2C_Drawer_myinfo_extrainfo_edit 
+            B2C_Drawer_myinfo_extrainfo_edit
           </router-link>
         </td>
         <td></td>
@@ -8664,7 +8662,7 @@
         <td class="textL">B2C_Drawer_07.01_settings</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           B2C_Drawer_settings_push와 동일
         </td>
@@ -8950,7 +8948,7 @@
           <router-link :to="{ name: 'Eduperson_login' }">
             Eduperson_login
           </router-link>
-          <br/>          
+          <br/>
           <router-link :to="{ name: 'Eduperson_drawer_setting' }">
             Eduperson_drawer_setting
           </router-link>
@@ -9153,7 +9151,7 @@
         <td class="textL">11.Eduperson_07.01_Studyhomeboard</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9171,7 +9169,7 @@
         <td class="textL">11.Eduperson_08.01_Question</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9189,7 +9187,7 @@
         <td class="textL">11.Eduperson_08.02_Question_detail</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9207,7 +9205,7 @@
         <td class="textL">11.Eduperson_09.01_Community</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9225,7 +9223,7 @@
         <td class="textL">11.Eduperson_09.01_Community_detail</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9247,7 +9245,7 @@
           </router-link>,
            <router-link :to="{ name: 'BPO_subjectlist02' }">
             BPO_subjectlist02
-          </router-link>          
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -9263,7 +9261,7 @@
         <td class="textL">14.BPO_01.01.subjectlist_day</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9281,7 +9279,7 @@
         <td class="textL">14.BPO_01.01.subjectlist_day_attendance</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9299,7 +9297,7 @@
         <td class="textL">14.BPO_01.01.subjectlist_student</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9317,7 +9315,7 @@
         <td class="textL">14.BPO_01.01.subjectlist_student_attendance</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9335,7 +9333,7 @@
         <td class="textL">14.BPO_01.01.subjectlist_student_attendance_SMS</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9437,7 +9435,7 @@
         <td>
           <router-link :to="{ name: 'BPO_Classstatus_detail' }">
             BPO_Classstatus_detail
-          </router-link>         
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -9453,7 +9451,7 @@
         <td class="textL">14.BPO_04.01.Teamproject</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9471,7 +9469,7 @@
         <td class="textL">14.BPO_04.01.Teamproject_deatil</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9489,7 +9487,7 @@
         <td class="textL">14.BPO_04.02.Recoderboard</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9507,7 +9505,7 @@
         <td class="textL">14.BPO_04.02.Recoderboard_detail</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9525,7 +9523,7 @@
         <td class="textL">14.BPO_04.02.Recoderboard_detail_feedback</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9543,7 +9541,7 @@
         <td class="textL">14.BPO_04.02.Recoderboard_detail_feedback_finish</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9561,7 +9559,7 @@
         <td class="textL">14.BPO_05.01.Homework</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9579,7 +9577,7 @@
         <td class="textL">14.BPO_05.01.Homework_student</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9597,7 +9595,7 @@
         <td class="textL">14.BPO_05.01.Homework_student_detail</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9615,7 +9613,7 @@
         <td class="textL">14.BPO_05.01.Homework_student_scoring</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -9720,9 +9718,9 @@
         <td class="textL">etc_QR</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
-          네이티브 영역. 개발필요 
+          네이티브 영역. 개발필요
         </td>
         <td></td>
       </tr>
@@ -9859,11 +9857,11 @@
         <td>　</td>
         <td class="textL">etc_Keepstudy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_keepstudy' }">
+            etc_keepstudy
           </router-link>
         </td>
-        <td></td>
+        <td>수정중</td>
       </tr>
       <tr class="new">
       <td align="center">536</td>
@@ -9877,7 +9875,7 @@
         <td class="textL">etc_Miniplayer</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
         </td>
         <td></td>
@@ -9983,8 +9981,8 @@
         <td class="textL">etc_GeneralPoPup</td>
         <td>
           <router-link :to="{ name: '' }">
-            
-          </router-link>         
+
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -10000,7 +9998,7 @@
         <td class="textL">11.Eduperson_06.01_Operation_elearning_report_graph</td>
         <td>
           <router-link :to="{ name: 'Eduperson_operation_elearning_control' }">
-            Eduperson_operation_elearning_control 
+            Eduperson_operation_elearning_control
           </router-link>
           와 같음
         </td>
@@ -10018,7 +10016,7 @@
         <td class="textL">11.Eduperson_06.01_Operation_elearning_report_table</td>
         <td>
           <router-link :to="{ name: 'Eduperson_operation_elearning_control' }">
-            Eduperson_operation_elearning_control 
+            Eduperson_operation_elearning_control
           </router-link>
           와 같음
         </td>
@@ -10140,7 +10138,7 @@
         <td class="textL">05.Study_01.08.home_set_langaugeBPO_attendance</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
           삭제
         </td>
@@ -10306,7 +10304,7 @@
         <td class="textL">05.Study_01.05.home_set_calendar2</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
         </td>
         <td></td>
@@ -10321,7 +10319,7 @@
         <td></td>
         <td>　</td>
         <td class="textL">14.BPO_01.01.subjectlist_detail</td>
-        <td>         
+        <td>
           <router-link :to="{ name: 'BPO_subjectlist_detail' }">
             BPO_subjectlist_detail
           </router-link>,
@@ -10339,7 +10337,7 @@
           </router-link>,
           <router-link :to="{ name: 'BPO_subjectlist_detail_disable' }">
             BPO_subjectlist_detail_disable
-          </router-link>         
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -10473,7 +10471,7 @@
         <td>
           <router-link :to="{ name: 'BPO_subjectlist_detail_shorten_setdate' }">
             BPO_subjectlist_detail_shorten_setdate
-          </router-link>         
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -10709,7 +10707,7 @@
         <td class="textL">05.Study_02.01.studystatus_point</td>
         <td>
            <router-link :to="{ name: 'Study_studystatus_point' }">
-            Study_studystatus_point 
+            Study_studystatus_point
           </router-link>
         </td>
         <td></td>
@@ -10726,7 +10724,7 @@
         <td class="textL">07.ATORM_07.01. Splash</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
         </td>
         <td></td>
@@ -10862,7 +10860,7 @@
         <td class="textL">08.search_03.01.Enter_recomm</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
         </td>
         <td></td>
@@ -10879,7 +10877,7 @@
         <td class="textL">08.search_03.02.typing_courses</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
         </td>
         <td></td>
@@ -10896,7 +10894,7 @@
         <td class="textL">08.search_03.02.typing_contents</td>
         <td>
           <router-link :to="{ name: '' }">
-            
+
           </router-link>
         </td>
         <td></td>
@@ -10976,8 +10974,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_03.02_Studyguide_detail2</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Studyguide_detail2' }">
+            CustomerCenter_Studyguide_detail2
           </router-link>
         </td>
         <td></td>
@@ -11015,7 +11013,7 @@
           </router-link>
         </td>
         <td></td>
-      </tr>      
+      </tr>
       <tr>
       <td align="center">0</td>
         <td>공통컴포넌트</td>
@@ -11032,7 +11030,7 @@
           </router-link>
         </td>
         <td></td>
-      </tr>      
+      </tr>
       <tr>
       <td align="center">0</td>
         <td>공통컴포넌트</td>
@@ -11049,7 +11047,7 @@
           </router-link>
         </td>
         <td></td>
-      </tr>      
+      </tr>
       <tr>
       <tr>
       <td align="center">0</td>
@@ -11067,7 +11065,7 @@
           </router-link>
         </td>
         <td></td>
-      </tr>         
+      </tr>
       <td align="center">0</td>
         <td>공통컴포넌트</td>
         <td>버튼</td>
@@ -11820,12 +11818,12 @@
         </td>
         <td></td>
       </tr>
-      
+
 
       </tbody>
     </table>
     <a href="#" class="top">Top</a>
-  </div>  	
+  </div>
 
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-
+<!-- eslint-disable-->
     <div>
         <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
@@ -28,7 +28,6 @@
             <li :class="compClasses">
 
                 <div class="download_details">
-
                     <div class="text_wrap position_relative">
                         <p class="icon_txt">4차시</p>
                         <p class="title text">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>

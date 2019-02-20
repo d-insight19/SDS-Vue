@@ -1,5 +1,5 @@
 <template>
-
+<!-- eslint-disable-->
     <div>
         <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
@@ -37,7 +37,7 @@
 
                 </div>
             </li>
-            <li :class="compClasses">
+            <li class="compClasses">
 
                 <div class="download_details">
 
@@ -181,13 +181,10 @@
 
 <script>
 /* eslint-disable */
-
 // 1. jquery
 import $ from 'jquery'
 window.$ = $
 window.jQuery = $
-
-
 export default {
     name: 'studyList',
 
@@ -202,7 +199,6 @@ export default {
             this.defaultFlag = !this.defaultFlag
         }
     },
-
     computed: {
         compClasses: function(){
             return{

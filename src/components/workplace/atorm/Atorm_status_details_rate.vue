@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery atorm_status">
-            
+
            <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
@@ -14,13 +14,13 @@
 
             <div id="content" class="normal">
                 <div class="cell">
-                    <div class="inner nopad">  
+                    <div class="inner nopad">
 
                     <h2 class="label-tit16"><b>설문 응시자 수</b></h2>
                     <p class="status_detail"><span class="num">1,245</span> <span class="unit">명</span></p>
- 
-            <p class="hr" style="margin:26px -24px 22px"></p>  
-  
+
+            <p class="hr" style="margin:26px -24px 22px"></p>
+
                 <!-- 댓글 -->
                 <div class="txt-line mt0">
                     <span class="my-op font_16">평균평점</span>
@@ -37,7 +37,7 @@
                     <span class="font_26 fwb mr2" style="vertical-align: bottom; line-height: 120%;">3.0</span><span class="font_18" style="vertical-align: bottom; line-height: 150%;">/5.0</span>
                 </div>
 
-                <ul>                    
+                <ul>
                     <li class="reply-list">
                         <div class="rating_wrap">
                             <span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20 gold"></span><span class="ico star_20"></span><span class="ico star_20"></span>
@@ -73,20 +73,20 @@
                         <ul class="info6" style="display: inline;">
                             <li><span class="info_value mono_65">이현진</span></li>
                         </ul>
-                    </li>                   
-                   
+                    </li>
+
                 </ul>
-                <!-- 댓글 -->                     
-                   
+                <!-- 댓글 -->
 
 
-                       
+
+
                     </div>
                 </div>
-            </div>          
-        
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->
@@ -96,7 +96,7 @@
 <script>
 /*eslint-disable */
 export default {
-  name: 'components_tabheader',  
+  name: 'components_tabheader',
   /* vue lifecycle */
   created () {
   },
@@ -106,7 +106,7 @@ export default {
    data () {
     return {
       headerType: 2,
-      langFlag: false,     
+      langFlag: false,
     }
   },
   /* vue function */
