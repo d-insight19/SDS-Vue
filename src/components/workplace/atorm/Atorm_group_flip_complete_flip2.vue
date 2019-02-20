@@ -34,7 +34,7 @@
             <div class="inner pdb20">
 
                 <ul class="confirm_item_detail">
-                    <li class="open" @click="toggleMenu($event)">
+                    <li @click="toggleMenu($event)">
                         <span>필수정보</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pdb25">
@@ -82,7 +82,7 @@
                         <span>선택정보</span>
                         <span class="accordion_arrow"></span>
                         
-                        <div class="confirm_item_detail_inner pt0">
+                        <div class="confirm_item_detail_inner pt12">
                             <!-- list -->
                             <div class="atorm_status_table">
                                 <table class="detail_table2">
@@ -157,95 +157,357 @@
                     <li @click="toggleMenu($event)">
                         <span>학습목차 및 구성컨텐츠</span>
                         <span class="accordion_arrow"></span>
-                        
-                        <div class="confirm_item_detail_inner pt0">
-                            <!-- list -->
-                            <ul class="singleList type1">
-                                <li class="mb20">
-                                    <strong class="label-tit14">학습분류</strong>
-                                    <slp-select placeholder="대분류" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                    <slp-select placeholder="중분류" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                    <slp-select placeholder="소분류" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">문의방법</strong>
-                                    <div class="rdoSelBox mt8">    
-                                        <slp-radio name="question">연락처</slp-radio>
-                                        <slp-radio name="question">이메일</slp-radio>
+                        <div class="confirm_item_detail_inner">
+                            <div class="title_line mt12 mb16">
+                                <h3 class="label-tit16 fwb600">사전학습</h3>
+                            </div>
+                            <div class="atorm_complete pdb25">                                
+                                <div class="complete_title mb13"> 
+                                    <div class="txt_wrap pt2">
+                                        <p class="title font_18 fwb">데이터 특성 알아보기</p></p>
                                     </div>
-                                    <slp-text-field placeholder="연락처, 이메일 선택 후 정보를 입력하세요" class="mt8"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <p class="label-tit14">학습대상</p>
-                                    <slp-select placeholder="전체" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">난이도</strong>
-                                    <slp-select placeholder="선택안함" width="100%" class="mt8">
-                                        <option>전체</option>
-                                    </slp-select>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">교재 유무</strong>
-                                    <div class="rdoSelBox mt8">    
-                                        <slp-radio name="question">교재 없음</slp-radio>
-                                        <slp-radio name="question">교재 있음</slp-radio>
+                                </div>
+                                <!-- list -->
+                                <ul class="">
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="txt_wrap">
+                                                <p class="title color_clr1 font_13 fwb">아이템학습</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pt6 pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="txt_wrap">
+                                                <p class="title color_clr1 font_13 fwb">레포트</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pt6 pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico poll_line_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico poll_line_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="icon_wrap tac">
+                                                <p class="color_clr1 font_13 fwb">평가</p>
+                                            </div>
+                                            <div class="txt_wrap tar">
+                                                <p class="title font_13 pdr6">
+                                                  <span class="mono_100 fwb">문항 배점</span> <span class="mono_65"><span class="font_15">10</span> 점</span>
+                                                  <span class="brB89 ml6 mr6"></span>
+                                                  <span class="mono_100 fwb">총점</span> <span class="mono_65"><span class="font_15">100</span> 점</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="complete_detail white_bg bbB92 btw0 pt5 pdb5">
+                                            <div class="txt_wrap fwb">
+                                                <p class="title font_13 pl16">선다형 <span>3</span></p>
+                                            </div>
+                                        </div>
+                                        <ul class="pt12 pdb12 bbB85">
+                                            <li>
+                                                <div class="complete_sub_detail pt5 pdb5">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">1</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt5 pdb5">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">2</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">프레젠테이션 기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt5 pdb5">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">3</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">단순하지만 임팩트 있는 슬라이드의 특징</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>                                        
+                                    </li> 
+                                </ul>
+                                <!-- //list -->
+                            </div>
+
+                            <div class="title_line mt12 mb16">
+                                <h3 class="label-tit16 fwb600">집합</h3>
+                            </div>
+                            <div class="atorm_complete pdb25">                                
+                                <div class="complete_title mb13">                               
+                                    <div class="icon_wrap">
+                                        <span class="chip clr1 font_12 mono_0 fwl">모듈</span>
                                     </div>
-                                    <slp-button class="sm add w100p mt8" @click="addList1()" ><span class="ico"></span>교재 정보 추가</slp-button>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">교재 제공 여부</strong>
-                                    <div class="rdoSelBox mt8">    
-                                        <slp-radio name="question">제공 안함</slp-radio>
-                                        <slp-radio name="question">제공 함</slp-radio>
-                                    </div>                                    
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">강사명</strong>
-                                    <slp-text-field placeholder="강사명을 입력하세요" class="mt6"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">강사소개</strong>
-                                    <slp-text-field placeholder="강사소개를 입력하세요" class="mt6"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">역량</strong>
-                                    
-                                    <ul class="fixTab mt10">
-                                        <li>
-                                            <slp-select placeholder="선택" width="100%" class="mr8">
-                                                <option>전체</option>
-                                            </slp-select>
-                                        </li>
-                                        <li>
-                                            <slp-select placeholder="선택" width="100%">
-                                                <option>전체</option>
-                                            </slp-select>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">학습목표</strong>
-                                    <slp-text-field placeholder="학습 목표를 입력하세요" class="mt6"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">과정 소개</strong>
-                                    <slp-text-field placeholder="과정 소개를 입력하세요" class="mt6"></slp-text-field>
-                                </li>
-                                <li class="mb20">
-                                    <strong class="label-tit14">TAG</strong>
-                                    <slp-text-field placeholder="예시) 의사소통, 커뮤니케이션" class="mt8"></slp-text-field>
-                                </li>
-                            </ul>
-                            <!-- //list -->
+                                    <div class="txt_wrap pt2">
+                                        <p class="title font_18 fwb">데이터 특성 알아보기</p></p>
+                                    </div>
+                                </div>
+                                <!-- list -->
+                                <ul class="">
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="txt_wrap">
+                                                <p class="title color_clr1 font_13 fwb">1차시<span class="ml6 mono_80 fwr">데이터와 배열 활용하기</span></p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pt6 pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                     <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="txt_wrap">
+                                                <p class="title color_clr1 font_13 fwb">2차시<span class="ml6 mono_80 fwr">데이터와 배열 활용하기</span></p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pt6 pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico play_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="txt_wrap">
+                                                <p class="title color_clr1 font_13 fwb">레포트</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pt6 pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico poll_line_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico poll_line_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="icon_wrap tac">
+                                                <p class="color_clr1 font_13 fwb">평가</p>
+                                            </div>
+                                            <div class="txt_wrap tar">
+                                                <p class="title font_13 pdr6">
+                                                  <span class="mono_100 fwb">문항 배점</span> <span class="mono_65"><span class="font_15">10</span> 점</span>
+                                                  <span class="brB89 ml6 mr6"></span>
+                                                  <span class="mono_100 fwb">총점</span> <span class="mono_65"><span class="font_15">100</span> 점</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="complete_detail white_bg bbB92 btw0 pt5 pdb5">
+                                            <div class="txt_wrap fwb">
+                                                <p class="title font_13 pl16">선다형 <span>3</span></p>
+                                            </div>
+                                        </div>
+                                        <ul class="pt12 pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt5 pdb5">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">1</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt5 pdb5">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">2</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">프레젠테이션 기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt5 pdb5">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">3</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">단순하지만 임팩트 있는 슬라이드의 특징</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="complete_detail white_bg bbB92 pt5 pdb5">
+                                            <div class="txt_wrap fwb">
+                                                <p class="title font_13 pl16">선다형 <span>3</span></p>
+                                            </div>
+                                        </div>
+                                        <ul class="pt12 pdb12 bbB85">
+                                            <li>
+                                                <div class="complete_sub_detail pt5 pdb5">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">1</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt5 pdb5">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">2</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">프레젠테이션 기획의 본질을 이해하자. </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt5 pdb5">
+                                                    <div class="icon_wrap tac"><p class="mono_65 font_14">3</p></div>
+                                                    <div class="txt_wrap">
+                                                        <p class="title mono_80 font_14">단순하지만 임팩트 있는 슬라이드의 특징</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>                                        
+                                    </li> 
+                                </ul>
+                                <!-- //list -->
+                            </div>
+
+                            <div class="title_line mt12 mb16">
+                                <h3 class="label-tit16 fwb600">사후학습</h3>
+                            </div>
+                            <div class="atorm_complete pdb25">                                
+                                <div class="complete_title mb13"> 
+                                    <div class="txt_wrap pt2">
+                                        <p class="title font_18 fwb">데이터 특성 알아보기</p></p>
+                                    </div>
+                                </div>
+                                <!-- list -->
+                                <ul class="">                                   
+                                    <li>
+                                        <div class="complete_detail pt5 pdb5">
+                                            <div class="txt_wrap">
+                                                <p class="title color_clr1 font_13 fwb">레포트</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <ul class="pt6 pdb12">
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico poll_line_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">데이터와 배열 활용하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="complete_sub_detail pt3 pdb3">
+                                                    <div class="icon_wrap tac">
+                                                        <span class="ico poll_line_28"></span>
+                                                    </div>
+                                                    <div class="txt_wrap pt2">
+                                                        <p class="title mono_80 font_14">실행 순서 제어하기</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- //list -->
+                            </div>
                         </div>
                     </li>
 
@@ -255,64 +517,64 @@
                         
                         <div class="confirm_item_detail_inner">
                             <!-- list -->
-                             <div class="title_line">
-                        <h3 class="label-tit15"><b>기본수료기준</b></h3>
-                    </div>
-                    <ul class="multiList type_1">
-                        <li style="border-top:0">
-                            <div class="in">
-                                <span class="label-tit14">출석률</span>
-                                <span class="status_data fr"><span class="status_value mr4">80%</span>이상 </span>
+                            <div class="title_line pt12">
+                                <h3 class="label-tit15"><b>기본수료기준</b></h3>
                             </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                                <span class="label-tit14">총점</span>
-                                <span class="status_data fr"><span class="status_value">5</span>점 이상 </span>
-                            </div>
-                        </li>
-                    </ul>
+                            <ul class="multiList type_1">
+                                <li style="border-top:0">
+                                    <div class="in">
+                                        <span class="label-tit14">출석률</span>
+                                        <span class="status_data fr"><span class="status_value mr4">80%</span>이상 </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="in">
+                                        <span class="label-tit14">총점</span>
+                                        <span class="status_data fr"><span class="status_value">5</span>점 이상 </span>
+                                    </div>
+                                </li>
+                            </ul>
                     
-                    <div class="title_line mt26">
-                        <h3 class="label-tit15"><b>총점 평가항목 및 점수반영 비율</b></h3>
-                    </div>
-                    <ul class="multiList type_1">
-                        <li style="border-top:0">
-                            <div class="in">
-                                <span class="label-tit14">출석률</span>
-                                <span class="status_data fr"><span class="status_value mr4">80%</span></span>
+                            <div class="title_line mt26">
+                                <h3 class="label-tit15"><b>총점 평가항목 및 점수반영 비율</b></h3>
                             </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                                <span class="label-tit14">레포트 점수 <span class="mono_50">(집합, 사후)</span></span>
-                                <span class="status_data fr"><span class="status_value">35%</span></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                                <span class="label-tit14">평가 점수 <span class="mono_50">(사전, 집합, 사후)</span></span>
-                                <span class="status_data fr"><span class="status_value">15%</span></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="in">
-                                <span class="label-tit14">아이템 학습 <span class="mono_50">(사후)</span></span>
-                                <span class="status_data fr"><span class="status_value">20%</span></span>
-                            </div>
-                        </li>
-                    </ul>
+                            <ul class="multiList type_1">
+                                <li style="border-top:0">
+                                    <div class="in">
+                                        <span class="label-tit14">출석률</span>
+                                        <span class="status_data fr"><span class="status_value mr4">80%</span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="in">
+                                        <span class="label-tit14">레포트 점수 <span class="mono_50">(집합, 사후)</span></span>
+                                        <span class="status_data fr"><span class="status_value">35%</span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="in">
+                                        <span class="label-tit14">평가 점수 <span class="mono_50">(사전, 집합, 사후)</span></span>
+                                        <span class="status_data fr"><span class="status_value">15%</span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="in">
+                                        <span class="label-tit14">아이템 학습 <span class="mono_50">(사후)</span></span>
+                                        <span class="status_data fr"><span class="status_value">20%</span></span>
+                                    </div>
+                                </li>
+                            </ul>
                     
-                    <div class="title_line mt26">
-                        <h3 class="label-tit15"><b>기타 설정</b></h3>
-                    </div>
-                    <ul class="multiList type_1">
-                        <li style="border:0">
-                            <div class="in">
-                                <span class="label-tit14">설문 및 별점</span>
+                            <div class="title_line mt26">
+                                <h3 class="label-tit15"><b>기타 설정</b></h3>
                             </div>
-                        </li>
-                    </ul>
+                            <ul class="multiList type_1">
+                                <li style="border:0">
+                                    <div class="in">
+                                        <span class="label-tit14">설문 및 별점</span>
+                                    </div>
+                                </li>
+                            </ul>
                             <!-- //list -->
                         </div>
                     </li>
