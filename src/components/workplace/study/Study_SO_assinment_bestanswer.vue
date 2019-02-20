@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery study_dictionary">
             <!-- header -->
@@ -10,7 +10,7 @@
             <p class="header_text font_18">모범답안</p>
             </div>
             <!-- //header -->
-            
+
             <div id="content" class="etc">
                 <div class="cell">
                   <div class="inner">
@@ -26,9 +26,9 @@
                   </div>
                 </div>
             </div>
-                
+
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

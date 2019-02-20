@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery studystatus pd70">
             <!-- header -->
@@ -9,7 +9,7 @@
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_18">평가 결과 통계</p>
             </div>
-            <!-- //header -->            
+            <!-- //header -->
             <div id="content" class="etc" >
                 <div class="cell">
                     <div class="inner " style="padding-top:56px;">
@@ -19,9 +19,9 @@
                             <p class="font_16 mono_80 mb12">전체 평균 점수는 63점으로 평균보다 낮은 점수입니다. 부족한 모듈은 청강기간에 재학습을 통해 보완하시기 바랍니다</p>
                             <p class="font_16 mono_80">자세한 평가 결과 화면은 [결과 확인] 버튼을 클릭하여 확인 가능합니다.</p>
                         </div>
-                        
+
                         <div>
-                            
+
                             <ul class="diagram_wrap type2 tar">
                                 <li class="fl no-cir fwb">모듈별 정답비율</li>
                                 <li class="type1">본인</li>
@@ -38,17 +38,17 @@
                                     :chart-data="basicBarData21"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
-                                    
+
                                 </div>
-                                <span class="res-num">100%</span>  
+                                <span class="res-num">100%</span>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
-                                    
+
                                 </div>
-                                <span class="res-num">74%</span> 
+                                <span class="res-num">74%</span>
                                 </li>
                                 <li>
                                 <p class="font_16 fwb">・OPic 문법의 정석</p>
@@ -58,14 +58,14 @@
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
-                                <span class="res-num">100%</span>  
+                                <span class="res-num">100%</span>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
-                                <span class="res-num">74%</span>  
+                                <span class="res-num">74%</span>
                                 </li>
                                 <li>
                                 <p class="font_16 fwb">・OPic 주제의 정석</p>
@@ -75,14 +75,14 @@
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
-                                <span class="res-num">100%</span>  
+                                <span class="res-num">100%</span>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
-                                <span class="res-num">74%</span>  
+                                <span class="res-num">74%</span>
                                 </li>
                                 <li>
                                 <p class="font_16 fwb">・OPic 표현의 정석</p>
@@ -92,14 +92,14 @@
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
-                                <span class="res-num">100%</span>  
+                                <span class="res-num">100%</span>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
-                                <span class="res-num">74%</span>  
+                                <span class="res-num">74%</span>
                                 </li>
                                 <li>
                                 <p class="font_16 fwb">・총 합계</p>
@@ -109,32 +109,32 @@
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
-                                <span class="res-num">100%</span>  
+                                <span class="res-num">100%</span>
                                 <div class="progBox">
                                     <h-bar-chart
                                     :chart-data="basicBarData22"
                                     :options="basicBarOpt"
                                     css-classes="basicBar" />
                                 </div>
-                                <span class="res-num">74%</span>  
+                                <span class="res-num">74%</span>
                                 </li>
                             </ul>
                             <!-- //basic bar2 -->
                             </div>
-                        
+
                     </div>
                 </div>
             </div>
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
                 <button type="button" class="btn md clr1">결과확인</button>
             </div>
             <!-- //floatingbtn -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 
@@ -205,14 +205,14 @@ export default {
             ticks: { display: false}
           }]
         }
-      },      
+      },
       basicBarData21: {
         datasets: [{ backgroundColor: '#ff726D', data: [40] }]
       },
       basicBarData22: {
         datasets: [{ backgroundColor: '#00b6e8', data: [10] }]
       }
-      
+
     }
   },
   /* vue lifecycle */

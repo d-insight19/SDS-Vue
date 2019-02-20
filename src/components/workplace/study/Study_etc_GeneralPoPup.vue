@@ -3,19 +3,19 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery courseware pd70">   
-        
-        <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video" style="background:#fff">          
-            <div class="header_inner line1 ">
-                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
+      <div id="container" class="mediaquery studyquestion">
+
+       <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div id="header" class="tab video">          
+            <div class="header_inner line1 clr1">
+                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li class="on"><a href="#tab1">학습현황</a></li>
-                    <li><a href="#tab2">학습목차</a></li> 
+                    <li><a href="#tab1">학습현황</a></li>
+                    <li class="on"><a href="#tab2">설문조사</a></li> 
                     <li><a href="#tab3">학습노트</a></li> 
                     <li><a href="#tab3">질문방</a></li> 
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
@@ -23,34 +23,19 @@
             </div>
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
-            <!-- <div class="blur_wrap">
+            <!--<div class="blur_wrap">
                 <div class="left blur"></div>
                 <div class="right blur"></div>
             </div> -->
 
             
             <!-- s: 동영상 -->
-            <!-- s: 동영상 -->
             <div class="player_wrap">
                 <div class="player_inner">
                     <div id="contents"></div>
 
-                    <!--  s: 연관 콘텐츠 -->
-                    <div class="movie_info_list_wrap" style="display:none;">
-                        <div class="movie_info_list">
-                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
-                            <ul>
-                                <li v-for="(item, index) in relatedVideoList" :key="index">
-                                    <a href="#"></a>
-                                    <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li> 
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- e: 연관 콘텐츠 -->
-
-                    <!-- s: 볼륨영역 -->
-                    <div class="volume_wrap" style="display:none;">
+                    <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
+                    <div class="volume_wrap" style="display:none;pointer-events:none">
                         <div class="volume_left">
                             <div class="inner"></div>
                             <div class="icon_wrap">
@@ -68,16 +53,20 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: double 텝 영역 -->
-                    <div class="tap_wrap" style="display:none;">
-                        <div class="half_left">
-                            <div class="inner"></div>
-                            <div class="inner_ripple"></div>
-                        </div>
-                        <div class="half_right">
-                            <div class="inner"></div>
-                            <div class="inner_ripple"></div>
-                        </div>
+                    <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
+                    <div class="tap_wrap" style="display:none;pointer-events:none">
+                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
+                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
+                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
+                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
+                          </div>
+                        </v-touch>
+                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
+                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
+                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
+                                <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
+                            </div>
+                        </v-touch>                            
                     </div>
                     <!--  e: double 텝 영역 -->
 
@@ -162,227 +151,106 @@
                 </div>
                 <!-- e: btm_subtitle_area -->
             </div>
-            <!-- e: 동영상-->
+            <!-- e: 동영상-->                
 
-            <div class="hide_header">
-
-                <div class="study_title_wrap">
-                    <div class="d-day_wrap">
-                        <span class="d-day">D-29</span>
-                        <div class="arm">
-                            <span class="new"></span> <span class="icon"></span>
-                        </div>
-                    </div>
-                    <div class="study_contens_title">
-                        <p class="multiline line2">SPRINT - 구글 벤처스의 5일만에 기획부터 실행까지 끝내는 법(참고도서제공)</p>
-                    </div>
-                    <p class="study_date">2018.09.10 - 2018.10.10</p>
-
-                    <div class="study_arrow_down_icon" :class="{'mask_clr2': detail_show }" @click="detail_toggle()"></div>
-                </div>
-
-                <div class="study_title_detail" v-show="detail_show">
-                    <div class="s_detail_wrap detail_txt">
-                        세계에서 가장 영향력 있는 CEO들의 삶과 경영스토리를 1:1 인터뷰로 만나다! 누구나 만나고 싶었지만, 쉽게 만나볼 수 없었던 세계 정상급 CEO들을 만나 칼라일그룹 CEO 루벤스타인이 날카로운 질문으로 밀착 인터뷰해 자기경영과 조직경영을 위한 리더십 인사이트를 제시합니다.
-                    </div>
-                    <div class="s_detail_wrap detail_goal">
-                        <p class="detail_sub_title">학습목표</p>
-                        <ul>
-                            <li>프레젠테이션 기획의 본질을 이해하자. </li>
-                            <li>단순하지만 임팩트 있는 슬라이드의 특징을 이해하고 이를 실제로 제작하고 팀원들과 의견을 공유해보자.</li>
-                            <li>발표를 스킬이 아닌 콘텐츠가 중심이라는 점을 이해하고, 올바른 발표 준비 및 실전 발표 팁을 배우자</li>
-                        </ul>
-                    </div>
-                    <div class="s_detail_wrap detail_target">
-                        <p class="detail_sub_title">학습대상</p>
-                        <ul>
-                            <li>경쟁PT/내부보고/설명회/내부행사 등에서 프레젠테이션을 준비해야 하는 분 </li>
-                            <li>실전에서 통하는 프레젠테이션의 기획/제작/발표에 대해 배우고싶은 분</li>
-                        </ul>
-                    </div>
-                    <div class="s_detail_wrap detail_introduce">
-                        <p class="detail_sub_title">강사소개</p>
-                        <div class="teacher_profile">
-                            <div class="teacher_img_wrap">
-                                <div class="teacher_img">
-                                    <img src="@/assets/img/benjamin_parker_736167_unsplash.png" class="thumImg" alt="profile img">
-                                </div>
-                                <p class="teacher_name">김진혁</p>
-                            </div>
-                            <div class="teacher_career">
-                                <div class="carear_wrap">
-                                    <p class="career_tit1">주요경력</p>
-                                    <p class="career_sub">현)벨류스퀘어 대표 </p>
-                                    <p class="career_sub">한국 인력개발학회 이사</p>
-                                    <p class="career_sub">한국 강사협회 리더십 위원장</p>
-                                </div>
-                                <div class="carear_wrap">
-                                    <p class="career_tit1">주요 강의분야</p>
-                                    <p class="career_sub">변화적용 리더십, 서번트 리더쉽 등</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
-        </div>        
+        </div>
+        <!-- //header -->
 
-        <div id="content" class="etc" >
+        <div id="content" class="etc">
         
           <div class="cell">
-            <div class="inner pt0">
+            <div class="inner">
+                <p class="mb5">총 <span class="fwb ml2"><b>1,620</b></span></p>
                 
-                <p class="label-tit-18 studystatus_label_tit_18"><span class="ico ic_qr_blue_24"></span> <span class="color_clr2">QR 출석하기</span></p>
-
-                <div class="type_box type_1 w-full">
-                    <dl>
-                        <dt>수료상태</dt> 
-                        <dd>미수료</dd>
-                    </dl> 
-                    <dl>
-                        <dt>총점</dt>
-                        <dd>75/100점</dd>
-                    </dl> 
-                    <dl>
-                        <dt>진도율</dt>
-                        <dd>30%</dd>
-                    </dl>
-                </div> 
-
-                <div class="singleLineGroupBlock">
-                    <ul class="singleLineGroup">
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"> <span class="ico ic_pen_line_24"></span>과제</div> 
-                                <div>1/3</div>
-                                <div><span class="ico next_16"></span></div>
-                            </a>
-                        </li>
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico mark_line"></span>중간평가</div> 
-                                <div>제출완료</div> 
-                                <div><span class="ico next_16 ml_auto"></span></div>
-                            </a>
-                        </li>  
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico mark_line"></span>최종평가</div> 
-                                <div>제출완료</div> 
-                                <div><span class="ico next_16 ml_auto"></span></div>
-                            </a>
-                        </li>  
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico ic_attendace_line_24"></span>출석율</div> 
-                                <div>제출완료</div> 
-                                <div><span class="ico next_16 ml_auto"></span></div>
-                            </a>
-                        </li> 
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico ic_badge_line_bk_24"></span> 스코어</div> 
-                                <div>제출완료</div> 
-                                <div><span class="ico next_16 ml_auto"></span></div>
-                            </a>
-                        </li>                                                        
-                    </ul>
-                </div>
-
-                <p class="label-tit-18 mt26">수료기준</p>
-                <p calass="font_size_xs mono_80">진도율 80% 이상, 모든 평가항목 참여, 총점 80점 이상되어야 수료 가능합니다.</p>
-            
-                <div class="scroll-x">
-                <table class="table detail_table">
-                    <thead>
-                        <tr>
-                        <th></th> 
-                        <th>가중치</th> 
-                        <th>과락기준</th>
-                        <th>학습현황</th> 
-                        <th>취득점수</th> 
-                        <th>가중치</th> 
-                        <th>과락기준</th>
-                        <th>학습현황</th>                                
-                        </tr>
-                    </thead> 
-                    <tbody>
-                        <tr>
-                        <td class="">진도율</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>   
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                    
-                        </tr> 
-                        <tr>
-                        <td>과제</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>  
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                       
-                        </tr>   
-                        <tr>
-                        <td>중간평가</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                        </tr> 
-                        <tr>
-                        <td>최종평가</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>  
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                       
-                        </tr> 
-                        <tr>
-                        <td>출석율</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                        </tr>
-                        <tr>
-                        <td class="font_weight_base">스코어</td> 
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">20%</td>
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">0%</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                        </tr>                                                                       
-                    </tbody>
-                </table>  
-                </div>  
-
-                <ul class="guideList mt15">
-                <li>평가 항목의 점수를 가중치만큼 환성하여 합산한 점수입니다.</li>
-                <li>학습진행 중에는 학습한 분량 및 평가항목 참여에 따라 취득점수가 
-                계속해서 변화되므로 평가항목을 모두 완료 후,정확한 수료여부를
-                확인 할 수 있습니다.</li>                      
+                <ul class="ulList type4">                    
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다. 설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>                                
+                        </div>    
+                    </li>
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb mono_80">미참여</span></p>                                  
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>                                
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>                              
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>                                 
+                        </div>
+                    </li>
                 </ul>
+
+                <!-- keyboard -->
+                <div id="keyboard_wrap">
+                    <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
+                    <div class="keyboard_input" v-show="focusFlag">                
+                        
+                        <div class="bookmark_wrap" v-if="keyboard_type=='4'">
+                            <span class="bookmarktxt">북마크</span>
+                            <span class="fr time">01:36</span>
+                        </div>
+                        <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
+                            <span class="opentxt">공개여부</span>
+                            <slp-switch :classObject="{'fr': true}"/>
+                            <span class="opentxt2">비공개</span>
+                        </div>
+
+                        <div class="rating_wrap" v-if="keyboard_type=='2'">
+                            <span class="ratingtxt">평점</span>                        
+                            <fieldset class="fr rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            </fieldset>
+                        </div>
+
+                        <div class="inputbox" >                        
+                            <div class="textarea_wrap">
+                                <textarea @keydown="onKeydown" placeholder="댓글을 입력하세요."></textarea>
+                            </div>
+                            <div class="inputbottom">
+                                <span class="strlenth" >{{keylength}}/300</span>
+                                <span class="regiBtn" :class="{active: keylength}">등록</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //keyboard -->
             </div>
           </div>
 
         </div>
-            
+
+        <!-- floating button -->
+        <!--<div class="fixBtmBtn">
+            <ul>
+                <li><slp-button class="md mono_65"><span class="ico heart_solid_32"></span>찜하기</slp-button></li>
+            </ul>
+        </div>-->
+        <!-- //floating button --> 
       </div>
       <!-- //container -->     
     </div>
@@ -417,11 +285,30 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
+import Vue from 'vue'
+import VueTouch from 'vue-touch'
+
+VueTouch.registerCustomEvent('singletap', {
+  type: 'tap',
+  taps: 1,
+})
+
+VueTouch.registerCustomEvent('doubletap', {
+  type: 'tap',
+  taps: 2,
+})
+
+Vue.use(VueTouch, {name: 'v-touch'})
+
 export default {
   name: 'components_flowplayer',
   data () {
     return {
-        active : false,
+        innerRipple: false,
+        halfRight: false,
+        halfLeft: false,
+        none: true,
+        left: true,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         relatedVideoList: [
@@ -489,8 +376,35 @@ export default {
     detail_toggle () {        
         this.detail_show = !this.detail_show;
     },
-    active_el () {
-        this.active = !this.active
+    prevTen() {
+        console.error("왼쪽");
+        this.halfRight = true
+        this.innerRipple = true
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_right').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfRight = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_right').css('display', 'block');
+            }, 600);       
+    },
+    nextTen() {
+        console.error("오른쪽");
+        this.halfLeft = true
+        this.innerRipple = true
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_left').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfLeft = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_left').css('display', 'block');
+            }, 600);       
     }
   },
   mounted () {
@@ -545,12 +459,6 @@ export default {
         }
 
         
-        $('.half_left').click(function(){
-            console.error("왼쪽");
-        });
-        $('.half_right').click(function(){
-            console.error("오른쪽");
-        });
 
         $('.fp-script , .script_close').click(function(){
             // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
@@ -561,6 +469,7 @@ export default {
 
         $('.fp-nextArrow').click(function()
         {
+            $('.half_right').css('display', 'block');
             console.error('다음 콘텐츠!')
         });
         $('.fp-prevArrow').click(function()
@@ -584,7 +493,7 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
                 // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
@@ -626,3 +535,21 @@ export default {
   }
 }
 </script>
+
+<style scoepd>
+.innerRipple {
+  display: none;
+}
+.halfRight {
+  display: none;
+}
+.halfLeft {
+  display: none;
+}
+.display {
+  display: block;
+}
+.none {
+  display: none;
+}
+</style>

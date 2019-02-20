@@ -2353,16 +2353,10 @@
         <td>
           <router-link :to="{ name: 'Atorm_group_flip_criteria' }">
             Atorm_group_flip_criteria
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_group_flip_criteria2' }">
+            Atorm_group_flip_criteria2
           </router-link>
-          <br/>
-          <router-link :to="{ name: 'Atorm_group_flip_criteria_02' }">
-            Atorm_group_flip_criteria_02
-          </router-link>
-          <br/>
-          <router-link :to="{ name: 'Atorm_group_flip_criteria_03' }">
-            Atorm_group_flip_criteria_03
-          </router-link>
-          <br/>
         </td>
         <td></td>
       </tr>
@@ -5098,7 +5092,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">266</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5109,8 +5103,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.15.studystatus_attendance_bpo</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_studystatus_attendance_bpo' }">
+            Study_studystatus_attendance_bpo
           </router-link>
         </td>
         <td></td>
@@ -5161,18 +5155,13 @@
         <td>　</td>
         <td class="textL">05.Study_02.18.studylist_download</td>
         <td>
-          <!--
-          <router-link :to="{ name: 'Study_0218studylist_download_01' }">
-            Study_0218studylist_download_01
-          </router-link> <br />
-          <router-link :to="{ name: 'Study_0218studylist_download_02' }">
-            Study_0218studylist_download_02
-          </router-link>
-          -->
+          <router-link :to="{ name: 'Study_0218studylist_download' }">
+            Study_0218studylist_download
+          </router-link> 
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">270</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5202,8 +5191,8 @@
         <td>삭제</td>
         <td></td>
       </tr>
-      <tr>
-      <td align="center">272</td>
+      <tr class="new">
+      <td align="center" class="new">272</td>
         <td>학습홈 영역</td>
         <td>　</td>
         <td>　</td>
@@ -5213,8 +5202,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.20.studynote_edit</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_studynote_edit' }">
+            Study_studynote_edit
           </router-link>
         </td>
         <td></td>
@@ -5256,7 +5245,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr  class="new">
       <td align="center">275</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5267,8 +5256,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.23.studyquestion_regi</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_studyquestion_regi' }">
+            Study_studyquestion_regi
           </router-link>
         </td>
         <td></td>
@@ -5613,7 +5602,7 @@
         <td>삭제</td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">296</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5624,8 +5613,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.40.summary</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_summary' }">
+            Study_summary
           </router-link>
         </td>
         <td></td>
@@ -6025,7 +6014,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">320</td>
         <td>학습창 영역</td>
         <td>　</td>
@@ -6036,8 +6025,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.05.LO_mp4_contents</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_LO_mp4_contents' }">
+            Study_LO_mp4_contents
           </router-link>
         </td>
         <td></td>
@@ -9861,7 +9850,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">535</td>
         <td>기타</td>
         <td>이어보기 팝업</td>
@@ -9878,7 +9867,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">536</td>
         <td>기타</td>
         <td>미니 플레이어</td>
@@ -9895,7 +9884,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">537</td>
         <td>기타</td>
         <td>Splash(B2B App)</td>
@@ -9912,7 +9901,7 @@
         </td>
         <td>수정중</td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">538</td>
         <td>기타</td>
         <td>Splash(B2C App)</td>
@@ -9984,7 +9973,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">542</td>
         <td>기타</td>
         <td>　</td>
@@ -10307,7 +10296,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">560</td>
         <td>학습홈 영역</td>
         <td>기본 학습홈</td>
@@ -10655,7 +10644,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">578</td>
         <td>회사운영자 - Main(TABS)</td>
         <td>로그인</td>
@@ -10672,7 +10661,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">579</td>
         <td>로그인 / 회원가입</td>
         <td>로그인</td>
@@ -10842,7 +10831,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">589</td>
         <td>검색</td>
         <td>검색 메인</td>
@@ -10859,7 +10848,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">590</td>
         <td>검색</td>
         <td>검색어 입력</td>
@@ -10876,7 +10865,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">591</td>
         <td>검색</td>
         <td>검색어 입력</td>
@@ -10928,7 +10917,7 @@
             Atorm_group_flip_complete_flip2
           </router-link>,
           <router-link :to="{ name: 'Atorm_group_flip_complete_flip3' }">
-            Atorm_group_flip_complete_flip3 - 작업중
+            Atorm_group_flip_complete_flip3
           </router-link>,
           <router-link :to="{ name: 'Atorm_group_flip_complete_flip4' }">
             Atorm_group_flip_complete_flip4
@@ -10957,7 +10946,7 @@
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="new">
       <td align="center">595</td>
         <td>Drawer - 고객센터</td>
         <td>고객센터</td>
@@ -12211,7 +12200,7 @@ a:hover,a:active,a:focus{color:#000; text-decoration:underline;}
 .red {background:#666;}
 .red > td {color:#CCC;}
 .yellow {color:yellow}
-.new {background:yellow;}
+.new {background-color:yellow;}
 tr.modify { background:#e2f1ff; }
 tr.modify td { color:#002446;}
 tr.hr td { border-top:5px solid #c9c9c9;}
