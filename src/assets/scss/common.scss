@@ -8,7 +8,7 @@
 body{
   // background : map-get($static_colors,alert);
   //background: map-get($mono_colors,mono_65);
-  // color : $secondary2  
+  // color : $secondary2
   font-size:map-get($font_size, font_14);
 }
 input, textarea, label, button {font-size:map-get($font_size, font_14);}
@@ -16,7 +16,7 @@ input, textarea, label, button {font-size:map-get($font_size, font_14);}
 
 button.btn{
   width:100%;
-  
+
   &.clr1 , &.clr2 ,&.clr3 ,&.clr4{
     color: #ffffff;
     border: 0;
@@ -93,12 +93,12 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .gray_bg {background-color: map-get($bg_colors , BG_1);}
 .white_bg {background-color: #fff !important;}
 
-// 헤더 
+// 헤더
 #header .btn.prev .ico{width:28px; height:28px; background-position:-13px -61px;}
-#header .btn.close .ico{width:28px; height:28px; background-position:-298px -60px;} 
+#header .btn.close .ico{width:28px; height:28px; background-position:-298px -60px;}
 #header .btn.prev .ico.white{width:28px; height:28px; background-position:-48px -27px;}
 #header .btn.share {position:absolute; right:14px; top: 14px; width: auto;}
-#header .btn.share .ico{width:28px; height:28px; background:url("../img/ic_share.png") no-repeat; background-size:28px;} 
+#header .btn.share .ico{width:28px; height:28px; background:url("../img/ic_share.png") no-repeat; background-size:28px;}
 #header .header_text.font_19{font-size:map-get($font_size, font_18) !important;}
 #header .header_text.visible{display:block;}
 
@@ -126,17 +126,17 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .btn.xxxs, .btn.xxs, .btn.xs, .btn.sm, .btn.md , .btn.ld{border: 1px solid #ccc; background-color: #fff;}
 
 
-// 말줄임 
+// 말줄임
 .singleline{
   overflow: hidden;width:inherit;text-overflow: ellipsis;white-space: nowrap;
 }
 .multiline{
   text-overflow: ellipsis; width: inherit; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden;
 }
-.multiline.line1{  
+.multiline.line1{
   -webkit-line-clamp: 1;
 }
-.multiline.line2{  
+.multiline.line2{
   -webkit-line-clamp: 2;
 }
 .multiline.line3{
@@ -183,7 +183,7 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .filterListArea .handle {width:34px; height:3px; background-color: map-get($line_colors , B89); display: block; margin: 12px auto;}
 .filterListArea .radioList2 li{margin-bottom:15px;}
 
-// 로그인시 password , 검색 input 에만 적용되는 x 아이콘 
+// 로그인시 password , 검색 input 에만 적용되는 x 아이콘
 .search-wrapper {position: relative;}
 .search-wrapper .close-icon {border:1px solid transparent;background-color: transparent;display: inline-block;vertical-align: middle;outline: 0;cursor: pointer;position:absolute;top:50%;right:0px;margin-top: -12px;width: 24px;height: 24px;}
 .search-wrapper .close-icon:after {content: "";display: block;width: 24px;height: 24px;position: absolute;z-index:1;right: 13px;top: 0;bottom: 0;margin: auto;padding: 2px;text-align: center;color: #000;font-weight: normal;font-size: 12px;cursor: pointer;-webkit-appearance: none;border-radius:10px;background:url("../img/ic_delete_input.png") no-repeat;background-size:cover}
@@ -219,10 +219,10 @@ input[type="text"].noline, input[type="password"].noline, input[type="search"].n
 /* ***** form ***** */
 input[type="text"],input[type="password"],input[type="search"],input[type="number"]{
   font-size:map-get($font-size, font_14);
-  width:100%; 
-  height:44px; 
-  padding:0 16px; 
-  border:1px solid #f5f5f5; 
+  width:100%;
+  height:44px;
+  padding:0 16px;
+  border:1px solid #f5f5f5;
   background: #f5f5f5;
   letter-spacing: -0.42px;
 }
@@ -231,7 +231,7 @@ input.err{
 }
 input::placeholder,
 textarea::placeholder {
-  color:rgba(0,0,0,0.25); 
+  color:rgba(0,0,0,0.25);
   font-weight: 400;
 }
 
@@ -289,7 +289,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .labelRdo .label{display: inline-block; line-height: 22px;}
 .labelRdo.err input.rdo + .ico {border:1px solid map-get($static_colors, danger) }
 .labelRdo.err + .InfoChK-resultTxt{padding-left:39px;}
-// radio 멀티 
+// radio 멀티
 .labelRdo.multi{padding-left:44px;}
 .labelRdo.multi .label{color:#000;font-size:map-get($font_size, font_15);}
 .labelRdo .sub_label{color:rgba(0,0,0,0.65);font-size:map-get($font_size, font_14); line-height: 20px; letter-spacing: -0.42px;margin-top:3px;}
@@ -331,7 +331,7 @@ input[type="radio"], input[type="checkbox"] {visibility:hidden; position:absolut
 .labelChk.input + .InfoChK-resultTxt{padding-left:40px;}
 
 
-// 체크박스2 관심사 선택 ( select ) 
+// 체크박스2 관심사 선택 ( select )
 .labelChk2{display:inline-block; margin-right:8px;}
 .labelChk2 input.chk + .label {display:inline-block; font-size:map-get($font_size, font_12); line-height: 34px; padding:0 16px; border-radius: 80px; background: #f5f5f5; cursor:pointer;}
 .labelChk2 input.chk[disabled] + .label {color: map-get($mono_colors, mono_25)}
@@ -719,7 +719,7 @@ select:required:invalid {
 .guideList li.guide_link{font-size:map-get($font_size, font_13);line-height: 21px;letter-spacing: -0.39px;font-weight: 500}
 .guideList li:not(.guide_link)::before{display: inline-block; position: absolute; top:8px; left:0; z-index: 2; content: ''; width:2px; height: 2px; background: rgba(0,0,0,0.5);}
 .guideList li.guide_link a{display:inline-block;padding-right:14px;position:relative}
-.guideList li.guide_link a .next_12{display:inline-block;content:'';width:12px;height:12px;margin-left:2px; } 
+.guideList li.guide_link a .next_12{display:inline-block;content:'';width:12px;height:12px;margin-left:2px; }
 
 
 /* toast popup */
@@ -784,7 +784,7 @@ select:required:invalid {
 .line01{width: 100%;  border-bottom: 1px solid map-get($line_colors, B85);}
 .txt-line{ margin-top: 40px; padding-top:0px; padding-bottom:6px;}
 .txt-line .my-op{font-weight:600;font-size:map-get($font-size, font_20);line-height: 38px; letter-spacing: -0.6px; color:rgba(0,0,0,0.8)}
-.txt-line .total-op{float: right; font-size:map-get($font-size, font_14); line-height: 38px;} // line-height op와 동일 
+.txt-line .total-op{float: right; font-size:map-get($font-size, font_14); line-height: 38px;} // line-height op와 동일
 .txt-line .total-val{font-weight:300; font-size:map-get($font-size, font_15);line-height: 38px; letter-spacing: -0.45px; margin-right:4px;}
 .txt-line .total-num{font-weight:400; font-size:map-get($font-size, font_14);line-height: 38px; letter-spacing: -0.42px;}
 .txt-line .ico.gray_next {cursor: pointer; margin-left:4px;}
@@ -810,12 +810,12 @@ select:required:invalid {
 .reply-list .info li+li{margin-left: 5px;}
 .reply-list .info li+li::before{display: inline-block; content:''; width:1px; height: 11px; vertical-align: middle; margin-right: 5px; background: #d9d9d9;}
 .rating_wrap .rating {border: none; display:inline;}
-.rating_wrap .rating > input { display: none; } 
+.rating_wrap .rating > input { display: none; }
 .rating_wrap .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
-.rating_wrap .rating > input:checked + label:hover, 
+.rating_wrap .rating > input:checked + label:hover,
 .rating_wrap .rating > input:checked ~ label:hover,
-.rating_wrap .rating > label:hover ~ input:checked ~ label, 
-.rating_wrap .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
+.rating_wrap .rating > label:hover ~ input:checked ~ label,
+.rating_wrap .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  }
 
 
 // Drawer SideNav
@@ -832,7 +832,7 @@ select:required:invalid {
 #drawer .drawer_header .setting .icon{width:32px;height:32px;background: url("../img/ic_setting_line_32.png") no-repeat; background-size: contain;display: inline-block;}
 #drawer .drawer_profile{  display:block;  width:100%;  height:90px;  font-size:map-get($font-size, font_20 );position: relative;padding:0px 30px 0px 60px;font-weight:500;}
 #drawer .drawer_profile .profile_img{width:48px;height:48px;position: absolute;top:0px;left:0px;line-height: 90px; }
-#drawer .drawer_profile .profile_img img{    position: relative;left: 50%;transform: translateX(-50%);height: 100%;} 
+#drawer .drawer_profile .profile_img img{    position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
 #drawer .drawer_profile .profile_name{line-height: 90px;}
 #drawer .drawer_profile .profile_name_main{padding-top:19px;font-size:map-get($font-size, font_22);letter-spacing: -0.66px;}
 #drawer .drawer_profile .profile_name_sub{font-size:map-get($font-size, font_12);letter-spacing: -0.12px;color:rgba(0,0,0,0.65);font-weight: 400;}
@@ -874,17 +874,17 @@ select:required:invalid {
 .keyboard_input .ratingtxt{font-weight:500;letter-spacing: -0.42px;font-size:map-get($font-size, font_14);}
 .keyboard_input .rating_wrap{line-height: 32px;padding:14px 0px}
 .keyboard_input .rating {border: none;float: right;}
-.keyboard_input .rating > input { display: none; } 
+.keyboard_input .rating > input { display: none; }
 .keyboard_input .rating > label { float: right; width:32px;height:32px;  background: url("../img/ic_rate_solid_grey_32.png") no-repeat; background-size: cover;}
-.keyboard_input .rating > input:checked + label:hover, 
+.keyboard_input .rating > input:checked + label:hover,
 .keyboard_input .rating > input:checked ~ label:hover,
-.keyboard_input .rating > label:hover ~ input:checked ~ label, 
-.keyboard_input .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  } 
+.keyboard_input .rating > label:hover ~ input:checked ~ label,
+.keyboard_input .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  }
 .keyboard_input .rating_wrap + .inputbox,
 .keyboard_input .open_wrap + .inputbox,
 .keyboard_input .bookmark_wrap + .inputbox{margin-top:0px;}
 
-// BottomSheet 
+// BottomSheet
 // #bottomsheet_wrap{position:fixed;top:0px;left:0px;width:100%;height:100%;}
 .sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
 #sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
@@ -931,7 +931,7 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 
 // type box (공통요청) 기존틀과 다를 시 앞에 클래스 붙여서 유연하게 사용
 .type_box{clear:both;border-top:1px solid #999;border-bottom:1px solid #999;background:#f2f3f7;padding: 10px 39px 10px 152px;position: relative;margin-bottom:26px;margin-top:14px;}
-.type_box.type_1 { padding: 24px 34px; }  
+.type_box.type_1 { padding: 24px 34px; }
 .type_box .info{position:absolute;top: 50%;transform: translateY(-50%);}
 .type_box .info.type1{left:30px;}
 .type_box .info.type2{left:38px;}
@@ -1014,38 +1014,38 @@ utilities classes
 .position_absolute { position:absolute; }
 
 /*flex*/
-.d_flex { 
-  display: -webkit-flex; /* Safari */  
-  display: flex;  
-  
-  &.justify_content_center { 
+.d_flex {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+
+  &.justify_content_center {
     -webkit-justify-content: center;
-    justify-content: center; 
+    justify-content: center;
   }
-  &.justify_content_center { 
+  &.justify_content_center {
     -webkit-justify-content: center;
-    justify-content: center; 
+    justify-content: center;
   }
-  &.align_items_center {   
+  &.align_items_center {
     -webkit-align-items: center; /* Safari 7.0+ */
-    align-items: center; 
+    align-items: center;
   }
-  &.align_items_end {   
+  &.align_items_end {
     -webkit-align-items: flex-end; /* Safari 7.0+ */
     align-items: flex-end;
   }
-  .ml_auto { 
+  .ml_auto {
     margin-left:auto !important;
   }
-  .mr_auto { 
+  .mr_auto {
     margin-right:auto !important;
   }
-  .mt_auto { 
+  .mt_auto {
     margin-top:auto !important;
-  }  
+  }
 
-  & .flex_1 { 
-    flex-grow:1 
+  & .flex_1 {
+    flex-grow:1
   }
 }
 
@@ -1067,7 +1067,7 @@ utilities classes
 
 /*block*/
 .d-block { display:block !important; }
-.text-truncate { 
+.text-truncate {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
