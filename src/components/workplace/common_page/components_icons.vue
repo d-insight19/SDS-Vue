@@ -283,7 +283,14 @@
             </li>
             <li>
               <p class="ico accordion_down"></p>
+              
             </li>
+            <li>
+              <p class="icon accordion_arrow_down"></p>             
+            </li> 
+            <li style="background-color:black;">
+              <p class="icon accordion_arrow_up_white"></p>             
+            </li>                        
             <li>
               <p class="ico accordion_up"></p>
             </li>
