@@ -11,7 +11,7 @@
                 <p class="header_text font_18">설문 문항 설정</p><button type="button" class="btn16 color_clr2">저장</button>
             </div>
             <!-- //header -->
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                         <p class="font_14 mono_65 mb16">설문 유형과 문항을 자유롭게 수정할 수 있습니다. 설문에 사용할 항목을 선택하고 확인 버튼을 누르면 적용이 완료됩니다.</p>
