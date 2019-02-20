@@ -1717,6 +1717,7 @@ label.rdo .label{position: relative;}
 #container.courseware.study_lo_viewer .download_detail.wh .mono_65 {color:#fff !important}
 */
 
+/*Sim*/
 //study_lo_mp4_script 학습창영역 스크립트타입
 .mp4Script_optionBlock { 
     z-index: 100; left:0; right:0; 
@@ -1743,9 +1744,7 @@ label.rdo .label{position: relative;}
  }
 .studystatus_label_tit_18 { font-size: map-get($font-size , font_16) !important; }
 
-.flex_1 { flex-grow:1 }
-
-/*stydy reminder*/
+/*study reminder*/
 .reminderListBlock { margin-top:36px; }
 .reminderList {
     li { 
@@ -1766,6 +1765,166 @@ label.rdo .label{position: relative;}
     margin-right: 6px;
     background: #d9d9d9;
 }
+
+/*study list*/
+.icon { display:inline-block; background-repeat:no-repeat; background-position: 50% 50%; background-size: contain; }
+.icon.accordion_arrow { width:20px; height:20px; background-image: url("../img/ic_accordion_arr_line_20_down.png"); }
+
+.studyList {
+    .edit_child_frst {
+        display:none;
+    }  
+
+    .text_wrap {
+        background-color: #fff;
+        border: 1px solid #E3E3E3;
+        position: relative;
+        width: 100%;
+        margin-top: 12px;        
+        display: block; 
+        padding: 32px 20px 22px 23px;
+    }
+    .text_wrap .info li:nth-child(1) .ico {
+        margin-right: 5px;
+        vertical-align: -2px;
+    }
+    .icon_txt {
+        @extend .color_clr3;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }    
+    .title {
+        font-weight: 500;
+        width: 100% !important;
+        margin-top: 0px;
+        white-space: normal !important;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        min-height: 28px;
+        font-size: 1rem;
+        line-height: 22px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .info {
+        margin-top: 5px;
+        display: inline-block;
+        font-size: 0.8125rem;
+        letter-spacing: -0.13px;
+        vertical-align: unset;
+        color: #000;
+    }
+    .info li {
+        display: inline-block;
+        font-size: 0.8125rem;
+        letter-spacing: -0.13px;
+        vertical-align: unset;
+    }
+    .info li + li {
+        margin-left: 6px;
+    }
+    .info li + li::before {
+        display: inline-block;
+        content: '';
+        width: 1px;
+        height: 11px;
+        vertical-align: middle;
+        margin-right: 6px;
+        background: #d9d9d9;
+    }    
+    .accordion_arrow {
+        position: absolute;
+        right: 18px;
+        bottom:18px;
+    }   
+    .sub_content_title_col {
+        padding-left:38px;
+    }
+    .sub_content_title {
+        font-size: 0.875rem;
+        padding: 15px 21px;
+        font-weight: 600;
+        border-left: 1px solid #E3E3E3;
+        border-right: 1px solid #E3E3E3;            
+    }   
+    .sub_download_details {
+        margin-top: 0px;
+        padding: 20px 40px 20px 16px;
+        border: 1px solid;
+        border-top: 1px solid #E3E3E3;        
+        border-bottom: none;
+    }
+    .sub_content {
+        > li {
+            &:last-child {
+                .sub_download_details {
+                    border-bottom: 1px solid;
+                }              
+            } 
+        }
+    }   
+
+    .open {
+        .text_wrap { 
+            border:1px solid;
+            @extend .clr1;
+        }
+        .icon_txt {
+            @extend .color_clr6;
+        }
+        .text {
+            color:white !important;
+        }
+        .time.white {
+            width:16px;
+            height:16px;
+            background: url("../img/ic_time_line_wh_16.png") no-repeat; 
+        }    
+        .check_14.white{
+            width:14px; 
+            height:14px; 
+            background: url("../img/ic_complete_check_solid_wh_14.png"); 
+        }    
+        .icon.accordion_arrow { 
+            width:20px; 
+            height:20px; 
+            background-image: url("../img/ic_accordion_arr_bold_wh_20_up.png"); 
+        }  
+    
+        .sub_content {
+            .download_detail {
+                border:none !important;
+                &:hover,
+                &.on {
+                    @extend .clr3; 
+                }
+            }
+        }
+    } 
+}
+
+.editMode { //Study_0218studylist_download_01
+    .edit_parents {
+        display: -webkit-flex; /* Safari */  
+        display: flex;  
+        -webkit-align-items: center; /* Safari 7.0+ */
+        align-items: center;         
+    }
+
+    .edit_child {
+        -webkit-align-items: center; /* Safari 7.0+ */
+        align-items: center; 
+    }   
+    .edit_child_frst {
+        display:block;
+    }    
+    .edit_child_snd {
+        flex-grow:1 
+    }
+}
+
+.chip_xs { padding:2px 8px; font-size: map-get($font-size , font_11); line-height:18px; border-radius:10px; color:white; }
 
 #container.voice .record_box{background:#f2f3f7; padding:24px 34px;}
 #container.voice .font_15{font-size: map-get($font-size , font_15);letter-spacing: -0.045em;color:rgba(0,0,0,0.8)}

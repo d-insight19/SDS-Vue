@@ -201,7 +201,8 @@
 .ico.check_14.wh{width:14px; height:14px; background: url("../img/ic_complete_check_solid_wh_14.png") no-repeat; background-size: cover;}
 .ico.download_24{width:24px; height:24px; background: url("../img/ic_download_line_24.png") no-repeat; background-size: cover;}
 .ico.complete_14{width:14px; height:14px; background: url("../img/ic_complete_blank_solid_14.png") no-repeat; background-size: cover;}
-.ico.lock_16{width:16px; height:16px; background: url("../img/ic_lock_solid_16.png") no-repeat; background-size: cover;}
+.ico.lock_16,
+.ico.locked_16 {width:16px; height:16px; background: url("../img/ic_lock_solid_16.png") no-repeat; background-size: cover;}
 .ico.ongoing_16{width:14px; height:14px; background: url("../img/ic_ongoing_solid_blue_14.png") no-repeat; background-size: cover;}
 
 .ico.atorm_photo_edit_solid_16{width:16px; height:16px; background: url("../img/ic_atorm_photo_edit_solid.png") no-repeat; background-size: cover;}

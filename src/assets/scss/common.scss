@@ -1032,11 +1032,19 @@ utilities classes
     -webkit-align-items: flex-end; /* Safari 7.0+ */
     align-items: flex-end;
   }
-  & .ml_auto { margin-left:auto !important;}
-  & .mr_auto { margin-right:auto !important;}
-  & .mt_auto { margin-top:auto !important;}  
+  .ml_auto { 
+    margin-left:auto !important;
+  }
+  .mr_auto { 
+    margin-right:auto !important;
+  }
+  .mt_auto { 
+    margin-top:auto !important;
+  }  
 
-  & .flex_1 { flex-grow:1 }
+  & .flex_1 { 
+    flex-grow:1 
+  }
 }
 
 /*font_size*/
@@ -1066,6 +1074,10 @@ utilities classes
 /*width*/
 .w_full { width:100%; }
 .w_min_0 { min-width:0;}
+
+/* badge */
+.badge { border-radius:10px; color:white; }
+.chip_xs { padding:2px 8px; font-size: map-get($font-size , font_11); line-height:18px; }
 
 /* 페이저 */
 .pager_list {display:table; margin:5px auto;}

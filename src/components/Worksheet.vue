@@ -5142,14 +5142,9 @@
         <td>　</td>
         <td class="textL">05.Study_02.18.studylist_download</td>
         <td>
-          <!--
-          <router-link :to="{ name: 'Study_0218studylist_download_01' }">
-            Study_0218studylist_download_01
-          </router-link> <br />
-          <router-link :to="{ name: 'Study_0218studylist_download_02' }">
-            Study_0218studylist_download_02
-          </router-link>
-          -->
+          <router-link :to="{ name: 'Study_0218studylist_download' }">
+            Study_0218studylist_download
+          </router-link> 
         </td>
         <td></td>
       </tr>

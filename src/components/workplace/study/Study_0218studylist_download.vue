@@ -3,13 +3,13 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery courseware pd70">   
+      <div id="container" class="mediaquery courseware pd70" style="background:#f2f2f2">   
         
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">          
             <div class="header_inner line1 ">
                 <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
-                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
+                <p class="header_text multiline line2 font_15"></p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
@@ -229,157 +229,33 @@
         </div>        
 
         <div id="content" class="etc" >
-        
-          <div class="cell">
-            <div class="inner pt0">
-                
-                <p class="label-tit-18 studystatus_label_tit_18"><span class="ico ic_qr_blue_24"></span> <span class="color_clr2">QR 출석하기</span></p>
-
-                <div class="type_box type_1 w-full">
-                    <dl>
-                        <dt>수료상태</dt> 
-                        <dd>미수료</dd>
-                    </dl> 
-                    <dl>
-                        <dt>총점</dt>
-                        <dd>75/100점</dd>
-                    </dl> 
-                    <dl>
-                        <dt>진도율</dt>
-                        <dd>30%</dd>
-                    </dl>
-                </div> 
-
-                <div class="singleLineGroupBlock">
-                    <ul class="singleLineGroup">
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"> <span class="ico ic_pen_line_24"></span>과제</div> 
-                                <div>1/3</div>
-                                <div><span class="ico next_16"></span></div>
-                            </a>
-                        </li>
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico mark_line"></span>중간평가</div> 
-                                <div>제출완료</div> 
-                                <div><span class="ico next_16 ml_auto"></span></div>
-                            </a>
-                        </li>  
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico mark_line"></span>최종평가</div> 
-                                <div>제출완료</div> 
-                                <div><span class="ico next_16 ml_auto"></span></div>
-                            </a>
-                        </li>  
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico ic_attendace_line_24"></span>출석율</div> 
-                                <div>제출완료</div> 
-                                <div><span class="ico next_16 ml_auto"></span></div>
-                            </a>
-                        </li> 
-                        <li class="singleLineGroup_item">
-                            <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico ic_badge_line_bk_24"></span> 스코어</div> 
-                                <div>제출완료</div> 
-                                <div><span class="ico next_16 ml_auto"></span></div>
-                            </a>
-                        </li>                                                        
-                    </ul>
+            <div class="cell">
+                <div class="downloadCondition ml-18 mr-18">
+                    <div class="w48p fl">
+                        <p class="font_12 mono_50 fwb">저장공간 사용량</p>
+                        <p class="font_13 mono_65 fwb">24% <span class="font_11 mono_50 fwr">(123.21 GB/512.51 GB)</span></p>
+                    </div>
+                    <div class="w48p fr">
+                        <p class="font_12 mono_50 fwb">다운로드한 강의</p>
+                        <p class="font_13 mono_65 fwb">978.21 MB</p>
+                    </div>
                 </div>
-
-                <p class="label-tit-18 mt26">수료기준</p>
-                <p calass="font_size_xs mono_80">진도율 80% 이상, 모든 평가항목 참여, 총점 80점 이상되어야 수료 가능합니다.</p>
-            
-                <div class="scroll-x">
-                <table class="table detail_table">
-                    <thead>
-                        <tr>
-                        <th></th> 
-                        <th>가중치</th> 
-                        <th>과락기준</th>
-                        <th>학습현황</th> 
-                        <th>취득점수</th> 
-                        <th>가중치</th> 
-                        <th>과락기준</th>
-                        <th>학습현황</th>                                
-                        </tr>
-                    </thead> 
-                    <tbody>
-                        <tr>
-                        <td class="">진도율</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>   
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                    
-                        </tr> 
-                        <tr>
-                        <td>과제</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>  
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                       
-                        </tr>   
-                        <tr>
-                        <td>중간평가</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                        </tr> 
-                        <tr>
-                        <td>최종평가</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>  
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                       
-                        </tr> 
-                        <tr>
-                        <td>출석율</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                        </tr>
-                        <tr>
-                        <td class="font_weight_base">스코어</td> 
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">20%</td>
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">0%</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                        </tr>                                                                       
-                    </tbody>
-                </table>  
-                </div>  
-
-                <ul class="guideList mt15">
-                <li>평가 항목의 점수를 가중치만큼 환성하여 합산한 점수입니다.</li>
-                <li>학습진행 중에는 학습한 분량 및 평가항목 참여에 따라 취득점수가 
-                계속해서 변화되므로 평가항목을 모두 완료 후,정확한 수료여부를
-                확인 할 수 있습니다.</li>                      
-                </ul>
             </div>
-          </div>
+
+            <div class="cell">
+                <div class="filterArea ml-18 mr-18">
+                    <p class="tar">
+                        <button class="font_14 mono_65 fwr" @click="btnCancel">취소</button>
+                        <button class="font_14 color_clr2 fwr ml10" @click="btnEdit">다운로드</button> <span class="badge chip_xs ml6 clr2">12</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div class="inner pt0">
+                    <study-list-edit :class="{'editMode' : editFlag}"></study-list-edit>            
+                </div>
+            </div>
 
         </div>
             
@@ -417,83 +293,102 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
+//Study_list 
+import studyListEdit from './Study_list_edit.vue'
+
 export default {
-  name: 'components_flowplayer',
-  data () {
-    return {
-        active : false,
-        scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
-        detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
-        relatedVideoList: [
-            {title: '자바스크립트 개발 프로세스 기초'},
-            {title: '모바일 게임 UI 디자인 실무'},
-            {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
-            {title: '모바일 게임 UI 디자인 실무'},
-            {title: '자바스크립트 개발 프로세스 기초1'},
-            {title: '자바스크립트 개발 프로세스 기초2'},
-            {title: '자바스크립트 개발 프로세스 기초3'}
-        ],
-       option: {
-        loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
-        targetId: "contents", //div target Id
-        // sources: [
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
-        // ],
-        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
-        sources: [
-            { type: 'video/mp4', src: './static/movie/m010102.mp4'},
-            { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
-            { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
-            { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
-        ],
-        src: './static/movie/m010102.mp4', //동영상 src
-        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
-        title: "Flowplayer", //콘텐츠 제목
-        isSpeeds: true, //동영상 배속 사용여부
-        speeds: [1, 2, 3], //동영상 배속 설정 값
-        skinClass: "flowplayer fp-fat", //동영상 스킨
-        isMute: true, //음소거 사용여부
-        isFullscreen: true, //전체 화면
-        isShare: true, //공유 여부
-        isAutoplay: false, //자동실행여부
-        seekTime: 30, //콘텐츠 이어학습하기 시간 초
-        isPorg: true, //콘텐츠 진도값 저장 여부
-        logSaveTime: 5, //콘텐츠 진도 로그 저장 주기 (초)
-        replayTime: [0, 0], //구간반속 구간 [시작, 끝]
-        qualities: ["160p", "260p", "530p", "720p"], //콘텐츠 화질 설정 값
-        defaultQuality: "260p", //콘텐츠 화질 초기 값
-        subtitles: [
-          {
-            "default": true, // note the quotes around "default"!
-            kind: "subtitles",
-            srclang: "en",
-            label: "English",
-            // src: "../../html/bc_smart_en.vtt"
-          },
-          {
-            "default": true, // note the quotes around "default"!
-            kind: "subtitles",
-            srclang: "ko",
-            label: "Korea",
-            // src: "../../html/bc_smart_ko.vtt"
-          }
-        ], //자막,
-        noseek: true //timeline no
-      }
-    }
-  },
-  methods: {
-    detail_toggle () {        
-        this.detail_show = !this.detail_show;
+    name: 'components_flowplayer',
+ 
+    components: { //Study_list 
+		'study-list-eidt':studyListEdit
+	},  
+
+    data () {
+        return {
+            active : false,
+            scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
+            detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
+            relatedVideoList: [
+                {title: '자바스크립트 개발 프로세스 기초'},
+                {title: '모바일 게임 UI 디자인 실무'},
+                {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
+                {title: '모바일 게임 UI 디자인 실무'},
+                {title: '자바스크립트 개발 프로세스 기초1'},
+                {title: '자바스크립트 개발 프로세스 기초2'},
+                {title: '자바스크립트 개발 프로세스 기초3'}
+            ],
+            option: {
+                loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
+                targetId: "contents", //div target Id
+                // sources: [
+                //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
+                //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
+                //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
+                //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
+                // ],
+                // src: require('@/assets/movie/m010102.mp4'), //동영상 src
+                sources: [
+                    { type: 'video/mp4', src: './static/movie/m010102.mp4'},
+                    { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
+                    { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
+                    { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
+                ],
+                src: './static/movie/m010102.mp4', //동영상 src
+                // src: require('@/assets/movie/m010102.mp4'), //동영상 src
+                title: "Flowplayer", //콘텐츠 제목
+                isSpeeds: true, //동영상 배속 사용여부
+                speeds: [1, 2, 3], //동영상 배속 설정 값
+                skinClass: "flowplayer fp-fat", //동영상 스킨
+                isMute: true, //음소거 사용여부
+                isFullscreen: true, //전체 화면
+                isShare: true, //공유 여부
+                isAutoplay: false, //자동실행여부
+                seekTime: 30, //콘텐츠 이어학습하기 시간 초
+                isPorg: true, //콘텐츠 진도값 저장 여부
+                logSaveTime: 5, //콘텐츠 진도 로그 저장 주기 (초)
+                replayTime: [0, 0], //구간반속 구간 [시작, 끝]
+                qualities: ["160p", "260p", "530p", "720p"], //콘텐츠 화질 설정 값
+                defaultQuality: "260p", //콘텐츠 화질 초기 값
+                subtitles: [
+                {
+                    "default": true, // note the quotes around "default"!
+                    kind: "subtitles",
+                    srclang: "en",
+                    label: "English",
+                    // src: "../../html/bc_smart_en.vtt"
+                },
+                {
+                    "default": true, // note the quotes around "default"!
+                    kind: "subtitles",
+                    srclang: "ko",
+                    label: "Korea",
+                    // src: "../../html/bc_smart_ko.vtt"
+                }
+                ], //자막,
+                noseek: true //timeline no
+            },
+
+            editFlag: false, //Study_list   
+        }
     },
-    active_el () {
-        this.active = !this.active
-    }
-  },
-  mounted () {
+
+    methods: {
+        detail_toggle () {  //Study_list      
+            this.detail_show = !this.detail_show;
+        },
+        active_el () { //Study_list 
+            this.active = !this.active
+        },
+
+        btnEdit: function() { //Study_list 
+            this.editFlag = true;
+        }, 
+        btnCancel: function() { //Study_list 
+            this.editFlag = false;
+        }    
+    },
+
+    mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
         
@@ -544,7 +439,7 @@ export default {
             });
         }
 
-        
+            
         $('.half_left').click(function(){
             console.error("왼쪽");
         });
@@ -623,6 +518,6 @@ export default {
                 }
             });
         }                                        
-  }
+    }
 }
 </script>

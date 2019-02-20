@@ -174,9 +174,10 @@ import Studystudystatusassessmentapplyresult from '~workplace/study/Study_studys
 import Studystudystatusassessmentwindow01 from '~workplace/study/Study_studystatus_assessment_window_01'
 import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystatus_assessment_window_02'
 import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
+import StudyList from '~workplace/study/Study_list'
+import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
-import Study0218studylistdownload01 from '~workplace/study/Study_0218studylist_download_01'
-import Study0218studylistdownload02 from '~workplace/study/Study_0218studylist_download_02'
+import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
 import Studyquestion from '~workplace/study/Study_studyquestion'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
@@ -1594,19 +1595,24 @@ var rootRoutes = [
     component: Studystudystatusassessmentresultanalysis
   },
   {
+    path: '/Study_list',
+    name: 'Study_list',
+    component: StudyList
+  },  
+  {
+    path: '/Study_list_edit',
+    name: 'Study_list_edit',
+    component: StudyListEdit
+  },
+  {
     path: '/Study_0217studylist',
     name: 'Study_0217studylist',
     component: Study0217studylist
   },
   {
-    path: '/Study_0218studylist_download_01',
-    name: 'Study_0218studylist_download_01',
-    component: Study0218studylistdownload01
-  },
-  {
-    path: '/Study_0218studylist_download_02',
-    name: 'Study_0218studylist_download_02',
-    component: Study0218studylistdownload02
+    path: '/Study_0218studylist_download',
+    name: 'Study_0218studylist_download',
+    component: Study0218studylistdownload
   },
   {
     path: '/Study_studyquestion',
