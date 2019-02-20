@@ -14,10 +14,10 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="list">
+        <div id="content" class="normal">
 
           <div class="cell">
-            <div class="inner">
+            <div class="inner mb40">
                 <ul class="thumList type4">
                     <li>
                         <div class="thum">

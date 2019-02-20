@@ -46,7 +46,7 @@
 
 <script>
 export default {
-  name: 'Eduperson_profile',
+  name: 'Eduperson_drawer_profile',
   /* vue lifecycle */
   created () {
   },

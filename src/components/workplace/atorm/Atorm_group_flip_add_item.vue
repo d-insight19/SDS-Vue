@@ -34,7 +34,7 @@
             <div class="inner pdb20">
 
                 <ul class="confirm_item_detail">
-                    <li @click="toggleMenu($event)">
+                    <li class="open" @click="toggleMenu($event)">
                         <span>사전학습</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pdb27 pt0">
@@ -92,32 +92,6 @@
                                                 <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
                                             </div>
                                             <div class="sub_content">
-                                                <!-- list add work -->
-                                                <ul class="multiList type2">
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico poll_line_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">데이터와 배열 활용하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico poll_line_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">실행 순서 제어하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <!-- //list add work -->
                                                 <div class="sub_content_add">
                                                     <span class="chip clr2 font_14">+ 레포트 추가</span>
                                                 </div>
@@ -152,7 +126,6 @@
                                                             <slp-button class="xxxs mono_80">추가</slp-button>
                                                         </li>
                                                     </ul>
-
                                                 </div>
                                             </div>                                        
                                         </li>                                       
@@ -194,11 +167,11 @@
                                         </li>
                                         <li class="open">
                                             <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
+                                                <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
                                             </div>
                                             <div class="sub_content">
                                                 <div class="sub_content_add">
-                                                    <span class="chip clr2 font_14">+ 레포트 추가</span>
+                                                    <span class="chip clr2 font_14">+ 아이템 추가</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -243,7 +216,7 @@
                         </div>
                     </li>
 
-                    <li class="open" @click="toggleMenu($event)">
+                    <li @click="toggleMenu($event)">
                         <span>사후학습</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pdb27 pt0">

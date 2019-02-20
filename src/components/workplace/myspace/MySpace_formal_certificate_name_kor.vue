@@ -24,9 +24,9 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="list">
+        <div id="content" class="normal">
         
-          <div class="cell">
+          <div class="cell mb40">
             <div class="inner">
               <h2 class="h-tit2 fwb600 mb5">국문 이름 입력</h2>
               <p class="font_14 mono_65 mb25">수료증에 표시될 이름을 입력해주세요.</p>

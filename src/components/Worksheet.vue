@@ -2189,8 +2189,24 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.01._e-learning_complete</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_e-learning_complete_1' }">
+            Atorm_e-learning_complete_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_complete_2' }">
+            Atorm_e-learning_complete_2
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_complete_3' }">
+            Atorm_e-learning_complete_3
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_complete_4' }">
+            Atorm_e-learning_complete_4
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_e-learning_complete_5' }">
+            Atorm_e-learning_complete_5
           </router-link>
         </td>
         <td></td>
@@ -2226,8 +2242,11 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_material</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_material' }">
+            Atorm_group_flip_material
+          </router-link>,
+           <router-link :to="{ name: 'Atorm_group_flip_material2' }">
+            Atorm_group_flip_material2
           </router-link>
         </td>
         <td></td>
@@ -2241,10 +2260,10 @@
         <td>　</td>
         <td>아이템 추가</td>
         <td>　</td>
-        <td class="textL">07.ATORM_07.02.02._group/flip_add    item</td>
+        <td class="textL">07.ATORM_07.02.02._group/flip_add item</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_add_item' }">
+            Atorm_group_flip_add_item
           </router-link>
         </td>
         <td></td>
@@ -2258,10 +2277,10 @@
         <td>　</td>
         <td>레포트 추가</td>
         <td>　</td>
-        <td class="textL">07.ATORM_07.02.02._group/flip_add    work</td>
+        <td class="textL">07.ATORM_07.02.02._group/flip_add work</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_add_work' }">
+            Atorm_group_flip_add_work
           </router-link>
         </td>
         <td></td>
@@ -2275,10 +2294,10 @@
         <td>　</td>
         <td>시험 추가</td>
         <td>　</td>
-        <td class="textL">07.ATORM_07.02.02._group/flip_add    test</td>
+        <td class="textL">07.ATORM_07.02.02._group/flip_add test</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_add_test' }">
+            Atorm_group_flip_add_test
           </router-link>
         </td>
         <td></td>
@@ -2294,8 +2313,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.02.02._group/flip_pre-material</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_group_flip_pre_material' }">
+            Atorm_group_flip_pre_material
           </router-link>
         </td>
         <td></td>
@@ -2315,8 +2334,8 @@
             Atorm_group_flip_post_material
           </router-link>
           <br/>
-          <router-link :to="{ name: 'Atorm_group_flip_post_material_02' }">
-            Atorm_group_flip_post_material_02
+          <router-link :to="{ name: 'Atorm_group_flip_post_material2' }">
+            Atorm_group_flip_post_material2
           </router-link>
         </td>
         <td></td>
@@ -2334,16 +2353,10 @@
         <td>
           <router-link :to="{ name: 'Atorm_group_flip_criteria' }">
             Atorm_group_flip_criteria
+          </router-link>,
+          <router-link :to="{ name: 'Atorm_group_flip_criteria2' }">
+            Atorm_group_flip_criteria2
           </router-link>
-          <br/>
-          <router-link :to="{ name: 'Atorm_group_flip_criteria_02' }">
-            Atorm_group_flip_criteria_02
-          </router-link>
-          <br/>
-          <router-link :to="{ name: 'Atorm_group_flip_criteria_03' }">
-            Atorm_group_flip_criteria_03
-          </router-link>
-          <br/>
         </td>
         <td></td>
       </tr>
@@ -10923,8 +10936,12 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.07.02._Item factory_quiz</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Atorm_itemfactory_quiz_1' }">
+            Atorm_itemfactory_quiz_1
+          </router-link>
+          ,
+          <router-link :to="{ name: 'Atorm_itemfactory_quiz_2' }">
+            Atorm_itemfactory_quiz_2
           </router-link>
         </td>
         <td></td>

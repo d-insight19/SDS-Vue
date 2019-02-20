@@ -638,6 +638,11 @@ import AtormELearningCriteria2 from '~workplace/atorm/Atorm_e-learning_criteria_
 import AtormELearningCriteriaSurvey from '~workplace/atorm/Atorm_e-learning_criteria_survey'
 import AtormELearningComplete1 from '~workplace/atorm/Atorm_e-learning_complete_1'
 import AtormELearningComplete2 from '~workplace/atorm/Atorm_e-learning_complete_2'
+import AtormELearningComplete3 from '~workplace/atorm/Atorm_e-learning_complete_3'
+import AtormELearningComplete4 from '~workplace/atorm/Atorm_e-learning_complete_4'
+import AtormELearningComplete5 from '~workplace/atorm/Atorm_e-learning_complete_5'
+import AtormItemfactoryQuiz1 from '~workplace/atorm/Atorm_itemfactory_quiz_1'
+import AtormItemfactoryQuiz2 from '~workplace/atorm/Atorm_itemfactory_quiz_2'
 import Atormstatusinfo from '~workplace/atorm/Atorm_status_info'
 import Atormgroupflipmaterialreport1 from '~workplace/atorm/Atorm_group_flip_material_report1'
 import Atormgroupflipmaterialreport2 from '~workplace/atorm/Atorm_group_flip_material_report2'
@@ -648,6 +653,20 @@ import Atormgroupflipcompleteflip from '~workplace/atorm/Atorm_group_flip_comple
 import Atormgroupflipcompleteflip2 from '~workplace/atorm/Atorm_group_flip_complete_flip2'
 import Atormgroupflipcompleteflip3 from '~workplace/atorm/Atorm_group_flip_complete_flip3'
 import Atormgroupflipcompleteflip4 from '~workplace/atorm/Atorm_group_flip_complete_flip4'
+import Atormgroupflipprematerial from '~workplace/atorm/Atorm_group_flip_pre_material'
+import Atormgroupflipadditem from '~workplace/atorm/Atorm_group_flip_add_item'
+import Atormgroupflipaddwork from '~workplace/atorm/Atorm_group_flip_add_work'
+import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
+import AtormGroupFlipComplete2 from '~workplace/atorm/Atorm_group_flip_complete_02'
+import AtormGroupFlipComplete3 from '~workplace/atorm/Atorm_group_flip_complete_03'
+import AtormGroupFlipComplete4 from '~workplace/atorm/Atorm_group_flip_complete_04'
+import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
+import AtormGroupFlipCriteria2 from '~workplace/atorm/Atorm_group_flip_criteria2'
+import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
+import AtormGroupFlipPostMaterial2 from '~workplace/atorm/Atorm_group_flip_post_material2'
+import Atormgroupflipaddtest from '~workplace/atorm/Atorm_group_flip_add_test'
+import Atormgroupflipmaterial from '~workplace/atorm/Atorm_group_flip_material'
+import Atormgroupflipmaterial2 from '~workplace/atorm/Atorm_group_flip_material2'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -661,19 +680,8 @@ import ComponentsTestPage8 from '~workplace/common_page/components_radiobutton_s
 import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
 
-// import AtormStatusDetailsRate from '~workplace/atorm/Atorm_status_details_rate'
-// import AtormStatusDetails from '~workplace/atorm/Atorm_status_details'
-import AtormGroupFlipComplete from '~workplace/atorm/Atorm_group_flip_complete'
-import AtormGroupFlipCriteria from '~workplace/atorm/Atorm_group_flip_criteria'
-// import AtormGroupFlipComplete02 from '~workplace/atorm/Atorm_group_flip_complete_02'
-import AtormGroupFlipPostMaterial from '~workplace/atorm/Atorm_group_flip_post_material'
 // 1번 영역
 var rootRoutes = [
-  {
-    path: '/Atorm_group_flip_post_material',
-    name: 'Atorm_group_flip_post_material',
-    component: AtormGroupFlipPostMaterial
-  },
   {
     path: '*',
     name: 'worksheet',
@@ -3574,6 +3582,31 @@ var rootRoutes = [
     component: AtormELearningComplete2
   },
   {
+    path: '/Atorm_e-learning_complete_3',
+    name: 'Atorm_e-learning_complete_3',
+    component: AtormELearningComplete3
+  },
+  {
+    path: '/Atorm_e-learning_complete_4',
+    name: 'Atorm_e-learning_complete_4',
+    component: AtormELearningComplete4
+  },
+  {
+    path: '/Atorm_e-learning_complete_5',
+    name: 'Atorm_e-learning_complete_5',
+    component: AtormELearningComplete5
+  },
+  {
+    path: '/Atorm_itemfactory_quiz_1',
+    name: 'Atorm_itemfactory_quiz_1',
+    component: AtormItemfactoryQuiz1
+  },
+  {
+    path: '/Atorm_itemfactory_quiz_2',
+    name: 'Atorm_itemfactory_quiz_2',
+    component: AtormItemfactoryQuiz2
+  },
+  {
     path: '/Atorm_status_info',
     name: 'Atorm_status_info',
     component: Atormstatusinfo
@@ -3604,9 +3637,29 @@ var rootRoutes = [
     component: AtormGroupFlipComplete
   },
   {
+    path: '/Atorm_group_flip_complete_02',
+    name: 'Atorm_group_flip_complete_02',
+    component: AtormGroupFlipComplete2
+  },
+  {
+    path: '/Atorm_group_flip_complete_03',
+    name: 'Atorm_group_flip_complete_03',
+    component: AtormGroupFlipComplete3
+  },
+  {
+    path: '/Atorm_group_flip_complete_04',
+    name: 'Atorm_group_flip_complete_04',
+    component: AtormGroupFlipComplete4
+  },
+  {
     path: '/Atorm_group_flip_criteria',
     name: 'Atorm_group_flip_criteria',
     component: AtormGroupFlipCriteria
+  },
+  {
+    path: '/Atorm_group_flip_criteria2',
+    name: 'Atorm_group_flip_criteria2',
+    component: AtormGroupFlipCriteria2
   },
   {
     path: '/Atorm_group_flip_criteria_flip',
@@ -3632,6 +3685,46 @@ var rootRoutes = [
     path: '/Atorm_group_flip_complete_flip4',
     name: 'Atorm_group_flip_complete_flip4',
     component: Atormgroupflipcompleteflip4
+  },
+  {
+    path: '/Atorm_group_flip_pre_material',
+    name: 'Atorm_group_flip_pre_material',
+    component: Atormgroupflipprematerial
+  },
+  {
+    path: '/Atorm_group_flip_add_item',
+    name: 'Atorm_group_flip_add_item',
+    component: Atormgroupflipadditem
+  },
+  {
+    path: '/Atorm_group_flip_add_work',
+    name: 'Atorm_group_flip_add_work',
+    component: Atormgroupflipaddwork
+  },
+  {
+    path: '/Atorm_group_flip_post_material',
+    name: 'Atorm_group_flip_post_material',
+    component: AtormGroupFlipPostMaterial
+  },
+  {
+    path: '/Atorm_group_flip_post_material2',
+    name: 'Atorm_group_flip_post_material2',
+    component: AtormGroupFlipPostMaterial2
+  },
+  {
+    path: '/Atorm_group_flip_add_test',
+    name: 'Atorm_group_flip_add_test',
+    component: Atormgroupflipaddtest
+  },
+  {
+    path: '/Atorm_group_flip_material',
+    name: 'Atorm_group_flip_material',
+    component: Atormgroupflipmaterial
+  },
+  {
+    path: '/Atorm_group_flip_material2',
+    name: 'Atorm_group_flip_material2',
+    component: Atormgroupflipmaterial2
   },
   {
     path: '/Eduperson_login',

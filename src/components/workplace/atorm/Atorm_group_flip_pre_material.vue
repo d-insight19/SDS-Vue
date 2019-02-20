@@ -34,7 +34,7 @@
             <div class="inner pdb20">
 
                 <ul class="confirm_item_detail">
-                    <li @click="toggleMenu($event)">
+                    <li class="open" @click="toggleMenu($event)">
                         <span>사전학습</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pdb27 pt0">
@@ -57,6 +57,7 @@
                                             </div>
                                             <div class="sub_content">
                                                 <!-- list add item -->
+                                                <!--
                                                 <ul class="multiList type2">
                                                     <li class="border_none">
                                                         <div class="download_detail">
@@ -81,6 +82,7 @@
                                                         </div>
                                                     </li>
                                                 </ul>
+                                                -->
                                                 <!-- //list add item -->
                                             <div class="sub_content_add">
                                                 <span class="chip clr2 font_14">+ 아이템 추가</span>
@@ -93,6 +95,7 @@
                                             </div>
                                             <div class="sub_content">
                                                 <!-- list add work -->
+                                                <!--
                                                 <ul class="multiList type2">
                                                     <li class="border_none">
                                                         <div class="download_detail">
@@ -117,6 +120,7 @@
                                                         </div>
                                                     </li>
                                                 </ul>
+                                                -->
                                                 <!-- //list add work -->
                                                 <div class="sub_content_add">
                                                     <span class="chip clr2 font_14">+ 레포트 추가</span>
@@ -128,14 +132,14 @@
                                                 <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
                                             </div> 
                                             <div class="sub_content"> 
-                                                <div class="sub_content_type"> 
+                                                <div class="sub_content_type2"> 
                                                     <ul class="score_list">
                                                         <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
                                                         </li>
                                                          <li class="label-tit16">총점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
                                                         </li>
                                                     </ul>
-                                                    <ul class="w64List tac">
+                                                    <ul class="w64List tac pdb32">
                                                         <li class="mr40">
                                                             <p class="mono_50 font_14 mb5">선다형</p>
                                                             <p class="mb15"><span class="ico multiplechoice_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
@@ -153,7 +157,50 @@
                                                         </li>
                                                     </ul>
 
-                                                </div>
+                                                    <!-- 문제 리스트
+                                                    <div class="evaluationList_box">                                                        
+                                                        <ul class="evaluationList">
+                                                            <li>
+                                                                <p class="multiline font_16 mono_80">
+                                                                    <span class="ico multiplechoice_32"></span>
+                                                                    방해요소에 대한 설명이다. 틀린 것을 고르시오.
+                                                                    <span class="ico del"></span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="multiline line2 font_16 mono_80">
+                                                                    <span class="ico shortanswer_32"></span>
+                                                                    의사소통의 기본 요소 5가지를 적으시오.
+                                                                    <span class="ico del"></span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="multiline line2 font_16 mono_80">
+                                                                    <span class="ico ox_32"></span>
+                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
+                                                                    <span class="ico del"></span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="multiline line2 font_16 mono_80">
+                                                                    <span class="ico multiplechoice_32"></span>
+                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
+                                                                    <span class="ico del"></span>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="multiline line2 font_16 mono_80">
+                                                                    <span class="ico shortanswer_32"></span>
+                                                                    리스크 분석 프로세스에 대한 설명이다. 다음 중 옳은 것을 고르시오. 
+                                                                    <span class="ico del"></span>
+                                                                </p>
+                                                            </li>
+                                                        </ul>                                                                                                                   
+                                                    </div> 
+                                                   //문제리스트 -->
+
+                                                </div>                    
+
                                             </div>                                        
                                         </li>                                       
                                        
@@ -194,11 +241,11 @@
                                         </li>
                                         <li class="open">
                                             <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
+                                                <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
                                             </div>
                                             <div class="sub_content">
                                                 <div class="sub_content_add">
-                                                    <span class="chip clr2 font_14">+ 레포트 추가</span>
+                                                    <span class="chip clr2 font_14">+ 아이템 추가</span>
                                                 </div>
                                             </div>
                                         </li>
@@ -243,7 +290,7 @@
                         </div>
                     </li>
 
-                    <li class="open" @click="toggleMenu($event)">
+                    <li @click="toggleMenu($event)">
                         <span>사후학습</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pdb27 pt0">

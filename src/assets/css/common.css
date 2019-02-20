@@ -122,6 +122,7 @@
 .ico.test_24 {width:24px; height:24px; background: url("../img/ic_test_line_24.png")}
 .ico.deletemode_20_black {width:20px; height:20px; background: url("../img/ic_deletemode_20_black.png")}
 .ico.deletemode_20 {width:20px; height:20px; background: url("../img/ic_deletemode_20.png"); background-size: cover}
+.ico.poll_line_28 {width:28px; height:28px; background: url("../img/ic_poll_line_28.png"); background-size: cover}
 
 /* 추가 이미지 2018-12-21*/
 .ico.mark-o.sm{width: 38px;height: 38px;position: absolute;background: url("../img/ic_mark_o_small.png") no-repeat;}
@@ -270,6 +271,7 @@
 .blind {overflow:hidden;  position:absolute; top:-9999em; left:-9999em; padding:0 !important; height:0; width:0; border:none !important; background:none !important; line-height:0 !important; text-indent:-9999px;}
 .clearfix {width:100%; zoom:1;}
 .clearfix:after {display:block; visibility:hidden; content:""; clear:both; height:0; }
+.border_none {border:none !important;}
 
 .pr {position:relative;}
 .dpn {display:none !important;}
@@ -378,8 +380,12 @@
 
 .pt0{padding-top: 0 !important;}
 .pt2{padding-top:2px !important;}
+.pt3{padding-top:3px !important;}
+.pt5{padding-top:5px !important;}
+.pt6{padding-top:6px !important;}
 .pt8{padding-top:8px !important;}
 .pt10{padding-top:10px !important;}
+.pt12{padding-top:12px !important;}
 .pt18{padding-top:18px !important;}
 .pdt16{padding-top: 16px !important;}
 .pdt20{padding-top:20px !important;}
@@ -388,6 +394,7 @@
 .pdt38{padding-top:38px !important;}
 
 .pdb0{padding-bottom:0 !important;}
+.pdb3{padding-bottom:3px !important;}
 .pdb5{padding-bottom:5px !important;}
 .pb10{padding-bottom:10px !important;}
 .pdb12{padding-bottom: 12px !important;}
@@ -396,11 +403,14 @@
 .pdb20{padding-bottom:20px !important;}
 .pdb14{padding-bottom: 14px !important;}
 .pdb25{padding-bottom: 25px !important;}
+.pdb27{padding-bottom: 27px !important;}
+.pdb32{padding-bottom: 32px !important;}
 .pdb98{padding-bottom:98px !important;}
 
 .pdl0{padding-left: 0 !important;}
 .pdl4 {padding-left: 4px !important;}
 .pdl6 {padding-left: 6px !important;}
+.pl16 {padding-left:16px !important;}
 .pl18 {padding-left:18px !important;}
 .pl25 {padding-left:25px !important;}
 .pdr4 {padding-right:4px !important;}

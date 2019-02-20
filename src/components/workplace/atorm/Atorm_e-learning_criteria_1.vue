@@ -30,7 +30,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner pdb20">
                 <p class="font_18 fwb mb20">과정 수료기준</p>
