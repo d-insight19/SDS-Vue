@@ -39,6 +39,18 @@
                 <div class="loginBtn">
                     <button type="button" class="btn md clr1">OTP 생성</button>
                 </div>
+
+                <p class="label-tit-20" style="margin-top: 60px; margin-bottom:10px;">인증번호 입력</p>
+
+                <ul class="loginList">
+                    <li>
+                        <slp-text-field class="mb30" classObject="underline" error message="인증번호가 틀렸습니다"> <span class="time">05:00</span></slp-text-field>
+                    </li>
+                </ul>
+
+                <div class="loginBtn">
+                    <button type="button" class="btn md clr1">OTP 인증</button>
+                </div>
             </div>
           </div>
         </div>

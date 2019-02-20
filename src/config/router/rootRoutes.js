@@ -539,6 +539,9 @@ import CustomerCenterInquirywrite02error from '~workplace/customercenter/Custome
 
 import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
 import EdupersonLoginOTP from '~workplace/eduperson/Eduperson_loginOTP'
+import EdupersonLoginOTP2 from '~workplace/eduperson/Eduperson_loginOTP_2'
+import EdupersonLoginOTPError1 from '~workplace/eduperson/Eduperson_loginOTP_error_1'
+import EdupersonLoginOTPError2 from '~workplace/eduperson/Eduperson_loginOTP_error_2'
 import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
@@ -689,19 +692,12 @@ import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
 import ComponentsTestPage11 from '~workplace/common_page/components_picker_slp'
 
-import StudyStudynote from '~workplace/study/Study_studynote'
-
 // 1번 영역
 var rootRoutes = [
   {
     path: '*',
     name: 'worksheet',
     component: Worksheet
-  },
-  {
-    path: '/Study_studynote',
-    name: 'Study_studynote',
-    component: StudyStudynote
   },
   {
     path: '/components_textfield_slp',
@@ -3786,6 +3782,21 @@ var rootRoutes = [
     path: '/Eduperson_loginOTP',
     name: 'Eduperson_loginOTP',
     component: EdupersonLoginOTP
+  },
+  {
+    path: '/Eduperson_loginOTP_2',
+    name: 'Eduperson_loginOTP_2',
+    component: EdupersonLoginOTP2
+  },
+  {
+    path: '/Eduperson_loginOTP_error_1',
+    name: 'Eduperson_loginOTP_error_1',
+    component: EdupersonLoginOTPError1
+  },
+  {
+    path: '/Eduperson_loginOTP_error_2',
+    name: 'Eduperson_loginOTP_error_2',
+    component: EdupersonLoginOTPError2
   },
   {
     path: '/Eduperson_drawer',
