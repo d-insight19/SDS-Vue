@@ -1,15 +1,15 @@
 <template>
-  <!-- eslint-disable -->
+ <!-- eslint-disable -->
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery">
-
+      <div id="container" class="mediaquery courseware studynote">   
+        
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video">          
-            <div class="header_inner line1 clr1">
-                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
-                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
+        <div id="header" class="tab video" style="background:#fff">          
+            <div class="header_inner line1 ">
+                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
+                <p class="header_text multiline line2 font_15"></p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
@@ -23,19 +23,34 @@
             </div>
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
-            <div class="blur_wrap">
+            <!--<div class="blur_wrap">
                 <div class="left blur"></div>
                 <div class="right blur"></div>
-            </div>
+            </div> -->
 
             
+            <!-- s: 동영상 -->
             <!-- s: 동영상 -->
             <div class="player_wrap">
                 <div class="player_inner">
                     <div id="contents"></div>
 
-                    <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="volume_wrap" style="display:none;pointer-events:none">
+                    <!--  s: 연관 콘텐츠 -->
+                    <div class="movie_info_list_wrap" style="display:none;">
+                        <div class="movie_info_list">
+                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
+                            <ul>
+                                <li v-for="(item, index) in relatedVideoList" :key="index">
+                                    <a href="#"></a>
+                                    <p class="movie_tit multiline line2">{{item.title}}</p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- e: 연관 콘텐츠 -->
+
+                    <!-- s: 볼륨영역 -->
+                    <div class="volume_wrap" style="display:none;">
                         <div class="volume_left">
                             <div class="inner"></div>
                             <div class="icon_wrap">
@@ -53,20 +68,16 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="tap_wrap" style="display:none;pointer-events:none">
-                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
-                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
-                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
-                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                          </div>
-                        </v-touch>
-                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
-                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
-                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
-                                <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                            </div>
-                        </v-touch>                            
+                    <!-- s: double 텝 영역 -->
+                    <div class="tap_wrap" style="display:none;">
+                        <div class="half_left">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
+                        <div class="half_right">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
                     </div>
                     <!--  e: double 텝 영역 -->
 
@@ -152,8 +163,8 @@
                 <!-- e: btm_subtitle_area -->
             </div>
             <!-- e: 동영상-->
-            
-            <div class="hide_header">
+
+            <!-- <div class="hide_header">
 
                 <div class="study_title_wrap">
                     <div class="d-day_wrap">
@@ -213,69 +224,78 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> -->
             
-        </div>
-        <!-- //header -->
+        </div>        
 
-        <!--
-            상태 관련 css (추후 아이콘 교체될 수 있음)
-            stat01 : 미진행 // 아이콘 미수급 // 추후 이미지 교체 예정
-            stat02 : 진행중
-            stat03 : 학습완료
-            stat04 : 진행불가 // 아이콘 미수급 // 추후 이미지 교체 예정
-
-            카드 UI 아이콘 css (추후 아이콘 교체될 수 있음)
-
-            LO
-            type01 : 동영상/VR & AR
-            type02 : E-BOOK/HTML5
-            type03 : Audio
-            type04 : 집합
-
-            SO
-            type05 : Summary, 과정OT, 목표안내, 액션플랜 과정요약집, 서약서, 간지페이지
-            type06 : 사례,의견공유, 토론, 멘토링
-            type07 : 음성녹음
-            type08 : 평가, Poll, 과제
-            type09 : 퀴즈, 설문, 시뮬레이션
-            type10 : 공지
-        -->
-
-        <div id="content" class="etc">
+        <div id="content" class="etc" style="padding-bottom:0 !important;">
+        
           <div class="cell">
             <div class="inner">
-                <p>내용1</p>
-                <p>내용2</p>
-                <p>내용3</p>
-                <p>내용4</p>
-                <p>내용5</p>
-                <p>내용6</p>
-                <p>내용7</p>
-                <p>내용8</p>
-                <p>내용9</p>
-                <p>내용10</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
+                <p class="label-tit-15 mb5 fwb">총 <span class="fwb600 mono_100">1,620</span></p>
 
+                <ul class="ulList type4">
+                    <li style="padding: 9px 0;"> 
+                        <span class="tar">
+                            <dl class="pipe-group type2">
+                                <dd class="color_clr2"><span class="ico note blue"></span> 나의 노트만</dd>
+                                <dd class="mono_80">전체폴더 <span class="ico ico_dropdown16 gr"></span> </dd>
+                            </dl>
+                        </span> 
+                    </li>
+                    <li>
+                        <p class="title">노트 타이틀은 한줄로 처리됩니다. <span class="ico more fr"></span> </p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>비공개</dd>
+                            <dd>정혜민</dd>
+                            <dd>2018.10.10</dd>                                
+                            <dd><span class="ico play" style="vertical-align: -3px;"></span>02:36</dd>
+                            <dd><span class="ico folder_16"></span>역사 폴더</dd>
+                        </dl>
+                        <p class="">최근 개봉한 영화 &gt;마션 The Martian | 2015&lt;이 큰 인기를 
+끌고 있다. 이 영화는 주인공이 동료들과 함께 화성으로 탐
+사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 
+까지 고군분투하는 과정을 그리고 있다.</p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>업무에 바로 쓰는 자바 프로그래밍 입문</dd>
+                            <dd>1차시</dd>
+                            <dd>
+                                <span class="chip bd_color2">
+                                    20:36
+                                    <span class="ico play_16"></span>
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p class="title">노트 타이틀은 한줄로 처리됩니다. <span class="ico more fr"></span> </p>
+                        <dl class="pipe-group mono_65 mb12">
+                            <dd>비공개</dd>
+                            <dd>정혜민</dd>
+                            <dd>2018.10.10</dd>                                
+                            <dd><span class="ico play" style="vertical-align: -3px;"></span>02:36</dd>
+                            <dd><span class="ico folder_16"></span>역사 폴더</dd>
+                        </dl>
+                        <p class="">최근 개봉한 영화 &gt;마션 The Martian | 2015&lt;이 큰 인기를 
+끌고 있다. 이 영화는 주인공이 동료들과 함께 화성으로 탐
+사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 
+까지 고군분투하는 과정을 그리고 있다.</p>
+                    </li>
+                </ul>
+
+                <div class="infoChk pr0" style="margin-left:-18px; margin-right:-18px; background:#f2f2f2">
+                    <input style="margin: 18px 0px 18px 18px;" type="text" placeholder="질문을 작성해주세요" class="input type2"><button  style="margin-top:18px; margin-right:18px;" type="button" class="btn sm clr1 w17p">등록</button>
+                </div>
             </div>
           </div>
-        </div>
 
+        </div>
+        <!-- //content -->
       </div>
       <!-- //container -->     
     </div>
     <!-- //wrap -->
-
+       
 </template>
 
 <script>
@@ -342,7 +362,7 @@ export default {
             {title: '자바스크립트 개발 프로세스 기초3'}
         ],
        option: {
-        loType: "audio", //loType : movie(동영상), audio(오디오), vr(VR)
+        loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
         targetId: "contents", //div target Id
         // sources: [
         //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
@@ -514,7 +534,7 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
                 // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
@@ -558,7 +578,7 @@ export default {
 </script>
 
 <style scoepd>
-.innerRipple {
+/* .innerRipple {
   display: none;
 }
 .halfRight {
@@ -572,5 +592,5 @@ export default {
 }
 .none {
   display: none;
-}
+} */
 </style>

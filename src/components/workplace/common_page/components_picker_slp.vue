@@ -61,6 +61,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'components_picker',
   /* vue lifecycle */

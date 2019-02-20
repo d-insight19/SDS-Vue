@@ -228,7 +228,7 @@
             
         </div>        
 
-        <div id="content" class="etc" >
+        <div id="content" class="etc" style="padding-bottom:0 !important;">
         
           <div class="cell">
             <div class="inner pt0">

@@ -5183,8 +5183,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.19.studynote</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_studynote' }">
+            Study_studynote
           </router-link>
         </td>
         <td></td>
@@ -11019,6 +11019,23 @@
         <td>　</td>
         <td class="textL"></td>
         <td>
+          <router-link :to="{ name: 'components_chips' }">
+            components_chips
+          </router-link>
+        </td>
+        <td></td>
+      </tr>      
+      <tr>
+      <td align="center">0</td>
+        <td>공통컴포넌트</td>
+        <td>아이콘</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
           <router-link :to="{ name: 'components_icons' }">
             components_icons
           </router-link>
@@ -11655,6 +11672,23 @@
         <td>
           <router-link :to="{ name: 'components_popup_slp' }">
             components_popup_slp
+          </router-link>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+      <td align="center">0</td>
+        <td>공통</td>
+        <td>New 컨포넌트확인페이지</td>
+        <td></td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td>　</td>
+        <td class="textL"></td>
+        <td>
+          <router-link :to="{ name: 'components_picker_slp' }">
+            components_picker_slp
           </router-link>
         </td>
         <td></td>
