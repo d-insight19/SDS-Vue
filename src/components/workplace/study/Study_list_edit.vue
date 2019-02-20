@@ -80,7 +80,7 @@
                                         <li>
                                             <div class="edit_parents">
                                                 <div class="edit_child edit_child_frst">
-                                                    <label for="id_save"class="labelChk">
+                                                    <label for="id_save" class="labelChk">
                                                         <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span>
                                                     </label>
                                                 </div>
@@ -181,13 +181,10 @@
 
 <script>
 /* eslint-disable */
-
 // 1. jquery
 import $ from 'jquery'
 window.$ = $
 window.jQuery = $
-
-
 export default {
     name: 'studyList',
 
@@ -202,7 +199,6 @@ export default {
             this.defaultFlag = !this.defaultFlag
         }
     },
-
     computed: {
         compClasses: function(){
             return{

@@ -176,6 +176,8 @@ import Studystudystatusassessmentwindow01 from '~workplace/study/Study_studystat
 import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystatus_assessment_window_02'
 import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
 import Studystudystatusattendancebpo from '~workplace/study/Study_studystatus_attendance_bpo'
+import StudyHomeSetCalendar from '~workplace/study/Study_home_set_calendar'
+import etcKeepstudy from '~workplace/study/etc_keepstudy'
 import StudyList from '~workplace/study/Study_list'
 import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
@@ -689,19 +691,12 @@ import ComponentsTestPage9 from '~workplace/common_page/components_slider_slp'
 import ComponentsTestPage10 from '~workplace/common_page/components_switch_slp'
 import ComponentsTestPage11 from '~workplace/common_page/components_picker_slp'
 
-import StudyStudynote from '~workplace/study/Study_studynote'
-
 // 1번 영역
 var rootRoutes = [
   {
     path: '*',
     name: 'worksheet',
     component: Worksheet
-  },
-  {
-    path: '/Study_studynote',
-    name: 'Study_studynote',
-    component: StudyStudynote
   },
   {
     path: '/components_textfield_slp',
@@ -1632,6 +1627,16 @@ var rootRoutes = [
     path: '/Study_studystatus_attendance_bpo',
     name: 'Study_studystatus_attendance_bpo',
     component: Studystudystatusattendancebpo
+  },
+  {
+    path: '/Study_home_set_calendar',
+    name: 'Study_home_set_calendar',
+    component: StudyHomeSetCalendar
+  },
+  {
+    path: '/etc_keepstudy',
+    name: 'etc_keepstudy',
+    component: etcKeepstudy
   },
   {
     path: '/Study_list',

@@ -2992,3 +2992,9 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm_complete .complete_sub_detail2 .num_wrap{display:table-cell; width:55px; line-height: 140%; vertical-align: top;}
 .atorm_complete .complete_sub_detail2 .txt_wrap{display:table-cell; width:calc(100% - 55px); vertical-align: top; line-height: 140%;}
 
+.attend_status_detail.p1218{padding:12px 18px;}
+.attend_status_detail.gray_bg {background-color:#f2f2f2;}
+.attend_status_detail .fix {display: table; table-layout: fixed; width: 100%;}
+.attend_status_detail .fix li{display: table-cell; vertical-align: middle;}
+.attend_status_detail .chip {margin-bottom:0; padding: 0px 5px; height: auto; line-height: 140%;}
+.attendance_notice_list li{ padding:20px 0; border-bottom:1px solid #e3e3e3;}

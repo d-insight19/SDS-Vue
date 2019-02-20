@@ -9861,11 +9861,11 @@
         <td>　</td>
         <td class="textL">etc_Keepstudy</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'etc_keepstudy' }">
+            etc_keepstudy
           </router-link>
         </td>
-        <td></td>
+        <td>수정중</td>
       </tr>
       <tr class="new">
       <td align="center">536</td>
@@ -10307,8 +10307,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.05.home_set_calendar2</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'Study_home_set_calendar' }">
+            Study_home_set_calendar
           </router-link>
         </td>
         <td></td>
