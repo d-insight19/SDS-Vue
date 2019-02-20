@@ -174,10 +174,17 @@ import Studystudystatusassessmentapplyresult from '~workplace/study/Study_studys
 import Studystudystatusassessmentwindow01 from '~workplace/study/Study_studystatus_assessment_window_01'
 import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystatus_assessment_window_02'
 import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
+import Studystudystatusattendancebpo from '~workplace/study/Study_studystatus_attendance_bpo'
 import StudyList from '~workplace/study/Study_list'
 import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
+
+import Studystudynote from '~workplace/study/Study_studynote'
+import Studystudynoteedit from '~workplace/study/Study_studynote_edit'
+import Studystudyquestionregi from '~workplace/study/Study_studyquestion_regi'
+import Studysummary from '~workplace/study/Study_summary'
+
 import Studyquestion from '~workplace/study/Study_studyquestion'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
 import Study02inquirydetail from '~workplace/study/Study_02_inquiry_detail'
@@ -1603,6 +1610,11 @@ var rootRoutes = [
     component: Studystudystatusassessmentresultanalysis
   },
   {
+    path: '/Study_studystatus_attendance_bpo',
+    name: 'Study_studystatus_attendance_bpo',
+    component: Studystudystatusattendancebpo
+  },
+  {
     path: '/Study_list',
     name: 'Study_list',
     component: StudyList
@@ -1622,6 +1634,26 @@ var rootRoutes = [
     name: 'Study_0218studylist_download',
     component: Study0218studylistdownload
   },
+  {
+    path: '/Study_studynote',
+    name: 'Study_studynote',
+    component: Studystudynote
+  },
+  {
+    path: '/Study_studynote_edit',
+    name: 'Study_studynote_edit',
+    component: Studystudynoteedit
+  },  
+  {
+    path: '/Study_studyquestion_regi',
+    name: 'Study_studyquestion_regi',
+    component: Studystudyquestionregi
+  },  
+  {
+    path: '/Study_summary',
+    name: 'Study_summary',
+    component: Studysummary
+  },     
   {
     path: '/Study_studyquestion',
     name: 'Study_studyquestion',
