@@ -10962,8 +10962,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_03.02_Studyguide_detail2</td>
         <td>
-          <router-link :to="{ name: '' }">
-            
+          <router-link :to="{ name: 'CustomerCenter_Studyguide_detail2' }">
+            CustomerCenter_Studyguide_detail2
           </router-link>
         </td>
         <td></td>

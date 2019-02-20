@@ -527,6 +527,7 @@ import CustomerCenterStudysupportdetail from '~workplace/customercenter/Customer
 import CustomerCenterRequestresult from '~workplace/customercenter/CustomerCenter_Request_result'
 import CustomerCenterInquirywrite02 from '~workplace/customercenter/CustomerCenter_Inquiry_write02'
 import CustomerCenterInquirywrite02error from '~workplace/customercenter/CustomerCenter_Inquiry_write02_error'
+import CustomerCenterStudyguidedetail2 from '~workplace/customercenter/CustomerCenter_Studyguide_detail2'
 
 import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
 import EdupersonLoginOTP from '~workplace/eduperson/Eduperson_loginOTP'
@@ -3349,6 +3350,11 @@ var rootRoutes = [
     path: '/CustomerCenter_Inquiry_write02_error',
     name: 'CustomerCenter_Inquiry_write02_error',
     component: CustomerCenterInquirywrite02error
+  },
+  {
+    path: '/CustomerCenter_Studyguide_detail2',
+    name: 'CustomerCenter_Studyguide_detail2',
+    component: CustomerCenterStudyguidedetail2
   },
   {
     path: '/Atorm_drawer',
