@@ -182,6 +182,8 @@ import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
 
 import Studystudynote from '~workplace/study/Study_studynote'
+import Studystudynoteall01 from '~workplace/study/Study_studynote_all_01'
+import Studystudynoteall02snacbar from '~workplace/study/Study_studynote_all_02_snacbar'
 import Studystudynoteedit from '~workplace/study/Study_studynote_edit'
 import Studystudyquestionregi from '~workplace/study/Study_studyquestion_regi'
 import Studysummary from '~workplace/study/Study_summary'
@@ -1653,6 +1655,16 @@ var rootRoutes = [
     path: '/Study_studynote',
     name: 'Study_studynote',
     component: Studystudynote
+  },
+  {
+    path: '/Study_studynote_all_01',
+    name: 'Study_studynote_all_01',
+    component: Studystudynoteall01
+  },
+  {
+    path: '/Study_studynote_all_02_snacbar',
+    name: 'Study_studynote_all_02_snacbar',
+    component: Studystudynoteall02snacbar
   },
   {
     path: '/Study_studynote_edit',

@@ -244,7 +244,7 @@
                         </span> 
                     </li>
                     <li style="padding:20px 0 22px">
-                        <p class="title fwb">노트 타이틀은 한줄로 처리됩니다. <span class="fr color_clr2 font_13">스크랩</span> </p>
+                        <p class="title fwb">노트 타이틀은 한줄로 처리됩니다. <span class="fr color_clr2">스크랩</span> </p>
                         <dl class="pipe-group mono_65 mb12">
                             <dd>비공개</dd>
                             <dd>정혜민</dd>
@@ -281,57 +281,8 @@
                 </ul>
 
                 <div class="infoChk pr0" style="margin-left:-18px; margin-right:-18px; background:#f2f2f2">
-                    <input  @focus="focusToggle" style="margin: 18px 0px 18px 18px;" type="text" placeholder="노트를 입력해주세요" class="input type2"><button  style="margin-top:18px; margin-right:18px;" type="button" class="btn sm clr1 w17p">등록</button>
+                    <input style="margin: 18px 0px 18px 18px;" type="text" placeholder="노트를 입력해주세요" class="input type2"><button  style="margin-top:18px; margin-right:18px;" type="button" class="btn sm clr1 w17p">등록</button>
                 </div>
-
-                
-                <!-- 
-                    keyboard_type 변수로 v-if 를 통해  타입 결정
-                    keyboard_type : 1  = 기본형 ( TextArea )
-                    keyboard_type : 2  = 평점 ( 평점 + TextArea )
-                    keyboard_type : 3  = 공개여부 ( 공개여부 + TextArea )
-                    keyboard_type : 4  = 북마크 + 공개여부 ( 북마크 + 공개여부 + TextArea )
-                 -->
-                <div id="keyboard_wrap">
-                    <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
-                    <div class="keyboard_input" v-show="focusFlag">                
-                        
-                        <div class="bookmark_wrap" v-if="keyboard_type=='4'">
-                            <span class="bookmarktxt">북마크</span>
-                            <span class="fr time">01:36</span>
-                        </div>
-                        <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
-                            <span class="opentxt">공개여부</span>
-                            <slp-switch :classObject="{'fr': true}"/>
-                            <span class="opentxt2">비공개</span>
-                        </div>
-
-                        <div class="rating_wrap" v-if="keyboard_type=='2'">
-                            <span class="ratingtxt">평점</span>                        
-                            <fieldset class="fr rating">
-                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                            </fieldset>
-                        </div>
-
-                        <div class="inputbox" >                        
-                            <div class="textarea_wrap">
-                                <textarea maxlength="130" @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
-                            </div>
-                            <div class="inputbottom">
-                                <span class="strlenth" >{{keylength}}/300</span>
-                                <span class="regiBtn" :class="{active: keylength}">등록</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-
-
             </div>
           </div>
 
@@ -391,9 +342,6 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
-        keylength: 0,
-        focusFlag: false,
-        keyboard_type: 4,
         innerRipple: false,
         halfRight: false,
         halfLeft: false,
@@ -463,14 +411,6 @@ export default {
     }
   },
   methods: {
-    focusToggle () {
-      this.focusFlag = !this.focusFlag
-    },
-    onKeydown (event) {
-      this.keylength = event.target.value.length
-      event.target.style.height = '1px'
-      event.target.style.height = (event.target.scrollHeight) + 'px'
-    },
     detail_toggle () {        
         this.detail_show = !this.detail_show;
     },

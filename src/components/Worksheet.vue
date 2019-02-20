@@ -5165,6 +5165,14 @@
           <router-link :to="{ name: 'Study_studynote' }">
             Study_studynote
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_studynote_all_01' }">
+            Study_studynote_all_01
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_studynote_all_02_snacbar' }">
+            Study_studynote_all_02_snacbar
+          </router-link>
         </td>
         <td></td>
       </tr>
