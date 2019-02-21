@@ -13,10 +13,10 @@
                 </div>
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">
                     <div class="hide-inner">
-                        <div id="dropdown_wrap" v-show="langFlag2">
-                            <div id="sheetDim" @click="changeLang2()"></div>
+                        <div id="dropdown_wrap" v-show="langFlag">
+                            <div id="sheetDim" @click="changeLang()"></div>
                             <div id="dropdown" class="more">
-                                <ul @click="changeLang2()">
+                                <ul @click="changeLang()">
                                 <li>휴강 등록</li>
                                 <li>보강 등록</li>
                                 <li>단축 요청</li>
@@ -28,7 +28,7 @@
                         <span class="chip">정규</span>
                         <p class="h-tit1">
                             <strong class="q-tit">The Complete App Design Course - UX, UI android …</strong>
-                            <span class="fr ico more28" @click="changeLang2()"></span>
+                            <span class="fr ico more28" @click="changeLang()"></span>
                         </p>
                         <div class="info-rate">
                             <span>평균 출석률</span><span class="rate">80.10%</span>
@@ -42,20 +42,17 @@
             <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
-                        <div id="dropdown_wrap" v-show="langFlag">
-                            <div id="sheetDim" @click="changeLang()"></div>
-                            <div id="dropdown" class="category">
-                                <ul @click="changeLang()">
-                                <li>2018.10.30</li>
-                                <li>2018.09.30</li>
-                                <li>2018.08.30</li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <div class="date_wrap">
-                            <span class="date">2018.11.30</span><a href="#"><span class="ico down_blue_24" @click="changeLang()"></span> </a>
+                        <div class="date_wrap"  @click="bottomsheetToggle">
+                            <span class="date">2018.11.30</span><a href="#"><span class="ico down_blue_24"></span> </a>
                         </div>
+                        <slp-bottom-sheet
+                        :show="bottomsheetFlag"
+                        :list="list"
+                        v-model="selected"
+                        @show="bottomsheetToggle"
+                        @selected="change"/>
+
                         <button type="button" class="btn md clr2 width50">출석현황</button><button type="button" title="title" class="btn md width50">평가</button>
                         <p class="title_line noline mt20">
                             <span class="title_txt">학습자</span><span class="total_txt">총</span><strong class="fwb600 count">14</strong>명
@@ -172,27 +169,41 @@
 
 <script>
 export default {
-  name: 'Study_02_studyquestion_detail',
-  /* vue lifecycle */
-  created () {
-  },
-  mounted () {
-  },
+  name: 'ComponentsBottomSheet',
   /* vue data */
   data () {
     return {
       headerType: 1,
       langFlag: false,
-      langFlag2: false
+      bottomsheetFlag: false,
+      selected: 0,
+      list: [
+        {title: '2018.11.29'},
+        {title: '2018.11.28'},
+        {title: '2018.11.27'},
+        {title: '2018.11.26'},
+        {title: '2018.11.25'},
+        {title: '2018.11.24'},
+        {title: '2018.11.23'},
+        {title: '2018.11.22'}
+      ]
     }
+  },
+  /* vue lifecycle */
+  created () {
+  },
+  mounted () {
   },
   /* vue function */
   methods: {
     changeLang () {
       this.langFlag = !this.langFlag
     },
-    changeLang2 () {
-      this.langFlag2 = !this.langFlag2
+    bottomsheetToggle () {
+      this.bottomsheetFlag = !this.bottomsheetFlag
+    },
+    change (value) {
+      this.selected = value
     }
   }
 }
