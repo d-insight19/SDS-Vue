@@ -37,6 +37,7 @@ import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 import ComponentsSnackBar from '~workplace/common_page/components_snackbar'
 
+import LoginSplashB2B from '~workplace/login/login_Splash_B2B'
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
 import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
@@ -191,6 +192,8 @@ import Studystudynoteedit from '~workplace/study/Study_studynote_edit'
 import Studystudyquestionregi from '~workplace/study/Study_studyquestion_regi'
 import Studysummary from '~workplace/study/Study_summary'
 import Studysummary03none from '~workplace/study/Study_summary_03_none'
+import Studysummary03nonemap from '~workplace/study/Study_summary_03_nonemap'
+import Studysummary04noneattach from '~workplace/study/Study_summary_04_noneattach'
 
 import Studyquestion from '~workplace/study/Study_studyquestion'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
@@ -945,6 +948,11 @@ var rootRoutes = [
     path: '/components_picker_slp',
     name: 'components_picker_slp',
     component: ComponentsTestPage11
+  },
+  {
+    path: '/login_Splash_B2B',
+    name: 'login_Splash_B2B',
+    component: LoginSplashB2B
   },
   {
     path: '/Login_findcenter',
@@ -1705,6 +1713,16 @@ var rootRoutes = [
     path: '/Study_summary_03_none',
     name: 'Study_summary_03_none',
     component: Studysummary03none
+  },
+  {
+    path: '/Study_summary_03_nonemap',
+    name: 'Study_summary_03_nonemap',
+    component: Studysummary03nonemap
+  },
+  {
+    path: '/Study_summary_04_noneattach',
+    name: 'Study_summary_04_noneattach',
+    component: Studysummary04noneattach
   },
   {
     path: '/Study_studyquestion',

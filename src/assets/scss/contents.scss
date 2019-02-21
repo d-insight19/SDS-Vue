@@ -2061,6 +2061,12 @@ label.rdo .label{position: relative;}
     .loginList .time {text-align:right; font-family:'roboto'; font-weight:500; font-size:map-get($font-size, font_12);}
 }
 
+//study_summary
+.courseware{
+    &.studysummary{
+        .title {font-size:map-get($font-size, font_15);letter-spacing: -0.045em;}
+    }
+} 
 
 
 

@@ -75,7 +75,7 @@
             <!-- //contents -->
 
             <!-- floating button -->
-            <div class="fixBtmBtn zin0">
+            <div class="fixBtmBtn zin1">
                 <ul>
                     <li><button type="button" class="btn md">취소</button></li>
                     <li><button type="button" class="btn md clr1">확인</button></li>
