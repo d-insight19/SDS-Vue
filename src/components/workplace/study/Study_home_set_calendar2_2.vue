@@ -11,7 +11,7 @@
             </div>
             <!-- //header -->      
 
-            <div id="content" class="normal">
+            <div id="content" class="normal" style="padding: 0px 0px 0px 0px;" >
                 <div class="cell">
                     <div class="inner pt0">
                         <img src="@/assets/img/img_calendar2.png" class="w100p" alt="">

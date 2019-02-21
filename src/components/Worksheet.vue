@@ -6456,7 +6456,7 @@
             Study_04_SO_survey_answer
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">346</td>
@@ -6584,7 +6584,7 @@
             Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">354</td>
@@ -6661,7 +6661,7 @@
             Study_04_SO_debate_input_opposite
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">358</td>
@@ -6729,7 +6729,7 @@
             Study_04_SO_assinment_input
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">362</td>
@@ -6781,7 +6781,7 @@
           </router-link>
           삭제
         </td>
-        <td>PU 피드백으로 삭제</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">365</td>
@@ -6866,7 +6866,7 @@
             Study_04_SO_actionplan_input
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">370</td>
@@ -7223,7 +7223,7 @@
             Study_05_etc_pilottest
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">390</td>
@@ -10304,7 +10304,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">560</td>
         <td>학습홈 영역</td>
         <td>기본 학습홈</td>
@@ -10315,8 +10315,12 @@
         <td>　</td>
         <td class="textL">05.Study_01.05.home_set_calendar2</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'Study_home_set_calendar2' }">
+              Study_home_set_calendar2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_home_set_calendar2_2' }">
+              Study_home_set_calendar2_2
           </router-link>
         </td>
         <td></td>

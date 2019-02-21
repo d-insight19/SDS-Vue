@@ -194,6 +194,8 @@ import Studysummary from '~workplace/study/Study_summary'
 import Studysummary03none from '~workplace/study/Study_summary_03_none'
 import Studysummary03nonemap from '~workplace/study/Study_summary_03_nonemap'
 import Studysummary04noneattach from '~workplace/study/Study_summary_04_noneattach'
+import Studyhomesetcalendar2 from '~workplace/study/Study_home_set_calendar2'
+import Studyhomesetcalendar22 from '~workplace/study/Study_home_set_calendar2_2'
 
 import Studyquestion from '~workplace/study/Study_studyquestion'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
@@ -1723,6 +1725,16 @@ var rootRoutes = [
     path: '/Study_summary_04_noneattach',
     name: 'Study_summary_04_noneattach',
     component: Studysummary04noneattach
+  },
+  {
+    path: '/Study_home_set_calendar2',
+    name: 'Study_home_set_calendar2',
+    component: Studyhomesetcalendar2
+  },
+  {
+    path: '/Study_home_set_calendar2_2',
+    name: 'Study_home_set_calendar2_2',
+    component: Studyhomesetcalendar22
   },
   {
     path: '/Study_studyquestion',
