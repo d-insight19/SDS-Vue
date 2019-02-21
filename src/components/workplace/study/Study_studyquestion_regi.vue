@@ -256,7 +256,7 @@
                         <dl class="pipe-group mono_65"  style="margin-top:17px;">
                             <dd>업무에 바로 쓰는 자바 프로그래밍 입문</dd>
                             <dd class="chips_wrap" >1차시 
-                                <span class="chip bd_color2">
+                                <span class="chip bd_color2 fr">
                                 20:36
                                 <span class="ico play_16 blue" style="vertical-align: -4px;"></span>
                                 </span>
@@ -278,7 +278,8 @@
                 </ul>
 
                 <div class="infoChk pr0" style="margin-left:-18px; margin-right:-18px; background:#f2f2f2">
-                    <input @focus="focusToggle" style="margin: 18px 0px 18px 18px;" type="text" placeholder="노트를 입력해주세요" class="input type2"><button  style="margin-top:18px; margin-right:18px;" type="button" class="btn sm clr1 w17p">등록</button>
+                    <input @focus="focusToggle" style="margin: 18px 0px 18px 18px;" type="text" placeholder="노트를 입력해주세요" class="input type2">
+                    <button  type="button" class="btn_regi btn sm clr1 w17p">등록</button>
                 </div>
 
 
@@ -317,7 +318,7 @@
 
                         <div class="inputbox" >                        
                             <div class="textarea_wrap">
-                                <textarea @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
+                                <textarea maxlength="130" @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
                             </div>
                             <div class="inputbottom">
                                 <span class="strlenth" >{{keylength}}/300</span>

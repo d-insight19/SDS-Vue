@@ -1,39 +1,39 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery board">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand">          
+            <div v-if="headerType == '1'" id="header" class="expand">
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                     <p class="header_text  font_19"> </p>
-                </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
-                    <div class="hide-inner"> 
-                        <p class="type color_clr3">과정문의</p>                           
+                </div>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">
+                    <div class="hide-inner">
+                        <p class="type color_clr3">과정문의</p>
                         <p class="h-tit1">
-                            <strong class="q-tit">단계형 다이어그램 (자전거 길) 단계형 다이어그램 단계형 다이어그램</strong>                                                        
-                        </p>                       
+                            <strong class="q-tit">단계형 다이어그램 (자전거 길) 단계형 다이어그램 단계형 다이어그램</strong>
+                        </p>
                         <div class="info">
                             <p class="article">상담분류<span class="val">도서</span></p>
                             <p class="article">과정명<span class="val">The courts title goes here.</span></p>
                             <p class="article">등록일<span class="val">2018.10.10</span></p>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
-                    <div class="inner">                       
+                    <div class="inner">
                         <div class="qa_content">
                             <div class="question">
                                 <p class="title"> <span class="q color_clr1 border_clr1">Q</span>문의내용</p>
-                                <p>해당 과정의 도서에대한 질문을 드립니다. 
+                                <p>해당 과정의 도서에대한 질문을 드립니다.
                                     구매 방법에 대해 설명이 되어 있지 않던데 어떤 경로로 구매가 가능한지에 대해 답변해 주실 수 있을까요?
                                 </p>
                             </div>
@@ -51,15 +51,15 @@
                                 </p>
                             </div>
 
-                        </div> 
-                        <!-- //qa_content -->                     
+                        </div>
+                        <!-- //qa_content -->
 
                     </div>
                     <!-- //inner -->
-                </div>  
+                </div>
             </div>
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>

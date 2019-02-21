@@ -1,13 +1,13 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery login bpo">
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
-                
+
                 <h1 class="tit1">멀티캠퍼스</h1>
                 <h2 class="tit2">Teacher’s Club</h2>
 
@@ -35,9 +35,9 @@
                     </div>
                 </fieldset>
 
-               
 
-                <dl class="loginGuide"> 
+
+                <dl class="loginGuide">
                     <dd>회원가입 및 아이디/비밀번호 찾기는 PC에서<br>
                         크레듀닷컴(el.multicampus.com)에 <br>
                         방문하시면 이용 가능합니다.</dd>
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

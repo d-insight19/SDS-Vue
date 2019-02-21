@@ -7,7 +7,8 @@
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video">          
-            <div class="header_inner line1 clr1">
+            <!-- audioFlag true 시 display:none; -->
+            <div class="header_inner line1 clr1" :class="{ 'audio' : audioFlag }" > 
                 <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
@@ -30,7 +31,7 @@
 
             
             <!-- s: 동영상 -->
-            <div class="player_wrap">
+            <div class="player_wrap" :class="{ 'audio' : audioFlag }">
                 <div class="player_inner">
                     <div id="contents"></div>
 
@@ -325,6 +326,7 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
+        audioFlag:true,
         innerRipple: false,
         halfRight: false,
         halfLeft: false,

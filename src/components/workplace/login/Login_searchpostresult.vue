@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery searchpost">
 
@@ -12,7 +12,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
@@ -37,9 +37,9 @@
                     </div>
                   </li>
                 </ul>
-                
-                
-                
+
+
+
                 <div class="search_result_wrap">
                   <ul>
                     <li class="search_result">
@@ -144,9 +144,9 @@
             </div>
           </div>
         </div>
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

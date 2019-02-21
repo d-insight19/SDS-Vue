@@ -1,16 +1,16 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery integration start pd70">
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
                 <h1 class="h-tit">통합 아이디<br>가입하고 혜택 받기</h1>
-                
+
 
                 <!-- list -->
                 <ul class="login_integr_sel">
@@ -42,9 +42,9 @@
             </ul>
         </div>
         <!-- //floating button -->
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

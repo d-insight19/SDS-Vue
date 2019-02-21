@@ -241,72 +241,8 @@
                             <div class="txt_wrap">
                                 <p class="icon_txt color_clr3">요약집</p>
                                 <p class="title">[원포인트 MBA]서울대 이경미 교수의 마케팅 실전전략</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="mono_65">핵심요약 3개</span>
-                                    </li>
-                                    <li>
-                                        <span class="ico clip"></span>
-                                        <span class="mono_65">첨부파일</span>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                    <li class="" :class="{ 'open' : cardList_show }" >
-                        <div class="download_detail border_clr1 ">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr6">전체</p>
-                                <p class="title">[원포인트 MBA]서울대 이경미 교수의 마케팅 실전전략</p>
-                                <ul class="info">
-                                    <li>
-                                        <span class="mono_65">핵심요약 3개</span>
-                                    </li>
-                                    <li>
-                                        <span class="ico clip"></span>
-                                        <span class="mono_65">첨부파일</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="ico accordion_arrow "  @click="cardListToggle()"></span>
-                        </div>
-
-                            <ul v-show="cardList_show">
-                                <li class="open">
-                                    <div class="sub_content">
-                                        <!-- list -->
-                                        <ul class="multiList type2">
-                                            <li>
-                                                <div class="download_detail border_clr1 clr4 done">
-                                                    <div class="txt_wrap">
-                                                        <p class="icon_txt color_clr6">N일차</p>
-                                                        <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 clr4 done">
-                                                    <div class="txt_wrap">
-                                                        <p class="icon_txt color_clr6">N일차</p>
-                                                        <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 clr4 done">
-                                                    <div class="txt_wrap">
-                                                        <p class="icon_txt color_clr6">N일차</p>
-                                                        <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- //list -->
-                                    </div>
-                                </li>
-                            </ul>
-                            <!--//inner list -->
                     </li>
                 </ul>
 

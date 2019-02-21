@@ -281,7 +281,13 @@
                 </ul>
 
                 <div class="infoChk pr0" style="margin-left:-18px; margin-right:-18px; background:#f2f2f2">
-                    <input  @focus="focusToggle" style="margin: 18px 0px 18px 18px;" type="text" placeholder="노트를 입력해주세요" class="input type2"><button  style="margin-top:18px; margin-right:18px;" type="button" class="btn sm clr1 w17p">등록</button>
+                    <div class="toast" @click="snacToggle" v-show="snacFlag">
+                        <div class="in">
+                            <p>노트 작성이 완료되었습니다.</p>
+                        </div>
+                    </div>
+                    <input  @focus="focusToggle" style="margin: 18px 0px 18px 18px;" type="text" placeholder="노트를 입력해주세요" class="input type2">
+                    <button @click="snacToggle" type="button" class="btn_regi btn sm clr1 w17p">등록</button>
                 </div>
 
                 
@@ -328,6 +334,7 @@
                         </div>
                     </div>
                 </div>
+                
                 
 
 
@@ -391,6 +398,7 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
+        snacFlag: true,
         keylength: 0,
         focusFlag: false,
         keyboard_type: 4,
@@ -463,6 +471,9 @@ export default {
     }
   },
   methods: {
+    snacToggle(){
+        this.snacFlag = !this.snacFlag
+    },
     focusToggle () {
       this.focusFlag = !this.focusFlag
     },

@@ -1,23 +1,23 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">
+    <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery courseware studysummary pd70" style="background:#f2f2f2">
-
+      <div id="container" class="mediaquery courseware " style="background:#f2f2f2">   
+        
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video" style="background:#fff">
-            <div class="header_inner line1 ">
-                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
-                <p class="header_text multiline line2 font_15"></p>
+        <div id="header" class="tab video" style="background:#fff">          
+            <div class="header_inner line1 clr1">
+                <button type="button" class="btn only prev" ><span class="ico2 prev-wh"></span></button>
+                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
 
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li class="on"><a href="#tab1">용어사전</a></li>
-                    <li><a href="#tab2">요약집</a></li>
-                    <li><a href="#tab3">Quick Poll/Answer</a></li>
-                    <li><a href="#tab3">1:1문의</a></li>
+                    <li class="on"><a href="#tab1">학습현황</a></li>
+                    <li><a href="#tab2">학습목차</a></li> 
+                    <li><a href="#tab3">학습노트</a></li> 
+                    <li><a href="#tab3">질문방</a></li> 
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
                 </ul>
             </div>
@@ -28,7 +28,7 @@
                 <div class="right blur"></div>
             </div> -->
 
-
+            
             <!-- s: 동영상 -->
             <!-- s: 동영상 -->
             <div class="player_wrap">
@@ -43,7 +43,7 @@
                                 <li v-for="(item, index) in relatedVideoList" :key="index">
                                     <a href="#"></a>
                                     <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li>
+                                </li> 
                             </ul>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                             <div class="icon_wrap">
                                 <span class="light_icon"></span>
                                 <span class="light_value">75</span>
-                            </div>
+                            </div>                            
                         </div>
                         <div class="volume_right">
                             <div class="inner"></div>
@@ -85,11 +85,11 @@
                 <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
-                        <div class="btm_subtitle_control">
+                        <div class="btm_subtitle_control">                                
                             <div>
                                 <div class="subtitle_lang_wrap">
                                     <span class="lang_type">Bahasa Indonesia</span>
-                                    <span class="dropdown"></span>
+                                    <span class="dropdown"></span>         
                                 </div>
                                 <span class="switch_txt">Auto Scroll</span>
                                 <slp-switch :value="true"/>
@@ -113,7 +113,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p>
+                                            <p>[클래스 객체]</p> 
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
@@ -122,7 +122,7 @@
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <div class="desc">
+                                        <div class="desc">                                   
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번
                                             차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
@@ -141,7 +141,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p>
+                                            <p>[클래스 객체]</p> 
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -150,7 +150,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p>
+                                            <p>[클래스 객체]</p> 
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -225,98 +225,189 @@
                     </div>
                 </div>
             </div>
+            
+        </div>              
 
-        </div>
-        <!-- header -->
-
-        <div id="content" class="etc" >
-
+        <div id="content" class="etc" style="padding:0;">
+        
           <div class="cell">
             <div class="inner pt0">
-
+                
+                <div class="filterArea ml-18 mr-18" style="padding:19px;">
+                    <p class="font_15 mono_80 fwb dib">전체보기</p>
+                    <p class="fr">
+                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
+                        <span class="ico download"></span>
+                    </p>                    
+                </div>                
                 <!-- list -->
                 <ul class="multiList type2">
                     <li>
                         <div class="download_detail">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">요약집</p>
-                                <p class="title">[원포인트 MBA]서울대 이경미 교수의 마케팅 실전전략</p>
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 한 줄</p>
                                 <ul class="info">
                                     <li class="">
-                                        <span class="mono_65">핵심요약 3개</span>
+                                        <span class="ico check_14"></span>
+                                        <span>학습완료</span>
+                                        <span>2017.11.05</span>
                                     </li>
-                                    <li>
-                                        <span class="ico clip"></span>
-                                        <span class="mono_65">첨부파일</span>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>12:45</span>/<span>23:43</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <span class="ico accordion_arrow"></span>
                     </li>
-                    <li class="" :class="{ 'open' : cardList_show }" >
-                        <div class="download_detail border_clr1 ">
+                    <li>
+                        <div class="download_detail">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr6">전체</p>
-                                <p class="title">[원포인트 MBA]서울대 이경미 교수의 마케팅 실전전략</p>
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
                                 <ul class="info">
-                                    <li>
-                                        <span class="mono_65">핵심요약 3개</span>
+                                    <li class="">
+                                        <span class="ico check_14"></span>
+                                        <span>학습완료</span>
+                                        <span>2017.11.05</span>
                                     </li>
-                                    <li>
-                                        <span class="ico clip"></span>
-                                        <span class="mono_65">첨부파일</span>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>12:45</span>/<span>23:43</span>
                                     </li>
                                 </ul>
                             </div>
-                            <span class="ico accordion_arrow "  @click="cardListToggle()"></span>
                         </div>
-
-                            <ul v-show="cardList_show">
-                                <li class="open">
-                                    <div class="sub_content">
-                                        <!-- list -->
-                                        <ul class="multiList type2">
-                                            <li>
-                                                <div class="download_detail border_clr1 clr4 done">
-                                                    <div class="txt_wrap">
-                                                        <p class="icon_txt color_clr6">N일차</p>
-                                                        <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 clr4 done">
-                                                    <div class="txt_wrap">
-                                                        <p class="icon_txt color_clr6">N일차</p>
-                                                        <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 clr4 done">
-                                                    <div class="txt_wrap">
-                                                        <p class="icon_txt color_clr6">N일차</p>
-                                                        <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- //list -->
-                                    </div>
-                                </li>
-                            </ul>
-                            <!--//inner list -->
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail clr1 wh">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li>
+                                        <span class="ico check_14 wh"></span>
+                                        <span class="wh">학습완료</span>
+                                        <span class="wh">2017.11.05</span>
+                                    </li>
+                                    <li>
+                                        <span class="ico time wh"></span>
+                                        <span class="wh">12:45</span><span class="wh">/</span><span class="wh">23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico ongoing_16"></span>
+                                        <span>진행중</span>
+                                    </li>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>12:45</span>/<span>23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico complete_14"></span>
+                                        <span>미진행</span>
+                                    </li>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico lock_16"></span>
+                                        <span>학습불가</span>
+                                    </li>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
                     </li>
                 </ul>
+
+                <div class="bot-wrap ml-18 mr-18">
+                    <h2 class="h-tit2 fwb600" style="margin-top:4px; margin-bottom:15px;">연관 콘텐츠 추천</h2>
+                    <div class="scroll-x type2">
+                        <!-- list -->
+                        <ul class="thumList type2">
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                </div>
+                            </li>                        
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                </div>
+                            </li>                        
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                </div>
+                            </li>                        
+                        </ul>
+                        <!-- //list -->
+                    </div>
+                </div>
 
             </div>
           </div>
 
         </div>
-
+            
       </div>
-      <!-- //container -->
+      <!-- //container -->     
     </div>
     <!-- //wrap -->
 </template>
@@ -356,8 +447,6 @@ export default {
         active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
-        cardFlag:false,
-        cardList_show:false,        
         relatedVideoList: [
             {title: '자바스크립트 개발 프로세스 기초'},
             {title: '모바일 게임 UI 디자인 실무'},
@@ -420,20 +509,17 @@ export default {
     }
   },
   methods: {
-    detail_toggle () {
+    detail_toggle () {        
         this.detail_show = !this.detail_show;
     },
     active_el () {
         this.active = !this.active
-    },
-    cardListToggle(){
-        this.cardList_show = !this.cardList_show
     }
   },
   mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
-
+        
 
         // 동영상 헤더 텍스트 입력
         $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
@@ -466,7 +552,7 @@ export default {
                 // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
                 // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
                 $(".flowplayer").toggleClass("is-open-related-contents");
-
+            
                 // TODO
                 // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
                 //      -> 동영상 pause 처리하면 될듯
@@ -481,7 +567,7 @@ export default {
             });
         }
 
-
+        
         $('.half_left').click(function(){
             console.error("왼쪽");
         });
@@ -521,14 +607,14 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);
+                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
-                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함
+                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
                 // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
                 // if ($wTop >= $hederTab-player_height )
-                if ($wTop >= 176 )
+                if ($wTop >= 0 )
                 {
                     // $parent.addClass('fixed').css({'margin-top': $targetH });
                     $parent.addClass('fixed')
@@ -559,7 +645,7 @@ export default {
                     /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
                 }
             });
-        }
+        }                                        
   }
 }
 </script>

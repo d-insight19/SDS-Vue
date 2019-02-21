@@ -1,20 +1,20 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery integration pd70">
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
                 <h1 class="h-tit">멀티캠퍼스 통합확인</h1>
                 <p class="txt-desc point2">홍길동님께서는 이미 멀티캠퍼스 통합 회원입니다. 지금 로그인하신 아이디를 통합 아이디로 사용하시겠습니까?</p>
-                
+
 
                 <!-- list -->
-                <ul class="ulList type2 mt24"> 
+                <ul class="ulList type2 mt24">
                   <li class="join-id">
                     <strong class="label-tit">아이디</strong>
                     <span class="label-txt color_clr2">CRD_abc1234</span>
@@ -54,9 +54,9 @@
             </ul>
         </div>
         <!-- //floating button -->
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

@@ -102,7 +102,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn zin0">
+        <div class="fixBtmBtn zin1">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">수강신청</button></li>

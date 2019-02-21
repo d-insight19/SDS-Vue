@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery terms">
 
@@ -12,7 +12,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
@@ -65,7 +65,7 @@
                 </div>
                 <!--
                 // Scroll 시  #header 에  fixed 클래스 추가됨
-                // 현재 퍼블리싱 안에서 Javascript 사용 시 오류 나서 주석 처리  
+                // 현재 퍼블리싱 안에서 Javascript 사용 시 오류 나서 주석 처리
                 window.onscroll = function() {myFunction()}
                 var header = document.getElementById('header')
                 var sticky = header.offsetTop;
@@ -81,9 +81,9 @@
             </div>
           </div>
         </div>
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 
@@ -95,7 +95,7 @@ export default {
   name: 'Login_jointermsdetail',
   /* vue lifecycle */
   created () {
-    window.onscroll = function() {  
+    window.onscroll = function() {
       var header = document.getElementById('header')
       var headerT = document.querySelector('#header .header_text')
       var sticky = header.offsetTop;

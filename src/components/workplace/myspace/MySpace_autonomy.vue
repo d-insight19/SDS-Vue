@@ -40,7 +40,7 @@
           <div class="cell">
             <div class="inner pt0">
                 <!-- list -->
-                <ul class="thumList type4">
+                <ul class="thumList type4 wh">
                     <li>
                         <div class="thum">
                             <div class="cDim"></div>

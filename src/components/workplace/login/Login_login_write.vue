@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery login">
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
@@ -56,7 +56,7 @@
                     </div>
                 </fieldset>
 
-                <ul class="loginEtcBtn">                    
+                <ul class="loginEtcBtn">
                     <li><a href="#">아이디찾기</a></li>
                     <li><a href="#">비밀번호 찾기</a></li>
                     <li><a href="#">회원가입</a></li>
@@ -67,16 +67,16 @@
                     <dd >아이디 <span class="fwb">ex사번(예 ex123456)</span></dd>
                     <dd >비밀번호 <span class="fwb">아이디와 동일</span></dd>
                     <dd class="desc">최초 접속 시 아이디와 비밀번호가 동일합니다.</dd>
-                </dl> 
-                초기접속시 활성화 
+                </dl>
+                초기접속시 활성화
                 -->
 
-                
+
 
             </div>
           </div>
         </div>
-        
+
         <div class="loginFooter">
             <p class="custom_txt">고객센터<span class="custom_tel color_clr2">1544 - 9001</span></p>
             <ul class="custom_info">
@@ -85,13 +85,13 @@
             </ul>
             <p class="copyright">ⓒ copyright by mulicampus CO.LTD. All right reserved</p>
         </div>
-        
+
       </div>
-      <!-- //container -->   
+      <!-- //container -->
       <div id="keyboard_wrap">
             <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
-            <div class="keyboard_input" v-show="focusFlag">                
-                
+            <div class="keyboard_input" v-show="focusFlag">
+
                 <div class="bookmark_wrap" v-if="keyboard_type=='4'">
                     <span class="bookmarktxt">북마크</span>
                     <span class="fr time">01:36</span>
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="rating_wrap" v-if="keyboard_type=='2'">
-                    <span class="ratingtxt">평점</span>                        
+                    <span class="ratingtxt">평점</span>
                     <fieldset class="fr rating">
                         <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
                         <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
@@ -113,7 +113,7 @@
                     </fieldset>
                 </div>
 
-                <div class="inputbox" >                        
+                <div class="inputbox" >
                     <div class="textarea_wrap">
                         <textarea @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
                     </div>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
     <!-- //wrap -->
 
