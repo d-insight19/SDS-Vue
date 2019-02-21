@@ -11,7 +11,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <!-- 연수원 URL 찾기의 타이틀 margin-bottom 은 36px이라  type2 클래스 추가 -->

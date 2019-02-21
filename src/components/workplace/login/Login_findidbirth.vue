@@ -11,7 +11,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <h1 class="h-tit1 mb24">생년월일/성별로 찾기</h1>
