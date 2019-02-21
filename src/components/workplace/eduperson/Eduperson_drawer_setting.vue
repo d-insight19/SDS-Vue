@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery eduperson_drawer_setting">
 
@@ -12,7 +12,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
@@ -39,26 +39,26 @@
                             </slp-select>
                         </div>
                     </li>
-                    
+
                     <li>
                         <span class="fl edu_setting_title">버전정보</span>
                         <span class="fr edu_setting_version">최신버전 <span class="num">1.0.1</span></span>
                         <span class="fr edu_setting_version color_clr2" style="display:none">최신버전으로 업데이트</span>
                     </li>
-                    <li>                        
+                    <li>
                         <span class="edu_setting_title">오픈소스 라이선스</span>
                         <span class="ico next_16 fr"></span>
                     </li>
                 </ul>
                 <!-- //list -->
-                
-                
-                
+
+
+
             </div>
           </div>
         </div>
       </div>
-      <!-- //container -->    
+      <!-- //container -->
 
     </div>
     <!-- //wrap -->

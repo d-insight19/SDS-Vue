@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery eduperson_login">
         <!-- header -->
@@ -9,7 +9,7 @@
           <button type="button" class="btn only prev"><span class="ico">이전</span></button>
         </div>
         <!-- //header -->
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
                 <p class="edu_logintitle1">멀티캠퍼스</p>
@@ -22,7 +22,7 @@
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
-                          <span class="label">SMS</span>                    
+                          <span class="label">SMS</span>
                       </label>
                   </li>
                   <li>
@@ -31,7 +31,7 @@
                           <span class="ico">
                               <span class="innerCircle"></span>
                           </span>
-                          <span class="label">이메일</span>                    
+                          <span class="label">이메일</span>
                       </label>
                   </li>
                 </ul>
@@ -54,11 +54,11 @@
             </div>
           </div>
         </div>
-        
-        
+
+
 
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

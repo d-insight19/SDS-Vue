@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery eduperson_studycurrent_detail">
         <!-- header -->
@@ -10,11 +10,11 @@
           <p class="header_text font_18">이러닝 학습현황</p>
         </div>
         <!-- //header -->
-        
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
-              
+
               <div class="detail_date">
                 <p class="fl select_date">2018.11<span class="ico calender_blue_24"></span></p>
                 <p class="fr select_lecture" @click="bottomsheetToggle">교육차수1<span class="ico ico_dropdown16"></span></p>
@@ -84,7 +84,7 @@
 
               <div class="detail_box">
                 <h2 class="tit">학습자 성적분포도</h2>
-                <ul class="progBox_wrap vertical">                  
+                <ul class="progBox_wrap vertical">
                   <li>
                     <span  class="bar bar5" style="height:30%" title="80점 미만" value="30.0%"></span>
                   </li>
@@ -97,7 +97,7 @@
                   <li>
                     <span class="bar bar5" style="height:12.0%" title="95점 이상" value="12.0%"></span>
                   </li>
-                </ul>    
+                </ul>
               </div>
 
               <p class="hr"></p>
@@ -117,18 +117,18 @@
                         <div class="bar bar5" style="width: 10%;"></div>
                         <span class="fr">{{item.count1}}명</span>
                       </div>
-                      
+
                       <div class="progBox">
                         <div class="bar bar1" style="width: 30%;"></div>
                         <span class="fr">{{item.count2}}명</span>
                       </div>
-                    </div>                    
+                    </div>
                   </li>
 
                 </ul>
               </div>
-              
-                
+
+
             </div>
           </div>
         </div>
@@ -136,11 +136,11 @@
         <!-- Bottom Sheet -->
         <div id="bottomsheet_wrap" v-show="bottomsheetFlag">
           <div id="sheetDim"  @click="bottomsheetToggle"></div>
-          <div id="bottomsheet">            
+          <div id="bottomsheet">
             <ul  @click="bottomsheetToggle">
-              <!-- 
-                현재 아이콘이 이미지라 문의했지만, 순수  css로 바꿔야한다면 
-                <span class="ico check_24_blue"></span> -> <span class="checkIcon"></span>                 
+              <!--
+                현재 아이콘이 이미지라 문의했지만, 순수  css로 바꿔야한다면
+                <span class="ico check_24_blue"></span> -> <span class="checkIcon"></span>
               -->
               <li class="">교육차수 1<span class="checkIcon"></span></li>
               <li class="">교육차수 2<span class="checkIcon"></span></li>
@@ -149,7 +149,7 @@
               <li class="">교육차수 5<span class="checkIcon"></span></li>
               <li class="active">선택된 차수<span class="checkIcon"></span></li>
             </ul>
-            <div class="bottomsheetBtn">              
+            <div class="bottomsheetBtn">
               <span class="ico close_24_black"></span>
               닫기
             </div>
@@ -157,11 +157,11 @@
         </div>
         <!-- // Bottom Sheet -->
 
-        
+
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 
