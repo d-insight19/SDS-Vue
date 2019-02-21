@@ -11,7 +11,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <h1 class="h-tit1 mb32">아이디찾기 결과</h1>

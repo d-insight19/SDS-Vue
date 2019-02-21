@@ -11,7 +11,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <h1 class="h-tit1">휴대폰 번호로 찾기</h1>

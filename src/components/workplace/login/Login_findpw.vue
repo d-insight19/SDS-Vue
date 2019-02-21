@@ -11,7 +11,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <h1 class="h-tit1">아이디/비밀번호 찾기</h1>
