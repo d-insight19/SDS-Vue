@@ -1,17 +1,17 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer helpdesk">
-            
-                 
-        <div id="content" class="etc">
+
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
-             
-             
+
+
                 <div class="helpdesk_wrap">
                     <div class="helpdesk">
                         <ul class="btn">
@@ -20,23 +20,23 @@
                         </ul>
 
                         <ul class="date">
-                            <li>평일 : 08:00 ~ 20:00 </li> 
-                            <li>휴일 : 09:00 ~ 18:00</li> 
+                            <li>평일 : 08:00 ~ 20:00 </li>
+                            <li>휴일 : 09:00 ~ 18:00</li>
                         </ul>
                         <p class="copy">ⓒ copyright by mulicampus CO.LTD. All right reserved</p>
                     </div>
                 </div>
 
-              
+
 
             </div>
           </div>
         </div>
 
       </div>
-      <!-- //container --> 
+      <!-- //container -->
 
-       
+
 
     </div>
     <!-- //wrap -->
