@@ -281,20 +281,22 @@
                 </ul>
 
                 <div class="infoChk pr0" style="margin-left:-18px; margin-right:-18px; background:#f2f2f2">
-                    <input style="margin: 18px 0px 18px 18px;"  type="text" placeholder="노트를 입력해주세요" class="input type2"><button style="margin-top:18px; margin-right:18px;" type="button" class="btn sm clr1 w17p">등록</button>
+                    <!-- snacbar -->
+                    <div class="toast" @click="snacToggle" v-show="snacFlag">
+                        <div class="in">
+                            <p>노트 스크랩이 완료되었습니다.</p>
+                            <div class="toastBtnWrap">
+                                <a href="#" @click="snacToggle">실행취소</a>
+                                <a href="#">목록보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <input style="margin: 18px 0px 18px 18px;"  type="text" placeholder="노트를 입력해주세요" class="input type2">
+                    <button  @click="snacToggle" type="button" class="btn_regi btn sm clr1 w17p">등록</button>
                 </div>
             </div>
 
-            <!-- snacbar -->
-            <div class="toast" v-show="snacFlag">
-                <div class="in">
-                    <p>노트 스크랩이 완료되었습니다.</p>
-                    <div class="toastBtnWrap">
-                        <a href="#" @click="snacToggle">실행취소</a>
-                        <a href="#">목록보기</a>
-                    </div>
-                </div>
-            </div>
+            
           </div>
 
         </div>

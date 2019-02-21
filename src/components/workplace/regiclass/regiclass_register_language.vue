@@ -5,7 +5,7 @@
       <!-- container -->
       <div id="container" class="mediaquery regiclass basicinfo register pd70">
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner" style="padding-top:40px;">
               

@@ -1605,7 +1605,8 @@ label.rdo .label{position: relative;}
 #container.courseware .multiList.type2 > li .action {position:absolute;bottom:18px;right:18px; font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
 #container.courseware .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
 #container.courseware .ico.accordion_arrow{width:20px;height:20px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat;}
-#container.courseware .ico.accordion_arrow.wh_down{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_down.png") no-repeat;}
+#container.courseware .ico.accordion_arrow.wh_down{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_down.png") no-repeat !important;}
+#container.courseware .open .ico.accordion_arrow.wh_up{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_up.png") no-repeat;}
 #container.courseware .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 #container.courseware .bot-wrap{background:white; padding:18px; margin-top:26px;}
 #container.courseware .wh{color:white;}
@@ -1621,7 +1622,6 @@ label.rdo .label{position: relative;}
 #container.courseware .sub_content .download_detail.bottom-bd-x {border-bottom:1px solid map-get($line_colors,B89) !important; }
 #container.courseware .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
 #container.courseware .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 15px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
-#container.courseware .open .ico.accordion_arrow.wh_up{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_up.png") no-repeat;}
 #container.courseware .clr4 {background-color:#f2f3f7 !important;}
 #container.courseware .clr3 {background-color:#a3a9ff!important;}
 
@@ -1708,6 +1708,8 @@ label.rdo .label{position: relative;}
 //Study_studystatus_assessment_applyresult
 #container.studystatus .inb-box .ico-ml{ margin-left: 48px;}
 #container.studystatus .inb-box .ico-mr{ margin-right: 48px;}
+#container.studystatus .com-rdo.ox_mode{display: flex;  justify-content: center;}
+#container.studystatus .inb-box{width: auto;}
 #container.studystatus .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 
 
@@ -2041,20 +2043,24 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .criteria-wrap .total .total-num{font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px;}
 
 // studynote
-.studynote .label-tit-15{font-size:map-get($font-size, font_15);letter-spacing: -0.045em; color:rgba(0,0,0,0.8);}
-.studynote .chips_wrap{width: calc(100% - 212px);}
-// studynote_edit
-.studynote .font_13 {font-size:map-get($font-size, font_13);letter-spacing: -0.039em;}
-.studynote .info {font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.8)}
-.studynote .toast {
-    width: calc(100% - 36px);
-    padding: 0px 0px 16px 0px;
+.studynote {
+    .chips_wrap{width: calc(100% - 212px);}
+    // studynote_edit
+    .font_13 {font-size:map-get($font-size, font_13);letter-spacing: -0.039em;}
+    .info {font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.8)}
+    .toast {width: calc(100% - 36px);padding: 0px 0px 13px 0px;position: absolute;left: 18px;}
+    .label-tit-15{font-size:map-get($font-size, font_15);letter-spacing: -0.045em; color:rgba(0,0,0,0.8);}
+    .btn_regi{margin-top:18px; margin-right:18px;}
 }
 
+
 //eduperson_loginOTP
-.eduperson_login .label-tit-20{font-size:map-get($font-size, font_20);letter-spacing: -0.06em;font-weight:400; }
-.eduperson_login .ul-block li {display:inline-block;margin-bottom:35px;}
-.eduperson_login .loginList .time {text-align:right; font-family:'roboto'; font-weight:500; font-size:map-get($font-size, font_12);}
+.eduperson_login {
+    .label-tit-20{font-size:map-get($font-size, font_20);letter-spacing: -0.06em;font-weight:400; }
+    .ul-block li {display:inline-block;margin-bottom:35px;}
+    .loginList .time {text-align:right; font-family:'roboto'; font-weight:500; font-size:map-get($font-size, font_12);}
+}
+
 
 
 
