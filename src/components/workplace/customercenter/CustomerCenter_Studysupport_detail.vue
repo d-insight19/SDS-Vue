@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer studysupport ">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,7 +12,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner nopad">
                      <!-- list -->
@@ -20,9 +20,9 @@
                         <ul class="singleList type_1">
                             <li class="border_top">
                                 <a>버전정보<span class="version fr">최신 버전 v.0.1</span></a>
-                            </li>                           
+                            </li>
                         </ul>
-                        <p class="hr"></p> 
+                        <p class="hr"></p>
                         <p class="label-tit20"><strong>지원 모바일 환경</strong></p>
                             <table class="support_mobile">
                                 <tr>
@@ -34,8 +34,8 @@
                                     <td>10.0 이상</td>
                                 </tr>
                             </table>
-                       
-                        <p class="hr"></p> 
+
+                        <p class="hr"></p>
                         <p class="label-tit20"><strong>원격지원 서비스</strong></p>
                             <dl class="remote_assistance">
                                 <dt>모바일원격지원 서비스란?</dt>
@@ -51,14 +51,14 @@
                         </ul>
                             <ul class="remote_assistance_step">
                                 <li>
-                                    <div class="step step1"></div>                                            
+                                    <div class="step step1"></div>
                                     <dl class="mt12">
                                         <dt class="color_clr1">STEP 1</dt>
                                         <dd>고객센터로 원격지원서비스 예약</dd>
                                     </dl>
                                 </li>
                                 <li>
-                                    <div class="step step2"></div>                                            
+                                    <div class="step step2"></div>
                                     <dl>
                                         <dt class="color_clr1">STEP 2</dt>
                                         <dd>앱 설치 가이드 및 접속코드 확인<br>
@@ -66,7 +66,7 @@
                                     </dl>
                                 </li>
                                 <li>
-                                    <div class="step step3"></div>                                            
+                                    <div class="step step3"></div>
                                     <dl>
                                         <dt class="color_clr1">STEP 3</dt>
                                         <dd>원격서비스 앱 설치 후 안내받은 <br>
@@ -74,14 +74,14 @@
                                     </dl>
                                 </li>
                                 <li>
-                                    <div class="step step4"></div>                                            
+                                    <div class="step step4"></div>
                                     <dl class="mt12">
                                         <dt class="color_clr1">STEP 4</dt>
                                         <dd>문제점 해결 원격지원서비스 종료</dd>
                                     </dl>
-                                </li>  
-                            </ul>  
-                        
+                                </li>
+                            </ul>
+
                             <div class="remote_assistance_manage">
                                 <p class="label-tit16">원격지원 서비스 운영</p>
                                 <p class="mt10">원격지원 서비스는 고객센터 <span class="color_clr2">1544-9001</span>로 1차 상담을 진행하신 뒤에 운영자의 안내에 따라 접수됩니다.</p>
@@ -92,7 +92,7 @@
                                 </ul>
                                 <p class="contents14">평일 : 오전 8:00 ~ 오후 8:00 (KST)</p>
                             </div>
-                        
+
                         <ul class="singleList type_2 mt24">
                             <li class="first_line">
                                 <a href="# pt0">모바일 원격 접속 방법<span class="ico accordion_up"></span></a>
@@ -124,17 +124,17 @@
                             </li>
                         </ul>
 
-                      
-                <!-- //list -->
-                       
 
-                       
+                <!-- //list -->
+
+
+
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->

@@ -15,23 +15,19 @@
         <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
-                <div id="dropdown_wrap" v-show="langFlag">
-                    <div id="sheetDim" @click="changeLang()"></div>
-                    <div id="dropdown" class="category">
-                        <ul @click="changeLang()">
-                        <li>11월 평가</li>
-                        <li>10월 평가</li>
-                        <li>09월 평가</li>
-                        </ul>
-                    </div>
-                </div>
 
                 <div class="tabCnt dpb pt0"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
 
                         <div class="name_wrap">
-                            <strong class="label-tit15 mr4">12월 평가</strong><a href="#"><span class="ico down_blue_24" @click="changeLang()"></span> </a>
+                            <strong class="label-tit15 mr4" @click="bottomsheetToggle">12월 평가<a href="#"><span class="ico down_blue_24 ml6"></span> </a></strong>
                             <div class="calender">2018.11.15 <a href="#"><span class="ico calender_24 fr"></span></a></div>
                         </div>
+                        <slp-bottom-sheet
+                        :show="bottomsheetFlag"
+                        :list="list"
+                        v-model="selected"
+                        @show="bottomsheetToggle"
+                        @selected="change"/>
 
                         <p class="hr"></p>
 
@@ -104,23 +100,33 @@
 
 <script>
 export default {
-  name: 'Study_02_studyquestion_detail',
+  name: 'ComponentsBottomSheet',
+  /* vue data */
+  data () {
+    return {
+      bottomsheetFlag: false,
+      selected: 0,
+      list: [
+        {title: '11월 평가'},
+        {title: '10월 평가'},
+        {title: '09월 평가'},
+        {title: '08월 평가'},
+        {title: '07월 평가'}
+      ]
+    }
+  },
   /* vue lifecycle */
   created () {
   },
   mounted () {
   },
-  /* vue data */
-  data () {
-    return {
-      headerType: 1,
-      langFlag: false
-    }
-  },
   /* vue function */
   methods: {
-    changeLang () {
-      this.langFlag = !this.langFlag
+    bottomsheetToggle () {
+      this.bottomsheetFlag = !this.bottomsheetFlag
+    },
+    change (value) {
+      this.selected = value
     }
   }
 }
