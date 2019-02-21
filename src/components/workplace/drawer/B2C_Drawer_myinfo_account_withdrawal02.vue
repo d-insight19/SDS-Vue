@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,15 +12,15 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                         <!-- list -->
-                        <ul class="multiList type1">                           
+                        <ul class="multiList type1">
                             </li>
                             <li class="title_line pt0 pb12">
                                 <strong class="label-tit20">나의 정보</strong>
-                            </li>     
+                            </li>
                             <ul class="withdrawal oh mb35">
                                 <li class="fl">
                                     <p class="subject">학습중인 과정수</p>
@@ -38,7 +38,7 @@
                                     <p class="subject">포인트 순위</p>
                                     <p class="desc"><span class="num">36/582</span>위</p>
                                 </li>
-                            </ul>                                                         
+                            </ul>
                         </ul>
                         <p class="divide_line"></p>
                         <ul class="multiList type2">
@@ -53,12 +53,12 @@
                             <li class="mb20">
                                 <strong class="label-tit14">비밀번호</strong>
                                 <input type="text" class="input" value="*********" >
-                            </li>    
+                            </li>
                             <li>
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
                                 <span class="agree">위 내용을 모두 확인했으며, 탈퇴에 동의합니다.</span>
-                            </li>                                                          
-                        </ul>                       
+                            </li>
+                        </ul>
                         <!-- // list -->
 
                         <div class="withdrawal_btn mt70">
@@ -69,13 +69,13 @@
                             <button type="button" class="btn md clr1">회원탈퇴</button>
                         </li>
                     </div>
-                       
+
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->

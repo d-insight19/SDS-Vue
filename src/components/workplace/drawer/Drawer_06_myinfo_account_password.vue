@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,13 +12,13 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                     <!-- list -->
                     <div class="desc mt0">현재 비밀번호를 입력한 후<br>
                         새로 사용할 비밀번호를 입력해주세요.</div>
-                        <ul class="multiList type2">                   
+                        <ul class="multiList type2">
                         <li class="mb20">
                             <strong class="label-tit14">현재 비밀번호</strong>
                             <input type="text" class="input" placeholder="현재 비밀번호 입력" >
@@ -30,12 +30,12 @@
                         <li class="mb20">
                             <strong class="label-tit14">새 비밀번호 확인</strong>
                             <input type="text" class="input" placeholder="6~16자의 영소문자, 숫자 조합" >
-                        </li>                 
-                    </ul>                   
+                        </li>
+                    </ul>
                     <!-- //list -->
-                       
 
-                       
+
+
                     </div>
                 </div>
             </div>
@@ -49,10 +49,10 @@
             </ul>
         </div>
         <!-- //floating button -->
-                       
-            
+
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->

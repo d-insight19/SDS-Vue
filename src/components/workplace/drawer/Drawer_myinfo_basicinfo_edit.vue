@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,11 +12,11 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                     <!-- list -->
-                    <ul class="multiList type2">                   
+                    <ul class="multiList type2">
                         <li class="mb20">
                             <strong class="label-tit14">이메일</strong>
                             <input type="text" class="input" value="CRD_abc1234@multicapus.co.kr" >
@@ -24,14 +24,14 @@
                         <li class="mb20">
                             <strong class="label-tit14">휴대전화</strong>
                             <input type="text" class="input" value="01012341234">
-                        </li>                                        
+                        </li>
                         <li>
                             <strong class="label-tit14">주소</strong>
                         <div class="rdoSelBox mt8">
                             <label class="labelRdo"><input type="radio" class="rdo" name="gender-rdo" checked="checked"><span class="ico"></span><span class="label">자택</span></label>
                             <label class="labelRdo"><input type="radio" class="rdo" name="gender-rdo"><span class="ico"></span><span class="label">직장</span></label>
                         </div>
-                            <div>                                
+                            <div>
                                 <ul>
                                     <li>
                                         <div class="postCode infoChk">
@@ -41,7 +41,7 @@
                                     </li>
                                     <li><input type="text" class="input" value="서울시 잠원구 신사동 33길 15"></li>
                                     <li><input type="text" class="input" value="한양아파트 1403호"></li>
-                                </ul>                            
+                                </ul>
                             </div>
                         </li>
                     </ul>
@@ -52,13 +52,13 @@
                     </label>
                     <!-- //list -->
 
-                       
+
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->
