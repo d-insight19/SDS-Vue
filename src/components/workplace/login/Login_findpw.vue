@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery findid">
         <!-- header -->
@@ -10,13 +10,13 @@
           <p class="header_text font_18"></p>
         </div>
         <!-- //header -->
-        
+
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <h1 class="h-tit1">아이디/비밀번호 찾기</h1>
 
-                
+
                 <!-- tab wrap -->
                 <div class="tabWrap">
                     <!-- tab menu -->
@@ -35,9 +35,9 @@
           </div>
         </div>
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 

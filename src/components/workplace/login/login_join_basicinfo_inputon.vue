@@ -1,14 +1,14 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery join basicinfo pd70">
 
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
-              
+
                 <h1 class="h-tit">회원가입</h1>
 
                 <div class="stepper">
@@ -58,7 +58,7 @@
                                 <!-- <p class="InfoChK-resultTxt err">비밀번호가 일치하지 않습니다.</p> -->
                             </div>
                         </div>
-                    </li>                    
+                    </li>
                     <li>
                         <strong class="label-tit">성별</strong>
                         <div class="rdoSelBox ">
@@ -96,7 +96,7 @@
                     <li>
                         <strong class="label-tit require_mark">휴대전화</strong>
                         <slp-text-field value="01029384029" placeholder="‘-‘ 없이 숫자만 입력하세요" message="‘-’ 또는 띄어쓰기 없이 10자 이상 입력해주세요."></slp-text-field>
-                    </li>                    
+                    </li>
                     <li>
                         <strong class="label-tit">주소</strong>
                         <div class="">
@@ -131,7 +131,7 @@
         </div>
         <!-- //floating button -->
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

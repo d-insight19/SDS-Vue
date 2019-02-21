@@ -1,12 +1,12 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery courseware pd70">   
-        
+      <div id="container" class="mediaquery courseware pd70">
+
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video" style="background:#fff">          
+        <div id="header" class="tab video" style="background:#fff">
             <div class="header_inner line1 ">
                 <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
@@ -15,9 +15,9 @@
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
                     <li class="on"><a href="#tab1">학습현황</a></li>
-                    <li><a href="#tab2">학습목차</a></li> 
-                    <li><a href="#tab3">학습노트</a></li> 
-                    <li><a href="#tab3">질문방</a></li> 
+                    <li><a href="#tab2">학습목차</a></li>
+                    <li><a href="#tab3">학습노트</a></li>
+                    <li><a href="#tab3">질문방</a></li>
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
                 </ul>
             </div>
@@ -28,7 +28,7 @@
                 <div class="right blur"></div>
             </div> -->
 
-            
+
             <!-- s: 동영상 -->
             <!-- s: 동영상 -->
             <div class="player_wrap">
@@ -43,7 +43,7 @@
                                 <li v-for="(item, index) in relatedVideoList" :key="index">
                                     <a href="#"></a>
                                     <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li> 
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                             <div class="icon_wrap">
                                 <span class="light_icon"></span>
                                 <span class="light_value">75</span>
-                            </div>                            
+                            </div>
                         </div>
                         <div class="volume_right">
                             <div class="inner"></div>
@@ -85,11 +85,11 @@
                 <!-- s: btm_subtitle_area -->
                 <div class="btm_subtitle_area">
                     <div class="subtitle_slide_wrap">
-                        <div class="btm_subtitle_control">                                
+                        <div class="btm_subtitle_control">
                             <div>
                                 <div class="subtitle_lang_wrap">
                                     <span class="lang_type">Bahasa Indonesia</span>
-                                    <span class="dropdown"></span>         
+                                    <span class="dropdown"></span>
                                 </div>
                                 <span class="switch_txt">Auto Scroll</span>
                                 <slp-switch :value="true"/>
@@ -113,7 +113,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p> 
+                                            <p>[클래스 객체]</p>
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
@@ -122,7 +122,7 @@
                                 <li>
                                     <a href="#">
                                         <span class="time">0:24</span>
-                                        <div class="desc">                                   
+                                        <div class="desc">
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에
                                             대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번
                                             차시에는 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
@@ -141,7 +141,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p> 
+                                            <p>[클래스 객체]</p>
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -150,7 +150,7 @@
                                     <a href="#">
                                         <span class="time">0:24</span>
                                         <div class="desc">
-                                            <p>[클래스 객체]</p> 
+                                            <p>[클래스 객체]</p>
                                             <p>이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 학습하도록 하겠습니다. 이번 차시에는 배열 활용에 대해서 이번 차시에는 </p>
                                         </div>
                                     </a>
@@ -225,166 +225,166 @@
                     </div>
                 </div>
             </div>
-            
-        </div>        
 
-        <div id="content" class="etc" >
-        
+        </div>
+
+        <div id="content" class="normal" >
+
           <div class="cell">
             <div class="inner pt0">
-                
+
                 <p class="label-tit-18 studystatus_label_tit_18"><span class="ico ic_qr_blue_24"></span> <span class="color_clr2">QR 출석하기</span></p>
 
                 <div class="type_box type_1 w-full">
                     <dl>
-                        <dt>수료상태</dt> 
+                        <dt>수료상태</dt>
                         <dd>미수료</dd>
-                    </dl> 
+                    </dl>
                     <dl>
                         <dt>총점</dt>
                         <dd>75/100점</dd>
-                    </dl> 
+                    </dl>
                     <dl>
                         <dt>진도율</dt>
                         <dd>30%</dd>
                     </dl>
-                </div> 
+                </div>
 
                 <div class="singleLineGroupBlock">
                     <ul class="singleLineGroup">
                         <li class="singleLineGroup_item">
                             <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"> <span class="ico ic_pen_line_24"></span>과제</div> 
+                                <div class="flex_1"> <span class="ico ic_pen_line_24"></span>과제</div>
                                 <div>1/3</div>
                                 <div><span class="ico next_16"></span></div>
                             </a>
                         </li>
                         <li class="singleLineGroup_item">
                             <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico mark_line"></span>중간평가</div> 
-                                <div>제출완료</div> 
+                                <div class="flex_1"><span class="ico mark_line"></span>중간평가</div>
+                                <div>제출완료</div>
                                 <div><span class="ico next_16 ml_auto"></span></div>
                             </a>
-                        </li>  
+                        </li>
                         <li class="singleLineGroup_item">
                             <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico mark_line"></span>최종평가</div> 
-                                <div>제출완료</div> 
+                                <div class="flex_1"><span class="ico mark_line"></span>최종평가</div>
+                                <div>제출완료</div>
                                 <div><span class="ico next_16 ml_auto"></span></div>
                             </a>
-                        </li>  
+                        </li>
                         <li class="singleLineGroup_item">
                             <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico ic_attendace_line_24"></span>출석율</div> 
-                                <div>제출완료</div> 
+                                <div class="flex_1"><span class="ico ic_attendace_line_24"></span>출석율</div>
+                                <div>제출완료</div>
                                 <div><span class="ico next_16 ml_auto"></span></div>
                             </a>
-                        </li> 
+                        </li>
                         <li class="singleLineGroup_item">
                             <a href="" class="singleLineGroup_link d_flex align_items_center">
-                                <div class="flex_1"><span class="ico ic_badge_line_bk_24"></span> 스코어</div> 
-                                <div>제출완료</div> 
+                                <div class="flex_1"><span class="ico ic_badge_line_bk_24"></span> 스코어</div>
+                                <div>제출완료</div>
                                 <div><span class="ico next_16 ml_auto"></span></div>
                             </a>
-                        </li>                                                        
+                        </li>
                     </ul>
                 </div>
 
                 <p class="label-tit-18 mt26">수료기준</p>
                 <p calass="font_size_xs mono_80">진도율 80% 이상, 모든 평가항목 참여, 총점 80점 이상되어야 수료 가능합니다.</p>
-            
+
                 <div class="scroll-x">
                 <table class="table detail_table">
                     <thead>
                         <tr>
-                        <th></th> 
-                        <th>가중치</th> 
+                        <th></th>
+                        <th>가중치</th>
                         <th>과락기준</th>
-                        <th>학습현황</th> 
-                        <th>취득점수</th> 
-                        <th>가중치</th> 
+                        <th>학습현황</th>
+                        <th>취득점수</th>
+                        <th>가중치</th>
                         <th>과락기준</th>
-                        <th>학습현황</th>                                
+                        <th>학습현황</th>
                         </tr>
-                    </thead> 
+                    </thead>
                     <tbody>
                         <tr>
-                        <td class="">진도율</td> 
-                        <td>-</td> 
+                        <td class="">진도율</td>
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>   
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                    
-                        </tr> 
-                        <tr>
-                        <td>과제</td> 
-                        <td>-</td> 
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>  
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                       
-                        </tr>   
-                        <tr>
-                        <td>중간평가</td> 
-                        <td>-</td> 
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td> 
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                        </tr> 
-                        <tr>
-                        <td>최종평가</td> 
-                        <td>-</td> 
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>  
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                       
-                        </tr> 
-                        <tr>
-                        <td>출석율</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
                         </tr>
                         <tr>
-                        <td class="font_weight_base">스코어</td> 
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">20%</td>
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">0%</td> 
+                        <td>과제</td>
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                        </tr>                                                                       
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        </tr>
+                        <tr>
+                        <td>중간평가</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        </tr>
+                        <tr>
+                        <td>최종평가</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        </tr>
+                        <tr>
+                        <td>출석율</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        </tr>
+                        <tr>
+                        <td class="font_weight_base">스코어</td>
+                        <td class="font_weight_base">20%</td>
+                        <td class="font_weight_base">20%</td>
+                        <td class="font_weight_base">20%</td>
+                        <td class="font_weight_base">0%</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        </tr>
                     </tbody>
-                </table>  
-                </div>  
+                </table>
+                </div>
 
                 <ul class="guideList mt15">
                 <li>평가 항목의 점수를 가중치만큼 환성하여 합산한 점수입니다.</li>
-                <li>학습진행 중에는 학습한 분량 및 평가항목 참여에 따라 취득점수가 
+                <li>학습진행 중에는 학습한 분량 및 평가항목 참여에 따라 취득점수가
                 계속해서 변화되므로 평가항목을 모두 완료 후,정확한 수료여부를
-                확인 할 수 있습니다.</li>                      
+                확인 할 수 있습니다.</li>
                 </ul>
             </div>
           </div>
 
         </div>
-            
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>
@@ -486,7 +486,7 @@ export default {
     }
   },
   methods: {
-    detail_toggle () {        
+    detail_toggle () {
         this.detail_show = !this.detail_show;
     },
     active_el () {
@@ -496,7 +496,7 @@ export default {
   mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
-        
+
 
         // 동영상 헤더 텍스트 입력
         $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
@@ -529,7 +529,7 @@ export default {
                 // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
                 // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
                 $(".flowplayer").toggleClass("is-open-related-contents");
-            
+
                 // TODO
                 // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
                 //      -> 동영상 pause 처리하면 될듯
@@ -544,7 +544,7 @@ export default {
             });
         }
 
-        
+
         $('.half_left').click(function(){
             console.error("왼쪽");
         });
@@ -584,9 +584,9 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);
                 // 수치값은 수정해야함.
-                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
+                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
                 // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
@@ -622,7 +622,7 @@ export default {
                     /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
                 }
             });
-        }                                        
+        }
   }
 }
 </script>

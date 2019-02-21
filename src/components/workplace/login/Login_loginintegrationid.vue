@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery integration pd70">
 
@@ -12,9 +12,9 @@
                 <h1 class="h-tit">통합 아이디 생성</h1>
                 <p class="txt-desc">통합회원으로 가입하시면  한번의 로그인으로 이러닝/집합, 오
 픽, 세리Pro 맞춤 서비스를  이용하실 수 있습니다. 아래 검색
-된 아이디 중에서 통합아이디로 사용하실 아이디를 선택 또는 
+된 아이디 중에서 통합아이디로 사용하실 아이디를 선택 또는
 입력 해주십시오.</p>
-                
+
 
                 <!-- list -->
                 <ul class="ulList type2 mt40">
@@ -119,9 +119,9 @@
             </ul>
         </div>
         <!-- //floating button -->
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

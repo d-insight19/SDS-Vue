@@ -228,8 +228,8 @@
 
         </div>
 
-        <div id="content" class="etc" style="padding-bottom:0 !important;">
-        
+        <div id="content" class="normal" style="padding-bottom:0 !important;">
+
           <div class="cell">
             <div class="inner pt0">
                 <p class="mb5">총 <span class="fwb">1,620</span></p>

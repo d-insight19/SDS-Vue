@@ -1,31 +1,31 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery study_inquery ">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand">          
+            <div v-if="headerType == '1'" id="header" class="expand">
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                     <p class="header_text  font_19"> </p>
-                </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">                
-                    <div class="hide-inner"> 
-                        <span class="chip">1:1문의</span>     
+                </div>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">
+                    <div class="hide-inner">
+                        <span class="chip">1:1문의</span>
                         <p class="h-tit1">
-                            <strong class="q-tit">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</strong> 
-                            <span class="fr ico more28"></span>                            
+                            <strong class="q-tit">질문 타이틀 영역 질문 타이틀 영역 질문 타이틀 영역</strong>
+                            <span class="fr ico more28"></span>
                         </p>
                         <div class="txt-group">
                             <span>동영상</span>
                             <span class="pipe"></span>
                             <span>2018.10.10</span>
                             <span class="pipe"></span>
-                            <span>회신방법 : 이메일</span>                            
+                            <span>회신방법 : 이메일</span>
                         </div>
-                        <p class="h-tit5">미답변</p>                        
+                        <p class="h-tit5">미답변</p>
                     </div>
                 </div>
             </div>
@@ -33,11 +33,11 @@
 
 
             <!-- header + 확장형 + tab  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '2'" id="header" class="tab">          
+            <div v-if="headerType == '2'" id="header" class="tab">
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_19"> </p>
-                </div>  
+                </div>
                 <div class="header_inner line2 tabMenu">
                     <ul class="fixTab">
                     <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
@@ -45,10 +45,10 @@
                     <li><a href="#tab3">인문학이야기</a></li>
                     <li><a href="#tab3">인문학이야기</a></li>
                     </ul>
-                </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">                
-                    <div class="head-inner"> 
-                        <span class="chip">FAQ</span>     
+                </div>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">
+                    <div class="head-inner">
+                        <span class="chip">FAQ</span>
                         <p class="h-tit1">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <p class="ico-group">
                             <span class="ico clip"></span>
@@ -62,14 +62,14 @@
             </div>
             <!-- //header -->
 
-            
+
             <!-- header scroll 헤더  작업중-->
             <div v-if="headerType == '3'" id="header" class="tab">
-                
+
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_19"> </p>
-                </div>            
+                </div>
                 <div class="header_inner line2 tabMenu scroll-x">
                     <ul class="scrollTab">
                     <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
@@ -78,10 +78,10 @@
                     <li><a href="#tab3">인문학이야기</a></li>
                     <li><a href="#tab3">인문학이야기</a></li>
                     </ul>
-                </div>     
-                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">                
-                    <div class="head-inner"> 
-                        <span class="chip">FAQ</span>     
+                </div>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">
+                    <div class="head-inner">
+                        <span class="chip">FAQ</span>
                         <p class="h-tit1">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <p class="ico-group">
                             <span class="ico clip"></span>
@@ -93,16 +93,16 @@
                     </div>
                 </div>
             </div>
-            <!-- //header -->                    
+            <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
-                        <p class="txt-tit">과정명</p> 
+                        <p class="txt-tit">과정명</p>
                         <p class="sub-txt">이석규 교수의 마케팅 핵심원리와 실전전략</p>
                         <p class="line01"></p>
                         <p class="inner-txt">본질적인 조건을 생각해보다가 떠오른게 있는데 관련보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다.  </p>
-                        
+
                         <p class="label-tit-2 mt36"><strong>첨부파일</strong></p>
                         <ul class="ulList type4">
                             <li>
@@ -113,8 +113,8 @@
                                 <span class="at-num">500KB</span>
                                 <span class="ico download"></span>
                                 </div>
-                            </div>                         
-                            </li>                
+                            </div>
+                            </li>
                             <li>
                             <div>
                                 <span class="ico ppt-a"></span>
@@ -123,8 +123,8 @@
                                 <span class="at-num">4.5M</span>
                                 <span class="ico download"></span>
                                 </div>
-                            </div>                         
-                            </li>                
+                            </div>
+                            </li>
                             <li>
                             <div>
                                 <span class="ico ppt-a"></span>
@@ -133,16 +133,16 @@
                                 <span class="at-num">4.5M</span>
                                 <span class="ico download"></span>
                                 </div>
-                            </div>                         
-                            </li>                
+                            </div>
+                            </li>
                         </ul>
 
                     </div>
                     <!-- //inner -->
-                </div>  
+                </div>
             </div>
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>

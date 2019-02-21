@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery join pd70">
 
@@ -10,7 +10,7 @@
             <div class="inner">
 
                 <h1 class="h-tit mb26">휴면회원 본인인증</h1>
-                
+
                 <p class="lock_id">아이디<span class="color_clr2">cyclo79</span></p>
                 <p class="txt-desc">회원님의 아이디는 휴면계정으로 잠겨 있습니다. 개인정보 보호를 위해 1년 이상 접속이력이 없으신 회원님의 개인정보는 별도 보관 처리됩니다. 본인인증 후 서비스를 이용하실 수 있습니다.</p>
 
@@ -39,13 +39,13 @@
             </ul>
         </div>
         <!-- //floating button -->
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
         <slp-popup v-if="showConfirm" title="이메일 인증" cancelInput="취소" confirmInput="이메일 발송" @cancelClick="cancel" @confirmClick="confirm">
-        
+
             <div class="ly-cnt">
-                <p>회원정보에 등록된 이메일로 잠금을 해제할 수 있는 링크를 발송합니다. 메일 내 링크를 클릭해주시면 잠금이 해제됩니다.</p>	
+                <p>회원정보에 등록된 이메일로 잠금을 해제할 수 있는 링크를 발송합니다. 메일 내 링크를 클릭해주시면 잠금이 해제됩니다.</p>
             </div>
             <div class="ly-info">
                 <p>fin********@mulcam.com 정해민</p>
@@ -54,9 +54,9 @@
         </slp-popup>
 
         <!-- <slp-popup v-if="showConfirm" title="휴면계정 해제안내" confirmInput="확인" @cancelClick="cancel" @confirmClick="confirm">
-        
+
             <div class="ly-cnt">
-                <p>회원님의 계정 휴면상태가 해제되어, 정상적으로 서비스를 이용하실 수 있습니다.</p>	
+                <p>회원님의 계정 휴면상태가 해제되어, 정상적으로 서비스를 이용하실 수 있습니다.</p>
             </div>
         </slp-popup> -->
 

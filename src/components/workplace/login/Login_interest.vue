@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery interest pd70">
-          
+
             <div id="content" class="etc">
                 <div class="cell">
                     <div class="inner">
@@ -44,22 +44,22 @@
                 </div>
             </div>
 
-            <!-- fixed Bottom Btn -->    
+            <!-- fixed Bottom Btn -->
             <div class="fixBtmBtn">
                 <ul>
-                    <li>                            
+                    <li>
                         <button type="button"  class="btn ld" style="display:none;">다음</button>
                         <!-- 하단에 활성화 된 버튼은 임시로 display:none :class="[checkedNames.length && checkedNames2.length && checkedNames3.length > 0 ? activeClass : '']" -->
                         <button type="button" class="btn ld clr1" >다음</button>
                     </li>
-                </ul>                    
+                </ul>
             </div>
-            <!-- //fixed Bottom Btn --> 
+            <!-- //fixed Bottom Btn -->
 
-            
-            
+
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->
@@ -69,7 +69,7 @@
 <script>
 /* eslint-disable */
 export default {
-    
+
   name: 'Login_interest',
   /* vue lifecycle */
   created () {

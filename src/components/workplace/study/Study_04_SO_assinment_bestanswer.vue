@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery study_assinment">
             <!-- header -->
@@ -10,8 +10,8 @@
             <p class="header_text font_18">모범답안</p>
             </div>
             <!-- //header -->
-            
-            <div id="content" class="etc">
+
+            <div id="content" class="normal">
                 <div class="cell">
                   <div class="inner">
                       <strong class="txt-tit">
@@ -26,9 +26,9 @@
                   </div>
               </div>
           </div>
-                
+
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

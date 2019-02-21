@@ -22,6 +22,55 @@
                     
                 </div>
             </div>
+            <!-- e: 동영상-->
+
+
+        </div>
+        <!-- //header -->
+
+        <div id="content" class="normal">
+
+          <div class="cell">
+            <div class="inner">
+                <p class="mb5">총 <span class="fwb ml2"><b>1,620</b></span></p>
+
+                <ul class="ulList type4">
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다. 설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb mono_80">미참여</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title text-truncate">설문조사 타이틀은 한줄로 표기됩니다.</p>
+                        <div class="pipe-group">
+                            <p class="fwb mono_65"><span class="mr6">진행중</span><span class="date">2018.10.10</span></p>
+                            <p class="mt12"><span class="fwb color_clr3">참여완료</span></p>
+                        </div>
+                    </li>
+                </ul>
 
                 <div class="fixBtm" >
                     <table class="">

@@ -59,9 +59,18 @@
                         </ul>
                         <ul>
                             <li class="reply-list">
+                                <div id="dropdown_wrap" v-show="langFlag">
+                                        <div id="sheetDim" @click="changeLang()"></div>
+                                        <div id="dropdown" class="reply_more">
+                                            <ul @click="changeLang()">
+                                            <li>삭제</li>
+                                            <li>수정</li>
+                                            </ul>
+                                        </div>
+                                </div>
                                 <p class="reply-name">
                                     <span>정*민 [작성자]</span>
-                                    <span class="fr ico more"></span>
+                                    <span class="fr ico more" @click="changeLang()"></span>
                                 </p>
                                 <p class="reply-txt">저는 조금 힘들지라도 팀원들과 ‘함수형 자바스크립트’ 책을 짧고 굵게 스터디하고 본격적으로 사용하기 시작했습니다.</p>
                                 <p><span class="reply-date">2018.09.14  21:34</span></p>
@@ -140,6 +149,7 @@ export default {
   data () {
     return {
       headerType: 1,
+      langFlag: false,
       keylength: 0,
       focusFlag: false,
       keyboard_type: 2
@@ -147,6 +157,9 @@ export default {
   },
   /* vue function */
   methods: {
+    changeLang () {
+      this.langFlag = !this.langFlag
+    },
     focusToggle () {
       this.focusFlag = !this.focusFlag
     },

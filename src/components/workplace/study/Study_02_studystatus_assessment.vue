@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery studystatus">
             <!-- header -->
@@ -10,8 +10,8 @@
             <p class="header_text font_18">과제</p>
             </div>
             <!-- //header -->
-            
-            <div id="content" class="etc">
+
+            <div id="content" class="normal">
                 <div class="cell">
                   <div class="inner">
                     <div class="titTxtWrap">
@@ -20,7 +20,7 @@
                     </div>
                     <div class="date_wrap">
                         <div class="title_line noline mt20">
-                            <span class="title_txt">중간평가</span>  
+                            <span class="title_txt">중간평가</span>
                             <div class="in-chk fr"><label class="labelChk2"><input id="" type="checkbox" name="" class="chk"><span class="label">제출내역확인</span></label></div>
                         </div>
                           <div class="type_box type2">
@@ -37,7 +37,7 @@
                               </ul>
                           </div>
                         <div class="title_line noline mt20">
-                          <span class="title_txt">최종평가</span>  
+                          <span class="title_txt">최종평가</span>
                           <div class="in-chk fr"><label class="labelChk2"><input id="" type="checkbox" name="" class="chk"><span class="label">응시</span></label></div>
                         </div>
                           <div class="type_box type2">
@@ -59,9 +59,9 @@
                   </div>
                 </div>
             </div>
-                
+
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery findcenter pd70">
         <!-- header -->
@@ -10,7 +10,7 @@
           <p class="header_text font_18"></p>
         </div>
         <!-- //header -->
-        
+
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
@@ -29,19 +29,19 @@
           </div>
         </div>
 
-        <!-- fixed Bottom Btn -->    
+        <!-- fixed Bottom Btn -->
         <div class="fixBtmBtn">
             <ul>
-                <li> 
+                <li>
                     <button type="button" class="btn ld clr1">다음</button>
                 </li>
-            </ul>                    
+            </ul>
         </div>
-        <!-- //fixed Bottom Btn -->  
+        <!-- //fixed Bottom Btn -->
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 

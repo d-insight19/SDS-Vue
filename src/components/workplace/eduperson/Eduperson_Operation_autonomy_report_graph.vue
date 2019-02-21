@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery Eduperson_Operation">
         <!-- header -->
@@ -10,8 +10,8 @@
           <p class="header_text font_18">리더십 연관과정</p>
         </div>
         <!-- //header -->
-        
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
@@ -20,7 +20,7 @@
                 <ul class="thumList">
                     <li>
                         <div class="in">
-                            <a href="#" class="thum">                     
+                            <a href="#" class="thum">
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
@@ -99,7 +99,7 @@
                         </div>
                     </li>
                 </ul>
-                <!-- //list -->   
+                <!-- //list -->
 
                 <p class="hr" style="margin:16px -24px 22px"></p>
 
@@ -108,7 +108,7 @@
                 <ul class="thumList">
                     <li>
                         <div class="in">
-                            <a href="#" class="thum">                     
+                            <a href="#" class="thum">
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
@@ -187,7 +187,7 @@
                         </div>
                     </li>
                 </ul>
-                <!-- //list -->   
+                <!-- //list -->
 
                 <p class="hr" style="margin:16px -24px 22px"></p>
 
@@ -196,12 +196,12 @@
                 <ul class="thumList">
                     <li>
                         <div class="in">
-                            <a href="#" class="thum">                     
+                            <a href="#" class="thum">
                                 <div class="thumbnail">
                                     <img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt="">
                                 </div>
                             </a>
-                            <a href="#" class="tit">The Complete App Design Course - UX, UI an…</a>                            
+                            <a href="#" class="tit">The Complete App Design Course - UX, UI an…</a>
                         </div>
                     </li>
                     <li>
@@ -245,17 +245,17 @@
                         </div>
                     </li>
                 </ul>
-                <!-- //list --> 
-                
-                           
-              
+                <!-- //list -->
+
+
+
             </div>
           </div>
         </div>
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 

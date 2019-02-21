@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery">
            <!-- header -->
@@ -9,9 +9,9 @@
                 <button type="button" class="btn only prev"><span class="ico"></span></button>
                 <p class="header_text font_18">학습 독려 설정</p>
             </div>
-            <!-- //header -->      
+            <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                   <div class="inner">
                      캘린더
@@ -19,15 +19,15 @@
                 </div>
             </div>
 
-        <!-- fixed Bottom Btn -->    
+        <!-- fixed Bottom Btn -->
         <div class="fixBtmBtn">
             <ul>
-                <li> 
+                <li>
                     <button type="button" class="btn ld clr1">완료</button>
                 </li>
-            </ul>                    
+            </ul>
         </div>
-        <!-- //fixed Bottom Btn -->    
+        <!-- //fixed Bottom Btn -->
         </div>
         <!-- //container -->
 
@@ -38,7 +38,7 @@
             </div>
         </slp-popup>
         <!-- //layer wrap -->
- 
+
 
     </div>
     <!-- //wrap -->

@@ -5075,7 +5075,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">266</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -6021,7 +6021,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">320</td>
         <td>학습창 영역</td>
         <td>　</td>
@@ -9858,7 +9858,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">535</td>
         <td>기타</td>
         <td>이어보기 팝업</td>
@@ -10864,7 +10864,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">589</td>
         <td>검색</td>
         <td>검색 메인</td>
@@ -10881,7 +10881,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">590</td>
         <td>검색</td>
         <td>검색어 입력</td>
@@ -10899,7 +10899,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">591</td>
         <td>검색</td>
         <td>검색어 입력</td>
@@ -10981,7 +10981,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">595</td>
         <td>Drawer - 고객센터</td>
         <td>고객센터</td>

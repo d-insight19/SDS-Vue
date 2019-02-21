@@ -1,11 +1,11 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery eduperson_edugroup">
 
-        <div id="header" class="expand"> 
+        <div id="header" class="expand">
             <div class="header_inner line1">
                 <p class="header_text font_18">멀티캠퍼스 교육관리 시스템</p>
             </div>
@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
                 <ul class="ulList type1">
@@ -33,12 +33,12 @@
                     <li>LEARNING GROUP TITLE 9<span class="ico next_gray_16"></span></li>
                     <li>LEARNING GROUP TITLE 10<span class="ico next_gray_16"></span></li>
                     <li>LEARNING GROUP TITLE 11<span class="ico next_gray_16"></span></li>
-                </ul>                               
+                </ul>
             </div>
           </div>
         </div>
       </div>
-      <!-- //container -->    
+      <!-- //container -->
 
     </div>
     <!-- //wrap -->
