@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer studysupport ">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,7 +12,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner nopad">
                      <!-- list -->
@@ -20,9 +20,9 @@
                         <ul class="singleList type_1">
                             <li class="border_top">
                                 <a>버전정보<span class="version fr">최신 버전 v.0.1</span></a>
-                            </li>                           
+                            </li>
                         </ul>
-                        <p class="hr"></p> 
+                        <p class="hr"></p>
                         <p class="label-tit20"><strong>지원 모바일 환경</strong></p>
                             <table class="support_mobile">
                                 <tr>
@@ -34,8 +34,8 @@
                                     <td>10.0 이상</td>
                                 </tr>
                             </table>
-                       
-                        <p class="hr"></p> 
+
+                        <p class="hr"></p>
                         <p class="label-tit20"><strong>원격지원 서비스</strong></p>
                             <dl class="remote_assistance">
                                 <dt>모바일원격지원 서비스란?</dt>
@@ -55,15 +55,15 @@
                             </li>
                         </ul>
                 <!-- //list -->
-                       
 
-                       
+
+
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->

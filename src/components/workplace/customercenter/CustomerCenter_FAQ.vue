@@ -21,7 +21,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                         <div id="dropdown_wrap" v-show="langFlag">
