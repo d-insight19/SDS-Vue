@@ -229,7 +229,7 @@
         </div>
         <!-- header -->
 
-        <div id="content" class="etc" >
+        <div id="content" class="normal" >
 
           <div class="cell">
             <div class="inner pt0">
@@ -261,7 +261,7 @@
                                             <li>
                                                 <div class="download_detail border_clr1 clr4 done">
                                                     <div class="txt_wrap">
-                                                        
+
                                                         <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
                                                     </div>
                                                 </div>
@@ -269,7 +269,7 @@
                                             <li>
                                                 <div class="download_detail border_clr1 clr4 done">
                                                     <div class="txt_wrap">
-                                                        
+
                                                         <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
                                                     </div>
                                                 </div>
@@ -277,7 +277,7 @@
                                             <li>
                                                 <div class="download_detail border_clr1 clr4 done">
                                                     <div class="txt_wrap">
-                                                        
+
                                                         <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
                                                     </div>
                                                 </div>
@@ -338,7 +338,7 @@ export default {
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         cardFlag:false,
-        cardList_show:false,        
+        cardList_show:false,
         relatedVideoList: [
             {title: '자바스크립트 개발 프로세스 기초'},
             {title: '모바일 게임 UI 디자인 실무'},

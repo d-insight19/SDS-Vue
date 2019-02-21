@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery study_agree ">
             <!-- header -->
@@ -9,11 +9,11 @@
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
                 <p class="header_text font_18">최조 학습전 확인 절차</p>
             </div>
-            <!-- //header -->            
-            <div id="content" class="etc">
+            <!-- //header -->
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
-                        
+
                         <p class="label-tit-2">약관동의</p>
                         <!-- 동의 리스트 -->
                         <div class="agreeAll">
@@ -42,13 +42,13 @@
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
                 <button type="button" class="btn md clr1">확인</button>
             </div>
-            <!-- //floatingbtn -->   
+            <!-- //floatingbtn -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

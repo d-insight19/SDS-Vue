@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery study_assessment_no">
             <!-- header -->
@@ -9,23 +9,23 @@
               <button type="button" class="btn only close"><span class="ico">닫기</span></button>
               <p class="header_text font_18">과정평가 학습자 안내</p>
             </div>
-            <!-- //header -->            
-            <div id="content" class="etc">
+            <!-- //header -->
+            <div id="content" class="normal">
                 <div class="cell">
                   <div class="inner">
                       <p class="label-tit18"><strong>정해민님의 평가 상태</strong></p>
                       <div class="tb_wrap">
                         <table>
                           <tr>
-                            <td class="right-bd">구분</td>  
-                            <td >제출상태</td>  
-                          </tr>  
+                            <td class="right-bd">구분</td>
+                            <td >제출상태</td>
+                          </tr>
                           <tr>
-                            <td class="right-bd tb-state">최종평가</td>  
-                            <td class="tb-state">미응시</td>  
-                          </tr>  
-                        </table> 
-                      </div>                     
+                            <td class="right-bd tb-state">최종평가</td>
+                            <td class="tb-state">미응시</td>
+                          </tr>
+                        </table>
+                      </div>
                       <p class="label-tit18"><strong>평가 기본 정보</strong></p>
                       <ul class="ulList type4">
                           <li>
@@ -61,27 +61,27 @@
                             </div> -->
                           </li>
                       </ul>
-                      
+
                   </div>
                 </div>
             </div>
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
               <ul>
                 <li>
                   <button type="button" class="btn md">다음에 응시</button>
-                </li> 
+                </li>
                 <li>
                   <button type="button" class="btn md" :class="{ clr1 : active_el }">지금 응시</button>
                 </li>
               </ul>
             </div>
-            <!-- //floatingbtn -->   
+            <!-- //floatingbtn -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

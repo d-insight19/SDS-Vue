@@ -10,7 +10,7 @@
                 <p class="header_text font_18">과정 MAP</p>
             </div>
             <!-- //header -->
-            <div id="content" class="etc" >
+            <div id="content" class="normal" >
                 <div class="cell">
                     <div class="inner ">
                         <p class="tb-wrap">
