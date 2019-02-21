@@ -5075,7 +5075,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">266</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -9858,7 +9858,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">535</td>
         <td>기타</td>
         <td>이어보기 팝업</td>
@@ -10304,7 +10304,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">560</td>
         <td>학습홈 영역</td>
         <td>기본 학습홈</td>
@@ -10315,8 +10315,8 @@
         <td>　</td>
         <td class="textL">05.Study_01.05.home_set_calendar2</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'Study_home_set_calendar' }">
+            Study_home_set_calendar
           </router-link>
         </td>
         <td></td>
@@ -10860,7 +10860,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">589</td>
         <td>검색</td>
         <td>검색 메인</td>
@@ -10877,7 +10877,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">590</td>
         <td>검색</td>
         <td>검색어 입력</td>
@@ -10895,7 +10895,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">591</td>
         <td>검색</td>
         <td>검색어 입력</td>
