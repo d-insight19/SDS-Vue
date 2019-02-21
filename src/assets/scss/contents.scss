@@ -2719,11 +2719,12 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
 
 .MySpace #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
-.MySpace #dropdown{top:0px;right:0px;}
+/*.MySpace #dropdown{top:0px;right:0px;}
 // Dropdown
 .MySpace .dropdown{z-index:851;position:absolute;top:0px;right:0px;width:auto;background:#fff;box-shadow: 0px 3px 6px rgba(0,0,0,0.16);border-radius: 4px;}
 .MySpace .dropdown ul{width:100%;padding:8px 0px;}
 .MySpace .dropdown ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
+*/
 .MySpace .cardList.type2 .tit {width: auto;}
 // 비용신청단계 조회
 .MySpace .formal_requeststage {margin-left: 19px; border-left: 2px solid map-get($line_colors,B89);}
