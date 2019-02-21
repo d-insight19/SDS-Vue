@@ -5144,7 +5144,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr >
       <td align="center">270</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5182,8 +5182,8 @@
         <td>삭제</td>
         <td></td>
       </tr>
-      <tr class="new">
-      <td align="center" class="new">272</td>
+      <tr >
+      <td align="center">272</td>
         <td>학습홈 영역</td>
         <td>　</td>
         <td>　</td>
@@ -5244,7 +5244,7 @@
         </td>
         <td></td>
       </tr>
-      <tr  class="new">
+      <tr>
       <td align="center">275</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5601,7 +5601,7 @@
         <td>삭제</td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr >
       <td align="center">296</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5618,6 +5618,10 @@
           <br/>
           <router-link :to="{ name: 'Study_summary_03_none' }">
             Study_summary_03_none
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_summary_03_nonemap' }">
+            Study_summary_03_nonemap
           </router-link>
         </td>
         <td></td>
@@ -9871,7 +9875,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr >
       <td align="center">536</td>
         <td>기타</td>
         <td>미니 플레이어</td>
@@ -9903,7 +9907,7 @@
             login_Splash_B2B
           </router-link>
         </td>
-        <td>수정중</td>
+        <td></td>
       </tr>
       <tr class="new">
       <td align="center">538</td>
@@ -9920,7 +9924,7 @@
             login_Splash_B2C
           </router-link>
         </td>
-        <td>수정중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">539</td>
@@ -10648,7 +10652,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">578</td>
         <td>회사운영자 - Main(TABS)</td>
         <td>로그인</td>
@@ -10678,7 +10682,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">579</td>
         <td>로그인 / 회원가입</td>
         <td>로그인</td>

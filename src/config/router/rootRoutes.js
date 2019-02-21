@@ -192,6 +192,8 @@ import Studystudynoteedit from '~workplace/study/Study_studynote_edit'
 import Studystudyquestionregi from '~workplace/study/Study_studyquestion_regi'
 import Studysummary from '~workplace/study/Study_summary'
 import Studysummary03none from '~workplace/study/Study_summary_03_none'
+import Studysummary03nonemap from '~workplace/study/Study_summary_03_nonemap'
+import Studysummary04noneattach from '~workplace/study/Study_summary_04_noneattach'
 
 import Studyquestion from '~workplace/study/Study_studyquestion'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
@@ -1711,6 +1713,16 @@ var rootRoutes = [
     path: '/Study_summary_03_none',
     name: 'Study_summary_03_none',
     component: Studysummary03none
+  },
+  {
+    path: '/Study_summary_03_nonemap',
+    name: 'Study_summary_03_nonemap',
+    component: Studysummary03nonemap
+  },
+  {
+    path: '/Study_summary_04_noneattach',
+    name: 'Study_summary_04_noneattach',
+    component: Studysummary04noneattach
   },
   {
     path: '/Study_studyquestion',

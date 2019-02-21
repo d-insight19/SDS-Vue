@@ -318,7 +318,7 @@
 
                         <div class="inputbox" >                        
                             <div class="textarea_wrap">
-                                <textarea @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
+                                <textarea maxlength="130" @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
                             </div>
                             <div class="inputbottom">
                                 <span class="strlenth" >{{keylength}}/300</span>

@@ -85,10 +85,12 @@
       </div>
       <!-- //container -->    
 
-      <button type="button" title="title" class="btn ld" @click="() => {showConfirm = true}">팝업(Popup) 확인</button>
+      <!-- popup z-index 테스트용
+        
+        <button type="button" title="title" class="btn ld" @click="() => {showConfirm = true}">팝업(Popup) 확인</button>
 
       <slp-popup v-if="showConfirm" title="이메일 인증" cancelInput="취소" confirmInput="이메일 발송" @cancelClick="cancel" @confirmClick="confirm">
-          <!-- popup body -->
+       
           <div class="ly-cnt">
               <p>회원정보에 등록된 이메일로 잠금을 해제할 수 있는 링크를 발송합니다.<br>메일 내 링크를 클릭해주시면 잠금이 해제됩니다.</p>	
           </div>
@@ -122,10 +124,7 @@
         <br/>
         <img src="@/assets/img/thum_no_L.jpg" class="width100" alt="">
         <br/>
-      </slp-modal>
-
-
-
+      </slp-modal> -->
 
 
     </div>
