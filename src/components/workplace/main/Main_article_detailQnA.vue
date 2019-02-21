@@ -14,7 +14,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner mb70">
                         <p class="label-tit-20 bd_bt pb10 mb15"><strong>Q&A</strong></p>

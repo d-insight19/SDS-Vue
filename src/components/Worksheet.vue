@@ -3512,12 +3512,8 @@
           <router-link :to="{ name: 'search_enter' }">
             search_enter
           </router-link>
-          ,
-          <router-link :to="{ name: 'search_enter_recommend' }">
-            search_enter_recommend
-          </router-link>
         </td>
-        <td></td>
+        <td>search_enter_recommend 는 search_enter_recomm 로 이동</td>
       </tr>
       <tr>
       <td align="center">179</td>
@@ -9861,7 +9857,7 @@
             etc_keepstudy
           </router-link>
         </td>
-        <td>수정중</td>
+        <td></td>
       </tr>
       <tr class="new">
       <td align="center">536</td>
@@ -10859,8 +10855,8 @@
         <td>　</td>
         <td class="textL">08.search_03.01.Enter_recomm</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'search_enter_recommend' }">
+            search_enter_recommend
           </router-link>
         </td>
         <td></td>
@@ -10876,9 +10872,10 @@
         <td>　</td>
         <td class="textL">08.search_03.02.typing_courses</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'search_typing' }">
+            search_typing
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -10893,9 +10890,10 @@
         <td>　</td>
         <td class="textL">08.search_03.02.typing_contents</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'search_typing' }">
+            search_typing
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>

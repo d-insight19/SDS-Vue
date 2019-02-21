@@ -26,7 +26,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
             <div class="ml-18 mr-18">
                 <img src="@/assets/img/thum_no_L.jpg" class="w100p" alt="">
             </div>

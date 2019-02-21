@@ -146,7 +146,7 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 
 
 /* floating */
-.btn-quickWrite {position: fixed; cursor: pointer; right: 10px; bottom: 10px; color: #fff; width: 74px; height: 74px; z-index: 800; background: url("../img/btn_floating.png") no-repeat; background-size: 74px;}
+.btn-quickWrite {position: fixed; cursor: pointer; right: 10px; bottom: 10px; color: #fff; width: 74px; height: 74px; z-index: 80; background: url("../img/btn_floating.png") no-repeat; background-size: 74px;}
 
 
 
