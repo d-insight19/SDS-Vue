@@ -181,13 +181,10 @@
 
 <script>
 /* eslint-disable */
-
 // 1. jquery
 import $ from 'jquery'
 window.$ = $
 window.jQuery = $
-
-
 export default {
     name: 'studyList',
 
@@ -202,7 +199,6 @@ export default {
             this.defaultFlag = !this.defaultFlag
         }
     },
-
     computed: {
         compClasses: function(){
             return{

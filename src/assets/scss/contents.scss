@@ -2043,14 +2043,18 @@ label.rdo .label{position: relative;}
 // studynote
 .studynote .label-tit-15{font-size:map-get($font-size, font_15);letter-spacing: -0.045em; color:rgba(0,0,0,0.8);}
 .studynote .chips_wrap{width: calc(100% - 212px);}
+// studynote_edit
+.studynote .font_13 {font-size:map-get($font-size, font_13);letter-spacing: -0.039em;}
+.studynote .info {font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.8)}
+.studynote .toast {
+    width: calc(100% - 36px);
+    padding: 0px 0px 16px 0px;
+}
 
 //eduperson_loginOTP
 .eduperson_login .label-tit-20{font-size:map-get($font-size, font_20);letter-spacing: -0.06em;font-weight:400; }
 .eduperson_login .ul-block li {display:inline-block;margin-bottom:35px;}
 .eduperson_login .loginList .time {text-align:right; font-family:'roboto'; font-weight:500; font-size:map-get($font-size, font_12);}
-
-
-
 
 
 
@@ -3017,3 +3021,9 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm_complete .complete_sub_detail2 .num_wrap{display:table-cell; width:55px; line-height: 140%; vertical-align: top;}
 .atorm_complete .complete_sub_detail2 .txt_wrap{display:table-cell; width:calc(100% - 55px); vertical-align: top; line-height: 140%;}
 
+.attend_status_detail.p1218{padding:12px 18px;}
+.attend_status_detail.gray_bg {background-color:#f2f2f2;}
+.attend_status_detail .fix {display: table; table-layout: fixed; width: 100%;}
+.attend_status_detail .fix li{display: table-cell; vertical-align: middle;}
+.attend_status_detail .chip {margin-bottom:0; padding: 0px 5px; height: auto; line-height: 140%;}
+.attendance_notice_list li{ padding:20px 0; border-bottom:1px solid #e3e3e3;}

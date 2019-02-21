@@ -5162,6 +5162,14 @@
           <router-link :to="{ name: 'Study_studynote' }">
             Study_studynote
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_studynote_all_01' }">
+            Study_studynote_all_01
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_studynote_all_02_snacbar' }">
+            Study_studynote_all_02_snacbar
+          </router-link>
         </td>
         <td></td>
       </tr>
@@ -9849,11 +9857,11 @@
         <td>　</td>
         <td class="textL">etc_Keepstudy</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'etc_keepstudy' }">
+            etc_keepstudy
           </router-link>
         </td>
-        <td></td>
+        <td>수정중</td>
       </tr>
       <tr class="new">
       <td align="center">536</td>

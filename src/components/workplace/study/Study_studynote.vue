@@ -252,7 +252,7 @@
                             <dd><span class="ico play" style="vertical-align: -3px;"></span>02:36</dd>
                             <dd><span class="ico folder_16"></span>역사 폴더</dd>
                         </dl>
-                        <p class="">최근 개봉한 영화 &lt;마션 The Martian | 2015&gt;이 큰 인기를 끌고 있다. 이 영화는 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 까지 고군분투하는 과정을 그리고 있다.</p>
+                        <p class="info">최근 개봉한 영화 &lt;마션 The Martian | 2015&gt;이 큰 인기를 끌고 있다. 이 영화는 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때 까지 고군분투하는 과정을 그리고 있다.</p>
                         <p style="float: right;margin-top: -1px;">
                             
                         </p>
@@ -276,7 +276,7 @@
                             <dd><span class="ico play" style="vertical-align: -3px;"></span>02:36</dd>
                             <dd><span class="ico folder_16"></span>역사 폴더</dd>
                         </dl>
-                        <p class="">최근 개봉한 영화 &lt;마션 The Martian | 2015&gt;이 큰 인기를 끌고 있다. 이 영화는 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때까지 고군분투하는 과정을 그리고 있다.</p>
+                        <p class="info">최근 개봉한 영화 &lt;마션 The Martian | 2015&gt;이 큰 인기를 끌고 있다. 이 영화는 주인공이 동료들과 함께 화성으로 탐사를 떠났다가 사고로 혼자 화성에 남겨지고 다시 구조될 때까지 고군분투하는 과정을 그리고 있다.</p>
                     </li>
                 </ul>
 

@@ -176,12 +176,16 @@ import Studystudystatusassessmentwindow01 from '~workplace/study/Study_studystat
 import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystatus_assessment_window_02'
 import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
 import Studystudystatusattendancebpo from '~workplace/study/Study_studystatus_attendance_bpo'
+import StudyHomeSetCalendar from '~workplace/study/Study_home_set_calendar'
+import etcKeepstudy from '~workplace/study/etc_keepstudy'
 import StudyList from '~workplace/study/Study_list'
 import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
 
 import Studystudynote from '~workplace/study/Study_studynote'
+import Studystudynoteall01 from '~workplace/study/Study_studynote_all_01'
+import Studystudynoteall02snacbar from '~workplace/study/Study_studynote_all_02_snacbar'
 import Studystudynoteedit from '~workplace/study/Study_studynote_edit'
 import Studystudyquestionregi from '~workplace/study/Study_studyquestion_regi'
 import Studysummary from '~workplace/study/Study_summary'
@@ -1631,6 +1635,16 @@ var rootRoutes = [
     component: Studystudystatusattendancebpo
   },
   {
+    path: '/Study_home_set_calendar',
+    name: 'Study_home_set_calendar',
+    component: StudyHomeSetCalendar
+  },
+  {
+    path: '/etc_keepstudy',
+    name: 'etc_keepstudy',
+    component: etcKeepstudy
+  },
+  {
     path: '/Study_list',
     name: 'Study_list',
     component: StudyList
@@ -1654,6 +1668,16 @@ var rootRoutes = [
     path: '/Study_studynote',
     name: 'Study_studynote',
     component: Studystudynote
+  },
+  {
+    path: '/Study_studynote_all_01',
+    name: 'Study_studynote_all_01',
+    component: Studystudynoteall01
+  },
+  {
+    path: '/Study_studynote_all_02_snacbar',
+    name: 'Study_studynote_all_02_snacbar',
+    component: Studystudynoteall02snacbar
   },
   {
     path: '/Study_studynote_edit',
