@@ -9882,8 +9882,8 @@
         <td>　</td>
         <td class="textL">etc_Miniplayer</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'etc_Miniplayer' }">
+            etc_Miniplayer
           </router-link>
         </td>
         <td></td>

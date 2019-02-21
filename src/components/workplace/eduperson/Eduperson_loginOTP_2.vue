@@ -44,7 +44,7 @@
 
                 <ul class="loginList">
                     <li>
-                        <slp-text-field class="mb30" classObject="underline"> <span class="time">05:00</span></slp-text-field>
+                        <slp-text-field class="mb30" classObject="underline" style="position:relative"> <div class="time" style="position:absolute;top:0;right:0;color:red;">05:00</div></slp-text-field>
                     </li>
                 </ul>
 
