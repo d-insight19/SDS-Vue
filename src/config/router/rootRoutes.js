@@ -177,6 +177,7 @@ import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystat
 import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
 import Studystudystatusattendancebpo from '~workplace/study/Study_studystatus_attendance_bpo'
 import StudyHomeSetCalendar from '~workplace/study/Study_home_set_calendar'
+import etcMiniplayer from '~workplace/study/etc_Miniplayer'
 import etcKeepstudy from '~workplace/study/etc_keepstudy'
 import StudyList from '~workplace/study/Study_list'
 import StudyListEdit from '~workplace/study/Study_list_edit'
@@ -1639,6 +1640,11 @@ var rootRoutes = [
     path: '/Study_home_set_calendar',
     name: 'Study_home_set_calendar',
     component: StudyHomeSetCalendar
+  },
+  {
+    path: '/etc_Miniplayer',
+    name: 'etc_Miniplayer',
+    component: etcMiniplayer
   },
   {
     path: '/etc_keepstudy',

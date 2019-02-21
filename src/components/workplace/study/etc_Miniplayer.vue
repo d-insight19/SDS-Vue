@@ -1,15 +1,14 @@
 <template>
-  <!-- eslint-disable -->
+ <!-- eslint-disable -->
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery">
-
+      <div id="container" class="mediaquery courseware " style="background:#f2f2f2">   
+        
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video">          
-            <!-- audioFlag true 시 display:none; -->
-            <div class="header_inner line1 clr1" :class="{ 'audio' : audioFlag }" > 
-                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
+        <div id="header" class="tab video" style="background:#fff">          
+            <div class="header_inner line1 clr1">
+                <button type="button" class="btn only prev" ><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
 
@@ -24,19 +23,34 @@
             </div>
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
-            <div class="blur_wrap">
+            <!-- <div class="blur_wrap">
                 <div class="left blur"></div>
                 <div class="right blur"></div>
-            </div>
+            </div> -->
 
             
             <!-- s: 동영상 -->
-            <div class="player_wrap" :class="{ 'audio' : audioFlag }">
+            <!-- s: 동영상 -->
+            <div class="player_wrap">
                 <div class="player_inner">
                     <div id="contents"></div>
 
-                    <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="volume_wrap" style="display:none;pointer-events:none">
+                    <!--  s: 연관 콘텐츠 -->
+                    <div class="movie_info_list_wrap" style="display:none;">
+                        <div class="movie_info_list">
+                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
+                            <ul>
+                                <li v-for="(item, index) in relatedVideoList" :key="index">
+                                    <a href="#"></a>
+                                    <p class="movie_tit multiline line2">{{item.title}}</p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- e: 연관 콘텐츠 -->
+
+                    <!-- s: 볼륨영역 -->
+                    <div class="volume_wrap" style="display:none;">
                         <div class="volume_left">
                             <div class="inner"></div>
                             <div class="icon_wrap">
@@ -54,20 +68,16 @@
                     </div>
                     <!--  e: 볼륨영역 -->
 
-                    <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="tap_wrap" style="display:none;pointer-events:none">
-                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
-                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
-                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
-                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                          </div>
-                        </v-touch>
-                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
-                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
-                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
-                                <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                            </div>
-                        </v-touch>                            
+                    <!-- s: double 텝 영역 -->
+                    <div class="tap_wrap" style="display:none;">
+                        <div class="half_left">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
+                        <div class="half_right">
+                            <div class="inner"></div>
+                            <div class="inner_ripple"></div>
+                        </div>
                     </div>
                     <!--  e: double 텝 영역 -->
 
@@ -153,7 +163,7 @@
                 <!-- e: btm_subtitle_area -->
             </div>
             <!-- e: 동영상-->
-            
+
             <div class="hide_header">
 
                 <div class="study_title_wrap">
@@ -215,68 +225,191 @@
                     </div>
                 </div>
             </div>
-
             
-        </div>
-        <!-- //header -->
+        </div>              
 
-        <!--
-            상태 관련 css (추후 아이콘 교체될 수 있음)
-            stat01 : 미진행 // 아이콘 미수급 // 추후 이미지 교체 예정
-            stat02 : 진행중
-            stat03 : 학습완료
-            stat04 : 진행불가 // 아이콘 미수급 // 추후 이미지 교체 예정
-
-            카드 UI 아이콘 css (추후 아이콘 교체될 수 있음)
-
-            LO
-            type01 : 동영상/VR & AR
-            type02 : E-BOOK/HTML5
-            type03 : Audio
-            type04 : 집합
-
-            SO
-            type05 : Summary, 과정OT, 목표안내, 액션플랜 과정요약집, 서약서, 간지페이지
-            type06 : 사례,의견공유, 토론, 멘토링
-            type07 : 음성녹음
-            type08 : 평가, Poll, 과제
-            type09 : 퀴즈, 설문, 시뮬레이션
-            type10 : 공지
-        -->
-
-        <div id="content" class="etc">
+        <div id="content" class="etc" style="padding:0;">
+        
           <div class="cell">
-            <div class="inner">
-                <p>내용1</p>
-                <p>내용2</p>
-                <p>내용3</p>
-                <p>내용4</p>
-                <p>내용5</p>
-                <p>내용6</p>
-                <p>내용7</p>
-                <p>내용8</p>
-                <p>내용9</p>
-                <p>내용10</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
-                <p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p><p>내용</p>
+            <div class="inner pt0">
+                
+                <div class="filterArea ml-18 mr-18" style="padding:19px;">
+                    <p class="font_15 mono_80 fwb dib">전체보기</p>
+                    <p class="fr">
+                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
+                        <span class="ico download"></span>
+                    </p>                    
+                </div>                
+                <!-- list -->
+                <ul class="multiList type2">
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 한 줄</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico check_14"></span>
+                                        <span>학습완료</span>
+                                        <span>2017.11.05</span>
+                                    </li>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>12:45</span>/<span>23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico check_14"></span>
+                                        <span>학습완료</span>
+                                        <span>2017.11.05</span>
+                                    </li>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>12:45</span>/<span>23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail clr1 wh">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li>
+                                        <span class="ico check_14 wh"></span>
+                                        <span class="wh">학습완료</span>
+                                        <span class="wh">2017.11.05</span>
+                                    </li>
+                                    <li>
+                                        <span class="ico time wh"></span>
+                                        <span class="wh">12:45</span><span class="wh">/</span><span class="wh">23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico ongoing_16"></span>
+                                        <span>진행중</span>
+                                    </li>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>12:45</span>/<span>23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico complete_14"></span>
+                                        <span>미진행</span>
+                                    </li>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico lock_16"></span>
+                                        <span>학습불가</span>
+                                    </li>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span>23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                </ul>
+
+                <div class="bot-wrap ml-18 mr-18">
+                    <h2 class="h-tit2 fwb600" style="margin-top:4px; margin-bottom:15px;">연관 콘텐츠 추천</h2>
+                    <div class="scroll-x type2">
+                        <!-- list -->
+                        <ul class="thumList type2">
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                </div>
+                            </li>                        
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                </div>
+                            </li>                        
+                            <li>
+                                <div class="in">
+                                <a href="#" class="thum">
+                                    <div class="thumbnail">
+                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
+                                </div>
+                            </li>                        
+                        </ul>
+                        <!-- //list -->
+                    </div>
+                </div>
 
             </div>
           </div>
-        </div>
 
+        </div>
+            
       </div>
       <!-- //container -->     
     </div>
     <!-- //wrap -->
-
 </template>
 
 <script>
@@ -307,31 +440,11 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
-import Vue from 'vue'
-import VueTouch from 'vue-touch'
-
-VueTouch.registerCustomEvent('singletap', {
-  type: 'tap',
-  taps: 1,
-})
-
-VueTouch.registerCustomEvent('doubletap', {
-  type: 'tap',
-  taps: 2,
-})
-
-Vue.use(VueTouch, {name: 'v-touch'})
-
 export default {
   name: 'components_flowplayer',
   data () {
     return {
-        audioFlag:true,
-        innerRipple: false,
-        halfRight: false,
-        halfLeft: false,
-        none: true,
-        left: true,
+        active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         relatedVideoList: [
@@ -344,7 +457,7 @@ export default {
             {title: '자바스크립트 개발 프로세스 기초3'}
         ],
        option: {
-        loType: "audio", //loType : movie(동영상), audio(오디오), vr(VR)
+        loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
         targetId: "contents", //div target Id
         // sources: [
         //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
@@ -399,35 +512,8 @@ export default {
     detail_toggle () {        
         this.detail_show = !this.detail_show;
     },
-    prevTen() {
-        console.error("왼쪽");
-        this.halfRight = true
-        this.innerRipple = true
-        // $('.inner_ripple').css('display', 'block');
-        // $('.half_right').css('display', 'none');
-        var vm = this
-        setTimeout(
-            function(){
-              vm.halfRight = false
-              vm.innerRipple = false
-                // $('.inner_ripple').css('display', 'none'); 
-                // $('.half_right').css('display', 'block');
-            }, 600);       
-    },
-    nextTen() {
-        console.error("오른쪽");
-        this.halfLeft = true
-        this.innerRipple = true
-        // $('.inner_ripple').css('display', 'block');
-        // $('.half_left').css('display', 'none');
-        var vm = this
-        setTimeout(
-            function(){
-              vm.halfLeft = false
-              vm.innerRipple = false
-                // $('.inner_ripple').css('display', 'none'); 
-                // $('.half_left').css('display', 'block');
-            }, 600);       
+    active_el () {
+        this.active = !this.active
     }
   },
   mounted () {
@@ -482,6 +568,12 @@ export default {
         }
 
         
+        $('.half_left').click(function(){
+            console.error("왼쪽");
+        });
+        $('.half_right').click(function(){
+            console.error("오른쪽");
+        });
 
         $('.fp-script , .script_close').click(function(){
             // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
@@ -492,7 +584,6 @@ export default {
 
         $('.fp-nextArrow').click(function()
         {
-            $('.half_right').css('display', 'block');
             console.error('다음 콘텐츠!')
         });
         $('.fp-prevArrow').click(function()
@@ -523,7 +614,7 @@ export default {
                 // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
                 // if ($wTop >= $hederTab-player_height )
-                if ($wTop >= 176 )
+                if ($wTop >= 0 )
                 {
                     // $parent.addClass('fixed').css({'margin-top': $targetH });
                     $parent.addClass('fixed')
@@ -558,21 +649,3 @@ export default {
   }
 }
 </script>
-
-<style scoepd>
-.innerRipple {
-  display: none;
-}
-.halfRight {
-  display: none;
-}
-.halfLeft {
-  display: none;
-}
-.display {
-  display: block;
-}
-.none {
-  display: none;
-}
-</style>
