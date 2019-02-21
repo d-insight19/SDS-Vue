@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery findid certify pd70">
         <!-- header -->
@@ -10,8 +10,8 @@
           <p class="header_text font_18"></p>
         </div>
         <!-- //header -->
-        
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
                 <!-- title -->
@@ -60,7 +60,7 @@
             </ul>
         </div>
         <!-- //floating button -->
-        
+
         <!-- toastpopup -->
         <div class="toast" style="display:none;">
           <div class="in">
@@ -68,11 +68,11 @@
           </div>
         </div>
         <!-- //toastpopup -->
-        
+
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 
@@ -108,7 +108,7 @@ export default {
         this.keylength2 = event.target.value.length
       } else if ( el == 3) {
         this.keylength3 = event.target.value.length
-      }      
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery findcenter pd70">
         <!-- header -->
@@ -10,8 +10,8 @@
           <p class="header_text font_18"></p>
         </div>
         <!-- //header -->
-        
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
                 <!-- 연수원 URL 찾기의 타이틀 margin-bottom 은 36px이라  type2 클래스 추가 -->
@@ -26,7 +26,7 @@
                 </ul>
                 <!-- //list -->
                 <!-- list -->
-                
+
                 <ul class="ulList type3">
                     <li>
                         <strong class="label-tit">최근 접속한 연수원</strong>
@@ -43,19 +43,19 @@
           </div>
         </div>
 
-        <!-- fixed Bottom Btn -->    
+        <!-- fixed Bottom Btn -->
         <div class="fixBtmBtn">
             <ul>
-                <li>                            
+                <li>
                     <button type="button" class="btn ld clr1">다음</button>
                 </li>
-            </ul>                    
+            </ul>
         </div>
-        <!-- //fixed Bottom Btn -->  
+        <!-- //fixed Bottom Btn -->
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 

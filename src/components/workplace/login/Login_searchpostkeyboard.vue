@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery searchpost">
 
@@ -12,7 +12,7 @@
         </div>
         <!-- //header -->
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
@@ -42,11 +42,11 @@
             </div>
           </div>
         </div>
-        
+
         <div id="keyboard_wrap">
             <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
-            <div class="keyboard_input" v-show="focusFlag">                
-                
+            <div class="keyboard_input" v-show="focusFlag">
+
                 <div class="bookmark_wrap" v-if="keyboard_type=='4'">
                     <span class="bookmarktxt">북마크</span>
                     <span class="fr time">01:36</span>
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="rating_wrap" v-if="keyboard_type=='2'">
-                    <span class="ratingtxt">평점</span>                        
+                    <span class="ratingtxt">평점</span>
                     <fieldset class="fr rating">
                         <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
                         <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
@@ -68,7 +68,7 @@
                     </fieldset>
                 </div>
 
-                <div class="inputbox" >                        
+                <div class="inputbox" >
                     <div class="textarea_wrap">
                         <textarea @keydown="onKeydown" placeholder="답글을 입력하세요."></textarea>
                     </div>
@@ -81,7 +81,7 @@
         </div>
 
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

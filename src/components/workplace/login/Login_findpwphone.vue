@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery findid pd70">
         <!-- header -->
@@ -10,8 +10,8 @@
           <p class="header_text font_18"></p>
         </div>
         <!-- //header -->
-        
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
                 <h1 class="h-tit1">휴대폰 번호로 찾기</h1>
@@ -44,11 +44,11 @@
         </div>
         <!-- //floating button -->
 
-        
+
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 
@@ -80,7 +80,7 @@ export default {
         this.keylength2 = event.target.value.length
       } else if ( el == 3) {
         this.keylength3 = event.target.value.length
-      }      
+      }
     }
   }
 }

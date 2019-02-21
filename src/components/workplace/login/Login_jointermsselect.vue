@@ -1,11 +1,11 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery join pd70">
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
@@ -26,7 +26,7 @@
 
                 <!-- 동의 리스트 -->
                 <div class="agreeAll">
-                    <slp-checkbox :value="value" @input="pushChk(1)" >전체 동의</slp-checkbox>                  
+                    <slp-checkbox :value="value" @input="pushChk(1)" >전체 동의</slp-checkbox>
                 </div>
                 <ul class="agreeList">
                   <li>
@@ -66,9 +66,9 @@
           </div>
         </div> -->
         <!-- //toastpopup -->
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 
@@ -98,8 +98,8 @@ export default {
       } else if ( el == 2) {
         console.log(event.target.value)
         this.value = event.target.value
-      } 
-    } 
+      }
+    }
   }
 }
 </script>

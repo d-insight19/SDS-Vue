@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery findid">
         <!-- header -->
@@ -10,19 +10,19 @@
           <p class="header_text font_18" style="display:block">휴대폰 인증</p>
         </div>
         <!-- //header -->
-        
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
                 불러오는 영역
             </div>
           </div>
         </div>
-        
+
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 

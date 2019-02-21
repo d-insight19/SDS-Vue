@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery login">
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
@@ -56,7 +56,7 @@
                     </div>
                 </fieldset>
 
-                <ul class="loginEtcBtn">                    
+                <ul class="loginEtcBtn">
                     <li><a href="#">아이디찾기</a></li>
                     <li><a href="#">비밀번호 찾기</a></li>
                     <li><a href="#">회원가입</a></li>
@@ -67,15 +67,15 @@
                     <dd >아이디 <span class="fwb">ex사번(예 ex123456)</span></dd>
                     <dd >비밀번호 <span class="fwb">아이디와 동일</span></dd>
                     <dd class="desc">최초 접속 시 아이디와 비밀번호가 동일합니다.</dd>
-                </dl> 
-               
+                </dl>
 
-                
+
+
 
             </div>
           </div>
         </div>
-        
+
         <div class="loginFooter">
             <p class="custom_txt">고객센터<span class="custom_tel color_clr2">1544 - 9001</span></p>
             <ul class="custom_info">
@@ -84,9 +84,9 @@
             </ul>
             <p class="copyright">ⓒ copyright by mulicampus CO.LTD. All right reserved</p>
         </div>
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

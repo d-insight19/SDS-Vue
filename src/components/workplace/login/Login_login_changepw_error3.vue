@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery changepw pd70">
         <!-- header -->
@@ -10,11 +10,11 @@
           <p class="header_text font_18"></p>
         </div>
         <!-- //header -->
-        
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
-                
+
                 <!-- title -->
                 <div class="titleWrap">
                     <h1 class="h-tit1 type2">비밀번호 변경</h1>
@@ -25,7 +25,7 @@
                 </div>
                 <!-- //title -->
 
-                
+
                 <!-- list -->
                 <ul class="ulList type2">
                     <li>
@@ -84,11 +84,11 @@
             </ul>
         </div>
         <!-- //floating button -->
-        
+
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 

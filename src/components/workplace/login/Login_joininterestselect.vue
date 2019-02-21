@@ -1,11 +1,11 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery join pd70">
-          
-            <div id="content" class="etc">
+
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
 
@@ -70,10 +70,10 @@
                 </ul>
             </div>
             <!-- //floating button -->
-            
-            
+
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->
@@ -99,7 +99,7 @@ export default {
     }
   },
   /* vue function */
-  methods: {  
+  methods: {
     pushChk (el) {
       if( el == 1) {
         this.chk = event.target.value
@@ -108,17 +108,17 @@ export default {
         //     console.log(event.target.value)
         // } else if(event.target.value == false) {
         //     this.chk = ''
-        // }        
+        // }
       } else if ( el == 2) {
         console.log(event.target.value)
         this.chk2 = event.target.value
       } else if ( el == 3) {
         this.chk3 = event.target.value
-      } 
-    }  
+      }
+    }
   },
   computed: {
-    
+
   }
 }
 </script>
