@@ -6017,7 +6017,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">320</td>
         <td>학습창 영역</td>
         <td>　</td>
@@ -10973,7 +10973,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">595</td>
         <td>Drawer - 고객센터</td>
         <td>고객센터</td>

@@ -5,7 +5,6 @@
         <!-- container -->
         <div id="container" class="mediaquery drawer helpdesk">
 
-
         <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
