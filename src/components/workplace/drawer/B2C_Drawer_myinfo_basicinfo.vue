@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,14 +12,14 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                         <!-- list -->
                         <ul class="multiList type1">
                             <li class="id_info">
                                 <strong class="label-tit14">아이디</strong>
-                                <p class="contents14">haemin.jung</p>                                
+                                <p class="contents14">haemin.jung</p>
                                 <button type="button" class="btn guide">통합ID 가입안내</button>
                             </li>
                             <li>
@@ -45,17 +45,17 @@
                             <li>
                                 <strong class="label-tit14">주소</strong>
                                 <p class="contents14">직장<br>(06220) 서울특별시 강남구 테헤란로 212 (역삼동 1202호) 멀티캠퍼스 1202호</p>
-                            </li>                    
+                            </li>
                         </ul>
                         <!-- // list -->
 
-                       
+
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->
