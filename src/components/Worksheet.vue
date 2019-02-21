@@ -5617,7 +5617,11 @@
         <td class="textL">05.Study_02.40.summary</td>
         <td>
           <router-link :to="{ name: 'Study_summary' }">
-            Study_summary
+            Study_summary, Study_summary_02
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_summary_03_none' }">
+            Study_summary_03_none
           </router-link>
         </td>
         <td></td>
