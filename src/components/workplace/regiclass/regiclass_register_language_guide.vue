@@ -59,7 +59,7 @@
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn zin0">  
+            <div class="fixBtmBtn zin1">  
                 <button type="button" class="btn md clr1">확인</button>
             </div>
             <!-- //floatingbtn -->   

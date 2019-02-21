@@ -37,6 +37,7 @@ import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 import ComponentsSnackBar from '~workplace/common_page/components_snackbar'
 
+import LoginSplashB2B from '~workplace/login/login_Splash_B2B'
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
 import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
@@ -945,6 +946,11 @@ var rootRoutes = [
     path: '/components_picker_slp',
     name: 'components_picker_slp',
     component: ComponentsTestPage11
+  },
+  {
+    path: '/login_Splash_B2B',
+    name: 'login_Splash_B2B',
+    component: LoginSplashB2B
   },
   {
     path: '/Login_findcenter',

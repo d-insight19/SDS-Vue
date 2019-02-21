@@ -54,7 +54,7 @@
         </div>
 
         <!-- floating button -->
-        <div class="fixBtmBtn zin0">
+        <div class="fixBtmBtn zin1">
             <ul>
                 <li><slp-button class="md">취소</slp-button></li>
                 <li><slp-button class="md clr1">신청</slp-button></li>

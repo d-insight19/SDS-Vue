@@ -9899,7 +9899,7 @@
         <td>　</td>
         <td class="textL">01.login_01,01_splash_B2B</td>
         <td>
-          <router-link :to="{ name: '' }">
+          <router-link :to="{ name: 'login_Splash_B2B' }">
             login_Splash_B2B
           </router-link>
         </td>
@@ -9916,7 +9916,7 @@
         <td>　</td>
         <td class="textL">01.login_01,01_splash_B2C</td>
         <td>
-          <router-link :to="{ name: '' }">
+          <router-link :to="{ name: 'login_Splash_B2C' }">
             login_Splash_B2C
           </router-link>
         </td>
