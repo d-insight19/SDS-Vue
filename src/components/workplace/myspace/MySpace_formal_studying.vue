@@ -32,7 +32,14 @@
 
           <div class="cell">
             <div class="filterArea ml-18 mr-18">
-                <p class="font_15 mono_80 fwb"><span class="ico arrowback"></span> 학습중 <span class="mono_50">2</span> <span class="ico down"></span></p>
+                <p class="font_15 mono_80 fwb">
+                    <span class="ico arrowback"></span> 학습중 <span class="mono_50">2</span>
+                    <slp-dropdown dimmed v-model="lang" rootClass="dib">
+                        <span class="ico down" slot="trigger"></span>
+                        <slp-dropdown-item :value="'수강중인 과정'">수강중인 과정</slp-dropdown-item>
+                        <slp-dropdown-item :value="'완료한 과정'">완료한 과정</slp-dropdown-item>
+                    </slp-dropdown>
+                </p>
                 <span class="ico filter"></span>
             </div>
           </div>
