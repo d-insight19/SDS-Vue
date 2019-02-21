@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer bpo_myinfo">
-            
+
             <!-- header -->
             <div id="header" class="fixed noline">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,7 +12,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                     <!-- myinfo_img -->
@@ -22,21 +22,21 @@
                     </div>
                     <!-- //myinfo_img -->
                     <p class="name">이시원</p>
-                    <p class="lecturer">강사</p>  
+                    <p class="lecturer">강사</p>
 
-                       
+
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
 
              <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
                 <button type="button" class="btn md clr1">로그아웃</button>
             </div>
             <!-- //floatingbtn -->
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->

@@ -922,6 +922,7 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 #dropdown.category {top:54px; left:0; right:auto}
 #dropdown.language {top:54px; left:0; right:auto}
 #dropdown.status {top:52px; right:0;}
+#dropdown.more {top:100px; right:40px;}
 #dropdown ul{width:100%;padding:8px 0px;}
 #dropdown ul li{font-size:map-get($font-size, font_13);line-height:19px;letter-spacing: -0.39px;padding: 14px 16px 15px 16px;position: relative;max-width: 180px;text-align: left;}
 #dropdown ul li .ico{position:absolute;top:12px;right:18px;display:none;}
