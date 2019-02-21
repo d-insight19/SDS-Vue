@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,7 +12,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                         <!-- list -->
@@ -35,8 +35,8 @@
                             </li>
                             <li class="noline pdb0">
                                 <strong class="label-tit15">전문분야</strong>
-                                <p class="contents14">IT 기획</p>                                
-                            </li>                                       
+                                <p class="contents14">IT 기획</p>
+                            </li>
                         </ul>
                         <p class="hr"></p>
                         <ul class="multiList type1">
@@ -61,7 +61,7 @@
                             <li>
                                 <strong class="label-tit13">정보기술</strong>
                                 <p class="contents13">멀티미디어콘텐츠제작 <span class="bar"></span> 전문가</p>
-                            </li>                                                                 
+                            </li>
                         </ul>
                         <p class="hr"></p>
                         <ul class="multiList type1">
@@ -76,7 +76,7 @@
                             <li class="noline pdb0">
                                 <strong class="label-tit15">선호 강의</strong>
                                 <p class="contents14">Instructor-led, Self-paced with labs, Self-paced</p>
-                            </li>                                                                 
+                            </li>
                         </ul>
                         <p class="hr"></p>
                         <ul class="multiList type1">
@@ -91,7 +91,7 @@
                             </li>
                             <li>
                                 <span class="label-tit-etc">전화 수신</span><span class="fr contents14_2">동의함</span>
-                            </li>                                                               
+                            </li>
                         </ul>
                         <ul class="guideList mt10">
                         <li>학습진행과 관련된 이메일, SMS서비스는 동의 여부와 상관없이 기본적으로 제공됩니다.</li>
@@ -100,13 +100,13 @@
                         </ul>
                         <!-- // list -->
 
-                       
+
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->

@@ -1,17 +1,17 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer">
-            
+
             <!-- header -->
             <div id="header" class="fixed noline">
-                <button type="button" class="btn only prev"><span class="ico">이전</span></button>                
+                <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc multiintroduce">
+            <div id="content" class="normal multiintroduce">
                 <div class="cell">
                     <div class="inner">
                         <h1 class="title">멀티스퀘어 소개</h1>
@@ -31,13 +31,13 @@
                         <p class="contact color_clr2">1544-9001</P>
 
                         <div class="map"></div>
-                        <p class="name">멀티스퀘어 <span class="tel color_clr2">02-3429-5114</span></p>  
+                        <p class="name">멀티스퀘어 <span class="tel color_clr2">02-3429-5114</span></p>
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->
