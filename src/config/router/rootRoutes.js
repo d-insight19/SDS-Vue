@@ -699,11 +699,6 @@ var rootRoutes = [
     component: Worksheet
   },
   {
-    path: '/Study_studynote',
-    name: 'Study_studynote',
-    component: StudyStudynote
-  },
-  {
     path: '/components_textfield_slp',
     name: 'components_textfield_slp',
     component: ComponentsTextfieldSlp
