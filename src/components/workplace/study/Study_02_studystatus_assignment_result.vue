@@ -1,19 +1,19 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
       <div id="container" class="mediaquery studystatus">
 
         <!-- header  -->
-        <div id="header" class="fixed">          
+        <div id="header" class="fixed">
           <div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             <p class="header_text  font_18">과제작성</p>
           </div>
         </div>
         <!-- //header -->
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner" style="padding-top:0;">
 
@@ -22,13 +22,13 @@
                         <span>과제정보</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner">
-                            
+
                         </div>
                     </li>
                     <li  @click="toggleMenu($event)">
                         <span>과제작성</span>
                         <span class="accordion_arrow"></span>
-                        
+
                         <div class="confirm_item_detail_inner">
                             과제작성 상세
                         </div>
@@ -36,7 +36,7 @@
                     <li class="open"   @click="toggleMenu($event)">
                         <span>과제 첨삭 내용</span>
                         <span class="accordion_arrow"></span>
-                        
+
                         <div class="confirm_item_detail_inner">
                             <p class="font_14 fwb">점수</p>
                             <p><span class="num"><span class="color_clr2">98</span>/100</span>점</p>
@@ -57,7 +57,7 @@
                                     <span class="at-num">500KB</span>
                                     <span class="ico download"></span>
                                     </div>
-                                </div>                         
+                                </div>
                                 </li>
                             </ul>
                         </div>
@@ -69,7 +69,7 @@
           </div>
         </div>
       </div>
-      <!-- //container -->    
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>

@@ -107,7 +107,7 @@
 
         </div>
 
-        <div id="content" class="etc" style="padding:0;">
+        <div id="content" class="normal" style="padding:0;">
 
           <div class="cell">
             <div class="inner pt0">

@@ -100,7 +100,7 @@
 
         </div>
 
-        <div id="content" class="etc" style="padding:0;">
+        <div id="content" class="normal" style="padding:0;">
 
             <div class="mp4Script_optionBlock mb">
                 <div class="mp4Script_options short d_flex align_items_center position_relative" >

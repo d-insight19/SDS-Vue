@@ -12,7 +12,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                         <p class="label-tit-18 mb10">설문 진행 후 <br/>학습을 진행할 수 있습니다.</p>

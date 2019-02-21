@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery study_pledge pd70">
             <!-- header -->
@@ -9,8 +9,8 @@
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
                 <p class="header_text font_18">윤리 서약서</p>
             </div>
-            <!-- //header -->            
-            <div id="content" class="etc">
+            <!-- //header -->
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner" style="padding-top:82px;">
                         <p class="sub-txt-2">본 서약서 제출을 완료하셔야 학습을 진행하실 수 있습니다.</p>
@@ -38,22 +38,22 @@
                         <div class="tb_wrap">
                             <table>
                                 <tr>
-                                <td class="sub-txt pb10">일시</td>  
-                                <td class="sub-txt pb10 fr">2018년 11월 10일</td>  
-                                </tr>  
+                                <td class="sub-txt pb10">일시</td>
+                                <td class="sub-txt pb10 fr">2018년 11월 10일</td>
+                                </tr>
                                 <tr>
-                                <td class="sub-txt pb10">소속</td>  
-                                <td class="sub-txt pb10 fr">차세대 교육 플랫폼</td>  
-                                </tr>  
+                                <td class="sub-txt pb10">소속</td>
+                                <td class="sub-txt pb10 fr">차세대 교육 플랫폼</td>
+                                </tr>
                                 <tr>
-                                <td class="sub-txt pb10">사번</td>  
-                                <td class="sub-txt pb10 fr">123456</td>  
-                                </tr>  
+                                <td class="sub-txt pb10">사번</td>
+                                <td class="sub-txt pb10 fr">123456</td>
+                                </tr>
                                 <tr>
-                                <td class="sub-txt">성명</td>  
-                                <td class="sub-txt fr">정해민</td>  
-                                </tr>  
-                            </table>                           
+                                <td class="sub-txt">성명</td>
+                                <td class="sub-txt fr">정해민</td>
+                                </tr>
+                            </table>
                         </div>
                         <slp-checkbox ><span @click="activate()">위 사항에 동의합니다.</span></slp-checkbox>
                         <!-- <div class="loginChk">
@@ -62,20 +62,20 @@
                             <span class="ico"></span>
                             <span class="label">주의사항에 동의합니다.</span>
                             </label>
-                        </div> -->     
+                        </div> -->
                     </div>
                 </div>
             </div>
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
                 <button type="button" class="btn md" :class="{ clr1 : active_el }">확인</button>
             </div>
-            <!-- //floatingbtn -->   
+            <!-- //floatingbtn -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery Eduperson_Operation">
         <!-- header -->
@@ -10,11 +10,11 @@
           <p class="header_text font_18">집합교육 운영 보고서</p>
         </div>
         <!-- //header -->
-        
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner" style="padding-top:18px;">
-              
+
               <div class="detail_date">
                 <p class="fl select_date">2018.11<span class="ico calender_blue_24"></span></p>
                 <ul class="fr" style="border:1px solid #d9d9d9">
@@ -28,9 +28,9 @@
           </div>
         </div>
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 

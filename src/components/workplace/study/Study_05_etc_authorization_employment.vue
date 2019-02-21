@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery study_auth pd70">
             <!-- header -->
@@ -9,8 +9,8 @@
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
                 <p class="header_text font_18">고용보험 환급과정 운영기준안내</p>
             </div>
-            <!-- //header -->            
-            <div id="content" class="etc">
+            <!-- //header -->
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner" style="padding-top:82px;">
                         <p class="txt-tit">본인인증</p>
@@ -31,7 +31,7 @@
                             </li>
                             <li class="mb30">
                                 <p class="li-txt in12_16">・단, 천재지변 등 불가항력 사유 발생 시 사유서 제출하여 재응시 가능합니다.</p>
-                            </li>    
+                            </li>
                         </ul>
                         <p class="txt-tit">리포트 임시저장 / 최종제출</p>
                         <ul class="ulList">
@@ -63,21 +63,21 @@
                         <div class="tb_wrap">
                             <table>
                                 <tr>
-                                <td class="sub-txt pb10 fw500">성명</td>  
-                                <td class="sub-txt pb10 fr">정해민</td>  
-                                </tr>  
+                                <td class="sub-txt pb10 fw500">성명</td>
+                                <td class="sub-txt pb10 fr">정해민</td>
+                                </tr>
                                 <tr>
-                                <td class="sub-txt pb10 fw500">이메일</td>  
-                                <td class="sub-txt pb10 fr">Haemin@multicampus.com</td>  
-                                </tr>  
+                                <td class="sub-txt pb10 fw500">이메일</td>
+                                <td class="sub-txt pb10 fr">Haemin@multicampus.com</td>
+                                </tr>
                                 <tr>
-                                <td class="sub-txt pb10 fw500">휴대폰</td>  
-                                <td class="sub-txt pb10 fr">010-1234-5678</td>  
-                                </tr>  
+                                <td class="sub-txt pb10 fw500">휴대폰</td>
+                                <td class="sub-txt pb10 fr">010-1234-5678</td>
+                                </tr>
                                 <tr>
-                                <td class="sub-txt fw500">인증</td>  
-                                <td class="sub-txt fr danger">미인증</td>  
-                                </tr>  
+                                <td class="sub-txt fw500">인증</td>
+                                <td class="sub-txt fr danger">미인증</td>
+                                </tr>
                             </table>
                             <ul>
                                 <li>
@@ -89,7 +89,7 @@
                                 <li>
                                     <p class="tar"> 인증 오류 조치 <span class="ico info blue"></span> </p>
                                 </li>
-                            </ul>                           
+                            </ul>
                         </div>
                         <p class="txt-tit-2">※ 인증에 사용하는 정보와 회원정보가 일치해야 합니다. 올바르지 않다면 회원정보 수정 후 인증해 주세요.</p>
                         <button class="btn-md">회원정보 수정</button>
@@ -99,20 +99,20 @@
                             <span class="ico"></span>
                             <span class="label">주의사항에 동의합니다.</span>
                             </label>
-                        </div> -->     
+                        </div> -->
                     </div>
                 </div>
             </div>
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
                 <button type="button" class="btn md clr1">확인</button>
             </div>
-            <!-- //floatingbtn -->   
+            <!-- //floatingbtn -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

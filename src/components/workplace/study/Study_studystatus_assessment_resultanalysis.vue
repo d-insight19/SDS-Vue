@@ -10,7 +10,7 @@
                 <p class="header_text font_18">평가 결과 통계</p>
             </div>
             <!-- //header -->
-            <div id="content" class="etc" >
+            <div id="content" class="normal" >
                 <div class="cell">
                     <div class="inner " style="padding-top:56px;">
                         <div class="full-box pd mb26">

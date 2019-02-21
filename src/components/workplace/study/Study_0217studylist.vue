@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery atorm">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,19 +12,19 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
 
                 <div class="cell">
-                    <div class="inner">  
+                    <div class="inner">
                         <!-- list -->
-                        <ul class="singleList type1">                         
+                        <ul class="singleList type1">
                             <li class="mb20">
                                 <p class="label-tit14 bbB89 pb10 mb10">
                                     다운로드한 콘텐츠만 보기
                                     <slp-switch class="fr" value="true"/>
                                 </p>
                             </li>
-                            
+
                             <li class="mb20">
                                 <p class="label-tit14 mb10">상태별</p>
                                 <ul>
@@ -36,7 +36,7 @@
                                     </li>
                                     <li class="mb15">
                                         <slp-radio name="difficulty" innerCircle="true">미진행</slp-radio>
-                                    </li>                                    
+                                    </li>
                                 </ul>
                             </li>
                             <li class="mb20">
@@ -47,9 +47,9 @@
                                     </li>
                                     <li class="mb15">
                                         <slp-radio name="difficulty" innerCircle="true">비필수항목</slp-radio>
-                                    </li>                                  
+                                    </li>
                                 </ul>
-                            </li> 
+                            </li>
                             <li class="mb20">
                                 <p class="label-tit14 mb10">커스텀</p>
                                 <ul>
@@ -58,17 +58,17 @@
                                     </li>
                                     <li class="mb15">
                                         <slp-radio name="difficulty" innerCircle="true">비필수항목</slp-radio>
-                                    </li>                                  
+                                    </li>
                                 </ul>
-                            </li>                                                              
-                        </ul>             
-                        <!-- //list -->        
+                            </li>
+                        </ul>
+                        <!-- //list -->
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->

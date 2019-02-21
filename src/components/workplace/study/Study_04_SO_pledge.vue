@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery study_pledge pd70">
             <!-- header -->
@@ -14,8 +14,8 @@
               </div>
             </div>
             <!-- //header -->
-            
-            <div id="content" class="etc">
+
+            <div id="content" class="normal">
                 <div class="cell">
                   <div class="inner">
                     <span class="chip">서약서</span>
@@ -26,18 +26,18 @@
                       <img src="" alt="">
                     </p>
                     <p class="inner-txt">
-                    본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다  
+                    본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다
                     </p>
                     <p class="empty_img">
                       <img src="" alt="">
                     </p>
                     <p class="inner-txt">
-                    본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다  
+                    본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다 본문 텍스트입니다  본문 텍스트입니다
                     </p>
-                    <p class="hr"></p>                     
+                    <p class="hr"></p>
                       <ul class="multiList type2 op25">
                         <li>
-                            <p class="label-tit14 mb8">회사명</p>                            
+                            <p class="label-tit14 mb8">회사명</p>
                             <div class="intSchBox">
                               <div class="search-wrapper">
                                   <slp-text-field  pattern="^\s+" placeholder="회사명을 입력해주세요"></slp-text-field>
@@ -65,14 +65,14 @@
                   </div>
                 </div>
             </div>
-            
+
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
                 <button type="button" disabled="disabled" class="btn md clr1">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

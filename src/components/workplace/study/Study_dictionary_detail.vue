@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery study_dictionary_de">
             <!-- header -->
@@ -9,8 +9,8 @@
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             </div>
             <!-- //header -->
-            
-            <div id="content" class="etc">
+
+            <div id="content" class="normal">
                 <div class="cell">
                   <div class="inner">
                       <p class="h-tit1">
@@ -22,9 +22,9 @@
                   </div>
                 </div>
             </div>
-                
+
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

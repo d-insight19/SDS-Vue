@@ -10,7 +10,7 @@
     }
     //header
     & #header{
-      
+
       .btn.prev , .btn.close{
         width:auto;
         position: absolute;
@@ -31,7 +31,7 @@
         & .end_btn1{margin-right:14px;}
       }
     }
-    
+
     //content
     & #content{
       position: relative;
@@ -46,8 +46,8 @@
       }
     }
   }
-  
-  
+
+
   @media only screen and (max-width:767px){
     $l_padding: 18px;
     $c_padding: 24px;
@@ -89,11 +89,11 @@
       }
     }
   }
-  
+
   @media only screen and (min-width:768px) and (max-width:1023px){ //최소768부터~최대1023까지 일때 적용 min-width 768보다 큰 브라우저 넓이에 적용되며 max-width 1023보다 작은브라우저 너비에 적용됩니다
     $l_padding: 18px;
     $c_padding: 74px;
-    #container.mediaquery{      
+    #container.mediaquery{
       & #content{
         //리스트형
         &.list{
@@ -123,7 +123,7 @@
         //일반형
         &.normal{
           width:620px;
-          .cell{            
+          .cell{
             .inner{}
           }
           &~.fixBtmBtn.abs{width:620px;left:50%;transform:translateX(-50%)}
@@ -132,7 +132,7 @@
         &.etc{
           width:520px;
           .inner{}
-          &~.fixBtmBtn.abs{width:520px;left:50%;transform:translateX(-50%)}          
+          &~.fixBtmBtn.abs{width:520px;left:50%;transform:translateX(-50%)}
         }
         // 동영상
         &.media{
@@ -141,18 +141,18 @@
         }
         //예외 ( 인트로,완료 여백30)
         &.etc_30{
-          width:520px;
+          width:620px;
           .inner{}
-          &~.fixBtmBtn.abs{width:520px;left:50%;transform:translateX(-50%)}  
+          &~.fixBtmBtn.abs{width:620px;left:50%;transform:translateX(-50%)}
         }
       }
     }
   }
-  
+
   @media screen and (min-width:1024px){
     $l_padding: 18px;
     $c_padding: 90px;
-    
+
     #container.mediaquery{
       & #content{
         //리스트형
@@ -170,7 +170,7 @@
           & .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8) > li:nth-child(2n){
             margin-left:18px;
           }
-          
+
           & .scroll-x .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8){overflow: hidden;}
           & .scroll-x .thumList:not(.type2):not(.type3):not(.type4):not(.type7):not(.type8) > li{
             display:inherit;
@@ -202,9 +202,9 @@
         }
         //예외 ( 인트로,완료 여백30)
         &.etc_30{
-          width:520px;
+          width:844px;
           .inner{}
-          &~.fixBtmBtn.abs{width:520px;left:50%;transform:translateX(-50%)}
+          &~.fixBtmBtn.abs{width:844px;left:50%;transform:translateX(-50%)}
         }
       }
     }
@@ -217,7 +217,7 @@
 
 #header .header_text{visibility:hidden;}
 #header.fixed .header_text {visibility:visible;}
-#header{  
+#header{
   position: relative;
   display: block;
   width:100%;
@@ -225,7 +225,7 @@
   line-height: 56px;
   padding:0 36px 0 72px;
   background:transparent;
-  box-sizing:border-box;        
+  box-sizing:border-box;
   border-bottom:1px solid transparent;
 }
 #header.fixed{
@@ -249,7 +249,7 @@
   margin-top: 0px;
   padding-top: 323px;
 }
-      
+
 #header p.header_text.type2{width: calc(100% - 76px)}
 #header .end.sub{right:57px}
 
@@ -377,7 +377,7 @@
 
 #header.mainType2 .gnbMenu li a.menu_txt{display:none;}
 #header.mainType2 .gnbMenu li .icon_desc{position: absolute;font-size:map-get($font-size, font_11);line-height: 17px;letter-spacing: -0.33px;bottom:14px;left:0px;width:100%;text-align: center}
-// 메인 타입 2단형 텍스트 
+// 메인 타입 2단형 텍스트
 #header.mainType2 .gnbMenu.text li{color:#fff}
 // 텝형 헤더
 #header.tab.fixed{position:fixed;}
