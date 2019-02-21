@@ -2397,7 +2397,7 @@ label.rdo .label{position: relative;}
 #container.login.bpo .loginGuide dd.privacypolicy {font-size:map-get($font_size, font_14); text-decoration: underline; line-height: 18px; margin: 2px 0 20px; }
 
 #container .title_line span.time {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); font-weight: 400; margin-left:4px}
-#container .title_line span.status {font-size:map-get($font_size, font_14); }
+#container .title_line span.status {font-size:map-get($font_size, font_14); margin-top:3px}
 #container .title_line span.title_txt {color:rgba(0,0,0,0.8); margin-right:6px; }
 #container .title_line span.total_txt {margin-right:5px}
 #container.drawer.bpo ul.multiList.type1 span.time {color:rgba(0,0,0,0.65); }

@@ -1,27 +1,27 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer bpo_subjectlist">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
-                <p class="header_text font_18">보강 등록</p><button type="button" class="btn14 color_clr2">저장</button>                
+                <p class="header_text font_18">보강 등록</p><button type="button" class="btn14 color_clr2">저장</button>
             </div>
             <!-- //header -->
-       
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
-                <div class="tabCnt dpb pt0"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->   
-                        
+                <div class="tabCnt dpb pt0"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
+
                         <!-- list -->
                         <ul class="multiList type2">
                             <li>
-                                <strong class="label-tit14">학습 계획일시</strong>                                
+                                <strong class="label-tit14">학습 계획일시</strong>
                                 <slp-select width="100%" class="mt8">
                                     <option selected>2018.11.30</option>
                                     <option>2018.12.19</option>
@@ -32,20 +32,20 @@
                             <li>
                                 <div class="makeup_lesson mt20">
                                     <p class="title_line mb20" style="padding-bottom:12px">
-                                    <strong class="label-tit14">보강 일시1</strong>   
-                                    <span class="fr ico deletemode_20_black"></span>                          
+                                    <strong class="label-tit14">보강 일시1</strong>
+                                    <span class="fr ico deletemode_20_black"></span>
                                     </p>
-                                    <div class="calender mt0">2018.12.29 <a href="#"><span class="ico calender_24 fr"></span></a></div>                           
+                                    <div class="calender mt0">2018.12.29 <a href="#"><span class="ico calender_24 fr"></span></a></div>
                                     <slp-select width="100%" class="mt8">
                                         <option selected>20시 00분 ~ 21시 00분 (총01시간 00분)</option>
                                     </slp-select>
                                 </div>
                                 <div class="makeup_lesson mt20">
                                     <p class="title_line mb20" style="padding-bottom:12px">
-                                    <strong class="label-tit14">보강 일시1</strong>   
-                                    <span class="fr ico deletemode_20_black"></span>                          
+                                    <strong class="label-tit14">보강 일시1</strong>
+                                    <span class="fr ico deletemode_20_black"></span>
                                     </p>
-                                    <div class="calender mt0">2018.12.29 <a href="#"><span class="ico calender_24 fr"></span></a></div>                           
+                                    <div class="calender mt0">2018.12.29 <a href="#"><span class="ico calender_24 fr"></span></a></div>
                                     <slp-select width="100%" class="mt8">
                                         <option selected>20시 00분 ~ 21시 00분 (총01시간 00분)</option>
                                     </slp-select>
@@ -65,25 +65,25 @@
                                         <dl>
                                             <dt>보강시간</dt>
                                             <dd><span class="num">01</span>시간 <span class="num">00</span>분</dd>
-                                        </dl>                                    
+                                        </dl>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <strong class="label-tit14">보강 사유</strong>
                                 <slp-text-field placeholder="보강사유 입력"></slp-text-field>
-                            </li>                                                                                                        
+                            </li>
                         </ul>
-                       
+
                         <!-- //list -->
-                </div>   
+                </div>
 
             </div>
           </div>
         </div>
 
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 
