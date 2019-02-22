@@ -13,22 +13,17 @@
                 </div>
                 <div class="hide_header" style="background:#e6eaf5; padding-top:76px; padding-bottom:26px">
                     <div class="hide-inner">
-                        <div id="dropdown_wrap" v-show="langFlag">
-                            <div id="sheetDim" @click="changeLang()"></div>
-                            <div id="dropdown" class="more">
-                                <ul @click="changeLang()">
-                                <li>휴강 등록</li>
-                                <li>보강 등록</li>
-                                <li>단축 요청</li>
-                                <li>연장 요청</li>
-                                <li>SMS 발송</li>
-                                </ul>
-                            </div>
-                        </div>
                         <span class="chip">정규</span>
+                        <slp-dropdown dimmed>
+                            <span class="fr ico more28" slot="trigger"></span>
+                            <slp-dropdown-item :value="'휴강 등록'">휴강 등록</slp-dropdown-item>
+                            <slp-dropdown-item :value="'보강 등록'">보강 등록</slp-dropdown-item>
+                            <slp-dropdown-item :value="'단축 요청'">단축 요청</slp-dropdown-item>
+                            <slp-dropdown-item :value="'연장 요청'">연장 요청</slp-dropdown-item>
+                            <slp-dropdown-item :value="'SMS 발송'">SMS 발송</slp-dropdown-item>
+                        </slp-dropdown>
                         <p class="h-tit1">
                             <strong class="q-tit">The Complete App Design Course - UX, UI android …</strong>
-                            <span class="fr ico more28" @click="changeLang()"></span>
                         </p>
                         <div class="info-rate">
                             <span>평균 출석률</span><span class="rate">80.10%</span>
@@ -177,7 +172,7 @@
 
 <script>
 export default {
-  name: 'ComponentsBottomSheet',
+  name: 'BPO_subjectlist_test',
   /* vue data */
   data () {
     return {
