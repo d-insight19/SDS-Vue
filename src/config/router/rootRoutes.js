@@ -38,6 +38,7 @@ import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 import ComponentsSnackBar from '~workplace/common_page/components_snackbar'
 
 import LoginSplashB2B from '~workplace/login/login_Splash_B2B'
+import LoginSplashB2C from '~workplace/login/login_Splash_B2C'
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
 import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
@@ -700,6 +701,7 @@ import AtormGroupFlipPostMaterial2 from '~workplace/atorm/Atorm_group_flip_post_
 import Atormgroupflipaddtest from '~workplace/atorm/Atorm_group_flip_add_test'
 import Atormgroupflipmaterial from '~workplace/atorm/Atorm_group_flip_material'
 import Atormgroupflipmaterial2 from '~workplace/atorm/Atorm_group_flip_material2'
+import ATORMSplash from '~workplace/atorm/ATORM_Splash'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -965,6 +967,11 @@ var rootRoutes = [
     path: '/login_Splash_B2B',
     name: 'login_Splash_B2B',
     component: LoginSplashB2B
+  },
+  {
+    path: '/login_Splash_B2C',
+    name: 'login_Splash_B2C',
+    component: LoginSplashB2C
   },
   {
     path: '/Login_findcenter',
@@ -3904,6 +3911,11 @@ var rootRoutes = [
     path: '/Atorm_group_flip_material2',
     name: 'Atorm_group_flip_material2',
     component: Atormgroupflipmaterial2
+  },
+  {
+    path: '/ATORM_Splash',
+    name: 'ATORM_Splash',
+    component: ATORMSplash
   },
   {
     path: '/Eduperson_login',
