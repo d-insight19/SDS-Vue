@@ -1,9 +1,5 @@
 <template>
-<<<<<<< HEAD
     <!-- eslint-disable-->
-=======
-<!-- eslint-disable-->
->>>>>>> 3147435ce2e3f08edfe8032c67ddac2b05be7fb2
     <div>
         <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
@@ -39,12 +35,7 @@
 
                 </div>
             </li>
-<<<<<<< HEAD
             <li :class="compClasses">
-=======
-            <li class="compClasses">
-
->>>>>>> 3147435ce2e3f08edfe8032c67ddac2b05be7fb2
                 <div class="download_details">
                     <div class="edit_parents">
                         <div class="edit_child edit_child_frst">
