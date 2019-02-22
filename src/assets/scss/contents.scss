@@ -1816,7 +1816,6 @@ label.rdo .label{position: relative;}
     .edit_child_frst {
         display:none;
     }
-
     .text_wrap {
         background-color: #fff;
         border: 1px solid #E3E3E3;
@@ -1897,6 +1896,13 @@ label.rdo .label{position: relative;}
         border-top: 1px solid #E3E3E3;
         border-bottom: none;
     }
+    .icon_wrap {
+        width:30px;
+
+        .ico {
+            background-position:0 -2px;
+        }
+    }
     .sub_content {
         > li {
             &:last-child {
@@ -1910,13 +1916,12 @@ label.rdo .label{position: relative;}
     .open {
         .text_wrap {
             border:1px solid;
-            @extend .clr1;
+            @extend .border_clr1;
         }
-        .icon_txt {
-            @extend .color_clr6;
-        }
-        .text {
-            color:white !important;
+        .icon.accordion_arrow {
+            width:20px;
+            height:20px;
+            background-image: url("../img/ic_accordion_arr_line_skyblue_20_up.png");
         }
         .time.white {
             width:16px;
@@ -1942,6 +1947,38 @@ label.rdo .label{position: relative;}
                     @extend .clr3;
                 }
             }
+            .text_wrap {
+                @extend .clr1;
+            }
+            .icon_txt {
+                @extend .color_clr6;
+            }
+
+            .text {
+                color:white !important;
+            }
+            .time.white {
+                width:16px;
+                height:16px;
+                background: url("../img/ic_time_line_wh_16.png") no-repeat;
+            }
+            .check_14.white{
+                width:14px;
+                height:14px;
+                background: url("../img/ic_complete_check_solid_wh_14.png");
+            }
+            .icon.accordion_arrow {
+                background-image: url("../img/ic_accordion_arr_bold_wh_20_up.png");
+            }
+        }
+    }
+}
+
+.studySummary {
+    .open {
+        .text_wrap {
+            border:1px solid;
+            background-color: white !important;
         }
     }
 }
@@ -2070,7 +2107,7 @@ label.rdo .label{position: relative;}
     &.studysummary{
         .title {font-size:map-get($font-size, font_15);letter-spacing: -0.045em;}
     }
-} 
+}
 
 
 .study_calender{

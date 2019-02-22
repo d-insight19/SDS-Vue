@@ -1,9 +1,9 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery">   
+      <div id="container" class="mediaquery" style="margin:0 500px auto">
 
         <div class="iconList">
           <h1>Icons</h1>
@@ -283,14 +283,14 @@
             </li>
             <li>
               <p class="ico accordion_down"></p>
-              
+
             </li>
             <li>
-              <p class="icon accordion_arrow_down"></p>             
-            </li> 
+              <p class="icon accordion_arrow_down"></p>
+            </li>
             <li style="background-color:black;">
-              <p class="icon accordion_arrow_up_white"></p>             
-            </li>                        
+              <p class="icon accordion_arrow_up_white"></p>
+            </li>
             <li>
               <p class="ico accordion_up"></p>
             </li>
@@ -476,103 +476,138 @@
             </li>
           </ul>
 
-          <h2>study </h2>
-          <ul class="ul">
-            <li><P class="ico ic_set_line_28"></P></li>
-            <li><P class="ico ebook_28"></P></li>  
-            <li><P class="ico play_28"></P></li>  
-            <li><P class="ico headphone_28"></P></li> 
-            <li><span class="ico book_28"></span></li>
-            <li><span class="ico ic_book_line_28"></span></li>
-            <li></li>                  
+          <h2>학습창, 학습홈(Study_)</h2>
+          <ul>
+            <li style="margin-bottom:30px;">
+              <label style="color:blueviolet">제목 아이콘</label><br/>
+              <span class="ico ic_set_line_28"></span>
+              <span class="ico ic_set_line_20"></span>
+              <span class="ico ebook_28"></span>
+              <span class="ico ebook_20"></span>
+              <span class="ico ic_book_line_28"></span>
+              <span class="ico play_28"></span>
+              <span class="ico play_20"></span>
+              <span class="ico headphone_28"></span>
+              <span class="ico headphone_20"></span>
+            </li>
+
+            <li style="margin-bottom:30px;">
+              <label style="color:blueviolet">상태 아이콘</label>
+                <div>
+                  <span class="ico check_14"></span> <label>학습완료</label>
+                </div>
+              <div>
+                <span  style="background-color:black"><span class="ico check_14 wh"></span></span> <label>학습완료</label>
+              </div>
+              <div>
+                <span class="ico ongoing_16"></span> <span>진행중</span>
+              </div>
+              <div>
+                <span  style="background-color:black"><span class="ico ongoing_16_wh"></span></span> <label>진행중</label>
+              </div>
+              <div>
+                <span class="ico complete_14"></span> <label>미진행</label>
+              </div>
+              <div>
+                <span class="ico locked_16"></span> <span>학습불가</span>
+              </div>
+            </li>
+
+            <li style="margin-bottom:30px;">
+              <label style="color:blueviolet">서브텍스트 아이콘</label>
+              <div><span class="ico time"></span></div>
+              <div style="background-color:black"><span class="ico time wh"></span></div>
+              <div ><span class="ico clip"></span></div>
+            </li>
+
           </ul>
 
           <h2>badge </h2>
           <ul>
-            <li><p class="chip b_color3">사전설문</p></li>    
+            <li><p class="chip b_color3">사전설문</p></li>
             <li class="colorCode2">
               <p class="manual_btn clr2"><span class="ico download-wh"></span>매뉴얼</p>
             </li>
             <li></li>
-            <li></li>              
-          </ul>  
+            <li></li>
+          </ul>
 
           <h2>table </h2>
           <ul>
             <li>
-              
+
               <div class="type_box">
                 <div class="info type2">
-                  <p class="tit">전체과정수</p> 
+                  <p class="tit">전체과정수</p>
                   <p><span class="value">1,245</span></p>
-                </div> 
+                </div>
                 <dl>
-                  <dt>운영중 과정</dt> 
+                  <dt>운영중 과정</dt>
                     <dd>100</dd>
-                  </dl> 
+                  </dl>
                   <dl>
                     <dt>학습중인 학습자</dt>
                     <dd>400</dd>
-                  </dl> 
+                  </dl>
                   <dl>
                     <dt>제작자</dt>
                     <dd>1,120</dd>
                   </dl>
-                </div>        
-              
-            </li>    
+                </div>
+
+            </li>
             <li>
-              
+
               <div class="type_box type_1">
                 <dl>
-                  <dt>운영중 과정</dt> 
+                  <dt>운영중 과정</dt>
                     <dd>100</dd>
-                  </dl> 
+                  </dl>
                   <dl>
                     <dt>학습중인 학습자</dt>
                     <dd>400</dd>
-                  </dl> 
+                  </dl>
                   <dl>
                     <dt>제작자</dt>
                     <dd>1,120</dd>
                   </dl>
-                </div>        
-              
-            </li>  
+                </div>
+
+            </li>
             <li>
 
               <table class="detail_table">
                 <thead>
                   <tr>
-                    <td style="width: 65%;">문의유형</td> 
-                    <td>건수</td> 
+                    <td style="width: 65%;">문의유형</td>
+                    <td>건수</td>
                     <td>처리시간(hr)</td>
                   </tr>
-                </thead> 
+                </thead>
                 <tbody>
                   <tr>
-                    <td>전화</td> 
-                    <td>2513</td> 
+                    <td>전화</td>
+                    <td>2513</td>
                     <td>1</td>
-                  </tr> 
+                  </tr>
                   <tr>
-                    <td>1:1메일문의</td> 
-                    <td>321</td> 
+                    <td>1:1메일문의</td>
+                    <td>321</td>
                     <td>1.2</td>
                   </tr>
                   <tr>
-                    <td>질문방</td> 
-                    <td>121</td> 
+                    <td>질문방</td>
+                    <td>121</td>
                     <td>2</td>
-                  </tr> 
+                  </tr>
                   <tr>
-                    <td>운영자 문의메일</td> 
-                    <td>20</td> 
+                    <td>운영자 문의메일</td>
+                    <td>20</td>
                     <td>4</td>
-                  </tr> 
+                  </tr>
                   <tr>
-                    <td>합계</td> 
-                    <td>2975</td> 
+                    <td>합계</td>
+                    <td>2975</td>
                     <td>2.1</td>
                   </tr>
                 </tbody>
@@ -584,85 +619,85 @@
                 <table class="table detail_table">
                   <thead>
                       <tr>
-                      <th></th> 
-                      <th>가중치</th> 
+                      <th></th>
+                      <th>가중치</th>
                       <th>과락기준</th>
-                      <th>학습현황</th> 
-                      <th>취득점수</th> 
-                      <th>가중치</th> 
+                      <th>학습현황</th>
+                      <th>취득점수</th>
+                      <th>가중치</th>
                       <th>과락기준</th>
-                      <th>학습현황</th>                                
+                      <th>학습현황</th>
                       </tr>
-                  </thead> 
+                  </thead>
                   <tbody>
                       <tr>
-                        <td class="">진도율</td> 
-                        <td>-</td> 
+                        <td class="">진도율</td>
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>   
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                    
-                      </tr> 
-                      <tr>
-                        <td>과제</td> 
-                        <td>-</td> 
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>  
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                       
-                      </tr>   
-                      <tr>
-                        <td>중간평가</td> 
-                        <td>-</td> 
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td> 
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                      </tr> 
-                      <tr>
-                        <td>최종평가</td> 
-                        <td>-</td> 
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>  
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                       
-                      </tr> 
-                      <tr>
-                        <td>출석율</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td> 
-                        <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
                       </tr>
                       <tr>
-                        <td class="font_weight_base">스코어</td> 
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">20%</td>
-                        <td class="font_weight_base">20%</td> 
-                        <td class="font_weight_base">0%</td> 
+                        <td>과제</td>
                         <td>-</td>
-                        <td>-</td> 
-                        <td>-</td>                                        
-                      </tr>                                                                       
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>중간평가</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>최종평가</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>출석율</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td class="font_weight_base">스코어</td>
+                        <td class="font_weight_base">20%</td>
+                        <td class="font_weight_base">20%</td>
+                        <td class="font_weight_base">20%</td>
+                        <td class="font_weight_base">0%</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
                   </tbody>
-                </table>  
-              </div>         
-            </li>           
+                </table>
+              </div>
+            </li>
           </ul>
 
 
-          <h2>불릿 목록</h2>  
+          <h2>불릿 목록</h2>
           <ul>
             <li>
               <ul class="guideList">
@@ -671,19 +706,19 @@
                 </li>
                 <li>
                   이름, 생년월일, 성별은 가입 후에 변경이 불가합니다. 추후 본인확인을 위해 정확하게 가입 부탁드립니다.
-                </li>          
+                </li>
               </ul>
             </li>
             <li><p class="mono_80">진도율 80% 이상, 모든 평가항목 참여, 총점 80점 이상되어야 수료 가능합니다.</p></li>
-          </ul>       
+          </ul>
         </div>
 
 
 
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
-    <!-- //wrap -->    
+    <!-- //wrap -->
 </template>
 
 <script>

@@ -9890,7 +9890,7 @@
             etc_Miniplayer
           </router-link>
         </td>
-        <td></td>
+        <td>미니 플레이어 상단은 공통요소로 개발 처리</td>
       </tr>
       <tr >
       <td align="center">537</td>
@@ -9981,7 +9981,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">542</td>
         <td>기타</td>
         <td>　</td>
@@ -9990,11 +9990,22 @@
         <td>　</td>
         <td>　</td>
         <td>　</td>
-        <td class="textL">etc_GeneralPoPup</td>
+        <td class="textL">etc_GeneralPoPup </td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'components_popup_etc' }">
+          components_popup_etc
           </router-link>
+          <span>윈도우 일반팝업</span>
+          <br />
+          <router-link :to="{ name: 'components_popup_etc1' }">
+          components_popup_etc1
+          </router-link>
+          <span>윈도우일반팝업 통이미지 </span>
+          <br />
+          <router-link :to="{ name: 'components_popup_etc2' }">
+          components_popup_etc2
+          </router-link>
+          <span>레이어 팝업</span>
         </td>
         <td></td>
       </tr>
