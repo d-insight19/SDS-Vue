@@ -5,7 +5,7 @@
       <!-- container -->
       <div id="container" class="mediaquery regiclass basicinfo register">
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner mb40">
               

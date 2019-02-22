@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery regiclass">   
+      <div id="container" class="mediaquery regiclass pd70">   
 
         <!-- header -->
         <div id="header" class="tab video">
@@ -168,7 +168,7 @@
         <!-- //header -->
         
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <p class="mono_60 font_14">
@@ -217,7 +217,7 @@
           
 
           <div class="cell">
-            <div class="inner mb40">
+            <div class="inner">
                 <p class="label-tit18 fwb600 mb0 pb10 bbB60">집합강의 모듈명</p>
                 <ul class="multiList type5">
                     <li>
