@@ -2,11 +2,12 @@
     <!-- eslint-disable -->
     <!-- wrap -->
     <div id="wrap">
-        <div class="splash_wrap" style="">
-            <div class="splash_wrap" style="height:100vh">
-                <video style="width:100% height:100vh" src="../../../../static/movie/m010102.mp4" autoplay></video>
-            </div>
-        </div>
+          <div class="splashWrap" >
+              <video class="splashCon" style="" src="../../../../static/movie/SLP_Mobile_GUI_Splash_B2C.mp4" autoplay></video>
+              <div class="splashBox" >
+                  <div class="square"></div>
+              </div>
+          </div>
     </div>
     <!-- //wrap -->
 
@@ -21,7 +22,7 @@ window.$ = $
 window.jQuery = $
 
 export default {
-  name: 'Login_findcenter',
+  name: '',
   /* vue lifecycle */
   created () {
   // $(window).resize(function(){

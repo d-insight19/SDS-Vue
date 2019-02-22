@@ -9892,7 +9892,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr >
       <td align="center">537</td>
         <td>기타</td>
         <td>Splash(B2B App)</td>
@@ -9909,7 +9909,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">538</td>
         <td>기타</td>
         <td>Splash(B2C App)</td>
@@ -10739,8 +10739,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.01. Splash</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'ATORM_Splash' }">
+            ATORM_Splash
           </router-link>
         </td>
         <td></td>
@@ -11084,6 +11084,7 @@
         </td>
         <td></td>
       </tr>
+      <tr>
       <td align="center">0</td>
         <td>공통컴포넌트</td>
         <td>버튼</td>

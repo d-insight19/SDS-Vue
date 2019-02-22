@@ -4,14 +4,12 @@
     <div id="wrap" class="colorCode2">        
       <!-- container -->
       <div id="container" class="mediaquery study_calender" style="min-height:100vh;">
-           <!-- header -->
+            <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico"></span></button>
                 <p class="header_text font_18">출석부</p>
             </div>
-            <!-- //header -->      
-        
-        <!-- //header -->
+            <!-- //header -->  
 
             <div id="content" class="normal">
                 <div class="cell">

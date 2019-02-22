@@ -4,7 +4,7 @@
     <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery eduperson_login">
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <div id="dropdown_wrap" v-show="langFlag">
