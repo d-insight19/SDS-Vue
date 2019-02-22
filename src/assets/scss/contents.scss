@@ -1690,9 +1690,9 @@ label.rdo .label{position: relative;}
 
 //studystatus_assignment_result
 #container.studystatus .confirm_item_detail{margin:0px -18px}
-#container.studystatus .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
-#container.studystatus .confirm_item_detail > li > span:first-child{line-height: 58px;font-weight: 600;}
-#container.studystatus .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+#container.studystatus .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
+#container.studystatus .confirm_item_detail > li > span:first-child{line-height: 68px;font-weight: 600; display:inline-block; margin-top:20px;}
+#container.studystatus .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:23px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
@@ -1704,6 +1704,8 @@ label.rdo .label{position: relative;}
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
 #container.studystatus .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.studystatus .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
+#container.studystatus .confirm_item_detail > li:last-child.open {border-bottom-width:0px;}
+#container.studystatus .confirm_item_detail > li:last-child.open .confirm_item_detail_inner{padding-bottom:0px;}
 #container.studystatus .type_box.type2 {padding: 10px 39px 10px 172px;}
 #container.studystatus .font_11{font-size:map-get($font-size, font_11);letter-spacing: -0.033em;}
 
@@ -2015,9 +2017,9 @@ label.rdo .label{position: relative;}
 
 //atorm_group_flip_complete
 #container.atorm.flip .confirm_item_detail{margin:0px -18px}
-#container.atorm.flip .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
+#container.atorm.flip .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
 #container.atorm.flip .confirm_item_detail > li > span:first-child{line-height: 100%;font-weight: 600; display:inline-block; margin-top:20px;}
-#container.atorm.flip .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+#container.atorm.flip .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:23px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
@@ -2035,6 +2037,7 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.atorm.flip .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 #container.atorm.flip .confirm_item_detail > li:last-child.open {border-bottom-width:0px;}
+#container.atorm.flip .confirm_item_detail > li:last-child.open .confirm_item_detail_inner{padding-bottom:0px;}
 #container.atorm.flip .total-num {font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px; color:rgba(0,0,0,0.8); font-weight: 500}
 
 //ATORM_group/flip_criteria_1

@@ -132,7 +132,7 @@
                         </div>
                     </li>
                     <li @click="toggleMenu($event)">
-                        <span class="mt10">
+                        <span class="mt15">
                             학습목차 및 구성컨텐츠<br/>
                             <span class="mono_65 font_13 fwr">모듈 2</span> <span class="mono_65 font_13 fwr">차시 4</span>
                         </span>
