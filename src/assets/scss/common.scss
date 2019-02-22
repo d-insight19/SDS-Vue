@@ -1016,8 +1016,12 @@ utilities classes
 .d-block  { display:block !important; }
 
 /*position*/
-.position_relative { position:relative; left:0; top:0; }
-.position_absolute { position:absolute; }
+.position_relative {
+  position:relative; left:0; top:0;
+}
+.position_absolute {
+  position:absolute;
+}
 
 /*flex*/
 .d_flex {

@@ -234,7 +234,7 @@
             <div class="inner pt0">
 
                 <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_15 mono_80 fwb dib">차시별</p>
+                    <p class="font_16 mono_80 fwb dib">차시별</p>
                     <p class="fr">
                         <span class="ico filter" style="position:static;margin-right: 12px;"></span>
                         <span class="ico download"></span>

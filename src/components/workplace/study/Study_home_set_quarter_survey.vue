@@ -234,11 +234,31 @@
             <div class="inner pt0">
 
                 <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_15 mono_80 fwb dib">전체보기</p>
+                    <p class="font_16 mono_80 fwb dib">전체보기</p>
                     <p class="fr">
-                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
+                        <span class="ico filter" style="position:static;"></span>
                     </p>
                 </div>
+                
+                <ul class="multiList type2">
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="chip b_color3">사전설문</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 한 줄</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico check_14"></span>
+                                        <span>진단완료</span>
+                                        <span class="mono_65">2017.11.05</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                </ul>
+
                 <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
                 <!-- list -->

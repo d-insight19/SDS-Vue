@@ -3,7 +3,8 @@
     <!-- wrap -->
     <div id="wrap">
           <div class="splashWrap" >
-              <video class="splashCon" style="" src="../../../../static/movie/SLP_Mobile_GUI_Splash_B2C.mp4" autoplay></video>
+              <video class="splashCon" style="" src="../../../../static/movie/SLP_Mobile_GUI_Splash_B2C.mp4" loop autoplay></video>
+              <img src="@/assets/img/multicampus_logo_white.png" alt="">
               <div class="splashBox" >
                   <div class="square"></div>
               </div>

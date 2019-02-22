@@ -1,12 +1,12 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery atorm atorm_confirmlist_detail">
+      <div id="container" class="mediaquery atorm atorm_confirmlist_detail pd70">
 
         <!-- header  -->
-        <div id="header" class="expand">          
+        <div id="header" class="expand">
           <!--<div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             <p class="header_text  font_18">이러닝 제작</p>
@@ -31,7 +31,7 @@
         <!-- //header -->
         <div id="content" class="normal">
           <div class="cell">
-            <div class="inner pdb20">
+            <div class="inner">
 
                 <ul class="confirm_item_detail">
                     <li class="open" @click="toggleMenu($event)">
@@ -67,7 +67,7 @@
                                     <ul class="fixTab w100p mt10">
                                         <li>
                                            <slp-text-field value="시간" class="mt8"></slp-text-field>
-                                        </li>                                       
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="mb20">
@@ -75,14 +75,14 @@
                                     <ul class="fixTab w100p mt10">
                                         <li class="w50p">
                                             <slp-text-field placeholder="숫자만 입력하세요" class="mt8 mr8"></slp-text-field>
-                                        </li>                                       
+                                        </li>
                                         <li class="w50p">
                                             <slp-select placeholder="일(Day)" class="mt8" width="100%">
                                                 <option>전체</option>
                                             </slp-select>
-                                        </li> 
+                                        </li>
                                     </ul>
-                                </li>                                
+                                </li>
                             </ul>
                             <!-- //list -->
                         </div>
@@ -90,7 +90,7 @@
                     <li @click="toggleMenu($event)">
                         <span>선택정보</span>
                         <span class="accordion_arrow"></span>
-                        
+
                         <div class="confirm_item_detail_inner pt0">
                             <!-- list -->
                             <ul class="singleList type1">
@@ -108,7 +108,7 @@
                                 </li>
                                 <li class="mb20">
                                     <strong class="label-tit14">문의방법</strong>
-                                    <div class="rdoSelBox mt8">    
+                                    <div class="rdoSelBox mt8">
                                         <slp-radio name="question">연락처</slp-radio>
                                         <slp-radio name="question">이메일</slp-radio>
                                     </div>
@@ -128,7 +128,7 @@
                                 </li>
                                 <li class="mb20">
                                     <strong class="label-tit14">교재 유무</strong>
-                                    <div class="rdoSelBox mt8">    
+                                    <div class="rdoSelBox mt8">
                                         <slp-radio name="question">교재 없음</slp-radio>
                                         <slp-radio name="question">교재 있음</slp-radio>
                                     </div>
@@ -136,10 +136,10 @@
                                 </li>
                                 <li class="mb20">
                                     <strong class="label-tit14">교재 제공 여부</strong>
-                                    <div class="rdoSelBox mt8">    
+                                    <div class="rdoSelBox mt8">
                                         <slp-radio name="question">제공 안함</slp-radio>
                                         <slp-radio name="question">제공 함</slp-radio>
-                                    </div>                                    
+                                    </div>
                                 </li>
                                 <li class="mb20">
                                     <strong class="label-tit14">강사명</strong>
@@ -151,7 +151,7 @@
                                 </li>
                                 <li class="mb20">
                                     <strong class="label-tit14">역량</strong>
-                                    
+
                                     <ul class="fixTab mt10">
                                         <li>
                                             <slp-select placeholder="선택" width="100%" class="mr8">
@@ -173,7 +173,7 @@
                                     <strong class="label-tit14">과정 소개</strong>
                                     <slp-text-field placeholder="과정 소개를 입력하세요" class="mt6"></slp-text-field>
                                 </li>
-                                <li class="mb20">
+                                <li>
                                     <strong class="label-tit14">TAG</strong>
                                     <slp-text-field placeholder="예시) 의사소통, 커뮤니케이션" class="mt8"></slp-text-field>
                                 </li>
@@ -193,9 +193,9 @@
               <li><button type="button" class="btn ld clr1">다음</button></li>
             </ul>
         </div>
-        <!-- //floating button --> 
+        <!-- //floating button -->
       </div>
-      <!-- //container -->    
+      <!-- //container -->
 
     </div>
     <!-- //wrap -->
