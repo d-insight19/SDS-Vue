@@ -168,7 +168,7 @@
         <!-- //header -->
         
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
             <div class="study_title_detail pa0">
                 <div class="s_detail_wrap detail_txt">
                     세계에서 가장 영향력 있는 CEO들의 삶과 경영스토리를 1:1 인터뷰로 만나다! 누구나 만나고 싶었지만, 쉽게 만나볼 수 없었던 세계 정상급 CEO들을 만나 칼라일그룹 CEO 루벤스타인이 날카로운 질문으로 밀착 인터뷰해 자기경영과 조직경영을 위한 리더십 인사이트를 제시합니다.

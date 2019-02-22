@@ -43,7 +43,7 @@
             </div>
         </div>
         <!-- //header -->
-        <div id="content" class="normal">
+        <div id="content" class="etc">
         
           
           
