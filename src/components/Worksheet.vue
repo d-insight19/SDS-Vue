@@ -9892,7 +9892,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr >
       <td align="center">537</td>
         <td>기타</td>
         <td>Splash(B2B App)</td>
@@ -9909,7 +9909,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">538</td>
         <td>기타</td>
         <td>Splash(B2C App)</td>

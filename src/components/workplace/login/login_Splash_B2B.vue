@@ -2,8 +2,12 @@
     <!-- eslint-disable -->
     <!-- wrap -->
     <div id="wrap">
-        <div class="splash_wrap" style="height:100vh">
-            <video style="width:100% height:100vh" src="../../../../static/movie/m010102.mp4" autoplay></video>
+        <div class="splashWrap" style="">
+            <video class="splashCon" style="" src="../../../../static/movie/SLP_Mobile_GUI_Splash_B2B.mp4" autoplay></video>
+            <!-- <img src="@/assets/img/multicampus_logo_White.png" alt=""> -->
+            <div class="splashBox" >
+                <div class="square"></div>
+            </div>
         </div>
     </div>
     <!-- //wrap -->
