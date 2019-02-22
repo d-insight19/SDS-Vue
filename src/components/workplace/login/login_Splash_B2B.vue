@@ -4,7 +4,6 @@
     <div id="wrap">
         <div class="splashWrap" style="">
             <video class="splashCon" style="" src="../../../../static/movie/SLP_Mobile_GUI_Splash_B2B.mp4" autoplay></video>
-            <!-- <img src="@/assets/img/multicampus_logo_White.png" alt=""> -->
             <div class="splashBox" >
                 <div class="square"></div>
             </div>
@@ -23,7 +22,7 @@ window.$ = $
 window.jQuery = $
 
 export default {
-  name: 'Login_findcenter',
+  name: '',
   /* vue lifecycle */
   created () {
 

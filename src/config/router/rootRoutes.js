@@ -691,6 +691,7 @@ import AtormGroupFlipPostMaterial2 from '~workplace/atorm/Atorm_group_flip_post_
 import Atormgroupflipaddtest from '~workplace/atorm/Atorm_group_flip_add_test'
 import Atormgroupflipmaterial from '~workplace/atorm/Atorm_group_flip_material'
 import Atormgroupflipmaterial2 from '~workplace/atorm/Atorm_group_flip_material2'
+import ATORMSplash from '~workplace/atorm/ATORM_Splash'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -3850,6 +3851,11 @@ var rootRoutes = [
     path: '/Atorm_group_flip_material2',
     name: 'Atorm_group_flip_material2',
     component: Atormgroupflipmaterial2
+  },
+  {
+    path: '/ATORM_Splash',
+    name: 'ATORM_Splash',
+    component: ATORMSplash
   },
   {
     path: '/Eduperson_login',
