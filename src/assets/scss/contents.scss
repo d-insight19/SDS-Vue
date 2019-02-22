@@ -1,13 +1,19 @@
 /* 스플레시 */
-.splashWrap{position: relative; z-index: 0;width:100%; height:100%; text-align:center;overflow-x:hidden;  }
+.splashWrap{position: relative; z-index: 0;width:100%; text-align:center;overflow-x:hidden;  }
 .splashWrap::after{display: block; content:''; width:100%; height:100%; background:rgba(0,0,0,0.3);position:absolute;top:0;}
-.splashWrap .splashBox{position: absolute; top: 50%; left: 0;right: 0; z-index: 1;width: 36%; height: 2px; text-align: center; margin: 0 32% 0 32%;}
+.splashWrap .splashBox{position: absolute; top: 280px; left: 0;right: 0; z-index: 1;width: 36%; height: 2px; text-align: center; margin: 0 32% 0 32%;}
 .splashWrap .splashBox{background:rgba(0,0,0,0.1);}
 .splashWrap .splashBox .square{background:#d9d9d9;width:13%;height:2px;}
 .splashWrap .splashBox .in{display: inline-block; }
-.splashWrap .splashBox h1 img{height:80px;}
-.splashCon {width:100%;}
+.splashWrap  img{    position: absolute; top: 182px;left: 50%;transform: translateX(-50%); z-index: 1;}
+.splashCon {width:100%;} //height: 100%; 높이값정의 필요
 
+/*atorm splash*/
+
+.splash_action{position: absolute; bottom: 0; left: -100%;}
+.splash_action2{position: absolute; bottom: 0;right: -100%;}
+.splash_action3{position: absolute; right:-100%; bottom: 455px;}
+.splash_atorm{position: absolute;bottom: 336px;left: 11%;}
 
 // 로그인 - 연수원 찾기
 .trainIntro{
