@@ -1851,7 +1851,7 @@
             Atorm_faq_main
           </router-link>
         </td>
-        <td>작업중</td>
+        <td>  </td>
       </tr>
       <tr>
       <td align="center">91</td>
@@ -1868,7 +1868,7 @@
             Atorm_faq_detail
           </router-link>
         </td>
-        <td>작업중</td>
+        <td>  </td>
       </tr>
       <tr>
       <td align="center">92</td>

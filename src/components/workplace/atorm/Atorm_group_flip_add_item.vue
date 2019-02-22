@@ -1,12 +1,12 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery atorm flip pd70">
 
         <!-- header  -->
-        <div id="header" class="expand">          
+        <div id="header" class="expand">
           <!--<div class="header_inner line1">
             <button type="button" class="btn only prev"><span class="ico">이전</span></button>
             <p class="header_text  font_18">이러닝 제작</p>
@@ -40,22 +40,22 @@
                         <div class="confirm_item_detail_inner pdb27 pt0">
                             <!-- list -->
                             <div class="cell">
-                                <div class="inner atorm_material"> 
+                                <div class="inner atorm_material">
                                     <div class="underline_parents">
-                                    <slp-text-field classObject="underline" value="데이터 특성 알아보기"></slp-text-field>  
-                                    </div>                      
+                                    <slp-text-field classObject="underline" value="데이터 특성 알아보기"></slp-text-field>
+                                    </div>
                                 </div>
                             </div>
-                            
+
                             <!-- //list -->
 
                             <div class="cell">
-                                <div class="atorm_material">                                   
-                                    
+                                <div class="atorm_material">
+
                                     <!-- list -->
                                     <ul>
                                         <li class="open">
-                                            <div class="download_detail mt26">                                                
+                                            <div class="download_detail mt26">
                                                 <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
                                             </div>
                                             <div class="sub_content">
@@ -102,10 +102,10 @@
                                         </li>
                                         <li class="open">
                                             <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
-                                            </div> 
-                                            <div class="sub_content"> 
-                                                <div class="sub_content_type"> 
+                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>
+                                            </div>
+                                            <div class="sub_content">
+                                                <div class="sub_content_type">
                                                     <ul class="score_list">
                                                         <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
                                                         </li>
@@ -130,38 +130,38 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                            </div>                                        
-                                        </li>                                       
-                                       
+                                            </div>
+                                        </li>
+
                                     </ul>
-                                    <!-- //list -->                                    
+                                    <!-- //list -->
                                 </div>
                             </div>
 
                         </div>
                     </li>
-                    
+
                     <li @click="toggleMenu($event)">
                         <span>집합강의</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pdb27 pt0">
                             <!-- list -->
                             <div class="cell">
-                                <div class="inner atorm_material"> 
+                                <div class="inner atorm_material">
                                     <div class="underline_parents">
-                                    <slp-text-field classObject="underline" placeholder="집합강의명을 입력하세요"></slp-text-field>  
-                                    </div>                      
+                                    <slp-text-field classObject="underline" placeholder="집합강의명을 입력하세요"></slp-text-field>
+                                    </div>
                                 </div>
                             </div>
                             <!-- //list -->
 
                             <div class="cell">
-                                <div class="atorm_material">                                   
-                                    
+                                <div class="atorm_material">
+
                                     <!-- list -->
                                     <ul>
                                         <li class="open">
-                                            <div class="download_detail mt26">                                                
+                                            <div class="download_detail mt26">
                                                 <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
                                             </div>
                                             <div class="sub_content">
@@ -182,10 +182,10 @@
                                         </li>
                                         <li class="open">
                                             <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
-                                            </div> 
-                                            <div class="sub_content"> 
-                                                <div class="sub_content_type"> 
+                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>
+                                            </div>
+                                            <div class="sub_content">
+                                                <div class="sub_content_type">
                                                     <ul class="score_list">
                                                         <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
                                                         </li>
@@ -210,11 +210,11 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                            </div>                                        
-                                        </li>                                       
-                                       
+                                            </div>
+                                        </li>
+
                                     </ul>
-                                    <!-- //list -->                                    
+                                    <!-- //list -->
                                 </div>
                             </div>
 
@@ -224,24 +224,24 @@
                     <li @click="toggleMenu($event)">
                         <span>사후학습</span>
                         <span class="accordion_arrow"></span>
-                        <div class="confirm_item_detail_inner pdb27 pt0">
-                            <!-- list -->                            
+                        <div class="confirm_item_detail_inner pt0">
+                            <!-- list -->
                             <div class="cell">
-                                <div class="inner atorm_material"> 
+                                <div class="inner atorm_material">
                                     <div class="underline_parents">
-                                    <slp-text-field classObject="underline" placeholder="사후학습명을 입력하세요"></slp-text-field>  
-                                    </div>                      
+                                    <slp-text-field classObject="underline" placeholder="사후학습명을 입력하세요"></slp-text-field>
+                                    </div>
                                 </div>
                             </div>
                             <!-- //list -->
 
                             <div class="cell">
-                                <div class="atorm_material">                                   
-                                    
+                                <div class="atorm_material">
+
                                     <!-- list -->
                                     <ul>
                                         <li class="open">
-                                            <div class="download_detail mt26">                                                
+                                            <div class="download_detail mt26">
                                                 <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
                                             </div>
                                             <div class="sub_content">
@@ -262,10 +262,10 @@
                                         </li>
                                         <li class="open">
                                             <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
-                                            </div> 
-                                            <div class="sub_content"> 
-                                                <div class="sub_content_type"> 
+                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>
+                                            </div>
+                                            <div class="sub_content">
+                                                <div class="sub_content_type">
                                                     <ul class="score_list">
                                                         <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
                                                         </li>
@@ -290,11 +290,11 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                            </div>                                        
-                                        </li>                                       
-                                       
+                                            </div>
+                                        </li>
+
                                     </ul>
-                                    <!-- //list -->                                    
+                                    <!-- //list -->
                                 </div>
                             </div>
 
@@ -312,9 +312,9 @@
               <li><button type="button" class="btn ld clr1">다음</button></li>
             </ul>
         </div>
-        <!-- //floating button --> 
+        <!-- //floating button -->
       </div>
-      <!-- //container -->    
+      <!-- //container -->
 
     </div>
     <!-- //wrap -->
