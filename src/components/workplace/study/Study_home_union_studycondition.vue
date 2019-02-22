@@ -8,7 +8,7 @@
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">
             <div class="header_inner line1 ">
-                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
+                <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15"></p>
             </div>
 

@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery regiclass">   
+      <div id="container" class="mediaquery regiclass pd70">   
 
         <!-- header -->
         <div id="header" class="tab video">
@@ -171,7 +171,7 @@
         <div id="content" class="etc">
 
           <div class="cell">
-            <div class="inner mb40">
+            <div class="inner">
                 <!-- 댓글 -->
                 <div class="txt-line mt0">
                     <span class="my-op font_16">평균평점</span>

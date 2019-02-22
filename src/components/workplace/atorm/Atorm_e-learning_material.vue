@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery atorm_elearning">
+      <div id="container" class="mediaquery atorm_elearning pd70">
 
         <!-- header  -->
         <div id="header" class="expand">          
@@ -64,7 +64,7 @@
           </div>
 
           <div class="cell">
-            <div class="inner pdb20 atorm_material">
+            <div class="inner atorm_material">
                 <div class="mb12">
                     <span class="chip clr1 font_13">모듈 1</span>
                     <span class="fr ico deletemode_20"></span>
@@ -101,7 +101,7 @@
           </div>
 
           <div class="cell">
-            <div class="inner pdb20 atorm_material">
+            <div class="inner atorm_material">
                 <div class="mb12">
                     <span class="chip clr1 font_13">모듈 1</span>
                     <span class="fr ico deletemode_20"></span>
@@ -171,7 +171,6 @@
                     <span class="chip font_13 done">모듈 2</span>
                 </div>
                 <slp-text-field classObject="underline font_22 fwb600" placeholder="모듈명을 입력하세요"></slp-text-field> 
-                <p class="hr mb0"></p>
             </div>
           </div>
 
