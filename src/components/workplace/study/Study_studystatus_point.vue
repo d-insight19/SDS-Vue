@@ -10,7 +10,7 @@
                 <p class="header_text font_18">스코어</p>
             </div>
             <!-- //header -->
-            <div id="content" class="etc" >
+            <div id="content" class="normal" >
                 <div class="cell">
                     <div class="inner ">
                         <p class="label-tit-15 fwb mb5"> <span class="mr6 ">총</span><span class="color_clr2 fwb600">75</span>/<span>95</span></p>

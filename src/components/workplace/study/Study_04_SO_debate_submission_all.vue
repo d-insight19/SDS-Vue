@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery study_debate">
             <!-- header -->
@@ -10,8 +10,8 @@
             <p class="header_text font_19">토론</p>
             </div>
             <!-- //header -->
-            
-            <div id="content" class="etc">
+
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
 
@@ -21,10 +21,10 @@
                         <div class="txt-line">
                             <div id="dropdown_wrap" v-show="langFlag">
                             <div id="sheetDim" @click="changeLang()"></div>
-                            <div id="dropdown" style="right: 0;">            
+                            <div id="dropdown" style="right: 0;">
                                 <ul  @click="changeLang()">
-                                <!-- 
-                                    position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
+                                <!--
+                                    position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력
                                 -->
                                     <li @click="sortAgree(1)">전체의견</li>
                                     <li @click="sortAgree(2)">찬성의견</li>
@@ -36,11 +36,11 @@
                                 <span>전체의견</span>
                                 <span class="ico down_blue_24"></span>
                             </p>
-                        </div>                        
+                        </div>
                         <p class="line01"></p>
                         <ul class="multiList type3 dif">
                             <li>
-                                <p class="reply-name mt20">                                    
+                                <p class="reply-name mt20">
                                     <span class="chip type2 type2 agree-x agree">찬성</span>
                                     <span>정*민 [작성자]</span>
                                     <span class="fr ico more"></span>
@@ -62,9 +62,9 @@
                                             <span v-else="">
                                                 <span class=" ico like_32 blue" ></span>
                                                 <span class="">{{goodcnt +1}}</span>
-                                            </span> 
+                                            </span>
                                         </label>
-                                        
+
                                         <label>
                                             <input type="checkbox"
                                             @click="toggleLike(2)"
@@ -76,14 +76,14 @@
                                             <span v-else="">
                                                 <span class=" ico unlike_32 red" ></span>
                                                 <span class="">{{badcnt +1}}</span>
-                                            </span> 
+                                            </span>
                                         </label>
                                     </p>
                                 </div>
                                 <ul class="replyList" v-if="replyFlag">
                                     <li class="left_pd" >
                                         <p class="reply-name mt20">
-                                            <span class="ico indent n-ml18"></span>                                    
+                                            <span class="ico indent n-ml18"></span>
                                             <span class="chip type2 type2 agree-x">반대</span>
                                             <span>김*영</span>
                                         </p>
@@ -96,16 +96,16 @@
                                                     @click="toggleLike5(1)"
                                                     >
                                                     <span v-if="good5">
-                                                        
+
                                                         <span class=" ico like_32" ></span>
                                                         <span class="">{{goodcnt}}</span>
                                                     </span>
                                                     <span v-else="">
                                                         <span class=" ico like_32 blue" ></span>
                                                         <span class="">{{goodcnt +1}}</span>
-                                                    </span> 
+                                                    </span>
                                                 </label>
-                                                
+
                                                 <label>
                                                     <input type="checkbox"
                                                     @click="toggleLike5(2)"
@@ -117,14 +117,14 @@
                                                     <span v-else="">
                                                         <span class=" ico unlike_32 red" ></span>
                                                         <span class="">{{badcnt +1}}</span>
-                                                    </span> 
+                                                    </span>
                                                 </label>
                                             </p>
                                         </div>
                                     </li>
                                     <li class="left_pd" >
                                         <p class="reply-name mt20">
-                                            <span class="ico indent n-ml18"></span>                                          
+                                            <span class="ico indent n-ml18"></span>
                                             <span class="chip type2 type2 agree-x">반대</span>
                                             <span>이*우</span>
                                         </p>
@@ -143,9 +143,9 @@
                                                     <span v-else="">
                                                         <span class=" ico like_32 blue" ></span>
                                                         <span class="">{{goodcnt +1}}</span>
-                                                    </span> 
+                                                    </span>
                                                 </label>
-                                                
+
                                                 <label>
                                                     <input type="checkbox"
                                                     @click="toggleLike6(2)"
@@ -157,14 +157,14 @@
                                                     <span v-else="">
                                                         <span class=" ico unlike_32 red" ></span>
                                                         <span class="">{{badcnt +1}}</span>
-                                                    </span> 
+                                                    </span>
                                                 </label>
                                             </p>
                                         </div>
                                     </li>
                                     <li class="left_pd" >
-                                        <p class="reply-name mt20"> 
-                                            <span class="ico indent n-ml18"></span>                                         
+                                        <p class="reply-name mt20">
+                                            <span class="ico indent n-ml18"></span>
                                             <span class="chip type2 type2 agree-x agree">찬성</span>
                                             <span>이*우</span>
                                         </p>
@@ -183,9 +183,9 @@
                                                     <span v-else="">
                                                         <span class=" ico like_32 blue" ></span>
                                                         <span class="">{{goodcnt +1}}</span>
-                                                    </span> 
+                                                    </span>
                                                 </label>
-                                                
+
                                                 <label>
                                                     <input type="checkbox"
                                                     @click="toggleLike7(2)"
@@ -197,20 +197,20 @@
                                                     <span v-else="">
                                                         <span class=" ico unlike_32 red" ></span>
                                                         <span class="">{{badcnt +1}}</span>
-                                                    </span> 
+                                                    </span>
                                                 </label>
                                             </p>
                                         </div>
                                     </li>
                                 </ul>
-                            </li>   
+                            </li>
                             <li class="top_bottom_pd">
                                 <div class="infoChk pr0">
                                     <input type="text" placeholder="답글을 입력하세요" class="input type2"><button type="button" class="btn sm clr1 w17p">등록</button>
                                 </div>
                             </li>
                             <li >
-                                <p class="reply-name mt20">                                    
+                                <p class="reply-name mt20">
                                     <span class="chip type2 type2 agree-x">반대</span>
                                     <span>김*소</span>
                                 </p>
@@ -231,9 +231,9 @@
                                             <span v-else="">
                                                 <span class=" ico like_32 blue" ></span>
                                                 <span class="">{{goodcnt +1}}</span>
-                                            </span> 
+                                            </span>
                                         </label>
-                                        
+
                                         <label>
                                             <input type="checkbox"
                                             @click="toggleLike2(2)"
@@ -245,13 +245,13 @@
                                             <span v-else="">
                                                 <span class=" ico unlike_32 red" ></span>
                                                 <span class="">{{badcnt +1}}</span>
-                                            </span> 
+                                            </span>
                                         </label>
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <p class="reply-name mt20">                                    
+                                <p class="reply-name mt20">
                                     <span class="chip type2 type2 agree-x">반대</span>
                                     <span>박*환</span>
                                 </p>
@@ -272,9 +272,9 @@
                                             <span v-else="">
                                                 <span class=" ico like_32 blue" ></span>
                                                 <span class="">{{goodcnt +1}}</span>
-                                            </span> 
+                                            </span>
                                         </label>
-                                        
+
                                         <label>
                                             <input type="checkbox"
                                             @click="toggleLike3(2)"
@@ -286,13 +286,13 @@
                                             <span v-else="">
                                                 <span class=" ico unlike_32 red" ></span>
                                                 <span class="">{{badcnt +1}}</span>
-                                            </span> 
+                                            </span>
                                         </label>
                                     </p>
                                 </div>
                             </li>
                             <li class="bottom-bd">
-                                <p class="reply-name mt20">                                    
+                                <p class="reply-name mt20">
                                     <span class="chip type2 type2 agree-x agree">찬성</span>
                                     <span>정*민</span>
                                 </p>
@@ -313,9 +313,9 @@
                                             <span v-else="">
                                                 <span class=" ico like_32 blue" ></span>
                                                 <span class="">{{goodcnt +1}}</span>
-                                            </span> 
+                                            </span>
                                         </label>
-                                        
+
                                         <label>
                                             <input type="checkbox"
                                             @click="toggleLike4(2)"
@@ -327,7 +327,7 @@
                                             <span v-else="">
                                                 <span class=" ico unlike_32 red" ></span>
                                                 <span class="">{{badcnt +1}}</span>
-                                            </span> 
+                                            </span>
                                         </label>
                                     </p>
                                 </div>
@@ -336,9 +336,9 @@
                     </div>
                 </div>
             </div>
-                
+
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 
@@ -379,14 +379,14 @@ export default {
   /* vue function */
   methods: {
     toggleReply () {
-        this.replyFlag = !this.replyFlag 
+        this.replyFlag = !this.replyFlag
     },
     toggleLike (el) {
         if( el == 1 ) {
             this.good = !this.good || this.bad == ''
         } else if( el == 2 ) {
             this.bad = !this.bad || this.good ==''
-        } 
+        }
     },
     toggleLike2 (el) {
         if( el == 1 ) {

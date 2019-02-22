@@ -82,22 +82,13 @@
                                 <span class="mono_50 mr6">신청기간</span><span>2018.10.31</span> - <span>2018.10.31</span>
                             </p>
                         </div>
-                        <span class="moredot" @click="changeLang1()"></span>
-                        <div class="dropdown_wrap" v-show="langFlag1" >
-                            <div class="sheetDim" @click="changeLang1()"></div>
-                            <div class="dropdown">            
-                                <ul  @click="changeLang1()">
-                                <!-- 
-                                    position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
-                                -->
-                                <li>나의 지식 CLIPing</li>
-                                <li>나의 지식 CLIPing</li>
-                                <li>내가 본 콘텐츠</li>
-                                <li>관심 CLIPing</li>
-                                <li>나의 지식 CLIPing 활동 이력</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <slp-dropdown dimmed v-model="lang">
+                            <span class="moredot" slot="trigger"></span>
+                            <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'중국어'">중국어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'일본어'">일본어</slp-dropdown-item>
+                        </slp-dropdown>
                     </li>
                     <li>
                         <div class="in">
@@ -117,22 +108,13 @@
                                 <span>학습중</span>
                             </p>
                         </div>
-                        <span class="moredot" @click="changeLang2()"></span>
-                        <div class="dropdown_wrap" v-show="langFlag2" >
-                            <div class="sheetDim" @click="changeLang2()"></div>
-                            <div class="dropdown">            
-                                <ul  @click="changeLang2()">
-                                <!-- 
-                                    position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
-                                -->
-                                <li>나의 지식 CLIPing</li>
-                                <li>나의 지식 CLIPing</li>
-                                <li>내가 본 콘텐츠</li>
-                                <li>관심 CLIPing</li>
-                                <li>나의 지식 CLIPing 활동 이력</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <slp-dropdown dimmed v-model="lang">
+                            <span class="moredot" slot="trigger"></span>
+                            <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'중국어'">중국어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'일본어'">일본어</slp-dropdown-item>
+                        </slp-dropdown>
                     </li>
                     <li>
                         <div class="in">
@@ -151,22 +133,13 @@
                                 <span class="mono_50 mr6">신청기간</span><span>2018.10.31</span> - <span>2018.10.31</span>
                             </p>
                         </div>
-                        <span class="moredot" @click="changeLang3()"></span>
-                        <div class="dropdown_wrap" v-show="langFlag3" >
-                            <div class="sheetDim" @click="changeLang3()"></div>
-                            <div class="dropdown">            
-                                <ul  @click="changeLang3()">
-                                <!-- 
-                                    position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
-                                -->
-                                <li>나의 지식 CLIPing</li>
-                                <li>나의 지식 CLIPing</li>
-                                <li>내가 본 콘텐츠</li>
-                                <li>관심 CLIPing</li>
-                                <li>나의 지식 CLIPing 활동 이력</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <slp-dropdown dimmed v-model="lang">
+                            <span class="moredot" slot="trigger"></span>
+                            <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'중국어'">중국어</slp-dropdown-item>
+                            <slp-dropdown-item :value="'일본어'">일본어</slp-dropdown-item>
+                        </slp-dropdown>
                     </li>
                 </ul>
                 <!-- //list -->
@@ -255,22 +228,11 @@ export default {
   /* vue data */
   data () {
     return {
-      langFlag1: false,
-      langFlag2: false,
-      langFlag3: false
+      lang: '한국어'
     }
   },
   /* vue function */
   methods: {
-    changeLang1 () {
-      this.langFlag1 = !this.langFlag1
-    },
-    changeLang2 () {
-      this.langFlag2 = !this.langFlag2
-    },
-    changeLang3 () {
-      this.langFlag3 = !this.langFlag3
-    }
   }
 }
 </script>

@@ -141,9 +141,9 @@
         }
         //예외 ( 인트로,완료 여백30)
         &.etc_30{
-          width:520px;
+          width:620px;
           .inner{}
-          &~.fixBtmBtn.abs{width:520px;left:50%;transform:translateX(-50%)}
+          &~.fixBtmBtn.abs{width:620px;left:50%;transform:translateX(-50%)}
         }
       }
     }
@@ -202,9 +202,9 @@
         }
         //예외 ( 인트로,완료 여백30)
         &.etc_30{
-          width:520px;
+          width:844px;
           .inner{}
-          &~.fixBtmBtn.abs{width:520px;left:50%;transform:translateX(-50%)}
+          &~.fixBtmBtn.abs{width:844px;left:50%;transform:translateX(-50%)}
         }
       }
     }
@@ -312,10 +312,12 @@
 #header.mainType .gnbMenu .menu_exploration .ico{background-position:-64px -285px;}
 #header.mainType .gnbMenu .menu_subscription .ico{background-position:-96px -285px;}
 #header.mainType .gnbMenu .menu_learn .ico{background-position:-128px -285px;}
+#header.mainType .gnbMenu .menu_star .ico{background-position:-160px -285px;}
 #header.mainType .gnbMenu .menu_home.on .ico{background-position:-32px -325px;}
 #header.mainType .gnbMenu .menu_exploration.on .ico{background-position:-64px -325px;}
 #header.mainType .gnbMenu .menu_subscription.on .ico{background-position:-96px -325px;}
 #header.mainType .gnbMenu .menu_learn.on .ico{background-position:-128px -325px;}
+#header.mainType .gnbMenu .menu_star.on .ico{background-position:-160px -325px;}
 
 // 메인 타입 2단형
 #header.mainType .header_inner{display:block;width:100%;}
@@ -396,6 +398,12 @@
 // 확장형 헤더 ( 텝 O )
 #header.tab{/*position: fixed;*/ position:relative; top: 0; z-index: 30; width: 100%;  height:auto; padding:0;    min-height: 100px;}
 #header.tab .header_inner{display:block;width:100%;}
+//audio시 변경사항
+#header.tab .header_inner.audio{display:none !important;}
+#header.tab .player_wrap.audio{height:25vh !important;}
+#header.tab .hide_header.audio{display: none!important;}
+#header.tab .header_inner.line1.audio{display: none!important;}
+
 #header.tab .header_inner.line1{height:56px;padding: 0 36px 0 72px;    position: absolute; top: 0px; left: 0px;}
 #header.tab .header_inner.line1 .btn{top:14px !important;transform: translate(0,0) !important;}
 

@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,7 +12,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                     <!-- myinfo_img -->
@@ -22,8 +22,8 @@
                     </div>
                     <!-- //myinfo_img -->
                     <p class="name">정해민</p>
-                    <p class="email">hamin.jung@multicampus.com</p>                    
-                
+                    <p class="email">hamin.jung@multicampus.com</p>
+
                 <!-- list -->
                         <ul class="singleList type_1 mt40">
                             <li>
@@ -44,24 +44,24 @@
                         <button type="button" class="btn md clr1">로그아웃</button>
                     </div>
 
-                       
+
                     </div>
                 </div>
-            </div>            
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
      <!-- layer wrap -->
     <div class="layerWrap">
-        <div class="ly-in">            
-            <div class="ly-body">                
+        <div class="ly-in">
+            <div class="ly-body">
                 <div class="ly-info">
                     <p>로그아웃 하시겠습니까?</p>
                 </div>
             </div>
-        
-            <div class="ly-btn">                
+
+            <div class="ly-btn">
                 <button type="button" class="btn color_clr2">로그아웃</button>
             </div>
 

@@ -83,7 +83,7 @@
                 </div>
             </div>
             <!-- //header -->
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
                         <p class="inner-txt op80">설명 입니다. 설명 입니다. 설명 입니다. Admin에서 등록된 내용 출력 (선택사항) </p>

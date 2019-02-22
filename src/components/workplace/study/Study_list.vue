@@ -1,5 +1,5 @@
 <template>
-
+<!-- eslint-disable-->
     <div>
         <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
@@ -37,30 +37,21 @@
             </li>
             <li :class="compClasses">
                 <div class="download_details">
-                    <div class="edit_parents">
-                        <div class="edit_child edit_child_frst">
-                            <label for="id_save" class="labelChk">
-                                <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span>
-                            </label>
-                        </div>
-                        <div class="edit_child edit_child_snd">
-                            <div class="text_wrap position_relative">
-                                <p class="icon_txt">4차시</p>
-                                <p class="title text">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li>
-                                        <span class="ico check_14 white"></span>
-                                        <span class="text">학습완료</span>
-                                        <span class="mono_65 text">1/4</span>
-                                    </li>
-                                    <li>
-                                        <span class="ico time white"></span>
-                                        <span class="text">12:45</span><span class="text">/</span><span class="mono_65 text">23:43</span>
-                                    </li>
-                                </ul>
-                                <a href="#" class="icon accordion_arrow"  @click="collapse"></a>
-                            </div>
-                        </div>
+                    <div class="text_wrap position_relative">
+                        <p class="icon_txt">4차시</p>
+                        <p class="title text">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                        <ul class="info">
+                            <li>
+                                <span class="ico check_14 white"></span>
+                                <span class="text">학습완료</span>
+                                <span class="mono_65 text">1/4</span>
+                            </li>
+                            <li>
+                                <span class="ico time white"></span>
+                                <span class="text">12:45</span><span class="text">/</span><span class="mono_65 text">23:43</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="icon accordion_arrow"  @click="collapse"></a>
                     </div>
                     <div v-show="defaultFlag">
                         <div class="edit_parents">

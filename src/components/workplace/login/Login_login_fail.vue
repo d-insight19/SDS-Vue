@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery login">
         <div id="content" class="etc">
@@ -51,7 +51,7 @@
                     </div>
                 </fieldset>
 
-                <ul class="loginEtcBtn">                    
+                <ul class="loginEtcBtn">
                     <li><a href="#">아이디찾기</a></li>
                     <li><a href="#">비밀번호 찾기</a></li>
                     <li><a href="#">회원가입</a></li>
@@ -64,12 +64,12 @@
                     <dd class="desc">최초 접속 시 아이디와 비밀번호가 동일합니다.</dd>
                 </dl>
 
-                
+
 
             </div>
           </div>
         </div>
-        
+
         <div class="loginFooter">
             <p class="custom_txt">고객센터<span class="custom_tel color_clr2">1544 - 9001</span></p>
             <ul class="custom_info">
@@ -77,20 +77,20 @@
                 <li>휴일<span class="custom_time">09:00 - 18:00</span></li>
             </ul>
             <p class="copyright">ⓒ copyright by mulicampus CO.LTD. All right reserved</p>
-        </div>        
-        
+        </div>
+
       </div>
-      <!-- //container --> 
+      <!-- //container -->
 
       <slp-popup v-if="showConfirm" title="로그인 실패" confirmInput="확인" @cancelClick="cancel" @confirmClick="confirm">
             <!-- popup body -->
             <div class="ly-cnt">
-                <p>로그인에 5회 실패하였습니다. 5회 실패 시 계정이 잠금되어 로그인이 불가합니다. 본인인증 후 이용해 주세요.</p>	
+                <p>로그인에 5회 실패하였습니다. 5회 실패 시 계정이 잠금되어 로그인이 불가합니다. 본인인증 후 이용해 주세요.</p>
             </div>
             <div class="ly-info">
                 <p></p>
             </div>
-        </slp-popup>    
+        </slp-popup>
     </div>
     <!-- //wrap -->
 

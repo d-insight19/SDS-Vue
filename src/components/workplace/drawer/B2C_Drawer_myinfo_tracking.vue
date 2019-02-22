@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
@@ -12,11 +12,11 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
-                    <div class="inner">                        
+                    <div class="inner">
                         <!-- list -->
-                        <ul class="multiList type2">                   
+                        <ul class="multiList type2">
                         <li class="mb20">
                             <strong class="label-tit14">주소 별칭</strong>
                             <input type="text" class="input" value="회사" >
@@ -24,14 +24,14 @@
                         <li class="mb20">
                             <strong class="label-tit14">받으시는 분 성함</strong>
                             <input type="text" class="input" value="정해민">
-                        </li> 
+                        </li>
                         <li class="mb20">
                             <strong class="label-tit14">휴대전화</strong>
                             <input type="text" class="input" value="01012341234">
-                        </li>                                       
+                        </li>
                         <li>
-                            <strong class="label-tit14">주소</strong>                        
-                            <div>                                
+                            <strong class="label-tit14">주소</strong>
+                            <div>
                                 <ul>
                                     <li>
                                         <div class="postCode infoChk">
@@ -41,16 +41,16 @@
                                     </li>
                                     <li><input type="text" class="input" value="서울시 잠원구 신사동 33길 15"></li>
                                     <li><input type="text" class="input" value="한양아파트 1403호"></li>
-                                </ul>                            
+                                </ul>
                             </div>
                         </li>
-                    </ul>                   
+                    </ul>
                     <!-- //list -->
 
-                       
+
                     </div>
                 </div>
-            </div>  
+            </div>
 
         <!-- floating button -->
         <div class="fixBtmBtn">
@@ -59,10 +59,10 @@
                 <li><button type="button" class="btn md clr1">배송지 수정</button></li>
             </ul>
         </div>
-        <!-- //floating button -->         
-            
+        <!-- //floating button -->
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->

@@ -944,19 +944,6 @@
           <router-link :to="{ name: 'Login_certify_email_certify_error3' }">
             Login_certify_email_certify_error3
           </router-link>
-          <br/>
-          <router-link :to="{ name: 'Login_login_corporationphone1' }">
-            Login_login_corporationphone1
-          </router-link>
-          <br/>
-          <router-link :to="{ name: 'Login_login_corporationphone2' }">
-            Login_login_corporationphone2
-          </router-link>
-          <br/>
-          <router-link :to="{ name: 'Login_login_corporationphone3' }">
-            Login_login_corporationphone3
-          </router-link>
-
         </td>
         <td>수정됨</td>
       </tr>
@@ -3525,12 +3512,8 @@
           <router-link :to="{ name: 'search_enter' }">
             search_enter
           </router-link>
-          ,
-          <router-link :to="{ name: 'search_enter_recommend' }">
-            search_enter_recommend
-          </router-link>
         </td>
-        <td></td>
+        <td>search_enter_recommend 는 search_enter_recomm 로 이동</td>
       </tr>
       <tr>
       <td align="center">179</td>
@@ -5092,7 +5075,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">266</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5161,7 +5144,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr >
       <td align="center">270</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5174,6 +5157,14 @@
         <td>
           <router-link :to="{ name: 'Study_studynote' }">
             Study_studynote
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_studynote_all_01' }">
+            Study_studynote_all_01
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_studynote_all_02_snacbar' }">
+            Study_studynote_all_02_snacbar
           </router-link>
         </td>
         <td></td>
@@ -5191,8 +5182,8 @@
         <td>삭제</td>
         <td></td>
       </tr>
-      <tr class="new">
-      <td align="center" class="new">272</td>
+      <tr >
+      <td align="center">272</td>
         <td>학습홈 영역</td>
         <td>　</td>
         <td>　</td>
@@ -5204,6 +5195,14 @@
         <td>
           <router-link :to="{ name: 'Study_studynote_edit' }">
             Study_studynote_edit
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_studynote_edit' }">
+            Study_studynote_edit_02
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_studynote_edit' }">
+            Study_studynote_edit_03snackbar
           </router-link>
         </td>
         <td></td>
@@ -5245,7 +5244,7 @@
         </td>
         <td></td>
       </tr>
-      <tr  class="new">
+      <tr>
       <td align="center">275</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5602,7 +5601,7 @@
         <td>삭제</td>
         <td></td>
       </tr>
-      <tr>
+      <tr >
       <td align="center">296</td>
         <td>학습홈 영역</td>
         <td>　</td>
@@ -5614,7 +5613,15 @@
         <td class="textL">05.Study_02.40.summary</td>
         <td>
           <router-link :to="{ name: 'Study_summary' }">
-            Study_summary
+            Study_summary, Study_summary_02
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_summary_03_none' }">
+            Study_summary_03_none
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_summary_03_nonemap' }">
+            Study_summary_03_nonemap
           </router-link>
         </td>
         <td></td>
@@ -6014,7 +6021,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">320</td>
         <td>학습창 영역</td>
         <td>　</td>
@@ -6025,9 +6032,10 @@
         <td>　</td>
         <td class="textL">05.Study_03.05.LO_mp4_contents</td>
         <td>
-          <router-link :to="{ name: 'Study_LO_mp4_contents' }">
-            Study_LO_mp4_contents
+          <router-link :to="{ name: 'Study_LO_mp4' }">
+            Study_LO_mp4
           </router-link>
+          와 같음
         </td>
         <td></td>
       </tr>
@@ -6448,7 +6456,7 @@
             Study_04_SO_survey_answer
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">346</td>
@@ -6576,7 +6584,7 @@
             Study_04_SO_opinion_multiopinon
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">354</td>
@@ -6653,7 +6661,7 @@
             Study_04_SO_debate_input_opposite
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">358</td>
@@ -6721,7 +6729,7 @@
             Study_04_SO_assinment_input
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">362</td>
@@ -6773,7 +6781,7 @@
           </router-link>
           삭제
         </td>
-        <td>PU 피드백으로 삭제</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">365</td>
@@ -6858,7 +6866,7 @@
             Study_04_SO_actionplan_input
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">370</td>
@@ -7215,7 +7223,7 @@
             Study_05_etc_pilottest
           </router-link>
         </td>
-        <td>작업완료</td>
+        <td> </td>
       </tr>
       <tr>
       <td align="center">390</td>
@@ -8952,15 +8960,15 @@
           <router-link :to="{ name: 'Eduperson_login' }">
             Eduperson_login
           </router-link>
-          ,
+          <br/>
           <router-link :to="{ name: 'Eduperson_drawer_setting' }">
             Eduperson_drawer_setting
           </router-link>
-          ,
+          <br/>
           <router-link :to="{ name: 'Eduperson_drawer_profile' }">
             Eduperson_drawer_profile
           </router-link>
-          ,
+          <br/>
           <router-link :to="{ name: 'Eduperson_drawer' }">
             Eduperson_drawer
           </router-link>
@@ -9850,7 +9858,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">535</td>
         <td>기타</td>
         <td>이어보기 팝업</td>
@@ -9861,13 +9869,13 @@
         <td>　</td>
         <td class="textL">etc_Keepstudy</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'etc_keepstudy' }">
+            etc_keepstudy
           </router-link>
         </td>
         <td></td>
       </tr>
-      <tr>
+      <tr >
       <td align="center">536</td>
         <td>기타</td>
         <td>미니 플레이어</td>
@@ -9878,13 +9886,13 @@
         <td>　</td>
         <td class="textL">etc_Miniplayer</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'etc_Miniplayer' }">
+            etc_Miniplayer
           </router-link>
         </td>
         <td>미니 플레이어 상단은 공통요소로 개발 처리</td>
       </tr>
-      <tr class="new">
+      <tr >
       <td align="center">537</td>
         <td>기타</td>
         <td>Splash(B2B App)</td>
@@ -9895,13 +9903,13 @@
         <td>　</td>
         <td class="textL">01.login_01,01_splash_B2B</td>
         <td>
-          <router-link :to="{ name: '' }">
+          <router-link :to="{ name: 'login_Splash_B2B' }">
             login_Splash_B2B
           </router-link>
         </td>
-        <td>수정중</td>
+        <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">538</td>
         <td>기타</td>
         <td>Splash(B2C App)</td>
@@ -9912,11 +9920,11 @@
         <td>　</td>
         <td class="textL">01.login_01,01_splash_B2C</td>
         <td>
-          <router-link :to="{ name: '' }">
+          <router-link :to="{ name: 'login_Splash_B2C' }">
             login_Splash_B2C
           </router-link>
         </td>
-        <td>수정중</td>
+        <td></td>
       </tr>
       <tr>
       <td align="center">539</td>
@@ -10307,7 +10315,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">560</td>
         <td>학습홈 영역</td>
         <td>기본 학습홈</td>
@@ -10318,8 +10326,12 @@
         <td>　</td>
         <td class="textL">05.Study_01.05.home_set_calendar2</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'Study_home_set_calendar2' }">
+              Study_home_set_calendar2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_home_set_calendar2_2' }">
+              Study_home_set_calendar2_2
           </router-link>
         </td>
         <td></td>
@@ -10655,7 +10667,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">578</td>
         <td>회사운영자 - Main(TABS)</td>
         <td>로그인</td>
@@ -10666,13 +10678,26 @@
         <td>　</td>
         <td class="textL">11.Eduperson_01.00_loginOTP</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'Eduperson_loginOTP' }">
+            Eduperson_loginOTP
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Eduperson_loginOTP_2' }">
+            Eduperson_loginOTP_2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Eduperson_loginOTP_error_1' }">
+            Eduperson_loginOTP_error_1
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Eduperson_loginOTP_error_2' }">
+            Eduperson_loginOTP_error_2
+          </router-link>
+          <br/>
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">579</td>
         <td>로그인 / 회원가입</td>
         <td>로그인</td>
@@ -10683,8 +10708,16 @@
         <td>　</td>
         <td class="textL">01.login_09.03_login_corporationphone</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'Login_login_corporationphone1' }">
+            Login_login_corporationphone1
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_corporationphone2' }">
+            Login_login_corporationphone2
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Login_login_corporationphone3' }">
+            Login_login_corporationphone3
           </router-link>
         </td>
         <td></td>
@@ -10717,8 +10750,8 @@
         <td>　</td>
         <td class="textL">07.ATORM_07.01. Splash</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'ATORM_Splash' }">
+            ATORM_Splash
           </router-link>
         </td>
         <td></td>
@@ -10842,7 +10875,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">589</td>
         <td>검색</td>
         <td>검색 메인</td>
@@ -10853,13 +10886,13 @@
         <td>　</td>
         <td class="textL">08.search_03.01.Enter_recomm</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'search_enter_recommend' }">
+            search_enter_recommend
           </router-link>
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">590</td>
         <td>검색</td>
         <td>검색어 입력</td>
@@ -10870,13 +10903,14 @@
         <td>　</td>
         <td class="textL">08.search_03.02.typing_courses</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'search_typing' }">
+            search_typing
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">591</td>
         <td>검색</td>
         <td>검색어 입력</td>
@@ -10887,9 +10921,10 @@
         <td>　</td>
         <td class="textL">08.search_03.02.typing_contents</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'search_typing' }">
+            search_typing
           </router-link>
+          와 동일
         </td>
         <td></td>
       </tr>
@@ -10957,7 +10992,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">595</td>
         <td>Drawer - 고객센터</td>
         <td>고객센터</td>
@@ -10968,8 +11003,8 @@
         <td>　</td>
         <td class="textL">13.CustomerCenter_03.02_Studyguide_detail2</td>
         <td>
-          <router-link :to="{ name: '' }">
-
+          <router-link :to="{ name: 'CustomerCenter_Studyguide_detail2' }">
+            CustomerCenter_Studyguide_detail2
           </router-link>
         </td>
         <td></td>
@@ -11060,6 +11095,7 @@
         </td>
         <td></td>
       </tr>
+      <tr>
       <td align="center">0</td>
         <td>공통컴포넌트</td>
         <td>버튼</td>

@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery join pd70">
 
@@ -34,7 +34,7 @@
                     <li>이름, 생년월일, 성별은 가입 후에 변경이 불가합니다. 추후 본인확인을 위해 정확하게 가입 부탁드립니다.</li>
                 </ul>
 
-                
+
 
             </div>
           </div>
@@ -46,9 +46,9 @@
             </ul>
         </div>
         <!-- //floating button -->
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

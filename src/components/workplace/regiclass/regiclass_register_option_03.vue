@@ -5,7 +5,7 @@
       <!-- container -->
       <div id="container" class="mediaquery regiclass pd70">
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
               
@@ -70,7 +70,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn zin0">
+        <div class="fixBtmBtn zin1">
             <ul>
                 <li><button type="button" class="btn md">수강신청 취소</button></li>
                 <li><button type="button" class="btn md clr1">다음</button></li>

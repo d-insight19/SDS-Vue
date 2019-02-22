@@ -47,20 +47,17 @@
             <div class="filterArea ml-18 mr-18">
                 <p class="font_15 mono_80 fwb">
                     학습 중인 과정 <span class="mono_50">4</span>
-                    <span class="ico down" @click="changeLang1()"></span>
+                    
+                    <slp-dropdown dimmed v-model="lang" rootClass="dib">
+                        <span class="ico down" slot="trigger"></span>
+                        <slp-dropdown-item :value="'수강중인 과정'">수강중인 과정</slp-dropdown-item>
+                        <slp-dropdown-item :value="'완료한 과정'">완료한 과정</slp-dropdown-item>
+                    </slp-dropdown>
+                    
                     <span class="fr">
                         <span class="font_14 color_clr2 fwr">편집</span>
                     </span>
                 </p>
-                <div class="dropdown_wrap" v-show="langFlag1" >
-                    <div class="sheetDim" @click="changeLang1()"></div>
-                    <div class="dropdown" style="right: auto; top: auto;">            
-                        <ul  @click="changeLang1()">
-                            <li>수강중인 과정</li>
-                            <li>완료한 과정</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
           </div>
 
@@ -182,14 +179,11 @@ export default {
   /* vue data */
   data () {
     return {
-      langFlag1: false
+      lang: '수강중인 과정'
     }
   },
   /* vue function */
   methods: {
-    changeLang1 () {
-      this.langFlag1 = !this.langFlag1
-    }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
-  <div
-    class="dropdown">
+  <div :class="rootClass"
+    class="dropdown" >
     <div
       ref="trigger"
       role="button"
@@ -56,6 +56,10 @@ export default {
     right: {
       type: Number,
       default: undefined
+    },
+    rootClass: {
+      type: [String, Object],
+      default: null
     }
   },
   data () {

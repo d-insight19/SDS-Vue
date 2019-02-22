@@ -228,7 +228,7 @@
 
         </div>
 
-        <div id="content" class="etc" >
+        <div id="content" class="normal" >
             <div class="cell">
                 <div class="downloadCondition ml-18 mr-18">
                     <div class="w48p fl">
@@ -300,7 +300,7 @@ export default {
     name: 'components_flowplayer',
 
     components: { //Study_list
-		'study-list-edit':studyListEdit
+		'study-list-eidt':studyListEdit
 	},
 
     data () {

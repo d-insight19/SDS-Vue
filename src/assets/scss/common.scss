@@ -83,6 +83,7 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 .o6{opacity: 0.6;}
 
 .btw0 {border-top-width: 0px !important;}
+.btB92 {border-top: 1px solid map-get($line_colors, B92);}
 .bbB92 {border-bottom: 1px solid map-get($line_colors, B92);}
 .btB89 {border-top: 1px solid map-get($line_colors , B89);}
 .bbB89 {border-bottom: 1px solid map-get($line_colors , B89);}
@@ -145,13 +146,14 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 
 
 /* floating */
-.btn-quickWrite {position: fixed; cursor: pointer; right: 10px; bottom: 10px; color: #fff; width: 74px; height: 74px; z-index: 800; background: url("../img/btn_floating.png") no-repeat; background-size: 74px;}
+.btn-quickWrite {position: fixed; cursor: pointer; right: 10px; bottom: 10px; color: #fff; width: 74px; height: 74px; z-index: 80; background: url("../img/btn_floating.png") no-repeat; background-size: 74px;}
 
 
 
 /* 하단 고정 버튼 fixed button */
 .fixBtmBtn{position: fixed; left:0; bottom:0; z-index: 100; width:100%;}
 .fixBtmBtn.zin0{z-index: 0 !important;}
+.fixBtmBtn.zin1{z-index: 1 !important;}
 .fixBtmBtn ul{display: table; table-layout: fixed; width: 100%;}
 .fixBtmBtn li{display: table-cell;}
 .fixBtmBtn li .btn{width:100%; height:54px; border:0; border-top:1px solid #ccc;font-weight: 500;line-height:22px;}
@@ -490,6 +492,7 @@ select:required:invalid {
 .thumList.type3 .tagWrap span{color:#fff; border-color:#fff;}
 
 /* Thumbnail list _ horizontal view : main grapic class */
+.thumList.type4.wh li{ background:white;}
 .thumList.type4{display: table; table-layout: fixed;}
 .thumList.type4 > li{ position: relative; word-break: break-all; width:100%; padding-bottom: 0; vertical-align: top; border:0; margin-bottom: 14px;}
 .thumList.type4 > li:first-child,
@@ -502,7 +505,7 @@ select:required:invalid {
 .thumList.type4 .thum .cDim{position: absolute; bottom:0; left:0; z-index: 1; width:100%; height: 100%; background: linear-gradient(-180deg, rgba(0,0,0,0), rgba(0,0,0,0.2));}
 .thumList.type4 .thum .progWrap{height:6px;}
 // .thumList.type4 .thumImg{width:324px; height:152px;}
-.thumList.type4 .text{min-height:106px; padding:18px 24px;  border:1px solid #e3e3e3; border-top:0;}
+.thumList.type4 .text{min-height:106px; padding:18px 24px; background: #fff; border:1px solid #e3e3e3; border-top:0;}
 .thumList.type4 .tit{font-size: map-get($font_size, font_16); color:#000; line-height: 22px; font-weight:400; height: 47px; max-height: inherit; margin-bottom: 6px; white-space: normal; overflow: hidden;}
 .thumList.type4 .info{color:#000; font-weight: 400;font-size: map-get($font_size, font_13);}
 .thumList.type4 .info li+li::before{background: #eaeaea;}
@@ -666,7 +669,7 @@ select:required:invalid {
 .cardList .card_buttons li+li{margin-left:6px;}
 
 
-.cardList .thum{position: relative; z-index: 0; width:100%; height: auto;}
+.cardList .thum{position: relative; /*z-index: 0;*/ width:100%; height: auto;}
 .cardList .thum .cDim{position: absolute; top:0; left:0; z-index: 1; width:100%; height: 50%; background: linear-gradient(-180deg, rgba(0,0,0,0.5), rgba(0,0,0,0));}
 .cardList .thum .label{font-size:map-get($font_size, font_12); font-weight : 500 ;color:#fff;padding:1px 7px;position: absolute;top:0px;left:0px;z-index:2;}
 .cardList .thum .label2{font-size:map-get($font_size, font_20); font-weight : 300 ;color:#fff;padding:0px;position: absolute;top:20px;left:20px;z-index:2;}
@@ -888,7 +891,7 @@ select:required:invalid {
 // #bottomsheet_wrap{position:fixed;top:0px;left:0px;width:100%;height:100%;}
 .sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
 #sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
-#bottomsheet{z-index:851;position:fixed;bottom:0px;left:0px;width:100%;background:#fff;transform: translateY(100vh); -webkit-transform: translateY(100vh);-webkit-transition: -webkit-transform 0.5s  ease-out; transition: transform 0.5s ease-out; }
+#bottomsheet{z-index:851;position:fixed;bottom:0px;left:0px;width:100%;background:#fff;-webkit-transition: -webkit-transform 0.5s  ease-out; transition: transform 0.5s ease-out; } //transform: translateY(100vh); -webkit-transform: translateY(100vh);
 #bottomsheet.open{transform: translateY(0); -webkit-transform: translateY(0);}
 #bottomsheet .bottomsheetBtn{width:100%;height:64px;line-height:61px;border-top:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_16);letter-spacing: -0.48px;padding-left:58px;color:rgba(0,0,0,0.8)}
 #bottomsheet .bottomsheetBtn .ico{position:absolute;top:20px;left:18px;width:24px;height:24px;}
@@ -917,10 +920,13 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 
 // Dropdown
 #sheetDim{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.2);z-index:850}
-#dropdown{z-index:851;position:absolute;top:100px;right:100px;width:auto;background:#fff;box-shadow: 0px 3px 6px rgba(0,0,0,0.16);border-radius: 4px;border:1px solid #ccc;}
+#dropdown{z-index:851;position:absolute;top:auto !important;right:auto;width:auto;background:#fff;-webkit-box-shadow:0px 3px 6px rgba(0, 0, 0, 0.16);box-shadow: 0px 3px 6px rgba(0,0,0,0.16);border-radius: 4px;border:1px solid #ccc;}
 #dropdown.category {top:54px; left:0; right:auto}
 #dropdown.language {top:54px; left:0; right:auto}
 #dropdown.status {top:52px; right:0;}
+#dropdown.more {top:100px; right:40px;}
+#dropdown.reply_more {top:auto; right:20px;}
+#dropdown.reply_more ul li {padding: 5px 22px 5px 22px;}
 #dropdown ul{width:100%;padding:8px 0px;}
 #dropdown ul li{font-size:map-get($font-size, font_13);line-height:19px;letter-spacing: -0.39px;padding: 14px 16px 15px 16px;position: relative;max-width: 180px;text-align: left;}
 #dropdown ul li .ico{position:absolute;top:12px;right:18px;display:none;}
@@ -1030,10 +1036,6 @@ utilities classes
     -webkit-justify-content: center;
     justify-content: center;
   }
-  &.align_items_top {
-    -webkit-align-items: flex-start; /* Safari 7.0+ */
-    align-items: flex-start;
-  }
   &.align_items_center {
     -webkit-align-items: center; /* Safari 7.0+ */
     align-items: center;
@@ -1052,7 +1054,7 @@ utilities classes
     margin-top:auto !important;
   }
 
-  .flex_1 {
+  & .flex_1 {
     flex-grow:1
   }
 }
@@ -1074,9 +1076,7 @@ utilities classes
 .border { border:1px solid red !important; }
 
 /*block*/
-.d-block {
-  display:block !important;
-}
+.d-block { display:block !important; }
 .text-truncate {
   white-space: nowrap;
   overflow: hidden;

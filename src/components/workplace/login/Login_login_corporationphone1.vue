@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery findid certify pd70">
         <!-- header -->
@@ -10,7 +10,7 @@
           <p class="header_text font_18">이메일 인증</p>
         </div>
         <!-- //header -->
-        
+
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
@@ -31,8 +31,8 @@
                         <strong class="label-tit">성명</strong>
                         <div class="infoChk">
                             <slp-text-field placeholder="성명을 입력하세요" ></slp-text-field>
-                            <button type="button" class="btn sm fwr">확인</button>
                         </div>
+                        <button type="button" class="btn sm fwr" style="margin-top:8px">확인</button>
                     </li>
                     <li>
                         <strong class="label-tit">이메일</strong>
@@ -66,7 +66,7 @@
             </ul>
         </div>
         <!-- //floating button -->
-        
+
         <!-- toastpopup -->
         <div class="toast" style="display:none;">
           <div class="in">
@@ -74,11 +74,11 @@
           </div>
         </div>
         <!-- //toastpopup -->
-        
+
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 

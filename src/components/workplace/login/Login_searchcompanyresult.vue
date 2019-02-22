@@ -1,15 +1,15 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery searchcompany">
         <!-- header -->
-        <div id="header" class="tab">          
+        <div id="header" class="tab">
           <div class="header_inner line1">
             <button type="button" class="btn only close"><span class="ico">닫기</span></button>
             <p class="header_text font_18">회사검색</p>
-          </div>  
+          </div>
           <div class="header_inner line2 tabMenu">
               <ul class="fixTab">
                 <li class="on"><a href="#tab1">회사명</a></li><!-- selected class "on" -->
@@ -17,11 +17,11 @@
               </ul>
           </div>
           <div class="hide_header">
-            <div class="hide_inner"><h1 class="h-tit1">회사 검색</h1></div>            
-          </div> 
+            <div class="hide_inner"><h1 class="h-tit1">회사 검색</h1></div>
+          </div>
         </div>
         <!-- //header -->
-        
+
         <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
@@ -75,9 +75,9 @@
 
 
       </div>
-      <!-- //container --> 
-        
-      
+      <!-- //container -->
+
+
     </div>
     <!-- //wrap -->
 

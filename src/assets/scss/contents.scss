@@ -1,9 +1,12 @@
 /* 스플레시 */
-.splashWrap{position: relative; z-index: 0; height:100%; text-align:center; background: url("../img/login_splash_bg.png") no-repeat center bottom; background-size: cover;}
-.splashWrap::after{display: block; content:''; width:100%; height:100%; background:rgba(0,0,0,0.3);}
-.splashWrap .splashBox{position: absolute; top:182px; left:0; z-index: 1; width: 100%; text-align: center;}
+.splashWrap{position: relative; z-index: 0;width:100%; height:100%; text-align:center;overflow-x:hidden;  }
+.splashWrap::after{display: block; content:''; width:100%; height:100%; background:rgba(0,0,0,0.3);position:absolute;top:0;}
+.splashWrap .splashBox{position: absolute; top: 50%; left: 0;right: 0; z-index: 1;width: 36%; height: 2px; text-align: center; margin: 0 32% 0 32%;}
+.splashWrap .splashBox{background:rgba(0,0,0,0.1);}
+.splashWrap .splashBox .square{background:#d9d9d9;width:13%;height:2px;}
 .splashWrap .splashBox .in{display: inline-block; }
 .splashWrap .splashBox h1 img{height:80px;}
+.splashCon {width:100%;}
 
 
 // 로그인 - 연수원 찾기
@@ -1605,7 +1608,8 @@ label.rdo .label{position: relative;}
 #container.courseware .multiList.type2 > li .action {position:absolute;bottom:18px;right:18px; font-size: map-get($font_size, font_13); color: map-get($static_colors , danger);}
 #container.courseware .multiList.type2 > li .ico.accordion_arrow{position:absolute;bottom:18px;right:18px;}
 #container.courseware .ico.accordion_arrow{width:20px;height:20px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat;}
-#container.courseware .ico.accordion_arrow.wh_down{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_down.png") no-repeat;}
+#container.courseware .ico.accordion_arrow.wh_down{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_down.png") no-repeat !important;}
+#container.courseware .open .ico.accordion_arrow.wh_up{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_up.png") no-repeat;}
 #container.courseware .open .ico.accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 #container.courseware .bot-wrap{background:white; padding:18px; margin-top:26px;}
 #container.courseware .wh{color:white;}
@@ -1621,7 +1625,6 @@ label.rdo .label{position: relative;}
 #container.courseware .sub_content .download_detail.bottom-bd-x {border-bottom:1px solid map-get($line_colors,B89) !important; }
 #container.courseware .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
 #container.courseware .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 15px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
-#container.courseware .open .ico.accordion_arrow.wh_up{width:20px;height:20px;background: url("../img/ic_accordion_arr_bold_wh_20_up.png") no-repeat;}
 #container.courseware .clr4 {background-color:#f2f3f7 !important;}
 #container.courseware .clr3 {background-color:#a3a9ff!important;}
 
@@ -1708,6 +1711,8 @@ label.rdo .label{position: relative;}
 //Study_studystatus_assessment_applyresult
 #container.studystatus .inb-box .ico-ml{ margin-left: 48px;}
 #container.studystatus .inb-box .ico-mr{ margin-right: 48px;}
+#container.studystatus .com-rdo.ox_mode{display: flex;  justify-content: center;}
+#container.studystatus .inb-box{width: auto;}
 #container.studystatus .txt-tit {position: relative; margin-bottom: 12px; font-weight:500; font-size:map-get($font-size, font_16);  line-height: 25px; letter-spacing: -0.48px;}
 
 
@@ -1918,10 +1923,27 @@ label.rdo .label{position: relative;}
             height:20px;
             background-image: url("../img/ic_accordion_arr_line_skyblue_20_up.png");
         }
-        &.type1 {
-            .sub_download_details {
-                &.on,
-                &:hover {
+        .time.white {
+            width:16px;
+            height:16px;
+            background: url("../img/ic_time_line_wh_16.png") no-repeat;
+        }
+        .check_14.white{
+            width:14px;
+            height:14px;
+            background: url("../img/ic_complete_check_solid_wh_14.png");
+        }
+        .icon.accordion_arrow {
+            width:20px;
+            height:20px;
+            background-image: url("../img/ic_accordion_arr_bold_wh_20_up.png");
+        }
+
+        .sub_content {
+            .download_detail {
+                border:none !important;
+                &:hover,
+                &.on {
                     @extend .clr3;
                 }
             }
@@ -2060,8 +2082,44 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .criteria-wrap .total{font-size:map-get($font-size, font_14);letter-spacing: -0.42px;}
 #container.atorm.flip .criteria-wrap .total .total-num{font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px;}
 
+// studynote
+.studynote {
+    .chips_wrap{width: calc(100% - 212px);}
+    // studynote_edit
+    .font_13 {font-size:map-get($font-size, font_13);letter-spacing: -0.039em;}
+    .info {font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.8)}
+    .toast {width: calc(100% - 36px);padding: 0px 0px 13px 0px;position: absolute;left: 18px;}
+    .label-tit-15{font-size:map-get($font-size, font_15);letter-spacing: -0.045em; color:rgba(0,0,0,0.8);}
+    .btn_regi{margin-top:18px; margin-right:18px;}
+}
 
-.studynote .label-tit-15{font-size:map-get($font-size, font_15);letter-spacing: -0.045em; color:rgba(0,0,0,0.8);}
+
+//eduperson_loginOTP
+.eduperson_login {
+    .label-tit-20{font-size:map-get($font-size, font_20);letter-spacing: -0.06em;font-weight:400; }
+    .ul-block li {display:inline-block;margin-bottom:35px;}
+    .loginList .time {text-align:right; font-family:'roboto'; font-weight:500; font-size:map-get($font-size, font_12);}
+}
+
+//study_summary
+.courseware{
+    &.studysummary{
+        .title {font-size:map-get($font-size, font_15);letter-spacing: -0.045em;}
+    }
+}
+
+
+.study_calender{
+    .fixBtm{
+    width: 100%;
+    background: #f2f2f2;
+    padding: 12px 18px;
+        .btm_tit{
+            font-size:map-get($font-size, font_15);letter-spacing: -0.021em;font-weight:600;padding-bottom: 8px;
+        }
+    }
+}
+
 
 
 
@@ -2252,6 +2310,20 @@ label.rdo .label{position: relative;}
 #container.drawer.inquiry .multiList.type2 > li + li{margin-top:20px}
 #container.drawer.inquiry .btn.sm{margin:7px 0px 0px 0px}
 
+//학습가이드
+.studyguide_box .img_wrap {width:100%; height:190px; }
+.studyguide_box .img_wrap.guide1 {background-color:map-get($contents_colors, type_2 );}
+.studyguide_box .img_wrap.guide2 {background-color:map-get($contents_colors, type_4 );}
+.studyguide_box .img_wrap.guide3 {background-color:map-get($contents_colors, type_5 );}
+.studyguide_box .img_wrap .guideimg {width:324px; height:190px; margin:0 auto; }
+.studyguide_box .img_wrap .guideimg.img1 {background: url("../img/img_guide_03_01.png") no-repeat center; background-size: cover }
+.studyguide_box .img_wrap .guideimg.img2 {background: url("../img/img_guide_03_02.png") no-repeat center; background-size: cover }
+.studyguide_box .img_wrap .guideimg.img3 {background: url("../img/img_guide_03_03.png") no-repeat center; background-size: cover }
+.studyguide_box .studyguide_title {font-size:map-get($font_size, font_15); font-weight:600; margin:20px 0 2px}
+.studyguide_box .studyguide_desc {font-size:map-get($font_size, font_13); color:rgba(0,0,0,0.8); line-height: 21px; }
+
+
+
 //개인정보 처리방침
 #container.drawer.privacypolicy .select_wrap {width:100%; padding: 18px 0}
 #container.drawer.privacypolicy select{ width:100%; }
@@ -2382,7 +2454,7 @@ label.rdo .label{position: relative;}
 #container.login.bpo .loginGuide dd.privacypolicy {font-size:map-get($font_size, font_14); text-decoration: underline; line-height: 18px; margin: 2px 0 20px; }
 
 #container .title_line span.time {font-size:map-get($font_size, font_14); color:rgba(0,0,0,0.8); font-weight: 400; margin-left:4px}
-#container .title_line span.status {font-size:map-get($font_size, font_14); }
+#container .title_line span.status {font-size:map-get($font_size, font_14); margin-top:3px}
 #container .title_line span.title_txt {color:rgba(0,0,0,0.8); margin-right:6px; }
 #container .title_line span.total_txt {margin-right:5px}
 #container.drawer.bpo ul.multiList.type1 span.time {color:rgba(0,0,0,0.65); }
@@ -2710,11 +2782,12 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .search #header.tab .header_inner.line2.scroll-x {border-bottom:0 none;}
 
 .MySpace #header .hide_header {z-index: 2; line-height: normal; padding-left: 18px; padding-right: 18px;}
-.MySpace #dropdown{top:0px;right:0px;}
+/*.MySpace #dropdown{top:0px;right:0px;}
 // Dropdown
 .MySpace .dropdown{z-index:851;position:absolute;top:0px;right:0px;width:auto;background:#fff;box-shadow: 0px 3px 6px rgba(0,0,0,0.16);border-radius: 4px;}
 .MySpace .dropdown ul{width:100%;padding:8px 0px;}
 .MySpace .dropdown ul li{width:100%;min-height:48px;line-height: 20px;font-size:map-get($font-size, font_14);letter-spacing: -0.42px;padding:15px 60px 13px 25px;position: relative;}
+*/
 .MySpace .cardList.type2 .tit {width: auto;}
 // 비용신청단계 조회
 .MySpace .formal_requeststage {margin-left: 19px; border-left: 2px solid map-get($line_colors,B89);}
@@ -3012,3 +3085,9 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .atorm_complete .complete_sub_detail2 .num_wrap{display:table-cell; width:55px; line-height: 140%; vertical-align: top;}
 .atorm_complete .complete_sub_detail2 .txt_wrap{display:table-cell; width:calc(100% - 55px); vertical-align: top; line-height: 140%;}
 
+.attend_status_detail.p1218{padding:12px 18px;}
+.attend_status_detail.gray_bg {background-color:#f2f2f2;}
+.attend_status_detail .fix {display: table; table-layout: fixed; width: 100%;}
+.attend_status_detail .fix li{display: table-cell; vertical-align: middle;}
+.attend_status_detail .chip {margin-bottom:0; padding: 0px 5px; height: auto; line-height: 140%;}
+.attendance_notice_list li{ padding:20px 0; border-bottom:1px solid #e3e3e3;}

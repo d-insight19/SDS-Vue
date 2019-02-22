@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery eduperson_drawer_setting">
 
@@ -23,8 +23,8 @@
                 <!-- //myinfo_img -->
                 <p class="myinfo_name">이시원</p>
                 <p class="myinfo_position">회사운영자</p>
-                
-                
+
+
             </div>
           </div>
         </div>
@@ -35,9 +35,9 @@
                 <li><slp-button class="md clr1">로그아웃</slp-button></li>
             </ul>
         </div>
-        <!-- //floating button --> 
+        <!-- //floating button -->
       </div>
-      <!-- //container -->    
+      <!-- //container -->
 
     </div>
     <!-- //wrap -->

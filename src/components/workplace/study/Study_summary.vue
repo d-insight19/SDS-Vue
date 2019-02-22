@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery coursewarecourseware pd70" style="background:#f2f2f2">
+      <div id="container" class="mediaquery courseware studysummary pd70" style="background:#f2f2f2">
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">
@@ -14,10 +14,10 @@
 
             <div class="header_inner line2 tabMenu scroll-x">
                 <ul class="scrollTab">
-                    <li class="on"><a href="#tab1">요약집</a></li>
-                    <li><a href="#tab2">학습목차</a></li>
-                    <li><a href="#tab3">학습노트</a></li>
-                    <li><a href="#tab3">질문방</a></li>
+                    <li class="on"><a href="#tab1">용어사전</a></li>
+                    <li><a href="#tab2">요약집</a></li>
+                    <li><a href="#tab3">Quick Poll/Answer</a></li>
+                    <li><a href="#tab3">1:1문의</a></li>
                     <li><a href="#tab3">메뉴메뉴메뉴메뉴메뉴</a></li>
                 </ul>
             </div>
@@ -28,6 +28,8 @@
                 <div class="right blur"></div>
             </div> -->
 
+
+            <!-- s: 동영상 -->
             <!-- s: 동영상 -->
             <div class="player_wrap">
                 <div class="player_inner">
@@ -225,6 +227,7 @@
             </div>
 
         </div>
+        <!-- header -->
 
         <div id="content" class="normal" >
 
@@ -232,81 +235,80 @@
             <div class="inner pt0">
 
                 <!-- list -->
-                <ul class="studyList studySummary">
+                <ul class="multiList type2">
                     <li>
-                        <div class="download_details">
-                            <div class="text_wrap position_relative">
-                                <p class="icon_txt">전체</p>
-                                <p class="title text">[원포인트 MBA]서울대 이경미 교수의 마케팅 실전전략</p>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">요약집</p>
+                                <p class="title">[원포인트 MBA]서울대 이경미 교수의 마케팅 실전전략</p>
                                 <ul class="info">
-                                    <li>
+                                    <li class="">
                                         <span class="mono_65">핵심요약 3개</span>
                                     </li>
                                     <li>
                                         <span class="ico clip"></span>
-                                        <span class="mono_65 text">첨부파일</span>
+                                        <span class="mono_65">첨부파일</span>
                                     </li>
                                 </ul>
-                                <a href="#" class="icon accordion_arrow" ></a>
                             </div>
                         </div>
+                        <span class="ico accordion_arrow"></span>
                     </li>
-                    <li :class="compClasses">
-                        <div class="download_details">
-                            <div class="text_wrap position_relative">
-                                <p class="icon_txt">전체</p>
-                                <p class="title text">[원포인트 MBA]서울대 이경미 교수의 마케팅 실전전략</p>
+                    <li class="" :class="{ 'open' : cardList_show }" >
+                        <div class="download_detail border_clr1 ">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr6">전체</p>
+                                <p class="title">[원포인트 MBA]서울대 이경미 교수의 마케팅 실전전략</p>
                                 <ul class="info">
                                     <li>
                                         <span class="mono_65">핵심요약 3개</span>
                                     </li>
                                     <li>
                                         <span class="ico clip"></span>
-                                        <span class="mono_65 text">첨부파일</span>
-                                    </li>
-                                </ul>
-                                <a href="#" class="icon accordion_arrow" @click="collapse"></a>
-                            </div>
-                            <div v-show="defaultFlag">
-                                <ul>
-                                    <li>
-                                        <div>
-                                            <!-- list -->
-                                            <ul class="sub_content">
-                                                <li>
-                                                    <div class="sub_download_details clr4">
-                                                        <div class="txt_wrap border_clr1">
-                                                            <p class="icon_txt">N일차</p>
-                                                            <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="sub_download_details clr4">
-                                                        <div class="txt_wrap border_clr1">
-                                                            <p class="icon_txt">N일차</p>
-                                                            <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="sub_download_details clr4">
-                                                        <div class="txt_wrap border_clr1">
-                                                            <p class="icon_txt">N일차</p>
-                                                            <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <!-- //list -->
-                                        </div>
+                                        <span class="mono_65">첨부파일</span>
                                     </li>
                                 </ul>
                             </div>
-                        </div><!-- //download_details -->
+                            <span class="ico accordion_arrow "  @click="cardListToggle()"></span>
+                        </div>
+
+                            <ul v-show="cardList_show">
+                                <li class="open">
+                                    <div class="sub_content">
+                                        <!-- list -->
+                                        <ul class="multiList type2">
+                                            <li>
+                                                <div class="download_detail border_clr1 clr4 done">
+                                                    <div class="txt_wrap">
+                                                        <p class="icon_txt color_clr6">N일차</p>
+                                                        <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="download_detail border_clr1 clr4 done">
+                                                    <div class="txt_wrap">
+                                                        <p class="icon_txt color_clr6">N일차</p>
+                                                        <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="download_detail border_clr1 clr4 done">
+                                                    <div class="txt_wrap">
+                                                        <p class="icon_txt color_clr6">N일차</p>
+                                                        <p class="title">중간 평가 마케팅 기본 과정 잘 들었는지 확인 평가해볼까요? </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- //list -->
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--//inner list -->
                     </li>
                 </ul>
-                <!-- //list -->
 
             </div>
           </div>
@@ -347,228 +349,217 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
-import studyList from './Study_list.vue'
-
 export default {
-    name: 'components_flowplayer',
-
-    data () {
-        return {
-            active : false,
-            scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
-            detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
-            relatedVideoList: [
-                {title: '자바스크립트 개발 프로세스 기초'},
-                {title: '모바일 게임 UI 디자인 실무'},
-                {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
-                {title: '모바일 게임 UI 디자인 실무'},
-                {title: '자바스크립트 개발 프로세스 기초1'},
-                {title: '자바스크립트 개발 프로세스 기초2'},
-                {title: '자바스크립트 개발 프로세스 기초3'}
-            ],
-            option: {
-            loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
-            targetId: "contents", //div target Id
-            // sources: [
-            //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
-            //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
-            //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
-            //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
-            // ],
-            // src: require('@/assets/movie/m010102.mp4'), //동영상 src
-            sources: [
-                { type: 'video/mp4', src: './static/movie/m010102.mp4'},
-                { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
-                { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
-                { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
-            ],
-            src: './static/movie/m010102.mp4', //동영상 src
-            // src: require('@/assets/movie/m010102.mp4'), //동영상 src
-            title: "Flowplayer", //콘텐츠 제목
-            isSpeeds: true, //동영상 배속 사용여부
-            speeds: [1, 2, 3], //동영상 배속 설정 값
-            skinClass: "flowplayer fp-fat", //동영상 스킨
-            isMute: true, //음소거 사용여부
-            isFullscreen: true, //전체 화면
-            isShare: true, //공유 여부
-            isAutoplay: false, //자동실행여부
-            seekTime: 30, //콘텐츠 이어학습하기 시간 초
-            isPorg: true, //콘텐츠 진도값 저장 여부
-            logSaveTime: 5, //콘텐츠 진도 로그 저장 주기 (초)
-            replayTime: [0, 0], //구간반속 구간 [시작, 끝]
-            qualities: ["160p", "260p", "530p", "720p"], //콘텐츠 화질 설정 값
-            defaultQuality: "260p", //콘텐츠 화질 초기 값
-            subtitles: [
-            {
-                "default": true, // note the quotes around "default"!
-                kind: "subtitles",
-                srclang: "en",
-                label: "English",
-                // src: "../../html/bc_smart_en.vtt"
-            },
-            {
-                "default": true, // note the quotes around "default"!
-                kind: "subtitles",
-                srclang: "ko",
-                label: "Korea",
-                // src: "../../html/bc_smart_ko.vtt"
-            }
-            ], //자막,
-            noseek: true //timeline no
-        },
-
-        defaultFlag: true,
-        }
-    },
-    methods: {
-        detail_toggle () {
-            this.detail_show = !this.detail_show;
-        },
-        active_el () {
-            this.active = !this.active
-        },
-
-        collapse: function(){
-            this.defaultFlag = !this.defaultFlag
-        }
-    },
-    computed: {
-        compClasses: function(){
-            return{
-                open: this.defaultFlag,
-            }
-        }
-    },
-    mounted () {
-            var _PLAYER = new UtilFlowPlayer(this.option);
-            _PLAYER.init();
-
-
-            // 동영상 헤더 텍스트 입력
-            $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
-
-            var has_contents = true;
-            // has_contents = false;
-            if( has_contents ){
-                // 연관콘텐츠가 있을경우 추가 ( 없을경우는 처리 안하면 됨)
-                $(".flowplayer").addClass("has_contents");              // 해당 클래스로, 컨트롤bar 높이 재설정
-                var createVidoeHtml = "";
-                createVidoeHtml += '<div class="movie_info_list">';
-                createVidoeHtml += '<p class="movie_info_tit">연관 콘텐츠 추천</p>';
-                createVidoeHtml += '<ul>';
-                createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초</p></li>';
-                createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
-                createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">만화로 배우는 알기 쉬운 경영 기초전략</p></li>';
-                createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
-                createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초1</p></li>';
-                createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초2</p></li>';
-                createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초3</p></li>';
-                createVidoeHtml += '</ul>';
-                createVidoeHtml += '</div>';
-
-                $('.fp-ui').append(createVidoeHtml);
-
-                // 연관 콘텐츠 터치시 활성화
-                $(".movie_info_list").click(function(){
-                    // 터치시 활성화
-                    $(".movie_info_list").addClass("active");
-                    // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
-                    // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
-                    $(".flowplayer").toggleClass("is-open-related-contents");
-
-                    // TODO
-                    // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
-                    //      -> 동영상 pause 처리하면 될듯
-                    // 2. 연관 콘텐츠 터치 후 활성화 되었을때 바깥영역 터치시 play || hover 되는 기능 막아야함
-
-                });
-
-                //연관 콘텐츠 활성화 되었을때 X 아이콘 터치시 비활성화
-                $(".fp-header .fp-closeicon").click(function(){
-                    $(".movie_info_list").removeClass("active");
-                    $(".flowplayer").toggleClass("is-open-related-contents");
-                });
-            }
-
-
-            $('.half_left').click(function(){
-                console.error("왼쪽");
-            });
-            $('.half_right').click(function(){
-                console.error("오른쪽");
-            });
-
-            $('.fp-script , .script_close').click(function(){
-                // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
-                $('body').toggleClass("scroll-n");
-                $('.fp-script').toggleClass('active');
-                $('.player_wrap').toggleClass('script');
-            });
-
-            $('.fp-nextArrow').click(function()
-            {
-                console.error('다음 콘텐츠!')
-            });
-            $('.fp-prevArrow').click(function()
-            {
-                console.error('이전 콘텐츠!')
-            });
-
-
-            miniMovie();
-
-            function miniMovie(){
-                var $parent = $('.player_wrap');
-                var $obj = $('.btm_subtitle_area');
-                var $top = $obj.offset().top;
-                var $targetH = $parent.find('#contents').height();
-
-                $(window).scroll(function()
-                {
-                    var $wTop = $(window).scrollTop();
-                    var player_height = $('.player_wrap').height();
-                    var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
-
-                    var scroll=$(this).scrollTop()+$(this).height();
-                    // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);
-                    // 수치값은 수정해야함.
-                    // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함
-                    // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
-                    // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
-                    // 176 , 1004
-                    // if ($wTop >= $hederTab-player_height )
-                    if ($wTop >= 176 )
-                    {
-                        // $parent.addClass('fixed').css({'margin-top': $targetH });
-                        $parent.addClass('fixed')
-                        $("#header").addClass('fixed');
-                    }
-                    else
-                    {
-                        $parent.removeClass('fixed').attr('style', '');
-                        $("#header").removeClass('fixed');
-                    }
-                })
-            }
-
-            function scriptScroll()
-            {
-                var $obj = $('.timeline_wrapper');
-                var $objTop = $obj.offset().top;
-                var $target = $obj.find('li');
-                $obj.scrollTop(0);
-                $target.each(function()
-                {
-                    var $thisTop = $(this).offset().top;
-                    if ($(this).hasClass('is-active'))
-                    {
-                        console.log('$objTop' + '_' + $objTop);
-                        console.log('$thisTop' + '_' + $thisTop);
-                        $obj.scrollTop($thisTop - $objTop);
-                        /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
-                    }
-                });
-            }
+  name: 'components_flowplayer',
+  data () {
+    return {
+        active : false,
+        scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
+        detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
+        cardFlag:false,
+        cardList_show:false,
+        relatedVideoList: [
+            {title: '자바스크립트 개발 프로세스 기초'},
+            {title: '모바일 게임 UI 디자인 실무'},
+            {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
+            {title: '모바일 게임 UI 디자인 실무'},
+            {title: '자바스크립트 개발 프로세스 기초1'},
+            {title: '자바스크립트 개발 프로세스 기초2'},
+            {title: '자바스크립트 개발 프로세스 기초3'}
+        ],
+       option: {
+        loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
+        targetId: "contents", //div target Id
+        // sources: [
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
+        // ],
+        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
+        sources: [
+            { type: 'video/mp4', src: './static/movie/m010102.mp4'},
+            { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
+            { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
+            { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
+        ],
+        src: './static/movie/m010102.mp4', //동영상 src
+        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
+        title: "Flowplayer", //콘텐츠 제목
+        isSpeeds: true, //동영상 배속 사용여부
+        speeds: [1, 2, 3], //동영상 배속 설정 값
+        skinClass: "flowplayer fp-fat", //동영상 스킨
+        isMute: true, //음소거 사용여부
+        isFullscreen: true, //전체 화면
+        isShare: true, //공유 여부
+        isAutoplay: false, //자동실행여부
+        seekTime: 30, //콘텐츠 이어학습하기 시간 초
+        isPorg: true, //콘텐츠 진도값 저장 여부
+        logSaveTime: 5, //콘텐츠 진도 로그 저장 주기 (초)
+        replayTime: [0, 0], //구간반속 구간 [시작, 끝]
+        qualities: ["160p", "260p", "530p", "720p"], //콘텐츠 화질 설정 값
+        defaultQuality: "260p", //콘텐츠 화질 초기 값
+        subtitles: [
+          {
+            "default": true, // note the quotes around "default"!
+            kind: "subtitles",
+            srclang: "en",
+            label: "English",
+            // src: "../../html/bc_smart_en.vtt"
+          },
+          {
+            "default": true, // note the quotes around "default"!
+            kind: "subtitles",
+            srclang: "ko",
+            label: "Korea",
+            // src: "../../html/bc_smart_ko.vtt"
+          }
+        ], //자막,
+        noseek: true //timeline no
+      }
     }
+  },
+  methods: {
+    detail_toggle () {
+        this.detail_show = !this.detail_show;
+    },
+    active_el () {
+        this.active = !this.active
+    },
+    cardListToggle(){
+        this.cardList_show = !this.cardList_show
+    }
+  },
+  mounted () {
+        var _PLAYER = new UtilFlowPlayer(this.option);
+        _PLAYER.init();
+
+
+        // 동영상 헤더 텍스트 입력
+        $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
+
+        var has_contents = true;
+        // has_contents = false;
+        if( has_contents ){
+            // 연관콘텐츠가 있을경우 추가 ( 없을경우는 처리 안하면 됨)
+            $(".flowplayer").addClass("has_contents");              // 해당 클래스로, 컨트롤bar 높이 재설정
+            var createVidoeHtml = "";
+            createVidoeHtml += '<div class="movie_info_list">';
+            createVidoeHtml += '<p class="movie_info_tit">연관 콘텐츠 추천</p>';
+            createVidoeHtml += '<ul>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">만화로 배우는 알기 쉬운 경영 기초전략</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">모바일 게임 UI 디자인 실무</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초1</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초2</p></li>';
+            createVidoeHtml += '<li><a href="#" class="thum"><div class="thumbnail"><img src="@/assets/img/thum_no_s.jpg" class="thumImg" alt=""></div></a><p class="movie_tit multiline line2">자바스크립트 개발 프로세스 기초3</p></li>';
+            createVidoeHtml += '</ul>';
+            createVidoeHtml += '</div>';
+
+            $('.fp-ui').append(createVidoeHtml);
+
+            // 연관 콘텐츠 터치시 활성화
+            $(".movie_info_list").click(function(){
+                // 터치시 활성화
+                $(".movie_info_list").addClass("active");
+                // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
+                // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
+                $(".flowplayer").toggleClass("is-open-related-contents");
+
+                // TODO
+                // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
+                //      -> 동영상 pause 처리하면 될듯
+                // 2. 연관 콘텐츠 터치 후 활성화 되었을때 바깥영역 터치시 play || hover 되는 기능 막아야함
+
+            });
+
+            //연관 콘텐츠 활성화 되었을때 X 아이콘 터치시 비활성화
+            $(".fp-header .fp-closeicon").click(function(){
+                $(".movie_info_list").removeClass("active");
+                $(".flowplayer").toggleClass("is-open-related-contents");
+            });
+        }
+
+
+        $('.half_left').click(function(){
+            console.error("왼쪽");
+        });
+        $('.half_right').click(function(){
+            console.error("오른쪽");
+        });
+
+        $('.fp-script , .script_close').click(function(){
+            // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
+            $('body').toggleClass("scroll-n");
+            $('.fp-script').toggleClass('active');
+            $('.player_wrap').toggleClass('script');
+        });
+
+        $('.fp-nextArrow').click(function()
+        {
+            console.error('다음 콘텐츠!')
+        });
+        $('.fp-prevArrow').click(function()
+        {
+            console.error('이전 콘텐츠!')
+        });
+
+
+        miniMovie();
+
+        function miniMovie(){
+            var $parent = $('.player_wrap');
+            var $obj = $('.btm_subtitle_area');
+            var $top = $obj.offset().top;
+            var $targetH = $parent.find('#contents').height();
+
+            $(window).scroll(function()
+            {
+                var $wTop = $(window).scrollTop();
+                var player_height = $('.player_wrap').height();
+                var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
+
+                var scroll=$(this).scrollTop()+$(this).height();
+                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);
+                // 수치값은 수정해야함.
+                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함
+                // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
+                // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
+                // 176 , 1004
+                // if ($wTop >= $hederTab-player_height )
+                if ($wTop >= 176 )
+                {
+                    // $parent.addClass('fixed').css({'margin-top': $targetH });
+                    $parent.addClass('fixed')
+                    $("#header").addClass('fixed');
+                }
+                else
+                {
+                    $parent.removeClass('fixed').attr('style', '');
+                    $("#header").removeClass('fixed');
+                }
+            })
+        }
+
+        function scriptScroll()
+        {
+            var $obj = $('.timeline_wrapper');
+            var $objTop = $obj.offset().top;
+            var $target = $obj.find('li');
+            $obj.scrollTop(0);
+            $target.each(function()
+            {
+                var $thisTop = $(this).offset().top;
+                if ($(this).hasClass('is-active'))
+                {
+                    console.log('$objTop' + '_' + $objTop);
+                    console.log('$thisTop' + '_' + $thisTop);
+                    $obj.scrollTop($thisTop - $objTop);
+                    /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
+                }
+            });
+        }
+  }
 }
 </script>

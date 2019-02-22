@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery join pd70">
 
@@ -43,7 +43,7 @@
                     </li>
                 </ul>
 
-                
+
 
             </div>
           </div>
@@ -55,9 +55,9 @@
             </ul>
         </div>
         <!-- //floating button -->
-        
+
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery eduperson_login">
         <div id="content" class="etc">
@@ -9,10 +9,10 @@
             <div class="inner">
                 <div id="dropdown_wrap" v-show="langFlag">
                   <div id="sheetDim" @click="changeLang()"></div>
-                  <div id="dropdown">            
+                  <div id="dropdown">
                     <ul  @click="changeLang()">
-                      <!-- 
-                        position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
+                      <!--
+                        position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력
                       -->
                       <li>한국어</li>
                       <li>중국어</li>
@@ -56,11 +56,11 @@
             </div>
           </div>
         </div>
-        
-        
+
+
 
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

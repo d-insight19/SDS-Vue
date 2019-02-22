@@ -1,28 +1,28 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery atorm pd70">
-            
+
            <!-- header -->
-            <div v-if="headerType == '2'" id="header" class="tab fixed">          
+            <div v-if="headerType == '2'" id="header" class="tab fixed">
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                     <p class="header_text font_18">5분 안에 중국어 발음하기</p>
-                </div>  
+                </div>
                 <div class="header_inner line2 tabMenu scroll-x">
                     <ul class="scrollTab">
-                        <li><a href="#tab1">과정정보</a></li>                       
-                        <li class="on"><a href="#tab2">학습현황</a></li><!-- selected class "on" --> 
+                        <li><a href="#tab1">과정정보</a></li>
+                        <li class="on"><a href="#tab2">학습현황</a></li><!-- selected class "on" -->
                     </ul>
-                </div>  
+                </div>
             </div>
         <!-- //header -->
 
             <div id="content" class="normal">
                 <div class="cell">
-                    <div class="inner nopad">                     
+                    <div class="inner nopad">
 
                     <ul class="thumList">
                         <li>
@@ -36,15 +36,15 @@
                                 <ul class="info">
                                     <li class="color_clr3 fwb">집합</li>
                                     <li>K0111</li>
-                                </ul>                               
+                                </ul>
                             </div>
                         </li>
                     </ul>
-                   
+
                     <p class="hr" style="margin:26px -24px 21px"></p>
 
-                    
-                    <ul class="multiList type_2">                       
+
+                    <ul class="multiList type_2">
                         <li class="border_bottom">
                             <div class="in">
                                 <span class="label-tit13">총 학습자 수</span>
@@ -62,7 +62,7 @@
                                 <span class="label-tit13">평균점수</span>
                                 <div class="num">62</div>
                             </div>
-                        </li>                       
+                        </li>
                     </ul>
 
                     <ul class="pager_list mt10">
@@ -71,7 +71,7 @@
                         </li>
                         <li>
                             <span class="dot"></span>
-                        </li>                       
+                        </li>
                     </ul>
 
                     <p class="hr" style="margin:0 -24px 22px"></p>
@@ -283,21 +283,21 @@
                             </tr>
                         </tbody>
                         </table>
-                    </div>                  
-                       
+                    </div>
 
-                       
+
+
                     </div>
                 </div>
-            </div>           
+            </div>
 
          <!-- floating button -->
         <div class="fixBtmBtn">
             <button type="button" class="btn clr1 ld">평점 및 후기 자세히보기</button>
         </div>
-        <!-- //floating button -->   
+        <!-- //floating button -->
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->
@@ -307,7 +307,7 @@
 <script>
 /*eslint-disable */
 export default {
-  name: 'components_tabheader',  
+  name: 'components_tabheader',
   /* vue lifecycle */
   created () {
   },
@@ -317,7 +317,7 @@ export default {
    data () {
     return {
       headerType: 2,
-      langFlag: false,     
+      langFlag: false,
     }
   },
   /* vue function */

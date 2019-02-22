@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery study_pledge pd70">
             <!-- header -->
@@ -9,8 +9,8 @@
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
                 <p class="header_text font_14">준법 및 윤리경영을 위한 임직원 준법 실천 서..</p>
             </div>
-            <!-- //header -->            
-            <div id="content" class="etc">
+            <!-- //header -->
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner" style="padding-top:82px;">
                         <p class="sub-txt op80">나는 법과 윤리를 준수하고, 삼성인의 사고와 행동기준이 되는 「삼성 경영원칙」, 「청결한 조직문화를 위한 임직원 가이드 라인」, 「컴플라이언스 운영규정」을 적극 실천할 것을 서약합니다.</p>
@@ -36,14 +36,14 @@
                         <div class="tb_wrap">
                             <table>
                                 <tr>
-                                <td class="sub-txt pb10">일시</td>  
-                                <td class="sub-txt pb10 fr">2018년 11월 10일</td>  
-                                </tr>  
+                                <td class="sub-txt pb10">일시</td>
+                                <td class="sub-txt pb10 fr">2018년 11월 10일</td>
+                                </tr>
                                 <tr>
-                                <td class="sub-txt">성명</td>  
-                                <td class="sub-txt fr">정해민</td>  
-                                </tr>  
-                            </table>                           
+                                <td class="sub-txt">성명</td>
+                                <td class="sub-txt fr">정해민</td>
+                                </tr>
+                            </table>
                         </div>
                         <slp-checkbox  @input="activate()"><span >위 사항에 동의합니다.</span></slp-checkbox>
                         <!-- <div class="loginChk">
@@ -52,20 +52,20 @@
                             <span class="ico"></span>
                             <span class="label">주의사항에 동의합니다.</span>
                             </label>
-                        </div> -->     
+                        </div> -->
                     </div>
                 </div>
             </div>
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
                 <button type="button" class="btn md" :class="{ clr1 : active_el }">확인</button>
             </div>
-            <!-- //floatingbtn -->   
+            <!-- //floatingbtn -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

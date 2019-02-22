@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery study_discuss pd70">
             <!-- header -->
@@ -13,16 +13,16 @@
 
                 </div>
             </div>
-            <!-- //header -->            
-            <div id="content" class="etc">
+            <!-- //header -->
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner" style="padding-top:78px;">
                         <p class="txt-tit">제목</p>
-                        <div class="singleList ">                        
-                            <input  type="text" placeholder="제목을 입력해 주세요" value="토론 타이틀입니다."/>                        
-                        </div>                      
+                        <div class="singleList ">
+                            <input  type="text" placeholder="제목을 입력해 주세요" value="토론 타이틀입니다."/>
+                        </div>
                         <p class="txt-tit">주제분류</p>
-                        <div class="singleList ">                        
+                        <div class="singleList ">
                             <select class="select w100p">
                                 <option value="">1차시</option>
                                 <option value="">경영전문</option>
@@ -30,24 +30,24 @@
                                 <option value="">정보기술</option>
                                 <option value="">시사/교양</option>
                                 <option value="">기타</option>
-                            </select>                        
+                            </select>
                         </div>
                         <p class="txt-tit">토론기간</p>
-                        <div class="singleList ">                        
+                        <div class="singleList ">
                             <select class="select dis_num" placeholder="시작일">
                                 <option value="">시작일</option>
                             </select><select class="select dis_num" placeholder="종료일">
                                 <option value="">종료일</option>
-                            </select>                        
+                            </select>
                         </div>
                         <p class="txt-tit">참여가능 인원</p>
-                        <div class="singleList ">                        
+                        <div class="singleList ">
                             <input type="number"  class="input" placeholder="참여가능 인원을 입력해주세요." value="99" />
-                            <span class="pos_a">명</span>                        
+                            <span class="pos_a">명</span>
                         </div>
                         <p class="txt-tit">내용</p>
-                        <div class="singleList ">                        
-                            <input type="text"  class="input" placeholder="내용을 입력해주세요." value="토론 내용입니다." />                        
+                        <div class="singleList ">
+                            <input type="text"  class="input" placeholder="내용을 입력해주세요." value="토론 내용입니다." />
                         </div>
                         <p class="label-tit16 mt36 mb10"> 첨부파일 추가</p>
                         <ul v-show="list1.length" class="ulList type4 bot-btn">
@@ -59,20 +59,20 @@
                                 <span class="at-num">500KB</span>
                                 <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
                                 </div>
-                            </div>                                                             
-                            </li>  
+                            </div>
+                            </li>
                         </ul>
-                        <!-- 추가 리스트 --> 
-                    </div>  
+                        <!-- 추가 리스트 -->
+                    </div>
                 </div>
             </div>
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
-                <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a> 
+            <div class="fixBtmBtn abs">
+                <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a>
             </div>
-            <!-- //floatingbtn -->    
+            <!-- //floatingbtn -->
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

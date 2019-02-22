@@ -40,6 +40,8 @@ import ComponentsChart from '~workplace/common_page/components_chart'
 import ComponentsChartLib from '~workplace/common_page/components_chart_lib'
 import ComponentsSnackBar from '~workplace/common_page/components_snackbar'
 
+import LoginSplashB2B from '~workplace/login/login_Splash_B2B'
+import LoginSplashB2C from '~workplace/login/login_Splash_B2C'
 import LoginFindcenter from '~workplace/login/Login_findcenter'
 import LoginFindcenterEmail from '~workplace/login/Login_findcenter_email'
 import LoginFindcenterEmail2 from '~workplace/login/Login_findcenter_email2'
@@ -179,15 +181,25 @@ import Studystudystatusassessmentwindow01 from '~workplace/study/Study_studystat
 import Studystudystatusassessmentwindow02 from '~workplace/study/Study_studystatus_assessment_window_02'
 import Studystudystatusassessmentresultanalysis from '~workplace/study/Study_studystatus_assessment_resultanalysis'
 import Studystudystatusattendancebpo from '~workplace/study/Study_studystatus_attendance_bpo'
+import StudyHomeSetCalendar from '~workplace/study/Study_home_set_calendar'
+import etcMiniplayer from '~workplace/study/etc_Miniplayer'
+import etcKeepstudy from '~workplace/study/etc_keepstudy'
 import StudyList from '~workplace/study/Study_list'
 import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
 import Study0218studylistdownload_ from '~workplace/study/Study_0218studylist_download_'
 import Studystudynote from '~workplace/study/Study_studynote'
+import Studystudynoteall01 from '~workplace/study/Study_studynote_all_01'
+import Studystudynoteall02snacbar from '~workplace/study/Study_studynote_all_02_snacbar'
 import Studystudynoteedit from '~workplace/study/Study_studynote_edit'
 import Studystudyquestionregi from '~workplace/study/Study_studyquestion_regi'
 import Studysummary from '~workplace/study/Study_summary'
+import Studysummary03none from '~workplace/study/Study_summary_03_none'
+import Studysummary03nonemap from '~workplace/study/Study_summary_03_nonemap'
+import Studysummary04noneattach from '~workplace/study/Study_summary_04_noneattach'
+import Studyhomesetcalendar2 from '~workplace/study/Study_home_set_calendar2'
+import Studyhomesetcalendar22 from '~workplace/study/Study_home_set_calendar2_2'
 
 import Studyquestion from '~workplace/study/Study_studyquestion'
 import Study02faqdetail from '~workplace/study/Study_02_faq_detail'
@@ -285,6 +297,12 @@ import Studyfaq from '~workplace/study/Study_faq'
 import Studysurvey from '~workplace/study/Study_survey'
 import Studynotice from '~workplace/study/Study_notice'
 import StudynoticeAlarm from '~workplace/study/Study_notice_alarm'
+import Studydata from '~workplace/study/Study_data'
+import Studydatadetail from '~workplace/study/Study_data_detail'
+import Studydiscuss from '~workplace/study/Study_discuss'
+import Studyreflectionnote from '~workplace/study/Study_reflectionnote'
+import Studyqpqa from '~workplace/study/Study_qpqa'
+import Studyinquiry from '~workplace/study/Study_inquiry'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -471,6 +489,10 @@ import regiclassRegisterBigdata02 from '~workplace/regiclass/regiclass_register_
 import regiclassRegisterBigdataPro from '~workplace/regiclass/regiclass_register_bigdata_pro'
 import regiclassRegisterAcademy from '~workplace/regiclass/regiclass_register_academy'
 import regiclassRegisterPhoto from '~workplace/regiclass/regiclass_register_photo'
+import regiclassdetailviewcoursemooc from '~workplace/regiclass/regiclass_detailview_course_mooc'
+import regiclassdetailviewcourseset from '~workplace/regiclass/regiclass_detailview_course_set'
+import regiclassdetailviewcoursemixed from '~workplace/regiclass/regiclass_detailview_course_mixed'
+import regiclassdetailviewcourseunion from '~workplace/regiclass/regiclass_detailview_course_union'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -539,9 +561,13 @@ import CustomerCenterStudysupportdetail from '~workplace/customercenter/Customer
 import CustomerCenterRequestresult from '~workplace/customercenter/CustomerCenter_Request_result'
 import CustomerCenterInquirywrite02 from '~workplace/customercenter/CustomerCenter_Inquiry_write02'
 import CustomerCenterInquirywrite02error from '~workplace/customercenter/CustomerCenter_Inquiry_write02_error'
+import CustomerCenterStudyguidedetail2 from '~workplace/customercenter/CustomerCenter_Studyguide_detail2'
 
 import EdupersonLogin from '~workplace/eduperson/Eduperson_login'
 import EdupersonLoginOTP from '~workplace/eduperson/Eduperson_loginOTP'
+import EdupersonLoginOTP2 from '~workplace/eduperson/Eduperson_loginOTP_2'
+import EdupersonLoginOTPError1 from '~workplace/eduperson/Eduperson_loginOTP_error_1'
+import EdupersonLoginOTPError2 from '~workplace/eduperson/Eduperson_loginOTP_error_2'
 import EdupersonDrawer from '~workplace/eduperson/Eduperson_drawer'
 import EdupersonDrawerSetting from '~workplace/eduperson/Eduperson_drawer_setting'
 import EdupersonDrawerProfile from '~workplace/eduperson/Eduperson_drawer_profile'
@@ -678,6 +704,7 @@ import AtormGroupFlipPostMaterial2 from '~workplace/atorm/Atorm_group_flip_post_
 import Atormgroupflipaddtest from '~workplace/atorm/Atorm_group_flip_add_test'
 import Atormgroupflipmaterial from '~workplace/atorm/Atorm_group_flip_material'
 import Atormgroupflipmaterial2 from '~workplace/atorm/Atorm_group_flip_material2'
+import ATORMSplash from '~workplace/atorm/ATORM_Splash'
 
 import ComponentsTestPage1 from '~workplace/common_page/components_app_bar_slp'
 import ComponentsTestPage2 from '~workplace/common_page/components_bottom_sheet_slp'
@@ -953,6 +980,16 @@ var rootRoutes = [
     path: '/components_picker_slp',
     name: 'components_picker_slp',
     component: ComponentsTestPage11
+  },
+  {
+    path: '/login_Splash_B2B',
+    name: 'login_Splash_B2B',
+    component: LoginSplashB2B
+  },
+  {
+    path: '/login_Splash_B2C',
+    name: 'login_Splash_B2C',
+    component: LoginSplashB2C
   },
   {
     path: '/Login_findcenter',
@@ -1645,6 +1682,21 @@ var rootRoutes = [
     component: Studystudystatusattendancebpo
   },
   {
+    path: '/Study_home_set_calendar',
+    name: 'Study_home_set_calendar',
+    component: StudyHomeSetCalendar
+  },
+  {
+    path: '/etc_Miniplayer',
+    name: 'etc_Miniplayer',
+    component: etcMiniplayer
+  },
+  {
+    path: '/etc_keepstudy',
+    name: 'etc_keepstudy',
+    component: etcKeepstudy
+  },
+  {
     path: '/Study_list',
     name: 'Study_list',
     component: StudyList
@@ -1675,6 +1727,16 @@ var rootRoutes = [
     component: Studystudynote
   },
   {
+    path: '/Study_studynote_all_01',
+    name: 'Study_studynote_all_01',
+    component: Studystudynoteall01
+  },
+  {
+    path: '/Study_studynote_all_02_snacbar',
+    name: 'Study_studynote_all_02_snacbar',
+    component: Studystudynoteall02snacbar
+  },
+  {
     path: '/Study_studynote_edit',
     name: 'Study_studynote_edit',
     component: Studystudynoteedit
@@ -1688,6 +1750,31 @@ var rootRoutes = [
     path: '/Study_summary',
     name: 'Study_summary',
     component: Studysummary
+  },
+  {
+    path: '/Study_summary_03_none',
+    name: 'Study_summary_03_none',
+    component: Studysummary03none
+  },
+  {
+    path: '/Study_summary_03_nonemap',
+    name: 'Study_summary_03_nonemap',
+    component: Studysummary03nonemap
+  },
+  {
+    path: '/Study_summary_04_noneattach',
+    name: 'Study_summary_04_noneattach',
+    component: Studysummary04noneattach
+  },
+  {
+    path: '/Study_home_set_calendar2',
+    name: 'Study_home_set_calendar2',
+    component: Studyhomesetcalendar2
+  },
+  {
+    path: '/Study_home_set_calendar2_2',
+    name: 'Study_home_set_calendar2_2',
+    component: Studyhomesetcalendar22
   },
   {
     path: '/Study_studyquestion',
@@ -2168,6 +2255,36 @@ var rootRoutes = [
     path: '/Study_notice_alarm',
     name: 'Study_notice_alarm',
     component: StudynoticeAlarm
+  },
+  {
+    path: '/Study_data',
+    name: 'Study_data',
+    component: Studydata
+  },
+  {
+    path: '/Study_data_detail',
+    name: 'Study_data_detail',
+    component: Studydatadetail
+  },
+  {
+    path: '/Study_discuss',
+    name: 'Study_discuss',
+    component: Studydiscuss
+  },
+  {
+    path: '/Study_reflectionnote',
+    name: 'Study_reflectionnote',
+    component: Studyreflectionnote
+  },
+  {
+    path: '/Study_qpqa',
+    name: 'Study_qpqa',
+    component: Studyqpqa
+  },
+  {
+    path: '/Study_inquiry',
+    name: 'Study_inquiry',
+    component: Studyinquiry
   },
   // {
   //   path: '/regiclass_detailview_licence',
@@ -3089,6 +3206,26 @@ var rootRoutes = [
     component: regiclassRegisterPhoto
   },
   {
+    path: '/regiclass_detailview_course_mooc',
+    name: 'regiclass_detailview_course_mooc',
+    component: regiclassdetailviewcoursemooc
+  },
+  {
+    path: '/regiclass_detailview_course_set',
+    name: 'regiclass_detailview_course_set',
+    component: regiclassdetailviewcourseset
+  },
+  {
+    path: '/regiclass_detailview_course_mixed',
+    name: 'regiclass_detailview_course_mixed',
+    component: regiclassdetailviewcoursemixed
+  },
+  {
+    path: '/regiclass_detailview_course_union',
+    name: 'regiclass_detailview_course_union',
+    component: regiclassdetailviewcourseunion
+  },
+  {
     path: '/login_join_terms',
     name: 'login_join_terms',
     component: loginJoinTerms
@@ -3422,6 +3559,11 @@ var rootRoutes = [
     path: '/CustomerCenter_Inquiry_write02_error',
     name: 'CustomerCenter_Inquiry_write02_error',
     component: CustomerCenterInquirywrite02error
+  },
+  {
+    path: '/CustomerCenter_Studyguide_detail2',
+    name: 'CustomerCenter_Studyguide_detail2',
+    component: CustomerCenterStudyguidedetail2
   },
   {
     path: '/Atorm_drawer',
@@ -3794,6 +3936,11 @@ var rootRoutes = [
     component: Atormgroupflipmaterial2
   },
   {
+    path: '/ATORM_Splash',
+    name: 'ATORM_Splash',
+    component: ATORMSplash
+  },
+  {
     path: '/Eduperson_login',
     name: 'Eduperson_login',
     component: EdupersonLogin
@@ -3802,6 +3949,21 @@ var rootRoutes = [
     path: '/Eduperson_loginOTP',
     name: 'Eduperson_loginOTP',
     component: EdupersonLoginOTP
+  },
+  {
+    path: '/Eduperson_loginOTP_2',
+    name: 'Eduperson_loginOTP_2',
+    component: EdupersonLoginOTP2
+  },
+  {
+    path: '/Eduperson_loginOTP_error_1',
+    name: 'Eduperson_loginOTP_error_1',
+    component: EdupersonLoginOTPError1
+  },
+  {
+    path: '/Eduperson_loginOTP_error_2',
+    name: 'Eduperson_loginOTP_error_2',
+    component: EdupersonLoginOTPError2
   },
   {
     path: '/Eduperson_drawer',

@@ -168,7 +168,7 @@
         <!-- //header -->
         
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
                 <p class="mono_60 font_14">

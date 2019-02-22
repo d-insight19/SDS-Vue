@@ -46,7 +46,7 @@
         <!-- //header -->
         
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
         
           
           
@@ -60,7 +60,7 @@
         </div>
 
         <!-- floating button -->
-        <div class="fixBtmBtn zin0">
+        <div class="fixBtmBtn zin1">
             <ul>
                 <li @click="active_el"><button type="button" class="btn md"><span class="ico heart_solid_32" :class="{ blue : active }"></span><span :class="{ color_clr2 : active}">찜하기</span></button></li>
                 <!--<li><button type="button" class="btn md staus_crl1"><span class="ico like_32 red"></span>좋아요</button></li>-->

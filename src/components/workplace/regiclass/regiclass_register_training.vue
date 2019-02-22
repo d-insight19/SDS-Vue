@@ -5,7 +5,7 @@
       <!-- container -->
       <div id="container" class="mediaquery regiclass basicinfo register pd70">
 
-        <div id="content" class="etc">
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner" style="padding-top:40px;">
               
@@ -75,7 +75,7 @@
           </div>
         </div>
         <!-- floating button -->
-        <div class="fixBtmBtn zin0">
+        <div class="fixBtmBtn zin1">
             <ul>
                 <li><button type="button" class="btn md">이전</button></li>
                 <li><button type="button" class="btn md clr1">다음</button></li>

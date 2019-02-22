@@ -8,7 +8,7 @@
             <!-- <div id="header" class="fixed">
             </div> -->
             <!-- //header -->            
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner" style="padding-top:40px;">
                         <h1 class="h-tit1 fwb">수업 유의사항 및 규정</h1>
@@ -59,7 +59,7 @@
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn zin0">  
+            <div class="fixBtmBtn zin1">  
                 <button type="button" class="btn md clr1">확인</button>
             </div>
             <!-- //floatingbtn -->   

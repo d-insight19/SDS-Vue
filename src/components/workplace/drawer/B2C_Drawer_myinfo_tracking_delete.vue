@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
@@ -12,29 +12,29 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner">
-                       
 
-                       
+
+
                     </div>
                 </div>
-            </div>           
-            
+            </div>
+
         </div>
-        <!-- //container -->   
+        <!-- //container -->
 
      <!-- layer wrap -->
     <div class="layerWrap">
-        <div class="ly-in">            
-            <div class="ly-body">                
+        <div class="ly-in">
+            <div class="ly-body">
                 <div class="ly-info">
                     <p>배송지를 삭제하시겠습니까?</p>
                 </div>
             </div>
-        
-            <div class="ly-btn">                
+
+            <div class="ly-btn">
                 <button type="button" class="btn">취소</button>
                 <button type="button" class="btn color_clr2">확인</button>
             </div>

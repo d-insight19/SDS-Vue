@@ -10,7 +10,7 @@
                 <p class="header_text font_18">과정 평가 창</p>
             </div>
             <!-- //header -->
-            <div id="content" class="etc" >
+            <div id="content" class="normal" >
                 <div class="cell">
                     <div class="inner " style="padding-top:56px;">
                         <div class="full-box pd mb26">
@@ -33,58 +33,7 @@
                                 </tr>
                             </table>
                         </div>
-
-                        <p class="txt-tit">1. 다음 지문을 읽고 <span class="underline">틀린 것</span>을 고르시오. (5점)</p>
-                        <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <ul class="ul-block com-rdo">
-                            <li>
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[0]" >
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label"  >① EJB를 주 프레임워크로 사용할 때 불편했을 점을 해소하려고 개발되었다.</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[1]" >
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label" >② 2002년 로드존슨이 출판한 도서가 스프링의 시작이라고 보는 견해가 있다.</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[2]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label" >③ 2003년 Apache 2.0 License로 최초 공개</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[3]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label" >④ 2003년 상용으로 소개되었으나 이후 오픈소스로 바뀌었다.</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label  class="labelRdo" >
-                                    <input type="radio" class="rdo" v-model="rdo" :value="rdos[4]">
-                                    <span class="ico">
-                                        <span class="ico chk-blue"></span>
-                                    </span>
-                                    <span class="label" >⑤ 동적인 웹 사이트를 개발하기 위한 여러 가지 서비스를 제공하고 있다.</span>
-                                </label>
-                            </li>
-                        </ul>
-                        <p class="hr"></p>
-                        <p class="txt-tit">2. 마이동풍은 이백의 시에서 유래한 말이다. 여기에서 동풍은 어떤 계절의 바람일까?</p>
+                        <p class="txt-tit">1. 마이동풍은 이백의 시에서 유래한 말이다. 여기에서 동풍은 어떤 계절의 바람일까?</p>
                         <ul class="ul-block com-rdo">
                             <li>
                                 <label class="labelRdo " :class="{ err : !rdo2 }" >
@@ -126,9 +75,9 @@
                         </ul>
 
                         <p class="hr"></p>
-                        <p class="txt-tit">3. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
+                        <p class="txt-tit">2. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <ul class="com-rdo">
+                        <ul class="com-rdo ox_mode">
                             <li class="inb-box">
                                 <label class="labelRdo">
                                     <input type="radio" class="rdo"  v-model="rdo3" :value="rdos3[0]" >
@@ -149,9 +98,9 @@
                             </li>
                         </ul>
                         <p class="hr"></p>
-                        <p class="txt-tit">4. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
+                        <p class="txt-tit">3. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <ul class="com-rdo">
+                        <ul class="com-rdo ox_mode">
                             <li class="inb-box">
                                 <label class="labelRdo" >
                                     <input type="radio" class="rdo"  v-model="rdo4" :value="rdos4[0]">
@@ -171,7 +120,7 @@
                                 </label>
                             </li>
                         </ul>
-                        <p class="txt-tit">01. 다음이 설명하는 단어를 입력하세요.</p>
+                        <p class="txt-tit">4. 다음이 설명하는 단어를 입력하세요.</p>
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨(Rod Johnson)이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
                         <input @input="onInput" type="text" class="input" placeholder="스프링"/>
                         <div class="inputbottom inp-num">

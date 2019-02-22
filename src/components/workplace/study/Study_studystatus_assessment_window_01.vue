@@ -10,7 +10,7 @@
                 <p class="header_text font_18">과정 평가 창</p>
             </div>
             <!-- //header -->
-            <div id="content" class="etc" >
+            <div id="content" class="normal" >
                 <div class="cell">
                     <div class="inner " style="padding-top:56px;">
                         <div class="full-box pd mb26">
@@ -127,7 +127,7 @@
                         <p class="hr"></p>
                         <p class="txt-tit">3. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <ul class="com-rdo">
+                        <ul class="com-rdo ox_mode">
                             <li class="inb-box">
                                 <label class="labelRdo">
                                     <input type="radio" class="rdo"  v-model="rdo3" :value="rdos3[0]">
@@ -150,7 +150,7 @@
                         <p class="hr"></p>
                         <p class="txt-tit">4. 다음을 읽고 지문에 대한 설명이 맞다면 O, 틀리다고 생각하면 X를 선택하세요.</p>
                         <p class="inner-txt op65 mb20">Java 기반의 웹 프레임워크. 로드 존슨이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 공개되었다. </p>
-                        <ul class="com-rdo">
+                        <ul class="com-rdo ox_mode">
                             <li class="inb-box">
                                 <label class="labelRdo" >
                                     <input type="radio" class="rdo"  v-model="rdo4" :value="rdos4[0]">

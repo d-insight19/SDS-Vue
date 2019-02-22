@@ -1,12 +1,12 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
         <div id="container" class="mediaquery study_survey pd70">
 
             <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '1'" id="header" class="expand wh survey-head-bg">          
+            <div v-if="headerType == '1'" id="header" class="expand wh survey-head-bg">
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                     <div class="page-btn">
@@ -15,10 +15,10 @@
                         <span class="ico next-wh"></span>
                     </div>
                     <p class="header_text  font_19"> </p>
-                </div>  
-                <div class="hide_header" style="background:rgba(0,0,0,0.45);  padding-top:66px; padding-bottom:60px">                
+                </div>
+                <div class="hide_header" style="background:rgba(0,0,0,0.45);  padding-top:66px; padding-bottom:60px">
                     <div class="hide-inner">
-                        <span class="chip wh">설문</span>                         
+                        <span class="chip wh">설문</span>
                         <p class="h-tit1">삶의 만족도 지수 조사</p>
                         <p class="h-tit5">
                             <span>총 2문항</span>
@@ -30,11 +30,11 @@
 
 
             <!-- header + 확장형 + tab  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-            <div v-if="headerType == '2'" id="header" class="tab">          
+            <div v-if="headerType == '2'" id="header" class="tab">
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_19"> </p>
-                </div>  
+                </div>
                 <div class="header_inner line2 tabMenu">
                     <ul class="fixTab">
                     <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
@@ -42,10 +42,10 @@
                     <li><a href="#tab3">인문학이야기</a></li>
                     <li><a href="#tab3">인문학이야기</a></li>
                     </ul>
-                </div>  
-                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">                
-                    <div class="head-inner"> 
-                        <span class="chip">FAQ</span>     
+                </div>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">
+                    <div class="head-inner">
+                        <span class="chip">FAQ</span>
                         <p class="h-tit1">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <p class="ico-group">
                             <span class="ico clip"></span>
@@ -59,14 +59,14 @@
             </div>
             <!-- //header -->
 
-            
+
             <!-- header scroll 헤더  작업중-->
             <div v-if="headerType == '3'" id="header" class="tab">
-                
+
                 <div class="header_inner line1">
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_19"> </p>
-                </div>            
+                </div>
                 <div class="header_inner line2 tabMenu scroll-x">
                     <ul class="scrollTab">
                     <li class="on"><a href="#tab1">동영상재테크</a></li><!-- selected class "on" -->
@@ -75,10 +75,10 @@
                     <li><a href="#tab3">인문학이야기</a></li>
                     <li><a href="#tab3">인문학이야기</a></li>
                     </ul>
-                </div>     
-                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">                
-                    <div class="head-inner"> 
-                        <span class="chip">FAQ</span>     
+                </div>
+                <div class="hide_header" style="background:#e6eaf5; padding-top:56px; padding-bottom:26px">
+                    <div class="head-inner">
+                        <span class="chip">FAQ</span>
                         <p class="h-tit1">공지사항 타이틀 영역입니다. 공지사항 타이틀</p>
                         <p class="ico-group">
                             <span class="ico clip"></span>
@@ -90,10 +90,10 @@
                     </div>
                 </div>
             </div>
-            <!-- //header -->        
-            <div id="content" class="etc">
+            <!-- //header -->
+            <div id="content" class="normal">
                 <div class="cell">
-                    <div class="inner"> 
+                    <div class="inner">
                         <p class="inner-txt">설문을 통해 자신의 삶의 만족도가 어느 정도인지 진단해 보세요. 10분정도 걸리는 간단한 설문입니다.</p>
                         <p class="line02"></p>
                         <p class="survey-tit">행복에 관한 조사입니다.</p>
@@ -106,7 +106,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >전혀 아니다</span>                    
+                                    <span class="label" >전혀 아니다</span>
                                 </label>
                             </li>
                             <li>
@@ -115,7 +115,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label" >아니다</span>                    
+                                    <span class="label" >아니다</span>
                                 </label>
                             </li>
                             <li>
@@ -124,7 +124,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">보통이다</span>                    
+                                    <span class="label">보통이다</span>
                                 </label>
                             </li>
                             <li>
@@ -133,7 +133,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 그렇다</span>                    
+                                    <span class="label"> 그렇다</span>
                                 </label>
                             </li>
                             <li>
@@ -142,12 +142,12 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 매우 그렇다</span>                    
+                                    <span class="label"> 매우 그렇다</span>
                                 </label>
                             </li>
-                        </ul>     
+                        </ul>
                         <p class="hr"></p>
-                        <p class="txt-tit mb20">02. 나는 OO하는 것을 좋아한다.</p>                        
+                        <p class="txt-tit mb20">02. 나는 OO하는 것을 좋아한다.</p>
                         <ul class="ul-block com-rdo">
                             <li>
                                 <label class="labelRdo" >
@@ -155,7 +155,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">전혀 아니다</span>                    
+                                    <span class="label">전혀 아니다</span>
                                 </label>
                             </li>
                             <li>
@@ -164,7 +164,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">아니다</span>                    
+                                    <span class="label">아니다</span>
                                 </label>
                             </li>
                             <li>
@@ -173,7 +173,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label">보통이다</span>                    
+                                    <span class="label">보통이다</span>
                                 </label>
                             </li>
                             <li>
@@ -182,7 +182,7 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 그렇다</span>                    
+                                    <span class="label"> 그렇다</span>
                                 </label>
                             </li>
                             <li>
@@ -191,22 +191,22 @@
                                     <span class="ico">
                                         <span class="ico chk-blue"></span>
                                     </span>
-                                    <span class="label"> 매우 그렇다</span>                    
+                                    <span class="label"> 매우 그렇다</span>
                                 </label>
                             </li>
-                        </ul>   
+                        </ul>
                     </div>
                     <!-- //inner -->
-                </div>  
+                </div>
             </div>
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
+            <div class="fixBtmBtn abs">
                 <button type="button" class="btn md" :class="{ clr1 : rdo && rdo2}">제출</button>
             </div>
             <!-- //floatingbtn -->
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 </template>

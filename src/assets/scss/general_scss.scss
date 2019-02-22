@@ -1,5 +1,5 @@
 @charset "utf-8";
-// 컬러군 
+// 컬러군
 // ( colorCode1 : Blue, colorCode2 : Indigo, colorCode3 : Green, colorCode4 : Red, colorCode5 : Yellow )
 $brand_colors: (
   colorCode1:(
@@ -51,10 +51,10 @@ $brand_colors: (
   .#{$name} {
     .clr1{
       background-color: map-get($color,clr1) !important;
-    }    
+    }
     .clr2{
       background-color: map-get($color,clr2) !important;
-    }    
+    }
     .clr3{
       background-color: map-get($color,clr3) !important;
     }
@@ -87,10 +87,10 @@ $brand_colors: (
     }
     .color_clr1{
       color: map-get($color,clr1) !important;
-    }    
+    }
     .color_clr2{
       color: map-get($color,clr2) !important;
-    }    
+    }
     .color_clr3{
       color: map-get($color,clr3) !important;
     }
@@ -102,10 +102,10 @@ $brand_colors: (
     }
     .border_clr1{
       border-color: map-get($color,clr1) !important;
-    }    
+    }
     .border_clr2{
       border-color: map-get($color,clr2) !important;
-    }    
+    }
     .border_clr3{
       border-color: map-get($color,clr3) !important;
     }
@@ -115,7 +115,7 @@ $brand_colors: (
     input.underline:focus{
       border:0 !important;
       border-bottom:1px solid map-get($color,clr2) !important;
-    }    
+    }
     input:focus{
       border:1px solid map-get($color,clr2) !important;
     }
@@ -128,7 +128,7 @@ $brand_colors: (
     }
     // 체크박스 유형1
     .labelChk2 input.chk:checked + .label{
-      color:#fff !important; 
+      color:#fff !important;
       background: map-get($color,clr2);
     }
     // 체크박스 유형2
@@ -136,7 +136,7 @@ $brand_colors: (
       background: map-get($color,clr2) url("../img/ic_checked_wh_20.png") no-repeat;
       background-size: cover;
     }
-    
+
     // 라디오 버튼(박스) 체크아이콘
     .rdoSelBox .labelRdo .rdo:checked + .ico{
       background: map-get($color,clr2) url("../img/ic_checked_wh_20.png") no-repeat;
@@ -162,7 +162,7 @@ $brand_colors: (
     /* form error */
     input.succ{border-color:map-get($color , clr2);}
     .succ-msg, .succ{color:map-get($color , clr2);}
-    
+
     // 메인화면 헤더
     #header.mainType, #header.mainType2{background: map-get($color,clr1) !important;}
 
@@ -190,11 +190,11 @@ $brand_colors: (
 
     // bottomsheet 체크박스
     #bottomsheet ul li .checkIcon{color:map-get($color , clr2);}
-    
+
     // 동영상 스크립트 아이콘
     .flowplayer .fp-controls .fp-controls-inner .fp-script.active{background:map-get($color , clr2);}
 
-    // 동영상 볼륨 조절    
+    // 동영상 볼륨 조절
     .volume_wrap .volume_left .inner{background-image: linear-gradient(to top,rgba(map-get($color , clr2),0), map-get($color , clr2) );}
     .volume_wrap .volume_right .inner{background-image: linear-gradient(to top, rgba(map-get($color , clr2),0), map-get($color , clr2) );}
 
@@ -205,13 +205,13 @@ $brand_colors: (
     .autoplay_cicle_circle{stroke:map-get($color , clr2);}
   }
 }
-// Including themes. 
+// Including themes.
 // By looping through the $themes map
 @each $key, $value in $brand_colors {
   @include theme($key, $value);
 }
 
-// 고정컬러 
+// 고정컬러
 // ( 기능단위로 표현하며 고정컬러로 제공하는 것들 )
 $static_colors: (
   danger:   #ff4141,  // 알림,에러,미진행 아이콘등 상태를 표현하는 컬러
@@ -230,7 +230,7 @@ $contents_colors: (
 );
 
 
-// 모노 컬러 
+// 모노 컬러
 // ( 텍스트와 배경, 라인 등 컨텐츠 및 UI 전반에 활용되는 고정 컬러(모바일 기준)
 $mono_colors: (
   mono_100: #000000,
@@ -242,7 +242,7 @@ $mono_colors: (
   mono_0: #ffffff
 );
 
-// 라인컬러 
+// 라인컬러
 // ( 단독리스트일땐 B89 사용, 계층관계가있는 리스트일땐 B92/B85 세트로사용 , 콘텐츠 내 Index 아래 라인은 B60사용 )
 // Section을 구분할 때 8dp, B95사용
 $line_colors: (

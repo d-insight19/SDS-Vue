@@ -11,33 +11,23 @@
                 <button type="button" class="btn only prev"><span class="ico">이전</span></button>
                 <p class="header_text font_18">마케팅 관련 상시 보고서 양식, 중간 범위 확인 요망  </p>
             </div>
-            <div class="hide_header" style="padding-top:74px;padding-bottom:25px;position:relative;">
+            <div class="hide_header" style="padding-top:74px;padding-bottom:25px;">
                 <div class="tagWrap mb5"><span>리마인더</span></div>
+                <slp-dropdown dimmed v-model="lang">
+                    <span class="ico more28" slot="trigger"></span>
+                    <slp-dropdown-item :value="'한국어'">한국어</slp-dropdown-item>
+                    <slp-dropdown-item :value="'영어'">영어</slp-dropdown-item>
+                    <slp-dropdown-item :value="'중국어'">중국어</slp-dropdown-item>
+                    <slp-dropdown-item :value="'일본어'">일본어</slp-dropdown-item>
+                </slp-dropdown>
                 <h3 class="h-tit3 font_22 fwb600 multiline line2 mb5">마케팅 관련 상시 보고서 양식, 중간 범위 확인 요망</h3>
-                
                 <ul class="info mt25">
                     <li class="mono_80">2018.10.10</li>
                 </ul>
-                <span class="ico more28" @click="changeLang1()"></span>
-                <div class="dropdown_wrap" v-show="langFlag1" >
-                    <div class="sheetDim" @click="changeLang1()"></div>
-                    <div class="dropdown">            
-                        <ul  @click="changeLang1()">
-                        <!-- 
-                            position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
-                        -->
-                        <li>나의 지식 CLIPing</li>
-                        <li>나의 지식 CLIPing</li>
-                        <li>내가 본 콘텐츠</li>
-                        <li>관심 CLIPing</li>
-                        <li>나의 지식 CLIPing 활동 이력</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- //header -->
-        <div id="content" class="etc">
+        <div id="content" class="normal">
 
             <div class="cell">
                 <div class="inner">
@@ -142,14 +132,11 @@ export default {
   /* vue data */
   data () {
     return {
-      langFlag1: false
+      lang: '한국어'
     }
   },
   /* vue function */
   methods: {
-    changeLang1 () {
-      this.langFlag1 = !this.langFlag1
-    }
   }
 }
 </script>

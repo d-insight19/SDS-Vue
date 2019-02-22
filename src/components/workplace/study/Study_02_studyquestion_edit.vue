@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery study_question_edit pd70">
             <!-- header -->
@@ -14,8 +14,8 @@
                 </p>
               </div>
             </div>
-            <!-- //header -->            
-            <div id="content" class="etc">
+            <!-- //header -->
+            <div id="content" class="normal">
                 <div class="cell">
                   <div class="inner" style="padding-top:78px;">
                       <ul class="multiList type2">
@@ -24,7 +24,7 @@
                           <slp-text-field placeholder="질문 있습니다."></slp-text-field>
                         </li>
                         <li>
-                          <p class="label-tit14 mb8">분류</p>                                
+                          <p class="label-tit14 mb8">분류</p>
                           <slp-select placeholder="1차시" width="100%">
                             <option>1차시</option>
                             <option>수료평과</option>
@@ -43,13 +43,13 @@
                             <input type="checkbox" name="" class="chk" checked>
                             <div class="chk_box" @click="toggleMarketing()"  ><span class="ball"></span><ul class="txt"><li class="m1"></li><li class="m2"></li></ul></div>
                           </label>
-                            <!-- <slp-switch :classObject="{'fr': true}" @click="toggleMarketing()" /> -->                            
+                            <!-- <slp-switch :classObject="{'fr': true}" @click="toggleMarketing()" /> -->
                         </li>
                         <li>
                           <!-- list -->
                             <div class="txt-edit" v-if="marketingFlag">
                               <p class="label-tit14 mb8">내용</p>
-                              <textarea class="w100p gr_box" rows="5" >본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 
+                              <textarea class="w100p gr_box" rows="5" >본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다. 본질적인 조건을 생각해보다가 떠오른게 있는데 관련 보고 형식과 리더십의 조건에 대한 강의를 참고하는게 좋겠다.
                               </textarea>
                             </div>
                             <!-- //list -->
@@ -65,23 +65,23 @@
                                 <span class="at-num">500KB</span>
                                 <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
                               </div>
-                          </div>                                                             
-                          </li>  
+                          </div>
+                          </li>
                       </ul>
-                      <!-- 추가 리스트 --> 
+                      <!-- 추가 리스트 -->
                   </div>
                 </div>
             </div>
             <!-- //contents -->
 
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
-                <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a> 
+            <div class="fixBtmBtn abs">
+                <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a>
             </div>
             <!-- //floatingbtn -->
 
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 

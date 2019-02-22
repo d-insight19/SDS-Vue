@@ -1,29 +1,29 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery drawer bpo">
-            
+
             <!-- header -->
             <div id="header" class="fixed">
                 <button type="button" class="btn only close"><span class="ico">닫기</span></button>
                 <p class="header_text font_18">일괄 출석체크</p><button type="button" class="btn14 color_clr2">저장</button>
             </div>
             <!-- //header -->
-       
-        <div id="content" class="etc">
+
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
 
                 <div class="tabCnt dpb pt0"><!-- class "dpb"으로 컨텐츠 영역 노출 / 비노출 제어 -->
-                                                        
+
                         <p class="title_line">
                             <span class="title_txt">학습자</span><span class="total_txt">총</span><strong class="fwb600 count">9</strong>명
-                            <span class="fr time">02시간 00분</span><span class="fr status">Attend</span> 
+                            <span class="fr time">02시간 00분</span><span class="fr status">Attend</span>
                         </p>
-                        <!-- list -->                 
-                        <ul class="multiList type1">                         
+                        <!-- list -->
+                        <ul class="multiList type1">
                             <li>
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
                                 <span class="label-tit">모두</span>
@@ -37,7 +37,7 @@
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
                                 <span class="label-tit">홍길동</span>
                                 <span class="fr time">02시간 00분</span><span class="fr status">Attend</span>
-                            </li> 
+                            </li>
                              <li>
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
                                 <span class="label-tit">홍길동</span>
@@ -47,21 +47,16 @@
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
                                 <span class="label-tit">홍길동</span>
                                 <span class="fr status">Absent</span>
-                            </li> 
+                            </li>
                             <li>
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
                                 <span class="label-tit">홍길동</span>
                                 <span class="fr time">02시간 00분</span><span class="fr status">Attend</span>
-                            </li> 
+                            </li>
                             <li>
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
                                 <span class="label-tit">홍길동</span>
                                 <span class="fr time">01시간 10분</span><span class="fr status">Late</span>
-                            </li>  
-                            <li>
-                                <slp-checkbox value="true" class="mr10"></slp-checkbox>
-                                <span class="label-tit">홍길동</span>
-                                <span class="fr time">02시간 00분</span><span class="fr status">Attend</span>
                             </li>
                             <li>
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
@@ -82,18 +77,23 @@
                                 <slp-checkbox value="true" class="mr10"></slp-checkbox>
                                 <span class="label-tit">홍길동</span>
                                 <span class="fr time">02시간 00분</span><span class="fr status">Attend</span>
-                            </li>                                                           
+                            </li>
+                            <li>
+                                <slp-checkbox value="true" class="mr10"></slp-checkbox>
+                                <span class="label-tit">홍길동</span>
+                                <span class="fr time">02시간 00분</span><span class="fr status">Attend</span>
+                            </li>
                         </ul>
-                                    
+
                         <!-- //list -->
-                </div>   
+                </div>
 
             </div>
           </div>
         </div>
 
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

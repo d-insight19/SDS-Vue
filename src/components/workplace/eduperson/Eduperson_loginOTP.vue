@@ -1,66 +1,52 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery eduperson_login">
-        <div id="content" class="etc">
+        <!-- header -->
+        <div id="header" class="" >
+          <button type="button" class="btn only prev"><span class="ico">이전</span></button>
+        </div>
+        <!-- //header -->
+        <div id="content" class="normal">
           <div class="cell">
             <div class="inner">
-                <div id="dropdown_wrap" v-show="langFlag">
-                  <div id="sheetDim" @click="changeLang()"></div>
-                  <div id="dropdown">            
-                    <ul  @click="changeLang()">
-                      <!-- 
-                        position 이 변경되어야 한다면 option 처리 로 top , left or right 값 필요 혹은, css로 특정 페이지에서 직접 css로 입력             
-                      -->
-                      <li>한국어</li>
-                      <li>중국어</li>
-                      <li>베트남어</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="edu_lang"  @click="changeLang()">
-                    <span>한국어</span>
-                    <span class="ico"></span>
-                </div>
                 <p class="edu_logintitle1">멀티캠퍼스</p>
                 <p class="edu_logintitle2">교육관리시스템</p>
-
-                <fieldset class="loginBox">
-                    <legend>아이디 비밀번호 입력</legend>
-                    <ul class="loginList">
-                        <li>
-                            <slp-text-field classObject="underline" placeholder="아이디"></slp-text-field>
-                        </li>
-                        <li>
-                            <slp-text-field classObject="underline" type="password" placeholder="비밀번호" clearable></slp-text-field>
-                        </li>
-                    </ul>
-
-                    <div class="loginChk">
-                        <slp-checkbox>아이디 저장</slp-checkbox>
-                        <slp-checkbox>자동 로그인</slp-checkbox>
-                    </div>
-
-                    <div class="loginBtn">
-                        <button type="button" class="btn md clr1">로그인</button>
-                    </div>
-                </fieldset>
-
-                <ul class="loginEtcBtn">
-                    <li><a href="#">아이디찾기</a></li>
-                    <li><a href="#">비밀번호 찾기</a></li>
+                <p class="label-tit-20 mb18">OTP 인증 선택</p>
+                <ul class="ul-block">
+                  <li>
+                      <label class="labelRdo">
+                          <input type="radio" class="rdo" name="test-rdo">
+                          <span class="ico">
+                              <span class="innerCircle"></span>
+                          </span>
+                          <span class="label">SMS</span>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="labelRdo">
+                          <input type="radio" class="rdo" name="test-rdo" checked>
+                          <span class="ico">
+                              <span class="innerCircle"></span>
+                          </span>
+                          <span class="label">이메일</span>
+                      </label>
+                  </li>
                 </ul>
 
+                <div class="loginBtn">
+                    <button type="button" class="btn md clr1">OTP 생성</button>
+                </div>
             </div>
           </div>
         </div>
-        
-        
+
+
 
       </div>
-      <!-- //container -->     
+      <!-- //container -->
     </div>
     <!-- //wrap -->
 

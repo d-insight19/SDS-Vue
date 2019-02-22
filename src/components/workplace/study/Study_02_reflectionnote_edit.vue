@@ -1,10 +1,10 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery study_reflection pd70">
-          
+
             <!-- header -->
             <div id="header" class="fixed">
                 <div class="header_inner line1">
@@ -16,7 +16,7 @@
             </div>
             <!-- //header -->
 
-            <div id="content" class="etc">
+            <div id="content" class="normal">
                 <div class="cell">
                     <div class="inner" style="padding-top:78px;">
                         <ul class="multiList type2 op25">
@@ -39,20 +39,20 @@
                                 <span class="at-num">500KB</span>
                                 <span class="ico deletemode_20_black" @click="deleteFileList(index)"></span>
                                 </div>
-                            </div>                                                             
-                            </li>  
+                            </div>
+                            </li>
                         </ul>
-                        <!-- 추가 리스트 --> 
+                        <!-- 추가 리스트 -->
                     </div>
                 </div>
             </div>
             <!-- floatingbtn -->
-            <div class="fixBtmBtn abs">  
-                <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a> 
+            <div class="fixBtmBtn abs">
+                <a href="#" class="btn sm w100p add" @click="addList1()" ><span class="ico"></span>파일 추가</a>
             </div>
-            <!-- //floatingbtn -->                
+            <!-- //floatingbtn -->
         </div>
-        <!-- //container --> 
+        <!-- //container -->
     </div>
     <!-- //wrap -->
 
