@@ -9973,7 +9973,7 @@
         </td>
         <td></td>
       </tr>
-      <tr class="new">
+      <tr>
       <td align="center">542</td>
         <td>기타</td>
         <td>　</td>
