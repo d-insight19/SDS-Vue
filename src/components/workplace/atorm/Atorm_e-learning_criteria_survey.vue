@@ -1,7 +1,7 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
         <!-- container -->
         <div id="container" class="mediaquery atorm">
 
@@ -92,7 +92,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <!-- //list -->       
+                        <!-- //list -->
                         <p class="hr"></p>
 
                         <p class="label-tit18">주관식</p>
@@ -113,12 +113,12 @@
                                 </div>
                             </li>
                         </ul>
-                        <!-- //list -->    
+                        <!-- //list -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- //container -->    
+        <!-- //container -->
 
     </div>
     <!-- //wrap -->
