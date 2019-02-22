@@ -326,7 +326,7 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
-        audioFlag:true,
+        audioFlag:'',
         innerRipple: false,
         halfRight: false,
         halfLeft: false,
@@ -428,9 +428,22 @@ export default {
                 // $('.inner_ripple').css('display', 'none'); 
                 // $('.half_left').css('display', 'block');
             }, 600);       
+    },
+    typeAudio () {
+        if( this.option.loType === 'audio'){
+            console.log(audio)
+            this.audioFlag = true
+        } else {
+            console.log(movie)
+            this.audioFlag = false
+        }
     }
   },
+  created () {
+         this.typeAudio();
+  },
   mounted () {
+       
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
         
@@ -554,7 +567,10 @@ export default {
                     /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
                 }
             });
-        }                                        
+        }
+        
+        
+
   }
 }
 </script>
