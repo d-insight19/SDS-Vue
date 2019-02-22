@@ -15,7 +15,7 @@
             </ul>
           </div>
         </div>       
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <strong class="label-tit-14 fwb" style=" display:inline-block; margin-bottom:8px;">회사명 검색</strong>

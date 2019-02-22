@@ -1,5 +1,5 @@
 <template>
-<!-- eslint-disable-->
+    <!-- eslint-disable-->
     <div>
         <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
@@ -7,14 +7,12 @@
         <ul class="studyList">
             <li>
                 <div class="download_details">
-
                     <div class="edit_parents">
                         <div class="edit_child edit_child_frst">
                             <label for="id_save" class="labelChk">
                                 <input id="id_save" type="checkbox" name="id_save" class="chk"> <span class="ico"></span>
                             </label>
                         </div>
-
                         <div class="edit_child edit_child_snd">
                             <div class="text_wrap position_relative">
                                 <p class="icon_txt">3차시</p>
@@ -37,10 +35,8 @@
 
                 </div>
             </li>
-            <li class="compClasses">
-
+            <li :class="compClasses">
                 <div class="download_details">
-
                     <div class="edit_parents">
                         <div class="edit_child edit_child_frst">
                             <label for="id_save" class="labelChk">
@@ -66,7 +62,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div v-show="defaultFlag">
                         <div class="edit_parents">
                             <div class="edit_child edit_child_frst sub_content_title_col"></div>
@@ -114,12 +109,12 @@
                                                     </label>
                                                 </div>
                                                 <div class="edit_child edit_child_snd">
-                                                    <div class="sub_download_details clr4 on d_flex align_items_top">
+                                                    <div class="sub_download_details clr3 on d_flex align_items_top">
                                                         <div class="icon_wrap">
                                                             <span class="ico play_28"></span>
                                                         </div>
                                                         <div class="txt_wrap border_clr1 flex_1">
-                                                            <p class="title">4차시 2 LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                            <p class="title">5차시 2 LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                                             <ul class="info">
                                                                 <li class="">
                                                                     <span class="ico ongoing_16"></span>
@@ -148,7 +143,7 @@
                                                             <span class="ico ebook_20"></span>
                                                         </div>
                                                         <div class="txt_wrap border_clr1 flex_1">
-                                                            <p class="title">4차시 3 LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 E-book / HTML5</p>
+                                                            <p class="title">6차시 3 LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 E-book / HTML5</p>
                                                             <ul class="info">
                                                                 <li class="">
                                                                     <span class="ico ongoing_16"></span>
@@ -168,9 +163,7 @@
                             </li>
                         </ul>
                     </div>
-
                 </div><!-- //download_details -->
-
             </li>
         </ul>
         <!-- //list -->
@@ -186,7 +179,7 @@ import $ from 'jquery'
 window.$ = $
 window.jQuery = $
 export default {
-    name: 'studyList',
+    name: 'studyListEdit',
 
     data () {
         return {
@@ -203,6 +196,7 @@ export default {
         compClasses: function(){
             return{
                 open: this.defaultFlag,
+                type1: this.defaultFlag,
             }
         }
     }

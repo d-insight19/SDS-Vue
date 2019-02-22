@@ -8,7 +8,7 @@
             <button type="button" class="btn only close"><span class="ico"></span></button>
             <p class="header_text font_18">회원 검색</p>
           </div>
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
 

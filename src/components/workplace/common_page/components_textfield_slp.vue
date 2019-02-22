@@ -17,7 +17,7 @@
 
             <!-- 2019-01-13 : underline형태가 아닌 비밀번호의 경우 eye 버튼의 위치가 달라 클래스 추가 -->
             <slp-text-field type="password" placeholder="8~12자 영문 대소문자,숫자,특수문자 조합" error message="8~12자의 영문자, 특수문자 조합만 가능합니다."></slp-text-field>
-            
+
             <ul class="loginList">
                 <li>
                     <!-- X 아이콘이 필요없는 input -->
@@ -64,7 +64,7 @@
                     <slp-text-field type="password" placeholder="비밀번호" error message="비밀번호를 입력해주세요." clearable></slp-text-field>
                 </li>
 			</ul>
-            
+
             <ul class="loginList">
 				<li>
                      <!-- X 아이콘이 필요없는 input -->

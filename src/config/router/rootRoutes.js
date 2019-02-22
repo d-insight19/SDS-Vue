@@ -20,6 +20,9 @@ import ComponentsProgressbar from '~workplace/common_page/components_progressbar
 import ComponentsStepper from '~workplace/common_page/components_stepper'
 import ComponentsCard from '~workplace/common_page/components_card'
 import ComponentsPopup from '~workplace/common_page/components_popup'
+import ComponentsPopupEtc from '~workplace/common_page/components_popup_etc'
+import ComponentsPopupEtc1 from '~workplace/common_page/components_popup_etc1'
+import ComponentsPopupEtc2 from '~workplace/common_page/components_popup_etc2'
 import ComponentsHeader from '~workplace/common_page/components_header'
 import ComponentsMainheader from '~workplace/common_page/components_mainheader'
 import ComponentsTabheader from '~workplace/common_page/components_tabheader'
@@ -185,7 +188,7 @@ import StudyList from '~workplace/study/Study_list'
 import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
-
+import Study0218studylistdownload_ from '~workplace/study/Study_0218studylist_download_'
 import Studystudynote from '~workplace/study/Study_studynote'
 import Studystudynoteall01 from '~workplace/study/Study_studynote_all_01'
 import Studystudynoteall02snacbar from '~workplace/study/Study_studynote_all_02_snacbar'
@@ -294,6 +297,12 @@ import Studyfaq from '~workplace/study/Study_faq'
 import Studysurvey from '~workplace/study/Study_survey'
 import Studynotice from '~workplace/study/Study_notice'
 import StudynoticeAlarm from '~workplace/study/Study_notice_alarm'
+import Studydata from '~workplace/study/Study_data'
+import Studydatadetail from '~workplace/study/Study_data_detail'
+import Studydiscuss from '~workplace/study/Study_discuss'
+import Studyreflectionnote from '~workplace/study/Study_reflectionnote'
+import Studyqpqa from '~workplace/study/Study_qpqa'
+import Studyinquiry from '~workplace/study/Study_inquiry'
 
 import MainControl from '~workplace/main/Main_control'
 import MainCurateUI01 from '~workplace/main/Main_curateUI01'
@@ -480,6 +489,10 @@ import regiclassRegisterBigdata02 from '~workplace/regiclass/regiclass_register_
 import regiclassRegisterBigdataPro from '~workplace/regiclass/regiclass_register_bigdata_pro'
 import regiclassRegisterAcademy from '~workplace/regiclass/regiclass_register_academy'
 import regiclassRegisterPhoto from '~workplace/regiclass/regiclass_register_photo'
+import regiclassdetailviewcoursemooc from '~workplace/regiclass/regiclass_detailview_course_mooc'
+import regiclassdetailviewcourseset from '~workplace/regiclass/regiclass_detailview_course_set'
+import regiclassdetailviewcoursemixed from '~workplace/regiclass/regiclass_detailview_course_mixed'
+import regiclassdetailviewcourseunion from '~workplace/regiclass/regiclass_detailview_course_union'
 
 import DrawerAlerm from '~workplace/drawer/Drawer_alerm'
 import DrawerMyinfo from '~workplace/drawer/Drawer_myinfo'
@@ -817,6 +830,21 @@ var rootRoutes = [
     path: '/components_popup',
     name: 'components_popup',
     component: ComponentsPopup
+  },
+  {
+    path: '/components_popup_etc',
+    name: 'components_popup_etc',
+    component: ComponentsPopupEtc
+  },
+  {
+    path: '/components_popup_etc1',
+    name: 'components_popup_etc1',
+    component: ComponentsPopupEtc1
+  },
+  {
+    path: '/components_popup_etc2',
+    name: 'components_popup_etc2',
+    component: ComponentsPopupEtc2
   },
   {
     path: '/components_header',
@@ -1689,6 +1717,11 @@ var rootRoutes = [
     component: Study0218studylistdownload
   },
   {
+    path: '/Study_0218studylist_download_',
+    name: 'Study_0218studylist_download_',
+    component: Study0218studylistdownload_
+  },
+  {
     path: '/Study_studynote',
     name: 'Study_studynote',
     component: Studystudynote
@@ -2222,6 +2255,36 @@ var rootRoutes = [
     path: '/Study_notice_alarm',
     name: 'Study_notice_alarm',
     component: StudynoticeAlarm
+  },
+  {
+    path: '/Study_data',
+    name: 'Study_data',
+    component: Studydata
+  },
+  {
+    path: '/Study_data_detail',
+    name: 'Study_data_detail',
+    component: Studydatadetail
+  },
+  {
+    path: '/Study_discuss',
+    name: 'Study_discuss',
+    component: Studydiscuss
+  },
+  {
+    path: '/Study_reflectionnote',
+    name: 'Study_reflectionnote',
+    component: Studyreflectionnote
+  },
+  {
+    path: '/Study_qpqa',
+    name: 'Study_qpqa',
+    component: Studyqpqa
+  },
+  {
+    path: '/Study_inquiry',
+    name: 'Study_inquiry',
+    component: Studyinquiry
   },
   // {
   //   path: '/regiclass_detailview_licence',
@@ -3141,6 +3204,26 @@ var rootRoutes = [
     path: '/regiclass_register_photo',
     name: 'regiclass_register_photo',
     component: regiclassRegisterPhoto
+  },
+  {
+    path: '/regiclass_detailview_course_mooc',
+    name: 'regiclass_detailview_course_mooc',
+    component: regiclassdetailviewcoursemooc
+  },
+  {
+    path: '/regiclass_detailview_course_set',
+    name: 'regiclass_detailview_course_set',
+    component: regiclassdetailviewcourseset
+  },
+  {
+    path: '/regiclass_detailview_course_mixed',
+    name: 'regiclass_detailview_course_mixed',
+    component: regiclassdetailviewcoursemixed
+  },
+  {
+    path: '/regiclass_detailview_course_union',
+    name: 'regiclass_detailview_course_union',
+    component: regiclassdetailviewcourseunion
   },
   {
     path: '/login_join_terms',
@@ -4178,4 +4261,5 @@ var rootRoutes = [
     component: BPOsubjectlist02
   }
 ]
+
 export default rootRoutes

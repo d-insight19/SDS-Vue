@@ -1,12 +1,12 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">        
+    <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery atorm flip pd70">
 
         <!-- header  -->
-        <div id="header" class="expand">  
+        <div id="header" class="expand">
           <div class="hide_header pl18 pr18" style="padding-top:36px;">
             <p class="label-tit30 pdb12">집합 제작</p>
             <div class="stepper mb30">
@@ -27,34 +27,34 @@
         <!-- //header -->
         <div id="content" class="normal">
           <div class="cell">
-            <div class="inner pdb20">
+            <div class="inner">
 
                 <ul>
-                    <li>                       
-                        <div class="confirm_item_detail_inner pdb27 pt0">
+                    <li>
+                        <div class="confirm_item_detail_inner pt0">
                             <!-- list -->
                             <div class="cell">
-                                <div class="atorm_material">     
+                                <div class="atorm_material">
                                     <div class="mb12">
                                         <span class="chip clr1 font_13">모듈 1</span>
                                         <span class="fr ico deletemode_20"></span>
-                                    </div>                              
-                                    
+                                    </div>
+
                                     <div class="underline_parents">
-                                    <slp-text-field classObject="underline" value="데이터 특성 알아보기"></slp-text-field>   
-                                    </div>                      
+                                    <slp-text-field classObject="underline" value="데이터 특성 알아보기"></slp-text-field>
+                                    </div>
                                 </div>
                             </div>
                             <!-- //list -->
 
                             <div class="cell">
-                                <div class="atorm_material">  
-                                <h2 class="label-tit16 color_clr1 fwb600 mt16">커리큘럼</h2>                                 
-                                    
+                                <div class="atorm_material">
+                                <h2 class="label-tit16 color_clr1 fwb600 mt16">커리큘럼</h2>
+
                                     <!-- list -->
                                     <ul>
                                         <li class="open">
-                                            <div class="download_detail mt13">                                                
+                                            <div class="download_detail mt13">
                                                 <span class="label-tit16 color_clr1 fwb600">1일차</span>
                                                 <span class="fr ico deletemode_20"></span>
                                             </div>
@@ -63,26 +63,26 @@
                                                     <li class="mb24">
                                                         <p class="label-tit13 color_clr1 fwb600">1교시 <span class="fr ico deletemode_20"></span></p>
                                                         <div class="back_none">
-                                                            <slp-text-field classObject="underline" value="데이터베이스의 개념과 특성"></slp-text-field> 
+                                                            <slp-text-field classObject="underline" value="데이터베이스의 개념과 특성"></slp-text-field>
                                                         </div>
                                                     </li>
                                                     <li class="mb24">
                                                         <p class="label-tit13 color_clr1 fwb600">2교시 <span class="fr ico deletemode_20"></span></p>
                                                         <div class="back_none">
-                                                            <slp-text-field classObject="underline" value="데이터베이스의 개념과 특성"></slp-text-field> 
+                                                            <slp-text-field classObject="underline" value="데이터베이스의 개념과 특성"></slp-text-field>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <p class="label-tit13 mono_50 fwr">3교시</p>
                                                         <div class="back_none">
-                                                            <slp-text-field classObject="underline" placeholder="학습 목표를 입력하세요"></slp-text-field> 
+                                                            <slp-text-field classObject="underline" placeholder="학습 목표를 입력하세요"></slp-text-field>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                 </ul>
-                                            </div>                                           
+                                            </div>
                                         </li>
                                          <li class="open">
-                                            <div class="download_detail mt13">                                                
+                                            <div class="download_detail mt13">
                                                 <span class="label-tit16 color_clr1 fwb600">2일차</span>
                                                 <span class="fr ico deletemode_20"></span>
                                             </div>
@@ -91,17 +91,17 @@
                                                     <li class="mb24">
                                                         <p class="label-tit13 color_clr1 fwb600">1교시 <span class="fr ico deletemode_20"></span></p>
                                                         <div class="back_none">
-                                                            <slp-text-field classObject="underline" value="데이터베이스의 개념과 특성"></slp-text-field> 
+                                                            <slp-text-field classObject="underline" value="데이터베이스의 개념과 특성"></slp-text-field>
                                                         </div>
-                                                    </li>                                                    
+                                                    </li>
                                                     <li>
                                                         <p class="label-tit13 mono_50 fwr">2교시</p>
                                                         <div class="back_none">
-                                                            <slp-text-field classObject="underline" placeholder="학습 목표를 입력하세요"></slp-text-field> 
+                                                            <slp-text-field classObject="underline" placeholder="학습 목표를 입력하세요"></slp-text-field>
                                                         </div>
-                                                    </li> 
+                                                    </li>
                                                 </ul>
-                                            </div>                                           
+                                            </div>
                                         </li>
                                         <slp-button class="sm add w100p mt16 mb20" @click="addList1()" ><span class="ico"></span>일자 추가</slp-button>
                                         <li class="open">
@@ -109,7 +109,7 @@
                                                 <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
                                             </div>
                                             <div class="sub_content">
-                                                <!-- list add work -->                                                
+                                                <!-- list add work -->
                                                 <ul class="multiList type2">
                                                     <li class="border_none">
                                                         <div class="download_detail">
@@ -133,7 +133,7 @@
                                                             <span class="fr ico deletemode_20"></span>
                                                         </div>
                                                     </li>
-                                                </ul>                                                
+                                                </ul>
                                                 <!-- //list add work -->
                                                 <div class="sub_content_add">
                                                     <span class="chip clr2 font_14">+ 레포트 추가</span>
@@ -142,10 +142,10 @@
                                         </li>
                                        <li class="open">
                                             <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
-                                            </div> 
-                                            <div class="sub_content"> 
-                                                <div class="sub_content_type2"> 
+                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>
+                                            </div>
+                                            <div class="sub_content">
+                                                <div class="sub_content_type2">
                                                     <ul class="score_list">
                                                         <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
                                                         </li>
@@ -171,7 +171,7 @@
                                                     </ul>
 
                                                     <!-- 문제 리스트 -->
-                                                    <div class="evaluationList_box">                                                        
+                                                    <div class="evaluationList_box">
                                                         <ul class="evaluationList">
                                                             <li>
                                                                 <p class="multiline font_16 mono_80">
@@ -190,34 +190,34 @@
                                                             <li>
                                                                 <p class="multiline line2 font_16 mono_80">
                                                                     <span class="ico ox_32"></span>
-                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
+                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다.
                                                                     <span class="ico del"></span>
                                                                 </p>
                                                             </li>
                                                             <li>
                                                                 <p class="multiline line2 font_16 mono_80">
                                                                     <span class="ico multiplechoice_32"></span>
-                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
+                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다.
                                                                     <span class="ico del"></span>
                                                                 </p>
                                                             </li>
                                                             <li>
                                                                 <p class="multiline line2 font_16 mono_80">
                                                                     <span class="ico shortanswer_32"></span>
-                                                                    리스크 분석 프로세스에 대한 설명이다. 다음 중 옳은 것을 고르시오. 
+                                                                    리스크 분석 프로세스에 대한 설명이다. 다음 중 옳은 것을 고르시오.
                                                                     <span class="ico del"></span>
                                                                 </p>
                                                             </li>
-                                                        </ul>                                                                                                               
-                                                    </div> 
-                                                    <!-- //문제리스트 -->                   
-                                                </div>                    
+                                                        </ul>
+                                                    </div>
+                                                    <!-- //문제리스트 -->
+                                                </div>
 
-                                            </div>                                        
-                                        </li>                                       
-                                       
+                                            </div>
+                                        </li>
+
                                     </ul>
-                                    <!-- //list -->                                    
+                                    <!-- //list -->
                                 </div>
                             </div>
 
@@ -235,9 +235,9 @@
               <li><button type="button" class="btn ld clr1">다음</button></li>
             </ul>
         </div>
-        <!-- //floating button --> 
+        <!-- //floating button -->
       </div>
-      <!-- //container -->    
+      <!-- //container -->
 
     </div>
     <!-- //wrap -->
