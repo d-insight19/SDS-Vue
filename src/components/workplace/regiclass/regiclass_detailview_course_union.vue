@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery regiclass">   
+      <div id="container" class="mediaquery regiclass pd70">   
 
         <!-- header -->
         <div id="header" class="tab video">
@@ -168,10 +168,10 @@
         <!-- //header -->
         
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
 
           <div class="cell">
-            <div class="inner mb40">
+            <div class="inner">
                 <img src="@/assets/img/thum_no_L.jpg" class="w100p" alt="">
             </div>
           </div>

@@ -24,12 +24,12 @@
 시됩니다. LO/SO 타이틀은 길이에 상관없
 이 모두 표시됩니다.
 오리엔테이션</span></p></li>
-                            <li><span class="abs-num">+10</span><p><span class="font_16">LO/SO title can be written down without cutting off.</span></p></li>
+                            <li><span class="abs-num mono_40">+10</span><p><span class="font_16">LO/SO title can be written down without cutting off.</span></p></li>
                             <li><span class="abs-num color_clr2">+12</span><p><span class="font_16">LO/SO 타이틀 영역입니다. LO/SO 타
 이틀 영역입니다. LO/SO 타이틀 영역입니다. LO/SO 타이틀 영역입니다.</span></p></li>
-                            <li><span class="abs-num">+12</span><p><span class="font_16">LO/SO 타이틀 영역입니다. LO/SO 타이틀 영역입니다.</span></p></li>
+                            <li><span class="abs-num mono_40">+12</span><p><span class="font_16">LO/SO 타이틀 영역입니다. LO/SO 타이틀 영역입니다.</span></p></li>
                             <li><span class="abs-num color_clr2">+12</span><p><span class="font_16">LO/SO 타이틀 영역입니다. LO/SO 타이틀 영역입니다.</span></p></li>
-                            <li><span class="abs-num">+8</span><p><span class="font_16">LO/SO 타이틀 영역입니다. LO/SO 타이틀 영역입니다.</span></p></li>
+                            <li><span class="abs-num mono_40">+8</span><p><span class="font_16">LO/SO 타이틀 영역입니다. LO/SO 타이틀 영역입니다.</span></p></li>
                         </ul>
                     </div>
                 </div>

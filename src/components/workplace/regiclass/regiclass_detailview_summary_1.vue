@@ -168,7 +168,7 @@
         <!-- //header -->
         
 
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <p class="font_15 fwb mb4">강사(SME)</p>

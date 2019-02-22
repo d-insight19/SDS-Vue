@@ -9,7 +9,7 @@
           <button type="button" class="btn only prev"><span class="ico">이전</span></button>
         </div>
         <!-- //header -->
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
                 <p class="edu_logintitle1">멀티캠퍼스</p>
