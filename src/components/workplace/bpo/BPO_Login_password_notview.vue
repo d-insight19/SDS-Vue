@@ -4,7 +4,7 @@
     <div id="wrap" class="colorCode2">
       <!-- container -->
       <div id="container" class="mediaquery login bpo">
-        <div id="content" class="normal">
+        <div id="content" class="etc">
           <div class="cell">
             <div class="inner">
 
