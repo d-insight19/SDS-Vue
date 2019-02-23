@@ -296,7 +296,7 @@ import StudyReminderDetail from '~workplace/study/Study_reminder_detail'
 import Studyfaq from '~workplace/study/Study_faq'
 import Studysurvey from '~workplace/study/Study_survey'
 import Studynotice from '~workplace/study/Study_notice'
-import StudynoticeAlarm from '~workplace/study/Study_notice_alarm'
+import Studystudynotice from '~workplace/study/Study_studynotice'
 import Studydata from '~workplace/study/Study_data'
 import Studydatadetail from '~workplace/study/Study_data_detail'
 import Studydiscuss from '~workplace/study/Study_discuss'
@@ -2252,9 +2252,9 @@ var rootRoutes = [
     component: Studynotice
   },
   {
-    path: '/Study_notice_alarm',
-    name: 'Study_notice_alarm',
-    component: StudynoticeAlarm
+    path: '/Study_studynotice',
+    name: 'Study_studynotice',
+    component: Studystudynotice
   },
   {
     path: '/Study_data',

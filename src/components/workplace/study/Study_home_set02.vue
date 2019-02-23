@@ -109,31 +109,31 @@
 
         <div id="content" class="normal" style="padding:0;">
 
-          <div class="cell">
+           <div class="cell">
             <div class="inner pt0">
 
                 <div class="filterArea ml-18 mr-18" style="padding:19px;">
                     <p class="font_15 mono_80 fwb dib">전체보기</p>
                     <p class="fr">
-                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
-                        <!-- <span class="ico download"></span> -->
+                        <span class="ico filter" style="position:static;"></span>
                     </p>
                 </div>
-                <h2 class="label-tit18 mb0">제이크 냅 오프라인교육</h2>
-                <!-- list -->
+                <p class="label-tit-18 mt19 ">제이크 냅 오프라인교육</p>
+
                 <ul class="multiList type2">
                     <li>
-                        <div class="download_detail">
+                        <div class="download_detail  done">
                             <div class="icon_wrap">
                                 <span class="ico ic_set_line_28"></span>
                             </div>
+
                             <div class="txt_wrap">
                                 <p class="icon_txt color_clr3">N일차</p>
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
                                 <dl class="info">
                                     <dd class="font_13">
                                         <span class="mr10">일시</span>
-                                        <span class="mono_65">2018.01.01 - 2018.02.01</span>
+                                        <span>2018.01.01 - 2018.02.01</span>
                                     </dd>
                                     <dd class="font_13 mt2">
                                         <span class="mr10">시간</span>
@@ -148,155 +148,95 @@
                                         <span class="mono_65">멀티캠퍼스 6층 602호</span>
                                     </dd>
                                 </dl>
-                                <ul class="info mt15">
-                                    <li class="d-block">
-                                        <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="fr mono_65">교재있음</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                     <li>
-                        <div class="download_detail clr1 wh">
-                            <div class="icon_wrap">
-                                <span class="ico set_line_wh_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N일차</p>
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
-                                <dl class="info">
-                                    <dd class="font_13">
-                                        <span class="mr10  wh">일시</span>
-                                        <span class="wh">2018.01.01 - 2018.02.01</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10  wh">시간</span>
-                                        <span class="wh">09:00~11:00</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10 wh">강사</span>
-                                        <span class="wh">강성윤, 김윤숙</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10 wh">장소</span>
-                                        <span class="wh">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
-                                <ul class="info mt15">
-                                    <li class="d-block">
-                                        <span class="ico check_14 wh"></span>
-                                        <span class="wh">학습완료</span>
-                                        <span class="fr mono_65 wh">교재있음</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download_detail">
-                            <div class="icon_wrap">
-                                <span class="ico ic_set_line_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N일차</p>
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
-                                <dl class="info">
-                                    <dd class="font_13">
-                                        <span class="mr10">일시</span>
-                                        <span class="mono_65">2018.01.01 - 2018.02.01</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">09:00~11:00</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">강사</span>
-                                        <span class="mono_65">강성윤, 김윤숙</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
-                                <ul class="info mt15">
-                                    <li class="d-block">
-                                        <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-                                        <span class="fr mono_65">교재있음</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download_detail">
-                            <div class="icon_wrap">
-                                <span class="ico ic_set_line_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N일차</p>
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
-                                <dl class="info">
-                                    <dd class="font_13">
-                                        <span class="mr10">일시</span>
-                                        <span class="mono_65">2018.01.01 - 2018.02.01</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">09:00~11:00</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">강사</span>
-                                        <span class="mono_65">강성윤, 김윤숙</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
-                                <ul class="info mt15">
-                                    <li class="d-block">
-                                        <span class="ico complete_14"></span>
-                                        <span>미진행</span>
-                                        <span class="fr mono_65">교재있음</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download_detail">
-                            <div class="icon_wrap">
-                                <span class="ico ic_set_line_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N일차</p>
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
-                                <dl class="info">
-                                    <dd class="font_13">
-                                        <span class="mr10">일시</span>
-                                        <span class="mono_65">2018.01.01 - 2018.02.01</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">09:00~11:00</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">강사</span>
-                                        <span class="mono_65">강성윤, 김윤숙</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
-                                <ul class="info mt15">
+                                <div class="fr">
+                                <ul class="info mt12 dib">
                                     <li class="">
-                                        <span class="ico lock_16"></span>
-                                        <span>학습불가</span>
-                                        <span class="fr mono_65">교재있음</span>
+                                        <span class="ico check_14"></span>
+                                        <span class="mr6">학습완료</span>
+                                    </li>
+                                </ul>
+                                <span class="fr mono_65 mt15" >
+                                                교재있음
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                               <span class="ico ic_set_line_28"></span>
+                            </div>
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N일차</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                <dl class="info">
+                                    <dd class="font_13">
+                                        <span class="mr10">일시</span>
+                                        <span>2018.01.01 - 2018.02.01</span>
+                                    </dd>
+                                    <dd class="font_13 mt2">
+                                        <span class="mr10">시간</span>
+                                        <span class="mono_65">09:00~11:00</span>
+                                    </dd>
+                                    <dd class="font_13 mt2">
+                                        <span class="mr10">강사</span>
+                                        <span class="mono_65">강성윤, 김윤숙</span>
+                                    </dd>
+                                    <dd class="font_13 mt2">
+                                        <span class="mr10">장소</span>
+                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
+                                    </dd>
+                                </dl>
+                                <div class="fr_wrap">
+                                <ul class="info mt12 dib">
+                                    <li class="">
+                                        <span class="ico ongoing_16"></span>
+                                        <span class="mr6">진행중</span>
+                                    </li>
+                                </ul>
+                                <span class="fr mono_65 mt15" >
+                                                교재있음
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>                   
+                </ul>
+
+                <p class="label-tit-18 " style="margin-top:26px;">셀프 이노베이션 사례 교육</p>
+
+                <ul class="multiList type2">
+                     <li>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
+                                <span class="ico ic_set_line_28"></span>
+                            </div>
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">N일차</p>
+                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                <dl class="info">
+                                    <dd class="font_13">
+                                        <span class="mr10">일시</span>
+                                        <span>2018.01.01 - 2018.02.01</span>
+                                    </dd>
+                                    <dd class="font_13 mt2">
+                                        <span class="mr10">시간</span>
+                                        <span class="mono_65">09:00~11:00</span>
+                                    </dd>
+                                    <dd class="font_13 mt2">
+                                        <span class="mr10">강사</span>
+                                        <span class="mono_65">강성윤, 김윤숙</span>
+                                    </dd>
+                                    <dd class="font_13 mt2">
+                                        <span class="mr10">장소</span>
+                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
+                                    </dd>
+                                </dl>
+                                <ul class="info mt12 dib">
+                                    <li class="">
+                                        <span class="ico complete_14"></span>
+                                        <span class="mr6">미진행</span>
                                     </li>
                                 </ul>
                             </div>
@@ -304,49 +244,9 @@
                     </li>
                 </ul>
 
-                <div class="bot-wrap ml-18 mr-18">
-                    <h2 class="h-tit2 fwb600" style="margin-top:4px; margin-bottom:15px;">연관 콘텐츠 추천</h2>
-                    <div class="scroll-x type2">
-                        <!-- list -->
-                        <ul class="thumList type2">
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="in">
-                                <a href="#" class="thum">
-                                    <div class="thumbnail">
-                                        <img src="@/assets/img/thum_no_m.jpg" class="thumImg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#" class="tit">만화로 배우는 알기 쉬운 경영 기초전략</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- //list -->
-                    </div>
-                </div>
 
             </div>
           </div>
-
         </div>
 
       </div>
@@ -557,7 +457,7 @@ export default {
                 // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
                 // if ($wTop >= $hederTab-player_height )
-                if ($wTop >= 176 )
+                if ($wTop >= 0 )
                 {
                     // $parent.addClass('fixed').css({'margin-top': $targetH });
                     $parent.addClass('fixed')

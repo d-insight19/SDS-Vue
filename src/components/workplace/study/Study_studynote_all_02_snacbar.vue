@@ -238,7 +238,8 @@
                     <li style="padding: 9px 0;">
                         <span class="tar">
                             <dl class="pipe-group type2">
-                                <dd class=""><span class="ico note blue"></span> 나의 노트만</dd>
+                                <!-- note 아이콘 다운로드불가 디자인팀에 요청하셔야될거같습니다 -->
+                                <dd class=""><span class="ico note blue"></span> 나의 노트만</dd> 
                                 <dd class="mono_80">전체폴더 <span class="ico ico_dropdown16 gr"></span> </dd>
                             </dl>
                         </span>
@@ -286,8 +287,8 @@
                         <div class="in">
                             <p>노트 스크랩이 완료되었습니다.</p>
                             <div class="toastBtnWrap">
-                                <a href="#" @click="snacToggle">실행취소</a>
-                                <a href="#">목록보기</a>
+                                <a href="#">실행취소</a>
+                                <a href="#" >목록보기</a>
                             </div>
                         </div>
                     </div>

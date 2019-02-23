@@ -10,10 +10,53 @@
 
 /*atorm splash*/
 
-.splash_action{position: absolute; bottom: 0; left: -100%;}
-.splash_action2{position: absolute; bottom: 0;right: -100%;}
-.splash_action3{position: absolute; right:-100%; bottom: 455px;}
+.splash_action{position: absolute; bottom: 0; left: 0%;}
+.splash_action2{position: absolute; bottom: 0;right: 0%;}
+.splash_action3{position: absolute; right:0%; top:20%;}
 .splash_atorm{position: absolute;bottom: 336px;left: 11%;}
+
+.fade-enter-active, .fade-leave-active {transition: opacity 7s;}
+.fade-enter, .fade-leave-to {opacity: 0;}
+.splash_action{animation-duration: 1.5s;animation-name: slidein;}
+.splash_action2{animation-duration: 3.5s;animation-name: slideinbottom;}
+.splash_action3{animation-duration: 5.5s;animation-name: slideintop;}
+.slidein {/* -moz-animation-iteration-count: 3;
+-webkit-animation-iteration-count: 3;
+animation-iteration-count: 3; */
+-moz-animation-direction: alternate;
+-webkit-animation-direction: alternate;
+animation-direction: alternate;}
+@keyframes slidein {
+from {
+    left:-100%;
+    opacity: 0;
+}
+to {
+    left:0;
+    opacity: 1;
+}
+} 
+@keyframes slideinbottom{
+from {
+    bottom:-100%;
+    opacity: 0;
+}
+to {
+    bottom:0;
+    opacity: 1;
+}
+}
+@keyframes slideintop{
+from {
+    top:-100%;
+    opacity: 0;
+}
+
+to {
+    top:20%;
+    opacity: 1;
+}
+} 
 
 // 로그인 - 연수원 찾기
 .trainIntro{
@@ -1599,7 +1642,7 @@ label.rdo .label{position: relative;}
 
 
 // 모듈명이 없을때
-#container.courseware .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 32px 20px 22px 23px; margin-top:12px;}
+#container.courseware .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%;padding: 18px 20px 20px 16px;margin-top:12px;}
 #container.courseware .download_detail .txt_wrap {border-bottom: 0 none !important; padding-bottom:0 !important;}
 #container.courseware .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:5px;}
 #container.courseware .download_detail .txt_wrap .title {font-weight:500; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}

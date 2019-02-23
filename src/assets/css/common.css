@@ -129,6 +129,7 @@
 .ico.num-cir{width: 16px;height: 16px;position: absolute;background: url("../img/img_number_bg.png") no-repeat;}
 .ico.agree{width: 16px;height: 16px;background: url("../img/ic_mychoice_agree.png") no-repeat;}
 .ico.check_24_blue {width:24px; height:24px; background: url("../img/ic_check_line_blue_24.png") ;background-size: cover;}
+.ico.check_26_blue {width:26px; height:26px; background: url("../img/ic_check_line_blue_26.png") ;background-size: cover;}
 .ico.close_24_black{width:24px; height:24px; background: url("../img/ic_close_line_24.png") ;background-size: cover;}
 
 /* 추가 이미지 2018-12-24 merry christmas */
