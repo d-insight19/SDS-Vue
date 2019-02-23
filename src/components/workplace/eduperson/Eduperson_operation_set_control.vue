@@ -18,8 +18,8 @@
               <div class="detail_date">
                 <p class="fl select_date">2018.11<span class="ico calender_blue_24"></span></p>
                 <ul class="fr" style="border:1px solid #d9d9d9">
-                  <li class="inb-box fl"><span class="ico gragh" :class="{'blue': tabIdx == 1}" @click="onClick(1)"></span></li>
-                  <li class="inb-box"><span class="ico table " :class="{'blue': tabIdx == 2}" @click="onClick(2)"></span></li>
+                  <li class="dtc fl"><span class="ico gragh" :class="{'blue': tabIdx == 1}" @click="onClick(1)"></span></li>
+                  <li class="dtc"><span class="ico table " :class="{'blue': tabIdx == 2}" @click="onClick(2)"></span></li>
                 </ul>
               </div>
               <p class="hr" style="margin-top:17px; margin-bottom:22px;"></p>

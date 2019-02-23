@@ -162,7 +162,7 @@
 .ico.ico_dropdown16.gr{width:16px; height: 16px; background: url("../img/ic_dropdown_16.png");background-size: cover;}
 .ico.gragh{width:24px;height:24px;background: url("../img/ic_viewgraph_n_24.png") no-repeat; }
 .ico.gragh.blue{width:24px;height:24px;background: url("../img/ic_viewgraph_s_24.png") no-repeat; }
-.ico.table{width:24px;height:24px;background: url("../img/ic_viewtable_n_24.png") no-repeat; }
+.ico.table{width:24px;height:24px;background: url("../img/ic_viewtable_n_24.png") no-repeat; min-width: inherit;}
 .ico.table.blue{width:24px;height:24px;background: url("../img/ic_viewtable_s_24.png") no-repeat; }
 
 
@@ -279,6 +279,7 @@
 .dpn {display:none !important;}
 .dpb {display:block !important;}
 .dib {display:inline-block !important;}
+.dtc {display: table-cell;}
 .oh{overflow:hidden;}
 
 

@@ -265,7 +265,7 @@
 import EdupersonOperationSetGraph from './Eduperson_operation_set_graph'
 import EdupersonOperationSetTable from './Eduperson_operation_set_table'
 export default {
-  name: 'Eduperson_operation_set_control',
+  name: 'Eduperson_Operation_autonomy_report_graph',
   components: {'Eduperson_operation_set_graph': EdupersonOperationSetGraph, 'Eduperson_operation_set_table': EdupersonOperationSetTable},
   /* vue lifecycle */
   created () {
