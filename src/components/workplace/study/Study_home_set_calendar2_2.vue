@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-                <div class="fixBtm" >
+                <div class="fixBtm static" >
                     <table class="">
                         <tr>
                             <td class="btm_tit ">
@@ -64,7 +64,7 @@
 <script>
 export default {
 /*eslint-disable */
-  name: 'Study_studystatus_attendance_bpo',
+  name: 'Study_home_set_calendar2_2',
   /* vue lifecycle */
   created () {
   },

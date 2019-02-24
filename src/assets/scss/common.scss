@@ -998,7 +998,7 @@ a.top:hover:before,a.top:hover:after{ width:100%; transition:800ms ease all;}
 .toast .toast_contents{overflow: hidden;width:100%;text-overflow: ellipsis;white-space: nowrap;}
 
 //study_kukudocs
-.kukudocs_area_wrap {position: relative; }
+.kukudocs_area_wrap {position: relative; margin-bottom: -1px;}
 .kukudocs_area_wrap .kukudocs_area .kukudocs { z-index:9; background: url("../img/img_opinion_bg.png") bottom center no-repeat; background-size:cover; width:100%; height:270px; }
 .kukudocs_area_wrap .kukudocs_area .box_shadow {background-color: rgba(0,0,0,0.6); z-index:99; width:100%; height: 270px; position: absolute; left:0; top: 0}
 .kukudocs_area_wrap .fp_Icon_txt{line-height:20px;margin-top:70px;text-align: center;}

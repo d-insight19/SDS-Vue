@@ -25,7 +25,7 @@
                 <ul class="ulList type1">
                     <li>
                         <strong class="label-tit">법인 휴대폰 번호</strong>
-                        <slp-text-field placeholder="법인 휴대폰 번호를 입력하세요"></slp-text-field>
+                        <slp-text-field placeholder="‘-’없이 숫자만 입력하세요"></slp-text-field>
                     </li>
                     <li>
                         <strong class="label-tit">성명</strong>

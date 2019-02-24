@@ -1722,7 +1722,7 @@ label.rdo .label{position: relative;}
 #container.studystatus .label-tit-15{font-size: map-get($font_size, font_15); letter-spacing: -0.045em;}
 #container.studystatus .abs-num{position: absolute;top: 50%;transform: translateY(-50%);font-family:'roboto'; font-size: map-get($font_size, font_17);}
 #container.studystatus .ulList.type4 > li {height: auto;}
-#container.studystatus .ulList.type4 > li p{padding-left:42px;}
+#container.studystatus .ulList.type4 > li p{padding-left: 61px;}
 #container.studystatus .ulList.type4 > li.font_16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
 
 
@@ -1813,14 +1813,15 @@ label.rdo .label{position: relative;}
 /*Sim*/
 //study_lo_mp4_script 학습창영역 스크립트타입
 .mp4Script_optionBlock {
-    z-index: 100; left:0; right:0;
+    z-index: 100; left:0; right:0;padding: 0 18px;
     &.mb { margin-bottom:22px; }
 }
 .mp4Script_options {
-    padding-bottom:22px; border-bottom:1px solid #d9d9d9; background-color:#ffffff;
+    padding-bottom:22px; border-bottom:1px solid #d9d9d9; background-color:#ffffff; margin-left: -18px;
+    margin-right: -18px; padding-left:18px;
     &.tall { padding-top:55px; padding-bottom:20px; }
     &.short { padding-top:22px; padding-bottom:23px; }
-    & .btn_close { top:18px; right:0; }
+    & .btn_close { top:18px;     right: 18px; }
     & .category { top: 43px !important; width:100px !important; }
 }
 .btn_close { width:28px; height:28px; background: url("../img/ic_close_line_24.png") no-repeat 50% 50%; background-size:contain; }
@@ -2167,12 +2168,49 @@ label.rdo .label{position: relative;}
     width: 100%;
     background: #f2f2f2;
     padding: 12px 18px;
+    position: absolute;
+    bottom: 0;
+    &.static{
+    position: static;
+    }
         .btm_tit{
             font-size:map-get($font-size, font_15);letter-spacing: -0.021em;font-weight:600;padding-bottom: 8px;
         }
     }
 }
 
+//detailview_review
+.regiclass{
+    .reply-list{
+        .info{
+            margin-top:6px;
+            display:inline-block !important;
+        }
+    }
+}
+
+//06.regiclass_01.03.detailview_autonomy
+.regiclass{
+    .multiList {
+        > li .in{
+            padding: 10px 0px 13px 6px;
+        }
+    }
+}
+
+
+//ATORM_07.04.01._status_ details_flip
+.atorm_status{
+    .detail_list{
+        tr{
+            td{
+                &:nth-child(2){
+                    font-weight:500 !important;
+                }
+            }
+        }
+    }
+}
 
 
 
