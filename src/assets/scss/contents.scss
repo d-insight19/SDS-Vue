@@ -2212,6 +2212,17 @@ label.rdo .label{position: relative;}
     }
 }
 
+.script{
+    .tabMenu li{
+        border-bottom:none !important;
+    }
+    .mp4Script_options{
+        border-bottom:none !important;
+    }
+    .mp4Script_options.short{
+        padding-left:18px;
+    }
+}
 
 
 

@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery courseware Study_LO_mp4_script">
+      <div id="container" class="mediaquery courseware Study_LO_mp4_script script">
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video pdb0" style="background:#fff">

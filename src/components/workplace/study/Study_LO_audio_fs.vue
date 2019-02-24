@@ -61,7 +61,7 @@
             </div>
             <!-- e: 동영상-->
             
-            <div class="kukudocs_area_wrap">
+            <!-- <div class="kukudocs_area_wrap">
 
                 <div class="kukudocs_area">
                     <div class="box_shadow"></div>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
             
         </div>
