@@ -28,21 +28,6 @@
                 <div class="right blur"></div>
             </div> -->
 
-            <div class="kukudocs_area_wrap">
-
-                <div class="kukudocs_area">
-                    <div class="box_shadow"></div>
-                    <div class="kukudocs"></div>
-                    <a href="#"><div class="fp-prevArrow"></div></a>
-                    <a href="#"><div class="fp-nextArrow"></div></a>
-                    <div class="button_wrap">
-                        <button type="button" class="play"><span class="ico playIcon"></span>이어학습
-                        <p class="fp_Icon_txt">1/10</p></button>
-                    </div>
-                </div>
-
-            </div>
-
             <div class="hide_header">
 
                 <div class="study_title_wrap">
@@ -148,18 +133,18 @@
                                     </dd>
                                 </dl>
                                 <div class="fr">
-                                    <ul class="info mt12 dib">
-                                        <li class="">
-                                            <span class="ico check_14"></span>
-                                            <span>학습완료</span>
-                                            <span class="fr mono_65">교재있음</span>
-                                        </li>
-                                    </ul>
+                                <ul class="info mt12 dib">
+                                    <li class="">
+                                        <span class="ico check_14"></span>
+                                        <span>학습완료</span>
+                                        <span class="fr mono_65">교재있음</span>
+                                    </li>
+                                </ul>
                                 </div>
                             </div>
-                         </div>
-                     </li>
-                     <li>
+                        </div>
+                    </li>
+                    <li>
                         <div class="download_detail clr1 wh">
                             <div class="icon_wrap pdr6">
                                 <span class="ico set_line_wh_28"></span>
@@ -192,7 +177,9 @@
                                         <span class="fr mono_65 wh">교재있음</span>
                                     </li>
                                 </ul>
-                                <span class="fr mono_65 mt15" >교재있음</span>
+                                <span class="fr mono_65 mt15" >
+                                        교재있음
+                                </span>
                             </div>
                         </div>
                     </li>
@@ -222,7 +209,7 @@
                                         <span class="mono_65">멀티캠퍼스 6층 602호</span>
                                     </dd>
                                 </dl>
-                                <div class="fr_wrap">
+                                    <div class="fr_wrap">
                                     <ul class="info mt12 dib">
                                         <li class="">
                                             <span class="ico ongoing_16"></span>
@@ -230,8 +217,8 @@
                                             <span class="fr mono_65">교재있음</span>
                                         </li>
                                     </ul>
-                                </div>
-                             </div>
+                                    </div>
+                            </div>
                         </div>
                     </li>
                     <li>
@@ -239,7 +226,7 @@
                             <div class="icon_wrap pdr6">
                                 <span class="ico ic_set_line_28"></span>
                             </div>
-                            <div class="txt_wrap w_full">
+                            <div class="txt_wrap  w_full">
                                 <p class="icon_txt color_clr3">N일차</p>
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
                                 <dl class="info">
@@ -267,7 +254,9 @@
                                         <span class="fr mono_65">교재있음</span>
                                     </li>
                                 </ul>
-                                <span class="fr mono_65 mt15" >교재있음</span>
+                                <span class="fr mono_65 mt15" >
+                                                교재있음
+                                        </span>
                             </div>
                         </div>
                     </li>
@@ -308,10 +297,14 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-          </div>
-        </div>
 
+
+            </div>
+            <!-- inner -->
+          </div>
+          <!-- cell -->
+        </div>
+        <!-- content -->
       </div>
       <!-- //container -->
     </div>
@@ -555,4 +548,3 @@ export default {
   }
 }
 </script>
-

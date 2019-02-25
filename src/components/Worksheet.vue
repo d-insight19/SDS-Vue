@@ -5141,18 +5141,7 @@
           <router-link :to="{ name: 'Study_0218studylist_download' }">
             Study_0218studylist_download
           </router-link>
-          <br/>
-          <router-link :to="{ name: 'Study_0218studylist_download_02' }">
-            Study_0218studylist_download_02
-          </router-link>
-          <br/>
-          <router-link :to="{ name: 'Study_0218studylist_download_03' }">
-            Study_0218studylist_download_03
-          </router-link>
-          <br/>
-          <router-link :to="{ name: 'Study_0218studylist_download_04' }">
-            Study_0218studylist_download_04
-          </router-link>
+          해당 기능을 클릭하면 예저 보임
         </td>
         <td></td>
       </tr>
