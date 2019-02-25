@@ -186,9 +186,11 @@ import etcMiniplayer from '~workplace/study/etc_Miniplayer'
 import etcKeepstudy from '~workplace/study/etc_keepstudy'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
+/*
 import Study0218studylistdownload02 from '~workplace/study/Study_0218studylist_download_02'
 import Study0218studylistdownload03 from '~workplace/study/Study_0218studylist_download_03'
 import Study0218studylistdownload04 from '~workplace/study/Study_0218studylist_download_04'
+*/
 import Studystudynote from '~workplace/study/Study_studynote'
 import Studystudynoteall01 from '~workplace/study/Study_studynote_all_01'
 import Studystudynoteall02snacbar from '~workplace/study/Study_studynote_all_02_snacbar'
@@ -1706,6 +1708,7 @@ var rootRoutes = [
     name: 'Study_0218studylist_download',
     component: Study0218studylistdownload
   },
+  /*
   {
     path: '/Study_0218studylist_download_02',
     name: 'Study_0218studylist_download_02',
@@ -1721,6 +1724,7 @@ var rootRoutes = [
     name: 'Study_0218studylist_download_04',
     component: Study0218studylistdownload04
   },
+  */
   {
     path: '/Study_studynote',
     name: 'Study_studynote',

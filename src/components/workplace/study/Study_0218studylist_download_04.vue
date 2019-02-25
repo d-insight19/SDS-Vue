@@ -613,13 +613,14 @@ export default {
         active_el () { //
             this.active = !this.active
         },
-
+/*
         btnEdit: function() { //Study_list
             this.editFlag = true;
         },
         btnCancel: function() { //Study_list
             this.editFlag = false;
         }
+*/
     },
 
     mounted () {

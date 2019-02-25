@@ -157,6 +157,7 @@
                                     </ul>
                                 </div>
                             </div>
+                         </div>
                      </li>
                      <li>
                         <div class="download_detail clr1 wh">
@@ -194,7 +195,6 @@
                                 <span class="fr mono_65 mt15" >교재있음</span>
                             </div>
                         </div>
-                        </div>
                     </li>
                     <li>
                         <div class="download_detail">
@@ -223,15 +223,15 @@
                                     </dd>
                                 </dl>
                                 <div class="fr_wrap">
-                                <ul class="info mt12 dib">
-                                    <li class="">
-                                        <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-                                        <span class="fr mono_65">교재있음</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                                    <ul class="info mt12 dib">
+                                        <li class="">
+                                            <span class="ico ongoing_16"></span>
+                                            <span>진행중</span>
+                                            <span class="fr mono_65">교재있음</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                             </div>
                         </div>
                     </li>
                     <li>
@@ -267,10 +267,7 @@
                                         <span class="fr mono_65">교재있음</span>
                                     </li>
                                 </ul>
-                                <span class="fr mono_65 mt15" >
-                                                교재있음
-                                        </span>
-                                </div>
+                                <span class="fr mono_65 mt15" >교재있음</span>
                             </div>
                         </div>
                     </li>
