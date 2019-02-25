@@ -28,21 +28,6 @@
                 <div class="right blur"></div>
             </div> -->
 
-            <div class="kukudocs_area_wrap">
-
-                <div class="kukudocs_area">
-                    <div class="box_shadow"></div>
-                    <div class="kukudocs"></div>
-                    <a href="#"><div class="fp-prevArrow"></div></a>
-                    <a href="#"><div class="fp-nextArrow"></div></a>
-                    <div class="button_wrap">
-                        <button type="button" class="play"><span class="ico playIcon"></span>이어학습
-                        <p class="fp_Icon_txt">1/10</p></button>
-                    </div>
-                </div>
-
-            </div>
-
             <div class="hide_header">
 
                 <div class="study_title_wrap">
@@ -192,9 +177,8 @@
                                     </li>
                                 </ul>
                                 <span class="fr mono_65 mt15" >
-                                                교재있음
-                                        </span>
-                                </div>
+                                        교재있음
+                                </span>
                             </div>
                         </div>
                     </li>
@@ -271,7 +255,6 @@
                                 <span class="fr mono_65 mt15" >
                                                 교재있음
                                         </span>
-                                </div>
                             </div>
                         </div>
                     </li>
@@ -317,7 +300,6 @@
             </div>
           </div>
         </div>
-
       </div>
       <!-- //container -->
     </div>

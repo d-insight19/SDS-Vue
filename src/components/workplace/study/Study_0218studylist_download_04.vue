@@ -532,7 +532,7 @@ window.flowplayer = flowplayer
 import 'flowplayer/dist/util_flowPlayer.js'
 
 //Study_list
-import studyList from './Study_list.vue'
+// import studyList from './Study_list.vue'
 
 export default {
     name: 'components_flowplayer',
