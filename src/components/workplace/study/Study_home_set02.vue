@@ -148,16 +148,16 @@
                                     </dd>
                                 </dl>
                                 <div class="fr">
-                                <ul class="info mt12 dib">
-                                    <li class="">
-                                        <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="fr mono_65">교재있음</span>
-                                    </li>
-                                </ul>
+                                    <ul class="info mt12 dib">
+                                        <li class="">
+                                            <span class="ico check_14"></span>
+                                            <span>학습완료</span>
+                                            <span class="fr mono_65">교재있음</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </li>
+                     </li>
                      <li>
                         <div class="download_detail clr1 wh">
                             <div class="icon_wrap pdr6">
@@ -191,11 +191,9 @@
                                         <span class="fr mono_65 wh">교재있음</span>
                                     </li>
                                 </ul>
-                                <span class="fr mono_65 mt15" >
-                                                교재있음
-                                        </span>
-                                </div>
+                                <span class="fr mono_65 mt15" >교재있음</span>
                             </div>
+                        </div>
                         </div>
                     </li>
                     <li>
@@ -234,13 +232,14 @@
                                 </ul>
                             </div>
                         </div>
+                        </div>
                     </li>
                     <li>
                         <div class="download_detail">
                             <div class="icon_wrap pdr6">
                                 <span class="ico ic_set_line_28"></span>
                             </div>
-                            <div class="txt_wrap  w_full">
+                            <div class="txt_wrap w_full">
                                 <p class="icon_txt color_clr3">N일차</p>
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
                                 <dl class="info">
