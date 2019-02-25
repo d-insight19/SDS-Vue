@@ -2307,7 +2307,7 @@ label.rdo .label{position: relative;}
 
 // 기본정보 관리
 #container.drawer .multiList.type2 > li + li {margin-top:0}
-#container.drawer button.btn14 {font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px; position: absolute; right: 18px; bottom: 18px; font-weight: 500}
+#container.drawer button.btn14 {font-size:map-get($font_size, font_14); line-height: 21px; letter-spacing: -0.42px; position: absolute; font-weight: 500; top: 50%;right: 0;transform: translateY(-50%);}
 #container.drawer .multiList.type1 > li { border-bottom: 1px solid #e3e3e3; padding:15px 0; min-height: 0;}
 #container.drawer .multiList.type2 > li { padding:0; min-height: 0 }
 #container.drawer .multiList.type4 > li { padding:20px 0; min-height: 0 }

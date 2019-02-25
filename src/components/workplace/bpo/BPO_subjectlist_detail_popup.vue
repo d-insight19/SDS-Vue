@@ -149,17 +149,17 @@
         <slp-popup title="출석체크" cancelInput="취소" confirmInput="저장">
             <ul class="popup-select mb20">
                 <li><p class="ly-info">과정선택</p>
-                    <slp-select required width="100%" class="select mt8" value="Absent">
+                    <slp-select required width="100%" class="disable mt8" value="Absent">
                         <option>Absent</option>
                     </slp-select>
                 </li>
                 <li><p class="ly-info">수업참석시간</p>
-                    <slp-select required width="100%" class="select mt8" value="00시간 00분">
+                    <slp-select required width="100%" class="disable mt8" value="00시간 00분">
                         <option>00시간 00분</option>
                     </slp-select>
                 </li>
             </ul>
-            <p class="ly-info">결석사유(선택)</p>
+            <p class="ly-info disable">결석사유(선택)</p>
                     <slp-select required placeholder="결석 사유를 선택해주세요." width="100%" class="mt8">
                         <option>사유1</option>
                         <option>사유2</option>

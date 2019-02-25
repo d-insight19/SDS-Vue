@@ -42,35 +42,59 @@
                             </li>
                         </ul>
                         <p class="hr"></p>
-                        <ul class="multiList type1">
+                        <ul class="multiList type2">
                             <li class="pt0 title_line mb20">
                                 <strong class="label-tit14">어학등급</strong><button type="button" class="btn14 color_clr2">편집</button>
                             </li>
-                            <div class="extrainfo">
-                            <select class="select subject">
-                                <option>영어</option>
-                            </select>
-                            <select class="select subdivide">
-                                <option>TOEIC Speaking and…</option>
-                            </select>
-                            <input type="text" class="input mt8" value="120점" >
-                            </div>
+                            <li>
+                                <div style="display:table-cell; width:35%" class="pdr6">
+                                    <slp-select placeholder="영어" width="100%">
+                                        <option>선택1</option>
+                                        <option>선택2</option>
+                                        <option>선택3</option>
+                                        <option>선택4</option>
+                                    </slp-select>
+                                </div>
+                                <div style="display:table-cell; width: calc(65% - 6px);">
+                                    <slp-select placeholder="TOEIC Speaking and…" width="100%">
+                                        <option>선택1</option>
+                                        <option>선택2</option>
+                                        <option>선택3</option>
+                                        <option>선택4</option>
+                                    </slp-select>
+                                </div>
+                            </li>
+                            <li>
+                                <slp-text-field value="120점" class="mt8"></slp-text-field>
+                            </li>
 
                             <!-- 추가 리스트 -->
                             <a href="#" class="btn sm add w100p" @click="addList1()" ><span class="ico"></span>어학등급 추가</a>
 
-                            <li class="pt0 title_line mt20">
+                            <li class="title_line mt20 mb20">
                                 <strong class="label-tit14">자격증</strong><button type="button" class="btn14 color_clr2">편집</button>
                             </li>
-                            <div class="extrainfo mt20">
-                            <select class="select subject">
-                                <option>IT</option>
-                            </select>
-                            <select class="select subdivide">
-                                <option>정보산업기사</option>
-                            </select>
-                            <input type="text" class="input mt8" value="1급" >
-                            </div>
+                            <li>
+                                <div style="display:table-cell; width:35%" class="pdr6">
+                                    <slp-select placeholder="IT" width="100%">
+                                        <option>선택1</option>
+                                        <option>선택2</option>
+                                        <option>선택3</option>
+                                        <option>선택4</option>
+                                    </slp-select>
+                                </div>
+                                <div style="display:table-cell; width: calc(65% - 6px);">
+                                    <slp-select placeholder="정보산업기사" width="100%">
+                                        <option>선택1</option>
+                                        <option>선택2</option>
+                                        <option>선택3</option>
+                                        <option>선택4</option>
+                                    </slp-select>
+                                </div>
+                            </li>
+                            <li>
+                                <slp-text-field value="120점" class="mt8"></slp-text-field>
+                            </li>
 
                             <!-- 추가 리스트 -->
                             <a href="#" class="btn sm add w100p mb0" @click="addList1()" ><span class="ico"></span>자격증 추가</a>

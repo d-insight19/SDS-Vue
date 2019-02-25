@@ -63,14 +63,24 @@
                                 <ul class="li-addList">
                                     <li v-for="(item, index) in list1" :key="index">
                                     <div v-if="languageEditFlag" @click="deleteLanguage(index)" class="tar"><a href="#" class="btn only del"><span class="ico"></span></a></div>
-                                    <div class="up">
-                                        <slp-select  placeholder="영어" >
-                                            <option>영어</option>
-                                        </slp-select>
-                                        <slp-select  placeholder="TOEIC Speaking and…">
-                                            <option>TOEIC Speaking and…</option>
+
+                                    <div style="display:table-cell; width:35%" class="pdr6">
+                                        <slp-select placeholder="영어" width="100%">
+                                            <option>선택1</option>
+                                            <option>선택2</option>
+                                            <option>선택3</option>
+                                            <option>선택4</option>
                                         </slp-select>
                                     </div>
+                                     <div style="display:table-cell; width: calc(65% - 6px);">
+                                        <slp-select placeholder="TOEIC Speaking and…" width="100%">
+                                            <option>선택1</option>
+                                            <option>선택2</option>
+                                            <option>선택3</option>
+                                            <option>선택4</option>
+                                        </slp-select>
+                                    </div>
+
                                     <input type="text" class="input w100p" placeholder="점수 혹은 레벨 입력" value="120점">
                                     </li>
                                 </ul>
@@ -116,14 +126,24 @@
                                     <li v-for="(item, index) in list2" :key="index">
                                     <div v-if="licenceEditFlag" @click="deleteLicence(index)" class="tar"><a href="#" class="btn only del"><span class="ico"></span></a></div>
                                     <div class="up">
-                                        <slp-select  placeholder="IT">
-                                            <option>IT</option>
-                                        </slp-select>
-                                        <slp-select  placeholder="정보산업기사">
-                                            <option>정보산업기사</option>
-                                        </slp-select>
+                                        <div style="display:table-cell; width:35%" class="pdr6">
+                                            <slp-select placeholder="IT" width="100%">
+                                                <option>선택1</option>
+                                                <option>선택2</option>
+                                                <option>선택3</option>
+                                                <option>선택4</option>
+                                            </slp-select>
+                                        </div>
+                                        <div style="display:table-cell; width: calc(65% - 6px);">
+                                            <slp-select placeholder="정보산업기사" width="100%">
+                                                <option>선택1</option>
+                                                <option>선택2</option>
+                                                <option>선택3</option>
+                                                <option>선택4</option>
+                                            </slp-select>
+                                        </div>
                                     </div>
-                                    <input type="text" class="input w100p" placeholder="점수, 등급" value="1급">
+                                    <div><input type="text" class="input w100p" placeholder="점수, 등급" value="1급"></div>
                                     </li>
                                 </ul>
                                 <!-- 추가 리스트 -->

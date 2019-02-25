@@ -17,6 +17,12 @@
         left:14px;
         top: 14px;
       }
+      & .btn.prev.fixed , & .btn.close.fixed{
+        width:auto;
+        position: fixed;
+        left:14px;
+        top: 14px;
+      }
       & p.header_text{
         text-align: left;
         padding-left: 0px;
