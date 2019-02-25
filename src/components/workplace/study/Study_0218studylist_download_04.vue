@@ -317,9 +317,6 @@
                             </div>
                             <span class="ico accordion_arrow wh"></span>
 
-                            
-
-                        </div>
                             <div class="toast"  @click="snacToggle" v-show="snacFlag" >
                                 <div class="in">
                                     <div class="download_wrap">
@@ -335,8 +332,7 @@
                                 </div>
                             </div>
 
-
-
+                        </div>
                             <ul>
                                 <li class="open">
                                     <div class="sub_content">

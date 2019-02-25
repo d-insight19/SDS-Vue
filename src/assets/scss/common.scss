@@ -404,7 +404,7 @@ select:required:invalid {
 /* Multiline List : + meta text */
 .multiList > li{display:table;width:100%;position: relative;}
 .multiList > li .metatxt{position: absolute; top: calc(50% - 20px);right:3px;line-height:20px;font-size:map-get($font_size, font_17);}
-.multiList > li .in{display: table-cell; position: relative; height:100%;vertical-align: middle; width: calc(100% - 92px); padding:10px 0px 13px 0px;;}
+.multiList > li > .in{display: table-cell; position: relative; height:100%;vertical-align: middle; width: calc(100% - 92px); padding:10px 0px 13px 0px;;}
 .multiList .multiline{font-size: map-get($font_size, font_16);line-height: 22px;max-height:68px;}
 
 

@@ -2242,10 +2242,13 @@ label.rdo .label{position: relative;}
 
 //studydown
 .studydown{
-    .taost{
+    .toast{
         width: calc(100% - 36px);
     }
     .multiList > li .in{
+    }
+    .labelChk .label{
+        width:100%;
     }
 }
 

@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery courseware pd70" style="background:#f2f2f2">
+      <div id="container" class="mediaquery courseware studydown pd70" style="background:#f2f2f2">
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">
@@ -251,7 +251,7 @@
                 </div>
             </div>
 
-             <h2 class="h-tit2 fwb600 mb0">데이터 특성 알아보기</h2>
+            <h2 class="h-tit2 fwb600 mb0">데이터 특성 알아보기</h2>
                 
                 <!-- list -->
                 <ul class="multiList type2">
@@ -410,8 +410,6 @@
                     </li>
                 </ul>
                 <!-- //list -->
-            </div>
-          </div>
 
           <div class="cell">
             <div class="inner">
@@ -437,6 +435,7 @@
                 </ul>
                 <!-- //list -->
             </div>
+          </div>
 
             <div class="cell">
                 <div class="inner pt0">
