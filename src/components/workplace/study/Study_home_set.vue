@@ -152,7 +152,7 @@
                                     <li class="d-block">
                                         <span class="ico check_14"></span>
                                         <span>학습완료</span>
-                                        
+
                                     </li>
                                 </ul>
                             </div>
@@ -188,7 +188,7 @@
                                     <li class="d-block">
                                         <span class="ico check_14 wh"></span>
                                         <span class="wh">학습완료</span>
-                                        
+
                                     </li>
                                 </ul>
                             </div>
@@ -224,7 +224,7 @@
                                     <li class="d-block">
                                         <span class="ico ongoing_16"></span>
                                         <span>진행중</span>
-                                        
+
                                     </li>
                                 </ul>
                             </div>
@@ -260,7 +260,7 @@
                                     <li class="d-block">
                                         <span class="ico complete_14"></span>
                                         <span>미진행</span>
-                                        
+
                                     </li>
                                 </ul>
                             </div>
@@ -296,9 +296,9 @@
                                     <li class="d-block">
                                         <span class="ico lock_16"></span>
                                         <span>학습불가</span>
-                                        
+
                                     </li>
-                                </ul>                                
+                                </ul>
                             </div>
                         </div>
                     </li>

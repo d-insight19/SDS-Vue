@@ -184,11 +184,8 @@ import Studystudystatusattendancebpo from '~workplace/study/Study_studystatus_at
 import StudyHomeSetCalendar from '~workplace/study/Study_home_set_calendar'
 import etcMiniplayer from '~workplace/study/etc_Miniplayer'
 import etcKeepstudy from '~workplace/study/etc_keepstudy'
-import StudyList from '~workplace/study/Study_list'
-import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
-import Study0218studylistdownload_ from '~workplace/study/Study_0218studylist_download_'
 import Studystudynote from '~workplace/study/Study_studynote'
 import Studystudynoteall01 from '~workplace/study/Study_studynote_all_01'
 import Studystudynoteall02snacbar from '~workplace/study/Study_studynote_all_02_snacbar'
@@ -1697,16 +1694,6 @@ var rootRoutes = [
     component: etcKeepstudy
   },
   {
-    path: '/Study_list',
-    name: 'Study_list',
-    component: StudyList
-  },
-  {
-    path: '/Study_list_edit',
-    name: 'Study_list_edit',
-    component: StudyListEdit
-  },
-  {
     path: '/Study_0217studylist',
     name: 'Study_0217studylist',
     component: Study0217studylist
@@ -1715,11 +1702,6 @@ var rootRoutes = [
     path: '/Study_0218studylist_download',
     name: 'Study_0218studylist_download',
     component: Study0218studylistdownload
-  },
-  {
-    path: '/Study_0218studylist_download_',
-    name: 'Study_0218studylist_download_',
-    component: Study0218studylistdownload_
   },
   {
     path: '/Study_studynote',
