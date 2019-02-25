@@ -1831,7 +1831,7 @@ label.rdo .label{position: relative;}
     &.mb { margin-bottom:22px; }
 }
 .mp4Script_options {
-    padding-bottom:22px; border-bottom:1px solid #d9d9d9; background-color:#ffffff; margin-left: -18px;
+    padding-bottom:22px; border-bottom:1px solid #d9d9d9; background-color:#ffffff; margin-left: -18px;padding-left:18px;
     margin-right: -18px; padding-left:18px;
     &.tall { padding-top:55px; padding-bottom:20px; }
     &.short { padding-top:22px; padding-bottom:23px; }
@@ -2230,13 +2230,10 @@ label.rdo .label{position: relative;}
 //script scroll
 .script{
     .tabMenu li{
-        border-bottom:none !important;
     }
     .mp4Script_options{
-        border-bottom:none !important;
     }
     .mp4Script_options.short{
-        padding-left:18px;
     }
 }
 

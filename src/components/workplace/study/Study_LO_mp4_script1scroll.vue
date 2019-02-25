@@ -6,10 +6,17 @@
       <div id="container" class="mediaquery courseware Study_LO_mp4_script script">
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video dummy pdb0" style="background:#fff">
+        <div id="header" class="tab video fixed" style="background:#fff ;padding-bottom: 90px;">
             <div class="header_inner line1 ">
-                <button type="button" class="btn only prev" style="display:none"><span class="ico2 prev-wh"></span></button>
-                <!--  <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p> -->
+                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
+                <p class="header_text multiline line2 font_15"></p>
+            </div>
+            
+            <div class="header_inner line2 tabMenu " style="height:90px;">
+                 <ul class="scrollTab" style="border-bottom:1px solid #d9d9d9;">
+                    <li>
+                    </li>
+                </ul>
             </div>
 <!--
             <div id="dropdown_wrap" v-show="langFlag">
@@ -127,7 +134,7 @@
 
         </div>
 
-        <div id="content" class="normal" style="padding:0;">
+        <div id="content" class="normal">
 
             
 

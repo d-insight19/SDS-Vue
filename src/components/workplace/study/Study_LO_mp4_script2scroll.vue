@@ -5,33 +5,15 @@
         <!-- container -->
         <div id="container" class="mediaquery script">
                 <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video fixed" style="background:#fff ;padding-bottom: 103px;">
+        <div id="header" class="tab video fixed" style="background:#fff ;padding-bottom: 90px;">
             <div class="header_inner line1 ">
                 <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15"></p>
             </div>
             
-            <div class="header_inner line2 tabMenu " style="height:103px; border-bottom:none !important;">
+            <div class="header_inner line2 tabMenu " style="height:90px;">
                  <ul class="scrollTab" style="border-bottom:1px solid #d9d9d9;">
                     <li>
-                        <div id="dropdown_wrap" v-show="langFlag">
-                            <div id="sheetDim" @click="changeLang()"></div>
-                            <div id="dropdown" class="category">
-                                <ul  @click="changeLang()">
-                                    <li>영어</li>
-                                    <li>중국어</li>
-                                    <li>베트남어</li>
-                                </ul>
-                            </div>
-                        </div>     
-                        <div class="mp4Script_options short d_flex align_items_center " >
-                        <div class="">
-                            <div @click="changeLang()">한국어 <span class="ico ico_dropdown16 gr"></span></div>
-                            
-                        </div>
-                        <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>
-                    </div>  
-
                     </li>
                 </ul>
             </div>
@@ -100,7 +82,33 @@
                 <!-- e: btm_subtitle_area -->
             </div>
             <!-- e: 동영상-->
-           
+             <div class="mp4Script_optionBlock position_absolute w-full">
+                <div class="mp4Script_options tall d_flex align_items_center position_relative" >
+                    <div class="position_relative">
+                        <div @click="changeLang()">한국어 <span class="ico ico_dropdown16 gr"></span></div>
+                        <div id="dropdown_wrap" v-show="langFlag">
+                            <div id="sheetDim" @click="changeLang()"></div>
+                            <div id="dropdown" class="category">
+                                <ul  @click="changeLang()">
+                                    <li>영어</li>
+                                    <li>중국어</li>
+                                    <li>베트남어</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ml20"><span>자동스크롤</span>
+                        <label class="labelBtn">
+                            <input type="checkbox" name="" class="chk">
+                            <div class="chk_box">
+                                <span class="ball"></span>
+                                <ul class="txt"><li class="m1"></li><li class="m2"></li></ul>
+                            </div>
+                        </label>
+                    </div>
+                    <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>
+                </div>
+            </div>
         </div>
          
 
