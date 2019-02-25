@@ -24,18 +24,27 @@
                                     <slp-switch class="fr" value="true"/>
                                 </p>
                             </li>
+                            <li class="mb20">
+                                <p class="label-tit14 bbB89 pb10 mb10">
+                                    <ul>
+                                        <li class="mb15">
+                                            <slp-radio name="difficulty" innerCircle="true">전체보기</slp-radio>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </li>
 
                             <li class="mb20">
                                 <p class="label-tit14 mb10">상태별</p>
                                 <ul>
                                     <li class="mb15">
-                                        <slp-radio name="difficulty" innerCircle="true">학습중</slp-radio>
+                                        <slp-radio name="difficulty2" innerCircle="true">학습중</slp-radio>
                                     </li>
                                     <li class="mb15">
-                                        <slp-radio name="difficulty" innerCircle="true">학습완료</slp-radio>
+                                        <slp-radio name="difficulty2" innerCircle="true">학습완료</slp-radio>
                                     </li>
                                     <li class="mb15">
-                                        <slp-radio name="difficulty" innerCircle="true">미진행</slp-radio>
+                                        <slp-radio name="difficulty2" innerCircle="true">미진행</slp-radio>
                                     </li>
                                 </ul>
                             </li>
@@ -43,10 +52,10 @@
                                 <p class="label-tit14 mb10">필수여부</p>
                                 <ul>
                                     <li class="mb15">
-                                        <slp-radio name="difficulty" innerCircle="true">필수항목</slp-radio>
+                                        <slp-radio name="difficulty3" innerCircle="true">필수항목</slp-radio>
                                     </li>
                                     <li class="mb15">
-                                        <slp-radio name="difficulty" innerCircle="true">비필수항목</slp-radio>
+                                        <slp-radio name="difficulty3" innerCircle="true">비필수항목</slp-radio>
                                     </li>
                                 </ul>
                             </li>
@@ -54,10 +63,10 @@
                                 <p class="label-tit14 mb10">커스텀</p>
                                 <ul>
                                     <li class="mb15">
-                                        <slp-radio name="difficulty" innerCircle="true">필수항목</slp-radio>
+                                        <slp-radio name="difficulty4" innerCircle="true">필수항목</slp-radio>
                                     </li>
                                     <li class="mb15">
-                                        <slp-radio name="difficulty" innerCircle="true">비필수항목</slp-radio>
+                                        <slp-radio name="difficulty4" innerCircle="true">비필수항목</slp-radio>
                                     </li>
                                 </ul>
                             </li>

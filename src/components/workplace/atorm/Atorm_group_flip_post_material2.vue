@@ -292,7 +292,7 @@
                     <li @click="toggleMenu($event)">
                         <span>사후학습</span>
                         <span class="accordion_arrow"></span>
-                        <div class="confirm_item_detail_inner pdb27 pt0">
+                        <div class="confirm_item_detail_inner pt0">
                             <!-- list -->                            
                             <div class="cell">
                                 <div class="inner atorm_material"> 
@@ -486,7 +486,7 @@
 
 <script>
 export default {
-  name: 'Atorm_e-learning_basic_1',
+  name: 'Atorm_group_flip_post_material2',
   /* vue lifecycle */
   created () {
   },

@@ -9,7 +9,7 @@
             <div v-if="headerType == '2'" id="header" class="tab fixed">          
                 <div class="header_inner line1">
                     <button type="button" class="btn only prev"><span class="ico">이전</span></button>
-                    <p class="header_text font_18"> 사람과 세상을 바꾼 공동체지도 ...</p>
+                    <p class="header_text font_18" style="visibility: visible;"> 사람과 세상을 바꾼 공동체지도 ...</p>
                 </div>  
                 <div class="header_inner line2 tabMenu scroll-x">
                     <ul class="scrollTab">

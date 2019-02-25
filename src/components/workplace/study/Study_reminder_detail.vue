@@ -144,7 +144,6 @@
 
                         <p class="label-tit-2 mt36">
                             <strong>첨부파일</strong>
-                            <span class="fr color_clr2 total">전체 다운로드</span>
                         </p>
                         <ul class="ulList type4">
                             <li>

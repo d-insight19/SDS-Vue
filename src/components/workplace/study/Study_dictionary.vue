@@ -15,12 +15,9 @@
                 <div class="cell">
                     <div class="inner">
 
-                        <h1 class="h-tit5">
-                            <span class="total_txt">총</span>
-                            <span class="fwb count">14</span><span>개</span>
-                        </h1>
+                        <p class="mb5 font_15">총 <span class="fwb ml2"><b class="fwb600">6</b>건</span></p>
 
-                        <ul class="multiList type3">
+                        <ul class="multiList type4">
                             <li>
                                 <div class="in">
                                     <div class="singleline title">교차 케이블</div>

@@ -1,13 +1,76 @@
 /* 스플레시 */
-.splashWrap{position: relative; z-index: 0;width:100%; height:100%; text-align:center;overflow-x:hidden;  }
+.splashWrap{position: relative; z-index: 0;width:100%; text-align:center;overflow-x:hidden;  }
 .splashWrap::after{display: block; content:''; width:100%; height:100%; background:rgba(0,0,0,0.3);position:absolute;top:0;}
-.splashWrap .splashBox{position: absolute; top: 50%; left: 0;right: 0; z-index: 1;width: 36%; height: 2px; text-align: center; margin: 0 32% 0 32%;}
+.splashWrap .splashBox{position: absolute; top: 280px; left: 0;right: 0; z-index: 1;width: 36%; height: 2px; text-align: center; margin: 0 32% 0 32%;}
 .splashWrap .splashBox{background:rgba(0,0,0,0.1);}
 .splashWrap .splashBox .square{background:#d9d9d9;width:13%;height:2px;}
 .splashWrap .splashBox .in{display: inline-block; }
-.splashWrap .splashBox h1 img{height:80px;}
-.splashCon {width:100%;}
+.splashWrap  img{    position: absolute; top: 182px;left: 50%;transform: translateX(-50%); z-index: 1;}
+.splashCon {width:100%;} //height: 100%; 높이값정의 필요
 
+/*atorm splash*/
+
+.splash_action{position: absolute; bottom: 0; left: 0%;}
+.splash_action2{position: absolute; bottom: 0;right: 0%;}
+.splash_action3{position: absolute; right:0%; top:20%;}
+.splash_atorm{position: absolute;bottom: 336px;left: 11%;opacity:0;}
+
+// .fade-enter-active, .fade-leave-active {transition: opacity 7s; }
+// .fade-enter, .fade-leave-to {opacity: 1;}
+.splash_action{animation-duration: 1.5s;animation-name: slidein;}
+.splash_action2{animation-duration: 3.5s;animation-name: slideinbottom;}
+.splash_action3{animation-duration: 5.5s;animation-name: slideintop;}
+.fadein{
+    animation-duration: 7s;
+    animation-name: fadein;
+    transition-delay: 7s;
+    opacity:1;
+}
+.slidein {/* -moz-animation-iteration-count: 3;
+-webkit-animation-iteration-count: 3;
+animation-iteration-count: 3; */
+-moz-animation-direction: alternate;
+-webkit-animation-direction: alternate;
+animation-direction: alternate;}
+@keyframes fadein {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+} 
+@keyframes slidein {
+from {
+    left:-100%;
+    opacity: 0;
+}
+to {
+    left:0;
+    opacity: 1;
+}
+} 
+@keyframes slideinbottom{
+from {
+    bottom:-100%;
+    opacity: 0;
+}
+to {
+    bottom:0;
+    opacity: 1;
+}
+}
+@keyframes slideintop{
+from {
+    top:-100%;
+    opacity: 0;
+}
+
+to {
+    top:20%;
+    opacity: 1;
+}
+} 
 
 // 로그인 - 연수원 찾기
 .trainIntro{
@@ -1593,7 +1656,7 @@ label.rdo .label{position: relative;}
 
 
 // 모듈명이 없을때
-#container.courseware .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 32px 20px 22px 23px; margin-top:12px;}
+#container.courseware .download_detail {background-color:#fff; border: 1px solid map-get($line_colors,B89); position: relative; width: 100%;padding: 18px 20px 20px 16px;margin-top:12px;}
 #container.courseware .download_detail .txt_wrap {border-bottom: 0 none !important; padding-bottom:0 !important;}
 #container.courseware .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:5px;}
 #container.courseware .download_detail .txt_wrap .title {font-weight:500; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
@@ -1673,7 +1736,7 @@ label.rdo .label{position: relative;}
 #container.studystatus .label-tit-15{font-size: map-get($font_size, font_15); letter-spacing: -0.045em;}
 #container.studystatus .abs-num{position: absolute;top: 50%;transform: translateY(-50%);font-family:'roboto'; font-size: map-get($font_size, font_17);}
 #container.studystatus .ulList.type4 > li {height: auto;}
-#container.studystatus .ulList.type4 > li p{padding-left:42px;}
+#container.studystatus .ulList.type4 > li p{padding-left: 61px;}
 #container.studystatus .ulList.type4 > li.font_16{font-size: map-get($font_size, font_16);letter-spacing: -0.048em;}
 
 
@@ -1690,9 +1753,9 @@ label.rdo .label{position: relative;}
 
 //studystatus_assignment_result
 #container.studystatus .confirm_item_detail{margin:0px -18px}
-#container.studystatus .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
-#container.studystatus .confirm_item_detail > li > span:first-child{line-height: 58px;font-weight: 600;}
-#container.studystatus .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+#container.studystatus .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
+#container.studystatus .confirm_item_detail > li > span:first-child{line-height: 68px;font-weight: 600; display:inline-block; margin-top:20px;}
+#container.studystatus .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:23px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
@@ -1704,6 +1767,8 @@ label.rdo .label{position: relative;}
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .thum .thumbnail img{position: relative;left: 50%;transform: translateX(-50%);height: 100%;}
 #container.studystatus .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.studystatus .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
+#container.studystatus .confirm_item_detail > li:last-child.open {border-bottom-width:0px;}
+#container.studystatus .confirm_item_detail > li:last-child.open .confirm_item_detail_inner{padding-bottom:0px;}
 #container.studystatus .type_box.type2 {padding: 10px 39px 10px 172px;}
 #container.studystatus .font_11{font-size:map-get($font-size, font_11);letter-spacing: -0.033em;}
 
@@ -1762,14 +1827,15 @@ label.rdo .label{position: relative;}
 /*Sim*/
 //study_lo_mp4_script 학습창영역 스크립트타입
 .mp4Script_optionBlock {
-    z-index: 100; left:0; right:0;
+    z-index: 100; left:0; right:0;padding: 0 18px;
     &.mb { margin-bottom:22px; }
 }
 .mp4Script_options {
-    padding-bottom:22px; border-bottom:1px solid #d9d9d9; background-color:#ffffff;
+    padding-bottom:22px; border-bottom:1px solid #d9d9d9; background-color:#ffffff; margin-left: -18px;padding-left:18px;
+    margin-right: -18px; padding-left:18px;
     &.tall { padding-top:55px; padding-bottom:20px; }
     &.short { padding-top:22px; padding-bottom:23px; }
-    & .btn_close { top:18px; right:0; }
+    & .btn_close { top:18px;     right: 18px; }
     & .category { top: 43px !important; width:100px !important; }
 }
 .btn_close { width:28px; height:28px; background: url("../img/ic_close_line_24.png") no-repeat 50% 50%; background-size:contain; }
@@ -1971,6 +2037,18 @@ label.rdo .label{position: relative;}
                 background-image: url("../img/ic_accordion_arr_bold_wh_20_up.png");
             }
         }
+
+        &.type1 {
+            .text_wrap {
+                @extend .clr1; 
+                .icon_txt {
+                    @extend  .color_clr6;
+                }
+                .text {
+                    color:white !important;
+                } 
+            }
+        }        
     }
 }
 
@@ -2051,10 +2129,11 @@ label.rdo .label{position: relative;}
 #container.atorm.status_rate .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  }
 
 //atorm_group_flip_complete
-#container.atorm.flip .confirm_item_detail{margin:0px -18px}
-#container.atorm.flip .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:58px;letter-spacing: -0.54px;color:#000;}
+#container.atorm.flip .confirm_item_detail{margin:0px -24px}
+#container.atorm.flip .confirm_item_detail.m18{margin:0px -18px} // 여백이 18일시 추가필요
+#container.atorm.flip .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
 #container.atorm.flip .confirm_item_detail > li > span:first-child{line-height: 100%;font-weight: 600; display:inline-block; margin-top:20px;}
-#container.atorm.flip .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
+#container.atorm.flip .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:23px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
@@ -2072,6 +2151,7 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .confirm_item_detail > li.open .confirm_item_detail_inner{display:block;}
 #container.atorm.flip .confirm_item_detail > li.open .accordion_arrow{background: url("../img/ic_accordion_arr_blue_20_up.png") no-repeat; }
 #container.atorm.flip .confirm_item_detail > li:last-child.open {border-bottom-width:0px;}
+#container.atorm.flip .confirm_item_detail > li:last-child.open .confirm_item_detail_inner{padding-bottom:0px;}
 #container.atorm.flip .total-num {font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px; color:rgba(0,0,0,0.8); font-weight: 500}
 
 //ATORM_group/flip_criteria_1
@@ -2115,13 +2195,71 @@ label.rdo .label{position: relative;}
     width: 100%;
     background: #f2f2f2;
     padding: 12px 18px;
+    position: absolute;
+    bottom: 0;
+    &.static{
+    position: static;
+    }
         .btm_tit{
             font-size:map-get($font-size, font_15);letter-spacing: -0.021em;font-weight:600;padding-bottom: 8px;
         }
     }
 }
 
+//detailview_review
+.regiclass{
+    .reply-list{
+        .info{
+            margin-top:6px;
+            display:inline-block !important;
+        }
+    }
+}
 
+//06.regiclass_01.03.detailview_autonomy
+.regiclass{
+    .multiList {
+        > li .in{
+            padding: 10px 0px 13px 6px;
+        }
+    }
+}
+
+
+//ATORM_07.04.01._status_ details_flip
+.atorm_status{
+    .detail_list{
+        tr{
+            td{
+                &:nth-child(2){
+                    font-weight:500 !important;
+                }
+            }
+        }
+    }
+}
+
+//script scroll
+.script{
+    .tabMenu li{
+    }
+    .mp4Script_options{
+    }
+    .mp4Script_options.short{
+    }
+}
+
+//studydown
+.studydown{
+    .toast{
+        width: calc(100% - 36px);
+        position: absolute;
+        top: 20px;
+    }
+    .labelChk .label{
+        width:100%;
+    }
+}
 
 
 
@@ -2804,6 +2942,20 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 // 다운로드
 .MySpace .downloadCondition,
 .downloadCondition  {position: relative; background-color: map-get($line_colors , B89); padding:12px 18px; height: 61px;}
+.downloadCondition {
+    &:before {
+        content:"";
+        display:inline-block;
+        position:absolute;
+        left:0;
+        right:0;
+        top:16px;
+        width:1px;
+        height:31px;
+        margin:0 auto;
+        background-color: #cccccc;
+    }
+}
 .MySpace .thumList.type1 > li {border-bottom:0 none; margin-bottom:0;}
 .MySpace .thumList.type1 .thum {width:120px; height:120px;}
 .MySpace .thumList.type1 .in {background-color: #fff; height: 120px; padding-left: 136px; padding-right:18px;}

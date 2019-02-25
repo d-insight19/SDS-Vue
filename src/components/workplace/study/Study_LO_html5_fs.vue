@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery courseware study_lo_docs" style="background:#f2f2f2">
+      <div id="container" class="mediaquery courseware study_lo_docs" style="height:100vh;display: flex;background: rgb(0,0,0);align-items: center;">
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab" style="background:#fff">

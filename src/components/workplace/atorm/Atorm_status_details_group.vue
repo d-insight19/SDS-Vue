@@ -76,7 +76,7 @@
 
                     <p class="hr" style="margin:0 -24px 22px"></p>
 
-                    <p class="mb7">총 <span class="fwb ml2"><b>1,620</b></span>
+                    <p class="mb7">총 <span class="fwb ml2"><b>18</b></span>
                     <span class="tar fr mono_80">전체 차수 <span class="ico ico_dropdown16 gr"></span>
                     </span>
                     </p>

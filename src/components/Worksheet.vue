@@ -5141,6 +5141,7 @@
           <router-link :to="{ name: 'Study_0218studylist_download' }">
             Study_0218studylist_download
           </router-link>
+          해당 기능을 클릭하면 예저 보임
         </td>
         <td></td>
       </tr>
@@ -5289,8 +5290,8 @@
         <td>　</td>
         <td class="textL">05.Study_02.24.studynotice</td>
         <td>
-          <router-link :to="{ name: 'Study_notice_alarm' }">
-            StudynoticeAlarm
+          <router-link :to="{ name: 'Study_studynotice' }">
+            Study_studynotice
           </router-link>
         </td>
         <td></td>

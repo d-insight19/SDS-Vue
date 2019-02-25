@@ -199,8 +199,8 @@
                         </div>
                         <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
                         <ul class="info" style="display: inline;">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                            <li class="mono_65"><span class="info_value">이*강</span></li>
+                            <li class="mono_65"><span class="info_value">2018.09.14  21:34</span></li>
                         </ul>
                         <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
                     </li>
@@ -210,8 +210,8 @@
                         </div>
                         <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
                         <ul class="info" style="display: inline;">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                            <li class="mono_65"><span class="info_value">이*강</span></li>
+                            <li class="mono_65"><span class="info_value">2018.09.14  21:34</span></li>
                         </ul>
                         <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
                     </li>
@@ -221,8 +221,8 @@
                         </div>
                         <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
                         <ul class="info" style="display: inline;">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                            <li class="mono_65"><span class="info_value">이*강</span></li>
+                            <li class="mono_65"><span class="info_value">2018.09.14  21:34</span></li>
                         </ul>
                         <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
                     </li>
@@ -232,8 +232,8 @@
                         </div>
                         <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
                         <ul class="info" style="display: inline;">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                            <li class="mono_65"><span class="info_value">이*강</span></li>
+                            <li class="mono_65"><span class="info_value">2018.09.14  21:34</span></li>
                         </ul>
                         <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
                     </li>
@@ -243,8 +243,8 @@
                         </div>
                         <p class="reply-txt">댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다 댓글텍스트입니다  </p>
                         <ul class="info" style="display: inline;">
-                            <li class="mono_60"><span class="info_value">이*강</span></li>
-                            <li class="mono_60"><span class="info_value">2018.09.14  21:34</span></li>
+                            <li class="mono_65"><span class="info_value">이*강</span></li>
+                            <li class="mono_65"><span class="info_value">2018.09.14  21:34</span></li>
                         </ul>
                         <span class="fr reply-num"><span class=" ico like"></span> <span>36</span></span>
                     </li>

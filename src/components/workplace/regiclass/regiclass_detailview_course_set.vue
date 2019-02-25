@@ -180,7 +180,7 @@
                                 학습 소개 Orientation 
                             </div>
                             <ul class="info">
-                                <li class="fwb color_clr3">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
+                                <li class="color_clr1">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
                             </ul>
                         </div>
                     </li>
@@ -190,7 +190,7 @@
                                 한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
                             </div>
                             <ul class="info">
-                                <li class="fwb color_clr3">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
+                                <li class="color_clr1">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
                             </ul>
                         </div>
                     </li>
@@ -200,7 +200,7 @@
                                 한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
                             </div>
                             <ul class="info">
-                                <li class="fwb color_clr3">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
+                                <li class="color_clr1">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
                             </ul>
                         </div>
                     </li>
@@ -219,7 +219,7 @@
                                 학습 소개 Orientation 
                             </div>
                             <ul class="info">
-                                <li class="fwb color_clr3">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
+                                <li class="color_clr1">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
                             </ul>
                         </div>
                     </li>
@@ -229,7 +229,7 @@
                                 한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
                             </div>
                             <ul class="info">
-                                <li class="fwb color_clr3">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
+                                <li class="color_clr1">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
                             </ul>
                         </div>
                     </li>
@@ -239,7 +239,7 @@
                                 한 눈에 살펴보는 자바의 기본, 자바 기본 개념 바로 세우기
                             </div>
                             <ul class="info">
-                                <li class="fwb color_clr3">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
+                                <li class="color_clr1">1일차 <span class="fwb600">09:00 ~ 12:00</span></li>
                             </ul>
                         </div>
                     </li>

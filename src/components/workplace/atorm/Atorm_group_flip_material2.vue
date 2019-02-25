@@ -220,7 +220,6 @@
                                     <!-- //list -->
                                 </div>
                             </div>
-
                         </div>
                     </li>
                 </ul>
@@ -246,7 +245,7 @@
 
 <script>
 export default {
-  name: 'Atorm_e-learning_basic_1',
+  name: 'Atorm_group_flip_material2',
   /* vue lifecycle */
   created () {
   },
@@ -259,13 +258,6 @@ export default {
   },
   /* vue function */
   methods: {
-    toggleMenu (event) {
-      if (event.target.classList.contains('open')) {
-        event.target.classList.remove('open')
-      } else {
-        event.target.classList.add('open')
-      }
-    }
   }
 }
 </script>

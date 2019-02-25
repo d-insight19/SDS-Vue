@@ -161,7 +161,7 @@
 
           <div class="cell">
             <div class="inner">
-                <p class="mb5">총 <span class="fwb ml2"><b>1,620</b></span></p>
+                <p class="mb5 font_15">총 <span class="fwb ml2"><b class="fwb600">6</b>건</span></p>
 
                 <ul class="ulList type4">
                     <li>
