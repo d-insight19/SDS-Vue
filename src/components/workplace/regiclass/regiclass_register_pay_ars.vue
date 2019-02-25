@@ -13,7 +13,7 @@
 
                 <div class="stepper">
                     <div class="clearfix">
-                        <h2 class="tit">수강형태 선택</h2>
+                        <h2 class="tit">결제</h2>
                         <div class="num">
                             <strong class="color_clr2">4</strong>/<span>4</span>
                         </div>
@@ -34,10 +34,9 @@
                                 </div>
                             </a>
                             <a href="#" class="tit">초보자를 위한 업무에 바로 쓰는 자바 스크립트 입문 과정</a>
-                            <a href="#" class="date" style="font-family: 'Noto Sans CJK KR'; margin-bottom:0px;">18.12.01 ~ 19.05.31</a>
                             <ul class="info">
-                                <li class="fwb info-num">2,235,000원 </li>
-                                <li class="info-txt">(VAT포함)</li>
+                                <li class="fwb info-num">수강기간</li>
+                                <li class="info-txt">18.12.01 ~ 19.05.31</li>
                             </ul>
                         </div>
                     </li>
@@ -45,11 +44,10 @@
                 <!-- useCupon  -->
                 <div class="cupon-wrap" v-if="useCupon">
                     <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>
-                    <p class="label-tit-18 dpb">할인정보</p>
-                    <strong class="label-tit" style="margin-bottom:8px; display:inline-block;">쿠폰선택</strong>
-                    <slp-select class="w100p" required placeholder="[-20%] 신규가입 감사 기념 이벤트 쿠폰" style="color:rgba(0,0,0,0.8)">
+                    <strong class="label-tit" style="margin-bottom:8px; display:inline-block;">쿠폰적용</strong>
+                    <select class="select w100p" required placeholder="[-20%] 신규가입 감사 기념 이벤트 쿠폰" style="color:rgba(0,0,0,0.8)">
                         <option>[-20%] 신규가입 감사 기념 이벤트 쿠폰</option>
-                    </slp-select>
+                    </select>
                 </div>
                 <!-- //useCupon -->
                 <p class="hr_2" style="margin-top:26px; margin-bottom:22px;"></p>

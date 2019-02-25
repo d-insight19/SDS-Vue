@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery courseware pd70" style="background:#f2f2f2">
+      <div id="container" class="mediaquery courseware studydown pd70" style="background:#f2f2f2">
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">
@@ -229,281 +229,226 @@
         </div>
 
         <div id="content" class="normal" >
+            <div class="cell">
+                <div class="downloadCondition ml-18 mr-18">
+                    <div class="w48p fl">
+                        <p class="font_12 mono_50 fwb">저장공간 사용량</p>
+                        <p class="font_13 mono_65 fwb">24% <span class="font_11 mono_50 fwr">(123.21 GB/512.51 GB)</span></p>
+                    </div>
+                    <div class="w48p fr">
+                        <p class="font_12 mono_50 fwb">다운로드한 강의</p>
+                        <p class="font_13 mono_65 fwb">978.21 MB</p>
+                    </div>
+                </div>
+            </div>
 
-          <div class="cell">
-            <div class="inner pt0">
-
-                <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_16 mono_80 fwb dib">차시별</p>
-                    <p class="fr">
-                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
-                        <span class="ico download"></span>
+            <div class="cell">
+                <div class="filterArea ml-18 mr-18">
+                    <p class="tar">
+                        <button class="font_14 mono_65 fwr" @click="btnCancel">취소</button>
+                        <button class="font_14 color_clr2 fwr ml10" @click="btnEdit">다운로드</button> <span class="badge chip_xs ml6 clr2">12</span>
                     </p>
                 </div>
-                <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
+            </div>
 
+             <h2 class="h-tit2 fwb600 mb0">데이터 특성 알아보기</h2>
+                
                 <!-- list -->
                 <ul class="multiList type2">
                     <li>
-                        <div class="download_detail">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 한 줄</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
-                                    </li>
-                                </ul>
+                        <slp-checkbox value="true">
+                            <div class="download_detail">
+                                <div class="txt_wrap">
+                                    <p class="icon_txt color_clr3">1차시</p>
+                                    <p class="title">학습 소개 Orientation </p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        </slp-checkbox>
                         <span class="ico accordion_arrow"></span>
                     </li>
                     <li>
-                        <div class="download_detail">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-                                        <span class="mono_65">2017.11.05</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
+                        <slp-checkbox value="true">
+                            <div class="download_detail">
+                                <div class="txt_wrap">
+                                    <p class="icon_txt color_clr3">2차시</p>
+                                    <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’ 제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’ 제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        </slp-checkbox>
                         <span class="ico accordion_arrow"></span>
                     </li>
                     <li class="open">
-                        <div class="download_detail border_clr1 clr1 wh">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr6">3차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li>
-                                        <span class="ico check_14 wh"></span>
-                                        <span class="wh">진행중</span>
-                                        <span class="wh mono_65">1/4</span>
-                                    </li>
-                                    <li>
-                                        <span class="ico time wh"></span>
-                                        <span class="wh">12:45</span><span class="wh">/</span><span class="wh mono_65">23:43</span>
-                                    </li>
-                                </ul>
+                        <slp-checkbox value="">
+                            <div class="download_detail border_clr1">
+                                <div class="txt_wrap">
+                                    <p class="icon_txt color_clr3">3차시</p>
+                                    <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                    
+                                </div>
                             </div>
-                            <span class="ico accordion_arrow wh_up"></span>
-                        </div>
-
-
-                            <ul>
-                                <li class="open">
-                                    <div class="sub_content">
-                                        <p class="sub_content_title border_clr1  color_clr1 clr4">변수와 데이터 타입</p>
-                                        <!-- list -->
-                                        <ul class="multiList type2">
-                                            <li>
-                                                <div class="download_detail border_clr1 clr4 done">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico play_28"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico check_14"></span>
-                                                                <span>학습완료</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 done clr3">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico play_28"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico ongoing_16"></span>
-                                                                <span>진행중</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail border_clr1 done clr4 bottom-bd-x ">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico ebook_20"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 E-book / HTML5</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico ongoing_16"></span>
-                                                                <span>진행중</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- //list -->
-                                        <p class="sub_content_title border_clr1 color_clr1 clr4">변수와 데이터 타입</p>
-                                        <!-- list -->
-                                        <ul class="multiList type2">
-                                            <li>
-                                                <div class="download_detail border_clr1 done clr4">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico headphone_20"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico complete_14"></span>
-                                                                <span>미진행</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="download_detail clr4 border_clr1">
-                                                    <div class="icon_wrap">
-                                                        <span class="ico play_28"></span>
-                                                    </div>
-                                                    <div class="txt_wrap">
-                                                        <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                                        <ul class="info">
-                                                            <li class="">
-                                                                <span class="ico locked_16"></span>
-                                                                <span>학습불가</span>
-                                                            </li>
-                                                            <li class="">
-                                                                <span class="ico time"></span>
-                                                                <span class="mono_65">23:43</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- //list -->
-                                    </div>
+                        </slp-checkbox>
+                        <span class="ico accordion_arrow"></span>
+                        <div class="sub_content">
+                            <p class="sub_content_title border_clr1 color_clr1 clr4 ml38">변수와 데이터 타입</p>
+                            <!-- list -->
+                            <ul class="multiList type2">
+                                <li>
+                                    <slp-checkbox class="" value="true">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
+                                </li>
+                                <li>
+                                    <slp-checkbox class="" value="true">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
+                                </li>
+                                <li>
+                                    <slp-checkbox class="" value="true">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
                                 </li>
                             </ul>
-                            <!--//inner list -->
-                    </li>
-
-                    <li>
-                        <div class="download_detail">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">4차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-                                        <span>1/4</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            <!-- //list -->
+                            <p class="sub_content_title border_clr1 color_clr1 clr4 ml38">특성 활용하기</p>
+                            <!-- list -->
+                            <ul class="multiList type2">
+                                <li>
+                                    <slp-checkbox class="" value="">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
+                                </li>
+                                <li>
+                                    <slp-checkbox class="" value="">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
+                                </li>
+                            </ul>
+                            <!-- //list -->
                         </div>
+                    </li>
+                    <li>
+                        <slp-checkbox class="" value="true">
+                            <div class="download_detail">
+                                <div class="txt_wrap">
+                                    <p class="icon_txt color_clr3">4차시</p>
+                                    <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </slp-checkbox>
                         <span class="ico accordion_arrow"></span>
                     </li>
                 </ul>
+                <!-- //list -->
 
-                <p class="label-tit-18 mt26 ">데이터 특성 알아보기</p>
-
+          <div class="cell">
+            <div class="inner">
+                <h2 class="h-tit2 fwb600 mb0">데이터 특성 알아보기</h2>
+                <!-- list -->
                 <ul class="multiList type2">
                     <li>
-                        <div class="download_detail">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">1차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico complete_14"></span>
-                                        <span>미진행</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
+                        <slp-checkbox class="" value="true">
+                            <div class="download_detail">
+                                <div class="icon_wrap">
+                                    <span class="ico play_28"></span>
+                                </div>
+                                <div class="txt_wrap">
+                                    <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                    <li>
-                        <div class="download_detail">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">2차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico lock_16"></span>
-                                        <span>학습불가</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <span class="ico accordion_arrow"></span>
+                        </slp-checkbox>
                     </li>
                 </ul>
-                <!-- 리스트끝 -->
-
+                <!-- //list -->
             </div>
           </div>
+
+            <div class="cell">
+                <div class="inner pt0">
+                    <study-list-edit :class="{'editMode' : editFlag}"></study-list-edit>
+                </div>
+            </div>
 
         </div>
 
       </div>
       <!-- //container -->
-
-        <!-- layer wrap -->
-      <slp-popup v-if="showConfirm" title="공지 사항" confirmInput="확인" @cancelClick="cancel" @confirmClick="confirm">
-        <!-- popup body -->
-        <div class="ly-cnt">
-            <p>SPRINT - 구글 벤처스의 5일만에 기획부터 실행까지 끝내는 법(참고도서제공)</p>
-        </div>
-        <slp-checkbox>1주일간 보지 않기</slp-checkbox>
-    </slp-popup>
-      <!-- //layer wrap -->
-
     </div>
     <!-- //wrap -->
-
-
 </template>
 
 <script>
@@ -534,90 +479,102 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
+//Study_list
+import studyListEdit from './Study_list_edit.vue'
+
 export default {
-  name: 'components_flowplayer',
-  data () {
-    return {
-        showConfirm: true,
-        active : false,
-        scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
-        detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
-        relatedVideoList: [
-            {title: '자바스크립트 개발 프로세스 기초'},
-            {title: '모바일 게임 UI 디자인 실무'},
-            {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
-            {title: '모바일 게임 UI 디자인 실무'},
-            {title: '자바스크립트 개발 프로세스 기초1'},
-            {title: '자바스크립트 개발 프로세스 기초2'},
-            {title: '자바스크립트 개발 프로세스 기초3'}
-        ],
-       option: {
-        loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
-        targetId: "contents", //div target Id
-        // sources: [
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
-        // ],
-        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
-        sources: [
-            { type: 'video/mp4', src: './static/movie/m010102.mp4'},
-            { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
-            { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
-            { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
-        ],
-        src: './static/movie/m010102.mp4', //동영상 src
-        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
-        title: "Flowplayer", //콘텐츠 제목
-        isSpeeds: true, //동영상 배속 사용여부
-        speeds: [1, 2, 3], //동영상 배속 설정 값
-        skinClass: "flowplayer fp-fat", //동영상 스킨
-        isMute: true, //음소거 사용여부
-        isFullscreen: true, //전체 화면
-        isShare: true, //공유 여부
-        isAutoplay: false, //자동실행여부
-        seekTime: 30, //콘텐츠 이어학습하기 시간 초
-        isPorg: true, //콘텐츠 진도값 저장 여부
-        logSaveTime: 5, //콘텐츠 진도 로그 저장 주기 (초)
-        replayTime: [0, 0], //구간반속 구간 [시작, 끝]
-        qualities: ["160p", "260p", "530p", "720p"], //콘텐츠 화질 설정 값
-        defaultQuality: "260p", //콘텐츠 화질 초기 값
-        subtitles: [
-          {
-            "default": true, // note the quotes around "default"!
-            kind: "subtitles",
-            srclang: "en",
-            label: "English",
-            // src: "../../html/bc_smart_en.vtt"
-          },
-          {
-            "default": true, // note the quotes around "default"!
-            kind: "subtitles",
-            srclang: "ko",
-            label: "Korea",
-            // src: "../../html/bc_smart_ko.vtt"
-          }
-        ], //자막,
-        noseek: true //timeline no
-      }
-    }
-  },
-  methods: {
-    detail_toggle () {
-        this.detail_show = !this.detail_show;
+    name: 'components_flowplayer',
+
+    components: { //Study_list
+		'study-list-eidt':studyListEdit
+	},
+
+    data () {
+        return {
+            active : false,
+            scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
+            detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
+            relatedVideoList: [
+                {title: '자바스크립트 개발 프로세스 기초'},
+                {title: '모바일 게임 UI 디자인 실무'},
+                {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
+                {title: '모바일 게임 UI 디자인 실무'},
+                {title: '자바스크립트 개발 프로세스 기초1'},
+                {title: '자바스크립트 개발 프로세스 기초2'},
+                {title: '자바스크립트 개발 프로세스 기초3'}
+            ],
+            option: {
+                loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
+                targetId: "contents", //div target Id
+                // sources: [
+                //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
+                //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
+                //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
+                //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
+                // ],
+                // src: require('@/assets/movie/m010102.mp4'), //동영상 src
+                sources: [
+                    { type: 'video/mp4', src: './static/movie/m010102.mp4'},
+                    { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
+                    { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
+                    { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
+                ],
+                src: './static/movie/m010102.mp4', //동영상 src
+                // src: require('@/assets/movie/m010102.mp4'), //동영상 src
+                title: "Flowplayer", //콘텐츠 제목
+                isSpeeds: true, //동영상 배속 사용여부
+                speeds: [1, 2, 3], //동영상 배속 설정 값
+                skinClass: "flowplayer fp-fat", //동영상 스킨
+                isMute: true, //음소거 사용여부
+                isFullscreen: true, //전체 화면
+                isShare: true, //공유 여부
+                isAutoplay: false, //자동실행여부
+                seekTime: 30, //콘텐츠 이어학습하기 시간 초
+                isPorg: true, //콘텐츠 진도값 저장 여부
+                logSaveTime: 5, //콘텐츠 진도 로그 저장 주기 (초)
+                replayTime: [0, 0], //구간반속 구간 [시작, 끝]
+                qualities: ["160p", "260p", "530p", "720p"], //콘텐츠 화질 설정 값
+                defaultQuality: "260p", //콘텐츠 화질 초기 값
+                subtitles: [
+                {
+                    "default": true, // note the quotes around "default"!
+                    kind: "subtitles",
+                    srclang: "en",
+                    label: "English",
+                    // src: "../../html/bc_smart_en.vtt"
+                },
+                {
+                    "default": true, // note the quotes around "default"!
+                    kind: "subtitles",
+                    srclang: "ko",
+                    label: "Korea",
+                    // src: "../../html/bc_smart_ko.vtt"
+                }
+                ], //자막,
+                noseek: true //timeline no
+            },
+
+            editFlag: false, //Study_list
+        }
     },
-    active_el () {
-        this.active = !this.active
+
+    methods: {
+        detail_toggle () {  //Study_list
+            this.detail_show = !this.detail_show;
+        },
+        active_el () { //Study_list
+            this.active = !this.active
+        },
+
+        btnEdit: function() { //Study_list
+            this.editFlag = true;
+        },
+        btnCancel: function() { //Study_list
+            this.editFlag = false;
+        }
     },
-    cancel: function () {
-      this.showConfirm = false
-    },
-    confirm: function () {
-      this.showConfirm = false
-    }
-  },
-  mounted () {
+
+    mounted () {
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
 
@@ -747,6 +704,6 @@ export default {
                 }
             });
         }
-  }
+    }
 }
 </script>

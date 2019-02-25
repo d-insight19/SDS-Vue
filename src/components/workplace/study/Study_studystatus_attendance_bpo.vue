@@ -47,12 +47,13 @@
                         <p class="label-tit20 mb16 fwb600">출결현황</p>
                         <div class="attend_status_detail pdb27">
                             <ul class="fix">
-                                <li><span class="color_clr2 fwb700 ml8 mr8">O</span> <span class="fwb700 mono_65">16</span></li>
+                                <li ><span class="color_clr2 fwb700 ml8 mr8">O</span> <span class="fwb700 mono_65">16</span></li>
                                 <li><span class="color_clr2 fwb700 ml8 mr8">L</span> <span class="fwb700 mono_65">1</span></li>
                                 <li><span class="color_clr2 fwb700 ml8 mr8">B</span> <span class="fwb700 mono_65">3</span></li>
                                 <li><span class="color_clr2 fwb700 ml8 mr8">E</span> <span class="fwb700 mono_65">2</span></li>
                                 <li><span class="color_clr2 fwb700 ml8 mr8">B</span> <span class="fwb700 mono_65">2</span></li>
                             </ul>
+                            <p v-show="ok" class="mt12"><span class="ico chk" style="margin-right:6px; vertical-align: -2px;"></span><span class="font_18 fwb">확인 완료</span></p>
                         </div>
                     </div>
                 </div>
@@ -77,10 +78,10 @@
             </div>
 
         <!-- fixed Bottom Btn -->    
-        <div class="fixBtmBtn">
+        <div class="fixBtmBtn" v-if="!ok">
             <ul>
                 <li><slp-button class="md">변경요청</slp-button></li>
-                <li><slp-button class="md clr1">최종확인</slp-button></li>
+                <li @click="ActiveOk()"><slp-button   class="md clr1">최종확인</slp-button></li>
             </ul>
         </div>
         <!-- //fixed Bottom Btn -->    
@@ -97,17 +98,22 @@ export default {
 /*eslint-disable */
   name: 'Study_studystatus_attendance_bpo',
   /* vue lifecycle */
+    data () {
+        return {  
+            ok:false
+        }
+    },
   created () {
   },
   mounted () {
   },
   /* vue data */
-  data () {
-    return {
-    }
-  },
   /* vue function */
   methods: {
+    ActiveOk () {
+        console.log('flase')
+        this.ok = true
+    }
   }
 }
 </script>

@@ -234,19 +234,38 @@
             <div class="inner pt0">
 
                 <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_15 mono_80 fwb dib">전체보기</p>
+                    <p class="font_16 mono_80 fwb dib">전체보기</p>
                     <p class="fr">
-                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
+                        <span class="ico filter" style="position:static;"></span>
                     </p>
                 </div>
-                <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
+                
+                <ul class="multiList type2">
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="chip b_color3">사전설문</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 한 줄</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico check_14"></span>
+                                        <span>진단완료</span>
+                                        <span class="mono_65">2018.09.06</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="label-tit-18 mt26 ">데이터 특성 알아보기</p>
 
                 <!-- list -->
                 <ul class="multiList type2">
                     <li>
                         <div class="download_detail">
                             <div class="txt_wrap">
-                                <p class="chip b_color3">사전설문</p>
+                                <p class="icon_txt color_clr3">N차시</p>
                                 <p class="title">차시명 타이틀 입니다. : 16 Medium 한 줄</p>
                                 <ul class="info">
                                     <li class="">
@@ -428,7 +447,27 @@
                                     </li>
                                     <li class="">
                                         <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
+                                        <span class="mono_65">23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <div class="download_detail">
+                            <div class="txt_wrap">
+                                <p class="icon_txt color_clr3">5차시</p>
+                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                <ul class="info">
+                                    <li class="">
+                                        <span class="ico ongoing_16"></span>
+                                        <span>진행중</span>
+                                        <span>1/4</span>
+                                    </li>
+                                    <li class="">
+                                        <span class="ico time"></span>
+                                        <span class="mono_65">23:43</span>
                                     </li>
                                 </ul>
                             </div>
@@ -442,8 +481,10 @@
                 <ul class="multiList type2">
                     <li>
                         <div class="download_detail">
+                            <div class="icon_wrap">
+                                <span class="ico play_28"></span>
+                            </div>
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">1차시</p>
                                 <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
                                 <ul class="info">
                                     <li class="">
@@ -457,12 +498,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <span class="ico accordion_arrow"></span>
                     </li>
                     <li>
                         <div class="download_detail">
                             <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">2차시</p>
+                                <p class="icon_txt color_clr3">N차시</p>
                                 <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
                                 <ul class="info">
                                     <li class="">

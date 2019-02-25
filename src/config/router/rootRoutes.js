@@ -186,6 +186,9 @@ import etcMiniplayer from '~workplace/study/etc_Miniplayer'
 import etcKeepstudy from '~workplace/study/etc_keepstudy'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
+import Study0218studylistdownload02 from '~workplace/study/Study_0218studylist_download_02'
+import Study0218studylistdownload03 from '~workplace/study/Study_0218studylist_download_03'
+import Study0218studylistdownload04 from '~workplace/study/Study_0218studylist_download_04'
 import Studystudynote from '~workplace/study/Study_studynote'
 import Studystudynoteall01 from '~workplace/study/Study_studynote_all_01'
 import Studystudynoteall02snacbar from '~workplace/study/Study_studynote_all_02_snacbar'
@@ -293,7 +296,7 @@ import StudyReminderDetail from '~workplace/study/Study_reminder_detail'
 import Studyfaq from '~workplace/study/Study_faq'
 import Studysurvey from '~workplace/study/Study_survey'
 import Studynotice from '~workplace/study/Study_notice'
-import StudynoticeAlarm from '~workplace/study/Study_notice_alarm'
+import Studystudynotice from '~workplace/study/Study_studynotice'
 import Studydata from '~workplace/study/Study_data'
 import Studydatadetail from '~workplace/study/Study_data_detail'
 import Studydiscuss from '~workplace/study/Study_discuss'
@@ -1704,6 +1707,21 @@ var rootRoutes = [
     component: Study0218studylistdownload
   },
   {
+    path: '/Study_0218studylist_download_02',
+    name: 'Study_0218studylist_download_02',
+    component: Study0218studylistdownload02
+  },
+  {
+    path: '/Study_0218studylist_download_03',
+    name: 'Study_0218studylist_download_03',
+    component: Study0218studylistdownload03
+  },
+  {
+    path: '/Study_0218studylist_download_04',
+    name: 'Study_0218studylist_download_04',
+    component: Study0218studylistdownload04
+  },
+  {
     path: '/Study_studynote',
     name: 'Study_studynote',
     component: Studystudynote
@@ -2234,9 +2252,9 @@ var rootRoutes = [
     component: Studynotice
   },
   {
-    path: '/Study_notice_alarm',
-    name: 'Study_notice_alarm',
-    component: StudynoticeAlarm
+    path: '/Study_studynotice',
+    name: 'Study_studynotice',
+    component: Studystudynotice
   },
   {
     path: '/Study_data',

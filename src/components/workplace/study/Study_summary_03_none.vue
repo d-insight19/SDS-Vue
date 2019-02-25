@@ -242,9 +242,6 @@
                                 <p class="icon_txt color_clr3">요약집</p>
                                 <p class="title">[원포인트 MBA]서울대 이경미 교수의 마케팅 실전전략</p>
                                 <ul class="info">
-                                    <li class="">
-                                        <span class="mono_65">핵심요약 3개</span>
-                                    </li>
                                     <li>
                                         <span class="ico clip"></span>
                                         <span class="mono_65">첨부파일</span>

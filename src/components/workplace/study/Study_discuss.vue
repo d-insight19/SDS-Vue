@@ -161,7 +161,7 @@
 
           <div class="cell">
             <div class="inner">
-                <p class="mb5">총 <span class="fwb ml2"><b>999</b></span>
+                <p class="mb5 font_15">총 <span class="fwb ml2"><b>999</b></span>
                 <a href="#"><span class="color_clr2 fr">작성</span></a>
                 </p>
 

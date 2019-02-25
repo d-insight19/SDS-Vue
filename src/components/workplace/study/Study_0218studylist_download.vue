@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">
       <!-- container -->
-      <div id="container" class="mediaquery courseware pd70" style="background:#f2f2f2">
+      <div id="container" class="mediaquery courseware studydown pd70" style="background:#f2f2f2">
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video" style="background:#fff">
@@ -250,6 +250,192 @@
                     </p>
                 </div>
             </div>
+
+             <h2 class="h-tit2 fwb600 mb0">데이터 특성 알아보기</h2>
+                
+                <!-- list -->
+                <ul class="multiList type2">
+                    <li>
+                        <slp-checkbox value="true">
+                            <div class="download_detail">
+                                <div class="txt_wrap">
+                                    <p class="icon_txt color_clr3">1차시</p>
+                                    <p class="title">학습 소개 Orientation </p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </slp-checkbox>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li>
+                        <slp-checkbox value="true">
+                            <div class="download_detail">
+                                <div class="txt_wrap">
+                                    <p class="icon_txt color_clr3">2차시</p>
+                                    <p class="title">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’ 제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’ 제이크 냅 직강: 기획부터 실행까지 5일만에 끝내는 ‘SPRINT’</p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </slp-checkbox>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                    <li class="open">
+                        <slp-checkbox value="">
+                            <div class="download_detail border_clr1">
+                                <div class="txt_wrap">
+                                    <p class="icon_txt color_clr3">3차시</p>
+                                    <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </slp-checkbox>
+                        <span class="ico accordion_arrow"></span>
+                        <div class="sub_content">
+                            <p class="sub_content_title border_clr1 color_clr1 clr4 ml38">변수와 데이터 타입</p>
+                            <!-- list -->
+                            <ul class="multiList type2">
+                                <li>
+                                    <slp-checkbox class="" value="true">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
+                                </li>
+                                <li>
+                                    <slp-checkbox class="" value="true">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
+                                </li>
+                                <li>
+                                    <slp-checkbox class="" value="true">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
+                                </li>
+                            </ul>
+                            <!-- //list -->
+                            <p class="sub_content_title border_clr1 color_clr1 clr4 ml38">특성 활용하기</p>
+                            <!-- list -->
+                            <ul class="multiList type2">
+                                <li>
+                                    <slp-checkbox class="" value="">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
+                                </li>
+                                <li>
+                                    <slp-checkbox class="" value="">
+                                        <div class="download_detail border_clr1">
+                                            <div class="icon_wrap">
+                                                <span class="ico play_28"></span>
+                                            </div>
+                                            <div class="txt_wrap">
+                                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                                <ul class="info">
+                                                    <li class="">12.33MB</li>
+                                                    <li class="">55:12</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </slp-checkbox>
+                                </li>
+                            </ul>
+                            <!-- //list -->
+                        </div>
+                    </li>
+                    <li>
+                        <slp-checkbox class="" value="true">
+                            <div class="download_detail">
+                                <div class="txt_wrap">
+                                    <p class="icon_txt color_clr3">4차시</p>
+                                    <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </slp-checkbox>
+                        <span class="ico accordion_arrow"></span>
+                    </li>
+                </ul>
+                <!-- //list -->
+
+          <div class="cell">
+            <div class="inner">
+                <h2 class="h-tit2 fwb600 mb0">데이터 특성 알아보기</h2>
+                <!-- list -->
+                <ul class="multiList type2">
+                    <li>
+                        <slp-checkbox class="" value="true">
+                            <div class="download_detail">
+                                <div class="icon_wrap">
+                                    <span class="ico play_28"></span>
+                                </div>
+                                <div class="txt_wrap">
+                                    <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
+                                    <ul class="info">
+                                        <li class="">12.33MB</li>
+                                        <li class="">55:12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </slp-checkbox>
+                    </li>
+                </ul>
+                <!-- //list -->
+            </div>
+          </div>
 
             <div class="cell">
                 <div class="inner pt0">

@@ -400,7 +400,7 @@
 #header.tab .header_inner{display:block;width:100%;}
 //audio시 변경사항
 #header.tab .header_inner.audio{display:none !important;}
-#header.tab .player_wrap.audio{height:25vh !important;}
+#header.tab .player_wrap.audio{height:270px !important; background: url('../img/Audio_img.png') center center no-repeat; background-size:cover;}
 #header.tab .hide_header.audio{display: none!important;}
 #header.tab .header_inner.line1.audio{display: none!important;}
 

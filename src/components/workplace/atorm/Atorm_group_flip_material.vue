@@ -27,7 +27,7 @@
         <!-- //header -->
         <div id="content" class="normal">
           <div class="cell">
-            <div class="inner pdb20">
+            <div class="inner">
 
                 <ul>
                     <li>
@@ -53,18 +53,20 @@
 
                                     <!-- list -->
                                     <ul>
-                                        <li class="open">
+                                         <li class="open">
                                             <div class="download_detail mt13">
                                                 <span class="label-tit16 color_clr1 fwb600">1일차</span>
                                                 <span class="fr ico deletemode_20"></span>
                                             </div>
                                             <div class="sub_content">
-                                                <div class="sub_content_add_txt">
-                                                    <p class="label-tit13 color_clr1 fwb600">1교시</p>
-                                                    <div class="back_none">
-                                                        <slp-text-field classObject="underline" placeholder="학습 목표를 입력하세요"></slp-text-field>
-                                                    </div>
-                                                </div>
+                                                <ul class="sub_content_add_txt">
+                                                    <li class="mb24">
+                                                        <p class="label-tit13 color_clr1 fwb600">1교시 <span class="fr ico deletemode_20"></span></p>
+                                                        <div class="back_none">
+                                                            <slp-text-field classObject="underline" placeholder="학습 목표를 입력하세요"></slp-text-field>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </li>
                                         <slp-button class="sm add w100p mt16 mb20" @click="addList1()" ><span class="ico"></span>일자 추가</slp-button>
@@ -107,48 +109,6 @@
                                                             <slp-button class="xxxs mono_80">추가</slp-button>
                                                         </li>
                                                     </ul>
-
-                                                    <!-- 문제 리스트
-                                                    <div class="evaluationList_box">
-                                                        <ul class="evaluationList">
-                                                            <li>
-                                                                <p class="multiline font_16 mono_80">
-                                                                    <span class="ico multiplechoice_32"></span>
-                                                                    방해요소에 대한 설명이다. 틀린 것을 고르시오.
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico shortanswer_32"></span>
-                                                                    의사소통의 기본 요소 5가지를 적으시오.
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico ox_32"></span>
-                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다.
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico multiplechoice_32"></span>
-                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다.
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico shortanswer_32"></span>
-                                                                    리스크 분석 프로세스에 대한 설명이다. 다음 중 옳은 것을 고르시오.
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    //문제리스트 -->
                                                 </div>
 
                                             </div>
@@ -158,7 +118,6 @@
                                     <!-- //list -->
                                 </div>
                             </div>
-
                         </div>
                     </li>
                 </ul>
@@ -184,7 +143,7 @@
 
 <script>
 export default {
-  name: 'Atorm_e-learning_basic_1',
+  name: 'Atorm_group_flip_material',
   /* vue lifecycle */
   created () {
   },
@@ -197,13 +156,6 @@ export default {
   },
   /* vue function */
   methods: {
-    toggleMenu (event) {
-      if (event.target.classList.contains('open')) {
-        event.target.classList.remove('open')
-      } else {
-        event.target.classList.add('open')
-      }
-    }
   }
 }
 </script>

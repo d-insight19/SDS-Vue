@@ -119,8 +119,8 @@
                         <!-- <span class="ico download"></span> -->
                     </p>
                 </div>
-                <h2 class="label-tit18 mb0">제이크 냅 오프라인교육</h2>
-                <!-- list -->
+                <p class="label-tit-18 mt19 ">제이크 냅 오프라인교육</p>
+
                 <ul class="multiList type2">
                     <li>
                         <div class="download_detail">
@@ -133,7 +133,7 @@
                                 <dl class="info">
                                     <dd class="font_13">
                                         <span class="mr10">일시</span>
-                                        <span class="mono_65">2018.01.01 - 2018.02.01</span>
+                                        <span>2018.01.01 - 2018.02.01</span>
                                     </dd>
                                     <dd class="font_13 mt2">
                                         <span class="mr10">시간</span>
@@ -148,47 +148,10 @@
                                         <span class="mono_65">멀티캠퍼스 6층 602호</span>
                                     </dd>
                                 </dl>
-                                <ul class="info mt15">
-                                    <li class="d-block">
+                                <ul class="info mt12">
+                                    <li class="">
                                         <span class="ico check_14"></span>
-                                        <span>학습완료</span>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                     <li>
-                        <div class="download_detail clr1 wh">
-                            <div class="icon_wrap pdr6">
-                                <span class="ico set_line_wh_28"></span>
-                            </div>
-                            <div class="txt_wrap  w_full">
-                                <p class="icon_txt color_clr3">N일차</p>
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
-                                <dl class="info">
-                                    <dd class="font_13">
-                                        <span class="mr10  wh">일시</span>
-                                        <span class="wh">2018.01.01 - 2018.02.01</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10  wh">시간</span>
-                                        <span class="wh">09:00~11:00</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10 wh">강사</span>
-                                        <span class="wh">강성윤, 김윤숙</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10 wh">장소</span>
-                                        <span class="wh">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
-                                <ul class="info mt15">
-                                    <li class="d-block">
-                                        <span class="ico check_14 wh"></span>
-                                        <span class="wh">학습완료</span>
-
+                                        <span class="mr6">학습완료</span>
                                     </li>
                                 </ul>
                             </div>
@@ -205,7 +168,7 @@
                                 <dl class="info">
                                     <dd class="font_13">
                                         <span class="mr10">일시</span>
-                                        <span class="mono_65">2018.01.01 - 2018.02.01</span>
+                                        <span>2018.01.01 - 2018.02.01</span>
                                     </dd>
                                     <dd class="font_13 mt2">
                                         <span class="mr10">시간</span>
@@ -220,19 +183,23 @@
                                         <span class="mono_65">멀티캠퍼스 6층 602호</span>
                                     </dd>
                                 </dl>
-                                <ul class="info mt15">
-                                    <li class="d-block">
+                                <ul class="info mt12">
+                                    <li class="">
                                         <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-
+                                        <span class="mr6">진행중</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="download_detail">
-                            <div class="icon_wrap pdr6">
+                </ul>
+
+                <p class="label-tit-18 " style="margin-top:26px;">셀프 이노베이션 사례 교육</p>
+
+                <ul class="multiList type2">
+                     <li>
+                        <div class="download_detail  done">
+                            <div class="icon_wrap">
                                 <span class="ico ic_set_line_28"></span>
                             </div>
                             <div class="txt_wrap  w_full">
@@ -241,7 +208,7 @@
                                 <dl class="info">
                                     <dd class="font_13">
                                         <span class="mr10">일시</span>
-                                        <span class="mono_65">2018.01.01 - 2018.02.01</span>
+                                        <span>2018.01.01 - 2018.02.01</span>
                                     </dd>
                                     <dd class="font_13 mt2">
                                         <span class="mr10">시간</span>
@@ -256,47 +223,10 @@
                                         <span class="mono_65">멀티캠퍼스 6층 602호</span>
                                     </dd>
                                 </dl>
-                                <ul class="info mt15">
-                                    <li class="d-block">
+                               <ul class="info mt12">
+                                    <li class="">
                                         <span class="ico complete_14"></span>
-                                        <span>미진행</span>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download_detail">
-                            <div class="icon_wrap pdr6">
-                                <span class="ico ic_set_line_28"></span>
-                            </div>
-                            <div class="txt_wrap w_full">
-                                <p class="icon_txt color_clr3">N일차</p>
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
-                                <dl class="info">
-                                    <dd class="font_13">
-                                        <span class="mr10">일시</span>
-                                        <span class="mono_65">2018.01.01 - 2018.02.01</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">시간</span>
-                                        <span class="mono_65">09:00~11:00</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">강사</span>
-                                        <span class="mono_65">강성윤, 김윤숙</span>
-                                    </dd>
-                                    <dd class="font_13 mt2">
-                                        <span class="mr10">장소</span>
-                                        <span class="mono_65">멀티캠퍼스 6층 602호</span>
-                                    </dd>
-                                </dl>
-                                <ul class="info mt15">
-                                    <li class="d-block">
-                                        <span class="ico lock_16"></span>
-                                        <span>학습불가</span>
-
+                                        <span class="mr6">미진행</span>
                                     </li>
                                 </ul>
                             </div>

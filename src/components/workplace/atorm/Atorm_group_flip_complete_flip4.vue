@@ -21,7 +21,7 @@
                     </div>
                 </div>
                     <div class="progBox">
-                    <div class="bar clr2" style="width:20%"></div>
+                    <div class="bar clr2" style="width:100%"></div>
                 </div>
                 <p class="txt-desc">제작한 학습과정을 확인 후 완료합니다.</p>
             </div>

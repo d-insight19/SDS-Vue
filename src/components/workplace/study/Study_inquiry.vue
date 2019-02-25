@@ -161,7 +161,7 @@
 
           <div class="cell">
             <div class="inner">
-                <p class="mb5">총 <span class="fwb ml2"><b>999</b></span>
+                <p class="mb5 font_15">총 <span class="fwb ml2"><b>999</b></span>
                 <a href="#"><span class="color_clr2 fr">작성</span></a>
                 </p>
 
@@ -177,95 +177,42 @@
                     <li>
                         <p class="title">리플렉션노트 타이틀 영역입니다. 타이틀을 기입해 주세요.</p>
                         <dl class="pipe-group mono_65">
-                            <dd>정해민</dd>
+                            <dd>동영상</dd>
                             <dd>2018.10.10</dd>
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            
                         </dl>
                         <p class="mono_80 mt12">미답변</p>
                     </li>
                      <li>
                         <p class="title">리플렉션노트 타이틀 영역입니다.</p>
                         <dl class="pipe-group mono_65">
-                            <dd>정해민</dd>
+                            <dd>리포트</dd>
                             <dd>2018.10.10</dd>
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            
                         </dl>
                         <p class="color_clr3 mt12">답변완료</p>
                     </li>
                     <li>
                         <p class="title">리플렉션노트 타이틀 영역입니다. 타이틀을 기입해 주세요.</p>
                         <dl class="pipe-group mono_65">
-                            <dd>정해민</dd>
+                            <dd>진도체크</dd>
                             <dd>2018.10.10</dd>
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            
                         </dl>
                         <p class="color_clr3 mt12">답변완료</p>
                     </li>
                      <li>
                         <p class="title">리플렉션노트 타이틀 영역입니다.</p>
                         <dl class="pipe-group mono_65">
-                            <dd>정해민</dd>
+                            <dd>동영상</dd>
                             <dd>2018.10.10</dd>
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
+                            
                         </dl>
                         <p class="color_clr3 mt12">답변완료</p>
                     </li>
-                    <li>
-                        <p class="title">리플렉션노트 타이틀 영역입니다. 타이틀을 기입해 주세요.</p>
-                        <dl class="pipe-group mono_65">
-                            <dd>정해민</dd>
-                            <dd>2018.10.10</dd>
-                            <dd><span class="ico view mr2"></span>2190</dd>
-                            <dd><span class="ico clip mr2"></span>첨부파일</dd>
-                        </dl>
-                        <p class="color_clr3 mt12">답변완료</p>
-                    </li>
-
                 </ul>
 
 
-                <!-- keyboard -->
-                <div id="keyboard_wrap">
-                    <div id="inner_dim" v-show="focusFlag" @click="focusToggle"></div>
-                    <div class="keyboard_input" v-show="focusFlag">
-
-                        <div class="bookmark_wrap" v-if="keyboard_type=='4'">
-                            <span class="bookmarktxt">북마크</span>
-                            <span class="fr time">01:36</span>
-                        </div>
-                        <div class="open_wrap" v-if="keyboard_type=='3' || keyboard_type=='4' ">
-                            <span class="opentxt">공개여부</span>
-                            <slp-switch :classObject="{'fr': true}"/>
-                            <span class="opentxt2">비공개</span>
-                        </div>
-
-                        <div class="rating_wrap" v-if="keyboard_type=='2'">
-                            <span class="ratingtxt">평점</span>
-                            <fieldset class="fr rating">
-                                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                            </fieldset>
-                        </div>
-
-                        <div class="inputbox" >
-                            <div class="textarea_wrap">
-                                <textarea @keydown="onKeydown" placeholder="댓글을 입력하세요."></textarea>
-                            </div>
-                            <div class="inputbottom">
-                                <span class="strlenth" >{{keylength}}/300</span>
-                                <span class="regiBtn" :class="{active: keylength}">등록</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- //keyboard -->
             </div>
           </div>
 

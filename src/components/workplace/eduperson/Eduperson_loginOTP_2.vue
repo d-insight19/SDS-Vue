@@ -43,8 +43,9 @@
                 <p class="label-tit-20" style="margin-top: 60px; margin-bottom:10px;">인증번호 입력</p>
 
                 <ul class="loginList">
-                    <li>
-                        <slp-text-field class="mb30" classObject="underline" style="position:relative"> <div class="time" style="position:absolute;top:0;right:0;color:red;">05:00</div></slp-text-field>
+                    <li style="position:relative">
+                        <slp-text-field class="mb30" classObject="underline" style="position:relative"></slp-text-field>
+                        <div class="time" style="position:absolute;top: 14px;right: 0px;color: rgba(0,0,0,0.25);">05:00</div>
                     </li>
                 </ul>
 

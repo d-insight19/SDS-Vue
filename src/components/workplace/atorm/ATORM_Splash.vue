@@ -1,45 +1,43 @@
 <template>
   <!-- eslint-disable -->
    <!-- wrap -->
-    <div id="wrap" style="background:#" >
-        
-        <transition appear name="fade">
-            <div class="splash_action">
-                <img src="@/assets/img/atorm_splash_01.png" alt="">
-            </div>
-        </transition>
-        
-        <div class="splash_action2">
-            <img src="@/assets/img/atorm_splash_02.png" alt="">
-        </div>
-        
-        <div class="splash_action3">
-            <img src="@/assets/img/atorm_splash_03.png" alt="">
-        </div>
+    <div id="wrap" >
+      <div id="container" class="mediaquery atorm" style="background:#e9ecef; min-height:100%!important;">
+        <div id="content" style="padding:0; overflow:hidden;">
+          <div class="cell">
+            <div class="inner" style="height: 100vh;">
+                  <div class="splash_action ">
+                      <img src="@/assets/img/atorm_splash_01.png" alt="">
+                  </div>
 
-        <div class="splash_atorm">
-            <img src="@/assets/img/img_atormlogo_blue.png" alt="">
-        </div>
+                  <div class="splash_action2 ">
+                      <img src="@/assets/img/atorm_splash_02.png" alt="">
+                  </div>
 
+                  <div class="splash_action3 ">
+                      <img src="@/assets/img/atorm_splash_03.png" alt="">
+                  </div>
+    
+                    <div class="splash_atorm">
+                        <img src="@/assets/img/img_atormlogo_blue.png" alt="">
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
     </div>
 </template>
-<style >
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
-
-</style>
-
 <script>
+
 /*eslint-disable */
+
+// 1. jquery
+import $ from 'jquery'
+window.$ = $
+window.jQuery = $
 export default {
   name: 'Atorm_splash',
   /* vue lifecycle */
-  created () {
-  },
   mounted () {
   },
   /* vue data */
@@ -47,8 +45,16 @@ export default {
     return {
     }
   },
+  mounted(){
+    setTimeout(() => {
+     
+      console.log('fade')
+       $('.splash_atorm').addClass('fadein')
+    }, 7000);
+  },
   /* vue function */
   methods: {
   }
+  
 }
 </script>

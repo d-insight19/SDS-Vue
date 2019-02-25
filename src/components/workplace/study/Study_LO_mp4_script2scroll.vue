@@ -2,33 +2,39 @@
  <!-- eslint-disable -->
     <!-- wrap -->
     <div id="wrap" class="colorCode2">
-      <!-- container -->
-      <div id="container" class="mediaquery courseware Study_LO_mp4_script">
-
-        <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab video pdb0" style="background:#fff">
+        <!-- container -->
+        <div id="container" class="mediaquery script">
+                <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
+        <div id="header" class="tab video fixed" style="background:#fff ;padding-bottom: 103px;">
             <div class="header_inner line1 ">
-                <button type="button" class="btn only prev" style="display:none"><span class="ico2 prev-wh"></span></button>
-                <!--  <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p> -->
+                <button type="button" class="btn only prev" style="display:none;"><span class="ico2 prev-wh"></span></button>
+                <p class="header_text multiline line2 font_15"></p>
             </div>
-<!--
-            <div id="dropdown_wrap" v-show="langFlag">
-                <div id="sheetDim" @click="changeLang()"></div>
-                <div id="dropdown" class="category">
-                    <ul  @click="changeLang()">
-                    <li>영어</li>
-                    <li>중국어</li>
-                    <li>베트남어</li>
-                    </ul>
-                </div>
-            </div>
+            
+            <div class="header_inner line2 tabMenu " style="height:103px; border-bottom:none !important;">
+                 <ul class="scrollTab" style="border-bottom:1px solid #d9d9d9;">
+                    <li>
+                        <div id="dropdown_wrap" v-show="langFlag">
+                            <div id="sheetDim" @click="changeLang()"></div>
+                            <div id="dropdown" class="category">
+                                <ul  @click="changeLang()">
+                                    <li>영어</li>
+                                    <li>중국어</li>
+                                    <li>베트남어</li>
+                                </ul>
+                            </div>
+                        </div>     
+                        <div class="mp4Script_options short d_flex align_items_center " >
+                        <div class="">
+                            <div @click="changeLang()">한국어 <span class="ico ico_dropdown16 gr"></span></div>
+                            
+                        </div>
+                        <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>
+                    </div>  
 
-            <div class="header_inner line2 tabMenu" @click="changeLang()">
-                한국어
-                <span class="ico ico_dropdown16 gr"></span>
-                <button type="button" class="btn close fr"><span class="ico">닫기</span></button>
+                    </li>
+                </ul>
             </div>
--->
 
             <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
             <!-- <div class="blur_wrap">
@@ -94,96 +100,71 @@
                 <!-- e: btm_subtitle_area -->
             </div>
             <!-- e: 동영상-->
-
-
-
-
+           
         </div>
+         
 
-        <div id="content" class="normal" style="padding:0;">
+            <div id="content" class="normal">
+                <div class="cell">
+                    <div class="inner pt0">
 
-            <div class="mp4Script_optionBlock position_absolute w-full">
-                <div class="mp4Script_options short d_flex align_items_center position_relative" >
-                    <div class="position_relative">
-                        <div @click="changeLang()">한국어 <span class="ico ico_dropdown16 gr"></span></div>
-                        <div id="dropdown_wrap" v-show="langFlag">
-                            <div id="sheetDim" @click="changeLang()"></div>
-                            <div id="dropdown" class="category">
-                                <ul  @click="changeLang()">
-                                    <li>영어</li>
-                                    <li>중국어</li>
-                                    <li>베트남어</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <h2 class="label-tit18"><b>스크립트</b></h2>
+                    <p class="mono_80">이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
+                    [클래스 객체]
+                        프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
+                        객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
+                        이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
+                        있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
+                        헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
+                        이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
+                        해서 아이언맨 같은 경우는 여러 가지 기능을 가지고 있는 장
+                        치들이 준비가 되어 있고 그 상황에 맞는 슈트, 준비되어 있
+                        는 장치요.
+                        이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
+                    [클래스 객체]
+                        프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
+                        객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
+                        이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
+                        있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
+                        헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
+                        이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
+                        해서 아이언맨 같은 경우는 여러 가지 기능을 가지고 있는 장
+                        치들이 준비가 되어 있고 그 상황에 맞는 슈트, 준비되어 있
+                        는 장치요.
+                        이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
+                    [클래스 객체]
+                        프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
+                        객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
+                        이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
+                        있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
+                        헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
+                        이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
+                        해서 아이언맨 같은 경우는 여러 가지 기능을 가지고 있는 장
+                        치들이 준비가 되어 있고 그 상황에 맞는 슈트, 준비되어 있
+                        는 장치요.
+                        이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
+                    [클래스 객체]
+                        프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
+                        객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
+                        이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
+                        있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
+                        헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
+                        이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
+                        해서 아이언맨 같은 경우는 여러 가지 기능을 가지고 있는 장
+                        치들이 준비가 되어 있고 그 상황에 맞는 슈트, 준비되어 있
+                        는 장치요.
+                    </p>
                     </div>
-                    <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>
                 </div>
             </div>
-
-          <div class="cell">
-            <div class="inner pt0">
-
-                <h2 class="label-tit18"><b>스크립트</b></h2>
-              <p class="mono_80">이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
-              [클래스 객체]
-                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
-                객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
-                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
-                있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
-                헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
-                이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
-                해서 아이언맨 같은 경우는 여러 가지 기능을 가지고 있는 장
-                치들이 준비가 되어 있고 그 상황에 맞는 슈트, 준비되어 있
-                는 장치요.
-                이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
-              [클래스 객체]
-                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
-                객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
-                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
-                있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
-                헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
-                이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
-                해서 아이언맨 같은 경우는 여러 가지 기능을 가지고 있는 장
-                치들이 준비가 되어 있고 그 상황에 맞는 슈트, 준비되어 있
-                는 장치요.
-                이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
-              [클래스 객체]
-                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
-                객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
-                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
-                있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
-                헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
-                이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
-                해서 아이언맨 같은 경우는 여러 가지 기능을 가지고 있는 장
-                치들이 준비가 되어 있고 그 상황에 맞는 슈트, 준비되어 있
-                는 장치요.
-                이번 차시에는 객체 지향 개요에 대해서 학습하도록 하겠습니다.<br><br>
-              [클래스 객체]
-                프로그램 언어는 두 가지로 분류가 됩니다. 절차적 언어와
-                객체 지향적인 언어 두 가지로 분류가 될 수 잇는데요.<br><br>
-                이 두 가지의 차이점은 여러분들이 좋아하시는 어벤저스에
-                있는 헐크와 아이언맨의 변신의 차이와 좀 비슷합니다.<br><br>
-                헐크는 변신하기 위한 어떤 장치들이 미리 준비되어 있는 것
-                이 아니고, 헐크의 몸 자체가 변화되면서 변신이 되는데 비
-                해서 아이언맨 같은 경우는 여러 가지 기능을 가지고 있는 장
-                치들이 준비가 되어 있고 그 상황에 맞는 슈트, 준비되어 있
-                는 장치요.
-              </p>
-
-
-
-            </div>
-          </div>
-
+            
         </div>
+        <!-- //container -->
 
-      </div>
-      <!-- //container -->
     </div>
     <!-- //wrap -->
-</template>
 
+</template>
 <script>
 /* eslint-disable */
 
@@ -216,7 +197,7 @@ export default {
   name: 'components_flowplayer',
   data () {
     return {
-        headerType: 2,
+        
       langFlag: false,
         active : false,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
@@ -283,14 +264,14 @@ export default {
     }
   },
   methods: {
+       changeLang () {
+      this.langFlag = !this.langFlag
+    },
     detail_toggle () {
         this.detail_show = !this.detail_show;
     },
     active_el () {
         this.active = !this.active
-    },
-    changeLang () {
-      this.langFlag = !this.langFlag
     }
   },
   mounted () {

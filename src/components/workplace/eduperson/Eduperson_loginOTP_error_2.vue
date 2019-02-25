@@ -43,8 +43,9 @@
                 <p class="label-tit-20" style="margin-top: 60px; margin-bottom:10px;">인증번호 입력</p>
 
                 <ul class="loginList">
-                    <li>
-                        <slp-text-field class="mb30" classObject="underline" error message="인증시간이 초과되었습니다 OTP를 한번더 생성해주세요"> <span class="time">05:00</span></slp-text-field>
+                    <li style="position:relative">
+                        <slp-text-field class="mb30" classObject="underline" error message="인증시간이 초과되었습니다 OTP를 한번더 생성해주세요"></slp-text-field>
+                        <div class="time" style="position:absolute;top: 14px;right: 0px;color: rgba(0,0,0,0.25);">00:00</div>
                     </li>
                 </ul>
 

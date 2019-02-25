@@ -234,10 +234,10 @@
             <div class="inner pt0">
 
                 <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_15 mono_80 fwb dib">차시별</p>
+                    <p class="font_16 mono_80 fwb dib">차시별</p>
                     <p class="fr">
                         <span class="ico filter" style="position:static;margin-right: 12px;"></span>
-                        <span class="ico download"></span>
+                        <span class="ico download_24"></span>
                     </p>
                 </div>
 
@@ -254,10 +254,7 @@
                                     <li class="">
                                         <span class="ico check_14"></span>
                                         <span>학습완료</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
+                                        <span class="mono_65">2018.09.06</span>
                                     </li>
                                 </ul>
                             </div>
@@ -310,15 +307,18 @@
                                         <span class="mono_65">멀티캠퍼스 6층 602호</span>
                                     </dd>
                                 </dl>
-                                <ul class="info mt15">
-                                    <li class="">
-                                        <span class="ico check_14"></span>
-                                        <span class="mr6">학습완료</span>
-                                        <span>
-                                            2018.01.01 - 2018.01.31
+                                <div class="fr_wrap">
+                                    <ul class="info mt15 dib">
+                                        <li class="">
+                                            <span class="ico check_14"></span>
+                                            <span class="mr6">학습완료</span>                                        
+                                        </li>
+                                        
+                                    </ul>
+                                        <span class="fr mono_65 mt15" >
+                                                교재있음
                                         </span>
-                                    </li>
-                                </ul>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -336,27 +336,7 @@
                                     </li>
                                     <li class="">
                                         <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download_detail done">
-                            <div class="icon_wrap">
-                                <span class="ico play_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
+                                        <span class="mono_65">2018.01.01 - 2018.01.31</span>
                                     </li>
                                 </ul>
                             </div>
@@ -378,10 +358,7 @@
                                     <li class="">
                                         <span class="ico complete_14"></span>
                                         <span>미진행</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
+                                        <span class="mono_65">2018.01.01 ~ 2018.01.31</span>
                                     </li>
                                 </ul>
                             </div>
@@ -419,10 +396,6 @@
                                         <span class="ico complete_14"></span>
                                         <span>미진행</span>
                                     </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -450,7 +423,7 @@
                     <li>
                         <div class="download_detail done">
                             <div class="icon_wrap">
-                                <span class="ico play_28"></span>
+                                <span class="ico ic_book_line_28"></span>
                             </div>
                             <div class="txt_wrap">
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
@@ -458,10 +431,7 @@
                                     <li class="">
                                         <span class="ico ico lock_16"></span>
                                         <span>학습불가</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
+                                        <span class="mono_65">2018.01.01 ~ 2018.01.31</span>
                                     </li>
                                 </ul>
                             </div>
@@ -470,7 +440,7 @@
                     <li>
                         <div class="download_detail done">
                             <div class="icon_wrap">
-                                <span class="ico ic_book_line_28"></span>
+                                <span class="ico play_28"></span>
                             </div>
                             <div class="txt_wrap">
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
