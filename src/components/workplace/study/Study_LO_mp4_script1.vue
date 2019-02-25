@@ -130,7 +130,6 @@
                     <button type="button" class="position_absolute btn_close"><span class="ico">닫기</span></button>
                 </div>
             </div>
-
           <div class="cell">
             <div class="inner pt0">
 
