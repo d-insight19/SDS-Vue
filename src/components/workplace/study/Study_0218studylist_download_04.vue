@@ -251,13 +251,14 @@
                 </div>
             </div> -->
 
-             <div class="filterArea ml-18 mr-18" style="padding:19px;">
-                    <p class="font_16 mono_80 fwb dib">전체보기</p>
-                    <p class="fr">
-                        <span class="ico filter" style="position:static;margin-right: 12px;"></span>
-                        <span class="ico download"></span>
-                    </p>
-                </div>
+            <div class="filterArea ml-18 mr-18" style="padding:19px;">
+                <p class="font_16 mono_80 fwb dib">전체보기</p>
+                <p class="fr">
+                    <span class="ico filter" style="position:static;margin-right: 12px;"></span>
+                    <span class="ico download"></span>
+                </p>
+            </div>
+                
                 <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
                 <!-- list -->
@@ -321,10 +322,10 @@
                                 <div class="in">
                                     <div class="download_wrap">
                                         <span class="">다운로드 중</span>
-                                        <span class=""><span class="download_hilight">42%</span>(5개/총 12개)</span>
+                                        <span class="fr"><span class="download_hilight">42%</span>(5개/총 12개)</span>
                                     </div>                    
                                     <div class="progBox">
-                                        <div class="bar clr2" style="width:20%;"></div>
+                                        <div class="bar clr2" style="width:40%;"></div>
                                     </div>
                                     <div class="toastBtnWrap">
                                         <a href="#">전체보기</a>
@@ -488,52 +489,6 @@
                     </li>
 
                 </ul>
-
-                <p class="label-tit-18 mt26 ">데이터 특성 알아보기</p>
-
-                <ul class="multiList type2">
-                    <li>
-                        <div class="download_detail done">
-                            <div class="icon_wrap">
-                                <span class="ico play_28"></span>
-                            </div>
-                            <div class="txt_wrap">
-                                <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 동영상 VR/AR</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico lock_16"></span>
-                                        <span>학습불가</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="download_detail">
-                            <div class="txt_wrap">
-                                <p class="icon_txt color_clr3">N차시</p>
-                                <p class="title">차시명 타이틀 입니다. : 16 Medium 두 줄 이상일 경우 행간 22</p>
-                                <ul class="info">
-                                    <li class="">
-                                        <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-                                    </li>
-                                    <li class="">
-                                        <span class="ico time"></span>
-                                        <span>12:45</span>/<span class="mono_65">23:43</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <span class="ico accordion_arrow"></span>
-                    </li>
-                </ul>
-                <!-- 리스트끝 -->
-
             <div class="cell">
                 <div class="inner pt0">
                     <study-list :class="{'editMode' : editFlag}"></study-list>
