@@ -2244,8 +2244,8 @@ label.rdo .label{position: relative;}
 .studydown{
     .toast{
         width: calc(100% - 36px);
-    }
-    .multiList > li .in{
+        position: absolute;
+        top: 20px;
     }
     .labelChk .label{
         width:100%;

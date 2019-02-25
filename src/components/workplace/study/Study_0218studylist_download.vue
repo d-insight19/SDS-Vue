@@ -233,11 +233,11 @@
                 <div class="downloadCondition ml-18 mr-18">
                     <div class="w48p fl">
                         <p class="font_12 mono_50 fwb">저장공간 사용량</p>
-                        <p class="font_13 mono_65 fwb">24% <span class="font_11 mono_50 fwr">(123.21 GB/512.51 GB)</span></p>
+                        <p class="font_13  fwb600">24% <span class="font_11 fwb600">(123.21 GB/512.51 GB)</span></p>
                     </div>
                     <div class="w48p fr">
                         <p class="font_12 mono_50 fwb">다운로드한 강의</p>
-                        <p class="font_13 mono_65 fwb">978.21 MB</p>
+                        <p class="font_13  fwb600">978.21 MB</p>
                     </div>
                 </div>
             </div>
@@ -246,7 +246,7 @@
                 <div class="filterArea ml-18 mr-18">
                     <p class="tar">
                         <button class="font_14 mono_65 fwr" @click="btnCancel">취소</button>
-                        <button class="font_14 color_clr2 fwr ml10" @click="btnEdit">다운로드</button> <span class="badge chip_xs ml6 clr2">12</span>
+                        <button class="font_14 color_clr2 fwr ml10" @click="btnEdit">다운로드</button> 
                     </p>
                 </div>
             </div>
