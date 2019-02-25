@@ -124,10 +124,10 @@
                 <ul class="multiList type2">
                     <li>
                         <div class="download_detail">
-                            <div class="icon_wrap">
+                            <div class="icon_wrap pdr6">
                                 <span class="ico ic_set_line_28"></span>
                             </div>
-                            <div class="txt_wrap">
+                            <div class="txt_wrap  w_full">
                                 <p class="icon_txt color_clr3">N일차</p>
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
                                 <dl class="info">
@@ -160,10 +160,10 @@
                     </li>
                      <li>
                         <div class="download_detail clr1 wh">
-                            <div class="icon_wrap">
+                            <div class="icon_wrap pdr6">
                                 <span class="ico set_line_wh_28"></span>
                             </div>
-                            <div class="txt_wrap">
+                            <div class="txt_wrap  w_full">
                                 <p class="icon_txt color_clr3">N일차</p>
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
                                 <dl class="info">
@@ -196,10 +196,10 @@
                     </li>
                     <li>
                         <div class="download_detail">
-                            <div class="icon_wrap">
+                            <div class="icon_wrap pdr6">
                                 <span class="ico ic_set_line_28"></span>
                             </div>
-                            <div class="txt_wrap">
+                            <div class="txt_wrap  w_full">
                                 <p class="icon_txt color_clr3">N일차</p>
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
                                 <dl class="info">
@@ -232,10 +232,10 @@
                     </li>
                     <li>
                         <div class="download_detail">
-                            <div class="icon_wrap">
+                            <div class="icon_wrap pdr6">
                                 <span class="ico ic_set_line_28"></span>
                             </div>
-                            <div class="txt_wrap">
+                            <div class="txt_wrap  w_full">
                                 <p class="icon_txt color_clr3">N일차</p>
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
                                 <dl class="info">
@@ -268,10 +268,10 @@
                     </li>
                     <li>
                         <div class="download_detail">
-                            <div class="icon_wrap">
+                            <div class="icon_wrap pdr6">
                                 <span class="ico ic_set_line_28"></span>
                             </div>
-                            <div class="txt_wrap">
+                            <div class="txt_wrap w_full">
                                 <p class="icon_txt color_clr3">N일차</p>
                                 <p class="title">LO/SO 타이틀 입니다 : 15 Medium 두 줄 이상일 경우 행간 22 집합</p>
                                 <dl class="info">
@@ -293,7 +293,7 @@
                                     </dd>
                                 </dl>
                                 <ul class="info mt15">
-                                    <li class="">
+                                    <li class="d-block">
                                         <span class="ico lock_16"></span>
                                         <span>학습불가</span>
                                         <span class="fr mono_65">교재있음</span>
