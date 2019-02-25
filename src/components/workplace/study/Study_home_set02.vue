@@ -140,10 +140,11 @@
                                         <span class="fr mono_65">교재있음</span>
                                     </li>
                                 </ul>
+                                </div>
                             </div>
                         </div>
                     </li>
-                     <li>
+                    <li>
                         <div class="download_detail clr1 wh">
                             <div class="icon_wrap pdr6">
                                 <span class="ico set_line_wh_28"></span>
@@ -208,14 +209,15 @@
                                         <span class="mono_65">멀티캠퍼스 6층 602호</span>
                                     </dd>
                                 </dl>
-                                <div class="fr_wrap">
-                                <ul class="info mt12 dib">
-                                    <li class="">
-                                        <span class="ico ongoing_16"></span>
-                                        <span>진행중</span>
-                                        <span class="fr mono_65">교재있음</span>
-                                    </li>
-                                </ul>
+                                    <div class="fr_wrap">
+                                    <ul class="info mt12 dib">
+                                        <li class="">
+                                            <span class="ico ongoing_16"></span>
+                                            <span>진행중</span>
+                                            <span class="fr mono_65">교재있음</span>
+                                        </li>
+                                    </ul>
+                                    </div>
                             </div>
                         </div>
                     </li>
@@ -298,8 +300,11 @@
 
 
             </div>
+            <!-- inner -->
           </div>
+          <!-- cell -->
         </div>
+        <!-- content -->
       </div>
       <!-- //container -->
     </div>
