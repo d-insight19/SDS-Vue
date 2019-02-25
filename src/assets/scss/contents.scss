@@ -1688,8 +1688,9 @@ label.rdo .label{position: relative;}
 #container.courseware .sub_content .download_detail.bottom-bd-x {border-bottom:1px solid map-get($line_colors,B89) !important; }
 #container.courseware .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
 #container.courseware .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 15px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
-#container.courseware .clr4 {background-color:#f2f3f7 !important;}
-#container.courseware .clr3 {background-color:#a3a9ff!important;}
+#container.courseware .clr4 {@extend .clr4;}
+#container.courseware .clr6 {@extend .clr6;}
+.multiList .info.rev li + li::before{}
 
 // home_courseware_LO/SO
 #container.courseware.book .sub_content .download_detail {padding:16px 16px 20px 20px;}
@@ -2261,6 +2262,19 @@ label.rdo .label{position: relative;}
     }
 }
 
+//fs_fixed 클래스
+
+.fs_mode{
+    min-height:100vh;display: flex;background: rgb(0,0,0);align-items: center;
+    .fp-controls.fixed{
+        position:fixed;
+        width: 100%
+      }
+      .flowplayer.has-title .fp-header.fixed {
+        top: 0;
+        position:fixed;
+        }
+}
 
 
 
