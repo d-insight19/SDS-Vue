@@ -2261,6 +2261,19 @@ label.rdo .label{position: relative;}
     }
 }
 
+//fs_fixed 클래스
+
+.fs_mode{
+    min-height:100vh;display: flex;background: rgb(0,0,0);align-items: center;
+    .fp-controls.fixed{
+        position:fixed;
+        width: 100%
+      }
+      .flowplayer.has-title .fp-header.fixed {
+        top: 0;
+        position:fixed;
+        }
+}
 
 
 
