@@ -64,7 +64,7 @@
                                     <li v-for="(item, index) in list1" :key="index">
                                     <div v-if="languageEditFlag" @click="deleteLanguage(index)" class="tar"><a href="#" class="btn only del"><span class="ico"></span></a></div>
 
-                                    <div style="display:table-cell; width:35%" class="pdr6">
+                                    <div class="fl" style="width:35%">
                                         <slp-select placeholder="영어" width="100%">
                                             <option>선택1</option>
                                             <option>선택2</option>
@@ -72,7 +72,7 @@
                                             <option>선택4</option>
                                         </slp-select>
                                     </div>
-                                     <div style="display:table-cell; width: calc(65% - 6px);">
+                                     <div class="fr" style="width: calc(65% - 6px);">
                                         <slp-select placeholder="TOEIC Speaking and…" width="100%">
                                             <option>선택1</option>
                                             <option>선택2</option>
@@ -126,7 +126,7 @@
                                     <li v-for="(item, index) in list2" :key="index">
                                     <div v-if="licenceEditFlag" @click="deleteLicence(index)" class="tar"><a href="#" class="btn only del"><span class="ico"></span></a></div>
                                     <div class="up">
-                                        <div style="display:table-cell; width:35%" class="pdr6">
+                                        <div class="fl" style="width:35%">
                                             <slp-select placeholder="IT" width="100%">
                                                 <option>선택1</option>
                                                 <option>선택2</option>
@@ -134,7 +134,7 @@
                                                 <option>선택4</option>
                                             </slp-select>
                                         </div>
-                                        <div style="display:table-cell; width: calc(65% - 6px);">
+                                        <div class="fr" style="width: calc(65% - 6px);">
                                             <slp-select placeholder="정보산업기사" width="100%">
                                                 <option>선택1</option>
                                                 <option>선택2</option>
