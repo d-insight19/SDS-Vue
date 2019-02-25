@@ -47,9 +47,9 @@ export default {
   },
   mounted(){
     setTimeout(() => {
-      var atorm =document.getElementsByClassName('splash_atorm')
+     
       console.log('fade')
-      atorm.classList.add(fadein)
+       $('.splash_atorm').addClass('fadein')
     }, 7000);
   },
   /* vue function */
