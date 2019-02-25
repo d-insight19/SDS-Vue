@@ -184,8 +184,6 @@ import Studystudystatusattendancebpo from '~workplace/study/Study_studystatus_at
 import StudyHomeSetCalendar from '~workplace/study/Study_home_set_calendar'
 import etcMiniplayer from '~workplace/study/etc_Miniplayer'
 import etcKeepstudy from '~workplace/study/etc_keepstudy'
-import StudyList from '~workplace/study/Study_list'
-import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
 import Study0218studylistdownload02 from '~workplace/study/Study_0218studylist_download_02'
@@ -1697,16 +1695,6 @@ var rootRoutes = [
     path: '/etc_keepstudy',
     name: 'etc_keepstudy',
     component: etcKeepstudy
-  },
-  {
-    path: '/Study_list',
-    name: 'Study_list',
-    component: StudyList
-  },
-  {
-    path: '/Study_list_edit',
-    name: 'Study_list_edit',
-    component: StudyListEdit
   },
   {
     path: '/Study_0217studylist',
