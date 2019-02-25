@@ -6126,8 +6126,8 @@
         <td>　</td>
         <td class="textL">05.Study_03.10.LO_audio_fs</td>
         <td>
-          <router-link :to="{ name: 'Study_LO_audio_fs' }">
-            Study_LO_audio_fs
+          <router-link :to="{ name: 'Study_LO_audio_fs_portrait' }">
+            Study_LO_audio_fs_portrait
           </router-link>
         </td>
         <td></td>

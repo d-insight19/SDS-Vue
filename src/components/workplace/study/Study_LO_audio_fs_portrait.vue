@@ -1,24 +1,67 @@
 <template>
  <!-- eslint-disable -->
     <!-- wrap -->
-    <div id="wrap" class="colorCode2">
+    <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery courseware study_lo_docs" style="height:100vh;display: flex;background: rgb(0,0,0);align-items: center;">
+      <div id="container" class="mediaquery" style="display: flex;align-items: center;background: black;min-height:100vh">
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
-        <div id="header" class="tab" style="background:#fff">
-            <div class="header_inner line1 ">
+        <div id="header" class="tab video">          
+            <!-- audioFlag true 시 display:none; -->
+            <div class="header_inner line1 clr1" :class="{ 'audio' : audioFlag }" > 
                 <button type="button" class="btn only prev fixed"><span class="ico2 prev-wh"></span></button>
-
+                <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
 
-            <!-- 스크롤 값에 따라서  left blur , right blur 감춰주기. ( header scroll tab )  -->
-            <!-- <div class="blur_wrap">
-                <div class="left blur"></div>
-                <div class="right blur"></div>
-            </div> -->
 
-            <div class="kukudocs_area_wrap">
+            
+            <!-- s: 동영상 -->
+            <div class="player_wrap" :class="{ 'audio' : audioFlag }">
+                <div class="player_inner">
+                    <div id="contents"></div>
+
+                    <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
+                    <div class="volume_wrap" style="display:none;pointer-events:none">
+                        <div class="volume_left">
+                            <div class="inner"></div>
+                            <div class="icon_wrap">
+                                <span class="light_icon"></span>
+                                <span class="light_value">75</span>
+                            </div>                            
+                        </div>
+                        <div class="volume_right">
+                            <div class="inner"></div>
+                            <div class="icon_wrap">
+                                <span class="volume_icon"></span>
+                                <span class="volume_value">65</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  e: 볼륨영역 -->
+
+                    <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
+                    <div class="tap_wrap" style="display:none;pointer-events:none">
+                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
+                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
+                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
+                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
+                          </div>
+                        </v-touch>
+                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
+                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
+                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
+                                <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
+                            </div>
+                        </v-touch>                            
+                    </div>
+                    <!--  e: double 텝 영역 -->
+
+                </div>
+               
+            </div>
+            <!-- e: 동영상-->
+            
+            <!-- <div class="kukudocs_area_wrap">
 
                 <div class="kukudocs_area">
                     <div class="box_shadow"></div>
@@ -31,18 +74,42 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
-
+            
         </div>
+        <!-- //header -->
+
+        <!--
+            상태 관련 css (추후 아이콘 교체될 수 있음)
+            stat01 : 미진행 // 아이콘 미수급 // 추후 이미지 교체 예정
+            stat02 : 진행중
+            stat03 : 학습완료
+            stat04 : 진행불가 // 아이콘 미수급 // 추후 이미지 교체 예정
+
+            카드 UI 아이콘 css (추후 아이콘 교체될 수 있음)
+
+            LO
+            type01 : 동영상/VR & AR
+            type02 : E-BOOK/HTML5
+            type03 : Audio
+            type04 : 집합
+
+            SO
+            type05 : Summary, 과정OT, 목표안내, 액션플랜 과정요약집, 서약서, 간지페이지
+            type06 : 사례,의견공유, 토론, 멘토링
+            type07 : 음성녹음
+            type08 : 평가, Poll, 과제
+            type09 : 퀴즈, 설문, 시뮬레이션
+            type10 : 공지
+        -->
 
 
       </div>
-      <!-- //container -->
+      <!-- //container -->     
     </div>
     <!-- //wrap -->
 </template>
-
 <script>
 /* eslint-disable */
 
@@ -71,11 +138,31 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
+import Vue from 'vue'
+import VueTouch from 'vue-touch'
+
+VueTouch.registerCustomEvent('singletap', {
+  type: 'tap',
+  taps: 1,
+})
+
+VueTouch.registerCustomEvent('doubletap', {
+  type: 'tap',
+  taps: 2,
+})
+
+Vue.use(VueTouch, {name: 'v-touch'})
+
 export default {
   name: 'components_flowplayer',
   data () {
     return {
-        active : false,
+        audioFlag:'',
+        innerRipple: false,
+        halfRight: false,
+        halfLeft: false,
+        none: true,
+        left: true,
         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
         detail_show: false,        // 동영상 하단 타이틀 디테일 toggle 변수
         relatedVideoList: [
@@ -88,7 +175,7 @@ export default {
             {title: '자바스크립트 개발 프로세스 기초3'}
         ],
        option: {
-        loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
+        loType: "audio", //loType : movie(동영상), audio(오디오), vr(VR)
         targetId: "contents", //div target Id
         // sources: [
         //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
@@ -140,17 +227,57 @@ export default {
     }
   },
   methods: {
-    detail_toggle () {
+    detail_toggle () {        
         this.detail_show = !this.detail_show;
     },
-    active_el () {
-        this.active = !this.active
+    prevTen() {
+        console.error("왼쪽");
+        this.halfRight = true
+        this.innerRipple = true
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_right').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfRight = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_right').css('display', 'block');
+            }, 600);       
+    },
+    nextTen() {
+        console.error("오른쪽");
+        this.halfLeft = true
+        this.innerRipple = true
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_left').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfLeft = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_left').css('display', 'block');
+            }, 600);       
+    },
+    typeAudio () {
+        if( this.option.loType === 'audio'){
+            console.log(audio)
+            this.audioFlag = true
+        } else {
+            console.log(movie)
+            this.audioFlag = false
+        }
     }
   },
+  created () {
+         this.typeAudio();
+  },
   mounted () {
+       
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
-
+        
 
         // 동영상 헤더 텍스트 입력
         $('.fp-header-txt').text("동영상 헤더 텍스트 입력.");
@@ -183,7 +310,7 @@ export default {
                 // player에 연관콘텐츠 활성화를 알리기위해  is-open-related-contents  클래스추가
                 // 단순 jQuery등을 사용해서 컨트롤 하게되면 기본 플레이어 에서 제공하는 기능들과 꼬여서 해당클래스 추가함
                 $(".flowplayer").toggleClass("is-open-related-contents");
-
+            
                 // TODO
                 // 1. 연관 콘텐츠 터치 후 활성화 되었을때 video 자동으로 ui 숨겨지는 기능 막아야함
                 //      -> 동영상 pause 처리하면 될듯
@@ -198,13 +325,7 @@ export default {
             });
         }
 
-
-        $('.half_left').click(function(){
-            console.error("왼쪽");
-        });
-        $('.half_right').click(function(){
-            console.error("오른쪽");
-        });
+        
 
         $('.fp-script , .script_close').click(function(){
             // 스크립트 펼쳤을 경우, 하단의 콘텐츠들이 존재하기때문에 더이상 스크롤을 막기 위한 body 에 스크롤방지 클래스 추가
@@ -215,6 +336,7 @@ export default {
 
         $('.fp-nextArrow').click(function()
         {
+            $('.half_right').css('display', 'block');
             console.error('다음 콘텐츠!')
         });
         $('.fp-prevArrow').click(function()
@@ -238,9 +360,9 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);
+                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
-                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함
+                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
                 // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
                 // 176 , 1004
@@ -277,7 +399,9 @@ export default {
                 }
             });
         }
+        
+        
+
   }
 }
 </script>
-

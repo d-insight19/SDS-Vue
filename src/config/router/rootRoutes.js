@@ -283,6 +283,7 @@ import StudyetcstudycheerAlarmcalendar03 from '~workplace/study/Study_etc_studyc
 import StudyLOdocs from '~workplace/study/Study_LO_docs'
 import StudyLOviewer from '~workplace/study/Study_LO_viewer'
 import StudyLOaudiofs from '~workplace/study/Study_LO_audio_fs'
+import StudyLOaudiofsportrait from '~workplace/study/Study_LO_audio_fs_portrait'
 import StudyLOaudio from '~workplace/study/Study_LO_audio'
 import StudyLOhtml5 from '~workplace/study/Study_LO_html5'
 import StudyLOhtml5fs from '~workplace/study/Study_LO_html5_fs'
@@ -2185,6 +2186,11 @@ var rootRoutes = [
     path: '/Study_LO_audio_fs',
     name: 'Study_LO_audio_fs',
     component: StudyLOaudiofs
+  },
+  {
+    path: '/Study_LO_audio_fs_potrait',
+    name: 'Study_LO_audio_fs_portrait',
+    component: StudyLOaudiofsportrait
   },
   {
     path: '/Study_LO_audio',
