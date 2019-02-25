@@ -330,6 +330,7 @@ export default {
         }
         $('.fp-header').addClass('fixed')
         $('.fp-controls').addClass('fixed')
+        console.log('fp-header')
   }
 }
 </script>

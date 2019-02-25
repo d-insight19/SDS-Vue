@@ -3,7 +3,7 @@
     <!-- wrap -->
     <div id="wrap" class="colorCode2">        
       <!-- container -->
-      <div id="container" class="mediaquery" style="display: flex;align-items: center;background: black;min-height:100vh">
+      <div id="container" class="mediaquery fs_mode" >
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video">          
