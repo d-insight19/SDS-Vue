@@ -258,7 +258,7 @@
                     <span class="ico download"></span>
                 </p>
             </div>
-                
+
                 <p class="label-tit-18 mt19 ">데이터 특성 알아보기</p>
 
                 <!-- list -->
@@ -323,7 +323,7 @@
                                     <div class="download_wrap">
                                         <span class="">다운로드 중</span>
                                         <span class="fr"><span class="download_hilight">42%</span>(5개/총 12개)</span>
-                                    </div>                    
+                                    </div>
                                     <div class="progBox">
                                         <div class="bar clr2" style="width:40%;"></div>
                                     </div>
@@ -531,16 +531,8 @@ window.flowplayer = flowplayer
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
-//Study_list
-import studyList from './Study_list.vue'
-
 export default {
     name: 'components_flowplayer',
-
-    components: { //Study_list
-		'study-list':studyList
-	},
-
     data () {
         return {
             snacFlag: true,
@@ -615,10 +607,10 @@ export default {
          snacToggle() {
           this.snacFlag = !this.snacFlag
         },
-        detail_toggle () {  //Study_list
+        detail_toggle () {  //
             this.detail_show = !this.detail_show;
         },
-        active_el () { //Study_list
+        active_el () { //
             this.active = !this.active
         },
 
