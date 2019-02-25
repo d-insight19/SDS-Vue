@@ -437,6 +437,7 @@
                 </ul>
                 <!-- //list -->
             </div>
+          </div>
 
             <div class="cell">
                 <div class="inner pt0">

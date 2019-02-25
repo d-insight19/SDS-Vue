@@ -5141,6 +5141,18 @@
           <router-link :to="{ name: 'Study_0218studylist_download' }">
             Study_0218studylist_download
           </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_0218studylist_download_02' }">
+            Study_0218studylist_download_02
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_0218studylist_download_03' }">
+            Study_0218studylist_download_03
+          </router-link>
+          <br/>
+          <router-link :to="{ name: 'Study_0218studylist_download_04' }">
+            Study_0218studylist_download_04
+          </router-link>
         </td>
         <td></td>
       </tr>

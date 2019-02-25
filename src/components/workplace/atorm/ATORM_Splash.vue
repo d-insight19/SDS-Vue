@@ -18,11 +18,9 @@
                       <img src="@/assets/img/atorm_splash_03.png" alt="">
                   </div>
     
-                  <transition appear name="fade">
-                    <div class="splash_atorm ">
+                    <div class="splash_atorm">
                         <img src="@/assets/img/img_atormlogo_blue.png" alt="">
                     </div>
-                  </transition>
                 </div>
           </div>
         </div>
@@ -46,6 +44,13 @@ export default {
   data () {
     return {
     }
+  },
+  mounted(){
+    setTimeout(() => {
+      var atorm =document.getElementsByClassName('splash_atorm')
+      console.log('fade')
+      atorm.classList.add(fadein)
+    }, 7000);
   },
   /* vue function */
   methods: {

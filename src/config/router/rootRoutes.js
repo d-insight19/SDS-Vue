@@ -188,7 +188,9 @@ import StudyList from '~workplace/study/Study_list'
 import StudyListEdit from '~workplace/study/Study_list_edit'
 import Study0217studylist from '~workplace/study/Study_0217studylist'
 import Study0218studylistdownload from '~workplace/study/Study_0218studylist_download'
-import Study0218studylistdownload_ from '~workplace/study/Study_0218studylist_download_'
+// import Study0218studylistdownload02 from '~workplace/study/Study_0218studylist_download_02'
+// import Study0218studylistdownload03 from '~workplace/study/Study_0218studylist_download_03'
+import Study0218studylistdownload04 from '~workplace/study/Study_0218studylist_download_04'
 import Studystudynote from '~workplace/study/Study_studynote'
 import Studystudynoteall01 from '~workplace/study/Study_studynote_all_01'
 import Studystudynoteall02snacbar from '~workplace/study/Study_studynote_all_02_snacbar'
@@ -1716,10 +1718,20 @@ var rootRoutes = [
     name: 'Study_0218studylist_download',
     component: Study0218studylistdownload
   },
+  // {
+  //   path: '/Study_0218studylist_download_02',
+  //   name: 'Study_0218studylist_download_02',
+  //   component: Study0218studylistdownload02
+  // },
+  // {
+  //   path: '/Study_0218studylist_download_03',
+  //   name: 'Study_0218studylist_download_03',
+  //   component: Study0218studylistdownload03
+  // },
   {
-    path: '/Study_0218studylist_download_',
-    name: 'Study_0218studylist_download_',
-    component: Study0218studylistdownload_
+    path: '/Study_0218studylist_download_04',
+    name: 'Study_0218studylist_download_04',
+    component: Study0218studylistdownload04
   },
   {
     path: '/Study_studynote',

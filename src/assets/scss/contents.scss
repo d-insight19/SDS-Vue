@@ -13,19 +13,33 @@
 .splash_action{position: absolute; bottom: 0; left: 0%;}
 .splash_action2{position: absolute; bottom: 0;right: 0%;}
 .splash_action3{position: absolute; right:0%; top:20%;}
-.splash_atorm{position: absolute;bottom: 336px;left: 11%;}
+.splash_atorm{position: absolute;bottom: 336px;left: 11%;opacity:0;}
 
-.fade-enter-active, .fade-leave-active {transition: opacity 7s;}
-.fade-enter, .fade-leave-to {opacity: 0;}
+// .fade-enter-active, .fade-leave-active {transition: opacity 7s; }
+// .fade-enter, .fade-leave-to {opacity: 1;}
 .splash_action{animation-duration: 1.5s;animation-name: slidein;}
 .splash_action2{animation-duration: 3.5s;animation-name: slideinbottom;}
 .splash_action3{animation-duration: 5.5s;animation-name: slideintop;}
+.fadein{
+    animation-duration: 7s;
+    animation-name: fadein;
+    transition-delay: 7s;
+    opacity:1;
+}
 .slidein {/* -moz-animation-iteration-count: 3;
 -webkit-animation-iteration-count: 3;
 animation-iteration-count: 3; */
 -moz-animation-direction: alternate;
 -webkit-animation-direction: alternate;
 animation-direction: alternate;}
+@keyframes fadein {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+} 
 @keyframes slidein {
 from {
     left:-100%;
@@ -2103,7 +2117,8 @@ label.rdo .label{position: relative;}
 #container.atorm.status_rate .rating > input:checked ~ label:hover ~ label { background: url("../img/ic_rate_solid_yellow_32.png") no-repeat; background-size: cover;  }
 
 //atorm_group_flip_complete
-#container.atorm.flip .confirm_item_detail{margin:0px -18px}
+#container.atorm.flip .confirm_item_detail{margin:0px -24px}
+#container.atorm.flip .confirm_item_detail.m18{margin:0px -18px} // 여백이 18일시 추가필요
 #container.atorm.flip .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
 #container.atorm.flip .confirm_item_detail > li > span:first-child{line-height: 100%;font-weight: 600; display:inline-block; margin-top:20px;}
 #container.atorm.flip .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:23px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
@@ -2212,6 +2227,7 @@ label.rdo .label{position: relative;}
     }
 }
 
+//script scroll
 .script{
     .tabMenu li{
         border-bottom:none !important;
@@ -2221,6 +2237,15 @@ label.rdo .label{position: relative;}
     }
     .mp4Script_options.short{
         padding-left:18px;
+    }
+}
+
+//studydown
+.studydown{
+    .taost{
+        width: calc(100% - 36px);
+    }
+    .multiList > li .in{
     }
 }
 
