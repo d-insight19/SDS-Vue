@@ -305,76 +305,76 @@ Vue.use(VueTouch, {name: 'v-touch'})
 
 export default {
   name: 'regiclass_detailview_course',
-  data () {
-    return {
-        active : false,
-        innerRipple: false,
-        halfRight: false,
-        halfLeft: false,
-        none: true,
-        left: true,
-        scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
-        relatedVideoList: [
-            {title: '자바스크립트 개발 프로세스 기초'},
-            {title: '모바일 게임 UI 디자인 실무'},
-            {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
-            {title: '모바일 게임 UI 디자인 실무'},
-            {title: '자바스크립트 개발 프로세스 기초1'},
-            {title: '자바스크립트 개발 프로세스 기초2'},
-            {title: '자바스크립트 개발 프로세스 기초3'}
-        ],
-       option: {
-        loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
-        targetId: "contents", //div target Id
-        // sources: [
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
-        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
-        // ],
-        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
-        sources: [
-            { type: 'video/mp4', src: './static/movie/m010102.mp4'},
-            { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
-            { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
-            { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
-        ],
-        src: './static/movie/m010102.mp4', //동영상 src
-        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
-        title: "Flowplayer", //콘텐츠 제목
-        isSpeeds: true, //동영상 배속 사용여부
-        speeds: [1, 2, 3], //동영상 배속 설정 값
-        skinClass: "flowplayer fp-fat", //동영상 스킨
-        isMute: true, //음소거 사용여부
-        isFullscreen: true, //전체 화면
-        isShare: true, //공유 여부
-        isAutoplay: false, //자동실행여부
-        seekTime: 30, //콘텐츠 이어학습하기 시간 초
-        isPorg: true, //콘텐츠 진도값 저장 여부
-        logSaveTime: 5, //콘텐츠 진도 로그 저장 주기 (초)
-        replayTime: [0, 0], //구간반속 구간 [시작, 끝]
-        qualities: ["160p", "260p", "530p", "720p"], //콘텐츠 화질 설정 값
-        defaultQuality: "260p", //콘텐츠 화질 초기 값
-        subtitles: [
-          {
-            "default": true, // note the quotes around "default"!
-            kind: "subtitles",
-            srclang: "en",
-            label: "English",
-            // src: "../../html/bc_smart_en.vtt"
-          },
-          {
-            "default": true, // note the quotes around "default"!
-            kind: "subtitles",
-            srclang: "ko",
-            label: "Korea",
-            // src: "../../html/bc_smart_ko.vtt"
-          }
-        ], //자막,
-        noseek: true //timeline no
-      }
-    }
-  },
+// data () {
+//     return {
+//         active : false,
+//         innerRipple: false,
+//         halfRight: false,
+//         halfLeft: false,
+//         none: true,
+//         left: true,
+//         scriptFlag: false,         // 동영상 내 스크립트 toggle 변수
+//         relatedVideoList: [
+//             {title: '자바스크립트 개발 프로세스 기초'},
+//             {title: '모바일 게임 UI 디자인 실무'},
+//             {title: '만화로 배우는 알기 쉬운 경영 기초전략'},
+//             {title: '모바일 게임 UI 디자인 실무'},
+//             {title: '자바스크립트 개발 프로세스 기초1'},
+//             {title: '자바스크립트 개발 프로세스 기초2'},
+//             {title: '자바스크립트 개발 프로세스 기초3'}
+//         ],
+//        option: {
+//         loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
+//         targetId: "contents", //div target Id
+//         // sources: [
+//         //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
+//         //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
+//         //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
+//         //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
+//         // ],
+//         // src: require('@/assets/movie/m010102.mp4'), //동영상 src
+//         sources: [
+//             { type: 'video/mp4', src: './static/movie/m010102.mp4'},
+//             { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
+//             { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
+//             { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
+//         ],
+//         src: './static/movie/m010102.mp4', //동영상 src
+//         // src: require('@/assets/movie/m010102.mp4'), //동영상 src
+//         title: "Flowplayer", //콘텐츠 제목
+//         isSpeeds: true, //동영상 배속 사용여부
+//         speeds: [1, 2, 3], //동영상 배속 설정 값
+//         skinClass: "flowplayer fp-fat", //동영상 스킨
+//         isMute: true, //음소거 사용여부
+//         isFullscreen: true, //전체 화면
+//         isShare: true, //공유 여부
+//         isAutoplay: false, //자동실행여부
+//         seekTime: 30, //콘텐츠 이어학습하기 시간 초
+//         isPorg: true, //콘텐츠 진도값 저장 여부
+//         logSaveTime: 5, //콘텐츠 진도 로그 저장 주기 (초)
+//         replayTime: [0, 0], //구간반속 구간 [시작, 끝]
+//         qualities: ["160p", "260p", "530p", "720p"], //콘텐츠 화질 설정 값
+//         defaultQuality: "260p", //콘텐츠 화질 초기 값
+//         subtitles: [
+//           {
+//             "default": true, // note the quotes around "default"!
+//             kind: "subtitles",
+//             srclang: "en",
+//             label: "English",
+//             // src: "../../html/bc_smart_en.vtt"
+//           },
+//           {
+//             "default": true, // note the quotes around "default"!
+//             kind: "subtitles",
+//             srclang: "ko",
+//             label: "Korea",
+//             // src: "../../html/bc_smart_ko.vtt"
+//           }
+//         ], //자막,
+//         noseek: true //timeline no
+//       }
+//     }
+//   },
   methods: {
     active_el () {
         this.active = !this.active
