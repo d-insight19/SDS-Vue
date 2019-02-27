@@ -3227,7 +3227,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 
 .atorm_material .sub_content .sub_content_type {padding:20px 24px 32px; border:#999 1px solid; border-top:0}
 .atorm_material .sub_content .sub_content_type2 {border:#999 1px solid; border-top:0}
-.sub_content_type2 .score_list {padding:20px 24px 0}
+.sub_content_type2 .score_list {padding-top: 20px; margin: 0 24px 16px;}
 .score_list {border-bottom:#eaeaea 1px solid; margin-bottom:16px}
 .score_list .score {font-family: 'Roboto';font-size: map-get($font-size, font_20); line-height: 27px;}
 .score_list > li {padding-bottom:17px;}
