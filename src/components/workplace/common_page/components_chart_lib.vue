@@ -1,5 +1,5 @@
 <template>
-<!-- eslint-disable -->
+  <!-- eslint-disable -->
   <!-- wrap -->
   <div
     id="wrap"
@@ -17,6 +17,12 @@
             <h2> charts </h2>
             <br>
 
+            <h-bar-chart
+              id="myChart"
+              :chart-data="basicBarData1"
+              :options="basicBarOpt"
+              css-classes="basicBar" />
+
             <div>
               <p> basic bar </p>
               <!-- basic bar -->
@@ -25,7 +31,7 @@
                 <li>
                   <p>신청/취소<span class="fr">101명</span> </p>
                   <div class="progBox">
-                    <h-bar-chart 
+                    <h-bar-chart
                       :chart-data="basicBarData1"
                       :options="basicBarOpt"
                       css-classes="basicBar" />
@@ -34,17 +40,16 @@
                 <li>
                   <p>학습<span class="fr">180명</span> </p>
                   <div class="progBox">
-                    <barStack 
+                    <barStack
                       :chart-data="basicBarData2"
                       :options="basicBarOpt"
-                      class="basicBar"
-                      />
+                      class="basicBar"/>
                   </div>
                 </li>
                 <li>
                   <strong>평가<span class="fr">245명</span> </strong>
                   <div class="progBox">
-                    <barStack 
+                    <barStack
                       :chart-data="basicBarData3"
                       :options="basicBarOpt"
                       class="basicBar"/>
@@ -237,10 +242,10 @@
                   <div
                     class="progBox"
                     style="height: 10px !important;">
-                    <barStack
+                    <h-bar-chart
                       :chart-data="basicBar41Data"
                       :options="barStackOpt"
-                      class="basicBar41"/>
+                      class="basicBar4"/>
                   </div>
                   <div class="txt-wrap clearfix">
                     <ul class="diagram_wrap type2">
@@ -257,10 +262,10 @@
                   <div
                     class="progBox"
                     style="height: 10px !important;">
-                    <barStack
+                    <h-bar-chart
                       :chart-data="basicBar42Data"
                       :options="barStackOpt"
-                      class="basicBar42"/>
+                      class="basicBar4"/>
                   </div>
                   <div class="txt-wrap clearfix">
                     <ul class="diagram_wrap type2">
@@ -325,6 +330,7 @@
                     <imsiChart
                       :chart-data="imsiChartData"
                       :options="imsiChartOpt"
+                      :plugins="imsiChartPlugins"
                       class="imsiChart"/>
                   </div>
                   <dl>
@@ -348,7 +354,8 @@
               <ul class="diagram_wrap">
                 <div class="diagram2">
                   <stackedDoghnut01
-                    :data="stackedDoghnut01.data"
+                    :chart-data="stackedDoghnut01Data"
+                    :options="imsiChartOpt"
                     class="doughnut01"/>
                 </div>
                 <li class="type1">
@@ -378,8 +385,9 @@
               <p class="person">참여인원 <span>100</span>명</p>
               <ul class="diagram_wrap square">
                 <div class="diagram2">
-                  <stackedDoghnut02
-                    :data="stackedDoghnut02.data"
+                  <stackedDoghnut01
+                    :chart-data="stackedDoghnut02Data"
+                    :options="imsiChartOpt"
                     class="doughnut02"/>
                 </div>
                 <li class="type4">
@@ -461,7 +469,7 @@
 </template>
 
 <script>
-/*eslint-disable*/
+/* eslint-disable */
 import {Bar, HorizontalBar, Doughnut, mixins} from 'vue-chartjs'
 const {reactiveProp} = mixins
 
@@ -477,20 +485,17 @@ const barStack = {
 const imsiChart = {
   extends: Doughnut,
   mixins: [reactiveProp],
-  props: ['options'],
+  props: ['options', 'plugins'],
   mounted: function () {
     this.renderChart( this.chartData, this.options )
   }
 }
-
 const stackedDoghnut01 = {
   extends: Doughnut,
-  props: ['data'],
+  mixins: [reactiveProp],
+  props: ['options'],
   mounted: function () {
-    this.renderChart({
-      datasets: [{backgroundColor: ['#ff726D', '#ffba00', '#00b3c4', '#00b6e8', '#32667d'],
-        data: this.data}]}
-    )
+    this.renderChart( this.chartData, this.options )
   }
 }
 
@@ -550,34 +555,133 @@ export default {
   /* vue data */
   data () {
     return {
+      stackedDoghnut02Data: {
+        labels: ['스타벅스', '탐앤탐스','이디야', '할리스'],
+        datasets: [
+          {
+            data: [38, 29, 22, 11],
+            backgroundColor: ['#ff726D', '#ffba00', '#00b3c4', '#32667d'],
+          }
+        ]
+      },
+      stackedDoghnut02Opt: {
+        legend: {
+          display: false
+        },
+      },      
+      stackedDoghnut01Data: {
+        labels: ['직무과정', '경영 리더십','외국어 과정', '금융과정', '교육과정'],
+        datasets: [
+          {
+            data: [52, 12, 36, 8, 6],
+            backgroundColor: ['#ff726D', '#ffba00', '#00b3c4', '#00b6e8', '#32667d'],
+          }
+        ]
+      },
+      stackedDoghnut01Opt: {
+        legend: {
+          display: false
+        },
+      },
       basicBarOpt: {
+        tooltips: {
+          enabled: false,
+          custom: function (tooltipModel) {
+            // Tooltip Element
+            var tooltipEl = document.getElementById('chartjs-tooltip')
+
+            // Create element on first render
+            if (!tooltipEl) {
+              tooltipEl = document.createElement('div')
+              tooltipEl.id = 'chartjs-tooltip'
+              tooltipEl.innerHTML = '<table></table>'
+              document.body.appendChild(tooltipEl)
+            }
+
+            // Hide if no tooltip
+            if (tooltipModel.opacity === 0) {
+              tooltipEl.style.opacity = 0
+              return
+            }
+
+            // Set caret Position
+            tooltipEl.classList.remove('above', 'below', 'no-transform')
+            if (tooltipModel.yAlign) {
+              tooltipEl.classList.add(tooltipModel.yAlign)
+            } else {
+              tooltipEl.classList.add('no-transform')
+            }
+
+            function getBody (bodyItem) {
+              return bodyItem.lines
+            }
+
+            // Set Text
+            if (tooltipModel.body) {
+              var titleLines = tooltipModel.title || []
+              var bodyLines = tooltipModel.body.map(getBody)
+
+              var innerHtml = '<thead>'
+
+              titleLines.forEach(function (title) {
+                innerHtml += '<tr><th>' + title + '</th></tr>'
+              })
+              innerHtml += '</thead><tbody>'
+
+              bodyLines.forEach(function (body, i) {
+                var colors = tooltipModel.labelColors[i]
+                var style = 'background:' + colors.backgroundColor
+                style += '; border-color:' + colors.borderColor
+                style += '; border-width: 2px'
+                var span = '<span style="' + style + '"></span>'
+                innerHtml += '<tr><td>' + span + body + '</td></tr>'
+              })
+              innerHtml += '</tbody>'
+
+              var tableRoot = tooltipEl.querySelector('table')
+              tableRoot.innerHTML = innerHtml
+            }
+
+            // `this` will be the overall tooltip
+            var position = this._chart.canvas.getBoundingClientRect()
+
+            // Display, position, and set styles for font
+            tooltipEl.style.opacity = 1
+            tooltipEl.style.position = 'absolute'
+            tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 'px'
+            tooltipEl.style.top = position.top + window.pageYOffset + tooltipModel.caretY + 'px'
+            tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily
+            tooltipEl.style.fontSize = tooltipModel.bodyFontSize + 'px'
+            tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle
+            tooltipEl.style.padding = tooltipModel.yPadding + 'px ' + tooltipModel.xPadding + 'px'
+            tooltipEl.style.pointerEvents = 'none'
+            tooltipEl.style.background = '#ec5629'
+          }
+        },
         responsive: true,
         maintainAspectRatio: false,
         legend: {
           display: false
         },
-        layout: {
-          padding:{
-            left:-20
-          }
-        },
         scales: {
           xAxes: [{
-            gridLines: {display: false, color: 'rgba(0, 0, 0, 0)', scaleLineColor: 'rgba(0, 0, 0, 0)', drawBorder: false},
-            ticks: { display: false, min: 0, max: 100 , beginAtZero:true}
+            gridLines: {display: false, drawBorder: false},
+            ticks: { display: false, min: 0, max: 100 },
+            display: false
           }],
           yAxes: [{
             barThickness: 8,
-            gridLines: {display: false, color: 'rgba(0, 0, 0, 0)', scaleLineColor: 'rgba(0, 0, 0, 0)', drawBorder: false},
-            ticks: { display: false}
+            display: false,
+            gridLines: { display: false }
           }]
         }
       },
       basicBarData1: {
-        datasets: [{ backgroundColor: '#32667d', data: [100] }]
+        // labels: ['신청/취소'],
+        datasets: [{ backgroundColor: '#32667d', data: [30], label: '신청/취소' }]
       },
       basicBarData2: {
-        datasets: [{ backgroundColor: '#00b6e8', data: [100] }]
+        datasets: [{ backgroundColor: '#00b6e8', data: [50] }]
       },
       basicBarData3: {
         datasets: [{ backgroundColor: '#ffba00', data: [70] }]
@@ -610,28 +714,26 @@ export default {
         datasets: [{ backgroundColor: '#32667d', data: [11] }]
       },
       barStackOpt: {
+        tooltips: {
+          enabled: false
+        },
         responsive: true,
         maintainAspectRatio: false,
         legend: {
           display: false
         },
-        layout: {
-          padding:{
-            left:-20
-          }
-        },
         scales: {
           xAxes: [{
             stacked: true,
-            barThickness: 1,
-            gridLines: {display: false, color: 'rgba(0, 0, 0, 0)', scaleLineColor: 'rgba(0, 0, 0, 0)', drawBorder: false},
-            ticks: {display: false}
+            gridLines: {display: false, drawBorder: false},
+            ticks: { display: false, min: 0, max: 100 },
+            display: false
           }],
           yAxes: [{
             stacked: true,
-            barThickness: 8,
-            gridLines: {display: false, color: 'rgba(0, 0, 0, 0)', scaleLineColor: 'rgba(0, 0, 0, 0)', drawBorder: false},
-            ticks: {display: false}
+            barThickness: 10,
+            display: false,
+            gridLines: { display: false }
           }]
         }
       },
@@ -657,33 +759,75 @@ export default {
           { backgroundColor: '#ff726D', data: [36] }
         ]
       },
+      imsiChartPlugins: [{
+          beforeDraw: function(chart) {
+          var width = chart.chart.width,
+          height = chart.chart.height,
+          ctx = chart.chart.ctx;
+
+          ctx.restore();
+          var fontSize = (height / 114).toFixed(2);
+          ctx.font = fontSize + "em sans-serif";
+          ctx.textBaseline = "middle";
+
+          var text = Math.round(59*100/80)+"%",
+          textX = Math.round((width - ctx.measureText(text).width) / 2),
+          textY = height / 2;
+
+          ctx.fillText(text, textX, textY);
+          ctx.save();
+        }
+      }],
       imsiChartData: {
-        labels: ['취득학점', '목표학점'],
+        labels: ['취득학점', ''],
         datasets: [
           {
-            data: [54, 46],
+            data: [59, 21],
             backgroundColor: [
               'rgba(0, 173, 251, 1)',
               'rgba(0, 0, 0, 0.1)'
             ],
+            borderColor: [
+              'rgba(0, 0, 0, 0)',
+              'rgba(0, 0, 0, 0)'
+            ],
             hoverBackgroundColor: [
               'rgba(0, 173, 251, 0.5)',
-              'rgba(234, 234, 234, 0.5)'
-            ]
+              'rgba(0, 0, 0, 0.1)'
+            ],
           }
         ]
       },
       imsiChartOpt: {
-        animation: {
-          animationRotate: true,
-          duration: 2000
-        },
+  	    responsive: true,
         legend: {
           display: false
-        }
+        },
+        tooltips: {
+        	filter: function(item, data) {
+            var label = data.labels[item.index];
+            if  (label) return item;
+          },
+          // callbacks: {
+          //   // 59 * 100 /
+          //   label: function(tooltipItem, data) {
+          //     console.log(tooltipItem)
+          //     console.log(data)
+          //     return 59
+          //   }
+          // }          
+        }        
       },
       stackedDoghnut01: {
-        data: [36, 25, 28, 14, 5]
+        // data: [36, 25, 28, 14, 5]
+        data: [10, 20, 30],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        'Red',
+        'Yellow',
+        'Blue'
+    ]    
       },
       stackedDoghnut02: {
         data: [38, 29, 22, 11]
@@ -769,35 +913,219 @@ export default {
             ticks: { min: 0, max: 12, stepSize: 3 }
           }]
         }
-      },
+      }
 
     }
   },
   /* vue lifecycle */
   created () {
+    this.overRide()
+//    this.textCenter(75)
   },
   mounted () {
   },
   /* vue function */
   methods: {
-  },
+    textCenter(val) {
+      Chart.pluginService.register({
+          beforeDraw: function(chart) {
+          var width = chart.chart.width,
+          height = chart.chart.height,
+          ctx = chart.chart.ctx;
+
+          ctx.restore();
+          var fontSize = (height / 114).toFixed(2);
+          ctx.font = fontSize + "em sans-serif";
+          ctx.textBaseline = "middle";
+
+          var text = val+"%",
+          textX = Math.round((width - ctx.measureText(text).width) / 2),
+          textY = height / 2;
+
+          ctx.fillText(text, textX, textY);
+          ctx.save();
+        }
+      });
+    },       
+    // 엣지 라운드 처리    
+    overRide () {
+      Chart.elements.Rectangle.prototype.draw = function () {
+        var ctx = this._chart.ctx
+        var vm = this._view
+        var left, right, top, bottom, signX, signY, borderSkipped, radius
+        var borderWidth = vm.borderWidth
+        // Set Radius Here
+        // If radius is large enough to cause drawing errors a max radius is imposed
+        var cornerRadius = 100
+
+        if (!vm.horizontal) {
+          // bar
+          left = vm.x - vm.width / 2
+          right = vm.x + vm.width / 2
+          top = vm.y
+          bottom = vm.base
+          signX = 1
+          signY = bottom > top ? 1 : -1
+          borderSkipped = vm.borderSkipped || 'bottom'
+        } else {
+          // horizontal bar
+          left = vm.base
+          right = vm.x
+          top = vm.y - vm.height / 2
+          bottom = vm.y + vm.height / 2
+          signX = right > left ? 1 : -1
+          signY = 1
+          borderSkipped = vm.borderSkipped || 'left'
+        }
+
+        // Canvas doesn't allow us to stroke inside the width so we can
+        // adjust the sizes to fit if we're setting a stroke on the line
+        if (borderWidth) {
+          // borderWidth shold be less than bar width and bar height.
+          var barSize = Math.min(Math.abs(left - right), Math.abs(top - bottom))
+          borderWidth = borderWidth > barSize ? barSize : borderWidth
+          var halfStroke = borderWidth / 2
+          // Adjust borderWidth when bar top position is near vm.base(zero).
+          var borderLeft = left + (borderSkipped !== 'left' ? halfStroke * signX : 0)
+          var borderRight = right + (borderSkipped !== 'right' ? -halfStroke * signX : 0)
+          var borderTop = top + (borderSkipped !== 'top' ? halfStroke * signY : 0)
+          var borderBottom = bottom + (borderSkipped !== 'bottom' ? -halfStroke * signY : 0)
+          // not become a vertical line?
+          if (borderLeft !== borderRight) {
+            top = borderTop
+            bottom = borderBottom
+          }
+          // not become a horizontal line?
+          if (borderTop !== borderBottom) {
+            left = borderLeft
+            right = borderRight
+          }
+        }
+
+        ctx.beginPath()
+        ctx.fillStyle = vm.backgroundColor
+        ctx.strokeStyle = vm.borderColor
+        ctx.lineWidth = borderWidth
+
+        // Corner points, from bottom-left to bottom-right clockwise
+        // | 1 2 |
+        // | 0 3 |
+        var corners = [
+          [left, bottom],
+          [left, top],
+          [right, top],
+          [right, bottom]
+        ]
+
+        // Find first (starting) corner with fallback to 'bottom'
+        var borders = ['bottom', 'left', 'top', 'right']
+        var startCorner = borders.indexOf(borderSkipped, 0)
+        if (startCorner === -1) {
+          startCorner = 0
+        }
+
+        function cornerAt (index) {
+          return corners[(startCorner + index) % 4]
+        }
+
+        // Draw rectangle from 'startCorner'
+        var corner = cornerAt(0)
+        var width, height, x, y, nextCorner, nextCornerId
+        var x_tl, x_tr, y_tl, y_tr
+        var x_bl, x_br, y_bl, y_br
+        ctx.moveTo(corner[0], corner[1])
+
+        for (var i = 1; i < 4; i++) {
+          corner = cornerAt(i)
+          nextCornerId = i + 1
+          if (nextCornerId == 4) {
+            nextCornerId = 0
+          }
+
+          nextCorner = cornerAt(nextCornerId)
+
+          width = corners[2][0] - corners[1][0]
+          height = corners[0][1] - corners[1][1]
+          x = corners[1][0]
+          y = corners[1][1]
+
+          radius = cornerRadius
+
+          // Fix radius being too large
+          if (radius > Math.abs(height) / 2) {
+            radius = Math.floor(Math.abs(height) / 2)
+          }
+          if (radius > Math.abs(width) / 2) {
+            radius = Math.floor(Math.abs(width) / 2)
+          }
+
+          if (height < 0) {
+            // Negative values in a standard bar chart
+            x_tl = x; x_tr = x + width
+            y_tl = y + height; y_tr = y + height
+
+            x_bl = x; x_br = x + width
+            y_bl = y; y_br = y
+
+            // Draw
+            ctx.moveTo(x_bl + radius, y_bl)
+            ctx.lineTo(x_br - radius, y_br)
+            ctx.quadraticCurveTo(x_br, y_br, x_br, y_br - radius)
+            ctx.lineTo(x_tr, y_tr + radius)
+            ctx.quadraticCurveTo(x_tr, y_tr, x_tr - radius, y_tr)
+            ctx.lineTo(x_tl + radius, y_tl)
+            ctx.quadraticCurveTo(x_tl, y_tl, x_tl, y_tl + radius)
+            ctx.lineTo(x_bl, y_bl - radius)
+            ctx.quadraticCurveTo(x_bl, y_bl, x_bl + radius, y_bl)
+          } else if (width < 0) {
+            // Negative values in a horizontal bar chart
+            x_tl = x + width; x_tr = x
+            y_tl = y; y_tr = y
+
+            x_bl = x + width; x_br = x
+            y_bl = y + height; y_br = y + height
+
+            // Draw
+            ctx.moveTo(x_bl + radius, y_bl)
+            ctx.lineTo(x_br - radius, y_br)
+            ctx.quadraticCurveTo(x_br, y_br, x_br, y_br - radius)
+            ctx.lineTo(x_tr, y_tr + radius)
+            ctx.quadraticCurveTo(x_tr, y_tr, x_tr - radius, y_tr)
+            ctx.lineTo(x_tl + radius, y_tl)
+            ctx.quadraticCurveTo(x_tl, y_tl, x_tl, y_tl + radius)
+            ctx.lineTo(x_bl, y_bl - radius)
+            ctx.quadraticCurveTo(x_bl, y_bl, x_bl + radius, y_bl)
+          } else {
+            // Positive Value
+            ctx.moveTo(x + radius, y)
+            ctx.lineTo(x + width - radius, y)
+            ctx.quadraticCurveTo(x + width, y, x + width, y + radius)
+            ctx.lineTo(x + width, y + height - radius)
+            ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height)
+            ctx.lineTo(x + radius, y + height)
+            ctx.quadraticCurveTo(x, y + height, x, y + height - radius)
+            ctx.lineTo(x, y + radius)
+            ctx.quadraticCurveTo(x, y, x + radius, y)
+          }
+        }
+
+        ctx.fill()
+        if (borderWidth) {
+          ctx.stroke()
+        }
+      }
+    }
+  }
 }
 </script>
 
 <style>
 
-.basicBar41{
-  width:100%;
-  height: 20px;
-}
-
-.basicBar42{
-  width:100%;
-  height: 20px;
+.basicBar4{
+  height: 10px;
 }
 
 .basicBar5{
-  width:100%;
   height: 18px;
 }
 
@@ -817,12 +1145,12 @@ export default {
 }
 
 .barLine{
+  width:680px;
   height:170px;
 }
 
 .basicBar {
-  width:100%;
-  height:18px;
+  height: 8px;
 }
 
 </style>

@@ -344,7 +344,7 @@ export default {
             {title: '자바스크립트 개발 프로세스 기초3'}
         ],
        option: {
-        loType: "audio", //loType : movie(동영상), audio(오디오), vr(VR)
+        loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
         targetId: "contents", //div target Id
         // sources: [
         //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
