@@ -404,10 +404,8 @@
 #header.tab{/*position: fixed;*/ position:relative; top: 0; z-index: 30; width: 100%;  height:auto; padding:0;    min-height: 100px;}
 #header.tab .header_inner{display:block;width:100%;}
 //audio시 변경사항
-#header.tab .header_inner.audio{display:none !important;}
-#header.tab .player_wrap.audio{height:270px !important; background: url('../img/Audio_img.png') center center no-repeat; background-size:cover;}
-#header.tab .hide_header.audio{display: none!important;}
-#header.tab .header_inner.line1.audio{display: none!important;}
+#header.tab .header_inner.line1.audio{height:0px; padding: 0px 138px 0px 72px ;}
+#header.tab.fixed .header_inner.line1.audio{height:56px;padding: 0px 138px 0px 72px;}
 #header.tab .header_inner.line1{height:56px;padding: 0 36px 0 72px;    position: absolute; top: 0px; left: 0px;}
 #header.tab .header_inner.line1 .btn{top:14px !important;transform: translate(0,0) !important;}
 

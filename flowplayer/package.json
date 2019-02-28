@@ -1,0 +1,78 @@
+{
+  "_from": "flowplayer@^7.2.7",
+  "_id": "flowplayer@7.2.7",
+  "_inBundle": false,
+  "_integrity": "sha1-q4wnM/W3eIXYcCCDKuM/ID2t2oA=",
+  "_location": "/flowplayer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "flowplayer@^7.2.7",
+    "name": "flowplayer",
+    "escapedName": "flowplayer",
+    "rawSpec": "^7.2.7",
+    "saveSpec": null,
+    "fetchSpec": "^7.2.7"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://10.45.20.64:9872/repository/npm-group/flowplayer/-/flowplayer-7.2.7.tgz",
+  "_shasum": "ab8c2733f5b77885d87020832ae33f203dadda80",
+  "_spec": "flowplayer@^7.2.7",
+  "_where": "D:\\Dev\\SVN\\mc-vue-mobile",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/flowplayer/flowplayer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "The HTML5 video player for the web",
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "bean": "^1.0.15",
+    "brfs": "^1.4.3",
+    "browserify": "^13.1.1",
+    "browserify-derequire": "^0.9.4",
+    "class-list": "~0.1.1",
+    "computed-style": "^0.3.0",
+    "es5-shim": "^4.1.1",
+    "extend-object": "~1.0.0",
+    "ie8": "=0.2.3",
+    "is-function": "~1.0.1",
+    "mochify": "~1.1.2",
+    "node-sass": "^3.10.1",
+    "postcss-cli": "^2.6.0",
+    "postcss-unopacity": "^1.0.1",
+    "scriptjs": "^2.5.7",
+    "uglify-js": "^3.3.7"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/flowplayer/flowplayer#readme",
+  "jshintConfig": {
+    "browser": true,
+    "node": true,
+    "strict": true,
+    "newcap": false,
+    "multistr": true
+  },
+  "license": "GPLv3",
+  "main": "dist/flowplayer.js",
+  "name": "flowplayer",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/flowplayer/flowplayer.git"
+  },
+  "scripts": {
+    "fixmeprepublish": "make clean && make skin && make min && make flash && make",
+    "test": "mochify ./test/unit/*.js",
+    "test-watch": "mochify -w ./test/unit/*.js",
+    "testBundle": "browserify -o dist/test-bundle.js test/main.js"
+  },
+  "version": "7.2.7"
+}

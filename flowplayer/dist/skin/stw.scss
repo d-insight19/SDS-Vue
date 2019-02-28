@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*=============================================
+=                    Layout                   =
+=============================================*/
+
+/* Player Wrap */
+.player_wrap{display:flex;display: -webkit-flex;flex-direction: column;position:sticky;top:0;z-index:300;overflow:hidden}
+.player_wrap.script{height:100vh;}
+.player_wrap.script .btm_subtitle_area{display:block;}
+.player_wrap #contents { padding: 0; }
+.player_inner { position: relative; z-index:20;}
+.player_wrap.fixed{position:fixed;}
+.player_wrap.fixed .player_inner #contents { width: 128px; height:96px !important; position: fixed; right: 0px; top: 0px; z-index: 100; -webkit-transition: 0.3s all; transition: 0.3s all;right:0px}
+.player_wrap.fixed .player_inner .movie_info_list { display: none; }
+.player_wrap.fixed .player_inner .fp-controls{display:none;}
+.player_wrap.fixed .player_inner .fp-header{display:none;}
+
+/* mini_progress */
+.player_wrap.fixed .player_wrap {opacity: 1 !important;}
+.player_wrap .mini_progress{position: absolute;width:100%;height:5px;background: rgba(255,255,255,0.4);bottom:0px;right:0px;}
+.player_wrap .mini_progress .current_progree{position: absolute;width:30%;height:5px;bottom:0px;left:0px;}
+
+
+/* 하단 Script Area */
+.btm_subtitle_area{flex:1;overflow: hidden;display:none;}
+.btm_subtitle_area .subtitle_title { margin-bottom: 20px; font-size: 18px; color: #111; font-weight: bold; }
+.btm_subtitle_area .subtitle_title i { width: 12px; height: 7px; margin-left: 5px; display: inline-block; background: url(../img/stw/ico_toggle_arrow.png) 0 0 no-repeat; vertical-align: 2px; }
+.btm_subtitle_area .subtitle_title i span.sr-only{position: absolute; width: 1px;height: 1px;padding: 0;overflow: hidden;clip: rect(0,0,0,0);white-space: nowrap;border: 0;}
+.btm_subtitle_area .subtitle_title.is-active i { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.btm_subtitle_area .subtitle_slide_wrap{overflow: scroll; height:100%}
+.btm_subtitle_area .subtitle_slide_wrap .btm_subtitle_control { min-height:64px; height:auto; position:sticky;position: -webkit-sticky; top: 0;z-index:1;background:#fff;border-bottom:1px solid #d9d9d9;padding:0px 18px;line-height: 64px;}
+.btm_subtitle_area .subtitle_slide_wrap .btm_subtitle_control .subtitle_lang_wrap{display:inline-block;padding-right:20px;position: relative;line-height:26px;}
+.btm_subtitle_area .subtitle_slide_wrap .btm_subtitle_control .lang_type{display:inline-block;font-size:13px;line-height: 26px;letter-spacing: -0.33px;color:rgba(0,0,0,0.8);font-weight: 500;}
+.btm_subtitle_area .subtitle_slide_wrap .btm_subtitle_control .dropdown{display:inline-block;width:16px;height:16px;background:url("ic_dropdown_16.png");position:absolute;top:50%;transform:translateY(-50%);right:0px;}
+.btm_subtitle_area .subtitle_slide_wrap .btm_subtitle_control .switch_txt{display:inline-block;font-size:13px;line-height: 28px;color:rgba(0,0,0,0.8);font-weight: 500;margin-left:18px;margin-right:9px;}
+.btm_subtitle_area .subtitle_slide_wrap .btm_subtitle_control .script_close{display:inline-block;position:absolute;top:50%;transform:translateY(-50%);right:18px;width:28px;height:28px;background:url("ic_x_28.png");}
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper{padding:0px 18px;}
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .timeline_tit{font-size:16px;letter-spacing: -0.48px;color:#000;line-height: 24px;padding-top:22px;font-weight: 600;}
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline{padding:18px 0px; }
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li { margin-top: 16px; }
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li a { padding: 0px; display: flex; display:-webkit-flex;position: relative; line-height: 20px; letter-spacing: -0.42px}
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li a .time { color: rgba(0,0,0,0.5); margin-right:19px; }
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li a .desc { color: rgba(0,0,0,0.8); flex:1}
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li a .desc strong { margin-bottom: 10px; display: block; }
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li a:hover { background-color: rgba(33, 39, 124, 0.04); }
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper .btm_subtitle_timeline li:first-child { margin-top: 0; }
+.btm_subtitle_area .subtitle_slide_wrap .timeline_wrapper.scroll { height: 200px; overflow-y: auto; }
+
+/* movie_info_list ::  연관 콘텐츠 동영상 더 나오는 곳 */
+.movie_info_list_wrap{width:100%;height:100%;position:absolute;top:0;left:0px;display:none}
+.flowplayer .fp-ui .movie_info_list { display:none; width: 100%; position: absolute; overflow: hidden; overflow-x: scroll; bottom:-185px; z-index:10}
+.flowplayer .fp-ui .movie_info_list.active{bottom:50%;transform:translateY(50%);transition: opacity .1s, bottom 0.5s; }
+.flowplayer .fp-ui .movie_info_list .movie_info_tit{display:none;margin-top:56px;color:#fff;margin-bottom:12px;font-size:15px;line-height: 22px;letter-spacing: -0.45px;margin-left:16px;pointer-events: none;}
+.flowplayer .fp-ui .movie_info_list.active .movie_info_tit{display:block;}
+.flowplayer .fp-ui .movie_info_list ul { display: -webkit-box; margin-top:56px;}
+.flowplayer .fp-ui .movie_info_list .movie_info_tit + ul{margin-top:0px;}
+.flowplayer .fp-ui .movie_info_list ul li {margin-left:18px;min-height:200px;width:200px;}
+.flowplayer .fp-ui .movie_info_list ul li .thum{width:200px; height:150px;}
+.flowplayer .fp-ui .movie_info_list ul li .thum .thumbnail{overflow: hidden;margin: auto;height: 100%;position: relative;}
+.flowplayer .fp-ui .movie_info_list ul li .thumbnail .thumImg {width:200px; height:150px;}
+.flowplayer .fp-ui .movie_info_list ul li a { width: 200px; height: 150px; display: block; position: relative; background-color: #fff; -webkit-transition: 0.5s all; transition: 0.5s all; margin-bottom:8px;}
+.flowplayer .fp-ui .movie_info_list ul li .movie_tit{font-size:14px;line-height:19px;letter-spacing: -0.42px;color:#fff;width: 100%;}
+.flowplayer .fp-progress:before{content: '';display: block;-webkit-border-radius: 7px;-moz-border-radius: 7px;border-radius: 7px;position: absolute;right: -7px;top: -4px;width: 13px;height: 13px;}
+
+
+/* 볼륨 영역 */
+.volume_wrap{position:absolute;top:0px;width:100%;height:100%;color:#fff;font-family: 'Roboto';opacity: 0.65;}
+.volume_wrap .volume_left{position:absolute;width:50%;height:100%;top:0px;left:0px;display: flex;align-items: center;justify-content: center; }
+.volume_wrap .volume_left .icon_wrap{display:flex;z-index:1;pointer-events: none;}
+.volume_wrap .volume_left .light_icon{display:inline-block;width:64px;height:64px;background: url(ic_bright_line_bold_wh_64.png);margin-right:16px;}
+.volume_wrap .volume_left .light_value{line-height: 64px;font-size: 40px;letter-spacing: -1.2px;}
+.volume_wrap .volume_right{position:absolute;width:50%;height:100%;top:0px;right:0px;display: flex;align-items: center;justify-content: center; }
+.volume_wrap .volume_right .icon_wrap{display:flex;z-index:1;pointer-events: none;}
+.volume_wrap .volume_right .volume_icon{display:inline-block;width:64px;height:64px;background: url(ic_volume_line_bold_wh_64.png);margin-right:16px;}
+.volume_wrap .volume_right .volume_value{line-height: 64px;font-size: 40px;letter-spacing: -1.2px;}
+.volume_wrap .volume_left .inner{position:absolute;bottom:0px;width:100%;height:100%;opacity: 0.65;}
+.volume_wrap .volume_right .inner{position:absolute;bottom:0px;width:100%;height:65%;opacity: 0.65;}
+
+/* 터치 애니메이션 영역*/
+.player_wrap .tap_wrap{position:absolute;width:100%;height:100%;top:0;}
+.player_wrap .tap_wrap .half_left{position:absolute;width:50%;height:100%;left:0px;overflow: hidden;}
+.player_wrap .tap_wrap .half_left .inner{position: absolute;width: 165%;height: 170%;background: rgba(255,255,255,0.4);border-radius: 50%;left: -75%;top: -35%;}
+.player_wrap .tap_wrap .half_left .inner_ripple{position: absolute;width: 165%;height: 170%;background:rgba(255,255,255,0.2);border-radius: 50%;left: -75%;top: -35%;transform:scale(0);animation: ripple 0.6s;-webkit-animation: ripple 0.6s;animation-iteration-count: 1;    -webkit-animation-iteration-count: 1;}
+.player_wrap .tap_wrap .half_right{position:absolute;width:50%;height:100%;right:0px;overflow: hidden;}
+.player_wrap .tap_wrap .half_right .inner{position: absolute;width: 165%;height: 170%;background: rgba(255,255,255,0.4);;border-radius: 50%;right: -75%;top: -35%;}
+.player_wrap .tap_wrap .half_right .inner_ripple{position: absolute;width: 165%;height: 170%;background:rgba(255,255,255,0.2);border-radius: 50%;right: -75%;top: -35%;transform:scale(0);animation: ripple 0.6s;-webkit-animation: ripple 0.6s;animation-iteration-count: 1;    -webkit-animation-iteration-count: 1;}
+
+@keyframes ripple{
+    to {
+        transform: scale(1);
+    }
+}
+
+
+// Landscape 의 경우
+@media only screen and (orientation:landscape){
+    .flowplayer .fp-nextArrow{margin-left:50px}
+    .flowplayer .fp-prevArrow{margin-right:50px}
+
+    // 미니 플레이어의 경우 비활성화
+    .player_wrap.fixed .flowplayer .fp-ui .movie_info_list{display:none !important;}
+    // 연관 콘텐츠는 Landscape 경우에만 보여짐 ( splash 의 경우엔 비활성화 )    
+    .flowplayer.is-splash .fp-ui .movie_info_list{display:none;}    
+    .flowplayer.has_contents:not(.is-splash) .fp-ui .movie_info_list{display:block;}
+    
+    // Landscape 의 경우 연관콘텐츠가 존재할 시 컨트롤 inner 높이값 재 설정
+    .flowplayer.has_contents .fp-controls .fp-controls-inner{bottom:19px;}
+    // 연관 콘텐츠 동영상 터치해서 오픈했을경우, 헤더 , 연관콘텐츠 리스트 제외 opacity 0 처리
+    .flowplayer.is-open-related-contents .fp-ui > :not(.movie_info_list):not(.fp-header){opacity: 0;}
+    // 연관 콘텐츠 동영상 터치해서 오픈했을경우 X 아이콘 노출
+    .flowplayer.is-open-related-contents .fp-header .fp-closeicon{display:block}
+    .flowplayer .fp-header .fp-header-txt{visibility:visible;}
+}
+    
+
+@media screen and (min-width:768px){
+    .flowplayer .fp-playIcon{width:96px;height:96px;}
+    .flowplayer .fp-pauseIcon{width:96px;height:96px;}
+    .flowplayer .fp-nextArrow{width:96px;height:96px;margin-left:60px}
+    .flowplayer .fp-prevArrow{width:96px;height:96px;margin-right:60px}
+    .flowplayer .fp_Icon_txt{margin-top:102px;}
+}
