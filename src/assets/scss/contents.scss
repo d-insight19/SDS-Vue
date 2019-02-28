@@ -789,7 +789,7 @@ to {
 #container.atorm_confirmlist_detail .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li > span:first-child{line-height: 68px;font-weight: 600;}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:18px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
-#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
+#container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 27px 0px}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
 #container.atorm_confirmlist_detail .confirm_item_detail > li .confirm_item_detail_inner .num{font-family: 'Roboto'}
@@ -1688,8 +1688,9 @@ label.rdo .label{position: relative;}
 #container.courseware .sub_content .download_detail.bottom-bd-x {border-bottom:1px solid map-get($line_colors,B89) !important; }
 #container.courseware .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
 #container.courseware .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 15px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
-#container.courseware .clr4 {background-color:#f2f3f7 !important;}
-#container.courseware .clr3 {background-color:#a3a9ff!important;}
+#container.courseware .clr4 {@extend .clr4;}
+#container.courseware .clr6 {@extend .clr6;}
+.multiList .info.rev li + li::before{}
 
 // home_courseware_LO/SO
 #container.courseware.book .sub_content .download_detail {padding:16px 16px 20px 20px;}
@@ -1756,7 +1757,7 @@ label.rdo .label{position: relative;}
 #container.studystatus .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
 #container.studystatus .confirm_item_detail > li > span:first-child{line-height: 68px;font-weight: 600; display:inline-block; margin-top:20px;}
 #container.studystatus .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:23px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
-#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
+#container.studystatus .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 27px 0px}
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
 #container.studystatus .confirm_item_detail > li .confirm_item_detail_inner .num{font-family: 'Roboto'}
@@ -2132,9 +2133,9 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .confirm_item_detail{margin:0px -24px}
 #container.atorm.flip .confirm_item_detail.m18{margin:0px -18px} // 여백이 18일시 추가필요
 #container.atorm.flip .confirm_item_detail > li{padding:0px 18px;border-bottom:1px solid #d9d9d9;position: relative;font-size:map-get($font-size, font_18);min-height:68px;letter-spacing: -0.54px;color:#000;}
-#container.atorm.flip .confirm_item_detail > li > span:first-child{line-height: 100%;font-weight: 600; display:inline-block; margin-top:20px;}
+#container.atorm.flip .confirm_item_detail > li > span:first-child{line-height: 100%;font-weight: 600; display:inline-block; margin-top:25px;}
 #container.atorm.flip .confirm_item_detail > li .accordion_arrow{width:20px;height:20px;position:absolute;top:23px;right:18px;background: url("../img/ic_accordion_arr_20_down.png") no-repeat; }
-#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 11px 0px}
+#container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner{display:none;padding:18px 0px 27px 0px}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .txt-main{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.75px;color:#000;font-weight: 500}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .txt-desc{font-size:map-get($font-size, font_15);line-height: 24px;letter-spacing: -0.45px;color:rgba(0,0,0,0.8);font-weight: 400}
 #container.atorm.flip .confirm_item_detail > li .confirm_item_detail_inner .num{font-family: 'Roboto'}
@@ -2261,7 +2262,19 @@ label.rdo .label{position: relative;}
     }
 }
 
+//fs_fixed 클래스
 
+.fs_mode{
+    min-height:100vh;display: flex;background: rgb(0,0,0);align-items: center;
+    .fp-controls.fixed{
+        position:fixed;
+        width: 100%
+    }
+    .flowplayer.has-title .fp-header.fixed {
+        top: 0;
+        position:fixed;
+    }
+}
 
 
 
@@ -3181,39 +3194,35 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 
 .atorm_material .chip {border-width:0px !important; height:30px; padding:8px 10px; font-weight:300; color:map-get($mono_colors, mono_0); margin-bottom:0;}
 .atorm_material .h-tit2 {font-size: map-get($font_size, font_22); padding-bottom:9px; border-bottom: 1px solid map-get($line_colors , B85);}
-.atorm_material .download_detail {display:table; background-color:#fff; border: 1px solid map-get($line_colors,B60); border-bottom: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 20px; margin-top:12px;}
-.atorm_material .download_detail .txt_wrap {border-bottom-width:0 !important; padding-bottom:9px !important;}
-.atorm_material .download_detail .txt_wrap .icon_txt {font-weight:500; margin-bottom:10px;}
-.atorm_material .download_detail .txt_wrap .title {font-size: map-get($font_size, font_17); font-weight:600; width:100% !important; margin-top:0px; white-space: normal !important; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
-.atorm_material .download_detail .txt_wrap input {font-size: map-get($font_size, font_17); font-weight:600; min-height: 28px;}
-.atorm_material .download_detail .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
-.atorm_material .download_detail .info li {color:map-get($mono_colors,mono_65);}
-.atorm_material .sub_content{display:none;}
-.atorm_material .open .sub_content{display:block;}
-.atorm_material .open .download_detail{border-bottom: 1px solid map-get($line_colors , B85);}
-.atorm_material .sub_content .download_detail {background-color:#f5f5f5; border-top: 0 none; border-bottom: 0 none;padding:8px 20px; margin-top:0px;}
-.atorm_material .sub_content li:first-child .download_detail {padding-top:13px;}
-.atorm_material .sub_content li:last-child .download_detail {padding-bottom:0px;}
-.atorm_material .sub_content .download_detail .txt_wrap {padding-bottom:0px !important; border-bottom: 0 none !important;}
-.atorm_material .sub_content .download_detail .txt_wrap .title {font-weight:500; color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_14);}
-.atorm_material .sub_content .sub_content_add {background-color:#f5f5f5; text-align: center; padding: 15px 0;border: 1px solid map-get($line_colors,B60); border-top:0 none;}
-.atorm_material .sub_content .sub_content_add_txt {background-color:#f5f5f5; padding: 20px 24px 28px; border: 1px solid map-get($line_colors,B60); border-top:0 none;}
-.atorm_material .download_detail.done {border: 1px solid map-get($line_colors,B80);}
+.atorm_material .main_content {display:table; background-color:#fff; border: 1px solid map-get($line_colors,B60); border-bottom: 1px solid map-get($line_colors,B89); position: relative; width: 100%; padding: 22px 20px; margin-top:12px;}
+.atorm_material .main_content .icon_wrap{display:table-cell; width:30px;height:100%;position: relative;}
+.atorm_material .main_content .txt_wrap {display:table-cell; width: calc(100% - 30px); padding-bottom:9px;}
+.atorm_material .main_content .txt_wrap .icon_txt {font-weight:500; margin-bottom:10px;}
+.atorm_material .main_content .txt_wrap .title {font-size: map-get($font_size, font_17); font-weight:600; overflow: hidden; white-space: normal ; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
+.atorm_material .main_content .txt_wrap input {font-size: map-get($font_size, font_17); font-weight:600; min-height: 28px;}
+.atorm_material .main_content .txt_wrap .status {font-size: map-get($font_size, font_13); margin-top:5px; color: map-get($mono_colors, mono_100)}
+.atorm_material .main_content .info li {color:map-get($mono_colors,mono_65);}
+.atorm_material .sub_content_list > li{background-color:#f5f5f5; display: table; width: 100%;border-right: 1px solid map-get($line_colors,B60); border-left: 1px solid map-get($line_colors,B60); padding:15px 20px 0;}
+.atorm_material .sub_content_list .icon_wrap{display:table-cell; width:30px;height:100%;position: relative;}
+.atorm_material .sub_content_list .txt_wrap {display:table-cell; width: calc(100% - 50px); padding-bottom:0px !important; border-bottom: 0 none !important;}
+.atorm_material .sub_content_list .txt_wrap .title {color: map-get($mono_colors, mono_80); font-size: map-get($font_size, font_14); font-weight:500; overflow: hidden; white-space: normal ; -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; min-height: 28px;}
+.atorm_material .sub_content_list .del_wrap{display:table-cell; width:20px;height:100%;position: relative;}
+.atorm_material .sub_content_add {background-color:#f5f5f5; text-align: center; padding: 15px 0;border: 1px solid map-get($line_colors,B60); border-top:0 none;}
+.atorm_material .sub_content_add_txt {background-color:#f5f5f5; padding: 20px 24px 28px; border: 1px solid map-get($line_colors,B60); border-top:0 none;}
+
 .underline_parents .underline::placeholder {font-size: map-get($font-size, font_22);}
 .underline_parents .underline {font-size: map-get($font-size, font_22); font-weight: 600; color:map-get($mono_colors, mono_100);}
-.back_none input[type="text"].underline {background: none}
 
+.atorm_material .main_content.ready {border: 1px solid map-get($line_colors,B80);}
+.atorm_material .main_content.ready .txt_wrap .icon_txt {opacity: 0.4;}
+.atorm_material .main_content.ready .txt_wrap .title {opacity: 0.4; font-weight: 400;}
+.atorm_material .main_content.ready .txt_wrap input {opacity: 0.4; font-weight: 400;}
 
-.atorm_material .download_detail.done .txt_wrap .icon_txt {opacity: 0.4;}
-.atorm_material .download_detail.done .txt_wrap .title {opacity: 0.4; font-weight: 400;}
-.atorm_material .download_detail.done .txt_wrap input {opacity: 0.4; font-weight: 400;}
+.atorm_material .chip.ready {border-width:1px !important; border-color:map-get($mono_colors, mono_25); color:map-get($mono_colors, mono_25); font-weight: 500;}
 
-.atorm_material .chip.done {border-width:1px !important; border-color:map-get($mono_colors, mono_25); color:map-get($mono_colors, mono_25); font-weight: 500;}
-.atorm_material .h-tit2.done {color:map-get($mono_colors, mono_25);}
-
-.atorm_material .sub_content .sub_content_type {padding:20px 24px 32px; border:#999 1px solid; border-top:0}
-.atorm_material .sub_content .sub_content_type2 {border:#999 1px solid; border-top:0}
-.sub_content_type2 .score_list {padding:20px 24px 0}
+.atorm_material .sub_content_type {padding:20px 24px 32px; border:#999 1px solid; border-top:0}
+.atorm_material .sub_content_type2 {border:#999 1px solid; border-top:0}
+.sub_content_type2 .score_list {padding-top: 20px; margin: 0 24px 16px;}
 .score_list {border-bottom:#eaeaea 1px solid; margin-bottom:16px}
 .score_list .score {font-family: 'Roboto';font-size: map-get($font-size, font_20); line-height: 27px;}
 .score_list > li {padding-bottom:17px;}
@@ -3248,3 +3257,4 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 /*chart tooltip*/
 #chartjs-tooltip { border:1px solid black; border-radius:5px; opacity:0.8; color:white; background: black !important; }
 #chartjs-tooltip::before { content:''; display:inline-block; position:absolute; left:-1px; top:-2px; width:10px; height:10px; opacity:0.8;  transform:rotate(9deg) skew(12deg,12deg); background: black; }
+

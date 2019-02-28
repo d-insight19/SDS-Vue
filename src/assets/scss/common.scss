@@ -93,6 +93,7 @@ button.disable {color:map-get($mono_colors, mono_25);} // 12월 21일 추가
 
 .gray_bg {background-color: map-get($bg_colors , BG_1);}
 .white_bg {background-color: #fff !important;}
+.none_bg {background: none !important;}
 
 // 헤더
 #header .btn.prev .ico{width:28px; height:28px; background-position:-13px -61px;}

@@ -7,7 +7,8 @@
 
         <!-- header  + 확장형  헤더  ::: hide_header  클래스는 fixed 붙으면 hidden 처리 -->
         <div id="header" class="tab video">          
-            <div class="header_inner line1 clr1" :class="{ 'audio' : audioFlag }">
+            <!-- audioFlag true 시 display:none; -->
+            <div class="header_inner line1 clr1" :class="{ 'audio' : audioFlag }" > 
                 <button type="button" class="btn only prev"><span class="ico2 prev-wh"></span></button>
                 <p class="header_text multiline line2 font_15">제이크 냅 직강: 기획부터 실행까지 5일만에 끝내기</p>
             </div>
@@ -30,68 +31,43 @@
 
             
             <!-- s: 동영상 -->
-            <div class="player_wrap" :style="brightFilter()">
+            <div class="player_wrap" :class="{ 'audio' : audioFlag }">
                 <div class="player_inner">
-                    <div id="opacityBlack" style="background: black"/>
                     <div id="contents"></div>
 
-                    <!--  s: 연관 콘텐츠 -->
-                    <!-- <div class="movie_info_list_wrap" style="display:none;">
-                        <div class="movie_info_list">
-                            <p class="movie_info_tit">연관 콘텐츠 추천</p>
-                            <ul>
-                                <li v-for="(item, index) in relatedVideoList" :key="index">
-                                    <a href="#"></a>
-                                    <p class="movie_tit multiline line2">{{item.title}}</p>
-                                </li> 
-                            </ul>
-                        </div>
-                    </div> -->
-                    <!-- e: 연관 콘텐츠 -->
-
                     <!-- s: 볼륨영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="volume_wrap" style="display: none;">
+                    <div class="volume_wrap" style="display:none;pointer-events:none">
                         <div class="volume_left">
                             <div class="inner"></div>
                             <div class="icon_wrap">
                                 <span class="light_icon"></span>
-                                <span class="light_value">{{ brightPercent }}</span>
+                                <span class="light_value">75</span>
                             </div>                            
                         </div>
                         <div class="volume_right">
                             <div class="inner"></div>
                             <div class="icon_wrap">
                                 <span class="volume_icon"></span>
-                                <span class="volume_value">{{ volumePercent }}</span>
+                                <span class="volume_value">65</span>
                             </div>
                         </div>
                     </div>
                     <!--  e: 볼륨영역 -->
 
                     <!-- s: double 텝 영역  임시 display:none 처리 및 이벤트 막음 -->
-                    <div class="tap_wrap">
-                        <v-touch v-on:tap="preventTap">
-                            <v-touch
-                                v-on:doubletap="prevTen" 
-                                v-on:pan="changeBright"
-                                v-on:panstart="changeBright"
-                                v-on:panend="changeBright">
-                            <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
-                                <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
+                    <div class="tap_wrap" style="display:none;pointer-events:none">
+                        <v-touch v-on:swipeup="prevTen" v-on:swipedown="prevTen" v-on:doubletap="prevTen">
+                          <div class="half_left" v-bind:class="{'halfLeft': halfLeft}">
+                              <div class="inner" style="background: rgba(255, 255, 255, 0);"></div>
+                              <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
+                          </div>
+                        </v-touch>
+                        <v-touch v-on:swipeup="nextTen" v-on:swipedown="nextTen" v-on:doubletap="nextTen">
+                            <div class="half_right" v-bind:class="{'halfRight': halfRight}">
+                                <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
                                 <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
                             </div>
-                            </v-touch>
-                            <v-touch 
-                                v-on:doubletap="nextTen"
-                                v-on:pan="changeVolume"
-                                v-on:panstart="changeVolume"
-                                v-on:panend="changeVolume">                                
-                                <div class="half_right" v-bind:class="{'halfRight': halfRight}">
-                                    <div class="inner" style="background: rgba(255, 255, 255, 0.0);"></div>
-                                    <div class="inner_ripple" v-bind:class="{'innerRipple': !innerRipple}"></div>
-                                </div>
-                            </v-touch>
-                        </v-touch>                         
+                        </v-touch>                            
                     </div>
                     <!--  e: double 텝 영역 -->
 
@@ -326,17 +302,13 @@ import vod from 'flowplayer/dist/plugins/flowplayer.vod-quality-selector.min.js'
 vod(flowplayer)
 import speed from 'flowplayer/dist/plugins/flowplayer.speed-menu.min.js'
 speed(flowplayer)
-// window.flowplayer = flowplayer
+window.flowplayer = flowplayer
 
 // 5. 자체 제작 플레이어 JS
 import 'flowplayer/dist/util_flowPlayer.js'
 
 import Vue from 'vue'
 import VueTouch from 'vue-touch'
-
-VueTouch.config.swipe = {
-  velocity: 0
-}
 
 VueTouch.registerCustomEvent('singletap', {
   type: 'tap',
@@ -355,11 +327,6 @@ export default {
   data () {
     return {
         audioFlag:'',
-        volume: 1,
-        volumePercent: 100,
-        brightness: 1,
-        brightPercent: 100,
-        timer: null,
         innerRipple: false,
         halfRight: false,
         halfLeft: false,
@@ -379,13 +346,20 @@ export default {
        option: {
         loType: "movie", //loType : movie(동영상), audio(오디오), vr(VR)
         targetId: "contents", //div target Id
+        // sources: [
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102.mp4') },
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-160p.mp4') },
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-530p.mp4') },
+        //   { type: 'video/mp4', src: require('@/assets/movie/m010102-720p.mp4') }
+        // ],
+        // src: require('@/assets/movie/m010102.mp4'), //동영상 src
         sources: [
-            { type: 'video/mp4', src: 'video/mp4', src: './static/movie/SLP_Mobile_GUI_Splash_B2B.mp4'},
-            // { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
-            // { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
-            // { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
+            { type: 'video/mp4', src: './static/movie/m010102.mp4'},
+            { type: 'video/mp4', src: './static/movie/m010102-160p.mp4'},
+            { type: 'video/mp4', src: './static/movie/m010102-530p.mp4'},
+            { type: 'video/mp4', src: './static/movie/m010102-720p.mp4'}
         ],
-        src: 'video/mp4', src: './static/movie/SLP_Mobile_GUI_Splash_B2B.mp4', //동영상 src
+        src: './static/movie/m010102.mp4', //동영상 src
         // src: require('@/assets/movie/m010102.mp4'), //동영상 src
         title: "Flowplayer", //콘텐츠 제목
         isSpeeds: true, //동영상 배속 사용여부
@@ -402,28 +376,21 @@ export default {
         qualities: ["160p", "260p", "530p", "720p"], //콘텐츠 화질 설정 값
         defaultQuality: "260p", //콘텐츠 화질 초기 값
         subtitles: [
-            { "default": true, // note the quotes around "default"!
-              kind: "subtitles", srclang: "en", label: "English",
-              src:  "//edge.flowplayer.org/subtitles/subtitles-en.vtt" },
-            { kind: "subtitles", srclang: "de", label: "Deutsch",
-              src:  "//edge.flowplayer.org/subtitles/subtitles-de.vtt" }
-        ],        
-        // subtitles: [
-        //   {
-        //     "default": true, // note the quotes around "default"!
-        //     kind: "subtitles",
-        //     srclang: "en",
-        //     label: "English",
-        //     // src: "../../html/bc_smart_en.vtt"
-        //   },
-        //   {
-        //     "default": true, // note the quotes around "default"!
-        //     kind: "subtitles",
-        //     srclang: "ko",
-        //     label: "Korea",
-        //     // src: "../../html/bc_smart_ko.vtt"
-        //   }
-        // ], //자막,
+          {
+            "default": true, // note the quotes around "default"!
+            kind: "subtitles",
+            srclang: "en",
+            label: "English",
+            // src: "../../html/bc_smart_en.vtt"
+          },
+          {
+            "default": true, // note the quotes around "default"!
+            kind: "subtitles",
+            srclang: "ko",
+            label: "Korea",
+            // src: "../../html/bc_smart_ko.vtt"
+          }
+        ], //자막,
         noseek: true //timeline no
       }
     }
@@ -432,166 +399,37 @@ export default {
     detail_toggle () {        
         this.detail_show = !this.detail_show;
     },
-    brightFilter () {
-        return {
-            '-webkit-filter': `brightness(${this.brightness})`,
-            '-moz-filter': `brightness(${this.brightness})`,
-            '-o-filter': `brightness(${this.brightness})`,
-            '-ms-filter': `brightness(${this.brightness})`,
-            'filter': `brightness(${this.brightness})`
-        }
-    },
-    changeBright (e) {
-        if(e.type === 'panend'){
-            $('.volume_wrap').css('display', 'none')
-
-            $('.volume_left').css('display', 'none')
-            $('.volume_right').css('display', 'flex')
-        }
-        else if(e.type === 'panstart'){
-            $('.volume_wrap').css('display', 'block')
-
-            $('.volume_left').css('display', 'flex')
-            $('.volume_right').css('display', 'none')
-        }
-        // console.log(e)
-        // console.log(e.changedPointers[0].movementY)
-
-        let diff = e.changedPointers[0].movementY
-        diff = diff * -1 / 100
-
-        let delta = this.brightness + diff
-
-        if(delta > 1){
-            this.brightness = 1
-            this.brightPercent = 100
-        }else if(delta < 0.1){
-            this.brightness = 0.1
-            this.brightPercent = 10     
-        }else {
-            this.brightness = delta
-            this.brightPercent = Math.floor(this.brightness * 100)
-        }
-        $('.volume_wrap > .volume_left > .inner').css('height', `${this.brightPercent}%`)            
-    },
-    changeVolume(e) {
-        if(e.type === 'panend'){
-            console.log('panend')
-            $('.volume_wrap').css('display', 'none')
-
-            $('.volume_left').css('display', 'flex')
-            $('.volume_right').css('display', 'none')
-        }
-        else if(e.type === 'panstart'){
-            console.log('panstart')
-            $('.volume_wrap').css('display', 'block')
-
-            $('.volume_left').css('display', 'none')
-            $('.volume_right').css('display', 'flex')
-        }       
-        // console.log(e)
-        console.log(e.changedPointers[0].movementY)
-
-        let diff = e.changedPointers[0].movementY
-        diff = diff * -1 / 100
-        let delta = this.volume + diff        
-
-        if(delta > 1){
-            this.volume = 1
-            this.volumePercent = 100
-        }else if(delta < 0){
-            this.volume = 0
-            this.volumePercent = 0         
-        }else {
-            this.volume = delta
-            this.volumePercent = Math.floor(this.volume * 100)
-        }
-        // console.log(this.fp)
-        // console.log(this.fp.volume)
-        // console.log('data', this.fp.volumeLevel)
-        // this.fp.volume(0.1, this)
-        console.log('>>>', flowplayer().volumeLevel)
-        console.log('>>>', flowplayer().volume(this.volume))
-        console.log('>>>', flowplayer().volumeLevel)
-
-        console.log('this.volume', this.volume)
-        console.log(this.volumePercent)       
-        $('.volume_wrap > .volume_right > .inner').css('height', `${this.volumePercent}%`)             
-    },
-    preventTap() {
-        console.log('preventTap')
-        this.timer = setTimeout(() => {
-            console.log('>>>', this.halfRight, this.halfLeft)
-            // Double tap 이벤트
-            if (this.halfRight || this.halfLeft) {
-                return
-            }
-            // Controll contents 영역 제어
-            if ($("#contents").hasClass('is-mouseover')) {
-                $("#contents").removeClass("is-mouseover");
-                $("#contents").addClass("is-mouseout");
-            } else {
-                $("#contents").addClass("is-mouseover");
-                $("#contents").removeClass("is-mouseout");
-                setTimeout(() => {
-                    $("#contents").removeClass("is-mouseover");
-                    $("#contents").addClass("is-mouseout");
-                }, 3000)
-            }
-        }, 250);
-    },
-    pan(e) {
-        // console.log(e)
-        // console.log(e.changedPointers[0].movementY)
-        // let diff = e.changedPointers[0].movementY
-        // if(diff !== 0){
-        //     diff = diff * -1 / 100
-        // } 
-        // this.brightness += diff
-        // let cur = this.brightness
-
-        // $("#contents").css("filter",`brightness(${cur})`);
-        // console.log(cur)
-        // console.log(diff)
-
-        let diff = e.changedPointers[0].movementY
-        if(diff !== 0){
-            diff = diff * -1 / 100
-        } 
-        this.volume += diff
-        console.log(this.volume)
-        let api = flowplayer()
-        let a = api.volumeLevel
-        console.log(a)     
-    },       
-    prevTen(e) {
-        console.log("왼쪽", e.type, e);
+    prevTen() {
+        console.error("왼쪽");
         this.halfRight = true
         this.innerRipple = true
-
-        let currentTime = flowplayer().video.time
-        flowplayer().seek(currentTime - 10)
-
-        setTimeout(() => {
-              this.halfRight = false
-              this.innerRipple = false
-        }, 600); 
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_right').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfRight = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_right').css('display', 'block');
+            }, 600);       
     },
-    nextTen(e) {
-        console.log("오른쪽", e.type, e);
+    nextTen() {
+        console.error("오른쪽");
         this.halfLeft = true
         this.innerRipple = true
-
-        let currentTime = flowplayer().video.time
-        flowplayer().seek(currentTime + 10)
-        console.log(flowplayer())
-
-        setTimeout(() => {
-              this.halfLeft = false
-              this.innerRipple = false
-        }, 600); 
+        // $('.inner_ripple').css('display', 'block');
+        // $('.half_left').css('display', 'none');
+        var vm = this
+        setTimeout(
+            function(){
+              vm.halfLeft = false
+              vm.innerRipple = false
+                // $('.inner_ripple').css('display', 'none'); 
+                // $('.half_left').css('display', 'block');
+            }, 600);       
     },
-    typeAudio () { // type audio 시 aduio 클래스 붙여주는 메소드입니다
+    typeAudio () {
         if( this.option.loType === 'audio'){
             console.log(audio)
             this.audioFlag = true
@@ -605,9 +443,9 @@ export default {
          this.typeAudio();
   },
   mounted () {
+       
         var _PLAYER = new UtilFlowPlayer(this.option);
         _PLAYER.init();
-        console.log(_PLAYER)
         
 
         // 동영상 헤더 텍스트 입력
@@ -675,18 +513,6 @@ export default {
             console.error('이전 콘텐츠!')
         });
 
-        /*
-        용도: 플레이어 시작전에 볼륨 조절 했으면 시작했을때 볼륨 설정해주기
-        작성일:  2019.02.12
-        작성자: 김정윤
-        */
-        $('.fp-playIcon').click(function() {
-            if(flowplayer().video.src === undefined){
-                flowplayer().volume(this.volume)
-                console.log(flowplayer().volumeLevel)
-            }
-        })
-
 
         miniMovie();
 
@@ -703,43 +529,7 @@ export default {
                 var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
 
                 var scroll=$(this).scrollTop()+$(this).height();
-                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
-                // 수치값은 수정해야함.
-                // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
-                // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
-                // fixed 클래스가 들어가면서 값이 변하기때문에 전역변수로 상수처리해야하면 될듯
-                // 176 , 1004
-                // if ($wTop >= $hederTab-player_height )
-                if ($wTop >= 176 )
-                {
-                    // $parent.addClass('fixed').css({'margin-top': $targetH });
-                    $parent.addClass('fixed')
-                    $("#header").addClass('fixed');
-                }
-                else
-                {
-                    $parent.removeClass('fixed').attr('style', '');
-                    $("#header").removeClass('fixed');
-                }
-            })
-        }
-
-        miniAudio ()
-
-        function miniAudio(){
-            var $parent = $('.player_wrap');
-            var $obj = $('.btm_subtitle_area');
-            var $top = $obj.offset().top;
-            var $targetH = $parent.find('#contents').height();
-
-            $(window).scroll(function()
-            {
-                var $wTop = $(window).scrollTop();
-                var player_height = $('.player_wrap').height();
-                var $hederTab = $(".header_inner.line2.tabMenu").offset().top;
-
-                var scroll=$(this).scrollTop()+$(this).height();
-                console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
+                // console.error( $wTop , $hederTab-player_height , $targetH  , scroll);   
                 // 수치값은 수정해야함.
                 // 현재는 상세내용을 펼치지않았을때의 값이나, 상세내용을 펼쳤을땐 값을 달리줘야함 
                 // ( 변수처리해서 상세내용 펼쳤을때와 아닐떄의 height 값 : $hederTab - player_height)
@@ -777,7 +567,10 @@ export default {
                     /*$obj.stop().animate({scrollTop : $thisTop - $objTop });*/
                 }
             });
-        }                                        
+        }
+        
+        
+
   }
 }
 </script>

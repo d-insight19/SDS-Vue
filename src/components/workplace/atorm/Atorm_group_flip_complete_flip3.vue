@@ -601,7 +601,7 @@
 
 <script>
 export default {
-  name: 'Atorm_e-learning_basic_1',
+  name: 'Atorm_group_flip_complete_flip3',
   /* vue lifecycle */
   created () {
   },

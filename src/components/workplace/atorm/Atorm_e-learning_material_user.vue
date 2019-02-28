@@ -33,10 +33,10 @@
 
           <div class="cell">
             <div class="inner atorm_material">
-                <!-- list -->
-                <ul class="multiList type2">
+                <!-- material list -->
+                <ul>
                     <li>
-                        <div class="download_detail done">
+                        <div class="main_content ready">
                             <div class="txt_wrap bbB85">
                                 <p class="icon_txt">1차시
                                 </p>
@@ -45,17 +45,17 @@
                         </div>
                     </li>
                 </ul>
-                <!-- //list -->
+                <!-- // material list -->
                 <p class="hr mb0"></p>
             </div>
           </div>
 
           <div class="cell">
             <div class="inner pdb20 atorm_material">
-                <!-- list -->
-                <ul class="multiList type2">
-                    <li class="open">
-                        <div class="download_detail">
+                <!-- material list -->
+                <ul>
+                    <li>
+                        <div class="main_content">
                             <div class="txt_wrap bbB85">
                                 <p class="icon_txt color_clr3">1차시 
                                     <span class="fr ico deletemode_20"></span>
@@ -63,14 +63,13 @@
                                 <p class="title">학습 소개 Orientation </p>
                             </div>
                         </div>
-                        <div class="sub_content">
-                            <div class="sub_content_add">
-                                <span class="chip clr2 font_14">+ 아이템 추가</span>
-                            </div>
+                        <ul class="sub_content_list"></ul>
+                        <div class="sub_content_add">
+                            <span class="chip clr2 font_14">+ 아이템 추가</span>
                         </div>
                     </li>
                     <li>
-                        <div class="download_detail done">
+                        <div class="main_content ready">
                             <div class="txt_wrap bbB85">
                                 <p class="icon_txt">2차시</p>
                                 <p class="title">차시명을 입력하세요</p>
@@ -78,17 +77,17 @@
                         </div>
                     </li>
                 </ul>
-                <!-- //list -->
+                <!-- // material list -->
                 <p class="hr mb0"></p>
             </div>
           </div>
 
           <div class="cell">
             <div class="inner pdb20 atorm_material">
-                <!-- list -->
-                <ul class="multiList type2">
-                    <li class="open">
-                        <div class="download_detail">
+                <!-- material list -->
+                <ul>
+                    <li>
+                        <div class="main_content">
                             <div class="txt_wrap bbB85">
                                 <p class="icon_txt color_clr3">1차시 
                                     <span class="fr ico deletemode_20"></span>
@@ -96,40 +95,36 @@
                                 <p class="title">학습 소개 Orientation</p>
                             </div>
                         </div>
-                        <div class="sub_content">
-                            <!-- list -->
-                            <ul class="multiList type2">
-                                <li>
-                                    <div class="download_detail">
-                                        <div class="icon_wrap">
-                                            <span class="ico play_28"></span>
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="title">데이터와 배열 활용하기</p>
-                                        </div>
-                                        <span class="fr ico deletemode_20"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="download_detail">
-                                        <div class="icon_wrap">
-                                            <span class="ico play_28"></span>
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="title">실행 순서 제어하기</p>
-                                        </div>
-                                        <span class="fr ico deletemode_20"></span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- //list -->
-                            <div class="sub_content_add">
-                                <span class="chip clr2 font_14">+ 아이템 추가</span>
-                            </div>
+                        <ul class="sub_content_list">
+                            <li>
+                                <div class="icon_wrap">
+                                    <span class="ico play_28"></span>
+                                </div>
+                                <div class="txt_wrap">
+                                    <p class="title">데이터와 배열 활용하기</p>
+                                </div>
+                                <div class="del_wrap">
+                                    <span class="ico deletemode_20"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon_wrap">
+                                    <span class="ico play_28"></span>
+                                </div>
+                                <div class="txt_wrap">
+                                    <p class="title">실행 순서 제어하기</p>
+                                </div>
+                                <div class="del_wrap">
+                                    <span class="ico deletemode_20"></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="sub_content_add">
+                            <span class="chip clr2 font_14">+ 아이템 추가</span>
                         </div>
                     </li>
                     <li>
-                        <div class="download_detail done">
+                        <div class="main_content ready">
                             <div class="txt_wrap bbB85">
                                 <p class="icon_txt">2차시</p>
                                 <p class="title">차시명을 입력하세요</p>
@@ -137,7 +132,7 @@
                         </div>
                     </li>
                 </ul>
-                <!-- //list -->
+                <!-- // material list -->
                 <p class="hr mb0"></p>
             </div>
           </div>
@@ -174,13 +169,6 @@ export default {
   },
   /* vue function */
   methods: {
-    toggleMenu (event) {
-      if (event.target.classList.contains('open')) {
-        event.target.classList.remove('open')
-      } else {
-        event.target.classList.add('open')
-      }
-    }
   }
 }
 </script>
