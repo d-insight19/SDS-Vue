@@ -17,13 +17,8 @@
         <div id="content" class="normal">
 
           <div class="cell">
-<<<<<<< HEAD
-            <div class="inner mb40">
-                <ul class="thumList type4 block">
-=======
             <div class="inner">
                 <ul class="cardList type1">
->>>>>>> 1e23e6fce5dcb0b8b75c3694fbfdc359f5994cf8
                     <li>
                         <div class="thum">
                             <div class="cDim"></div>

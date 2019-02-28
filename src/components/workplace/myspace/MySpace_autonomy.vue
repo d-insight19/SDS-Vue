@@ -40,11 +40,7 @@
           <div class="cell">
             <div class="inner pt0">
                 <!-- list -->
-<<<<<<< HEAD
-                <ul class="thumList type4 block wh">
-=======
                 <ul class="cardList type1">
->>>>>>> 1e23e6fce5dcb0b8b75c3694fbfdc359f5994cf8
                     <li>
                         <div class="thum">
                             <div class="cDim"></div>
