@@ -18,7 +18,7 @@
 
           <div class="cell">
             <div class="inner mb40">
-                <ul class="thumList type4">
+                <ul class="thumList type4 block">
                     <li>
                         <div class="thum">
                             <div class="cDim"></div>

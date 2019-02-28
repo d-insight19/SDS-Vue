@@ -494,7 +494,8 @@ select:required:invalid {
 
 /* Thumbnail list _ horizontal view : main grapic class */
 .thumList.type4.wh li{ background:white;}
-.thumList.type4{display: table; table-layout: fixed;}
+.thumList.type4.d-block{display:block; table-layout: fixed;}
+.thumList.type4{display:table; table-layout: fixed;}
 .thumList.type4 > li{ position: relative; word-break: break-all; width:100%; padding-bottom: 0; vertical-align: top; border:0; margin-bottom: 14px;}
 .thumList.type4 > li:first-child,
 .thumList.type4 > li:first-child .in{padding-left:0;}

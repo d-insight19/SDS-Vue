@@ -65,7 +65,7 @@
 
                 <div class="scroll-x type2">
                     <!-- list -->
-                    <ul class="thumList type4">
+                    <ul class="thumList type4 block">
                         <li>
                             <div class="thum">
                                 <span class="label">D-29</span>

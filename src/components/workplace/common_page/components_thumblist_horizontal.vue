@@ -232,7 +232,7 @@
             <p> 메인 - Grapic Class </p>
             <div class="scroll-x type2">
                 <!-- list -->
-                <ul class="thumList type4">
+                <ul class="thumList type4 block">
                     <li>
                         <div class="thum">
                             <span class="label">정규</span>

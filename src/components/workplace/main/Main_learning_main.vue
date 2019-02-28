@@ -64,7 +64,7 @@
                 <h2 class="h-tit2 fwb600 mb10">최근 진행중인 학습</h2>
                 
                 <!-- list -->
-                <ul class="thumList type4">
+                <ul class="thumList type4 block">
                     <li>
                         <div class="thum">
                             <span class="label big">정규</span>
