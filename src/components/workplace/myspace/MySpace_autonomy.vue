@@ -40,13 +40,15 @@
           <div class="cell">
             <div class="inner pt0">
                 <!-- list -->
+<<<<<<< HEAD
                 <ul class="thumList type4 block wh">
+=======
+                <ul class="cardList type1">
+>>>>>>> 1e23e6fce5dcb0b8b75c3694fbfdc359f5994cf8
                     <li>
                         <div class="thum">
                             <div class="cDim"></div>
-                            <div class="thumbnail">
-                                <img src="@/assets/img/thum_no_L2.jpg" class="w100p" alt="">
-                            </div>
+                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
                         </div>
                         <div class="text">
                             <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</a>
@@ -60,9 +62,7 @@
                     <li>
                         <div class="thum">
                             <div class="cDim"></div>
-                            <div class="thumbnail">
-                                <img src="@/assets/img/thum_no_L2.jpg" class="w100p" alt="">
-                            </div>
+                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
                         </div>
                         <div class="text">
                             <a href="#" class="tit">기초부터 튼튼히 업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</a>
@@ -74,9 +74,7 @@
                     <li>
                         <div class="thum">
                             <div class="cDim"></div>
-                            <div class="thumbnail">
-                                <img src="@/assets/img/thum_no_L2.jpg" class="w100p" alt="">
-                            </div>
+                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
                         </div>
                         <div class="text">
                             <a href="#" class="tit">업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</a>

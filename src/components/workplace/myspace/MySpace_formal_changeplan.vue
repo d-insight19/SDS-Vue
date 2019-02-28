@@ -17,16 +17,19 @@
         <div id="content" class="normal">
 
           <div class="cell">
+<<<<<<< HEAD
             <div class="inner mb40">
                 <ul class="thumList type4 block">
+=======
+            <div class="inner">
+                <ul class="cardList type1">
+>>>>>>> 1e23e6fce5dcb0b8b75c3694fbfdc359f5994cf8
                     <li>
                         <div class="thum">
                             <div class="cDim"></div>
-                            <div class="thumbnail">
-                                <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
-                            </div>
+                            <img src="@/assets/img/thum_no_L2.jpg" class="thumImg" alt="">
                         </div>
-                        <div class="text">
+                        <div class="text" style="border: 1px solid #e3e3e3;">
                             <a href="#" class="tit">기초부터 튼튼히 업무에 바로 쓰는 자바 스크립트 프로그래밍 입문 과정</a>
                             <ul class="info">
                                 <li class="fwb color_clr3">이러닝</li>
@@ -39,7 +42,7 @@
           </div>
         
           <div class="cell">
-            <div class="inner">
+            <div class="inner mb40">
                 <p class="font_14 fwb mb5">학습일 선택</p>
                 <slp-select placeholder="2018.10.01 ~ 2018.10.31" width="100%">
                     <option>2018.10.01 ~ 2018.10.31</option>
