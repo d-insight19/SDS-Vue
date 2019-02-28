@@ -328,7 +328,7 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="download_detail border_clr1 done clr6">
+                                                <div class="download_detail border_clr1 done clr3">
                                                     <div class="icon_wrap">
                                                         <span class="ico play_28"></span>
                                                     </div>
