@@ -2031,7 +2031,7 @@
             Atorm_e-learning_material_user
           </router-link>
         </td>
-        <td></td>
+        <td>구조, 클래스 이름 수정</td>
       </tr>
       <tr>
       <td align="center">101</td>
@@ -2236,7 +2236,7 @@
             Atorm_group_flip_material2
           </router-link>
         </td>
-        <td></td>
+        <td>구조, 클래스 이름 수정</td>
       </tr>
       <tr>
       <td align="center">111</td>
@@ -2253,7 +2253,7 @@
             Atorm_group_flip_add_item
           </router-link>
         </td>
-        <td></td>
+        <td>구조, 클래스 이름 수정</td>
       </tr>
       <tr>
       <td align="center">112</td>
@@ -2270,7 +2270,7 @@
             Atorm_group_flip_add_work
           </router-link>
         </td>
-        <td></td>
+        <td>구조, 클래스 이름 수정</td>
       </tr>
       <tr>
       <td align="center">113</td>
@@ -2287,7 +2287,7 @@
             Atorm_group_flip_add_test
           </router-link>
         </td>
-        <td></td>
+        <td>구조, 클래스 이름 수정</td>
       </tr>
       <tr>
       <td align="center">114</td>
@@ -2304,7 +2304,7 @@
             Atorm_group_flip_pre_material
           </router-link>
         </td>
-        <td></td>
+        <td>구조, 클래스 이름 수정</td>
       </tr>
       <tr>
       <td align="center">115</td>
@@ -2325,7 +2325,7 @@
             Atorm_group_flip_post_material2
           </router-link>
         </td>
-        <td></td>
+        <td>구조, 클래스 이름 수정</td>
       </tr>
       <tr>
       <td align="center">116</td>

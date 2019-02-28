@@ -31,436 +31,376 @@
         <!-- //header -->
         <div id="content" class="normal">
           <div class="cell">
-            <div class="inner pdb20">
+            <div class="inner">
 
                 <ul class="confirm_item_detail">
                     <li class="open" @click="toggleMenu($event)">
                         <span>사전학습</span>
                         <span class="accordion_arrow"></span>
-                        <div class="confirm_item_detail_inner pdb27 pt0">
-                            <!-- list -->                            
-                            <div class="cell">
-                                <div class="inner atorm_material"> 
-                                    <div class="underline_parents">
-                                    <slp-text-field classObject="underline" placeholder="사전학습명을 입력하세요"></slp-text-field>  
-                                    </div>                      
-                                </div>
-                            </div>
-                            <!-- //list -->
-
-                            <div class="cell">
-                                <div class="atorm_material">                                   
-                                    
-                                    <!-- list -->
-                                    <ul>
-                                        <li class="open">
-                                            <div class="download_detail mt26">                                                
-                                                <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
-                                            </div>
-                                            <div class="sub_content">
-                                                <!-- list add item -->
-                                                <ul class="multiList type2">
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico play_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">데이터와 배열 활용하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico play_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">실행 순서 제어하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <!-- //list add item -->
-                                            <div class="sub_content_add">
-                                                <span class="chip clr2 font_14">+ 아이템 추가</span>
-                                            </div>
+                        <div class="confirm_item_detail_inner">
+                            <!-- 사전학습 상세 -->
+                            <div class="atorm_material"> 
+                                <slp-text-field class="underline_parents mb26" classObject="underline" placeholder="사전학습명을 입력하세요"></slp-text-field>  
+                                <ul>
+                                    <li>
+                                        <div class="main_content">                                                
+                                            <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
                                         </div>
-                                        </li>
-                                        <li class="open">
-                                            <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
-                                            </div>
-                                            <div class="sub_content">
-                                                <!-- list add work -->
-                                                <ul class="multiList type2">
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico poll_line_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">데이터와 배열 활용하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
+                                        <!-- list add item -->
+                                        <ul class="sub_content_list">
+                                            <li>
+                                                <div class="icon_wrap">
+                                                    <span class="ico play_28"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">데이터와 배열 활용하기</p>
+                                                </div>
+                                                <div class="del_wrap">
+                                                    <span class="ico deletemode_20"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon_wrap">
+                                                    <span class="ico play_28"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">실행 순서 제어하기</p>
+                                                </div>
+                                                <div class="del_wrap">
+                                                    <span class="ico deletemode_20"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- //list add item -->
+                                        <div class="sub_content_add">
+                                            <span class="chip clr2 font_14">+ 아이템 추가</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="main_content">
+                                            <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
+                                        </div>
+                                        <!-- list add work -->
+                                        <ul class="sub_content_list">
+                                            <li>
+                                                <div class="icon_wrap">
+                                                    <span class="ico poll_line_28"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">데이터와 배열 활용하기</p>
+                                                </div>
+                                                <div class="del_wrap">
+                                                    <span class="ico deletemode_20"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon_wrap">
+                                                    <span class="ico poll_line_28"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">실행 순서 제어하기</p>
+                                                </div>
+                                                <div class="del_wrap">
+                                                    <span class="ico deletemode_20"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- //list add work -->
+                                        <div class="sub_content_add">
+                                            <span class="chip clr2 font_14">+ 레포트 추가</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="main_content">
+                                            <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
+                                        </div> 
+                                        <div class="sub_content_type2"> 
+                                            <ul class="score_list">
+                                                <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
+                                                </li>
+                                                <li class="label-tit16">총점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
+                                                </li>
+                                            </ul>
+                                            <ul class="w64List tac pdb32">
+                                                <li class="mr40">
+                                                    <p class="mono_50 font_14 mb5">선다형</p>
+                                                    <p class="mb15"><span class="ico multiplechoice_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
+                                                    <slp-button class="xxxs mono_80">추가</slp-button>
+                                                </li>
+                                                <li class="mr40">
+                                                    <p class="mono_50 font_14 mb5">OX형</p>
+                                                    <p class="mb15"><span class="ico ox_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
+                                                    <slp-button class="xxxs mono_80">추가</slp-button>
+                                                </li>
+                                                <li>
+                                                    <p class="mono_50 font_14 mb5">단답형</p>
+                                                    <p class="mb15"><span class="ico shortanswer_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
+                                                    <slp-button class="xxxs mono_80">추가</slp-button>
+                                                </li>
+                                            </ul>
+
+                                            <div class="evaluationList_box">
+                                                <!-- list -->
+                                                <ul class="evaluationList">
+                                                    <li>
+                                                        <p class="multiline font_16 mono_80">
+                                                            <span class="ico multiplechoice_32"></span>
+                                                            방해요소에 대한 설명이다. 틀린 것을 고르시오.
+                                                            <span class="ico del"></span>
+                                                        </p>
                                                     </li>
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico poll_line_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">실행 순서 제어하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
+                                                    <li>
+                                                        <p class="multiline line2 font_16 mono_80">
+                                                            <span class="ico shortanswer_32"></span>
+                                                            의사소통의 기본 요소 5가지를 적으시오.
+                                                            <span class="ico del"></span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="multiline line2 font_16 mono_80">
+                                                            <span class="ico ox_32"></span>
+                                                            위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
+                                                            <span class="ico del"></span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="multiline line2 font_16 mono_80">
+                                                            <span class="ico multiplechoice_32"></span>
+                                                            위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
+                                                            <span class="ico del"></span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="multiline line2 font_16 mono_80">
+                                                            <span class="ico shortanswer_32"></span>
+                                                            리스크 분석 프로세스에 대한 설명이다. 다음 중 옳은 것을 고르시오. 
+                                                            <span class="ico del"></span>
+                                                        </p>
                                                     </li>
                                                 </ul>
-                                                <!-- //list add work -->
-                                                <div class="sub_content_add">
-                                                    <span class="chip clr2 font_14">+ 레포트 추가</span>
-                                                </div>
+                                                <!-- //list -->                                                           
                                             </div>
-                                        </li>
-                                       <li class="open">
-                                            <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
-                                            </div> 
-                                            <div class="sub_content"> 
-                                                <div class="sub_content_type2"> 
-                                                    <ul class="score_list">
-                                                        <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
-                                                        </li>
-                                                         <li class="label-tit16">총점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
-                                                        </li>
-                                                    </ul>
-                                                    <ul class="w64List tac pdb32">
-                                                        <li class="mr40">
-                                                            <p class="mono_50 font_14 mb5">선다형</p>
-                                                            <p class="mb15"><span class="ico multiplechoice_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
-                                                            <slp-button class="xxxs mono_80">추가</slp-button>
-                                                        </li>
-                                                        <li class="mr40">
-                                                            <p class="mono_50 font_14 mb5">OX형</p>
-                                                            <p class="mb15"><span class="ico ox_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
-                                                            <slp-button class="xxxs mono_80">추가</slp-button>
-                                                        </li>
-                                                        <li>
-                                                            <p class="mono_50 font_14 mb5">단답형</p>
-                                                            <p class="mb15"><span class="ico shortanswer_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
-                                                            <slp-button class="xxxs mono_80">추가</slp-button>
-                                                        </li>
-                                                    </ul>
-
-                                                    <div class="evaluationList_box">
-                                                        <!-- list -->
-                                                        <ul class="evaluationList">
-                                                            <li>
-                                                                <p class="multiline font_16 mono_80">
-                                                                    <span class="ico multiplechoice_32"></span>
-                                                                    방해요소에 대한 설명이다. 틀린 것을 고르시오.
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico shortanswer_32"></span>
-                                                                    의사소통의 기본 요소 5가지를 적으시오.
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico ox_32"></span>
-                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico multiplechoice_32"></span>
-                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico shortanswer_32"></span>
-                                                                    리스크 분석 프로세스에 대한 설명이다. 다음 중 옳은 것을 고르시오. 
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                        <!-- //list -->                                                           
-                                                    </div>                    
-                                                </div>                    
-
-                                            </div>                                        
-                                        </li>                                       
-                                       
-                                    </ul>
-                                    <!-- //list -->                                    
-                                </div>
+                                        </div>                                        
+                                    </li>
+                                </ul>
                             </div>
-
+                            <!-- // 사전학습 상세 -->
                         </div>
                     </li>
                     
                     <li @click="toggleMenu($event)">
                         <span>집합강의</span>
                         <span class="accordion_arrow"></span>
-                        <div class="confirm_item_detail_inner pdb27 pt0">
-                            <!-- list -->                           
-                            <div class="cell">
-                                <div class="inner atorm_material"> 
-                                    <div class="underline_parents">
-                                    <slp-text-field classObject="underline" placeholder="집합강의명을 입력하세요"></slp-text-field>  
-                                    </div>                      
-                                </div>
+                        <div class="confirm_item_detail_inner">
+                            <!-- 집합강의 상세 -->
+                            <div class="atorm_material"> 
+                                <slp-text-field class="underline_parents mb26" classObject="underline" placeholder="집합강의명을 입력하세요"></slp-text-field>  
+                                <ul>
+                                    <li>
+                                        <div class="main_content">                                                
+                                            <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
+                                        </div>
+                                        <ul class="sub_content_list"></ul>
+                                        <div class="sub_content_add">
+                                            <span class="chip clr2 font_14">+ 아이템 추가</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="main_content">
+                                            <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
+                                        </div>
+                                        <ul class="sub_content_list"></ul>
+                                        <div class="sub_content_add">
+                                            <span class="chip clr2 font_14">+ 레포트 추가</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="main_content">
+                                            <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
+                                        </div> 
+                                        <div class="sub_content_type2"> 
+                                            <ul class="score_list">
+                                                <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
+                                                </li>
+                                                <li class="label-tit16">총점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
+                                                </li>
+                                            </ul>
+                                            <ul class="w64List tac pdb32">
+                                                <li class="mr40">
+                                                    <p class="mono_50 font_14 mb5">선다형</p>
+                                                    <p class="mb15"><span class="ico multiplechoice_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
+                                                    <slp-button class="xxxs mono_80">추가</slp-button>
+                                                </li>
+                                                <li class="mr40">
+                                                    <p class="mono_50 font_14 mb5">OX형</p>
+                                                    <p class="mb15"><span class="ico ox_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
+                                                    <slp-button class="xxxs mono_80">추가</slp-button>
+                                                </li>
+                                                <li>
+                                                    <p class="mono_50 font_14 mb5">단답형</p>
+                                                    <p class="mb15"><span class="ico shortanswer_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
+                                                    <slp-button class="xxxs mono_80">추가</slp-button>
+                                                </li>
+                                            </ul>
+                                        </div>                                        
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- //list -->
-
-                            <div class="cell">
-                                <div class="atorm_material">                                   
-                                    
-                                    <!-- list -->
-                                    <ul>
-                                        <li class="open">
-                                            <div class="download_detail mt26">                                                
-                                                <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
-                                            </div>
-                                            <div class="sub_content">
-                                                <div class="sub_content_add">
-                                                    <span class="chip clr2 font_14">+ 아이템 추가</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="open">
-                                            <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
-                                            </div>
-                                            <div class="sub_content">
-                                                <div class="sub_content_add">
-                                                    <span class="chip clr2 font_14">+ 레포트 추가</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="open">
-                                            <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
-                                            </div> 
-                                            <div class="sub_content"> 
-                                                <div class="sub_content_type2"> 
-                                                    <ul class="score_list">
-                                                        <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
-                                                        </li>
-                                                         <li class="label-tit16">총점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
-                                                        </li>
-                                                    </ul>
-                                                    <ul class="w64List tac pdb32">
-                                                        <li class="mr40">
-                                                            <p class="mono_50 font_14 mb5">선다형</p>
-                                                            <p class="mb15"><span class="ico multiplechoice_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
-                                                            <slp-button class="xxxs mono_80">추가</slp-button>
-                                                        </li>
-                                                        <li class="mr40">
-                                                            <p class="mono_50 font_14 mb5">OX형</p>
-                                                            <p class="mb15"><span class="ico ox_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
-                                                            <slp-button class="xxxs mono_80">추가</slp-button>
-                                                        </li>
-                                                        <li>
-                                                            <p class="mono_50 font_14 mb5">단답형</p>
-                                                            <p class="mb15"><span class="ico shortanswer_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
-                                                            <slp-button class="xxxs mono_80">추가</slp-button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>                                        
-                                        </li>                                       
-                                       
-                                    </ul>
-                                    <!-- //list -->                                    
-                                </div>
-                            </div>
-
+                            <!-- // 집합강의 상세 -->
                         </div>
                     </li>
 
                     <li @click="toggleMenu($event)">
                         <span>사후학습</span>
                         <span class="accordion_arrow"></span>
-                        <div class="confirm_item_detail_inner pt0">
-                            <!-- list -->                            
-                            <div class="cell">
-                                <div class="inner atorm_material"> 
-                                    <div class="underline_parents">
-                                    <slp-text-field classObject="underline" value="데이터 특성 알아보기"></slp-text-field>  
-                                    </div>                      
-                                </div>
-                            </div>
-                            <!-- //list -->
+                        <div class="confirm_item_detail_inner">
+                            <!-- 사후학습 상세 -->
+                            <div class="atorm_material"> 
+                                <slp-text-field class="underline_parents mb26" classObject="underline" value="데이터 특성 알아보기"></slp-text-field>  
+                                <ul>
+                                    <li>
+                                        <div class="main_content">                                                
+                                            <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
+                                        </div>
+                                        <!-- list add item -->
+                                        <ul class="sub_content_list">
+                                            <li>
+                                                <div class="icon_wrap">
+                                                    <span class="ico play_28"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">데이터와 배열 활용하기</p>
+                                                </div>
+                                                <div class="del_wrap">
+                                                    <span class="ico deletemode_20"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon_wrap">
+                                                    <span class="ico play_28"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">실행 순서 제어하기</p>
+                                                </div>
+                                                <div class="del_wrap">
+                                                    <span class="ico deletemode_20"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- //list add item -->
+                                        <div class="sub_content_add">
+                                            <span class="chip clr2 font_14">+ 아이템 추가</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="main_content">
+                                            <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
+                                        </div>
+                                        <!-- list add work -->
+                                        <ul class="sub_content_list">
+                                            <li>
+                                                <div class="icon_wrap">
+                                                    <span class="ico poll_line_28"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">데이터와 배열 활용하기</p>
+                                                </div>
+                                                <div class="del_wrap">
+                                                    <span class="ico deletemode_20"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon_wrap">
+                                                    <span class="ico poll_line_28"></span>
+                                                </div>
+                                                <div class="txt_wrap">
+                                                    <p class="title">실행 순서 제어하기</p>
+                                                </div>
+                                                <div class="del_wrap">
+                                                    <span class="ico deletemode_20"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- //list add work -->
+                                        <div class="sub_content_add">
+                                            <span class="chip clr2 font_14">+ 레포트 추가</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="main_content">
+                                            <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
+                                        </div> 
+                                        <div class="sub_content_type2"> 
+                                            <ul class="score_list">
+                                                <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
+                                                </li>
+                                                <li class="label-tit16">총점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
+                                                </li>
+                                            </ul>
+                                            <ul class="w64List tac pdb32">
+                                                <li class="mr40">
+                                                    <p class="mono_50 font_14 mb5">선다형</p>
+                                                    <p class="mb15"><span class="ico multiplechoice_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
+                                                    <slp-button class="xxxs mono_80">추가</slp-button>
+                                                </li>
+                                                <li class="mr40">
+                                                    <p class="mono_50 font_14 mb5">OX형</p>
+                                                    <p class="mb15"><span class="ico ox_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
+                                                    <slp-button class="xxxs mono_80">추가</slp-button>
+                                                </li>
+                                                <li>
+                                                    <p class="mono_50 font_14 mb5">단답형</p>
+                                                    <p class="mb15"><span class="ico shortanswer_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
+                                                    <slp-button class="xxxs mono_80">추가</slp-button>
+                                                </li>
+                                            </ul>
 
-                            <div class="cell">
-                                <div class="atorm_material">                                   
-                                    
-                                    <!-- list -->
-                                    <ul>
-                                        <li class="open">
-                                            <div class="download_detail mt26">                                                
-                                                <h2 class="label-tit16 color_clr1 fwb600">아이템학습</h2>
-                                            </div>
-                                            <div class="sub_content">
-                                                <!-- list add item -->
-                                                <ul class="multiList type2">
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico play_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">데이터와 배열 활용하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
+                                            <div class="evaluationList_box">
+                                                <!-- list -->
+                                                <ul class="evaluationList">
+                                                    <li>
+                                                        <p class="multiline font_16 mono_80">
+                                                            <span class="ico multiplechoice_32"></span>
+                                                            방해요소에 대한 설명이다. 틀린 것을 고르시오.
+                                                            <span class="ico del"></span>
+                                                        </p>
                                                     </li>
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico play_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">실행 순서 제어하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
+                                                    <li>
+                                                        <p class="multiline line2 font_16 mono_80">
+                                                            <span class="ico shortanswer_32"></span>
+                                                            의사소통의 기본 요소 5가지를 적으시오.
+                                                            <span class="ico del"></span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="multiline line2 font_16 mono_80">
+                                                            <span class="ico ox_32"></span>
+                                                            위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
+                                                            <span class="ico del"></span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="multiline line2 font_16 mono_80">
+                                                            <span class="ico multiplechoice_32"></span>
+                                                            위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
+                                                            <span class="ico del"></span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="multiline line2 font_16 mono_80">
+                                                            <span class="ico shortanswer_32"></span>
+                                                            리스크 분석 프로세스에 대한 설명이다. 다음 중 옳은 것을 고르시오. 
+                                                            <span class="ico del"></span>
+                                                        </p>
                                                     </li>
                                                 </ul>
-                                                <!-- //list add item -->
-                                                <div class="sub_content_add">
-                                                    <span class="chip clr2 font_14">+ 아이템 추가</span>
-                                                </div>
+                                                <!-- //list -->                                                           
                                             </div>
-                                        </li>
-                                        <li class="open">
-                                            <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">레포트</h2>
-                                            </div>
-                                            <div class="sub_content">
-                                                <!-- list add work -->
-                                                <ul class="multiList type2">
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico poll_line_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">데이터와 배열 활용하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="border_none">
-                                                        <div class="download_detail">
-                                                            <div class="icon_wrap">
-                                                                <span class="ico poll_line_28"></span>
-                                                            </div>
-                                                            <div class="txt_wrap">
-                                                                <p class="title">실행 순서 제어하기</p>
-                                                            </div>
-                                                            <span class="fr ico deletemode_20"></span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <!-- //list add work -->
-                                                <div class="sub_content_add">
-                                                    <span class="chip clr2 font_14">+ 레포트 추가</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="open">
-                                            <div class="download_detail">
-                                                <h2 class="label-tit16 color_clr1 fwb600">평가</h2>  
-                                            </div> 
-                                            <div class="sub_content"> 
-                                                <div class="sub_content_type2"> 
-                                                    <ul class="score_list">
-                                                        <li class="label-tit16">문항배점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
-                                                        </li>
-                                                         <li class="label-tit16">총점 <span class="fr"><span class="score">0</span> <span class="label-tit15 mono_80">점</span></span>
-                                                        </li>
-                                                    </ul>
-                                                    <ul class="w64List tac pdb32">
-                                                        <li class="mr40">
-                                                            <p class="mono_50 font_14 mb5">선다형</p>
-                                                            <p class="mb15"><span class="ico multiplechoice_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
-                                                            <slp-button class="xxxs mono_80">추가</slp-button>
-                                                        </li>
-                                                        <li class="mr40">
-                                                            <p class="mono_50 font_14 mb5">OX형</p>
-                                                            <p class="mb15"><span class="ico ox_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
-                                                            <slp-button class="xxxs mono_80">추가</slp-button>
-                                                        </li>
-                                                        <li>
-                                                            <p class="mono_50 font_14 mb5">단답형</p>
-                                                            <p class="mb15"><span class="ico shortanswer_32"></span> <span class="fwb600 mono_100 font_30">0</span></p>
-                                                            <slp-button class="xxxs mono_80">추가</slp-button>
-                                                        </li>
-                                                    </ul>
-
-                                                    <div class="evaluationList_box">
-                                                        <!-- list -->
-                                                        <ul class="evaluationList">
-                                                            <li>
-                                                                <p class="multiline font_16 mono_80">
-                                                                    <span class="ico multiplechoice_32"></span>
-                                                                    방해요소에 대한 설명이다. 틀린 것을 고르시오.
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico shortanswer_32"></span>
-                                                                    의사소통의 기본 요소 5가지를 적으시오.
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico ox_32"></span>
-                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico multiplechoice_32"></span>
-                                                                    위기관리는 처음 위기 상황을 감지했을 때 미리 밝히고 해결하는게 좋다. 
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p class="multiline line2 font_16 mono_80">
-                                                                    <span class="ico shortanswer_32"></span>
-                                                                    리스크 분석 프로세스에 대한 설명이다. 다음 중 옳은 것을 고르시오. 
-                                                                    <span class="ico del"></span>
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                        <!-- //list -->                                                           
-                                                    </div>                    
-                                                </div>                    
-
-                                            </div>                                        
-                                        </li>                                       
-                                       
-                                    </ul>
-                                    <!-- //list -->                                    
-                                </div>
+                                        </div>                                        
+                                    </li>
+                                </ul>
                             </div>
-
+                            <!-- // 사후학습 상세 -->
                         </div>
                     </li>
                 </ul>

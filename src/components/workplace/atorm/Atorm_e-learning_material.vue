@@ -48,9 +48,9 @@
                 </div>
                 <slp-text-field class="mb10" classObject="underline font_22 fwb600" value="데이터 특성 알아보기"></slp-text-field>   
                 <!-- list -->
-                <ul class="multiList type2">
+                <ul>
                     <li>
-                        <div class="download_detail done">
+                        <div class="main_content ready">
                             <div class="txt_wrap">
                                 <p class="icon_txt">1차시</p>
                                 <slp-text-field classObject="underline font_17 fwr" placeholder="차시명을 입력하세요"></slp-text-field>
@@ -71,9 +71,9 @@
                 </div>
                 <slp-text-field class="mb10" classObject="underline font_22 fwb600" value="데이터 특성 알아보기"></slp-text-field>   
                 <!-- list -->
-                <ul class="multiList type2">
-                    <li class="open">
-                        <div class="download_detail">
+                <ul>
+                    <li>
+                        <div class="main_content">
                             <div class="txt_wrap">
                                 <p class="icon_txt color_clr3">1차시 
                                     <span class="fr ico deletemode_20"></span>
@@ -81,14 +81,13 @@
                                 <slp-text-field classObject="underline" value="학습 소개 Orientation"></slp-text-field>
                             </div>
                         </div>
-                        <div class="sub_content">
-                            <div class="sub_content_add">
-                                <span class="chip clr2 font_14">+ 아이템 추가</span>
-                            </div>
+                        <ul class="sub_content_list"></ul>
+                        <div class="sub_content_add">
+                            <span class="chip clr2 font_14">+ 아이템 추가</span>
                         </div>
                     </li>
                     <li>
-                        <div class="download_detail done">
+                        <div class="main_content ready">
                             <div class="txt_wrap">
                                 <p class="icon_txt">2차시</p><slp-text-field classObject="underline" placeholder="차시명을 입력하세요"></slp-text-field>
                             </div>
@@ -109,9 +108,9 @@
                 <slp-text-field class="mb10" classObject="underline font_22 fwb600" value="데이터 특성 알아보기"></slp-text-field>   
                 
                 <!-- list -->
-                <ul class="multiList type2">
-                    <li class="open">
-                        <div class="download_detail">
+                <ul>
+                    <li>
+                        <div class="main_content">
                             <div class="txt_wrap">
                                 <p class="icon_txt color_clr3">1차시 
                                     <span class="fr ico deletemode_20"></span>
@@ -119,40 +118,36 @@
                                 <slp-text-field classObject="underline" value="학습 소개 Orientation"></slp-text-field>
                             </div>
                         </div>
-                        <div class="sub_content">
-                            <!-- list -->
-                            <ul class="multiList type2">
-                                <li>
-                                    <div class="download_detail">
-                                        <div class="icon_wrap">
-                                            <span class="ico play_28"></span>
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="title">데이터와 배열 활용하기</p>
-                                        </div>
-                                        <span class="fr ico deletemode_20"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="download_detail">
-                                        <div class="icon_wrap">
-                                            <span class="ico play_28"></span>
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="title">실행 순서 제어하기</p>
-                                        </div>
-                                        <span class="fr ico deletemode_20"></span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- //list -->
-                            <div class="sub_content_add">
-                                <span class="chip clr2 font_14">+ 아이템 추가</span>
-                            </div>
+                        <ul class="sub_content_list">
+                            <li>
+                                <div class="icon_wrap">
+                                    <span class="ico play_28"></span>
+                                </div>
+                                <div class="txt_wrap">
+                                    <p class="title">데이터와 배열 활용하기</p>
+                                </div>
+                                <div class="del_wrap">
+                                    <span class="ico deletemode_20"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon_wrap">
+                                    <span class="ico play_28"></span>
+                                </div>
+                                <div class="txt_wrap">
+                                    <p class="title">실행 순서 제어하기</p>
+                                </div>
+                                <div class="del_wrap">
+                                    <span class="ico deletemode_20"></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="sub_content_add">
+                            <span class="chip clr2 font_14">+ 아이템 추가</span>
                         </div>
                     </li>
                     <li>
-                        <div class="download_detail done">
+                        <div class="main_content ready">
                             <div class="txt_wrap">
                                 <p class="icon_txt">2차시</p>
                                 <slp-text-field classObject="underline" placeholder="차시명을 입력하세요"></slp-text-field>
@@ -168,7 +163,7 @@
           <div class="cell">
             <div class="inner atorm_material">
                 <div class="mb12">
-                    <span class="chip font_13 done">모듈 2</span>
+                    <span class="chip font_13 ready">모듈 2</span>
                 </div>
                 <slp-text-field classObject="underline font_22 fwb600" placeholder="모듈명을 입력하세요"></slp-text-field> 
             </div>
@@ -206,13 +201,6 @@ export default {
   },
   /* vue function */
   methods: {
-    toggleMenu (event) {
-      if (event.target.classList.contains('open')) {
-        event.target.classList.remove('open')
-      } else {
-        event.target.classList.add('open')
-      }
-    }
   }
 }
 </script>
