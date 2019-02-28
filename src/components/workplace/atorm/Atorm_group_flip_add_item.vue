@@ -225,7 +225,11 @@
                         <span>사후학습</span>
                         <span class="accordion_arrow"></span>
                         <div class="confirm_item_detail_inner pt0">
+<<<<<<< HEAD
                             <!-- list -->
+=======
+                            <!-- list -->                            
+>>>>>>> c948d486798e3d946313b4f9f221253e28824312
                             <div class="cell">
                                 <div class="inner atorm_material">
                                     <div class="underline_parents">

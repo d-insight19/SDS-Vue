@@ -1688,9 +1688,8 @@ label.rdo .label{position: relative;}
 #container.courseware .sub_content .download_detail.bottom-bd-x {border-bottom:1px solid map-get($line_colors,B89) !important; }
 #container.courseware .sub_content li:last-child .download_detail {border-bottom-width: 1px;}
 #container.courseware .sub_content .sub_content_title  {font-size: map-get($font_size, font_14); padding: 15px 21px; font-weight:600; border-left: 1px solid map-get($line_colors,B89); border-right: 1px solid map-get($line_colors,B89);}
-#container.courseware .clr4 {@extend .clr4;}
-#container.courseware .clr6 {@extend .clr6;}
-.multiList .info.rev li + li::before{}
+#container.courseware .clr4 {background-color:#f2f3f7 !important;}
+#container.courseware .clr3 {background-color:#a3a9ff!important;}
 
 // home_courseware_LO/SO
 #container.courseware.book .sub_content .download_detail {padding:16px 16px 20px 20px;}
@@ -2262,19 +2261,6 @@ label.rdo .label{position: relative;}
     }
 }
 
-//fs_fixed 클래스
-
-.fs_mode{
-    min-height:100vh;display: flex;background: rgb(0,0,0);align-items: center;
-    .fp-controls.fixed{
-        position:fixed;
-        width: 100%
-      }
-      .flowplayer.has-title .fp-header.fixed {
-        top: 0;
-        position:fixed;
-        }
-}
 
 
 
@@ -3227,7 +3213,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 
 .atorm_material .sub_content .sub_content_type {padding:20px 24px 32px; border:#999 1px solid; border-top:0}
 .atorm_material .sub_content .sub_content_type2 {border:#999 1px solid; border-top:0}
-.sub_content_type2 .score_list {padding-top: 20px; margin: 0 24px 16px;}
+.sub_content_type2 .score_list {padding:20px 24px 0}
 .score_list {border-bottom:#eaeaea 1px solid; margin-bottom:16px}
 .score_list .score {font-family: 'Roboto';font-size: map-get($font-size, font_20); line-height: 27px;}
 .score_list > li {padding-bottom:17px;}
@@ -3258,3 +3244,7 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .attend_status_detail .fix li{display: table-cell; vertical-align: middle;}
 .attend_status_detail .chip {margin-bottom:0; padding: 0px 5px; height: auto; line-height: 140%;}
 .attendance_notice_list li{ padding:20px 0; border-bottom:1px solid #e3e3e3;}
+
+/*chart tooltip*/
+#chartjs-tooltip { border:1px solid black; border-radius:5px; opacity:0.8; opacity:0.8; color:white; background: black !important; }
+#chartjs-tooltip:before { content:''; display:inline-block; position:absolute; left:-1px; top:-2px; width:10px; height:10px; opacity:0.8;  transform:rotate(9deg) skew(12deg,12deg); background-color: black; }
