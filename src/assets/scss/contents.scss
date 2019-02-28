@@ -3246,5 +3246,5 @@ input[type="search"]:not(:invalid) ~ .eye.eye_slash {
 .attendance_notice_list li{ padding:20px 0; border-bottom:1px solid #e3e3e3;}
 
 /*chart tooltip*/
-#chartjs-tooltip { border:1px solid black; border-radius:5px; opacity:0.8; opacity:0.8; color:white; background: black !important; }
-#chartjs-tooltip:before { content:''; display:inline-block; position:absolute; left:-1px; top:-2px; width:10px; height:10px; opacity:0.8;  transform:rotate(9deg) skew(12deg,12deg); background-color: black; }
+#chartjs-tooltip { border:1px solid black; border-radius:5px; opacity:0.8; color:white; background: black !important; }
+#chartjs-tooltip::before { content:''; display:inline-block; position:absolute; left:-1px; top:-2px; width:10px; height:10px; opacity:0.8;  transform:rotate(9deg) skew(12deg,12deg); background: black; }
