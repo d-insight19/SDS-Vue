@@ -2165,23 +2165,38 @@ label.rdo .label{position: relative;}
 #container.atorm.flip .criteria-wrap .total .total-num{font-family:'roboto';font-size:map-get($font-size, font_20);letter-spacing: -0.27px;}
 
 // studynote
-.studynote {
-    .chips_wrap{width: calc(100% - 212px);}
-    // studynote_edit
-    .font_13 {font-size:map-get($font-size, font_13);letter-spacing: -0.039em;}
-    .info {font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.8)}
-    .toast {width: calc(100% - 36px);padding: 0px 0px 13px 0px;position: absolute;left: 18px;}
-    .label-tit-15{font-size:map-get($font-size, font_15);letter-spacing: -0.045em; color:rgba(0,0,0,0.8);}
-    .btn_regi{margin-top:18px; margin-right:18px;}
-}
-
+.studynote    .chips_wrap{width: calc(100% - 212px);}
+// studynote_edit
+.studynote    .font_13 {font-size:map-get($font-size, font_13);letter-spacing: -0.039em;}
+.studynote    .info {font-size:map-get($font-size, font_14);letter-spacing: -0.042em;color:rgba(0,0,0,0.8)}
+.studynote    .toast {width: calc(100% - 36px);padding: 0px 0px 13px 0px;position: absolute;left: 18px;}
+.studynote    .label-tit-15{font-size:map-get($font-size, font_15);letter-spacing: -0.045em; color:rgba(0,0,0,0.8);}
+.studynote    .btn_regi{margin-top:18px; margin-right:18px;}
 
 //eduperson_loginOTP
-.eduperson_login {
-    .label-tit-20{font-size:map-get($font-size, font_20);letter-spacing: -0.06em;font-weight:400; }
-    .ul-block li {display:inline-block;margin-bottom:35px;}
-    .loginList .time {text-align:right; font-family:'roboto'; font-weight:500; font-size:map-get($font-size, font_12);}
-}
+.eduperson_login .label-tit-20{font-size:map-get($font-size, font_20);letter-spacing: -0.06em;font-weight:400; }
+.eduperson_login .ul-block li {display:inline-block;margin-bottom:35px;}
+.eduperson_login .loginList .time {text-align:right; font-family:'roboto'; font-weight:500; font-size:map-get($font-size, font_12);}
+
+
+//detailview_review
+.regiclass .reply-list .info{margin-top:6px;display:inline-block !important;}
+
+//06.regiclass_01.03.detailview_autonomy
+.regiclass .multiList > li .in{padding: 10px 0px 13px 6px;}
+
+//ATORM_07.04.01._status_ details_flip
+.atorm_status .detail_list tr td:nth-child(2){font-weight:500 !important;}
+
+//studydown
+.studydown .toast{width: calc(100% - 36px);position: absolute;top: 20px;}
+.studydown .labelChk .label{width:100%;}
+
+//fs_fixed 클래스
+.fs_mode{min-height:100vh;display: flex;background: rgb(0,0,0);align-items: center;}
+.fs_mode .fp-controls.fixed{position:fixed;width: 100%}
+.fs_mode .flowplayer.has-title .fp-header.fixed {top: 0;position:fixed;}
+
 
 //study_summary
 .courseware{
@@ -2198,84 +2213,14 @@ label.rdo .label{position: relative;}
     padding: 12px 18px;
     position: absolute;
     bottom: 0;
-    &.static{
-    position: static;
-    }
+        &.static{
+        position: static;
+        }
         .btm_tit{
             font-size:map-get($font-size, font_15);letter-spacing: -0.021em;font-weight:600;padding-bottom: 8px;
         }
     }
 }
-
-//detailview_review
-.regiclass{
-    .reply-list{
-        .info{
-            margin-top:6px;
-            display:inline-block !important;
-        }
-    }
-}
-
-//06.regiclass_01.03.detailview_autonomy
-.regiclass{
-    .multiList {
-        > li .in{
-            padding: 10px 0px 13px 6px;
-        }
-    }
-}
-
-
-//ATORM_07.04.01._status_ details_flip
-.atorm_status{
-    .detail_list{
-        tr{
-            td{
-                &:nth-child(2){
-                    font-weight:500 !important;
-                }
-            }
-        }
-    }
-}
-
-//script scroll
-.script{
-    .tabMenu li{
-    }
-    .mp4Script_options{
-    }
-    .mp4Script_options.short{
-    }
-}
-
-//studydown
-.studydown{
-    .toast{
-        width: calc(100% - 36px);
-        position: absolute;
-        top: 20px;
-    }
-    .labelChk .label{
-        width:100%;
-    }
-}
-
-//fs_fixed 클래스
-
-.fs_mode{
-    min-height:100vh;display: flex;background: rgb(0,0,0);align-items: center;
-    .fp-controls.fixed{
-        position:fixed;
-        width: 100%
-    }
-    .flowplayer.has-title .fp-header.fixed {
-        top: 0;
-        position:fixed;
-    }
-}
-
 
 
 
